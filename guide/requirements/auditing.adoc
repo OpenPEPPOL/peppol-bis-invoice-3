@@ -1,0 +1,27 @@
+
+
+.Auditing requirements
+[cols="1,10", options="header"]
+|===
+|Id
+|Requirement
+
+|R56
+a|sufficient information to support the auditing process with regard to:
+
+*		Identification of the invoice;
+*		Identification of the date of issue of the invoice;
+*		Identification of the products and services traded, including their description, value and quantity;
+*		Information for relating the invoice to its settlement;
+*		Information for relating the invoice to relevant documents such as a contract, a purchase order and a despatch advice;
+*		Information about the reason for invoice correction (process P10);
+
+|R57
+a|identification of the parties that fulfil the following roles at the invoice level, including their legal name and address:
+
+*		The Seller (including the Seller's trade name);
+*		The Buyer;
+*		The Deliver to party (if different from the Buyer);
+*		The Payee (if different from the Seller);
+*		The Tax representative of the Supplier;
+|===

@@ -1,0 +1,27 @@
+[[requirements]]
+= Invoice and credit note business requirements
+
+The table below gives an overview of the business requirements from {tc434}, as well as any specific requirements from the openPEPPOL project.
+
+
+.Legend
+****
+* Requirements with an id *RX* are from {EN16931}.
+* Requirements with an id = *op-t10-xxx* are {peppol} specific requirements.
+****
+
+#Add peppol specific req. to the tables#
+
+:leveloffset: +1
+
+include::accounting.adoc[]
+
+include::verification.adoc[]
+
+include::vat.adoc[]
+
+include::auditing.adoc[]
+
+include::payment.adoc[]
+
+:leveloffset: -1

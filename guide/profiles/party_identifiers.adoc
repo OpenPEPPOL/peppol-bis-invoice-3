@@ -1,0 +1,25 @@
+= Party Identifiers
+
+The “schemeID” attribute must be populated in all instances of the “ID” element when used within a
+“PartyIdentification”-container and in all instances of the “EndpointID” element when used within a “Party”-
+container.
+
+.Examples of usage in PartyIdentification
+[source, xml]
+----
+<cac:PartyIdentification>
+  <cbc:ID schemeID="GLN">5790000435968</cbc:ID>
+</cac:PartyIdentification>
+----
+
+The following examples denote that the Issuing Agency is DK:CVR in the PEPPOL set of Issuing Agency
+Codes. This means that the party has the Danish CVR identifier DK87654321.
+
+.Examples of usage in PartyIdentification and Endpoint ID
+[source, xml]
+----
+<cbc:EndpointID schemeID="DK:CVR">DK87654321</cbc:EndpointID>
+<cac:PartyIdentification>
+  <cbc:ID schemeID="DK:CVR">DK87654321</cbc:ID>
+</cac:PartyIdentification>
+----

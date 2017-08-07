@@ -1,0 +1,16 @@
+[[parties]]
+= Parties in the pre-award Catalogue
+
+In the pre-award catalogue you can provide information on the following parties:
+
+Catalogue provider:: The party that sends the catalogue. Information on catalogue provider is mandatory
+Receiver:: The party that receives the catalogue. Information on catalogue provider is mandatory
+Supplier:: The party that provides the items specified in the catalogue. Optional, normally only used if supplier is different from provider
+Customer:: The party that might order from the catalogue. Optional, normally only used if customer is different from receiver.
+
+
+.Example of provider party
+[source, xml]
+----
+include::../{shared-dir}/snippets/Snippet_68.xml[tags=provider]
+----

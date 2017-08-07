@@ -1,0 +1,12 @@
+[[rules]]
+= Business rules
+
+As previously stated, this {peppol} BIS is based on {EN16931}, and extended with specific requirements and rules found in the openPEPPOL community, and to ensure necessary information that is needed in the link:https://peppol.eu/downloads/?rel=tab87[PEPPOL Transport infrastructure]
+
+:leveloffset: +1
+
+include::tc434_rules.adoc[]
+
+include::peppol_rules.adoc[]
+
+:leveloffset: -1

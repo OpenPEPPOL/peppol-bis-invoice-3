@@ -1,0 +1,89 @@
+
+
+.Invoice verification requirements
+[cols="1,10", options="header"]
+|===
+|Id
+|Requirement
+
+|R5
+|information to trace to a single related purchase order from the document level (all processes, except P2 and P5);
+|R6
+|information to trace to a single related purchase order line from the invoice line (all processes, except P2 and P5);
+|R7
+|information to trace to a single contract and the underlying call for tenders from the document level (all processes, except P3 and P5);
+|R8
+|a reference supplied by the Buyer at document level (all processes);
+|R9
+|information to trace to a single despatch advice from the document level (processes P7 and P8);
+|R10
+|information to trace to a single receiving advice from the document level (process P8);
+|R11
+|information to trace to a related invoice to be corrected from the document level (process P10);
+|R12
+|reference to multiple part-invoices from a final invoice (process P12);
+|R13
+|information to allow an invoice and related documents to be transferred to a responsible authority, entity, person or department, for verification and approval (all processes);
+|R14
+|information about net price and the quantity on which the price is based at invoice line level, additional information such
+as gross price and price discount may be added (all processes);
+|R15
+|descriptive and coded information about allowances and charges at both document level and at invoice line level (all processes);
+|R16
+|information about charges, (non-VAT-)taxes, duties and levies, with their VAT information, that are not included in the line amounts at document level (all processes);
+|R17
+|information about charges, (non-VAT-)taxes, duties and levies that compose the taxable amount and are not included in the unit price at separate invoice lines, with a proper identification and/or description (all processes);
+|R18
+|information about charges at invoice line level as part of the line amount (all processes);
+|R19
+|the amounts of allowances and charges at document and invoice line level (all processes);
+|R20
+|textual descriptions of invoiced goods and services at invoice line level (all processes);
+|R21
+|identification of invoiced goods and services by means of a Seller's item number at invoice line level (all processes);
+|R22
+|identification of invoiced goods and services by means of a Buyer's item number at invoice line level (all processes);
+|R23
+|identification of invoiced goods and services by means of a qualified general item identifier at invoice line level as agreed by the Buyer and the Seller (all processes);
+|R24
+|classification of invoiced goods and services by means of applicable classification identifiers and schema reference as agreed between the Seller and the Buyer at invoice line level (all processes);
+|R25
+|information about returned and credited returnable assets or packages, such as pallets, and package charges, stated as normal invoice lines (all processes);
+|R26
+|information about returnable asset charges, stated as normal invoice lines (all processes);
+|R27
+|information about returned goods, stated as normal invoice lines (all processes);
+|R28
+|descriptive information about attributes of goods and services at invoice line level (all processes);
+|R29
+|information about the country of origin of goods and services at invoice line level (all processes);
+|R30
+|an invoice line period at invoice line level (process P2, P11);
+|R31
+|one delivery date at document level (all processes);
+|R32
+|one delivery location or address at document level (all processes);
+|R33
+|identification of the invoiced object at document and line level (process P2);
+|R34
+|a delivery/invoice period at document level (process P2, P11);
+|R35
+|attached documents of a limited set of file types (all processes);
+|R36
+|multiple attached or referenced documents at document level (all processes);
+|R37
+|a VAT category and rate at invoice line level (all processes);
+|R38
+|VAT totals per category at document level (all processes);
+|R39
+|a quantity and a net amount (exclusive of VAT) at invoice line level (all processes);
+|R40
+|all amounts at document and invoice line level that make up the invoice total amount and the amount due for payment (all processes);
+|R41
+|Reference to a sales order, issued by the Seller at document level (all processes);
+|R42
+|Allowance/charge percentage and base amount at document and invoice line level (all processes);
+|R44
+|Information to allow automated validation of a received electronic invoice (all processes).
+
+|===

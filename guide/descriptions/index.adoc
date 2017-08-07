@@ -1,0 +1,12 @@
+[[descriptions]]
+= Descriptions of selected parts of the transaction
+
+:leveloffset: +1
+
+
+include::parties.adoc[]
+include::label.adoc[]
+
+// include::items.adoc[]
+
+:leveloffset: -1

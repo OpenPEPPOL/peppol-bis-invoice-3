@@ -1,0 +1,5 @@
+[[tendering]]
+== Tendering
+The following BPMN diagram shows the choreography of the Advanced Tendering profile
+
+#Add text here#

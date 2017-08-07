@@ -1,0 +1,35 @@
+
+
+.payment requirements
+[cols="1,10", options="header"]
+|===
+|Id
+|Requirement
+
+|R58
+|identification of the means of settlement;
+|R59
+|the requested amount due for payment;
+|R60
+|the date on which payment is due;
+|R61
+|necessary details to support bank transfers in accordance with SEPA and national systems;
+|R62
+|a reference number and any additional reference data to be included in the payment;
+|R63
+|reference number and any additional reference data to be included in the payment, in order to relate the payment to the invoice;
+|R64
+|information for relating an invoice to a payment card used for settlement;
+|R65
+|basic information to support national payment systems for use in domestic trade;
+|R66
+|information about the amount that was pre-paid;
+|R67
+|invoices that have a total amount of zero;
+|R68
+|invoices that have an amount to pay of zero;
+|R69
+|necessary details to support direct debits.
+|R70
+|pre-payment invoices
+|===

@@ -1,0 +1,11 @@
+:lang: en
+
+:doctitle: image:peppol.png[float="right"] PEPPOL BIS Invoice and Credit Note
+:minor: 0.0
+:revision: 3.0.0
+:shared-dir: ../shared
+:rules-dir: /tmp/rules
+
+:name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
+
+include::links.adoc[]

@@ -1,0 +1,53 @@
+
+= Environment, Social Responsibility and Ecological
+
+Public actors will have requirements related to the environment, ecologically produced food and fair trade. They will also demand that basic human rights are respected in the product production and trade. To be able to highlight products that meet some of these criteria, the PEPPOL BIS pre-award catalogue contains elements to document Environmental labelling and Social certificates. The labels are connected to the relevant product or service on line level enabling the buyer to evaluate them in the tendering tool. Detailed information about the different labels can be found on the issuing party’s web-site which is referred to via an URI.
+
+In post-awards process, when the buyer use the search engines in their eProcurement system to purchase the products and services, the labels will be visible and the buyer has the possibility to choose products that is marked with a label. The post-award catalogue has the same structure so it´s important to reuse the information used in pre-award catalogue.
+Several labels can be connected to each product. As part of the identification the code list is provided so the service provider can define and implement the information in the system.
+
+The following are used: #Add uri to code list#
+
+Introducing these classification codes in pre-award catalogue will support the aim for sustainable procurement. The Procurement systems must collect the order lines with environmental and social labels and report them to the statistics tools available for the buyers. This will make it possible to measure the purchasing behaviour and monitor that the requirements from the tendering process are fulfilled.
+
+.Example of Classification codes
+[cols="^.^2a,8a", options="header"]
+|===
+<| Logo
+| Information
+
+| image:label-neo.png[Svanemerket]
+| *Svanemerket* +
+Classification Code (ID): NEO +
+Certificate TypeCode: EcoLabel (Environment)
+
+| image:label-fbl.png[Fairtrade]
+| *Fairtrade* +
+Classification Code (ID): FBL +
+Certificate TypeCode: SosialLabel (Social responsibility)
+
+| image:label-eop.png[EU organic products label]
+| *EU organic products label* +
+Classification Code (ID): EOP +
+Certificate TypeCode: OrganicLabel (Ecological)
+|===
+
+[source]
+.Example of labeling in an EHF Catalogue message
+----
+<cac:Certificate>
+  <cbc:ID>NEO</cbc:ID>
+  <cbc:CertificateTypeCode>EcoLabel</cbc:CertificateTypeCode>
+  <cbc:CertificateType>EcoLabel</cbc:CertificateType>
+  <cac:IssuerParty>
+    <cac:PartyName>
+      <cbc:Name>Svanemerket</cbc:Name>
+    </cac:PartyName>
+  </cac:IssuerParty>
+  <cac:DocumentReference>
+    <cbc:ID>http://www.svanemerket.no/</cbc:ID>
+  </cac:DocumentReference>
+</cac:Certificate>
+----
+
+CertificateTypeCode is not in use today, but can be used by the Purchasing systems to group the different labels.

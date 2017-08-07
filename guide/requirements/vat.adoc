@@ -1,0 +1,39 @@
+
+
+.VAT reporting requirements
+[cols="1,10", options="header"]
+|===
+|Id
+|Requirement
+
+|R45
+|information to determine the requirements of the applicable VAT legislation in force and the calculation and reporting thereof;
+|R46
+|information on the date the VAT is liable at document level;
+|R47
+|the necessary elements for national legal VAT requirements that apply for invoices issued to national and foreign Buyers, such as the legal registration status of the Seller;
+|R48
+a|information to support the following VAT use cases:
+
+*	Invoices for supplies for which VAT is charged;
+*	Invoices for supplies for which VAT is not charged based on an exemption reason;
+*	Invoices for supplies for which the Seller’s goods and services are exempt from VAT at line level;
+*	Invoices for supplies that are issued under reverse charge;
+*	Invoices for exempt intra-community supplies for which an intra-community acquisition must be done;
+*	Invoices for supplies outside the scope of the {VAT-dir} (non-VAT invoices);
+
+|R49
+|the total VAT amount at document level;
+|R50
+|total taxable amount per VAT rate at document level;
+|R51
+|any additional information required to support the exemption evidence in case VAT is not charged based on an exemption reason at document and at invoice line level;
+|R52
+|the legal registration number and the VAT registration number of the Seller and Buyer and the VAT registration number of the Tax representative of the Supplier;
+|R53
+|the official postal address of the Buyer, Seller and Tax representative of the Supplier and their place of business and registered office;
+|R54
+|the invoice currency and the VAT accounting currency at document level if different from the invoice currency;
+|R55
+|codes for exemption reasons at document and invoice line level.
+|===
