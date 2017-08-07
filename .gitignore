@@ -1,0 +1,7 @@
+*.iml
+*.jar
+target
+*.html
+*.pdf
+*.epub
+tmp*
