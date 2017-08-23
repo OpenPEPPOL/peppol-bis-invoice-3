@@ -2,7 +2,7 @@
 = Business Process in scope
 
 
-The electronic transaction message described in this implementation guide is the #Invoice and credit note# messages. The
+The electronic transaction message described in this implementation guide is the Invoice and credit note messages. The
 Creditor/Invoice Issuer sends the Invoice or Credit note message to the Debtor/Invoicee, indicating the products, quantities,
 and agreed prices for products and/or services the seller has provided the buyer.
 The BIS mandates no procurement related data but supports different ways of referring to the ordering process.
@@ -42,4 +42,4 @@ for verification and approval. For this purpose, an invoice/credit note should p
 * Buyer’s reference.
 * Receipts of products and/or services.
 * Identification of the responsible person or department.
-* #A credit note must refer to at least one initial invoice or credit note.#
+* A credit note must refer to at least one initial invoice or credit note.

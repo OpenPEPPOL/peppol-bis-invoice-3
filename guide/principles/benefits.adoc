@@ -1,7 +1,7 @@
 [[benefits]]
 = Benefits
 
-The #BIS 4a – Invoice# provides simple support for complex invoicing, where there is a need for credit note in addition
+The BIS 5a – Invoice and Credit note provides simple support for complex invoicing, where there is a need for credit note in addition
 to an invoice. Other potential benefits of using this BIS are, among others:
 
 * Can be mandated as a basis for national or regional eInvoicing initiatives.
