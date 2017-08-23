@@ -12,7 +12,7 @@ v{revision}
 :source-language: xml
 :sectanchors:
 :sectnums:
-:imagesdir: ../shared/images
+:imagesdir: images
 :title-logo-image: {imagesdir}/peppol.png
 
 {description}
