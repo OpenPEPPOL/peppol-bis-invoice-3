@@ -13,7 +13,7 @@ v{revision}
 :sectanchors:
 :sectnums:
 :imagesdir: images
-:title-logo-image: {imagesdir}/peppol.png
+:title-logo-image: {imagesdir}/peppol.jpg
 
 {description}
 // include::{shared-dir}/copyright.adoc[]
