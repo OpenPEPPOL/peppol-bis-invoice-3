@@ -32,6 +32,6 @@ include::rules/index.adoc[]
 
 include::codes/index.adoc[]
 
-// include::descriptions/index.adoc[]
+include::descriptions/index.adoc[]
 
 // include::profiles/index.adoc[]

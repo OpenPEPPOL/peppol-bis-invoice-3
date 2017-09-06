@@ -4,9 +4,9 @@
 :leveloffset: +1
 
 
-include::parties.adoc[]
-include::label.adoc[]
+include::roles-and-actor.adoc[]
 
-// include::items.adoc[]
+
+
 
 :leveloffset: -1
