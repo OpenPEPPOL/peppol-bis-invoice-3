@@ -6,8 +6,6 @@
 
 [cols="1,4"]
 |===
-h| Qualifier
-| `UNCL1001` (listID)
 h| Document location
 | `cbc:InvoiceTypeCode` +
 `cbc:CreditNoteTypeCode`
@@ -20,8 +18,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cbc:*/@currencyID`
 h| Source codelist
@@ -32,8 +28,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cbc:DocumentCurrencyCode` +
 `cbc:TaxCurrencyCode`
@@ -45,8 +39,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cac:InvoicePeriod/cbc:DescriptionCode`
 h| Source codelist
@@ -74,8 +66,6 @@ h| Source codelist
 == Invoice note subject code
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cbc:Note`
 h| Source codelist
@@ -86,8 +76,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| `ISO3166-1:Alpha2` (listID)
 h| Document location
 | `cac:CountryCode/cbc:IdentificationCode` +
 `cac:OriginCountry/cbc:IdentificationCode` +
@@ -99,8 +87,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cac:PaymentMeans/cbc:PaymentMeansCode`
 h| Source codelist
@@ -111,8 +97,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| UNCL5305 (schemeID)
 h| Document location
 | `cac:ClassifiedTaxCategory/cbc:ID` +
 `cac:TaxCategory/cbc:ID`
@@ -158,8 +142,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=false]`
 h| Source codelist
@@ -172,8 +154,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=true]`
 h| Source codelist
@@ -185,8 +165,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cbc:TaxExemptionReasonCode`
 h| Source codelist
@@ -198,8 +176,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cbc:EmbeddedDocumentBinaryObject/@mimeCode`
 h| Source codelist
@@ -210,16 +186,14 @@ h| Source codelist
 [cols="1,4"]
 .Code list
 |===
-.1+h| Structured content
-| #application/xml#
 
 .1+h| Documents
 | application/pdf
 
-.3+h| Images
+.2+h| Images
 | image/png
 | image/jpeg
-| #image/tiff#
+
 
 .1+h| Text
 | text/csv
@@ -234,8 +208,6 @@ h| Source codelist
 
 [cols="1,4"]
 |===
-h| Qualifier
-| _None_
 h| Document location
 | `cbc:*/@unitCode`
 h| Source codelist
