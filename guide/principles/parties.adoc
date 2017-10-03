@@ -1,12 +1,12 @@
 [[roles]]
 = Parties and roles
 
+image::{imagesdir}/functionality-and-roles.png[Functionality and roles, align="center"]
 
 == Parties
 
 Customer::
-The customer is the legal person or organization who is in demand of a product or
-service. Examples of customer roles: buyer, consignee, debtor, contracting authority.
+The customer is the legal person or organization who is in demand of a product or service. Examples of customer roles: buyer, consignee, debtor, contracting authority.
 
 Supplier::
 The supplier is the legal person or organization who provides a product or service.
@@ -14,9 +14,7 @@ The supplier is the legal person or organization who provides a product or servi
 == Roles
 
 Creditor::
-One to whom a debt is owe. The Party that claims the payment and is responsible
-for resolving billing issues and arranging settlement. The Party that sends the Invoice or Credit note. Also known as Invoice Issuer, Accounts Receivable or Seller.
+One to whom a debt is owe. The Party that claims the payment and is responsible for resolving billing issues and arranging settlement. The party that sends the invoice or credit note. Also known as invoice issuer, accounts receivable or seller.
 
 Debtor::
-One who owes debt. The Party responsible for making settlement relating to a
-purchase. The Party that receives the Invoice or Credit note. Also known as Invoicee, Accounts Payable, or Buyer.
+One who owes debt. The Party responsible for making settlement relating to a purchase. The Party that receives the invoice or credit note. Also known as invoicee, accounts payable, or buyer.

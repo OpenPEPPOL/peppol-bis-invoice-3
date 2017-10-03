@@ -11,7 +11,10 @@ Buyer is mandatory information.
 Payment receiver (PayeeParty)::
 Payment receiver is optional information. If this information is not supplied, the seller is the payment receiver.
 
-[source,xml]
+Sellers Tax Representative (TaxRepresentativePary)::
+Tax representative party for the seller is relevant for sellers delivering goods and services in a country without having a permanent establishment in that country. In such cases information on the tax representative must be included in the invoice.
+
+[source, xml]
 .Example: Supplying seller information on the header level.
 ----
 <cac:AccountingSupplierParty>
@@ -38,8 +41,9 @@ Payment receiver is optional information. If this information is not supplied, t
     </cac:Party>
 </cac:AccountingSupplierParty>
 ----
- 
-[source,xml]
+
+
+[source, xml]
 .Example: Supplying buyer information on the header level
 ----
 <cac:AccountingCustomerParty>

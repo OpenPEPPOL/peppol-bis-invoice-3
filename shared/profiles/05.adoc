@@ -1,0 +1,18 @@
+
+== Profile 05 - Invoice and Credit note
+
+ProfileID::
+#Add correct profileID#
+
+CustomizationID::
+#Add correct CustomizationID#
+
+The profile ID found in the element `cbc:ProfileID` and the customization ID in element `cbc:CustomizationID`
+
+#example to be corrected#
+[source, xml]
+.Examples of ProfileID and CustomizationID
+----
+<cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
+<cbc:ProfileID>Invoicing on purchase order</cbc:ProfileID>
+----

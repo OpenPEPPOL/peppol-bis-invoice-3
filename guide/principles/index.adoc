@@ -4,8 +4,7 @@
 This chapter describes the principles and assumptions that underlie the use of PEPPOL Invoice and Credit Note. It is
 based on {EN16931} and its corresponding set of documents.
 
-This BIS will identify, explain and justify the business requirements for the Invoice and Credit Note. It
-provides syntax bindings to OASIS UBL 2.1. It also includes a syntax implementation guide.
+This BIS will identify, explain and justify the restrictions made for this {CIUS}.
 
 
 :leveloffset: +1

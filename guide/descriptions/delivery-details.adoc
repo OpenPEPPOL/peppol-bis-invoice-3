@@ -1,0 +1,33 @@
+= Delivery Details (Date and Location)
+
+Delivery details may be given at document level.
+
+Place and date of delivery is recommended, and should be sent unless this does not affect the ability to ensure the correctness of the invoice.
+
+The delivery element contains information on name, address and delivery location identifier (`cac:Delivery/cac:DeliveryLocation/cbc:ID`) which may be used if the place of delivery is  defined through an identifier.  Examples are GLN (Global Location Number) or GSRN (Global Service Relationship Number) both issued by GS1.  
+
+[source,xml]
+.Example
+----
+<cac:Delivery>
+    <cbc:ActualDeliveryDate>2017-08-15</cbc:ActualDeliveryDate>
+    <cac:DeliveryLocation>
+        <cbc:ID>5790000436068</cbc:ID>
+        <cac:Address>
+            <cbc:StreetName>Deliverystreet</cbc:StreetName>
+            <cbc:AdditionalStreetName>Gate 15</cbc:AdditionalStreetName>
+            <cbc:CityName>Deliverycity</cbc:CityName>
+            <cbc:PostalZone>9000</cbc:PostalZone>
+            <cbc:CountrySubentity>Jutland</cbc:CountrySubentity>
+            <cac:Country>
+                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:Address>
+    </cac:DeliveryLocation>
+    <cac:DeliveryParty>
+        <cac:PartyName>
+            <cbc:Name>Logistic service Ltd</cbc:Name>
+        </cac:PartyName>
+    </cac:DeliveryParty>
+</cac:Delivery>
+----

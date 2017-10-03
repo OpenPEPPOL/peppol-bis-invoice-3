@@ -5,6 +5,7 @@
 
 
 include::roles-and-actor.adoc[]
+include::delivery-details.adoc[]
 
 
 

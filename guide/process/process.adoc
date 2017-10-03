@@ -1,11 +1,18 @@
 [[process]]
-= Business processes
+= The Invoicing Process
 
-The PEPPOL BIS pre-award catalogue is most normally used in
+#Need to add explanation for different processes, depending on which to support. Corrective invoice, factoring etc#
 
-* Advanced Tendering profile ({bii3} Profile 35)
-* Tendering ({bii3} Profile 54)
+The invoicing process  includes issuing and sending the Invoice and the Credit note from the Supplier to the Customer and the reception  and handling of the same at the customer’s site.
 
-The pre-award catalogue transaction can also be used in other choreographies as qualification, DPS, mini competition and re-opening of competition (post-award phase).
+The invoicing process is shown in this work flow:
+1. A Supplier issues and sends an Invoice to a Customer. The invoice refers to one order and a specification of delivered goods and services.
+An invoice may also refer to a contract or a frame agreement. The invoice may specify articles (goods and services) with article number or article description.
+1. The Customer receives the invoice and processes it in the invoice control system leading to one of the following results:
+  1. The Customer fully approves the invoice, posts it in the accounting system and passes it on to be paid.
+  1. The Customer completely rejects the invoice, contacts the Supplier and requests a Credit note.
+  1. The Customer disputes parts of the invoice, contacts the Supplier and requests a Credit note and a new Invoice.
 
-The use of the pre-award catalogue in these other choreographies are not explained in detail in this document.
+The diagram below shows the invoicing process with the use of PEPPOL BIS 5a - Invoice and Credit note. This process assumes that both the invoice and the credit note are exchanged electronically.
+
+// image::images/invoicing-process.png[The invoicing process, align="center"]

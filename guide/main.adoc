@@ -12,6 +12,7 @@ v{revision}
 :source-language: xml
 :sectanchors:
 :sectnums:
+:CIUS: Core Invoice Usage Specification (CIUS)
 :imagesdir: images
 :title-logo-image: {imagesdir}/peppol.jpg
 
@@ -24,14 +25,10 @@ include::introduction.adoc[]
 
 include::principles/index.adoc[]
 
-// include::process/index.adoc[]
-
-include::requirements/index.adoc[]
+include::restrictions/index.adoc[]
 
 include::rules/index.adoc[]
 
-include::codes/index.adoc[]
+include::profiles/index.adoc[]
 
-include::descriptions/index.adoc[]
-
-// include::profiles/index.adoc[]
+include::implementation/index.adoc[]
