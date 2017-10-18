@@ -26,36 +26,6 @@ h| Source codelist
 | 381
 | Credit note:: Document/message for providing credit information to the relevant party.
 
-| 384
-| Corrected invoice:: Commercial invoice that includes revised information differing from an earlier submission of the same invoice.
-
-| 393
-| Factored invoice:: Invoice assigned to a third party for collection.
-
-| 396
-| Factored credit note:: Credit note related to assigned invoice(s).
-
-| 82
-| Metered services invoice:: Document/message claiming payment for the supply of metered services (e.g., gas, electricity, etc.) supplied to a fixed meter whose consumption is measured over a period of time.
-
-| 83
-| Credit note related to financial adjustments:: Document message for providing credit information related to financial adjustments to the relevant party, e.g., bonuses.
-
-| 395
-| Consignment invoice:: Commercial invoice that covers a transaction other than one involving a sale.
-
-| 532
-| Forwarder’s credit note:: Document/message for providing credit information to the relevant party.
-
-| 575
-| Insurer's invoice:: Document/message issued by an insurer specifying the cost of an insurance which has been effected and claiming payment therefore.
-
-| 623
-| Forwarder's invoice:: Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore.
-
-| 780
-| Freight invoice:: Document/message issued by a transport operation specifying freight costs and charges incurred for a transport operation and stating conditions of payment.
-
 |===
 
 
