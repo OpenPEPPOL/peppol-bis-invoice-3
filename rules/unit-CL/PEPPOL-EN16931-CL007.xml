@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
+	<assert>
+    <description>Correct use of invoice type code.</description>
+		<scope>PEPPOL-EN16931-CL007</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-CL007</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error number="2">PEPPOL-EN16931-CL007</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:InvoiceTypeCode>381</cbc:InvoiceTypeCode>
+			<cbc:InvoiceTypeCode>393</cbc:InvoiceTypeCode>
+
+		</Invoice>
+	</test>
+</testSet>

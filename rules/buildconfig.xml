@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
+
+  <testfolder>unit-CL</testfolder>
+
+  <configuration>
+    <identifier>peppolbis-en16931-base-3.0</identifier>
+    <title>PEPPOL BIS Billing 3.0 (Base)</title>
+    <file source="sch/PEPPOL-EN16931-UBL.sch" path="xsl/PEPPOL-EN16931-UBL.xsl"/>
+  </configuration>
+
+</buildConfigurations>
