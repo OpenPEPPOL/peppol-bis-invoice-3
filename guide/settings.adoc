@@ -1,6 +1,6 @@
 :lang: en
 
-:doctitle: image:peppol.jpg[float="right", width=100%] PEPPOL BIS Invoice and Credit Note
+:doctitle: image:images/peppol.jpg[float="right", width=100%] PEPPOL BIS Invoice and Credit Note
 :minor: 0.0
 :revision: 3.0.0
 :shared-dir: ../../shared

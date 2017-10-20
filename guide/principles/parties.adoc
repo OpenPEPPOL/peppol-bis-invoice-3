@@ -1,7 +1,7 @@
 [[roles]]
 = Parties and roles
 
-image::../images/functionality-and-roles.png[Functionality and roles, align="center"]
+image::images/functionality-and-roles.png[Functionality and roles, align="center"]
 
 == Parties
 
