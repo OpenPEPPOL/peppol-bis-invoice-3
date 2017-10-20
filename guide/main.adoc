@@ -13,8 +13,7 @@ v{revision}
 :sectanchors:
 :sectnums:
 :CIUS: Core Invoice Usage Specification (CIUS)
-:imagesdir: images
-:title-logo-image: {imagesdir}/peppol.jpg
+:title-logo-image: ../images/peppol.jpg
 
 {description}
 // include::{shared-dir}/copyright.adoc[]

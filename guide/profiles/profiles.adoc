@@ -1,5 +1,5 @@
 
 // :leveloffset: +1
 
-include::../{shared-dir}/profiles/info.adoc[]
-include::../{shared-dir}/profiles/05.adoc[]
+include::{shared-dir}/profiles/info.adoc[]
+include::{shared-dir}/profiles/05.adoc[]

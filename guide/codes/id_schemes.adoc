@@ -4,7 +4,7 @@
 
 .Code lists used to constrain values of schemeIDs for identifiers
 [cols="2,3,3", options="header"]
-|====
+|===
 |Business Term
 |Applicable XPath
 |Code list (link or subset values)
@@ -13,4 +13,4 @@
 | cbc:EndpointID/@schemeID
 a| {policy8}
  #Code list issued and maintained by CEF??#
-|====
+|===
