@@ -76,16 +76,6 @@ h| Source codelist
 |===
 
 
-
-== Invoice note subject code
-[cols="1,4"]
-|===
-h| Document location
-| `cbc:Note`
-h| Source codelist
-| link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4451.htm[UN/CEFACT code list 4451, D.16B]
-|===
-
 == Country code
 
 [cols="1,4"]
