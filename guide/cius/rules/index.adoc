@@ -1,7 +1,7 @@
 [[rules]]
 = Business rules
 
-As previously stated, this {peppol} BIS is a {CIUS} that is restricting the {EN16931}, with specific requirements and rules found in the openPEPPOL community, and to ensure necessary information that is needed in the link:https://peppol.eu/downloads/?rel=tab87[PEPPOL Transport infrastructure].
+As previously stated, this {peppol} BIS is a {CIUS} that is restricting the {EN16931}, with specific requirements and rules found in the openPEPPOL community, to ensure necessary information that is needed in the link:https://peppol.eu/downloads/?rel=tab87[PEPPOL Transport infrastructure].
 
 :leveloffset: +1
 
