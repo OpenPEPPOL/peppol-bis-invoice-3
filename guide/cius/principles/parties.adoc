@@ -6,10 +6,10 @@ image::images/functionality-and-roles.png[Functionality and roles, align="center
 == Parties
 
 Customer::
-The customer is the legal person or organization who is in demand of a product or service. Examples of customer roles: buyer, consignee, debtor, contracting authority.
+The customer is the legal person or organisation who is in demand of a product or service. Examples of customer roles: buyer, consignee, debtor, contracting authority.
 
 Supplier::
-The supplier is the legal person or organization who provides a product or service.
+The supplier is the legal person or organisation who provides a product or service.
 
 == Roles
 

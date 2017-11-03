@@ -1,8 +1,8 @@
 [[scope]]
 = Business Process in scope
 
-The electronic transactions described in this implementation guide are the Invoice and Credit Note. The Creditor/Invoice issuer sends the invoice or credit note to the Debtor/Invoicee, indicating the products, quantities, and agreed prices for products and/or services the seller has provided the buyer.
-The Invoice and Credit Note mandates no procurement related data but supports different ways of referring to the ordering process. By selective use of such references, they can be a basis for automated processing of invoices and credit notes.
+The electronic transactions described in this implementation guide are the invoice and credit note. The Creditor/Invoice issuer sends the invoice or credit note to the Debtor/Invoicee, indicating the products, quantities, and agreed prices for products and/or services the seller has provided the buyer.
+The invoice and credit note mandates no procurement related data but supports different ways of referring to the ordering process. By selective use of such references, they can be a basis for automated processing of invoices and credit notes.
 
 
 Accounting::

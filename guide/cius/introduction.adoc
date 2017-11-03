@@ -10,7 +10,7 @@ regarding the billing process based on these formats.
 
 == Audience
 
-The audience for this document is organizations wishing to be PEPPOL enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organizations may be:
+The audience for this document is organisations wishing to be PEPPOL enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
 
      * Service providers
      * Contracting Authorities (CA)
