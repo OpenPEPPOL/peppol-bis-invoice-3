@@ -1,0 +1,22 @@
+
+
+= Introduction
+
+The migration is conducted in three steps at three different points in time,  marked as “A”, “B” and “C” and defined as follows:
+
+
+A – Phase in:: date at which the updated BIS is introduced as an optional element. At this date it should be able to download any specification for the updated PEPPOL BIS. The updated BIS is optional at this point in time.
+
+B – Transition:: the date at which the updated BIS replaces the
+current BIS as the mandatory element. The previously mandatory BIS becomes optional.
+
+C – Phase out:: the date after which the BIS that was mandatory at “A”, and became optional at “B”, is no longer supported in the PEPPOL network
+
+****
+[NOTE]
+====
+* The migration rules only apply to an *end user’s* individual PEPPOL BIS  registered in the SMP.
+* The migration rules only applies for an updated PEPPOL BIS, i.e. when an existing  and current PEPPOL BIS version exists.
+* All PEPPOL participants need to adhere to the Migration Policy.
+====
+****

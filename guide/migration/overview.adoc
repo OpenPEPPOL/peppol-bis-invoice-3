@@ -1,0 +1,36 @@
+
+= Overview
+
+This section describes how and when updated PEPPOL Business Interoperability Specifications (BIS) will be available for use.
+
+
+.Migration overview
+[cols="^3h,^3,^3,^3"]
+|====
+
+.2+<.>|Subject to migration
+h|A - Phase in
+h|B - Transition
+h|C - Phase out
+
+
+h| 2018-01-01
+h| 2018-07-01
+h| To be decided
+
+| PEPPOL BIS Billing 5a, version 2
+| Mandatory
+| Optional
+| Discontinued
+
+| PEPPOL BIS Invoice 4a, version 2
+| Mandatory
+| Optional
+| Discontinued
+
+| PEPPOL BIS Billing 5a, version 3
+| Optional
+| Mandatory
+| Mandatory
+
+|====

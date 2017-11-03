@@ -1,0 +1,16 @@
+
+= Detailed description
+
+
+A - Phase In::
+* “Phase in” is defined as the start date for the optional use of PEPPOL BIS Billing “version 3”  corresponding to the publication date when the new PEPPOL BIS specifications become  available for download at www.peppol.eu.
+* The date is set to *1st of January 2018*
+
+B - Transition::
+* The Transition is defined as the period during which the current PEPPOL BIS 4a and 5a (version 2)  changes status from mandatory to Optional.
+* The new PEPPOL BIS, version 3, becomes  mandatory.
+* The start date for the transition period is set to *1st of July 2018*
+
+c - Phase­out::
+* After the phase‐out, the old PEPPOL BIS 4a and 5a (version 2) are not available and the document id’s are removed from the Policy for Identifiers document.
+* No date has yet been defined for the phase‐out of PEPPOL BIS 4a and 5a (version 2).

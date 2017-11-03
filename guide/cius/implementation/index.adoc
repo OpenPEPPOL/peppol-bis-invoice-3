@@ -8,5 +8,5 @@ To implement this BIS as a {CIUS}, the implementer must use the published standa
 Specific attention is drawn to the following documents:
 
 * Electronic invoicing - Part 1: Semantic data model of the core elements of an electronic invoice, {EN16931}
-* Electronic invoicing - Part 3-2: Syntax binding for ISO/IEC 19845 (UBL 2.1), #not yet published, add link#
-* Electronic invoicing - Part 3-3: Syntax binding for UN/CEFACT XML Industry Invoice D16B, , #not yet published, add link#
+* Electronic invoicing - Part 3-2: Syntax binding for ISO/IEC 19845 (UBL 2.1), {ubl-binding}
+* Electronic invoicing - Part 3-3: Syntax binding for UN/CEFACT XML Industry Invoice D16B, {cii-binding}

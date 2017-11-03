@@ -1,0 +1,25 @@
+include::../links.adoc[]
+
+= Migration plan
+Draft, OpenPEPPOL AISBL, Post-Award Coordinating Community
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+:CIUS: Core Invoice Usage Specification (CIUS)
+:title-logo-image: ../images/peppol.jpg
+
+
+This document is a suggested draft for the migration plan for the transition event from the current versions of PEPPOL BIS Billing (BIS 5a, version 2) to the updated PEPPOL BIS Billing (BIS 5a, version 3), as well as the phase out of PEPPOL BIS Invoice (BIS4a, version 2). This plan is based on the {migration-policy}.
+
+
+:leveloffset: +1
+
+include::introduction.adoc[]
+include::overview.adoc[]
+include::details.adoc[]
+include::rules.adoc[]
