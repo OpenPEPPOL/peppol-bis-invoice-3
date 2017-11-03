@@ -7,8 +7,7 @@
 [cols="1,4"]
 |===
 h| Document location
-| `cbc:InvoiceTypeCode` +
-`cbc:CreditNoteTypeCode`
+| `cbc:InvoiceTypeCode`
 h| Source codelist
 |
  link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1001.htm[UN/CEFACT code list 1001, D.16B]
@@ -22,6 +21,25 @@ h| Source codelist
 
 | 380
 | Commercial invoice:: Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.
+
+|===
+
+== Credit note Type Code
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:CreditNoteTypeCode`
+h| Source codelist
+|
+ link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1001.htm[UN/CEFACT code list 1001, D.16B]
+|===
+
+[cols="1h,4a", options="header"]
+.Code list
+|===
+| Code
+| Name/Description
 
 | 381
 | Credit note:: Document/message for providing credit information to the relevant party.
