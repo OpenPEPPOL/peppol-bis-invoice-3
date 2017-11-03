@@ -1,7 +1,7 @@
 [[scope]]
 = Business Process in scope
 
-The electronic transactions described in this implementation guide are the invoice and credit note. The Creditor/Invoice issuer sends the invoice or credit note to the Debtor/Invoicee, indicating the products, quantities, and agreed prices for products and/or services the seller has provided the buyer.
+The electronic transactions described in this implementation guide are the invoice and credit note. The creditor/invoice issuer sends the invoice or credit note to the debtor/invoicee, indicating the products, quantities, and agreed prices for products and/or services the seller has provided the buyer.
 The invoice and credit note mandates no procurement related data but supports different ways of referring to the ordering process. By selective use of such references, they can be a basis for automated processing of invoices and credit notes.
 
 
@@ -14,15 +14,14 @@ Invoices/credit notes support the auditing process by providing sufficient infor
 * Identification of the product and/or services traded, including description, value and quantity.
 * Information for connecting the invoice/credit note to its settlement.
 * Information for connecting the invoice/credit note to relevant documents such as contracts and orders.
-* For Credit notes, identification of the initial invoice(s) and description of the nature and value of the corrections.
+* For credit notes, identification of the initial invoice(s) and description of the nature and value of the corrections.
 
 VAT reporting::
 Invoices/credit notes should provide support for the determination of the VAT regime and the calculation
-and reporting thereof and should provide necessary elements for national legal VAT requirements that apply for invoices/credit notes issued to national and foreign buyers.
+and reporting thereof, and should provide necessary elements for national legal VAT requirements that apply for invoices/credit notes issued to national and foreign buyers.
 
 Payment::
-The invoice/credit note should identify the means of settlement,
-and clearly state the requested payment.
+The invoice/credit note should identify the means of settlement, and clearly state the requested payment.
 
 Verification::
 Support for invoice/credit note verification is a key function of an invoice/credit note. An invoice/credit note should provide sufficient information for looking up relevant existing documentation, and should contain information that allows the transfer of the received invoice/credit note to a responsible person or department for verification and approval. For this purpose, an invoice/credit note should provide the following information:
@@ -32,4 +31,3 @@ Support for invoice/credit note verification is a key function of an invoice/cre
 * Buyer’s reference
 * Receipts of products and/or services
 * Identification of the responsible person or department
-* A credit note must refer to at least one initial invoice or credit note
