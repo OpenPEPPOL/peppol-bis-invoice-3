@@ -1,4 +1,4 @@
-include::../links.adoc[]
+include::../cius/links.adoc[]
 
 = Migration plan
 Draft, OpenPEPPOL AISBL, Post-Award Coordinating Community
