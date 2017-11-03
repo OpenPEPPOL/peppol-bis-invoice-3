@@ -11,6 +11,10 @@
 
 | Electronic address identifiers (Endpoint)
 | cbc:EndpointID/@schemeID
-a| {policy8}
+a| {policy8} +
  #Code list issued and maintained by CEF??#
+
+ | Invoiced object identifier
+ | cac:AdditionalDocumentReference[cbc:DocumentTypeCode = '130']/cbc:ID/@schemeID
+ a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
 |===
