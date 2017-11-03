@@ -161,7 +161,7 @@ h| Source codelist
 h| Document location
 | `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=true]`
 h| Source codelist
-| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5189.htm[UN/CEFACT code list 5189, D.16B]
+| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm[UN/CEFACT code list 7161, D.16B]
 |===
 
 
