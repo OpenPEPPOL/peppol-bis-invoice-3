@@ -14,9 +14,9 @@ h|B - Transition
 h|C - Phase out
 
 
-h| 2018-01-01
-h| 2018-07-01
-h| To be decided
+h| {phase-in}
+h| {transition}
+h| {phase-out}
 
 | PEPPOL BIS Billing 5a, version 2
 | Mandatory
@@ -28,7 +28,7 @@ h| To be decided
 | Optional
 | Discontinued
 
-| PEPPOL BIS Billing 5a, version 3
+| PEPPOL BIS Billing, version 3
 | Optional
 | Mandatory
 | Mandatory
