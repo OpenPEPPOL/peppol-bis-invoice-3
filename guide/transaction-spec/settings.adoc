@@ -1,6 +1,6 @@
 :lang: en
 
-:doctitle: PEPPOL Transaction specification for Invoice and Credit Note
+:doctitle: PEPPOL Implementation guide for Invoice and Credit Note
 :minor: 0.0
 :revision: 3.0.0
 :shared-dir: ../../shared
