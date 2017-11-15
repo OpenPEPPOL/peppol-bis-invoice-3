@@ -1,0 +1,20 @@
+
+[[id_schemes]]
+= Code lists for identifier schemes
+
+.Code lists used to constrain values of schemeIDs for identifiers
+[cols="2,3,3", options="header"]
+|===
+|Business Term
+|Applicable XPath
+|Code list (link or subset values)
+
+| Electronic address identifiers (Endpoint)
+| cbc:EndpointID/@schemeID
+a| {policy8} +
+ #Code list issued and maintained by CEF??#
+
+ | Invoiced object identifier
+ | cac:AdditionalDocumentReference[cbc:DocumentTypeCode = '130']/cbc:ID/@schemeID
+ a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
+|===

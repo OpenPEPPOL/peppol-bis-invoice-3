@@ -1,0 +1,13 @@
+[[benefits]]
+= Benefits
+
+The invoice and credit note provides simple support for complex invoicing, where there is a need for credit note in addition
+to an invoice. Other potential benefits are, among others:
+
+* Can be mandated as a basis for national or regional eInvoicing initiatives.
+* Procurement agencies can use them as basis for moving all invoices into electronic form. The flexibility of the specifications allows the buyers to automate processing of invoices gradually, based on different sets of identifiers or references, based on a cost/benefit approach.
+* SME can offer their trading partners the option of exchanging standardised documents in a uniform way and thereby move all invoices/credit notes into electronic form.
+* Large companies can implement these transactions as standardised documents for general operations and implement custom designed bi-lateral connections for large trading partners.
+* Supports customers with need for more complex interactions.
+* Can be used as basis for restructuring of in-house processes of invoices.
+* Significant saving can be realised by the procuring agency by automating and streamlining in-house processing. The accounting can be automated significantly, approval processes simplified and streamlined, payment scheduled timely and auditing automated.

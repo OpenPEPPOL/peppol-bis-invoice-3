@@ -1,0 +1,22 @@
+//links used in the BIS document
+
+//PEPPOL
+:peppol: https://peppol.eu/?rel=undefined[PEPPOL]
+:common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
+:openpeppol: https://peppol.eu/about-openpeppol/?rel=tab41[OpenPEPPOL]
+:policy8: https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for identifiers, policy 8]
+:migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy]
+
+
+//CEN
+:CEN: https://www.cen.eu/Pages/default.aspx[CEN]
+
+//CEN TC434
+:tc434: https://standards.cen.eu/dyn/www/f?p=204:7:0::::FSP_ORG_ID:1883209&cs=1E81C9C833655EEDC7010C8D0A2FB786C[CEN TC434]
+:EN16931: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:60602&cs=1B61B766636F9FB34B7DBD72CE9026C72[EN 16931-1-2017]
+:ubl-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63740&cs=141ABC6EDBD750DFA4EC61F187628828F
+:cii-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63741&cs=1FA9686BFF2EEFD10B83676518F8C1AFE
+:TC434-docs: https://standards.cen.eu/dyn/www/f?p=204:32:0::::FSP_ORG_ID:1883209&cs=1E81C9C833655EEDC7010C8D0A2FB786C
+
+//Eu directives
+:VAT-dir: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:l31057[Directive 2006/112/EC]

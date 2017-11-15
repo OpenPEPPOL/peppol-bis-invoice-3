@@ -1,0 +1,135 @@
+
+= Allowed invoice types according to TC434 validation rules
+
+[cols="1s,5a,3", options="header"]
+|===
+
+|Invoice type code
+| Name/description
+| Assessment
+
+|80
+|Debit note related to goods or services:: Debit information related to a transaction for goods or services to the relevant party.
+| Not listed by pre study group
+
+|82
+|Metered services invoice:: Document/message claiming payment for the supply of metered services (e.g., gas, electricity, etc.) supplied to a fixed meter whose consumption is measured over a period of time.
+|Industry specific, use 380
+
+|84
+|Debit note related to financial adjustments:: Document/message for providing debit information related to financial adjustments to the relevant party.
+| Not listed by pre study group
+
+|130
+|Invoicing data sheet:: Document/message issued within an enterprise containing data about goods sold, to be used as the basis for the preparation of an invoice.
+| Not listed by pre study group
+
+|202
+|Direct payment valuation:: Document/message addressed, for instance, by a general contractor to the owner, in order that a direct payment be made to a subcontractor.
+| Not listed by pre study group
+
+|203
+|Provisional payment valuation:: Document/message establishing a provisional payment valuation.
+| Not listed by pre study group
+
+|204
+|Payment valuation:: Document/message establishing the financial elements of a situation of works.
+| Not listed by pre study group
+
+|211
+|Interim application for payment:: Document/message containing a provisional assessment in support of a request for payment for completed work for a construction contract.
+| Not listed by pre study group
+
+|325
+|Proforma invoice:: Document/message serving as a preliminary invoice, containing - on the whole - the same information as the final invoice, but not actually claiming payment.
+| Exclude
+
+|326
+|Partial invoice:: Document/message specifying details of an incomplete invoice.
+|Avoid
+
+|380
+|Commercial invoice:: Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.
+|Include
+
+|383
+|Debit note:: Document/message for providing debit information to the relevant party.
+| Not listed by pre study group
+
+|385
+|Consolidated invoice:: Commercial invoice that covers multiple transactions involving more than one vendor.
+| Exclude
+
+|386
+|Prepayment invoice:: An invoice to pay amounts for goods and services in advance; these amounts will be subtracted from the final invoice.
+| Require clarification
+
+|387
+|Hire invoice:: Document/message for invoicing the hiring of human resources or renting goods or equipment.
+|Separate profile
+
+|388
+|Tax invoice:: An invoice for tax purposes.
+|Separate profile
+
+|389
+|Self-billed invoice:: An invoice the invoicee is producing instead of the seller.
+|Separate profile
+
+|390
+|Delcredere invoice:: An invoice sent to the party paying for a number of buyers.
+|Exclude
+
+|393
+|Factored invoice:: Invoice assigned to a third party for collection.
+|Require clarification
+
+|394
+|Lease invoice:: Usage of INVOIC-message for goods in leasing contracts.
+|Exclude
+
+|395
+|Consignment invoice:: Commercial invoice that covers a transaction other than one involving a sale.
+| Industry specific, use 380
+
+|456
+|Debit advice:: Advice on a debit.
+|Not listed by pre study group
+
+|457
+|Reversal of debit:: Reversal of debit accounting entry by bank.
+|Not listed by pre study group
+
+|458
+|Reversal of credit:: Reversal of credit accounting entry by bank.
+| Not listed by pre study group
+
+|527
+|Self billed debit note:: A document which indicates that the customer is claiming debit in a self billing environment.
+| Not listed by pre study group
+
+|575
+|Insurer's invoice:: Document/message issued by an insurer specifying the cost of an insurance which has been effected and claiming payment therefore.
+| Industry specific, use 380
+
+|623
+|Forwarder's invoice:: Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore.
+| Industry specific, use 380
+
+|633
+|Port charges documents:: Documents/messages specifying services rendered, storage and handling costs, demurrage and other charges due to the owner of goods described therein.
+| Not listed by pre study group
+
+|751
+|Invoice information for accounting purposes:: A document / message containing accounting related information such as monetary summations, seller id and VAT information. This may not be a complete invoice according to legal requirements. For instance the line item information might be excluded.
+|Exclude
+
+|780
+|Freight invoice:: Document/message issued by a transport operation specifying freight costs and charges incurred for a transport operation and stating conditions of payment
+| Industry specific, use 380
+
+|935
+|Customs invoice:: Document/message required by the Customs in an importing country in which an exporter states the invoice or other price (e.g. selling price, price of identical goods), and specifies costs for freight, insurance and packing, etc., terms of delivery and payment, for the purpose of determining the Customs value in the importing country of goods consigned to that country.
+|Exclude
+
+|===

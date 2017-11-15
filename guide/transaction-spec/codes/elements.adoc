@@ -1,0 +1,201 @@
+[[element-codes]]
+= Code lists for coded elements
+
+:leveloffset: +1
+
+include::invoice-specific.adoc[]
+include::creditnote-specific.adoc[]
+
+
+= Common code lists for both the invoice and the credit note transaction
+
+== Currency identifier
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:*/@currencyID`
+h| Source codelist
+| link:https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
+|===
+
+== Document and VAT Currency codes
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:DocumentCurrencyCode` +
+`cbc:TaxCurrencyCode`
+h| Source codelist
+| link:https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
+|===
+
+== Value added tax point date code
+
+[cols="1,4"]
+|===
+h| Document location
+| `cac:InvoicePeriod/cbc:DescriptionCode`
+h| Source codelist
+| link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred2005.htm[UN/CEFACT code list 2005, D.16B]
+|===
+
+[cols="1,4", options="header"]
+.Code list
+|===
+| Code
+| Description
+
+| 3
+| Invoice document issue date time
+
+| 35
+| Paid to date
+
+| 432
+| Standard rate
+|===
+
+
+== Country code
+
+[cols="1,4"]
+|===
+h| Document location
+| `cac:CountryCode/cbc:IdentificationCode` +
+`cac:OriginCountry/cbc:IdentificationCode` +
+h| Source codelist
+| link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
+|===
+
+== Payment means type code
+
+[cols="1,4"]
+|===
+h| Document location
+| `cac:PaymentMeans/cbc:PaymentMeansCode`
+h| Source codelist
+| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm[UN/CEFACT code list 4461, D.16B]
+|===
+
+== VAT category codes
+
+[cols="1,4"]
+|===
+h| Document location
+| `cac:ClassifiedTaxCategory/cbc:ID` +
+`cac:TaxCategory/cbc:ID`
+h| Source codelist
+| Subset of link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5305.htm[UN/CEFACT code list 5305, D.16B]
+|===
+
+[cols="1,4", options="header"]
+.Code list
+|===
+| Code
+| Description
+
+| AE
+| Vat Reverse Charge
+
+| E
+| Exempt from Tax
+
+| S
+| Standard rate
+
+| Z
+| Zero rated goods
+
+| G
+| Free export item, tax not charged
+
+| O
+| Services outside scope of tax
+
+| K
+| VAT exempt for EEA intra-community supply of goods and services
+
+| L
+| Canary Islands general indirect tax
+
+| M
+| Tax for production, services and importation in Ceuta and Melilla
+|===
+
+== Allowance reason codes
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=false]`
+h| Source codelist
+| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5189.htm[UN/CEFACT code list 5189, D.16B]
+|===
+
+
+
+== Charge reason codes
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=true]`
+h| Source codelist
+| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm[UN/CEFACT code list 7161, D.16B]
+|===
+
+
+== VAT exemption reason code
+
+[cols="1,4"]
+|===
+h| Document location
+h| Source codelist
+| #Code list issued and maintained by CEF??#
+|===
+
+
+== Mime code of attached document
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:EmbeddedDocumentBinaryObject/@mimeCode`
+h| Source codelist
+|
+  Subset of link:http://www.iana.org/assignments/media-types[IANA]
+|===
+
+[cols="1,4"]
+.Code list
+|===
+
+.1+h| Documents
+| application/pdf
+
+.2+h| Images
+| image/png
+| image/jpeg
+
+
+.1+h| Text
+| text/csv
+
+.2+h| Spreadsheet
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+| application/vnd.oasis.opendocument.spreadsheet
+|===
+
+
+== Unit of measure
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:*/@unitCode`
+h| Source codelist
+| link:http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20, Revision 8 (2012)]
+|===
+
+:leveloffset: -1

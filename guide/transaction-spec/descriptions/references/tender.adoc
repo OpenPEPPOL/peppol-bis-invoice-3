@@ -1,0 +1,11 @@
+
+= Tender reference
+
+The identification of the call for tender or lot the invoice relates to,  normally the procurement project identifier (PPID) is used for this.
+
+
+.Example
+[source, xml, indent=0]
+----
+include::../../snippets/Snippet-refs.xml[tags=object]
+----

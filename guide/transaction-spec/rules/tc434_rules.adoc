@@ -1,0 +1,13 @@
+[[bii_rules]]
+= EN 16931 transaction business rules
+
+The following {EN16931} rules apply to invoice and credit note transaction as it is used in this {peppol} BIS
+
+.EN 16931 business rules
+[cols="1,4", options="header"]
+|====
+|Rule
+|Message/Context/Test
+
+include::{rules-dir}/tc434.sch.adoc[]
+|====

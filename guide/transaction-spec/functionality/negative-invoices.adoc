@@ -1,0 +1,6 @@
+
+= Negative invoices and credit notes
+
+#To be updated#
+
+Add a description on negative invoices (and credit notes), and how they are to be handled.

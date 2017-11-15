@@ -1,0 +1,12 @@
+
+
+[[rules]]
+= Transaction business rules
+
+
+:leveloffset: +1
+
+include::peppol_rules.adoc[]
+include::tc434_rules.adoc[]
+
+:leveloffset: -1

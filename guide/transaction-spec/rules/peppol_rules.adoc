@@ -1,0 +1,15 @@
+[[peppol_rules]]
+= PEPPOL transaction business rules
+
+The following rules have been defined by {openpeppol} in addition to the rules adopted from {EN16931}.
+These rules apply in *all* profiles that use this transaction specification.
+
+
+.PEPPOL transaction business rules
+[cols="1,4", options="header"]
+|====
+|Rule
+|Message/Context/Test
+
+include::{rules-dir}/OPENPEPPOL-EN-16931-UBL.sch.adoc[]
+|====

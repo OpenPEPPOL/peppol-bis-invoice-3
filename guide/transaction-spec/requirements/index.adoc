@@ -1,3 +1,5 @@
+
+
 [[requirements]]
 = Invoice and credit note business requirements
 
@@ -12,8 +14,6 @@ The table below gives an overview of the business requirements from {tc434}, as 
 
 #Add peppol specific req. to the tables#
 
-:leveloffset: +1
-
 include::accounting.adoc[]
 
 include::verification.adoc[]
@@ -23,5 +23,3 @@ include::vat.adoc[]
 include::auditing.adoc[]
 
 include::payment.adoc[]
-
-:leveloffset: -1

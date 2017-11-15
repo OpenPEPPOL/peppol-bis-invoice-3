@@ -1,0 +1,6 @@
+
+
+= Scope
+
+
+Text explaining the scope of the specification
