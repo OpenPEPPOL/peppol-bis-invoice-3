@@ -5,5 +5,4 @@ target
 *.pdf
 *.epub
 tmp*
-
 *.db
