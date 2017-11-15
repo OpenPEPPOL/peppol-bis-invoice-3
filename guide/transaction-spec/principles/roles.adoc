@@ -3,7 +3,8 @@
 
 The diagram below shows the roles involved in the invoice and credit note transactions. The customer and invoice recipient is the same entity, as is the supplier and the invoice issuer.
 
-image::../../shared/images/functionality-and-roles.png[Functionality and roles, align="center"]
+image::../shared/images/functionality-and-roles.png[Functionality and roles, align="center"]
+
 
 == Parties
 
@@ -12,6 +13,7 @@ The customer is the legal person or organisation who is in demand of a product o
 
 Supplier::
 The supplier is the legal person or organisation who provides a product or service.
+
 
 == Roles
 

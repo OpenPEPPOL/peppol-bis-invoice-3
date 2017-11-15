@@ -1,3 +1,5 @@
+:rules-dir: /tmp/rules
+
 //links used in the BIS document
 
 //PEPPOL

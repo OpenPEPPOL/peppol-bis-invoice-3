@@ -1,10 +1,9 @@
 :lang: en
 
 :doctitle: PEPPOL Implementation guide for Invoice and Credit Note
-:minor: 0.0
+:minor: 3.0
 :revision: 3.0.0
-
 
 :name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
 
-include::../../../shared/links.adoc[]
+include::../shared/settings.adoc[]

@@ -4,8 +4,9 @@
 :minor: 0.0
 :revision: 3.0.0
 :shared-dir: ../../shared
-:rules-dir: ../rules
 
 :name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
 
 include::links.adoc[]
+
+include::../shared/settings.adoc[]
