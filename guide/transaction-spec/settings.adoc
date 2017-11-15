@@ -3,8 +3,7 @@
 :doctitle: PEPPOL Implementation guide for Invoice and Credit Note
 :minor: 0.0
 :revision: 3.0.0
-:shared-dir: ../../shared
-:rules-dir: ../rules
+
 
 :name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
 
