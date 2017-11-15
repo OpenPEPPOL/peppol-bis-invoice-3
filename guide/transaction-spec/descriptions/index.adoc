@@ -7,8 +7,7 @@
 include::roles-and-actor.adoc[]
 include::delivery-details.adoc[]
 include::references/index.adoc[]
-
-
-
+include::allowance.adoc[]
+include::totals.adoc[]
 
 :leveloffset: -1

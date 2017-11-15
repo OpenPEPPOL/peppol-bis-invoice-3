@@ -227,8 +227,9 @@
     <cac:PaymentTerms>
         <cbc:Note>Payment within 10 days, 2% discount</cbc:Note>
     </cac:PaymentTerms>
+    <!-- tag::allowance[] -->
     <cac:AllowanceCharge>
-        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator> <!--1-->
         <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
         <cbc:MultiplierFactorNumeric>2</cbc:MultiplierFactorNumeric>
@@ -243,7 +244,7 @@
         </cac:TaxCategory>
     </cac:AllowanceCharge>
     <cac:AllowanceCharge>
-        <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+        <cbc:ChargeIndicator>false</cbc:ChargeIndicator> <!--2-->
         <cbc:AllowanceChargeReasonCode>HD</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Handling</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="EUR">10</cbc:Amount>
@@ -255,6 +256,7 @@
             </cac:TaxScheme>
         </cac:TaxCategory>
     </cac:AllowanceCharge>
+    <!-- end::allowance[] -->
     
 
 </Invoice>

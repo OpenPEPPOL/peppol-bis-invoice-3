@@ -35,3 +35,5 @@ include::rules/index.adoc[]
 include::codes/index.adoc[]
 
 include::descriptions/index.adoc[]
+
+include::validation/index.adoc[]

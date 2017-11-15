@@ -1,0 +1,24 @@
+= Validation Principles
+
+Stages in the validation process:
+
+.	*Validation of syntax* +
+ For example:
+  * Tag names and attributes must be correctly written and follow the UBL 2.1 sequence
+  * All UBL 2.1 mandatory elements must be present.
+  * The element’s contents must be according to the element’s type definition.
+.	*Validation against {EN16931}* +
+ To verify that the instance message is compliant to the european standard, like:
+  * Valid codes for currencies, countries, tax  etc.
+  * Mandatory elements according to {EN16931}.
+  * Logical correlations between information element, i.e. that  start date is at least lower than end date, calculations give the correct result etc.
+. *Component based validation* +
+These are generally accepted validations on different components of the core model, but only valid for specific use cases, examples:
+* If the country code of a party is 'NL', the address element must contain certain sub-elements.
+* If an identifier has a schemeID to identify the element as a GLN number, a validation to check that the GLN is valid is enforced.
+.	*Validation on transaction level* +
+* Examples:
+** Check valid calculations on line level
+** References must contain at least one alphanumeric character
+. *Validation on profile level* +
+* Validation of valid codes for invoice type and profileID as examples
