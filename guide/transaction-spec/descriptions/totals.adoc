@@ -1,4 +1,4 @@
-
+[[totals]]
 = Calculation of totals (LegalMonetaryTotal)
 
 The following elements show the legal monetary totals for an order agreement:
