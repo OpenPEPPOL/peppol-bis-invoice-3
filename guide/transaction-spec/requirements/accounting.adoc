@@ -7,12 +7,12 @@
 |Requirement
 
 |R1
-|information at document level that enables the identification of the Payee, if different from the Seller (all processes, except P9);
+|information at document level that enables the identification of the Payee, if different from the Seller
 |R2
-|information at document level that enables booking on both the debit and the credit side (all processes);
+|information at document level that enables booking on both the debit and the credit side
 |R3
-|information at invoice line level that enables booking on the debit side (all processes);
+|information at invoice line level that enables booking on the debit side
 |R4
-|Buyer-specific booking information (account numbers) (all processes).
+|Buyer-specific booking information (account numbers)
 
 |===
