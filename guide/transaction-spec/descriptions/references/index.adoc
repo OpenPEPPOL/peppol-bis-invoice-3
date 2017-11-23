@@ -3,6 +3,8 @@
 
 Support for invoice verification is a key function of an invoice. The invoice should provide sufficient information to look up relevant existing documentation, electronic or paper.
 
+IMPORTANT: Any reference element should contain valid information, if you do not have a reference, the element should not be present in the instance document.
+
 The invoice and credit note transactions supports the following references to existing documentation:
 
 :leveloffset: +1
