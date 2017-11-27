@@ -1,0 +1,49 @@
+
+[appendix]
+= Restricted information elements
+
+Below is a list of restrictions this CIUS is enforcing on the elements from the data model of {EN16931}.
+
+#Should we add information on the yet unknown code lists, and their use?#
+
+
+[cols="1s,2s,2,4,1", options="header"]
+|====
+
+| BT-ID
+| Business Term
+| Restrition Type
+| Description
+| Rule
+
+| BT-3
+| Invoice type code
+| Mark defined values as not allowed
+| Allowed set of values can be found in <<Invoice Type Code>>
+| #RuleID#
+
+| BG-1
+| Invoice note
+| Decrease number of repetitions (x..n – > x..1)
+| Change cardinality from 0..n to 0..1
+| #RuleID#
+
+| BT-21
+| Invoice note subject code
+| Mark conditional information element not to be used
+| Changing cardinality 0..1 to 0..0
+| #RuleID#
+
+| BT-23
+| Business process type
+| Make a conditional element mandatory (0..x  – > 1..x)
+| Changing cardinality 0..1 to 1..1
+| #RuleID#
+
+| BT-24
+| Specification identifier
+| Add new non-conflicting business rule to existing element(s)
+| Element must have value #add custID#
+| #RuleID#
+
+|====

@@ -1,4 +1,5 @@
-= Roles and Actor
+
+= Parties
 
 The following roles may be specified. The same actor may play more than one role depending on the handling routine.
 

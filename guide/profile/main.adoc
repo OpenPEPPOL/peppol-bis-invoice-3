@@ -1,0 +1,32 @@
+include::settings.adoc[]
+
+= PEPPOL Profile for invoice and credit note
+{name-op-en}
+v{revision}
+:description: The PEPPOL Business Interoperablity Specification, “BIS” from here on after, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the PEPPOL specifications.
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+:title-logo-image: ../images/peppol.jpg
+
+{description}
+
+
+:leveloffset: +1
+
+include::introduction.adoc[]
+
+include::process/index.adoc[]
+
+include::codes/index.adoc[]
+
+include::profiles/index.adoc[]
+
+include::annex/index.adoc[]
+
+////

@@ -37,3 +37,5 @@ include::codes/index.adoc[]
 include::descriptions/index.adoc[]
 
 include::validation/index.adoc[]
+
+include::annex/index.adoc[]

@@ -3,8 +3,8 @@
 
 :leveloffset: +1
 
-include::invoice-specific.adoc[]
-include::creditnote-specific.adoc[]
+include::invoice-types-en.adoc[]
+include::credit-note-types-en.adoc[]
 
 
 = Common code lists for both the invoice and the credit note transaction

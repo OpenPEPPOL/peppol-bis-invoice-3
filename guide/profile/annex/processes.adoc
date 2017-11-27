@@ -1,0 +1,12 @@
+
+= Supported processes
+
+Chapter 5.2 in the {EN16931} defines the business processes supported by the {EN16931}.
+
+This {CIUS} has made restrictions to not explicitly support the following business processes:
+
+
+P11 - Partial and final invoicing::
+#Add explanation#
+
+P12 - Self billing:: Directive 2006/112/EC (Article 224) requires a specific process to be observed, involving prior agreement and a procedure where the supplier is to accept each invoice. Self-billing requires a specific set-up due to the requirements for prior agreement and procedure for the acceptance of each self-bill. Specific milestones have to be observed at time of setting it up as well as in the operation of self-billing.

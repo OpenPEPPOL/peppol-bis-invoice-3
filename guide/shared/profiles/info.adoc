@@ -5,6 +5,5 @@ All messages contains ProfileID and CustomizationID. ProfileID identifies what b
 
 Profiles are connected to one business process, and may contain multiple document types. Valid document instances must contain corresponding ProfileID and CustomizationID.
 
-The listing below are related document types connected to the role of *receiver* in the conversation. Registration in the SMP describes the receivers capabilities.
 
 IMPORTANT: CustomizationID is a string without spaces. The list below contains spaces in CustomizationID to make them easier to read. *Make sure to remove any spaces before use.*

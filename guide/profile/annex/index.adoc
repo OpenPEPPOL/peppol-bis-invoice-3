@@ -1,0 +1,12 @@
+
+[appendix]
+= Restrictions on EN16931
+
+Below is a list of the restrictions on {EN16931} that is done in this {CIUS}.
+
+All restrictions are within the allowed specifications in a {CIUS}, as listed in chapter 7.3.2 in {EN16931}.
+
+:leveloffset: +1
+include::processes.adoc[]
+include::restricted-elements.adoc[]
+:leveloffset: -1

@@ -1,18 +1,21 @@
+= Main Profile - Invoice and Credit Note
 
-== Profile 05 - Invoice and Credit note
+In the table below you will find the values to be used as the specification identifier (BT-24) and the business process type (BT-23) for this profile
 
-ProfileID::
-#Add correct profileID#
 
-CustomizationID::
-#Add correct CustomizationID#
+[cols="2s,5a,5a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
 
-The profile ID found in the element `cbc:ProfileID` and the customization ID in element `cbc:CustomizationID`
 
-#example to be corrected#
-[source, xml]
-.Examples of ProfileID and CustomizationID
-----
-<cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
-<cbc:ProfileID>Invoicing on purchase order</cbc:ProfileID>
-----
+| Invoice
+| #Add correct CustomizationID#
+| #Add correct profileID#
+
+
+| Credit Note
+| #Add correct CustomizationID#
+| #Add correct profileID#
+|===

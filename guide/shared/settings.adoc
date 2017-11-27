@@ -8,7 +8,7 @@
 :openpeppol: https://peppol.eu/about-openpeppol/?rel=tab41[OpenPEPPOL]
 :policy8: https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for identifiers, policy 8]
 :migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy]
-
+:link-transaction: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/transaction-spec/[PEPPOL Invoice transaction specification]
 
 //CEN
 :CEN: https://www.cen.eu/Pages/default.aspx[CEN]

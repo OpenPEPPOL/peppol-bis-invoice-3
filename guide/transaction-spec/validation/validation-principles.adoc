@@ -14,7 +14,6 @@ Stages in the validation process:
   * Logical correlations between information element, i.e. that  start date is at least lower than end date, calculations give the correct result etc.
 . *Component based validation* +
 These are generally accepted validations on different components of the core model, but only valid for specific use cases, examples:
-* If the country code of a party is 'NL', the address element must contain certain sub-elements.
 * If an identifier has a schemeID to identify the element as a GLN number, a validation to check that the GLN is valid is enforced.
 .	*Validation on transaction level* +
 * Examples:
