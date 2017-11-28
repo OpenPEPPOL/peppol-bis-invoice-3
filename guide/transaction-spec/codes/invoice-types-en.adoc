@@ -1,6 +1,8 @@
 
 = Allowed invoice types according to TC434 validation rules
 
+The codes below are to be used in business term Invoice Type Code (BT-3) for invoices.
+
 [cols="1s,5a,3", options="header"]
 |===
 

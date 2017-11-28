@@ -1,7 +1,12 @@
 = Allowed credit note types or corrective invoices according to TC434 validation rules
 
+The codes below are to be used in business term Invoice Type Code (BT-3) for credit notes.
+
 [cols="1s,5a,3", options="header"]
 |===
+|Invoice type code (BT-3)
+| Name/description
+| Assessment
 
 |381
 |Credit note:: Document/message for providing credit information to the relevant party.

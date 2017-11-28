@@ -1,7 +1,7 @@
 [preface]
 = Introduction
 
-This transaction specification is a detailed implementation guide for the invoice and credit note transactions, and this specification together with the profile documents, are a {CIUS} of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents following this specification will always be compliant with the European Standard ({EN16931}).
+This transaction specification is a detailed specification for the invoice and credit note transactions. Any instance documents following this specification will always be compliant with the European Standard ({EN16931}).
 
 == Scope
 

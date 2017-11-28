@@ -2,19 +2,9 @@
 [[id_schemes]]
 = Code lists for identifier schemes
 
-.Code lists used to constrain values of schemeIDs for identifiers
-[cols="2,3,3", options="header"]
-|===
-|Business Term
-|Applicable XPath
-|Code list (link or subset values)
 
-| Electronic address identifiers (Endpoint)
-| cbc:EndpointID/@schemeID
-a| {policy8} +
- #Code list issued and maintained by CEF??#
+For BT-49 and BT-34 Sellers and Buyers Electronic address identifiers (Endpoint) the {EN16931} mandates use of a code list to be issued and maintained by CEF. This code list is still not available. +
+#Work ongoing in TICC Code list team#
 
- | Invoiced object identifier
- | cac:AdditionalDocumentReference[cbc:DocumentTypeCode = '130']/cbc:ID/@schemeID
- a| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
-|===
+
+The invoiced object identifier must be from  link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]

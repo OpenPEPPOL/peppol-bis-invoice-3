@@ -3,42 +3,21 @@
 
 :leveloffset: +1
 
+
 include::invoice-types-en.adoc[]
 include::credit-note-types-en.adoc[]
 
 
 = Common code lists for both the invoice and the credit note transaction
 
-== Currency identifier
+== Currency code
 
-[cols="1,4"]
-|===
-h| Document location
-| `cbc:*/@currencyID`
-h| Source codelist
-| link:https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
-|===
+All currencies must be from link:https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
 
-== Document and VAT Currency codes
-
-[cols="1,4"]
-|===
-h| Document location
-| `cbc:DocumentCurrencyCode` +
-`cbc:TaxCurrencyCode`
-h| Source codelist
-| link:https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
-|===
 
 == Value added tax point date code
 
-[cols="1,4"]
-|===
-h| Document location
-| `cac:InvoicePeriod/cbc:DescriptionCode`
-h| Source codelist
-| link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred2005.htm[UN/CEFACT code list 2005, D.16B]
-|===
+A subset of values from  link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred2005.htm[UN/CEFACT code list 2005, D.16B] must be used. Valid values are listed in the table below:
 
 [cols="1,4", options="header"]
 .Code list
@@ -59,35 +38,17 @@ h| Source codelist
 
 == Country code
 
-[cols="1,4"]
-|===
-h| Document location
-| `cac:CountryCode/cbc:IdentificationCode` +
-`cac:OriginCountry/cbc:IdentificationCode` +
-h| Source codelist
-| link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
-|===
+All country codes in an invoice or credit note must be the alpha-2 code from link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
+
 
 == Payment means type code
 
-[cols="1,4"]
-|===
-h| Document location
-| `cac:PaymentMeans/cbc:PaymentMeansCode`
-h| Source codelist
-| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm[UN/CEFACT code list 4461, D.16B]
-|===
+Payment means type code must be from link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm[UN/CEFACT code list 4461, D.16B]
+
 
 == VAT category codes
 
-[cols="1,4"]
-|===
-h| Document location
-| `cac:ClassifiedTaxCategory/cbc:ID` +
-`cac:TaxCategory/cbc:ID`
-h| Source codelist
-| Subset of link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5305.htm[UN/CEFACT code list 5305, D.16B]
-|===
+A subset of values from  link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5305.htm[UN/CEFACT code list 5305, D.16B] must be used. Valid values are listed in the table below:
 
 [cols="1,4", options="header"]
 .Code list
@@ -125,47 +86,24 @@ h| Source codelist
 
 == Allowance reason codes
 
-[cols="1,4"]
-|===
-h| Document location
-| `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=false]`
-h| Source codelist
-| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5189.htm[UN/CEFACT code list 5189, D.16B]
-|===
-
-
+Any allowance reason codes must be from link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5189.htm[UN/CEFACT code list 5189, D.16B] +
+#Should we restrict to allowance codes only?#
 
 == Charge reason codes
 
-[cols="1,4"]
-|===
-h| Document location
-| `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=true]`
-h| Source codelist
-| link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm[UN/CEFACT code list 7161, D.16B]
-|===
+Any charge reason codes must be from
+ link:https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm[UN/CEFACT code list 7161, D.16B] +
+ #Should we restrict to charge codes only?#
 
 
 == VAT exemption reason code
 
-[cols="1,4"]
-|===
-h| Document location
-h| Source codelist
-| #Code list issued and maintained by CEF??#
-|===
-
+{EN16931} states _Code list issued and maintained by CEF_ +
+#Code list not available.#
 
 == Mime code of attached document
 
-[cols="1,4"]
-|===
-h| Document location
-| `cbc:EmbeddedDocumentBinaryObject/@mimeCode`
-h| Source codelist
-|
-  Subset of link:http://www.iana.org/assignments/media-types[IANA]
-|===
+Subset of link:http://www.iana.org/assignments/media-types[IANA]. Valid values are listed in the table below.
 
 [cols="1,4"]
 .Code list
@@ -190,12 +128,7 @@ h| Source codelist
 
 == Unit of measure
 
-[cols="1,4"]
-|===
-h| Document location
-| `cbc:*/@unitCode`
-h| Source codelist
-| link:http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20, Revision 8 (2012)]
-|===
+Valid unit codes must be from  link:http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20, Revision 8 (2012)]
+
 
 :leveloffset: -1
