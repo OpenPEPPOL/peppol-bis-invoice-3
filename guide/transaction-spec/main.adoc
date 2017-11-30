@@ -24,9 +24,9 @@ include::introduction.adoc[]
 
 include::principles/index.adoc[]
 
-include::requirements/index.adoc[]
-
 include::functionality/index.adoc[]
+
+include::requirements/index.adoc[]
 
 //include::usecase/index.adoc[]
 

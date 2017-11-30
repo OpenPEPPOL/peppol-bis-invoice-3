@@ -3,4 +3,6 @@
 
 The invoice is used to carry VAT related information from the Seller to the Buyer to enable the Buyer and Seller to correctly handle VAT booking and reporting. An invoice should contain sufficient information to enable the Buyer and any auditor to determine whether the invoice is correct from a VAT point of view.
 
-The invoice shall allow the determination of the VAT regime, the calculation and description of the tax, in accordance with the {VAT-dir} and subsequent amendments. 
+The invoice shall allow the determination of the VAT regime, the calculation and description of the tax, in accordance with the {VAT-dir} and subsequent amendments.
+
+Detailed requirements for supporing accounting functionality can be found at <<vatreq>>

@@ -9,3 +9,5 @@ Invoices, conformant to this PEPPOL BIS support the auditing process by providin
 * identification of the products and services traded, including description, value and quantity
 * information for connecting the invoice to its payment
 * information for connecting the invoice to relevant documents such as a contract and a purchase order
+
+Detailed requirements for supporing accounting functionality can be found at <<auditingreq>>

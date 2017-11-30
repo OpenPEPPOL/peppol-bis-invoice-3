@@ -1,5 +1,5 @@
 
-
+[[paymentreq, Payment requirements]]
 .payment requirements
 [cols="1,10", options="header"]
 |===

@@ -6,3 +6,5 @@ An invoice represents a claim for payment. The issuance of an invoice may take p
 If an invoice is issued after payment, such as when the order process included payment instructions or when paying with a credit card, online or telephonic purchases, the invoice may contain information about the payment made in order to facilitate invoice to payment reconciliation on the Buyer side. An invoice may be partially paid before issuing such as when a pre-payment is made to confirm an order.
 
 Invoices, conformant with this specification should identify the means of payment for settlement of the invoice and clearly state what payment amount is requested. They should provide necessary details to support bank transfers in accordance with the Single Euro Payments Area (SEPA) for payments in Euro and the relevant national payment practices for other currencies. Payments by means of Credit Transfer, Direct debit, and Payment Card are in scope.
+
+Detailed requirements for supporing accounting functionality can be found at <<paymentreq>>

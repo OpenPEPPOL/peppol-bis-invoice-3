@@ -1,5 +1,5 @@
 
-= Invoice functionality
+
 
 An invoice may support functions related to a number of related (internal) business processes. The core invoice model shall support the following functions:
 
