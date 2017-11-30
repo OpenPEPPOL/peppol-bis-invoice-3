@@ -1,0 +1,12 @@
+
+= Invoice verification
+
+This process forms part of the Buyer’s internal business controls. The invoice shall refer to an authentic commercial transaction. Support for invoice verification is a key function of an invoice. The invoice should provide sufficient information to look up relevant existing documentation, electronic or paper, for example, and as applicable to the models detailed above:
+
+* the relevant purchase order
+* the contract
+* the call for tenders, that was the basis for the contract
+* the Buyer’s reference
+* the confirmed receipt of the goods or services
+
+An invoice should also contain sufficient information that allows the received invoice to be transferred to a responsible authority, person or department, for verification and approval.

@@ -1,60 +1,58 @@
-= Allowed credit note types or corrective invoices according to TC434 validation rules
+= Credit note types or corrective invoices
 
-The codes below are to be used in business term Invoice Type Code (BT-3) for credit notes.
+The codes below can be used in business term Invoice Type Code (BT-3) for credit notes.
 
-[cols="1s,5a,3", options="header"]
+[cols="1s,5a", options="header"]
 |===
 |Invoice type code (BT-3)
 | Name/description
-| Assessment
+
 
 |381
 |Credit note:: Document/message for providing credit information to the relevant party.
-|Include
+
 
 |384
 |Corrected invoice:: Commercial invoice that includes revised information differing from an earlier submission of the same invoice.
-| Include
 
 
 |81
 |Credit note related to goods or services:: Document message used to provide credit information related to a transaction for goods or services to the relevant party.
-| Require clarification, use 381/384
+
 
 |83
 |Credit note related to financial adjustments:: Document message for providing credit information related to financial adjustments to the relevant party, e.g., bonuses.
-|Industry specific, use 381
+
 
 |532
 |Forwarder’s credit note:: Document/message for providing credit information to the relevant party.
-|Industry specific, use 381 #Not in TC434 validation#
+
 
 |261
 |Self billed credit note:: A document which indicates that the customer is claiming credit in a self billing environment.
-| Separate profile
+
 
 |262
 |Consolidated credit note - goods and services:: Credit note for goods and services that covers multiple transactions involving more than one invoice.
-| Exclude
 
 |295
 |Price variation invoice:: An invoice which requests payment for the difference in price between an original invoice and the result of the application of a price variation formula.
-| Require clarification, use 384/381
+
 
 |296
 |Credit note for price variation:: A credit note which is issued against a price variation invoice.
-|Avoid, use 381
+
 
 |308
 |Delcredere credit note:: A credit note sent to the party paying on behalf of a number of buyers.
-| Exclude
+
 
 |396
 |Factored credit note:: Credit note related to assigned invoice(s).
-|Require clarification
+
 
 |420
 |Optical Character Reading (OCR) payment credit note:: Payment credit note effected by an Optical Character Reading (OCR) document.
-|Exclude
+
 
 |===

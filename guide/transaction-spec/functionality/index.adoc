@@ -1,6 +1,11 @@
 
 //:leveloffset: +1
 
+include::intro.adoc[]
+include::accounting.adoc[]
+include::verification.adoc[]
+include::auditing.adoc[]
+include::payment.adoc[]
 include::negative-invoices.adoc[]
 include::corrective-invoices.adoc[]
 
