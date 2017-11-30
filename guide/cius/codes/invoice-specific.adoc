@@ -1,0 +1,85 @@
+
+= Specific code lists for the invoice transaction
+
+
+
+== Invoice Type Code
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:InvoiceTypeCode`
+h| Source codelist
+|
+ link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1001.htm[UN/CEFACT code list 1001, D.16B]
+|===
+
+
+[cols="1h,2s,4a,1,1m,1m", options="header"]
+.Code list
+|===
+| Code
+| Name
+| Description
+| Synonym with
+| UBL Message type
+| CII Message type
+
+| 380
+| Commercial invoice
+| Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.
+|
+| Invoice
+| Invoice
+
+
+| 393
+| Factored invoice
+| Invoice assigned to a third party for collection.
+| 380
+| Invoice
+| Invoice
+
+| 82
+| Metered services invoice
+| Document/message claiming payment for the supply of metered services (e.g., gas, electricity, etc.) supplied to a fixed meter whose consumption is measured over a period of time.
+| 380
+| Invoice
+| Invoice
+
+| 80
+| Debit note related to goods or services
+| Debit information related to a transaction for goods or services to the relevant party.
+| 380
+| Invoice
+| Invoice
+
+| 84
+| Debit note related to financial adjustments
+| Document/message for providing debit information related to financial adjustments to the relevant party.
+| 380
+| Invoice
+| Invoice
+
+| 395
+| Consignment invoice
+| Commercial invoice that covers a transaction other than one involving a sale.
+| 380
+| Invoice
+| Invoice
+
+| 575
+| Forwarder's invoice
+| Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore
+| 380
+| Invoice
+| Invoice
+
+| 780
+| Freight invoice
+| Document/message issued by a transport operation specifying freight costs and charges incurred for a transport operation and stating conditions of payment.
+| 380
+| Invoice
+| Invoice
+
+|===

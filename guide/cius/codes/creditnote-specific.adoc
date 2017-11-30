@@ -1,0 +1,71 @@
+
+
+= Specific code lists for the credit note transaction
+
+== Credit note Type Code
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:CreditNoteTypeCode`
+h| Source codelist
+|
+ link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1001.htm[UN/CEFACT code list 1001, D.16B]
+|===
+
+
+
+[cols="1h,2s,4a,1,1m,1m", options="header"]
+.Code list
+|===
+| Code
+| Name
+| Description
+| Synonym with
+| UBL Message type
+| CII Message type
+
+| 381
+| Credit note
+| Document/message for providing credit information to the relevant party.
+|
+| CreditNote
+| Invoice
+
+
+| 396
+| Factored credit note
+| Credit note related to assigned invoice(s).
+| 381
+| CreditNote
+| Invoice
+
+| 81
+| Credit note related to goods or services
+| Document message used to provide credit information related to a transaction for goods or services to the relevant party.
+| 381
+| CreditNote
+| Invoice
+
+| 83
+| Credit note related to financial adjustments
+| Document message for providing credit information related to financial adjustments to the relevant party, e.g., bonuses.
+| 381
+| CreditNote
+| Invoice
+
+| 532
+| Forwarder's credit note
+|  Document/message for providing credit information to the relevant party.
+| 381
+| CreditNote
+| Invoice
+
+| 623
+| Forwarder's invoice
+| Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore.
+| 381
+| CreditNote
+| Invoice
+
+|===

@@ -4,9 +4,15 @@
 
 The following chapters give an overview of the restricted set of codes that is used in this PEPPOL BIS. For most codes the restriction is only to add a dated reference of the code list, but for the Invoice Type Code a subset of valid values have been established.
 
+
+For the invoice type code (BT-3) the tables indicates the name and description of each code, as well as a column "Synonym with" to indicate how this invoice type can be processed if the recipient does not have a separate process/work flow for this code, and as you will see, all invoice types valid in this profile can be processed as a commercial invoice (380) and all credit note types as Commercial credit note (381). Some recipients might have separate processes or work flows for some of these types, and can then use these processes.
+
+The table also gives information on what message type is to be used in the UBL syntax and CII syntax for the different codes.
+
 :leveloffset: +1
 
+include::invoice-specific.adoc[]
+include::creditnote-specific.adoc[]
 include::elements.adoc[]
 include::id_schemes.adoc[]
-
 :leveloffset: -1
