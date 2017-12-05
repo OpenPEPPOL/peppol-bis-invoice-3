@@ -18,10 +18,4 @@ The Invoice and credit note transactions has elements for Allowance/charge on 3 
 . *The line level Price element*, a way to inform the buyer how the price is set. Is also relevant if the seller or buyer want to post the allowance in their accounting systems.  The price itself shall always be the net price, i.e. the base amount  reduced with a discount (allowance).
 
 
-.XML for Allowances and Charges on the document level
-[source, xml, indent=0]
-----
-include::../snippets/Snippet-refs.xml[tags=allowance]
-----
-<1> ChargeIndicator = true to indicate a charge
-<2> ChargeIndicator = false to indicate an allowance
+include::../../syntax/allowance.adoc[]

@@ -1,0 +1,12 @@
+
+= Despatch and receipt advice references
+
+To reference or match an invoice to a despatch or receipt advice use the following elements:
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/Snippet-refs.xml[tags=desp-rec]
+----
+<1> Despatch advice
+<2> Receipt advice

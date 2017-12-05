@@ -1,0 +1,8 @@
+
+[cols="1,4"]
+|===
+h| Document location
+| `cac:PaymentMeans/cbc:PaymentMeansCode`
+h| Source codelist
+| {UNCL4461}
+|===

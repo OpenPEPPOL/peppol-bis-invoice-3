@@ -1,0 +1,12 @@
+
+[cols="2,3,3", options="header"]
+|===
+|Business Term
+|Applicable XPath
+|Code list (link or subset values)
+
+| Item Standard identifier
+| cac:InvoiceLine/cac:Item/cac:StandardItemIdentification/cbc:ID/@schemeID
+| ICD list from {ISO6523}
+
+|===

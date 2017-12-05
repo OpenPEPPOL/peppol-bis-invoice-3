@@ -1,0 +1,9 @@
+
+[cols="1,4"]
+|===
+h| Document location
+| `cac:CountryCode/cbc:IdentificationCode` +
+`cac:OriginCountry/cbc:IdentificationCode` +
+h| Source codelist
+| {ISO3166}
+|===

@@ -1,0 +1,9 @@
+
+.Currency identifiers
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:*/@currencyID`
+h| Source codelist
+| {ISO4217}
+|===

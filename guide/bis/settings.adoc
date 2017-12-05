@@ -1,0 +1,11 @@
+:lang: en
+
+:doctitle: image:images/peppol.jpg[float="right", width=100%] PEPPOL BIS Billing
+:minor: 0.0
+:revision: 3.0.0
+:shared-dir: ../../shared
+
+:name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
+
+
+include::../shared/settings.adoc[]

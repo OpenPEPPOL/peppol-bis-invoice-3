@@ -1,0 +1,7 @@
+
+= Currency code
+
+All currencies in an invoice or credit note must be the alphabetic code from {ISO4217}
+
+include::../../syntax/codelists/currency-codes.adoc[]
+include::../../syntax/codelists/currency-id.adoc[]

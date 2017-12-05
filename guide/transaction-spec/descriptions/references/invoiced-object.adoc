@@ -3,13 +3,6 @@
 
 The invoiced object identifier is the identifier for an object on which the invoice is based, given by the Seller. Examples may be a subscription number, telephone number, meter point, vehicle, person etc., as applicable.
 
-If it is not clear to the receiver what scheme is used for the identifier, a conditional scheme identifier should be used, that shall be chosen from the <<id_schemes, UN/CEFACT 1153 code list>>.
+If it is not clear to the receiver what scheme is used for the identifier, a conditional scheme identifier should be used, that shall be chosen from the <<inv-object-code>>.
 
-
-.Example
-[source, xml, indent=0]
-----
-include::../../snippets/Snippet-refs.xml[tags=object]
-----
-<1> Scheme identifier from <<id_schemes, UN/CEFACT 1153 code list>>
-<2> Document type code must be ´130´
+include::../../../syntax/references/invoiced-object.adoc[]

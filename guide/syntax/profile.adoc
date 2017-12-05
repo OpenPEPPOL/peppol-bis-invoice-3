@@ -1,0 +1,21 @@
+
+[cols="2s,5a,5a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| Invoice and credit note
+| urn:cen.eu:en16931:2017: +
+extended:urn:fdc:peppol.eu:2017:poacc:billing:3.0
+| urn:fdc:peppol.eu:2017:poacc:billing:01:1.0
+
+|===
+
+
+.Example
+[source, xml, indent=0]
+----
+include::snippets/Snippet-full.xml[tags=profile]
+----

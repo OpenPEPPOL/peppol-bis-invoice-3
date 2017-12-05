@@ -1,0 +1,9 @@
+
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/Snippet-refs.xml[tags=object]
+----
+<1> Scheme identifier from <<id_schemes, UN/CEFACT 1153 code list>>
+<2> Document type code must be ´130´

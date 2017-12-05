@@ -1,0 +1,6 @@
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/Snippet-refs.xml[tags=buyer-ref]
+----

@@ -10,3 +10,5 @@ If neither customer reference nor a reference to an order is supplied by the cus
 
 
 IMPORTANT: "Your ref" must be set to "N/A" only in situations where such a reference or the order reference are not provided by customer. When reference is provided by the customer, the correct element MUST contain the provided reference.
+
+include::../../../syntax/references/buyer.adoc[]

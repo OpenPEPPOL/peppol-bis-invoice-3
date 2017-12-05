@@ -1,0 +1,37 @@
+
+
+Seller (AccountingSupplierParty)::
+Seller is mandatory information.
+
+.Example of seller information
+[source, xml, indent=0]
+----
+include::snippets/Snippet-full.xml[tags=seller]
+----
+
+Buyer (AccountingCustomerParty)::
+Buyer is mandatory information.
+
+.Example of buyer information
+[source, xml, indent=0]
+----
+include::snippets/Snippet-full.xml[tags=buyer]
+----
+
+Payment receiver (PayeeParty)::
+Payment receiver is optional information. If this information is not supplied, the seller is the payment receiver.
+
+.Example of payee information
+[source, xml, indent=0]
+----
+include::snippets/Snippet-full.xml[tags=payee]
+----
+
+Sellers Tax Representative (TaxRepresentativePary)::
+Tax representative party for the seller is relevant for sellers delivering goods and services in a country without having a permanent establishment in that country. In such cases information on the tax representative must be included in the invoice.
+
+.Example of tax representative information
+[source, xml, indent=0]
+----
+include::snippets/Snippet-full.xml[tags=taxrep]
+----

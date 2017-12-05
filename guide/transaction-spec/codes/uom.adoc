@@ -1,0 +1,6 @@
+
+= Unit of measure
+
+Valid unit codes must be from {UNRec20}
+
+include::../../syntax/codelists/uom.adoc[]

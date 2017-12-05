@@ -1,0 +1,9 @@
+
+[cols="1,4"]
+|===
+h| Document location
+| `cac:ClassifiedTaxCategory/cbc:ID` +
+`cac:TaxCategory/cbc:ID`
+h| Source codelist
+| Subset of {UNCL5305}
+|===

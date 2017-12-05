@@ -1,0 +1,42 @@
+
+= VAT category codes
+
+A subset of values from {UNCL5305} must be used.
+
+include::../../syntax/codelists/vat-category.adoc[]
+
+Valid values are listed in the table below:
+
+[cols="1,4", options="header"]
+.Code list
+|===
+| Code
+| Description
+
+| AE
+| Vat Reverse Charge
+
+| E
+| Exempt from Tax
+
+| S
+| Standard rate
+
+| Z
+| Zero rated goods
+
+| G
+| Free export item, tax not charged
+
+| O
+| Services outside scope of tax
+
+| K
+| VAT exempt for EEA intra-community supply of goods and services
+
+| L
+| Canary Islands general indirect tax
+
+| M
+| Tax for production, services and importation in Ceuta and Melilla
+|===

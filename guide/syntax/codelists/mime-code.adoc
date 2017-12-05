@@ -1,0 +1,9 @@
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:EmbeddedDocumentBinaryObject/@mimeCode`
+h| Source codelist
+|
+  Subset of link:http://www.iana.org/assignments/media-types[IANA]
+|===

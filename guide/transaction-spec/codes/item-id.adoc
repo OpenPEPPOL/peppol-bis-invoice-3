@@ -1,0 +1,8 @@
+
+
+= Item standard identifier scheme
+
+An item standard identifier has a *mandatory* scheme attribute. The value shall be chosen from the ICD list from {ISO6523}
+
+
+include::../../syntax/codelists/item-id.adoc[]

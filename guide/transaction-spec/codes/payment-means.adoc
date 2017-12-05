@@ -1,0 +1,6 @@
+
+= Payment means type code
+
+Payment means type code must be from {UNCL4461}
+
+include::../../syntax/codelists/payment.adoc[]

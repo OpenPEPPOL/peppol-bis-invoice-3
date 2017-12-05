@@ -1,0 +1,6 @@
+
+= Country code
+
+All country codes in an invoice or credit note must be the alpha-2 code from {ISO3166}
+
+include::../../syntax/codelists/country.adoc[]

@@ -3,7 +3,7 @@
 
 To optimize the flexibility in the validation process, each PEPPOL document is validated in different stages with shifting focus in every stage. The diagram below illustrates the different stages.
 
-image::../shared/images/validation.png[Validation stages, align="left"]
+image::../shared/images/validation-new.png[Validation stages, align="left"]
 
 :leveloffset: +1
 

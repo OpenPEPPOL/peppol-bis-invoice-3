@@ -1,0 +1,12 @@
+
+[cols="2,3,3", options="header"]
+|===
+|Business Term
+|Applicable XPath
+|Code list (link or subset values)
+
+| Item Classification identifier
+| cac:InvoiceLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listID
+| {UNCL7143}
+
+|===

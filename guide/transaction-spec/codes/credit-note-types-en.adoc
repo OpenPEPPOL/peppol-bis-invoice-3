@@ -54,5 +54,6 @@ The codes below can be used in business term Invoice Type Code (BT-3) for credit
 |420
 |Optical Character Reading (OCR) payment credit note:: Payment credit note effected by an Optical Character Reading (OCR) document.
 
-
+| 532
+| Forwarder's credit note:: Document/message for providing credit information to the relevant party.
 |===

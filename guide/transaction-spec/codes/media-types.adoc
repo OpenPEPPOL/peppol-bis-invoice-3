@@ -1,0 +1,29 @@
+
+[[media-type]]
+= Media type code of attached document
+
+Subset of {IANA} Media Types.
+
+include::../../syntax/codelists/mime-code.adoc[]
+
+Valid values are listed in the table below.
+
+[cols="1,4"]
+.Code list
+|===
+
+.1+h| Documents
+| application/pdf
+
+.2+h| Images
+| image/png
+| image/jpeg
+
+
+.1+h| Text
+| text/csv
+
+.2+h| Spreadsheet
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+| application/vnd.oasis.opendocument.spreadsheet
+|===

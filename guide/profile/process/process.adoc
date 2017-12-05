@@ -1,8 +1,6 @@
 [[process]]
 = General invoicing process
 
-#Need to add explanation for different processes#
-
 The invoicing process includes issuing and sending the invoice and the credit note from the supplier to the customer and the reception  and handling of the same at the customer’s site.
 
 The invoicing process is shown in this work flow:
@@ -20,4 +18,18 @@ The diagram below shows the basic invoicing process with the use of this PEPPOL 
 
 image::../shared/images/process.png[The invoicing process, align="center"]
 
-In the chapters below, detailed information on the different invoice processes covered in this profile document can be found.
+This profile covers the following invoice processes:
+
+#Should we add more descriptions on these processes?#
+
+[horizontal]
+P1:: Invoicing of deliveries of goods and services against purchase orders, based on a contract
+P2:: Invoicing deliveries of goods and services based on a contract
+P3:: Invoicing the delivery of an incidental purchase order
+P4:: Pre-payment
+P5:: Spot payment
+P6:: Payment in advance of delivery
+P7:: Invoices with references to a despatch advice
+P8:: Invoices with references to a despatch advice and a receiving advice
+P9:: Credit notes or invoices with negative amounts, issued for a variety of reasons including the return of empty packaging
+P10:: Corrective invoicing (cancellation/correction of an invoice)

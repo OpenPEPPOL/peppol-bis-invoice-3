@@ -1,0 +1,19 @@
+
+[cols="2,3,3", options="header"]
+|===
+|Business Term
+|Applicable XPath
+|Code list (link or subset values)
+
+| Party identifiers (Buyer, Seller, Payee)
+| cac:PartyIdentification/cbc:ID/@schemeID
+.3+^.^| ICD list from {ISO6523}
+
+| Legal registration identifiers (Buyer, Seller, Payee)
+| cac:PartyLegalEntity/cbc:CompanyID/@schemeID
+
+| Deliver to location identifier
+| cac:Delivery/cac:DeliveryLocation/cbc:ID/@schemeID
+
+
+|===

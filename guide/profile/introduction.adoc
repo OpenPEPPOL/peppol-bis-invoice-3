@@ -1,11 +1,16 @@
 [preface]
 = Introduction to openPEPPOL and BIS
 
-This {peppol} BIS provides a set of specifications for implementing a {peppol} business process. The document is concerned with clarifying requirements for ensuring interoperability of pan-European Public eProcurement and provides guidelines for the support and implementation of these requirements.
 
-This specification, together with the {link-transaction} is a Core Invoice Usage Specification (CIUS) of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents compliant to these documents will be compliant with the European Standard ({EN16931}).
+This {peppol} BIS provides a set of specifications for implementing a {peppol} business process.
+
+This specification, is a Core Invoice Usage Specification (CIUS) of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents compliant to this specification will be compliant with the European Standard ({EN16931}).
 
 The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the billing process.
+
+== Scope
+
+This document is concerned with clarifying requirements for ensuring interoperability  and provides guidelines for the support and implementation of these requirements. This document will also provide a detailed implementation guideline for the invoice and credit note transactions.
 
 == Audience
 

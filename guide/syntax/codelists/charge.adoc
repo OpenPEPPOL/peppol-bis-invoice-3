@@ -1,0 +1,8 @@
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=true]`
+h| Source codelist
+| {UNCL7161}
+|===

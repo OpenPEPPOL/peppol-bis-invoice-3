@@ -1,0 +1,8 @@
+
+
+= Party identifiers and party legal registration identifier scheme
+
+All party identifiers and party legal registration identifier has an optional scheme attribute. If used, the value shall be chosen from the ICD list from {ISO6523}
+
+
+include::../../syntax/codelists/party-id.adoc[]

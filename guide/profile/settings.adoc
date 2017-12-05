@@ -1,9 +1,0 @@
-:lang: en
-
-:doctitle: PEPPOL Profile for invoice and credit note
-:minor: 3.0
-:revision: 3.0.0
-
-:name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
-
-include::../shared/settings.adoc[]

@@ -1,0 +1,7 @@
+
+= Charge reason codes
+
+Any charge reason code must be from {UNCL7161} +
+ #Should we restrict to charge codes only?#
+
+include::../../syntax/codelists/charge.adoc[]

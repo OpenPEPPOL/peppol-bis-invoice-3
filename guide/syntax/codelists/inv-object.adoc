@@ -1,0 +1,11 @@
+
+[cols="2,3,3", options="header"]
+|===
+|Business Term
+|Applicable XPath
+|Code list (link or subset values)
+
+ | Invoiced object identifier
+ | cac:AdditionalDocumentReference[cbc:DocumentTypeCode = '130']/cbc:ID/@schemeID
+ a| {UNCL1153}
+|===

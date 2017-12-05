@@ -3,6 +3,7 @@
 
 Semantic data type content may be of the following primitive types. These primitive types were taken from {ISO15000}, Annex A.
 
+[cols="1s,7", options="header"]
 |===
 |Primitive type
 |Definition

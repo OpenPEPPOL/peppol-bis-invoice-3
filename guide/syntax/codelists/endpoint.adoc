@@ -1,0 +1,11 @@
+
+[cols="2,3,3", options="header"]
+|===
+|Business Term
+|Applicable XPath
+|Code list (link or subset values)
+
+| Electronic address identifiers (Endpoint)
+| cbc:EndpointID/@schemeID
+a| #Code list issued and maintained by CEF??#
+|===

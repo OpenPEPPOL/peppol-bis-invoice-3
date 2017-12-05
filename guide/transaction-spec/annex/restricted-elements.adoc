@@ -1,5 +1,5 @@
 
-[appendix]
+
 = Restricted information elements
 
 Below is a list of restrictions this CIUS is enforcing on the elements from the data model of {EN16931}.
@@ -43,7 +43,10 @@ Below is a list of restrictions this CIUS is enforcing on the elements from the 
 | BT-24
 | Specification identifier
 | Add new non-conflicting business rule to existing element(s)
-| Element must have value #add custID#
+| Element must have value +
+`urn:cen.eu:en16931:2017: +
+extended:urn:fdc:peppol.eu:2017:poacc:billing:3.0`
+*(Remove spaces before use of value)*
 | #RuleID#
 
 |====

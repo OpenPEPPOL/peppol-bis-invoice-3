@@ -1,0 +1,37 @@
+include::settings.adoc[]
+
+= {doctitle}
+{name-op-en}
+v{revision}
+:description: The PEPPOL Business Interoperablity Specification, “BIS” from here on after, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the PEPPOL specifications.
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+:CIUS: Core Invoice Usage Specification (CIUS)
+:title-logo-image: ../images/peppol.jpg
+
+
+
+:leveloffset: +1
+
+include::../profile/introduction.adoc[]
+include::../transaction-spec/principles/index.adoc[]
+include::../profile/process/index.adoc[]
+include::../transaction-spec/functionality/index.adoc[]
+include::../transaction-spec/requirements/index.adoc[]
+include::../transaction-spec/datatypes/index.adoc[]
+include::../transaction-spec/calculations/index.adoc[]
+include::codes/index.adoc[]
+include::../transaction-spec/descriptions/index.adoc[]
+include::../profile/profiles/index.adoc[]
+include::../transaction-spec/validation/index.adoc[]
+include::../transaction-spec/rules/index.adoc[]
+include::restrictions/index.adoc[]
+
+
+//include::rules/index.adoc[]

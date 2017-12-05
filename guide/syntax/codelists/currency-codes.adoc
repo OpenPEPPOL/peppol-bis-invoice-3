@@ -1,0 +1,10 @@
+
+.Document and VAT currency codes
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:DocumentCurrencyCode` +
+`cbc:TaxCurrencyCode`
+h| Source codelist
+| {ISO4217}
+|===

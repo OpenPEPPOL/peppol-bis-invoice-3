@@ -1,0 +1,8 @@
+
+[cols="1,4"]
+|===
+h| Document location
+| `cbc:*/@unitCode`
+h| Source codelist
+| link:http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20, Revision 8 (2012)]
+|===

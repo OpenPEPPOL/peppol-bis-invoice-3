@@ -1,0 +1,9 @@
+
+
+.Example
+[source, xml, indent=0]
+----
+include::../snippets/Snippet-refs.xml[tags=order-ref]
+----
+<1> Purchase order reference
+<2> Sales order reference

@@ -1,0 +1,7 @@
+
+= VAT exemption reason code
+
+{EN16931} states _Code list issued and maintained by CEF_ +
+#Code list not available.#
+
+include::../../syntax/codelists/vat-exempt.adoc[]

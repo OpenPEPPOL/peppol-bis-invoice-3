@@ -30,10 +30,4 @@ Attachments shall be transmitted together with the Invoice. There shall be only 
 |===
 
 
-A receiver of an invoice or credit note, shall accept and process attachments that are of the following mime types (commonly used file extensions are added between brackets):
-
-* application/pdf (.pdf)
-* image/png (.png)
-* text/csv (.csv)
-* application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xslx)
-* application/vnd.oasis.opendocument.spreadsheet (.ods).
+A receiver of an invoice or credit note, shall accept and process attachments that are according to the code list <<media-type>>

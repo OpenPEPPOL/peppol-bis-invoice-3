@@ -1,0 +1,57 @@
+
+[[totals]]
+== Calculation of totals (LegalMonetaryTotal)
+
+The following elements show the legal monetary totals for an invoice or credit note
+[cols="3,5,5", options="header"]
+|===
+| Element
+| Description
+| Formula
+
+| <cbc:LineExtensionAmount>
+| Sum of line amounts
+| ∑ (cac:InvoiceLine/cbc:LineExtensionAmount)
+
+| <cbc:AllowanceTotalAmount>
+| Allowances on document level
+| ∑ (cac:AllowanceCharge[ChargeIndicator='true']/cbc:Amount )
+
+| <cbc:ChargeTotalAmount>
+| Charges on document level
+| ∑ (cac:AllowanceCharge[ChargeIndicator='false']/cbc:Amount )
+
+| <cbc:TaxExclusiveAmount>
+| Invoice total amount without VAT
+| cac:LegalMonetaryTotal/cbc:LineExtensionAmount +
+– cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount +
++ cac:LegalMonetaryTotal/cbc:ChargeTotalAmount
+
+| <cbc:TaxInclusiveAmount>
+| Invoice/Credit note total amount included VAT
+| cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount +
++  cac:TaxTotal/cbc:TaxAmount +
++  cac:LegalMonetaryTotal/cbc:PayableRoundingAmount
+
+| <cbc:PrepaidAmount>
+| Any amounts that have been paid a-priory
+|
+
+| <cbc:PayableRoundingAmount>
+| Rounding of Invoice/Credit note total
+|
+
+| <cbc:PayableAmount>
+| The amount that is expected to be paid
+| cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount –  cac:LegalMonetaryTotal/cbc:PrepaidAmount
+|===
+
+
+
+== Element for rounding amount, the PayableRoundingAmount
+
+It is possible to round the expected payable amount.
+
+The element `cac:LegalMonetaryTotal/cbc:PayableRoundingAmount` is used for this purpose and is specified on the header level. This value must be added to the value in `cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount`.
+
+Example:  Amount  999.81 rounded to  1000.  PayableRounding Amount = 0.19

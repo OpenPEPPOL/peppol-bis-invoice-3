@@ -12,10 +12,4 @@ A sales order is issued by the seller, confirming the sale of specified products
 
 In the invoice, both a purchase order and a sales order reference can be given, but be aware that an invoice instance cannot have a sales order reference, without the corresponding purchase order reference.
 
-.Example
-[source, xml, indent=0]
-----
-include::../../snippets/Snippet-refs.xml[tags=order-ref]
-----
-<1> Purchase order reference
-<2> Sales order reference
+include::../../../syntax/references/order.adoc[]

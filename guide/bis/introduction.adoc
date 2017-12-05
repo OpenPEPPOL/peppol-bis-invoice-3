@@ -1,0 +1,26 @@
+[preface]
+= Introduction to openPEPPOL and BIS
+
+This {peppol} BIS provides a set of specifications for implementing a {peppol} business process. The document is concerned with clarifying requirements for ensuring interoperability of pan-European Public eProcurement and provides guidelines for the support and implementation of these requirements.
+
+This specification is a Core Invoice Usage Specification (CIUS) of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents following this CIUS will always be compliant with the European Standard ({EN16931}).
+
+The purpose of this document is to describe the use of the invoice and credit note messages in PEPPOL, and to facilitate an efficient implementation and increased use of electronic collaboration
+regarding the billing process based on these formats.
+
+== Audience
+
+The audience for this document is organisations wishing to be PEPPOL enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
+
+     * Service providers
+     * Contracting Authorities (CA)
+     * Economic Operators (EO)
+     * Software Developers
+
+More specifically, roles addressed are the following:
+
+    * ICT Architects
+    * ICT Developers
+    * Business Experts
+
+For further information on PEPPOL/OpenPEPPOL, please see {common}

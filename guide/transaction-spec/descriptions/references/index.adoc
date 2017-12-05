@@ -11,9 +11,7 @@ The invoice and credit note transactions supports the following references to ex
 
 include::buyer.adoc[]
 include::order.adoc[]
-include::contract.adoc[]
-include::despatch-receipt.adoc[]
-include::tender.adoc[]
 include::invoiced-object.adoc[]
+include::../../../syntax/references/index.adoc[]
 
 :leveloffset: -1

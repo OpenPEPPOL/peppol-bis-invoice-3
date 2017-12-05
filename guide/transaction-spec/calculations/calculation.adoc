@@ -45,3 +45,5 @@ Formulas for the calculations of totals are as follows:
 - BT-113 (Paid amount)
 
 |===
+
+include::../../syntax/totals.adoc[]

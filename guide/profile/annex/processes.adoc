@@ -1,5 +1,5 @@
 
-= Supported processes
+= Restrictions on the supported processes
 
 Chapter 5.2 in the {EN16931} defines the business processes supported by the {EN16931}.
 
