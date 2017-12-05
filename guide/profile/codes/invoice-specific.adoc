@@ -73,8 +73,15 @@ h| Source codelist
 | Invoice
 
 | 575
+| Insurer's invoice
+| Document/message issued by an insurer specifying the cost of an insurance which has been effected and claiming payment therefore
+| 380
+| Invoice
+| Invoice
+
+| 623
 | Forwarder's invoice
-| Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore
+| Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore.
 | 380
 | Invoice
 | Invoice
