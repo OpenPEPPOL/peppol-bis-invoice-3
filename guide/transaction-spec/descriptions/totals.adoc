@@ -2,7 +2,7 @@
 [[totals]]
 = Calculation of totals (LegalMonetaryTotal)
 
-The following elements show the legal monetary totals for an order agreement:
+The following elements show the legal monetary totals for an invoice or credit note
 [cols="5,7", options="header"]
 |===
 | Element:
@@ -14,7 +14,7 @@ The following elements show the legal monetary totals for an order agreement:
 | <cbc:ChargeTotalAmount>
 | Charges on document level
 | <cbc:TaxExclusiveAmount>
-| Order total amount without VAT
+| Invoice total amount without VAT
 | <cbc:TaxInclusiveAmount>
 | Invoice/Credit note total amount included VAT
 | <cbc:PrepaidAmount>

@@ -1,0 +1,19 @@
+= Amount
+
+An amount states a numerical monetary value. The currency of the amount is defined as a separate business term.
+
+IMPORTANT: Amount is floating up to two fraction digits.
+
+
+[cols="1s,1,1,1", options="header"]
+|===
+|Component
+|Use
+|Primitive Type
+|Example
+
+|Content
+|Mandatory
+|Decimal
+|10000.25
+|===

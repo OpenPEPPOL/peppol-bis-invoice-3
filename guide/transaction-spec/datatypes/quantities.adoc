@@ -1,0 +1,19 @@
+
+= Quantity
+
+Quantities are used to state a number of units such as for items. The code for the Unit of Measure is defined as a separate business term.
+
+
+
+[cols="1s,1,1,1", options="header"]
+|===
+|Component
+|Use
+|Primitive Type
+|Example
+
+|Content
+|Mandatory
+|Decimal
+|10000.1234
+|===

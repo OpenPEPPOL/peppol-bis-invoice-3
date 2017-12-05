@@ -1,0 +1,18 @@
+
+= Text. Type
+
+Text is the actual wording of anything written or printed. Line breaks in the text may be present.
+
+
+[cols="1s,1,1,1", options="header"]
+|===
+|Component
+|Use
+|Primitive Type
+|Example
+
+|Content
+|Mandatory
+|String
+|5% allowance when paid within 30 days
+|===

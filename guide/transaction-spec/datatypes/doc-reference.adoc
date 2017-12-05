@@ -1,0 +1,20 @@
+
+= Document Reference
+
+
+Document Reference Types are identifiers that were assigned to a document or document line by the Buyer, the Seller or by a third party.
+
+
+.Document Reference. Type
+[cols="1s,1,1,1", options="header"]
+|===
+|Component
+|Use
+|Primitive Type
+|Example
+
+|Content
+|Mandatory
+|String
+|abc:123-DEF
+|===

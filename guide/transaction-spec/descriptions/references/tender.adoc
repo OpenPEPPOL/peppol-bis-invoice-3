@@ -7,5 +7,5 @@ The identification of the call for tender or lot the invoice relates to,  normal
 .Example
 [source, xml, indent=0]
 ----
-include::../../snippets/Snippet-refs.xml[tags=object]
+include::../../snippets/Snippet-refs.xml[tags=tender]
 ----

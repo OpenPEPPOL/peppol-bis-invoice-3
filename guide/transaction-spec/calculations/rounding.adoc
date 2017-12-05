@@ -1,0 +1,10 @@
+
+= Rounding
+
+
+To minimize the risk of differences due to rounding, the following rules apply:
+
+* All document level totals shall be rounded to two decimals for accounting
+* Rounding shall be done on the final calculation results not on any intermediate results
+* VAT category tax amount (BT-117) shall be rounded on document level and not as a summation of rounded Invoice line VAT amounts
+* Results from calculations involving already rounded amounts are not subject to rounding, like payable amounts and total amounts included VAT.

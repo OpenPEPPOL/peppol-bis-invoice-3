@@ -1,0 +1,39 @@
+
+= Binary objects
+
+Binary objects can be used to describe files which are transmitted together with the Invoice.
+
+Attachments shall be transmitted together with the Invoice. There shall be only one way defined per syntax. The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename that is provided by (or on behalf of) the sender of the invoice or credit note.
+
+
+[cols="1s,1,1,1", options="header"]
+|===
+|Component
+|Use
+|Primitive Type
+|Example
+
+|Content
+|Mandatory
+|Binary
+|QmFzZTY0IGNvbnRlbnQgZXhhbXBsZQ==
+
+|Mime Code
+|Mandatory
+|String
+|image/jpeg
+
+|Filename
+|Mandatory
+|String
+|drawing5.jpg
+|===
+
+
+A receiver of an invoice or credit note, shall accept and process attachments that are of the following mime types (commonly used file extensions are added between brackets):
+
+* application/pdf (.pdf)
+* image/png (.png)
+* text/csv (.csv)
+* application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xslx)
+* application/vnd.oasis.opendocument.spreadsheet (.ods).

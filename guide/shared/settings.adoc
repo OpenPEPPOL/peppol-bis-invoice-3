@@ -22,3 +22,7 @@
 
 //Eu directives
 :VAT-dir: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:l31057[Directive 2006/112/EC]
+
+//ISO:
+:ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]
+:ISO8601:  https://www.iso.org/standard/40874.html[ISO 8601:2004]

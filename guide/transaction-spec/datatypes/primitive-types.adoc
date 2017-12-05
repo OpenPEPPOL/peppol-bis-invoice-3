@@ -1,0 +1,21 @@
+
+= Primitive types
+
+Semantic data type content may be of the following primitive types. These primitive types were taken from {ISO15000}, Annex A.
+
+|===
+|Primitive type
+|Definition
+
+|Binary
+|A set of finite-length sequences of binary digits.
+
+|Date
+|Time point representing a calendar day on a time scale consisting of an origin and a succession of calendar {ISO8601}.
+
+|Decimal
+|A subset of the real numbers, which can be represented by decimal numerals.
+
+|String
+|A finite sequence of characters.
+|===

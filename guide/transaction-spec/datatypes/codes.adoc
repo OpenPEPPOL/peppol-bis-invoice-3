@@ -1,0 +1,21 @@
+
+= Code
+
+
+Codes are used to specify allowed values in elements as well as for lists of options. Code is different from Identifier in that allowed values have standardized meanings that can be known by the recipient.
+
+IMPORTANT: Codes shall be entered exactly as shown in the selected code list of the applicable syntax.
+
+
+[cols="1s,1,1,1", options="header"]
+|===
+|Component
+|Use
+|Primitive Type
+|Example
+
+|Content
+|Mandatory
+|String
+|Abc123
+|===

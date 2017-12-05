@@ -1,0 +1,20 @@
+
+= Unit Price Amount
+
+A unit price amount states a numerical monetary amount value for data elements that contain item prices that may be multiplied by item quantities.
+The currency of the amount is defined as a separate business term.
+
+IMPORTANT: Unit price amount does not set restrictions on number of decimals, as contrast to the Amount type
+
+[cols="1s,1,1,1", options="header"]
+|===
+|Component
+|Use
+|Primitive Type
+|Example
+
+|Content
+|Mandatory
+|Decimal
+|10000.1234
+|===

@@ -1,0 +1,30 @@
+
+= Identifier
+
+Identifiers (IDs) are keys that are issued by the sender or recipient of a document or by a third party. For each identifier in the model it is stated whether an identification scheme or a scheme version ID may or shall be defined and if so, from what list the identification schemes may be chosen.
+
+IMPORTANT: The use of the attributes is specified for each information element.
+
+
+[cols="1s,1,1,1", options="header"]
+|===
+|Component
+|Use
+|Primitive Type
+|Example
+
+|Content
+|Mandatory
+|String
+|abc:123-DEF
+
+|Scheme identifier
+|Conditional
+|String
+|GLN
+
+|Scheme version identifier
+|Conditional
+|String
+|1.0
+|===

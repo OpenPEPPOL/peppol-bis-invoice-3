@@ -1,0 +1,47 @@
+
+
+= Calculation
+
+Formulas for the calculations of totals are as follows:
+
+[cols="1,4a,7", options="header"]
+|===
+| Business term id
+| Term name
+| Calculation
+
+| BT-106
+| Sum of invoice line net amounts
+| ∑ (BT-131: Invoice line net amount)
+
+| BT-107
+| Sum of allowances on document level
+| ∑ (BT-92: Document level allowance amount)
+
+| BT-108
+| Sum of charges on document level
+| ∑ (BT-99: Document level charge amount)
+
+
+| BT-109
+| Invoice total amount without VAT
+| BT-106 (Sum of invoice line net amounts) +
+- BT-107 (Sum of allowances on document level) +
++ BT-108 (Sum of allowances on document level)
+
+| BT-110
+| Invoice total VAT amount
+| ∑ (BT-117: VAT category tax amount)
+
+| BT-112
+| Invoice total amount with VAT
+| BT-109 (Invoice total amount without VAT) +
++ BT-110 (Invoice total VAT amount) +
++ BT-114 (Rounding amount)
+
+| BT-115
+| Amount due for payment
+| BT-112 (Invoice total amount with VAT) +
+- BT-113 (Paid amount)
+
+|===

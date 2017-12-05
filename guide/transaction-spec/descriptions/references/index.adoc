@@ -9,6 +9,7 @@ The invoice and credit note transactions supports the following references to ex
 
 :leveloffset: +1
 
+include::buyer.adoc[]
 include::order.adoc[]
 include::contract.adoc[]
 include::despatch-receipt.adoc[]
