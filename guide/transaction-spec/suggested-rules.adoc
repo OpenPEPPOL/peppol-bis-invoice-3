@@ -1,11 +1,11 @@
 
-Format of dates (timezone)
-BaseAmount * Multiplier = Amount for Allowance/Charge, if used.
-An allowance or charge cannot have a base amount without the existence of a multiplier
-An allowance or charge cannot have a multiplier without the existence of a base amount
-An invoice must have a buyers reference or a purchase order reference
-Sellers electronic address (EndpointID) is mandatory in an invoice or credit note
-Validation on calculation of LineExtensionAmount (with a slack of 0.2)
+* Format of dates (timezone)
+* BaseAmount * Multiplier = Amount for Allowance/Charge, if used.
+* An allowance or charge cannot have a base amount without the existence of a multiplier
+* An allowance or charge cannot have a multiplier without the existence of a base amount
+* An invoice must have a buyers reference or a purchase order reference
+* Buyer electronic address (EndpointID) is mandatory in an invoice or credit note
+* Validation on calculation of LineExtensionAmount (with a slack of 0.2)
 
 
 NO:
