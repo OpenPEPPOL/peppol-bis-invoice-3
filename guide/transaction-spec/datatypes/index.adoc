@@ -1,7 +1,7 @@
 
 = Semantic datatypes
 
-Semantic data types are used to bridge the gap between the semantic concepts expressed by the information elements defined in the semantic model and their possible technical implementation. The semantic data types define the allowed value domain for the content, and any additional information components (attributes) needed in order to ensure its precise interpretation.
+Semantic data types are used to bridge the gap between the semantic concepts expressed by the information elements defined in the semantic model from {EN16931} and the technical implementation. The semantic data types define the allowed value domain for the content, and any additional information components (attributes) needed in order to ensure its precise interpretation.
 
 
 

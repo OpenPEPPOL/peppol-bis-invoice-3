@@ -1,5 +1,6 @@
 
 * Format of dates (timezone)
+* If Invoice line period and invoice period are existing, line period must be within the invoice period
 * BaseAmount * Multiplier = Amount for Allowance/Charge, if used.
 * An allowance or charge cannot have a base amount without the existence of a multiplier
 * An allowance or charge cannot have a multiplier without the existence of a base amount

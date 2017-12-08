@@ -1,7 +1,8 @@
 
 = Identifier
 
-Identifiers (IDs) are keys that are issued by the sender or recipient of a document or by a third party. For each identifier in the model it is stated whether an identification scheme or a scheme version ID may or shall be defined and if so, from what list the identification schemes may be chosen.
+Identifiers (IDs) are keys that are issued by the sender or recipient of a document or by a third party.
+
 
 IMPORTANT: The use of the attributes is specified for each information element.
 
