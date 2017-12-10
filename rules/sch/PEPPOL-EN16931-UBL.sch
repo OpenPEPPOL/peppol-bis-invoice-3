@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils"
         schemaVersion="iso" queryBinding="xslt2">
 
   <title>Rules for PEPPOL BIS 3.0 Billing</title>
@@ -9,8 +9,34 @@
   <ns uri="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" prefix="ubl-creditnote"/>
   <ns uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" prefix="ubl-invoice"/>
   <ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs"/>
+  <ns uri="utils" prefix="u"/>
 
+  <!-- Parameters -->
+
+  <let name="supplierCountry" value="if (/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode) then upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) else 'XX'"/>
+  <let name="profile" value="if (/*/cbc:ProfileID and matches(normalize-space(/*/cbc:ProfileID), 'urn:fdc:peppol.eu:2017:poacc:billing:[0-9]{2}:1.0')) then tokenize(normalize-space(/*/cbc:ProfileID), ':')[7] else 'XX'"/>
+
+  <!-- Functions -->
+
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
+    <param name="exp" as="xs:decimal"/>
+    <param name="val" as="xs:decimal"/>
+    <param name="slack" as="xs:decimal"/>
+    <value-of select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"/>
+  </function>
+
+  <!--
+    Transaction rules
+
+    R00X - Document level
+    R01X - Accounting customer
+    R02X - Accounting supplier
+    R04X - Allowance/Charge (document and line)
+    R1XX - Line level
+  -->
   <pattern>
+
+    <!-- Document level -->
     <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
       <assert id="PEPPOL-EN16931-R001"
               test="cbc:ProfileID"
@@ -18,12 +44,50 @@
       <assert id="PEPPOL-EN16931-R002"
               test="count(cbc:Note) &lt;= 1"
               flag="fatal">No more than one note is allowed on document level.</assert>
+      <assert id="PEPPOL-EN16931-R003"
+              test="cbc:BuyerReference or cac:OrderReference/cbc:ID"
+              flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
     </rule>
+
+    <!-- Accounting customer -->
+    <rule context="cac:AccountingCustomerParty/cac:Party">
+      <assert id="PEPPOL-EN16931-R010"
+              test="cbc:EndpointID"
+              flag="fatal">Technical address for customer MUST be provided.</assert>
+    </rule>
+
+    <!-- Accounting supplier -->
+    <rule context="cac:AccountingSupplierParty/cac:Party">
+      <assert id="NO-R-001"
+              test="not($supplierCountry = 'NO') or cac:PartyLegalEntity"
+              flag="fatal">Norwegian suppliers MUST provide legal entity.</assert>
+    </rule>
+
+    <!-- Allowance/Charge -->
+    <rule context="cac:AllowanceCharge[cbc:MultiplierFactorNumeric and cbc:BaseAmount]">
+      <assert id="PEPPOL-EN16931-R040"
+              test="u:slack(if (cbc:Amount) then cbc:Amount else 0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
+              flag="fatal">Sum must be ...</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
+      <assert id="PEPPOL-EN16931-R041"
+              test="false()"
+              flag="fatal">Base amount MUST be provided when multiplier is proviced.</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
+      <assert id="PEPPOL-EN16931-R042"
+              test="false()"
+              flag="fatal">Multiplier MUST be provided when base amount is provided.</assert>
+    </rule>
+
+
   </pattern>
 
   <!-- Restricted code lists -->
   <pattern>
+    <!-- TODO -->
     <let name="ISO4217" value="tokenize('AFN EUR ALL DZD USD AOA XCD XCD ARS AMD AWG AUD AZN BSD BHD BDT BBD BYN BZD XOF BMD INR BTN BOB BOV USD BAM BWP NOK BRL USD BND BGN XOF BIF CVE KHR XAF CAD KYD XAF XAF CLP CLF CNY AUD AUD COP COU KMF CDF XAF NZD CRC XOF HRK CUP CUC ANG CZK DKK DJF XCD DOP USD EGP SVC USD XAF ERN ETB FKP DKK FJD XPF XAF GMD GEL GHS GIP DKK XCD USD GTQ GBP GNF XOF GYD HTG USD AUD HNL HKD HUF ISK INR IDR XDR IRR IQD GBP ILS JMD JPY GBP JOD KZT KES AUD KPW KRW KWD KGS LAK LBP LSL ZAR LRD LYD CHF MOP MKD MGA MWK MYR MVR XOF USD MRO MUR XUA MXN MXV USD MDL MNT XCD MAD MZN MMK NAD ZAR AUD NPR XPF NZD NIO XOF NGN NZD AUD USD NOK OMR PKR USD PAB USD PGK PYG PEN PHP NZD PLN USD QAR RON RUB RWF SHP XCD XCD XCD WST STD SAR XOF RSD SCR SLL SGD ANG XSU SBD SOS ZAR SSP LKR SDG SRD NOK SZL SEK CHF CHE CHW SYP TWD TJS TZS THB USD XOF NZD TOP TTD TND TRY TMT USD AUD UGX UAH AED GBP USD USD USN UYU UYI UZS VUV VEF VND USD USD XPF MAD YER ZMW ZWL XBA XBB XBC XBD XTS XXX XAU XPD XPT XAG', '\s')"/>
+    <!-- TODO -->
     <let name="ISO6133" value="tokenize('DK NO SE', '\s')"/>
     <let name="MIMECODE" value="tokenize('application/pdf image/png image/jpeg text/csv application/vnd.openxmlformats-officedocument.spreadsheetml.sheet application/vnd.oasis.opendocument.spreadsheet', '\s')"/>
     <let name="UNCL2005" value="tokenize('3 35 432', '\s')"/>
@@ -35,13 +99,15 @@
               flag="fatal">Invalid mime code.</assert>
     </rule>
 
-    <rule context="cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator='false']">
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator='false']/cbc:AllowanceChargeReasonCode">
+      <!-- TODO -->
       <assert id="PEPPOL-EN16931-CL002"
               test="matches(text(), '[0-9]{1,3}')"
               flag="fatal">Reason code must be according to UNCL 5189 D.16B.</assert>
     </rule>
 
-    <rule context="cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator='true']">
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator='true']/cbc:AllowanceChargeReasonCode">
+      <!-- TODO -->
       <assert id="PEPPOL-EN16931-CL003"
               test="matches(text(), '[A-Z]{2,3}')"
               flag="fatal">Reason code must be according to UNCL 7161 D.16B.</assert>
@@ -69,6 +135,12 @@
       <assert id="PEPPOL-EN16931-CL007"
               test="some $code in $ISO4217 satisfies text() = $code"
               flag="fatal">Currency code must be according to ISO 4217:2005</assert>
+    </rule>
+
+    <rule context="cbc:InvoiceTypeCode">
+      <assert id="PEPPOL-EN16931-P0100"
+              test="$profile != '01' or (some $code in tokenize('380 384 393 82 80 84 395 575 623 780', '\s') satisfies normalize-space(text()) = $code)"
+              flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
   </pattern>
 
