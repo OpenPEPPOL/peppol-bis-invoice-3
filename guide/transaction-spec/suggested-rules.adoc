@@ -1,6 +1,6 @@
 .Transaction
 * Format of dates (timezone)
-* If Invoice line period and invoice period are existing, line period must be within the invoice period
+* If Invoice line period and invoice period are existing, line period must be within the invoice period *[PEPPOL-EN16931-R110, PEPPOL-EN16931-R111]*
 * BaseAmount * Multiplier = Amount for Allowance/Charge, if used. *[PEPPOL-EN16931-R040]*
 * An allowance or charge cannot have a base amount without the existence of a multiplier *[PEPPOL-EN16931-R041]*
 * An allowance or charge cannot have a multiplier without the existence of a base amount *[PEPPOL-EN16931-R042]*
@@ -10,7 +10,7 @@
 
 .NO
 * Sellers legal entity mandatory *[NO-R-001]*
-* Word "Foretaksregisteret" must be present
+* Word "Foretaksregisteret" must be present *[NO-R-002]*
 * NO:ORGNR must be a valid org.nr (9 digits, Modulus 11 calculation)
 
 .DK

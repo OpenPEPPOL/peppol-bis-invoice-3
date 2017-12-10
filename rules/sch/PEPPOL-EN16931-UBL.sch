@@ -33,6 +33,7 @@
     R02X - Accounting supplier
     R04X - Allowance/Charge (document and line)
     R1XX - Line level
+    R11X - Invoice period
   -->
   <pattern>
 
@@ -61,6 +62,9 @@
       <assert id="NO-R-001"
               test="not($supplierCountry = 'NO') or cac:PartyLegalEntity"
               flag="fatal">Norwegian suppliers MUST provide legal entity.</assert>
+      <assert id="NO-R-002"
+              test="normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID) = 'Foretaksregisteret'"
+              flag="warning">"Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
     </rule>
 
     <!-- Allowance/Charge -->
@@ -80,6 +84,22 @@
               flag="fatal">Multiplier MUST be provided when base amount is provided.</assert>
     </rule>
 
+    <!-- Line level - invoice period -->
+    <rule context="ubl-invoice:Invoice[cac:InvoicePeriod/cbc:StartDate]/cac:InvoiceLine/cac:InvoicePeriod/cbc:StartDate | ubl-creditnote:CreditNote[cac:InvoicePeriod/cbc:StartDate]/cac:CreditNoteLine/cac:InvoicePeriod/cbc:StartDate">
+      <assert id="PEPPOL-EN16931-R110"
+              test="xs:date(text()) &gt;= xs:date(../../../cac:InvoicePeriod/cbc:StartDate)"
+              flag="fatal">Start date of line period MUST be within invoice period.</assert>
+    </rule>
+    <rule context="ubl-invoice:Invoice[cac:InvoicePeriod/cbc:EndDate]/cac:InvoiceLine/cac:InvoicePeriod/cbc:EndDate | ubl-creditnote:CreditNote[cac:InvoicePeriod/cbc:EndDate]/cac:CreditNoteLine/cac:InvoicePeriod/cbc:EndDate">
+      <assert id="PEPPOL-EN16931-R111"
+              test="xs:date(text()) &lt;= xs:date(../../../cac:InvoicePeriod/cbc:EndDate)"
+              flag="fatal">End date of line period MUST be within invoice period.</assert>
+    </rule>
+
+  </pattern>
+
+  <!-- Formatting -->
+  <pattern>
 
   </pattern>
 
