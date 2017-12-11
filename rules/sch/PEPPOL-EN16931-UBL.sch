@@ -13,8 +13,8 @@
 
   <!-- Parameters -->
 
+  <let name="profile" value="if (/*/cbc:ProfileID and matches(normalize-space(/*/cbc:ProfileID), 'urn:fdc:peppol.eu:2017:poacc:billing:([0-9]{2}):1.0')) then tokenize(normalize-space(/*/cbc:ProfileID), ':')[7] else 'XX'"/>
   <let name="supplierCountry" value="if (/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode) then upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) else 'XX'"/>
-  <let name="profile" value="if (/*/cbc:ProfileID and matches(normalize-space(/*/cbc:ProfileID), 'urn:fdc:peppol.eu:2017:poacc:billing:[0-9]{2}:1.0')) then tokenize(normalize-space(/*/cbc:ProfileID), ':')[7] else 'XX'"/>
 
   <!-- Functions -->
 
@@ -48,6 +48,15 @@
       <assert id="PEPPOL-EN16931-R003"
               test="cbc:BuyerReference or cac:OrderReference/cbc:ID"
               flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
+      <assert id="PEPPOL-EN16931-R004"
+              test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')"
+              flag="fatal">CustomizationID MUST contains 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
+    </rule>
+
+    <rule context="cbc:TaxCurrencyCode">
+      <assert id="PEPPOL-EN16931-R005"
+              test="not(normalize-space(text()) = normalize-space(../cbc:DocumentCurrencyCode/text()))"
+              flag="fatal">Tax currency code MUST be different from document currency code when provided.</assert>
     </rule>
 
     <!-- Accounting customer -->
@@ -68,11 +77,6 @@
     </rule>
 
     <!-- Allowance/Charge -->
-    <rule context="cac:AllowanceCharge[cbc:MultiplierFactorNumeric and cbc:BaseAmount]">
-      <assert id="PEPPOL-EN16931-R040"
-              test="u:slack(if (cbc:Amount) then cbc:Amount else 0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
-              flag="fatal">Sum must be ...</assert>
-    </rule>
     <rule context="cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
       <assert id="PEPPOL-EN16931-R041"
               test="false()"
@@ -82,6 +86,14 @@
       <assert id="PEPPOL-EN16931-R042"
               test="false()"
               flag="fatal">Multiplier MUST be provided when base amount is provided.</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge">
+      <assert id="PEPPOL-EN16931-R040"
+              test="not(cbc:MultiplierFactorNumeric and cbc:BaseAmount) or u:slack(if (cbc:Amount) then cbc:Amount else 0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
+              flag="fatal">Sum must be ...</assert>
+      <assert id="PEPPOL-EN16931-R043"
+              test="xs:decimal(cbc:Amount) &gt;= 0"
+              flag="fatal">Allowance or charge MUST be zero or more.</assert>
     </rule>
 
     <!-- Line level - invoice period -->
@@ -96,14 +108,22 @@
               flag="fatal">End date of line period MUST be within invoice period.</assert>
     </rule>
 
+    <!-- Line level - line extension amount -->
+    <rule context="cac:InvoiceLine | cac:CreditNoteLine">
+      <let name="lineExtensionAmount" value="if (cbc:LineExtensionAmount) then xs:decimal(cbc:LineExtensionAmount) else 0"/>
+      <let name="invoicedQuantity" value="if (cbc:InvoicedQuantity) then xs:decimal(cbc:InvoicedQuantity) else 0"/>
+      <let name="priceAmount" value="if (cac:Price/cbc:PriceAmount) then xs:decimal(cac:Price/cbc:PriceAmount) else 0"/>
+      <let name="allowancesTotal" value="if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']) then xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount)) else 0"/>
+      <let name="chargesTotal" value="if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount)) else 0"/>
+
+      <assert id="PEPPOL-EN16931-R120"
+              test="u:slack($lineExtensionAmount, ($invoicedQuantity * $priceAmount) + $chargesTotal - $allowancesTotal, 0.02)"
+              flag="fatal">Line extension amount MUST be calculated from values provided on line level.</assert>
+    </rule>
+
   </pattern>
 
-  <!-- Formatting -->
-  <pattern>
-
-  </pattern>
-
-  <!-- Restricted code lists -->
+  <!-- Restricted code lists and formatting -->
   <pattern>
     <!-- TODO -->
     <let name="ISO4217" value="tokenize('AFN EUR ALL DZD USD AOA XCD XCD ARS AMD AWG AUD AZN BSD BHD BDT BBD BYN BZD XOF BMD INR BTN BOB BOV USD BAM BWP NOK BRL USD BND BGN XOF BIF CVE KHR XAF CAD KYD XAF XAF CLP CLF CNY AUD AUD COP COU KMF CDF XAF NZD CRC XOF HRK CUP CUC ANG CZK DKK DJF XCD DOP USD EGP SVC USD XAF ERN ETB FKP DKK FJD XPF XAF GMD GEL GHS GIP DKK XCD USD GTQ GBP GNF XOF GYD HTG USD AUD HNL HKD HUF ISK INR IDR XDR IRR IQD GBP ILS JMD JPY GBP JOD KZT KES AUD KPW KRW KWD KGS LAK LBP LSL ZAR LRD LYD CHF MOP MKD MGA MWK MYR MVR XOF USD MRO MUR XUA MXN MXV USD MDL MNT XCD MAD MZN MMK NAD ZAR AUD NPR XPF NZD NIO XOF NGN NZD AUD USD NOK OMR PKR USD PAB USD PGK PYG PEN PHP NZD PLN USD QAR RON RUB RWF SHP XCD XCD XCD WST STD SAR XOF RSD SCR SLL SGD ANG XSU SBD SOS ZAR SSP LKR SDG SRD NOK SZL SEK CHF CHE CHW SYP TWD TJS TZS THB USD XOF NZD TOP TTD TND TRY TMT USD AUD UGX UAH AED GBP USD USD USN UYU UYI UZS VUV VEF VND USD USD XPF MAD YER ZMW ZWL XBA XBB XBC XBD XTS XXX XAU XPD XPT XAG', '\s')"/>
@@ -153,7 +173,7 @@
 
     <rule context="cbc:*[@currencyID]">
       <assert id="PEPPOL-EN16931-CL007"
-              test="some $code in $ISO4217 satisfies text() = $code"
+              test="some $code in $ISO4217 satisfies @currencyID = $code"
               flag="fatal">Currency code must be according to ISO 4217:2005</assert>
     </rule>
 
@@ -161,6 +181,12 @@
       <assert id="PEPPOL-EN16931-P0100"
               test="$profile != '01' or (some $code in tokenize('380 384 393 82 80 84 395 575 623 780', '\s') satisfies normalize-space(text()) = $code)"
               flag="fatal">Invoice type code MUST be set according to the profile.</assert>
+    </rule>
+
+    <rule context="cbc:IssueDate | cbc:DueDate | cbc:TaxPointDate | cbc:StartDate | cbc:EndDate | cbc:ActualDeliveryDate">
+      <assert id="PEPPOL-EN16931-F001"
+              test="string-length(text()) = 10 and (string(.) castable as xs:date)"
+              flag="fatal">A date MUST be formatted YYYY-MM-DD.</assert>
     </rule>
   </pattern>
 

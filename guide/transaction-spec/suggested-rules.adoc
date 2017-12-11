@@ -1,14 +1,14 @@
 .Transaction
-* Format of dates (timezone)
+* Format of dates (timezone) *[PEPPOL-EN16931-F001]*
 * If Invoice line period and invoice period are existing, line period must be within the invoice period *[PEPPOL-EN16931-R110, PEPPOL-EN16931-R111]*
 * BaseAmount * Multiplier = Amount for Allowance/Charge, if used. *[PEPPOL-EN16931-R040]*
 * An allowance or charge cannot have a base amount without the existence of a multiplier *[PEPPOL-EN16931-R041]*
 * An allowance or charge cannot have a multiplier without the existence of a base amount *[PEPPOL-EN16931-R042]*
 * An invoice must have a buyers reference or a purchase order reference *[PEPPOL-EN16931-R003]*
 * Buyer electronic address (EndpointID) is mandatory in an invoice or credit note *[PEPPOL-EN16931-R010]*
-* Validation on calculation of LineExtensionAmount (with a slack of 0.2)
-* If VAT accounting currency exists, it must be different from the invoice currency code
-* Validate customization ID urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0
+* Validation on calculation of LineExtensionAmount (with a slack of 0.2) *[PEPPOL-EN16931-R120]*
+* If VAT accounting currency exists, it must be different from the invoice currency code *[PEPPOL-EN16931-R0059]*
+* Validate customization ID urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0 *[PEPPOL-EN16931-R004]*
 
 
 .NO
