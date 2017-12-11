@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+
+    <Term/>
+    <Name>PEPPOL BIS Invoice 3.0</Name>
+
+    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+
+
+    <Document>
+        <Term>ubl:Invoice</Term>
+
+        <Element>
+            <Term>cbc:CustomizationID</Term>
+            <Name>Specification identifier</Name>
+            <Description>An identification of the specification containing the total set of rules regarding semantic
+                content, cardinalities and business rules to which the data contained in the instance document conforms.
+            </Description>
+        </Element>
+
+        <Element>
+            <Term>cbc:ProfileID</Term>
+            <Name>Business process type</Name>
+            <Description>Identifies the business process context in which the transaction appears, to enable the Buyer to
+                process the Invoice in an appropriate way.
+            </Description>
+        </Element>
+
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Invoice number</Name>
+            <Description>A unique identification of the Invoice.</Description>
+        </Element>
+
+        <Element>
+            <Term>cbc:IssueDate</Term>
+            <Name>Invoice issue date</Name>
+            <Description>The date when the Invoice was issued.</Description>
+            <Value type="EXAMPLE">2017-11-01</Value>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:DueDate</Term>
+            <Name>Payment due date</Name>
+            <Description>The date when the payment is due.</Description>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:InvoiceTypeCode</Term>
+            <Name>Invoice type code</Name>
+            <Description>A code specifying the functional type of the Invoice.</Description>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cbc:Note</Term>
+            <Name>Invoice note subject code</Name>
+            <Description>The subject of the following textual note.</Description>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cbc:Note</Term>
+            <Name>Invoice note</Name>
+            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.
+            </Description>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:TaxPointDate</Term>
+            <Name>Value added tax point date</Name>
+            <Description>The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date
+                can be determined and differs from the date of issue of the invoice, according to the VAT directive...
+            </Description>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:DocumentCurrencyCode</Term>
+            <Name>Invoice currency code</Name>
+            <Description>The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting
+                currency.
+            </Description>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:TaxCurrencyCode</Term>
+            <Name>VAT accounting currency code</Name>
+            <Description>The currency used for VAT accounting and reporting purposes as accepted or required in the country
+                of the Seller.
+            </Description>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:AccountingCost</Term>
+            <Name>Buyer accounting reference</Name>
+            <Description>A textual value that specifies where to book the relevant data into the Buyer's financial
+                accounts.
+            </Description>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:BuyerReference</Term>
+            <Name>Buyer reference</Name>
+            <Description>An identifier assigned by the Buyer used for internal routing purposes.</Description>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:InvoicePeriod</Term>
+            <Name>DELIVERY OR INVOICE PERIOD</Name>
+            <Description>A group of business terms providing information on the invoice period.</Description>
+
+            <Element cardinality="0..1">
+                <Term>cbc:StartDate</Term>
+                <Name>Invoicing period start date</Name>
+                <Description>The date when the Invoice period starts.</Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:EndDate</Term>
+                <Name>Invoicing period end date</Name>
+                <Description>The date when the Invoice period ends.</Description>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cbc:DescriptionCode</Term>
+                <Name>Value added tax point date code</Name>
+                <Description>The code of the date when the VAT becomes accountable for the Seller and for the Buyer.</Description>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cac:OrderReference</Term>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Purchase order reference</Name>
+                <Description>An identifier of a referenced purchase order, issued by the Buyer.</Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:SalesOrderID</Term>
+                <Name>Sales order reference</Name>
+                <Description>An identifier of a referenced sales order, issued by the Seller.</Description>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:BillingReference</Term>
+
+            <Element cardinality="0..1">
+                <Term>cac:InvoiceDocumentReference</Term>
+                <Name>PRECEDING INVOICE REFERENCE</Name>
+                <Description>A group of business terms providing information on one or more preceding Invoices.</Description>
+
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Preceding Invoice number</Name>
+                    <Description>The identification of an Invoice that was previously sent by the Seller.</Description>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>cbc:IssueDate</Term>
+                    <Name>Preceding Invoice issue date</Name>
+                    <Description>The date when the Preceding Invoice was issued.</Description>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:DespatchDocumentReference</Term>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Despatch advice reference</Name>
+                <Description>An identifier of a referenced despatch advice.</Description>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:ReceiptDocumentReference</Term>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Receiving advice reference</Name>
+                <Description>An identifier of a referenced receiving advice.</Description>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:OriginatorDocumentReference</Term>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Tender or lot reference</Name>
+                <Description>The identification of the call for tender or lot the invoice relates to.</Description>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:ContractDocumentReference</Term>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Contract reference</Name>
+                <Description>The identification of a contract.</Description>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:AdditionalDocumentReference</Term>
+            <Name>ADDITIONAL SUPPORTING DOCUMENTS</Name>
+            <Description>A group of business terms providing information about additional supporting documents substantiating the claims made in the Invoice.            </Description>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Invoiced object identifier</Name>
+                <Description>The identification of the call for tender or lot the invoice relates to.</Description>
+            </Element>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Supporting document reference</Name>
+                <Description>An identifier of the supporting document.</Description>
+
+                <Attribute usage="Optional">
+                    <Term>schemeID</Term>
+                    <Name>Scheme identifier</Name>
+                    <Description>The identification scheme identifier of the Invoiced object identifier.</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:DocumentDescription</Term>
+                <Name>Supporting document description</Name>
+                <Description>A description of the supporting document.</Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:Attachment</Term>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+                    <Name>Attached document</Name>
+                    <Description>An attached document embedded as binary object or sent together with the invoice.</Description>
+
+                    <Attribute>
+                        <Term>mimeCode</Term>
+                        <Name>Attached document Mime code</Name>
+                        <Description>The mime code of the attached document.</Description>
+                    </Attribute>
+
+                    <Attribute usage="Optional">
+                        <Term>filename</Term>
+                        <Name>Attached document Filename</Name>
+                        <Description>The file name of the attached document</Description>
+                    </Attribute>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:ExternalReference</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:URI</Term>
+                        <Name>External document location</Name>
+                        <Description>The URL (Uniform Resource Locator) that identifies where the external document is located.
+                        </Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:ProjectReference</Term>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Project reference</Name>
+                <Description>The identification of the project the invoice refers to.</Description>
+            </Element>
+        </Element>
+
+        <Element>
+            <Term>cac:AccountingSupplierParty</Term>
+            <Name>SELLER</Name>
+            <Description>A group of business terms providing information about the Seller.</Description>
+
+            <Element cardinality="0..1">
+                <Term>cac:Party</Term>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:EndpointID</Term>
+                    <Name>Seller electronic address</Name>
+                    <Description>Identifies the Seller's electronic address to which a business document may be delivered.</Description>
+
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Seller electronic address identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Seller electronic address</Description>
+                    </Attribute>
+                </Element>
+                <Element cardinality="0..n">
+                    <Term>cac:PartyIdentification</Term>
+
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Seller identifier</Name>
+                        <Description>An identification of the Seller.</Description>
+                    </Element>
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Bank assigned creditor identifier</Name>
+                        <Description>Unique banking reference identifier of the Payee or Seller assigned by the Payee or Seller bank.
+                        </Description>
+
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>
+                            <Name>Seller identifier identification scheme identifier</Name>
+                            <Description>The identification scheme identifier of the Seller identifier.</Description>
+                        </Attribute>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:PartyName</Term>
+
+                    <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Seller trading name</Name>
+                        <Description>A name by which the Seller is known, other than Seller name (also known as Business name).
+                        </Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:PostalAddress</Term>
+                    <Name>SELLER POSTAL ADDRESS</Name>
+                    <Description>A group of business terms providing information about the address of the Seller.</Description>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:StreetName</Term>
+                        <Name>Seller address line 1</Name>
+                        <Description>The main address line in an address.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:AdditionalStreetName</Term>
+                        <Name>Seller address line 2</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CityName</Term>
+                        <Name>Seller city</Name>
+                        <Description>The common name of the city, town or village, where the Seller address is located.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:PostalZone</Term>
+                        <Name>Seller post code</Name>
+                        <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                        </Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CountrySubentity</Term>
+                        <Name>Seller country subdivision</Name>
+                        <Description>The subdivision of a country.</Description>
+                    </Element>
+
+                    <Element cardinality="0..n">
+                        <Term>cac:AddressLine</Term>
+
+                        <Element>
+                            <Term>cbc:Line</Term>
+                            <Name>Seller address line 3</Name>
+                            <Description>An additional address line in an address that can be used to give further details supplementing the
+                                main line.
+                            </Description>
+                        </Element>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cac:Country</Term>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:IdentificationCode</Term>
+                            <Name>Seller country code</Name>
+                            <Description>A code that identifies the country.</Description>
+                        </Element>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:PartyTaxScheme</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CompanyID</Term>
+                        <Name>Seller VAT identifier</Name>
+                        <Description>The Seller's VAT identifier (also known as Seller VAT identification number).</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CompanyID</Term>
+                        <Name>Seller tax registration identifier</Name>
+                        <Description>The local identification (defined by the Seller’s address) of the Seller for tax purposes or a
+                            reference that enables the Seller to state his registered tax status.
+                        </Description>
+                    </Element>
+
+                    <Element>
+                        <Term>cac:TaxScheme</Term>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:ID</Term>
+                            <Description>Mandatory element. Use “VAT”</Description>
+                        </Element>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:PartyLegalEntity</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:RegistrationName</Term>
+                        <Name>Seller name</Name>
+                        <Description>The full formal name by which the Seller is registered in the national registry of legal entities
+                            or as a Taxable person or otherwise trades as a person or persons.
+                        </Description>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:CompanyID</Term>
+                        <Name>Seller legal registration identifier</Name>
+                        <Description>An identifier issued by an official registrar that identifies the Seller as a legal entity or
+                            person.
+                        </Description>
+
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>
+                            <Name>Seller legal registration identifier identification scheme identifier</Name>
+                            <Description>The identification scheme identifier of the Seller legal registration identifier.</Description>
+                        </Attribute>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:CompanyLegalForm</Term>
+                        <Name>Seller additional legal information</Name>
+                        <Description>Additional legal information relevant for the Seller.</Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Contact</Term>
+                    <Name>SELLER CONTACT</Name>
+                    <Description>A group of business terms providing contact information about the Seller.s</Description>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:Name</Term>
+                        <Name>Seller contact point</Name>
+                        <Description>A contact point for a legal entity or person.</Description>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:Telephone</Term>
+                        <Name>Seller contact telephone number</Name>
+                        <Description>A phone number for the contact point.</Description>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:ElectronicMail</Term>
+                        <Name>Seller contact email address</Name>
+                        <Description>An e-mail address for the contact point.</Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element>
+            <Term>cac:AccountingCustomerParty</Term>
+            <Name>BUYER</Name>
+            <Description>A group of business terms providing information about the Buyer.</Description>
+
+            <Element cardinality="0..1">
+                <Term>cac:Party</Term>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:EndpointID</Term>
+                    <Name>Buyer electronic address</Name>
+                    <Description>Identifies the Buyer's electronic address to which a business document should be delivered.</Description>
+
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Buyer electronic address identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Buyer electronic address.</Description>
+                    </Attribute>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:PartyIdentification</Term>
+
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Buyer identifier</Name>
+                        <Description>An identifier of the Buyer.</Description>
+
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>
+                            <Name>Buyer identifier identification scheme identifier</Name>
+                            <Description>The identification scheme identifier of the Buyer identifier.</Description>
+                        </Attribute>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:PartyName</Term>
+
+                    <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Buyer trading name</Name>
+                        <Description>A name by which the Buyer is known, other than Buyer name (also known as Business name).</Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:PostalAddress</Term>
+                    <Name>BUYER POSTAL ADDRESS</Name>
+                    <Description>A group of business terms providing information about the postal address for the Buyer.</Description>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:StreetName</Term>
+                        <Name>Buyer address line 1</Name>
+                        <Description>The main address line in an address.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:AdditionalStreetName</Term>
+                        <Name>Buyer address line 2</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the
+                            main line.
+                        </Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CityName</Term>
+                        <Name>Buyer city</Name>
+                        <Description>The common name of the city, town or village, where the Buyer's address is located.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:PostalZone</Term>
+                        <Name>Buyer post code</Name>
+                        <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                        </Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CountrySubentity</Term>
+                        <Name>Buyer country subdivision</Name>
+                        <Description>The subdivision of a country.</Description>
+                    </Element>
+
+                    <Element cardinality="0..n">
+                        <Term>cac:AddressLine</Term>
+
+                        <Element>
+                            <Term>cbc:Line</Term>
+                            <Name>Buyer address line 3</Name>
+                            <Description>An additional address line in an address that can be used to give further details supplementing the
+                                main line.
+                            </Description>
+                        </Element>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cac:Country</Term>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:IdentificationCode</Term>
+                            <Name>Buyer country code</Name>
+                            <Description>A code that identifies the country.</Description>
+                        </Element>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:PartyTaxScheme</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CompanyID</Term>
+                        <Name>Buyer VAT identifier</Name>
+                        <Description>The Buyer's VAT identifier (also known as Buyer VAT identification number).</Description>
+                    </Element>
+
+                    <Element>
+                        <Term>cac:TaxScheme</Term>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:ID</Term>
+                            <Description>Mandatory element. Use “VAT”</Description>
+                        </Element>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:PartyLegalEntity</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:RegistrationName</Term>
+                        <Name>Buyer name</Name>
+                        <Description>The full name of the Buyer.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CompanyID</Term>
+                        <Name>Buyer legal registration identifier</Name>
+                        <Description>An identifier issued by an official registrar that identifies the Buyer as a legal entity or
+                            person.
+                        </Description>
+
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>
+                            <Name>Buyer legal registration identifier identification scheme identifier</Name>
+                            <Description>The identification scheme identifier of the Buyer legal registration identifier.</Description>
+                        </Attribute>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Contact</Term>
+                    <Name>BUYER CONTACT</Name>
+                    <Description>A group of business terms providing contact information relevant for the Buyer.</Description>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:Name</Term>
+                        <Name>Buyer contact point</Name>
+                        <Description>A contact point for a legal entity or person.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:Telephone</Term>
+                        <Name>Buyer contact telephone number</Name>
+                        <Description>A phone number for the contact point.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ElectronicMail</Term>
+                        <Name>Buyer contact email address</Name>
+                        <Description>An e-mail address for the contact point.</Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cac:PayeeParty</Term>
+            <Name>PAYEE</Name>
+            <Description>A group of business terms providing information about the Payee, i.e. the role that receives the
+                payment.
+            </Description>
+
+            <Element cardinality="0..n">
+                <Term>cac:PartyIdentification</Term>
+
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Payee identifier</Name>
+                    <Description>An identifier for the Payee.</Description>
+                </Element>
+
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Bank assigned creditor identifier</Name>
+                    <Description>Unique banking reference identifier of the Payee or Seller assigned by the Payee or Seller bank.
+                    </Description>
+
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Payee identifier identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Payee identifier.</Description>
+                    </Attribute>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:PartyName</Term>
+
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Payee name</Name>
+                    <Description>The name of the Payee.</Description>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:PartyLegalEntity</Term>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:CompanyID</Term>
+                    <Name>Payee legal registration identifier</Name>
+                    <Description>An identifier issued by an official registrar that identifies the Payee as a legal entity or
+                        person.
+                    </Description>
+
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Payee legal registration identifier identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Payee legal registration identifier.</Description>
+                    </Attribute>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cac:TaxRepresentativeParty</Term>
+            <Name>SELLER TAX REPRESENTATIVE PARTY</Name>
+            <Description>A group of business terms providing information about the Seller's tax representative.
+            </Description>
+
+            <Element cardinality="0..n">
+                <Term>cac:PartyName</Term>
+
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Seller tax representative name</Name>
+                    <Description>The full name of the Seller's tax representative party.</Description>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:PostalAddress</Term>
+                <Name>SELLER TAX REPRESENTATIVE POSTAL ADDRESS</Name>
+                <Description>A group of business terms providing information about the postal address for the tax representative
+                    party.
+                </Description>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:StreetName</Term>
+                    <Name>Tax representative address line 1</Name>
+                    <Description>The main address line in an address.</Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:AdditionalStreetName</Term>
+                    <Name>Tax representative address line 2</Name>
+                    <Description>An additional address line in an address that can be used to give further details supplementing the
+                        main line.
+                    </Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:CityName</Term>
+                    <Name>Tax representative city</Name>
+                    <Description>The common name of the city, town or village, where the tax representative address is located.
+                    </Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:PostalZone</Term>
+                    <Name>Tax representative post code</Name>
+                    <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                    </Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:CountrySubentity</Term>
+                    <Name>Tax representative country subdivision</Name>
+                    <Description>The subdivision of a country.</Description>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:AddressLine</Term>
+
+                    <Element>
+                        <Term>cbc:Line</Term>
+                        <Name>Tax representative address line 3</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the
+                            main line.
+                        </Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Country</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:IdentificationCode</Term>
+                        <Name>Tax representative country code</Name>
+                        <Description>A code that identifies the country.</Description>
+                    </Element>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:PartyTaxScheme</Term>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:CompanyID</Term>
+                    <Name>Seller tax representative VAT identifier</Name>
+                    <Description>The VAT identifier of the Seller's tax representative party.</Description>
+                </Element>
+                <Element>
+                    <Term>cac:TaxScheme</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ID</Term>
+                        <Description>Mandatory element. Use “VAT”</Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:Delivery</Term>
+            <Name>DELIVERY INFORMATION</Name>
+            <Description>A group of business terms providing information about where and when the goods and services
+                invoiced are delivered.
+            </Description>
+
+            <Element cardinality="0..1">
+                <Term>cbc:ActualDeliveryDate</Term>
+                <Name>Actual delivery date</Name>
+                <Description>The date on which the delivery is made.</Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:DeliveryLocation</Term>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>Deliver to location identifier</Name>
+                    <Description>An identifier for the location at which the goods and services are delivered.</Description>
+
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Deliver to location identifier identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Deliver to location identifier.</Description>
+                    </Attribute>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:Address</Term>
+                    <Name>DELIVER TO ADDRESS</Name>
+                    <Description>A group of business terms providing information about the address to which goods and services
+                        invoiced were or are delivered.
+                    </Description>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:StreetName</Term>
+                        <Name>Deliver to address line 1</Name>
+                        <Description>The main address line in an address.</Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:AdditionalStreetName</Term>
+                        <Name>Deliver to address line 2</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the
+                            main line.
+                        </Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CityName</Term>
+                        <Name>Deliver to city</Name>
+                        <Description>The common name of the city, town or village, where the deliver to address is located.
+                        </Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:PostalZone</Term>
+                        <Name>Deliver to post code</Name>
+                        <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                        </Description>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:CountrySubentity</Term>
+                        <Name>Deliver to country subdivision</Name>
+                        <Description>The subdivision of a country.</Description>
+                    </Element>
+
+                    <Element cardinality="0..n">
+                        <Term>cac:AddressLine</Term>
+
+                        <Element>
+                            <Term>cbc:Line</Term>
+                            <Name>Deliver to address line 3</Name>
+                            <Description>An additional address line in an address that can be used to give further details supplementing the
+                                main line.
+                            </Description>
+                        </Element>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cac:Country</Term>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:IdentificationCode</Term>
+                            <Name>Deliver to country code</Name>
+                            <Description>A code that identifies the country.</Description>
+                        </Element>
+                    </Element>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:DeliveryParty</Term>
+
+                <Element cardinality="0..n">
+                    <Term>cac:PartyName</Term>
+
+                    <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Deliver to party name</Name>
+                        <Description>The name of the party to which the goods and services are delivered.</Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:PaymentMeans</Term>
+            <Name>PAYMENT INSTRUCTIONS</Name>
+            <Description>A group of business terms providing information about the payment.</Description>
+
+            <Element>
+                <Term>cbc:PaymentMeansCode</Term>
+                <Name>Payment means type code</Name>
+                <Description>The means, expressed as code, for how a payment is expected to be or has been settled.
+                </Description>
+
+                <Attribute usage="Optional">
+                    <Term>name</Term>
+                    <Name>Payment means text</Name>
+                    <Description>The means, expressed as text, for how a payment is expected to be or has been settled.
+                    </Description>
+                </Attribute>
+            </Element>
+            <Element cardinality="0..n">
+                <Term>cbc:PaymentID</Term>
+                <Name>Remittance information</Name>
+                <Description>A textual value used to establish a link between the payment and the Invoice, issued by the
+                    Seller.
+                </Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:CardAccount</Term>
+                <Name>PAYMENT CARD INFORMATION</Name>
+                <Description>A group of business terms providing information about card used for payment contemporaneous with
+                    invoice issuance.
+                </Description>
+
+                <Element>
+                    <Term>cbc:PrimaryAccountNumberID</Term>
+                    <Name>Payment card primary account number</Name>
+                    <Description>The Primary Account Number (PAN) of the card used for payment.</Description>
+                </Element>
+
+                <Element>
+                    <Term>cbc:NetworkID</Term>
+                    <Description>Mandatory element. Use card Network identifier.</Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:HolderName</Term>
+                    <Name>Payment card holder name</Name>
+                    <Description>The name of the payment card holder.</Description>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:PayeeFinancialAccount</Term>
+                <Name>CREDIT TRANSFER</Name>
+                <Description>A group of business terms to specify credit transfer payments.</Description>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>Payment account identifier</Name>
+                    <Description>A unique identifier of the financial payment account, at a payment service provider, to which
+                        payment should be made.
+                    </Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:Name</Term>
+                    <Name>Payment account name</Name>
+                    <Description>The name of the payment account, at a payment service provider, to which payment should be made.
+                    </Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:FinancialInstitutionBranch</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ID</Term>
+                        <Name>Payment service provider identifier</Name>
+                        <Description>An identifier for the payment service provider where a payment account is located.</Description>
+                    </Element>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:PaymentMandate</Term>
+                <Name>DIRECT DEBIT</Name>
+                <Description>A group of business terms to specify a direct debit.</Description>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>Mandate reference identifier</Name>
+                    <Description>Unique identifier assigned by the Payee for referencing the direct debit mandate.</Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:PayerFinancialAccount</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ID</Term>
+                        <Name>Debited account identifier</Name>
+                        <Description>The account to be debited by the direct debit.</Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:PaymentTerms</Term>
+
+            <Element cardinality="0..n">
+                <Term>cbc:Note</Term>
+                <Name>Payment terms</Name>
+                <Description>A textual description of the payment terms that apply to the amount due for payment (Including
+                    description of possible penalties).
+                </Description>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:AllowanceCharge</Term>
+            <Name>DOCUMENT LEVEL ALLOWANCES AND CHARGES</Name>
+            <Description>A group of business terms providing information about allowances applicable to the Invoice as a
+                whole. A group of business terms providing information about charges and taxes other than VAT, applicable
+                to the Invoice as a whole.
+            </Description>
+
+            <Element>
+                <Term>cbc:ChargeIndicator</Term>
+                <Description>Mandatory element. Use “true” when informing about Charges and “false” when informing about
+                    Allowances.
+                </Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:AllowanceChargeReasonCode</Term>
+                <Name>Document level allowance reason code</Name>
+                <Description>The reason for the document level allowance or charge, expressed as a code.</Description>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cbc:AllowanceChargeReason</Term>
+                <Name>Document level allowance reason</Name>
+                <Description>The reason for the document level allowance or charge, expressed as text.</Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:MultiplierFactorNumeric</Term>
+                <Name>Document level allowance or charge percentage</Name>
+                <Description>The percentage that may be used, in conjunction with the document level allowance base amount, to
+                    calculate the document level allowance or charge amount.
+                </Description>
+            </Element>
+
+            <Element>
+                <Term>cbc:Amount</Term>
+                <Name>Document level allowance or charge amount</Name>
+                <Description>The amount of an allowance or a charge, without VAT.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:BaseAmount</Term>
+                <Name>Document level allowance or charge base amount</Name>
+                <Description>The base amount that may be used, in conjunction with the document level allowance or charge percentage, to
+                    calculate the document level allowance or charge amount.
+                </Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:TaxCategory</Term>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>Document level allowance or charge VAT category code</Name>
+                    <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:Percent</Term>
+                    <Name>Document level allowance or charge VAT rate</Name>
+                    <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
+                </Element>
+
+                <Element>
+                    <Term>cac:TaxScheme</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ID</Term>
+                        <Description>Mandatory element. Use “VAT”</Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:TaxTotal</Term>
+
+            <Element cardinality="0..1">
+                <Term>cbc:TaxAmount</Term>
+                <Name>Invoice total VAT amount</Name>
+                <Description>The total VAT amount for the Invoice.</Description>
+            </Element>
+
+            <Element>
+                <Term>cbc:TaxAmount</Term>
+                <Name>Invoice total VAT amount in accounting currency</Name>
+                <Description>The VAT total amount expressed in the accounting currency accepted or required in the country of
+                    the Seller.
+                </Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5 or BT-6.</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:TaxSubtotal</Term>
+                <Name>VAT BREAKDOWN</Name>
+                <Description>A group of business terms providing information about VAT breakdown by different categories, rates
+                    and exemption reasons
+                </Description>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:TaxableAmount</Term>
+                    <Name>VAT category taxable amount</Name>
+                    <Description>Sum of all taxable amounts subject to a specific VAT category code and VAT category rate (if the
+                        VAT category rate is applicable).
+                    </Description>
+
+                    <Attribute>
+                        <Term>currencyID</Term>
+                        <Description>Mandatory attribute. Use BT-5 or BT-6.</Description>
+                    </Attribute>
+                </Element>
+
+            </Element>
+            <Element>
+                <Term>cbc:TaxAmount</Term>
+                <Name>VAT category tax amount</Name>
+                <Description>The total VAT amount for a given VAT category.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5 or BT-6.</Description>
+                </Attribute>
+            </Element>
+
+            <Element>
+                <Term>cac:TaxCategory</Term>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>VAT category code</Name>
+                    <Description>Coded identification of a VAT category.</Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:Percent</Term>
+                    <Name>VAT category rate</Name>
+                    <Description>The VAT rate, represented as percentage that applies for the relevant VAT category.</Description>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>cbc:TaxExemptionReasonCode</Term>
+                    <Name>VAT exemption reason code</Name>
+                    <Description>A coded statement of the reason for why the amount is exempted from VAT.</Description>
+                </Element>
+                <Element cardinality="0..n">
+                    <Term>cbc:TaxExemptionReason</Term>
+                    <Name>VAT exemption reason text</Name>
+                    <Description>A textual statement of the reason why the amount is exempted from VAT or why no VAT is being
+                        charged
+                    </Description>
+                </Element>
+                <Element>
+                    <Term>cac:TaxScheme</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ID</Term>
+                        <Description>Mandatory element. Use “VAT”</Description>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+
+
+
+        <Element>
+            <Term>cac:LegalMonetaryTotal</Term>
+            <Name>DOCUMENT TOTALS</Name>
+            <Description>A group of business terms providing the monetary totals for the Invoice.</Description>
+
+            <Element cardinality="0..1">
+                <Term>cbc:LineExtensionAmount</Term>
+                <Name>Sum of Invoice line net amount</Name>
+                <Description>Sum of all Invoice line net amounts in the Invoice.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5.</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:TaxExclusiveAmount</Term>
+                <Name>Invoice total amount without VAT</Name>
+                <Description>The total amount of the Invoice without VAT.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5.</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:TaxInclusiveAmount</Term>
+                <Name>Invoice total amount with VAT</Name>
+                <Description>The total amount of the Invoice with VAT.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5.</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:AllowanceTotalAmount</Term>
+                <Name>Sum of allowances on document level</Name>
+                <Description>Sum of all allowances on document level in the Invoice.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5.</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:ChargeTotalAmount</Term>
+                <Name>Sum of charges on document level</Name>
+                <Description>Sum of all charges on document level in the Invoice.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5.</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:PrepaidAmount</Term>
+                <Name>Paid amount</Name>
+                <Description>The sum of amounts which have been paid in advance.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5.</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:PayableRoundingAmount</Term>
+                <Name>Rounding amount</Name>
+                <Description>The amount to be added to the invoice total to round the amount to be paid.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5.</Description>
+                </Attribute>
+            </Element>
+
+            <Element>
+                <Term>cbc:PayableAmount</Term>
+                <Name>Amount due for payment</Name>
+                <Description>The outstanding amount that is requested to be paid.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5.</Description>
+                </Attribute>
+            </Element>
+        </Element>
+
+        <Element cardinality="1..n">
+            <Term>cac:InvoiceLine</Term>
+            <Name>INVOICE LINE</Name>
+            <Description>A group of business terms providing information on individual Invoice lines.</Description>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Invoice line identifier</Name>
+                <Description>A unique identifier for the individual line within the Invoice.</Description>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cbc:Note</Term>
+                <Name>Invoice line note</Name>
+                <Description>A textual note that gives unstructured information that is relevant to the Invoice line.
+                </Description>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:InvoicedQuantity</Term>
+                <Name>Invoiced quantity</Name>
+                <Description>The quantity of items (goods or services) that is charged in the Invoice line.</Description>
+
+                <Attribute usage="Optional">
+                    <Term>unitCode</Term>
+                    <Name>Invoiced quantity unit of measure</Name>
+                    <Description>The unit of measure that applies to the invoiced quantity.</Description>
+                </Attribute>
+            </Element>
+
+            <Element>
+                <Term>cbc:LineExtensionAmount</Term>
+                <Name>Invoice line net amount</Name>
+                <Description>The total amount of the Invoice line.</Description>
+
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5.</Description>
+                </Attribute>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:AccountingCost</Term>
+                <Name>Invoice line Buyer accounting reference</Name>
+                <Description>A textual value that specifies where to book the relevant data into the Buyer's financial
+                    accounts.
+                </Description>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:InvoicePeriod</Term>
+                <Name>INVOICE LINE PERIOD</Name>
+                <Description>A group of business terms providing information about the period relevant for the Invoice line.
+                </Description>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:StartDate</Term>
+                    <Name>Invoice line period start date</Name>
+                    <Description>The date when the Invoice period for this Invoice line starts.</Description>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>cbc:EndDate</Term>
+                    <Name>Invoice line period end date</Name>
+                    <Description>The date when the Invoice period for this Invoice line ends.</Description>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:OrderLineReference</Term>
+
+                <Element>
+                    <Term>cbc:LineID</Term>
+                    <Name>Referenced purchase order line reference</Name>
+                    <Description>An identifier for a referenced line within a purchase order, issued by the Buyer.</Description>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:DocumentReference</Term>
+
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Invoice line object identifier</Name>
+                    <Description>An identifier for an object on which the invoice line is based, given by the Seller.</Description>
+
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Invoice line object identifier identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Invoice line object identifier.</Description>
+                    </Attribute>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cac:AllowanceCharge</Term>
+                <Name>INVOICE LINE ALLOWANCES OR CHARGES</Name>
+                <Description>A group of business terms providing information about allowances or charges applicable to the individual
+                    Invoice line.
+                </Description>
+
+                <Element>
+                    <Term>cbc:ChargeIndicator</Term>
+                    <Description>Mandatory element. Use “true” when informing about Charges and “false” when informing about
+                        Allowances
+                    </Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:AllowanceChargeReasonCode</Term>
+                    <Name>Invoice line allowance or charge reason code</Name>
+                    <Description>The reason for the Invoice line allowance or charge, expressed as a code.</Description>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cbc:AllowanceChargeReason</Term>
+                    <Name>Invoice line allowance or charge reason</Name>
+                    <Description>The reason for the Invoice line allowance or charge, expressed as text.</Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:MultiplierFactorNumeric</Term>
+                    <Name>Invoice line allowance or charge percentage</Name>
+                    <Description>The percentage that may be used, in conjunction with the Invoice line allowance or charge base amount, to
+                        calculate the Invoice line allowance or charge amount.
+                    </Description>
+                </Element>
+
+                <Element>
+                    <Term>cbc:Amount</Term>
+                    <Name>Invoice line allowance or charge amount</Name>
+                    <Description>The amount of an allowance or charge, without VAT.</Description>
+
+                    <Attribute>
+                        <Term>currencyID</Term>
+                        <Description>Mandatory attribute. Use BT-5.</Description>
+                    </Attribute>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:BaseAmount</Term>
+                    <Name>Invoice line allowance or charge base amount</Name>
+                    <Description>The base amount that may be used, in conjunction with the Invoice line allowance or charge percentage, to
+                        calculate the Invoice line allowance or charge amount.
+                    </Description>
+
+                    <Attribute>
+                        <Term>currencyID</Term>
+                        <Description>Mandatory attribute. Use BT-5.</Description>
+                    </Attribute>
+                </Element>
+            </Element>
+
+            <Element>
+                <Term>cac:Item</Term>
+                <Name>ITEM INFORMATION</Name>
+                <Description>A group of business terms providing information about the goods and services invoiced.
+                </Description>
+
+                <Element cardinality="0..n">
+                    <Term>cbc:Description</Term>
+                    <Name>Item description</Name>
+                    <Description>A description for an item.</Description>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:Name</Term>
+                    <Name>Item name</Name>
+                    <Description>A name for an item.</Description>
+                </Element>
+                <Element cardinality="0..n">
+                    <Term>cac:BuyersItemIdentification</Term>
+
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Item Buyer's identifier</Name>
+                        <Description>An identifier, assigned by the Buyer, for the item.</Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:SellersItemIdentification</Term>
+
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Item Seller's identifier</Name>
+                        <Description>An identifier, assigned by the Seller, for the item.</Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:StandardItemIdentification</Term>
+
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Item standard identifier</Name>
+                        <Description>An item identifier based on a registered scheme.</Description>
+
+                        <Attribute>
+                            <Term>schemeID</Term>
+                            <Name>Item standard identifier identification scheme identifier</Name>
+                            <Description>The identification scheme identifier of the Item standard identifier</Description>
+                        </Attribute>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:OriginCountry</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:IdentificationCode</Term>
+                        <Name>Item country of origin</Name>
+                        <Description>The code identifying the country from which the item originates.</Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:CommodityClassification</Term>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ItemClassificationCode</Term>
+                        <Name>Item classification identifier</Name>
+                        <Description>A code for classifying the item by its type or nature.</Description>
+
+                        <Attribute usage="Optional">
+                            <Term>listID</Term>
+                            <Name>Item classification identifier identification scheme identifier</Name>
+                            <Description>The identification scheme identifier of the Item classification identifier</Description>
+                        </Attribute>
+
+                        <Attribute usage="Optional">
+                            <Term>listVersionID</Term>
+                            <Name>Item classification identifier version identification scheme identifier</Name>
+                            <Description>The identification scheme version identifier of the Item classification identifier</Description>
+                        </Attribute>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:ClassifiedTaxCategory</Term>
+                    <Name>LINE VAT INFORMATION</Name>
+                    <Description>A group of business terms providing information about the VAT applicable for the goods and services
+                        invoiced on the Invoice line.
+                    </Description>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ID</Term>
+                        <Name>Invoiced item VAT category code</Name>
+                        <Description>The VAT category code for the invoiced item.</Description>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:Percent</Term>
+                        <Name>Invoiced item VAT rate</Name>
+                        <Description>The VAT rate, represented as percentage that applies to the invoiced item.</Description>
+                    </Element>
+
+                    <Element>
+                        <Term>cac:TaxScheme</Term>
+
+                        <Element cardinality="0..1">
+                            <Term>cbc:ID</Term>
+                            <Description>Mandatory element. Use “VAT”</Description>
+                        </Element>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:AdditionalItemProperty</Term>
+                    <Name>ITEM ATTRIBUTES</Name>
+                    <Description>A group of business terms providing information about properties of the goods and services
+                        invoiced.
+                    </Description>
+
+                    <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Item attribute name</Name>
+                        <Description>The name of the attribute or property of the item.</Description>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:Value</Term>
+                        <Name>Item attribute value</Name>
+                        <Description>The value of the attribute or property of the item.</Description>
+                    </Element>
+                </Element>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cac:Price</Term>
+                <Name>PRICE DETAILS</Name>
+                <Description>A group of business terms providing information about the price applied for the goods and services
+                    invoiced on the Invoice line.
+                </Description>
+
+                <Element>
+                    <Term>cbc:PriceAmount</Term>
+                    <Name>Item net price</Name>
+                    <Description>The price of an item, exclusive of VAT, after subtracting item price discount.</Description>
+
+                    <Attribute>
+                        <Term>currencyID</Term>
+                        <Description>Mandatory element. Use BT-5.</Description>
+                    </Attribute>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:BaseQuantity</Term>
+                    <Name>Item price base quantity</Name>
+                    <Description>The number of item units to which the price applies.</Description>
+
+                    <Attribute usage="Optional">
+                        <Term>unitCode</Term>
+                        <Name>Item price base quantity unit of measure code</Name>
+                        <Description>The unit of measure that applies to the Item price base quantity.</Description>
+                    </Attribute>
+                </Element>
+
+                <Element cardinality="0..n">
+                    <Term>cac:AllowanceCharge</Term>
+
+                    <Element>
+                        <Term>cbc:ChargeIndicator</Term>
+                        <Description>Mandatory element. Use “false”</Description>
+                    </Element>
+                    <Element>
+                        <Term>cbc:Amount</Term>
+                        <Name>Item price discount</Name>
+                        <Description>The total discount subtracted from the Item gross price to calculate the Item net price.
+                        </Description>
+
+                        <Attribute>
+                            <Term>currencyID</Term>
+                            <Description>Mandatory element. Use BT-5.</Description>
+                        </Attribute>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:BaseAmount</Term>
+                        <Name>Item gross price</Name>
+                        <Description>The unit price, exclusive of VAT, before subtracting Item price discount.</Description>
+
+                        <Attribute>
+                            <Term>currencyID</Term>
+                            <Description>Mandatory element. Use BT-5.</Description>
+                        </Attribute>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+    </Document>
+
+</Structure>
