@@ -1,0 +1,7 @@
+
+
+.XML for Allowances and Charges on invoice line
+[source, xml, indent=0]
+----
+include::snippets/Snippet-refs.xml[tags=charge-line]
+----

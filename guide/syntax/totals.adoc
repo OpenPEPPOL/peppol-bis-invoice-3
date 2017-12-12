@@ -11,27 +11,27 @@ The following elements show the legal monetary totals for an invoice or credit n
 
 | <cbc:LineExtensionAmount>
 | Sum of line amounts
-| ∑ (cac:InvoiceLine/cbc:LineExtensionAmount)
+| stem:[sum("cac:InvoiceLine/cbc:LineExtensionAmount")]
 
 | <cbc:AllowanceTotalAmount>
 | Allowances on document level
-| ∑ (cac:AllowanceCharge[ChargeIndicator='true']/cbc:Amount )
+| stem:[sum("cac:AllowanceCharge[ChargeIndicator='true'$$]$$/cbc:Amount")]
 
 | <cbc:ChargeTotalAmount>
 | Charges on document level
-| ∑ (cac:AllowanceCharge[ChargeIndicator='false']/cbc:Amount )
+| stem:[sum("cac:AllowanceCharge[ChargeIndicator='false'$$]$$/cbc:Amount")]
 
 | <cbc:TaxExclusiveAmount>
 | Invoice total amount without VAT
-| cac:LegalMonetaryTotal/cbc:LineExtensionAmount +
-– cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount +
-+ cac:LegalMonetaryTotal/cbc:ChargeTotalAmount
+| stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:LineExtensionAmount"] +
+stem:[– \ "cac:LegalMonetaryTotal/cbc:AllowanceTotalAmount"] +
+stem:[+ \ "cac:LegalMonetaryTotal/cbc:ChargeTotalAmount"]
 
 | <cbc:TaxInclusiveAmount>
 | Invoice/Credit note total amount included VAT
-| cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount +
-+  cac:TaxTotal/cbc:TaxAmount +
-+  cac:LegalMonetaryTotal/cbc:PayableRoundingAmount
+| stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount"] +
+stem:[+ \ "cac:TaxTotal/cbc:TaxAmount"] +
+stem:[+ \ "cac:LegalMonetaryTotal/cbc:PayableRoundingAmount"]
 
 | <cbc:PrepaidAmount>
 | Any amounts that have been paid a-priory
@@ -43,7 +43,8 @@ The following elements show the legal monetary totals for an invoice or credit n
 
 | <cbc:PayableAmount>
 | The amount that is expected to be paid
-| cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount –  cac:LegalMonetaryTotal/cbc:PrepaidAmount
+| stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount"] +
+stem:[- \ "cac:LegalMonetaryTotal/cbc:PrepaidAmount"]
 |===
 
 

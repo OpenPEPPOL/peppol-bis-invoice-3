@@ -12,37 +12,38 @@ Formulas for the calculations of totals are as follows:
 
 | BT-106
 | Sum of invoice line net amounts
-| ∑ (BT-131: Invoice line net amount)
+| stem:[sum("BT-131: Invoice line net amount")]
 
 | BT-107
 | Sum of allowances on document level
-| ∑ (BT-92: Document level allowance amount)
+| stem:[sum("BT-92: Document level allowance amount")]
 
 | BT-108
 | Sum of charges on document level
-| ∑ (BT-99: Document level charge amount)
+| stem:[sum("BT-99: Document level charge amount")]
 
 
 | BT-109
 | Invoice total amount without VAT
-| BT-106 (Sum of invoice line net amounts) +
-- BT-107 (Sum of allowances on document level) +
-+ BT-108 (Sum of allowances on document level)
+| stem:[\ \ \ \ "BT-106: Sum of invoice line net amounts"] +
+stem:[- \ "BT-107: Sum of allowances on document level"] +
+stem:[+ \ "BT-108: Sum of allowances on document level"]
 
 | BT-110
 | Invoice total VAT amount
-| ∑ (BT-117: VAT category tax amount)
+| stem:[sum("BT-117: VAT category tax amount")]
+
 
 | BT-112
 | Invoice total amount with VAT
-| BT-109 (Invoice total amount without VAT) +
-+ BT-110 (Invoice total VAT amount) +
-+ BT-114 (Rounding amount)
+| stem:[\ \ \ \ "BT-109: Invoice total amount without VAT"] +
+stem:[+ \ "BT-110: Invoice total VAT amount"] +
+stem:[+ \ "BT-114: Rounding amount"]
 
 | BT-115
 | Amount due for payment
-| BT-112 (Invoice total amount with VAT) +
-- BT-113 (Paid amount)
+| stem:[\ \ \ \ "BT-112: Invoice total amount with VAT"] +
+stem:[- \ "BT-113: Paid amount"]
 
 |===
 
