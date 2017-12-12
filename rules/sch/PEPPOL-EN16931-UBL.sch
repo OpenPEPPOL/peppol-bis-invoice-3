@@ -13,7 +13,7 @@
 
   <!-- Parameters -->
 
-  <let name="profile" value="if (/*/cbc:ProfileID and matches(normalize-space(/*/cbc:ProfileID), 'urn:fdc:peppol.eu:2017:poacc:billing:([0-9]{2}):1.0')) then tokenize(normalize-space(/*/cbc:ProfileID), ':')[7] else 'XX'"/>
+  <let name="profile" value="if (/*/cbc:ProfileID and matches(normalize-space(/*/cbc:ProfileID), 'urn:fdc:peppol.eu:2017:poacc:billing:([0-9]{2}):1.0')) then tokenize(normalize-space(/*/cbc:ProfileID), ':')[7] else 'Unknown'"/>
   <let name="supplierCountry" value="if (/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode) then upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) else 'XX'"/>
 
   <!-- Functions -->
@@ -72,7 +72,7 @@
               test="not($supplierCountry = 'NO') or cac:PartyLegalEntity"
               flag="fatal">Norwegian suppliers MUST provide legal entity.</assert>
       <assert id="NO-R-002"
-              test="normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID) = 'Foretaksregisteret'"
+              test="not($supplierCountry = 'NO') or normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID) = 'Foretaksregisteret'"
               flag="warning">"Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
     </rule>
 
@@ -96,16 +96,6 @@
               flag="fatal">Allowance/charge amount cannot be negative</assert>
     </rule>
 
-    <!-- Allowance (price level) -->
-    <rule context="cac:Price/cac:AllowanceCharge">
-      <assert id="PEPPOL-EN16931-R044"
-              test="normalize-space(cbc:ChargeIndicator) = 'false'"
-              flag="fatal">Charge on price level is NOT allowed.</assert>
-      <assert id="PEPPOL-EN16931-R045"
-              test="xs:decimal(cbc:Amount) &gt;= 0"
-              flag="fatal">Allowance or charge MUST be zero or more.</assert>
-    </rule>
-
     <!-- Line level - invoice period -->
     <rule context="ubl-invoice:Invoice[cac:InvoicePeriod/cbc:StartDate]/cac:InvoiceLine/cac:InvoicePeriod/cbc:StartDate | ubl-creditnote:CreditNote[cac:InvoicePeriod/cbc:StartDate]/cac:CreditNoteLine/cac:InvoicePeriod/cbc:StartDate">
       <assert id="PEPPOL-EN16931-R110"
@@ -123,12 +113,31 @@
       <let name="lineExtensionAmount" value="if (cbc:LineExtensionAmount) then xs:decimal(cbc:LineExtensionAmount) else 0"/>
       <let name="invoicedQuantity" value="if (cbc:InvoicedQuantity) then xs:decimal(cbc:InvoicedQuantity) else 0"/>
       <let name="priceAmount" value="if (cac:Price/cbc:PriceAmount) then xs:decimal(cac:Price/cbc:PriceAmount) else 0"/>
+      <let name="baseQuantity" value="if (cac:Price/cbc:BaseQuantity) then xs:decimal(cac:Price/cbc:BaseQuantity) else 1"/>
       <let name="allowancesTotal" value="if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']) then xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount)) else 0"/>
       <let name="chargesTotal" value="if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount)) else 0"/>
+      <!-- Ta med base quantity -->
 
       <assert id="PEPPOL-EN16931-R120"
-              test="u:slack($lineExtensionAmount, ($invoicedQuantity * $priceAmount) + $chargesTotal - $allowancesTotal, 0.02)"
+              test="u:slack($lineExtensionAmount, ($invoicedQuantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
               flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * Item net price) + Invoice line charge amount - Invoice line allowance amount</assert>
+    </rule>
+
+    <!-- Allowance (price level) -->
+    <rule context="cac:Price/cac:AllowanceCharge">
+      <assert id="PEPPOL-EN16931-R044"
+              test="normalize-space(cbc:ChargeIndicator) = 'false'"
+              flag="fatal">Charge on price level is NOT allowed.</assert>
+      <assert id="PEPPOL-EN16931-R045"
+              test="xs:decimal(cbc:Amount) &gt;= 0"
+              flag="fatal">Allowance or charge MUST be zero or more.</assert>
+    </rule>
+
+    <!-- Price -->
+    <rule context="cac:Price/cbc:BaseQuantity[@unitCode]">
+      <assert id="PEPPOL-EN16931-R130"
+              test="@unitCode = ../../cbc:InvoicedQuantity/@unitCode"
+              flag="fatal">Unit code of price base quantity MUST be same as invoiced quantity.</assert>
     </rule>
 
   </pattern>
@@ -165,7 +174,7 @@
 
     <rule context="cac:ClassifiedTaxCategory/cbc:ID | cac:TaxCategory/cbc:ID">
       <assert id="PEPPOL-EN16931-CL004"
-              test="some $code in $UNCL5305 satisfies text() = $code"
+              test="some $code in $UNCL5305 satisfies normalize-space(text()) = $code"
               flag="fatal">Tax category code must be according to defined subset of UNCL 5305 D.16B.</assert>
     </rule>
 
@@ -177,7 +186,7 @@
 
     <rule context="cac:InvoicePeriod/cbc:DescriptionCode">
       <assert id="PEPPOL-EN16931-CL006"
-              test="text() = 'ZZZ' or (text() castable as xs:integer and number(text()) &gt;= 1 and number(text()) &lt;= 809)"
+              test="some $code in $UNCL2005 satisfies normalize-space(text()) = $code"
               flag="fatal">Invoice period description code must be according to UNCL 2005 D.16B.</assert>
     </rule>
 

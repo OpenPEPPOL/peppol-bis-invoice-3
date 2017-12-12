@@ -231,4 +231,37 @@
 
 		</Invoice>
 	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R120</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				 xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+				 xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				<cbc:InvoicedQuantity>10</cbc:InvoicedQuantity>
+				<cbc:LineExtensionAmount currencyID="NOK">90</cbc:LineExtensionAmount>
+
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+					<cbc:Amount currencyID="NOK">30</cbc:Amount>
+				</cac:AllowanceCharge>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<cbc:Amount currencyID="NOK">10</cbc:Amount>
+				</cac:AllowanceCharge>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<cbc:Amount currencyID="NOK">10</cbc:Amount>
+				</cac:AllowanceCharge>
+
+				<cac:Price>
+					<cbc:PriceAmount currencyID="NOK">20</cbc:PriceAmount>
+					<cbc:BaseQuantity>2</cbc:BaseQuantity>
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
 </testSet>
