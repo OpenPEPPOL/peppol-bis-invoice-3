@@ -1,8 +1,7 @@
 
 
-= Restricted information elements
+= Restrictions on the invoice and credit note transaction
 
-Below is a list of restrictions this CIUS is enforcing on the elements from the data model of {EN16931}.
 
 
 
@@ -37,7 +36,8 @@ Below is a list of restrictions this CIUS is enforcing on the elements from the 
 | BT-24
 | Specification identifier
 | Add new non-conflicting business rule to existing element(s)
-| Specification identifier MUST have the value 'urn:cen.eu:en16931:2017# + compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'. +
+| Specification identifier MUST have the value 'urn:cen.eu:en16931:2017# +
+ compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'. +
 *(Remove spaces before use of value)*
 | PEPPOL-EN16931-R004
 
