@@ -5,7 +5,7 @@
 
 
 
-[cols="1s,2s,2,4,1", options="header"]
+[cols="2s,2s,2,4,1", options="header"]
 |====
 
 | BT-ID
