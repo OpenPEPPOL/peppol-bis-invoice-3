@@ -18,6 +18,10 @@
             <Description>An identification of the specification containing the total set of rules regarding semantic
                 content, cardinalities and business rules to which the data contained in the instance document conforms.
             </Description>
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">BT-24</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R004</Reference>
+            <Reference type="RULE">BR-01</Reference>
         </Element>
 
         <Element>
@@ -26,44 +30,66 @@
             <Description>Identifies the business process context in which the transaction appears, to enable the Buyer to
                 process the Invoice in an appropriate way.
             </Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-23</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R001</Reference>
         </Element>
 
         <Element>
             <Term>cbc:ID</Term>
             <Name>Invoice number</Name>
-            <Description>A unique identification of the Invoice.</Description>
+            <Description>A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], 
+                to uniquely identify the Invoice within the business context, time-frame, operating systems and records of the Seller. 
+                It may be based on one or more series of numbers, which may include alphanumeric characters. No identification scheme is to be used.</Description>
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">BT-1</Reference>
+            <Reference type="RULE">BR-02</Reference>
         </Element>
 
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Invoice issue date</Name>
             <Description>The date when the Invoice was issued.</Description>
+            <DataType>Date</DataType>
+            <Reference type="RULE">BR-03</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
         </Element>
 
         <Element cardinality="0..1">
             <Term>cbc:DueDate</Term>
             <Name>Payment due date</Name>
-            <Description>The date when the payment is due.</Description>
+            <Description>The date when the payment is due. The payment due date reflects the due date of the net payment. 
+                 The corresponding description of more complex payment terms can be stated in BT-20 Payment terms.</Description>
+            <DataType>Date</DataType>
+            <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
+            <Value type="EXAMPLE">2017-11-01</Value>
         </Element>
 
         <Element cardinality="0..1">
             <Term>cbc:InvoiceTypeCode</Term>
             <Name>Invoice type code</Name>
             <Description>A code specifying the functional type of the Invoice.</Description>
+            <DataType>Code</DataType>
+            <Reference type="CODE_LIST">UNTDID 1001</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
         </Element>
-
+        
+<!-- Denne skal vel utgå? 
         <Element cardinality="0..n">
             <Term>cbc:Note</Term>
             <Name>Invoice note subject code</Name>
             <Description>The subject of the following textual note.</Description>
         </Element>
-
-        <Element cardinality="0..n">
+-->
+        
+        <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Invoice note</Name>
-            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.
+            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or
+                assignment note in case the invoice has been factored.
             </Description>
+            <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
         </Element>
 
         <Element cardinality="0..1">
@@ -78,8 +104,11 @@
             <Term>cbc:DocumentCurrencyCode</Term>
             <Name>Invoice currency code</Name>
             <Description>The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting
-                currency.
+                currency. Only one currency shall be used in the Invoice, except for the Invoice total VAT amount in accounting currency (BT-111) 
+                in accordance with article 230 of Directive 2006/112/EC on VAT [2].
             </Description>
+            <DataType>Code</DataType>
+            <Reference type="CODE_LIST">ISO4217</Reference>
         </Element>
 
         <Element cardinality="0..1">
