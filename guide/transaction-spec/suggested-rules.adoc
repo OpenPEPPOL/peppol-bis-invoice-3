@@ -9,6 +9,7 @@
 * Validation on calculation of LineExtensionAmount (with a slack of 0.2) *[PEPPOL-EN16931-R120]*
 * If VAT accounting currency exists, it must be different from the invoice currency code *[PEPPOL-EN16931-R0059]*
 * Validate customization ID urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0 *[PEPPOL-EN16931-R004]*
+* Profile ID:  Element must have value `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0`
 
 
 .NO

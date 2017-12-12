@@ -162,7 +162,7 @@
     <rule context="cac:CountryCode/cbc:IdentificationCode | cac:OriginCountry/cbc:IdentificationCode">
       <assert id="PEPPOL-EN16931-CL005"
               test="some $code in $ISO6133 satisfies text() = $code"
-              flag="fatal">County code must be according to ISO 6133 Alpha-2.</assert>
+              flag="fatal">Counrty code must be according to ISO 6133 Alpha-2.</assert>
     </rule>
 
     <rule context="cac:InvoicePeriod/cbc:DescriptionCode">

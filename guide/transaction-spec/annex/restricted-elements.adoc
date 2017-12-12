@@ -4,7 +4,6 @@
 
 Below is a list of restrictions this CIUS is enforcing on the elements from the data model of {EN16931}.
 
-#Should we add information on the yet unknown code lists, and their use?#
 
 
 [cols="1s,2s,2,4,1", options="header"]
@@ -16,37 +15,103 @@ Below is a list of restrictions this CIUS is enforcing on the elements from the 
 | Description
 | Rule
 
-| BT-3
-| Invoice type code
-| Mark defined values as not allowed
-| Allowed set of values can be found in <<Invoice Type Code>>
-| #RuleID#
 
 | BG-1
 | Invoice note
 | Decrease number of repetitions (x..n – > x..1)
 | Change cardinality from 0..n to 0..1
-| #RuleID#
+| PEPPOL-EN16931-R003
 
 | BT-21
 | Invoice note subject code
 | Mark conditional information element not to be used
 | Changing cardinality 0..1 to 0..0
-| #RuleID#
+| Not applicable
 
 | BT-23
 | Business process type
 | Make a conditional element mandatory (0..x  – > 1..x)
 | Changing cardinality 0..1 to 1..1
-| #RuleID#
+| PEPPOL-EN16931-R001
 
 | BT-24
 | Specification identifier
 | Add new non-conflicting business rule to existing element(s)
-| Element must have value +
-`urn:cen.eu:en16931:2017: +
-extended:urn:fdc:peppol.eu:2017:poacc:billing:3.0`
+| Specification identifier MUST have the value 'urn:cen.eu:en16931:2017# + compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'. +
 *(Remove spaces before use of value)*
-| #RuleID#
+| PEPPOL-EN16931-R004
 
+| BT-134
+| Invoice line period start date
+| Add new non-conflicting business rule to existing element(s)
+| Start date of line period MUST be within invoice period.
+| PEPPOL-EN16931-R110
+
+| BT-135
+| Invoice line period end date
+| Add new non-conflicting business rule to existing element(s)
+| End date of line period MUST be within invoice period.
+| PEPPOL-EN16931-R111
+
+| BT-93,BT-100,BT-137, BT-142
+| Invoice line period end date
+| Add new non-conflicting business rule to existing element(s)
+| Base amount MUST be provided when multiplier is provided.
+| PEPPOL-EN16931-R041
+
+| BT-10 and BT-13
+| Buyer reference or Purchase order
+| Add new non-conflicting business rule to existing element(s)
+| A buyer reference or purchase order reference MUST be provided.
+| PEPPOL-EN16931-R004
+
+| BT-6
+| Buyer reference or Purchase order
+| Add new non-conflicting business rule to existing element(s)
+| VAT accounting currency code MUST be different from invoice currency code when provided.
+| PEPPOL-EN16931-R005
+
+| BT-49
+| Buyer electronic address
+| Add new non-conflicting business rule to existing element(s)
+| Buyer electronic address MUST be provided
+| PEPPOL-EN16931-R010
+
+| BT-93, BT-100, BT-137 and BT-142
+| Allowance/charge base amount
+| Add new non-conflicting business rule to existing element(s)
+| Allowance/charge base amount MUST be provided when allowance/charge percentage is provided.
+| PEPPOL-EN16931-R041
+
+| BT-94, BT-101, BT-138 and BT-143
+| Allowance/charge percentage
+| Add new non-conflicting business rule to existing element(s)
+| Allowance/charge percentage MUST be provided when allowance/charge base amount is provided.
+| PEPPOL-EN16931-R042
+
+| BT-94, BT-101, BT-138 and BT-143
+| Allowance/charge amount
+| Add new non-conflicting business rule to existing element(s)
+a| If base amount and percentage exists in the instance, then +
+stem:["Allowance/charge amount" =
+"base amount" times ("percentage" div 100)]
+| PEPPOL-EN16931-R040
+
+| BT-94, BT-101, BT-138, BT-143 and BT-147
+| Allowance/charge amount
+| Add new non-conflicting business rule to existing element(s)
+| Allowance/charge amount cannot be negative
+| PEPPOL-EN16931-R043
+
+| BT-131
+| Invoice line net amount
+| Add new non-conflicting business rule to existing element(s)
+a| stem:["Invoice line net amount" = ("Invoiced quantity" times "Item net price") + "Invoice line charge amount" - "Invoice line allowance amount"]
+| PEPPOL-EN16931-R120
+
+| BT-2, BT-7, BT-9, BT-26, BT-72, BT-73, BT-74, BT-134, BT-135
+| All date elements
+| Add new non-conflicting business rule to existing element(s)
+| A date must be formatted `YYYY-MM-DD`
+| PEPPOL-EN16931-F001
 |====
