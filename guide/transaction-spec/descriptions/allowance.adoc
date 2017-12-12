@@ -1,5 +1,5 @@
 
-= Allowances and Charges, General Rules
+= Allowances and Charges
 
 . Several allowances and charges may be supplied both on header level and line level. For the price only one occurence of allowance (discount) is allowed.
 The element `cac:AllowanceCharge` with sub element `cbc:ChargeIndicator` indicates whether the instance is a charge (true) or an allowance (false).

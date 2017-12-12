@@ -7,8 +7,8 @@
 
 
 | Invoice and credit note
-| urn:cen.eu:en16931:2017: +
-extended:urn:fdc:peppol.eu:2017:poacc:billing:3.0
+| urn:cen.eu:en16931:2017# +
+compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0
 | urn:fdc:peppol.eu:2017:poacc:billing:01:1.0
 
 |===
