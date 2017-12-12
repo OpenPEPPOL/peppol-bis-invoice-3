@@ -20,6 +20,10 @@
 :cii-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63741&cs=1FA9686BFF2EEFD10B83676518F8C1AFE
 :TC434-docs: https://standards.cen.eu/dyn/www/f?p=204:32:0::::FSP_ORG_ID:1883209&cs=1E81C9C833655EEDC7010C8D0A2FB786C
 
+//UBL
+:UBLInv: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd[UBL Invoice 2.1]
+
+
 //Eu directives
 :VAT-dir: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:l31057[Directive 2006/112/EC]
 
