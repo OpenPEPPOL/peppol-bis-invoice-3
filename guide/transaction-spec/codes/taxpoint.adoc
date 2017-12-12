@@ -17,8 +17,8 @@ Valid values are listed in the table below:
 | Invoice document issue date time
 
 | 35
-| Paid to date
+| Delivery date/time, actual
 
 | 432
-| Standard rate
+| Paid to date
 |===

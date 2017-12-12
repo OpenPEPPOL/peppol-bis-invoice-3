@@ -27,7 +27,7 @@ Formulas for the calculations of totals are as follows:
 | Invoice total amount without VAT
 | stem:[\ \ \ \ "BT-106: Sum of invoice line net amounts"] +
 stem:[- \ "BT-107: Sum of allowances on document level"] +
-stem:[+ \ "BT-108: Sum of allowances on document level"]
+stem:[+ \ "BT-108: Sum of charges on document level"]
 
 | BT-110
 | Invoice total VAT amount

@@ -20,3 +20,4 @@ The Invoice and credit note transactions has elements for Allowance/charge on 3 
 ****
 
 include::../../syntax/allowance.adoc[]
+include::../../syntax/allowance-line.adoc[]

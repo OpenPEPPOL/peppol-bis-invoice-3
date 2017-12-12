@@ -5,7 +5,6 @@
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
     <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
-
     <cbc:ID>Snippet1</cbc:ID>
     <cbc:IssueDate>2017-11-13</cbc:IssueDate>
     <cbc:DueDate>2017-12-01</cbc:DueDate>
@@ -23,21 +22,16 @@
     </cac:InvoicePeriod>
     <!-- tag::order-ref[] -->
     <cac:OrderReference>
-        <cbc:ID>o-998877</cbc:ID>
-        <!--1-->
-        <cbc:SalesOrderID>so-12343</cbc:SalesOrderID>
-        <!--2-->
+        <cbc:ID>o-998877</cbc:ID><!--1-->       
+        <cbc:SalesOrderID>so-12343</cbc:SalesOrderID><!--2-->      
     </cac:OrderReference>
     <!-- end::order-ref[] -->
     <!-- tag::desp-rec[] -->
     <cac:DespatchDocumentReference>
-        <!--1-->
-        <cbc:ID>despadv-3</cbc:ID>
+        <cbc:ID>despadv-3</cbc:ID><!--1-->
     </cac:DespatchDocumentReference>
-
-    <cac:ReceiptDocumentReference>
-        <!--2-->
-        <cbc:ID>resadv-1</cbc:ID>
+    <cac:ReceiptDocumentReference>     
+        <cbc:ID>resadv-1</cbc:ID><!--2-->
     </cac:ReceiptDocumentReference>
     <!-- end::desp-rec[] -->
     <!-- tag::tender[] -->
@@ -52,10 +46,8 @@
     <!-- end::contract[] -->
     <!-- tag::object[] -->
     <cac:AdditionalDocumentReference>
-        <cbc:ID schemeID="ABT">DR35141</cbc:ID>
-        <!--1-->
-        <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
-        <!--2-->
+        <cbc:ID schemeID="ABT">DR35141</cbc:ID><!--1-->   
+        <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode><!--2-->      
     </cac:AdditionalDocumentReference>
     <!-- end::object[] -->
     <cac:AdditionalDocumentReference>
@@ -237,8 +229,7 @@
     </cac:PaymentTerms>
     <!-- tag::allowance[] -->
     <cac:AllowanceCharge>
-        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-        <!--1-->
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator><!--1-->
         <cbc:AllowanceChargeReasonCode>FC</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Freight service</cbc:AllowanceChargeReason>
         <cbc:MultiplierFactorNumeric>2</cbc:MultiplierFactorNumeric><!--4-->
@@ -253,8 +244,7 @@
         </cac:TaxCategory>
     </cac:AllowanceCharge>
     <cac:AllowanceCharge>
-        <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-        <!--2-->
+        <cbc:ChargeIndicator>false</cbc:ChargeIndicator><!--2-->
         <cbc:AllowanceChargeReasonCode>65</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Production error discount</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="EUR">10</cbc:Amount>
@@ -281,7 +271,6 @@
             </cac:TaxCategory>
         </cac:TaxSubtotal>
     </cac:TaxTotal>
-
     <cac:LegalMonetaryTotal>
         <cbc:LineExtensionAmount currencyID="EUR">3800</cbc:LineExtensionAmount>
         <cbc:TaxExclusiveAmount currencyID="EUR">3810</cbc:TaxExclusiveAmount>
@@ -291,9 +280,7 @@
         <cbc:PrepaidAmount currencyID="EUR">1000</cbc:PrepaidAmount>
         <cbc:PayableAmount currencyID="EUR">3762.50</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
-
-
-    <cac:InvoiceLine>
+<cac:InvoiceLine>
         <cbc:ID>1</cbc:ID>
         <cbc:InvoicedQuantity unitCode="C62">2</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">3800.00</cbc:LineExtensionAmount>
@@ -368,6 +355,4 @@
             </cac:AllowanceCharge>
         </cac:Price>
     </cac:InvoiceLine>
-
-
 </Invoice>

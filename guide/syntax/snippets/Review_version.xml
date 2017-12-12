@@ -137,7 +137,7 @@
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>Buyer Official Name</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="0187">39937423947</cbc:CompanyID>
+                <cbc:CompanyID schemeID="0183">39937423947</cbc:CompanyID>
             </cac:PartyLegalEntity>
             <cac:Contact>
                 <cbc:Name>Lisa Johnson</cbc:Name>
@@ -221,10 +221,10 @@
     </cac:PaymentTerms>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-        <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
-        <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-        <cbc:MultiplierFactorNumeric>2</cbc:MultiplierFactorNumeric>
-        <cbc:Amount currencyID="EUR">20</cbc:Amount>
+        <cbc:AllowanceChargeReasonCode>CG</cbc:AllowanceChargeReasonCode>
+        <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
+        <cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric>
+        <cbc:Amount currencyID="EUR">200</cbc:Amount>
         <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
@@ -236,9 +236,9 @@
     </cac:AllowanceCharge>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-        <cbc:AllowanceChargeReasonCode>HD</cbc:AllowanceChargeReasonCode>
-        <cbc:AllowanceChargeReason>Handling</cbc:AllowanceChargeReason>
-        <cbc:Amount currencyID="EUR">10</cbc:Amount>
+        <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
+        <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="EUR">200</cbc:Amount>
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
@@ -276,21 +276,19 @@
     <cac:TaxTotal>
         <cbc:TaxAmount currencyID ="SEK">9324.00</cbc:TaxAmount>
     </cac:TaxTotal>
-
     <cac:LegalMonetaryTotal>
         <cbc:LineExtensionAmount currencyID="EUR">5000</cbc:LineExtensionAmount>
         <cbc:TaxExclusiveAmount currencyID="EUR">5000</cbc:TaxExclusiveAmount>
         <cbc:TaxInclusiveAmount currencyID="EUR">6000</cbc:TaxInclusiveAmount>
-        <cbc:AllowanceTotalAmount currencyID="EUR">10</cbc:AllowanceTotalAmount>
-        <cbc:ChargeTotalAmount currencyID="EUR">20</cbc:ChargeTotalAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">200</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
         <cbc:PrepaidAmount currencyID="EUR">1000</cbc:PrepaidAmount>
         <cbc:PayableAmount currencyID="EUR">5000.00</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
-    
     <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
         <cbc:Note>Testing note on line level</cbc:Note>
-        <cbc:InvoicedQuantity unitCode="C62">2</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">4000.00</cbc:LineExtensionAmount>
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
         <cac:InvoicePeriod>
@@ -308,31 +306,17 @@
         </cac:DocumentReference>
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-            <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
-            <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-            <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+            <cbc:AllowanceChargeReasonCode>CG</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReason>Charge</cbc:AllowanceChargeReason>
+            <cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
             <cbc:Amount currencyID="EUR">1</cbc:Amount>
             <cbc:BaseAmount currencyID="EUR">100</cbc:BaseAmount>
-            <cac:TaxCategory>
-                <cbc:ID>S</cbc:ID>
-                <cbc:Percent>25</cbc:Percent>
-                <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
-                </cac:TaxScheme>
-            </cac:TaxCategory>
         </cac:AllowanceCharge>
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-            <cbc:AllowanceChargeReasonCode>HD</cbc:AllowanceChargeReasonCode>
-            <cbc:AllowanceChargeReason>Handling</cbc:AllowanceChargeReason>
+            <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
             <cbc:Amount currencyID="EUR">101</cbc:Amount>
-            <cac:TaxCategory>
-                <cbc:ID>S</cbc:ID>
-                <cbc:Percent>25</cbc:Percent>
-                <cac:TaxScheme>
-                    <cbc:ID>VAT</cbc:ID>
-                </cac:TaxScheme>
-            </cac:TaxCategory>
         </cac:AllowanceCharge>
         <cac:Item>
             <cbc:Description>Description of item</cbc:Description>
@@ -344,7 +328,7 @@
                 <cbc:ID>97iugug876</cbc:ID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="GTIN">21382183120983</cbc:ID>
+                <cbc:ID schemeID="0088">21382183120983</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:OriginCountry>
                 <cbc:IdentificationCode>NO</cbc:IdentificationCode>
@@ -353,21 +337,70 @@
                 <!-- SRV= GTIN -->
                 <cbc:ItemClassificationCode listID="SRV">09348023</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25.0</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
             <cac:AdditionalItemProperty>
                 <cbc:Name>AdditionalItemName</cbc:Name>
                 <cbc:Value>AdditionalItemValue</cbc:Value>
             </cac:AdditionalItemProperty>
         </cac:Item>
         <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">1950</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="EUR">410</cbc:PriceAmount>
             <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
             <cac:AllowanceCharge>
                 <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-                <cbc:Amount currencyID="EUR">200</cbc:Amount>
-                <cbc:BaseAmount currencyID="EUR">2150</cbc:BaseAmount>
+                <cbc:Amount currencyID="EUR">40</cbc:Amount>
+                <cbc:BaseAmount currencyID="EUR">450</cbc:BaseAmount>
             </cac:AllowanceCharge>
         </cac:Price>
     </cac:InvoiceLine>
-    
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:Note>Testing note on line level</cbc:Note>
+        <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">1000.00</cbc:LineExtensionAmount>
+        <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
+        <cac:InvoicePeriod>
+            <cbc:StartDate>2017-12-01</cbc:StartDate>
+            <cbc:EndDate>2017-12-05</cbc:EndDate>
+        </cac:InvoicePeriod>
+        <cac:OrderLineReference>
+            <cbc:LineID>124</cbc:LineID>
+        </cac:OrderLineReference>
+
+        <cac:Item>
+            <cbc:Description>Description of item</cbc:Description>
+            <cbc:Name>item name</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>97iugug876</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID schemeID="0088">21382183120983</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:CommodityClassification>
+                <!-- SRV= GTIN -->
+                <cbc:ItemClassificationCode listID="SRV">86776</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>E</cbc:ID>
+                <cbc:Percent>0.0</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>AdditionalItemName</cbc:Name>
+                <cbc:Value>AdditionalItemValue</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">100</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
     
 </Invoice>
