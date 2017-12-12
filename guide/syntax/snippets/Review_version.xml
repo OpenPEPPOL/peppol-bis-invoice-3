@@ -3,7 +3,7 @@
 <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-    <cbc:CustomizationID>urn:cen.eu:en16931:2017:extended:urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
     <cbc:ID>Snippet1</cbc:ID>
     <cbc:IssueDate>2017-11-13</cbc:IssueDate>
@@ -363,8 +363,8 @@
             <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
             <cac:AllowanceCharge>
                 <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-                <cbc:Amount currencyID="EUR">2000</cbc:Amount>
-                <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
+                <cbc:Amount currencyID="EUR">200</cbc:Amount>
+                <cbc:BaseAmount currencyID="EUR">2150</cbc:BaseAmount>
             </cac:AllowanceCharge>
         </cac:Price>
     </cac:InvoiceLine>

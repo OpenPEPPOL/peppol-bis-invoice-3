@@ -13,8 +13,10 @@
     <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
     <cbc:Note>Please note we have a new phone number: 22 22 22 22</cbc:Note>
     <cbc:TaxPointDate>2017-12-01</cbc:TaxPointDate>
-    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
-    <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
+    <!-- tag::vat-curr1[] -->
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode><!--1-->
+    <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode><!--2-->
+    <!-- end::vat-curr1[] -->
     <cbc:AccountingCost>4025:123:4343</cbc:AccountingCost>
     <cbc:BuyerReference>0150abc</cbc:BuyerReference>
     <cac:InvoicePeriod>
@@ -260,20 +262,32 @@
             </cac:TaxScheme>
         </cac:TaxCategory>
     </cac:AllowanceCharge>
+    <!-- tag::vat-curr2[] -->
+    <!-- TaxTotal-->
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="EUR">1000.00</cbc:TaxAmount>
-    </cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">1000.00</cbc:TaxAmount><!--3-->
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">4000.0</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">1000</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID ="NOK">9324.00</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID ="SEK">100017.50</cbc:TaxAmount><!--4-->
     </cac:TaxTotal>
-
+        <!-- end::vat-curr2[] -->
     <cac:LegalMonetaryTotal>
-        <cbc:PayableAmount currencyID="EUR">9324.00</cbc:PayableAmount>
+        <cbc:PayableAmount currencyID="EUR">5000.00</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
         <cbc:InvoicedQuantity>2</cbc:InvoicedQuantity>
-        <cbc:LineExtensionAmount currencyID="EUR">9324.00</cbc:LineExtensionAmount>
+        <cbc:LineExtensionAmount currencyID="EUR">5000.00</cbc:LineExtensionAmount>
         <cac:Item>
             <cbc:Name>item name</cbc:Name>
             <cac:StandardItemIdentification>
