@@ -90,10 +90,10 @@
     <rule context="cac:AllowanceCharge">
       <assert id="PEPPOL-EN16931-R040"
               test="not(cbc:MultiplierFactorNumeric and cbc:BaseAmount) or u:slack(if (cbc:Amount) then cbc:Amount else 0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
-              flag="fatal">Sum must be ...</assert>
+              flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount and percentage exists</assert>
       <assert id="PEPPOL-EN16931-R043"
               test="xs:decimal(cbc:Amount) &gt;= 0"
-              flag="fatal">Allowance or charge MUST be zero or more.</assert>
+              flag="fatal">Allowance/charge amount cannot be negative</assert>
     </rule>
 
     <!-- Line level - invoice period -->
@@ -118,7 +118,7 @@
 
       <assert id="PEPPOL-EN16931-R120"
               test="u:slack($lineExtensionAmount, ($invoicedQuantity * $priceAmount) + $chargesTotal - $allowancesTotal, 0.02)"
-              flag="fatal">Line extension amount MUST be calculated from values provided on line level.</assert>
+              flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * Item net price) + Invoice line charge amount - Invoice line allowance amount</assert>
     </rule>
 
   </pattern>
