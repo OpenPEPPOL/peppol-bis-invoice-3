@@ -50,20 +50,20 @@
               flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R004"
               test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')"
-              flag="fatal">CustomizationID MUST contains 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
+              flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
     </rule>
 
     <rule context="cbc:TaxCurrencyCode">
       <assert id="PEPPOL-EN16931-R005"
               test="not(normalize-space(text()) = normalize-space(../cbc:DocumentCurrencyCode/text()))"
-              flag="fatal">Tax currency code MUST be different from document currency code when provided.</assert>
+              flag="fatal">VAT accounting currency code MUST be different from invoice currency code when provided.</assert>
     </rule>
 
     <!-- Accounting customer -->
     <rule context="cac:AccountingCustomerParty/cac:Party">
       <assert id="PEPPOL-EN16931-R010"
               test="cbc:EndpointID"
-              flag="fatal">Technical address for customer MUST be provided.</assert>
+              flag="fatal">Buyer electronic address MUST be provided</assert>
     </rule>
 
     <!-- Accounting supplier -->
@@ -80,12 +80,12 @@
     <rule context="cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
       <assert id="PEPPOL-EN16931-R041"
               test="false()"
-              flag="fatal">Base amount MUST be provided when multiplier is proviced.</assert>
+              flag="fatal">Allowance/charge base amount MUST be provided when allowance/charge percentage is provided.</assert>
     </rule>
     <rule context="cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
       <assert id="PEPPOL-EN16931-R042"
               test="false()"
-              flag="fatal">Multiplier MUST be provided when base amount is provided.</assert>
+              flag="fatal">Allowance/charge percentage MUST be provided when allowance/charge base amount is provided.</assert>
     </rule>
     <rule context="cac:AllowanceCharge">
       <assert id="PEPPOL-EN16931-R040"
