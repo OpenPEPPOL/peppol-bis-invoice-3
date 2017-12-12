@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
+	<assert>
+    <description>Verify existence of multiplier.</description>
+		<scope>PEPPOL-EN16931-R042</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R042</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AllowanceCharge>
+				<cbc:MultiplierFactorNumeric>100</cbc:MultiplierFactorNumeric>
+				<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+			</cac:AllowanceCharge>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R042</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AllowanceCharge>
+				<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+			</cac:AllowanceCharge>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R042</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:MultiplierFactorNumeric>100</cbc:MultiplierFactorNumeric>
+					<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R042</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				<cac:AllowanceCharge>
+					<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+				</cac:AllowanceCharge>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R042</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:AllowanceCharge>
+				<cbc:MultiplierFactorNumeric>100</cbc:MultiplierFactorNumeric>
+				<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+			</cac:AllowanceCharge>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R042</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:AllowanceCharge>
+				<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+			</cac:AllowanceCharge>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R042</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:CreditNoteLine>
+				<cac:AllowanceCharge>
+					<cbc:MultiplierFactorNumeric>100</cbc:MultiplierFactorNumeric>
+					<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+				</cac:AllowanceCharge>
+			</cac:CreditNoteLine>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R042</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:CreditNoteLine>
+				<cac:AllowanceCharge>
+					<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+				</cac:AllowanceCharge>
+			</cac:CreditNoteLine>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<description>Make sure rule is not triggered on Price-level.</description>
+			<success>PEPPOL-EN16931-R042</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+				<cac:InvoiceLine>
+					<cac:Price>
+						<cac:AllowanceCharge>
+							<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+						</cac:AllowanceCharge>
+					</cac:Price>
+				</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+</testSet>

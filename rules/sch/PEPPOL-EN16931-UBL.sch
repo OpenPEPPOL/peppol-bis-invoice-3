@@ -76,22 +76,32 @@
               flag="warning">"Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
     </rule>
 
-    <!-- Allowance/Charge -->
-    <rule context="cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
+    <!-- Allowance/Charge (document level/line level) -->
+    <rule context="ubl-invoice:Invoice/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-creditnote:CreditNote/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
       <assert id="PEPPOL-EN16931-R041"
               test="false()"
               flag="fatal">Base amount MUST be provided when multiplier is proviced.</assert>
     </rule>
-    <rule context="cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
+    <rule context="ubl-invoice:Invoice/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-creditnote:CreditNote/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
       <assert id="PEPPOL-EN16931-R042"
               test="false()"
               flag="fatal">Multiplier MUST be provided when base amount is provided.</assert>
     </rule>
-    <rule context="cac:AllowanceCharge">
+    <rule context="ubl-invoice:Invoice/cac:AllowanceCharge | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge | ubl-creditnote:CreditNote/cac:AllowanceCharge | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge">
       <assert id="PEPPOL-EN16931-R040"
               test="not(cbc:MultiplierFactorNumeric and cbc:BaseAmount) or u:slack(if (cbc:Amount) then cbc:Amount else 0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
               flag="fatal">Sum must be ...</assert>
       <assert id="PEPPOL-EN16931-R043"
+              test="xs:decimal(cbc:Amount) &gt;= 0"
+              flag="fatal">Allowance or charge MUST be zero or more.</assert>
+    </rule>
+
+    <!-- Allowance (price level) -->
+    <rule context="cac:Price/cac:AllowanceCharge">
+      <assert id="PEPPOL-EN16931-R044"
+              test="normalize-space(cbc:ChargeIndicator) = 'false'"
+              flag="fatal">Charge on price level is NOT allowed.</assert>
+      <assert id="PEPPOL-EN16931-R045"
               test="xs:decimal(cbc:Amount) &gt;= 0"
               flag="fatal">Allowance or charge MUST be zero or more.</assert>
     </rule>
