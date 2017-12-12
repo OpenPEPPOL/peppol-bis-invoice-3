@@ -50,20 +50,20 @@
               flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R004"
               test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')"
-              flag="fatal">CustomizationID MUST contains 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
+              flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
     </rule>
 
     <rule context="cbc:TaxCurrencyCode">
       <assert id="PEPPOL-EN16931-R005"
               test="not(normalize-space(text()) = normalize-space(../cbc:DocumentCurrencyCode/text()))"
-              flag="fatal">Tax currency code MUST be different from document currency code when provided.</assert>
+              flag="fatal">VAT accounting currency code MUST be different from invoice currency code when provided.</assert>
     </rule>
 
     <!-- Accounting customer -->
     <rule context="cac:AccountingCustomerParty/cac:Party">
       <assert id="PEPPOL-EN16931-R010"
               test="cbc:EndpointID"
-              flag="fatal">Technical address for customer MUST be provided.</assert>
+              flag="fatal">Buyer electronic address MUST be provided</assert>
     </rule>
 
     <!-- Accounting supplier -->
@@ -80,20 +80,20 @@
     <rule context="ubl-invoice:Invoice/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-creditnote:CreditNote/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
       <assert id="PEPPOL-EN16931-R041"
               test="false()"
-              flag="fatal">Base amount MUST be provided when multiplier is proviced.</assert>
+              flag="fatal">Allowance/charge base amount MUST be provided when allowance/charge percentage is provided.</assert>
     </rule>
     <rule context="ubl-invoice:Invoice/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-creditnote:CreditNote/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
       <assert id="PEPPOL-EN16931-R042"
               test="false()"
-              flag="fatal">Multiplier MUST be provided when base amount is provided.</assert>
+              flag="fatal">Allowance/charge percentage MUST be provided when allowance/charge base amount is provided.</assert>
     </rule>
     <rule context="ubl-invoice:Invoice/cac:AllowanceCharge | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge | ubl-creditnote:CreditNote/cac:AllowanceCharge | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge">
       <assert id="PEPPOL-EN16931-R040"
               test="not(cbc:MultiplierFactorNumeric and cbc:BaseAmount) or u:slack(if (cbc:Amount) then cbc:Amount else 0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
-              flag="fatal">Sum must be ...</assert>
+              flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount and percentage exists</assert>
       <assert id="PEPPOL-EN16931-R043"
               test="xs:decimal(cbc:Amount) &gt;= 0"
-              flag="fatal">Allowance or charge MUST be zero or more.</assert>
+              flag="fatal">Allowance/charge amount cannot be negative</assert>
     </rule>
 
     <!-- Allowance (price level) -->
@@ -128,7 +128,7 @@
 
       <assert id="PEPPOL-EN16931-R120"
               test="u:slack($lineExtensionAmount, ($invoicedQuantity * $priceAmount) + $chargesTotal - $allowancesTotal, 0.02)"
-              flag="fatal">Line extension amount MUST be calculated from values provided on line level.</assert>
+              flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * Item net price) + Invoice line charge amount - Invoice line allowance amount</assert>
     </rule>
 
   </pattern>
@@ -172,7 +172,7 @@
     <rule context="cac:CountryCode/cbc:IdentificationCode | cac:OriginCountry/cbc:IdentificationCode">
       <assert id="PEPPOL-EN16931-CL005"
               test="some $code in $ISO6133 satisfies text() = $code"
-              flag="fatal">County code must be according to ISO 6133 Alpha-2.</assert>
+              flag="fatal">Counrty code must be according to ISO 6133 Alpha-2.</assert>
     </rule>
 
     <rule context="cac:InvoicePeriod/cbc:DescriptionCode">

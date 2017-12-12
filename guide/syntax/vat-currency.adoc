@@ -1,0 +1,21 @@
+
+.Example
+
+
+[source, xml, indent=0]
+----
+include::snippets/Snippet-full.xml[tags=vat-curr1;vat-curr2]
+----
+<1> Invoice currency
+<2> National currency
+<3> VAT amount in invoice currency
+<4> VAT amount in national currency
+
+////
+[source, xml, indent=0]
+----
+include::snippets/Snippet-full.xml[tags=*]
+----
+<1> VAT amount in invoice currency
+<2> VAT amount in national currency
+////
