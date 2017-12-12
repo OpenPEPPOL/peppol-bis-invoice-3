@@ -5,7 +5,7 @@
 
 
 
-[cols="2s,2s,2,4,1", options="header"]
+[cols="2s,2s,3,3,2", options="header"]
 |====
 
 | BT-ID
@@ -36,8 +36,9 @@
 | BT-24
 | Specification identifier
 | Add new non-conflicting business rule to existing element(s)
-| Specification identifier MUST have the value 'urn:cen.eu:en16931:2017# +
- compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'. +
+| Specification identifier MUST have the value +
+'urn:cen.eu:en16931:2017#compliant# +
+ urn:fdc:peppol.eu:2017:poacc:billing:3.0'. +
 *(Remove spaces before use of value)*
 | PEPPOL-EN16931-R004
 
@@ -92,9 +93,9 @@
 | BT-94, BT-101, BT-138, BT-143
 | Allowance/charge amount
 | Add new non-conflicting business rule to existing element(s)
-a| If base amount and percentage exists in the instance, then +
-stem:["Allowance/charge amount" =
-"base amount" times ("percentage" div 100)]
+| If base amount and percentage exists in the instance, then +
+stem:["Allowance/charge amount" =] +
+stem:["base amount" times ("percentage" div 100)]
 | PEPPOL-EN16931-R040
 
 | BT-94, BT-101, BT-138, BT-143, BT-147
@@ -106,10 +107,13 @@ stem:["Allowance/charge amount" =
 | BT-131
 | Invoice line net amount
 | Add new non-conflicting business rule to existing element(s)
-a| stem:["Invoice line net amount" = ("Invoiced quantity" times "Item net price") + "Invoice line charge amount" - "Invoice line allowance amount"]
+| Calculation must equal
+stem:[ ("Invoiced quantity" times "Item net price")] +
+stem:[ + "Invoice line charge amount"] +
+stem:[ - "Invoice line allowance amount"]
 | PEPPOL-EN16931-R120
 
-| BT-2, BT-7, BT-9, BT-26, BT-72, BT-73, BT-74, BT-134, BT-135
+| BT-2 , BT-7 , BT-9 , BT-26, BT-72, BT-73, BT-74, BT-134, BT-135
 | All date elements
 | Add new non-conflicting business rule to existing element(s)
 | A date must be formatted `YYYY-MM-DD`
