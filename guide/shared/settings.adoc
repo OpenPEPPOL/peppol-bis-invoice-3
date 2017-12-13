@@ -40,7 +40,7 @@
 :UNCL5189: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5189.htm[UN/CEFACT code list 5189, D.16B]
 :UNCL7161: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm[UN/CEFACT code list 7161, D.16B]
 :IANA: http://www.iana.org/assignments/media-types[IANA]
-:UNRec20: http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20, Revision 8 (2012)]
+:UNRec20: http://www.unece.org/cefact/recommendations/rec_index.html[UN/ECE Recommendation 20, Revision 8 (2012)]
 :UNCL1153: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
 :ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523]
 :UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]
