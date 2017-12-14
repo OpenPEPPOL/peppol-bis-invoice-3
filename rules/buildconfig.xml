@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
-  <testfolder>unit-PEPPOL</testfolder>
-  <testfolder>unit-NO</testfolder>
+  <testfolder>unit-UBL-PEPPOL</testfolder>
+  <testfolder>unit-UBL-NO</testfolder>
 
   <configuration>
     <identifier>peppolbis-en16931-base-3.0</identifier>
