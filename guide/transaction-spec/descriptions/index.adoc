@@ -10,5 +10,6 @@ include::references/index.adoc[]
 include::allowance.adoc[]
 include::vat-currency.adoc[]
 include::intrastat.adoc[]
+include::preceding-invoice.adoc[]
 
 :leveloffset: -1

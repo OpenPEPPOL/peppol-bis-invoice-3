@@ -1,0 +1,9 @@
+
+.Example of preceding invoice information
+[source, xml, indent=0]
+----
+include::snippets/Snippet-cn.xml[tags=prec-inv]
+----
+<1> The identifier is mandatory if `cac:BillingReference` is provided
+<2> Issue date must be filled if the invoice reference is not unique
+<3> Repeat the `cac:BillingReference` to add several preceding invoice references
