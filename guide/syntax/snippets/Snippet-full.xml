@@ -343,6 +343,11 @@
                     <!-- SRV= GTIN -->
                     <cbc:ItemClassificationCode listID="SRV">09348023</cbc:ItemClassificationCode>
                 </cac:CommodityClassification>
+                <!-- tag::intrastat[] -->
+                <cac:CommodityClassification>
+                    <cbc:ItemClassificationCode listID="HS">080110</cbc:ItemClassificationCode>
+                </cac:CommodityClassification>
+                <!-- end::intrastat[] -->
                 <cac:ClassifiedTaxCategory>
                     <cbc:ID>S</cbc:ID>
                     <cbc:Percent>25.0</cbc:Percent>

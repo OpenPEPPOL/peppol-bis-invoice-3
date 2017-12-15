@@ -9,6 +9,6 @@ include::delivery-details.adoc[]
 include::references/index.adoc[]
 include::allowance.adoc[]
 include::vat-currency.adoc[]
-
+include::intrastat.adoc[]
 
 :leveloffset: -1
