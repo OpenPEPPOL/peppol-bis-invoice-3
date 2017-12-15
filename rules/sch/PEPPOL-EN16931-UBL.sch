@@ -120,7 +120,7 @@
 
       <assert id="PEPPOL-EN16931-R120"
               test="u:slack($lineExtensionAmount, ($invoicedQuantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
-              flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * Item net price) + Invoice line charge amount - Invoice line allowance amount</assert>
+              flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item price base quantity) + Invoice line charge amount - Invoice line allowance amount</assert>
     </rule>
 
     <!-- Allowance (price level) -->
@@ -130,7 +130,7 @@
               flag="fatal">Charge on price level is NOT allowed.</assert>
       <assert id="PEPPOL-EN16931-R045"
               test="xs:decimal(cbc:Amount) &gt;= 0"
-              flag="fatal">Allowance or charge MUST be zero or more.</assert>
+              flag="fatal">Allowance/charge amount cannot be negative</assert>
     </rule>
 
     <!-- Price -->
