@@ -4,5 +4,5 @@
 h| Document location
 | `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=false]`
 h| Source codelist
-| {UNCL5189}
+| Subset of {UNCL5189}
 |===
