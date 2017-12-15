@@ -13,6 +13,7 @@
 * Change cardinality for VAT exemotion reason code to 0..0 (not used).
 * Sellers endpointID mandatory
 * Item price base quanity must be greater than 1
+* Restrict allowance codes according to values in chapter 8.1.6
 
 .NO
 * Sellers legal entity mandatory *[NO-R-001]*
