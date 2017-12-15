@@ -11,6 +11,8 @@
 * Validate customization ID urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0 *[PEPPOL-EN16931-R004]*
 * Profile ID:  Element must have value `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0`
 * Change cardinality for VAT exemotion reason code to 0..0 (not used).
+* Sellers endpointID mandatory
+* Item price base quanity must be greater than 1
 
 .NO
 * Sellers legal entity mandatory *[NO-R-001]*
