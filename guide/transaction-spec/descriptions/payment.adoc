@@ -1,0 +1,44 @@
+
+= Payment means information
+
+== Credit transfer
+
+If payment is made by credit transfer, the Payment account identifier (BT-84) is mandatory
+
+Payment by credit transfer can be stated by using one of the following codes in the element for Payment means type code (BT-81). See <<payment-means>> for all allowed codes.
+
+* 30 - Credit transfer
+* 45 - Referenced home-banking credit transfer
+* 58 - SEPA credit transfer
+
+include::../../syntax/credit-payment.adoc[]
+
+== Card Payment
+
+If the Buyer had opted to pay by using a payment card such as a credit or debit card, information on the Primary Account Number (PAN) must be present in the invoice.
+
+Card payment can be stated by using one of the following codes in the element for Payment means type code (BT-81). See <<payment-means>> for all allowed codes.
+
+* 48 - Bank card
+* 54 - Credit card
+* 55 - Debet card
+
+include::../../syntax/card-payment.adoc[]
+
+== Direct debit
+
+Payment by direct debit can be stated by using one of the following codes in the element for Payment means type code (BT-81). See <<payment-means>> for all allowed codes.
+
+* 49 - Direct debit
+* 59 - SEPA direct debit
+
+include::../../syntax/direct-debit.adoc[]
+
+== Payment by post- or bank giro
+
+Payment by post- or bank giro can be stated by using one of the following codes in the element for Payment means type code (BT-81). See <<payment-means>> for all allowed codes.
+
+* 50 - Payment by postgiro
+* 56 - Bankgiro
+
+include::../../syntax/giro.adoc[]

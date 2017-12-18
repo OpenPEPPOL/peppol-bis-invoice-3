@@ -1,4 +1,5 @@
 
+[[payment-means]]
 = Payment means type code
 
 Payment means type code must be from {UNCL4461}

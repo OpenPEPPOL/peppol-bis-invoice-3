@@ -14,6 +14,8 @@
 * Sellers endpointID mandatory
 * Item price base quanity must be greater than 1
 * Restrict allowance codes according to values in chapter 8.1.6
+* If payment means type = 48,54 eller 55 PAYMENT CARD INFORMATION (BG-18) is mandatory
+* If payment means type = 49 eller 59, så må cac:MandateReference/cbc:ID være utfylt
 
 .NO
 * Sellers legal entity mandatory *[NO-R-001]*

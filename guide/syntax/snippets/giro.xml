@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sjekk alle identifikatorer og tilhørende attributter -->
 <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
@@ -201,17 +200,15 @@
             </cac:PartyName>
         </cac:DeliveryParty>
     </cac:Delivery>
-    <!-- tag::card[] -->
+    <!-- tag::giro[] -->
     <cac:PaymentMeans>
-        <cbc:PaymentMeansCode name="Credit card">54</cbc:PaymentMeansCode><!--1-->
-        <cbc:PaymentID>9387439</cbc:PaymentID>
-        <cac:CardAccount>
-            <cbc:PrimaryAccountNumberID>12323655</cbc:PrimaryAccountNumberID><!--2-->
-            <cbc:NetworkID>VISA</cbc:NetworkID><!--3-->
-            <cbc:HolderName>Card holders name</cbc:HolderName><!--4-->
-        </cac:CardAccount>
+        <cbc:PaymentMeansCode name="Postgiro">50</cbc:PaymentMeansCode><!--1-->
+        <cbc:PaymentID>PgPaymRef-345</cbc:PaymentID><!--2-->
+        <cac:PayeeFinancialAccount>
+            <cbc:ID>98765432</cbc:ID><!--3-->
+        </cac:PayeeFinancialAccount>
     </cac:PaymentMeans>
-    <!-- end::card[] -->
+    <!-- end::giro[] -->
     <cac:PaymentTerms>
         <cbc:Note>Payment within 10 days, 2% discount</cbc:Note>
     </cac:PaymentTerms>
@@ -232,7 +229,6 @@
     </cac:AllowanceCharge>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-        <!--2-->
         <cbc:AllowanceChargeReasonCode>65</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Production error discount</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="EUR">10</cbc:Amount>

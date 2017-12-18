@@ -201,17 +201,19 @@
             </cac:PartyName>
         </cac:DeliveryParty>
     </cac:Delivery>
-    <!-- tag::card[] -->
+    <!-- tag::credit[] -->
     <cac:PaymentMeans>
-        <cbc:PaymentMeansCode name="Credit card">54</cbc:PaymentMeansCode><!--1-->
-        <cbc:PaymentID>9387439</cbc:PaymentID>
-        <cac:CardAccount>
-            <cbc:PrimaryAccountNumberID>12323655</cbc:PrimaryAccountNumberID><!--2-->
-            <cbc:NetworkID>VISA</cbc:NetworkID><!--3-->
-            <cbc:HolderName>Card holders name</cbc:HolderName><!--4-->
-        </cac:CardAccount>
+        <cbc:PaymentMeansCode name="Credit transfer">30</cbc:PaymentMeansCode><!--1-->
+        <cbc:PaymentID>93274234</cbc:PaymentID><!--2-->
+        <cac:PayeeFinancialAccount>
+            <cbc:ID>IBAN32423940</cbc:ID><!--3-->
+            <cbc:Name>AccountName</cbc:Name>
+            <cac:FinancialInstitutionBranch>
+                <cbc:ID>BIC324098</cbc:ID><!--4-->
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
     </cac:PaymentMeans>
-    <!-- end::card[] -->
+    <!-- end::credit[] -->
     <cac:PaymentTerms>
         <cbc:Note>Payment within 10 days, 2% discount</cbc:Note>
     </cac:PaymentTerms>
@@ -232,7 +234,6 @@
     </cac:AllowanceCharge>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-        <!--2-->
         <cbc:AllowanceChargeReasonCode>65</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Production error discount</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="EUR">10</cbc:Amount>

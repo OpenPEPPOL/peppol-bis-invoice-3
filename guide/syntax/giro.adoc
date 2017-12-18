@@ -1,0 +1,10 @@
+
+
+.XML for payment means info when payment is done by postgiro
+[source, xml, indent=0]
+----
+include::snippets/giro.xml[tags=giro]
+----
+<1> Payment means code
+<2> Remittance information
+<3> Local postgiro account number

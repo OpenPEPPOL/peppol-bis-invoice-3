@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sjekk alle identifikatorer og tilhørende attributter -->
 <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
@@ -57,12 +56,18 @@
     <cac:ProjectReference>
         <cbc:ID>project333</cbc:ID>
     </cac:ProjectReference>
+    <!-- tag::direct-debit[] -->
     <cac:AccountingSupplierParty>
         <cac:Party>
             <cbc:EndpointID schemeID="0088">9482348239847239874</cbc:EndpointID>
             <cac:PartyIdentification>
                 <cbc:ID>99887766</cbc:ID>
             </cac:PartyIdentification>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="SEPA">23123687</cbc:ID><!--1-->
+            </cac:PartyIdentification>
+   <!-- omitted code for clarity -->
+            <!-- end::direct-debit[] -->
             <cac:PartyName>
                 <cbc:Name>SupplierTradingName Ltd.</cbc:Name>
             </cac:PartyName>
@@ -142,17 +147,6 @@
             </cac:Contact>
         </cac:Party>
     </cac:AccountingCustomerParty>
-    <cac:PayeeParty>
-        <cac:PartyIdentification>
-            <cbc:ID schemeID="0088">3298479324239</cbc:ID>
-        </cac:PartyIdentification>
-        <cac:PartyName>
-            <cbc:Name>Payee party</cbc:Name>
-        </cac:PartyName>
-        <cac:PartyLegalEntity>
-            <cbc:CompanyID schemeID="0088">3298479324239</cbc:CompanyID>
-        </cac:PartyLegalEntity>
-    </cac:PayeeParty>
     <cac:TaxRepresentativeParty>
         <cac:PartyName>
             <cbc:Name>TaxRepresentative Name</cbc:Name>
@@ -201,17 +195,18 @@
             </cac:PartyName>
         </cac:DeliveryParty>
     </cac:Delivery>
-    <!-- tag::card[] -->
+    <!-- tag::direct-debit[] -->
     <cac:PaymentMeans>
-        <cbc:PaymentMeansCode name="Credit card">54</cbc:PaymentMeansCode><!--1-->
-        <cbc:PaymentID>9387439</cbc:PaymentID>
-        <cac:CardAccount>
-            <cbc:PrimaryAccountNumberID>12323655</cbc:PrimaryAccountNumberID><!--2-->
-            <cbc:NetworkID>VISA</cbc:NetworkID><!--3-->
-            <cbc:HolderName>Card holders name</cbc:HolderName><!--4-->
-        </cac:CardAccount>
+        <cbc:PaymentMeansCode name="SEPA direct debit">59</cbc:PaymentMeansCode><!--2-->
+        <cbc:PaymentID>payref2</cbc:PaymentID><!--3-->
+        <cac:PaymentMandate>
+            <cbc:ID>123456</cbc:ID>
+            <cac:PayerFinancialAccount>
+                <cbc:ID>DK12328462834823</cbc:ID><!--4-->
+            </cac:PayerFinancialAccount>
+        </cac:PaymentMandate> 
     </cac:PaymentMeans>
-    <!-- end::card[] -->
+    <!-- end::direct-debit[] -->
     <cac:PaymentTerms>
         <cbc:Note>Payment within 10 days, 2% discount</cbc:Note>
     </cac:PaymentTerms>
@@ -232,7 +227,6 @@
     </cac:AllowanceCharge>
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-        <!--2-->
         <cbc:AllowanceChargeReasonCode>65</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Production error discount</cbc:AllowanceChargeReason>
         <cbc:Amount currencyID="EUR">10</cbc:Amount>
