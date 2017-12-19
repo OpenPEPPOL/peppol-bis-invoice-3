@@ -107,6 +107,18 @@
               flag="fatal">Tax exception reason code MUST NOT be used.</assert>
     </rule>
 
+    <!-- Payment -->
+    <rule context="cac:PaymentMeans[some $code in tokenize('48 54 55', '\s') satisfies normalize-space(cbc:PaymentMeansCode) = $code]">
+      <assert id="PEPPOL-EN16931-R060"
+              test="cac:CardAccount"
+              flag="fatal">For card payment MUST payment card information be provided.</assert>
+    </rule>
+    <rule context="cac:PaymentMeans[some $code in tokenize('49 59', '\s') satisfies normalize-space(cbc:PaymentMeansCode) = $code]">
+      <assert id="PEPPOL-EN16931-R061"
+              test="cac:PaymentMandate/cbc:ID"
+              flag="fatal">Mandate reference MUST be provided for direct debit.</assert>
+    </rule>
+
     <!-- Line level - invoice period -->
     <rule context="ubl-invoice:Invoice[cac:InvoicePeriod/cbc:StartDate]/cac:InvoiceLine/cac:InvoicePeriod/cbc:StartDate | ubl-creditnote:CreditNote[cac:InvoicePeriod/cbc:StartDate]/cac:CreditNoteLine/cac:InvoicePeriod/cbc:StartDate">
       <assert id="PEPPOL-EN16931-R110"

@@ -14,8 +14,8 @@
 * Sellers endpointID mandatory *[PEPPOL-EN16931-R020]*
 * Item price base quanity must be greater than 0 *[PEPPOL-EN16931-R121]*
 * Restrict allowance codes according to values in chapter 8.1.6 *[PEPPOL-EN16931-CL002]*
-* If payment means type = 48,54 eller 55 PAYMENT CARD INFORMATION (BG-18) is mandatory
-* If payment means type = 49 eller 59, så må cac:MandateReference/cbc:ID være utfylt
+* If payment means type = 48,54 eller 55 PAYMENT CARD INFORMATION (BG-18) is mandatory *[PEPPOL-EN16931-R060]*
+* If payment means type = 49 eller 59, så må cac:MandateReference/cbc:ID være utfylt *[PEPPOL-EN16931-R061]*
 * If gross price and discount exist, the Item net price has to equal with the item gross price less the item price discount. If gross price exist and no discount, gross and net price should be equal.
 
 .NO
