@@ -1,6 +1,7 @@
 
 
-Seller (AccountingSupplierParty)::
+= Seller (AccountingSupplierParty)
+
 Seller is mandatory information.
 
 .Example of seller information
@@ -12,7 +13,10 @@ include::snippets/Snippet-full.xml[tags=seller]
 <2> schemeID attribute is recommended for all party identifiers
 <3> VAT identifiers must be prefixed with the country code
 
-Buyer (AccountingCustomerParty)::
+
+
+= Buyer (AccountingCustomerParty)
+
 Buyer is mandatory information.
 
 .Example of buyer information
@@ -25,7 +29,9 @@ include::snippets/Snippet-full.xml[tags=buyer]
 <3> VAT identifiers must be prefixed with the country code
 <4> schemeID attribute is recommended for party legal entity identifiers
 
-Payment receiver (PayeeParty)::
+
+= Payment receiver (PayeeParty)
+
 Payment receiver is optional information. If this information is not supplied, the seller is the payment receiver.
 
 .Example of payee information
@@ -37,7 +43,8 @@ include::snippets/Snippet-full.xml[tags=payee]
 <2> schemeID attribute is recommended for party legal entity identifiers
 
 
-Sellers Tax Representative (TaxRepresentativePary)::
+= Sellers Tax Representative (TaxRepresentativePary)
+
 Tax representative party for the seller is relevant for sellers delivering goods and services in a country without having a permanent establishment in that country. In such cases information on the tax representative must be included in the invoice.
 
 .Example of tax representative information
