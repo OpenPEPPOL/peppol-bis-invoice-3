@@ -1,4 +1,4 @@
 
-:phase-in: 2018-02-01
-:transition: 2018-10-01
-:phase-out: 2019-01-01
+:phase-in: 2018-02-15
+:transition: 2018-12-31
+:phase-out: 2019-04-18

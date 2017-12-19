@@ -1,0 +1,12 @@
+
+
+
+.XML for payment means info when payment is done by credit transfer
+[source, xml, indent=0]
+----
+include::snippets/payment-credit.xml[tags=credit]
+----
+<1> Mandatory, payment means code for credit transfer
+<2> Remittance information
+<3> Mandatory, IBAN (in case of a SEPA payment) or a national account number (BBAN)
+<4> BIC or a national clearing code

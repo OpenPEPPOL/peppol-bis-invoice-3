@@ -1,7 +1,24 @@
 
 = VAT exemption reason code
 
-{EN16931} states _Code list issued and maintained by CEF_ +
-#Code list not available.#
+{EN16931} states _Code list issued and maintained by CEF_
+
+NOTE: This code list is not yet available, a request is sent to UN/CEFACT to include the following values:
+
+
+* Exempt - Article 146, 148 and 151 of Council Directive 2006/112/EC
+* Exempt - Article 164 of Council Directive 2006/112/EC
+* Exempt - Article 138 of Council Directive 2006/112/EC
+* Exempt from VAT - Article 44 of Council Directive 2006/112/EC
+* Reverse charge - Article 44 of Council Directive 2006/112/EC
+* Exempt - Article 346 of Council Directive 2006/112/EC
+* Exempt - Article 131, 132 and 135 of Council Directive 2006/112/EC
+* Margin Scheme - Title XII, Chapter 4 of Council Directive 2006/112/EC
+* Margin Scheme - Title XII, Chapter 3 of Council Directive 2006/112/EC
+* Reverse Charge – Article 198 of Council Directive 2006/112/EC
+* Reverse Charge Exempt - Article 164 of Council Directive 2006/112/EC
+* Exempt New Means of Transport - Article 2, 3 (1) and 4 of Council Directive 2006/112/EC
+* Exempt Triangulation - Article 141 of Council Directive 2006/112/EC
+* VAT exempt/reverse charge, within the (1) construction business, Article 199 1 a-b of Council Directive 2006/112/EC
 
 include::../../syntax/codelists/vat-exempt.adoc[]

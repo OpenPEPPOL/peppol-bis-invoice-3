@@ -1,0 +1,9 @@
+
+= Intrastat
+
+When EU member states buy from other EU members, traders commonly require some statistical information in the invoice, normally a classification code as the Combined Nomenclature.
+
+It is recommended to use the Item classification identifier (BT-158) for this purpose, with the code "HS" as list identifier.
+
+
+include::../../syntax/intrastat.adoc[]

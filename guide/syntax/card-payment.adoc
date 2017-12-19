@@ -1,0 +1,10 @@
+
+.XML for payment means info when payment is done by payment card
+[source, xml, indent=0]
+----
+include::snippets/payment1.xml[tags=card]
+----
+<1> Payment means code for credit card
+<2> Mandatory, must be the last 4 to 6 digits of the payment card number
+<3> Mandatory, used to identify the financial service network provider of the card. Examples are VISA, MasterCard, American Express.
+<4> Card holder name

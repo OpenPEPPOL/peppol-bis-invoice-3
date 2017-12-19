@@ -78,6 +78,12 @@
 | Buyer electronic address MUST be provided
 | PEPPOL-EN16931-R010
 
+| BT-34
+| Seller electronic address
+| Add new non-conflicting business rule to existing element(s)
+| Seller electronic address MUST be provided
+| #Add rule id#
+
 | BT-93, BT-100, BT-137, BT-142
 | Allowance/charge base amount
 | Add new non-conflicting business rule to existing element(s)
@@ -108,7 +114,7 @@ stem:["base amount" times ("percentage" div 100)]
 | Invoice line net amount
 | Add new non-conflicting business rule to existing element(s)
 | Calculation must equal
-stem:[ ("Invoiced quantity" times "Item net price")] +
+stem:[ ("Invoiced quantity" times ("Item net price" div "item price base amount"))] +
 stem:[ + "Invoice line charge amount"] +
 stem:[ - "Invoice line allowance amount"]
 | PEPPOL-EN16931-R120
@@ -118,4 +124,11 @@ stem:[ - "Invoice line allowance amount"]
 | Add new non-conflicting business rule to existing element(s)
 | A date must be formatted `YYYY-MM-DD`
 | PEPPOL-EN16931-F001
+
+| BT-5 and BT-6
+| All date elements
+| Add new non-conflicting business rule to existing element(s)
+| VAT accounting currency code MUST be different from invoice currency code when provided.
+| PEPPOL-EN16931-R005
+
 |====

@@ -1,6 +1,0 @@
-
-= Corrective invoices / credit notes
-
-#To be updated#
-
-Add a description on corrective invoices and credit notes, and how they are to be handled.

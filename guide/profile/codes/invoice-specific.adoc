@@ -24,13 +24,6 @@ include::../../syntax/codelists/inv-type.adoc[]
 | Invoice
 
 
-| 384
-| Corrected invoice
-|Commercial invoice that includes revised information differing from an earlier submission of the same invoice.
-| 380
-| Invoice
-
-
 | 393
 | Factored invoice
 | Invoice assigned to a third party for collection.

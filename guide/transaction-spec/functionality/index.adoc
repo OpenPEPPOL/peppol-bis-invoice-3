@@ -10,6 +10,6 @@ include::auditing.adoc[]
 include::vat-reporting.adoc[]
 include::payment.adoc[]
 include::negative-invoices.adoc[]
-include::corrective-invoices.adoc[]
+
 
 :leveloffset: -1

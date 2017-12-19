@@ -7,8 +7,11 @@
 include::roles-and-actor.adoc[]
 include::delivery-details.adoc[]
 include::references/index.adoc[]
+include::preceding-invoice.adoc[]
 include::allowance.adoc[]
 include::vat-currency.adoc[]
+include::payment.adoc[]
+include::intrastat.adoc[]
 
 
 :leveloffset: -1

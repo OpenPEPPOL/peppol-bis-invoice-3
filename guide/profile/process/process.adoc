@@ -20,7 +20,6 @@ image::../shared/images/process.png[The invoicing process, align="center"]
 
 This profile covers the following invoice processes:
 
-#Should we add more descriptions on these processes?#
 
 [horizontal]
 P1:: Invoicing of deliveries of goods and services against purchase orders, based on a contract
@@ -32,4 +31,3 @@ P6:: Payment in advance of delivery
 P7:: Invoices with references to a despatch advice
 P8:: Invoices with references to a despatch advice and a receiving advice
 P9:: Credit notes or invoices with negative amounts, issued for a variety of reasons including the return of empty packaging
-P10:: Corrective invoicing (cancellation/correction of an invoice)
