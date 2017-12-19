@@ -16,6 +16,10 @@
   <let name="profile" value="if (/*/cbc:ProfileID and matches(normalize-space(/*/cbc:ProfileID), 'urn:fdc:peppol.eu:2017:poacc:billing:([0-9]{2}):1.0')) then tokenize(normalize-space(/*/cbc:ProfileID), ':')[7] else 'Unknown'"/>
   <let name="supplierCountry" value="if (/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode) then upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) else 'XX'"/>
 
+  <!-- -->
+
+  <let name="documentCurrencyCode" value="/*/cbc:DocumentCurrencyCode"/>
+
   <!-- Functions -->
 
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
@@ -33,6 +37,7 @@
     R02X - Accounting supplier
     R04X - Allowance/Charge (document and line)
     R05X - Tax
+    R06X - Payment
     R1XX - Line level
     R11X - Invoice period
   -->
@@ -55,6 +60,13 @@
       <assert id="PEPPOL-EN16931-R006"
               test="not(/ubl-creditnote:CreditNote) or cac:BillingReference/cac:InvoiceDocumentReference"
               flag="fatal">Reference to preceding invoice MUST be provided for credit note.</assert>
+
+      <assert id="PEPPOL-EN16931-R053"
+              test="count(cac:TaxTotal[cac:TaxSubtotal]) = 1"
+              flag="fatal">Only one tax total with tax subtotals MUST be provided.</assert>
+      <assert id="PEPPOL-EN16931-R054"
+              test="count(cac:TaxTotal[not(cac:TaxSubtotal)]) = (if (cbc:TaxCurrencyCode) then 1 else 0)"
+              flag="fatal">Only one tax total without tax subtotals MUST be provided when tax currency code is provided.</assert>
     </rule>
 
     <rule context="cbc:TaxCurrencyCode">
@@ -120,6 +132,18 @@
       <assert id="PEPPOL-EN16931-R061"
               test="cac:PaymentMandate/cbc:ID"
               flag="fatal">Mandate reference MUST be provided for direct debit.</assert>
+    </rule>
+
+    <!-- Currency -->
+    <rule context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cac:TaxTotal[cac:TaxSubtotal]/cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount ">
+      <assert id="PEPPOL-EN16931-R051"
+              test="@currencyID = $documentCurrencyCode"
+              flag="fatal">...</assert>
+    </rule>
+    <rule context="cac:TaxTotal[not(cac:TaxSubtotal)]/cbc:TaxAmount">
+      <assert id="PEPPOL-EN16931-R052"
+              test="/*/cbc:TaxCurrencyCode and @currencyID = /*/cbc:TaxCurrencyCode"
+              flag="fatal">...</assert>
     </rule>
 
     <!-- Line level - invoice period -->
