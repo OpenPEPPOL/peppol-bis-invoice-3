@@ -52,6 +52,9 @@
       <assert id="PEPPOL-EN16931-R004"
               test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')"
               flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
+      <assert id="PEPPOL-EN16931-R006"
+              test="not(/ubl-creditnote:CreditNote) or cac:BillingReference/cac:InvoiceDocumentReference"
+              flag="fatal">Reference to preceding invoice MUST be provided for credit note.</assert>
     </rule>
 
     <rule context="cbc:TaxCurrencyCode">
