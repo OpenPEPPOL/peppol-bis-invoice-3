@@ -1,9 +1,13 @@
 
-= Rounding and calculation
+
+= Calculation
+
+
 
 :leveloffset: +1
 
-include::rounding.adoc[]
-include::calculation.adoc[]
+include::totals.adoc[]
+include::line-calc.adoc[]
+include::allowance-calc.adoc[]
 
 :leveloffset: -1

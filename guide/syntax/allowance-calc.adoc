@@ -1,0 +1,18 @@
+
+
+.XML for calculations of allowances and charges where base amount and percentage exist
+[source, xml, indent=0]
+----
+include::snippets/calc.xml[tags=allowance1]
+----
+<1> Base amount, to be used with the percentage to calculate the amount
+<2> Charge percentage
+<3> stem:["Base amount" times ("Percentage" div 100) = "Amount"]
+
+
+.XML for calculations of allowances and charges where base amount and percentage does not exist
+[source, xml, indent=0]
+----
+include::snippets/calc.xml[tags=allowance2]
+----
+<1> Amount of allowance without calculations based on base amount and percentage

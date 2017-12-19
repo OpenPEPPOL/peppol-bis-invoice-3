@@ -10,4 +10,4 @@ include::snippets/Snippet-refs.xml[tags=allowance]
 <2> ChargeIndicator = false to indicate an allowance
 <3> Base amount, to be used with the percentage to calculate the amount
 <4> Charge percentage
-<5> Amount = base amount * percentage/100  
+<5> stem:["Amount" = "Base amount" times ("Percentage" div 100)]

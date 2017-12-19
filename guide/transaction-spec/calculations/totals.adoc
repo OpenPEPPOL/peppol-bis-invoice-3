@@ -1,6 +1,6 @@
 
 
-= Calculation
+= Calculation of totals
 
 Formulas for the calculations of totals are as follows:
 

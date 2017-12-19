@@ -1,5 +1,5 @@
 
-
+[[prof-01]]
 = Profile 01 - Billing
 
 In the table below you will find the values to be used as the specification identifier (BT-24) and the business process type (BT-23) for this profile

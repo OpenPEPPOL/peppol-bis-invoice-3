@@ -2,6 +2,8 @@
 
 //links used in the BIS document
 
+:ubl-invoice-mapping: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/ubl-invoice/structure/[UBL Invoice message table]
+
 //PEPPOL
 :peppol: https://peppol.eu/?rel=undefined[PEPPOL]
 :common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
