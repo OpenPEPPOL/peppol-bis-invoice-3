@@ -32,6 +32,7 @@
     R01X - Accounting customer
     R02X - Accounting supplier
     R04X - Allowance/Charge (document and line)
+    R05X - Tax
     R1XX - Line level
     R11X - Invoice period
   -->
@@ -68,6 +69,10 @@
 
     <!-- Accounting supplier -->
     <rule context="cac:AccountingSupplierParty/cac:Party">
+      <assert id="PEPPOL-EN16931-R020"
+              test="cbc:EndpointID"
+              flag="fatal">Seller electronic address MUST be provided</assert>
+
       <assert id="NO-R-001"
               test="not($supplierCountry = 'NO') or cac:PartyLegalEntity"
               flag="fatal">Norwegian suppliers MUST provide legal entity.</assert>
@@ -155,12 +160,11 @@
 
   <!-- Restricted code lists and formatting -->
   <pattern>
-    <!-- TODO -->
     <let name="ISO4217" value="tokenize('AFN EUR ALL DZD USD AOA XCD XCD ARS AMD AWG AUD AZN BSD BHD BDT BBD BYN BZD XOF BMD INR BTN BOB BOV USD BAM BWP NOK BRL USD BND BGN XOF BIF CVE KHR XAF CAD KYD XAF XAF CLP CLF CNY AUD AUD COP COU KMF CDF XAF NZD CRC XOF HRK CUP CUC ANG CZK DKK DJF XCD DOP USD EGP SVC USD XAF ERN ETB FKP DKK FJD XPF XAF GMD GEL GHS GIP DKK XCD USD GTQ GBP GNF XOF GYD HTG USD AUD HNL HKD HUF ISK INR IDR XDR IRR IQD GBP ILS JMD JPY GBP JOD KZT KES AUD KPW KRW KWD KGS LAK LBP LSL ZAR LRD LYD CHF MOP MKD MGA MWK MYR MVR XOF USD MRO MUR XUA MXN MXV USD MDL MNT XCD MAD MZN MMK NAD ZAR AUD NPR XPF NZD NIO XOF NGN NZD AUD USD NOK OMR PKR USD PAB USD PGK PYG PEN PHP NZD PLN USD QAR RON RUB RWF SHP XCD XCD XCD WST STD SAR XOF RSD SCR SLL SGD ANG XSU SBD SOS ZAR SSP LKR SDG SRD NOK SZL SEK CHF CHE CHW SYP TWD TJS TZS THB USD XOF NZD TOP TTD TND TRY TMT USD AUD UGX UAH AED GBP USD USD USN UYU UYI UZS VUV VEF VND USD USD XPF MAD YER ZMW ZWL XBA XBB XBC XBD XTS XXX XAU XPD XPT XAG', '\s')"/>
-    <!-- TODO -->
-    <let name="ISO6133" value="tokenize('DK NO SE', '\s')"/>
+    <let name="ISO6133" value="tokenize('AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW', '\s')"/>
     <let name="MIMECODE" value="tokenize('application/pdf image/png image/jpeg text/csv application/vnd.openxmlformats-officedocument.spreadsheetml.sheet application/vnd.oasis.opendocument.spreadsheet', '\s')"/>
     <let name="UNCL2005" value="tokenize('3 35 432', '\s')"/>
+    <let name="UNCL5189" value="tokenize('41 42 60 62 63 64 65 66 67 68 70 71 88 95 100 102 103 104 105', '\s')"/>
     <let name="UNCL5305" value="tokenize('AE E S Z G O K L M', '\s')"/>
 
     <rule context="cbc:EmbeddedDocumentBinaryObject[@mimeCode]">
@@ -170,9 +174,8 @@
     </rule>
 
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator='false']/cbc:AllowanceChargeReasonCode">
-      <!-- TODO -->
       <assert id="PEPPOL-EN16931-CL002"
-              test="matches(text(), '[0-9]{1,3}')"
+              test="some $code in $UNCL5189 satisfies normalize-space(text()) = $code"
               flag="fatal">Reason code must be according to UNCL 5189 D.16B.</assert>
     </rule>
 

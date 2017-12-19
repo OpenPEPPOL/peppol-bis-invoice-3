@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
+	<assert>
+    <description>Correct use of allowance codes.</description>
+		<scope>PEPPOL-EN16931-CL002</scope>
+	</assert>
+	<test>
+		<assert>
+			<success number="3">PEPPOL-EN16931-CL002</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>60</cbc:AllowanceChargeReasonCode>
+				<cbc:AllowanceChargeReasonCode>70</cbc:AllowanceChargeReasonCode>
+				<cbc:AllowanceChargeReasonCode>100</cbc:AllowanceChargeReasonCode>
+			</cac:AllowanceCharge>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error number="3">PEPPOL-EN16931-CL002</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+
+			<cac:AllowanceCharge>
+				<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode>40</cbc:AllowanceChargeReasonCode>
+				<cbc:AllowanceChargeReasonCode>80</cbc:AllowanceChargeReasonCode>
+				<cbc:AllowanceChargeReasonCode>110</cbc:AllowanceChargeReasonCode>
+			</cac:AllowanceCharge>
+
+		</Invoice>
+	</test>
+</testSet>
