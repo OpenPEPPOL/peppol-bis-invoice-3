@@ -2,7 +2,7 @@
 .XML for item net price
 [source, xml, indent=0]
 ----
-include::snippets/calc.xml[tags=price]
+include::snippets/Calc.xml[tags=price]
 ----
 <1> Item gross price
 <2> Item price discount
