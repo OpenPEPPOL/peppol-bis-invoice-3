@@ -68,9 +68,9 @@
     <cac:AccountingSupplierParty>
         <cac:Party>
             <!-- Add valid GLN -->
-            <cbc:EndpointID schemeID="0088">9482348239847239874</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0088">9482348239847239874</cbc:EndpointID><!--1-->
             <cac:PartyIdentification>
-                <cbc:ID>99887766</cbc:ID>
+                <cbc:ID schemeID="0088">9482348239847239874</cbc:ID><!--2-->
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>SupplierTradingName Ltd.</cbc:Name>
@@ -89,7 +89,7 @@
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
-                <cbc:CompanyID>GB1232434</cbc:CompanyID>
+                <cbc:CompanyID>GB9482348239847239874</cbc:CompanyID><!--3-->
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
@@ -116,9 +116,9 @@
     <!-- tag::buyer[] -->
     <cac:AccountingCustomerParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0002">FR23342</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0002">FR23342</cbc:EndpointID><!--1-->
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0002">FR23342</cbc:ID>
+                <cbc:ID schemeID="0002">FR23342</cbc:ID><!--2-->
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>BuyerTradingName AS</cbc:Name>
@@ -137,14 +137,14 @@
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
-                <cbc:CompanyID>SE459837593701</cbc:CompanyID>
+                <cbc:CompanyID>SE459837593701</cbc:CompanyID><!--3-->
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>Buyer Official Name</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="0183">39937423947</cbc:CompanyID>
+                <cbc:CompanyID schemeID="0183">39937423947</cbc:CompanyID><!--4-->
             </cac:PartyLegalEntity>
             <cac:Contact>
                 <cbc:Name>Lisa Johnson</cbc:Name>
@@ -158,13 +158,13 @@
     <!-- tag::payee[] -->
     <cac:PayeeParty>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0088">3298479324239</cbc:ID>
+            <cbc:ID schemeID="0088">3298479324239</cbc:ID><!--1-->
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Payee party</cbc:Name>
         </cac:PartyName>
         <cac:PartyLegalEntity>
-            <cbc:CompanyID schemeID="0088">3298479324239</cbc:CompanyID>
+            <cbc:CompanyID schemeID="0088">3298479324239</cbc:CompanyID><!--2-->
         </cac:PartyLegalEntity>
     </cac:PayeeParty>
     <!-- end::payee[] -->
@@ -187,7 +187,7 @@
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyTaxScheme>
-            <cbc:CompanyID>GB122324324535</cbc:CompanyID>
+            <cbc:CompanyID>GB122324324535</cbc:CompanyID><!--1-->
             <cac:TaxScheme>
                 <cbc:ID>VAT</cbc:ID>
             </cac:TaxScheme>

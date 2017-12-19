@@ -302,7 +302,7 @@
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-18</Reference>
                 
-                <Attribute usage="Optional">
+                <Attribute usage="Recommended">
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
                     <Description>The identification scheme identifier of the Invoiced object identifier.</Description>
@@ -637,7 +637,7 @@
                 <Element cardinality="0..1">
                     <Term>cac:Contact</Term>
                     <Name>SELLER CONTACT</Name>
-                    <Description>A group of business terms providing contact information about the Seller.s</Description>
+                    <Description>A group of business terms providing contact information about the Seller.</Description>
 
                     <Element cardinality="0..1">
                         <Term>cbc:Name</Term>

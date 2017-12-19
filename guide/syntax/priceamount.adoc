@@ -1,0 +1,9 @@
+
+.XML for item net price
+[source, xml, indent=0]
+----
+include::snippets/Calc.xml[tags=price]
+----
+<1> Item gross price
+<2> Item price discount
+<3> stem:["Item price net amount" = "Item gross price" - "Item price discount"]

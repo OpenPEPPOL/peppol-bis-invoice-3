@@ -1,0 +1,14 @@
+
+[[allowance-calc]]
+= Calculation of allowance/charge amount
+
+Allowance and charge on document- and line level consists of elements carrying information on the allowance/charge base amount and the allowance/charge percentage. These are, if present in the invoice instance, used for calculating the allowance/charge amount.
+
+If base amount is present, the percentage must also be present, and if percentage is present, the base amount must also be present, and the calculation of the amount must be:
+
+====
+stem:["Base amount" times ("Percentage" div 100) = "Amount"]
+====
+
+
+include::../../syntax/allowance-calc.adoc[]
