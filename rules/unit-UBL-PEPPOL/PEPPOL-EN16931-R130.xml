@@ -40,4 +40,22 @@
 
 		</Invoice>
 	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R130</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:CreditNoteLine>
+				<cbc:CreditedQuantity unitCode="STK">10</cbc:CreditedQuantity>
+
+				<cac:Price>
+					<cbc:BaseQuantity unitCode="AA">1</cbc:BaseQuantity>
+				</cac:Price>
+			</cac:CreditNoteLine>
+
+		</CreditNote>
+	</test>
 </testSet>

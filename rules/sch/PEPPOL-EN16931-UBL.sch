@@ -96,6 +96,12 @@
               flag="fatal">Allowance/charge amount cannot be negative</assert>
     </rule>
 
+    <rule context="cbc:TaxExemptionReasonCode">
+      <assert id="PEPPOL-EN16931-R050"
+              test="false()"
+              flag="fatal">Tax exception reason code MUST NOT be used.</assert>
+    </rule>
+
     <!-- Line level - invoice period -->
     <rule context="ubl-invoice:Invoice[cac:InvoicePeriod/cbc:StartDate]/cac:InvoiceLine/cac:InvoicePeriod/cbc:StartDate | ubl-creditnote:CreditNote[cac:InvoicePeriod/cbc:StartDate]/cac:CreditNoteLine/cac:InvoicePeriod/cbc:StartDate">
       <assert id="PEPPOL-EN16931-R110"
@@ -111,16 +117,18 @@
     <!-- Line level - line extension amount -->
     <rule context="cac:InvoiceLine | cac:CreditNoteLine">
       <let name="lineExtensionAmount" value="if (cbc:LineExtensionAmount) then xs:decimal(cbc:LineExtensionAmount) else 0"/>
-      <let name="invoicedQuantity" value="if (cbc:InvoicedQuantity) then xs:decimal(cbc:InvoicedQuantity) else 0"/>
+      <let name="quantity" value="if (/ubl-invoice:Invoice) then (if (cbc:InvoicedQuantity) then xs:decimal(cbc:InvoicedQuantity) else 1) else (if (cbc:CreditedQuantity) then xs:decimal(cbc:CreditedQuantity) else 1)"/>
       <let name="priceAmount" value="if (cac:Price/cbc:PriceAmount) then xs:decimal(cac:Price/cbc:PriceAmount) else 0"/>
       <let name="baseQuantity" value="if (cac:Price/cbc:BaseQuantity) then xs:decimal(cac:Price/cbc:BaseQuantity) else 1"/>
       <let name="allowancesTotal" value="if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']) then xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount)) else 0"/>
       <let name="chargesTotal" value="if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount)) else 0"/>
-      <!-- Ta med base quantity -->
 
       <assert id="PEPPOL-EN16931-R120"
-              test="u:slack($lineExtensionAmount, ($invoicedQuantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
+              test="$baseQuantity &lt;= 0 or u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
               flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * Item net price) + Invoice line charge amount - Invoice line allowance amount</assert>
+      <assert id="PEPPOL-EN16931-R121"
+              test="$baseQuantity &gt; 0"
+              flag="fatal">Base quantity MUST be a positive number above zero.</assert>
     </rule>
 
     <!-- Allowance (price level) -->
@@ -135,8 +143,11 @@
 
     <!-- Price -->
     <rule context="cac:Price/cbc:BaseQuantity[@unitCode]">
+      <let name="hasQuantity" value="../../cbc:InvoicedQuantity or ../../cbc:CreditedQuantity"/>
+      <let name="quantity" value="if (/ubl-invoice:Invoice) then ../../cbc:InvoicedQuantity else ../../cbc:CreditedQuantity"/>
+
       <assert id="PEPPOL-EN16931-R130"
-              test="@unitCode = ../../cbc:InvoicedQuantity/@unitCode"
+              test="not($hasQuantity) or @unitCode = $quantity/@unitCode"
               flag="fatal">Unit code of price base quantity MUST be same as invoiced quantity.</assert>
     </rule>
 
@@ -198,7 +209,7 @@
 
     <rule context="cbc:InvoiceTypeCode">
       <assert id="PEPPOL-EN16931-P0100"
-              test="$profile != '01' or (some $code in tokenize('380 384 393 82 80 84 395 575 623 780', '\s') satisfies normalize-space(text()) = $code)"
+              test="$profile != '01' or (some $code in tokenize('380 393 82 80 84 395 575 623 780', '\s') satisfies normalize-space(text()) = $code)"
               flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
 

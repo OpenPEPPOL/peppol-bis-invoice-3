@@ -233,6 +233,38 @@
 	</test>
 	<test>
 		<assert>
+			<error>PEPPOL-EN16931-R120</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:CreditNoteLine>
+				<cbc:CreditedQuantity>10</cbc:CreditedQuantity>
+				<cbc:LineExtensionAmount currencyID="NOK">89.97</cbc:LineExtensionAmount>
+
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+					<cbc:Amount currencyID="NOK">30</cbc:Amount>
+				</cac:AllowanceCharge>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<cbc:Amount currencyID="NOK">10</cbc:Amount>
+				</cac:AllowanceCharge>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+					<cbc:Amount currencyID="NOK">10</cbc:Amount>
+				</cac:AllowanceCharge>
+
+				<cac:Price>
+					<cbc:PriceAmount currencyID="NOK">10</cbc:PriceAmount>
+				</cac:Price>
+			</cac:CreditNoteLine>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
 			<success>PEPPOL-EN16931-R120</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
@@ -256,6 +288,25 @@
 					<cbc:Amount currencyID="NOK">10</cbc:Amount>
 				</cac:AllowanceCharge>
 
+				<cac:Price>
+					<cbc:PriceAmount currencyID="NOK">20</cbc:PriceAmount>
+					<cbc:BaseQuantity>2</cbc:BaseQuantity>
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R120</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+				 xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+				 xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				<!-- <cbc:InvoicedQuantity>10</cbc:InvoicedQuantity> -->
+				<!-- <cbc:LineExtensionAmount currencyID="NOK">100</cbc:LineExtensionAmount> -->
 				<cac:Price>
 					<cbc:PriceAmount currencyID="NOK">20</cbc:PriceAmount>
 					<cbc:BaseQuantity>2</cbc:BaseQuantity>
