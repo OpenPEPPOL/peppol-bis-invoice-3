@@ -183,6 +183,9 @@
       <assert id="PEPPOL-EN16931-R045"
               test="xs:decimal(cbc:Amount) &gt;= 0"
               flag="fatal">Allowance/charge amount cannot be negative</assert>
+      <assert id="PEPPOL-EN16931-R046"
+              test="not(cbc:BaseAmount) or xs:decimal(../cbc:PriceAmount) = xs:decimal(cbc:BaseAmount) - xs:decimal(cbc:Amount)"
+              flag="fatal">Item net price MUST equal (Gross price - Allowance amount) when gross price is provided.</assert>
     </rule>
 
     <!-- Price -->
