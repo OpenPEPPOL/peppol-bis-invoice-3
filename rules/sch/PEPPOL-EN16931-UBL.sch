@@ -135,7 +135,7 @@
     </rule>
 
     <!-- Currency -->
-    <rule context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cac:TaxTotal[cac:TaxSubtotal]/cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount ">
+    <rule context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cac:TaxTotal[cac:TaxSubtotal]/cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount">
       <assert id="PEPPOL-EN16931-R051"
               test="@currencyID = $documentCurrencyCode"
               flag="fatal">...</assert>
@@ -246,7 +246,7 @@
               flag="fatal">Invoice period description code must be according to UNCL 2005 D.16B.</assert>
     </rule>
 
-    <rule context="cbc:*[@currencyID]">
+    <rule context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount">
       <assert id="PEPPOL-EN16931-CL007"
               test="some $code in $ISO4217 satisfies @currencyID = $code"
               flag="fatal">Currency code must be according to ISO 4217:2005</assert>

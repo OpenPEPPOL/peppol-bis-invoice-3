@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
+	<assert>
+    <description>Verify currency is provided.</description>
+		<scope>PEPPOL-EN16931-CL007</scope>
+	</assert>
+	<test>
+		<assert>
+			<success number="4">PEPPOL-EN16931-CL007</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				<cac:TaxSubtotal/>
+			</cac:TaxTotal>
+
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="EUR">100</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount currencyID="EUR">100</cbc:LineExtensionAmount>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="EUR">100</cbc:PriceAmount>
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error number="4">PEPPOL-EN16931-CL007</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:DocumentCurrencyCode>EUS</cbc:DocumentCurrencyCode>
+
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="ITL">10</cbc:TaxAmount>
+				<cac:TaxSubtotal/>
+			</cac:TaxTotal>
+
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="FRF">100</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount currencyID="DEM">100</cbc:LineExtensionAmount>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="TOS">100</cbc:PriceAmount>
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+</testSet>

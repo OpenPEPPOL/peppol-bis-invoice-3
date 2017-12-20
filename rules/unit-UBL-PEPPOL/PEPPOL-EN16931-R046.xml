@@ -26,6 +26,46 @@
 	</test>
 	<test>
 		<assert>
+			<success>PEPPOL-EN16931-R046</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="NOK">90</cbc:PriceAmount>
+					<cac:AllowanceCharge>
+						<cbc:Amount currencyID="NOK">10</cbc:Amount>
+						<!-- <cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount> -->
+					</cac:AllowanceCharge>
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R046</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="NOK">90</cbc:PriceAmount>
+					<!-- <cac:AllowanceCharge>
+						<cbc:Amount currencyID="NOK">10</cbc:Amount>
+						<cbc:BaseAmount currencyID="NOK">100</cbc:BaseAmount>
+					</cac:AllowanceCharge> -->
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
 			<error>PEPPOL-EN16931-R046</error>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
