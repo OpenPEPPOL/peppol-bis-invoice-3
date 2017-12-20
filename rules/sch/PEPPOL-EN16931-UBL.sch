@@ -207,6 +207,7 @@
     <let name="MIMECODE" value="tokenize('application/pdf image/png image/jpeg text/csv application/vnd.openxmlformats-officedocument.spreadsheetml.sheet application/vnd.oasis.opendocument.spreadsheet', '\s')"/>
     <let name="UNCL2005" value="tokenize('3 35 432', '\s')"/>
     <let name="UNCL5189" value="tokenize('41 42 60 62 63 64 65 66 67 68 70 71 88 95 100 102 103 104 105', '\s')"/>
+    <let name="UNCL7161" value="tokenize('AA AAA AAC AAD AAE AAF AAH AAI AAS AAT AAV AAY AAZ ABA ABB ABC ABD ABF ABK ABL ABN ABR ABS ABT ABU ACF ACG ACH ACI ACJ ACK ACL ACM ACS ADC ADE ADJ ADK ADL ADM ADN ADO ADP ADQ ADR ADT ADW ADY ADZ AEA AEB AEC AED AEF AEH AEI AEJ AEK AEL AEM AEN AEO AEP AES AET AEU AEV AEW AEX AEY AEZ AJ AU CA CAB CAD CAE CAF CAI CAJ CAK CAL CAM CAN CAO CAP CAQ CAR CAS CAT CAU CAV CAW CD CG CS CT DAB DAD DL EG EP ER FAA FAB FAC FC FH FI GAA HAA HD HH IAA IAB ID IF IR IS KO L1 LA LAA LAB LF MAE MI ML NAA OA PA PAA PC PL RAB RAC RAD RAF RE RF RH RV SA SAA SAD SAE SAI SG SH SM SU TAB TAC TT TV V1 V2 WH XAA YY ZZZ', '\s')"/>
     <let name="UNCL5305" value="tokenize('AE E S Z G O K L M', '\s')"/>
 
     <rule context="cbc:EmbeddedDocumentBinaryObject[@mimeCode]">
@@ -218,13 +219,12 @@
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator='false']/cbc:AllowanceChargeReasonCode">
       <assert id="PEPPOL-EN16931-CL002"
               test="some $code in $UNCL5189 satisfies normalize-space(text()) = $code"
-              flag="fatal">Reason code must be according to UNCL 5189 D.16B.</assert>
+              flag="fatal">Reason code must be according to subset of UNCL 5189 D.16B.</assert>
     </rule>
 
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator='true']/cbc:AllowanceChargeReasonCode">
-      <!-- TODO -->
       <assert id="PEPPOL-EN16931-CL003"
-              test="matches(text(), '[A-Z]{2,3}')"
+              test="some $code in $UNCL7161 satisfies normalize-space(text()) = $code"
               flag="fatal">Reason code must be according to UNCL 7161 D.16B.</assert>
     </rule>
 
