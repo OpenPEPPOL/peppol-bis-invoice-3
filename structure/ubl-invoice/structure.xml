@@ -190,6 +190,7 @@
 
         <Element cardinality="0..1">
             <Term>cac:OrderReference</Term>
+            <Name>ORDER AND SALES ORDER REFERENCE</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
@@ -212,6 +213,7 @@
 
         <Element cardinality="0..n">
             <Term>cac:BillingReference</Term>
+            <Name>BILLING REFERENCE</Name>
 
             <Element cardinality="0..1">
                 <Term>cac:InvoiceDocumentReference</Term>
@@ -239,6 +241,7 @@
 
         <Element cardinality="0..1">
             <Term>cac:DespatchDocumentReference</Term>
+            <Name>DESPATCH ADVICE REFERENCE</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
@@ -252,6 +255,7 @@
 
         <Element cardinality="0..1">
             <Term>cac:ReceiptDocumentReference</Term>
+            <Name>RECEIPT ADVICE REFERENCE</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
@@ -265,6 +269,7 @@
 
         <Element cardinality="0..1">
             <Term>cac:OriginatorDocumentReference</Term>
+            <Name>TENDER OR LOT REFERENCE</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
@@ -278,6 +283,7 @@
 
         <Element cardinality="0..1">
             <Term>cac:ContractDocumentReference</Term>
+            <Name>CONTRACT REFERENCE</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
@@ -297,10 +303,10 @@
 
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
-                <Name>Invoiced object identifier</Name>
-                <Description>An identifier for an object on which the invoice is based, given by the Seller.</Description>
+                <Name>Invoiced object identifier, Supporting document reference</Name>
+                <Description>An identifier for an object on which the invoice is based, given by the Seller, or the supporting document.</Description>
                 <DataType>Identifier</DataType>
-                <Reference type="BUSINESS_TERM">BT-18</Reference>
+                <Reference type="BUSINESS_TERM">BT-18, BT-122</Reference>
                 
                 <Attribute usage="Recommended">
                     <Term>schemeID</Term>
@@ -314,14 +320,14 @@
                 <Value type="EXAMPLE">AB23456</Value>              
 
             </Element>
-
-            <Element>
-                <Term>cbc:ID</Term>
-                <Name>Supporting document reference</Name>
-                <Description>An identifier of the supporting document.</Description>
-                <DataType>Document reference</DataType>
-                <Reference type="BUSINESS_TERM">BT-122</Reference>
-                <Value type="EXAMPLE">DocRef23</Value>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:DocumentTypeCode</Term>
+                <Name>Document type code</Name>
+                <Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
+                <DataType>Code</DataType>
+                <Reference type="BUSINESS_TERM">BT-18</Reference>
+                <Value type="DEFAULT">130</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -335,6 +341,7 @@
 
             <Element cardinality="0..1">
                 <Term>cac:Attachment</Term>
+                <Name>ATTACHMENT</Name>
 
                 <Element cardinality="0..1">
                     <Term>cbc:EmbeddedDocumentBinaryObject</Term>
@@ -380,6 +387,7 @@
 
         <Element cardinality="0..1">
             <Term>cac:ProjectReference</Term>
+            <Name>PROJECT REFERENCE</Name>
 
             <Element>
                 <Term>cbc:ID</Term>
@@ -397,8 +405,9 @@
             <Description>A group of business terms providing information about the Seller.</Description>
             <Reference type="BUSINESS_TERM">BG-4</Reference>
 
-            <Element cardinality="0..1">
+            <Element>
                 <Term>cac:Party</Term>
+                <Name>PARTY</Name>
 
                 <Element>
                     <Term>cbc:EndpointID</Term>
@@ -418,18 +427,19 @@
                 
                 <Element cardinality="0..n">
                     <Term>cac:PartyIdentification</Term>
+                    <Name>PARTY IDENTIFICATION</Name>
 
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Name>Seller identifier</Name>
-                        <Description>An identification of the Seller.</Description>
+                        <Name>Seller identifier, bank assigned creditor identifier</Name>
+                        <Description>An identification of the Seller or a unique banking reference identifier of the Payee or Seller assigned by the Payee or Seller bank.</Description>
                         <DataType>Identifier</DataType>
-                        <Reference type="BUSINESS_TERM">BT-29</Reference>
+                        <Reference type="BUSINESS_TERM">BT-29, BT-90</Reference>
                         
                         <Attribute usage="Optional">
                             <Term>schemeID</Term>
                             <Name>Seller identifier identification scheme identifier</Name>
-                            <Description>The identification scheme identifier of the Seller identifier.</Description>
+                            <Description>The identification scheme identifier of the Seller identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
                             <Reference type="RULE">BR-CL-10</Reference>
                             <Reference type="CODE_LIST">ISO 6523 ICD list</Reference>
                             <Value type="EXAMPLE">0088</Value>
@@ -438,27 +448,12 @@
                         <Value type="EXAMPLE">5060012349998</Value>
                         
                     </Element>
-                    <Element cardinality="0..1">
-                        <Term>cbc:ID</Term>
-                        <Name>Bank assigned creditor identifier</Name>
-                        <Description>Unique banking reference identifier of the Payee or Seller assigned by the Payee or Seller bank.
-                        </Description>
-                        <DataType>Identifier</DataType>
-                        <Reference type="BUSINESS_TERM">BT-90</Reference>
-
-                        <Attribute>
-                            <Term>schemeID</Term>
-                            <Name>Seller identifier identification scheme identifier</Name>
-                            <Description>The identification scheme identifier of the Seller identifier.</Description>
-                            <Value type="DEFAULT">SEPA</Value>
-                        </Attribute>
-                        
-                        <Value type="EXAMPLE">82376827</Value>
-                    </Element>
+               
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cac:PartyName</Term>
+                    <Name>PARTY NAME</Name>
 
                     <Element cardinality="0..1">
                         <Term>cbc:Name</Term>
@@ -523,7 +518,7 @@
                         <Value type="EXAMPLE">Region A</Value>
                     </Element>
 
-                    <Element cardinality="0..n">
+                    <Element cardinality="0..1">
                         <Term>cac:AddressLine</Term>
 
                         <Element>
@@ -540,6 +535,7 @@
 
                     <Element>
                         <Term>cac:Country</Term>
+                        <Name>COUNTRY</Name>
 
                         <Element>
                             <Term>cbc:IdentificationCode</Term>
@@ -556,52 +552,34 @@
 
                 <Element cardinality="0..n">
                     <Term>cac:PartyTaxScheme</Term>
+                    <Name>PARTY VAT/TAX IDENTIFIERS</Name>
 
                     <Element cardinality="0..1">
                         <Term>cbc:CompanyID</Term>
-                        <Name>Seller VAT identifier</Name>
-                        <Description>The Seller's VAT identifier (also known as Seller VAT identification number).</Description>
+                        <Name>Seller VAT identifier, Seller tax registration identifier</Name>
+                        <Description>The Seller's VAT identifier (also known as Seller VAT identification number) or the local identification (defined by the Seller’s address) of the Seller for tax purposes or a
+                            reference that enables the Seller to state his registered tax status</Description>
                         <DataType>Identifier</DataType>
-                        <Reference type="BUSINESS_TERM">BT-31</Reference>
+                        <Reference type="BUSINESS_TERM">BT-31, BT-32</Reference>
                         <Value type="EXAMPLE">NO999888777</Value>
                     </Element>
                     
                     <Element>
                         <Term>cac:TaxScheme</Term>
+                        <Name>TAX SCHEME</Name>
                         
                         <Element>
                             <Term>cbc:ID</Term>
-                            <Description>Mandatory element. Use “VAT”</Description>
-                            <Value type="DEFAULT">VAT</Value>
+                            <Description>Mandatory element. For Seller VAT identifier (BT-31), use value “VAT”, for the seller tax registration identifier (BT-32), use != "VAT"</Description>
+                            <Value type="EXAMPLE">VAT</Value>
                         </Element>
                     </Element>
-
-                    <Element cardinality="0..1">
-                        <Term>cbc:CompanyID</Term>
-                        <Name>Seller tax registration identifier</Name>
-                        <Description>The local identification (defined by the Seller’s address) of the Seller for tax purposes or a
-                            reference that enables the Seller to state his registered tax status.
-                        </Description>
-                        <DataType>Identifier</DataType>
-                        <Reference type="BUSINESS_TERM">BT-32</Reference>
-                        <Value type="EXAMPLE">999888777</Value>
-                    </Element>
-                    
-                    <Element>
-                        <Term>cac:TaxScheme</Term>
-                        
-                        <Element>
-                            <Term>cbc:ID</Term>
-                            <Description>Mandatory element, != VAT</Description>
-                            <Value type="EXAMPLE">TAX</Value>
-                        </Element>
-                    </Element>
-
-                  
+    
                 </Element>
 
                 <Element>
                     <Term>cac:PartyLegalEntity</Term>
+                    <Name>PARTY LEGAL ENTITY</Name>
 
                     <Element>
                         <Term>cbc:RegistrationName</Term>
@@ -620,17 +598,26 @@
                         <Description>An identifier issued by an official registrar that identifies the Seller as a legal entity or
                             person.
                         </Description>
-
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">BT-30</Reference>
+                        
                         <Attribute usage="Optional">
                             <Term>schemeID</Term>
                             <Name>Seller legal registration identifier identification scheme identifier</Name>
                             <Description>The identification scheme identifier of the Seller legal registration identifier.</Description>
+                            <Reference type="CODE_LIST">ISO 6523 ICD list</Reference>
+                            <Value type="EXAMPLE">0002</Value>   
                         </Attribute>
+                        <Value type="EXAMPLE">987654321</Value>
                     </Element>
+                    
                     <Element cardinality="0..1">
                         <Term>cbc:CompanyLegalForm</Term>
                         <Name>Seller additional legal information</Name>
                         <Description>Additional legal information relevant for the Seller.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-33</Reference>
+                        <Value type="EXAMPLE">Share capital</Value>
                     </Element>
                 </Element>
 
@@ -642,17 +629,26 @@
                     <Element cardinality="0..1">
                         <Term>cbc:Name</Term>
                         <Name>Seller contact point</Name>
-                        <Description>A contact point for a legal entity or person.</Description>
+                        <Description>A contact point for a legal entity or person.</Description>      
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-41</Reference>
+                        <Value type="EXAMPLE">xyz123</Value>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:Telephone</Term>
                         <Name>Seller contact telephone number</Name>
                         <Description>A phone number for the contact point.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-42</Reference>
+                        <Value type="EXAMPLE">887 654 321</Value>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cbc:ElectronicMail</Term>
                         <Name>Seller contact email address</Name>
                         <Description>An e-mail address for the contact point.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-43</Reference>
+                        <Value type="EXAMPLE">test.name@foo.bar</Value>
                     </Element>
                 </Element>
             </Element>
@@ -663,19 +659,27 @@
             <Name>BUYER</Name>
             <Description>A group of business terms providing information about the Buyer.</Description>
 
-            <Element cardinality="0..1">
+            <Element>
                 <Term>cac:Party</Term>
+                <Name>PARTY</Name>
 
-                <Element cardinality="0..1">
+                <Element>
                     <Term>cbc:EndpointID</Term>
                     <Name>Buyer electronic address</Name>
                     <Description>Identifies the Buyer's electronic address to which a business document should be delivered.</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">BT-49</Reference>
+                    
 
-                    <Attribute usage="Optional">
+                    <Attribute>
                         <Term>schemeID</Term>
                         <Name>Buyer electronic address identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Buyer electronic address.</Description>
+                        <Reference type="CODE_LIST">Not yet available!</Reference>
                     </Attribute>
+                    
+                    <Value type="EXAMPLE">SE8765456787</Value>
+                    
                 </Element>
 
                 <Element cardinality="0..n">
@@ -685,22 +689,33 @@
                         <Term>cbc:ID</Term>
                         <Name>Buyer identifier</Name>
                         <Description>An identifier of the Buyer.</Description>
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">BT-46</Reference>
+                       
 
                         <Attribute usage="Optional">
                             <Term>schemeID</Term>
                             <Name>Buyer identifier identification scheme identifier</Name>
-                            <Description>The identification scheme identifier of the Buyer identifier.</Description>
+                            <Description>The identification scheme identifier of the Buyer identifier.</Description>    
+                            <Reference type="RULE">BR-CL-10</Reference>
+                            <Reference type="CODE_LIST">ISO 6523 ICD list</Reference>
+                            <Value type="EXAMPLE">0088</Value>
                         </Attribute>
+                        <Value type="EXAMPLE">SE8765456787</Value>
                     </Element>
                 </Element>
 
                 <Element cardinality="0..n">
                     <Term>cac:PartyName</Term>
+                    <Name>PARTY NAME</Name>
 
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Buyer trading name</Name>
                         <Description>A name by which the Buyer is known, other than Buyer name (also known as Business name).</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-45</Reference>
+                        <Value type="EXAMPLE">Buyer Trading Name</Value>
                     </Element>
                 </Element>
 
@@ -713,6 +728,9 @@
                         <Term>cbc:StreetName</Term>
                         <Name>Buyer address line 1</Name>
                         <Description>The main address line in an address.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-50</Reference>
+                        <Value type="EXAMPLE">Hovudgatan 32</Value>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -721,12 +739,18 @@
                         <Description>An additional address line in an address that can be used to give further details supplementing the
                             main line.
                         </Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-51</Reference>
+                        <Value type="EXAMPLE">Po box 43</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
                         <Name>Buyer city</Name>
                         <Description>The common name of the city, town or village, where the Buyer's address is located.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-52</Reference>
+                        <Value type="EXAMPLE">Stockholm</Value>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -734,15 +758,21 @@
                         <Name>Buyer post code</Name>
                         <Description>The identifier for an addressable group of properties according to the relevant postal service.
                         </Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-53</Reference>
+                        <Value type="EXAMPLE">34567</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:CountrySubentity</Term>
                         <Name>Buyer country subdivision</Name>
                         <Description>The subdivision of a country.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-54</Reference>
+                        <Value type="EXAMPLE">Region A</Value>
                     </Element>
 
-                    <Element cardinality="0..n">
+                    <Element cardinality="0..1">
                         <Term>cac:AddressLine</Term>
 
                         <Element>
@@ -751,46 +781,67 @@
                             <Description>An additional address line in an address that can be used to give further details supplementing the
                                 main line.
                             </Description>
+                            <DataType>Text</DataType>
+                            <Reference type="BUSINESS_TERM">BT-163</Reference>
+                            <Value type="EXAMPLE">Building F2</Value>
                         </Element>
                     </Element>
 
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>cac:Country</Term>
+                        <Name>COUNTRY</Name>
 
-                        <Element cardinality="0..1">
+                        <Element>
                             <Term>cbc:IdentificationCode</Term>
                             <Name>Buyer country code</Name>
                             <Description>A code that identifies the country.</Description>
+                            <DataType>Code</DataType>
+                            <Reference type="BUSINESS_TERM">BT-55</Reference>
+                            <Reference type="RULE">BR-CL-14</Reference>
+                            <Reference type="CODE_LIST">Alpha 2 from ISO 3166-1</Reference>
+                            <Value type="EXAMPLE">SE</Value>
                         </Element>
                     </Element>
                 </Element>
 
-                <Element cardinality="0..n">
+                <Element cardinality="0..1">
                     <Term>cac:PartyTaxScheme</Term>
+                    <Name>PARTY VAT IDENTIFIER</Name>
 
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>cbc:CompanyID</Term>
                         <Name>Buyer VAT identifier</Name>
                         <Description>The Buyer's VAT identifier (also known as Buyer VAT identification number).</Description>
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">BT-48</Reference>
+                        <Value type="EXAMPLE">SE8765456787</Value>
                     </Element>
 
                     <Element>
                         <Term>cac:TaxScheme</Term>
+                        <Name>TAX SCHEME</Name>
 
-                        <Element cardinality="0..1">
+                        <Element>
                             <Term>cbc:ID</Term>
                             <Description>Mandatory element. Use “VAT”</Description>
+                            <DataType>Identifier</DataType>
+                            <Value type="DEFAULT">VAT</Value>
+                            
                         </Element>
                     </Element>
                 </Element>
 
-                <Element cardinality="0..n">
+                <Element>
                     <Term>cac:PartyLegalEntity</Term>
+                    <Name>PARTY LEGAL ENTITY</Name>
 
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>cbc:RegistrationName</Term>
                         <Name>Buyer name</Name>
                         <Description>The full name of the Buyer.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-44</Reference>
+                        <Value type="EXAMPLE">Buyer Full Name AS</Value>
                     </Element>
 
                     <Element cardinality="0..1">
@@ -799,12 +850,17 @@
                         <Description>An identifier issued by an official registrar that identifies the Buyer as a legal entity or
                             person.
                         </Description>
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">BT-47</Reference>
+                        
 
                         <Attribute usage="Optional">
                             <Term>schemeID</Term>
                             <Name>Buyer legal registration identifier identification scheme identifier</Name>
                             <Description>The identification scheme identifier of the Buyer legal registration identifier.</Description>
+                            <Reference type="CODE_LIST">ISO 6523 ICD list</Reference>
                         </Attribute>
+                        <Value type="EXAMPLE">SE8765456787</Value>
                     </Element>
                 </Element>
 
@@ -817,18 +873,27 @@
                         <Term>cbc:Name</Term>
                         <Name>Buyer contact point</Name>
                         <Description>A contact point for a legal entity or person.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-56</Reference>
+                        <Value type="EXAMPLE">Jens Jensen</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:Telephone</Term>
                         <Name>Buyer contact telephone number</Name>
                         <Description>A phone number for the contact point.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-57</Reference>
+                        <Value type="EXAMPLE">876 654 321</Value>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:ElectronicMail</Term>
                         <Name>Buyer contact email address</Name>
                         <Description>An e-mail address for the contact point.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-58</Reference>
+                        <Value type="EXAMPLE">jens.j@buyer.se</Value>
                     </Element>
                 </Element>
             </Element>
@@ -843,39 +908,47 @@
 
             <Element cardinality="0..n">
                 <Term>cac:PartyIdentification</Term>
+                <Name>PARTY IDENTIFICATION</Name>
 
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name>Payee identifier</Name>
-                    <Description>An identifier for the Payee.</Description>
-                </Element>
-
-                <Element>
-                    <Term>cbc:ID</Term>
-                    <Name>Bank assigned creditor identifier</Name>
-                    <Description>Unique banking reference identifier of the Payee or Seller assigned by the Payee or Seller bank.
-                    </Description>
-
+                    <Name>Payee identifier, bank assigned creditor identifier.</Name>
+                    <Description>An identifier for the Payee, or a unique banking reference identifier of the Payee or Seller assigned by the Payee or Seller bank.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-60, BT-90</Reference>
+                    
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Payee identifier identification scheme identifier</Name>
-                        <Description>The identification scheme identifier of the Payee identifier.</Description>
+                        <Description>The identification scheme identifier of the payee identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
+                        <Reference type="RULE">BR-CL-10</Reference>
+                        <Reference type="CODE_LIST">ISO 6523 ICD list</Reference>
+                        <Value type="EXAMPLE">SEPA</Value>
                     </Attribute>
+                                
+                    <Value type="EXAMPLE">FR932874294</Value>
+                    
                 </Element>
+                 
             </Element>
 
-            <Element cardinality="0..n">
+            <Element>
                 <Term>cac:PartyName</Term>
+                <Name>PARTY NAME</Name>
 
                 <Element>
                     <Term>cbc:Name</Term>
                     <Name>Payee name</Name>
                     <Description>The name of the Payee.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-59</Reference>
+                    <Value type="EXAMPLE">Payee Name Ltd</Value>
                 </Element>
             </Element>
 
             <Element cardinality="0..n">
                 <Term>cac:PartyLegalEntity</Term>
+                <Name>PARTY LEGAL ENTITY</Name>
 
                 <Element cardinality="0..1">
                     <Term>cbc:CompanyID</Term>
@@ -883,12 +956,21 @@
                     <Description>An identifier issued by an official registrar that identifies the Payee as a legal entity or
                         person.
                     </Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">BT-61</Reference>
+                    
 
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Payee legal registration identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Payee legal registration identifier.</Description>
+                        <Reference type="RULE">BR-CL-10</Reference>
+                        <Reference type="CODE_LIST">ISO 6523 ICD list</Reference>
+                        <Value type="EXAMPLE">0002</Value>
                     </Attribute>
+                    
+                    <Value type="EXAMPLE">FR932874294</Value>
+                    
                 </Element>
             </Element>
         </Element>
@@ -899,27 +981,35 @@
             <Description>A group of business terms providing information about the Seller's tax representative.
             </Description>
 
-            <Element cardinality="0..n">
+            <Element>
                 <Term>cac:PartyName</Term>
+                <Name>PARTY NAME</Name>
 
                 <Element>
                     <Term>cbc:Name</Term>
                     <Name>Seller tax representative name</Name>
                     <Description>The full name of the Seller's tax representative party.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-62</Reference>
+                    <Value type="EXAMPLE">Tax Representative Name AS</Value>
                 </Element>
             </Element>
 
-            <Element cardinality="0..1">
+            <Element>
                 <Term>cac:PostalAddress</Term>
                 <Name>SELLER TAX REPRESENTATIVE POSTAL ADDRESS</Name>
                 <Description>A group of business terms providing information about the postal address for the tax representative
                     party.
                 </Description>
+                
 
                 <Element cardinality="0..1">
                     <Term>cbc:StreetName</Term>
                     <Name>Tax representative address line 1</Name>
                     <Description>The main address line in an address.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-64</Reference>
+                    <Value type="EXAMPLE">Lille gatan 545</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -928,6 +1018,9 @@
                     <Description>An additional address line in an address that can be used to give further details supplementing the
                         main line.
                     </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-65</Reference>
+                    <Value type="EXAMPLE">Po Box 987</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -935,6 +1028,9 @@
                     <Name>Tax representative city</Name>
                     <Description>The common name of the city, town or village, where the tax representative address is located.
                     </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-66</Reference>
+                    <Value type="EXAMPLE">Göteborg</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -942,15 +1038,22 @@
                     <Name>Tax representative post code</Name>
                     <Description>The identifier for an addressable group of properties according to the relevant postal service.
                     </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-67</Reference>
+                    <Value type="EXAMPLE">12345</Value>
                 </Element>
 
                 <Element cardinality="0..1">
                     <Term>cbc:CountrySubentity</Term>
                     <Name>Tax representative country subdivision</Name>
                     <Description>The subdivision of a country.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-68</Reference>
+                    <Value type="EXAMPLE">Region Vest</Value>
                 </Element>
+                
 
-                <Element cardinality="0..n">
+                <Element cardinality="0..1">
                     <Term>cac:AddressLine</Term>
 
                     <Element>
@@ -959,34 +1062,50 @@
                         <Description>An additional address line in an address that can be used to give further details supplementing the
                             main line.
                         </Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-164</Reference>
+                        <Value type="EXAMPLE">A87</Value>
                     </Element>
                 </Element>
 
-                <Element cardinality="0..1">
+                <Element>
                     <Term>cac:Country</Term>
+                    <Name>COUNTRY</Name>
 
                     <Element cardinality="0..1">
                         <Term>cbc:IdentificationCode</Term>
                         <Name>Tax representative country code</Name>
                         <Description>A code that identifies the country.</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="BUSINESS_TERM">BT-69</Reference>
+                        <Reference type="RULE">BR-CL-14</Reference>
+                        <Reference type="CODE_LIST">Alpha 2 from ISO 3166-1</Reference>
+                        <Value type="EXAMPLE">SE</Value>
                     </Element>
                 </Element>
             </Element>
 
-            <Element cardinality="0..n">
+            <Element>
                 <Term>cac:PartyTaxScheme</Term>
+                <Name>PARTY VAT IDENTIFIER</Name>
 
                 <Element cardinality="0..1">
                     <Term>cbc:CompanyID</Term>
                     <Name>Seller tax representative VAT identifier</Name>
                     <Description>The VAT identifier of the Seller's tax representative party.</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">BT-63</Reference>
+                    <Value type="EXAMPLE">FR932874294</Value>
                 </Element>
+                
                 <Element>
                     <Term>cac:TaxScheme</Term>
+                    <Name>TAX SCHEME</Name>
 
-                    <Element cardinality="0..1">
+                    <Element>
                         <Term>cbc:ID</Term>
                         <Description>Mandatory element. Use “VAT”</Description>
+                        <Value type="DEFAULT">VAT</Value>
                     </Element>
                 </Element>
             </Element>
