@@ -81,9 +81,9 @@
             <Description>A code specifying the functional type of the Invoice.</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-3</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-P0101</Reference>
             <Reference type="CODE_LIST">Subset of UNTDID 1001</Reference>
-            <Value type="EXAMPLE">380</Value>
+            <Value type="EXAMPLE">381</Value>
         </Element>
 
         <Element cardinality="0..1">

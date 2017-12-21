@@ -257,6 +257,11 @@
               test="$profile != '01' or (some $code in tokenize('380 393 82 80 84 395 575 623 780', '\s') satisfies normalize-space(text()) = $code)"
               flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
+    <rule context="cbc:CreditNoteTypeCode">
+      <assert id="PEPPOL-EN16931-P0101"
+              test="$profile != '01' or (some $code in tokenize('381 396 81 83 532', '\s') satisfies normalize-space(text()) = $code)"
+              flag="fatal">Invoice type code MUST be set according to the profile.</assert>
+    </rule>
 
     <rule context="cbc:IssueDate | cbc:DueDate | cbc:TaxPointDate | cbc:StartDate | cbc:EndDate | cbc:ActualDeliveryDate">
       <assert id="PEPPOL-EN16931-F001"
