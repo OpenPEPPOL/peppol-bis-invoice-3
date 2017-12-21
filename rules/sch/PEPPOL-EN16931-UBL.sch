@@ -138,12 +138,12 @@
     <rule context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cac:TaxTotal[cac:TaxSubtotal]/cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount">
       <assert id="PEPPOL-EN16931-R051"
               test="@currencyID = $documentCurrencyCode"
-              flag="fatal">...</assert>
+              flag="fatal">All currencyID attributes must have the same value as the invoice currency code (BT-5),  except for the invoice total VAT amount in accounting currency (BT-111) </assert>
     </rule>
     <rule context="cac:TaxTotal[not(cac:TaxSubtotal)]/cbc:TaxAmount">
       <assert id="PEPPOL-EN16931-R052"
               test="/*/cbc:TaxCurrencyCode and @currencyID = /*/cbc:TaxCurrencyCode"
-              flag="fatal">...</assert>
+              flag="fatal">The currencyID for invoice total VAT in accounting currency, must be the same as VAT accounting currency code (BT-6)</assert>
     </rule>
 
     <!-- Line level - invoice period -->
