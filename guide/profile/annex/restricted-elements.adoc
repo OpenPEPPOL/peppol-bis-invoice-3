@@ -17,11 +17,4 @@
 | Allowed set of values can be found in <<Invoice Type Code>>
 | PEPPOL-EN16931-P0100
 
-
-| BT-23
-| Business process type
-| Add new non-conflicting business rule to existing element(s)
-| Element must have value `urn:fdc:peppol.eu:2017:poacc:billing:01:1.0`
-| #RuleID#
-
 |====

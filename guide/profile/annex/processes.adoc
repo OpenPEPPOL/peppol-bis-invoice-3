@@ -7,6 +7,6 @@ This {CIUS} has made restrictions to not explicitly support the following busine
 
 
 P11 - Partial and final invoicing::
-#Add explanation#
+Due to the fact that partial and final invoices does not require all information that is mandated, this process is out of scope for this PEPPOL BIS.
 
 P12 - Self billing:: Directive 2006/112/EC (Article 224) requires a specific process to be observed, involving prior agreement and a procedure where the supplier is to accept each invoice. Self-billing requires a specific set-up due to the requirements for prior agreement and procedure for the acceptance of each self-bill. Specific milestones have to be observed at time of setting it up as well as in the operation of self-billing.

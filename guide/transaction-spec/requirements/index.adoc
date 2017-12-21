@@ -9,10 +9,7 @@ The table below gives an overview of the business requirements from {tc434}, as 
 .Legend
 ****
 * Requirements with an id *R__nn__* are from {EN16931} (Example R19).
-* Requirements with an id = *opr-__nnn__* are {peppol} specific requirements (example opr-003).
 ****
-
-#Add peppol specific req. to the tables#
 
 include::accounting.adoc[]
 

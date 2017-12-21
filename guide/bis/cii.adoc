@@ -2,10 +2,10 @@
 [appendix]
 = Cross Industry Invoice
 
-This {peppol} BIS supports the *optional* use of the UN/CEFACT XML Cross Industry Invoice,D16B (CII).
+This {peppol} BIS supports the *optional* use of the UN/CEFACT XML Cross Industry Invoice, D16B (CII).
 
 All invoice instances expressed in CII must be compliant to the restrictions and rules made by this BIS, and hence a CII instance document, must be validated against the PEPPOL specific rules, just as the UBL instance documents.
 
-CustomizationID and profileID are the same in a CII instance as for the UBL instance, see <<prof-01>>
+The CII validation artefacts are not provided in this review, but will be developed to enforce the same restrictions as for UBL.
 
-The CII validation rules can be found #here#.
+Specification identifier (BT-24) and business process type (BT-23) are the same in a CII instance as for the UBL instance, see <<prof-01>>
