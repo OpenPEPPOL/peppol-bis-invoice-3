@@ -15,4 +15,4 @@ let $tekst := normalize-space($x/text())
 
 return
 
-    concat(".3+| ", $RuleId, " *(", $flag , ")* | *", $tekst, "* | [small]#",  $rule, "# | [small]#", $assert, "# &#10;")
+    concat("| ", $RuleId, " *(", $flag , ")* | *", $tekst, "* &#10;")
