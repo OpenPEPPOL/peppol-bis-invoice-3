@@ -7,5 +7,5 @@
 
 | Electronic address identifiers (Endpoint)
 | cbc:EndpointID/@schemeID
-a| #Code list issued and maintained by CEF??#
+a| Code list issued and maintained by CEF, not yet available
 |===

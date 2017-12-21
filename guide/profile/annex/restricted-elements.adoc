@@ -15,6 +15,6 @@
 | Invoice type code
 | Mark defined values as not allowed
 | Allowed set of values can be found in <<Invoice Type Code>>
-| PEPPOL-EN16931-P0100
+| PEPPOL-EN16931-P0100, PEPPOL-EN16931-P0101
 
 |====

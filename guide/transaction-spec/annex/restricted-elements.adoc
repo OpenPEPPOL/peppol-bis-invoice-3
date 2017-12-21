@@ -20,12 +20,6 @@
 | A date must be formatted `YYYY-MM-DD`
 | PEPPOL-EN16931-F001
 
-| BT-3
-| Invoice note
-| Mark defined values as not allowed
-| Invoice type code MUST be set according to the profile.
-| PEPPOL-EN16931-P0100,PEPPOL-EN16931-P0101
-
 | BT-6
 | VAT accounting currency code
 | Add new non-conflicting business rule to existing element(s)
