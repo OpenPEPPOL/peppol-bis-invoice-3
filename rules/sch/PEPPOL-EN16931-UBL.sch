@@ -47,7 +47,7 @@
     <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
       <assert id="PEPPOL-EN16931-R001"
               test="cbc:ProfileID"
-              flag="fatal">Business process must be provided.</assert>
+              flag="fatal">Business process MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R002"
               test="count(cbc:Note) &lt;= 1"
               flag="fatal">No more than one note is allowed on document level.</assert>
@@ -93,7 +93,7 @@
               flag="fatal">Norwegian suppliers MUST provide legal entity.</assert>
       <assert id="NO-R-002"
               test="not($supplierCountry = 'NO') or normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID) = 'Foretaksregisteret'"
-              flag="warning">"Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
+              flag="warning">Most invoice issuers are required to append "Foretaksregisteret" to their invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
     </rule>
 
     <!-- Allowance/Charge (document level/line level) -->
@@ -219,25 +219,25 @@
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator='false']/cbc:AllowanceChargeReasonCode">
       <assert id="PEPPOL-EN16931-CL002"
               test="some $code in $UNCL5189 satisfies normalize-space(text()) = $code"
-              flag="fatal">Reason code must be according to subset of UNCL 5189 D.16B.</assert>
+              flag="fatal">Reason code MUST be according to subset of UNCL 5189 D.16B.</assert>
     </rule>
 
     <rule context="cac:AllowanceCharge[cbc:ChargeIndicator='true']/cbc:AllowanceChargeReasonCode">
       <assert id="PEPPOL-EN16931-CL003"
               test="some $code in $UNCL7161 satisfies normalize-space(text()) = $code"
-              flag="fatal">Reason code must be according to UNCL 7161 D.16B.</assert>
+              flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
     </rule>
 
     <rule context="cac:ClassifiedTaxCategory/cbc:ID | cac:TaxCategory/cbc:ID">
       <assert id="PEPPOL-EN16931-CL004"
               test="some $code in $UNCL5305 satisfies normalize-space(text()) = $code"
-              flag="fatal">Tax category code must be according to defined subset of UNCL 5305 D.16B.</assert>
+              flag="fatal">Tax category code MUST be according to defined subset of UNCL 5305 D.16B.</assert>
     </rule>
 
-    <rule context="cac:CountryCode/cbc:IdentificationCode | cac:OriginCountry/cbc:IdentificationCode">
+    <rule context="cac:Country/cbc:IdentificationCode | cac:OriginCountry/cbc:IdentificationCode">
       <assert id="PEPPOL-EN16931-CL005"
               test="some $code in $ISO6133 satisfies text() = $code"
-              flag="fatal">Counrty code must be according to ISO 6133 Alpha-2.</assert>
+              flag="fatal">Country code MUST be according to ISO 6133 Alpha-2.</assert>
     </rule>
 
     <rule context="cac:InvoicePeriod/cbc:DescriptionCode">
