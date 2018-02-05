@@ -2,6 +2,6 @@
 [[inv-object-code]]
 = Invoiced object identifier scheme
 
-The invoiced object identifier scheme must be from {UNCL1153}
+The invoiced object identifier scheme shall be from {UNCL1153}
 
 include::../../syntax/codelists/inv-object.adoc[]

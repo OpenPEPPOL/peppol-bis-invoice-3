@@ -2,13 +2,13 @@
 [[buyerref]]
 = Buyer reference
 
-The buyer reference, known as Your ref, is **conditional**. An invoice must have either the buyer reference or the order reference (see <<orderref>>)
+The buyer reference, known as Your ref, is **conditional**. An invoice shall have either the buyer reference or the order reference (see <<orderref>>)
 
 The element is used for the reference of who ordered the products/services. Example being the name of the person ordering, employee number or a code identifying this person or department/group. Your ref is often used for internal routing at recipient, and hence it is important to fill this element with the correct values according to the need of the recipient.
 
 If neither customer reference nor a reference to an order is supplied by the customer the name of the person ordering or appointed for the customer can be supplied in BuyerReference if known by the supplier. 
 
 
-IMPORTANT: When reference is provided by the customer, the correct element MUST contain the provided reference.
+IMPORTANT: When reference is provided by the customer, the correct element shall contain the provided reference.
 
 include::../../../syntax/references/buyer.adoc[]

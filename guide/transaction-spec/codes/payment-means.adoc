@@ -2,6 +2,6 @@
 [[payment-means]]
 = Payment means type code
 
-Payment means type code must be from {UNCL4461}
+Payment means type code shall be from {UNCL4461}
 
 include::../../syntax/codelists/payment.adoc[]

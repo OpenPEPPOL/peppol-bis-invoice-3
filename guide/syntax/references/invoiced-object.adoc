@@ -1,9 +1,10 @@
 
+The invoiced object reference is provided by using the element `cac:AdditionalDocumentReference` with the document type code = 130
 
-.Example
+.UBL example
 [source, xml, indent=0]
 ----
 include::../snippets/Snippet-refs.xml[tags=object]
 ----
 <1> Scheme identifier from <<id_schemes, UN/CEFACT 1153 code list>>
-<2> Document type code must be ´130´
+<2> Document type code shall be ´130´

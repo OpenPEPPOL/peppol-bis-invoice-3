@@ -1584,6 +1584,7 @@
         <Element cardinality="0..2">
             <Term>cac:TaxTotal</Term>
             <Name>TAX TOTAL</Name>
+            <Description>When tax currency code is provided, two instances of the tax total must be present.</Description>
             <Reference type="RULE">PEPPOL-EN16931-R054</Reference>
 
             <Element cardinality="0..1">

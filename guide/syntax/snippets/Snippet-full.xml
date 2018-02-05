@@ -67,7 +67,6 @@
     <!-- tag::seller[] -->
     <cac:AccountingSupplierParty>
         <cac:Party>
-            <!-- Add valid GLN -->
             <cbc:EndpointID schemeID="0088">9482348239847239874</cbc:EndpointID><!--1-->
             <cac:PartyIdentification>
                 <cbc:ID schemeID="0088">9482348239847239874</cbc:ID><!--2-->
@@ -103,7 +102,7 @@
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>SupplierOfficialName Ltd</cbc:RegistrationName>
                 <cbc:CompanyID>GB983294</cbc:CompanyID>
-                <cbc:CompanyLegalForm>AdditionalLegalInformation</cbc:CompanyLegalForm>   
+                <cbc:CompanyLegalForm>Private Limited Company</cbc:CompanyLegalForm>   
             </cac:PartyLegalEntity>
             <cac:Contact>
                 <cbc:Name>John Doe</cbc:Name>
@@ -128,7 +127,6 @@
                 <cbc:AdditionalStreetName>Po box 878</cbc:AdditionalStreetName>
                 <cbc:CityName>Stockholm</cbc:CityName>
                 <cbc:PostalZone>45634</cbc:PostalZone>
-                <cbc:CountrySubentity>Södermalm</cbc:CountrySubentity>
                 <cac:AddressLine>
                     <cbc:Line>Third line</cbc:Line>
                 </cac:AddressLine>
@@ -204,7 +202,6 @@
                 <cbc:AdditionalStreetName>Building 56</cbc:AdditionalStreetName>
                 <cbc:CityName>Stockholm</cbc:CityName>
                 <cbc:PostalZone>21234</cbc:PostalZone>
-                <cbc:CountrySubentity>Södermalm</cbc:CountrySubentity>
                 <cac:AddressLine>
                     <cbc:Line>Gate 15</cbc:Line>
                 </cac:AddressLine>
@@ -263,7 +260,7 @@
         </cac:TaxCategory>
     </cac:AllowanceCharge>
     <!-- tag::vat-curr2[] -->
-    <!-- TaxTotal-->
+    
     <cac:TaxTotal>
         <cbc:TaxAmount currencyID="EUR">1000.00</cbc:TaxAmount><!--3-->
         <cac:TaxSubtotal>

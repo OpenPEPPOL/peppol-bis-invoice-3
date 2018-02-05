@@ -1,7 +1,7 @@
 
 = Contract reference
 
-To reference or match an invoice to a signed purchase contract, the contract number could be specified like this:
+To reference or match an invoice to a purchase contract, the contract number could be specified like this:
 
 .Example
 [source, xml, indent=0]

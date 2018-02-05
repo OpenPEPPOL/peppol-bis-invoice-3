@@ -9,9 +9,9 @@ Seller is mandatory information.
 ----
 include::snippets/Snippet-full.xml[tags=seller]
 ----
-<1> schemeID attribute is mandatory for electronic addresses
+<1> schemeID attribute is mandatory for electronic addresses, ie. EndpointID
 <2> schemeID attribute is recommended for all party identifiers
-<3> VAT identifiers must be prefixed with the country code
+<3> VAT identifiers shall be prefixed with the country code
 
 
 
@@ -24,9 +24,9 @@ Buyer is mandatory information.
 ----
 include::snippets/Snippet-full.xml[tags=buyer]
 ----
-<1> schemeID attribute is mandatory for electronic addresses
+<1> schemeID attribute is mandatory for electronic addresses, ie. EndpointID
 <2> schemeID attribute is recommended for all party identifiers
-<3> VAT identifiers must be prefixed with the country code
+<3> VAT identifiers shall be prefixed with the country code
 <4> schemeID attribute is recommended for party legal entity identifiers
 
 
@@ -45,11 +45,11 @@ include::snippets/Snippet-full.xml[tags=payee]
 
 = Sellers Tax Representative (TaxRepresentativePary)
 
-Tax representative party for the seller is relevant for sellers delivering goods and services in a country without having a permanent establishment in that country. In such cases information on the tax representative must be included in the invoice.
+Tax representative party for the seller is relevant for sellers delivering goods and services in a country without having a permanent establishment in that country. In such cases information on the tax representative shall be included in the invoice.
 
 .Example of tax representative information
 [source, xml, indent=0]
 ----
 include::snippets/Snippet-full.xml[tags=taxrep]
 ----
-<1> VAT identifiers must be prefixed with the country code
+<1> VAT identifiers shall be prefixed with the country code

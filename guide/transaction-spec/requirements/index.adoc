@@ -5,11 +5,10 @@
 
 The table below gives an overview of the business requirements from {tc434}, as well as any specific requirements from the openPEPPOL project.
 
-
-.Legend
-****
-* Requirements with an id *R__nn__* are from {EN16931} (Example R19).
-****
+====
+Legend::
+Requirements with an id *R__nn__* are from {EN16931} (Example R19).
+====
 
 include::accounting.adoc[]
 

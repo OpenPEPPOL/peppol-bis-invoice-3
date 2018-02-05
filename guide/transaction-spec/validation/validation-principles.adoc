@@ -5,21 +5,21 @@ Stages in the validation process:
 Validation of syntax::
  For example:
   * Check well-formedness
-  * Tag names and attributes must be correctly written and follow the UBL 2.1 sequence
-  * All UBL 2.1 mandatory elements must be present.
-  * The element’s contents must be according to the element’s type definition.
+  * Tag names and attributes shall be correctly written and follow the UBL 2.1 sequence
+  * All UBL 2.1 mandatory elements shall be present.
+  * The element’s contents shall be according to the element’s type definition.
 
 Validation against {EN16931}::
  To verify that the instance message is compliant to the european standard, like:
   * Valid codes for currencies, countries, tax  etc.
   * Mandatory elements according to {EN16931}.
-  * Logical correlations between information element, i.e. that  start date is at least lower than end date, calculations give the correct result etc.
+  * Logical correlations between information element, i.e. that start date is lower than or equal to end date, calculations give the correct result etc.
 
 CIUS - General rules::
 General rule that applies to all invoices and are triggered by the existence of one or more specific business term(s).
 
 * *Example rule text* +
-_An invoice must have a buyers reference *or* an order reference_
+_An invoice shall have a buyers reference *or* an order reference_
 
 * *Context that triggers the rule* +
 _Existence of either Buyer reference (BT-10) *OR* Purchased order reference (BT-13)_
@@ -27,7 +27,7 @@ _Existence of either Buyer reference (BT-10) *OR* Purchased order reference (BT-
 CIUS - Country qualified validation rules::
 Applies only for invoices issued in a specific country. The rule is triggered by the given country code of the seller (BT-40).
 * *Example rule text* +
-_When the Seller is Swedish, the Legal Registration Number must be numeric with 10 digits._
+_When the Seller is Swedish, the Legal Registration Number shall be numeric with 10 digits._
 
 * *Context that triggers the rule* +
 _Existence of Seller/Address/CountryCode=‘SE’ *AND* existence of Seller/LegalRegistrationNumber_

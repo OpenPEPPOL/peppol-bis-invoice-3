@@ -15,7 +15,7 @@ include::../../syntax/credit-payment.adoc[]
 
 == Card Payment
 
-If the Buyer had opted to pay by using a payment card such as a credit or debit card, information on the Primary Account Number (PAN) must be present in the invoice.
+If the Buyer had opted to pay by using a payment card such as a credit or debit card, information on the Primary Account Number (PAN) shall be present in the invoice.
 
 Card payment can be stated by using one of the following codes in the element for Payment means type code (BT-81). See <<payment-means>> for all allowed codes.
 

@@ -19,7 +19,7 @@ a|information to support the following VAT use cases:
 *	Invoices for supplies for which VAT is not charged based on an exemption reason;
 *	Invoices for supplies for which the Seller’s goods and services are exempt from VAT at line level;
 *	Invoices for supplies that are issued under reverse charge;
-*	Invoices for exempt intra-community supplies for which an intra-community acquisition must be done;
+*	Invoices for exempt intra-community supplies for which an intra-community acquisition shall be done;
 *	Invoices for supplies outside the scope of the {VAT-dir} (non-VAT invoices);
 
 |R49
@@ -34,6 +34,4 @@ a|information to support the following VAT use cases:
 |the official postal address of the Buyer, Seller and Tax representative of the Supplier and their place of business and registered office;
 |R54
 |the invoice currency and the VAT accounting currency at document level if different from the invoice currency;
-|R55
-|codes for exemption reasons at document and invoice line level.
 |===

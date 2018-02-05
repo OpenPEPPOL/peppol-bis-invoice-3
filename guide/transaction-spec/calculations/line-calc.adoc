@@ -8,7 +8,7 @@ If gross price and discount exist, the Item net price has to equal with the item
 
 Calculation formula:
 ====
-stem:["Item gross price (BT-148)" - "Item price discount (BT-147)"]
+stem:["Item net price" = "Item gross price (BT-148)" - "Item price discount (BT-147)"]
 ====
 
 include::../../syntax/priceamount.adoc[]
@@ -23,7 +23,7 @@ The invoice line net amount (BT-131) is as the name implies the *net* amount wit
 The formula for calculating the invoice line net amount is:
 
 ====
-stem:[(("Item net price (BT-146)" div "Item price base quantity (BT-149)") times ("Invoiced Quantity (BT-129)")] +
+stem:["Item line net amount" = (("Item net price (BT-146)" div "Item price base quantity (BT-149)") times ("Invoiced Quantity (BT-129)")] +
 stem:[+ "Invoice line charge amount (BT-141)" - "Invoice line allowance amount (BT-136)"]
 ====
 

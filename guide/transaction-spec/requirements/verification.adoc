@@ -20,8 +20,6 @@
 |information to trace to a single receiving advice from the document level
 |R11
 |information to trace to a related invoice to be corrected from the document level
-|R12
-|reference to multiple part-invoices from a final invoice
 |R13
 |information to allow an invoice and related documents to be transferred to a responsible authority, entity, person or department, for verification and approval
 |R14

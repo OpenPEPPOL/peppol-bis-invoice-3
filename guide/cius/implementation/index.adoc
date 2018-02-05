@@ -3,7 +3,7 @@
 
 Due to copyright from {CEN} this BIS cannot provide detailed implementation guidelines.
 
-To implement this BIS as a {CIUS}, the implementer must use the published standards from {tc434}, as found {TC434-docs}[here], in addition to the restrictions and rules found in this PEPPOL BIS.
+To implement this BIS as a {CIUS}, the implementer shall use the published standards from {tc434}, as found {TC434-docs}[here], in addition to the restrictions and rules found in this PEPPOL BIS.
 
 Specific attention is drawn to the following documents:
 

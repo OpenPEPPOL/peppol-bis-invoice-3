@@ -4,7 +4,7 @@
 Dates shall be in accordance to the “Calendar date complete representation” as specified by {ISO8601}, format *YYYY-MM-DD*.
 
 ====
-IMPORTANT: Dates must not include timezone information.
+IMPORTANT: Dates shall not include timezone information.
 ====
 
 

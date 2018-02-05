@@ -6,7 +6,7 @@ The invoice and credit note mandates no procurement related data but supports di
 
 
 Accounting::
-Booking an invoice/credit note into the company account is one of the main objectives of this profile. An invoice/credit note must include information at document and line level to enable booking both at the debit and the credit side.
+Booking an invoice/credit note into the company account is one of the main objectives of this profile. An invoice/credit note shall include information at document and line level to enable booking both at the debit and the credit side.
 
 Auditing::
 Invoices/credit notes support the auditing process by providing sufficient information for the following:

@@ -1,7 +1,7 @@
 
 = Value added tax point date code
 
-A subset of values from {UNCL2005} must be used.
+A subset of values from {UNCL2005} shall be used.
 
 include::../../syntax/codelists/taxpoint-date.adoc[]
 

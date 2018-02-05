@@ -119,7 +119,7 @@
     <rule context="cbc:TaxExemptionReasonCode">
       <assert id="PEPPOL-EN16931-R050"
               test="false()"
-              flag="fatal">Tax exception reason code MUST NOT be used.</assert>
+              flag="fatal">Tax excemption reason code MUST NOT be used.</assert>
     </rule>
 
     <!-- Payment -->

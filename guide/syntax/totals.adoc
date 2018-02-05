@@ -53,6 +53,6 @@ stem:[- \ "cac:LegalMonetaryTotal/cbc:PrepaidAmount"]
 
 It is possible to round the expected payable amount.
 
-The element `cac:LegalMonetaryTotal/cbc:PayableRoundingAmount` is used for this purpose and is specified on the header level. This value must be added to the value in `cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount`.
+The element `cac:LegalMonetaryTotal/cbc:PayableRoundingAmount` is used for this purpose and is specified on the header level. This value shall be added to the value in `cac:LegalMonetaryTotal/cbc:TaxInclusiveAmount`.
 
 Example:  Amount  999.81 rounded to  1000.  PayableRounding Amount = 0.19

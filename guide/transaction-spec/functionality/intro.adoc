@@ -13,7 +13,7 @@ In the following chapters an assessment is made of what information is needed fo
 
 Please also see <<requirements>> for further details.
 
-Explicit support for the following functions (but not limited to) is out of scope although information elements may provide some support for these functions:
+Explicit support for the following functions (but not limited to) is out of scope: 
 
 * Inventory management
 * Delivery processes

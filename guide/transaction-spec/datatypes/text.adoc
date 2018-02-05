@@ -1,7 +1,7 @@
 
-= Text. Type
+= Text
 
-Text is the actual wording of anything written or printed. Line breaks in the text may be present. And any line breaks should be preserved and respected by the receiver's system.
+Text is the actual wording of anything written or printed. Line breaks in the text may be present, and any line breaks should be preserved and respected by the receiver’s system
 
 
 [cols="1s,1,1,1", options="header"]

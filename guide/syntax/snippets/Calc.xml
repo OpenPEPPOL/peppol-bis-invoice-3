@@ -311,7 +311,7 @@
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
             <cbc:AllowanceChargeReasonCode>CG</cbc:AllowanceChargeReasonCode>
-            <cbc:AllowanceChargeReason>Charge</cbc:AllowanceChargeReason>
+            <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
             <cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
             <cbc:Amount currencyID="EUR">1</cbc:Amount>
             <cbc:BaseAmount currencyID="EUR">100</cbc:BaseAmount>

@@ -1,23 +1,36 @@
 
 = Allowances and Charges
 
-. Several allowances and charges may be supplied both on header level and line level. For the price only one occurence of allowance (discount) is allowed.
+
+The Invoice and credit note transactions has elements for Allowance/charge on 3 levels.
+
 The element `cac:AllowanceCharge` with sub element `cbc:ChargeIndicator` indicates whether the instance is a charge (true) or an allowance (false).
-. Specification of VAT for allowances and charges, `cac:TaxCategory` with sub elements,  may be supplied both on the header level and on the line level, but not for the `cac:Price` element.
-. The sum of all allowances and charges on the header level must be specified in `cbc:AllowanceTotalAmount` and `cbc:ChargeTotalAmount` respectively. See <<totals>>
-. The sum of all allowances and charges on the line level must be taken into account, subtracted or added, when calculating the line extension amount . These line level allowances and charges must not be calculated into the header level elements.
-. Allowances related to Price shall not be part of any other calculations.
-. Allowances related to Price may specify amount and the base amount.
+
+The header level:: _Applies to the whole invoice and is included in the calculation of the invoice total amount._
+* Several allowances and charges may be supplied
+* Specification of VAT for allowances and charges, `cac:TaxCategory` with sub elements, shall be supplied
+* The sum of all allowances and charges on the header level shall be specified in `cbc:AllowanceTotalAmount` and `cbc:ChargeTotalAmount` respectively. See <<totals>>
+
+The line level:: _Applies to the line level and is included in the calculation of the line amount._
+* Several allowances and charges may be supplied
+* Specification of VAT for allowances and charges shall not be specified, as the VAT category stated for the invoice line itself, applies also to the allowances or charges of that line.
+* The sum of all allowances and charges on the line level shall be taken into account, subtracted or added, when calculating the line extension amount . These line level allowances and charges shall not be calculated into the header level elements.
+
+
+The line level Price element:: _A way to inform the buyer how the price is set. Is also relevant if the seller or buyer want to post the allowance in their accounting systems. The price itself shall always be the net price, i.e. the base amount reduced with a discount (allowance)._
+* Only one occurence of allowance (discount) is allowed.
+* Specification of VAT for allowances and charges shall not be specified
+* Allowances related to Price shall not be part of any other calculations.
+* Allowances related to Price may specify amount and the base amount.
 
 
 
-The Invoice and credit note transactions has elements for Allowance/charge on 3 levels:
 
-****
-. *The header level*, applies to the whole invoice and is included in the calculation of the invoice total amount.
-. *The line level*, applies to the line level and is included in the calculation of the line amount.
-. *The line level Price element*, a way to inform the buyer how the price is set. Is also relevant if the seller or buyer want to post the allowance in their accounting systems.  The price itself shall always be the net price, i.e. the base amount  reduced with a discount (allowance).
-****
+
+
+
+
+
 
 Further details of the calculation of allowance/charge amount, can be found in <<allowance-calc>>
 

@@ -1,7 +1,7 @@
 
 = Allowance reason codes
 
-Any allowance reason codes must be from {UNCL5189}
+Any allowance reason codes shall be from {UNCL5189}
 
 
 include::../../syntax/codelists/allowance.adoc[]

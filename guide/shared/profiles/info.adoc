@@ -3,7 +3,7 @@
 
 All messages contains ProfileID and CustomizationID. ProfileID identifies what business process a given message is part of, and CustomizationID identifies the kind of message and the rules applied.
 
-Profiles are connected to one business process, and may contain multiple document types. Valid document instances must contain corresponding ProfileID and CustomizationID.
+Profiles are connected to one business process, and may contain multiple document types. Valid document instances shall contain corresponding ProfileID and CustomizationID.
 
 
 IMPORTANT: CustomizationID is a string without spaces. The list below contains spaces in CustomizationID to make them easier to read. *Make sure to remove any spaces before use.*

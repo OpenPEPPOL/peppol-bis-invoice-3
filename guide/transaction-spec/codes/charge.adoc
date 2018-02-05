@@ -1,6 +1,6 @@
 
 = Charge reason codes
 
-Any charge reason code must be from {UNCL7161}
+Any charge reason code shall be from {UNCL7161}
 
 include::../../syntax/codelists/charge.adoc[]

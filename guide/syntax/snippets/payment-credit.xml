@@ -209,7 +209,7 @@
             <cbc:ID>32423940</cbc:ID><!--3-->
             <cbc:Name>AccountName</cbc:Name>
             <cac:FinancialInstitutionBranch>
-                <cbc:ID>BIC324098</cbc:ID><!--4-->
+                <cbc:ID>BIC32409</cbc:ID><!--4-->
             </cac:FinancialInstitutionBranch>
         </cac:PayeeFinancialAccount>
     </cac:PaymentMeans>

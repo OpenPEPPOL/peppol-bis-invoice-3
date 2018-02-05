@@ -5,7 +5,7 @@ The detailed message guideline for {UBLInv} is provided in {ubl-invoice-mapping}
 
 
 ====
-NOTE: Please be aware that the business term names and descriptions are copied from {EN16931}, which uses the naming invoice, for both invoices and credit notes.
+NOTE: Please be aware that the business term names and descriptions comes from {EN16931}, which uses the naming invoice, for both invoices and credit notes.
 ====
 
 The guideline gives an overview of all elements and attributes used in this {peppol} BIS, as well as details of the business term, description, cardinality, rules and examples.

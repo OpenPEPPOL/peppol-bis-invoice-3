@@ -8,8 +8,8 @@ The argument for negative invoices is to open up for a wider spectrum of invoici
 
 Examples of such processes are
 
-*	When preliminary (estimated) consumption invoice that is balanced out in a later meter-based invoice;
-*	When pre-payment (with or without VAT) is settled through a final invoice; and
+*	Preliminary (estimated) consumption invoice that is balanced out in a later meter-based invoice;
+*	Pre-payment (with or without VAT) is settled through a final invoice; and
 * Some user communities prefer to use negative invoice rather than credit note when correcting transactions.
 
 ====
@@ -19,50 +19,9 @@ NOTE: Buyers who value automatic matching of e-invoices to orders or invoicing o
 The decision has the following implications on the transaction format:
 
 * The invoice (now with “negative invoice capacity”) can function as an alternative to the credit note. Invoice-generating systems may implement either option, while invoice-receiving systems have to support both of them.
-*	The negative invoice cannot occur unless it corrects one or more previous transactions. This means that the transaction format for negative invoice must include capabilities to refer to the initial invoice(s).
 *	The transaction format for credit note has to be designed to accommodate for negative grand total, as well; this is because an entire negative invoice may have to be balanced out by means of a credit note.
 
 Attention is drawn to the intrinsic differences between credit note and negative invoice when it comes to convey crediting information.
 
-== When crediting by means of credit note
 
-The function of crediting or debiting is controlled merely by the business document type (e.g. 380 or 381) while the representation of the amount, including its sign, is not affected.
-
-
-.Example
-[cols="1,5,5", options="header"]
-|===
-| Document type
-| Description
-| Example from `cac:AllowanceCharge`
-
-| 380
-| If the element in the initial invoice states
-| `<cbc:Amount currencyID="EUR">10</cbc:Amount>`
-| 381
-| The corresponding crediting element in the credit note is to state
-| `<cbc:Amount currencyID="EUR">10</cbc:Amount>`
-
-|===
-
-
-== When crediting by means of negative invoice
-
-The function of crediting or debiting is controlled merely by the sign (i.e. plus sign or minus sign) of the amount concerned, while the business document type (e.g. 380) has no relevance on the operation (“to credit”) itself.
-
-.Example
-[cols="1,5,5", options="header"]
-|===
-| Document type
-| Description
-| Example from `cac:AllowanceCharge`
-
-| 380
-| If the element in the initial invoice states
-| `<cbc:Amount currencyID="EUR">10</cbc:Amount>`
-
-| 381
-| The corresponding crediting element in the negative invoice is to state
-| `<cbc:Amount currencyID="EUR">-10</cbc:Amount>`
-
-|===
+include::../../syntax/negative-invoices.adoc[]

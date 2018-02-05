@@ -17,26 +17,26 @@
 | BT-2 , BT-7 , BT-9 , BT-26, BT-72, BT-73, BT-74, BT-134, BT-135
 | All date elements
 | Add new non-conflicting business rule to existing element(s)
-| A date must be formatted `YYYY-MM-DD`
+| A date shall be formatted `YYYY-MM-DD`
 | PEPPOL-EN16931-F001
 
 | BT-6
 | VAT accounting currency code
 | Add new non-conflicting business rule to existing element(s)
-| VAT accounting currency code MUST be different from invoice currency code when provided.
+| VAT accounting currency code shall be different from invoice currency code when provided.
 | PEPPOL-EN16931-R005
 
 | BT-10, BT-13
 | Buyer reference or Purchase order
 | Add new non-conflicting business rule to existing element(s)
-| A buyer reference or purchase order reference MUST be provided.
-| PEPPOL-EN16931-R004
+| A buyer reference or purchase order reference shall be provided.
+| PEPPOL-EN16931-R003
 
 | BG-1
 | Invoice note
 | Decrease number of repetitions (x..n – > x..1)
 | Change cardinality from 0..n to 0..1
-| PEPPOL-EN16931-R003
+| PEPPOL-EN16931-R002
 
 | BT-21
 | Invoice note subject code
@@ -53,7 +53,7 @@
 | BT-24
 | Specification identifier
 | Add new non-conflicting business rule to existing element(s)
-| Specification identifier MUST have the value +
+| Specification identifier shall have the value +
 'urn:cen.eu:en16931:2017#compliant# +
  urn:fdc:peppol.eu:2017:poacc:billing:3.0'. +
 *(Remove spaces before use of value)*
@@ -62,43 +62,43 @@
 | BG-3
 | Preceding invoice reference
 | Add new non-conflicting business rule to existing element(s)
-| Reference to preceding invoice MUST be provided for credit note.
+| Reference to preceding invoice shall be provided for credit note.
 | PEPPOL-EN16931-R006
 
 | BT-34
 | Seller electronic address
 | Add new non-conflicting business rule to existing element(s)
-| Seller electronic address MUST be provided
+| Seller electronic address shall be provided
 | PEPPOL-EN16931-R020
 
 | BT-49
 | Buyer electronic address
 | Add new non-conflicting business rule to existing element(s)
-| Buyer electronic address MUST be provided
+| Buyer electronic address shall be provided
 | PEPPOL-EN16931-R010
 
 | BG-18
 | Payment card information
 | Add new non-conflicting business rule to existing element(s)
-| For card payment MUST payment card information be provided.
+| For card payment shall payment card information be provided.
 | PEPPOL-EN16931-R060
 
 | BG-19
 | Payment card information
 | Add new non-conflicting business rule to existing element(s)
-| Mandate reference MUST be provided for direct debit.
+| Mandate reference shall be provided for direct debit.
 | PEPPOL-EN16931-R061
 
 | BT-93, BT-100, BT-137, BT-142
 | Allowance/charge base amount
 | Add new non-conflicting business rule to existing element(s)
-| Allowance/charge base amount MUST be provided when allowance/charge percentage is provided.
+| Allowance/charge base amount shall be provided when allowance/charge percentage is provided.
 | PEPPOL-EN16931-R041
 
 | BT-94, BT-101, BT-138, BT-143
 | Allowance/charge percentage
 | Add new non-conflicting business rule to existing element(s)
-| Allowance/charge percentage MUST be provided when allowance/charge base amount is provided.
+| Allowance/charge percentage shall be provided when allowance/charge base amount is provided.
 | PEPPOL-EN16931-R042
 
 | BT-94, BT-101, BT-138, BT-143
@@ -118,26 +118,32 @@ stem:["base amount" times ("percentage" div 100)]
 | BT-98, BT-140
 | Allowance reason code
 | Mark defined values as not allowed
-| Reason code MUST be according to subset of UNCL 5189 D.16B.
+| Reason code shall be according to subset of UNCL 5189 D.16B.
 | PEPPOL-EN16931-CL002
 
 | BT-110
 | Invoice total VAT amount
 | Add new non-conflicting business rule to existing element(s)
-| Only one tax total without tax subtotals MUST be provided when tax currency code is provided.
+| Only one tax total without tax subtotals shall be provided when tax currency code is provided.
 | PEPPOL-EN16931-R054
 
 | BT-111
 | Invoice total VAT amount in accounting currency
 | Add new non-conflicting business rule to existing element(s)
-| The currencyID for invoice total VAT in accounting currency, must be the same as VAT accounting currency code (BT-6).
+| The currencyID for invoice total VAT in accounting currency, shall be the same as VAT accounting currency code (BT-6).
 | PEPPOL-EN16931-R052
 
 | BG-23
 | VAT breakdown
 | Add new non-conflicting business rule to existing element(s)
-| Only one tax total without tax subtotals MUST be provided when tax currency code is provided.
+| Only one tax total with tax subtotals shall be provided
 | PEPPOL-EN16931-R053
+
+| BG-23
+| VAT breakdown
+| Add new non-conflicting business rule to existing element(s)
+| Only one tax total without tax subtotals shall be provided when tax currency code is provided.
+| PEPPOL-EN16931-R054
 
 | BT-121
 | VAT exemption reason code
@@ -148,7 +154,7 @@ stem:["base amount" times ("percentage" div 100)]
 | BT-131
 | Invoice line net amount
 | Add new non-conflicting business rule to existing element(s)
-| Calculation must equal
+| Calculation shall equal
 stem:[ ("Invoiced quantity" times ("Item net price" div "item price base amount"))] +
 stem:[ + "Invoice line charge amount"] +
 stem:[ - "Invoice line allowance amount"]
@@ -157,37 +163,37 @@ stem:[ - "Invoice line allowance amount"]
 | BT-134
 | Invoice line period start date
 | Add new non-conflicting business rule to existing element(s)
-| Start date of line period MUST be within invoice period.
+| Start date of line period shall be within invoice period.
 | PEPPOL-EN16931-R110
 
 | BT-135
 | Invoice line period end date
 | Add new non-conflicting business rule to existing element(s)
-| End date of line period MUST be within invoice period.
+| End date of line period shall be within invoice period.
 | PEPPOL-EN16931-R111
 
 | BT-146
 | Item net price
 | Add new non-conflicting business rule to existing element(s)
-| Item net price MUST equal (Gross price - Allowance amount) when gross price is provided.
+| Item net price shall equal (Gross price - Allowance amount) when gross price is provided.
 | PEPPOL-EN16931-R046
 
 | BT-149
 | Item price base quantity
 | Add new non-conflicting business rule to existing element(s)
-| Base quantity MUST be a positive number above zero.
+| Base quantity shall be a positive number above zero.
 | PEPPOL-EN16931-R121
 
 | BT-150
 | Item price base quantity unit of measure
 | Add new non-conflicting business rule to existing element(s)
-| Unit code of price base quantity MUST be same as invoiced quantity.
+| Unit code of price base quantity shall be same as invoiced quantity.
 | PEPPOL-EN16931-R130
 
 | Not applicable
 | All currencyID attributes
 | Add new non-conflicting business rule to existing element(s)
-| All currencyID attributes must have the same value as the invoice currency code (BT-5), except for the invoice total VAT amount in accounting currency (BT-111)
+| All currencyID attributes shall have the same value as the invoice currency code (BT-5), except for the invoice total VAT amount in accounting currency (BT-111)
 | PEPPOL-EN16931-R051
 
 |====
