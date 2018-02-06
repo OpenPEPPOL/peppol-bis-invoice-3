@@ -11,8 +11,10 @@ let $RuleId := string($x/@id)
 let $rule := replace(normalize-space(string($x/../@context)), '\|', '\\|')
 let $flag := string($x/@flag)
 let $assert := string($x/@test)
-let $tekst := normalize-space($x/text())
+let $tekst := tokenize(normalize-space($x/text()), '\]\-')[2]
+
+order by $x/@id
 
 return
 
-    concat("| ", $RuleId, " *(", $flag , ")* | *", $tekst, "* &#10;")
+    concat("| ", $RuleId, " *(", $flag , ")* | ", $tekst, " &#10;")

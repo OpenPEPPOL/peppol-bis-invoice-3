@@ -13,6 +13,8 @@ let $flag := string($x/@flag)
 let $assert := string($x/@test)
 let $tekst := normalize-space($x/text())
 
+order by $x/@id
+
 return
 
     concat(".3+| ", $RuleId, " *(", $flag , ")* | *", $tekst, "* | [small]#",  $rule, "# | [small]#", $assert, "# &#10;")

@@ -1,4 +1,4 @@
-:rules-dir: /tmp/rules
+:rules-dir: ../../../target/generated
 
 //links used in the BIS document
 
