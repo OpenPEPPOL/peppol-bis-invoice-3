@@ -57,9 +57,6 @@
       <assert id="PEPPOL-EN16931-R004"
               test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')"
               flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
-      <assert id="PEPPOL-EN16931-R006"
-              test="not(/ubl-creditnote:CreditNote) or cac:BillingReference/cac:InvoiceDocumentReference"
-              flag="fatal">Reference to preceding invoice MUST be provided for credit note.</assert>
 
       <assert id="PEPPOL-EN16931-R053"
               test="count(cac:TaxTotal[cac:TaxSubtotal]) = 1"
@@ -111,9 +108,6 @@
       <assert id="PEPPOL-EN16931-R040"
               test="not(cbc:MultiplierFactorNumeric and cbc:BaseAmount) or u:slack(if (cbc:Amount) then cbc:Amount else 0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
               flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount and percentage exists</assert>
-      <assert id="PEPPOL-EN16931-R043"
-              test="xs:decimal(cbc:Amount) &gt;= 0"
-              flag="fatal">Allowance/charge amount cannot be negative</assert>
     </rule>
 
     <rule context="cbc:TaxExemptionReasonCode">
@@ -123,11 +117,6 @@
     </rule>
 
     <!-- Payment -->
-    <rule context="cac:PaymentMeans[some $code in tokenize('48 54 55', '\s') satisfies normalize-space(cbc:PaymentMeansCode) = $code]">
-      <assert id="PEPPOL-EN16931-R060"
-              test="cac:CardAccount"
-              flag="fatal">For card payment MUST payment card information be provided.</assert>
-    </rule>
     <rule context="cac:PaymentMeans[some $code in tokenize('49 59', '\s') satisfies normalize-space(cbc:PaymentMeansCode) = $code]">
       <assert id="PEPPOL-EN16931-R061"
               test="cac:PaymentMandate/cbc:ID"
@@ -180,9 +169,6 @@
       <assert id="PEPPOL-EN16931-R044"
               test="normalize-space(cbc:ChargeIndicator) = 'false'"
               flag="fatal">Charge on price level is NOT allowed.</assert>
-      <assert id="PEPPOL-EN16931-R045"
-              test="xs:decimal(cbc:Amount) &gt;= 0"
-              flag="fatal">Allowance/charge amount cannot be negative</assert>
       <assert id="PEPPOL-EN16931-R046"
               test="not(cbc:BaseAmount) or xs:decimal(../cbc:PriceAmount) = xs:decimal(cbc:BaseAmount) - xs:decimal(cbc:Amount)"
               flag="fatal">Item net price MUST equal (Gross price - Allowance amount) when gross price is provided.</assert>
@@ -202,8 +188,8 @@
 
   <!-- Restricted code lists and formatting -->
   <pattern>
+    <let name="ISO3166" value="tokenize('AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW', '\s')"/>
     <let name="ISO4217" value="tokenize('AFN EUR ALL DZD USD AOA XCD XCD ARS AMD AWG AUD AZN BSD BHD BDT BBD BYN BZD XOF BMD INR BTN BOB BOV USD BAM BWP NOK BRL USD BND BGN XOF BIF CVE KHR XAF CAD KYD XAF XAF CLP CLF CNY AUD AUD COP COU KMF CDF XAF NZD CRC XOF HRK CUP CUC ANG CZK DKK DJF XCD DOP USD EGP SVC USD XAF ERN ETB FKP DKK FJD XPF XAF GMD GEL GHS GIP DKK XCD USD GTQ GBP GNF XOF GYD HTG USD AUD HNL HKD HUF ISK INR IDR XDR IRR IQD GBP ILS JMD JPY GBP JOD KZT KES AUD KPW KRW KWD KGS LAK LBP LSL ZAR LRD LYD CHF MOP MKD MGA MWK MYR MVR XOF USD MRO MUR XUA MXN MXV USD MDL MNT XCD MAD MZN MMK NAD ZAR AUD NPR XPF NZD NIO XOF NGN NZD AUD USD NOK OMR PKR USD PAB USD PGK PYG PEN PHP NZD PLN USD QAR RON RUB RWF SHP XCD XCD XCD WST STD SAR XOF RSD SCR SLL SGD ANG XSU SBD SOS ZAR SSP LKR SDG SRD NOK SZL SEK CHF CHE CHW SYP TWD TJS TZS THB USD XOF NZD TOP TTD TND TRY TMT USD AUD UGX UAH AED GBP USD USD USN UYU UYI UZS VUV VEF VND USD USD XPF MAD YER ZMW ZWL XBA XBB XBC XBD XTS XXX XAU XPD XPT XAG', '\s')"/>
-    <let name="ISO6133" value="tokenize('AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW', '\s')"/>
     <let name="MIMECODE" value="tokenize('application/pdf image/png image/jpeg text/csv application/vnd.openxmlformats-officedocument.spreadsheetml.sheet application/vnd.oasis.opendocument.spreadsheet', '\s')"/>
     <let name="UNCL2005" value="tokenize('3 35 432', '\s')"/>
     <let name="UNCL5189" value="tokenize('41 42 60 62 63 64 65 66 67 68 70 71 88 95 100 102 103 104 105', '\s')"/>
@@ -236,8 +222,8 @@
 
     <rule context="cac:Country/cbc:IdentificationCode | cac:OriginCountry/cbc:IdentificationCode">
       <assert id="PEPPOL-EN16931-CL005"
-              test="some $code in $ISO6133 satisfies text() = $code"
-              flag="fatal">Country code MUST be according to ISO 6133 Alpha-2.</assert>
+              test="some $code in $ISO3166 satisfies text() = $code"
+              flag="fatal">Country code MUST be according to ISO 3166 Alpha-2.</assert>
     </rule>
 
     <rule context="cac:InvoicePeriod/cbc:DescriptionCode">
