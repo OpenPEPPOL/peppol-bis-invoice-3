@@ -1,0 +1,16 @@
+[appendix]
+[[national_rules]]
+= National rules
+
+The following rules have been defined by PEPPOL Authorities in addition to the rules for {peppol} BIS in general.
+These rules apply in *all* profiles that use this transaction specification.
+
+
+.National transaction business rules
+[cols="1,4", options="header"]
+|====
+|Rule
+|Message/Context/Test
+
+include::{rules-dir}/PEPPOL-EN16931-UBL-NATIONAL.sch.adoc[]
+|====

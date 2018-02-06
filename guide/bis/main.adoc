@@ -35,7 +35,9 @@ include::../syntax/guideline.adoc[]
 include::../transaction-spec/validation/index.adoc[]
 include::../transaction-spec/rules/index.adoc[]
 include::restrictions/index.adoc[]
-include::cii.adoc[]
+include::appendix/cii.adoc[]
+include::appendix/national_rules.adoc[]
+include::appendix/syntax_rules.adoc[]
 
 
 //include::rules/index.adoc[]

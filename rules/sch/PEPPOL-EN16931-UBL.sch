@@ -84,13 +84,6 @@
       <assert id="PEPPOL-EN16931-R020"
               test="cbc:EndpointID"
               flag="fatal">Seller electronic address MUST be provided</assert>
-
-      <assert id="NO-R-001"
-              test="not($supplierCountry = 'NO') or cac:PartyLegalEntity"
-              flag="fatal">Norwegian suppliers MUST provide legal entity.</assert>
-      <assert id="NO-R-002"
-              test="not($supplierCountry = 'NO') or normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID) = 'Foretaksregisteret'"
-              flag="warning">Most invoice issuers are required to append "Foretaksregisteret" to their invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
     </rule>
 
     <!-- Allowance/Charge (document level/line level) -->
@@ -184,6 +177,19 @@
               flag="fatal">Unit code of price base quantity MUST be same as invoiced quantity.</assert>
     </rule>
 
+  </pattern>
+
+  <!-- National rules -->
+  <pattern>
+
+    <rule context="cac:AccountingSupplierParty/cac:Party[$supplierCountry = 'NO']">
+      <assert id="NO-R-001"
+              test="cac:PartyLegalEntity"
+              flag="fatal">Norwegian suppliers MUST provide legal entity.</assert>
+      <assert id="NO-R-002"
+              test="normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID) = 'Foretaksregisteret'"
+              flag="warning">Most invoice issuers are required to append "Foretaksregisteret" to their invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
+    </rule>
   </pattern>
 
   <!-- Restricted code lists and formatting -->

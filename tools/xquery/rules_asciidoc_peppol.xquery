@@ -13,6 +13,7 @@ let $flag := string($x/@flag)
 let $assert := string($x/@test)
 let $tekst := normalize-space($x/text())
 
+where starts-with($x/@id, 'PEPPOL')
 order by $x/@id
 
 return

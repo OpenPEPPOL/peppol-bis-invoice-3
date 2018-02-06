@@ -11,10 +11,11 @@ let $RuleId := string($x/@id)
 let $rule := replace(normalize-space(string($x/../@context)), '\|', '\\|')
 let $flag := string($x/@flag)
 let $assert := string($x/@test)
-let $tekst := tokenize(normalize-space($x/text()), '\]\-')[2]
+let $tekst := normalize-space($x/text())
 
+where not(starts-with($x/@id, 'PEPPOL'))
 order by $x/@id
 
 return
 
-    concat("| ", $RuleId, " *(", $flag , ")* | ", $tekst, " &#10;")
+    concat(".3+| ", $RuleId, " *(", $flag , ")* | *", $tekst, "* | [small]#",  $rule, "# | [small]#", $assert, "# &#10;")

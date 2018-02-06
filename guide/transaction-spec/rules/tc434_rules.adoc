@@ -7,7 +7,7 @@ The following {EN16931} rules apply to invoice and credit note transaction as it
 [cols="1,4", options="header"]
 |====
 |Rule
-|Message/Context/Test
+|Message
 
-include::{rules-dir}/CEN-EN16931-UBL.sch.adoc[]
+include::{rules-dir}/CEN-EN16931-UBL-SYNTAX.sch.adoc[]
 |====
