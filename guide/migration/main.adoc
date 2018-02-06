@@ -22,5 +22,4 @@ This document is a suggested draft for the migration plan for the transition eve
 
 include::introduction.adoc[]
 include::overview.adoc[]
-include::details.adoc[]
 include::rules.adoc[]

@@ -1,9 +1,7 @@
 
 = Migration rules ‐ PEPPOL participants affected by the Migration Policy
 
-The {migration-policy} affects all end‐users registered in a SMP according to the following rules:
-
-IMPORTANT: Please note that the rules below only apply for any individual PEPPOL BIS used by an end user that is registered in the SMP.
+The {migration-policy} affects all end‐users registered in a SMP for invoice/billing according to the following rules:
 
 .End‐users registered in a SMP before the phase‐in date ({phase-in})
 ****

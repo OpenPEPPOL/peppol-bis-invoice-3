@@ -2,13 +2,21 @@
 
 = Introduction
 
-The migration is conducted in three steps at three different points in time,  marked as “A”, “B” and “C” and defined as follows:
+== Principles
 
+This migration plan is based on the following principles:
+
+. To  allow  a  smooth  and  as  friction  free  transition  as  possible,  using  two  versions  of  the  element  subject  to  migration  for  new  as  well  as  existing  end‐users  to  prepare  for  an  updated  element  must  be  allowed. 
+
+. To  ensure  non‐disrupted  operations  and  full  interoperability  of  the  messages  exchanged  in  the  PEPPOL  network,  the  period  during  which  two  parallel  versions  are  allowed  should  be  as  short  as  possible.
+
+. Any  changes  affecting  the  current  (mandatory)  PEPPOL  element  should  be  notified,  communicated  and  agreed  upon  in  the  relevant  coordinating  community (CC)  well  in  advance.
+
+. The migration is conducted in three steps at three different points in time,  marked as “A”, “B” and “C” and defined as follows:
 
 A – Phase in:: date at which the updated BIS is introduced as an optional element. At this date it should be able to download any specification for the updated PEPPOL BIS. The updated BIS is optional at this point in time.
 
-B – Transition:: the date at which the updated BIS replaces the
-current BIS as the mandatory element. The previously mandatory BIS becomes optional.
+B – Transition:: the date at which the updated BIS replaces the current BIS as the mandatory element. The previously mandatory BIS becomes optional.
 
 C – Phase out:: the date after which the BIS that was mandatory at “A”, and became optional at “B”, is no longer supported in the PEPPOL network
 

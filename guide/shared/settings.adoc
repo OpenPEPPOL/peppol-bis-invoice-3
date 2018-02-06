@@ -2,50 +2,50 @@
 
 //links used in the BIS document
 
-:ubl-invoice-mapping: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/ubl-invoice/structure/[UBL Invoice message table, role="external", window="_blank"]
+:ubl-invoice-mapping: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/ubl-invoice/structure/[UBL Invoice message table]
 
-:ubl-cn-mapping: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/ubl-creditnote/structure/[UBL Credit note message table, role="external", window="_blank"]
+:ubl-cn-mapping: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/ubl-creditnote/structure/[UBL Credit note message table]
 
 //PEPPOL
 :peppol: https://peppol.eu/?rel=undefined[PEPPOL]
 :common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
 :openpeppol: https://peppol.eu/about-openpeppol/?rel=tab41[OpenPEPPOL]
-:policy8: https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for identifiers, policy 8, role="external", window="_blank"]
-:migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy, role="external", window="_blank"]
-:link-transaction: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/transaction-spec/[PEPPOL Invoice transaction specification, role="external", window="_blank"]
+:policy8: https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for identifiers, policy 8]
+:migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy]
+:link-transaction: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/transaction-spec/[PEPPOL Invoice transaction specification]
 
 //CEN
 :CEN: https://www.cen.eu/Pages/default.aspx[CEN]
 
 //CEN TC434
-:tc434: https://standards.cen.eu/dyn/www/f?p=204:7:0::::FSP_ORG_ID:1883209&cs=1E81C9C833655EEDC7010C8D0A2FB786C[CEN TC434, role="external", window="_blank"]
-:EN16931: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:60602&cs=1B61B766636F9FB34B7DBD72CE9026C72[EN 16931, role="external", window="_blank"]
+:tc434: https://standards.cen.eu/dyn/www/f?p=204:7:0::::FSP_ORG_ID:1883209&cs=1E81C9C833655EEDC7010C8D0A2FB786C[CEN TC434]
+:EN16931: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:60602&cs=1B61B766636F9FB34B7DBD72CE9026C72[EN 16931]
 :ubl-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63740&cs=141ABC6EDBD750DFA4EC61F187628828F
 :cii-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63741&cs=1FA9686BFF2EEFD10B83676518F8C1AFE
 :TC434-docs: https://standards.cen.eu/dyn/www/f?p=204:32:0::::FSP_ORG_ID:1883209&cs=1E81C9C833655EEDC7010C8D0A2FB786C
 
 //UBL
-:UBLInv: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd[UBL Invoice 2.1, role="external", window="_blank"]
-:UBLCreditNote: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-CreditNote-2.1.xsd[UBL CreditNote 2.1, role="external", window="_blank"]
+:UBLInv: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd[UBL Invoice 2.1]
+:UBLCreditNote: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-CreditNote-2.1.xsd[UBL CreditNote 2.1]
 
 
 //Eu directives
-:VAT-dir: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:l31057[Directive 2006/112/EC, role="external", window="_blank"]
+:VAT-dir: http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:l31057[Directive 2006/112/EC]
 
 //ISO:
-:ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014, role="external", window="_blank"]
-:ISO8601:  https://www.iso.org/standard/40874.html[ISO 8601:2004, role="external", window="_blank"]
+:ISO15000: https://www.iso.org/standard/61433.html[ISO 15000-5:2014]
+:ISO8601:  https://www.iso.org/standard/40874.html[ISO 8601:2004]
 
 //codelists
 :ISO4217: https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
-:UNCL2005: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred2005.htm[UN/CEFACT code list 2005, D.16B, role="external", window="_blank"]
-:ISO3166: http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1, role="external", window="_blank"]
-:UNCL4461: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm[UN/CEFACT code list 4461, D.16B, role="external", window="_blank"]
-:UNCL5305: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5305.htm[UN/CEFACT code list 5305, D.16B, role="external", window="_blank"]
-:UNCL5189: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5189.htm[UN/CEFACT code list 5189, D.16B, role="external", window="_blank"]
-:UNCL7161: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm[UN/CEFACT code list 7161, D.16B, role="external", window="_blank"]
-:IANA: http://www.iana.org/assignments/media-types[IANA, role="external", window="_blank"]
-:UNRec20: http://www.unece.org/cefact/recommendations/rec_index.html[UN/ECE Recommendation 20, Revision 8 (2012), role="external", window="_blank"]
-:UNCL1153: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B, role="external", window="_blank"]
-:ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523, role="external", window="_blank"]
-:UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B, role="external", window="_blank"]
+:UNCL2005: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred2005.htm[UN/CEFACT code list 2005, D.16B]
+:ISO3166: http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
+:UNCL4461: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm[UN/CEFACT code list 4461, D.16B]
+:UNCL5305: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5305.htm[UN/CEFACT code list 5305, D.16B]
+:UNCL5189: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5189.htm[UN/CEFACT code list 5189, D.16B]
+:UNCL7161: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm[UN/CEFACT code list 7161, D.16B]
+:IANA: http://www.iana.org/assignments/media-types[IANA]
+:UNRec20: http://www.unece.org/cefact/recommendations/rec_index.html[UN/ECE Recommendation 20, Revision 8 (2012)]
+:UNCL1153: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
+:ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523]
+:UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]
