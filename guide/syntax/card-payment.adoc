@@ -1,5 +1,5 @@
 
-.XML for payment means info when payment is done by payment card
+.UBL example of payment means info when payment is done by payment card
 [source, xml, indent=0]
 ----
 include::snippets/payment1.xml[tags=card]

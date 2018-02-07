@@ -1,7 +1,7 @@
 
 
 
-.XML for Allowances and Charges on the document level
+.UBL example of Allowances and Charges on the document level
 [source, xml, indent=0]
 ----
 include::snippets/Snippet-refs.xml[tags=allowance]

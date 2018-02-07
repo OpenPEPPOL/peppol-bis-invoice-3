@@ -5,6 +5,8 @@ Chapter 5.2 in the {EN16931} defines the business processes supported by the {EN
 
 This {CIUS} has made restrictions to not explicitly support the following business processes:
 
+P10 - Corrective invoicing::
+The process as descibed for corrective invoicing was seen as unclear as to the  differentiating between a corrective invoice and a credit note, and this process was set to be out of scope.
 
 P11 - Partial and final invoicing::
 Due to the fact that partial and final invoices does not require all information that is mandated, this process is out of scope for this PEPPOL BIS.

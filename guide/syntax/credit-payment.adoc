@@ -1,7 +1,7 @@
 
 
 
-.XML for payment means info when payment is done by credit transfer
+.UBL example of payment means info when payment is done by credit transfer
 [source, xml, indent=0]
 ----
 include::snippets/payment-credit.xml[tags=credit]

@@ -1,6 +1,6 @@
 
 
-.Example of invoice to be corrected
+.UBL example of invoice to be corrected
 [source, xml, indent=0]
 ----
 include::snippets/base-example.xml[tags=negative]
@@ -13,7 +13,7 @@ include::snippets/base-example.xml[tags=negative]
 
 The function of crediting or debiting is controlled merely by the business document type (e.g. 380 or 381) while the representation of the amount, including its sign, is not affected.
 
-.Example of credit note correcting the example invoice above
+.UBL example of credit note correcting the example invoice above
 [source, xml, indent=0]
 ----
 include::snippets/base-creditnote-correction.xml[tags=negative]
@@ -27,7 +27,7 @@ include::snippets/base-creditnote-correction.xml[tags=negative]
 
 The function of crediting or debiting is controlled merely by the sign (i.e. plus sign or minus sign) of the amount concerned, while the business document type (e.g. 380) has no relevance on the operation (“to credit”) itself.
 
-.Example of negative invoice correcting the example invoice above
+.UBL example of negative invoice correcting the example invoice above
 [source, xml, indent=0]
 ----
 include::snippets/base-negative-inv-correction.xml[tags=negative]

@@ -9,5 +9,6 @@
 include::totals.adoc[]
 include::line-calc.adoc[]
 include::allowance-calc.adoc[]
+include::vat.adoc[]
 
 :leveloffset: -1

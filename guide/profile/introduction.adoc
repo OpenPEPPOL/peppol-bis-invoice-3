@@ -8,6 +8,19 @@ This specification, is a Core Invoice Usage Specification (CIUS) of {EN16931}, f
 
 The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the billing process.
 
+== Document Structure
+
+This document consists of the following chapters and contents:
+
+*	Chapter 1 gives a short introduction describing the background and objective of this implementation guide.
+*	Chapter 2 gives the change history of the document.
+*	Chapter 3 describes the EHF formats (Invoice and Credit note) in general.
+*	Chapter 4 links to definitions relevant to EHF formats.
+*	Chapter 5 links to general principles and conditions for the formats.
+*	Chapter 6 describes in detail central information elements.
+*	Chapter 7 deals with validation.
+*	Chapter 8 embraces appendices.
+
 == Scope
 
 This document is concerned with clarifying requirements for ensuring interoperability  and provides guidelines for the support and implementation of these requirements. This document will also provide a detailed implementation guideline for the invoice and credit note transactions.

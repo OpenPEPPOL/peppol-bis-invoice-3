@@ -1,0 +1,18 @@
+
+= Calculation of VAT
+
+One VAT Breakdown shall be provided for each distinct combination of VAT category code and VAT rate found in either the line VAT information or the Document level allowance or charges.
+
+For each distinct combination of VAT category code and VAT rate the calculations are:
+====
+stem:["VAT category taxable amount (BT-116)" = sum("Invoice line net amounts (BT-113)")] +
+stem:[+ "Document level charge amount (BT-99)" - "Document level allowance amount (BT-93)"]
+====
+
+====
+stem:["VAT category tax amount (BT-117)" = "VAT category taxable amount (BT-116)" times ("VAT rate (BT-119)" div 100)]
+====
+
+IMPORTANT: For VAT Breakdown where the VAT Category is "Not subject to VAT" (O), the VAT category tax amount shall be zero.
+
+include::../../syntax/vat-calc.adoc[]

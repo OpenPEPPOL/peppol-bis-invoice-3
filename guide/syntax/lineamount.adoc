@@ -1,6 +1,6 @@
 
 
-.XML for invoice line net amount where no line allowance/charge exist
+.UBL example of invoice line net amount where no line allowance/charge exist
 [source, xml, indent=0]
 ----
 include::snippets/Calc.xml[tags=lineamount]
@@ -12,7 +12,7 @@ include::snippets/Calc.xml[tags=lineamount]
 
 
 
-.XML for invoice line net amount where line allowance and charge exist
+.UBL example of invoice line net amount where line allowance and charge exist
 [source, xml, indent=0]
 ----
 include::snippets/Calc.xml[tags=lineamount2]

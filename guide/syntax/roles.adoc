@@ -2,9 +2,9 @@
 
 = Seller (AccountingSupplierParty)
 
-Seller is mandatory information.
+Seller is mandatory information and provided in element `cac:AccountingSupplierParty`
 
-.Example of seller information
+.UBL example of seller information
 [source, xml, indent=0]
 ----
 include::snippets/Snippet-full.xml[tags=seller]
@@ -17,9 +17,9 @@ include::snippets/Snippet-full.xml[tags=seller]
 
 = Buyer (AccountingCustomerParty)
 
-Buyer is mandatory information.
+Buyer is mandatory information and provided in element `cac:AccountingCustomerParty`
 
-.Example of buyer information
+.UBL example ofbuyer information
 [source, xml, indent=0]
 ----
 include::snippets/Snippet-full.xml[tags=buyer]
@@ -34,7 +34,7 @@ include::snippets/Snippet-full.xml[tags=buyer]
 
 Payment receiver is optional information. If this information is not supplied, the seller is the payment receiver.
 
-.Example of payee information
+.UBL example of payee information
 [source, xml, indent=0]
 ----
 include::snippets/Snippet-full.xml[tags=payee]
@@ -47,7 +47,7 @@ include::snippets/Snippet-full.xml[tags=payee]
 
 Tax representative party for the seller is relevant for sellers delivering goods and services in a country without having a permanent establishment in that country. In such cases information on the tax representative shall be included in the invoice.
 
-.Example of tax representative information
+.UBL example of tax representative information
 [source, xml, indent=0]
 ----
 include::snippets/Snippet-full.xml[tags=taxrep]

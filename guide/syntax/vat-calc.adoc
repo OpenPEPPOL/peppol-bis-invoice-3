@@ -1,0 +1,12 @@
+
+.UBL example of calculations of VAT Breakdown
+[source, xml, indent=0]
+----
+include::snippets/vat-calc.xml[tags=vat-calc]
+----
+<1> Document level charge amount for category S and rate 25%
+<2> Document level allowance amount for category S and rate 25%
+<3> VAT Breakdown for category S and rate = 25%
+<4> Taxable amount = sum of line amount (line 1 and 3), plus charge amount minus allowance amount where category = S and rate = 25%
+<5> stem:["Tax Amount" = "Taxable amount" times ("VAT rate" div 100)]
+<6> VAT Breakdown for category E, and rate = 0%

@@ -27,4 +27,9 @@ stem:["Item line net amount" = (("Item net price (BT-146)" div "Item price base 
 stem:[+ "Invoice line charge amount (BT-141)" - "Invoice line allowance amount (BT-136)"]
 ====
 
+IMPORTANT: As the line net amount must be rounded to two decimals, please note that the different parts of the calculation must be rounded separately. +
+I.e the result of
+stem:["Item line net amount" = (("Item net price (BT-146)" div "Item price base quantity (BT-149)") times ("Invoiced Quantity (BT-129)")]
+must be rounded to two decimals, and the allowance/charge amounts are also rounded separately.
+
 include::../../syntax/lineamount.adoc[]

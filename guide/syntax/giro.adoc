@@ -1,6 +1,6 @@
 
 
-.XML for payment means info when payment is done by postgiro
+.UBL example of payment means info when payment is done by postgiro
 [source, xml, indent=0]
 ----
 include::snippets/giro.xml[tags=giro]

@@ -2,7 +2,7 @@
 [cols="1,4"]
 |===
 h| Document location
-|
+|cac:TaxTotal/TaxSubtotal/TaxCategory/cbc:TaxExemptionReasonCode
 h| Source codelist
-| #Code list issued and maintained by CEF??#
+| #Code list issued and maintained by CEF#
 |===

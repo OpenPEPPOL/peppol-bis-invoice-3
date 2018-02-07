@@ -1,5 +1,5 @@
 
-.Example of preceding invoice information
+.UBL example of preceding invoice information
 [source, xml, indent=0]
 ----
 include::snippets/Snippet-cn.xml[tags=prec-inv]

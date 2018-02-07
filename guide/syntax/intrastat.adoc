@@ -1,6 +1,6 @@
 
 
-.Example of Combined nomenclature information
+.UBL example of Combined nomenclature information
 [source, xml, indent=0]
 ----
 include::snippets/Snippet-full.xml[tags=intrastat]

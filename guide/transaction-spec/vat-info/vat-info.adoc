@@ -1,0 +1,31 @@
+
+= Value added tax (VAT)
+
+The chapters below describe the different VAT informations that can be provided in a {peppol} invoice or credit note.
+
+Please also see <<VAT category codes>> for details on the VAT category code list, and <<Calculation of VAT>> for detailed explanation and example on how to perform the calculations for VAT Breakdown.
+
+== Line VAT Information
+
+Each invoice line shall have the invoiced item VAT category code (BT-151), and for all VAT categories except "Not subject to VAT" (O), the VAT rate shall be provided.
+
+== Document level allowance or charge
+
+Each document level charge or allowance must have the Document level allowance or charge VAT category code (BT-95 and BT-102), and for all VAT categories except "Not subject to VAT" (O), the VAT rate shall be provided.
+
+== VAT Breakdown
+
+One VAT Breakdown shall be provided for each distinct combination of VAT category code and VAT rate found in either the line VAT information or the Document level allowance or charges. For some VAT categories, the VAT rate shall be zero, and hence the rate is not needed in order to group the VAT Breakdown for these.
+
+Please note that for the VAT rate, only significant decimals should be considered, i.e any difference in trailing zeros should not result in different VAT breakdowns.
+
+.Example
+====
+Invoice line 1 has category code = S and VAT rate = *25* +
+Invoice line 2 has category code = S and VAT rate = *25.00* +
+This should result in only one VAT Breakdown.
+====
+
+== Invoice total VAT amount
+
+The invoice total VAT amount (BT-110) is the sum of all VAT Category VAT amounts (BT-117)

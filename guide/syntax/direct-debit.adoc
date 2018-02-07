@@ -1,5 +1,5 @@
 
-.XML for payment means info when payment is done by SEPA direct debit
+.UBL example of payment means info when payment is done by SEPA direct debit
 [source, xml, indent=0]
 ----
 include::snippets/direct-debit.xml[tags=direct-debit]

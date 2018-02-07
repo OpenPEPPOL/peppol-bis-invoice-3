@@ -145,12 +145,6 @@ stem:["base amount" times ("percentage" div 100)]
 | Only one tax total without tax subtotals shall be provided when tax currency code is provided.
 | PEPPOL-EN16931-R054
 
-| BT-121
-| VAT exemption reason code
-| Mark conditional information element not to be used
-| Changing cardinality 0..1 to 0..0
-| PEPPOL-EN16931-R050
-
 | BT-131
 | Invoice line net amount
 | Add new non-conflicting business rule to existing element(s)

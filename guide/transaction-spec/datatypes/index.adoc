@@ -3,7 +3,7 @@
 
 Semantic data types are used to bridge the gap between the semantic concepts expressed by the information elements defined in the semantic model from {EN16931} and the technical implementation. The semantic data types define the allowed value domain for the content, and any additional information components (attributes) needed in order to ensure its precise interpretation.
 
-
+NOTE: The details of the technical implementation can be found in <<Detailed message guideline>>
 
 :leveloffset: +1
 
