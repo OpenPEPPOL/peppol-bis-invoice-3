@@ -11,4 +11,4 @@ To minimize the risk of differences due to rounding, the following rules apply:
 * Results from calculations involving already rounded amounts are not subject to rounding, like payable amounts and total amounts included VAT.
 ====
 
-Please also see <<Calculations>> for details on how to calculate the different amounts.
+Please also see <<Calculation>> for details on how to calculate the different amounts.

@@ -2,7 +2,7 @@
 [[orderref]]
 = Purchase order and sales order reference
 
-The purchase order is **conditional**. An invoice shall have either the buyer reference or the order reference (see <<buyerref>>)
+The purchase order is **conditional**. If order reference exist, use that, else use Buyer reference (see <<buyerref>>).
 
 The customer will issue an order with a unique order number. This unique purchase order number should be supplied as the order reference on the invoice.
 

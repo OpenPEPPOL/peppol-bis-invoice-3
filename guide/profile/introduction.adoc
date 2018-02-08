@@ -12,15 +12,15 @@ The purpose of this document is to facilitate an efficient implementation and in
 
 This document is structured as follows:
 
-*	Chapters 1 - 5 gives general information on the business processes, requirements and functionalities
-*	Chapter 6 describes the semantical data types
-*	Chapters 7 - 9 describes VAT, calculations and rounding.
-*	Chapter 10 provides examples of selected parts of the invoice
-*	Chapter 11 gives details and links to all code lists used
-* Chapter 12 gives information on PEPPOL identifiers
-*	Chapter 13 describes in detail central information elements.
-*	Chapters 14 and 15 provides information on validation and validation rules
-*	Annexes give information on restrictions according to {EN16931}, use of Cross Industry Invoice syntax and national and syntax rules.
+*	*Chapters 1 - 5* gives general information on the business processes, requirements and functionalities
+*	*Chapter 6* describes the semantical data types
+*	*Chapters 7 - 9* describes VAT, calculations and rounding.
+*	*Chapter 10* provides examples of selected parts of the invoice
+*	*Chapter 11* gives details and links to all code lists used
+* *Chapter 12* gives information on PEPPOL identifiers
+*	*Chapter 13* describes in detail central information elements.
+*	*Chapters 14 and 15* provides information on validation and validation rules
+*	*Annexes* give information on restrictions according to {EN16931}, use of Cross Industry Invoice syntax and national and syntax rules.
 
 == Scope
 

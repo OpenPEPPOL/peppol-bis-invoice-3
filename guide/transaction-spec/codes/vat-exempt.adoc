@@ -1,7 +1,7 @@
 
 = VAT exemption reason code
 
-{EN16931} states _Code list issued and maintained by Connecting Europe Facility (CEF)_
+{EN16931} states _Code list maintained by Connecting Europe Facility (CEF)_
 
 NOTE: This code list is not yet available.
 

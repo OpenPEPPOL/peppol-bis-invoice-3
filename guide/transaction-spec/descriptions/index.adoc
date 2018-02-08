@@ -1,7 +1,7 @@
 [[descriptions]]
 = Examples of selected parts of the transaction
 
-In the subchapters below you find examples of selected parts of the transaction. Please also look into the <<Detailed message guideline>> for details on all elements and attributes, and their rules and use of code lists.
+In the subchapters below you find examples of selected parts of the transaction. Please also look into the <<Detailed UBL message guideline>> for details on all elements and attributes, and their rules and use of code lists.
 
 :leveloffset: +1
 
