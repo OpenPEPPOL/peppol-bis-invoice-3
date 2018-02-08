@@ -5,7 +5,7 @@
 
 If payment is made by credit transfer, the Payment account identifier (BT-84) is mandatory
 
- See <<payment-means>> for all allowed codes. Examples of codes for payment by credit transfer are:
+See <<payment-means>> for all allowed codes. Examples of codes for payment by credit transfer are:
 
 * 30 - Credit transfer
 * 58 - SEPA credit transfer
@@ -16,7 +16,7 @@ include::../../syntax/credit-payment.adoc[]
 
 If the Buyer had opted to pay by using a payment card such as a credit or debit card, information on the Primary Account Number (PAN) shall be present in the invoice.
 
- See <<payment-means>> for all allowed codes. Examples of codes for payment by card are:
+See <<payment-means>> for all allowed codes. Examples of codes for payment by card are:
 
 * 48 - Bank card
 * 54 - Credit card
@@ -26,7 +26,7 @@ include::../../syntax/card-payment.adoc[]
 
 == Direct debit
 
- See <<payment-means>> for all allowed codes. Examples of codes for payment by direct debit are:
+See <<payment-means>> for all allowed codes. Examples of codes for payment by direct debit are:
 
 * 49 - Direct debit
 * 59 - SEPA direct debit
@@ -35,7 +35,7 @@ include::../../syntax/direct-debit.adoc[]
 
 == Payment by post- or bank giro
 
- See <<payment-means>> for all allowed codes. Examples of codes for payment by giro are:
+See <<payment-means>> for all allowed codes. Examples of codes for payment by giro are:
 
 * 50 - Payment by postgiro
 * 56 - Bankgiro

@@ -182,7 +182,7 @@
         <cbc:PayableAmount currencyID="EUR">8250</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <!-- tag::vat-calc[] -->
-    
+   
     <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
         <cbc:Note>Testing note on line level</cbc:Note>
@@ -213,8 +213,7 @@
                 <cbc:ItemClassificationCode listID="SRV">09348023</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <!-- tag::vat-calc[] -->
-            <!-- code omitted for clarity -->
-            
+            <!-- code omitted for clarity -->       
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>
@@ -233,8 +232,7 @@
     <cac:InvoiceLine>
         <cbc:ID>2</cbc:ID>
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
-        <cbc:LineExtensionAmount currencyID="EUR">2000.00</cbc:LineExtensionAmount>
-        
+        <cbc:LineExtensionAmount currencyID="EUR">2000.00</cbc:LineExtensionAmount> 
         <!-- end::vat-calc[] -->
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
         <cac:Item>
@@ -250,6 +248,7 @@
                 <cbc:ItemClassificationCode listID="SRV">86776</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <!-- tag::vat-calc[] -->
+            <!-- code omitted for clarity -->
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>E</cbc:ID>
                 <cbc:Percent>0.0</cbc:Percent>
@@ -267,8 +266,7 @@
     <cac:InvoiceLine>
         <cbc:ID>3</cbc:ID>
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
-        <cbc:LineExtensionAmount currencyID="EUR">900.00</cbc:LineExtensionAmount>
-        
+        <cbc:LineExtensionAmount currencyID="EUR">900.00</cbc:LineExtensionAmount>    
         <!-- end::vat-calc[] -->
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>     
         <cac:Item>
@@ -285,7 +283,7 @@
                 <cbc:ItemClassificationCode listID="SRV">86776</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
             <!-- tag::vat-calc[] -->
-            
+            <!-- code omitted for clarity -->
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>

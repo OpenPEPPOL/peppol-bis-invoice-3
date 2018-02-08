@@ -8,10 +8,12 @@ The guideline gives an overview of all elements and attributes used in this {pep
 
 ====
 NOTE: Please be aware that the business term names and descriptions comes from {EN16931}, which uses the naming invoice, for both invoices and credit notes.
+
 ====
 
 == UBL Schemas
 
-The XML schemas used are:
+The XML schemas used are
+
 * {UBLInv}
 * {UBLCreditNote}
