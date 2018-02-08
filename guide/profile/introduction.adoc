@@ -10,16 +10,17 @@ The purpose of this document is to facilitate an efficient implementation and in
 
 == Document Structure
 
-This document consists of the following chapters and contents:
+This document is structured as follows:
 
-*	Chapter 1 gives a short introduction describing the background and objective of this implementation guide.
-*	Chapter 2 gives the change history of the document.
-*	Chapter 3 describes the EHF formats (Invoice and Credit note) in general.
-*	Chapter 4 links to definitions relevant to EHF formats.
-*	Chapter 5 links to general principles and conditions for the formats.
-*	Chapter 6 describes in detail central information elements.
-*	Chapter 7 deals with validation.
-*	Chapter 8 embraces appendices.
+*	Chapters 1 - 5 gives general information on the business processes, requirements and functionalities
+*	Chapter 6 describes the semantical data types
+*	Chapters 7 - 9 describes VAT, calculations and rounding.
+*	Chapter 10 provides examples of selected parts of the invoice
+*	Chapter 11 gives details and links to all code lists used
+* Chapter 12 gives information on PEPPOL identifiers
+*	Chapter 13 describes in detail central information elements.
+*	Chapters 14 and 15 provides information on validation and validation rules
+*	Annexes give information on restrictions according to {EN16931}, use of Cross Industry Invoice syntax and national and syntax rules.
 
 == Scope
 

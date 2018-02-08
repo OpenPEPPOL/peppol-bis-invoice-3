@@ -1,6 +1,8 @@
 
 = Preceding invoice references
 
-A credit note shall refer to one or more initial invoice(s). This is done in the business group BG-3 Preceding invoice reference, providing the invoice number and issue date. It is *recommended* to always send the issue date, and the issue date shall be provided in case the preceding invoice reference is not unique.
+A credit note can refer to one or more initial invoice(s). This is done in the business group BG-3 Preceding invoice reference, providing the invoice number and issue date. The issue date shall be provided in case the preceding invoice reference is not unique.
+
+In case correction applies to a large number of invoices, the invoicing period (BG-14), as necessary combined with a clarifying invoice note (BT-22), may instead be be given at document level.
 
 include::../../syntax/preceding-invoice.adoc[]

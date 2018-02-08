@@ -79,5 +79,17 @@ include::../../syntax/codelists/inv-type.adoc[]
 | 380
 | Invoice
 
+|383
+|Debit note
+| Document/message for providing debit information to the relevant party.
+| 380
+| Invoice
+
+
+|386
+|Prepayment invoice
+|An invoice to pay amounts for goods and services in advance; these amounts will be subtracted from the final invoice.
+| 380
+| Invoice
 
 |===

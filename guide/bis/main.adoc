@@ -39,6 +39,6 @@ include::restrictions/index.adoc[]
 include::appendix/cii.adoc[]
 include::appendix/national_rules.adoc[]
 include::appendix/syntax_rules.adoc[]
-
+include::appendix/examples.adoc[]
 
 //include::rules/index.adoc[]

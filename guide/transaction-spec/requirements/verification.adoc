@@ -4,7 +4,7 @@
 [cols="1,10", options="header"]
 |===
 |Id
-|Requirement
+|Requirement (depending, as applicable, on the respective business case)
 
 |R5
 |information to trace to a single related purchase order from the document level

@@ -8,6 +8,7 @@ This process forms part of the Buyer’s internal business controls. The invoice
 * the call for tenders, that was the basis for the contract
 * the Buyer’s reference
 * the confirmed receipt of the goods or services
+* delivery information
 
 An invoice should also contain sufficient information that allows the received invoice to be transferred to a responsible authority, person or department, for verification and approval.
 

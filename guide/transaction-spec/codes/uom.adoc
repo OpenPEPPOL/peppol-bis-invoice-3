@@ -1,6 +1,13 @@
 
 = Unit of measure
 
-Valid unit codes shall be from {UNRec20}
+Valid unit codes shall be from {UNRec20}. Unless codes for unit of measure are not in common daily use, implementers should as necessary provide a function for clarification of codes when invoices are visualised.
+
+
+[NOTE]
+****
+Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of {UNRec20}:
+_The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure._
+****
 
 include::../../syntax/codelists/uom.adoc[]

@@ -1,0 +1,8 @@
+[appendix]
+[[examples]]
+= Example files
+
+The example files are published on GitHub. In addition, several example files have been developed in order to extract snippets into this guide. You might freely use them, but be aware that they include several comments used to extract the snippets.
+
+* {link-examples}
+* {link-snippets}

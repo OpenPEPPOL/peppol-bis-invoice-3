@@ -4,5 +4,5 @@
 h| Document location
 | `cbc:*/@unitCode`
 h| Source codelist
-| link:http://www.unece.org/tradewelcome/un-centre-for-trade-facilitation-and-e-businessuncefact/outputs/cefactrecommendationsrec-index/list-of-trade-facilitation-recommendations-n-16-to-20.html[UN/ECE Recommendation 20, Revision 8 (2012)]
+| link:http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_Rev11e_2015.xls[UN/ECE Recommendation 20, Revision 11 (2015)]
 |===

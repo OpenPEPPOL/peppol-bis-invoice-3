@@ -32,7 +32,6 @@
     <cac:BillingReference><!--3-->
         <cac:InvoiceDocumentReference>
             <cbc:ID>124</cbc:ID>
-            <cbc:IssueDate>2017-11-25</cbc:IssueDate>
         </cac:InvoiceDocumentReference>
     </cac:BillingReference>
     <!-- end::prec-inv[] -->

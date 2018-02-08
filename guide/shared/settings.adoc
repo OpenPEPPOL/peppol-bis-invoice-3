@@ -1,6 +1,8 @@
 :rules-dir: ../../../target/generated
 
 //links used in the BIS document
+:link-examples: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/rules/examples[Example files]
+:link-snippets: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/guide/syntax/snippets[Snippet files]
 
 :ubl-invoice-mapping: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/ubl-invoice/structure/[UBL Invoice message table]
 
@@ -45,7 +47,7 @@
 :UNCL5189: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5189.htm[UN/CEFACT code list 5189, D.16B]
 :UNCL7161: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7161.htm[UN/CEFACT code list 7161, D.16B]
 :IANA: http://www.iana.org/assignments/media-types[IANA]
-:UNRec20: http://www.unece.org/cefact/recommendations/rec_index.html[UN/ECE Recommendation 20, Revision 8 (2012)]
+:UNRec20: http://www.unece.org/fileadmin/DAM/cefact/recommendations/rec20/rec20_Rev11e_2015.xls[UN/ECE Recommendation 20, Revision 11 (2015)]
 :UNCL1153: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
 :ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523]
 :UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]

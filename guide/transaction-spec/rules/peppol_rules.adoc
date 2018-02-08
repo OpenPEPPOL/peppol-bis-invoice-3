@@ -4,6 +4,7 @@
 The following rules have been defined by {openpeppol} in addition to the rules adopted from {EN16931}.
 These rules apply in *all* profiles that use this transaction specification.
 
+Please also see <<Restrictions on EN16931>> for further details on the restrictions imposed by these rules.
 
 .PEPPOL transaction business rules
 [cols="1,4", options="header"]

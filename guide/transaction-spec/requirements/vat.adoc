@@ -4,7 +4,7 @@
 [cols="1,10", options="header"]
 |===
 |Id
-|Requirement
+|Requirement (depending, as applicable, on the respective business case)
 
 |R45
 |information to determine the requirements of the applicable VAT legislation in force and the calculation and reporting thereof;

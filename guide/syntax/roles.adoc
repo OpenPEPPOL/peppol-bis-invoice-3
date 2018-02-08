@@ -32,7 +32,16 @@ include::snippets/Snippet-full.xml[tags=buyer]
 
 = Payment receiver (PayeeParty)
 
-Payment receiver is optional information. If this information is not supplied, the seller is the payment receiver.
+Payment receiver is optional information. If this information is not supplied, the seller is the payment receiver. When payee information is sent this is indicating that a factoring situation is being documented.
+
+To reflect the assignment of an Invoice to a factor there is a need to:
+
+. have a disclaimer (notification notice) on the Invoice that the Invoice has been assigned to a factor. The disclaimer should be given using the Invoice note (BT-22) on document level.
+
+. identify the Factor as the Payee
+
+. to have the bank account changed to favour of a Factor.
+
 
 .UBL example of payee information
 [source, xml, indent=0]
