@@ -5,7 +5,7 @@
   <testfolder>unit-UBL-NO</testfolder>
 
   <configuration>
-    <identifier>peppolbis-en16931-base-3.0</identifier>
+    <identifier>peppolbis-en16931-base-3.0-ubl</identifier>
     <title>PEPPOL BIS Billing 3.0 (Base)</title>
     <file source="sch/PEPPOL-EN16931-UBL.sch" path="xsl/PEPPOL-EN16931-UBL.xsl"/>
   </configuration>
