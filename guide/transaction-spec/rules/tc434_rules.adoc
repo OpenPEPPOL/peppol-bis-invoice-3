@@ -9,5 +9,5 @@ The following {EN16931} rules apply to invoice and credit note transaction as it
 |Rule
 |Message
 
-include::{rules-dir}/CEN-EN16931-UBL-SYNTAX.sch.adoc[]
+include::{rules-dir}/CEN-EN16931-UBL-GENERAL.sch.adoc[]
 |====
