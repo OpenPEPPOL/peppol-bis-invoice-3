@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+		 configuration="peppolbis-en16931-base-3.0-cii">
+	<assert>
+		<description>Correct use of allowance codes.</description>
+		<scope>PEPPOL-EN16931-CL002</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-CL002</success>
+		</assert>
+		<CrossIndustryInvoice
+				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+				xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+				xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+
+			<SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:SpecifiedTradeAllowanceCharge>
+						<ram:ChargeIndicator>
+							<udt:Indicator>false</udt:Indicator>
+						</ram:ChargeIndicator>
+						<ram:ReasonCode>60</ram:ReasonCode>
+					</ram:SpecifiedTradeAllowanceCharge>
+				</ram:ApplicableHeaderTradeSettlement>
+			</SupplyChainTradeTransaction>
+
+		</CrossIndustryInvoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-CL002</error>
+		</assert>
+		<CrossIndustryInvoice
+				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+				xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+				xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+
+			<SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:SpecifiedTradeAllowanceCharge>
+						<ram:ChargeIndicator>
+							<udt:Indicator>false</udt:Indicator>
+						</ram:ChargeIndicator>
+						<ram:ReasonCode>61</ram:ReasonCode>
+					</ram:SpecifiedTradeAllowanceCharge>
+				</ram:ApplicableHeaderTradeSettlement>
+			</SupplyChainTradeTransaction>
+
+		</CrossIndustryInvoice>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-CL002</success>
+		</assert>
+		<CrossIndustryInvoice
+				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+				xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+				xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+
+			<SupplyChainTradeTransaction>
+				<ram:IncludedSupplyChainTradeLineItem>
+					<ram:SpecifiedLineTradeSettlement>
+						<ram:SpecifiedTradeAllowanceCharge>
+							<ram:ChargeIndicator>
+								<udt:Indicator>false</udt:Indicator>
+							</ram:ChargeIndicator>
+							<ram:ReasonCode>60</ram:ReasonCode>
+						</ram:SpecifiedTradeAllowanceCharge>
+					</ram:SpecifiedLineTradeSettlement>
+				</ram:IncludedSupplyChainTradeLineItem>
+			</SupplyChainTradeTransaction>
+
+		</CrossIndustryInvoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-CL002</error>
+		</assert>
+		<CrossIndustryInvoice
+				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+				xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+				xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+
+			<SupplyChainTradeTransaction>
+				<ram:IncludedSupplyChainTradeLineItem>
+					<ram:SpecifiedLineTradeSettlement>
+						<ram:SpecifiedTradeAllowanceCharge>
+							<ram:ChargeIndicator>
+								<udt:Indicator>false</udt:Indicator>
+							</ram:ChargeIndicator>
+							<ram:ReasonCode>61</ram:ReasonCode>
+						</ram:SpecifiedTradeAllowanceCharge>
+					</ram:SpecifiedLineTradeSettlement>
+				</ram:IncludedSupplyChainTradeLineItem>
+			</SupplyChainTradeTransaction>
+
+		</CrossIndustryInvoice>
+	</test>
+</testSet>

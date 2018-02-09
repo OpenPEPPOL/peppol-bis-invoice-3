@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+		 configuration="peppolbis-en16931-base-3.0-cii">
+	<assert>
+		<description>Verify verification of invoice period.</description>
+		<scope>PEPPOL-EN16931-R111</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R111</success>
+		</assert>
+		<CrossIndustryInvoice
+				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+				xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+				xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+
+			<SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:BillingSpecifiedPeriod>
+						<ram:EndDateTime>
+							<udt:DateTimeString>20180201</udt:DateTimeString>
+						</ram:EndDateTime>
+					</ram:BillingSpecifiedPeriod>
+				</ram:ApplicableHeaderTradeSettlement>
+
+				<ram:IncludedSupplyChainTradeLineItem>
+					<ram:SpecifiedLineTradeSettlement>
+						<ram:BillingSpecifiedPeriod>
+							<ram:EndDateTime>
+								<udt:DateTimeString>20180201</udt:DateTimeString>
+							</ram:EndDateTime>
+						</ram:BillingSpecifiedPeriod>
+					</ram:SpecifiedLineTradeSettlement>
+				</ram:IncludedSupplyChainTradeLineItem>
+			</SupplyChainTradeTransaction>
+
+		</CrossIndustryInvoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R111</error>
+		</assert>
+		<CrossIndustryInvoice
+				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+				xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+				xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+
+			<SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:BillingSpecifiedPeriod>
+						<ram:EndDateTime>
+							<udt:DateTimeString>20180201</udt:DateTimeString>
+						</ram:EndDateTime>
+					</ram:BillingSpecifiedPeriod>
+				</ram:ApplicableHeaderTradeSettlement>
+
+				<ram:IncludedSupplyChainTradeLineItem>
+					<ram:SpecifiedLineTradeSettlement>
+						<ram:BillingSpecifiedPeriod>
+							<ram:EndDateTime>
+								<udt:DateTimeString>20180202</udt:DateTimeString>
+							</ram:EndDateTime>
+						</ram:BillingSpecifiedPeriod>
+					</ram:SpecifiedLineTradeSettlement>
+				</ram:IncludedSupplyChainTradeLineItem>
+			</SupplyChainTradeTransaction>
+
+		</CrossIndustryInvoice>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R111</success>
+		</assert>
+		<CrossIndustryInvoice
+				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+				xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+				xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+
+			<SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:BillingSpecifiedPeriod>
+						<ram:EndDateTime>
+							<udt:DateTimeString>20180201</udt:DateTimeString>
+						</ram:EndDateTime>
+					</ram:BillingSpecifiedPeriod>
+				</ram:ApplicableHeaderTradeSettlement>
+
+				<ram:IncludedSupplyChainTradeLineItem>
+					<ram:SpecifiedLineTradeSettlement>
+						<ram:BillingSpecifiedPeriod>
+							<ram:EndDateTime>
+								<udt:DateTimeString>20180131</udt:DateTimeString>
+							</ram:EndDateTime>
+						</ram:BillingSpecifiedPeriod>
+					</ram:SpecifiedLineTradeSettlement>
+				</ram:IncludedSupplyChainTradeLineItem>
+			</SupplyChainTradeTransaction>
+
+		</CrossIndustryInvoice>
+	</test>
+</testSet>

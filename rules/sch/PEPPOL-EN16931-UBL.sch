@@ -159,15 +159,15 @@
       <let name="lineExtensionAmount" value="if (cbc:LineExtensionAmount) then xs:decimal(cbc:LineExtensionAmount) else 0"/>
       <let name="quantity" value="if (/ubl-invoice:Invoice) then (if (cbc:InvoicedQuantity) then xs:decimal(cbc:InvoicedQuantity) else 1) else (if (cbc:CreditedQuantity) then xs:decimal(cbc:CreditedQuantity) else 1)"/>
       <let name="priceAmount" value="if (cac:Price/cbc:PriceAmount) then xs:decimal(cac:Price/cbc:PriceAmount) else 0"/>
-      <let name="baseQuantity" value="if (cac:Price/cbc:BaseQuantity) then xs:decimal(cac:Price/cbc:BaseQuantity) else 1"/>
+      <let name="baseQuantity" value="if (cac:Price/cbc:BaseQuantity and xs:decimal(cac:Price/cbc:BaseQuantity) != 0) then xs:decimal(cac:Price/cbc:BaseQuantity) else 1"/>
       <let name="allowancesTotal" value="if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']) then xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount)) else 0"/>
       <let name="chargesTotal" value="if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount)) else 0"/>
 
       <assert id="PEPPOL-EN16931-R120"
-              test="$baseQuantity &lt;= 0 or u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
+              test="u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
               flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item price base quantity) + Invoice line charge amount - Invoice line allowance amount</assert>
       <assert id="PEPPOL-EN16931-R121"
-              test="$baseQuantity &gt; 0"
+              test="not(cac:Price/cbc:BaseQuantity) or xs:decimal(cac:Price/cbc:BaseQuantity) &gt; 0"
               flag="fatal">Base quantity MUST be a positive number above zero.</assert>
     </rule>
 
@@ -260,7 +260,7 @@
 
     <rule context="cbc:InvoiceTypeCode">
       <assert id="PEPPOL-EN16931-P0100"
-              test="$profile != '01' or (some $code in tokenize('380 393 82 80 84 395 575 623 780', '\s') satisfies normalize-space(text()) = $code)"
+              test="$profile != '01' or (some $code in tokenize('380 383 386 393 82 80 84 395 575 623 780', '\s') satisfies normalize-space(text()) = $code)"
               flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
     <rule context="cbc:CreditNoteTypeCode">
