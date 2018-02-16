@@ -24,7 +24,7 @@
 :EN16931: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:60602&cs=1B61B766636F9FB34B7DBD72CE9026C72[EN 16931]
 :ubl-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63740&cs=141ABC6EDBD750DFA4EC61F187628828F
 :cii-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63741&cs=1FA9686BFF2EEFD10B83676518F8C1AFE
-:TC434-docs: https://standards.cen.eu/dyn/www/f?p=204:32:0::::FSP_ORG_ID:1883209&cs=1E81C9C833655EEDC7010C8D0A2FB786C
+:TC434-docs: https://standards.cen.eu/dyn/www/f?p=204:32:0::::FSP_ORG_ID,FSP_LANG_ID:1883209,25&cs=126F1BDBC8D6D6141F550EB578B4A9CF4
 
 //UBL
 :UBLInv: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd[UBL Invoice 2.1]
