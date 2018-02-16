@@ -196,6 +196,8 @@
   <!-- National rules -->
   <pattern>
 
+    <!-- NORWAY -->
+
     <rule context="cac:AccountingSupplierParty/cac:Party[$supplierCountry = 'NO']">
       <assert id="NO-R-001"
               test="cac:PartyLegalEntity"
@@ -204,6 +206,44 @@
               test="normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID) = 'Foretaksregisteret'"
               flag="warning">Most invoice issuers are required to append "Foretaksregisteret" to their invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
     </rule>
+
+    <!-- DENMARK -->
+
+    <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
+      <assert id="DK-R-001"
+              test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'DK'
+                        and (normalize-space(cbc:AccountingCost/text()) = ''))"
+              flag="warning">For Danish suppliers when the Accounting code is known, it should be referred on the Invoice.</assert>
+      <assert id="DK-R-002"
+              test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'DK'
+                        and (normalize-space(./cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/text()) = ''))"
+              flag="fatal">Danish suppliers MUST provide legal entity (CVR-number).</assert>
+    </rule>
+
+    <!-- Line level -->
+    <rule context="ubl-creditnote:CreditNote/cac:CreditNoteLine | ubl-invoice:Invoice/cac:InvoiceLine">
+      <assert id="DK-R-003"
+              test="not(../cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'DK'
+                        and cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listID='MP'
+                        and not(cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.05.01'
+                               or cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.0501'
+                            )
+                        )"
+              flag="fatal">If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used.</assert>
+    </rule>
+
+    <!-- Mix level -->
+    <rule context="cac:AllowanceCharge">
+      <assert id="DK-R-004"
+              test="not(//cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'DK'
+                  and cbc:AllowanceChargeReasonCode = 'ZZZ'
+                  and not(string-length(normalize-space(cbc:AllowanceChargeReason/text())) = 4
+                          and number(cbc:AllowanceChargeReason) &gt;= 0
+                          and number(cbc:AllowanceChargeReason) &lt;= 9999)
+                 )"
+              flag="fatal">When specifying non-VAT Taxes, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in 'AllowanceChargeReason'.</assert>
+    </rule>
+
   </pattern>
 
   <!-- Restricted code lists and formatting -->

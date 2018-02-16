@@ -3,6 +3,7 @@
 
   <testfolder>unit-CII-PEPPOL</testfolder>
   <testfolder>unit-CII-NO</testfolder>
+  <!-- <testfolder>unit-UBL-DK</testfolder> Contains Danish unit tests not known to VEFA Validator -->
   <testfolder>unit-UBL-PEPPOL</testfolder>
   <testfolder>unit-UBL-NO</testfolder>
 
