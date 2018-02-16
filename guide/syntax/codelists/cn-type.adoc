@@ -6,5 +6,5 @@ h| Document location
 | `cbc:CreditNoteTypeCode`
 h| Source codelist
 |
- link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1001.htm[UN/CEFACT code list 1001, D.16B]
+ link:http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1001.htm[Subset of UN/CEFACT code list 1001, D.16B]
 |===
