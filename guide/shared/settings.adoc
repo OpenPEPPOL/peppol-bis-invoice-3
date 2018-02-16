@@ -40,7 +40,7 @@
 
 //codelists
 :ISO4217: https://www.iso.org/iso-4217-currency-codes.html[ISO 4217:2015]
-:UNCL2005: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred2005.htm[UN/CEFACT code list 2005, D.16B]
+:UNCL2005: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred2005.htm[Subset of UN/CEFACT code list 2005, D.16B]
 :ISO3166: http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
 :UNCL4461: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm[UN/CEFACT code list 4461, D.16B]
 :UNCL5305: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred5305.htm[UN/CEFACT code list 5305, D.16B]

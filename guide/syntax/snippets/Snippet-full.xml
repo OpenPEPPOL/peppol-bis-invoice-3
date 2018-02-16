@@ -67,9 +67,9 @@
     <!-- tag::seller[] -->
     <cac:AccountingSupplierParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0088">9482348239847239874</cbc:EndpointID><!--1-->
+            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID><!--1-->
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0088">9482348239847239874</cbc:ID><!--2-->
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID><!--2-->
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>SupplierTradingName Ltd.</cbc:Name>
@@ -88,7 +88,7 @@
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
-                <cbc:CompanyID>GB9482348239847239874</cbc:CompanyID><!--3-->
+                <cbc:CompanyID>GB76576657</cbc:CompanyID><!--3-->
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
@@ -156,13 +156,13 @@
     <!-- tag::payee[] -->
     <cac:PayeeParty>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0088">3298479324239</cbc:ID><!--1-->
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID><!--1-->
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Payee party</cbc:Name>
         </cac:PartyName>
         <cac:PartyLegalEntity>
-            <cbc:CompanyID schemeID="0088">3298479324239</cbc:CompanyID><!--2-->
+            <cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID><!--2-->
         </cac:PartyLegalEntity>
     </cac:PayeeParty>
     <!-- end::payee[] -->
@@ -196,7 +196,7 @@
     <cac:Delivery>
         <cbc:ActualDeliveryDate>2017-11-01</cbc:ActualDeliveryDate>
         <cac:DeliveryLocation>
-            <cbc:ID schemeID="0088">9483759475923478</cbc:ID>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
             <cac:Address>
                 <cbc:StreetName>Delivery street 2</cbc:StreetName>
                 <cbc:AdditionalStreetName>Building 56</cbc:AdditionalStreetName>
@@ -331,7 +331,7 @@
                     <cbc:ID>97iugug876</cbc:ID>
                 </cac:SellersItemIdentification>
                 <cac:StandardItemIdentification>
-                    <cbc:ID schemeID="0088">21382183120983</cbc:ID>
+                    <cbc:ID schemeID="0088">7300010000001</cbc:ID>
                 </cac:StandardItemIdentification>
                 <cac:OriginCountry>
                     <cbc:IdentificationCode>NO</cbc:IdentificationCode>

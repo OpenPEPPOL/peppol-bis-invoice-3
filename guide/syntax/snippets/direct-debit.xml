@@ -59,7 +59,7 @@
     <!-- tag::direct-debit[] -->
     <cac:AccountingSupplierParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0088">9482348239847239874</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
             <cac:PartyIdentification>
                 <cbc:ID>99887766</cbc:ID>
             </cac:PartyIdentification>
@@ -174,7 +174,7 @@
     <cac:Delivery>
         <cbc:ActualDeliveryDate>2017-11-01</cbc:ActualDeliveryDate>
         <cac:DeliveryLocation>
-            <cbc:ID schemeID="0088">9483759475923478</cbc:ID>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
             <cac:Address>
                 <cbc:StreetName>Delivery street 2</cbc:StreetName>
                 <cbc:AdditionalStreetName>Building 56</cbc:AdditionalStreetName>
@@ -301,7 +301,7 @@
                 <cbc:ID>97iugug876</cbc:ID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="0088">21382183120983</cbc:ID>
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:OriginCountry>
                 <cbc:IdentificationCode>NO</cbc:IdentificationCode>
