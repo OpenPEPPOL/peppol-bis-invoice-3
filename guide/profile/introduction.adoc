@@ -9,8 +9,8 @@ This specification, is a Core Invoice Usage Specification (CIUS) of {EN16931}, f
 Implementers must purchase copies (licences) of the relevant parts of EN 16931, which as a minimum will include:
 
 * *EN 16931-1:2017 - Electronic invoicing* - Part 1: Semantic data model of the core elements of an electronic invoice ({EN16931})
-* *CEN/TS 16931-3-2:2017 Electronic invoicing* - Part 3-2: Syntax binding for ISO/IEC 19845 (UBL 2.1) invoice and credit note ({ubl-binding})
-* *CEN/TS 16931-3-3:2017 Electronic invoicing* - Part 3-3: Syntax binding for UN/CEFACT XML Industry Invoice D16B ({cii-binding})
+* *CEN/TS 16931-3-2:2017 Electronic invoicing* - Part 3-2: Syntax binding for ISO/IEC 19845 (UBL 2.1) invoice and credit note ({ubl-binding}[UBL syntax binding])
+* *CEN/TS 16931-3-3:2017 Electronic invoicing* - Part 3-3: Syntax binding for UN/CEFACT XML Industry Invoice D16B ({cii-binding}[CII syntax binding])
 
 CEN lists sales points for these specifications under the {TC434-docs}[CEN/TC 434 Published Standards section].
 
