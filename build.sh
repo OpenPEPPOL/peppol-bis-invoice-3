@@ -9,15 +9,8 @@ fi
 # Structure
 docker run --rm -i \
     -v $PROJECT:/src \
-    -v $PROJECT/target/site/ubl-invoice:/target \
-    difi/vefa-structure:0.4.1 \
-    -p /src/structure/ubl-invoice -t /target
-
-docker run --rm -i \
-    -v $PROJECT:/src \
-    -v $PROJECT/target/site/ubl-creditnote:/target \
-    difi/vefa-structure:0.4.1 \
-    -p /src/structure/ubl-creditnote -t /target
+    -v $PROJECT/target:/target \
+    difi/vefa-structure:0.5
 
 
 # Validator

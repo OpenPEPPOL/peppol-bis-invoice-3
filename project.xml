@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
+
+    <Name>PEPPOL BIS Billing 3.0</Name>
+
+    <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
+    <Documentation path="migration/">Migration plan</Documentation>
+
+    <!-- Syntax -->
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-invoice.xml</Path>
+        <Title>UBL Invoice</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-creditnote.xml</Path>
+        <Title>UBL Credit Note</Title>
+    </Resource>
+
+    <!-- Rules -->
+    <Resource>
+        <Identifier>ubl-tc434</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
+        <Title>EN16931  model bound to UBL</Title>
+    </Resource>
+    <Resource>
+        <Identifier>ubl-peppol</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
+        <Title>Rules for PEPPOL BIS 3.0 Billing</Title>
+    </Resource>
+
+</Project>

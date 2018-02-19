@@ -4,9 +4,9 @@
 :link-examples: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/rules/examples[Example files]
 :link-snippets: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/guide/syntax/snippets[Snippet files]
 
-:ubl-invoice-mapping: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/ubl-invoice/structure/[UBL Invoice message table]
+:ubl-invoice-mapping: link:../syntax/ubl-invoice/tree/[UBL Invoice message table]
 
-:ubl-cn-mapping: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/ubl-creditnote/structure/[UBL Credit note message table]
+:ubl-cn-mapping: link:../syntax/ubl-creditnote/tree/[UBL Credit note message table]
 
 //PEPPOL
 :peppol: https://peppol.eu/?rel=undefined[PEPPOL]

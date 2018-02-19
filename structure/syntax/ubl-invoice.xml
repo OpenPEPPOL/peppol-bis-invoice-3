@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
-    <Term/>
-    <Name>PEPPOL Credit Note 3.0</Name>
-    <Description>Please note that all element names are inhereted from EN16931 and naming use the term invoice, but this covers both invoice and credit notes. 
-    The tag names are correct according to the UBL Credit note schema
-    </Description>
+    <Term>ubl-invoice</Term>
+    <Name>PEPPOL BIS Invoice 3.0</Name>
 
-    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2</Namespace>
+    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
@@ -15,7 +12,7 @@
     <Rules type="schematron">../../rules/sch/CEN-EN16931-UBL.sch</Rules>
 
     <Document>
-        <Term>ubl:CreditNote</Term>
+        <Term>ubl:Invoice</Term>
 
         <Element>
             <Term>cbc:CustomizationID</Term>
@@ -63,28 +60,26 @@
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
         </Element>
-        
+
         <Element cardinality="0..1">
-            <Term>cbc:TaxPointDate</Term>
-            <Name>Value added tax point date</Name>
-            <Description>The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date
-                can be determined and differs from the date of issue of the invoice, according to the VAT directive.This element is required if the Value added tax point date is different from the Invoice issue date.
-            </Description>
+            <Term>cbc:DueDate</Term>
+            <Name>Payment due date</Name>
+            <Description>The date when the payment is due.Format "YYYY-MM-DD"</Description>
             <DataType>Date</DataType>
-            <Reference type="BUSINESS_TERM">BT-7</Reference>
+            <Reference type="BUSINESS_TERM">BT-9</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
         </Element>
 
-
         <Element>
-            <Term>cbc:CreditNoteTypeCode</Term>
+            <Term>cbc:InvoiceTypeCode</Term>
             <Name>Invoice type code</Name>
             <Description>A code specifying the functional type of the Invoice.</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-3</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-P0101</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
             <Reference type="CODE_LIST">Subset of UNTDID 1001</Reference>
-            <Value type="EXAMPLE">381</Value>
+            <Value type="EXAMPLE">380</Value>
         </Element>
 
         <Element cardinality="0..1">
@@ -99,7 +94,16 @@
             <Value type="EXAMPLE">Please note our new phone number 33 44 55 66</Value>
         </Element>
 
-    
+        <Element cardinality="0..1">
+            <Term>cbc:TaxPointDate</Term>
+            <Name>Value added tax point date</Name>
+            <Description>The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date
+                can be determined and differs from the date of issue of the invoice, according to the VAT directive.This element is required if the Value added tax point date is different from the Invoice issue date.
+            </Description>
+            <DataType>Date</DataType>
+            <Reference type="BUSINESS_TERM">BT-7</Reference>
+            <Value type="EXAMPLE">2017-11-01</Value>
+        </Element>
 
         <Element>
             <Term>cbc:DocumentCurrencyCode</Term>
@@ -273,11 +277,25 @@
                 <Value type="EXAMPLE">rec98</Value>
             </Element>
         </Element>
-        
+
+        <Element cardinality="0..1">
+            <Term>cac:OriginatorDocumentReference</Term>
+            <Name>TENDER OR LOT REFERENCE</Name>
+
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Tender or lot reference</Name>
+                <Description>The identification of the call for tender or lot the invoice relates to.</Description>
+                <DataType>Document Reference</DataType>
+                <Reference type="BUSINESS_TERM">BT-17</Reference>
+                <Value type="EXAMPLE">PPID-123</Value>
+            </Element>
+        </Element>
+
         <Element cardinality="0..1">
             <Term>cac:ContractDocumentReference</Term>
             <Name>CONTRACT REFERENCE</Name>
-            
+
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Contract reference</Name>
@@ -287,8 +305,6 @@
                 <Value type="EXAMPLE">123Contractref</Value>
             </Element>
         </Element>
-
-
 
         <Element cardinality="0..n">
             <Term>cac:AdditionalDocumentReference</Term>
@@ -383,22 +399,20 @@
                 </Element>
             </Element>
         </Element>
-        
+
         <Element cardinality="0..1">
-            <Term>cac:OriginatorDocumentReference</Term>
-            <Name>TENDER OR LOT REFERENCE</Name>
-            
+            <Term>cac:ProjectReference</Term>
+            <Name>PROJECT REFERENCE</Name>
+
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Tender or lot reference</Name>
-                <Description>The identification of the call for tender or lot the invoice relates to.</Description>
+                <Name>Project reference</Name>
+                <Description>The identification of the project the invoice refers to.</Description>
                 <DataType>Document Reference</DataType>
-                <Reference type="BUSINESS_TERM">BT-17</Reference>
-                <Value type="EXAMPLE">PPID-123</Value>
+                <Reference type="BUSINESS_TERM">BT-11</Reference>
+                <Value type="EXAMPLE">PID33</Value>
             </Element>
         </Element>
-
-
 
         <Element>
             <Term>cac:AccountingSupplierParty</Term>
@@ -1678,14 +1692,13 @@
                     <Value type="EXAMPLE">25</Value> 
                 </Element>
                 
-                
                 <Element cardinality="0..1">
                     <Term>cbc:TaxExemptionReasonCode</Term>
                     <Name>VAT exemption reason code</Name>
                     <Description>A coded statement of the reason for why the amount is exempted from VAT.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-121</Reference>
-                    
+                 
                 </Element>
 
                 <Element cardinality="0..1">
@@ -1858,7 +1871,7 @@
         </Element>
 
         <Element cardinality="1..n">
-            <Term>cac:CreditNoteLine</Term>
+            <Term>cac:InvoiceLine</Term>
             <Name>INVOICE LINE</Name>
             <Description>A group of business terms providing information on individual Invoice lines.</Description>
             <Reference type="BUSINESS_TERM">BG-25</Reference>
@@ -1883,7 +1896,7 @@
             </Element>
 
             <Element>
-                <Term>cbc:CreditedQuantity</Term>
+                <Term>cbc:InvoicedQuantity</Term>
                 <Name>Invoiced quantity</Name>
                 <Description>The quantity of items (goods or services) that is charged in the Invoice line.</Description>
                 <DataType>Quantity</DataType>
