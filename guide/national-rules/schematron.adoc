@@ -1,0 +1,15 @@
+
+[[schematron]]
+= Schematron implementation considerations
+
+The existence of country code of the supplier must be part of the context statement, for this purpose, parameter supplierCountry has been added to the schematron file and can be used for the national rules.
+
+
+.Schematron example
+[source, xml, indent=0]
+----
+<rule context="cac:AccountingSupplierParty/cac:Party[$supplierCountry = 'SE']/cac:PartyLegalEntity/cbc:CompanyID"> <1>
+	<assert id="SE-TR-001" test="(string-length(.) = 10)" flag="warning">Swedish organisation numbers consist of 10 characters.</assert>
+</rule>
+----
+<1> The rule is only triggered if the country code is SE
