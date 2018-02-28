@@ -1637,7 +1637,7 @@
                     <Value type="EXAMPLE">4000.00</Value> 
                 </Element>
 
-            </Element>
+
             <Element>
                 <Term>cbc:TaxAmount</Term>
                 <Name>VAT category tax amount</Name>
@@ -1710,7 +1710,7 @@
                 </Element>
             </Element>
         </Element>
-
+        </Element>
 
 
         <Element>
