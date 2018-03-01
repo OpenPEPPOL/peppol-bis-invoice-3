@@ -1593,7 +1593,7 @@
                     </Element>
                 </Element>
             </Element>
-        </Element>
+        
 
         <Element cardinality="0..2">
             <Term>cac:TaxTotal</Term>
@@ -1723,7 +1723,7 @@
                 </Element>
             </Element>
         </Element>
-
+    </Element>
 
 
         <Element>
