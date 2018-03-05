@@ -2,8 +2,6 @@
 
 = Calculation
 
-
-
 :leveloffset: +1
 
 include::totals.adoc[]

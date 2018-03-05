@@ -6,7 +6,7 @@ The following artefacts are needed for the CMB to approve national rules:
 * A list or table with the following information about the rule(s)
 [horizontal]
 Rule-ID:: Unique number for each rule. Format should be *Country code* - *R* - *Sequential number* such as SE-R-001.
-Type:: The type defined in the EN.
+Type:: The type defined in the EN (table in chapter 7.3.2 of EN16931)
 Applicable for supplier Country Code:: The country code of the supplier which is used as part of the context for when the rule is triggered
 Rule statement::  The assertion/rule in natural language.
 Severity:: level of severity to flag when the rule is violated. Fatal or Warning.

@@ -2,7 +2,7 @@
 [[schematron]]
 = Schematron implementation considerations
 
-The existence of country code of the supplier must be part of the context statement, for this purpose, parameter supplierCountry has been added to the schematron file and can be used for the national rules.
+The existence of country code of the supplier must be part of the context statement, for this purpose, parameter `supplierCountry` has been added to the schematron file and can be used for the national rules.
 
 
 .Schematron example

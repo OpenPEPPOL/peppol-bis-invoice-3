@@ -2,7 +2,7 @@
 [[testfiles]]
 = Test files
 
-Test files for each national rules must be present in the deliverble from the PEPPOL Authority in order to have the national rules approved.
+Test files for each national rules must be present in the deliverable from the PEPPOL Authority in order to have the national rules approved.
 
 The test files should include both positive and negative tests, meaning tests that both fire the rule, and tests where the rule is not fired.
 

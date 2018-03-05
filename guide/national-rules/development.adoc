@@ -1,7 +1,8 @@
 
 = Development procedure
 
-* The PEPPOL Authority who wish to include country specific rules notifies the PoAcc CMB minimum 6 months before release.
+* The PEPPOL Authority who wish to include country specific rules notifies the PoAcc CMB, following the deadlines for the release schedule of PoAcc.
+* The PEPPOL Authority must ensure that the suggested national rules does not affect other countries, and it must not be in conflict with the any other rules for the profile/transaction.
 * The PEPPOL Authority create sets of test files which triggers each rule with positive and negative outcome.
 *	The PEPPOL Authority documents and tests the country specific rule set.
 *	The PEPPOL Authority must have resources available to make adjustments to the rules if issues are found during the review and test process in PEPPOL.
