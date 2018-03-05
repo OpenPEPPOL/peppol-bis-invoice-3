@@ -3,7 +3,7 @@
 
 == Country specific validation rules
 
-The PEPPOL BIS Billing v3 allows for validation rules which are triggered based on the country code of the supplier, and which is not in conflict wiht any other rules for the profile or transaction.
+The PEPPOL BIS Billing v3 allows for validation rules which are triggered based on the country code of the supplier, and which is not in conflict with any other rules for the profile or transaction.
 
 Country-qualified rule sets can be added to the PEPPOL BIS on request from the PEPPOL Authority of the specific country.
 The PEPPOL Authority is responsible for the development, testing and maintenance of the rules. The country specific rules makes it possible to use the PEPPOL BIS without the need of creating a country specific CIUS.
