@@ -437,7 +437,10 @@
                         <Name>Seller electronic address identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Seller electronic address</Description>
                         <Reference type="CODE_LIST">Not yet available!</Reference>
+                        <Value type="EXAMPLE">0088</Value>
                     </Attribute>
+                    
+                    <Value type="EXAMPLE">7300010000001</Value>
                 </Element>
                 
                 <Element cardinality="0..n">
@@ -882,8 +885,9 @@
                             <Name>Buyer legal registration identifier identification scheme identifier</Name>
                             <Description>The identification scheme identifier of the Buyer legal registration identifier.</Description>
                             <Reference type="CODE_LIST">ISO 6523 ICD list</Reference>
+                            <Value type="EXAMPLE">0088</Value>
                         </Attribute>
-                        <Value type="EXAMPLE">SE8765456787</Value>
+                        <Value type="EXAMPLE">7300010000001</Value>
                     </Element>
                 </Element>
 
@@ -1532,6 +1536,7 @@
                     <Term>currencyID</Term>
                     <Description>Mandatory attribute. Use BT-5</Description>
                     <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                    <Value type="EXAMPLE">EUR</Value>  
                 </Attribute>
                 <Value type="EXAMPLE">200</Value>  
             </Element>
@@ -1552,6 +1557,7 @@
                     <Description>Mandatory attribute. Use BT-5</Description>
                     <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                    <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
                 
                 <Value type="EXAMPLE">1000</Value>  
@@ -1615,9 +1621,10 @@
                     <Reference type="RULE">PEPPOL-EN16931-R052</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                    <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
                 
-                <Value type="EXAMPLE">1000.00</Value>  
+                <Value type="EXAMPLE">486.25</Value>  
             </Element>
 
          
@@ -1646,82 +1653,86 @@
                         <Description>Mandatory attribute. Use BT-5</Description>
                         <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                         <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                        <Value type="EXAMPLE">EUR</Value>
                     </Attribute>
                     
-                    <Value type="EXAMPLE">4000.00</Value> 
+                    <Value type="EXAMPLE">1945.00</Value> 
                 </Element>
-
-            </Element>
-            <Element>
-                <Term>cbc:TaxAmount</Term>
-                <Name>VAT category tax amount</Name>
-                <Description>The total VAT amount for a given VAT category. Must be rounded to maximum 2 decimals.</Description>
-                <DataType>Amount</DataType>
-                <Reference type="BUSINESS_TERM">BT-117</Reference>
-                
-
-                <Attribute>
-                    <Term>currencyID</Term>
-                    <Description>Mandatory attribute. Use BT-5</Description>
-                    <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
-                    <Value type="EXAMPLE">EUR</Value>
-                </Attribute>
-                <Value type="EXAMPLE">1000</Value> 
-            </Element>
-
-            <Element>
-                <Term>cac:TaxCategory</Term>
-                <Name>VAT CATEGORY</Name>
 
                 <Element>
-                    <Term>cbc:ID</Term>
-                    <Name>VAT category code</Name>
-                    <Description>Coded identification of a VAT category.</Description>
-                    <DataType>Code</DataType>
-                    <Reference type="BUSINESS_TERM">BT-118</Reference>
-                    <Value type="EXAMPLE">S</Value> 
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:Percent</Term>
-                    <Name>VAT category rate</Name>
-                    <Description>The VAT rate, represented as percentage that applies for the relevant VAT category.</Description>
-                    <DataType>Percentage</DataType>
-                    <Reference type="BUSINESS_TERM">BT-119</Reference>
-                    <Value type="EXAMPLE">25</Value> 
+                    <Term>cbc:TaxAmount</Term>
+                    <Name>VAT category tax amount</Name>
+                    <Description>The total VAT amount for a given VAT category. Must be rounded to maximum 2 decimals.</Description>
+                    <DataType>Amount</DataType>
+                    <Reference type="BUSINESS_TERM">BT-117</Reference>
+                    
+                    
+                    <Attribute>
+                        <Term>currencyID</Term>
+                        <Description>Mandatory attribute. Use BT-5</Description>
+                        <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                        <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                        <Value type="EXAMPLE">EUR</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">486.25</Value> 
                 </Element>
                 
-                <Element cardinality="0..1">
-                    <Term>cbc:TaxExemptionReasonCode</Term>
-                    <Name>VAT exemption reason code</Name>
-                    <Description>A coded statement of the reason for why the amount is exempted from VAT.</Description>
-                    <DataType>Text</DataType>
-                    <Reference type="BUSINESS_TERM">BT-121</Reference>
-                 
-                </Element>
-
-                <Element cardinality="0..1">
-                    <Term>cbc:TaxExemptionReason</Term>
-                    <Name>VAT exemption reason text</Name>
-                    <Description>A textual statement of the reason why the amount is exempted from VAT or why no VAT is being
-                        charged. 
-                    </Description>
-                    <DataType>Text</DataType>
-                    <Reference type="BUSINESS_TERM">BT-120</Reference>
-                    <Value type="EXAMPLE">Exempt</Value> 
-                </Element>
                 <Element>
-                    <Term>cac:TaxScheme</Term>
-                    <Name>TAX SCHEME</Name>
-
+                    <Term>cac:TaxCategory</Term>
+                    <Name>VAT CATEGORY</Name>
+                    
                     <Element>
                         <Term>cbc:ID</Term>
-                        <Description>Mandatory element. Use “VAT”</Description>
-                        <Value type="DEFAULT">VAT</Value>
+                        <Name>VAT category code</Name>
+                        <Description>Coded identification of a VAT category.</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="BUSINESS_TERM">BT-118</Reference>
+                        <Value type="EXAMPLE">S</Value> 
+                    </Element>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cbc:Percent</Term>
+                        <Name>VAT category rate</Name>
+                        <Description>The VAT rate, represented as percentage that applies for the relevant VAT category.</Description>
+                        <DataType>Percentage</DataType>
+                        <Reference type="BUSINESS_TERM">BT-119</Reference>
+                        <Value type="EXAMPLE">25</Value> 
+                    </Element>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cbc:TaxExemptionReasonCode</Term>
+                        <Name>VAT exemption reason code</Name>
+                        <Description>A coded statement of the reason for why the amount is exempted from VAT.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-121</Reference>
+                        
+                    </Element>
+                    
+                    <Element cardinality="0..1">
+                        <Term>cbc:TaxExemptionReason</Term>
+                        <Name>VAT exemption reason text</Name>
+                        <Description>A textual statement of the reason why the amount is exempted from VAT or why no VAT is being
+                            charged. 
+                        </Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-120</Reference>
+                        <Value type="EXAMPLE">Exempt</Value> 
+                    </Element>
+                    <Element>
+                        <Term>cac:TaxScheme</Term>
+                        <Name>TAX SCHEME</Name>
+                        
+                        <Element>
+                            <Term>cbc:ID</Term>
+                            <Description>Mandatory element. Use “VAT”</Description>
+                            <Value type="DEFAULT">VAT</Value>
+                        </Element>
                     </Element>
                 </Element>
             </Element>
+   
+
+ 
         </Element>
 
 
@@ -1748,7 +1759,7 @@
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
                 
-                <Value type="EXAMPLE">4200.0</Value>
+                <Value type="EXAMPLE">2145.0</Value>
             </Element>
 
             <Element>
@@ -1765,7 +1776,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
-                <Value type="EXAMPLE">4000.0</Value>
+                <Value type="EXAMPLE">1945.0</Value>
             </Element>
 
             <Element>
@@ -1782,7 +1793,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
-                <Value type="EXAMPLE">5000.0</Value>
+                <Value type="EXAMPLE">2431.25</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -1799,7 +1810,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
-                <Value type="EXAMPLE">300.0</Value>
+                <Value type="EXAMPLE">200.0</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -1815,7 +1826,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
-                <Value type="EXAMPLE">100.0</Value>
+                <Value type="EXAMPLE">0.0</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -1849,7 +1860,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
-                <Value type="EXAMPLE">0.13</Value>
+                <Value type="EXAMPLE">0.75</Value>
             </Element>
 
             <Element>
@@ -1866,7 +1877,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
-                <Value type="EXAMPLE">4000.0</Value>
+                <Value type="EXAMPLE">1432.0</Value>
             </Element>
         </Element>
 
@@ -1912,7 +1923,7 @@
                     <Reference type="CODE_LIST">UN/ECE Recommondation 20</Reference>
                     <Value type="EXAMPLE">C62</Value>
                 </Attribute>
-                <Value type="EXAMPLE">10</Value>
+                <Value type="EXAMPLE">100</Value>
             </Element>
 
             <Element>
@@ -1933,7 +1944,7 @@
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
                 
-                <Value type="EXAMPLE">4000</Value>
+                <Value type="EXAMPLE">2145.00</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -1962,7 +1973,7 @@
                     <Reference type="BUSINESS_TERM">BT-134</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-R110</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-                    <Value type="EXAMPLE">2017-11-05</Value>
+                    <Value type="EXAMPLE">2017-10-05</Value>
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cbc:EndDate</Term>
@@ -1972,7 +1983,7 @@
                     <Reference type="BUSINESS_TERM">BT-135</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-R111</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-                    <Value type="EXAMPLE">2017-11-15</Value>
+                    <Value type="EXAMPLE">2017-10-15</Value>
                 </Element>
             </Element>
 
@@ -2005,8 +2016,10 @@
                         <Term>schemeID</Term>
                         <Name>Invoice line object identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Invoice line object identifier.</Description>
+                        <Reference type="CODE_LIST">UNTDID 1153</Reference>
+                        <Value type="EXAMPLE">ABZ</Value>
                     </Attribute>
-                    <Value type="EXAMPLE">AVV</Value>
+                    <Value type="EXAMPLE">AB12345</Value>
                 </Element>
                 
                 <Element>
@@ -2265,7 +2278,7 @@
                         <Description>The VAT rate, represented as percentage that applies to the invoiced item.</Description>
                         <DataType>Percentage</DataType>
                         <Reference type="BUSINESS_TERM">BT-152</Reference>
-                        <Value type="EXAMPLE">15</Value>
+                        <Value type="EXAMPLE">25</Value>
                     </Element>
 
                     <Element>
@@ -2332,7 +2345,7 @@
                         <Value type="EXAMPLE">EUR</Value>
                     </Attribute>
                     
-                    <Value type="EXAMPLE">123.45</Value>
+                    <Value type="EXAMPLE">23.45</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -2351,9 +2364,10 @@
                         <Description>The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity.</Description>
                         <Reference type="CODE_LIST">UN ECE Recommondation 20 and 21</Reference>
                         <Reference type="RULE">PEPPOL-EN16931-R130</Reference>
+                        <Value type="EXAMPLE">C62</Value>
                     </Attribute>
                     
-                    <Value type="EXAMPLE">C62</Value>
+                    <Value type="EXAMPLE">1</Value>
                 </Element>
 
                 <Element cardinality="0..1">
@@ -2364,7 +2378,7 @@
                         <Term>cbc:ChargeIndicator</Term>
                         <Description>Mandatory element. Value must be “false”</Description>
                         <Reference type="RULE">PEPPOL-EN16931-R044</Reference>
-                        <Value type="DEFAULT">false</Value>
+                        <Value type="FIXED">false</Value>
                     </Element>
                     <Element>
                         <Term>cbc:Amount</Term>

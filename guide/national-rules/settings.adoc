@@ -1,6 +1,6 @@
 :lang: en
 
-:doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] PEPPOL methodolgy for national rules
+:doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] PEPPOL methodolgy for national rules based on Sellers country
 :minor: 0.0
 :revision: 0.0.1
 :shared-dir: ../../shared
