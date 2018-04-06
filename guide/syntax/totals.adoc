@@ -12,10 +12,10 @@ The following elements show the legal monetary totals for an invoice or credit n
 | stem:[sum("cac:InvoiceLine/cbc:LineExtensionAmount")]
 
 | <cbc:AllowanceTotalAmount>
-| stem:[sum("cac:AllowanceCharge[ChargeIndicator='true'$$]$$/cbc:Amount")]
+| stem:[sum("cac:AllowanceCharge[ChargeIndicator='false'$$]$$/cbc:Amount")]
 
 | <cbc:ChargeTotalAmount>
-| stem:[sum("cac:AllowanceCharge[ChargeIndicator='false'$$]$$/cbc:Amount")]
+| stem:[sum("cac:AllowanceCharge[ChargeIndicator='true'$$]$$/cbc:Amount")]
 
 | <cbc:TaxExclusiveAmount>
 | stem:[\ \ \ \ "cac:LegalMonetaryTotal/cbc:LineExtensionAmount"] +
