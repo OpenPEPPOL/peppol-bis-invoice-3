@@ -99,11 +99,7 @@
                     flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount and percentage exists</assert>
         </rule>
 
-        <rule context="ram:ExemptionReasonCode">
-            <assert id="PEPPOL-EN16931-R050"
-                    test="false()"
-                    flag="fatal">Tax excemption reason code MUST NOT be used.</assert>
-        </rule>
+
 
         <rule context="ram:SpecifiedTradeSettlementPaymentMeans[some $code in tokenize('49 59', '\s') satisfies normalize-space(ram:TypeCode) = $code]">
             <assert id="PEPPOL-EN16931-R061"
