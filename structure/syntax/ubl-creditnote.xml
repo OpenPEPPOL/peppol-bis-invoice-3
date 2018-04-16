@@ -2288,8 +2288,8 @@
             
             <Element cardinality="0..1">
                 <Term>cbc:AllowanceChargeReasonCode</Term>
-                <Name>Document level allowance or charge reason code</Name>
-                <Description>The reason for the document level allowance or charge, expressed as a code.</Description>
+                <Name>Line level allowance or charge reason code</Name>
+                <Description>The reason for the line level allowance or charge, expressed as a code.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-140, BT-145</Reference>
                 <Reference type="CODE_LIST">Subset of UNTDID 5189 for allowances</Reference>
@@ -2307,8 +2307,8 @@
             
             <Element cardinality="0..1">
                 <Term>cbc:AllowanceChargeReason</Term>
-                <Name>Document level allowance or charge reason</Name>
-                <Description>The reason for the document level allowance or charge, expressed as text.</Description>
+                <Name>Line level allowance or charge reason</Name>
+                <Description>The reason for the line level allowance or charge, expressed as text.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-139, BT-144</Reference>
                 <Reference type="RULE">BR-42</Reference>
@@ -2323,9 +2323,9 @@
             
             <Element cardinality="0..1">
                 <Term>cbc:MultiplierFactorNumeric</Term>
-                <Name>Document level allowance or charge percentage</Name>
-                <Description>The percentage that may be used, in conjunction with the document level allowance base amount, to
-                    calculate the document level allowance or charge amount.
+                <Name>Line level allowance or charge percentage</Name>
+                <Description>The percentage that may be used, in conjunction with the line level allowance base amount, to
+                    calculate the line level allowance or charge amount.
                 </Description>
                 <DataType>Percentage</DataType>
                 <Reference type="BUSINESS_TERM">BT-138,BT-143</Reference>
@@ -2360,8 +2360,8 @@
             <Element cardinality="0..1">
                 <Term>cbc:BaseAmount</Term>
                 <Name>Line level allowance or charge base amount</Name>
-                <Description>The base amount that may be used, in conjunction with the document level allowance or charge percentage, to
-                    calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals
+                <Description>The base amount that may be used, in conjunction with the line level allowance or charge percentage, to
+                    calculate the line level allowance or charge amount. Must be rounded to maximum 2 decimals
                 </Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-137,BT-142</Reference>
