@@ -1,0 +1,32 @@
+= Release notes for PEPPOL BIS Billing v3.0.1
+openPEPPOL AISBL <http://www.peppol.eu/>
+2018-04-20
+:icons: font
+:source-highlighter: coderay
+:sourcedir: .
+:imagesdir: images
+:title-logo-image: peppol.png
+
+[NOTE]
+====
+This release from openPEPPOL includes changes to the BIS document as well as the validation artifacts (VA's), and as the PEPPOL BIS Billing 3.0 is optional in use, these changes are valid from the day of publication
+====
+
+
+== Changes to BIS document
+
+* Correct calculation formula in chapter 9.1.1, see link:https://github.com/OpenPEPPOL/peppol-bis-invoice-3/issues/46[Github issue 46]
+
+== Changes to syntax mapping tables
+
+* Correct the structure of the `cac:Taxtotal` element in the syntax mapping.
+* Add EN16931 rules to syntax mapping.
+* Cardinality set to mandatory for element `cac:InvoiceDocumentReference` as this is the only element in `cac:BillingReference`
+* Cardinality set to mandatory for element `cbc:URI` as this is the only element in `cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference`
+* Change description text from "Document level..." to "Line level..." for allowance/charge elements on line level in the syntax mapping table.
+
+== Changes to validation artefacts
+
+IMPORTANT: Changes apply to both UBL and CII validation rules.
+
+* Removed rule "PEPPOL-EN16931-R050 - Tax exemption reason code MUST NOT be used"

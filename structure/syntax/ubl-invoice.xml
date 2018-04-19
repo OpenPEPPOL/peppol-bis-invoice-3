@@ -378,7 +378,7 @@
                         <Name>Attached document Mime code</Name>
                         <Description>The mime code of the attached document.</Description>
                         <Reference type="RULE">PEPPOL-EN16931-CL001</Reference>
-                        <Reference type="RULE">BR-DT-06</Reference>
+                        <Reference type="RULE">UBL-DT-06</Reference>
                         <Value type="EXAMPLE">text/csv</Value>
                     </Attribute>
 
@@ -386,7 +386,7 @@
                         <Term>filename</Term>
                         <Name>Attached document Filename</Name>
                         <Description>The file name of the attached document</Description>
-                        <Reference type="RULE">BR-DT-07</Reference>
+                        <Reference type="RULE">UBL-DT-07</Reference>
                         <Value type="EXAMPLE">Hours-spent.csv</Value>
                         
                     </Attribute>
@@ -1445,7 +1445,6 @@
                     invoice issuance.
                 </Description>
                 <Reference type="BUSINESS_TERM">BG-18</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R060</Reference>
 
                 <Element>
                     <Term>cbc:PrimaryAccountNumberID</Term>
@@ -1648,7 +1647,6 @@
                 <Reference type="RULE">BR-31</Reference>
                 <Reference type="RULE">BR-36</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R040</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
                 <Reference type="RULE">BR-DEC-01</Reference>
                 <Reference type="RULE">BR-DEC-05</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
@@ -2346,7 +2344,6 @@
                 <Reference type="RULE">BR-41</Reference>
                 <Reference type="RULE">BR-43</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R040</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
                 <Reference type="RULE">BR-DEC-24</Reference>
                 <Reference type="RULE">BR-DEC-27</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
