@@ -1,4 +1,4 @@
-[[process]]
+
 = General invoicing process
 
 The invoicing process includes issuing and sending the invoice and the credit note from the supplier to the customer and the reception  and handling of the same at the customer’s site.

@@ -1,5 +1,4 @@
 
-[[codelist]]
 = Code list for invoice type code (BT-3)
 
 The following sub-chapters give an overview of the restricted set of invoice type codes (BT-3) that is used in this PEPPOL BIS Billing.
@@ -11,6 +10,7 @@ The table also gives information on what message type is to be used in the UBL s
 :leveloffset: +1
 
 include::invoice-specific.adoc[]
+
 include::creditnote-specific.adoc[]
 
 :leveloffset: -1
