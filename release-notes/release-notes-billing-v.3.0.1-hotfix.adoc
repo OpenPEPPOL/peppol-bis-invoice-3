@@ -9,7 +9,7 @@ openPEPPOL AISBL <http://www.peppol.eu/>
 
 [NOTE]
 ====
-This release from openPEPPOL includes changes to the BIS document as well as the validation artifacts (VA's), and as the PEPPOL BIS Billing 3.0 is optional in use, these changes are valid from the day of publication
+This release from openPEPPOL includes changes to the BIS document as well as the validation artifacts (VA's), and as the PEPPOL BIS Billing 3.0 is optional in use, these changes are valid from the day of publication. This list of updates can also be found in the release notes for the general spring release 2018.
 ====
 
 
@@ -30,3 +30,4 @@ This release from openPEPPOL includes changes to the BIS document as well as the
 IMPORTANT: Changes apply to both UBL and CII validation rules.
 
 * Removed rule "PEPPOL-EN16931-R050 - Tax exemption reason code MUST NOT be used"
+* Incorporated updated validation artifacts from TC434 (amongst other, adding new ICD values).
