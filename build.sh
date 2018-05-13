@@ -10,7 +10,7 @@ fi
 docker run --rm -i \
     -v $PROJECT:/src \
     -v $PROJECT/target:/target \
-    difi/vefa-structure:0.5
+    difi/vefa-structure:0.6
 
 
 # Validator
