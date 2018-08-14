@@ -3,7 +3,7 @@ include::settings.adoc[]
 = {doctitle}
 {name-op-en}
 v{revision}
-:description: This PEPPOL methodolgy document has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community.
+:description: This PEPPOL methodology document has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community.
 :doctype: book
 :icons: font
 :stem:
