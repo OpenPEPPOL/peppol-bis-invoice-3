@@ -198,11 +198,11 @@
     <!-- tag::direct-debit[] -->
     <cac:PaymentMeans>
         <cbc:PaymentMeansCode name="SEPA direct debit">59</cbc:PaymentMeansCode><!--2-->
-        <cbc:PaymentID>payref2</cbc:PaymentID>
+        <cbc:PaymentID>payref2</cbc:PaymentID><!--3-->
         <cac:PaymentMandate>
-            <cbc:ID>123456</cbc:ID><!--3-->
+            <cbc:ID>123456</cbc:ID><!--4-->
             <cac:PayerFinancialAccount>
-                <cbc:ID>DK12328462834823</cbc:ID><!--4-->
+                <cbc:ID>DK12328462834823</cbc:ID>
             </cac:PayerFinancialAccount>
         </cac:PaymentMandate> 
     </cac:PaymentMeans>

@@ -1592,7 +1592,7 @@
                 <Term>cbc:AllowanceChargeReasonCode</Term>
                 <Name>Document level allowance or charge reason code</Name>
                 <Description>The reason for the document level allowance or charge, expressed as a code. 
-                    The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reaso</Description>
+                    The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-98, BT-105</Reference>
                 <Reference type="CODE_LIST">Subset of UNTDID 5189 for allowances</Reference>
@@ -2458,7 +2458,7 @@
                             <Name>Item standard identifier identification scheme identifier</Name>
                             <Description>The identification scheme identifier of the Item standard identifier</Description>
                             <Reference type="CODE_LIST">ISO 6523 ICD list</Reference>
-                            <Value type="EXAMPLE">0088</Value>
+                            <Value type="EXAMPLE">0160</Value>
                             
                         </Attribute>
                         <Value type="EXAMPLE">10986700</Value>
