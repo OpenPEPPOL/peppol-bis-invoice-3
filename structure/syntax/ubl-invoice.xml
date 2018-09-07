@@ -1612,7 +1612,7 @@
                 <Term>cbc:AllowanceChargeReason</Term>
                 <Name>Document level allowance or charge reason</Name>
                 <Description>The reason for the document level allowance or charge, expressed as text.
-                    The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reaso</Description>
+                    The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-97, BT-104</Reference>
                 <Reference type="RULE">BR-33</Reference>
@@ -2152,7 +2152,10 @@
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Invoiced quantity unit of measure</Name>
-                    <Description>The unit of measure that applies to the invoiced quantity.</Description>
+                    <Description>The unit of measure that applies to the invoiced quantity.
+					Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+					The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
+					</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">BT-130</Reference>
                     <Reference type="RULE">BR-23</Reference>
@@ -2636,7 +2639,9 @@
                     <Attribute usage="Optional">
                         <Term>unitCode</Term>
                         <Name>Item price base quantity unit of measure code</Name>
-                        <Description>The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity.</Description>
+                        <Description>The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                            The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
+                        </Description>
                         <Reference type="CODE_LIST">UN ECE Recommondation 20 and 21</Reference>
                         <Reference type="RULE">PEPPOL-EN16931-R130</Reference>
                         <Value type="EXAMPLE">C62</Value>
