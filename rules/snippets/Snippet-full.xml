@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sjekk alle identifikatorer og tilhørende attributter -->
 <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
@@ -14,8 +13,10 @@
     <cbc:Note>Please note we have a new phone number: 22 22 22 22</cbc:Note>
     <cbc:TaxPointDate>2017-12-01</cbc:TaxPointDate>
     <!-- tag::vat-curr1[] -->
-    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode><!--1-->
-    <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode><!--2-->
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <!--1-->
+    <cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
+    <!--2-->
     <!-- end::vat-curr1[] -->
     <cbc:AccountingCost>4025:123:4343</cbc:AccountingCost>
     <cbc:BuyerReference>0150abc</cbc:BuyerReference>
@@ -67,9 +68,11 @@
     <!-- tag::seller[] -->
     <cac:AccountingSupplierParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID><!--1-->
+            <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+            <!--1-->
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0088">7300010000001</cbc:ID><!--2-->
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+                <!--2-->
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>SupplierTradingName Ltd.</cbc:Name>
@@ -88,7 +91,8 @@
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
-                <cbc:CompanyID>GB76576657</cbc:CompanyID><!--3-->
+                <cbc:CompanyID>GB76576657</cbc:CompanyID>
+                <!--3-->
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
@@ -102,7 +106,7 @@
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>SupplierOfficialName Ltd</cbc:RegistrationName>
                 <cbc:CompanyID>GB983294</cbc:CompanyID>
-                <cbc:CompanyLegalForm>Private Limited Company</cbc:CompanyLegalForm>   
+                <cbc:CompanyLegalForm>Private Limited Company</cbc:CompanyLegalForm>
             </cac:PartyLegalEntity>
             <cac:Contact>
                 <cbc:Name>John Doe</cbc:Name>
@@ -115,9 +119,11 @@
     <!-- tag::buyer[] -->
     <cac:AccountingCustomerParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0002">FR23342</cbc:EndpointID><!--1-->
+            <cbc:EndpointID schemeID="0002">FR23342</cbc:EndpointID>
+            <!--1-->
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0002">FR23342</cbc:ID><!--2-->
+                <cbc:ID schemeID="0002">FR23342</cbc:ID>
+                <!--2-->
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>BuyerTradingName AS</cbc:Name>
@@ -135,14 +141,16 @@
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
-                <cbc:CompanyID>SE459837593701</cbc:CompanyID><!--3-->
+                <cbc:CompanyID>SE459837593701</cbc:CompanyID>
+                <!--3-->
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>Buyer Official Name</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="0183">39937423947</cbc:CompanyID><!--4-->
+                <cbc:CompanyID schemeID="0183">39937423947</cbc:CompanyID>
+                <!--4-->
             </cac:PartyLegalEntity>
             <cac:Contact>
                 <cbc:Name>Lisa Johnson</cbc:Name>
@@ -152,17 +160,19 @@
         </cac:Party>
     </cac:AccountingCustomerParty>
     <!-- end::buyer[] -->
-    
+
     <!-- tag::payee[] -->
     <cac:PayeeParty>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="0088">7300010000001</cbc:ID><!--1-->
+            <cbc:ID schemeID="0192">987654321</cbc:ID>
+            <!--1-->
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Payee party</cbc:Name>
         </cac:PartyName>
         <cac:PartyLegalEntity>
-            <cbc:CompanyID schemeID="0088">7300010000001</cbc:CompanyID><!--2-->
+            <cbc:CompanyID schemeID="0192">987654321</cbc:CompanyID>
+            <!--2-->
         </cac:PartyLegalEntity>
     </cac:PayeeParty>
     <!-- end::payee[] -->
@@ -185,7 +195,8 @@
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyTaxScheme>
-            <cbc:CompanyID>GB122324324535</cbc:CompanyID><!--1-->
+            <cbc:CompanyID>GB122324324535</cbc:CompanyID>
+            <!--1-->
             <cac:TaxScheme>
                 <cbc:ID>VAT</cbc:ID>
             </cac:TaxScheme>
@@ -260,9 +271,10 @@
         </cac:TaxCategory>
     </cac:AllowanceCharge>
     <!-- tag::vat-curr2[] -->
-    
+
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="EUR">1000.00</cbc:TaxAmount><!--3-->
+        <cbc:TaxAmount currencyID="EUR">1000.00</cbc:TaxAmount>
+        <!--3-->
         <cac:TaxSubtotal>
             <cbc:TaxableAmount currencyID="EUR">4000.0</cbc:TaxableAmount>
             <cbc:TaxAmount currencyID="EUR">1000</cbc:TaxAmount>
@@ -276,101 +288,100 @@
         </cac:TaxSubtotal>
     </cac:TaxTotal>
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID ="SEK">100017.50</cbc:TaxAmount><!--4-->
+        <cbc:TaxAmount currencyID="SEK">100017.50</cbc:TaxAmount>
+        <!--4-->
     </cac:TaxTotal>
-        <!-- end::vat-curr2[] -->
-        <cac:LegalMonetaryTotal>
-            <cbc:LineExtensionAmount currencyID="EUR">4100</cbc:LineExtensionAmount>
-            <cbc:TaxExclusiveAmount currencyID="EUR">4000</cbc:TaxExclusiveAmount>
-            <cbc:TaxInclusiveAmount currencyID="EUR">5000</cbc:TaxInclusiveAmount>
-            <cbc:AllowanceTotalAmount currencyID="EUR">300</cbc:AllowanceTotalAmount>
-            <cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
-            <cbc:PrepaidAmount currencyID="EUR">1000</cbc:PrepaidAmount>
-            <cbc:PayableAmount currencyID="EUR">4000</cbc:PayableAmount>
-        </cac:LegalMonetaryTotal>
-        <cac:InvoiceLine>
-            <cbc:ID>1</cbc:ID>
-            <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
-            <cbc:LineExtensionAmount currencyID="EUR">4100.00</cbc:LineExtensionAmount>
-            <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
-            <cac:InvoicePeriod>
-                <cbc:StartDate>2017-12-01</cbc:StartDate>
-                <cbc:EndDate>2017-12-05</cbc:EndDate>
-            </cac:InvoicePeriod>
-            <cac:OrderLineReference>
-                <cbc:LineID>123</cbc:LineID>
-            </cac:OrderLineReference>
-            <cac:DocumentReference>
-                <!-- schemeID not validated from TC434 -->
-                <!-- Code AWV from UNCL1153 are phone number -->
-                <cbc:ID schemeID="AWV">Mobile number 1223432432</cbc:ID>
-                <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
-            </cac:DocumentReference>
-            <cac:AllowanceCharge>
-                <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
-                <cbc:AllowanceChargeReasonCode>CG</cbc:AllowanceChargeReasonCode>
-                <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
-                <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
-                <cbc:Amount currencyID="EUR">100</cbc:Amount>
-                <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
-            </cac:AllowanceCharge>
+    <!-- end::vat-curr2[] -->
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">4100</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">4000</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">5000</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="EUR">300</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
+        <cbc:PrepaidAmount currencyID="EUR">1000</cbc:PrepaidAmount>
+        <cbc:PayableAmount currencyID="EUR">4000</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">4100.00</cbc:LineExtensionAmount>
+        <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
+        <cac:InvoicePeriod>
+            <cbc:StartDate>2017-12-01</cbc:StartDate>
+            <cbc:EndDate>2017-12-05</cbc:EndDate>
+        </cac:InvoicePeriod>
+        <cac:OrderLineReference>
+            <cbc:LineID>123</cbc:LineID>
+        </cac:OrderLineReference>
+        <cac:DocumentReference>
+            <!-- schemeID not validated from TC434 -->
+            <!-- Code AWV from UNCL1153 are phone number -->
+            <cbc:ID schemeID="AWV">Mobile number 1223432432</cbc:ID>
+            <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+        </cac:DocumentReference>
+        <cac:AllowanceCharge>
+            <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+            <cbc:AllowanceChargeReasonCode>CG</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
+            <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
+            <cbc:Amount currencyID="EUR">100</cbc:Amount>
+            <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
+        </cac:AllowanceCharge>
+        <cac:AllowanceCharge>
+            <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+            <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
+            <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
+            <cbc:Amount currencyID="EUR">100</cbc:Amount>
+        </cac:AllowanceCharge>
+        <!-- end::charge-line[] -->
+        <cac:Item>
+            <cbc:Description>Description of item</cbc:Description>
+            <cbc:Name>item name</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>lfjsdlfkj</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>97iugug876</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:OriginCountry>
+                <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+            </cac:OriginCountry>
+            <cac:CommodityClassification>
+                <!-- SRV= GTIN -->
+                <cbc:ItemClassificationCode listID="SRV">09348023</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <!-- tag::intrastat[] -->
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode listID="HS">080110</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <!-- end::intrastat[] -->
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>25.0</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>AdditionalItemName</cbc:Name>
+                <cbc:Value>AdditionalItemValue</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <!-- tag::price[] -->
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">4100</cbc:PriceAmount>
+            <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
             <cac:AllowanceCharge>
                 <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-                <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
-                <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
                 <cbc:Amount currencyID="EUR">100</cbc:Amount>
+                <cbc:BaseAmount currencyID="EUR">4200</cbc:BaseAmount>
             </cac:AllowanceCharge>
-            <!-- end::charge-line[] -->
-            <cac:Item>
-                <cbc:Description>Description of item</cbc:Description>
-                <cbc:Name>item name</cbc:Name>
-                <cac:BuyersItemIdentification>
-                    <cbc:ID>lfjsdlfkj</cbc:ID>
-                </cac:BuyersItemIdentification>
-                <cac:SellersItemIdentification>
-                    <cbc:ID>97iugug876</cbc:ID>
-                </cac:SellersItemIdentification>
-                <cac:StandardItemIdentification>
-                    <cbc:ID schemeID="0088">7300010000001</cbc:ID>
-                </cac:StandardItemIdentification>
-                <cac:OriginCountry>
-                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
-                </cac:OriginCountry>
-                <cac:CommodityClassification>
-                    <!-- SRV= GTIN -->
-                    <cbc:ItemClassificationCode listID="SRV">09348023</cbc:ItemClassificationCode>
-                </cac:CommodityClassification>
-                <!-- tag::intrastat[] -->
-                <cac:CommodityClassification>
-                    <cbc:ItemClassificationCode listID="HS">080110</cbc:ItemClassificationCode>
-                </cac:CommodityClassification>
-                <!-- end::intrastat[] -->
-                <cac:ClassifiedTaxCategory>
-                    <cbc:ID>S</cbc:ID>
-                    <cbc:Percent>25.0</cbc:Percent>
-                    <cac:TaxScheme>
-                        <cbc:ID>VAT</cbc:ID>
-                    </cac:TaxScheme>
-                </cac:ClassifiedTaxCategory>
-                <cac:AdditionalItemProperty>
-                    <cbc:Name>AdditionalItemName</cbc:Name>
-                    <cbc:Value>AdditionalItemValue</cbc:Value>
-                </cac:AdditionalItemProperty>
-            </cac:Item>
-            <!-- tag::price[] -->
-            <cac:Price>
-                <cbc:PriceAmount currencyID="EUR">4100</cbc:PriceAmount>
-                <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
-                <cac:AllowanceCharge>
-                    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-                    <cbc:Amount currencyID="EUR">100</cbc:Amount>
-                    <cbc:BaseAmount currencyID="EUR">4200</cbc:BaseAmount>
-                </cac:AllowanceCharge>
-            </cac:Price>
-            <!-- end::price[] -->
-        </cac:InvoiceLine>
-        
-        
-    
-    
+        </cac:Price>
+        <!-- end::price[] -->
+    </cac:InvoiceLine>
+
+
 </Invoice>

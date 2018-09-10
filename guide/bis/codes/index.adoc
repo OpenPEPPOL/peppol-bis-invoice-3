@@ -8,6 +8,7 @@ The following chapters give an overview of the restricted set of codes that is u
 :leveloffset: +1
 
 include::elements.adoc[]
+
 include::id_schemes.adoc[]
 
 :leveloffset: -1
