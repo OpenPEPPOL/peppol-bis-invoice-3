@@ -2,7 +2,7 @@
 .UBL example of item net price
 [source, xml, indent=0]
 ----
-include::snippets/Calc.xml[tags=price]
+include::{snippet-dir}/Calc.xml[tags=price]
 ----
 <1> Item gross price
 <2> Item price discount

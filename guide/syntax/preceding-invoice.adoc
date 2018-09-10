@@ -2,7 +2,7 @@
 .UBL example of preceding invoice information
 [source, xml, indent=0]
 ----
-include::snippets/Snippet-cn.xml[tags=prec-inv]
+include::{snippet-dir}/Snippet-cn.xml[tags=prec-inv]
 ----
 <1> The identifier is mandatory if `cac:BillingReference` is provided
 <2> Issue date shall be filled if the invoice reference is not unique

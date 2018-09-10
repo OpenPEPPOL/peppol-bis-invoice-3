@@ -4,7 +4,7 @@
 .UBL example of payment means info when payment is done by credit transfer
 [source, xml, indent=0]
 ----
-include::snippets/payment-credit.xml[tags=credit]
+include::{snippet-dir}/payment-credit.xml[tags=credit]
 ----
 <1> Mandatory, payment means code for credit transfer
 <2> Remittance information

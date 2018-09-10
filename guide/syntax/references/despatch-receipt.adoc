@@ -6,7 +6,7 @@ To reference or match an invoice to a despatch or receipt advice use the followi
 .UBL example of despatch and receipt advice
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-refs.xml[tags=desp-rec]
+include::../{snippet-dir}/Snippet-refs.xml[tags=desp-rec]
 ----
 <1> Despatch advice
 <2> Receipt advice

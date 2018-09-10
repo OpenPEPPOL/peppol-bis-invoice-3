@@ -3,7 +3,7 @@
 .UBL example of invoice to be corrected
 [source, xml, indent=0]
 ----
-include::snippets/base-example.xml[tags=negative]
+include::{snippet-dir}/base-example.xml[tags=negative]
 ----
 <1> Charge amount
 <2> Invoice line 1 with positive quantity and line amount
@@ -16,7 +16,7 @@ The function of crediting or debiting is controlled merely by the business docum
 .UBL example of credit note correcting the example invoice above
 [source, xml, indent=0]
 ----
-include::snippets/base-creditnote-correction.xml[tags=negative]
+include::{snippet-dir}/base-creditnote-correction.xml[tags=negative]
 ----
 <1> Code 381 indicating a credit note
 <2> Charge amount
@@ -30,7 +30,7 @@ The function of crediting or debiting is controlled merely by the sign (i.e. plu
 .UBL example of negative invoice correcting the example invoice above
 [source, xml, indent=0]
 ----
-include::snippets/base-negative-inv-correction.xml[tags=negative]
+include::{snippet-dir}/base-negative-inv-correction.xml[tags=negative]
 ----
 <1> Code 380 indicating an invoice
 <2> Charge amount is negative to correct the original invoice

@@ -21,24 +21,43 @@ v{revision}
 :leveloffset: +1
 
 include::../profile/introduction.adoc[]
+
 include::../transaction-spec/principles/index.adoc[]
+
 include::../profile/process/index.adoc[]
+
 include::../transaction-spec/functionality/index.adoc[]
+
 include::../transaction-spec/requirements/index.adoc[]
+
 include::../transaction-spec/datatypes/index.adoc[]
+
 include::../transaction-spec/vat-info/vat-info.adoc[]
+
 include::../transaction-spec/calculations/rounding.adoc[]
+
 include::../transaction-spec/calculations/index.adoc[]
+
 include::../transaction-spec/descriptions/index.adoc[]
+
 include::codes/index.adoc[]
+
 include::../profile/profiles/index.adoc[]
+
 include::../syntax/guideline.adoc[]
+
 include::../transaction-spec/validation/index.adoc[]
+
 include::../transaction-spec/rules/index.adoc[]
+
 include::restrictions/index.adoc[]
+
 include::appendix/cii.adoc[]
+
 include::appendix/national_rules.adoc[]
+
 include::appendix/syntax_rules.adoc[]
+
 include::appendix/examples.adoc[]
 
 //include::rules/index.adoc[]

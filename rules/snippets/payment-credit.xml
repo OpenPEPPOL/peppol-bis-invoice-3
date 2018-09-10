@@ -51,7 +51,7 @@
         <cbc:ID>mr4343</cbc:ID>
         <cbc:DocumentDescription>milage report</cbc:DocumentDescription>
         <cac:Attachment>
-            <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="milage.csv"/>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="milage.csv">bWlsYWdlIHJlcG9ydA==</cbc:EmbeddedDocumentBinaryObject>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
     <cac:ProjectReference>

@@ -9,7 +9,9 @@ All restrictions are within the allowed specifications in a {CIUS}, as listed in
 :leveloffset: +1
 
 include::../../profile/annex/restricted-elements.adoc[]
+
 include::../../transaction-spec/annex/restricted-elements.adoc[]
+
 include::../../profile/annex/processes.adoc[]
 
 

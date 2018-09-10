@@ -8,6 +8,7 @@ NOTE: The details of the technical implementation can be found in <<Detailed UBL
 :leveloffset: +1
 
 include::primitive-types.adoc[]
+
 include::semantic-types.adoc[]
 
 :leveloffset: -1

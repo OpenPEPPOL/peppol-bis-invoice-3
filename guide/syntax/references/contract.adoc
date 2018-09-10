@@ -6,5 +6,5 @@ To reference or match an invoice to a purchase contract, the contract number cou
 .UBL example of contract reference
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-refs.xml[tags=contract]
+include::../{snippet-dir}/Snippet-refs.xml[tags=contract]
 ----

@@ -7,12 +7,19 @@ In the subchapters below you find examples of selected parts of the transaction.
 
 
 include::roles-and-actor.adoc[]
+
 include::delivery-details.adoc[]
+
 include::references/index.adoc[]
+
 include::preceding-invoice.adoc[]
+
 include::allowance.adoc[]
+
 include::vat-currency.adoc[]
+
 include::payment.adoc[]
+
 include::intrastat.adoc[]
 
 

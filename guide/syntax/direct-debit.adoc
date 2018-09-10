@@ -2,7 +2,7 @@
 .UBL example of payment means info when payment is done by SEPA direct debit
 [source, xml, indent=0]
 ----
-include::snippets/direct-debit.xml[tags=direct-debit]
+include::{snippet-dir}/direct-debit.xml[tags=direct-debit]
 ----
 <1> Unique banking reference identifier of the Seller or Payee, schemeID shall have value "SEPA"
 <2> Payment means code

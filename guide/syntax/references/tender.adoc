@@ -7,5 +7,5 @@ To identify the call for tender or lot the invoice relates to, use the 'Originat
 .UBL example of tender reference
 [source, xml, indent=0]
 ----
-include::../snippets/Snippet-refs.xml[tags=tender]
+include::../{snippet-dir}/Snippet-refs.xml[tags=tender]
 ----

@@ -4,7 +4,7 @@
 .UBL example of Allowances and Charges on the document level
 [source, xml, indent=0]
 ----
-include::snippets/Snippet-refs.xml[tags=allowance]
+include::{snippet-dir}/Snippet-refs.xml[tags=allowance]
 ----
 <1> ChargeIndicator = true to indicate a charge
 <2> ChargeIndicator = false to indicate an allowance

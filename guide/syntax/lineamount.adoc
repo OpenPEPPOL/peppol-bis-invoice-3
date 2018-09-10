@@ -3,7 +3,7 @@
 .UBL example of invoice line net amount where no line allowance/charge exist
 [source, xml, indent=0]
 ----
-include::snippets/Calc.xml[tags=lineamount]
+include::{snippet-dir}/Calc.xml[tags=lineamount]
 ----
 <1> Item net price
 <2> Item price base quantity
@@ -15,7 +15,7 @@ include::snippets/Calc.xml[tags=lineamount]
 .UBL example of invoice line net amount where line allowance and charge exist
 [source, xml, indent=0]
 ----
-include::snippets/Calc.xml[tags=lineamount2]
+include::{snippet-dir}/Calc.xml[tags=lineamount2]
 ----
 <1> Item net price
 <2> Line charge amounts

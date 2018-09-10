@@ -7,7 +7,7 @@ Seller is mandatory information and provided in element `cac:AccountingSupplierP
 .UBL example of seller information
 [source, xml, indent=0]
 ----
-include::snippets/Snippet-full.xml[tags=seller]
+include::{snippet-dir}/Snippet-full.xml[tags=seller]
 ----
 <1> schemeID attribute is mandatory for electronic addresses, ie. EndpointID
 <2> schemeID attribute is recommended for all party identifiers
@@ -22,7 +22,7 @@ Buyer is mandatory information and provided in element `cac:AccountingCustomerPa
 .UBL example ofbuyer information
 [source, xml, indent=0]
 ----
-include::snippets/Snippet-full.xml[tags=buyer]
+include::{snippet-dir}/Snippet-full.xml[tags=buyer]
 ----
 <1> schemeID attribute is mandatory for electronic addresses, ie. EndpointID
 <2> schemeID attribute is recommended for all party identifiers
@@ -46,7 +46,7 @@ To reflect the assignment of an Invoice to a factor there is a need to:
 .UBL example of payee information
 [source, xml, indent=0]
 ----
-include::snippets/Snippet-full.xml[tags=payee]
+include::{snippet-dir}/Snippet-full.xml[tags=payee]
 ----
 <1> schemeID attribute is recommended for all party identifiers
 <2> schemeID attribute is recommended for party legal entity identifiers
@@ -59,6 +59,6 @@ Tax representative party for the seller is relevant for sellers delivering goods
 .UBL example of tax representative information
 [source, xml, indent=0]
 ----
-include::snippets/Snippet-full.xml[tags=taxrep]
+include::{snippet-dir}/Snippet-full.xml[tags=taxrep]
 ----
 <1> VAT identifiers shall be prefixed with the country code

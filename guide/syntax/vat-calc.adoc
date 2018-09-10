@@ -2,7 +2,7 @@
 .UBL example of calculations of VAT Breakdown
 [source, xml, indent=0]
 ----
-include::snippets/vat-calc.xml[tags=vat-calc]
+include::{snippet-dir}/vat-calc.xml[tags=vat-calc]
 ----
 <1> Document level charge amount for category S and rate 25%
 <2> Document level allowance amount for category S and rate 25%

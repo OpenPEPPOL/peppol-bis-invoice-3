@@ -2,7 +2,7 @@
 .UBL example of VAT currency
 [source, xml, indent=0]
 ----
-include::snippets/Snippet-full.xml[tags=vat-curr1;vat-curr2]
+include::{snippet-dir}/Snippet-full.xml[tags=vat-curr1;vat-curr2]
 ----
 <1> Invoice currency
 <2> National currency

@@ -4,6 +4,7 @@
 :minor: 0.1
 :revision: 3.0.1
 :shared-dir: ../../shared
+:snippet-dir: ../../rules/snippets
 
 :name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
 
