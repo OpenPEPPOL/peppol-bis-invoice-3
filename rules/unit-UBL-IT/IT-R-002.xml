@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+	<assert>
+    	<description>Verify existence of Seller address line for Italian suppliers</description>
+		<scope>IT-R-002</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>IT-R-002</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+
+					<cbc:StreetName>Street seller</cbc:StreetName>
+						
+						<cac:Country>
+							<cbc:IdentificationCode>IT</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<success>IT-R-002</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+
+					<!-- cbc:StreetName>Street seller</cbc:StreetName> -->
+						
+					<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>IT-R-002</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+
+					<!-- cbc:StreetName>Street seller</cbc:StreetName> -->
+
+						<cac:Country>
+							<cbc:IdentificationCode>IT</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+
+		</Invoice>
+	</test>
+</testSet>

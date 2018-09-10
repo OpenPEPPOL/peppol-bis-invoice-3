@@ -4,7 +4,7 @@
     <description>Verify existence of TAX registration information</description>
 		<scope>NO-R-002</scope>
 	</assert>
-	<test>
+	<test id="1">
 		<assert>
 			<success>NO-R-002</success>
 		</assert>
@@ -14,11 +14,12 @@
 
 			<cac:AccountingSupplierParty>
 				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>NO1232434</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
 
 					<cac:PartyTaxScheme>
 						<cbc:CompanyID>Foretaksregisteret</cbc:CompanyID>
@@ -31,7 +32,95 @@
 
 		</Invoice>
 	</test>
-	<test>
+	
+	<test id="2">
+		<assert>
+			<success>NO-R-002</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>Foretaksregisteret</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>TAX</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+		</Invoice>
+	</test>
+	<test id="3">
+		<assert>
+			<success>NO-R-002</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AccountingSupplierParty>
+				<cac:Party>		
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>Foretaksregisteret</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>TAX</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+			<cac:TaxRepresentativeParty>
+				<cac:PartyTaxScheme>
+					<cbc:CompanyID>NO9328424</cbc:CompanyID>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+					</cac:TaxScheme>
+				</cac:PartyTaxScheme>
+			</cac:TaxRepresentativeParty>
+			
+		</Invoice>
+	</test>
+	
+	<test id="4">
+	<assert>
+		<warning>NO-R-002</warning>
+	</assert>
+	<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+		xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		
+		<cac:AccountingSupplierParty>
+			<cac:Party>
+				<cac:PartyTaxScheme>
+					<cbc:CompanyID>NO1232434</cbc:CompanyID>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+					</cac:TaxScheme>
+				</cac:PartyTaxScheme>
+				
+				<!--<cac:PartyTaxScheme>
+					<cbc:CompanyID>Foretaksregisteret</cbc:CompanyID>
+					<cac:TaxScheme>
+						<cbc:ID>TAX</cbc:ID>
+					</cac:TaxScheme>
+				</cac:PartyTaxScheme>-->
+			</cac:Party>
+		</cac:AccountingSupplierParty>
+		
+	</Invoice>
+	</test>
+	
+	<test id="5">
 		<assert>
 			<warning>NO-R-002</warning>
 		</assert>
@@ -58,34 +147,40 @@
 
 		</Invoice>
 	</test>
-	<test>
-		<assert>
-			<warning>NO-R-002</warning>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-
-					<cac:PartyTaxScheme>
-						<cbc:CompanyID>12345785MVA</cbc:CompanyID>
-						<cac:TaxScheme>
-							<cbc:ID>VAT</cbc:ID>
-						</cac:TaxScheme>
-					</cac:PartyTaxScheme>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-
-		</Invoice>
+	
+	<test id="6">
+	<assert>
+		<warning>NO-R-002</warning>
+	</assert>
+	<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+		xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		
+		<cac:AccountingSupplierParty>
+			<cac:Party>		
+			<!--	<cac:PartyTaxScheme>
+					<cbc:CompanyID>Foretaksregisteret</cbc:CompanyID>
+					<cac:TaxScheme>
+						<cbc:ID>TAX</cbc:ID>
+					</cac:TaxScheme>
+				</cac:PartyTaxScheme>-->
+			</cac:Party>
+		</cac:AccountingSupplierParty>
+		
+		<cac:TaxRepresentativeParty>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>NO9328424</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>VAT</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+		</cac:TaxRepresentativeParty>
+		
+	</Invoice>
 	</test>
-	<test>
+	
+	
+	<test id="7">
 		<assert>
 			<success>NO-R-002</success>
 		</assert>
@@ -103,6 +198,125 @@
 				</cac:Party>
 			</cac:AccountingSupplierParty>
 
+		</Invoice>
+	</test>
+	
+	<test id="8">
+		<assert>
+			<success>NO-R-002</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>GB1232434</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+					
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>Foretaksregisteret</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>TAX</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+		</Invoice>
+	</test>
+	
+
+	<test id="9">
+		<assert>
+			<success>NO-R-002</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			
+			<cac:TaxRepresentativeParty>
+				<cac:PartyTaxScheme>
+					<cbc:CompanyID>SE9328424</cbc:CompanyID>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+					</cac:TaxScheme>
+				</cac:PartyTaxScheme>
+			</cac:TaxRepresentativeParty>
+			
+		</Invoice>
+	</test>
+	
+	<test id="10">
+		<assert>
+			<success>NO-R-002</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AccountingSupplierParty>
+				<cac:Party>		
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>GB1232434</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+			<cac:TaxRepresentativeParty>
+				<cac:PartyTaxScheme>
+					<cbc:CompanyID>NO9328424</cbc:CompanyID>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+					</cac:TaxScheme>
+				</cac:PartyTaxScheme>
+			</cac:TaxRepresentativeParty>
+			
+		</Invoice>
+	</test>
+	
+	<test id="11">
+		<assert>
+			<success>NO-R-002</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+			<cac:AccountingSupplierParty>
+				<cac:Party>		
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+			<cac:TaxRepresentativeParty>
+				<cac:PartyTaxScheme>
+					<cbc:CompanyID>GB9328424</cbc:CompanyID>
+					<cac:TaxScheme>
+						<cbc:ID>VAT</cbc:ID>
+					</cac:TaxScheme>
+				</cac:PartyTaxScheme>
+			</cac:TaxRepresentativeParty>
+			
 		</Invoice>
 	</test>
 </testSet>

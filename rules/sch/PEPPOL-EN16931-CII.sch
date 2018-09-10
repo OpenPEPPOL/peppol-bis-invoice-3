@@ -14,9 +14,16 @@
     <!-- Parameters -->
 
     <let name="profile" value="if (/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext/ram:BusinessProcessSpecifiedDocumentContextParameter and matches(normalize-space(/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext/ram:BusinessProcessSpecifiedDocumentContextParameter/ram:ID), 'urn:fdc:peppol.eu:2017:poacc:billing:([0-9]{2}):1.0')) then tokenize(normalize-space(/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext/ram:BusinessProcessSpecifiedDocumentContextParameter/ram:ID), ':')[7] else 'Unknown'"/>
-    <let name="supplierCountry" value="if (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID) then upper-case(normalize-space(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID)) else 'XX'"/>
-
+    <let name="supplierCountry" value="if (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[1]/ram:ApplicableHeaderTradeAgreement[1]/ram:SellerTradeParty[1]/ram:SpecifiedTaxRegistration[ram:ID/@schemeID='VAT']/substring(ram:ID,1,2)) then upper-case(normalize-space(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[1]/ram:ApplicableHeaderTradeAgreement[1]/ram:SellerTradeParty[1]/ram:SpecifiedTaxRegistration[ram:ID/@schemeID='VAT']/substring(ram:ID,1,2)))  
+        else if (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration[ram:ID/@schemeID='VAT']/substring(ram:ID,1,2)) then upper-case(normalize-space(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration[ram:ID/@schemeID='VAT']/substring(ram:ID,1,2)))
+        else if (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID) then upper-case(normalize-space(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID)) 
+        else 'XX'"/>  
+    
     <!-- -->
+
+
+
+
 
     <let name="documentCurrencyCode" value="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode"/>
 
@@ -156,9 +163,27 @@
                     test="ram:SpecifiedLegalOrganization"
                     flag="fatal">Norwegian suppliers MUST provide legal entity.</assert>
             <assert id="NO-R-002"
-                    test="ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VAT'][normalize-space(text()) = 'Foretaksregisteret']"
+                    test="ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'FC'][normalize-space(text()) = 'Foretaksregisteret']"
                     flag="warning">Most invoice issuers are required to append "Foretaksregisteret" to their invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
         </rule>
+        
+        
+        <!-- Italian rules -->
+        <rule context="ram:SellerTradeParty[$supplierCountry = 'IT']">
+            <assert id="IT-R-001" 
+                test=" (exists(ram:SpecifiedTaxRegistration/ram:ID) and ram:SpecifiedTaxRegistration/ram:ID[@schemeID ='FC']) " 
+                flag="fatal"> [IT-R-001] BT-32 (Seller tax registration identifier) - Italian suppliers MUST provide Tax Regime Identifier. I fornitori italiani devono indicare il Regime Fiscale </assert>
+            <assert id="IT-R-002" 
+                test= "exists(ram:PostalTradeAddress/ram:LineOne)" 
+                flag="fatal"> [IT-R-002] BT-35 (Seller address line 1) - Italian suppliers MUST provide the postal address line 1 - I fornitori italiani devono indicare l'indirizzo postale. </assert>
+            <assert id="IT-R-003" 
+                test= "exists(ram:PostalTradeAddress/ram:CityName)" 
+                flag="fatal"> [IT-R-003] BT-37 (Seller city) - Italian suppliers MUST provide the postal address city - I fornitori italiani devono indicare la città di residenza. </assert>
+            <assert id="IT-R-004" 
+                test= "exists(ram:PostalTradeAddress/ram:PostcodeCode)" 
+                flag="fatal"> [IT-R-004] BT-38 (Seller post code) - Italian suppliers MUST provide the postal address post code - I fornitori italiani devono indicare il CAP di residenza.</assert>
+        </rule>
+        
     </pattern>
 
     <!-- Restricted code lists and formatting -->

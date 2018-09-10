@@ -4,11 +4,14 @@
   <package url="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</package>
 
   <testfolder>examples</testfolder>
+<!--  <testfolder>snippets</testfolder>-->
   <testfolder>unit-CII-PEPPOL</testfolder>
   <testfolder>unit-CII-NO</testfolder>
+<!--  <testfolder>unit-CII-IT</testfolder> Contains Italian unit tests not known to VEFA Validator -->
   <!-- <testfolder>unit-UBL-DK</testfolder> Contains Danish unit tests not known to VEFA Validator -->
   <testfolder>unit-UBL-PEPPOL</testfolder>
   <testfolder>unit-UBL-NO</testfolder>
+  <!--<testfolder>unit-UBL-IT</testfolder> Contains Italian unit tests not known to VEFA Validator -->
 
   <configuration>
     <identifier>peppolbis-en16931-base-3.0-cii</identifier>
