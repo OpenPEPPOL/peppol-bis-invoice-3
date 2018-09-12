@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://digst.dk/xsd/validator/1.0" configuration="peppolbis-en16931-base-3.0">
 	<assert>
-		<description>If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used</description>
-		<scope>DK-R-003</scope>
+		<description>For Danish suppliers PaymentMandate/ID and PayerFinancialAccount/ID are mandatory when payment means is 49</description>
+		<scope>DK-R-007</scope>
 	</assert>
+			
 	<test>
 		<assert>
-			<success>DK-R-003</success>
+			<success>DK-R-007</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -18,19 +19,50 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="19.05.01">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Direct Debit">49</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PaymentMandate>
+					<cbc:ID>1234567891234656</cbc:ID>
+					<cac:PayerFinancialAccount>
+						<cbc:ID>1234567890</cbc:ID>
+					</cac:PayerFinancialAccount>
+				</cac:PaymentMandate>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	
+	<test>
+		<assert>
+			<fatal>DK-R-007</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Direct Debit">49</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PaymentMandate>
+					<cbc:ID></cbc:ID>
+					<cac:PayerFinancialAccount>
+						<cbc:ID>1234567890</cbc:ID>
+					</cac:PayerFinancialAccount>
+				</cac:PaymentMandate>
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 	<test>
 		<assert>
-			<success>DK-R-003</success>
+			<fatal>DK-R-007</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -42,116 +74,22 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-	
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="HS">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-	
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<!-- <cac:CommodityClassification> -->
-						<!-- <cbc:ItemClassificationCode listID="HS">22334455</cbc:ItemClassificationCode> -->
-					<!-- </cac:CommodityClassification> -->
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-
-
-	<test>
-		<assert>
-			<warning>DK-R-003</warning>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Direct Debit">49</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PaymentMandate>
+					<cbc:ID>1234567891234656</cbc:ID>
+					<cac:PayerFinancialAccount>
+						<cbc:ID></cbc:ID>
+					</cac:PayerFinancialAccount>
+				</cac:PaymentMandate>
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 	<test>
 		<assert>
-			<warning>DK-R-003</warning>
+			<fatal>DK-R-007</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -163,19 +101,22 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Direct Debit">49</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PaymentMandate>
+					<cbc:ID></cbc:ID>
+					<cac:PayerFinancialAccount>
+						<cbc:ID></cbc:ID>
+					</cac:PayerFinancialAccount>
+				</cac:PaymentMandate>
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 	<test>
 		<assert>
-			<warning>DK-R-003</warning>
+			<fatal>DK-R-007</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -187,13 +128,97 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Direct Debit">49</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<!-- <cac:PaymentMandate> -->
+					<!-- <cbc:ID>1234567891234656</cbc:ID> -->
+					<!-- <cac:PayerFinancialAccount> -->
+						<!-- <cbc:ID>1234567890</cbc:ID> -->
+					<!-- </cac:PayerFinancialAccount> -->
+				<!-- </cac:PaymentMandate> -->
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
+	
+	<test>
+		<assert>
+			<fatal>DK-R-007</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Direct Debit">49</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PaymentMandate>
+					<!-- <cbc:ID>1234567891234656</cbc:ID> -->
+					<cac:PayerFinancialAccount>
+						<cbc:ID>1234567890</cbc:ID>
+					</cac:PayerFinancialAccount>
+				</cac:PaymentMandate>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<fatal>DK-R-007</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Direct Debit">49</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PaymentMandate>
+					<cbc:ID>1234567891234656</cbc:ID>
+					<cac:PayerFinancialAccount>
+						<!-- <cbc:ID>1234567890</cbc:ID> -->
+					</cac:PayerFinancialAccount>
+				</cac:PaymentMandate>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<fatal>DK-R-007</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Direct Debit">49</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PaymentMandate>
+					<cbc:ID>1234567891234656</cbc:ID>
+					<!-- <cac:PayerFinancialAccount> -->
+						<!-- <cbc:ID>1234567890</cbc:ID> -->
+					<!-- </cac:PayerFinancialAccount> -->
+				</cac:PaymentMandate>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>	
 </testSet>

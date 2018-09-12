@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://digst.dk/xsd/validator/1.0" configuration="peppolbis-en16931-base-3.0">
+	<assert>
+		<description>For Danish suppliers when Payment means equals 97. The payment is made to “NemKonto”
+</description>
+		<scope>DK-R-012</scope>
+	</assert>
+	
+	<test>
+		<assert>
+			<warning>DK-R-012</warning>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="NemKonto">97</cbc:PaymentMeansCode>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+</testSet>

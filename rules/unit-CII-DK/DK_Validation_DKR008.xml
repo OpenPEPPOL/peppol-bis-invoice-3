@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://digst.dk/xsd/validator/1.0" configuration="peppolbis-en16931-base-3.0">
 	<assert>
-		<description>If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used</description>
-		<scope>DK-R-003</scope>
+		<description>For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7 characters long, when payment means equals 50 (Giro)</description>
+		<scope>DK-R-008</scope>
 	</assert>
+	
 	<test>
 		<assert>
-			<success>DK-R-003</success>
+			<success>DK-R-008</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -18,19 +19,19 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="19.05.01">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
+				<cbc:PaymentID>04#1234567890123456</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>1234567</cbc:ID>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 	<test>
 		<assert>
-			<success>DK-R-003</success>
+			<success>DK-R-008</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -42,116 +43,19 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-	
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="HS">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-	
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<!-- <cac:CommodityClassification> -->
-						<!-- <cbc:ItemClassificationCode listID="HS">22334455</cbc:ItemClassificationCode> -->
-					<!-- </cac:CommodityClassification> -->
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-
-
-	<test>
-		<assert>
-			<warning>DK-R-003</warning>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
+				<cbc:PaymentID>01#text text</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>1234567</cbc:ID>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 	<test>
 		<assert>
-			<warning>DK-R-003</warning>
+			<success>DK-R-008</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -163,19 +67,44 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
+				<cbc:PaymentID>15#1234567890123456</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>1234567</cbc:ID>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	
+	<test>
+		<assert>
+			<fatal>DK-R-008</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
+				<cbc:PaymentID>35#1234567890123456</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>1234567</cbc:ID>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 	<test>
 		<assert>
-			<warning>DK-R-003</warning>
+			<fatal>DK-R-008</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -187,13 +116,133 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
+				<cbc:PaymentID>1234567890123456</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>1234567</cbc:ID>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<fatal>DK-R-008</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
+				<cbc:PaymentID>15#1234567890123456</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID></cbc:ID>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<fatal>DK-R-008</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
+				<cbc:PaymentID>15#1234567890123456</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>12345678</cbc:ID>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<fatal>DK-R-008</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
+				<cbc:PaymentID>15#1234567890123456</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>123456</cbc:ID>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<fatal>DK-R-008</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
+				<cbc:PaymentID>15#1234567890123456</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<!-- <cbc:ID>1234567</cbc:ID> -->
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<fatal>DK-R-008</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode> 
+				<cbc:PaymentID>15#1234567890123456</cbc:PaymentID>
+				<!-- <cac:PayeeFinancialAccount> -->
+					<!-- <cbc:ID>123456</cbc:ID> -->
+				<!-- </cac:PayeeFinancialAccount> -->
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 </testSet>

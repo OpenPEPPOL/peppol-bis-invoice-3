@@ -157,7 +157,10 @@
     </pattern>
 
     <!-- National rules -->
+    
     <pattern>
+        
+        <!-- Norway -->
         <rule context="ram:SellerTradeParty[$supplierCountry = 'NO']">
             <assert id="NO-R-001"
                     test="ram:SpecifiedLegalOrganization"
@@ -167,6 +170,136 @@
                     flag="warning">Most invoice issuers are required to append "Foretaksregisteret" to their invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
         </rule>
         
+        <!-- Denmark -->
+        
+        <!-- Document level -->
+        <rule context="rsm:CrossIndustryInvoice">
+            <!--Check for AccountinCode-->  
+            <assert id="DK-R-001"
+                test="not(($supplierCountry = 'DK')
+                and (normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ReceivableSpecifiedTradeAccountingAccount/ram:ID/text()) = '')
+                )"
+                flag="warning">For Danish suppliers when the Accounting is known it should be referred on the Invoice</assert>
+            <!--Check for Legal entity-->
+            <assert id="DK-R-002"
+                test="not($supplierCountry = 'DK'
+                and not (normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID/text()) != '')
+                )"
+                flag="fatal">Danish suppliers MUST provide legal entity.</assert>
+            <!--Check for Non VAT Tax code-->
+            
+        </rule>
+    
+        <rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem">
+            <!--Chedk for commodityCode on linelevel-->
+            <assert id="DK-R-003"
+                test="not(($supplierCountry = 'DK')
+                and (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID = 'MP')
+                and not((ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listVersionID = '19.05.01')
+                or (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listVersionID = '19.0501')
+                )
+                )"
+                flag="warning">If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used</assert>
+        </rule>
+   
+        <!-- I UBL, bliver dette check udført på både header og linje... er dette korrekt?  -->
+        <rule context="rsm:CrossIndustryInvoice">
+            <assert id="DK-R-004"
+                test="not(($supplierCountry = 'DK')
+                and (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:ReasonCode = 'ZZZ')
+                and not((string-length(normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:Reason/text())) = 4
+                and number(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:Reason) &gt;= 0)
+                and number(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:Reason &lt;= 9999))
+                )"
+                flag="fatal">When specifying non-VAT Taxes, Danish suppliers MUST use the SpecifiedTradeAllowanceCharge/ReasonCode="ZZZ" and the 4-digit Tax category MUST be specified as Reason</assert>
+        </rule>
+    
+        <rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans">
+            <!-- Findes der kun een TypeCode??? -->
+            <assert id="DK-R-005"
+                test="not(($supplierCountry = 'DK')
+                and not(contains(' 1 10 31 42 48 49 50 58 59 93 97 ', concat(' ', ram:TypeCode, ' ')))
+                )"
+                flag="fatal">For Danish suppliers the following Payment means type codes are allowed: 1, 10, 31, 42, 48, 49, 50, 58, 59, 93 and 97</assert>
+            <assert id="DK-R-006"
+                test="not(($supplierCountry = 'DK')
+                and ((ram:TypeCode = '31') or (ram:TypeCode = '42'))
+                and not((normalize-space(ram:PayeePartyCreditorFinancialAccount/ram:IBANID/text()) != '') and (normalize-space(ram:PayerSpecifiedDebtorFinancialInstitution/ram:BICID/text()) != ''))
+                )"
+                flag="fatal">For Danish suppliers, bank account and registration account are mandatory if payment means is 31 or 42</assert>
+            <assert id="DK-R-007"
+                test="not(($supplierCountry = 'DK')
+                and (ram:TypeCode = '49')
+                and not((normalize-space(../ram:CreditorReferenceID/text()) != '')
+                and (normalize-space(ram:SpecifiedTradePaymentTerms/ram:DirectDebitMandateID/text()) != ''))
+                )"
+                flag="fatal">For Danish suppliers DirectDebitMandateID and CreditorReferenceID are mandatory when payment means is 49</assert>
+            <assert id="DK-R-008"
+                test="not(($supplierCountry = 'DK')
+                and (ram:TypeCode = '50')
+                and not(((substring(../ram:PaymentReference, 0, 4) = '01#')
+                or (substring(../ram:PaymentReference, 0, 4) = '04#')
+                or (substring(../ram:PaymentReference, 0, 4) = '15#'))
+                and (string-length(ram:PayeePartyCreditorFinancialAccount/ram:IBANID/text()) = 7)
+                )
+                )"
+                flag="fatal">For Danish Suppliers PaymentReference is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeePartyCreditorFinancialAccount/IBANID (Giro kontonummer) is mandatory and must be 7 characters long, when payment means equals 50 (Giro)</assert>
+            <assert id="DK-R-009"
+                test="not(($supplierCountry = 'DK')
+                and (ram:TypeCode = '50')
+                and ((substring(../ram:PaymentReference, 0, 4) = '04#')
+                or (substring(../ram:PaymentReference, 0, 4)  = '15#'))
+                and not(string-length(../ram:PaymentReference) = 19)
+                )"
+                flag="fatal">For Danish Suppliers if the PaymentReference is prefixed with 04# or 015# the 16 digits instruction Id must be added to the PaymentReference eg. "04#1234567890123456" when Payment means equals 50 (Giro)</assert>
+            <assert id="DK-R-010"
+                test="not(($supplierCountry = 'DK')
+                and (ram:TypeCode = '93')
+                and not(((substring(../ram:PaymentReference, 0, 4) = '71#')
+                or (substring(../ram:PaymentReference, 0, 4) = '73#')
+                or (substring(../ram:PaymentReference, 0, 4) = '75#'))
+                and (string-length(ram:PayeePartyCreditorFinancialAccount/ram:IBANID/text()) = 8)
+                )
+                )"
+                flag="fatal">For Danish Suppliers the PaymentReference is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and and PayeePartyCreditorFinancialAccount/IBANID  (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
+            <assert id="DK-R-011"
+                test="not(($supplierCountry = 'DK')
+                and (ram:TypeCode = '93')
+                and ((substring(../ram:PaymentReference, 0, 4) = '71#')
+                or (substring(../ram:PaymentReference, 0, 4)  = '75#'))
+                and not((string-length(../ram:PaymentReference) = 18)
+                or (string-length(../ram:PaymentReference) = 19))
+                )"
+                flag="fatal">For Danish Suppliers if the PaymentReference is prefixed with 71# or 75# the 15-16 digits instruction Id must be added to the PaymentReference eg. "71#1234567890123456" when payment Method equals 93 (FIK)</assert>
+            <assert id="DK-R-012"
+                test="not(($supplierCountry = 'DK')
+                and (ram:TypeCode = '97')
+                )"
+                flag="warning">For Danish suppliers when Payment means equals 97, the payment is made to "NemKonto"</assert>
+        </rule>
+
+        <rule context="rsm:CrossIndustryInvoice">
+            <assert id="DK-R-013"
+                test="not(($supplierCountry = 'DK')
+                and (((boolean(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:GlobalID))
+                and (normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:GlobalID/@schemeID) = ''))
+                or
+                ((boolean(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:GlobalID))
+                and (normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:GlobalID/@schemeID) = ''))
+                )
+                )"
+                flag="fatal">For Danish Suppliers it is mandatory to use schemeID when GlobalID is used for SellerTradeParty or BuyerTradeParty</assert>
+            <assert id="DK-R-014"
+                test="not(($supplierCountry = 'DK')
+                and (((boolean(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID))
+                and (normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID/@schemeID) = ''))
+                or
+                ((boolean(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:ID))
+                and (normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:ID/@schemeID) = ''))
+                )
+                )"
+                flag="fatal">For Danish Suppliers it is mandatory to use schemeID when SpecifiedLegalOrganization is used for SellerTradeParty or BuyerTradeParty</assert>
+        </rule>
         
         <!-- Italian rules -->
         <rule context="ram:SellerTradeParty[$supplierCountry = 'IT']">

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://digst.dk/xsd/validator/1.0" configuration="peppolbis-en16931-base-3.0">
 	<assert>
-		<description>If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used</description>
-		<scope>DK-R-003</scope>
+		<description>For Danish suppliers bank account and registration account is mandatory if payment means is 31</description>
+		<scope>DK-R-006</scope>
 	</assert>
+			
 	<test>
 		<assert>
-			<success>DK-R-003</success>
+			<success>DK-R-006</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -18,19 +19,52 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="19.05.01">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>NO13RABO0377815500</cbc:ID>
+					<cbc:Name>Peter Petersen</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>DABADKKK</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	
+	<test>
+		<assert>
+			<fatal>DK-R-006</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID></cbc:ID>
+					<cbc:Name>Peter Petersen</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>DABADKKK</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 	<test>
 		<assert>
-			<success>DK-R-003</success>
+			<fatal>DK-R-006</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -42,116 +76,23 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-	
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="HS">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-	
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<!-- <cac:CommodityClassification> -->
-						<!-- <cbc:ItemClassificationCode listID="HS">22334455</cbc:ItemClassificationCode> -->
-					<!-- </cac:CommodityClassification> -->
-				</cac:Item>
-			</cac:InvoiceLine>
-		</Invoice>
-	</test>	
-
-
-	<test>
-		<assert>
-			<warning>DK-R-003</warning>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>NO13RABO0377815500</cbc:ID>
+					<cbc:Name>Peter Petersen</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID></cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 	<test>
 		<assert>
-			<warning>DK-R-003</warning>
+			<fatal>DK-R-006</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -163,19 +104,23 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<!-- <cac:PayeeFinancialAccount> -->
+					<!-- <cbc:ID>NO13RABO0377815500</cbc:ID> -->
+					<!-- <cbc:Name>Peter Petersen</cbc:Name> -->
+					<!-- <cac:FinancialInstitutionBranch> -->
+						<!-- <cbc:ID>DABADKKK</cbc:ID> -->
+					<!-- </cac:FinancialInstitutionBranch> -->
+				<!-- </cac:PayeeFinancialAccount> -->
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 	
 	<test>
 		<assert>
-			<warning>DK-R-003</warning>
+			<fatal>DK-R-006</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -187,13 +132,73 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
-			<cac:InvoiceLine>
-				<cac:Item>
-					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP">22334455</cbc:ItemClassificationCode>
-					</cac:CommodityClassification>
-				</cac:Item>
-			</cac:InvoiceLine>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<!-- <cbc:ID>NO13RABO0377815500</cbc:ID> -->
+					<cbc:Name>Peter Petersen</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<cbc:ID>DABADKKK</cbc:ID>
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<fatal>DK-R-006</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>NO13RABO0377815500</cbc:ID>
+					<cbc:Name>Peter Petersen</cbc:Name>
+					<!-- <cac:FinancialInstitutionBranch> -->
+						<!-- <cbc:ID>DABADKKK</cbc:ID> -->
+					<!-- </cac:FinancialInstitutionBranch> -->
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<fatal>DK-R-006</fatal>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>NO13RABO0377815500</cbc:ID>
+					<cbc:Name>Peter Petersen</cbc:Name>
+					<cac:FinancialInstitutionBranch>
+						<!-- <cbc:ID>DABADKKK</cbc:ID> -->
+					</cac:FinancialInstitutionBranch>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
 		</Invoice>
 	</test>
 </testSet>

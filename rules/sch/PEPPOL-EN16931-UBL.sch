@@ -208,41 +208,137 @@
     </rule>
 
     <!-- DENMARK -->
-
-    <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
-      <assert id="DK-R-001"
-              test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'DK'
-                        and (normalize-space(cbc:AccountingCost/text()) = ''))"
-              flag="warning">For Danish suppliers when the Accounting code is known, it should be referred on the Invoice.</assert>
-      <assert id="DK-R-002"
-              test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'DK'
-                        and (normalize-space(./cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/text()) = ''))"
-              flag="fatal">Danish suppliers MUST provide legal entity (CVR-number).</assert>
-    </rule>
-
-    <!-- Line level -->
-    <rule context="ubl-creditnote:CreditNote/cac:CreditNoteLine | ubl-invoice:Invoice/cac:InvoiceLine">
-      <assert id="DK-R-003"
-              test="not(../cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'DK'
-                        and cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listID='MP'
-                        and not(cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.05.01'
-                               or cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.0501'
-                            )
-                        )"
-              flag="fatal">If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used.</assert>
-    </rule>
-
-    <!-- Mix level -->
-    <rule context="cac:AllowanceCharge">
-      <assert id="DK-R-004"
-              test="not(//cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'DK'
-                  and cbc:AllowanceChargeReasonCode = 'ZZZ'
-                  and not(string-length(normalize-space(cbc:AllowanceChargeReason/text())) = 4
-                          and number(cbc:AllowanceChargeReason) &gt;= 0
-                          and number(cbc:AllowanceChargeReason) &lt;= 9999)
-                 )"
-              flag="fatal">When specifying non-VAT Taxes, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in 'AllowanceChargeReason'.</assert>
-    </rule>
+   
+ 
+      <!-- Document level -->
+      <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
+        <assert id="DK-R-001"
+          test="not(($supplierCountry = 'DK')
+          and (normalize-space(cbc:AccountingCost/text()) = '')
+          )"
+          flag="warning">For Danish suppliers when the Accounting code is known, it should be referred on the Invoice.</assert>
+        <assert id="DK-R-002"
+          test="not(($supplierCountry = 'DK')
+          and not (normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/text()) != '')
+          )"
+          flag="fatal">Danish suppliers MUST provide legal entity (CVR-number).</assert>
+      </rule>
+    
+    
+    
+      <!-- Line level -->
+      <rule context="ubl-creditnote:CreditNote/cac:CreditNoteLine | ubl-invoice:Invoice/cac:InvoiceLine">
+        <assert id="DK-R-003"
+          test="not(($supplierCountry = 'DK')
+          and (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listID = 'MP')
+          and not((cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.05.01')
+          or (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.0501')
+          )
+          )"
+          flag="warning">If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used.</assert>
+      </rule>
+    
+    
+      <!-- Mix level -->
+      <rule context="cac:AllowanceCharge">
+        <assert id="DK-R-004"
+          test="not(($supplierCountry = 'DK')
+          and (cbc:AllowanceChargeReasonCode = 'ZZZ')
+          and not((string-length(normalize-space(cbc:AllowanceChargeReason/text())) = 4)
+          and (number(cbc:AllowanceChargeReason) &gt;= 0)
+          and (number(cbc:AllowanceChargeReason) &lt;= 9999))
+          )"
+          flag="fatal">When specifying non-VAT Taxes, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in 'AllowanceChargeReason'.</assert>
+      </rule> 
+    
+    
+      <!-- Document level -->
+      <rule context="ubl-invoice:Invoice/cac:PaymentMeans" >
+        <assert id="DK-R-005"
+          test="not(($supplierCountry = 'DK')
+          and not(contains(' 1 10 31 42 48 49 50 58 59 93 97 ', concat(' ', cbc:PaymentMeansCode, ' ')))
+          )"
+          flag="fatal">For Danish suppliers the following Payment means codes are allowed: 1, 10, 31, 42, 48, 49, 50, 58, 59, 93 and 97</assert>
+        <assert id="DK-R-006"
+          test="not(($supplierCountry = 'DK')
+          and ((cbc:PaymentMeansCode = '31') or (cbc:PaymentMeansCode = '42'))
+          and not((normalize-space(cac:PayeeFinancialAccount/cbc:ID/text()) != '') and (normalize-space(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID/text()) != ''))
+          )"
+          flag="fatal">For Danish suppliers bank account and registration account is mandatory if payment means is 31 or 42</assert>
+        <assert id="DK-R-007"
+          test="not(($supplierCountry = 'DK')
+          and (cbc:PaymentMeansCode = '49')
+          and not((normalize-space(cac:PaymentMandate/cbc:ID/text()) != '')
+          and (normalize-space(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID/text()) != ''))
+          )"
+          flag="fatal">For Danish suppliers PaymentMandate/ID and PayerFinancialAccount/ID are mandatory when payment means is 49</assert>
+        <assert id="DK-R-008"
+          test="not(($supplierCountry = 'DK')
+          and (cbc:PaymentMeansCode = '50')
+          and not(((substring(cbc:PaymentID, 0, 4) = '01#')
+          or (substring(cbc:PaymentID, 0, 4) = '04#')
+          or (substring(cbc:PaymentID, 0, 4) = '15#'))
+          and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 7)
+          )
+          )"
+          flag="fatal">For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7 characters long, when payment means equals 50 (Giro)</assert>
+        <assert id="DK-R-009"
+          test="not(($supplierCountry = 'DK')
+          and (cbc:PaymentMeansCode = '50')
+          and ((substring(cbc:PaymentID, 0, 4) = '04#')
+          or (substring(cbc:PaymentID, 0, 4)  = '15#'))
+          and not(string-length(cbc:PaymentID) = 19)
+          )"
+          flag="fatal">For Danish Suppliers if the PaymentID is prefixed with 04# or 15# the 16 digits instruction Id must be added to the PaymentID eg. "04#1234567890123456" when Payment means equals 50 (Giro)</assert>
+        <assert id="DK-R-010"
+          test="not(($supplierCountry = 'DK')
+          and (cbc:PaymentMeansCode = '93')
+          and not(((substring(cbc:PaymentID, 0, 4) = '71#')
+          or (substring(cbc:PaymentID, 0, 4) = '73#')
+          or (substring(cbc:PaymentID, 0, 4) = '75#'))
+          and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 8)
+          )
+          )"
+          flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and PayeeFinancialAccount/ID (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
+        <assert id="DK-R-011"
+          test="not(($supplierCountry = 'DK')
+          and (cbc:PaymentMeansCode = '93')
+          and ((substring(cbc:PaymentID, 0, 4) = '71#')
+          or (substring(cbc:PaymentID, 0, 4)  = '75#'))
+          and not((string-length(cbc:PaymentID) = 18)
+          or (string-length(cbc:PaymentID) = 19))
+          )"
+          flag="fatal">For Danish Suppliers if the PaymentID is prefixed with 71# or 75# the 15-16 digits instruction Id must be added to the PaymentID eg. "71#1234567890123456" when payment Method equals 93 (FIK)</assert>
+        <assert id="DK-R-012"
+          test="not(($supplierCountry = 'DK')
+          and (cbc:PaymentMeansCode = '97')
+          )"
+          flag="warning">For Danish suppliers when Payment means equals 97 the payment is made to "NemKonto"</assert>
+      </rule> 
+    
+      <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
+        <assert id="DK-R-013"
+          test="not(($supplierCountry = 'DK')
+          and (((boolean(cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID))
+          and (normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeID) = ''))
+          or
+          ((boolean(cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID))
+          and (normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeID) = ''))
+          )
+          )"
+          flag="fatal">For Danish Suppliers it is mandatory to use schemeID when PartyIdentification/ID is used for AccountingCustomerParty or AccountingSupplierParty</assert>
+        <assert id="DK-R-014"
+          test="not(($supplierCountry = 'DK')
+          and (((boolean(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID))
+          and (normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID) = ''))
+          or
+          ((boolean(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID))
+          and (normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID) = ''))
+          )
+          )"
+          flag="fatal">For Danish Suppliers it is mandatory to use schemeID when PartyLegalEntity/CompanyID is used for AccountingCustomerParty or AccountingSupplierParty</assert>
+      </rule>
+    
 
     <!-- ITALY -->
     
