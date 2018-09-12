@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    <Title>UNCL 7143 Item type identification code</Title>
+    <Title>Item type identification code (UNCL7143)</Title>
     <Identifier>UNCL7143</Identifier>
     <Version>D.16B</Version>
     <Agency>UN/CEFACT</Agency>

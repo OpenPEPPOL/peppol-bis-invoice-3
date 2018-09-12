@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>UNCL5305 Duty or tax or fee category code</Title>
+    <Title>Duty or tax or fee category code (Subset of UNCL5305)</Title>
     <Identifier>UNCL5305</Identifier>
-    <Version>D.17A</Version>
+    <Version>D.16B</Version>
     <Agency>UN/CEFACT</Agency>
     <Subset>OpenPEPPOL</Subset>
 
