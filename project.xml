@@ -94,4 +94,41 @@
         <Path>structure/codelist/MimeCode.xml</Path>
     </Resource>   
 
+
+    <!-- Files -->
+ <!--   <Resource>
+        <Type>native:File</Type>
+        <Path>rules/example/example-espd-request.xml</Path>
+        <Title>Example file for EHF ESPD 1.1 Request</Title>
+        <Property key="download">example-espd-request.xml</Property>
+    </Resource>-->
+    
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
+        <Title>Schematron for PEPPOL rules (UBL)</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">PEPPOL-EN16931-UBL.sch</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
+        <Title>Schematron for TC434 rules (UBL)</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">CEN-EN16931-UBL.sch</Property>
+    </Resource>
+    
+    <Resource>
+        <Type>native:File</Type>
+        <Path>stylesheet/stylesheet-ubl.xslt</Path>
+        <Title>Stylesheet for UBL instances</Title>
+        <Property key="download">stylesheet-ubl.xslt</Property>
+    </Resource>
+    
+    <Resource>
+        <Type>native:File</Type>
+        <Path>mapping/mapping-cii-ubl.xls</Path>
+        <Title>Excel mappling table cii to ubl</Title>
+        <Property key="download">mapping-cii-ubl.xls</Property>
+    </Resource>
 </Project>

@@ -537,6 +537,7 @@
                         <Term>schemeID</Term>
                         <Name>Invoice line object identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Invoice line object identifier.</Description>
+                        <Reference type="CODE_LIST">UNCL1153</Reference>
                         <Value type="EXAMPLE">AVV</Value>
                     </Attribute>
                     <Value type="EXAMPLE">23324234</Value>

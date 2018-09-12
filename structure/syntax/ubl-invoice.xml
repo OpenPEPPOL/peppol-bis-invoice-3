@@ -546,7 +546,7 @@
                         <Term>schemeID</Term>
                         <Name>Invoice line object identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Invoice line object identifier.</Description>
-                        <Reference type="CODE_LIST">UNTDID 1153</Reference>
+                        <Reference type="CODE_LIST">UNCL1153</Reference>
                         <Value type="EXAMPLE">ABZ</Value>
                     </Attribute>
                     <Value type="EXAMPLE">AB12345</Value>
