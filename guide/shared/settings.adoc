@@ -2,7 +2,7 @@
 
 //links used in the BIS document
 :link-examples: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/rules/examples[Example files]
-:link-snippets: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/guide/syntax/snippets[Snippet files]
+:link-snippets: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/rules/snippets[Snippet files]
 
 :ubl-invoice-mapping: link:../syntax/ubl-invoice/tree/[UBL Invoice message table]
 

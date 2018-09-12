@@ -96,12 +96,6 @@
 
 
     <!-- Files -->
- <!--   <Resource>
-        <Type>native:File</Type>
-        <Path>rules/example/example-espd-request.xml</Path>
-        <Title>Example file for EHF ESPD 1.1 Request</Title>
-        <Property key="download">example-espd-request.xml</Property>
-    </Resource>-->
     
     <Resource>
         <Type>native:File</Type>

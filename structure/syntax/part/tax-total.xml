@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..2">
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="1..2">
     
         <Term>cac:TaxTotal</Term>
         <Name>TAX TOTAL</Name>
-        <Description>When tax currency code is provided, two instances of the tax total must be present.</Description>
+        <Description>When tax currency code is provided, two instances of the tax total must be present, but only one with tax subtotal.</Description>
         <Reference type="RULE">PEPPOL-EN16931-R054</Reference>
         
         <Element>

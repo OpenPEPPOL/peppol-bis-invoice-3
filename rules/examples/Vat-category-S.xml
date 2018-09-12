@@ -117,11 +117,11 @@
     <cac:PaymentTerms>
         <cbc:Note>Payment within 10 days, 2% discount</cbc:Note>
     </cac:PaymentTerms>
-    <!-- tag::vat-calc[] -->
+ 
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
         <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
-        <cbc:Amount currencyID="EUR">200</cbc:Amount><!--1-->
+        <cbc:Amount currencyID="EUR">200</cbc:Amount>
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
@@ -134,7 +134,7 @@
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
         <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-        <cbc:Amount currencyID="EUR">100</cbc:Amount><!--2-->
+        <cbc:Amount currencyID="EUR">100</cbc:Amount>
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
@@ -145,11 +145,11 @@
     </cac:AllowanceCharge>
  
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="EUR">1250.00</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="EUR">1550.00</cbc:TaxAmount>
         
-        <cac:TaxSubtotal><!--3-->
-            <cbc:TaxableAmount currencyID="EUR">5000.0</cbc:TaxableAmount><!--4-->
-            <cbc:TaxAmount currencyID="EUR">1250</cbc:TaxAmount><!--5-->
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">5000.0</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">1250</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
@@ -159,36 +159,35 @@
             </cac:TaxCategory>
         </cac:TaxSubtotal>
         
-        <cac:TaxSubtotal><!--6-->
+        <cac:TaxSubtotal>
             <cbc:TaxableAmount currencyID="EUR">2000.0</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="EUR">0</cbc:TaxAmount>
+            <cbc:TaxAmount currencyID="EUR">300</cbc:TaxAmount>
             <cac:TaxCategory>
-                <cbc:ID>E</cbc:ID>
-                <cbc:Percent>0</cbc:Percent>
-                <cbc:TaxExemptionReason>Reason for tax exempt</cbc:TaxExemptionReason>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>15</cbc:Percent>        
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:TaxCategory>
         </cac:TaxSubtotal>
     </cac:TaxTotal>
-    <!-- end::vat-calc[] -->
+   
     <cac:LegalMonetaryTotal>
         <cbc:LineExtensionAmount currencyID="EUR">6900</cbc:LineExtensionAmount>
         <cbc:TaxExclusiveAmount currencyID="EUR">7000</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="EUR">8250</cbc:TaxInclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">8550</cbc:TaxInclusiveAmount>
         <cbc:AllowanceTotalAmount currencyID="EUR">100</cbc:AllowanceTotalAmount>
         <cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
-        <cbc:PayableAmount currencyID="EUR">8250</cbc:PayableAmount>
+        <cbc:PayableAmount currencyID="EUR">8550</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
-    <!-- tag::vat-calc[] -->
+   
    
     <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
         <cbc:Note>Testing note on line level</cbc:Note>
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">4000.00</cbc:LineExtensionAmount>
-        <!-- end::vat-calc[] -->
+    
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
         <cac:InvoicePeriod>
             <cbc:StartDate>2017-12-01</cbc:StartDate>
@@ -211,9 +210,7 @@
             </cac:OriginCountry>
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode listID="SRV">09348023</cbc:ItemClassificationCode>
-            </cac:CommodityClassification>
-            <!-- tag::vat-calc[] -->
-            <!-- code omitted for clarity -->       
+            </cac:CommodityClassification>     
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>
@@ -221,19 +218,18 @@
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
-            <!-- end::vat-calc[] -->
+         
         </cac:Item>
         <cac:Price>
             <cbc:PriceAmount currencyID="EUR">400</cbc:PriceAmount>
         </cac:Price>
     </cac:InvoiceLine>
-    <!-- tag::vat-calc[] -->
     
     <cac:InvoiceLine>
         <cbc:ID>2</cbc:ID>
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">2000.00</cbc:LineExtensionAmount> 
-        <!-- end::vat-calc[] -->
+
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
         <cac:Item>
             <cbc:Description>Description of item</cbc:Description>
@@ -247,27 +243,25 @@
             <cac:CommodityClassification>
                 <cbc:ItemClassificationCode listID="SRV">86776</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
-            <!-- tag::vat-calc[] -->
-            <!-- code omitted for clarity -->
+   
             <cac:ClassifiedTaxCategory>
-                <cbc:ID>E</cbc:ID>
-                <cbc:Percent>0.0</cbc:Percent>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>15.0</cbc:Percent>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
-            <!-- end::vat-calc[] -->
         </cac:Item>
         <cac:Price>
             <cbc:PriceAmount currencyID="EUR">200</cbc:PriceAmount>
         </cac:Price>
     </cac:InvoiceLine>
-    <!-- tag::vat-calc[] -->
+
     <cac:InvoiceLine>
         <cbc:ID>3</cbc:ID>
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">900.00</cbc:LineExtensionAmount>    
-        <!-- end::vat-calc[] -->
+
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>     
         <cac:Item>
             <cbc:Description>Description of item</cbc:Description>
@@ -276,14 +270,11 @@
                 <cbc:ID>97iugug876</cbc:ID>
             </cac:SellersItemIdentification>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+                <cbc:ID schemeID="0160">873649827489</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:CommodityClassification>
-                <!-- SRV= GTIN -->
                 <cbc:ItemClassificationCode listID="SRV">86776</cbc:ItemClassificationCode>
             </cac:CommodityClassification>
-            <!-- tag::vat-calc[] -->
-            <!-- code omitted for clarity -->
             <cac:ClassifiedTaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>
@@ -291,7 +282,6 @@
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
             </cac:ClassifiedTaxCategory>
-            <!-- end::vat-calc[] -->
             <cac:AdditionalItemProperty>
                 <cbc:Name>AdditionalItemName</cbc:Name>
                 <cbc:Value>AdditionalItemValue</cbc:Value>

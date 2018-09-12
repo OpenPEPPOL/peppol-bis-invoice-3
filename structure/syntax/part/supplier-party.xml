@@ -37,7 +37,8 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Seller identifier or bank assigned creditor identifier</Name>
-                    <Description>This element is used for both the identification of the Seller, or the unique banking reference identifier of Seller (assigned by the Seller bank.)</Description>
+                    <Description>This element is used for both the identification of the Seller, or the unique banking reference identifier of Seller (assigned by the Seller bank.) 
+                     In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-29, BT-90</Reference>
                     <Reference type="RULE">BR-CO-26</Reference>
@@ -168,7 +169,7 @@
                     <Term>cbc:CompanyID</Term>
                     <Name>Seller VAT identifier, Seller tax registration identifier</Name>
                     <Description>The Seller's VAT identifier (also known as Seller VAT identification number) or the local identification (defined by the Seller’s address) of the Seller for tax purposes or a
-                        reference that enables the Seller to state his registered tax status.</Description>
+                        reference that enables the Seller to state his registered tax status. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-31, BT-32</Reference>
                     <Reference type="RULE">BR-CO-09</Reference>
@@ -236,7 +237,7 @@
                     <Term>cbc:CompanyID</Term>
                     <Name>Seller legal registration identifier</Name>
                     <Description>An identifier issued by an official registrar that identifies the Seller as a legal entity or
-                        person.
+                        person. In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present
                     </Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-30</Reference>

@@ -64,7 +64,7 @@
         <Element cardinality="0..1">
             <Term>cbc:DueDate</Term>
             <Name>Payment due date</Name>
-            <Description>The date when the payment is due.Format "YYYY-MM-DD"</Description>
+            <Description>The date when the payment is due.Format "YYYY-MM-DD". In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-9</Reference>
             <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
@@ -406,7 +406,7 @@
                 <Term>cbc:Note</Term>
                 <Name>Payment terms</Name>
                 <Description>A textual description of the payment terms that apply to the amount due for payment (Including
-                    description of possible penalties).
+                    description of possible penalties). In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.
                 </Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-20</Reference>
