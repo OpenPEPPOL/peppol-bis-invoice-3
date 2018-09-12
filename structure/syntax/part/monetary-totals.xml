@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+    
+
+        <Term>cac:LegalMonetaryTotal</Term>
+        <Name>DOCUMENT TOTALS</Name>
+        <Description>A group of business terms providing the monetary totals for the Invoice.</Description>
+        <Reference type="BUSINESS_TERM">BG-22</Reference>
+        
+        <Element>
+            <Term>cbc:LineExtensionAmount</Term>
+            <Name>Sum of Invoice line net amount</Name>
+            <Description>Sum of all Invoice line net amounts in the Invoice. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-106</Reference>
+            <Reference type="RULE">BR-12</Reference>
+            <Reference type="RULE">BR-CO-10</Reference>
+            <Reference type="RULE">BR-DEC-09</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            
+            <Value type="EXAMPLE">3800.0</Value>
+        </Element>
+        
+        <Element>
+            <Term>cbc:TaxExclusiveAmount</Term>
+            <Name>Invoice total amount without VAT</Name>
+            <Description>The total amount of the Invoice without VAT. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-109</Reference>
+            <Reference type="RULE">BR-13</Reference>
+            <Reference type="RULE">BR-CO-13</Reference>
+            <Reference type="RULE">BR-DEC-12</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            <Value type="EXAMPLE">3600.0</Value>
+        </Element>
+        
+        <Element>
+            <Term>cbc:TaxInclusiveAmount</Term>
+            <Name>Invoice total amount with VAT</Name>
+            <Description>The total amount of the Invoice with VAT. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-112</Reference>
+            <Reference type="RULE">BR-14</Reference>
+            <Reference type="RULE">BR-CO-15</Reference>
+            <Reference type="RULE">BR-DEC-14</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            <Value type="EXAMPLE">4500.0</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:AllowanceTotalAmount</Term>
+            <Name>Sum of allowances on document level</Name>
+            <Description>Sum of all allowances on document level in the Invoice. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-107</Reference>
+            <Reference type="RULE">BR-CO-11</Reference>
+            <Reference type="RULE">BR-DEC-10</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            <Value type="EXAMPLE">200.0</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:ChargeTotalAmount</Term>
+            <Name>Sum of charges on document level</Name>
+            <Description>Sum of all charges on document level in the Invoice. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-108</Reference>
+            <Reference type="RULE">BR-CO-12</Reference>
+            <Reference type="RULE">BR-DEC-11</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            <Value type="EXAMPLE">0.0</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:PrepaidAmount</Term>
+            <Name>Paid amount</Name>
+            <Description>The sum of amounts which have been paid in advance. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-113</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="RULE">BR-DEC-16</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            <Value type="EXAMPLE">1000.0</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:PayableRoundingAmount</Term>
+            <Name>Rounding amount</Name>
+            <Description>The amount to be added to the invoice total to round the amount to be paid. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-114</Reference>
+            <Reference type="RULE">BR-DEC-17</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            <Value type="EXAMPLE">0.0</Value>
+        </Element>
+        
+        <Element>
+            <Term>cbc:PayableAmount</Term>
+            <Name>Amount due for payment</Name>
+            <Description>The outstanding amount that is requested to be paid. Must be rounded to maximum 2 decimals.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-115</Reference>
+            <Reference type="RULE">BR-15</Reference>
+            <Reference type="RULE">BR-CO-16</Reference>
+            <Reference type="RULE">BR-DEC-18</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            <Value type="EXAMPLE">3500.0</Value>
+        </Element>
+    </Element>

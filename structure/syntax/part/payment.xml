@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..n">
+
+        <Term>cac:PaymentMeans</Term>
+        <Name>PAYMENT INSTRUCTIONS</Name>
+        <Description>A group of business terms providing information about the payment.</Description>
+        <Reference type="BUSINESS_TERM">BG-16</Reference>
+        
+        <Element>
+            <Term>cbc:PaymentMeansCode</Term>
+            <Name>Payment means type code</Name>
+            <Description>The means, expressed as code, for how a payment is expected to be or has been settled.
+            </Description>
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">BT-81</Reference>
+            <Reference type="RULE">BR-49</Reference>
+            <Reference type="RULE">BR-CL-16</Reference>
+            <Reference type="CODE_LIST">UNCL4461</Reference>
+            
+            
+            <Attribute usage="Optional">
+                <Term>name</Term>
+                <Name>Payment means text</Name>
+                <Description>The means, expressed as text, for how a payment is expected to be or has been settled.
+                </Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">BT-82</Reference>
+                <Value type="EXAMPLE">Credit transfer</Value>
+            </Attribute>
+            
+            <Value type="EXAMPLE">30</Value>
+            
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:PaymentID</Term>
+            <Name>Remittance information</Name>
+            <Description>A textual value used to establish a link between the payment and the Invoice, issued by the
+                Seller. Used for creditor's critical reconciliation information. This information element helps the Seller to assign an incoming payment to the relevant payment process.
+            </Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-83</Reference>
+            <Value type="EXAMPLE">Credit transfer</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:CardAccount</Term>
+            <Name>PAYMENT CARD INFORMATION</Name>
+            <Description>A group of business terms providing information about card used for payment contemporaneous with
+                invoice issuance.
+            </Description>
+            <Reference type="BUSINESS_TERM">BG-18</Reference>
+            
+            <Element>
+                <Term>cbc:PrimaryAccountNumberID</Term>
+                <Name>Payment card primary account number</Name>
+                <Description>The Primary Account Number (PAN) of the card used for payment.In accordance with card payments security
+                    standards, an invoice should never include a full card primary account number.</Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">BT-87</Reference>
+                <Reference type="RULE">BR-51</Reference>
+                <Value type="EXAMPLE">1234</Value>
+            </Element>
+            
+            <Element>
+                <Term>cbc:NetworkID</Term>
+                <Description>Card Network identifier, such as VISA, American Express, Master Card.</Description>
+                <DataType>Text</DataType>
+                <Value type="EXAMPLE">VISA</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:HolderName</Term>
+                <Name>Payment card holder name</Name>
+                <Description>The name of the payment card holder.</Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">BT-88</Reference>
+                <Value type="EXAMPLE">John Doe</Value>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:PayeeFinancialAccount</Term>
+            <Name>CREDIT TRANSFER</Name>
+            <Description>A group of business terms to specify credit transfer payments.</Description>
+            <Reference type="BUSINESS_TERM">BG-17</Reference>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Payment account identifier</Name>
+                <Description>A unique identifier of the financial payment account, at a payment service provider, to which
+                    payment should be made. Such as IBAN or BBAN.
+                </Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-84</Reference>
+                <Reference type="RULE">BR-50</Reference>
+                <Reference type="RULE">BR-61</Reference>
+                <Value type="EXAMPLE">NO99991122222</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:Name</Term>
+                <Name>Payment account name</Name>
+                <Description>The name of the payment account, at a payment service provider, to which payment should be made.
+                </Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">BT-85</Reference>
+                <Value type="EXAMPLE">Payment Account</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:FinancialInstitutionBranch</Term>
+                <Name>FINANCIAL INSTITUTION BRANCH</Name>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Payment service provider identifier</Name>
+                    <Description>An identifier for the payment service provider where a payment account is located.
+                        Such as a BIC or a national clearing code where required. No identification scheme Identifier to be used.</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">BT-86</Reference>
+                    <Value type="EXAMPLE">9999</Value>
+                </Element>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:PaymentMandate</Term>
+            <Name>DIRECT DEBIT</Name>
+            <Description>A group of business terms to specify a direct debit.</Description>
+            <Reference type="BUSINESS_TERM">BG-19</Reference>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:ID</Term>
+                <Name>Mandate reference identifier</Name>
+                <Description>Unique identifier assigned by the Payee for referencing the direct debit mandate. Used in order to pre-notify the Buyer of a SEPA direct debit.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-89</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R061</Reference>
+                <Value type="EXAMPLE">123456</Value>
+                
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:PayerFinancialAccount</Term>
+                <Name>PAYER FINANCIAL ACCOUNT</Name>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Debited account identifier</Name>
+                    <Description>The account to be debited by the direct debit.</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">BT-91</Reference>
+                    <Value type="EXAMPLE">12345676543</Value>
+                    
+                </Element>
+            </Element>
+        </Element>
+    </Element>

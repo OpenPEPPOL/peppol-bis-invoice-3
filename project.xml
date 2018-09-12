@@ -31,5 +31,67 @@
         <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
         <Title>Rules for PEPPOL BIS 3.0 Billing</Title>
     </Resource>
+    
+    <!-- Code lists -->
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/icd.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ISO3166-1_Alpha2.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ISO4217_2015.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec21-9e.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL5305.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL7143.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001-inv.xml</Path>
+    </Resource> 
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001-cn.xml</Path>
+    </Resource> 
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1153.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL2005.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL4461.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL5189.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL7161.xml</Path>
+    </Resource>
+       <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/MimeCode.xml</Path>
+    </Resource>   
 
 </Project>

@@ -1,0 +1,4339 @@
+<?xml version="1.0" encoding="UTF-8"?><CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>UNCL 1153</Title>
+    <Identifier>UNCL1153</Identifier>
+    <Version>D16B</Version>
+    <Agency>UN/CEFACT</Agency>
+
+
+
+
+    <Code>
+        <Id>AAA</Id>
+        <Name>Order acknowledgement document identifier</Name>
+        <Description>[1018] Reference number identifying the acknowledgement of an order.</Description>
+    </Code>
+    <Code>
+        <Id>AAB</Id>
+        <Name>Proforma invoice document identifier</Name>
+        <Description>[1088] Reference number to identify a proforma invoice.</Description>
+    </Code>
+    <Code>
+        <Id>AAC</Id>
+        <Name>Documentary credit identifier</Name>
+        <Description>[1172] Reference number to identify a documentary credit.</Description>
+    </Code>
+    <Code>
+        <Id>AAD</Id>
+        <Name>Contract document addendum identifier</Name>
+        <Description>[1318] Reference number to identify an addendum to a contract.</Description>
+    </Code>
+    <Code>
+        <Id>AAE</Id>
+        <Name>Goods declaration number</Name>
+        <Description>Reference number assigned to a goods declaration.</Description>
+    </Code>
+    <Code>
+        <Id>AAF</Id>
+        <Name>Debit card number</Name>
+        <Description>A reference number identifying a debit card.</Description>
+    </Code>
+    <Code>
+        <Id>AAG</Id>
+        <Name>Offer number</Name>
+        <Description>(1332) Reference number assigned by issuing party to an offer.</Description>
+    </Code>
+    <Code>
+        <Id>AAH</Id>
+        <Name>Bank's batch interbank transaction reference number</Name>
+        <Description>Reference number allocated by the bank to a batch of different underlying
+            interbank transactions.</Description>
+    </Code>
+    <Code>
+        <Id>AAI</Id>
+        <Name>Bank's individual interbank transaction reference number</Name>
+        <Description>Reference number allocated by the bank to one specific interbank transaction.</Description>
+    </Code>
+    <Code>
+        <Id>AAJ</Id>
+        <Name>Delivery order number</Name>
+        <Description>Reference number assigned by issuer to a delivery order.</Description>
+    </Code>
+    <Code>
+        <Id>AAK</Id>
+        <Name>Despatch advice number</Name>
+        <Description>[1035] Reference number assigned by issuing party to a despatch advice.</Description>
+    </Code>
+    <Code>
+        <Id>AAL</Id>
+        <Name>Drawing number</Name>
+        <Description>Reference number identifying a specific product drawing.</Description>
+    </Code>
+    <Code>
+        <Id>AAM</Id>
+        <Name>Waybill number</Name>
+        <Description>Reference number assigned to a waybill, see: 1001 = 700.</Description>
+    </Code>
+    <Code>
+        <Id>AAN</Id>
+        <Name>Delivery schedule number</Name>
+        <Description>Reference number assigned by buyer to a delivery schedule.</Description>
+    </Code>
+    <Code>
+        <Id>AAO</Id>
+        <Name>Consignment identifier, consignee assigned</Name>
+        <Description>[1362] Reference number assigned by the consignee to identify a particular
+            consignment.</Description>
+    </Code>
+    <Code>
+        <Id>AAP</Id>
+        <Name>Partial shipment identifier</Name>
+        <Description>[1310] Identifier of a shipment which is part of an order.</Description>
+    </Code>
+    <Code>
+        <Id>AAQ</Id>
+        <Name>Transport equipment identifier</Name>
+        <Description>[8260] To identify a piece if transport equipment e.g. container or unit load
+            device.</Description>
+    </Code>
+    <Code>
+        <Id>AAR</Id>
+        <Name>Municipality assigned business registry number</Name>
+        <Description>A reference number assigned by a municipality to identify a business.</Description>
+    </Code>
+    <Code>
+        <Id>AAS</Id>
+        <Name>Transport contract document identifier</Name>
+        <Description>[1188] Reference number to identify a document evidencing a transport contract.</Description>
+    </Code>
+    <Code>
+        <Id>AAT</Id>
+        <Name>Master label number</Name>
+        <Description>Identifies the master label number of any package type.</Description>
+    </Code>
+    <Code>
+        <Id>AAU</Id>
+        <Name>Despatch note document identifier</Name>
+        <Description>[1128] Reference number to identify a Despatch Note.</Description>
+    </Code>
+    <Code>
+        <Id>AAV</Id>
+        <Name>Enquiry number</Name>
+        <Description>Reference number assigned to an enquiry.</Description>
+    </Code>
+    <Code>
+        <Id>AAW</Id>
+        <Name>Docket number</Name>
+        <Description>A reference number identifying the docket.</Description>
+    </Code>
+    <Code>
+        <Id>AAX</Id>
+        <Name>Civil action number</Name>
+        <Description>A reference number identifying the civil action.</Description>
+    </Code>
+    <Code>
+        <Id>AAY</Id>
+        <Name>Carrier's agent reference number</Name>
+        <Description>Reference number assigned by the carriers agent to a transaction.</Description>
+    </Code>
+    <Code>
+        <Id>AAZ</Id>
+        <Name>Standard Carrier Alpha Code (SCAC) number</Name>
+        <Description>For maritime shipments, this code qualifies a Standard Alpha Carrier Code
+            (SCAC) as issued by the United Stated National Motor Traffic Association Inc.</Description>
+    </Code>
+    <Code>
+        <Id>ABA</Id>
+        <Name>Customs valuation decision number</Name>
+        <Description>Reference by an importing party to a previous decision made by a Customs
+            administration regarding the valuation of goods.</Description>
+    </Code>
+    <Code>
+        <Id>ABB</Id>
+        <Name>End use authorization number</Name>
+        <Description>Reference issued by a Customs administration authorizing a preferential rate of
+            duty if a product is used for a specified purpose, see: 1001 = 990.</Description>
+    </Code>
+    <Code>
+        <Id>ABC</Id>
+        <Name>Anti-dumping case number</Name>
+        <Description>Reference issued by a Customs administration pertaining to a past or current
+            investigation of goods "dumped" at a price lower than the exporter's domestic market
+            price.</Description>
+    </Code>
+    <Code>
+        <Id>ABD</Id>
+        <Name>Customs tariff number</Name>
+        <Description>(7357) Code number of the goods in accordance with the tariff nomenclature
+            system of classification in use where the Customs declaration is made.</Description>
+    </Code>
+    <Code>
+        <Id>ABE</Id>
+        <Name>Declarant's reference number</Name>
+        <Description>Unique reference number assigned to a document or a message by the declarant
+            for identification purposes.</Description>
+    </Code>
+    <Code>
+        <Id>ABF</Id>
+        <Name>Repair estimate number</Name>
+        <Description>A number identifying a repair estimate.</Description>
+    </Code>
+    <Code>
+        <Id>ABG</Id>
+        <Name>Customs decision request number</Name>
+        <Description>Reference issued by Customs pertaining to a pending tariff classification
+            decision requested by an importer or agent.</Description>
+    </Code>
+    <Code>
+        <Id>ABH</Id>
+        <Name>Sub-house bill of lading number</Name>
+        <Description>Reference assigned to a sub-house bill of lading.</Description>
+    </Code>
+    <Code>
+        <Id>ABI</Id>
+        <Name>Tax payment identifier</Name>
+        <Description>[1168] Reference number identifying a payment of a duty or tax e.g. under a
+            transit procedure.</Description>
+    </Code>
+    <Code>
+        <Id>ABJ</Id>
+        <Name>Quota number</Name>
+        <Description>Reference number allocated by a government authority to identify a quota.</Description>
+    </Code>
+    <Code>
+        <Id>ABK</Id>
+        <Name>Transit (onward carriage) guarantee (bond) number</Name>
+        <Description>Reference number to identify the guarantee or security provided for Customs
+            transit operation (CCC).</Description>
+    </Code>
+    <Code>
+        <Id>ABL</Id>
+        <Name>Customs guarantee number</Name>
+        <Description>Reference assigned to a Customs guarantee.</Description>
+    </Code>
+    <Code>
+        <Id>ABM</Id>
+        <Name>Replacing part number</Name>
+        <Description>New part number which replaces the existing part number.</Description>
+    </Code>
+    <Code>
+        <Id>ABN</Id>
+        <Name>Seller's catalogue number</Name>
+        <Description>Identification number assigned to a seller's catalogue.</Description>
+    </Code>
+    <Code>
+        <Id>ABO</Id>
+        <Name>Originator's reference</Name>
+        <Description>A unique reference assigned by the originator.</Description>
+    </Code>
+    <Code>
+        <Id>ABP</Id>
+        <Name>Declarant's Customs identity number</Name>
+        <Description>Reference to the party whose posted bond or security is being declared in order
+            to accept responsibility for a goods declaration and the applicable duties and taxes.</Description>
+    </Code>
+    <Code>
+        <Id>ABQ</Id>
+        <Name>Importer reference number</Name>
+        <Description>Reference number assigned by the importer to identify a particular shipment for
+            his own purposes.</Description>
+    </Code>
+    <Code>
+        <Id>ABR</Id>
+        <Name>Export clearance instruction reference number</Name>
+        <Description>Reference number of the clearance instructions given by the consignor through
+            different means.</Description>
+    </Code>
+    <Code>
+        <Id>ABS</Id>
+        <Name>Import clearance instruction reference number</Name>
+        <Description>Reference number of the import clearance instructions given by the
+            consignor/consignee through different means.</Description>
+    </Code>
+    <Code>
+        <Id>ABT</Id>
+        <Name>Goods declaration document identifier, Customs</Name>
+        <Description>[1426] Reference number, assigned or accepted by Customs, to identify a goods
+            declaration.</Description>
+    </Code>
+    <Code>
+        <Id>ABU</Id>
+        <Name>Article number</Name>
+        <Description>A number that identifies an article.</Description>
+    </Code>
+    <Code>
+        <Id>ABV</Id>
+        <Name>Intra-plant routing</Name>
+        <Description>To define routing within a plant.</Description>
+    </Code>
+    <Code>
+        <Id>ABW</Id>
+        <Name>Stock keeping unit number</Name>
+        <Description>A number that identifies the stock keeping unit.</Description>
+    </Code>
+    <Code>
+        <Id>ABX</Id>
+        <Name>Text Element Identifier deletion reference</Name>
+        <Description>The reference used within a given TEI (Text Element Identifier) which is to be
+            deleted.</Description>
+    </Code>
+    <Code>
+        <Id>ABY</Id>
+        <Name>Allotment identification (Air)</Name>
+        <Description>Reference assigned to guarantied capacity on one or more specific flights on
+            specific date(s) to third parties as agents and other airlines.</Description>
+    </Code>
+    <Code>
+        <Id>ABZ</Id>
+        <Name>Vehicle licence number</Name>
+        <Description>Number of the licence issued for a vehicle by an agency of government.</Description>
+    </Code>
+    <Code>
+        <Id>AC</Id>
+        <Name>Air cargo transfer manifest</Name>
+        <Description>A number assigned to an air cargo list of goods to be transferred.</Description>
+    </Code>
+    <Code>
+        <Id>ACA</Id>
+        <Name>Cargo acceptance order reference number</Name>
+        <Description>Reference assigned to the cargo acceptance order.</Description>
+    </Code>
+    <Code>
+        <Id>ACB</Id>
+        <Name>US government agency number</Name>
+        <Description>A number that identifies a United States Government agency.</Description>
+    </Code>
+    <Code>
+        <Id>ACC</Id>
+        <Name>Shipping unit identification</Name>
+        <Description>Identifying marks on the outermost unit that is used to transport merchandise.</Description>
+    </Code>
+    <Code>
+        <Id>ACD</Id>
+        <Name>Additional reference number</Name>
+        <Description>[1010] Reference number provided in addition to another given reference.</Description>
+    </Code>
+    <Code>
+        <Id>ACE</Id>
+        <Name>Related document number</Name>
+        <Description>Reference number identifying a related document.</Description>
+    </Code>
+    <Code>
+        <Id>ACF</Id>
+        <Name>Addressee reference</Name>
+        <Description>A reference number of an addressee.</Description>
+    </Code>
+    <Code>
+        <Id>ACG</Id>
+        <Name>ATA carnet number</Name>
+        <Description>Reference number assigned to an ATA carnet.</Description>
+    </Code>
+    <Code>
+        <Id>ACH</Id>
+        <Name>Packaging unit identification</Name>
+        <Description>Identifying marks on packing units.</Description>
+    </Code>
+    <Code>
+        <Id>ACI</Id>
+        <Name>Outerpackaging unit identification</Name>
+        <Description>Identifying marks on packing units contained within an outermost shipping unit.</Description>
+    </Code>
+    <Code>
+        <Id>ACJ</Id>
+        <Name>Customer material specification number</Name>
+        <Description>Number for a material specification given by customer.</Description>
+    </Code>
+    <Code>
+        <Id>ACK</Id>
+        <Name>Bank reference</Name>
+        <Description>Cross reference issued by financial institution.</Description>
+    </Code>
+    <Code>
+        <Id>ACL</Id>
+        <Name>Principal reference number</Name>
+        <Description>A number that identifies the principal reference.</Description>
+    </Code>
+    <Code>
+        <Id>ACN</Id>
+        <Name>Collection advice document identifier</Name>
+        <Description>[1030] Reference number to identify a collection advice document.</Description>
+    </Code>
+    <Code>
+        <Id>ACO</Id>
+        <Name>Iron charge number</Name>
+        <Description>Number attributed to the iron charge for the production of steel products.</Description>
+    </Code>
+    <Code>
+        <Id>ACP</Id>
+        <Name>Hot roll number</Name>
+        <Description>Number attributed to a hot roll coil.</Description>
+    </Code>
+    <Code>
+        <Id>ACQ</Id>
+        <Name>Cold roll number</Name>
+        <Description>Number attributed to a cold roll coil.</Description>
+    </Code>
+    <Code>
+        <Id>ACR</Id>
+        <Name>Railway wagon number</Name>
+        <Description>(8260) Registered identification initials and numbers of railway wagon.
+            Synonym: Rail car number.</Description>
+    </Code>
+    <Code>
+        <Id>ACT</Id>
+        <Name>Unique claims reference number of the sender</Name>
+        <Description>A number that identifies the unique claims reference of the sender.</Description>
+    </Code>
+    <Code>
+        <Id>ACU</Id>
+        <Name>Loss/event number</Name>
+        <Description>To reference to the unique number that is assigned to each major loss hitting
+            the reinsurance industry.</Description>
+    </Code>
+    <Code>
+        <Id>ACV</Id>
+        <Name>Estimate order reference number</Name>
+        <Description>Reference number assigned by the ordering party of the estimate order.</Description>
+    </Code>
+    <Code>
+        <Id>ACW</Id>
+        <Name>Reference number to previous message</Name>
+        <Description>Reference number assigned to the message which was previously issued (e.g. in
+            the case of a cancellation, the primary reference of the message to be cancelled will be
+            quoted in this element).</Description>
+    </Code>
+    <Code>
+        <Id>ACX</Id>
+        <Name>Banker's acceptance</Name>
+        <Description>Reference number for banker's acceptance issued by the accepting financial
+            institution.</Description>
+    </Code>
+    <Code>
+        <Id>ACY</Id>
+        <Name>Duty memo number</Name>
+        <Description>Reference number assigned by customs to a duty memo.</Description>
+    </Code>
+    <Code>
+        <Id>ACZ</Id>
+        <Name>Equipment transport charge number</Name>
+        <Description>Reference assigned to a specific equipment transportation charge.</Description>
+    </Code>
+    <Code>
+        <Id>ADA</Id>
+        <Name>Buyer's item number</Name>
+        <Description>[7304] Reference number assigned by the buyer to an item.</Description>
+    </Code>
+    <Code>
+        <Id>ADB</Id>
+        <Name>Matured certificate of deposit</Name>
+        <Description>Reference number for certificate of deposit allocated by issuing financial
+            institution.</Description>
+    </Code>
+    <Code>
+        <Id>ADC</Id>
+        <Name>Loan</Name>
+        <Description>Reference number for loan allocated by lending financial institution.</Description>
+    </Code>
+    <Code>
+        <Id>ADD</Id>
+        <Name>Analysis number/test number</Name>
+        <Description>Number given to a specific analysis or test operation.</Description>
+    </Code>
+    <Code>
+        <Id>ADE</Id>
+        <Name>Account number</Name>
+        <Description>Identification number of an account.</Description>
+    </Code>
+    <Code>
+        <Id>ADF</Id>
+        <Name>Treaty number</Name>
+        <Description>A number that identifies a treaty.</Description>
+    </Code>
+    <Code>
+        <Id>ADG</Id>
+        <Name>Catastrophe number</Name>
+        <Description>A number that identifies a catastrophe.</Description>
+    </Code>
+    <Code>
+        <Id>ADI</Id>
+        <Name>Bureau signing (statement reference)</Name>
+        <Description>A statement reference that identifies a bureau signing.</Description>
+    </Code>
+    <Code>
+        <Id>ADJ</Id>
+        <Name>Company / syndicate reference 1</Name>
+        <Description>First reference of a company/syndicate.</Description>
+    </Code>
+    <Code>
+        <Id>ADK</Id>
+        <Name>Company / syndicate reference 2</Name>
+        <Description>Second reference of a company/syndicate.</Description>
+    </Code>
+    <Code>
+        <Id>ADL</Id>
+        <Name>Ordering customer consignment reference number</Name>
+        <Description>Reference number assigned to the consignment by the ordering customer.</Description>
+    </Code>
+    <Code>
+        <Id>ADM</Id>
+        <Name>Shipowner's authorization number</Name>
+        <Description>Reference number assigned by the shipowner as an authorization number to
+            transport certain goods (such as hazardous goods, cool or reefer goods).</Description>
+    </Code>
+    <Code>
+        <Id>ADN</Id>
+        <Name>Inland transport order number</Name>
+        <Description>Reference number assigned by the principal to the transport order for inland
+            carriage.</Description>
+    </Code>
+    <Code>
+        <Id>ADO</Id>
+        <Name>Container work order reference number</Name>
+        <Description>Reference number assigned by the principal to the work order for a (set of)
+            container(s).</Description>
+    </Code>
+    <Code>
+        <Id>ADP</Id>
+        <Name>Statement number</Name>
+        <Description>A reference number identifying a statement.</Description>
+    </Code>
+    <Code>
+        <Id>ADQ</Id>
+        <Name>Unique market reference</Name>
+        <Description>A number that identifies a unique market.</Description>
+    </Code>
+    <Code>
+        <Id>ADT</Id>
+        <Name>Group accounting</Name>
+        <Description>A number that identifies group accounting.</Description>
+    </Code>
+    <Code>
+        <Id>ADU</Id>
+        <Name>Broker reference 1</Name>
+        <Description>First reference of a broker.</Description>
+    </Code>
+    <Code>
+        <Id>ADV</Id>
+        <Name>Broker reference 2</Name>
+        <Description>Second reference of a broker.</Description>
+    </Code>
+    <Code>
+        <Id>ADW</Id>
+        <Name>Lloyd's claims office reference</Name>
+        <Description>A number that identifies a Lloyd's claims office.</Description>
+    </Code>
+    <Code>
+        <Id>ADX</Id>
+        <Name>Secure delivery terms and conditions agreement reference</Name>
+        <Description>A reference to a secure delivery terms and conditions agreement. A secured
+            delivery agreement is an agreement containing terms and conditions to secure deliveries
+            in case of failure in the production or logistics process of the supplier.</Description>
+    </Code>
+    <Code>
+        <Id>ADY</Id>
+        <Name>Report number</Name>
+        <Description>Reference to a report to Customs by a carrier at the point of entry,
+            encompassing both conveyance and consignment information.</Description>
+    </Code>
+    <Code>
+        <Id>ADZ</Id>
+        <Name>Trader account number</Name>
+        <Description>Number assigned by a Customs authority which uniquely identifies a trader (i.e.
+            importer, exporter or declarant) for Customs purposes.</Description>
+    </Code>
+    <Code>
+        <Id>AE</Id>
+        <Name>Authorization for expense (AFE) number</Name>
+        <Description>A number that identifies an authorization for expense (AFE).</Description>
+    </Code>
+    <Code>
+        <Id>AEA</Id>
+        <Name>Government agency reference number</Name>
+        <Description>Coded reference number that pertains to the business of a government agency.</Description>
+    </Code>
+    <Code>
+        <Id>AEB</Id>
+        <Name>Assembly number</Name>
+        <Description>A number that identifies an assembly.</Description>
+    </Code>
+    <Code>
+        <Id>AEC</Id>
+        <Name>Symbol number</Name>
+        <Description>A number that identifies a symbol.</Description>
+    </Code>
+    <Code>
+        <Id>AED</Id>
+        <Name>Commodity number</Name>
+        <Description>A number that identifies a commodity.</Description>
+    </Code>
+    <Code>
+        <Id>AEE</Id>
+        <Name>Eur 1 certificate number</Name>
+        <Description>Reference number assigned to a Eur 1 certificate.</Description>
+    </Code>
+    <Code>
+        <Id>AEF</Id>
+        <Name>Customer process specification number</Name>
+        <Description>Retrieval number for a process specification defined by customer.</Description>
+    </Code>
+    <Code>
+        <Id>AEG</Id>
+        <Name>Customer specification number</Name>
+        <Description>Retrieval number for a specification defined by customer.</Description>
+    </Code>
+    <Code>
+        <Id>AEH</Id>
+        <Name>Applicable instructions or standards</Name>
+        <Description>Instructions or standards applicable for the whole message or a message line
+            item. These instructions or standards may be published by a neutral organization or
+            authority or another party concerned.</Description>
+    </Code>
+    <Code>
+        <Id>AEI</Id>
+        <Name>Registration number of previous Customs declaration</Name>
+        <Description>Registration number of the Customs declaration lodged for the previous Customs
+            procedure.</Description>
+    </Code>
+    <Code>
+        <Id>AEJ</Id>
+        <Name>Post-entry reference</Name>
+        <Description>Reference to a message related to a post-entry.</Description>
+    </Code>
+    <Code>
+        <Id>AEK</Id>
+        <Name>Payment order number</Name>
+        <Description>A number that identifies a payment order.</Description>
+    </Code>
+    <Code>
+        <Id>AEL</Id>
+        <Name>Delivery number (transport)</Name>
+        <Description>Reference number by which a haulier/carrier will announce himself at the
+            container terminal or depot when delivering equipment.</Description>
+    </Code>
+    <Code>
+        <Id>AEM</Id>
+        <Name>Transport route</Name>
+        <Description>A predefined and identified sequence of points where goods are collected,
+            agreed between partners, e.g. the party in charge of organizing the transport and the
+            parties where goods will be collected. The same collecting points may be included in
+            different transport routes, but in a different sequence.</Description>
+    </Code>
+    <Code>
+        <Id>AEN</Id>
+        <Name>Customer's unit inventory number</Name>
+        <Description>Number assigned by customer to a unique unit for inventory purposes.</Description>
+    </Code>
+    <Code>
+        <Id>AEO</Id>
+        <Name>Product reservation number</Name>
+        <Description>Number assigned by seller to identify reservation of specified products.</Description>
+    </Code>
+    <Code>
+        <Id>AEP</Id>
+        <Name>Project number</Name>
+        <Description>Reference number assigned to a project.</Description>
+    </Code>
+    <Code>
+        <Id>AEQ</Id>
+        <Name>Drawing list number</Name>
+        <Description>Reference number identifying a drawing list.</Description>
+    </Code>
+    <Code>
+        <Id>AER</Id>
+        <Name>Project specification number</Name>
+        <Description>Reference number identifying a project specification.</Description>
+    </Code>
+    <Code>
+        <Id>AES</Id>
+        <Name>Primary reference</Name>
+        <Description>A number that identifies the primary reference.</Description>
+    </Code>
+    <Code>
+        <Id>AET</Id>
+        <Name>Request for cancellation number</Name>
+        <Description>A number that identifies a request for cancellation.</Description>
+    </Code>
+    <Code>
+        <Id>AEU</Id>
+        <Name>Supplier's control number</Name>
+        <Description>Reference to a file regarding a control of the supplier carried out on
+            departure of the goods.</Description>
+    </Code>
+    <Code>
+        <Id>AEV</Id>
+        <Name>Shipping note number</Name>
+        <Description>[1123] Reference number assigned to a shipping note.</Description>
+    </Code>
+    <Code>
+        <Id>AEW</Id>
+        <Name>Empty container bill number</Name>
+        <Description>Reference number assigned to an empty container bill, see: 1001 = 708.</Description>
+    </Code>
+    <Code>
+        <Id>AEX</Id>
+        <Name>Non-negotiable maritime transport document number</Name>
+        <Description>Reference number assigned to a sea waybill, see: 1001 = 712.</Description>
+    </Code>
+    <Code>
+        <Id>AEY</Id>
+        <Name>Substitute air waybill number</Name>
+        <Description>Reference number assigned to a substitute air waybill, see: 1001 = 743.</Description>
+    </Code>
+    <Code>
+        <Id>AEZ</Id>
+        <Name>Despatch note (post parcels) number</Name>
+        <Description>(1128) Reference number assigned to a despatch note (post parcels), see: 1001 =
+            750.</Description>
+    </Code>
+    <Code>
+        <Id>AF</Id>
+        <Name>Airlines flight identification number</Name>
+        <Description>(8028) Identification of a commercial flight by carrier code and number as
+            assigned by the airline (IATA).</Description>
+    </Code>
+    <Code>
+        <Id>AFA</Id>
+        <Name>Through bill of lading number</Name>
+        <Description>Reference number assigned to a through bill of lading, see: 1001 = 761.</Description>
+    </Code>
+    <Code>
+        <Id>AFB</Id>
+        <Name>Cargo manifest number</Name>
+        <Description>[1037] Reference number assigned to a cargo manifest.</Description>
+    </Code>
+    <Code>
+        <Id>AFC</Id>
+        <Name>Bordereau number</Name>
+        <Description>Reference number assigned to a bordereau, see: 1001 = 787.</Description>
+    </Code>
+    <Code>
+        <Id>AFD</Id>
+        <Name>Customs item number</Name>
+        <Description>Number (1496 in CST) assigned by the declarant to an item.</Description>
+    </Code>
+    <Code>
+        <Id>AFE</Id>
+        <Name>Export Control Commodity number (ECCN)</Name>
+        <Description>Reference number to relevant item within Commodity Control List covering actual
+            products change functionality.</Description>
+    </Code>
+    <Code>
+        <Id>AFF</Id>
+        <Name>Marking/label reference</Name>
+        <Description>Reference where marking/label information derives from.</Description>
+    </Code>
+    <Code>
+        <Id>AFG</Id>
+        <Name>Tariff number</Name>
+        <Description>A number that identifies a tariff.</Description>
+    </Code>
+    <Code>
+        <Id>AFH</Id>
+        <Name>Replenishment purchase order number</Name>
+        <Description>Purchase order number specified by the buyer for the assignment to vendor's
+            replenishment orders in a vendor managed inventory program.</Description>
+    </Code>
+    <Code>
+        <Id>AFI</Id>
+        <Name>Immediate transportation no. for in bond movement</Name>
+        <Description>A number that identifies immediate transportation for in bond movement.</Description>
+    </Code>
+    <Code>
+        <Id>AFJ</Id>
+        <Name>Transportation exportation no. for in bond movement</Name>
+        <Description>A number that identifies the transportation exportation number for an in bond
+            movement.</Description>
+    </Code>
+    <Code>
+        <Id>AFK</Id>
+        <Name>Immediate exportation no. for in bond movement</Name>
+        <Description>A number that identifies the immediate exportation number for an in bond
+            movement.</Description>
+    </Code>
+    <Code>
+        <Id>AFL</Id>
+        <Name>Associated invoices</Name>
+        <Description>A number that identifies associated invoices.</Description>
+    </Code>
+    <Code>
+        <Id>AFM</Id>
+        <Name>Secondary Customs reference</Name>
+        <Description>A number that identifies the secondary customs reference.</Description>
+    </Code>
+    <Code>
+        <Id>AFN</Id>
+        <Name>Account party's reference</Name>
+        <Description>Reference of the account party.</Description>
+    </Code>
+    <Code>
+        <Id>AFO</Id>
+        <Name>Beneficiary's reference</Name>
+        <Description>Reference of the beneficiary.</Description>
+    </Code>
+    <Code>
+        <Id>AFP</Id>
+        <Name>Second beneficiary's reference</Name>
+        <Description>Reference of the second beneficiary.</Description>
+    </Code>
+    <Code>
+        <Id>AFQ</Id>
+        <Name>Applicant's bank reference</Name>
+        <Description>Reference number of the applicant's bank.</Description>
+    </Code>
+    <Code>
+        <Id>AFR</Id>
+        <Name>Issuing bank's reference</Name>
+        <Description>Reference number of the issuing bank.</Description>
+    </Code>
+    <Code>
+        <Id>AFS</Id>
+        <Name>Beneficiary's bank reference</Name>
+        <Description>Reference number of the beneficiary's bank.</Description>
+    </Code>
+    <Code>
+        <Id>AFT</Id>
+        <Name>Direct payment valuation number</Name>
+        <Description>Reference number assigned to a direct payment valuation.</Description>
+    </Code>
+    <Code>
+        <Id>AFU</Id>
+        <Name>Direct payment valuation request number</Name>
+        <Description>Reference number assigned to a direct payment valuation request.</Description>
+    </Code>
+    <Code>
+        <Id>AFV</Id>
+        <Name>Quantity valuation number</Name>
+        <Description>Reference number assigned to a quantity valuation.</Description>
+    </Code>
+    <Code>
+        <Id>AFW</Id>
+        <Name>Quantity valuation request number</Name>
+        <Description>Reference number assigned to a quantity valuation request.</Description>
+    </Code>
+    <Code>
+        <Id>AFX</Id>
+        <Name>Bill of quantities number</Name>
+        <Description>Reference number assigned to a bill of quantities.</Description>
+    </Code>
+    <Code>
+        <Id>AFY</Id>
+        <Name>Payment valuation number</Name>
+        <Description>Reference number assigned to a payment valuation.</Description>
+    </Code>
+    <Code>
+        <Id>AFZ</Id>
+        <Name>Situation number</Name>
+        <Description>Common reference number given to documents concerning a determined period of
+            works.</Description>
+    </Code>
+    <Code>
+        <Id>AGA</Id>
+        <Name>Agreement to pay number</Name>
+        <Description>A number that identifies an agreement to pay.</Description>
+    </Code>
+    <Code>
+        <Id>AGB</Id>
+        <Name>Contract party reference number</Name>
+        <Description>Reference number assigned to a party for a particular contract.</Description>
+    </Code>
+    <Code>
+        <Id>AGC</Id>
+        <Name>Account party's bank reference</Name>
+        <Description>Reference number of the account party's bank.</Description>
+    </Code>
+    <Code>
+        <Id>AGD</Id>
+        <Name>Agent's bank reference</Name>
+        <Description>Reference number issued by the agent's bank.</Description>
+    </Code>
+    <Code>
+        <Id>AGE</Id>
+        <Name>Agent's reference</Name>
+        <Description>Reference number of the agent.</Description>
+    </Code>
+    <Code>
+        <Id>AGF</Id>
+        <Name>Applicant's reference</Name>
+        <Description>Reference number of the applicant.</Description>
+    </Code>
+    <Code>
+        <Id>AGG</Id>
+        <Name>Dispute number</Name>
+        <Description>Reference number to a dispute notice.</Description>
+    </Code>
+    <Code>
+        <Id>AGH</Id>
+        <Name>Credit rating agency's reference number</Name>
+        <Description>Reference number assigned by a credit rating agency to a debtor.</Description>
+    </Code>
+    <Code>
+        <Id>AGI</Id>
+        <Name>Request number</Name>
+        <Description>The reference number of a request.</Description>
+    </Code>
+    <Code>
+        <Id>AGJ</Id>
+        <Name>Single transaction sequence number</Name>
+        <Description>A number that identifies a single transaction sequence.</Description>
+    </Code>
+    <Code>
+        <Id>AGK</Id>
+        <Name>Application reference number</Name>
+        <Description>A number that identifies an application reference.</Description>
+    </Code>
+    <Code>
+        <Id>AGL</Id>
+        <Name>Delivery verification certificate</Name>
+        <Description>Formal identification of delivery verification certificate which is a formal
+            document from Customs etc. confirming that physical goods have been delivered. It may be
+            needed to support a tax reclaim based on an invoice.</Description>
+    </Code>
+    <Code>
+        <Id>AGM</Id>
+        <Name>Number of temporary importation document</Name>
+        <Description>Number assigned by customs to identify consignment in transit.</Description>
+    </Code>
+    <Code>
+        <Id>AGN</Id>
+        <Name>Reference number quoted on statement</Name>
+        <Description>Reference number quoted on the statement sent to the beneficiary for
+            information purposes.</Description>
+    </Code>
+    <Code>
+        <Id>AGO</Id>
+        <Name>Sender's reference to the original message</Name>
+        <Description>The reference provided by the sender of the original message.</Description>
+    </Code>
+    <Code>
+        <Id>AGP</Id>
+        <Name>Company issued equipment ID</Name>
+        <Description>Owner/operator, non-government issued equipment reference number.</Description>
+    </Code>
+    <Code>
+        <Id>AGQ</Id>
+        <Name>Domestic flight number</Name>
+        <Description>Airline flight number assigned to a flight originating and terminating within
+            the same country.</Description>
+    </Code>
+    <Code>
+        <Id>AGR</Id>
+        <Name>International flight number</Name>
+        <Description>Airline flight number assigned to a flight originating and terminating across
+            national borders.</Description>
+    </Code>
+    <Code>
+        <Id>AGS</Id>
+        <Name>Employer identification number of service bureau</Name>
+        <Description>Reference number assigned by a service/processing bureau to an employer.</Description>
+    </Code>
+    <Code>
+        <Id>AGT</Id>
+        <Name>Service group identification number</Name>
+        <Description>Identification used for a group of services.</Description>
+    </Code>
+    <Code>
+        <Id>AGU</Id>
+        <Name>Member number</Name>
+        <Description>Reference number assigned to a person as a member of a group of persons or a
+            service scheme.</Description>
+    </Code>
+    <Code>
+        <Id>AGV</Id>
+        <Name>Previous member number</Name>
+        <Description>Reference number previously assigned to a member.</Description>
+    </Code>
+    <Code>
+        <Id>AGW</Id>
+        <Name>Scheme/plan number</Name>
+        <Description>Reference number assigned to a service scheme or plan.</Description>
+    </Code>
+    <Code>
+        <Id>AGX</Id>
+        <Name>Previous scheme/plan number</Name>
+        <Description>Reference number previously assigned to a service scheme or plan.</Description>
+    </Code>
+    <Code>
+        <Id>AGY</Id>
+        <Name>Receiving party's member identification</Name>
+        <Description>Identification used by the receiving party for a member of a service scheme or
+            group of persons.</Description>
+    </Code>
+    <Code>
+        <Id>AGZ</Id>
+        <Name>Payroll number</Name>
+        <Description>Reference number assigned to the payroll of an organisation.</Description>
+    </Code>
+    <Code>
+        <Id>AHA</Id>
+        <Name>Packaging specification number</Name>
+        <Description>Reference number of documentation specifying the technical detail of packaging
+            requirements.</Description>
+    </Code>
+    <Code>
+        <Id>AHB</Id>
+        <Name>Authority issued equipment identification</Name>
+        <Description>Identification issued by an authority, e.g. government, airport authority.</Description>
+    </Code>
+    <Code>
+        <Id>AHC</Id>
+        <Name>Training flight number</Name>
+        <Description>Non-revenue producing airline flight for training purposes.</Description>
+    </Code>
+    <Code>
+        <Id>AHD</Id>
+        <Name>Fund code number</Name>
+        <Description>Reference number to identify appropriation and branch chargeable for item.</Description>
+    </Code>
+    <Code>
+        <Id>AHE</Id>
+        <Name>Signal code number</Name>
+        <Description>Reference number to identify a signal.</Description>
+    </Code>
+    <Code>
+        <Id>AHF</Id>
+        <Name>Major force program number</Name>
+        <Description>Reference number according to Major Force Program (US).</Description>
+    </Code>
+    <Code>
+        <Id>AHG</Id>
+        <Name>Nomination number</Name>
+        <Description>Reference number assigned by a shipper to a request/ commitment-to-ship on a
+            pipeline system.</Description>
+    </Code>
+    <Code>
+        <Id>AHH</Id>
+        <Name>Laboratory registration number</Name>
+        <Description>Reference number is the official registration number of the laboratory.</Description>
+    </Code>
+    <Code>
+        <Id>AHI</Id>
+        <Name>Transport contract reference number</Name>
+        <Description>Reference number of a transport contract.</Description>
+    </Code>
+    <Code>
+        <Id>AHJ</Id>
+        <Name>Payee's reference number</Name>
+        <Description>Reference number of the party to be paid.</Description>
+    </Code>
+    <Code>
+        <Id>AHK</Id>
+        <Name>Payer's reference number</Name>
+        <Description>Reference number of the party who pays.</Description>
+    </Code>
+    <Code>
+        <Id>AHL</Id>
+        <Name>Creditor's reference number</Name>
+        <Description>Reference number of the party to whom a debt is owed.</Description>
+    </Code>
+    <Code>
+        <Id>AHM</Id>
+        <Name>Debtor's reference number</Name>
+        <Description>Reference number of the party who owes an amount of money.</Description>
+    </Code>
+    <Code>
+        <Id>AHN</Id>
+        <Name>Joint venture reference number</Name>
+        <Description>Reference number assigned to a joint venture agreement.</Description>
+    </Code>
+    <Code>
+        <Id>AHO</Id>
+        <Name>Chamber of Commerce registration number</Name>
+        <Description>The registration number by which a company/organization is known to the Chamber
+            of Commerce.</Description>
+    </Code>
+    <Code>
+        <Id>AHP</Id>
+        <Name>Tax registration number</Name>
+        <Description>The registration number by which a company/organization is identified with the
+            tax administration.</Description>
+    </Code>
+    <Code>
+        <Id>AHQ</Id>
+        <Name>Wool identification number</Name>
+        <Description>Shipping Identification Mark (SIM) allocated to a wool consignment by a
+            shipping company.</Description>
+    </Code>
+    <Code>
+        <Id>AHR</Id>
+        <Name>Wool tax reference number</Name>
+        <Description>Reference or indication of the payment of wool tax.</Description>
+    </Code>
+    <Code>
+        <Id>AHS</Id>
+        <Name>Meat processing establishment registration number</Name>
+        <Description>Registration number allocated to a registered meat packing establishment by the
+            local quarantine and inspection authority.</Description>
+    </Code>
+    <Code>
+        <Id>AHT</Id>
+        <Name>Quarantine/treatment status reference number</Name>
+        <Description>Coded quarantine/treatment status of a container and its cargo and packing
+            materials, generated by a shipping company based upon declarations presented by a
+            shipper.</Description>
+    </Code>
+    <Code>
+        <Id>AHU</Id>
+        <Name>Request for quote number</Name>
+        <Description>Reference number assigned by the requestor to a request for quote.</Description>
+    </Code>
+    <Code>
+        <Id>AHV</Id>
+        <Name>Manual processing authority number</Name>
+        <Description>Number allocated to allow the manual processing of an entity.</Description>
+    </Code>
+    <Code>
+        <Id>AHX</Id>
+        <Name>Rate note number</Name>
+        <Description>Reference assigned to a specific rate.</Description>
+    </Code>
+    <Code>
+        <Id>AHY</Id>
+        <Name>Freight Forwarder number</Name>
+        <Description>An identification code of a Freight Forwarder.</Description>
+    </Code>
+    <Code>
+        <Id>AHZ</Id>
+        <Name>Customs release code</Name>
+        <Description>A code associated to a requirement that must be presented to gain the release
+            of goods by Customs.</Description>
+    </Code>
+    <Code>
+        <Id>AIA</Id>
+        <Name>Compliance code number</Name>
+        <Description>Number assigned to indicate regulatory compliance.</Description>
+    </Code>
+    <Code>
+        <Id>AIB</Id>
+        <Name>Department of transportation bond number</Name>
+        <Description>Number of a bond assigned by the department of transportation.</Description>
+    </Code>
+    <Code>
+        <Id>AIC</Id>
+        <Name>Export establishment number</Name>
+        <Description>Number to identify export establishment.</Description>
+    </Code>
+    <Code>
+        <Id>AID</Id>
+        <Name>Certificate of conformity</Name>
+        <Description>Certificate certifying the conformity to predefined definitions.</Description>
+    </Code>
+    <Code>
+        <Id>AIE</Id>
+        <Name>Ministerial certificate of homologation</Name>
+        <Description>Certificate of approval for components which are subject to legal restrictions
+            and must be approved by the government.</Description>
+    </Code>
+    <Code>
+        <Id>AIF</Id>
+        <Name>Previous delivery instruction number</Name>
+        <Description>The identification of a previous delivery instruction.</Description>
+    </Code>
+    <Code>
+        <Id>AIG</Id>
+        <Name>Passport number</Name>
+        <Description>Number assigned to a passport.</Description>
+    </Code>
+    <Code>
+        <Id>AIH</Id>
+        <Name>Common transaction reference number</Name>
+        <Description>Reference number applicable to different underlying individual transactions.</Description>
+    </Code>
+    <Code>
+        <Id>AII</Id>
+        <Name>Bank's common transaction reference number</Name>
+        <Description>Bank's reference number allocated by the bank to different underlying
+            individual transactions.</Description>
+    </Code>
+    <Code>
+        <Id>AIJ</Id>
+        <Name>Customer's individual transaction reference number</Name>
+        <Description>Customer's reference number allocated by the customer to one specific
+            transaction.</Description>
+    </Code>
+    <Code>
+        <Id>AIK</Id>
+        <Name>Bank's individual transaction reference number</Name>
+        <Description>Bank's reference number allocated by the bank to one specific transaction.</Description>
+    </Code>
+    <Code>
+        <Id>AIL</Id>
+        <Name>Customer's common transaction reference number</Name>
+        <Description>Customer's reference number allocated by the customer to different underlying
+            individual transactions.</Description>
+    </Code>
+    <Code>
+        <Id>AIM</Id>
+        <Name>Individual transaction reference number</Name>
+        <Description>Reference number applying to one specific transaction.</Description>
+    </Code>
+    <Code>
+        <Id>AIN</Id>
+        <Name>Product sourcing agreement number</Name>
+        <Description>Reference number assigned to a product sourcing agreement.</Description>
+    </Code>
+    <Code>
+        <Id>AIO</Id>
+        <Name>Customs transhipment number</Name>
+        <Description>Approval number issued by Customs for cargo to be transhipped under Customs
+            control.</Description>
+    </Code>
+    <Code>
+        <Id>AIP</Id>
+        <Name>Customs preference inquiry number</Name>
+        <Description>The number assigned by Customs to a preference inquiry.</Description>
+    </Code>
+    <Code>
+        <Id>AIQ</Id>
+        <Name>Packing plant number</Name>
+        <Description>Number to identify packing establishment.</Description>
+    </Code>
+    <Code>
+        <Id>AIR</Id>
+        <Name>Original certificate number</Name>
+        <Description>Number giving reference to an original certificate number.</Description>
+    </Code>
+    <Code>
+        <Id>AIS</Id>
+        <Name>Processing plant number</Name>
+        <Description>Number to identify processing plant.</Description>
+    </Code>
+    <Code>
+        <Id>AIT</Id>
+        <Name>Slaughter plant number</Name>
+        <Description>Number to identify slaughter plant.</Description>
+    </Code>
+    <Code>
+        <Id>AIU</Id>
+        <Name>Charge card account number</Name>
+        <Description>Number to identify charge card account.</Description>
+    </Code>
+    <Code>
+        <Id>AIV</Id>
+        <Name>Event reference number</Name>
+        <Description>[1007] Reference number identifying an event.</Description>
+    </Code>
+    <Code>
+        <Id>AIW</Id>
+        <Name>Transport section reference number</Name>
+        <Description>A number identifying a transport section.</Description>
+    </Code>
+    <Code>
+        <Id>AIX</Id>
+        <Name>Referred product for mechanical analysis</Name>
+        <Description>A product number identifying the product which is used for mechanical analysis
+            considered valid for a group of products.</Description>
+    </Code>
+    <Code>
+        <Id>AIY</Id>
+        <Name>Referred product for chemical analysis</Name>
+        <Description>A product number identifying the product which is used for chemical analysis
+            considered valid for a group of products.</Description>
+    </Code>
+    <Code>
+        <Id>AIZ</Id>
+        <Name>Consolidated invoice number</Name>
+        <Description>Invoice number into which other invoices are consolidated.</Description>
+    </Code>
+    <Code>
+        <Id>AJA</Id>
+        <Name>Part reference indicator in a drawing</Name>
+        <Description>To designate the number which provides a cross reference between parts
+            contained in a drawing and a parts catalogue.</Description>
+    </Code>
+    <Code>
+        <Id>AJB</Id>
+        <Name>U.S. Code of Federal Regulations (CFR)</Name>
+        <Description>A reference indicating a citation from the U.S. Code of Federal Regulations
+            (CFR).</Description>
+    </Code>
+    <Code>
+        <Id>AJC</Id>
+        <Name>Purchasing activity clause number</Name>
+        <Description>A number indicating a clause applicable to a purchasing activity.</Description>
+    </Code>
+    <Code>
+        <Id>AJD</Id>
+        <Name>U.S. Defense Federal Acquisition Regulation Supplement</Name>
+        <Description>A reference indicating a citation from the U.S. Defense Federal Acquisition
+            Regulation Supplement.</Description>
+    </Code>
+    <Code>
+        <Id>AJE</Id>
+        <Name>Agency clause number</Name>
+        <Description>A number indicating a clause applicable to a particular agency.</Description>
+    </Code>
+    <Code>
+        <Id>AJF</Id>
+        <Name>Circular publication number</Name>
+        <Description>A number specifying a circular publication.</Description>
+    </Code>
+    <Code>
+        <Id>AJG</Id>
+        <Name>U.S. Federal Acquisition Regulation</Name>
+        <Description>A reference indicating a citation from the U.S. Federal Acquisition Regulation.</Description>
+    </Code>
+    <Code>
+        <Id>AJH</Id>
+        <Name>U.S. General Services Administration Regulation</Name>
+        <Description>A reference indicating a citation from U.S. General Services Administration
+            Regulation.</Description>
+    </Code>
+    <Code>
+        <Id>AJI</Id>
+        <Name>U.S. Federal Information Resources Management Regulation</Name>
+        <Description>A reference indicating a citation from U.S. Federal Information Resources
+            Management Regulation.</Description>
+    </Code>
+    <Code>
+        <Id>AJJ</Id>
+        <Name>Paragraph</Name>
+        <Description>A reference indicating a paragraph cited as the source of information.</Description>
+    </Code>
+    <Code>
+        <Id>AJK</Id>
+        <Name>Special instructions number</Name>
+        <Description>A number indicating a citation used for special instructions.</Description>
+    </Code>
+    <Code>
+        <Id>AJL</Id>
+        <Name>Site specific procedures, terms, and conditions number</Name>
+        <Description>A number indicating a set of site specific procedures, terms and conditions.</Description>
+    </Code>
+    <Code>
+        <Id>AJM</Id>
+        <Name>Master solicitation procedures, terms, and conditions</Name>
+        <Description>number A number indicating a master solicitation containing procedures, terms
+            and conditions.</Description>
+    </Code>
+    <Code>
+        <Id>AJN</Id>
+        <Name>U.S. Department of Veterans Affairs Acquisition Regulation</Name>
+        <Description>A reference indicating a citation from the U.S. Department of Veterans Affairs
+            Acquisition Regulation.</Description>
+    </Code>
+    <Code>
+        <Id>AJO</Id>
+        <Name>Military Interdepartmental Purchase Request (MIPR) number</Name>
+        <Description>A number indicating an interdepartmental purchase request used by the military.</Description>
+    </Code>
+    <Code>
+        <Id>AJP</Id>
+        <Name>Foreign military sales number</Name>
+        <Description>A number specifying a sale to a foreign military.</Description>
+    </Code>
+    <Code>
+        <Id>AJQ</Id>
+        <Name>Defense priorities allocation system priority rating</Name>
+        <Description>A reference indicating a priority rating assigned to allocate resources for
+            defense purchases.</Description>
+    </Code>
+    <Code>
+        <Id>AJR</Id>
+        <Name>Wage determination number</Name>
+        <Description>A number specifying a wage determination.</Description>
+    </Code>
+    <Code>
+        <Id>AJS</Id>
+        <Name>Agreement number</Name>
+        <Description>A number specifying an agreement between parties.</Description>
+    </Code>
+    <Code>
+        <Id>AJT</Id>
+        <Name>Standard Industry Classification (SIC) number</Name>
+        <Description>A number specifying a standard industry classification.</Description>
+    </Code>
+    <Code>
+        <Id>AJU</Id>
+        <Name>End item number</Name>
+        <Description>A number specifying the end item applicable to a subordinate item.</Description>
+    </Code>
+    <Code>
+        <Id>AJV</Id>
+        <Name>Federal supply schedule item number</Name>
+        <Description>A number specifying an item listed in a federal supply schedule.</Description>
+    </Code>
+    <Code>
+        <Id>AJW</Id>
+        <Name>Technical document number</Name>
+        <Description>A number specifying a technical document.</Description>
+    </Code>
+    <Code>
+        <Id>AJX</Id>
+        <Name>Technical order number</Name>
+        <Description>A reference to an order that specifies a technical change.</Description>
+    </Code>
+    <Code>
+        <Id>AJY</Id>
+        <Name>Suffix</Name>
+        <Description>A reference to specify a suffix added to the end of a basic identifier.</Description>
+    </Code>
+    <Code>
+        <Id>AJZ</Id>
+        <Name>Transportation account number</Name>
+        <Description>An account number to be charged or credited for transportation.</Description>
+    </Code>
+    <Code>
+        <Id>AKA</Id>
+        <Name>Container disposition order reference number</Name>
+        <Description>Reference assigned to the empty container disposition order.</Description>
+    </Code>
+    <Code>
+        <Id>AKB</Id>
+        <Name>Container prefix</Name>
+        <Description>The first part of the unique identification of a container formed by an alpha
+            code identifying the owner of the container.</Description>
+    </Code>
+    <Code>
+        <Id>AKC</Id>
+        <Name>Transport equipment return reference</Name>
+        <Description>Reference known at the address to return equipment to.</Description>
+    </Code>
+    <Code>
+        <Id>AKD</Id>
+        <Name>Transport equipment survey reference</Name>
+        <Description>Reference number assigned by the ordering party to the transport equipment
+            survey order.</Description>
+    </Code>
+    <Code>
+        <Id>AKE</Id>
+        <Name>Transport equipment survey report number</Name>
+        <Description>Reference number used by a party to identify its transport equipment survey
+            report.</Description>
+    </Code>
+    <Code>
+        <Id>AKF</Id>
+        <Name>Transport equipment stuffing order</Name>
+        <Description>Reference number assigned to the order to stuff goods in transport equipment.</Description>
+    </Code>
+    <Code>
+        <Id>AKG</Id>
+        <Name>Vehicle Identification Number (VIN)</Name>
+        <Description>The identification number which uniquely distinguishes one vehicle from another
+            through the lifespan of the vehicle.</Description>
+    </Code>
+    <Code>
+        <Id>AKH</Id>
+        <Name>Government bill of lading</Name>
+        <Description>Bill of lading as defined by the government.</Description>
+    </Code>
+    <Code>
+        <Id>AKI</Id>
+        <Name>Ordering customer's second reference number</Name>
+        <Description>Ordering customer's second reference number.</Description>
+    </Code>
+    <Code>
+        <Id>AKJ</Id>
+        <Name>Direct debit reference</Name>
+        <Description>Reference number assigned to the direct debit operation.</Description>
+    </Code>
+    <Code>
+        <Id>AKK</Id>
+        <Name>Meter reading at the beginning of the delivery</Name>
+        <Description>Meter reading at the beginning of the delivery.</Description>
+    </Code>
+    <Code>
+        <Id>AKL</Id>
+        <Name>Meter reading at the end of delivery</Name>
+        <Description>Meter reading at the end of the delivery.</Description>
+    </Code>
+    <Code>
+        <Id>AKM</Id>
+        <Name>Replenishment purchase order range start number</Name>
+        <Description>Starting number of a range of purchase order numbers assigned by the buyer to
+            vendor's replenishment orders.</Description>
+    </Code>
+    <Code>
+        <Id>AKN</Id>
+        <Name>Third bank's reference</Name>
+        <Description>Reference number of the third bank.</Description>
+    </Code>
+    <Code>
+        <Id>AKO</Id>
+        <Name>Action authorization number</Name>
+        <Description>A reference number authorizing an action.</Description>
+    </Code>
+    <Code>
+        <Id>AKP</Id>
+        <Name>Appropriation number</Name>
+        <Description>The number identifying a type of funding for a specific purpose
+            (appropriation).</Description>
+    </Code>
+    <Code>
+        <Id>AKQ</Id>
+        <Name>Product change authority number</Name>
+        <Description>Number which authorises a change in form, fit or function of a product.</Description>
+    </Code>
+    <Code>
+        <Id>AKR</Id>
+        <Name>General cargo consignment reference number</Name>
+        <Description>Reference number identifying a particular general cargo (non-containerised or
+            break bulk) consignment.</Description>
+    </Code>
+    <Code>
+        <Id>AKS</Id>
+        <Name>Catalogue sequence number</Name>
+        <Description>A number which uniquely identifies an item within a catalogue according to a
+            standard numbering system.</Description>
+    </Code>
+    <Code>
+        <Id>AKT</Id>
+        <Name>Forwarding order number</Name>
+        <Description>Reference number assigned to the forwarding order by the ordering customer.</Description>
+    </Code>
+    <Code>
+        <Id>AKU</Id>
+        <Name>Transport equipment survey reference number</Name>
+        <Description>Reference number known at the address where the transport equipment will be or
+            has been surveyed.</Description>
+    </Code>
+    <Code>
+        <Id>AKV</Id>
+        <Name>Lease contract reference</Name>
+        <Description>Reference number of the lease contract.</Description>
+    </Code>
+    <Code>
+        <Id>AKW</Id>
+        <Name>Transport costs reference number</Name>
+        <Description>Reference number of the transport costs.</Description>
+    </Code>
+    <Code>
+        <Id>AKX</Id>
+        <Name>Transport equipment stripping order</Name>
+        <Description>Reference number assigned to the order to strip goods from transport equipment.</Description>
+    </Code>
+    <Code>
+        <Id>AKY</Id>
+        <Name>Prior policy number</Name>
+        <Description>The number of the prior policy.</Description>
+    </Code>
+    <Code>
+        <Id>AKZ</Id>
+        <Name>Policy number</Name>
+        <Description>Number assigned to a policy.</Description>
+    </Code>
+    <Code>
+        <Id>ALA</Id>
+        <Name>Procurement budget number</Name>
+        <Description>A number which uniquely identifies a procurement budget against which
+            commitments or invoices can be allocated.</Description>
+    </Code>
+    <Code>
+        <Id>ALB</Id>
+        <Name>Domestic inventory management code</Name>
+        <Description>Code to identify the management of domestic inventory.</Description>
+    </Code>
+    <Code>
+        <Id>ALC</Id>
+        <Name>Customer reference number assigned to previous balance of</Name>
+        <Description>payment information Identification number of the previous balance of payments
+            information from customer message.</Description>
+    </Code>
+    <Code>
+        <Id>ALD</Id>
+        <Name>Previous credit advice reference number</Name>
+        <Description>Reference number of the previous "Credit advice" message.</Description>
+    </Code>
+    <Code>
+        <Id>ALE</Id>
+        <Name>Reporting form number</Name>
+        <Description>Reference number assigned to the reporting form.</Description>
+    </Code>
+    <Code>
+        <Id>ALF</Id>
+        <Name>Authorization number for exception to dangerous goods</Name>
+        <Description>regulations Reference number allocated by an authority. This number contains an
+            approval concerning exceptions on the existing dangerous goods regulations.</Description>
+    </Code>
+    <Code>
+        <Id>ALG</Id>
+        <Name>Dangerous goods security number</Name>
+        <Description>Reference number allocated by an authority in order to control the dangerous
+            goods on board of a specific means of transport for dangerous goods security purposes.</Description>
+    </Code>
+    <Code>
+        <Id>ALH</Id>
+        <Name>Dangerous goods transport licence number</Name>
+        <Description>Licence number allocated by an authority as to the permission of carrying
+            dangerous goods by a specific means of transport.</Description>
+    </Code>
+    <Code>
+        <Id>ALI</Id>
+        <Name>Previous rental agreement number</Name>
+        <Description>Number to identify the previous rental agreement number.</Description>
+    </Code>
+    <Code>
+        <Id>ALJ</Id>
+        <Name>Next rental agreement reason number</Name>
+        <Description>Number to identify the reason for the next rental agreement.</Description>
+    </Code>
+    <Code>
+        <Id>ALK</Id>
+        <Name>Consignee's invoice number</Name>
+        <Description>The invoice number assigned by a consignee.</Description>
+    </Code>
+    <Code>
+        <Id>ALL</Id>
+        <Name>Message batch number</Name>
+        <Description>A number identifying a batch of messages.</Description>
+    </Code>
+    <Code>
+        <Id>ALM</Id>
+        <Name>Previous delivery schedule number</Name>
+        <Description>A reference number identifying a previous delivery schedule.</Description>
+    </Code>
+    <Code>
+        <Id>ALN</Id>
+        <Name>Physical inventory recount reference number</Name>
+        <Description>A reference to a re-count of physically held inventory.</Description>
+    </Code>
+    <Code>
+        <Id>ALO</Id>
+        <Name>Receiving advice number</Name>
+        <Description>A reference number to a receiving advice.</Description>
+    </Code>
+    <Code>
+        <Id>ALP</Id>
+        <Name>Returnable container reference number</Name>
+        <Description>A reference number identifying a returnable container.</Description>
+    </Code>
+    <Code>
+        <Id>ALQ</Id>
+        <Name>Returns notice number</Name>
+        <Description>A reference number to a returns notice.</Description>
+    </Code>
+    <Code>
+        <Id>ALR</Id>
+        <Name>Sales forecast number</Name>
+        <Description>A reference number identifying a sales forecast.</Description>
+    </Code>
+    <Code>
+        <Id>ALS</Id>
+        <Name>Sales report number</Name>
+        <Description>A reference number identifying a sales report.</Description>
+    </Code>
+    <Code>
+        <Id>ALT</Id>
+        <Name>Previous tax control number</Name>
+        <Description>A reference number identifying a previous tax control number.</Description>
+    </Code>
+    <Code>
+        <Id>ALU</Id>
+        <Name>AGERD (Aerospace Ground Equipment Requirement Data) number</Name>
+        <Description>Identifies the equipment required to conduct maintenance.</Description>
+    </Code>
+    <Code>
+        <Id>ALV</Id>
+        <Name>Registered capital reference</Name>
+        <Description>Registered capital reference of a company.</Description>
+    </Code>
+    <Code>
+        <Id>ALW</Id>
+        <Name>Standard number of inspection document</Name>
+        <Description>Code identifying the standard number of the inspection document supplied.</Description>
+    </Code>
+    <Code>
+        <Id>ALX</Id>
+        <Name>Model</Name>
+        <Description>(7242) A reference used to identify a model.</Description>
+    </Code>
+    <Code>
+        <Id>ALY</Id>
+        <Name>Financial management reference</Name>
+        <Description>A financial management reference.</Description>
+    </Code>
+    <Code>
+        <Id>ALZ</Id>
+        <Name>NOTIfication for COLlection number (NOTICOL)</Name>
+        <Description>A reference assigned by a consignor to a notification document which indicates
+            the availability of goods for collection.</Description>
+    </Code>
+    <Code>
+        <Id>AMA</Id>
+        <Name>Previous request for metered reading reference number</Name>
+        <Description>Number to identify a previous request for a recording or reading of a measuring
+            device.</Description>
+    </Code>
+    <Code>
+        <Id>AMB</Id>
+        <Name>Next rental agreement number</Name>
+        <Description>Number to identify the next rental agreement.</Description>
+    </Code>
+    <Code>
+        <Id>AMC</Id>
+        <Name>Reference number of a request for metered reading</Name>
+        <Description>Number to identify a request for a recording or reading of a measuring device
+            to be taken.</Description>
+    </Code>
+    <Code>
+        <Id>AMD</Id>
+        <Name>Hastening number</Name>
+        <Description>A number which uniquely identifies a request to hasten an action.</Description>
+    </Code>
+    <Code>
+        <Id>AME</Id>
+        <Name>Repair data request number</Name>
+        <Description>A number which uniquely identifies a request for data about repairs.</Description>
+    </Code>
+    <Code>
+        <Id>AMF</Id>
+        <Name>Consumption data request number</Name>
+        <Description>A number which identifies a request for consumption data.</Description>
+    </Code>
+    <Code>
+        <Id>AMG</Id>
+        <Name>Profile number</Name>
+        <Description>Reference number allocated to a discrete set of criteria.</Description>
+    </Code>
+    <Code>
+        <Id>AMH</Id>
+        <Name>Case number</Name>
+        <Description>Number assigned to a case.</Description>
+    </Code>
+    <Code>
+        <Id>AMI</Id>
+        <Name>Government quality assurance and control level Number</Name>
+        <Description>A number which identifies the level of quality assurance and control required
+            by the government for an article.</Description>
+    </Code>
+    <Code>
+        <Id>AMJ</Id>
+        <Name>Payment plan reference</Name>
+        <Description>A number which uniquely identifies a payment plan.</Description>
+    </Code>
+    <Code>
+        <Id>AMK</Id>
+        <Name>Replaced meter unit number</Name>
+        <Description>Number identifying the replaced meter unit.</Description>
+    </Code>
+    <Code>
+        <Id>AML</Id>
+        <Name>Replenishment purchase order range end number</Name>
+        <Description>Ending number of a range of purchase order numbers assigned by the buyer to
+            vendor's replenishment orders.</Description>
+    </Code>
+    <Code>
+        <Id>AMM</Id>
+        <Name>Insurer assigned reference number</Name>
+        <Description>A unique reference number assigned by the insurer.</Description>
+    </Code>
+    <Code>
+        <Id>AMN</Id>
+        <Name>Canadian excise entry number</Name>
+        <Description>An excise entry number assigned by the Canadian Customs.</Description>
+    </Code>
+    <Code>
+        <Id>AMO</Id>
+        <Name>Premium rate table</Name>
+        <Description>Identifies the premium rate table.</Description>
+    </Code>
+    <Code>
+        <Id>AMP</Id>
+        <Name>Advise through bank's reference</Name>
+        <Description>Financial institution through which the advising bank is to advise the
+            documentary credit.</Description>
+    </Code>
+    <Code>
+        <Id>AMQ</Id>
+        <Name>US, Department of Transportation bond surety code</Name>
+        <Description>A bond surety code assigned by the United States Department of Transportation
+            (DOT).</Description>
+    </Code>
+    <Code>
+        <Id>AMR</Id>
+        <Name>US, Food and Drug Administration establishment indicator</Name>
+        <Description>An establishment indicator assigned by the United States Food and Drug
+            Administration.</Description>
+    </Code>
+    <Code>
+        <Id>AMS</Id>
+        <Name>US, Federal Communications Commission (FCC) import</Name>
+        <Description>condition number A number known as the United States Federal Communications
+            Commission (FCC) import condition number applying to certain types of regulated
+            communications equipment.</Description>
+    </Code>
+    <Code>
+        <Id>AMT</Id>
+        <Name>Goods and Services Tax identification number</Name>
+        <Description>Identifier assigned to an entity by a tax authority for Goods and Services Tax
+            (GST) related purposes.</Description>
+    </Code>
+    <Code>
+        <Id>AMU</Id>
+        <Name>Integrated logistic support cross reference number</Name>
+        <Description>Provides the identification of the reference which allows cross referencing of
+            items between different areas of integrated logistics support.</Description>
+    </Code>
+    <Code>
+        <Id>AMV</Id>
+        <Name>Department number</Name>
+        <Description>Number assigned to a department within an organization.</Description>
+    </Code>
+    <Code>
+        <Id>AMW</Id>
+        <Name>Buyer's catalogue number</Name>
+        <Description>Identification of a catalogue maintained by a buyer.</Description>
+    </Code>
+    <Code>
+        <Id>AMX</Id>
+        <Name>Financial settlement party's reference number</Name>
+        <Description>Reference number of the party who is responsible for the financial settlement.</Description>
+    </Code>
+    <Code>
+        <Id>AMY</Id>
+        <Name>Standard's version number</Name>
+        <Description>The version number assigned to a standard.</Description>
+    </Code>
+    <Code>
+        <Id>AMZ</Id>
+        <Name>Pipeline number</Name>
+        <Description>Number to identify a pipeline.</Description>
+    </Code>
+    <Code>
+        <Id>ANA</Id>
+        <Name>Account servicing bank's reference number</Name>
+        <Description>Reference number of the account servicing bank.</Description>
+    </Code>
+    <Code>
+        <Id>ANB</Id>
+        <Name>Completed units payment request reference</Name>
+        <Description>A reference to a payment request for completed units.</Description>
+    </Code>
+    <Code>
+        <Id>ANC</Id>
+        <Name>Payment in advance request reference</Name>
+        <Description>A reference to a request for payment in advance.</Description>
+    </Code>
+    <Code>
+        <Id>AND</Id>
+        <Name>Parent file</Name>
+        <Description>Identifies the parent file in a structure of related files.</Description>
+    </Code>
+    <Code>
+        <Id>ANE</Id>
+        <Name>Sub file</Name>
+        <Description>Identifies the sub file in a structure of related files.</Description>
+    </Code>
+    <Code>
+        <Id>ANF</Id>
+        <Name>CAD file layer convention</Name>
+        <Description>Reference number identifying a layer convention for a file in a Computer Aided
+            Design (CAD) environment.</Description>
+    </Code>
+    <Code>
+        <Id>ANG</Id>
+        <Name>Technical regulation</Name>
+        <Description>Reference number identifying a technical regulation.</Description>
+    </Code>
+    <Code>
+        <Id>ANH</Id>
+        <Name>Plot file</Name>
+        <Description>Reference number indicating that the file is a plot file.</Description>
+    </Code>
+    <Code>
+        <Id>ANI</Id>
+        <Name>File conversion journal</Name>
+        <Description>Reference number identifying a journal recording details about conversion
+            operations between file formats.</Description>
+    </Code>
+    <Code>
+        <Id>ANJ</Id>
+        <Name>Authorization number</Name>
+        <Description>A number which uniquely identifies an authorization.</Description>
+    </Code>
+    <Code>
+        <Id>ANK</Id>
+        <Name>Reference number assigned by third party</Name>
+        <Description>Reference number assigned by a third party.</Description>
+    </Code>
+    <Code>
+        <Id>ANL</Id>
+        <Name>Deposit reference number</Name>
+        <Description>A reference number identifying a deposit.</Description>
+    </Code>
+    <Code>
+        <Id>ANM</Id>
+        <Name>Named bank's reference</Name>
+        <Description>Reference number of the named bank.</Description>
+    </Code>
+    <Code>
+        <Id>ANN</Id>
+        <Name>Drawee's reference</Name>
+        <Description>Reference number of the drawee.</Description>
+    </Code>
+    <Code>
+        <Id>ANO</Id>
+        <Name>Case of need party's reference</Name>
+        <Description>Reference number of the case of need party.</Description>
+    </Code>
+    <Code>
+        <Id>ANP</Id>
+        <Name>Collecting bank's reference</Name>
+        <Description>Reference number of the collecting bank.</Description>
+    </Code>
+    <Code>
+        <Id>ANQ</Id>
+        <Name>Remitting bank's reference</Name>
+        <Description>Reference number of the remitting bank.</Description>
+    </Code>
+    <Code>
+        <Id>ANR</Id>
+        <Name>Principal's bank reference</Name>
+        <Description>Reference number of the principal's bank.</Description>
+    </Code>
+    <Code>
+        <Id>ANS</Id>
+        <Name>Presenting bank's reference</Name>
+        <Description>Reference number of the presenting bank.</Description>
+    </Code>
+    <Code>
+        <Id>ANT</Id>
+        <Name>Consignee's reference</Name>
+        <Description>Reference number of the consignee.</Description>
+    </Code>
+    <Code>
+        <Id>ANU</Id>
+        <Name>Financial transaction reference number</Name>
+        <Description>Reference number of the financial transaction.</Description>
+    </Code>
+    <Code>
+        <Id>ANV</Id>
+        <Name>Credit reference number</Name>
+        <Description>The reference number of a credit instruction.</Description>
+    </Code>
+    <Code>
+        <Id>ANW</Id>
+        <Name>Receiving bank's authorization number</Name>
+        <Description>Authorization number of the receiving bank.</Description>
+    </Code>
+    <Code>
+        <Id>ANX</Id>
+        <Name>Clearing reference</Name>
+        <Description>Reference allocated by a clearing procedure.</Description>
+    </Code>
+    <Code>
+        <Id>ANY</Id>
+        <Name>Sending bank's reference number</Name>
+        <Description>Reference number of the sending bank.</Description>
+    </Code>
+    <Code>
+        <Id>AOA</Id>
+        <Name>Documentary payment reference</Name>
+        <Description>Reference of the documentary payment.</Description>
+    </Code>
+    <Code>
+        <Id>AOD</Id>
+        <Name>Accounting file reference</Name>
+        <Description>Reference of an accounting file.</Description>
+    </Code>
+    <Code>
+        <Id>AOE</Id>
+        <Name>Sender's file reference number</Name>
+        <Description>File reference number assigned by the sender.</Description>
+    </Code>
+    <Code>
+        <Id>AOF</Id>
+        <Name>Receiver's file reference number</Name>
+        <Description>File reference number assigned by the receiver.</Description>
+    </Code>
+    <Code>
+        <Id>AOG</Id>
+        <Name>Source document internal reference</Name>
+        <Description>Reference number assigned to a source document for internal usage.</Description>
+    </Code>
+    <Code>
+        <Id>AOH</Id>
+        <Name>Principal's reference</Name>
+        <Description>Reference number of the principal.</Description>
+    </Code>
+    <Code>
+        <Id>AOI</Id>
+        <Name>Debit reference number</Name>
+        <Description>The reference number of a debit instruction.</Description>
+    </Code>
+    <Code>
+        <Id>AOJ</Id>
+        <Name>Calendar</Name>
+        <Description>A calendar reference number.</Description>
+    </Code>
+    <Code>
+        <Id>AOK</Id>
+        <Name>Work shift</Name>
+        <Description>A work shift reference number.</Description>
+    </Code>
+    <Code>
+        <Id>AOL</Id>
+        <Name>Work breakdown structure</Name>
+        <Description>A structure reference that identifies the breakdown of work for a project.</Description>
+    </Code>
+    <Code>
+        <Id>AOM</Id>
+        <Name>Organisation breakdown structure</Name>
+        <Description>A structure reference that identifies the breakdown of an organisation.</Description>
+    </Code>
+    <Code>
+        <Id>AON</Id>
+        <Name>Work task charge number</Name>
+        <Description>A reference assigned to a specific work task charge.</Description>
+    </Code>
+    <Code>
+        <Id>AOO</Id>
+        <Name>Functional work group</Name>
+        <Description>A reference to identify a functional group performing work.</Description>
+    </Code>
+    <Code>
+        <Id>AOP</Id>
+        <Name>Work team</Name>
+        <Description>A reference to identify a team performing work.</Description>
+    </Code>
+    <Code>
+        <Id>AOQ</Id>
+        <Name>Department</Name>
+        <Description>Section of an organisation.</Description>
+    </Code>
+    <Code>
+        <Id>AOR</Id>
+        <Name>Statement of work</Name>
+        <Description>A reference number for a statement of work.</Description>
+    </Code>
+    <Code>
+        <Id>AOS</Id>
+        <Name>Work package</Name>
+        <Description>A reference for a detailed package of work.</Description>
+    </Code>
+    <Code>
+        <Id>AOT</Id>
+        <Name>Planning package</Name>
+        <Description>A reference for a planning package of work.</Description>
+    </Code>
+    <Code>
+        <Id>AOU</Id>
+        <Name>Cost account</Name>
+        <Description>A cost control account reference.</Description>
+    </Code>
+    <Code>
+        <Id>AOV</Id>
+        <Name>Work order</Name>
+        <Description>Reference number for an order to do work.</Description>
+    </Code>
+    <Code>
+        <Id>AOW</Id>
+        <Name>Transportation Control Number (TCN)</Name>
+        <Description>A number assigned for transportation purposes.</Description>
+    </Code>
+    <Code>
+        <Id>AOX</Id>
+        <Name>Constraint notation</Name>
+        <Description>Identifies a reference to a constraint notation.</Description>
+    </Code>
+    <Code>
+        <Id>AOY</Id>
+        <Name>ETERMS reference</Name>
+        <Description>Identifies a reference to the ICC (International Chamber of Commerce)
+            ETERMS(tm) repository of electronic commerce trading terms and conditions.</Description>
+    </Code>
+    <Code>
+        <Id>AOZ</Id>
+        <Name>Implementation version number</Name>
+        <Description>Identifies a version number of an implementation.</Description>
+    </Code>
+    <Code>
+        <Id>AP</Id>
+        <Name>Accounts receivable number</Name>
+        <Description>Reference number assigned by accounts receivable department to the account of a
+            specific debtor.</Description>
+    </Code>
+    <Code>
+        <Id>APA</Id>
+        <Name>Incorporated legal reference</Name>
+        <Description>Identifies a legal reference which is deemed incorporated by reference.</Description>
+    </Code>
+    <Code>
+        <Id>APB</Id>
+        <Name>Payment instalment reference number</Name>
+        <Description>A reference number given to a payment instalment to identify a specific
+            instance of payment of a debt which can be paid at specified intervals.</Description>
+    </Code>
+    <Code>
+        <Id>APC</Id>
+        <Name>Equipment owner reference number</Name>
+        <Description>Reference number issued by the owner of the equipment.</Description>
+    </Code>
+    <Code>
+        <Id>APD</Id>
+        <Name>Cedent's claim number</Name>
+        <Description>To identify the number assigned to the claim by the ceding company.</Description>
+    </Code>
+    <Code>
+        <Id>APE</Id>
+        <Name>Reinsurer's claim number</Name>
+        <Description>To identify the number assigned to the claim by the reinsurer.</Description>
+    </Code>
+    <Code>
+        <Id>APF</Id>
+        <Name>Price/sales catalogue response reference number</Name>
+        <Description>A reference number identifying a response to a price/sales catalogue.</Description>
+    </Code>
+    <Code>
+        <Id>APG</Id>
+        <Name>General purpose message reference number</Name>
+        <Description>A reference number identifying a general purpose message.</Description>
+    </Code>
+    <Code>
+        <Id>APH</Id>
+        <Name>Invoicing data sheet reference number</Name>
+        <Description>A reference number identifying an invoicing data sheet.</Description>
+    </Code>
+    <Code>
+        <Id>API</Id>
+        <Name>Inventory report reference number</Name>
+        <Description>A reference number identifying an inventory report.</Description>
+    </Code>
+    <Code>
+        <Id>APJ</Id>
+        <Name>Ceiling formula reference number</Name>
+        <Description>The reference number which identifies a formula for determining a ceiling.</Description>
+    </Code>
+    <Code>
+        <Id>APK</Id>
+        <Name>Price variation formula reference number</Name>
+        <Description>The reference number which identifies a price variation formula.</Description>
+    </Code>
+    <Code>
+        <Id>APL</Id>
+        <Name>Reference to account servicing bank's message</Name>
+        <Description>Reference to the account servicing bank's message.</Description>
+    </Code>
+    <Code>
+        <Id>APM</Id>
+        <Name>Party sequence number</Name>
+        <Description>Reference identifying a party sequence number.</Description>
+    </Code>
+    <Code>
+        <Id>APN</Id>
+        <Name>Purchaser's request reference</Name>
+        <Description>Reference identifying a request made by the purchaser.</Description>
+    </Code>
+    <Code>
+        <Id>APO</Id>
+        <Name>Contractor request reference</Name>
+        <Description>Reference identifying a request made by a contractor.</Description>
+    </Code>
+    <Code>
+        <Id>APP</Id>
+        <Name>Accident reference number</Name>
+        <Description>Reference number assigned to an accident.</Description>
+    </Code>
+    <Code>
+        <Id>APQ</Id>
+        <Name>Commercial account summary reference number</Name>
+        <Description>A reference number identifying a commercial account summary.</Description>
+    </Code>
+    <Code>
+        <Id>APR</Id>
+        <Name>Contract breakdown reference</Name>
+        <Description>A reference which identifies a specific breakdown of a contract.</Description>
+    </Code>
+    <Code>
+        <Id>APS</Id>
+        <Name>Contractor registration number</Name>
+        <Description>A reference number used to identify a contractor.</Description>
+    </Code>
+    <Code>
+        <Id>APT</Id>
+        <Name>Applicable coefficient identification number</Name>
+        <Description>The identification number of the coefficient which is applicable.</Description>
+    </Code>
+    <Code>
+        <Id>APU</Id>
+        <Name>Special budget account number</Name>
+        <Description>The number of a special budget account.</Description>
+    </Code>
+    <Code>
+        <Id>APV</Id>
+        <Name>Authorisation for repair reference</Name>
+        <Description>Reference of the authorisation for repair.</Description>
+    </Code>
+    <Code>
+        <Id>APW</Id>
+        <Name>Manufacturer defined repair rates reference</Name>
+        <Description>Reference assigned by a manufacturer to their repair rates.</Description>
+    </Code>
+    <Code>
+        <Id>APX</Id>
+        <Name>Original submitter log number</Name>
+        <Description>A control number assigned by the original submitter.</Description>
+    </Code>
+    <Code>
+        <Id>APY</Id>
+        <Name>Original submitter, parent Data Maintenance Request (DMR)</Name>
+        <Description>log number A Data Maintenance Request (DMR) original submitter's reference log
+            number for the parent DMR.</Description>
+    </Code>
+    <Code>
+        <Id>APZ</Id>
+        <Name>Original submitter, child Data Maintenance Request (DMR)</Name>
+        <Description>log number A Data Maintenance Request (DMR) original submitter's reference log
+            number for a child DMR.</Description>
+    </Code>
+    <Code>
+        <Id>AQA</Id>
+        <Name>Entry point assessment log number</Name>
+        <Description>The reference log number assigned by an entry point assessment group for the
+            DMR.</Description>
+    </Code>
+    <Code>
+        <Id>AQB</Id>
+        <Name>Entry point assessment log number, parent DMR</Name>
+        <Description>The reference log number assigned by an entry point assessment group for the
+            parent Data Maintenance Request (DMR).</Description>
+    </Code>
+    <Code>
+        <Id>AQC</Id>
+        <Name>Entry point assessment log number, child DMR</Name>
+        <Description>The reference log number assigned by an entry point assessment group for a
+            child Data Maintenance Request (DMR).</Description>
+    </Code>
+    <Code>
+        <Id>AQD</Id>
+        <Name>Data structure tag</Name>
+        <Description>The tag assigned to a data structure.</Description>
+    </Code>
+    <Code>
+        <Id>AQE</Id>
+        <Name>Central secretariat log number</Name>
+        <Description>The reference log number assigned by the central secretariat for the Data
+            Maintenance Request (DMR).</Description>
+    </Code>
+    <Code>
+        <Id>AQF</Id>
+        <Name>Central secretariat log number, parent Data Maintenance</Name>
+        <Description>Request (DMR) The reference log number assigned by the central secretariat for
+            the parent Data Maintenance Request (DMR).</Description>
+    </Code>
+    <Code>
+        <Id>AQG</Id>
+        <Name>Central secretariat log number, child Data Maintenance</Name>
+        <Description>Request (DMR) The reference log number assigned by the central secretariat for
+            the child Data Maintenance Request (DMR).</Description>
+    </Code>
+    <Code>
+        <Id>AQH</Id>
+        <Name>International assessment log number</Name>
+        <Description>The reference log number assigned to a Data Maintenance Request (DMR) changed
+            in international assessment.</Description>
+    </Code>
+    <Code>
+        <Id>AQI</Id>
+        <Name>International assessment log number, parent Data</Name>
+        <Description>Maintenance Request (DMR) The reference log number assigned to a Data
+            Maintenance Request (DMR) changed in international assessment that is a parent to the
+            current DMR.</Description>
+    </Code>
+    <Code>
+        <Id>AQJ</Id>
+        <Name>International assessment log number, child Data Maintenance</Name>
+        <Description>Request (DMR) The reference log number assigned to a Data Maintenance Request
+            (DMR) changed in international assessment that is a child to the current DMR.</Description>
+    </Code>
+    <Code>
+        <Id>AQK</Id>
+        <Name>Status report number</Name>
+        <Description>(1125) The reference number for a status report.</Description>
+    </Code>
+    <Code>
+        <Id>AQL</Id>
+        <Name>Message design group number</Name>
+        <Description>Reference number for a message design group.</Description>
+    </Code>
+    <Code>
+        <Id>AQM</Id>
+        <Name>US Customs Service (USCS) entry code</Name>
+        <Description>An entry number assigned by the United States (US) customs service.</Description>
+    </Code>
+    <Code>
+        <Id>AQN</Id>
+        <Name>Beginning job sequence number</Name>
+        <Description>The number designating the beginning of the job sequence.</Description>
+    </Code>
+    <Code>
+        <Id>AQO</Id>
+        <Name>Sender's clause number</Name>
+        <Description>The number that identifies the sender's clause.</Description>
+    </Code>
+    <Code>
+        <Id>AQP</Id>
+        <Name>Dun and Bradstreet Canada's 8 digit Standard Industrial</Name>
+        <Description>Classification (SIC) code Dun and Bradstreet Canada's 8 digit Standard
+            Industrial Classification (SIC) code identifying activities of the company.</Description>
+    </Code>
+    <Code>
+        <Id>AQQ</Id>
+        <Name>Activite Principale Exercee (APE) identifier</Name>
+        <Description>The French industry code for the main activity of a company.</Description>
+    </Code>
+    <Code>
+        <Id>AQR</Id>
+        <Name>Dun and Bradstreet US 8 digit Standard Industrial</Name>
+        <Description>Classification (SIC) code Dun and Bradstreet United States' 8 digit Standard
+            Industrial Classification (SIC) code identifying activities of the company.</Description>
+    </Code>
+    <Code>
+        <Id>AQS</Id>
+        <Name>Nomenclature Activity Classification Economy (NACE)</Name>
+        <Description>identifier A European industry classification code used to identify the
+            activity of a company.</Description>
+    </Code>
+    <Code>
+        <Id>AQT</Id>
+        <Name>Norme Activite Francaise (NAF) identifier</Name>
+        <Description>A French industry classification code assigned by the French government to
+            identify the activity of a company.</Description>
+    </Code>
+    <Code>
+        <Id>AQU</Id>
+        <Name>Registered contractor activity type</Name>
+        <Description>Reference number identifying the type of registered contractor activity.</Description>
+    </Code>
+    <Code>
+        <Id>AQV</Id>
+        <Name>Statistic Bundes Amt (SBA) identifier</Name>
+        <Description>A German industry classification code issued by Statistic Bundes Amt (SBA) to
+            identify the activity of a company.</Description>
+    </Code>
+    <Code>
+        <Id>AQW</Id>
+        <Name>State or province assigned entity identification</Name>
+        <Description>Reference number of an entity assigned by a state or province.</Description>
+    </Code>
+    <Code>
+        <Id>AQX</Id>
+        <Name>Institute of Security and Future Market Development (ISFMD)</Name>
+        <Description>serial number A number used to identify a public but not publicly traded
+            company.</Description>
+    </Code>
+    <Code>
+        <Id>AQY</Id>
+        <Name>File identification number</Name>
+        <Description>A number assigned to identify a file.</Description>
+    </Code>
+    <Code>
+        <Id>AQZ</Id>
+        <Name>Bankruptcy procedure number</Name>
+        <Description>A number identifying a bankruptcy procedure.</Description>
+    </Code>
+    <Code>
+        <Id>ARA</Id>
+        <Name>National government business identification number</Name>
+        <Description>A business identification number which is assigned by a national government.</Description>
+    </Code>
+    <Code>
+        <Id>ARB</Id>
+        <Name>Prior Data Universal Number System (DUNS) number</Name>
+        <Description>A previously assigned Data Universal Number System (DUNS) number.</Description>
+    </Code>
+    <Code>
+        <Id>ARC</Id>
+        <Name>Companies Registry Office (CRO) number</Name>
+        <Description>Identifies the reference number assigned by the Companies Registry Office
+            (CRO).</Description>
+    </Code>
+    <Code>
+        <Id>ARD</Id>
+        <Name>Costa Rican judicial number</Name>
+        <Description>A number assigned by the government to a business in Costa Rica.</Description>
+    </Code>
+    <Code>
+        <Id>ARE</Id>
+        <Name>Numero de Identificacion Tributaria (NIT)</Name>
+        <Description>A number assigned by the government to a business in some Latin American
+            countries.</Description>
+    </Code>
+    <Code>
+        <Id>ARF</Id>
+        <Name>Patron number</Name>
+        <Description>A number assigned by the government to a business in some Latin American
+            countries. Note that "Patron" is a Spanish word, it is not a person who gives financial
+            or other support.</Description>
+    </Code>
+    <Code>
+        <Id>ARG</Id>
+        <Name>Registro Informacion Fiscal (RIF) number</Name>
+        <Description>A number assigned by the government to a business in some Latin American
+            countries.</Description>
+    </Code>
+    <Code>
+        <Id>ARH</Id>
+        <Name>Registro Unico de Contribuyente (RUC) number</Name>
+        <Description>A number assigned by the government to a business in some Latin American
+            countries.</Description>
+    </Code>
+    <Code>
+        <Id>ARI</Id>
+        <Name>Tokyo SHOKO Research (TSR) business identifier</Name>
+        <Description>A number assigned to a business by TSR.</Description>
+    </Code>
+    <Code>
+        <Id>ARJ</Id>
+        <Name>Personal identity card number</Name>
+        <Description>An identity card number assigned to a person.</Description>
+    </Code>
+    <Code>
+        <Id>ARK</Id>
+        <Name>Systeme Informatique pour le Repertoire des ENtreprises</Name>
+        <Description>(SIREN) number An identification number known as a SIREN assigned to a business
+            in France.</Description>
+    </Code>
+    <Code>
+        <Id>ARL</Id>
+        <Name>Systeme Informatique pour le Repertoire des ETablissements</Name>
+        <Description>(SIRET) number An identification number known as a SIRET assigned to a business
+            location in France.</Description>
+    </Code>
+    <Code>
+        <Id>ARM</Id>
+        <Name>Publication issue number</Name>
+        <Description>A number assigned to identify a publication issue.</Description>
+    </Code>
+    <Code>
+        <Id>ARN</Id>
+        <Name>Original filing number</Name>
+        <Description>A number assigned to the original filing.</Description>
+    </Code>
+    <Code>
+        <Id>ARO</Id>
+        <Name>Document page identifier</Name>
+        <Description>[1212] To identify a page number.</Description>
+    </Code>
+    <Code>
+        <Id>ARP</Id>
+        <Name>Public filing registration number</Name>
+        <Description>A number assigned at the time of registration of a public filing.</Description>
+    </Code>
+    <Code>
+        <Id>ARQ</Id>
+        <Name>Regiristo Federal de Contribuyentes</Name>
+        <Description>A federal tax identification number assigned by the Mexican tax authority.</Description>
+    </Code>
+    <Code>
+        <Id>ARR</Id>
+        <Name>Social security number</Name>
+        <Description>An identification number assigned to an individual by the social security
+            administration.</Description>
+    </Code>
+    <Code>
+        <Id>ARS</Id>
+        <Name>Document volume number</Name>
+        <Description>The number of a document volume.</Description>
+    </Code>
+    <Code>
+        <Id>ART</Id>
+        <Name>Book number</Name>
+        <Description>A number assigned to identify a book.</Description>
+    </Code>
+    <Code>
+        <Id>ARU</Id>
+        <Name>Stock exchange company identifier</Name>
+        <Description>A reference assigned by the stock exchange to a company.</Description>
+    </Code>
+    <Code>
+        <Id>ARV</Id>
+        <Name>Imputation account</Name>
+        <Description>An account to which an amount is to be posted.</Description>
+    </Code>
+    <Code>
+        <Id>ARW</Id>
+        <Name>Financial phase reference</Name>
+        <Description>A reference which identifies a specific financial phase.</Description>
+    </Code>
+    <Code>
+        <Id>ARX</Id>
+        <Name>Technical phase reference</Name>
+        <Description>A reference which identifies a specific technical phase.</Description>
+    </Code>
+    <Code>
+        <Id>ARY</Id>
+        <Name>Prior contractor registration number</Name>
+        <Description>A previous reference number used to identify a contractor.</Description>
+    </Code>
+    <Code>
+        <Id>ARZ</Id>
+        <Name>Stock adjustment number</Name>
+        <Description>A number identifying a stock adjustment.</Description>
+    </Code>
+    <Code>
+        <Id>ASA</Id>
+        <Name>Dispensation reference</Name>
+        <Description>A reference number assigned to an official exemption from a law or obligation.</Description>
+    </Code>
+    <Code>
+        <Id>ASB</Id>
+        <Name>Investment reference number</Name>
+        <Description>A reference to a specific investment.</Description>
+    </Code>
+    <Code>
+        <Id>ASC</Id>
+        <Name>Assuming company</Name>
+        <Description>A number that identifies an assuming company.</Description>
+    </Code>
+    <Code>
+        <Id>ASD</Id>
+        <Name>Budget chapter</Name>
+        <Description>A reference to the chapter in a budget.</Description>
+    </Code>
+    <Code>
+        <Id>ASE</Id>
+        <Name>Duty free products security number</Name>
+        <Description>A security number allocated for duty free products.</Description>
+    </Code>
+    <Code>
+        <Id>ASF</Id>
+        <Name>Duty free products receipt authorisation number</Name>
+        <Description>Authorisation number allocated for the receipt of duty free products.</Description>
+    </Code>
+    <Code>
+        <Id>ASG</Id>
+        <Name>Party information message reference</Name>
+        <Description>Reference identifying a party information message.</Description>
+    </Code>
+    <Code>
+        <Id>ASH</Id>
+        <Name>Formal statement reference</Name>
+        <Description>A reference to a formal statement.</Description>
+    </Code>
+    <Code>
+        <Id>ASI</Id>
+        <Name>Proof of delivery reference number</Name>
+        <Description>A reference number identifying a proof of delivery which is generated by the
+            goods recipient.</Description>
+    </Code>
+    <Code>
+        <Id>ASJ</Id>
+        <Name>Supplier's credit claim reference number</Name>
+        <Description>A reference number identifying a supplier's credit claim.</Description>
+    </Code>
+    <Code>
+        <Id>ASK</Id>
+        <Name>Picture of actual product</Name>
+        <Description>Reference identifying the picture of an actual product.</Description>
+    </Code>
+    <Code>
+        <Id>ASL</Id>
+        <Name>Picture of a generic product</Name>
+        <Description>Reference identifying a picture of a generic product.</Description>
+    </Code>
+    <Code>
+        <Id>ASM</Id>
+        <Name>Trading partner identification number</Name>
+        <Description>Code specifying an identification assigned to an entity with whom one conducts
+            trade.</Description>
+    </Code>
+    <Code>
+        <Id>ASN</Id>
+        <Name>Prior trading partner identification number</Name>
+        <Description>Code specifying an identification number previously assigned to a trading
+            partner.</Description>
+    </Code>
+    <Code>
+        <Id>ASO</Id>
+        <Name>Password</Name>
+        <Description>Code used for authentication purposes.</Description>
+    </Code>
+    <Code>
+        <Id>ASP</Id>
+        <Name>Formal report number</Name>
+        <Description>A number uniquely identifying a formal report.</Description>
+    </Code>
+    <Code>
+        <Id>ASQ</Id>
+        <Name>Fund account number</Name>
+        <Description>Account number of fund.</Description>
+    </Code>
+    <Code>
+        <Id>ASR</Id>
+        <Name>Safe custody number</Name>
+        <Description>The number of a file or portfolio kept for safe custody on behalf of clients.</Description>
+    </Code>
+    <Code>
+        <Id>ASS</Id>
+        <Name>Master account number</Name>
+        <Description>A reference number identifying a master account.</Description>
+    </Code>
+    <Code>
+        <Id>AST</Id>
+        <Name>Group reference number</Name>
+        <Description>The reference number identifying a group.</Description>
+    </Code>
+    <Code>
+        <Id>ASU</Id>
+        <Name>Accounting transmission number</Name>
+        <Description>A number used to identify the transmission of an accounting book entry.</Description>
+    </Code>
+    <Code>
+        <Id>ASV</Id>
+        <Name>Product data file number</Name>
+        <Description>The number of a product data file.</Description>
+    </Code>
+    <Code>
+        <Id>ASW</Id>
+        <Name>Cadastro Geral do Contribuinte (CGC)</Name>
+        <Description>Brazilian taxpayer number.</Description>
+    </Code>
+    <Code>
+        <Id>ASX</Id>
+        <Name>Foreign resident identification number</Name>
+        <Description>Number assigned by a government agency to identify a foreign resident.</Description>
+    </Code>
+    <Code>
+        <Id>ASY</Id>
+        <Name>CD-ROM</Name>
+        <Description>Identity number of the Compact Disk Read Only Memory (CD-ROM).</Description>
+    </Code>
+    <Code>
+        <Id>ASZ</Id>
+        <Name>Physical medium</Name>
+        <Description>Identifies the physical medium.</Description>
+    </Code>
+    <Code>
+        <Id>ATA</Id>
+        <Name>Financial cancellation reference number</Name>
+        <Description>Reference number of a financial cancellation.</Description>
+    </Code>
+    <Code>
+        <Id>ATB</Id>
+        <Name>Purchase for export Customs agreement number</Name>
+        <Description>A number assigned by a Customs authority allowing the purchase of goods free of
+            tax because they are to be exported immediately after the purchase.</Description>
+    </Code>
+    <Code>
+        <Id>ATC</Id>
+        <Name>Judgment number</Name>
+        <Description>A reference number identifying the legal decision.</Description>
+    </Code>
+    <Code>
+        <Id>ATD</Id>
+        <Name>Secretariat number</Name>
+        <Description>A reference number identifying a secretariat.</Description>
+    </Code>
+    <Code>
+        <Id>ATE</Id>
+        <Name>Previous banking status message reference</Name>
+        <Description>Message reference number of the previous banking status message being responded
+            to.</Description>
+    </Code>
+    <Code>
+        <Id>ATF</Id>
+        <Name>Last received banking status message reference</Name>
+        <Description>Reference number of the latest received banking status message.</Description>
+    </Code>
+    <Code>
+        <Id>ATG</Id>
+        <Name>Bank's documentary procedure reference</Name>
+        <Description>Reference allocated by the bank to a documentary procedure.</Description>
+    </Code>
+    <Code>
+        <Id>ATH</Id>
+        <Name>Customer's documentary procedure reference</Name>
+        <Description>Reference allocated by a customer to a documentary procedure.</Description>
+    </Code>
+    <Code>
+        <Id>ATI</Id>
+        <Name>Safe deposit box number</Name>
+        <Description>Number of the safe deposit box.</Description>
+    </Code>
+    <Code>
+        <Id>ATJ</Id>
+        <Name>Receiving Bankgiro number</Name>
+        <Description>Number of the receiving Bankgiro.</Description>
+    </Code>
+    <Code>
+        <Id>ATK</Id>
+        <Name>Sending Bankgiro number</Name>
+        <Description>Number of the sending Bankgiro.</Description>
+    </Code>
+    <Code>
+        <Id>ATL</Id>
+        <Name>Bankgiro reference</Name>
+        <Description>Reference of the Bankgiro.</Description>
+    </Code>
+    <Code>
+        <Id>ATM</Id>
+        <Name>Guarantee number</Name>
+        <Description>Number of a guarantee.</Description>
+    </Code>
+    <Code>
+        <Id>ATN</Id>
+        <Name>Collection instrument number</Name>
+        <Description>To identify the number of an instrument used to remit funds to a beneficiary.</Description>
+    </Code>
+    <Code>
+        <Id>ATO</Id>
+        <Name>Converted Postgiro number</Name>
+        <Description>To identify the reference number of a giro payment having been converted to a
+            Postgiro account.</Description>
+    </Code>
+    <Code>
+        <Id>ATP</Id>
+        <Name>Cost centre alignment number</Name>
+        <Description>Number used in the financial management process to align cost allocations.</Description>
+    </Code>
+    <Code>
+        <Id>ATQ</Id>
+        <Name>Kamer Van Koophandel (KVK) number</Name>
+        <Description>An identification number assigned by the Dutch Chamber of Commerce to a
+            business in the Netherlands.</Description>
+    </Code>
+    <Code>
+        <Id>ATR</Id>
+        <Name>Institut Belgo-Luxembourgeois de Codification (IBLC) number</Name>
+        <Description>An identification number assigned by the Luxembourg National Bank to a business
+            in Luxembourg.</Description>
+    </Code>
+    <Code>
+        <Id>ATS</Id>
+        <Name>External object reference</Name>
+        <Description>A reference identifying an external object.</Description>
+    </Code>
+    <Code>
+        <Id>ATT</Id>
+        <Name>Exceptional transport authorisation number</Name>
+        <Description>Authorisation number for exceptional transport (using specific equipment, out
+            of gauge, materials and/or specific routing).</Description>
+    </Code>
+    <Code>
+        <Id>ATU</Id>
+        <Name>Clave Unica de Identificacion Tributaria (CUIT)</Name>
+        <Description>Tax identification number in Argentina.</Description>
+    </Code>
+    <Code>
+        <Id>ATV</Id>
+        <Name>Registro Unico Tributario (RUT)</Name>
+        <Description>Tax identification number in Chile.</Description>
+    </Code>
+    <Code>
+        <Id>ATW</Id>
+        <Name>Flat rack container bundle identification number</Name>
+        <Description>Reference number assigned to a bundle of flat rack containers.</Description>
+    </Code>
+    <Code>
+        <Id>ATX</Id>
+        <Name>Transport equipment acceptance order reference</Name>
+        <Description>Reference number assigned to an order to accept transport equipment that is to
+            be delivered by an inland carrier to a specified facility.</Description>
+    </Code>
+    <Code>
+        <Id>ATY</Id>
+        <Name>Transport equipment release order reference</Name>
+        <Description>Reference number assigned to an order to release transport equipment which is
+            to be picked up by an inland carrier from a specified facility.</Description>
+    </Code>
+    <Code>
+        <Id>ATZ</Id>
+        <Name>Ship's stay reference number</Name>
+        <Description>(1099) Reference number assigned by a port authority to the stay of a vessel in
+            the port.</Description>
+    </Code>
+    <Code>
+        <Id>AU</Id>
+        <Name>Authorization to meet competition number</Name>
+        <Description>A number assigned by a requestor to an offer incoming following request for
+            quote.</Description>
+    </Code>
+    <Code>
+        <Id>AUA</Id>
+        <Name>Place of positioning reference</Name>
+        <Description>Identifies the reference pertaining to the place of positioning.</Description>
+    </Code>
+    <Code>
+        <Id>AUB</Id>
+        <Name>Party reference</Name>
+        <Description>The reference to a party.</Description>
+    </Code>
+    <Code>
+        <Id>AUC</Id>
+        <Name>Issued prescription identification</Name>
+        <Description>The identification of the issued prescription.</Description>
+    </Code>
+    <Code>
+        <Id>AUD</Id>
+        <Name>Collection reference</Name>
+        <Description>A reference identifying a collection.</Description>
+    </Code>
+    <Code>
+        <Id>AUE</Id>
+        <Name>Travel service</Name>
+        <Description>Reference identifying a travel service.</Description>
+    </Code>
+    <Code>
+        <Id>AUF</Id>
+        <Name>Consignment stock contract</Name>
+        <Description>Reference identifying a consignment stock contract.</Description>
+    </Code>
+    <Code>
+        <Id>AUG</Id>
+        <Name>Importer's letter of credit reference</Name>
+        <Description>Letter of credit reference issued by importer.</Description>
+    </Code>
+    <Code>
+        <Id>AUH</Id>
+        <Name>Performed prescription identification</Name>
+        <Description>The identification of the prescription that has been carried into effect.</Description>
+    </Code>
+    <Code>
+        <Id>AUI</Id>
+        <Name>Image reference</Name>
+        <Description>A reference number identifying an image.</Description>
+    </Code>
+    <Code>
+        <Id>AUJ</Id>
+        <Name>Proposed purchase order reference number</Name>
+        <Description>A reference number assigned to a proposed purchase order.</Description>
+    </Code>
+    <Code>
+        <Id>AUK</Id>
+        <Name>Application for financial support reference number</Name>
+        <Description>Reference number assigned to an application for financial support.</Description>
+    </Code>
+    <Code>
+        <Id>AUL</Id>
+        <Name>Manufacturing quality agreement number</Name>
+        <Description>Reference number of a manufacturing quality agreement.</Description>
+    </Code>
+    <Code>
+        <Id>AUM</Id>
+        <Name>Software editor reference</Name>
+        <Description>Reference identifying the software editor.</Description>
+    </Code>
+    <Code>
+        <Id>AUN</Id>
+        <Name>Software reference</Name>
+        <Description>Reference identifying the software.</Description>
+    </Code>
+    <Code>
+        <Id>AUO</Id>
+        <Name>Software quality reference</Name>
+        <Description>Reference allocated to the software by a quality assurance agency.</Description>
+    </Code>
+    <Code>
+        <Id>AUP</Id>
+        <Name>Consolidated orders' reference</Name>
+        <Description>A reference number to identify orders which have been, or shall be
+            consolidated.</Description>
+    </Code>
+    <Code>
+        <Id>AUQ</Id>
+        <Name>Customs binding ruling number</Name>
+        <Description>Binding ruling number issued by customs.</Description>
+    </Code>
+    <Code>
+        <Id>AUR</Id>
+        <Name>Customs non-binding ruling number</Name>
+        <Description>Non-binding ruling number issued by customs.</Description>
+    </Code>
+    <Code>
+        <Id>AUS</Id>
+        <Name>Delivery route reference</Name>
+        <Description>A reference to the route of the delivery.</Description>
+    </Code>
+    <Code>
+        <Id>AUT</Id>
+        <Name>Net area supplier reference</Name>
+        <Description>A reference identifying a supplier within a net area.</Description>
+    </Code>
+    <Code>
+        <Id>AUU</Id>
+        <Name>Time series reference</Name>
+        <Description>Reference to a time series.</Description>
+    </Code>
+    <Code>
+        <Id>AUV</Id>
+        <Name>Connecting point to central grid</Name>
+        <Description>Reference to a connecting point to a central grid.</Description>
+    </Code>
+    <Code>
+        <Id>AUW</Id>
+        <Name>Marketing plan identification number (MPIN)</Name>
+        <Description>Number identifying a marketing plan.</Description>
+    </Code>
+    <Code>
+        <Id>AUX</Id>
+        <Name>Entity reference number, previous</Name>
+        <Description>The previous reference number assigned to an entity.</Description>
+    </Code>
+    <Code>
+        <Id>AUY</Id>
+        <Name>International Standard Industrial Classification (ISIC)</Name>
+        <Description>code A code specifying an international standard industrial classification.</Description>
+    </Code>
+    <Code>
+        <Id>AUZ</Id>
+        <Name>Customs pre-approval ruling number</Name>
+        <Description>Pre-approval ruling number issued by Customs.</Description>
+    </Code>
+    <Code>
+        <Id>AV</Id>
+        <Name>Account payable number</Name>
+        <Description>Reference number assigned by accounts payable department to the account of a
+            specific creditor.</Description>
+    </Code>
+    <Code>
+        <Id>AVA</Id>
+        <Name>First financial institution's transaction reference</Name>
+        <Description>Identifies the reference given to the individual transaction by the financial
+            institution that is the transaction's point of entry into the interbank transaction
+            chain.</Description>
+    </Code>
+    <Code>
+        <Id>AVB</Id>
+        <Name>Product characteristics directory</Name>
+        <Description>A reference to a product characteristics directory.</Description>
+    </Code>
+    <Code>
+        <Id>AVC</Id>
+        <Name>Supplier's customer reference number</Name>
+        <Description>A number, assigned by a supplier, to reference a customer.</Description>
+    </Code>
+    <Code>
+        <Id>AVD</Id>
+        <Name>Inventory report request number</Name>
+        <Description>Reference number assigned to a request for an inventory report.</Description>
+    </Code>
+    <Code>
+        <Id>AVE</Id>
+        <Name>Metering point</Name>
+        <Description>Reference to a metering point.</Description>
+    </Code>
+    <Code>
+        <Id>AVF</Id>
+        <Name>Passenger reservation number</Name>
+        <Description>Number assigned by the travel supplier to identify the passenger reservation.</Description>
+    </Code>
+    <Code>
+        <Id>AVG</Id>
+        <Name>Slaughterhouse approval number</Name>
+        <Description>Veterinary licence number allocated by a national authority to a
+            slaughterhouse.</Description>
+    </Code>
+    <Code>
+        <Id>AVH</Id>
+        <Name>Meat cutting plant approval number</Name>
+        <Description>Veterinary licence number allocated by a national authority to a meat cutting
+            plant.</Description>
+    </Code>
+    <Code>
+        <Id>AVI</Id>
+        <Name>Customer travel service identifier</Name>
+        <Description>A reference identifying a travel service to a customer.</Description>
+    </Code>
+    <Code>
+        <Id>AVJ</Id>
+        <Name>Export control classification number</Name>
+        <Description>Number identifying the classification of goods covered by an export licence.</Description>
+    </Code>
+    <Code>
+        <Id>AVK</Id>
+        <Name>Broker reference 3</Name>
+        <Description>Third reference of a broker.</Description>
+    </Code>
+    <Code>
+        <Id>AVL</Id>
+        <Name>Consignment information</Name>
+        <Description>Code identifying that the reference number given applies to the consignment
+            information segment group in the referred message .</Description>
+    </Code>
+    <Code>
+        <Id>AVM</Id>
+        <Name>Goods item information</Name>
+        <Description>Code identifying that the reference number given applies to the goods item
+            information segment group in the referred message.</Description>
+    </Code>
+    <Code>
+        <Id>AVN</Id>
+        <Name>Dangerous Goods information</Name>
+        <Description>Code identifying that the reference number given applies to the dangerous goods
+            information segment group in the referred message.</Description>
+    </Code>
+    <Code>
+        <Id>AVO</Id>
+        <Name>Pilotage services exemption number</Name>
+        <Description>Number identifying the permit to not use pilotage services.</Description>
+    </Code>
+    <Code>
+        <Id>AVP</Id>
+        <Name>Person registration number</Name>
+        <Description>A number assigned to an individual.</Description>
+    </Code>
+    <Code>
+        <Id>AVQ</Id>
+        <Name>Place of packing approval number</Name>
+        <Description>Approval Number of the place where goods are packaged.</Description>
+    </Code>
+    <Code>
+        <Id>AVR</Id>
+        <Name>Original Mandate Reference</Name>
+        <Description>Reference to a specific related original mandate given by the relevant party
+            for underlying business or action in case of reference or mandate change.</Description>
+    </Code>
+    <Code>
+        <Id>AVS</Id>
+        <Name>Mandate Reference</Name>
+        <Description>Reference to a specific mandate given by the relevant party for underlying
+            business or action.</Description>
+    </Code>
+    <Code>
+        <Id>AVT</Id>
+        <Name>Reservation station indentifier</Name>
+        <Description>Reference to the station where a reservation was made.</Description>
+    </Code>
+    <Code>
+        <Id>AVU</Id>
+        <Name>Unique goods shipment identifier</Name>
+        <Description>Unique identifier assigned to a shipment of goods linking trade, tracking and
+            transport information.</Description>
+    </Code>
+    <Code>
+        <Id>AVV</Id>
+        <Name>Framework Agreement Number</Name>
+        <Description>A reference to an agreement between one or more contracting authorities and one
+            or more economic operators, the purpose of which is to establish the terms governing
+            contracts to be awarded during a given period, in particular with regard to price and,
+            where appropriate, the quantity envisaged.</Description>
+    </Code>
+    <Code>
+        <Id>AVW</Id>
+        <Name>Hash value</Name>
+        <Description>Contains the hash value of a related document.</Description>
+    </Code>
+    <Code>
+        <Id>AVX</Id>
+        <Name>Movement reference number</Name>
+        <Description>Number assigned by customs referencing receipt of an Entry Summary Declaration.</Description>
+    </Code>
+    <Code>
+        <Id>AVY</Id>
+        <Name>Economic Operators Registration and Identification Number</Name>
+        <Description>(EORI) Number assigned by an authority to an economic operator.</Description>
+    </Code>
+    <Code>
+        <Id>AVZ</Id>
+        <Name>Local Reference Number</Name>
+        <Description>Number assigned by a national customs authority to an Entry Summary
+            Declaration.</Description>
+    </Code>
+    <Code>
+        <Id>AWA</Id>
+        <Name>Rate code number</Name>
+        <Description>Number assigned by a buyer to rate a product.</Description>
+    </Code>
+    <Code>
+        <Id>AWB</Id>
+        <Name>Air waybill number</Name>
+        <Description>Reference number assigned to an air waybill, see: 1001 = 740.</Description>
+    </Code>
+    <Code>
+        <Id>AWC</Id>
+        <Name>Documentary credit amendment number</Name>
+        <Description>Number of the amendment of the documentary credit.</Description>
+    </Code>
+    <Code>
+        <Id>AWD</Id>
+        <Name>Advising bank's reference</Name>
+        <Description>Reference number of the advising bank.</Description>
+    </Code>
+    <Code>
+        <Id>AWE</Id>
+        <Name>Cost centre</Name>
+        <Description>A number identifying a cost centre.</Description>
+    </Code>
+    <Code>
+        <Id>AWF</Id>
+        <Name>Work item quantity determination</Name>
+        <Description>A reference assigned to a work item quantity determination.</Description>
+    </Code>
+    <Code>
+        <Id>AWG</Id>
+        <Name>Internal data process number</Name>
+        <Description>A number identifying an internal data process.</Description>
+    </Code>
+    <Code>
+        <Id>AWH</Id>
+        <Name>Category of work reference</Name>
+        <Description>A reference identifying a category of work.</Description>
+    </Code>
+    <Code>
+        <Id>AWI</Id>
+        <Name>Policy form number</Name>
+        <Description>Number assigned to a policy form.</Description>
+    </Code>
+    <Code>
+        <Id>AWJ</Id>
+        <Name>Net area</Name>
+        <Description>Reference to an area of a net.</Description>
+    </Code>
+    <Code>
+        <Id>AWK</Id>
+        <Name>Service provider</Name>
+        <Description>Reference of the service provider.</Description>
+    </Code>
+    <Code>
+        <Id>AWL</Id>
+        <Name>Error position</Name>
+        <Description>Reference to the position of an error in a message.</Description>
+    </Code>
+    <Code>
+        <Id>AWM</Id>
+        <Name>Service category reference</Name>
+        <Description>Reference identifying the service category.</Description>
+    </Code>
+    <Code>
+        <Id>AWN</Id>
+        <Name>Connected location</Name>
+        <Description>Reference of a connected location.</Description>
+    </Code>
+    <Code>
+        <Id>AWO</Id>
+        <Name>Related party</Name>
+        <Description>Reference of a related party.</Description>
+    </Code>
+    <Code>
+        <Id>AWP</Id>
+        <Name>Latest accounting entry record reference</Name>
+        <Description>Code identifying the reference of the latest accounting entry record.</Description>
+    </Code>
+    <Code>
+        <Id>AWQ</Id>
+        <Name>Accounting entry</Name>
+        <Description>Accounting entry to which this item is related.</Description>
+    </Code>
+    <Code>
+        <Id>AWR</Id>
+        <Name>Document reference, original</Name>
+        <Description>The original reference of a document.</Description>
+    </Code>
+    <Code>
+        <Id>AWS</Id>
+        <Name>Hygienic Certificate number, national</Name>
+        <Description>Nationally set Hygienic Certificate number, such as sanitary, epidemiologic.</Description>
+    </Code>
+    <Code>
+        <Id>AWT</Id>
+        <Name>Administrative Reference Code</Name>
+        <Description>Reference number assigned by Customs to a ‘shipment of excise goods’.</Description>
+    </Code>
+    <Code>
+        <Id>AWU</Id>
+        <Name>Pick-up sheet number</Name>
+        <Description>Reference number assigned to a pick-up sheet.</Description>
+    </Code>
+    <Code>
+        <Id>AWV</Id>
+        <Name>Phone number</Name>
+        <Description>A sequence of digits used to call from one telephone line to another in a
+            public telephone network.</Description>
+    </Code>
+    <Code>
+        <Id>AWW</Id>
+        <Name>Buyer's fund number</Name>
+        <Description>A reference number indicating the fund number used by the buyer.</Description>
+    </Code>
+    <Code>
+        <Id>AWX</Id>
+        <Name>Company trading account number</Name>
+        <Description>A reference number identifying a company trading account.</Description>
+    </Code>
+    <Code>
+        <Id>AWY</Id>
+        <Name>Reserved goods identifier</Name>
+        <Description>A reference number identifying goods in stock which have been reserved for a
+            party.</Description>
+    </Code>
+    <Code>
+        <Id>AWZ</Id>
+        <Name>Handling and movement reference number</Name>
+        <Description>A reference number identifying a previously transmitted cargo/goods handling
+            and movement message.</Description>
+    </Code>
+    <Code>
+        <Id>AXA</Id>
+        <Name>Instruction to despatch reference number</Name>
+        <Description>A reference number identifying a previously transmitted instruction to despatch
+            message.</Description>
+    </Code>
+    <Code>
+        <Id>AXB</Id>
+        <Name>Instruction for returns number</Name>
+        <Description>A reference number identifying a previously communicated instruction for return
+            message.</Description>
+    </Code>
+    <Code>
+        <Id>AXC</Id>
+        <Name>Metered services consumption report number</Name>
+        <Description>A reference number identifying a previously communicated metered services
+            consumption report.</Description>
+    </Code>
+    <Code>
+        <Id>AXD</Id>
+        <Name>Order status enquiry number</Name>
+        <Description>A reference number to a previously sent order status enquiry.</Description>
+    </Code>
+    <Code>
+        <Id>AXE</Id>
+        <Name>Firm booking reference number</Name>
+        <Description>A reference number identifying a previous firm booking.</Description>
+    </Code>
+    <Code>
+        <Id>AXF</Id>
+        <Name>Product inquiry number</Name>
+        <Description>A reference number identifying a previously communicated product inquiry.</Description>
+    </Code>
+    <Code>
+        <Id>AXG</Id>
+        <Name>Split delivery number</Name>
+        <Description>A reference number identifying a split delivery.</Description>
+    </Code>
+    <Code>
+        <Id>AXH</Id>
+        <Name>Service relation number</Name>
+        <Description>A reference number identifying the relationship between a service provider and
+            a service client, e.g., treatment of a patient in a hospital, usage by a member of a
+            library facility, etc.</Description>
+    </Code>
+    <Code>
+        <Id>AXI</Id>
+        <Name>Serial shipping container code</Name>
+        <Description>Reference number identifying a logistic unit.</Description>
+    </Code>
+    <Code>
+        <Id>AXJ</Id>
+        <Name>Test specification number</Name>
+        <Description>A reference number identifying a test specification.</Description>
+    </Code>
+    <Code>
+        <Id>AXK</Id>
+        <Name>Transport status report number</Name>
+        <Description>[1125] A reference number identifying a transport status report.</Description>
+    </Code>
+    <Code>
+        <Id>AXL</Id>
+        <Name>Tooling contract number</Name>
+        <Description>A reference number of the tooling contract.</Description>
+    </Code>
+    <Code>
+        <Id>AXM</Id>
+        <Name>Formula reference number</Name>
+        <Description>The reference number which identifies a formula.</Description>
+    </Code>
+    <Code>
+        <Id>AXN</Id>
+        <Name>Pre-agreement number</Name>
+        <Description>A reference number identifying a pre-agreement.</Description>
+    </Code>
+    <Code>
+        <Id>AXO</Id>
+        <Name>Product certification number</Name>
+        <Description>Number assigned by a governing body (or their agents) to a product which
+            certifies compliance with a standard.</Description>
+    </Code>
+    <Code>
+        <Id>AXP</Id>
+        <Name>Consignment contract number</Name>
+        <Description>Reference number identifying a consignment contract.</Description>
+    </Code>
+    <Code>
+        <Id>AXQ</Id>
+        <Name>Product specification reference number</Name>
+        <Description>Number assigned by the issuer to his product specification.</Description>
+    </Code>
+    <Code>
+        <Id>AXR</Id>
+        <Name>Payroll deduction advice reference</Name>
+        <Description>A reference number identifying a payroll deduction advice.</Description>
+    </Code>
+    <Code>
+        <Id>BA</Id>
+        <Name>Beginning meter reading actual</Name>
+        <Description>Meter reading at the beginning of an invoicing period.</Description>
+    </Code>
+    <Code>
+        <Id>BC</Id>
+        <Name>Buyer's contract number</Name>
+        <Description>Reference number assigned by buyer to a contract.</Description>
+    </Code>
+    <Code>
+        <Id>BD</Id>
+        <Name>Bid number</Name>
+        <Description>Number assigned by a submitter of a bid to his bid.</Description>
+    </Code>
+    <Code>
+        <Id>BE</Id>
+        <Name>Beginning meter reading estimated</Name>
+        <Description>Meter reading at the beginning of an invoicing period where an actual reading
+            is not available.</Description>
+    </Code>
+    <Code>
+        <Id>BH</Id>
+        <Name>House bill of lading number</Name>
+        <Description>[1039] Reference number assigned to a house bill of lading.</Description>
+    </Code>
+    <Code>
+        <Id>BM</Id>
+        <Name>Bill of lading number</Name>
+        <Description>Reference number assigned to a bill of lading, see: 1001 = 705.</Description>
+    </Code>
+    <Code>
+        <Id>BN</Id>
+        <Name>Consignment identifier, carrier assigned</Name>
+        <Description>[1016] Reference number assigned by a carrier of its agent to identify a
+            specific consignment such as a booking reference number when cargo space is reserved
+            prior to loading.</Description>
+    </Code>
+    <Code>
+        <Id>BO</Id>
+        <Name>Blanket order number</Name>
+        <Description>Reference number assigned by the order issuer to a blanket order.</Description>
+    </Code>
+    <Code>
+        <Id>BR</Id>
+        <Name>Broker or sales office number</Name>
+        <Description>A number that identifies a broker or sales office.</Description>
+    </Code>
+    <Code>
+        <Id>BT</Id>
+        <Name>Batch number/lot number</Name>
+        <Description>[7338] Reference number assigned by manufacturer to a series of similar
+            products or goods produced under similar conditions.</Description>
+    </Code>
+    <Code>
+        <Id>BTP</Id>
+        <Name>Battery and accumulator producer registration number</Name>
+        <Description>Registration number of producer of batteries and accumulators.</Description>
+    </Code>
+    <Code>
+        <Id>BW</Id>
+        <Name>Blended with number</Name>
+        <Description>The batch/lot/package number a product is blended with.</Description>
+    </Code>
+    <Code>
+        <Id>CAS</Id>
+        <Name>IATA Cargo Agent CASS Address number</Name>
+        <Description>Code issued by IATA to identify agent locations for CASS billing purposes.</Description>
+    </Code>
+    <Code>
+        <Id>CAT</Id>
+        <Name>Matching of entries, balanced</Name>
+        <Description>Reference to a balanced matching of entries.</Description>
+    </Code>
+    <Code>
+        <Id>CAU</Id>
+        <Name>Entry flagging</Name>
+        <Description>Reference to a flagging of entries.</Description>
+    </Code>
+    <Code>
+        <Id>CAV</Id>
+        <Name>Matching of entries, unbalanced</Name>
+        <Description>Reference to an unbalanced matching of entries.</Description>
+    </Code>
+    <Code>
+        <Id>CAW</Id>
+        <Name>Document reference, internal</Name>
+        <Description>Internal reference to a document.</Description>
+    </Code>
+    <Code>
+        <Id>CAX</Id>
+        <Name>European Value Added Tax identification</Name>
+        <Description>Value Added Tax identification number according to European regulation.</Description>
+    </Code>
+    <Code>
+        <Id>CAY</Id>
+        <Name>Cost accounting document</Name>
+        <Description>The reference to a cost accounting document.</Description>
+    </Code>
+    <Code>
+        <Id>CAZ</Id>
+        <Name>Grid operator's customer reference number</Name>
+        <Description>A number, assigned by a grid operator, to reference a customer.</Description>
+    </Code>
+    <Code>
+        <Id>CBA</Id>
+        <Name>Ticket control number</Name>
+        <Description>Reference giving access to all the details associated with the ticket.</Description>
+    </Code>
+    <Code>
+        <Id>CBB</Id>
+        <Name>Order shipment grouping reference</Name>
+        <Description>A reference number identifying the grouping of purchase orders into one
+            shipment.</Description>
+    </Code>
+    <Code>
+        <Id>CD</Id>
+        <Name>Credit note number</Name>
+        <Description>[1113] Reference number assigned to a credit note.</Description>
+    </Code>
+    <Code>
+        <Id>CEC</Id>
+        <Name>Ceding company</Name>
+        <Description>Company selling obligations to a third party.</Description>
+    </Code>
+    <Code>
+        <Id>CED</Id>
+        <Name>Debit letter number</Name>
+        <Description>Reference number identifying the letter of debit document.</Description>
+    </Code>
+    <Code>
+        <Id>CFE</Id>
+        <Name>Consignee's further order</Name>
+        <Description>Reference of an order given by the consignee after departure of the means of
+            transport.</Description>
+    </Code>
+    <Code>
+        <Id>CFF</Id>
+        <Name>Animal farm licence number</Name>
+        <Description>Veterinary licence number allocated by a national authority to an animal farm.</Description>
+    </Code>
+    <Code>
+        <Id>CFO</Id>
+        <Name>Consignor's further order</Name>
+        <Description>Reference of an order given by the consignor after departure of the means of
+            transport.</Description>
+    </Code>
+    <Code>
+        <Id>CG</Id>
+        <Name>Consignee's order number</Name>
+        <Description>A number that identifies a consignee's order.</Description>
+    </Code>
+    <Code>
+        <Id>CH</Id>
+        <Name>Customer catalogue number</Name>
+        <Description>Number identifying a catalogue for customer's usage.</Description>
+    </Code>
+    <Code>
+        <Id>CK</Id>
+        <Name>Cheque number</Name>
+        <Description>Unique number assigned to one specific cheque.</Description>
+    </Code>
+    <Code>
+        <Id>CKN</Id>
+        <Name>Checking number</Name>
+        <Description>Number assigned by checking party to one specific check action.</Description>
+    </Code>
+    <Code>
+        <Id>CM</Id>
+        <Name>Credit memo number</Name>
+        <Description>Reference number assigned by issuer to a credit memo.</Description>
+    </Code>
+    <Code>
+        <Id>CMR</Id>
+        <Name>Road consignment note number</Name>
+        <Description>Reference number assigned to a road consignment note, see: 1001 = 730.</Description>
+    </Code>
+    <Code>
+        <Id>CN</Id>
+        <Name>Carrier's reference number</Name>
+        <Description>Reference number assigned by carrier to a consignment.</Description>
+    </Code>
+    <Code>
+        <Id>CNO</Id>
+        <Name>Charges note document attachment indicator</Name>
+        <Description>[1070] Indication that a charges note has been established and attached to a
+            transport contract document or not.</Description>
+    </Code>
+    <Code>
+        <Id>COF</Id>
+        <Name>Call off order number</Name>
+        <Description>A number that identifies a call off order.</Description>
+    </Code>
+    <Code>
+        <Id>CP</Id>
+        <Name>Condition of purchase document number</Name>
+        <Description>Reference number identifying the conditions of purchase relevant to a purchase.</Description>
+    </Code>
+    <Code>
+        <Id>CR</Id>
+        <Name>Customer reference number</Name>
+        <Description>Reference number assigned by the customer to a transaction.</Description>
+    </Code>
+    <Code>
+        <Id>CRN</Id>
+        <Name>Transport means journey identifier</Name>
+        <Description>[8028] To identify a journey of a means of transport, for example voyage
+            number, flight number, trip number.</Description>
+    </Code>
+    <Code>
+        <Id>CS</Id>
+        <Name>Condition of sale document number</Name>
+        <Description>Reference number identifying the conditions of sale relevant to a sale.</Description>
+    </Code>
+    <Code>
+        <Id>CST</Id>
+        <Name>Team assignment number</Name>
+        <Description>Team number assigned to a group that is responsible for working a particular
+            transaction.</Description>
+    </Code>
+    <Code>
+        <Id>CT</Id>
+        <Name>Contract number</Name>
+        <Description>[1296] Reference number of a contract concluded between parties.</Description>
+    </Code>
+    <Code>
+        <Id>CU</Id>
+        <Name>Consignment identifier, consignor assigned</Name>
+        <Description>[1140] Reference number assigned by the consignor to identify a particular
+            consignment.</Description>
+    </Code>
+    <Code>
+        <Id>CV</Id>
+        <Name>Container operators reference number</Name>
+        <Description>Reference number assigned by the party operating or controlling the transport
+            container to a transaction or consignment.</Description>
+    </Code>
+    <Code>
+        <Id>CW</Id>
+        <Name>Package number</Name>
+        <Description>(7070) Reference number identifying a package or carton within a consignment.</Description>
+    </Code>
+    <Code>
+        <Id>CZ</Id>
+        <Name>Cooperation contract number</Name>
+        <Description>Number issued by a party concerned given to a contract on cooperation of two or
+            more parties.</Description>
+    </Code>
+    <Code>
+        <Id>DA</Id>
+        <Name>Deferment approval number</Name>
+        <Description>Number assigned by authorities to a party to approve deferment of payment of
+            tax or duties.</Description>
+    </Code>
+    <Code>
+        <Id>DAN</Id>
+        <Name>Debit account number</Name>
+        <Description>Reference number assigned by issuer to a debit account.</Description>
+    </Code>
+    <Code>
+        <Id>DB</Id>
+        <Name>Buyer's debtor number</Name>
+        <Description>Reference number assigned to a debtor.</Description>
+    </Code>
+    <Code>
+        <Id>DI</Id>
+        <Name>Distributor invoice number</Name>
+        <Description>Reference number assigned by issuer to a distributor invoice.</Description>
+    </Code>
+    <Code>
+        <Id>DL</Id>
+        <Name>Debit note number</Name>
+        <Description>[1117] Reference number assigned by issuer to a debit note.</Description>
+    </Code>
+    <Code>
+        <Id>DM</Id>
+        <Name>Document identifier</Name>
+        <Description>[1004] Reference number identifying a specific document.</Description>
+    </Code>
+    <Code>
+        <Id>DQ</Id>
+        <Name>Delivery note number</Name>
+        <Description>[1033] Reference number assigned by the issuer to a delivery note.</Description>
+    </Code>
+    <Code>
+        <Id>DR</Id>
+        <Name>Dock receipt number</Name>
+        <Description>Number of the cargo receipt submitted when cargo is delivered to a marine
+            terminal.</Description>
+    </Code>
+    <Code>
+        <Id>EA</Id>
+        <Name>Ending meter reading actual</Name>
+        <Description>Meter reading at the end of an invoicing period.</Description>
+    </Code>
+    <Code>
+        <Id>EB</Id>
+        <Name>Embargo permit number</Name>
+        <Description>Reference number assigned by issuer to an embargo permit.</Description>
+    </Code>
+    <Code>
+        <Id>ED</Id>
+        <Name>Export declaration</Name>
+        <Description>Number assigned by the exporter to his export declaration number submitted to
+            an authority.</Description>
+    </Code>
+    <Code>
+        <Id>EE</Id>
+        <Name>Ending meter reading estimated</Name>
+        <Description>Meter reading at the end of an invoicing period where an actual reading is not
+            available.</Description>
+    </Code>
+    <Code>
+        <Id>EEP</Id>
+        <Name>Electrical and electronic equipment producer registration</Name>
+        <Description>number Registration number of producer of electrical and electronic equipment.</Description>
+    </Code>
+    <Code>
+        <Id>EI</Id>
+        <Name>Employer's identification number</Name>
+        <Description>Number issued by an authority to identify an employer.</Description>
+    </Code>
+    <Code>
+        <Id>EN</Id>
+        <Name>Embargo number</Name>
+        <Description>Number assigned to specific goods or a family of goods in a classification of
+            embargo measures.</Description>
+    </Code>
+    <Code>
+        <Id>EQ</Id>
+        <Name>Equipment number</Name>
+        <Description>Number assigned by the manufacturer to specific equipment.</Description>
+    </Code>
+    <Code>
+        <Id>ER</Id>
+        <Name>Container/equipment receipt number</Name>
+        <Description>Number of the Equipment Interchange Receipt issued for full or empty equipment
+            received.</Description>
+    </Code>
+    <Code>
+        <Id>ERN</Id>
+        <Name>Exporter's reference number</Name>
+        <Description>Reference to a party exporting goods.</Description>
+    </Code>
+    <Code>
+        <Id>ET</Id>
+        <Name>Excess transportation number</Name>
+        <Description>(1041) Number assigned to excess transport.</Description>
+    </Code>
+    <Code>
+        <Id>EX</Id>
+        <Name>Export permit identifier</Name>
+        <Description>[1208] Reference number to identify an export licence or permit.</Description>
+    </Code>
+    <Code>
+        <Id>FC</Id>
+        <Name>Fiscal number</Name>
+        <Description>Tax payer's number. Number assigned to individual persons as well as to
+            corporates by a public institution; this number is different from the VAT registration
+            number.</Description>
+    </Code>
+    <Code>
+        <Id>FF</Id>
+        <Name>Consignment identifier, freight forwarder assigned</Name>
+        <Description>[1460] Reference number assigned by the freight forwarder to identify a
+            particular consignment.</Description>
+    </Code>
+    <Code>
+        <Id>FI</Id>
+        <Name>File line identifier</Name>
+        <Description>Number assigned by the file issuer or sender to identify a specific line.</Description>
+    </Code>
+    <Code>
+        <Id>FLW</Id>
+        <Name>Flow reference number</Name>
+        <Description>Number given to a usual sender which has regular expeditions of the same goods,
+            to the same destination, defining all general conditions of the transport.</Description>
+    </Code>
+    <Code>
+        <Id>FN</Id>
+        <Name>Freight bill number</Name>
+        <Description>Reference number assigned by issuing party to a freight bill.</Description>
+    </Code>
+    <Code>
+        <Id>FO</Id>
+        <Name>Foreign exchange</Name>
+        <Description>Exchange of two currencies at an agreed rate.</Description>
+    </Code>
+    <Code>
+        <Id>FS</Id>
+        <Name>Final sequence number</Name>
+        <Description>A number that identifies the final sequence.</Description>
+    </Code>
+    <Code>
+        <Id>FT</Id>
+        <Name>Free zone identifier</Name>
+        <Description>Identifier to specify the territory of a State where any goods introduced are
+            generally regarded, insofar as import duties and taxes are concerned, as being outside
+            the Customs territory and are not subject to usual Customs control (CCC).</Description>
+    </Code>
+    <Code>
+        <Id>FV</Id>
+        <Name>File version number</Name>
+        <Description>Number given to a version of an identified file.</Description>
+    </Code>
+    <Code>
+        <Id>FX</Id>
+        <Name>Foreign exchange contract number</Name>
+        <Description>Reference number identifying a foreign exchange contract.</Description>
+    </Code>
+    <Code>
+        <Id>GA</Id>
+        <Name>Standard's number</Name>
+        <Description>Number to identify a standardization description (e.g. ISO 9375).</Description>
+    </Code>
+    <Code>
+        <Id>GC</Id>
+        <Name>Government contract number</Name>
+        <Description>Number assigned to a specific government/public contract.</Description>
+    </Code>
+    <Code>
+        <Id>GD</Id>
+        <Name>Standard's code number</Name>
+        <Description>Number to identify a specific parameter within a standardization description
+            (e.g. M5 for screws or DIN A4 for paper).</Description>
+    </Code>
+    <Code>
+        <Id>GDN</Id>
+        <Name>General declaration number</Name>
+        <Description>Number of the declaration of incoming goods out of a vessel.</Description>
+    </Code>
+    <Code>
+        <Id>GN</Id>
+        <Name>Government reference number</Name>
+        <Description>A number that identifies a government reference.</Description>
+    </Code>
+    <Code>
+        <Id>HS</Id>
+        <Name>Harmonised system number</Name>
+        <Description>Number specifying the goods classification under the Harmonised Commodity
+            Description and Coding System of the Customs Co-operation Council (CCC).</Description>
+    </Code>
+    <Code>
+        <Id>HWB</Id>
+        <Name>House waybill number</Name>
+        <Description>Reference number assigned to a house waybill, see: 1001 = 703.</Description>
+    </Code>
+    <Code>
+        <Id>IA</Id>
+        <Name>Internal vendor number</Name>
+        <Description>Number identifying the company-internal vending department/unit.</Description>
+    </Code>
+    <Code>
+        <Id>IB</Id>
+        <Name>In bond number</Name>
+        <Description>Customs assigned number that is used to control the movement of imported cargo
+            prior to its formal Customs clearing.</Description>
+    </Code>
+    <Code>
+        <Id>ICA</Id>
+        <Name>IATA cargo agent code number</Name>
+        <Description>Code issued by IATA identify each IATA Cargo Agent whose name is entered on the
+            Cargo Agency List.</Description>
+    </Code>
+    <Code>
+        <Id>ICE</Id>
+        <Name>Insurance certificate reference number</Name>
+        <Description>A number that identifies an insurance certificate reference.</Description>
+    </Code>
+    <Code>
+        <Id>ICO</Id>
+        <Name>Insurance contract reference number</Name>
+        <Description>A number that identifies an insurance contract reference.</Description>
+    </Code>
+    <Code>
+        <Id>II</Id>
+        <Name>Initial sample inspection report number</Name>
+        <Description>Inspection report number given to the initial sample inspection.</Description>
+    </Code>
+    <Code>
+        <Id>IL</Id>
+        <Name>Internal order number</Name>
+        <Description>Number assigned to an order for internal handling/follow up.</Description>
+    </Code>
+    <Code>
+        <Id>INB</Id>
+        <Name>Intermediary broker</Name>
+        <Description>A number that identifies an intermediary broker.</Description>
+    </Code>
+    <Code>
+        <Id>INN</Id>
+        <Name>Interchange number new</Name>
+        <Description>Number assigned by the interchange sender to identify one specific interchange.
+            This number points to the actual interchange.</Description>
+    </Code>
+    <Code>
+        <Id>INO</Id>
+        <Name>Interchange number old</Name>
+        <Description>Number assigned by the interchange sender to identify one specific interchange.
+            This number points to the previous interchange.</Description>
+    </Code>
+    <Code>
+        <Id>IP</Id>
+        <Name>Import permit identifier</Name>
+        <Description>[1107] Reference number to identify an import licence or permit.</Description>
+    </Code>
+    <Code>
+        <Id>IS</Id>
+        <Name>Invoice number suffix</Name>
+        <Description>A number added at the end of an invoice number.</Description>
+    </Code>
+    <Code>
+        <Id>IT</Id>
+        <Name>Internal customer number</Name>
+        <Description>Number assigned by a seller, supplier etc. to identify a customer within his
+            enterprise.</Description>
+    </Code>
+    <Code>
+        <Id>IV</Id>
+        <Name>Invoice document identifier</Name>
+        <Description>[1334] Reference number to identify an invoice.</Description>
+    </Code>
+    <Code>
+        <Id>JB</Id>
+        <Name>Job number</Name>
+        <Description>[1043] Identifies a piece of work.</Description>
+    </Code>
+    <Code>
+        <Id>JE</Id>
+        <Name>Ending job sequence number</Name>
+        <Description>A number that identifies the ending job sequence.</Description>
+    </Code>
+    <Code>
+        <Id>LA</Id>
+        <Name>Shipping label serial number</Name>
+        <Description>The serial number on a shipping label.</Description>
+    </Code>
+    <Code>
+        <Id>LAN</Id>
+        <Name>Loading authorisation identifier</Name>
+        <Description>[4092] Identifier assigned to the loading authorisation granted by the
+            forwarding location e.g. railway or airport, when the consignment is subject to traffic
+            limitations.</Description>
+    </Code>
+    <Code>
+        <Id>LAR</Id>
+        <Name>Lower number in range</Name>
+        <Description>Lower number in a range of numbers.</Description>
+    </Code>
+    <Code>
+        <Id>LB</Id>
+        <Name>Lockbox</Name>
+        <Description>Type of cash management system offered by financial institutions to provide for
+            collection of customers 'receivables'.</Description>
+    </Code>
+    <Code>
+        <Id>LC</Id>
+        <Name>Letter of credit number</Name>
+        <Description>Reference number identifying the letter of credit document.</Description>
+    </Code>
+    <Code>
+        <Id>LI</Id>
+        <Name>Document line identifier</Name>
+        <Description>[1156] To identify a line of a document.</Description>
+    </Code>
+    <Code>
+        <Id>LO</Id>
+        <Name>Load planning number</Name>
+        <Description>The reference that identifies the load planning number.</Description>
+    </Code>
+    <Code>
+        <Id>LRC</Id>
+        <Name>Reservation office identifier</Name>
+        <Description>Reference to the office where a reservation was made.</Description>
+    </Code>
+    <Code>
+        <Id>LS</Id>
+        <Name>Bar coded label serial number</Name>
+        <Description>The serial number on a bar code label.</Description>
+    </Code>
+    <Code>
+        <Id>MA</Id>
+        <Name>Ship notice/manifest number</Name>
+        <Description>The number assigned to a ship notice or manifest.</Description>
+    </Code>
+    <Code>
+        <Id>MB</Id>
+        <Name>Master bill of lading number</Name>
+        <Description>Reference number assigned to a master bill of lading, see: 1001 = 704.</Description>
+    </Code>
+    <Code>
+        <Id>MF</Id>
+        <Name>Manufacturer's part number</Name>
+        <Description>Reference number assigned by the manufacturer to his product or part.</Description>
+    </Code>
+    <Code>
+        <Id>MG</Id>
+        <Name>Meter unit number</Name>
+        <Description>Number identifying a unique meter unit.</Description>
+    </Code>
+    <Code>
+        <Id>MH</Id>
+        <Name>Manufacturing order number</Name>
+        <Description>Reference number assigned by manufacturer for a given production quantity of
+            products.</Description>
+    </Code>
+    <Code>
+        <Id>MR</Id>
+        <Name>Message recipient</Name>
+        <Description>A number that identifies the message recipient.</Description>
+    </Code>
+    <Code>
+        <Id>MRN</Id>
+        <Name>Mailing reference number</Name>
+        <Description>Identifies the party designated by the importer to receive certain customs
+            correspondence in lieu of its being mailed directly to the importer.</Description>
+    </Code>
+    <Code>
+        <Id>MS</Id>
+        <Name>Message sender</Name>
+        <Description>A number that identifies the message sender.</Description>
+    </Code>
+    <Code>
+        <Id>MSS</Id>
+        <Name>Manufacturer's material safety data sheet number</Name>
+        <Description>A number that identifies a manufacturer's material safety data sheet.</Description>
+    </Code>
+    <Code>
+        <Id>MWB</Id>
+        <Name>Master air waybill number</Name>
+        <Description>Reference number assigned to a master air waybill, see: 1001 = 741.</Description>
+    </Code>
+    <Code>
+        <Id>NA</Id>
+        <Name>North American hazardous goods classification number</Name>
+        <Description>Reference to materials designated as hazardous for purposes of transportation
+            in North American commerce.</Description>
+    </Code>
+    <Code>
+        <Id>NF</Id>
+        <Name>Nota Fiscal</Name>
+        <Description>Nota Fiscal is a registration number for shipments / deliveries within Brazil,
+            issued by the local tax authorities and mandated for each shipment.</Description>
+    </Code>
+    <Code>
+        <Id>OH</Id>
+        <Name>Current invoice number</Name>
+        <Description>Reference number identifying the current invoice.</Description>
+    </Code>
+    <Code>
+        <Id>OI</Id>
+        <Name>Previous invoice number</Name>
+        <Description>Reference number identifying a previously issued invoice.</Description>
+    </Code>
+    <Code>
+        <Id>ON</Id>
+        <Name>Order document identifier, buyer assigned</Name>
+        <Description>[1022] Identifier assigned by the buyer to an order.</Description>
+    </Code>
+    <Code>
+        <Id>OP</Id>
+        <Name>Original purchase order</Name>
+        <Description>Reference to the order previously sent.</Description>
+    </Code>
+    <Code>
+        <Id>OR</Id>
+        <Name>General order number</Name>
+        <Description>Customs number assigned to imported merchandise that has been left unclaimed
+            and subsequently moved to a Customs bonded warehouse for storage.</Description>
+    </Code>
+    <Code>
+        <Id>PB</Id>
+        <Name>Payer's financial institution account number</Name>
+        <Description>Originated company account number (ACH transfer), check, draft or wire.</Description>
+    </Code>
+    <Code>
+        <Id>PC</Id>
+        <Name>Production code</Name>
+        <Description>Number assigned by the manufacturer to a specified article or batch to identify
+            the manufacturing date etc. for subsequent reference.</Description>
+    </Code>
+    <Code>
+        <Id>PD</Id>
+        <Name>Promotion deal number</Name>
+        <Description>Number assigned by a vendor to a special promotion activity.</Description>
+    </Code>
+    <Code>
+        <Id>PE</Id>
+        <Name>Plant number</Name>
+        <Description>A number that identifies a plant.</Description>
+    </Code>
+    <Code>
+        <Id>PF</Id>
+        <Name>Prime contractor contract number</Name>
+        <Description>Reference number assigned by the client to the contract of the prime
+            contractor.</Description>
+    </Code>
+    <Code>
+        <Id>PI</Id>
+        <Name>Price list version number</Name>
+        <Description>A number that identifies the version of a price list.</Description>
+    </Code>
+    <Code>
+        <Id>PK</Id>
+        <Name>Packing list number</Name>
+        <Description>[1014] Reference number assigned to a packing list.</Description>
+    </Code>
+    <Code>
+        <Id>PL</Id>
+        <Name>Price list number</Name>
+        <Description>Reference number assigned to a price list.</Description>
+    </Code>
+    <Code>
+        <Id>POR</Id>
+        <Name>Purchase order response number</Name>
+        <Description>Reference number assigned by the seller to an order response.</Description>
+    </Code>
+    <Code>
+        <Id>PP</Id>
+        <Name>Purchase order change number</Name>
+        <Description>Reference number assigned by a buyer for a revision of a purchase order.</Description>
+    </Code>
+    <Code>
+        <Id>PQ</Id>
+        <Name>Payment reference</Name>
+        <Description>Reference number assigned to a payment.</Description>
+    </Code>
+    <Code>
+        <Id>PR</Id>
+        <Name>Price quote number</Name>
+        <Description>Reference number assigned by the seller to a quote.</Description>
+    </Code>
+    <Code>
+        <Id>PS</Id>
+        <Name>Purchase order number suffix</Name>
+        <Description>A number added at the end of a purchase order number.</Description>
+    </Code>
+    <Code>
+        <Id>PW</Id>
+        <Name>Prior purchase order number</Name>
+        <Description>Reference number of a purchase order previously sent to the supplier.</Description>
+    </Code>
+    <Code>
+        <Id>PY</Id>
+        <Name>Payee's financial institution account number</Name>
+        <Description>Receiving company account number (ACH transfer), check, draft or wire.</Description>
+    </Code>
+    <Code>
+        <Id>RA</Id>
+        <Name>Remittance advice number</Name>
+        <Description>A number that identifies a remittance advice.</Description>
+    </Code>
+    <Code>
+        <Id>RC</Id>
+        <Name>Rail/road routing code</Name>
+        <Description>International Western and Eastern European route code used in all rail
+            organizations and specified in the international tariffs (rail tariffs) known by the
+            customers.</Description>
+    </Code>
+    <Code>
+        <Id>RCN</Id>
+        <Name>Railway consignment note number</Name>
+        <Description>Reference number assigned to a rail consignment note, see: 1001 = 720.</Description>
+    </Code>
+    <Code>
+        <Id>RE</Id>
+        <Name>Release number</Name>
+        <Description>Reference number assigned to identify a release of a set of rules, conventions,
+            conditions, etc.</Description>
+    </Code>
+    <Code>
+        <Id>REN</Id>
+        <Name>Consignment receipt identifier</Name>
+        <Description>[1150] Reference number assigned to identify a consignment upon its arrival at
+            its destination.</Description>
+    </Code>
+    <Code>
+        <Id>RF</Id>
+        <Name>Export reference number</Name>
+        <Description>Reference number given to an export shipment.</Description>
+    </Code>
+    <Code>
+        <Id>RR</Id>
+        <Name>Payer's financial institution transit routing No.(ACH transfers)</Name>
+        <Description>ODFI (ACH transfer).</Description>
+    </Code>
+    <Code>
+        <Id>RT</Id>
+        <Name>Payee's financial institution transit routing No.</Name>
+        <Description>RDFI Transit routing number (ACH transfer).</Description>
+    </Code>
+    <Code>
+        <Id>SA</Id>
+        <Name>Sales person number</Name>
+        <Description>Identification number of a sales person.</Description>
+    </Code>
+    <Code>
+        <Id>SB</Id>
+        <Name>Sales region number</Name>
+        <Description>A number that identifies a sales region.</Description>
+    </Code>
+    <Code>
+        <Id>SD</Id>
+        <Name>Sales department number</Name>
+        <Description>A number that identifies a sales department.</Description>
+    </Code>
+    <Code>
+        <Id>SE</Id>
+        <Name>Serial number</Name>
+        <Description>Identification number of an item which distinguishes this specific item out of
+            an number of identical items.</Description>
+    </Code>
+    <Code>
+        <Id>SEA</Id>
+        <Name>Allocated seat</Name>
+        <Description>Reference to a seat allocated to a passenger.</Description>
+    </Code>
+    <Code>
+        <Id>SF</Id>
+        <Name>Ship from</Name>
+        <Description>A number that identifies a ship from location.</Description>
+    </Code>
+    <Code>
+        <Id>SH</Id>
+        <Name>Previous highest schedule number</Name>
+        <Description>Number of the latest schedule of a previous period (ODETTE DELINS).</Description>
+    </Code>
+    <Code>
+        <Id>SI</Id>
+        <Name>SID (Shipper's identifying number for shipment)</Name>
+        <Description>A number that identifies the SID (shipper's identification) number for a
+            shipment.</Description>
+    </Code>
+    <Code>
+        <Id>SM</Id>
+        <Name>Sales office number</Name>
+        <Description>A number that identifies a sales office.</Description>
+    </Code>
+    <Code>
+        <Id>SN</Id>
+        <Name>Transport equipment seal identifier</Name>
+        <Description>[9308] The identification number of a seal affixed to a piece of transport
+            equipment.</Description>
+    </Code>
+    <Code>
+        <Id>SP</Id>
+        <Name>Scan line</Name>
+        <Description>A number that identifies a scan line.</Description>
+    </Code>
+    <Code>
+        <Id>SQ</Id>
+        <Name>Equipment sequence number</Name>
+        <Description>(1492) A temporary reference number identifying a particular piece of equipment
+            within a series of pieces of equipment.</Description>
+    </Code>
+    <Code>
+        <Id>SRN</Id>
+        <Name>Shipment reference number</Name>
+        <Description>[1065] Reference number assigned to a shipment.</Description>
+    </Code>
+    <Code>
+        <Id>SS</Id>
+        <Name>Sellers reference number</Name>
+        <Description>Reference number assigned to a transaction by the seller.</Description>
+    </Code>
+    <Code>
+        <Id>STA</Id>
+        <Name>Station reference number</Name>
+        <Description>International UIC code assigned to every European rail station (CIM
+            convention).</Description>
+    </Code>
+    <Code>
+        <Id>SW</Id>
+        <Name>Swap order number</Name>
+        <Description>Number assigned by the seller to a swap order (see definition of DE 1001, code
+            229).</Description>
+    </Code>
+    <Code>
+        <Id>SZ</Id>
+        <Name>Specification number</Name>
+        <Description>Number assigned by the issuer to his specification.</Description>
+    </Code>
+    <Code>
+        <Id>TB</Id>
+        <Name>Trucker's bill of lading</Name>
+        <Description>A cargo list/description issued by a motor carrier of freight.</Description>
+    </Code>
+    <Code>
+        <Id>TCR</Id>
+        <Name>Terminal operator's consignment reference</Name>
+        <Description>Reference assigned to a consignment by the terminal operator.</Description>
+    </Code>
+    <Code>
+        <Id>TE</Id>
+        <Name>Telex message number</Name>
+        <Description>Reference number identifying a telex message.</Description>
+    </Code>
+    <Code>
+        <Id>TF</Id>
+        <Name>Transfer number</Name>
+        <Description>An extra number assigned to goods or a container which functions as a reference
+            number or as an authorization number to get the goods or container released from a
+            certain party.</Description>
+    </Code>
+    <Code>
+        <Id>TI</Id>
+        <Name>TIR carnet number</Name>
+        <Description>Reference number assigned to a TIR carnet.</Description>
+    </Code>
+    <Code>
+        <Id>TIN</Id>
+        <Name>Transport instruction number</Name>
+        <Description>Reference number identifying a transport instruction.</Description>
+    </Code>
+    <Code>
+        <Id>TL</Id>
+        <Name>Tax exemption licence number</Name>
+        <Description>Number assigned by the tax authorities to a party indicating its tax exemption
+            authorization. This number could relate to a specified business type, a specified local
+            area or a class of products.</Description>
+    </Code>
+    <Code>
+        <Id>TN</Id>
+        <Name>Transaction reference number</Name>
+        <Description>Reference applied to a transaction between two or more parties over a defined
+            life cycle; e.g. number applied by importer or broker to obtain release from Customs,
+            may then used to control declaration through final accounting (synonyms: declaration,
+            entry number).</Description>
+    </Code>
+    <Code>
+        <Id>TP</Id>
+        <Name>Test report number</Name>
+        <Description>Reference number identifying a test report document relevant to the product.</Description>
+    </Code>
+    <Code>
+        <Id>UAR</Id>
+        <Name>Upper number of range</Name>
+        <Description>Upper number in a range of numbers.</Description>
+    </Code>
+    <Code>
+        <Id>UC</Id>
+        <Name>Ultimate customer's reference number</Name>
+        <Description>The originator's reference number as forwarded in a sequence of parties
+            involved.</Description>
+    </Code>
+    <Code>
+        <Id>UCN</Id>
+        <Name>Unique consignment reference number</Name>
+        <Description>[1202] Unique reference identifying a particular consignment of goods. Synonym:
+            UCR, UCRN.</Description>
+    </Code>
+    <Code>
+        <Id>UN</Id>
+        <Name>United Nations Dangerous Goods identifier</Name>
+        <Description>[7124] United Nations Dangerous Goods Identifier (UNDG) is the unique serial
+            number assigned within the United Nations to substances and articles contained in a list
+            of the dangerous goods most commonly carried.</Description>
+    </Code>
+    <Code>
+        <Id>UO</Id>
+        <Name>Ultimate customer's order number</Name>
+        <Description>The originator's order number as forwarded in a sequence of parties involved.</Description>
+    </Code>
+    <Code>
+        <Id>URI</Id>
+        <Name>Uniform Resource Identifier</Name>
+        <Description>A string of characters used to identify a name of a resource on the worldwide
+            web.</Description>
+    </Code>
+    <Code>
+        <Id>VA</Id>
+        <Name>VAT registration number</Name>
+        <Description>Unique number assigned by the relevant tax authority to identify a party for
+            use in relation to Value Added Tax (VAT).</Description>
+    </Code>
+    <Code>
+        <Id>VC</Id>
+        <Name>Vendor contract number</Name>
+        <Description>Number assigned by the vendor to a contract.</Description>
+    </Code>
+    <Code>
+        <Id>VGR</Id>
+        <Name>Transport equipment gross mass verification reference</Name>
+        <Description>number Reference number identifying the documentation of a transport equipment
+            gross mass (weight) verification.</Description>
+    </Code>
+    <Code>
+        <Id>VM</Id>
+        <Name>Vessel identifier</Name>
+        <Description>(8123) Reference identifying a vessel.</Description>
+    </Code>
+    <Code>
+        <Id>VN</Id>
+        <Name>Order number (vendor)</Name>
+        <Description>Reference number assigned by supplier to a buyer's purchase order.</Description>
+    </Code>
+    <Code>
+        <Id>VON</Id>
+        <Name>Voyage number</Name>
+        <Description>(8028) Reference number assigned to the voyage of the vessel.</Description>
+    </Code>
+    <Code>
+        <Id>VOR</Id>
+        <Name>Transport equipment gross mass verification order reference</Name>
+        <Description>Reference number identifying the order for obtaining a Verified Gross Mass
+            (weight) of a packed transport equipment as per SOLAS Chapter VI, Regulation 2,
+            paragraphs 4-6.</Description>
+    </Code>
+    <Code>
+        <Id>VP</Id>
+        <Name>Vendor product number</Name>
+        <Description>Number assigned by vendor to another manufacturer's product.</Description>
+    </Code>
+    <Code>
+        <Id>VR</Id>
+        <Name>Vendor ID number</Name>
+        <Description>A number that identifies a vendor's identification.</Description>
+    </Code>
+    <Code>
+        <Id>VS</Id>
+        <Name>Vendor order number suffix</Name>
+        <Description>The suffix for a vendor order number.</Description>
+    </Code>
+    <Code>
+        <Id>VT</Id>
+        <Name>Motor vehicle identification number</Name>
+        <Description>(8213) Reference identifying a motor vehicle used for transport. Normally is
+            the vehicle registration number.</Description>
+    </Code>
+    <Code>
+        <Id>VV</Id>
+        <Name>Voucher number</Name>
+        <Description>Reference number identifying a voucher.</Description>
+    </Code>
+    <Code>
+        <Id>WE</Id>
+        <Name>Warehouse entry number</Name>
+        <Description>Entry number under which imported merchandise was placed in a Customs bonded
+            warehouse.</Description>
+    </Code>
+    <Code>
+        <Id>WM</Id>
+        <Name>Weight agreement number</Name>
+        <Description>A number identifying a weight agreement.</Description>
+    </Code>
+    <Code>
+        <Id>WN</Id>
+        <Name>Well number</Name>
+        <Description>A number assigned to a shaft sunk into the ground.</Description>
+    </Code>
+    <Code>
+        <Id>WR</Id>
+        <Name>Warehouse receipt number</Name>
+        <Description>A number identifying a warehouse receipt.</Description>
+    </Code>
+    <Code>
+        <Id>WS</Id>
+        <Name>Warehouse storage location number</Name>
+        <Description>A number identifying a warehouse storage location.</Description>
+    </Code>
+    <Code>
+        <Id>WY</Id>
+        <Name>Rail waybill number</Name>
+        <Description>The number on a rail waybill.</Description>
+    </Code>
+    <Code>
+        <Id>XA</Id>
+        <Name>Company/place registration number</Name>
+        <Description>Company registration and place as legally required.</Description>
+    </Code>
+    <Code>
+        <Id>XC</Id>
+        <Name>Cargo control number</Name>
+        <Description>Reference used to identify and control a carrier and consignment from initial
+            entry into a country until release of the cargo by Customs.</Description>
+    </Code>
+    <Code>
+        <Id>XP</Id>
+        <Name>Previous cargo control number</Name>
+        <Description>Where a consignment is deconsolidated and/or transferred to the control of
+            another carrier or freight forwarder (e.g. housebill, abstract) this references the
+            previous (e.g. master) cargo control number.</Description>
+    </Code>
+    <Code>
+        <Id>ZZZ</Id>
+        <Name>Mutually defined reference number</Name>
+        <Description>Number based on party agreement.</Description>
+    </Code>
+</CodeList>

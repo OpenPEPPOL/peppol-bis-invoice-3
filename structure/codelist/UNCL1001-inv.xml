@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Invoice type code (UNCL1001 subset)</Title>
+    <Identifier>UNCL1001-inv</Identifier>
+    <Version>D.16B</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>openPEPPOL</Subset>
+
+   
+ 
+    <Code>
+        <Id>80</Id>
+        <Name>Debit note related to goods or services</Name>
+        <Description>Debit information related to a transaction for goods or
+            services to the relevant party.
+        </Description>
+    </Code>
+   
+    <Code>
+        <Id>82</Id>
+        <Name>Metered services invoice</Name>
+        <Description>Document/message claiming payment for the supply of
+            metered services (e.g., gas, electricity, etc.) supplied
+            to a fixed meter whose consumption is measured over a
+            period of time.
+        </Description>
+    </Code>
+   
+    <Code>
+        <Id>84</Id>
+        <Name>Debit note related to financial adjustments</Name>
+        <Description>Document/message for providing debit information related
+            to financial adjustments to the relevant party.
+        </Description>
+    </Code>
+ 
+   
+    <Code>
+        <Id>380</Id>
+        <Name>Commercial invoice</Name>
+        <Description>(1334) Document/message claiming payment for goods or
+            services supplied under conditions agreed between seller
+            and buyer.
+        </Description>
+    </Code>
+  
+    <Code>
+        <Id>383</Id>
+        <Name>Debit note</Name>
+        <Description>Document/message for providing debit information to the
+            relevant party.
+        </Description>
+    </Code>
+   
+    <Code>
+        <Id>386</Id>
+        <Name>Prepayment invoice</Name>
+        <Description>An invoice to pay amounts for goods and services in
+            advance; these amounts will be subtracted from the final
+            invoice.
+        </Description>
+    </Code>
+   
+    <Code>
+        <Id>393</Id>
+        <Name>Factored invoice</Name>
+        <Description>Invoice assigned to a third party for collection.</Description>
+    </Code>
+  
+    <Code>
+        <Id>395</Id>
+        <Name>Consignment invoice</Name>
+        <Description>Commercial invoice that covers a transaction other than
+            one involving a sale.
+        </Description>
+    </Code>
+  
+    <Code>
+        <Id>575</Id>
+        <Name>Insurer's invoice</Name>
+        <Description>Document/message issued by an insurer specifying the
+            cost of an insurance which has been effected and
+            claiming payment therefore.
+        </Description>
+    </Code>
+  
+    <Code>
+        <Id>623</Id>
+        <Name>Forwarder's invoice</Name>
+        <Description>Invoice issued by a freight forwarder specifying
+            services rendered and costs incurred and claiming
+            payment therefore.
+        </Description>
+    </Code>
+    
+    <Code>
+        <Id>780</Id>
+        <Name>Freight invoice</Name>
+        <Description>Document/message issued by a transport operation
+            specifying freight costs and charges incurred for a
+            transport operation and stating conditions of payment.
+        </Description>
+    </Code>
+   
+</CodeList>

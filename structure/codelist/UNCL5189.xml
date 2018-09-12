@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>VAT date code (UNCL2005 subset)</Title>
+    <Identifier>UNCL2005</Identifier>
+    <Version>D.16B</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>openPEPPOL</Subset>
+
+
+
+    <Code>
+        <Id>41</Id>
+        <Name>Bonus for works ahead of schedule</Name>
+    </Code>
+
+    <Code>
+        <Id>42</Id>
+       <Name>Other bonus</Name>
+    </Code>
+
+    <Code>
+        <Id>60</Id>
+        <Name>Manufacturer’s consumer discount</Name>
+    </Code>
+
+    <Code>
+        <Id>62</Id>
+        <Name>Due to military status</Name>
+    </Code>
+
+    <Code>
+        <Id>63</Id>
+        <Name>Due to work accident</Name>
+    </Code>
+
+    <Code>
+        <Id>64</Id>
+        <Name>Special agreement</Name>
+    </Code>
+
+    <Code>
+        <Id>65</Id>
+        <Name>Production error discount</Name>
+    </Code>
+
+    <Code>
+        <Id>66</Id>
+        <Name>New outlet discount</Name>
+    </Code>
+
+    <Code>
+        <Id>67</Id>
+        <Name>Sample discount</Name>
+    </Code>
+
+    <Code>
+        <Id>68</Id>
+        <Name>End-of-range discount</Name>
+    </Code>
+
+    <Code>
+        <Id>70</Id>
+        <Name>Incoterm discount</Name>
+    </Code>
+
+    <Code>
+        <Id>71</Id>
+        <Name>Point of sales threshold allowance</Name>
+    </Code>
+
+    <Code>
+        <Id>88</Id>
+        <Name>Material surcharge/deduction</Name>
+    </Code>
+
+    <Code>
+        <Id>95</Id>
+        <Name>Discount</Name>
+    </Code>
+
+    <Code>
+        <Id>100</Id>
+        <Name>Special rebate</Name>
+    </Code>
+
+    <Code>
+        <Id>102</Id>
+        <Name>Fixed long term</Name>
+    </Code>
+
+    <Code>
+        <Id>103</Id>
+        <Name>Temporary</Name>
+    </Code>
+
+    <Code>
+        <Id>104</Id>
+        <Name>Standard</Name>
+    </Code>
+
+    <Code>
+        <Id>105</Id>
+        <Name>Yearly turnover</Name>
+    </Code>
+
+</CodeList>

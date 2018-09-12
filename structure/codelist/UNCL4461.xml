@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?><CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Payment means code (UNCL4461)</Title>
+    <Identifier>UNCL4461</Identifier>
+    <Version>D.16B</Version>
+    <Agency>UN/CEFACT</Agency>
+ 
+
+
+    <Code>
+        <Id>1</Id>
+        <Name>Instrument not defined</Name>
+        <Description>Not defined legally enforceable agreement between two or more parties
+            (expressing a contractual right or a right to the payment of money).</Description>
+    </Code>
+
+    <Code>
+        <Id>2</Id>
+        <Name>Automated clearing house credit</Name>
+        <Description>A credit transaction made through the automated clearing house system.</Description>
+    </Code>
+    <Code>
+        <Id>3</Id>
+        <Name>Automated clearing house debit</Name>
+        <Description>A debit transaction made through the automated clearing house system.</Description>
+    </Code>
+    <Code>
+        <Id>4</Id>
+        <Name>ACH demand debit reversal</Name>
+        <Description>A request to reverse an ACH debit transaction to a demand deposit account.</Description>
+    </Code>
+    <Code>
+        <Id>5</Id>
+        <Name>ACH demand credit reversal</Name>
+        <Description>A request to reverse a credit transaction to a demand deposit account.</Description>
+    </Code>
+    <Code>
+        <Id>6</Id>
+        <Name>ACH demand credit</Name>
+        <Description>A credit transaction made through the ACH system to a demand deposit account.</Description>
+    </Code>
+    <Code>
+        <Id>7</Id>
+        <Name>ACH demand debit</Name>
+        <Description>A debit transaction made through the ACH system to a demand deposit account.</Description>
+    </Code>
+    <Code>
+        <Id>8</Id>
+        <Name>Hold</Name>
+        <Description>Indicates that the bank should hold the payment for collection by the
+            beneficiary or other instructions.</Description>
+    </Code>
+    <Code>
+        <Id>9</Id>
+        <Name>National or regional clearing</Name>
+        <Description>Indicates that the payment should be made using the national or regional
+            clearing.</Description>
+    </Code>
+    <Code>
+        <Id>10</Id>
+        <Name>In cash</Name>
+        <Description>Payment by currency (including bills and coins) in circulation, including
+            checking account deposits.</Description>
+    </Code>
+    <Code>
+        <Id>11</Id>
+        <Name>ACH savings credit reversal</Name>
+        <Description>A request to reverse an ACH credit transaction to a savings account.</Description>
+    </Code>
+    <Code>
+        <Id>12</Id>
+        <Name>ACH savings debit reversal</Name>
+        <Description>A request to reverse an ACH debit transaction to a savings account.</Description>
+    </Code>
+    <Code>
+        <Id>13</Id>
+        <Name>ACH savings credit</Name>
+        <Description>A credit transaction made through the ACH system to a savings account.</Description>
+    </Code>
+    <Code>
+        <Id>14</Id>
+        <Name>ACH savings debit</Name>
+        <Description>A debit transaction made through the ACH system to a savings account.</Description>
+    </Code>
+    <Code>
+        <Id>15</Id>
+        <Name>Bookentry credit</Name>
+        <Description>A credit entry between two accounts at the same bank branch. Synonym: house
+            credit.</Description>
+    </Code>
+    <Code>
+        <Id>16</Id>
+        <Name>Bookentry debit</Name>
+        <Description>A debit entry between two accounts at the same bank branch. Synonym: house
+            debit.</Description>
+    </Code>
+    <Code>
+        <Id>17</Id>
+        <Name>ACH demand cash concentration/disbursement (CCD) credit</Name>
+        <Description>A credit transaction made through the ACH system to a demand deposit account
+            using the CCD payment format.</Description>
+    </Code>
+    <Code>
+        <Id>18</Id>
+        <Name>ACH demand cash concentration/disbursement (CCD) debit</Name>
+        <Description>A debit transaction made through the ACH system to a demand deposit account
+            using the CCD payment format.</Description>
+    </Code>
+    <Code>
+        <Id>19</Id>
+        <Name>ACH demand corporate trade payment (CTP) credit</Name>
+        <Description>A credit transaction made through the ACH system to a demand deposit account
+            using the CTP payment format.</Description>
+    </Code>
+    <Code>
+        <Id>20</Id>
+        <Name>Cheque</Name>
+        <Description>Payment by a pre-printed form on which instructions are given to an account
+            holder (a bank or building society) to pay a stated sum to a named recipient.</Description>
+    </Code>
+    <Code>
+        <Id>21</Id>
+        <Name>Banker's draft</Name>
+        <Description>Issue of a banker's draft in payment of the funds.</Description>
+    </Code>
+    <Code>
+        <Id>22</Id>
+        <Name>Certified banker's draft</Name>
+        <Description>Cheque drawn by a bank on itself or its agent. A person who owes money to
+            another buys the draft from a bank for cash and hands it to the creditor who need have
+            no fear that it might be dishonoured.</Description>
+    </Code>
+    <Code>
+        <Id>23</Id>
+        <Name>Bank cheque (issued by a banking or similar establishment)</Name>
+        <Description>Payment by a pre-printed form, which has been completed by a financial
+            institution, on which instructions are given to an account holder (a bank or building
+            society) to pay a stated sum to a named recipient.</Description>
+    </Code>
+    <Code>
+        <Id>24</Id>
+        <Name>Bill of exchange awaiting acceptance</Name>
+        <Description>Bill drawn by the creditor on the debtor but not yet accepted by the debtor.</Description>
+    </Code>
+    <Code>
+        <Id>25</Id>
+        <Name>Certified cheque</Name>
+        <Description>Payment by a pre-printed form stamped with the paying bank's certification on
+            which instructions are given to an account holder (a bank or building society) to pay a
+            stated sum to a named recipient .</Description>
+    </Code>
+    <Code>
+        <Id>26</Id>
+        <Name>Local cheque</Name>
+        <Description>Indicates that the cheque is given local to the recipient.</Description>
+    </Code>
+    <Code>
+        <Id>27</Id>
+        <Name>ACH demand corporate trade payment (CTP) debit</Name>
+        <Description>A debit transaction made through the ACH system to a demand deposit account
+            using the CTP payment format.</Description>
+    </Code>
+    <Code>
+        <Id>28</Id>
+        <Name>ACH demand corporate trade exchange (CTX) credit</Name>
+        <Description>A credit transaction made through the ACH system to a demand deposit account
+            using the CTX payment format.</Description>
+    </Code>
+    <Code>
+        <Id>29</Id>
+        <Name>ACH demand corporate trade exchange (CTX) debit</Name>
+        <Description>A debit transaction made through the ACH system to a demand account using the
+            CTX payment format.</Description>
+    </Code>
+    <Code>
+        <Id>30</Id>
+        <Name>Credit transfer</Name>
+        <Description>Payment by credit movement of funds from one account to another.</Description>
+    </Code>
+    <Code>
+        <Id>31</Id>
+        <Name>Debit transfer</Name>
+        <Description>Payment by debit movement of funds from one account to another.</Description>
+    </Code>
+    <Code>
+        <Id>32</Id>
+        <Name>ACH demand cash concentration/disbursement plus (CCD+) credit</Name>
+        <Description>A credit transaction made through the ACH system to a demand deposit account
+            using the CCD+ payment format.</Description>
+    </Code>
+    <Code>
+        <Id>33</Id>
+        <Name>ACH demand cash concentration/disbursement plus (CCD+) debit</Name>
+        <Description>A debit transaction made through the ACH system to a demand deposit account
+            using the CCD+ payment format.</Description>
+    </Code>
+    <Code>
+        <Id>34</Id>
+        <Name>ACH prearranged payment and deposit (PPD)</Name>
+        <Description>A consumer credit transaction made through the ACH system to a demand deposit
+            or savings account.</Description>
+    </Code>
+    <Code>
+        <Id>35</Id>
+        <Name>ACH savings cash concentration/disbursement (CCD) credit</Name>
+        <Description>A credit transaction made through the ACH system to a demand deposit or savings
+            account.</Description>
+    </Code>
+    <Code>
+        <Id>36</Id>
+        <Name>ACH savings cash concentration/disbursement (CCD) debit</Name>
+        <Description>A debit transaction made through the ACH system to a savings account using the
+            CCD payment format.</Description>
+    </Code>
+    <Code>
+        <Id>37</Id>
+        <Name>ACH savings corporate trade payment (CTP) credit</Name>
+        <Description>A credit transaction made through the ACH system to a savings account using the
+            CTP payment format.</Description>
+    </Code>
+    <Code>
+        <Id>38</Id>
+        <Name>ACH savings corporate trade payment (CTP) debit</Name>
+        <Description>A debit transaction made through the ACH system to a savings account using the
+            CTP payment format.</Description>
+    </Code>
+    <Code>
+        <Id>39</Id>
+        <Name>ACH savings corporate trade exchange (CTX) credit</Name>
+        <Description>A credit transaction made through the ACH system to a savings account using the
+            CTX payment format.</Description>
+    </Code>
+    <Code>
+        <Id>40</Id>
+        <Name>ACH savings corporate trade exchange (CTX) debit</Name>
+        <Description>A debit transaction made through the ACH system to a savings account using the
+            CTX payment format.</Description>
+    </Code>
+    <Code>
+        <Id>41</Id>
+        <Name>ACH savings cash concentration/disbursement plus (CCD+) credit</Name>
+        <Description>A credit transaction made through the ACH system to a savings account using the
+            CCD+ payment format.</Description>
+    </Code>
+    <Code>
+        <Id>42</Id>
+        <Name>Payment to bank account</Name>
+        <Description>Payment by an arrangement for settling debts that is operated by the Post
+            Office.</Description>
+    </Code>
+    <Code>
+        <Id>43</Id>
+        <Name>ACH savings cash concentration/disbursement plus (CCD+) debit</Name>
+        <Description>A debit transaction made through the ACH system to a savings account using the
+            CCD+ payment format.</Description>
+    </Code>
+    <Code>
+        <Id>44</Id>
+        <Name>Accepted bill of exchange</Name>
+        <Description>Bill drawn by the creditor on the debtor and accepted by the debtor.</Description>
+    </Code>
+    <Code>
+        <Id>45</Id>
+        <Name>Referenced home-banking credit transfer</Name>
+        <Description>A referenced credit transfer initiated through home- banking.</Description>
+    </Code>
+    <Code>
+        <Id>46</Id>
+        <Name>Interbank debit transfer</Name>
+        <Description>A debit transfer via interbank means.</Description>
+    </Code>
+    <Code>
+        <Id>47</Id>
+        <Name>Home-banking debit transfer</Name>
+        <Description>A debit transfer initiated through home-banking.</Description>
+    </Code>
+    <Code>
+        <Id>48</Id>
+        <Name>Bank card</Name>
+        <Description>Payment by means of a card issued by a bank or other financial institution.</Description>
+    </Code>
+    <Code>
+        <Id>49</Id>
+        <Name>Direct debit</Name>
+        <Description>The amount is to be, or has been, directly debited to the customer's bank
+            account.</Description>
+    </Code>
+    <Code>
+        <Id>50</Id>
+        <Name>Payment by postgiro</Name>
+        <Description>A method for the transmission of funds through the postal system rather than
+            through the banking system.</Description>
+    </Code>
+    <Code>
+        <Id>51</Id>
+        <Name>FR, norme 6 97-Telereglement CFONB (French Organisation for</Name>
+        <Description>Banking Standards) - Option A A French standard procedure that allows a debtor
+            to pay an amount due to a creditor. The creditor will forward it to its bank, which will
+            collect the money on the bank account of the debtor.</Description>
+    </Code>
+    <Code>
+        <Id>52</Id>
+        <Name>Urgent commercial payment</Name>
+        <Description>Payment order which requires guaranteed processing by the most appropriate
+            means to ensure it occurs on the requested execution date, provided that it is issued to
+            the ordered bank before the agreed cut-off time.</Description>
+    </Code>
+    <Code>
+        <Id>53</Id>
+        <Name>Urgent Treasury Payment</Name>
+        <Description>Payment order or transfer which must be executed, by the most appropriate
+            means, as urgently as possible and before urgent commercial payments.</Description>
+    </Code>
+    <Code>
+        <Id>54</Id>
+        <Name>Credit card</Name>
+        <Description>Payment made by means of credit card.</Description>
+    </Code>
+    <Code>
+        <Id>55</Id>
+        <Name>Debit card</Name>
+        <Description>Payment made by means of debit card.</Description>
+    </Code>
+    <Code>
+        <Id>56</Id>
+        <Name>Bankgiro</Name>
+        <Description>Payment will be, or has been, made by bankgiro.</Description>
+    </Code>
+    <Code>
+        <Id>57</Id>
+        <Name>Standing agreement</Name>
+        <Description>The payment means have been previously agreed between seller and buyer and thus
+            are not stated again.</Description>
+    </Code>
+    <Code>
+        <Id>58</Id>
+        <Name>SEPA credit transfer</Name>
+        <Description>Credit transfer inside the Single Euro Payment Area (SEPA) system.</Description>
+    </Code>
+    <Code>
+        <Id>59</Id>
+        <Name>SEPA direct debit</Name>
+        <Description>Direct debit inside the Single Euro Payment Area (SEPA) system.</Description>
+    </Code>
+    <Code>
+        <Id>60</Id>
+        <Name>Promissory note</Name>
+        <Description>Payment by an unconditional promise in writing made by one person to another,
+            signed by the maker, engaging to pay on demand or at a fixed or determinable future time
+            a sum certain in money, to order or to bearer.</Description>
+    </Code>
+    <Code>
+        <Id>61</Id>
+        <Name>Promissory note signed by the debtor</Name>
+        <Description>Payment by an unconditional promise in writing made by the debtor to another
+            person, signed by the debtor, engaging to pay on demand or at a fixed or determinable
+            future time a sum certain in money, to order or to bearer.</Description>
+    </Code>
+    <Code>
+        <Id>62</Id>
+        <Name>Promissory note signed by the debtor and endorsed by a bank</Name>
+        <Description>Payment by an unconditional promise in writing made by the debtor to another
+            person, signed by the debtor and endorsed by a bank, engaging to pay on demand or at a
+            fixed or determinable future time a sum certain in money, to order or to bearer.</Description>
+    </Code>
+    <Code>
+        <Id>63</Id>
+        <Name>Promissory note signed by the debtor and endorsed by a third party</Name>
+        <Description>Payment by an unconditional promise in writing made by the debtor to another
+            person, signed by the debtor and endorsed by a third party, engaging to pay on demand or
+            at a fixed or determinable future time a sum certain in money, to order or to bearer.</Description>
+    </Code>
+    <Code>
+        <Id>64</Id>
+        <Name>Promissory note signed by a bank</Name>
+        <Description>Payment by an unconditional promise in writing made by the bank to another
+            person, signed by the bank, engaging to pay on demand or at a fixed or determinable
+            future time a sum certain in money, to order or to bearer.</Description>
+    </Code>
+    <Code>
+        <Id>65</Id>
+        <Name>Promissory note signed by a bank and endorsed by another bank</Name>
+        <Description>Payment by an unconditional promise in writing made by the bank to another
+            person, signed by the bank and endorsed by another bank, engaging to pay on demand or at
+            a fixed or determinable future time a sum certain in money, to order or to bearer.</Description>
+    </Code>
+    <Code>
+        <Id>66</Id>
+        <Name>Promissory note signed by a third party</Name>
+        <Description>Payment by an unconditional promise in writing made by a third party to another
+            person, signed by the third party, engaging to pay on demand or at a fixed or
+            determinable future time a sum certain in money, to order or to bearer.</Description>
+    </Code>
+    <Code>
+        <Id>67</Id>
+        <Name>Promissory note signed by a third party and endorsed by a bank</Name>
+        <Description>Payment by an unconditional promise in writing made by a third party to another
+            person, signed by the third party and endorsed by a bank, engaging to pay on demand or
+            at a fixed or determinable future time a sum certain in money, to order or to bearer.</Description>
+    </Code>
+    <Code>
+        <Id>68</Id>
+        <Name>Online payment service</Name>
+        <Description>Payment will be made or has been made by an online payment service.</Description>
+    </Code>
+    <Code>
+        <Id>70</Id>
+        <Name>Bill drawn by the creditor on the debtor</Name>
+        <Description>Bill drawn by the creditor on the debtor.</Description>
+    </Code>
+    <Code>
+        <Id>74</Id>
+        <Name>Bill drawn by the creditor on a bank</Name>
+        <Description>Bill drawn by the creditor on a bank.</Description>
+    </Code>
+    <Code>
+        <Id>75</Id>
+        <Name>Bill drawn by the creditor, endorsed by another bank</Name>
+        <Description>Bill drawn by the creditor, endorsed by another bank.</Description>
+    </Code>
+    <Code>
+        <Id>76</Id>
+        <Name>Bill drawn by the creditor on a bank and endorsed by a third party</Name>
+        <Description>Bill drawn by the creditor on a bank and endorsed by a third party.</Description>
+    </Code>
+    <Code>
+        <Id>77</Id>
+        <Name>Bill drawn by the creditor on a third party</Name>
+        <Description>Bill drawn by the creditor on a third party.</Description>
+    </Code>
+    <Code>
+        <Id>78</Id>
+        <Name>Bill drawn by creditor on third party, accepted and endorsed by bank</Name>
+        <Description>Bill drawn by creditor on third party, accepted and endorsed by bank.</Description>
+    </Code>
+    <Code>
+        <Id>91</Id>
+        <Name>Not transferable banker's draft</Name>
+        <Description>Issue a bankers draft not endorsable.</Description>
+    </Code>
+    <Code>
+        <Id>92</Id>
+        <Name>Not transferable local cheque</Name>
+        <Description>Issue a cheque not endorsable in payment of the funds.</Description>
+    </Code>
+    <Code>
+        <Id>93</Id>
+        <Name>Reference giro</Name>
+        <Description>Ordering customer tells the bank to use the payment system 'Reference giro'.
+            Used in the Finnish national banking system.</Description>
+    </Code>
+    <Code>
+        <Id>94</Id>
+        <Name>Urgent giro</Name>
+        <Description>Ordering customer tells the bank to use the bank service 'Urgent Giro' when
+            transferring the payment. Used in Finnish national banking system.</Description>
+    </Code>
+    <Code>
+        <Id>95</Id>
+        <Name>Free format giro</Name>
+        <Description>Ordering customer tells the ordering bank to use the bank service 'Free Format
+            Giro' when transferring the payment. Used in Finnish national banking system.</Description>
+    </Code>
+    <Code>
+        <Id>96</Id>
+        <Name>Requested method for payment was not used</Name>
+        <Description>If the requested method for payment was or could not be used, this code
+            indicates that.</Description>
+    </Code>
+    <Code>
+        <Id>97</Id>
+        <Name>Clearing between partners</Name>
+        <Description>Amounts which two partners owe to each other to be compensated in order to
+            avoid useless payments.</Description>
+    </Code>
+    <Code>
+        <Id>ZZZ</Id>
+        <Name>Mutually defined</Name>
+        <Description>A code assigned within a code list to be used on an interim basis and as
+            defined among trading partners until a precise code can be assigned to the code list.</Description>
+    </Code>
+
+
+</CodeList>

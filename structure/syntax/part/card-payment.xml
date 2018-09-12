@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..1">
+
+   
+            <Term>cac:CardAccount</Term>
+            <Name>PAYMENT CARD INFORMATION</Name>
+            <Description>A group of business terms providing information about card used for payment contemporaneous with
+                invoice issuance.
+            </Description>
+            <Reference type="BUSINESS_TERM">BG-18</Reference>
+            
+            <Element>
+                <Term>cbc:PrimaryAccountNumberID</Term>
+                <Name>Payment card primary account number</Name>
+                <Description>The Primary Account Number (PAN) of the card used for payment.In accordance with card payments security
+                    standards, an invoice should never include a full card primary account number.</Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">BT-87</Reference>
+                <Reference type="RULE">BR-51</Reference>
+                <Value type="EXAMPLE">1234</Value>
+            </Element>
+            
+            <Element>
+                <Term>cbc:NetworkID</Term>
+                <Description>Card Network identifier, such as VISA, American Express, Master Card.</Description>
+                <DataType>Text</DataType>
+                <Value type="EXAMPLE">VISA</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:HolderName</Term>
+                <Name>Payment card holder name</Name>
+                <Description>The name of the payment card holder.</Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">BT-88</Reference>
+                <Value type="EXAMPLE">John Doe</Value>
+            </Element>
+        
+        
+    
+      
+    </Element>

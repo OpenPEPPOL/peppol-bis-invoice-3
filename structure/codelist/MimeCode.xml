@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Mime code (subset of IANA code list)</Title>
+    <Identifier>MimeCode</Identifier>
+    <Version>1.0</Version>
+    <Agency>IANA</Agency>
+    <Subset>OpenPEPPOL</Subset>
+
+
+    <Code>
+        <Id>text/csv</Id>
+        <Name>text/csv</Name>
+    </Code>
+
+    <Code>
+        <Id>application/pdf</Id>
+        <Name>application/pdf</Name>
+    </Code>
+
+    <Code>
+        <Id>image/png</Id>
+        <Name>image/png</Name>
+    </Code>
+
+    <Code>
+        <Id>image/jpeg</Id>
+        <Name>image/jpeg</Name>
+    </Code>
+    
+    <Code>
+        <Id>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Id>
+        <Name>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</Name>
+    </Code>
+    
+    <Code>
+        <Id>application/vnd.oasis.opendocument.spreadsheet</Id>
+        <Name>application/vnd.oasis.opendocument.spreadsheet</Name>
+    </Code>
+</CodeList>
+

@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?><CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Charge reason code (UNCL7161)</Title>
+    <Identifier>UNCL2005</Identifier>
+    <Version>D.16B</Version>
+    <Agency>UN/CEFACT</Agency>
+
+
+    <Code>
+        <Id>AA</Id>
+        <Name>Advertising</Name>
+        <Description>The service of providing advertising.</Description>
+    </Code>
+    <Code>
+        <Id>AAA</Id>
+        <Name>Telecommunication</Name>
+        <Description>The service of providing telecommunication activities and/or faclities.</Description>
+    </Code>
+    <Code>
+        <Id>AAC</Id>
+        <Name>Technical modification</Name>
+        <Description>The service of making technical modifications to a product.</Description>
+    </Code>
+    <Code>
+        <Id>AAD</Id>
+        <Name>Job-order production</Name>
+        <Description>The service of producing to order.</Description>
+    </Code>
+    <Code>
+        <Id>AAE</Id>
+        <Name>Outlays</Name>
+        <Description>The service of providing money for outlays on behalf of a trading partner.</Description>
+    </Code>
+    <Code>
+        <Id>AAF</Id>
+        <Name>Off-premises</Name>
+        <Description>The service of providing services outside the premises of the provider.</Description>
+    </Code>
+    <Code>
+        <Id>AAH</Id>
+        <Name>Additional processing</Name>
+        <Description>The service of providing additional processing.</Description>
+    </Code>
+    <Code>
+        <Id>AAI</Id>
+        <Name>Attesting</Name>
+        <Description>The service of certifying validity.</Description>
+    </Code>
+    <Code>
+        <Id>AAS</Id>
+        <Name>Acceptance</Name>
+        <Description>The service of accepting goods or services.</Description>
+    </Code>
+    <Code>
+        <Id>AAT</Id>
+        <Name>Rush delivery</Name>
+        <Description>The service to provide a rush delivery.</Description>
+    </Code>
+    <Code>
+        <Id>AAV</Id>
+        <Name>Special construction</Name>
+        <Description>The service of providing special construction.</Description>
+    </Code>
+    <Code>
+        <Id>AAY</Id>
+        <Name>Airport facilities</Name>
+        <Description>The service of providing airport facilities.</Description>
+    </Code>
+    <Code>
+        <Id>AAZ</Id>
+        <Name>Concession</Name>
+        <Description>The service allowing a party to use another party's facilities.</Description>
+    </Code>
+    <Code>
+        <Id>ABA</Id>
+        <Name>Compulsory storage</Name>
+        <Description>The service provided to hold a compulsory inventory.</Description>
+    </Code>
+    <Code>
+        <Id>ABB</Id>
+        <Name>Fuel removal</Name>
+        <Description>Remove or off-load fuel from vehicle, vessel or craft.</Description>
+    </Code>
+    <Code>
+        <Id>ABC</Id>
+        <Name>Into plane</Name>
+        <Description>Service of delivering goods to an aircraft from local storage.</Description>
+    </Code>
+    <Code>
+        <Id>ABD</Id>
+        <Name>Overtime</Name>
+        <Description>The service of providing labour beyond the established limit of working hours.</Description>
+    </Code>
+    <Code>
+        <Id>ABF</Id>
+        <Name>Tooling</Name>
+        <Description>The service of providing specific tooling.</Description>
+    </Code>
+    <Code>
+        <Id>ABK</Id>
+        <Name>Miscellaneous</Name>
+        <Description>Miscellaneous services.</Description>
+    </Code>
+    <Code>
+        <Id>ABL</Id>
+        <Name>Additional packaging</Name>
+        <Description>The service of providing additional packaging.</Description>
+    </Code>
+    <Code>
+        <Id>ABN</Id>
+        <Name>Dunnage</Name>
+        <Description>The service of providing additional padding materials required to secure and
+            protect a cargo within a shipping container.</Description>
+    </Code>
+    <Code>
+        <Id>ABR</Id>
+        <Name>Containerisation</Name>
+        <Description>The service of packing items into a container.</Description>
+    </Code>
+    <Code>
+        <Id>ABS</Id>
+        <Name>Carton packing</Name>
+        <Description>The service of packing items into a carton.</Description>
+    </Code>
+    <Code>
+        <Id>ABT</Id>
+        <Name>Hessian wrapped</Name>
+        <Description>The service of hessian wrapping.</Description>
+    </Code>
+    <Code>
+        <Id>ABU</Id>
+        <Name>Polyethylene wrap packing</Name>
+        <Description>The service of packing in polyethylene wrapping.</Description>
+    </Code>
+    <Code>
+        <Id>ACF</Id>
+        <Name>Miscellaneous treatment</Name>
+        <Description>Miscellaneous treatment service.</Description>
+    </Code>
+    <Code>
+        <Id>ACG</Id>
+        <Name>Enamelling treatment</Name>
+        <Description>The service of providing enamelling treatment.</Description>
+    </Code>
+    <Code>
+        <Id>ACH</Id>
+        <Name>Heat treatment</Name>
+        <Description>The service of treating with heat.</Description>
+    </Code>
+    <Code>
+        <Id>ACI</Id>
+        <Name>Plating treatment</Name>
+        <Description>The service of providing plating treatment.</Description>
+    </Code>
+    <Code>
+        <Id>ACJ</Id>
+        <Name>Painting</Name>
+        <Description>The service of painting.</Description>
+    </Code>
+    <Code>
+        <Id>ACK</Id>
+        <Name>Polishing</Name>
+        <Description>The service of polishing.</Description>
+    </Code>
+    <Code>
+        <Id>ACL</Id>
+        <Name>Priming</Name>
+        <Description>The service of priming.</Description>
+    </Code>
+    <Code>
+        <Id>ACM</Id>
+        <Name>Preservation treatment</Name>
+        <Description>The service of preservation treatment.</Description>
+    </Code>
+    <Code>
+        <Id>ACS</Id>
+        <Name>Fitting</Name>
+        <Description>Fitting service.</Description>
+    </Code>
+    <Code>
+        <Id>ADC</Id>
+        <Name>Consolidation</Name>
+        <Description>The service of consolidating multiple consignments into one shipment.</Description>
+    </Code>
+    <Code>
+        <Id>ADE</Id>
+        <Name>Bill of lading</Name>
+        <Description>The service of providing a bill of lading document.</Description>
+    </Code>
+    <Code>
+        <Id>ADJ</Id>
+        <Name>Airbag</Name>
+        <Description>The service of surrounding a product with an air bag.</Description>
+    </Code>
+    <Code>
+        <Id>ADK</Id>
+        <Name>Transfer</Name>
+        <Description>The service of transferring.</Description>
+    </Code>
+    <Code>
+        <Id>ADL</Id>
+        <Name>Slipsheet</Name>
+        <Description>The service of securing a stack of products on a slipsheet.</Description>
+    </Code>
+    <Code>
+        <Id>ADM</Id>
+        <Name>Binding</Name>
+        <Description>Binding service.</Description>
+    </Code>
+    <Code>
+        <Id>ADN</Id>
+        <Name>Repair or replacement of broken returnable package</Name>
+        <Description>The service of repairing or replacing a broken returnable package.</Description>
+    </Code>
+    <Code>
+        <Id>ADO</Id>
+        <Name>Efficient logistics</Name>
+        <Description>A code indicating efficient logistics services.</Description>
+    </Code>
+    <Code>
+        <Id>ADP</Id>
+        <Name>Merchandising</Name>
+        <Description>A code indicating that merchandising services are in operation.</Description>
+    </Code>
+    <Code>
+        <Id>ADQ</Id>
+        <Name>Product mix</Name>
+        <Description>A code indicating that product mixing services are in operation.</Description>
+    </Code>
+    <Code>
+        <Id>ADR</Id>
+        <Name>Other services</Name>
+        <Description>A code indicating that other non-specific services are in operation.</Description>
+    </Code>
+    <Code>
+        <Id>ADT</Id>
+        <Name>Pick-up</Name>
+        <Description>The service of picking up or collection of goods.</Description>
+    </Code>
+    <Code>
+        <Id>ADW</Id>
+        <Name>Chronic illness</Name>
+        <Description>The special services provided due to chronic illness.</Description>
+    </Code>
+    <Code>
+        <Id>ADY</Id>
+        <Name>New product introduction</Name>
+        <Description>A service provided by a buyer when introducing a new product from a suppliers
+            range to the range traded by the buyer.</Description>
+    </Code>
+    <Code>
+        <Id>ADZ</Id>
+        <Name>Direct delivery</Name>
+        <Description>Direct delivery service.</Description>
+    </Code>
+    <Code>
+        <Id>AEA</Id>
+        <Name>Diversion</Name>
+        <Description>The service of diverting deliverables.</Description>
+    </Code>
+    <Code>
+        <Id>AEB</Id>
+        <Name>Disconnect</Name>
+        <Description>The service is a disconnection.</Description>
+    </Code>
+    <Code>
+        <Id>AEC</Id>
+        <Name>Distribution</Name>
+        <Description>Distribution service.</Description>
+    </Code>
+    <Code>
+        <Id>AED</Id>
+        <Name>Handling of hazardous cargo</Name>
+        <Description>A service for handling hazardous cargo.</Description>
+    </Code>
+    <Code>
+        <Id>AEF</Id>
+        <Name>Rents and leases</Name>
+        <Description>The service of renting and/or leasing.</Description>
+    </Code>
+    <Code>
+        <Id>AEH</Id>
+        <Name>Location differential</Name>
+        <Description>Delivery to a different location than previously contracted.</Description>
+    </Code>
+    <Code>
+        <Id>AEI</Id>
+        <Name>Aircraft refueling</Name>
+        <Description>Fuel being put into the aircraft.</Description>
+    </Code>
+    <Code>
+        <Id>AEJ</Id>
+        <Name>Fuel shipped into storage</Name>
+        <Description>Fuel being shipped into a storage system.</Description>
+    </Code>
+    <Code>
+        <Id>AEK</Id>
+        <Name>Cash on delivery</Name>
+        <Description>The provision of a cash on delivery (COD) service.</Description>
+    </Code>
+    <Code>
+        <Id>AEL</Id>
+        <Name>Small order processing service</Name>
+        <Description>A service related to the processing of small orders.</Description>
+    </Code>
+    <Code>
+        <Id>AEM</Id>
+        <Name>Clerical or administrative services</Name>
+        <Description>The provision of clerical or administrative services.</Description>
+    </Code>
+    <Code>
+        <Id>AEN</Id>
+        <Name>Guarantee</Name>
+        <Description>The service of providing a guarantee.</Description>
+    </Code>
+    <Code>
+        <Id>AEO</Id>
+        <Name>Collection and recycling</Name>
+        <Description>The service of collection and recycling products.</Description>
+    </Code>
+    <Code>
+        <Id>AEP</Id>
+        <Name>Copyright fee collection</Name>
+        <Description>The service of collecting copyright fees.</Description>
+    </Code>
+    <Code>
+        <Id>AES</Id>
+        <Name>Veterinary inspection service</Name>
+        <Description>The service of providing veterinary inspection.</Description>
+    </Code>
+    <Code>
+        <Id>AET</Id>
+        <Name>Pensioner service</Name>
+        <Description>Special service when the subject is a pensioner.</Description>
+    </Code>
+    <Code>
+        <Id>AEU</Id>
+        <Name>Medicine free pass holder</Name>
+        <Description>Special service when the subject holds a medicine free pass.</Description>
+    </Code>
+    <Code>
+        <Id>AEV</Id>
+        <Name>Environmental protection service</Name>
+        <Description>The provision of an environmental protection service.</Description>
+    </Code>
+    <Code>
+        <Id>AEW</Id>
+        <Name>Environmental clean-up service</Name>
+        <Description>The provision of an environmental clean-up service.</Description>
+    </Code>
+    <Code>
+        <Id>AEX</Id>
+        <Name>National cheque processing service outside account area</Name>
+        <Description>Service of processing a national cheque outside the ordering customer's bank
+            trading area.</Description>
+    </Code>
+    <Code>
+        <Id>AEY</Id>
+        <Name>National payment service outside account area</Name>
+        <Description>Service of processing a national payment to a beneficiary holding an account
+            outside the trading area of the ordering customer's bank.</Description>
+    </Code>
+    <Code>
+        <Id>AEZ</Id>
+        <Name>National payment service within account area</Name>
+        <Description>Service of processing a national payment to a beneficiary holding an account
+            within the trading area of the ordering customer's bank.</Description>
+    </Code>
+    <Code>
+        <Id>AJ</Id>
+        <Name>Adjustments</Name>
+        <Description>The service of making adjustments.</Description>
+    </Code>
+    <Code>
+        <Id>AU</Id>
+        <Name>Authentication</Name>
+        <Description>The service of authenticating.</Description>
+    </Code>
+    <Code>
+        <Id>CA</Id>
+        <Name>Cataloguing</Name>
+        <Description>The provision of cataloguing services.</Description>
+    </Code>
+    <Code>
+        <Id>CAB</Id>
+        <Name>Cartage</Name>
+        <Description>Movement of goods by heavy duty cart or vehicle.</Description>
+    </Code>
+    <Code>
+        <Id>CAD</Id>
+        <Name>Certification</Name>
+        <Description>The service of certifying.</Description>
+    </Code>
+    <Code>
+        <Id>CAE</Id>
+        <Name>Certificate of conformance</Name>
+        <Description>The service of providing a certificate of conformance.</Description>
+    </Code>
+    <Code>
+        <Id>CAF</Id>
+        <Name>Certificate of origin</Name>
+        <Description>The service of providing a certificate of origin.</Description>
+    </Code>
+    <Code>
+        <Id>CAI</Id>
+        <Name>Cutting</Name>
+        <Description>The service of cutting.</Description>
+    </Code>
+    <Code>
+        <Id>CAJ</Id>
+        <Name>Consular service</Name>
+        <Description>The service provided by consulates.</Description>
+    </Code>
+    <Code>
+        <Id>CAK</Id>
+        <Name>Customer collection</Name>
+        <Description>The service of collecting goods by the customer.</Description>
+    </Code>
+    <Code>
+        <Id>CAL</Id>
+        <Name>Payroll payment service</Name>
+        <Description>Provision of a payroll payment service.</Description>
+    </Code>
+    <Code>
+        <Id>CAM</Id>
+        <Name>Cash transportation</Name>
+        <Description>Provision of a cash transportation service.</Description>
+    </Code>
+    <Code>
+        <Id>CAN</Id>
+        <Name>Home banking service</Name>
+        <Description>Provision of a home banking service.</Description>
+    </Code>
+    <Code>
+        <Id>CAO</Id>
+        <Name>Bilateral agreement service</Name>
+        <Description>Provision of a service as specified in a bilateral special agreement.</Description>
+    </Code>
+    <Code>
+        <Id>CAP</Id>
+        <Name>Insurance brokerage service</Name>
+        <Description>Provision of an insurance brokerage service.</Description>
+    </Code>
+    <Code>
+        <Id>CAQ</Id>
+        <Name>Cheque generation</Name>
+        <Description>Provision of a cheque generation service.</Description>
+    </Code>
+    <Code>
+        <Id>CAR</Id>
+        <Name>Preferential merchandising location</Name>
+        <Description>Service of assigning a preferential location for merchandising.</Description>
+    </Code>
+    <Code>
+        <Id>CAS</Id>
+        <Name>Crane</Name>
+        <Description>The service of providing a crane.</Description>
+    </Code>
+    <Code>
+        <Id>CAT</Id>
+        <Name>Special colour service</Name>
+        <Description>Providing a colour which is different from the default colour.</Description>
+    </Code>
+    <Code>
+        <Id>CAU</Id>
+        <Name>Sorting</Name>
+        <Description>The provision of sorting services.</Description>
+    </Code>
+    <Code>
+        <Id>CAV</Id>
+        <Name>Battery collection and recycling</Name>
+        <Description>The service of collecting and recycling batteries.</Description>
+    </Code>
+    <Code>
+        <Id>CAW</Id>
+        <Name>Product take back fee</Name>
+        <Description>The fee the consumer must pay the manufacturer to take back the product.</Description>
+    </Code>
+    <Code>
+        <Id>CD</Id>
+        <Name>Car loading</Name>
+        <Description>Car loading service.</Description>
+    </Code>
+    <Code>
+        <Id>CG</Id>
+        <Name>Cleaning</Name>
+        <Description>Cleaning service.</Description>
+    </Code>
+    <Code>
+        <Id>CS</Id>
+        <Name>Cigarette stamping</Name>
+        <Description>The service of providing cigarette stamping.</Description>
+    </Code>
+    <Code>
+        <Id>CT</Id>
+        <Name>Count and recount</Name>
+        <Description>The service of doing a count and recount.</Description>
+    </Code>
+    <Code>
+        <Id>DAB</Id>
+        <Name>Layout/design</Name>
+        <Description>The service of providing layout/design.</Description>
+    </Code>
+    <Code>
+        <Id>DAD</Id>
+        <Name>Driver assigned unloading</Name>
+        <Description>The service of unloading by the driver.</Description>
+    </Code>
+    <Code>
+        <Id>DL</Id>
+        <Name>Delivery</Name>
+        <Description>The service of providing delivery.</Description>
+    </Code>
+    <Code>
+        <Id>EG</Id>
+        <Name>Engraving</Name>
+        <Description>The service of providing engraving.</Description>
+    </Code>
+    <Code>
+        <Id>EP</Id>
+        <Name>Expediting</Name>
+        <Description>The service of expediting.</Description>
+    </Code>
+    <Code>
+        <Id>ER</Id>
+        <Name>Exchange rate guarantee</Name>
+        <Description>The service of guaranteeing exchange rate.</Description>
+    </Code>
+    <Code>
+        <Id>FAA</Id>
+        <Name>Fabrication</Name>
+        <Description>The service of providing fabrication.</Description>
+    </Code>
+    <Code>
+        <Id>FAB</Id>
+        <Name>Freight equalization</Name>
+        <Description>The service of load balancing.</Description>
+    </Code>
+    <Code>
+        <Id>FAC</Id>
+        <Name>Freight extraordinary handling</Name>
+        <Description>The service of providing freight's extraordinary handling.</Description>
+    </Code>
+    <Code>
+        <Id>FC</Id>
+        <Name>Freight service</Name>
+        <Description>The service of moving goods, by whatever means, from one place to another.</Description>
+    </Code>
+    <Code>
+        <Id>FH</Id>
+        <Name>Filling/handling</Name>
+        <Description>The service of providing filling/handling.</Description>
+    </Code>
+    <Code>
+        <Id>FI</Id>
+        <Name>Financing</Name>
+        <Description>The service of providing financing.</Description>
+    </Code>
+    <Code>
+        <Id>GAA</Id>
+        <Name>Grinding</Name>
+        <Description>The service of grinding.</Description>
+    </Code>
+    <Code>
+        <Id>HAA</Id>
+        <Name>Hose</Name>
+        <Description>The service of providing a hose.</Description>
+    </Code>
+    <Code>
+        <Id>HD</Id>
+        <Name>Handling</Name>
+        <Description>Handling service.</Description>
+    </Code>
+    <Code>
+        <Id>HH</Id>
+        <Name>Hoisting and hauling</Name>
+        <Description>The service of hoisting and hauling.</Description>
+    </Code>
+    <Code>
+        <Id>IAA</Id>
+        <Name>Installation</Name>
+        <Description>The service of installing.</Description>
+    </Code>
+    <Code>
+        <Id>IAB</Id>
+        <Name>Installation and warranty</Name>
+        <Description>The service of installing and providing warranty.</Description>
+    </Code>
+    <Code>
+        <Id>ID</Id>
+        <Name>Inside delivery</Name>
+        <Description>The service of providing delivery inside.</Description>
+    </Code>
+    <Code>
+        <Id>IF</Id>
+        <Name>Inspection</Name>
+        <Description>The service of inspection.</Description>
+    </Code>
+    <Code>
+        <Id>IR</Id>
+        <Name>Installation and training</Name>
+        <Description>The service of providing installation and training.</Description>
+    </Code>
+    <Code>
+        <Id>IS</Id>
+        <Name>Invoicing</Name>
+        <Description>The service of providing an invoice.</Description>
+    </Code>
+    <Code>
+        <Id>KO</Id>
+        <Name>Koshering</Name>
+        <Description>The service of preparing food in accordance with Jewish law.</Description>
+    </Code>
+    <Code>
+        <Id>L1</Id>
+        <Name>Carrier count</Name>
+        <Description>The service of counting by the carrier.</Description>
+    </Code>
+    <Code>
+        <Id>LA</Id>
+        <Name>Labelling</Name>
+        <Description>Labelling service.</Description>
+    </Code>
+    <Code>
+        <Id>LAA</Id>
+        <Name>Labour</Name>
+        <Description>The service to provide required labour.</Description>
+    </Code>
+    <Code>
+        <Id>LAB</Id>
+        <Name>Repair and return</Name>
+        <Description>The service of repairing and returning.</Description>
+    </Code>
+    <Code>
+        <Id>LF</Id>
+        <Name>Legalisation</Name>
+        <Description>The service of legalising.</Description>
+    </Code>
+    <Code>
+        <Id>MAE</Id>
+        <Name>Mounting</Name>
+        <Description>The service of mounting.</Description>
+    </Code>
+    <Code>
+        <Id>MI</Id>
+        <Name>Mail invoice</Name>
+        <Description>The service of mailing an invoice.</Description>
+    </Code>
+    <Code>
+        <Id>ML</Id>
+        <Name>Mail invoice to each location</Name>
+        <Description>The service of mailing an invoice to each location.</Description>
+    </Code>
+    <Code>
+        <Id>NAA</Id>
+        <Name>Non-returnable containers</Name>
+        <Description>The service of providing non-returnable containers.</Description>
+    </Code>
+    <Code>
+        <Id>OA</Id>
+        <Name>Outside cable connectors</Name>
+        <Description>The service of providing outside cable connectors.</Description>
+    </Code>
+    <Code>
+        <Id>PA</Id>
+        <Name>Invoice with shipment</Name>
+        <Description>The service of including the invoice with the shipment.</Description>
+    </Code>
+    <Code>
+        <Id>PAA</Id>
+        <Name>Phosphatizing (steel treatment)</Name>
+        <Description>The service of phosphatizing the steel.</Description>
+    </Code>
+    <Code>
+        <Id>PC</Id>
+        <Name>Packing</Name>
+        <Description>The service of packing.</Description>
+    </Code>
+    <Code>
+        <Id>PL</Id>
+        <Name>Palletizing</Name>
+        <Description>The service of palletizing.</Description>
+    </Code>
+    <Code>
+        <Id>RAB</Id>
+        <Name>Repacking</Name>
+        <Description>The service of repacking.</Description>
+    </Code>
+    <Code>
+        <Id>RAC</Id>
+        <Name>Repair</Name>
+        <Description>The service of repairing.</Description>
+    </Code>
+    <Code>
+        <Id>RAD</Id>
+        <Name>Returnable container</Name>
+        <Description>The service of providing returnable containers.</Description>
+    </Code>
+    <Code>
+        <Id>RAF</Id>
+        <Name>Restocking</Name>
+        <Description>The service of restocking.</Description>
+    </Code>
+    <Code>
+        <Id>RE</Id>
+        <Name>Re-delivery</Name>
+        <Description>The service of re-delivering.</Description>
+    </Code>
+    <Code>
+        <Id>RF</Id>
+        <Name>Refurbishing</Name>
+        <Description>The service of refurbishing.</Description>
+    </Code>
+    <Code>
+        <Id>RH</Id>
+        <Name>Rail wagon hire</Name>
+        <Description>The service of providing rail wagons for hire.</Description>
+    </Code>
+    <Code>
+        <Id>RV</Id>
+        <Name>Loading</Name>
+        <Description>The service of loading goods.</Description>
+    </Code>
+    <Code>
+        <Id>SA</Id>
+        <Name>Salvaging</Name>
+        <Description>The service of salvaging.</Description>
+    </Code>
+    <Code>
+        <Id>SAA</Id>
+        <Name>Shipping and handling</Name>
+        <Description>The service of shipping and handling.</Description>
+    </Code>
+    <Code>
+        <Id>SAD</Id>
+        <Name>Special packaging</Name>
+        <Description>The service of special packaging.</Description>
+    </Code>
+    <Code>
+        <Id>SAE</Id>
+        <Name>Stamping</Name>
+        <Description>The service of stamping.</Description>
+    </Code>
+    <Code>
+        <Id>SAI</Id>
+        <Name>Consignee unload</Name>
+        <Description>The service of unloading by the consignee.</Description>
+    </Code>
+    <Code>
+        <Id>SG</Id>
+        <Name>Shrink-wrap</Name>
+        <Description>The service of shrink-wrapping.</Description>
+    </Code>
+    <Code>
+        <Id>SH</Id>
+        <Name>Special handling</Name>
+        <Description>The service of special handling.</Description>
+    </Code>
+    <Code>
+        <Id>SM</Id>
+        <Name>Special finish</Name>
+        <Description>The service of providing a special finish.</Description>
+    </Code>
+    <Code>
+        <Id>SU</Id>
+        <Name>Set-up</Name>
+        <Description>The service of setting-up.</Description>
+    </Code>
+    <Code>
+        <Id>TAB</Id>
+        <Name>Tank renting</Name>
+        <Description>The service of providing tanks for hire.</Description>
+    </Code>
+    <Code>
+        <Id>TAC</Id>
+        <Name>Testing</Name>
+        <Description>The service of testing.</Description>
+    </Code>
+    <Code>
+        <Id>TT</Id>
+        <Name>Transportation - third party billing</Name>
+        <Description>The service of providing third party billing for transportation.</Description>
+    </Code>
+    <Code>
+        <Id>TV</Id>
+        <Name>Transportation by vendor</Name>
+        <Description>The service of providing transportation by the vendor.</Description>
+    </Code>
+    <Code>
+        <Id>V1</Id>
+        <Name>Drop yard</Name>
+        <Description>The service of delivering goods at the yard.</Description>
+    </Code>
+    <Code>
+        <Id>V2</Id>
+        <Name>Drop dock</Name>
+        <Description>The service of delivering goods at the dock.</Description>
+    </Code>
+    <Code>
+        <Id>WH</Id>
+        <Name>Warehousing</Name>
+        <Description>The service of storing and handling of goods in a warehouse.</Description>
+    </Code>
+    <Code>
+        <Id>XAA</Id>
+        <Name>Combine all same day shipment</Name>
+        <Description>The service of combining all shipments for the same day.</Description>
+    </Code>
+    <Code>
+        <Id>YY</Id>
+        <Name>Split pick-up</Name>
+        <Description>The service of providing split pick-up.</Description>
+    </Code>
+    <Code>
+        <Id>ZZZ</Id>
+        <Name>Mutually defined</Name>
+        <Description>A code assigned within a code list to be used on an interim basis and as
+            defined among trading partners until a precise code can be assigned to the code
+            list.</Description>
+    </Code>
+
+</CodeList>

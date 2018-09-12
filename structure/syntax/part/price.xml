@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+        
+
+        <Term>cac:Price</Term>
+        <Name>PRICE DETAILS</Name>
+        <Description>A group of business terms providing information about the price applied for the goods and services
+            invoiced on the Invoice line.
+        </Description>
+        <Reference type="BUSINESS_TERM">BG-29</Reference>
+        
+        <Element>
+            <Term>cbc:PriceAmount</Term>
+            <Name>Item net price</Name>
+            <Description>The price of an item, exclusive of VAT, after subtracting item price discount. The Item net price has to be equal with the
+                Item gross price less the Item price discount, if they are both provided. Item price can not be negative.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-146</Reference>
+            <Reference type="RULE">BR-26</Reference>
+            <Reference type="RULE">BR-27</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R046</Reference>
+            
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            
+            <Value type="EXAMPLE">23.45</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:BaseQuantity</Term>
+            <Name>Item price base quantity</Name>
+            <Description>The number of item units to which the price applies.</Description>
+            <DataType>Quantity</DataType>
+            <Reference type="BUSINESS_TERM">BT-149</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R121</Reference>
+            
+            
+            
+            <Attribute usage="Optional">
+                <Term>unitCode</Term>
+                <Name>Item price base quantity unit of measure code</Name>
+                <Description>The unit of measure that applies to the Item price base quantity, must be the same as the unit code of the Invoiced/credited quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
+                    The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
+                </Description>
+                <Reference type="CODE_LIST">UNECERec20</Reference>
+                <Reference type="CODE_LIST">UNECERec21</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R130</Reference>
+                <Value type="EXAMPLE">C62</Value>
+            </Attribute>
+            
+            <Value type="EXAMPLE">1</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:AllowanceCharge</Term>
+            <Name>ALLOWANCE</Name>
+            
+            <Element>
+                <Term>cbc:ChargeIndicator</Term>
+                <Description>Mandatory element. Value must be “false”</Description>
+                <Reference type="RULE">PEPPOL-EN16931-R044</Reference>
+                <Value type="FIXED">false</Value>
+            </Element>
+            <Element>
+                <Term>cbc:Amount</Term>
+                <Name>Item price discount</Name>
+                <Description>The total discount subtracted from the Item gross price to calculate the Item net price.
+                </Description>
+                <DataType>Amount</DataType>
+                <Reference type="BUSINESS_TERM">BT-147</Reference>
+                
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5</Description>
+                    <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-R051</Reference> 
+                    <Reference type="CODE_LIST">ISO4217</Reference>
+                    <Value type="EXAMPLE">EUR</Value>
+                </Attribute>
+                
+                <Value type="EXAMPLE">100</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:BaseAmount</Term>
+                <Name>Item gross price</Name>
+                <Description>The unit price, exclusive of VAT, before subtracting Item price discount, can not be negative</Description>
+                <DataType>Amount</DataType>
+                <Reference type="BUSINESS_TERM">BT-148</Reference>
+                <Reference type="RULE">BR-28</Reference>
+                
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use BT-5</Description>
+                    <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
+                    <Value type="EXAMPLE">EUR</Value>
+                </Attribute>
+                
+                <Value type="EXAMPLE">123.45</Value>
+            </Element>
+        </Element>
+    </Element>

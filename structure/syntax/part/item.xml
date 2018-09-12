@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+        
+        <Term>cac:Item</Term>
+        <Name>ITEM INFORMATION</Name>
+        <Description>A group of business terms providing information about the goods and services invoiced.
+        </Description>
+        <Reference type="BUSINESS_TERM">BG-31</Reference>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:Description</Term>
+            <Name>Item description</Name>
+            <Description>A description for an item.The item description allows for describing the item and its features in more detail than the Item name.</Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-154</Reference>
+            <Value type="EXAMPLE">Long description of the item on the invoice line</Value>  
+        </Element>
+        
+        <Element>
+            <Term>cbc:Name</Term>
+            <Name>Item name</Name>
+            <Description>A name for an item.</Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-153</Reference>
+            <Reference type="RULE">BR-25</Reference>
+            <Value type="EXAMPLE">Item name</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:BuyersItemIdentification</Term>
+            <Name>BUYERS ITEM IDENTIFICATION</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Item Buyer's identifier</Name>
+                <Description>An identifier, assigned by the Buyer, for the item.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-156</Reference>
+                <Value type="EXAMPLE">123455</Value>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:SellersItemIdentification</Term>
+            <Name>SELLERS ITEM IDENTIFICATION</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Item Seller's identifier</Name>
+                <Description>An identifier, assigned by the Seller, for the item.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-155</Reference>
+                <Value type="EXAMPLE">9873242</Value>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:StandardItemIdentification</Term>
+            <Name>STANDARD ITEM IDENTIFICATION</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Item standard identifier</Name>
+                <Description>An item identifier based on a registered scheme.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-157</Reference>
+                <Reference type="RULE">BR-64</Reference>
+                
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Item standard identifier identification scheme identifier</Name>
+                    <Description>The identification scheme identifier of the Item standard identifier</Description>
+                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Value type="EXAMPLE">0160</Value>
+                    
+                </Attribute>
+                <Value type="EXAMPLE">10986700</Value>
+                
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:OriginCountry</Term>
+            <Name>ORIGIN COUNTRY</Name>
+            
+            <Element>
+                <Term>cbc:IdentificationCode</Term>
+                <Name>Item country of origin</Name>
+                <Description>The code identifying the country from which the item originates.</Description>
+                <DataType>Code</DataType>
+                <Reference type="BUSINESS_TERM">BT-159</Reference>
+                <Reference type="RULE">BR-CL-15</Reference>
+                <Reference type="CODE_LIST">ISO3166</Reference>
+                <Value type="EXAMPLE">CN</Value>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cac:CommodityClassification</Term>
+            <Name>COMMODITY CLASSIFICATION</Name>
+            
+            <Element>
+                <Term>cbc:ItemClassificationCode</Term>
+                <Name>Item classification identifier</Name>
+                <Description>A code for classifying the item by its type or nature.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-158</Reference>
+                <Reference type="RULE">BR-65</Reference>
+                
+                
+                
+                <Attribute>
+                    <Term>listID</Term>
+                    <Name>Item classification identifier identification scheme identifier</Name>
+                    <Description>The identification scheme identifier of the Item classification identifier</Description>
+                    <Reference type="RULE">BR-CL-13</Reference>
+                    <Reference type="CODE_LIST">UNCL7143</Reference>
+                    <Value type="EXAMPLE">SSR</Value>
+                </Attribute>
+                
+                <Attribute usage="Optional">
+                    <Term>listVersionID</Term>
+                    <Name>Item classification identifier version identification scheme identifier</Name>
+                    <Description>The identification scheme version identifier of the Item classification identifier</Description>
+                </Attribute>
+                
+                <Value type="EXAMPLE">9873242</Value>
+                
+            </Element>
+        </Element>
+        
+        <Element>
+            <Term>cac:ClassifiedTaxCategory</Term>
+            <Name>LINE VAT INFORMATION</Name>
+            <Description>A group of business terms providing information about the VAT applicable for the goods and services
+                invoiced on the Invoice line.
+            </Description>
+            <Reference type="BUSINESS_TERM">BG-30</Reference>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Invoiced item VAT category code</Name>
+                <Description>The VAT category code for the invoiced item.</Description>
+                <DataType>Code</DataType>
+                <Reference type="BUSINESS_TERM">BT-151</Reference>
+                <Reference type="RULE">BR-CO-04</Reference>
+                <Reference type="RULE">BR-O-12</Reference>
+                <Reference type="CODE_LIST">UNCL5305</Reference>
+                <Value type="EXAMPLE">S</Value>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:Percent</Term>
+                <Name>Invoiced item VAT rate</Name>
+                <Description>The VAT rate, represented as percentage that applies to the invoiced item.</Description>
+                <DataType>Percentage</DataType>
+                <Reference type="BUSINESS_TERM">BT-152</Reference>
+                <Reference type="RULE">BR-S-05</Reference>
+                <Reference type="RULE">BR-Z-05</Reference>
+                <Reference type="RULE">BR-E-05</Reference>
+                <Reference type="RULE">BR-AE-05</Reference>
+                <Reference type="RULE">BR-IC-05</Reference>
+                <Reference type="RULE">BR-G-05</Reference>
+                <Reference type="RULE">BR-O-05</Reference>
+                <Reference type="RULE">BR-IG-05</Reference>
+                <Reference type="RULE">BR-IP-05</Reference>
+                <Value type="EXAMPLE">25</Value>
+            </Element>
+            
+            <Element>
+                <Term>cac:TaxScheme</Term>
+                <Name>TAX SCHEME</Name>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Description>Mandatory element. Use “VAT”</Description>
+                    <Value type="DEFAULT">VAT</Value>
+                </Element>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cac:AdditionalItemProperty</Term>
+            <Name>ITEM ATTRIBUTES</Name>
+            <Description>A group of business terms providing information about properties of the goods and services
+                invoiced.
+            </Description>
+            <Reference type="BUSINESS_TERM">BG-32</Reference>
+            <Element>
+                <Term>cbc:Name</Term>
+                <Name>Item attribute name</Name>
+                <Description>The name of the attribute or property of the item.</Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">BT-160</Reference>
+                <Reference type="RULE">BR-54</Reference>
+                <Value type="EXAMPLE">Color</Value>
+            </Element>
+            <Element>
+                <Term>cbc:Value</Term>
+                <Name>Item attribute value</Name>
+                <Description>The value of the attribute or property of the item.</Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">BT-161</Reference>
+                <Reference type="RULE">BR-54</Reference>
+                <Value type="EXAMPLE">Black</Value>
+            </Element>
+        </Element>
+    </Element>
+    

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Credit note type code (UNCL1001 subset)</Title>
+    <Identifier>UNCL1001-cn</Identifier>
+    <Version>D.16B</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>openPEPPOL</Subset>
+
+   
+ 
+    
+    <Code>
+        <Id>81</Id>
+        <Name>Credit note related to goods or services</Name>
+        <Description>Document message used to provide credit information
+            related to a transaction for goods or services to the
+            relevant party.
+        </Description>
+    </Code>
+   
+    <Code>
+        <Id>83</Id>
+        <Name>Credit note related to financial adjustments</Name>
+        <Description>Document message for providing credit information
+            related to financial adjustments to the relevant party,
+            e.g., bonuses.
+        </Description>
+    </Code>
+  
+    <Code>
+        <Id>381</Id>
+        <Name>Credit note</Name>
+        <Description>(1113) Document/message for providing credit information
+            to the relevant party.
+        </Description>
+    </Code>
+  
+    <Code>
+        <Id>396</Id>
+        <Name>Factored credit note</Name>
+        <Description>Credit note related to assigned invoice(s).</Description>
+    </Code>
+   
+    <Code>
+        <Id>532</Id>
+        <Name>Forwarder's credit note</Name>
+        <Description>Document/message for providing credit information to the
+            relevant party.
+        </Description>
+    </Code>
+  
+  
+   
+</CodeList>

@@ -1,0 +1,1665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    
+    <Title>UN/ECE Recommandation 21</Title>
+    <Identifier>UNECERec21</Identifier>
+    <Version>Revision 9e-2012</Version>
+    <Agency>UN/ECE</Agency>
+    
+    <Code>
+        <Id>1A</Id>
+        <Name>Drum, steel</Name>
+    </Code>
+    <Code>
+        <Id>1B</Id>
+        <Name>Drum, aluminium</Name>
+    </Code>
+    <Code>
+        <Id>1D</Id>
+        <Name>Drum, plywood</Name>
+    </Code>
+    <Code>
+        <Id>1F</Id>
+        <Name>Container, flexible</Name>
+        <Description>A packaging container of flexible construction.</Description>
+    </Code>
+    <Code>
+        <Id>1G</Id>
+        <Name>Drum, fibre</Name>
+    </Code>
+    <Code>
+        <Id>1W</Id>
+        <Name>Drum, wooden</Name>
+    </Code>
+    <Code>
+        <Id>2C</Id>
+        <Name>Barrel, wooden</Name>
+    </Code>
+    <Code>
+        <Id>3A</Id>
+        <Name>Jerrican, steel</Name>
+    </Code>
+    <Code>
+        <Id>3H</Id>
+        <Name>Jerrican, plastic</Name>
+    </Code>
+    <Code>
+        <Id>43</Id>
+        <Name>Bag, super bulk</Name>
+        <Description>A cloth plastic or paper based bag having the dimensions of the pallet on which
+            it is constructed.</Description>
+    </Code>
+    <Code>
+        <Id>44</Id>
+        <Name>Bag, polybag</Name>
+        <Description>A type of plastic bag, typically used to wrap promotional pieces, publications,
+            product samples, and/or catalogues.</Description>
+    </Code>
+    <Code>
+        <Id>4A</Id>
+        <Name>Box, steel</Name>
+    </Code>
+    <Code>
+        <Id>4B</Id>
+        <Name>Box, aluminium</Name>
+    </Code>
+    <Code>
+        <Id>4C</Id>
+        <Name>Box, natural wood</Name>
+    </Code>
+    <Code>
+        <Id>4D</Id>
+        <Name>Box, plywood</Name>
+    </Code>
+    <Code>
+        <Id>4F</Id>
+        <Name>Box, reconstituted wood</Name>
+    </Code>
+    <Code>
+        <Id>4G</Id>
+        <Name>Box, fibreboard</Name>
+    </Code>
+    <Code>
+        <Id>4H</Id>
+        <Name>Box, plastic</Name>
+    </Code>
+    <Code>
+        <Id>5H</Id>
+        <Name>Bag, woven plastic</Name>
+    </Code>
+    <Code>
+        <Id>5L</Id>
+        <Name>Bag, textile</Name>
+    </Code>
+    <Code>
+        <Id>5M</Id>
+        <Name>Bag, paper</Name>
+    </Code>
+    <Code>
+        <Id>6H</Id>
+        <Name>Composite packaging, plastic receptacle</Name>
+    </Code>
+    <Code>
+        <Id>6P</Id>
+        <Name>Composite packaging, glass receptacle</Name>
+    </Code>
+    <Code>
+        <Id>7A</Id>
+        <Name>Case, car</Name>
+        <Description>A type of portable container designed to store equipment for carriage in an
+            automobile.</Description>
+    </Code>
+    <Code>
+        <Id>7B</Id>
+        <Name>Case, wooden</Name>
+        <Description>A case made of wood for retaining substances or articles.</Description>
+    </Code>
+    <Code>
+        <Id>8A</Id>
+        <Name>Pallet, wooden</Name>
+        <Description>A platform or open-ended box, made of wood, on which goods are retained for
+            ease of mechanical handling during transport and storage.</Description>
+    </Code>
+    <Code>
+        <Id>8B</Id>
+        <Name>Crate, wooden</Name>
+        <Description>A receptacle, made of wood, on which goods are retained for ease of mechanical
+            handling during transport and storage.</Description>
+    </Code>
+    <Code>
+        <Id>8C</Id>
+        <Name>Bundle, wooden</Name>
+        <Description>Loose or unpacked pieces of wood tied or wrapped together.</Description>
+    </Code>
+    <Code>
+        <Id>AA</Id>
+        <Name>Intermediate bulk container, rigid plastic</Name>
+    </Code>
+    <Code>
+        <Id>AB</Id>
+        <Name>Receptacle, fibre</Name>
+        <Description>Containment vessel made of fibre used for retaining substances or
+            articles.</Description>
+    </Code>
+    <Code>
+        <Id>AC</Id>
+        <Name>Receptacle, paper</Name>
+        <Description>Containment vessel made of paper for retaining substances or
+            articles.</Description>
+    </Code>
+    <Code>
+        <Id>AD</Id>
+        <Name>Receptacle, wooden</Name>
+        <Description>Containment vessel made of wood for retaining substances or
+            articles.</Description>
+    </Code>
+    <Code>
+        <Id>AE</Id>
+        <Name>Aerosol</Name>
+    </Code>
+    <Code>
+        <Id>AF</Id>
+        <Name>Pallet, modular, collars 80cms * 60cms</Name>
+        <Description>Standard sized pallet of dimensions 80 centimeters by 60 centimeters
+            (cms).</Description>
+    </Code>
+    <Code>
+        <Id>AG</Id>
+        <Name>Pallet, shrinkwrapped</Name>
+        <Description>Pallet load secured with transparent plastic film that has been wrapped around
+            and then shrunk tightly.</Description>
+    </Code>
+    <Code>
+        <Id>AH</Id>
+        <Name>Pallet, 100cms * 110cms</Name>
+        <Description>Standard sized pallet of dimensions 100centimeters by 110 centimeters
+            (cms).</Description>
+    </Code>
+    <Code>
+        <Id>AI</Id>
+        <Name>Clamshell</Name>
+    </Code>
+    <Code>
+        <Id>AJ</Id>
+        <Name>Cone</Name>
+        <Description>Container used in the transport of linear material such as yarn.</Description>
+    </Code>
+    <Code>
+        <Id>AL</Id>
+        <Name>Ball</Name>
+        <Description>A spherical containment vessel for retaining substances or
+            articles.</Description>
+    </Code>
+    <Code>
+        <Id>AM</Id>
+        <Name>Ampoule, non-protected</Name>
+    </Code>
+    <Code>
+        <Id>AP</Id>
+        <Name>Ampoule, protected</Name>
+    </Code>
+    <Code>
+        <Id>AT</Id>
+        <Name>Atomizer</Name>
+    </Code>
+    <Code>
+        <Id>AV</Id>
+        <Name>Capsule</Name>
+    </Code>
+    <Code>
+        <Id>B4</Id>
+        <Name>Belt</Name>
+        <Description>A band use to retain multiple articles together.</Description>
+    </Code>
+    <Code>
+        <Id>BA</Id>
+        <Name>Barrel</Name>
+    </Code>
+    <Code>
+        <Id>BB</Id>
+        <Name>Bobbin</Name>
+    </Code>
+    <Code>
+        <Id>BC</Id>
+        <Name>Bottlecrate / bottlerack</Name>
+    </Code>
+    <Code>
+        <Id>BD</Id>
+        <Name>Board</Name>
+    </Code>
+    <Code>
+        <Id>BE</Id>
+        <Name>Bundle</Name>
+    </Code>
+    <Code>
+        <Id>BF</Id>
+        <Name>Balloon, non-protected</Name>
+    </Code>
+    <Code>
+        <Id>BG</Id>
+        <Name>Bag</Name>
+        <Description>A receptacle made of flexible material with an open or closed
+            top.</Description>
+    </Code>
+    <Code>
+        <Id>BH</Id>
+        <Name>Bunch</Name>
+    </Code>
+    <Code>
+        <Id>BI</Id>
+        <Name>Bin</Name>
+    </Code>
+    <Code>
+        <Id>BJ</Id>
+        <Name>Bucket</Name>
+    </Code>
+    <Code>
+        <Id>BK</Id>
+        <Name>Basket</Name>
+    </Code>
+    <Code>
+        <Id>BL</Id>
+        <Name>Bale, compressed</Name>
+    </Code>
+    <Code>
+        <Id>BM</Id>
+        <Name>Basin</Name>
+    </Code>
+    <Code>
+        <Id>BN</Id>
+        <Name>Bale, non-compressed</Name>
+    </Code>
+    <Code>
+        <Id>BO</Id>
+        <Name>Bottle, non-protected, cylindrical</Name>
+        <Description>A narrow-necked cylindrical shaped vessel without external protective packing
+            material.</Description>
+    </Code>
+    <Code>
+        <Id>BP</Id>
+        <Name>Balloon, protected</Name>
+    </Code>
+    <Code>
+        <Id>BQ</Id>
+        <Name>Bottle, protected cylindrical</Name>
+        <Description>A narrow-necked cylindrical shaped vessel with external protective packing
+            material.</Description>
+    </Code>
+    <Code>
+        <Id>BR</Id>
+        <Name>Bar</Name>
+    </Code>
+    <Code>
+        <Id>BS</Id>
+        <Name>Bottle, non-protected, bulbous</Name>
+        <Description>A narrow-necked bulb shaped vessel without external protective packing
+            material.</Description>
+    </Code>
+    <Code>
+        <Id>BT</Id>
+        <Name>Bolt</Name>
+    </Code>
+    <Code>
+        <Id>BU</Id>
+        <Name>Butt</Name>
+    </Code>
+    <Code>
+        <Id>BV</Id>
+        <Name>Bottle, protected bulbous</Name>
+        <Description>A narrow-necked bulb shaped vessel with external protective packing
+            material.</Description>
+    </Code>
+    <Code>
+        <Id>BW</Id>
+        <Name>Box, for liquids</Name>
+    </Code>
+    <Code>
+        <Id>BX</Id>
+        <Name>Box</Name>
+    </Code>
+    <Code>
+        <Id>BY</Id>
+        <Name>Board, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>BZ</Id>
+        <Name>Bars, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>CA</Id>
+        <Name>Can, rectangular</Name>
+    </Code>
+    <Code>
+        <Id>CB</Id>
+        <Name>Crate, beer</Name>
+    </Code>
+    <Code>
+        <Id>CC</Id>
+        <Name>Churn</Name>
+    </Code>
+    <Code>
+        <Id>CD</Id>
+        <Name>Can, with handle and spout</Name>
+    </Code>
+    <Code>
+        <Id>CE</Id>
+        <Name>Creel</Name>
+    </Code>
+    <Code>
+        <Id>CF</Id>
+        <Name>Coffer</Name>
+    </Code>
+    <Code>
+        <Id>CG</Id>
+        <Name>Cage</Name>
+    </Code>
+    <Code>
+        <Id>CH</Id>
+        <Name>Chest</Name>
+    </Code>
+    <Code>
+        <Id>CI</Id>
+        <Name>Canister</Name>
+    </Code>
+    <Code>
+        <Id>CJ</Id>
+        <Name>Coffin</Name>
+    </Code>
+    <Code>
+        <Id>CK</Id>
+        <Name>Cask</Name>
+    </Code>
+    <Code>
+        <Id>CL</Id>
+        <Name>Coil</Name>
+    </Code>
+    <Code>
+        <Id>CM</Id>
+        <Name>Card</Name>
+        <Description>A flat package usually made of fibreboard from/to which product is often hung
+            or attached.</Description>
+    </Code>
+    <Code>
+        <Id>CN</Id>
+        <Name>Container, not otherwise specified as transport equipment</Name>
+    </Code>
+    <Code>
+        <Id>CO</Id>
+        <Name>Carboy, non-protected</Name>
+    </Code>
+    <Code>
+        <Id>CP</Id>
+        <Name>Carboy, protected</Name>
+    </Code>
+    <Code>
+        <Id>CQ</Id>
+        <Name>Cartridge</Name>
+        <Description>Package containing a charge such as propelling explosive for firearms or ink
+            toner for a printer.</Description>
+    </Code>
+    <Code>
+        <Id>CR</Id>
+        <Name>Crate</Name>
+    </Code>
+    <Code>
+        <Id>CS</Id>
+        <Name>Case</Name>
+    </Code>
+    <Code>
+        <Id>CT</Id>
+        <Name>Carton</Name>
+    </Code>
+    <Code>
+        <Id>CU</Id>
+        <Name>Cup</Name>
+    </Code>
+    <Code>
+        <Id>CV</Id>
+        <Name>Cover</Name>
+    </Code>
+    <Code>
+        <Id>CW</Id>
+        <Name>Cage, roll</Name>
+    </Code>
+    <Code>
+        <Id>CX</Id>
+        <Name>Can, cylindrical</Name>
+    </Code>
+    <Code>
+        <Id>CY</Id>
+        <Name>Cylinder</Name>
+    </Code>
+    <Code>
+        <Id>CZ</Id>
+        <Name>Canvas</Name>
+    </Code>
+    <Code>
+        <Id>DA</Id>
+        <Name>Crate, multiple layer, plastic</Name>
+    </Code>
+    <Code>
+        <Id>DB</Id>
+        <Name>Crate, multiple layer, wooden</Name>
+    </Code>
+    <Code>
+        <Id>DC</Id>
+        <Name>Crate, multiple layer, cardboard</Name>
+    </Code>
+    <Code>
+        <Id>DG</Id>
+        <Name>Cage, Commonwealth Handling Equipment Pool (CHEP)</Name>
+    </Code>
+    <Code>
+        <Id>DH</Id>
+        <Name>Box, Commonwealth Handling Equipment Pool (CHEP), Eurobox</Name>
+        <Description>A box mounted on a pallet base under the control of CHEP.</Description>
+    </Code>
+    <Code>
+        <Id>DI</Id>
+        <Name>Drum, iron</Name>
+    </Code>
+    <Code>
+        <Id>DJ</Id>
+        <Name>Demijohn, non-protected</Name>
+    </Code>
+    <Code>
+        <Id>DK</Id>
+        <Name>Crate, bulk, cardboard</Name>
+    </Code>
+    <Code>
+        <Id>DL</Id>
+        <Name>Crate, bulk, plastic</Name>
+    </Code>
+    <Code>
+        <Id>DM</Id>
+        <Name>Crate, bulk, wooden</Name>
+    </Code>
+    <Code>
+        <Id>DN</Id>
+        <Name>Dispenser</Name>
+    </Code>
+    <Code>
+        <Id>DP</Id>
+        <Name>Demijohn, protected</Name>
+    </Code>
+    <Code>
+        <Id>DR</Id>
+        <Name>Drum</Name>
+    </Code>
+    <Code>
+        <Id>DS</Id>
+        <Name>Tray, one layer no cover, plastic</Name>
+    </Code>
+    <Code>
+        <Id>DT</Id>
+        <Name>Tray, one layer no cover, wooden</Name>
+    </Code>
+    <Code>
+        <Id>DU</Id>
+        <Name>Tray, one layer no cover, polystyrene</Name>
+    </Code>
+    <Code>
+        <Id>DV</Id>
+        <Name>Tray, one layer no cover, cardboard</Name>
+    </Code>
+    <Code>
+        <Id>DW</Id>
+        <Name>Tray, two layers no cover, plastic tray</Name>
+    </Code>
+    <Code>
+        <Id>DX</Id>
+        <Name>Tray, two layers no cover, wooden</Name>
+    </Code>
+    <Code>
+        <Id>DY</Id>
+        <Name>Tray, two layers no cover, cardboard</Name>
+    </Code>
+    <Code>
+        <Id>EC</Id>
+        <Name>Bag, plastic</Name>
+    </Code>
+    <Code>
+        <Id>ED</Id>
+        <Name>Case, with pallet base</Name>
+    </Code>
+    <Code>
+        <Id>EE</Id>
+        <Name>Case, with pallet base, wooden</Name>
+    </Code>
+    <Code>
+        <Id>EF</Id>
+        <Name>Case, with pallet base, cardboard</Name>
+    </Code>
+    <Code>
+        <Id>EG</Id>
+        <Name>Case, with pallet base, plastic</Name>
+    </Code>
+    <Code>
+        <Id>EH</Id>
+        <Name>Case, with pallet base, metal</Name>
+    </Code>
+    <Code>
+        <Id>EI</Id>
+        <Name>Case, isothermic</Name>
+    </Code>
+    <Code>
+        <Id>EN</Id>
+        <Name>Envelope</Name>
+    </Code>
+    <Code>
+        <Id>FB</Id>
+        <Name>Flexibag</Name>
+        <Description>A flexible containment bag made of plastic, typically for the transportation
+            bulk non-hazardous cargoes using standard size shipping containers.</Description>
+    </Code>
+    <Code>
+        <Id>FC</Id>
+        <Name>Crate, fruit</Name>
+    </Code>
+    <Code>
+        <Id>FD</Id>
+        <Name>Crate, framed</Name>
+    </Code>
+    <Code>
+        <Id>FE</Id>
+        <Name>Flexitank</Name>
+        <Description>A flexible containment tank made of plastic, typically for the transportation
+            bulk non-hazardous cargoes using standard size shipping containers.</Description>
+    </Code>
+    <Code>
+        <Id>FI</Id>
+        <Name>Firkin</Name>
+    </Code>
+    <Code>
+        <Id>FL</Id>
+        <Name>Flask</Name>
+    </Code>
+    <Code>
+        <Id>FO</Id>
+        <Name>Footlocker</Name>
+    </Code>
+    <Code>
+        <Id>FP</Id>
+        <Name>Filmpack</Name>
+    </Code>
+    <Code>
+        <Id>FR</Id>
+        <Name>Frame</Name>
+    </Code>
+    <Code>
+        <Id>FT</Id>
+        <Name>Foodtainer</Name>
+    </Code>
+    <Code>
+        <Id>FW</Id>
+        <Name>Cart, flatbed</Name>
+        <Description>Wheeled flat bedded device on which trays or other regular shaped items are
+            packed for transportation purposes.</Description>
+    </Code>
+    <Code>
+        <Id>FX</Id>
+        <Name>Bag, flexible container</Name>
+    </Code>
+    <Code>
+        <Id>GB</Id>
+        <Name>Bottle, gas</Name>
+        <Description>A narrow-necked metal cylinder for retention of liquefied or compressed
+            gas.</Description>
+    </Code>
+    <Code>
+        <Id>GI</Id>
+        <Name>Girder</Name>
+    </Code>
+    <Code>
+        <Id>GL</Id>
+        <Name>Container, gallon</Name>
+        <Description>A container with a capacity of one gallon.</Description>
+    </Code>
+    <Code>
+        <Id>GR</Id>
+        <Name>Receptacle, glass</Name>
+        <Description>Containment vessel made of glass for retaining substances or
+            articles.</Description>
+    </Code>
+    <Code>
+        <Id>GU</Id>
+        <Name>Tray, containing horizontally stacked flat items</Name>
+        <Description>Tray containing flat items stacked on top of one another.</Description>
+    </Code>
+    <Code>
+        <Id>GY</Id>
+        <Name>Bag, gunny</Name>
+        <Description>A sack made of gunny or burlap, used for transporting coarse commodities, such
+            as grains, potatoes, and other agricultural products.</Description>
+    </Code>
+    <Code>
+        <Id>GZ</Id>
+        <Name>Girders, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>HA</Id>
+        <Name>Basket, with handle, plastic</Name>
+    </Code>
+    <Code>
+        <Id>HB</Id>
+        <Name>Basket, with handle, wooden</Name>
+    </Code>
+    <Code>
+        <Id>HC</Id>
+        <Name>Basket, with handle, cardboard</Name>
+    </Code>
+    <Code>
+        <Id>HG</Id>
+        <Name>Hogshead</Name>
+    </Code>
+    <Code>
+        <Id>HN</Id>
+        <Name>Hanger</Name>
+        <Description>A purpose shaped device with a hook at the top for hanging items from a
+            rail.</Description>
+    </Code>
+    <Code>
+        <Id>HR</Id>
+        <Name>Hamper</Name>
+    </Code>
+    <Code>
+        <Id>IA</Id>
+        <Name>Package, display, wooden</Name>
+    </Code>
+    <Code>
+        <Id>IB</Id>
+        <Name>Package, display, cardboard</Name>
+    </Code>
+    <Code>
+        <Id>IC</Id>
+        <Name>Package, display, plastic</Name>
+    </Code>
+    <Code>
+        <Id>ID</Id>
+        <Name>Package, display, metal</Name>
+    </Code>
+    <Code>
+        <Id>IE</Id>
+        <Name>Package, show</Name>
+    </Code>
+    <Code>
+        <Id>IF</Id>
+        <Name>Package, flow</Name>
+        <Description>A flexible tubular package or skin, possibly transparent, often used for
+            containment of foodstuffs (e.g. salami sausage).</Description>
+    </Code>
+    <Code>
+        <Id>IG</Id>
+        <Name>Package, paper wrapped</Name>
+    </Code>
+    <Code>
+        <Id>IH</Id>
+        <Name>Drum, plastic</Name>
+    </Code>
+    <Code>
+        <Id>IK</Id>
+        <Name>Package, cardboard, with bottle grip-holes</Name>
+        <Description>Packaging material made out of cardboard that facilitates the separation of
+            individual glass or plastic bottles.</Description>
+    </Code>
+    <Code>
+        <Id>IL</Id>
+        <Name>Tray, rigid, lidded stackable (CEN TS 14482:2002)</Name>
+        <Description>Lidded stackable rigid tray compliant with CEN TS 14482:2002.</Description>
+    </Code>
+    <Code>
+        <Id>IN</Id>
+        <Name>Ingot</Name>
+    </Code>
+    <Code>
+        <Id>IZ</Id>
+        <Name>Ingots, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>JB</Id>
+        <Name>Bag, jumbo</Name>
+        <Description>A flexible containment bag, widely used for storage, transportation and
+            handling of powder, flake or granular materials. Typically constructed from woven
+            polypropylene (PP) fabric in the form of cubic bags.</Description>
+    </Code>
+    <Code>
+        <Id>JC</Id>
+        <Name>Jerrican, rectangular</Name>
+    </Code>
+    <Code>
+        <Id>JG</Id>
+        <Name>Jug</Name>
+    </Code>
+    <Code>
+        <Id>JR</Id>
+        <Name>Jar</Name>
+    </Code>
+    <Code>
+        <Id>JT</Id>
+        <Name>Jutebag</Name>
+    </Code>
+    <Code>
+        <Id>JY</Id>
+        <Name>Jerrican, cylindrical</Name>
+    </Code>
+    <Code>
+        <Id>KG</Id>
+        <Name>Keg</Name>
+    </Code>
+    <Code>
+        <Id>KI</Id>
+        <Name>Kit</Name>
+        <Description>A set of articles or implements used for a specific purpose.</Description>
+    </Code>
+    <Code>
+        <Id>LE</Id>
+        <Name>Luggage</Name>
+        <Description>A collection of bags, cases and/or containers which hold personal belongings
+            for a journey.</Description>
+    </Code>
+    <Code>
+        <Id>LG</Id>
+        <Name>Log</Name>
+    </Code>
+    <Code>
+        <Id>LT</Id>
+        <Name>Lot</Name>
+    </Code>
+    <Code>
+        <Id>LU</Id>
+        <Name>Lug</Name>
+        <Description>A wooden box for the transportation and storage of fruit or
+            vegetables.</Description>
+    </Code>
+    <Code>
+        <Id>LV</Id>
+        <Name>Liftvan</Name>
+        <Description>A wooden or metal container used for packing household goods and personal
+            effects.</Description>
+    </Code>
+    <Code>
+        <Id>LZ</Id>
+        <Name>Logs, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>MA</Id>
+        <Name>Crate, metal</Name>
+        <Description>Containment box made of metal for retaining substances or
+            articles.</Description>
+    </Code>
+    <Code>
+        <Id>MB</Id>
+        <Name>Bag, multiply</Name>
+    </Code>
+    <Code>
+        <Id>MC</Id>
+        <Name>Crate, milk</Name>
+    </Code>
+    <Code>
+        <Id>ME</Id>
+        <Name>Container, metal</Name>
+        <Description>A type of containment box made of metal for retaining substances or articles,
+            not otherwise specified as transport equipment.</Description>
+    </Code>
+    <Code>
+        <Id>MR</Id>
+        <Name>Receptacle, metal</Name>
+        <Description>Containment vessel made of metal for retaining substances or
+            articles.</Description>
+    </Code>
+    <Code>
+        <Id>MS</Id>
+        <Name>Sack, multi-wall</Name>
+    </Code>
+    <Code>
+        <Id>MT</Id>
+        <Name>Mat</Name>
+    </Code>
+    <Code>
+        <Id>MW</Id>
+        <Name>Receptacle, plastic wrapped</Name>
+        <Description>Containment vessel wrapped with plastic for retaining substances or
+            articles.</Description>
+    </Code>
+    <Code>
+        <Id>MX</Id>
+        <Name>Matchbox</Name>
+    </Code>
+    <Code>
+        <Id>NA</Id>
+        <Name>Not available</Name>
+    </Code>
+    <Code>
+        <Id>NE</Id>
+        <Name>Unpacked or unpackaged</Name>
+    </Code>
+    <Code>
+        <Id>NF</Id>
+        <Name>Unpacked or unpackaged, single unit</Name>
+    </Code>
+    <Code>
+        <Id>NG</Id>
+        <Name>Unpacked or unpackaged, multiple units</Name>
+    </Code>
+    <Code>
+        <Id>NS</Id>
+        <Name>Nest</Name>
+    </Code>
+    <Code>
+        <Id>NT</Id>
+        <Name>Net</Name>
+    </Code>
+    <Code>
+        <Id>NU</Id>
+        <Name>Net, tube, plastic</Name>
+    </Code>
+    <Code>
+        <Id>NV</Id>
+        <Name>Net, tube, textile</Name>
+    </Code>
+    <Code>
+        <Id>OA</Id>
+        <Name>Pallet, CHEP 40 cm x 60 cm</Name>
+        <Description>Commonwealth Handling Equipment Pool (CHEP) standard pallet of dimensions 40
+            centimeters x 60 centimeters.</Description>
+    </Code>
+    <Code>
+        <Id>OB</Id>
+        <Name>Pallet, CHEP 80 cm x 120 cm</Name>
+        <Description>Commonwealth Handling Equipment Pool (CHEP) standard pallet of dimensions 80
+            centimeters x 120 centimeters.</Description>
+    </Code>
+    <Code>
+        <Id>OC</Id>
+        <Name>Pallet, CHEP 100 cm x 120 cm</Name>
+        <Description>Commonwealth Handling Equipment Pool (CHEP) standard pallet of dimensions 100
+            centimeters x 120 centimeters.</Description>
+    </Code>
+    <Code>
+        <Id>OD</Id>
+        <Name>Pallet, AS 4068-1993</Name>
+        <Description>Australian standard pallet of dimensions 115.5 centimeters x 116.5
+            centimeters.</Description>
+    </Code>
+    <Code>
+        <Id>OE</Id>
+        <Name>Pallet, ISO T11</Name>
+        <Description>ISO standard pallet of dimensions 110 centimeters x 110 centimeters, prevalent
+            in Asia - Pacific region.</Description>
+    </Code>
+    <Code>
+        <Id>OF</Id>
+        <Name>Platform, unspecified weight or dimension</Name>
+        <Description>A pallet equivalent shipping platform of unknown dimensions or unknown
+            weight.</Description>
+    </Code>
+    <Code>
+        <Id>OK</Id>
+        <Name>Block</Name>
+        <Description>A solid piece of a hard substance, such as granite, having one or more flat
+            sides.</Description>
+    </Code>
+    <Code>
+        <Id>OT</Id>
+        <Name>Octabin</Name>
+        <Description>A standard cardboard container of large dimensions for storing for example
+            vegetables, granules of plastics or other dry products.</Description>
+    </Code>
+    <Code>
+        <Id>OU</Id>
+        <Name>Container, outer</Name>
+        <Description>A type of containment box that serves as the outer shipping container, not
+            otherwise specified as transport equipment.</Description>
+    </Code>
+    <Code>
+        <Id>P2</Id>
+        <Name>Pan</Name>
+        <Description>A shallow, wide, open container, usually of metal.</Description>
+    </Code>
+    <Code>
+        <Id>PA</Id>
+        <Name>Packet</Name>
+        <Description>Small package.</Description>
+    </Code>
+    <Code>
+        <Id>PB</Id>
+        <Name>Pallet, box Combined open-ended box and pallet</Name>
+    </Code>
+    <Code>
+        <Id>PC</Id>
+        <Name>Parcel</Name>
+    </Code>
+    <Code>
+        <Id>PD</Id>
+        <Name>Pallet, modular, collars 80cms * 100cms</Name>
+        <Description>Standard sized pallet of dimensions 80 centimeters by 100 centimeters
+            (cms).</Description>
+    </Code>
+    <Code>
+        <Id>PE</Id>
+        <Name>Pallet, modular, collars 80cms * 120cms</Name>
+        <Description>Standard sized pallet of dimensions 80 centimeters by 120 centimeters
+            (cms).</Description>
+    </Code>
+    <Code>
+        <Id>PF</Id>
+        <Name>Pen</Name>
+        <Description>A small open top enclosure for retaining animals.</Description>
+    </Code>
+    <Code>
+        <Id>PG</Id>
+        <Name>Plate</Name>
+    </Code>
+    <Code>
+        <Id>PH</Id>
+        <Name>Pitcher</Name>
+    </Code>
+    <Code>
+        <Id>PI</Id>
+        <Name>Pipe</Name>
+    </Code>
+    <Code>
+        <Id>PJ</Id>
+        <Name>Punnet</Name>
+    </Code>
+    <Code>
+        <Id>PK</Id>
+        <Name>Package</Name>
+        <Description>Standard packaging unit.</Description>
+    </Code>
+    <Code>
+        <Id>PL</Id>
+        <Name>Pail</Name>
+    </Code>
+    <Code>
+        <Id>PN</Id>
+        <Name>Plank</Name>
+    </Code>
+    <Code>
+        <Id>PO</Id>
+        <Name>Pouch</Name>
+    </Code>
+    <Code>
+        <Id>PP</Id>
+        <Name>Piece</Name>
+        <Description>A loose or unpacked article.</Description>
+    </Code>
+    <Code>
+        <Id>PR</Id>
+        <Name>Receptacle, plastic</Name>
+        <Description>Containment vessel made of plastic for retaining substances or
+            articles.</Description>
+    </Code>
+    <Code>
+        <Id>PT</Id>
+        <Name>Pot</Name>
+    </Code>
+    <Code>
+        <Id>PU</Id>
+        <Name>Tray</Name>
+    </Code>
+    <Code>
+        <Id>PV</Id>
+        <Name>Pipes, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>PX</Id>
+        <Name>Pallet</Name>
+        <Description>Platform or open-ended box, usually made of wood, on which goods are retained
+            for ease of mechanical handling during transport and storage.</Description>
+    </Code>
+    <Code>
+        <Id>PY</Id>
+        <Name>Plates, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>PZ</Id>
+        <Name>Planks, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>QA</Id>
+        <Name>Drum, steel, non-removable head</Name>
+    </Code>
+    <Code>
+        <Id>QB</Id>
+        <Name>Drum, steel, removable head</Name>
+    </Code>
+    <Code>
+        <Id>QC</Id>
+        <Name>Drum, aluminium, non-removable head</Name>
+    </Code>
+    <Code>
+        <Id>QD</Id>
+        <Name>Drum, aluminium, removable head</Name>
+    </Code>
+    <Code>
+        <Id>QF</Id>
+        <Name>Drum, plastic, non-removable head</Name>
+    </Code>
+    <Code>
+        <Id>QG</Id>
+        <Name>Drum, plastic, removable head</Name>
+    </Code>
+    <Code>
+        <Id>QH</Id>
+        <Name>Barrel, wooden, bung type</Name>
+    </Code>
+    <Code>
+        <Id>QJ</Id>
+        <Name>Barrel, wooden, removable head</Name>
+    </Code>
+    <Code>
+        <Id>QK</Id>
+        <Name>Jerrican, steel, non-removable head</Name>
+    </Code>
+    <Code>
+        <Id>QL</Id>
+        <Name>Jerrican, steel, removable head</Name>
+    </Code>
+    <Code>
+        <Id>QM</Id>
+        <Name>Jerrican, plastic, non-removable head</Name>
+    </Code>
+    <Code>
+        <Id>QN</Id>
+        <Name>Jerrican, plastic, removable head</Name>
+    </Code>
+    <Code>
+        <Id>QP</Id>
+        <Name>Box, wooden, natural wood, ordinary</Name>
+    </Code>
+    <Code>
+        <Id>QQ</Id>
+        <Name>Box, wooden, natural wood, with sift proof walls</Name>
+    </Code>
+    <Code>
+        <Id>QR</Id>
+        <Name>Box, plastic, expanded</Name>
+    </Code>
+    <Code>
+        <Id>QS</Id>
+        <Name>Box, plastic, solid</Name>
+    </Code>
+    <Code>
+        <Id>RD</Id>
+        <Name>Rod</Name>
+    </Code>
+    <Code>
+        <Id>RG</Id>
+        <Name>Ring</Name>
+    </Code>
+    <Code>
+        <Id>RJ</Id>
+        <Name>Rack, clothing hanger</Name>
+    </Code>
+    <Code>
+        <Id>RK</Id>
+        <Name>Rack</Name>
+    </Code>
+    <Code>
+        <Id>RL</Id>
+        <Name>Reel</Name>
+        <Description>Cylindrical rotatory device with a rim at each end on which materials are
+            wound.</Description>
+    </Code>
+    <Code>
+        <Id>RO</Id>
+        <Name>Roll</Name>
+    </Code>
+    <Code>
+        <Id>RT</Id>
+        <Name>Rednet</Name>
+        <Description>Containment material made of red mesh netting for retaining articles (e.g.
+            trees).</Description>
+    </Code>
+    <Code>
+        <Id>RZ</Id>
+        <Name>Rods, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>SA</Id>
+        <Name>Sack</Name>
+    </Code>
+    <Code>
+        <Id>SB</Id>
+        <Name>Slab</Name>
+    </Code>
+    <Code>
+        <Id>SC</Id>
+        <Name>Crate, shallow</Name>
+    </Code>
+    <Code>
+        <Id>SD</Id>
+        <Name>Spindle</Name>
+    </Code>
+    <Code>
+        <Id>SE</Id>
+        <Name>Sea-chest</Name>
+    </Code>
+    <Code>
+        <Id>SH</Id>
+        <Name>Sachet</Name>
+    </Code>
+    <Code>
+        <Id>SI</Id>
+        <Name>Skid</Name>
+        <Description>A low movable platform or pallet to facilitate the handling and transport of
+            goods.</Description>
+    </Code>
+    <Code>
+        <Id>SK</Id>
+        <Name>Case, skeleton</Name>
+    </Code>
+    <Code>
+        <Id>SL</Id>
+        <Name>Slipsheet</Name>
+        <Description>Hard plastic sheeting primarily used as the base on which to stack goods to
+            optimise the space within a container. May be used as an alternative to a palletized
+            packaging.</Description>
+    </Code>
+    <Code>
+        <Id>SM</Id>
+        <Name>Sheetmetal</Name>
+    </Code>
+    <Code>
+        <Id>SO</Id>
+        <Name>Spool</Name>
+        <Description>A packaging container used in the transport of such items as wire, cable, tape
+            and yarn.</Description>
+    </Code>
+    <Code>
+        <Id>SP</Id>
+        <Name>Sheet, plastic wrapping</Name>
+    </Code>
+    <Code>
+        <Id>SS</Id>
+        <Name>Case, steel</Name>
+    </Code>
+    <Code>
+        <Id>ST</Id>
+        <Name>Sheet</Name>
+    </Code>
+    <Code>
+        <Id>SU</Id>
+        <Name>Suitcase</Name>
+    </Code>
+    <Code>
+        <Id>SV</Id>
+        <Name>Envelope, steel</Name>
+    </Code>
+    <Code>
+        <Id>SW</Id>
+        <Name>Shrinkwrapped</Name>
+        <Description>Goods retained in a transparent plastic film that has been wrapped around and
+            then shrunk tightly on to the goods.</Description>
+    </Code>
+    <Code>
+        <Id>SY</Id>
+        <Name>Sleeve</Name>
+    </Code>
+    <Code>
+        <Id>SZ</Id>
+        <Name>Sheets, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>T1</Id>
+        <Name>Tablet</Name>
+        <Description>A loose or unpacked article in the form of a bar, block or piece.</Description>
+    </Code>
+    <Code>
+        <Id>TB</Id>
+        <Name>Tub</Name>
+    </Code>
+    <Code>
+        <Id>TC</Id>
+        <Name>Tea-chest</Name>
+    </Code>
+    <Code>
+        <Id>TD</Id>
+        <Name>Tube, collapsible</Name>
+    </Code>
+    <Code>
+        <Id>TE</Id>
+        <Name>Tyre</Name>
+        <Description>A ring made of rubber and/or metal surrounding a wheel.</Description>
+    </Code>
+    <Code>
+        <Id>TG</Id>
+        <Name>Tank container, generic</Name>
+        <Description>A specially constructed container for transporting liquids and gases in
+            bulk.</Description>
+    </Code>
+    <Code>
+        <Id>TI</Id>
+        <Name>Tierce</Name>
+    </Code>
+    <Code>
+        <Id>TK</Id>
+        <Name>Tank, rectangular</Name>
+    </Code>
+    <Code>
+        <Id>TL</Id>
+        <Name>Tub, with lid</Name>
+    </Code>
+    <Code>
+        <Id>TN</Id>
+        <Name>Tin</Name>
+    </Code>
+    <Code>
+        <Id>TO</Id>
+        <Name>Tun</Name>
+    </Code>
+    <Code>
+        <Id>TR</Id>
+        <Name>Trunk</Name>
+    </Code>
+    <Code>
+        <Id>TS</Id>
+        <Name>Truss</Name>
+    </Code>
+    <Code>
+        <Id>TT</Id>
+        <Name>Bag, tote</Name>
+        <Description>A capacious bag or basket.</Description>
+    </Code>
+    <Code>
+        <Id>TU</Id>
+        <Name>Tube</Name>
+    </Code>
+    <Code>
+        <Id>TV</Id>
+        <Name>Tube, with nozzle</Name>
+        <Description>A tube made of plastic, metal or cardboard fitted with a nozzle, containing a
+            liquid or semi-liquid product, e.g. silicon.</Description>
+    </Code>
+    <Code>
+        <Id>TW</Id>
+        <Name>Pallet, triwall</Name>
+        <Description>A lightweight pallet made from heavy duty corrugated board.</Description>
+    </Code>
+    <Code>
+        <Id>TY</Id>
+        <Name>Tank, cylindrical</Name>
+    </Code>
+    <Code>
+        <Id>TZ</Id>
+        <Name>Tubes, in bundle/bunch/truss</Name>
+    </Code>
+    <Code>
+        <Id>UC</Id>
+        <Name>Uncaged</Name>
+    </Code>
+    <Code>
+        <Id>UN</Id>
+        <Name>Unit</Name>
+        <Description>A type of package composed of a single item or object, not otherwise specified
+            as a unit of transport equipment.</Description>
+    </Code>
+    <Code>
+        <Id>VA</Id>
+        <Name>Vat</Name>
+    </Code>
+    <Code>
+        <Id>VG</Id>
+        <Name>Bulk, gas (at 1031 mbar and 15°C)</Name>
+    </Code>
+    <Code>
+        <Id>VI</Id>
+        <Name>Vial</Name>
+    </Code>
+    <Code>
+        <Id>VK</Id>
+        <Name>Vanpack</Name>
+        <Description>A type of wooden crate.</Description>
+    </Code>
+    <Code>
+        <Id>VL</Id>
+        <Name>Bulk, liquid</Name>
+    </Code>
+    <Code>
+        <Id>VO</Id>
+        <Name>Bulk, solid, large particles (“nodules”)</Name>
+    </Code>
+    <Code>
+        <Id>VP</Id>
+        <Name>Vacuum-packed</Name>
+    </Code>
+    <Code>
+        <Id>VQ</Id>
+        <Name>Bulk, liquefied gas (at abnormal temperature/pressure)</Name>
+    </Code>
+    <Code>
+        <Id>VN</Id>
+        <Name>Vehicle</Name>
+        <Description>A self-propelled means of conveyance.</Description>
+    </Code>
+    <Code>
+        <Id>VR</Id>
+        <Name>Bulk, solid, granular particles (“grains”)</Name>
+    </Code>
+    <Code>
+        <Id>VS</Id>
+        <Name>Bulk, scrap metal</Name>
+        <Description>Loose or unpacked scrap metal transported in bulk form.</Description>
+    </Code>
+    <Code>
+        <Id>VY</Id>
+        <Name>Bulk, solid, fine particles (“powders”)</Name>
+    </Code>
+    <Code>
+        <Id>WA</Id>
+        <Name>Intermediate bulk container</Name>
+        <Description>A reusable container made of metal, plastic, textile, wood or composite
+            materials used to facilitate transportation of bulk solids and liquids in manageable
+            volumes.</Description>
+    </Code>
+    <Code>
+        <Id>WB</Id>
+        <Name>Wickerbottle</Name>
+    </Code>
+    <Code>
+        <Id>WC</Id>
+        <Name>Intermediate bulk container, steel</Name>
+    </Code>
+    <Code>
+        <Id>WD</Id>
+        <Name>Intermediate bulk container, aluminium</Name>
+    </Code>
+    <Code>
+        <Id>WF</Id>
+        <Name>Intermediate bulk container, metal</Name>
+    </Code>
+    <Code>
+        <Id>WG</Id>
+        <Name>Intermediate bulk container, steel, pressurised &gt; 10 kpa</Name>
+    </Code>
+    <Code>
+        <Id>WH</Id>
+        <Name>Intermediate bulk container, aluminium, pressurised &gt; 10 kpa</Name>
+    </Code>
+    <Code>
+        <Id>WJ</Id>
+        <Name>Intermediate bulk container, metal, pressure 10 kpa</Name>
+    </Code>
+    <Code>
+        <Id>WK</Id>
+        <Name>Intermediate bulk container, steel, liquid</Name>
+    </Code>
+    <Code>
+        <Id>WL</Id>
+        <Name>Intermediate bulk container, aluminium, liquid</Name>
+    </Code>
+    <Code>
+        <Id>WM</Id>
+        <Name>Intermediate bulk container, metal, liquid</Name>
+    </Code>
+    <Code>
+        <Id>WN</Id>
+        <Name>Intermediate bulk container, woven plastic, without coat/liner</Name>
+    </Code>
+    <Code>
+        <Id>WP</Id>
+        <Name>Intermediate bulk container, woven plastic, coated</Name>
+    </Code>
+    <Code>
+        <Id>WQ</Id>
+        <Name>Intermediate bulk container, woven plastic, with liner</Name>
+    </Code>
+    <Code>
+        <Id>WR</Id>
+        <Name>Intermediate bulk container, woven plastic, coated and liner</Name>
+    </Code>
+    <Code>
+        <Id>WS</Id>
+        <Name>Intermediate bulk container, plastic film</Name>
+    </Code>
+    <Code>
+        <Id>WT</Id>
+        <Name>Intermediate bulk container, textile with out coat/liner</Name>
+    </Code>
+    <Code>
+        <Id>WU</Id>
+        <Name>Intermediate bulk container, natural wood, with inner liner</Name>
+    </Code>
+    <Code>
+        <Id>WV</Id>
+        <Name>Intermediate bulk container, textile, coated</Name>
+    </Code>
+    <Code>
+        <Id>WW</Id>
+        <Name>Intermediate bulk container, textile, with liner</Name>
+    </Code>
+    <Code>
+        <Id>WX</Id>
+        <Name>Intermediate bulk container, textile, coated and liner</Name>
+    </Code>
+    <Code>
+        <Id>WY</Id>
+        <Name>Intermediate bulk container, plywood, with inner liner</Name>
+    </Code>
+    <Code>
+        <Id>WZ</Id>
+        <Name>Intermediate bulk container, reconstituted wood, with inner liner</Name>
+    </Code>
+    <Code>
+        <Id>XA</Id>
+        <Name>Bag, woven plastic, without inner coat/liner</Name>
+    </Code>
+    <Code>
+        <Id>XB</Id>
+        <Name>Bag, woven plastic, sift proof</Name>
+    </Code>
+    <Code>
+        <Id>XC</Id>
+        <Name>Bag, woven plastic, water resistant</Name>
+    </Code>
+    <Code>
+        <Id>XD</Id>
+        <Name>Bag, plastics film</Name>
+    </Code>
+    <Code>
+        <Id>XF</Id>
+        <Name>Bag, textile, without inner coat/liner</Name>
+    </Code>
+    <Code>
+        <Id>XG</Id>
+        <Name>Bag, textile, sift proof</Name>
+    </Code>
+    <Code>
+        <Id>XH</Id>
+        <Name>Bag, textile, water resistant</Name>
+    </Code>
+    <Code>
+        <Id>XJ</Id>
+        <Name>Bag, paper, multi-wall</Name>
+    </Code>
+    <Code>
+        <Id>XK</Id>
+        <Name>Bag, paper, multi-wall, water resistant</Name>
+    </Code>
+    <Code>
+        <Id>YA</Id>
+        <Name>Composite packaging, plastic receptacle in steel drum</Name>
+    </Code>
+    <Code>
+        <Id>YB</Id>
+        <Name>Composite packaging, plastic receptacle in steel crate box</Name>
+    </Code>
+    <Code>
+        <Id>YC</Id>
+        <Name>Composite packaging, plastic receptacle in aluminium drum</Name>
+    </Code>
+    <Code>
+        <Id>YD</Id>
+        <Name>Composite packaging, plastic receptacle in aluminium crate</Name>
+    </Code>
+    <Code>
+        <Id>YF</Id>
+        <Name>Composite packaging, plastic receptacle in wooden box</Name>
+    </Code>
+    <Code>
+        <Id>YG</Id>
+        <Name>Composite packaging, plastic receptacle in plywood drum</Name>
+    </Code>
+    <Code>
+        <Id>YH</Id>
+        <Name>Composite packaging, plastic receptacle in plywood box</Name>
+    </Code>
+    <Code>
+        <Id>YJ</Id>
+        <Name>Composite packaging, plastic receptacle in fibre drum</Name>
+    </Code>
+    <Code>
+        <Id>YK</Id>
+        <Name>Composite packaging, plastic receptacle in fibreboard box</Name>
+    </Code>
+    <Code>
+        <Id>YL</Id>
+        <Name>Composite packaging, plastic receptacle in plastic drum</Name>
+    </Code>
+    <Code>
+        <Id>YM</Id>
+        <Name>Composite packaging, plastic receptacle in solid plastic box</Name>
+    </Code>
+    <Code>
+        <Id>YN</Id>
+        <Name>Composite packaging, glass receptacle in steel drum</Name>
+    </Code>
+    <Code>
+        <Id>YP</Id>
+        <Name>Composite packaging, glass receptacle in steel crate box</Name>
+    </Code>
+    <Code>
+        <Id>YQ</Id>
+        <Name>Composite packaging, glass receptacle in aluminium drum</Name>
+    </Code>
+    <Code>
+        <Id>YR</Id>
+        <Name>Composite packaging, glass receptacle in aluminium crate</Name>
+    </Code>
+    <Code>
+        <Id>YS</Id>
+        <Name>Composite packaging, glass receptacle in wooden box</Name>
+    </Code>
+    <Code>
+        <Id>YT</Id>
+        <Name>Composite packaging, glass receptacle in plywood drum</Name>
+    </Code>
+    <Code>
+        <Id>YV</Id>
+        <Name>Composite packaging, glass receptacle in wickerwork hamper</Name>
+    </Code>
+    <Code>
+        <Id>YW</Id>
+        <Name>Composite packaging, glass receptacle in fibre drum</Name>
+    </Code>
+    <Code>
+        <Id>YX</Id>
+        <Name>Composite packaging, glass receptacle in fibreboard box</Name>
+    </Code>
+    <Code>
+        <Id>YY</Id>
+        <Name>Composite packaging, glass receptacle in expandable plastic pack</Name>
+    </Code>
+    <Code>
+        <Id>YZ</Id>
+        <Name>Composite packaging, glass receptacle in solid plastic pack</Name>
+    </Code>
+    <Code>
+        <Id>ZA</Id>
+        <Name>Intermediate bulk container, paper, multi-wall</Name>
+    </Code>
+    <Code>
+        <Id>ZB</Id>
+        <Name>Bag, large</Name>
+    </Code>
+    <Code>
+        <Id>ZC</Id>
+        <Name>Intermediate bulk container, paper, multi-wall, water resistant</Name>
+    </Code>
+    <Code>
+        <Id>ZD</Id>
+        <Name>Intermediate bulk container, rigid plastic, with structural equipment, solids</Name>
+    </Code>
+    <Code>
+        <Id>ZF</Id>
+        <Name>Intermediate bulk container, rigid plastic, freestanding, solids</Name>
+    </Code>
+    <Code>
+        <Id>ZG</Id>
+        <Name>Intermediate bulk container, rigid plastic, with structural equipment,
+            pressurised</Name>
+    </Code>
+    <Code>
+        <Id>ZH</Id>
+        <Name>Intermediate bulk container, rigid plastic, freestanding, pressurised</Name>
+    </Code>
+    <Code>
+        <Id>ZJ</Id>
+        <Name>Intermediate bulk container, rigid plastic, with structural equipment, liquids</Name>
+    </Code>
+    <Code>
+        <Id>ZK</Id>
+        <Name>Intermediate bulk container, rigid plastic, freestanding, liquids</Name>
+    </Code>
+    <Code>
+        <Id>ZL</Id>
+        <Name>Intermediate bulk container, composite, rigid plastic, solids</Name>
+    </Code>
+    <Code>
+        <Id>ZM</Id>
+        <Name>Intermediate bulk container, composite, flexible plastic, solids</Name>
+    </Code>
+    <Code>
+        <Id>ZN</Id>
+        <Name>Intermediate bulk container, composite, rigid plastic, pressurised</Name>
+    </Code>
+    <Code>
+        <Id>ZP</Id>
+        <Name>Intermediate bulk container, composite, flexible plastic, pressurised</Name>
+    </Code>
+    <Code>
+        <Id>ZQ</Id>
+        <Name>Intermediate bulk container, composite, rigid plastic, liquids</Name>
+    </Code>
+    <Code>
+        <Id>ZR</Id>
+        <Name>Intermediate bulk container, composite, flexible plastic, liquids</Name>
+    </Code>
+    <Code>
+        <Id>ZS</Id>
+        <Name>Intermediate bulk container, composite</Name>
+    </Code>
+    <Code>
+        <Id>ZT</Id>
+        <Name>Intermediate bulk container, fibreboard</Name>
+    </Code>
+    <Code>
+        <Id>ZU</Id>
+        <Name>Intermediate bulk container, flexible</Name>
+    </Code>
+    <Code>
+        <Id>ZV</Id>
+        <Name>Intermediate bulk container, metal, other than steel</Name>
+    </Code>
+    <Code>
+        <Id>ZW</Id>
+        <Name>Intermediate bulk container, natural wood</Name>
+    </Code>
+    <Code>
+        <Id>ZX</Id>
+        <Name>Intermediate bulk container, plywood</Name>
+    </Code>
+    <Code>
+        <Id>ZY</Id>
+        <Name>Intermediate bulk container, reconstituted wood</Name>
+    </Code>
+    <Code>
+        <Id>ZZ</Id>
+        <Name>Mutually defined</Name>
+    </Code>
+    <Code>
+        <Id/>
+        <Name/>
+    </Code>
+</Codelist>

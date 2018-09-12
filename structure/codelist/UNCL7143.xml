@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    <Title>UNCL 7143 Item type identification code</Title>
+    <Identifier>UNCL7143</Identifier>
+    <Version>D.16B</Version>
+    <Agency>UN/CEFACT</Agency>
+
+    <Code>
+        <Id>AA</Id>
+        <Name>Product version number</Name>
+        <Description>Number assigned by manufacturer or seller to identify the release of a
+            product.</Description>
+    </Code>
+    <Code>
+        <Id>AB</Id>
+        <Name>Assembly</Name>
+        <Description>The item number is that of an assembly.</Description>
+    </Code>
+    <Code>
+        <Id>AC</Id>
+        <Name>HIBC (Health Industry Bar Code)</Name>
+        <Description>Article identifier used within health sector to indicate</Description>
+    </Code>
+    <Code>
+        <Id>AD</Id>
+        <Name>Cold roll number</Name>
+        <Description>Number assigned to a cold roll.</Description>
+    </Code>
+    <Code>
+        <Id>AE</Id>
+        <Name>Hot roll number</Name>
+        <Description>Number assigned to a hot roll.</Description>
+    </Code>
+    <Code>
+        <Id>AF</Id>
+        <Name>Slab number</Name>
+        <Description>Number assigned to a slab, which is produced in a</Description>
+    </Code>
+    <Code>
+        <Id>AG</Id>
+        <Name>Software revision number</Name>
+        <Description>A number assigned to indicate a revision of software.</Description>
+    </Code>
+    <Code>
+        <Id>AH</Id>
+        <Name>UPC (Universal Product Code) Consumer package code (1-5-5)</Name>
+        <Description>An 11-digit code that uniquely identifies consumer does not have a check
+            digit.</Description>
+    </Code>
+    <Code>
+        <Id>AI</Id>
+        <Name>UPC (Universal Product Code) Consumer package code (1-5-5-1)</Name>
+        <Description>A 12-digit code that uniquely identifies the consumer</Description>
+    </Code>
+    <Code>
+        <Id>AJ</Id>
+        <Name>Sample number</Name>
+        <Description>Number assigned to a sample.</Description>
+    </Code>
+    <Code>
+        <Id>AK</Id>
+        <Name>Pack number</Name>
+        <Description>Number assigned to a pack containing a stack of items</Description>
+    </Code>
+    <Code>
+        <Id>AL</Id>
+        <Name>UPC (Universal Product Code) Shipping container code (1-2-5-5)</Name>
+        <Description>A 13-digit code that uniquely identifies theindicator.</Description>
+    </Code>
+    <Code>
+        <Id>AM</Id>
+        <Name>UPC (Universal Product Code)/EAN (European article number)</Name>
+        <Description>Shipping container code (1-2-5-5-1)manufacturer's shipping unit, including the
+            packagingindicator and the check digit.</Description>
+    </Code>
+    <Code>
+        <Id>AN</Id>
+        <Name>UPC (Universal Product Code) suffix</Name>
+        <Description>A suffix used in conjunction with a higher level UPCfor a
+            product.</Description>
+    </Code>
+    <Code>
+        <Id>AO</Id>
+        <Name>State label code</Name>
+        <Description>A code which specifies the codification of the state's</Description>
+    </Code>
+    <Code>
+        <Id>AP</Id>
+        <Name>Heat number</Name>
+        <Description>Number assigned to the heat (also known as the iron</Description>
+    </Code>
+    <Code>
+        <Id>AQ</Id>
+        <Name>Coupon number</Name>
+        <Description>A number identifying a coupon.</Description>
+    </Code>
+    <Code>
+        <Id>AR</Id>
+        <Name>Resource number</Name>
+        <Description>A number to identify a resource.</Description>
+    </Code>
+    <Code>
+        <Id>AS</Id>
+        <Name>Work task number</Name>
+        <Description>A number to identify a work task.</Description>
+    </Code>
+    <Code>
+        <Id>AT</Id>
+        <Name>Price look up number</Name>
+        <Description>Identification number on a product allowing a quickproduct.</Description>
+    </Code>
+    <Code>
+        <Id>AU</Id>
+        <Name>NSN (North Atlantic Treaty Organization Stock Number)</Name>
+        <Description>Number assigned under the NATO (North Atlantic Treatyidentification of an
+            approved item of supply.</Description>
+    </Code>
+    <Code>
+        <Id>AV</Id>
+        <Name>Refined product code</Name>
+        <Description>A code specifying the product refinement designation.</Description>
+    </Code>
+    <Code>
+        <Id>AW</Id>
+        <Name>Exhibit</Name>
+        <Description>A code indicating that the product is identified by an</Description>
+    </Code>
+    <Code>
+        <Id>AX</Id>
+        <Name>End item</Name>
+        <Description>A number specifying an end item.</Description>
+    </Code>
+    <Code>
+        <Id>AY</Id>
+        <Name>Federal supply classification</Name>
+        <Description>A code to specify a product's Federal supply</Description>
+    </Code>
+    <Code>
+        <Id>AZ</Id>
+        <Name>Engineering data list</Name>
+        <Description>A code specifying the product's engineering data list.</Description>
+    </Code>
+    <Code>
+        <Id>BA</Id>
+        <Name>Milestone event number</Name>
+        <Description>A number to identify a milestone event.</Description>
+    </Code>
+    <Code>
+        <Id>BB</Id>
+        <Name>Lot number</Name>
+        <Description>A number indicating the lot number of a product.</Description>
+    </Code>
+    <Code>
+        <Id>BC</Id>
+        <Name>National drug code 4-4-2 format</Name>
+        <Description>A code identifying the product in national drug format</Description>
+    </Code>
+    <Code>
+        <Id>BD</Id>
+        <Name>National drug code 5-3-2 format</Name>
+        <Description>A code identifying the product in national drug format</Description>
+    </Code>
+    <Code>
+        <Id>BE</Id>
+        <Name>National drug code 5-4-1 format</Name>
+        <Description>A code identifying the product in national drug format</Description>
+    </Code>
+    <Code>
+        <Id>BF</Id>
+        <Name>National drug code 5-4-2 format</Name>
+        <Description>A code identifying the product in national drug format</Description>
+    </Code>
+    <Code>
+        <Id>BG</Id>
+        <Name>National drug code</Name>
+        <Description>A code specifying the national drug classification.</Description>
+    </Code>
+    <Code>
+        <Id>BH</Id>
+        <Name>Part number</Name>
+        <Description>A number indicating the part.</Description>
+    </Code>
+    <Code>
+        <Id>BI</Id>
+        <Name>Local Stock Number (LSN)</Name>
+        <Description>A local number assigned to an item of stock.</Description>
+    </Code>
+    <Code>
+        <Id>BJ</Id>
+        <Name>Next higher assembly number</Name>
+        <Description>A number specifying the next higher assembly or</Description>
+    </Code>
+    <Code>
+        <Id>BK</Id>
+        <Name>Data category</Name>
+        <Description>A code specifying a category of data.</Description>
+    </Code>
+    <Code>
+        <Id>BL</Id>
+        <Name>Control number</Name>
+        <Description>To specify the control number.</Description>
+    </Code>
+    <Code>
+        <Id>BM</Id>
+        <Name>Special material identification code</Name>
+        <Description>A number to identify the special material code.</Description>
+    </Code>
+    <Code>
+        <Id>BN</Id>
+        <Name>Locally assigned control number</Name>
+        <Description>A number assigned locally for control purposes.</Description>
+    </Code>
+    <Code>
+        <Id>BO</Id>
+        <Name>Buyer's colour</Name>
+        <Description>Colour assigned by buyer.</Description>
+    </Code>
+    <Code>
+        <Id>BP</Id>
+        <Name>Buyer's part number</Name>
+        <Description>Reference number assigned by the buyer to identify an</Description>
+    </Code>
+    <Code>
+        <Id>BQ</Id>
+        <Name>Variable measure product code</Name>
+        <Description>A code assigned to identify a variable measure item.</Description>
+    </Code>
+    <Code>
+        <Id>BR</Id>
+        <Name>Financial phase</Name>
+        <Description>To specify as an item, the financial phase.</Description>
+    </Code>
+    <Code>
+        <Id>BS</Id>
+        <Name>Contract breakdown</Name>
+        <Description>To specify as an item, the contract breakdown.</Description>
+    </Code>
+    <Code>
+        <Id>BT</Id>
+        <Name>Technical phase</Name>
+        <Description>To specify as an item, the technical phase.</Description>
+    </Code>
+    <Code>
+        <Id>BU</Id>
+        <Name>Dye lot number</Name>
+        <Description>Number identifying a dye lot.</Description>
+    </Code>
+    <Code>
+        <Id>BV</Id>
+        <Name>Daily statement of activities</Name>
+        <Description>A statement listing activities of one day.</Description>
+    </Code>
+    <Code>
+        <Id>BW</Id>
+        <Name>Periodical statement of activities within a bilaterally agreed time period</Name>
+        <Description>Periodical statement listing activities within a</Description>
+    </Code>
+    <Code>
+        <Id>BX</Id>
+        <Name>Calendar week statement of activities</Name>
+        <Description>A statement listing activities of a calendar week.</Description>
+    </Code>
+    <Code>
+        <Id>BY</Id>
+        <Name>Calendar month statement of activities</Name>
+        <Description>A statement listing activities of a calendar month.</Description>
+    </Code>
+    <Code>
+        <Id>BZ</Id>
+        <Name>Original equipment number</Name>
+        <Description>Original equipment number allocated to spare parts by</Description>
+    </Code>
+    <Code>
+        <Id>CC</Id>
+        <Name>Industry commodity code</Name>
+        <Description>The codes given to certain commodities by an industry.</Description>
+    </Code>
+    <Code>
+        <Id>CG</Id>
+        <Name>Commodity grouping</Name>
+        <Description>Code for a group of articles with common characteristics</Description>
+    </Code>
+    <Code>
+        <Id>CL</Id>
+        <Name>Colour number</Name>
+        <Description>Code for the colour of an article.</Description>
+    </Code>
+    <Code>
+        <Id>CR</Id>
+        <Name>Contract number</Name>
+        <Description>Reference number identifying a contract.</Description>
+    </Code>
+    <Code>
+        <Id>CV</Id>
+        <Name>Customs article number</Name>
+        <Description>Code defined by Customs authorities to an article or a</Description>
+    </Code>
+    <Code>
+        <Id>DR</Id>
+        <Name>Drawing revision number</Name>
+        <Description>Reference number indicating that a change or revision</Description>
+    </Code>
+    <Code>
+        <Id>DW</Id>
+        <Name>Drawing</Name>
+        <Description>Reference number identifying a drawing of an article.</Description>
+    </Code>
+    <Code>
+        <Id>EC</Id>
+        <Name>Engineering change level</Name>
+        <Description>Reference number indicating that a change or revision</Description>
+    </Code>
+    <Code>
+        <Id>EF</Id>
+        <Name>Material code</Name>
+        <Description>Code defining the material's type, surface, geometric</Description>
+    </Code>
+    <Code>
+        <Id>EN</Id>
+        <Name>International Article Numbering Association (EAN)</Name>
+        <Description>Number assigned to a manufacturer's product according to</Description>
+    </Code>
+    <Code>
+        <Id>FS</Id>
+        <Name>Fish species</Name>
+        <Description>Identification of fish species.</Description>
+    </Code>
+    <Code>
+        <Id>GB</Id>
+        <Name>Buyer's internal product group code</Name>
+        <Description>Product group code used within a buyer's internal</Description>
+    </Code>
+    <Code>
+        <Id>GN</Id>
+        <Name>National product group code</Name>
+        <Description>National product group code. Administered by a national</Description>
+    </Code>
+    <Code>
+        <Id>GS</Id>
+        <Name>General specification number</Name>
+        <Description>The item number is a general specification number.</Description>
+    </Code>
+    <Code>
+        <Id>HS</Id>
+        <Name>Harmonised system</Name>
+        <Description>The item number is part of, or is generated in theCoding System (Harmonised
+            System), as developed andmaintained by the World Customs Organization
+            (WCO).</Description>
+    </Code>
+    <Code>
+        <Id>IB</Id>
+        <Name>ISBN (International Standard Book Number)</Name>
+        <Description>A unique number identifying a book.</Description>
+    </Code>
+    <Code>
+        <Id>IN</Id>
+        <Name>Buyer's item number</Name>
+        <Description>The item number has been allocated by the buyer.</Description>
+    </Code>
+    <Code>
+        <Id>IS</Id>
+        <Name>ISSN (International Standard Serial Number)</Name>
+        <Description>A unique number identifying a serial publication.</Description>
+    </Code>
+    <Code>
+        <Id>IT</Id>
+        <Name>Buyer's style number</Name>
+        <Description>Number given by the buyer to a specific style or form of</Description>
+    </Code>
+    <Code>
+        <Id>IZ</Id>
+        <Name>Buyer's size code</Name>
+        <Description>Code given by the buyer to designate the size of an</Description>
+    </Code>
+    <Code>
+        <Id>MA</Id>
+        <Name>Machine number</Name>
+        <Description>The item number is a machine number.</Description>
+    </Code>
+    <Code>
+        <Id>MF</Id>
+        <Name>Manufacturer's (producer's) article number</Name>
+        <Description>The number given to an article by its manufacturer.</Description>
+    </Code>
+    <Code>
+        <Id>MN</Id>
+        <Name>Model number</Name>
+        <Description>Reference number assigned by the manufacturer toor group.</Description>
+    </Code>
+    <Code>
+        <Id>MP</Id>
+        <Name>Product/service identification number</Name>
+        <Description>Reference number identifying a product or service.</Description>
+    </Code>
+    <Code>
+        <Id>NB</Id>
+        <Name>Batch number</Name>
+        <Description>The item number is a batch number.</Description>
+    </Code>
+    <Code>
+        <Id>ON</Id>
+        <Name>Customer order number</Name>
+        <Description>Reference number of a customer's order.</Description>
+    </Code>
+    <Code>
+        <Id>PD</Id>
+        <Name>Part number description</Name>
+        <Description>Reference number identifying a description associated</Description>
+    </Code>
+    <Code>
+        <Id>PL</Id>
+        <Name>Purchaser's order line number</Name>
+        <Description>Reference number identifying a line entry in a</Description>
+    </Code>
+    <Code>
+        <Id>PO</Id>
+        <Name>Purchase order number</Name>
+        <Description>Reference number identifying a customer's order.</Description>
+    </Code>
+    <Code>
+        <Id>PV</Id>
+        <Name>Promotional variant number</Name>
+        <Description>The item number is a promotional variant number.</Description>
+    </Code>
+    <Code>
+        <Id>QS</Id>
+        <Name>Buyer's qualifier for size</Name>
+        <Description>The item number qualifies the size of the buyer.</Description>
+    </Code>
+    <Code>
+        <Id>RC</Id>
+        <Name>Returnable container number</Name>
+        <Description>Reference number identifying a returnable container.</Description>
+    </Code>
+    <Code>
+        <Id>RN</Id>
+        <Name>Release number</Name>
+        <Description>Reference number identifying a release from a buyer's</Description>
+    </Code>
+    <Code>
+        <Id>RU</Id>
+        <Name>Run number</Name>
+        <Description>The item number identifies the production ormanufactured, processed or
+            assembled.</Description>
+    </Code>
+    <Code>
+        <Id>RY</Id>
+        <Name>Record keeping of model year</Name>
+        <Description>The item number relates to the year in which the</Description>
+    </Code>
+    <Code>
+        <Id>SA</Id>
+        <Name>Supplier's article number</Name>
+        <Description>Number assigned to an article by the supplier of that</Description>
+    </Code>
+    <Code>
+        <Id>SG</Id>
+        <Name>Standard group of products (mixed assortment)</Name>
+        <Description>The item number relates to a standard group of otheritem for identification
+            purposes.</Description>
+    </Code>
+    <Code>
+        <Id>SK</Id>
+        <Name>SKU (Stock keeping unit)</Name>
+        <Description>Reference number of a stock keeping unit.</Description>
+    </Code>
+    <Code>
+        <Id>SN</Id>
+        <Name>Serial number</Name>
+        <Description>Identification number of an item which distinguishes</Description>
+    </Code>
+    <Code>
+        <Id>SRS</Id>
+        <Name>RSK number</Name>
+        <Description>Plumbing and heating.</Description>
+    </Code>
+    <Code>
+        <Id>SRT</Id>
+        <Name>IFLS (Institut Francais du Libre Service) 5 digit product</Name>
+        <Description>classification codeInstitut Francais du Libre Service.</Description>
+    </Code>
+    <Code>
+        <Id>SRU</Id>
+        <Name>IFLS (Institut Francais du Libre Service) 9 digit product</Name>
+        <Description>classification codeInstitut Francais du Libre Service.</Description>
+    </Code>
+    <Code>
+        <Id>SRV</Id>
+        <Name>GS1 Global Trade Item Number</Name>
+        <Description>A unique number, up to 14-digits, assigned according to</Description>
+    </Code>
+    <Code>
+        <Id>SRW</Id>
+        <Name>EDIS (Energy Data Identification System)</Name>
+        <Description>European system for identification of meter data.</Description>
+    </Code>
+    <Code>
+        <Id>SRX</Id>
+        <Name>Slaughter number</Name>
+        <Description>Unique number given by a slaughterhouse to an animal or</Description>
+    </Code>
+    <Code>
+        <Id>SRY</Id>
+        <Name>Official animal number</Name>
+        <Description>Unique number given by a national authority to identify</Description>
+    </Code>
+    <Code>
+        <Id>SRZ</Id>
+        <Name>Harmonized tariff schedule</Name>
+        <Description>The international Harmonized Tariff Schedule (HTS) topurposes.</Description>
+    </Code>
+    <Code>
+        <Id>SS</Id>
+        <Name>Supplier's supplier article number</Name>
+        <Description>Article number referring to a sales catalogue of</Description>
+    </Code>
+    <Code>
+        <Id>SSA</Id>
+        <Name>46 Level DOT Code</Name>
+        <Description>A US Department of Transportation (DOT) code to identifyBorder Protection (CBP)
+            agency.</Description>
+    </Code>
+    <Code>
+        <Id>SSB</Id>
+        <Name>Airline Tariff 6D</Name>
+        <Description>A US code agreed to by the airline industry to identifyBorder Protection (CBP)
+            agency.</Description>
+    </Code>
+    <Code>
+        <Id>SSC</Id>
+        <Name>Title 49 Code of Federal Regulations</Name>
+        <Description>A US Customs and Border Protection (CBP) code used to</Description>
+    </Code>
+    <Code>
+        <Id>SSD</Id>
+        <Name>International Civil Aviation Administration code</Name>
+        <Description>A US Department of Transportation/Federal Aviation(dangerous) goods, managed by
+            the Customs and BorderProtection (CBP) agency.</Description>
+    </Code>
+    <Code>
+        <Id>SSE</Id>
+        <Name>Hazardous Materials ID DOT</Name>
+        <Description>A US Department of Transportation (DOT) code used toCustoms and Border
+            Protection (CBP) agency.</Description>
+    </Code>
+    <Code>
+        <Id>SSF</Id>
+        <Name>Endorsement</Name>
+        <Description>A US Customs and Border Protection (CBP) code used to</Description>
+    </Code>
+    <Code>
+        <Id>SSG</Id>
+        <Name>Air Force Regulation 71-4</Name>
+        <Description>A department of Defense/Air Force code used to identifyBorder Protection (CBP)
+            agency.</Description>
+    </Code>
+    <Code>
+        <Id>SSH</Id>
+        <Name>Breed</Name>
+        <Description>The breed of the item (e.g. plant or animal).</Description>
+    </Code>
+    <Code>
+        <Id>SSI</Id>
+        <Name>Chemical Abstract Service (CAS) registry number</Name>
+        <Description>A unique numerical identifier for for chemicalalloys.</Description>
+    </Code>
+    <Code>
+        <Id>SSJ</Id>
+        <Name>Engine model designation</Name>
+        <Description>A name or designation to identify an engine model.</Description>
+    </Code>
+    <Code>
+        <Id>SSK</Id>
+        <Name>Institutional Meat Purchase Specifications (IMPS) Number</Name>
+        <Description>A number assigned by agricultural authorities to</Description>
+    </Code>
+    <Code>
+        <Id>SSL</Id>
+        <Name>Price Look-Up code (PLU)</Name>
+        <Description>Identification number affixed to produce in stores to</Description>
+    </Code>
+    <Code>
+        <Id>SSM</Id>
+        <Name>International Maritime Organization (IMO) Code</Name>
+        <Description>An International Maritime Organization (IMO) code used</Description>
+    </Code>
+    <Code>
+        <Id>SSN</Id>
+        <Name>Bureau of Explosives 600-A (rail)</Name>
+        <Description>A Department of Transportation/Federal Railroad(dangerous) goods.</Description>
+    </Code>
+    <Code>
+        <Id>SSO</Id>
+        <Name>United Nations Dangerous Goods List</Name>
+        <Description>A UN code used to classify and identify dangerous goods.</Description>
+    </Code>
+    <Code>
+        <Id>SSP</Id>
+        <Name>International Code of Botanical Nomenclature (ICBN)</Name>
+        <Description>A code established by the International Code ofidentify botanical articles and
+            commodities.</Description>
+    </Code>
+    <Code>
+        <Id>SSQ</Id>
+        <Name>International Code of Zoological Nomenclature (ICZN)</Name>
+        <Description>A code established by the International Code ofidentify animals.</Description>
+    </Code>
+    <Code>
+        <Id>SSR</Id>
+        <Name>International Code of Nomenclature for Cultivated Plants (ICNCP)</Name>
+        <Description>A code established by the International Code ofclassify and identify
+            animals.</Description>
+    </Code>
+    <Code>
+        <Id>SSS</Id>
+        <Name>Distributor’s article identifier</Name>
+        <Description>Identifier assigned to an article by the distributor of</Description>
+    </Code>
+    <Code>
+        <Id>SST</Id>
+        <Name>Norwegian Classification system ENVA</Name>
+        <Description>Product classification system used in the Norwegian</Description>
+    </Code>
+    <Code>
+        <Id>SSU</Id>
+        <Name>Supplier assigned classification</Name>
+        <Description>Product classification assigned by the supplier.</Description>
+    </Code>
+    <Code>
+        <Id>SSV</Id>
+        <Name>Mexican classification system AMECE</Name>
+        <Description>Product classification system used in the Mexican</Description>
+    </Code>
+    <Code>
+        <Id>SSW</Id>
+        <Name>German classification system CCG</Name>
+        <Description>Product classification system used in the German market.</Description>
+    </Code>
+    <Code>
+        <Id>SSX</Id>
+        <Name>Finnish classification system EANFIN</Name>
+        <Description>Product classification system used in the Finnish</Description>
+    </Code>
+    <Code>
+        <Id>SSY</Id>
+        <Name>Canadian classification system ICC</Name>
+        <Description>Product classification system used in the Canadian</Description>
+    </Code>
+    <Code>
+        <Id>SSZ</Id>
+        <Name>French classification system IFLS5</Name>
+        <Description>Product classification system used in the French market.</Description>
+    </Code>
+    <Code>
+        <Id>ST</Id>
+        <Name>Style number</Name>
+        <Description>Number given to a specific style or form of an article,</Description>
+    </Code>
+    <Code>
+        <Id>STA</Id>
+        <Name>Dutch classification system CBL</Name>
+        <Description>Product classification system used in the Dutch market.</Description>
+    </Code>
+    <Code>
+        <Id>STB</Id>
+        <Name>Japanese classification system JICFS</Name>
+        <Description>Product classification system used in the Japanese</Description>
+    </Code>
+    <Code>
+        <Id>STC</Id>
+        <Name>European Union dairy subsidy eligibility classification</Name>
+        <Description>Category of product eligible for EU subsidy (applies forcontent).</Description>
+    </Code>
+    <Code>
+        <Id>STD</Id>
+        <Name>GS1 Spain classification system</Name>
+        <Description>Product classification system used in the Spanish</Description>
+    </Code>
+    <Code>
+        <Id>STE</Id>
+        <Name>GS1 Poland classification system</Name>
+        <Description>Product classification system used in the Polish market.</Description>
+    </Code>
+    <Code>
+        <Id>STF</Id>
+        <Name>Federal Agency on Technical Regulating and Metrology of the Russian Federation</Name>
+        <Description>A Russian government agency that serves as a national</Description>
+    </Code>
+    <Code>
+        <Id>STG</Id>
+        <Name>Efficient Consumer Response (ECR) Austria classification system</Name>
+        <Description>Product classification system used in the Austrian</Description>
+    </Code>
+    <Code>
+        <Id>STH</Id>
+        <Name>GS1 Italy classification system</Name>
+        <Description>Product classification system used in the Italian</Description>
+    </Code>
+    <Code>
+        <Id>STI</Id>
+        <Name>CPV (Common Procurement Vocabulary)</Name>
+        <Description>Official classification system for public procurement in</Description>
+    </Code>
+    <Code>
+        <Id>STJ</Id>
+        <Name>IFDA (International Foodservice Distributors Association)</Name>
+        <Description>International Foodservice Distributors Association</Description>
+    </Code>
+    <Code>
+        <Id>STK</Id>
+        <Name>AHFS (American Hospital Formulary Service) pharmacologic -therapeutic
+            classification</Name>
+        <Description>Pharmacologic - therapeutic classification maintained by</Description>
+    </Code>
+    <Code>
+        <Id>STL</Id>
+        <Name>ATC (Anatomical Therapeutic Chemical) classification system</Name>
+        <Description>Anatomical Therapeutic Chemical classification system</Description>
+    </Code>
+    <Code>
+        <Id>STM</Id>
+        <Name>CLADIMED (Classification des Dispositifs Médicaux)</Name>
+        <Description>A five level classification system for medical decvicesFrench
+            market.</Description>
+    </Code>
+    <Code>
+        <Id>STN</Id>
+        <Name>CMDR (Canadian Medical Device Regulations) classification system</Name>
+        <Description>Classification system related to the Canadian Medical</Description>
+    </Code>
+    <Code>
+        <Id>STO</Id>
+        <Name>CNDM (Classificazione Nazionale dei Dispositivi Medici)</Name>
+        <Description>A classification system for medical devices used in the</Description>
+    </Code>
+    <Code>
+        <Id>STP</Id>
+        <Name>UK DM&amp;D (Dictionary of Medicines &amp; Devices) standard coding scheme</Name>
+        <Description>A classification system for medicines and devices used</Description>
+    </Code>
+    <Code>
+        <Id>STQ</Id>
+        <Name>eCl@ss</Name>
+        <Description>Standardized material and service classification and</Description>
+    </Code>
+    <Code>
+        <Id>STR</Id>
+        <Name>EDMA (European Diagnostic Manufacturers Association)</Name>
+        <Description>Products Classificationmaintained by the European Diagnostic
+            ManufacturersAssociation.</Description>
+    </Code>
+    <Code>
+        <Id>STS</Id>
+        <Name>EGAR (European Generic Article Register)</Name>
+        <Description>A classification system for medical devices.</Description>
+    </Code>
+    <Code>
+        <Id>STT</Id>
+        <Name>GMDN (Global Medical Devices Nomenclature)</Name>
+        <Description>Nomenclature system for identification of medical</Description>
+    </Code>
+    <Code>
+        <Id>STU</Id>
+        <Name>GPI (Generic Product Identifier)</Name>
+        <Description>A drug classification system managed by Medi-Span.</Description>
+    </Code>
+    <Code>
+        <Id>STV</Id>
+        <Name>HCPCS (Healthcare Common Procedure Coding System)</Name>
+        <Description>A classification system used with US healthcare</Description>
+    </Code>
+    <Code>
+        <Id>STW</Id>
+        <Name>ICPS (International Classification for Patient Safety)</Name>
+        <Description>A patient safety taxonomy maintained by the World Health</Description>
+    </Code>
+    <Code>
+        <Id>STX</Id>
+        <Name>MedDRA (Medical Dictionary for Regulatory Activities)</Name>
+        <Description>A medical dictionary maintained by the InternationalAssociations
+            (IFPMA).</Description>
+    </Code>
+    <Code>
+        <Id>STY</Id>
+        <Name>Medical Columbus</Name>
+        <Description>Medical product classification system used in the German</Description>
+    </Code>
+    <Code>
+        <Id>STZ</Id>
+        <Name>NAPCS (North American Product Classification System)</Name>
+        <Description>Product classification system used in the North American</Description>
+    </Code>
+    <Code>
+        <Id>SUA</Id>
+        <Name>NHS (National Health Services) eClass</Name>
+        <Description>Product and Service classification system used in United</Description>
+    </Code>
+    <Code>
+        <Id>SUB</Id>
+        <Name>US FDA (Food and Drug Administration) Product Code Classification Database</Name>
+        <Description>US FDA Product Code Classification Database containsdeveloped by the Center for
+            Devices and RadiologicalHealth (CDRH).</Description>
+    </Code>
+    <Code>
+        <Id>SUC</Id>
+        <Name>SNOMED CT (Systematized Nomenclature of Medicine-Clinical Terms)</Name>
+        <Description>A medical nomenclature system developed between the NHS</Description>
+    </Code>
+    <Code>
+        <Id>SUD</Id>
+        <Name>UMDNS (Universal Medical Device Nomenclature System)</Name>
+        <Description>A standard international nomenclature and computerEmergency Care Research
+            Institute (ECRI).</Description>
+    </Code>
+    <Code>
+        <Id>SUE</Id>
+        <Name>GS1 Global Returnable Asset Identifier, non-serialised</Name>
+        <Description>A unique, 13-digit number assigned according to theidentify a type of Reusable
+            Transport Item (RTI).</Description>
+    </Code>
+    <Code>
+        <Id>SUF</Id>
+        <Name>IMEI</Name>
+        <Description>The International Mobile Station Equipment Identityincludes the origin, model
+            and serial number of thedevice. The structure is specified in 3GPP TS
+            23.003.</Description>
+    </Code>
+    <Code>
+        <Id>SUG</Id>
+        <Name>Waste Type (EMSA)</Name>
+        <Description>Classification of waste as defined by the European</Description>
+    </Code>
+    <Code>
+        <Id>SUH</Id>
+        <Name>Ship's store classification type</Name>
+        <Description>Classification of ship’s stores.</Description>
+    </Code>
+    <Code>
+        <Id>SUI</Id>
+        <Name>Emergency fire code</Name>
+        <Description>Classification for emergency response procedures related</Description>
+    </Code>
+    <Code>
+        <Id>SUJ</Id>
+        <Name>Emergency spillage code</Name>
+        <Description>Classification for emergency response procedures related</Description>
+    </Code>
+    <Code>
+        <Id>SUK</Id>
+        <Name>IMDG packing group</Name>
+        <Description>Packing group as defined in the International Marititme</Description>
+    </Code>
+    <Code>
+        <Id>SUL</Id>
+        <Name>MARPOL Code IBC</Name>
+        <Description>International Bulk Chemical (IBC) code defined by thefrom Ships
+            (MARPOL).</Description>
+    </Code>
+    <Code>
+        <Id>SUM</Id>
+        <Name>IMDG subsidiary risk class</Name>
+        <Description>Subsidiary risk class as defined in the International</Description>
+    </Code>
+    <Code>
+        <Id>TG</Id>
+        <Name>Transport group number</Name>
+        <Description>(8012) Additional number to form article groups for</Description>
+    </Code>
+    <Code>
+        <Id>TSN</Id>
+        <Name>Taxonomic Serial Number</Name>
+        <Description>A unique number assigned to a taxonomic entity, commonlyon their hierarchical
+            classification, scientific name,taxonomic rank, associated synonyms and vernacular
+            nameswhere appropriate, data source information and dataquality
+            indicators.</Description>
+    </Code>
+    <Code>
+        <Id>TSO</Id>
+        <Name>IMDG main hazard class</Name>
+        <Description>Main hazard class as defined in the International</Description>
+    </Code>
+    <Code>
+        <Id>TSP</Id>
+        <Name>EU Combined Nomenclature</Name>
+        <Description>The number is part of, or is generated in the context ofand maintained by the
+            European Union (EU).</Description>
+    </Code>
+    <Code>
+        <Id>UA</Id>
+        <Name>Ultimate customer's article number</Name>
+        <Description>Number assigned by ultimate customer to identify</Description>
+    </Code>
+    <Code>
+        <Id>UP</Id>
+        <Name>UPC (Universal product code)</Name>
+        <Description>Number assigned to a manufacturer's product by the</Description>
+    </Code>
+    <Code>
+        <Id>VN</Id>
+        <Name>Vendor item number</Name>
+        <Description>Reference number assigned by a vendor/seller identifying</Description>
+    </Code>
+    <Code>
+        <Id>VP</Id>
+        <Name>Vendor's (seller's) part number</Name>
+        <Description>Reference number assigned by a vendor/seller identifying</Description>
+    </Code>
+    <Code>
+        <Id>VS</Id>
+        <Name>Vendor's supplemental item number</Name>
+        <Description>The item number is a specified by the vendor as a</Description>
+    </Code>
+    <Code>
+        <Id>VX</Id>
+        <Name>Vendor specification number</Name>
+        <Description>The item number has been allocated by the vendor as a</Description>
+    </Code>
+    <Code>
+        <Id>ZZZ</Id>
+        <Name>Mutually defined</Name>
+        <Description>Item type identification mutually agreed between</Description>
+    </Code>
+    <Code>
+        <Id/>
+        <Name/>
+        <Description/>
+    </Code>
+    <Code>
+        <Id/>
+        <Name/>
+        <Description/>
+    </Code>
+    <Code>
+        <Id/>
+        <Name/>
+        <Description/>
+    </Code>
+    <Code>
+        <Id/>
+        <Name/>
+        <Description/>
+    </Code>
+    <Code>
+        <Id/>
+        <Name/>
+        <Description/>
+    </Code>
+    <Code>
+        <Id/>
+        <Name/>
+        <Description/>
+    </Code>
+    <Code>
+        <Id/>
+        <Name/>
+        <Description/>
+    </Code>
+</Codelist>

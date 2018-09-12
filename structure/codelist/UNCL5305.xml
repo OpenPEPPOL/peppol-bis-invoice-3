@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>UNCL5305 Duty or tax or fee category code</Title>
+    <Identifier>UNCL5305</Identifier>
+    <Version>D.17A</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>OpenPEPPOL</Subset>
+
+    <Code>
+        <Id>AE</Id>
+        <Name>Vat Reverse Charge</Name>
+        <Description>Code specifying that the standard VAT rate is levied from the invoicee.</Description>
+    </Code>
+
+    <Code>
+        <Id>E</Id>
+        <Name>Exempt from Tax</Name>
+        <Description>Code specifying that taxes are not applicable.</Description>
+    </Code>
+
+    <Code>
+        <Id>S</Id>
+        <Name>Standard rate</Name>
+        <Description>Code specifying the standard rate.</Description>
+    </Code>
+
+    <Code>
+        <Id>Z</Id>
+        <Name>Zero rated goods</Name>
+        <Description>Code specifying that the goods are at a zero rate.</Description>
+    </Code>
+
+    <Code>
+        <Id>G</Id>
+        <Name>Free export item, VAT not charged</Name>
+        <Description>Code specifying that the item is free export and taxes
+            are not charged.</Description>
+    </Code>
+
+    <Code>
+        <Id>O</Id>
+        <Name>Services outside scope of tax</Name>
+        <Description>Code specifying that taxes are not applicable to the
+            services.</Description>
+    </Code>
+    <Code>
+        <Id>K</Id>
+        <Name>VAT exempt for EEA intra-community supply of goods and
+            services</Name>
+        <Description>A tax category code indicating the item is VAT exempt
+            due to an intra-community supply in the European
+            Economic Area.</Description>
+    </Code>
+    
+    <Code>
+        <Id>L</Id>
+        <Name>Canary Islands general indirect tax</Name>
+        <Description>Impuesto General Indirecto Canario (IGIC) is an indirect
+            tax levied on goods and services supplied in the Canary
+            Islands (Spain) by traders and professionals, as well as
+            on import of goods.</Description>
+    </Code>
+    
+    <Code>
+        <Id>M</Id>
+        <Name>Tax for production, services and importation in Ceuta and
+            Melilla</Name>
+        <Description>Impuesto sobre la Producción, los Servicios y la
+            Importación (IPSI) is an indirect municipal tax, levied
+            on the production, processing and import of all kinds of
+            movable tangible property, the supply of services and
+            the transfer of immovable property located in the cities
+            of Ceuta and Melilla.</Description>
+    </Code>
+</CodeList>

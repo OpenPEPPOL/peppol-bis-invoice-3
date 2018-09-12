@@ -21,7 +21,7 @@
                 <Name>Scheme identifier</Name>
                 <Description>The identification scheme identifier of the Invoiced object identifier.</Description>
                 <Reference type="RULE">BR-CL-07</Reference>
-                <Reference type="CODE_LIST">UNTDID 1153</Reference>
+                <Reference type="CODE_LIST">UNCL1153</Reference>
                 <Value type="EXAMPLE">AUN</Value>
             </Attribute>
             
@@ -65,6 +65,7 @@
                     <Description>The mime code of the attached document.</Description>
                     <Reference type="RULE">PEPPOL-EN16931-CL001</Reference>
                     <Reference type="RULE">UBL-DT-06</Reference>
+                    <Reference type="CODE_LIST">MimeCode</Reference>
                     <Value type="EXAMPLE">text/csv</Value>
                 </Attribute>
                 

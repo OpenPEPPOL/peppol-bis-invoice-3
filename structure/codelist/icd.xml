@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    <Title>ISO 6523 ICD list</Title>
+    <Identifier>ICD</Identifier>
+    <Agency>The International Organization for Standardization (ISO)</Agency>
+    <Code>
+        <Id>0002</Id>
+        <Name>System Information et Repertoire des Entreprise et des Etablissements: SIRENE</Name>
+        <Description>The Sirene number is used in France mainly for the official registration in the
+            Trade Register and as the only number used between authorities and organizations, and
+            between authorities when dealing with data interchange on organizations. Issuing agency:
+            Institut National de la Statistique et des Etudes Economiques, (I.N.S.E.E.), Departement
+            des Repertoires, 18, Bd Adolphe Pinard, 75675 PARIS Cedex 14, Tel: 540 1212, Tlx:204924
+            INSEE F</Description>
+    </Code>
+    <Code>
+        <Id>0003</Id>
+        <Name>Codification Numerique des Etablissments Financiers En Belgique</Name>
+        <Description>Many financial institutions have more than one code number, e.g. to indicate
+            each branch individually. The codes can be reallocated over the time (mostly in the case
+            where a financial institution terminates its activity). Some code numbers are currently
+            unused. Code numbers 990 through 999 are reserved. Issuing agency: Association Belge des
+            Banques, rue Ravenstein 36, Bte 5, 1000 BRUXELLES, Tel: 02 512 5868</Description>
+    </Code>
+    <Code>
+        <Id>0004</Id>
+        <Name>NBS/OSI NETWORK</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing and naming
+            tree as depicted in Addendum 2 to ISO 8348. Issuing agency: National Bureau of
+            Standards, Bldg 225 Room B151, Gaithersburg MD, 20899, USA, Tel: 301 975 2833, Tlx:
+            197674 NBS UT</Description>
+    </Code>
+    <Code>
+        <Id>0005</Id>
+        <Name>USA FED GOV OSI NETWORK</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing and naming
+            tree as depicted in Addendum 2 to ISO 8348. Issuing agency: National Bureau of
+            Standards, Bldg 225 Room B151, Gaithersburg MD, 20899, USA, Tel: 301 975 2833, Tlx:
+            197674 NBS UT</Description>
+    </Code>
+    <Code>
+        <Id>0006</Id>
+        <Name>USA DOD OSI NETWORK</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing and naming
+            tree as depicted in Addendum 2 to ISO 8348. Issuing agency: Defense Communication
+            Agency, DSEC - R130, 1860 Wiehle Ave, Reston VA, 22090-5500, Tel: 703 437-2802, Fax: 703
+            437-2382</Description>
+    </Code>
+    <Code>
+        <Id>0007</Id>
+        <Name>Organisationsnummer</Name>
+        <Description>The third digit in the organisation number is never lower than 2 in order to
+            avoid it being confused with personal numbers. Issuing agency: The National Tax Board,
+            (Riksskatteverket, RSV), 171 94 SOLNA, SWEDEN, Tel: 08 981520</Description>
+    </Code>
+    <Code>
+        <Id>0008</Id>
+        <Name>LE NUMERO NATIONAL</Name>
+        <Description>None Issuing agency: Ministere De L'interieur et de la Fonction Publique, Cite
+            administrative de l'Etat, Tour des Finances, Bd. Pacheco. 19 - Bte 20, 1010
+            Bruxelles.</Description>
+    </Code>
+    <Code>
+        <Id>0009</Id>
+        <Name>SIRET-CODE</Name>
+        <Description>None Issuing agency: DU PONT DE NEMOURS (FRANCE) S.A. 137, rue de l'Universite,
+            F-75334, PARIS Cedex 07, Tel: 1 45 50 65 50</Description>
+    </Code>
+    <Code>
+        <Id>0010</Id>
+        <Name>Organizational Identifiers for Structured Names under ISO 9541 Part 2</Name>
+        <Description>The organizational codes established under this coding systems constitute the
+            registered organizational identifiers recognised under ISO 9541-2. That standard
+            effectively establishes agreements under which, as allowed by clauses 5.1 and 5.3 of ISO
+            6523, both the ICD and the organization name are generally omitted, from the SIO, and
+            thus only the organization code portion of the SIO is interchanged. Issuing agency:
+            Association for Font Information Interchange: AFII, 2961 Copa de Oro, Los Alamites,
+            California 90720, USA, Tel: 1 213 333 4642, Fax: 1 213 333 4664</Description>
+    </Code>
+    <Code>
+        <Id>0011</Id>
+        <Name>International Code Designator for the Identification of OSI-based, Amateur Radio
+            Organizations, Network Objects and Application Services.</Name>
+        <Description>Specific object and attribute naming conventions are currently being defined.
+            Issuing agency: The Radio Amateur Telecommunications Society, 206 North Vivyen Street,
+            Bergenfield, New Jersey 07621, Tel: 201-387-8896</Description>
+    </Code>
+    <Code>
+        <Id>0012</Id>
+        <Name>European Computer Manufacturers Association: ECMA</Name>
+        <Description>None Issuing agency: European Computer Manufacturers Association, rue du Rhone
+            114, 1204 Geneva, SWITZERLAND Tel: 41 22 735 36 34, Tlx 22288 ECMA CH</Description>
+    </Code>
+    <Code>
+        <Id>0013</Id>
+        <Name>VSA FTP CODE (FTP = File Transfer Protocol)</Name>
+        <Description>The code serves the addressing between the communicating partners Issuing
+            agency: Verband der Automobilindustrie e.V. Westendstrasse 61, 6000 Frankfurt/M.1,
+            GERMANY, Tel: 0 69 75 702 81, Tlx: 411293</Description>
+    </Code>
+    <Code>
+        <Id>0014</Id>
+        <Name>NIST/OSI Implememts' Workshop</Name>
+        <Description>The ICD code forms the initial part of the Workshop naming and addressing tree.
+            Issuing agency: United States Department of Commerce, National Institute of Standards
+            and Technology, Gaithersburg, Maryland 20899, USA, Tel: 301 975 2833, Tlx:
+            197674</Description>
+    </Code>
+    <Code>
+        <Id>0015</Id>
+        <Name>Electronic Data Interchange: EDI</Name>
+        <Description>Details not received yet Issuing agency: Avon Rubber p.l.c. Bath Road,
+            Melksham, Wiltshire, SN12 8AA, Tel: 0225 703101, Fax: 0225 707880</Description>
+    </Code>
+    <Code>
+        <Id>0016</Id>
+        <Name>EWOS Object Identifiers</Name>
+        <Description>a) In the SIO the Organization Name will normally be omitted, b) The code is
+            primarily intended for the registration of Objects Identifiers according to ISO 8824:
+            Level 1: iso (1), Level 2: identified-organization (3), Level 3: ewos (0016), Level 4:
+            and higher: (defined by EWOS conventions) Issuing agency: EWOS (European Workshop for
+            Open Systems), Rue de Stassart 36, B-1050 Brussels, BELGIUM, Tel: 32 2 511 7455, Fax: 32
+            2 511 8723</Description>
+    </Code>
+    <Code>
+        <Id>0017</Id>
+        <Name>COMMON LANGUAGE</Name>
+        <Description>Codes for named populated places, geographic places, geopolitical places,
+            outlaying areas, and other related entities of the state of the United States, provinces
+            and territories of Canada, countries of the world, and other, unique areas. Also for the
+            identification of organizations, places, equipment and governmental entities by the
+            telecommunication industry. Issuing agency: Data Communications Technology Planning,
+            Telcordia, Room 1F-359, 331 Newman Springs Road, P O Box 7020, Red Bank, NJ 07701-7020,
+            USA, Tel: 1 201 758 2198, Fax: 1 201 530 6875</Description>
+    </Code>
+    <Code>
+        <Id>0018</Id>
+        <Name>SNA/OSI Network</Name>
+        <Description>The ICD code will also form the initial part of the OSI Network addressing and
+            naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: International
+            Business Machines Corporation: IBM, IBM Bldg. 678, 1001 Winstead Drive, Cary, NC 27513,
+            USA, Tel: 1 919 301 4004</Description>
+    </Code>
+    <Code>
+        <Id>0019</Id>
+        <Name>Air Transport Industry Services Communications Network</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing and naming
+            tree as depicted in Addendum 2 to ISO 8348. Issuing agency: International Air Transport
+            Association, IATA Centre, Route de l'Aeroport 33, P.O.Box 672, CH-1215 Geneva 15
+            Airport, Switzerland</Description>
+    </Code>
+    <Code>
+        <Id>0020</Id>
+        <Name>European Laboratory for Particle Physics: CERN</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing and naming
+            tree as depicted in Addendum 2 of ISO 8348. Issuing agency: European Laboratory for
+            Particle Physics, CERN, 1211 Geneva 23, Switzerland. Tel: 41 22 767 6111, Fax: 41 22 767
+            7155</Description>
+    </Code>
+    <Code>
+        <Id>0021</Id>
+        <Name>SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T.</Name>
+        <Description>To be used for assignment of object identifiers (ISO 8824/8825) Issuing agency:
+            SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T. Avenue Adele,1,
+            B - 1310 La Hulpe, BELGIUM, Tel: +32 2 6553111, Fax: +32 2 6553226</Description>
+    </Code>
+    <Code>
+        <Id>0022</Id>
+        <Name>OSF Distributed Computing Object Identification</Name>
+        <Description>OSF provides public domain software in OS, ISO networking and management. The
+            initial use of the coding system are for identifying the following objects in OSF's
+            distributed computing environment: the attributes of entries in the distributed
+            directory, the object class of each entry in the directory, the type of name components
+            (RDNs), the communication protocol profiles, the interfaces offered by Issuing agency:
+            Open Software Foundation, 11 Cambridge Center, Cambridge, MA 02142, USA, Tel: 617 621
+            8700, Fax: 617 621 0631</Description>
+    </Code>
+    <Code>
+        <Id>0023</Id>
+        <Name>Nordic University and Research Network: NORDUnet</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing and tree as
+            depicted in Addendum 2 of ISO 8348. Issuing agency: NORDUnet, c/o SICS, P O Box 1263,
+            S-16428 KISTA, Sweden, Tel. +46 8 7521563, Fax. +46 8 7517230</Description>
+    </Code>
+    <Code>
+        <Id>0024</Id>
+        <Name>Digital Equipment Corporation: DEC</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing as described
+            in ISO8348 Addendum 2. Issuing agency: Digital Equipment (Europe) S.A.R.L. B.P. 129 -
+            Sophia Antipolis, 06561 Valbonne Cedex, France, Tel: 33 92 95 51 11, Fax: 33 93 65 34
+            24</Description>
+    </Code>
+    <Code>
+        <Id>0025</Id>
+        <Name>OSI ASIA-OCEANIA WORKSHOP</Name>
+        <Description>The code is used as an element of object identifiers which need to be assigned
+            relating the ISPs (International Standardized Profiles) that AOW is working on. Issuing
+            agency: OSI ASIA-OCEANIA WORKSHOP, c/o Interoperability Technology Association for
+            Information Processing, Japan, Sumito Gaien Bldg. 3F, 24 Daikyo-cho, Shinjuku-ku, Tokyo
+            160, JAPAN, Tel: +81-3-3358-2721, Fax: +81-3-3358-4753</Description>
+    </Code>
+    <Code>
+        <Id>0026</Id>
+        <Name>NATO ISO 6523 ICDE coding scheme</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing and naming
+            tree depicted in Addendum 2 of ISO 8348 Issuing agency: North Atlantic Treaty
+            Organisation (NATO), NATO HQ, Bvd Leopold III, B - 1110 Brussels, Belgium, Attention: Mr
+            S Seiffert, DS/ICP Section, (TSGCEE SG/9 Secretary), Tel: 010 32 2 728 4632, Fax: 010 32
+            2 728 4103</Description>
+    </Code>
+    <Code>
+        <Id>0027</Id>
+        <Name>Aeronautical Telecommunications Network (ATN)</Name>
+        <Description>The ICD code forms the initial part of the ISO network addressing and naming
+            tree as depicted in Addendum No 2 to ISO 8348 Issuing agency: International Civil
+            Aviation Organization (ICAO), Communications Section, Air Navigation Bureau, 1000
+            Sherbrooke Street West, Montreal, Quebec H3A 2R2, CANADA</Description>
+    </Code>
+    <Code>
+        <Id>0028</Id>
+        <Name>International Standard ISO 6523</Name>
+        <Description>None Issuing agency: Styria Federn GmbH, Postfach 101, A-8750 Judenburg,
+            AUSTRIA</Description>
+    </Code>
+    <Code>
+        <Id>0029</Id>
+        <Name>The All-Union Classifier of Enterprises and Organisations</Name>
+        <Description>None Issuing agency: General Computing Centre of the State, Committee of the
+            USSR on Statistics, 44 Izmailovskoye Chosse, Moscow 105679, U S S R</Description>
+    </Code>
+    <Code>
+        <Id>0030</Id>
+        <Name>AT&amp;T/OSI Network</Name>
+        <Description>The ICD code will also form the Initial Domain Part of the OSI network,
+            addressing and naming tree as specified in Addendum 2 to ISO 8348. Issuing agency:
+            AT&amp;T, Standards and Regulatory Support, Room 5A256, Route 202-206N, Bedminster, NJ
+            07921, UNITED STATES OF AMERICA</Description>
+    </Code>
+    <Code>
+        <Id>0031</Id>
+        <Name>EDI Partner Identification Code</Name>
+        <Description>To identify EDI partners Issuing agency: Odette NL, Europaplein 2, 1078 GZ
+            AMSTERDAM, Tel: 020 - 5491212, Fax: 020 - 6463857</Description>
+    </Code>
+    <Code>
+        <Id>0032</Id>
+        <Name>Telecom Australia</Name>
+        <Description>The code is used as an element of Object Identifier when defining objects
+            within Telecom Australia. In addition the code shall be used as an element of NSAP
+            addressing. Issuing agency: Australia Telecommunications Corporation, Forward Network
+            Planning Unit, 11/172 Williams Street, Melbourne, AUSTRALIA 3000, Tel: 613 634 7878,
+            Fax: 613 670 2562</Description>
+    </Code>
+    <Code>
+        <Id>0033</Id>
+        <Name>S G W OSI Internetwork</Name>
+        <Description>Exclusive use by S G W Issuing agency: S G Warburg Group Management Ltd, 1
+            Finsbury Avenue, LONDON, EC2M 2PA, Tel: 071 606 1066, Fax: 071 382 4800</Description>
+    </Code>
+    <Code>
+        <Id>0034</Id>
+        <Name>Reuter Open Address Standard</Name>
+        <Description>To be used in the formation of OSI Network Service Access Point (NSAP)
+            addresses Issuing agency: Reuters Ltd, 85 Fleet Street, LONDON, EC4P 4AJ, Tel: 071 250
+            1122, Tlx: 23222</Description>
+    </Code>
+    <Code>
+        <Id>0035</Id>
+        <Name>ISO 6523 - ICD</Name>
+        <Description>This code will be used internationally by BP thus a non-geographic code is
+            requested. Issuing agency: The British Petroleum Co Plc, Britannic House, 1 Finsbury
+            Circus, LONDON, EC2M 7BU, Tel: 071 496 4054, Fax: 071 496 4540, Tlx:
+            888811</Description>
+    </Code>
+    <Code>
+        <Id>0036</Id>
+        <Name>TeleTrust Object Identifiers</Name>
+        <Description>a) In the SIO the Organization name will normally be omitted. b) The code is
+            primarily intended for the registration of Object Identifiers for security related
+            objects according to ISO/IEC 8824, Level 1: iso(1), Level 2: identified-organization(3),
+            Level 3: teletrust(0036), Level 4 and higher: (defined by TeleTrust conventions) Issuing
+            agency: TeleTrust Deutschland e.V. c/o GMD, Dolivostrasse 15, D-6100 Darmstadt, GERMANY,
+            Tel: 49 6151 869 700, Fax: 49 6151 869 785</Description>
+    </Code>
+    <Code>
+        <Id>0037</Id>
+        <Name>LY-tunnus</Name>
+        <Description>It is possible to add 0-4 characters set to the code for more detailed use of
+            one organization. Characters are digits or capital letter. Issuing agency: National
+            Board of Taxes, (Verohallitus), Haapanimenk 7-9B, SF-00530 Helsinki, FINLAND Tel: 010
+            3580 39621, Fax: 010 3580 39624247</Description>
+    </Code>
+    <Code>
+        <Id>0038</Id>
+        <Name>The Australian GOSIP Network</Name>
+        <Description>As noted above it will be used as the initial identifier of an NSAP coding
+            scheme. Issuing agency: Standards Australia, 80 Arthur Street, P O Box 458, North
+            Sydney, NSW 2059, AUSTRALIA, Tel: 010 612 963 4111, Fax: 010 612 959 3896</Description>
+    </Code>
+    <Code>
+        <Id>0039</Id>
+        <Name>The OZ DOD OSI Network</Name>
+        <Description>The ICD code forms the initial part of the OSI naming and addressing, tree as
+            depicted in ISO 8348/Add 2 standard. Format of the tree is described in the Australian
+            GOSIP Manuals and used globally. Issuing agency: The Australian Department of Defence,
+            Communications and Information Branch, Russell Offices (B-3-25), P O Box E33, Queen
+            Victoria Terrace, Canberra, ACT 2600, AUSTRALIA, Tel: 010 616 265 3730, Fax: 010 616 265
+            3601</Description>
+    </Code>
+    <Code>
+        <Id>0040</Id>
+        <Name>Unilever Group Companies</Name>
+        <Description>To be used in data communications to form part of the Network Address as
+            defined in ISO 8348. The ISO 6523, ICD IDI format with Binary syntax will be used.
+            Issuing agency: Information Technology Group, Unilever Plc, Unilevr House, P O Box 68,
+            LONDON, EC4P 4BQ, Tel: 071 822 6763, Fax: 071 822 5996</Description>
+    </Code>
+    <Code>
+        <Id>0041</Id>
+        <Name>Citicorp Global Information Network</Name>
+        <Description>The ICD code will also form the initial part of the Citicorp Network addressing
+            object identifier tree and naming tree as depicted in Addendum 2 to ISO 8348 Issuing
+            agency: Citicorp Global Information Network, One Court Square, 48th floor, Long Island
+            City, NY 11120, USA, Tel: 1 718 248 2990, Fax: 1 718 248 2767</Description>
+    </Code>
+    <Code>
+        <Id>0042</Id>
+        <Name>DBP Telekom Object Identifiers</Name>
+        <Description>1) The ICD is primarily intended for the registration of Object Identifiers,
+            according to ISO 8824/8825 (ANS.1) to be used for the identification resp. registration
+            of: - application layer protocols, - file &amp; document formats, - information objects,
+            - local/remote procedures. The OID structure and the inclusion of the ICD therein is
+            given below: level 1: iso(1), level 2: identifiedOrganisation(3), level 3 (ICD):
+            dbpt(0042), level 4 to n: (defined by Telekom) Issuing agency: DBP Telekom, Product
+            Development Telesec, P.O. Box 10 00 20, D - 5900 Siegen, GERMANY, Tel: +49 271 708 1600,
+            Fax: +49 271 21 835</Description>
+    </Code>
+    <Code>
+        <Id>0043</Id>
+        <Name>HydroNETT</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing as depicted
+            in ISO 8348/AD2. Issuing agency: Norsk Hydro a.s. Att. Nils Hoeg, Corporate Staff
+            Information Systems, Drammensveien 264, Vaekero, Oslo, P. O. Box 200, N-1321 Stabekk,
+            Norway, Tel: +47 2 73 81 00, Fax: +47 2 73 97 87, Tlx: 72948 hydro N</Description>
+    </Code>
+    <Code>
+        <Id>0044</Id>
+        <Name>Thai Industrial Standards Institute (TISI)</Name>
+        <Description>The ICD code forms the initial part of international addressing for Thailand.
+            Issuing agency: Thai Industrial Standards Institute (TISI), Rama VI Street, Bangkok
+            10400, THAILAND TEL: +66 2 245 78 02, FAX: +66 2 247 87 41</Description>
+    </Code>
+    <Code>
+        <Id>0045</Id>
+        <Name>ICI Company Identification System</Name>
+        <Description>The ICD code will be used to manage NSAP allocation for all ICI companies on a
+            worldwide basis. The organisation code is used Worldwide by ICI application systems to
+            identify ICI registered companies in machine to machine communications. Issuing agency:
+            ICI PLC, Millbank, London, SW1P 3JF, Tel: 071 834 4444, Fax: 071 834 2042</Description>
+    </Code>
+    <Code>
+        <Id>0046</Id>
+        <Name>FUNLOC</Name>
+        <Description>Current applications are Philips accounting and logistic systems; new
+            application is the identification of objects in the open network environment according
+            to ISO 8824 which starts with a party identification Issuing agency: Royal Philips
+            Electronics N.V. Corporate Information Technology, building VP-1, Groenewoudseweg 1, P O
+            Box 218, 5600 MD Eindhoven, The Netherlands, Tel: +31 40 27 83008, Fax: +31 40 27
+            80080</Description>
+    </Code>
+    <Code>
+        <Id>0047</Id>
+        <Name>BULL ODI/DSA/UNIX Network</Name>
+        <Description>To be used in data communications to form part of the network address. The ISO
+            6523 ICD IDI format with binary syntax will be used. Issuing agency: BULL S.A. DTBG,20
+            Rue Dleumegaie, FRANCE 93406 Saint-Ouen, Tel: +33 (1) 49 45 51 40, Fax: +33 (1) 49 45 53
+            36</Description>
+    </Code>
+    <Code>
+        <Id>0048</Id>
+        <Name>OSINZ</Name>
+        <Description>ISO 6523 ICD IDI format with binary syntax will be used Issuing agency: OSINZ,
+            (Open Systems Interconnection of New Zealand Inc.), c/- P O Box 5356, Wellesley Street,
+            Auckland New Zealand Tel: Fax</Description>
+    </Code>
+    <Code>
+        <Id>0049</Id>
+        <Name>Auckland Area Health</Name>
+        <Description>ISO 6523 ICD IDI format with binary syntax will be used Issuing agency:
+            Auckland Area Health Board, Information Systems, Greenlane/National Women's Hospital,
+            Greenlane West, Auckland 3, New Zealand Tel: Fax</Description>
+    </Code>
+    <Code>
+        <Id>0050</Id>
+        <Name>Firmenich</Name>
+        <Description>Interconnect the plants by an OSI network essentially over X.25 carrier Issuing
+            agency: Firmenich S A, 7, rue de la Bergere, CH-1217 Meyrin 2, GENEVA, Switzerland Tel:
+            ++41 22 780 2211, Contact: Marc Gaudar</Description>
+    </Code>
+    <Code>
+        <Id>0051</Id>
+        <Name>AGFA-DIS</Name>
+        <Description>Medical Communication Issuing agency: AGFA N.V. Septestraat 27, 2640 Mortsel,
+            BELGIUM, Tel: + 32 3 4442111, Fax: + 32 3 4447094</Description>
+    </Code>
+    <Code>
+        <Id>0052</Id>
+        <Name>Society of Motion Picture and Television Engineers (SMPTE)</Name>
+        <Description>The ICD code will also be used to identify SMPTE constituent organizations
+            (committees, working groups, task forces, etc./), and the objects they, define. The ICD
+            code will also form the Initial Domain Part of the OSI network addressing and naming
+            tree as specified in Addendum 2 tot ISO 8348 Issuing agency: Society of Motion Picture
+            and Television Engineers (SMPTE), 595 W. Hartadae Ave. White Plains, NY 10607, USA, Tel:
+            +1 914 761 11 00, Fax: +1 914 761 31 15</Description>
+    </Code>
+    <Code>
+        <Id>0053</Id>
+        <Name>Migros_Network M_NETOPZ</Name>
+        <Description>NONE Issuing agency: Migros-Genossenschafts-Bund, Administration KIM-TEKO HH17,
+            Limmatstrasse 152, 8031 ZURICH, Tel: Fax</Description>
+    </Code>
+    <Code>
+        <Id>0054</Id>
+        <Name>ISO6523 - ICDPCR</Name>
+        <Description>This code could be used internationally by Pfizer thus a non-geographic code is
+            required. The code forms the initial part of the OSI network addressing and naming tree
+            depicted in Addendum 2 of ISO 8348. Issuing agency: Pfizer Central Research, Ramsgate
+            Road, Sandwich, Kent, CT13 9NJ, Tel: 0304 616223, Fax</Description>
+    </Code>
+    <Code>
+        <Id>0055</Id>
+        <Name>Energy Net</Name>
+        <Description>None Issuing agency: ABB Asea Brown Boveri Ltd, Affolterstrasse 44, 8050
+            Zurich, Correspondence Address: ABB Informatik AG, C. Falbriad, TEC1.N, Haselstrasse,
+            CH-5401 Baden, Tel: + 41 56 75 26 77, Fax: + 41 56 75 21 21</Description>
+    </Code>
+    <Code>
+        <Id>0056</Id>
+        <Name>Nokia Object Identifiers (NOI)</Name>
+        <Description>a) In the SIO the organization name will normally be omitted, b) The code is
+            primarily intended for the registration of Object Identifiers according to ISO/IEC 8824:
+            Level 1:iso(1), Level 2:identified-organization(3), Level 3:nokia(xxxx), Level 4 and
+            higher:defined by Nokia conventions Issuing agency: Nokia Corporation Tel: + 358 0
+            43761, Research Centre Fax: + 358 0 4376227, P.O.Box 156, SF-02101 Espoo,
+            FINLAND</Description>
+    </Code>
+    <Code>
+        <Id>0057</Id>
+        <Name>Saint Gobain</Name>
+        <Description>To be used for assignment of: N.E.T (ISO 8348/Add 2), A.E.T (FTAM, X.400 Psaps,
+            and so on), and object identification (ISO 8824/8825) Issuing agency: Saint Gobain, Les
+            Miroirs, 18, avenue d'Alsace, 92096 PARIS La Defense Cedex 27, Monsieur Jean Dorleans,
+            Tel: 33 1 47 62 36 05, Fax: 33 1 47 62 50 64</Description>
+    </Code>
+    <Code>
+        <Id>0058</Id>
+        <Name>Siemens Corporate Network</Name>
+        <Description>The ICD code will form the initial part of the OSI Network addressing and
+            naming tree as depicted in Addendum 2 to ISO 8348 (Network layer addressing). These
+            addresses will uniquely identify systems within SCN and to the outside world. Issuing
+            agency: Siemens AG,RI SCN, St Martin-Str. 76, W-8000 Muenchen 90, Germany, Tel: +49 89
+            4133 2565, Fax: +49 89 4133 1984</Description>
+    </Code>
+    <Code>
+        <Id>0059</Id>
+        <Name>DANZNET</Name>
+        <Description>NONE Issuing agency: DANZAS AG, Head Office, Switzerland 4051 Basel, Attn
+            Schutz Bertrand</Description>
+    </Code>
+    <Code>
+        <Id>0060</Id>
+        <Name>Data Universal Numbering System (D-U-N-S Number)</Name>
+        <Description>The D-U-N-S Number originated to facilitate the compilation of financial status
+            reports on those involved in business transactions but it is now widely used for other
+            purposes also. The number has world wide recognition as a means of identifying
+            businesses and institutions. Issuing agency: Dun and Bradstreet Ltd, Holmers Farm Way,
+            High Wycombe, 1 Bucks, HP12 4UL</Description>
+    </Code>
+    <Code>
+        <Id>0061</Id>
+        <Name>SOFFEX OSI</Name>
+        <Description>This code is to assist in uniquely identifying data network node addresses in
+            an international supporting network for financial applications. This supporting network
+            may have operational interfaces to other (private) data networks. Issuing agency: SOFFEX
+            Swiss Options and Financial Futures Exchange AG. Neumattstrasse 7, CH-8953 Dietikon,
+            Switzerland</Description>
+    </Code>
+    <Code>
+        <Id>0062</Id>
+        <Name>KPN OVN</Name>
+        <Description>This code is used in the VTOA network of KPN OVN. Issuing agency: Koninklijke
+            KPN, Operator Vaste net BBT/IP, P O Box 30000, 2500 GA'sGravenhage, The Netherlands,
+            Contact: G L J Kloos, Tel: +31 70 343 4762, Fax: +31 70 371 3569, E-mail:
+            g.l.j.kloos@kpn.com</Description>
+    </Code>
+    <Code>
+        <Id>0063</Id>
+        <Name>ascomOSINet</Name>
+        <Description>- Issuing agency: Ascom AG, Belpstrasse 37, CH-3000 Bern, Switzerland Fax: +41
+            55 41 63 85, Tel: +41 55 41 60 04</Description>
+    </Code>
+    <Code>
+        <Id>0064</Id>
+        <Name>UTC: Uniforme Transport Code</Name>
+        <Description>The code identifies an individual transport or handling unit (e.g. pallet,
+            parcel) for reasons of tracing or tracing. The unit may have an international
+            destination. Issuing agency: Foundation UTC, P.O.Box 82118, 2508 EC The Hague, The
+            Netherlands, Tel: + 31 70 35 10 777, Fax: + 31 70 35 12 025</Description>
+    </Code>
+    <Code>
+        <Id>0065</Id>
+        <Name>SOLVAY OSI CODING</Name>
+        <Description>Whenever possible, ISO 8348 addresses using this code will comply with FIPS PUB
+            146, with an End System ID of exactly 4 octets, so that the DSP can also conform to ECMA
+            117 where ECMA's subnet-address maps onto FIPS's Subnet ID concatenated with the End
+            System ID. Issuing agency: Direction Centrale Technique (Informatique Scientifique),
+            SOLVAY S.A, Rue de Ransbeek 310, B-1120 Bruxelles</Description>
+    </Code>
+    <Code>
+        <Id>0066</Id>
+        <Name>Roche Corporate Network</Name>
+        <Description>Will be used internationaly by Roche thus a non-geographic code is required.
+            Issuing agency: F. HOFFMANN - LA ROCHE AG, Grenzacherstasse 124, CH-4002 BASEL,
+            Switzerland</Description>
+    </Code>
+    <Code>
+        <Id>0067</Id>
+        <Name>ZellwegerOSINet</Name>
+        <Description>BAKOM - Switzerland Issuing agency: Zellweger Uster AG, Wilstrasse 11, CH-8610
+            USTER, Switzerland Tel: + 41 1 943 2608, Fax: + 41 1 943 3815</Description>
+    </Code>
+    <Code>
+        <Id>0068</Id>
+        <Name>Intel Corporation OSI</Name>
+        <Description>The ICD code will be used to form the Initial Domain Identifier (IDI) portion
+            of the Initial Domain Part (IDP) as described in ISO 8348 Addendum 2 for OSI NSAP
+            addressing. Issuing agency: Intel Corporation, 1900 Prairie City Road, Folsom, Ca.
+            95630, USA</Description>
+    </Code>
+    <Code>
+        <Id>0069</Id>
+        <Name>SITA Object Identifier Tree</Name>
+        <Description>SITA intends to use its OID Tree to define its own Objects for use with its
+            OSI-based services (e.g. MHS &amp; OSI Management) Issuing agency: SITA, 112 Avenue
+            Charles de Gaulle, 92522 NEUILLY-SUR-SEINE CEDEX, France</Description>
+    </Code>
+    <Code>
+        <Id>0070</Id>
+        <Name>DaimlerChrysler Corporate Network</Name>
+        <Description>The ICD code will form the initial part of the OSI Network addressing and
+            naming free as depicted in Addendum 2 to ISO 8348 (Network Layer addressing). These
+            addresses will uniquely identify systems within DBCN and to the outside world. Issuing
+            agency: DaimlerChrysler AG, TOS/L, 010 M406, Emil0Kessler Strasse 4, 70546 Stuttgart,
+            GERMANY</Description>
+    </Code>
+    <Code>
+        <Id>0071</Id>
+        <Name>LEGO /OSI NETWORK</Name>
+        <Description>The ICD code will also form the Initial Domain Part of the OSI network
+            addressing and naming tree as specified in addendum 2 to ISO 8348. Issuing agency: LEGO
+            Systems Inc, 555 Taylor Road, Enfield, Conneticut 06082, USA, Tel: (203) 749 2291, Fax:
+            (203) 763 6681</Description>
+    </Code>
+    <Code>
+        <Id>0072</Id>
+        <Name>NAVISTAR/OSI Network</Name>
+        <Description>The ICD code will also form the Initial Domain Part of the OSI Network
+            addressing and naming tree as specified in Addendum 2 to ISO 8348. Issuing agency:
+            International Truck &amp; Engine Corp, 4201 Winfield Road, Warrenville, Illinois 60555,
+            USA, Attention: Kosit Manaspiti, Tel: 630 753 5517, Fax: 630 753 6710, e-mail:
+            kosit.manaspiti@nav-international.com</Description>
+    </Code>
+    <Code>
+        <Id>0073</Id>
+        <Name>ICD Formatted ATM address</Name>
+        <Description>Used as an ATM address prefix by, 1) Newbridge ATM terminal equipment: a) when
+            performing user - network address registration, b) transparently initiating signalled
+            ATM connections on behalf of other non-ATM (LAN) devices, c) directly initiating
+            signalled ATM connections, 2) Newbridge ATM switching equipment used to: a) perform
+            network - user address registration, b) perform routing of Switched Virtual Connections
+            across a private ATM cell switching network Issuing agency: Newbridge Networks
+            Corporation, 600 March Road, P O Box 13600, Kanata, Ontario, CANADA, K2K
+            2E6</Description>
+    </Code>
+    <Code>
+        <Id>0074</Id>
+        <Name>ARINC</Name>
+        <Description>ARINC will define its own Objects for use with its OSI-based systems and
+            services. ARINC will also define Objects for use within the Aeronautical industry.
+            Issuing agency: ARINC Incorporated, 2551 Riva Road, Annapolis, MD 21401-7465, USA, Tel:
+            + 410 266 4000, Fax: + 410 266 4040</Description>
+    </Code>
+    <Code>
+        <Id>0075</Id>
+        <Name>Alcanet/Alcatel-Alsthom Corporate Network</Name>
+        <Description>The ICD code forms the initial part of the OSI network addressing scheme as
+            depicted in Addendum 2 of ISO 8384 Issuing agency: Alcatel Network Services Deutschland
+            GmbH, Motostr. 25, D - 70499 Stuttgart, GERMANY, Technical Contact: Thomas Galuschka,
+            Tel: + 49 711 821 2367, Fax: + 49 711 821 4793</Description>
+    </Code>
+    <Code>
+        <Id>0076</Id>
+        <Name>Sistema Italiano di Identificazione di ogetti gestito da UNINFO</Name>
+        <Description>To be used for assignments of object identifiers according to ISO 8824 and ISO
+            8825 Issuing agency: UNINFO, Ente di Normazione Federato all'UNI, C.so Galileo Ferraris
+            93, 10128 Torino, ITALY, Tel: + 3911 501 027, Fax: + 3911 501 837</Description>
+    </Code>
+    <Code>
+        <Id>0077</Id>
+        <Name>Sistema Italiano di Indirizzamento di Reti OSI Gestito da UNINFO</Name>
+        <Description>The ICD code forms the initial part of the OSI network Addressing and naming
+            tree depicted in Addendum 2 of ISO 8348. Issuing agency: UNINFO, Ente di Normazione
+            Federato all'UNI, C.so Galileo Ferraris, 93, 10128 Torino, ITALY</Description>
+    </Code>
+    <Code>
+        <Id>0078</Id>
+        <Name>Mitel terminal or switching equipment</Name>
+        <Description>The ICD code will form the initial part of the naming tree for: 1 - Private
+            Integrated Services Network manufacturer-specific information as the Organization
+            identifier forming the initial part of the OBJECT IDENTIFIER tree. 2 - OSI Application
+            Layer such as CSTA (ECMA 179). Issuing agency: Mitel Corporation, 350 Legget Drive, P O
+            Box 13089, Kanata ON K2K 1X3, Canada, Attn: Mr Francois Audet</Description>
+    </Code>
+    <Code>
+        <Id>0079</Id>
+        <Name>ATM Forum</Name>
+        <Description>The ICD code will also form part of the Initial Domain Part of the OSI network
+            addressing as specified in Addendum 2 to ISO 8348 Issuing agency: The ATM Forum, 303
+            Vintage Park Drive, Foster City, CA 94404-1138, USA, Tel: +(415)-578-6860, Fax:
+            +(415)-525-0182</Description>
+    </Code>
+    <Code>
+        <Id>0080</Id>
+        <Name>UK National Health Service Scheme, (EDIRA compliant)</Name>
+        <Description>EDIRA recommendations for coding in EDIFACT and other EDI systems Issuing
+            agency: National Health Service, Information Management Center, 15 Frederick Road,
+            Birmingham, B15 1SD, Contact person: Mr Brian LOVE, Tel: +44 1454 261 551, Fax: +44 1454
+            261 581</Description>
+    </Code>
+    <Code>
+        <Id>0081</Id>
+        <Name>International NSAP</Name>
+        <Description>None Issuing agency: Federal Office for Communications, Zukunfstrasse 44,
+            POSTFACH, CH-2501 Biel, Switzerland Tel: +41 32 285 111, Fax: +41 32 285
+            528</Description>
+    </Code>
+    <Code>
+        <Id>0082</Id>
+        <Name>Norwegian Telecommunications Authority's, NTA'S, EDI, identifier scheme (EDIRA
+            compliant)</Name>
+        <Description>For use in EDIFACT messages in accordance with current national recommendation
+            on identification of EDI objects. (EDIRA compliant) Issuing agency: Norwegian
+            Telecommunications Authority, P O Box 447 Sentrum, N-0104 Oslo, NORWAY, Contact person:
+            Mr Knut Smaaland Tel: + 47 22 82 48 04, Fax: + 47 22 82 48 40</Description>
+    </Code>
+    <Code>
+        <Id>0083</Id>
+        <Name>Advanced Telecommunications Modules Limited, Corporate Network</Name>
+        <Description>The ICD code will also form part of the Initial Domain Part of the OSI network
+            addressing as specified in Addendum 2 to ISO 8348 Issuing agency: ATM Ltd, Mount
+            Pleasant House, Cambridge, CB3 0BL, ENGLAND</Description>
+    </Code>
+    <Code>
+        <Id>0084</Id>
+        <Name>Athens Chamber of Commerce &amp; Industry Scheme (EDIRA compliant)</Name>
+        <Description>EDIRA recommendations for coding in EDIFACT and other EDI syntaxes. Issuing
+            agency: Athens Chamber of Commerce &amp; Industry, Akadimias Street 7, GR 108 71 Athens,
+            Contact person: Mrs M Hliapa, Tel: +301 362-7911, Fax: +301-362-4643</Description>
+    </Code>
+    <Code>
+        <Id>0085</Id>
+        <Name>Swiss Chambers of Commerce Scheme (EDIRA) compliant</Name>
+        <Description>merical identifiers of organizations EDIRA recommendations for coding in
+            syntaxes used for e-commerce and egovernment, e.g. EDIFACT, ebXML Issuing agency: Zurich
+            Chamber of Commerce on behalf of Swiss Chambers, of Commerce, CH-8022 Zurich, Otto
+            Mueller, Phone: + 411 217 4050 Fax: + 411 217 4051, e-mail:
+            omueller@zurichcci.ch</Description>
+    </Code>
+    <Code>
+        <Id>0086</Id>
+        <Name>United States Council for International Business (USCIB) Scheme, (EDIRA
+            compliant)</Name>
+        <Description>EDIRA recommendations for coding in EDIFACT and other EDI syntaxes. Issuing
+            agency: United States Council for Internationa Business (USCIB), 1212 Avenue of the
+            Americas, USA New York, NY 10036, Contact person: Mr Peter ROBINSON, Tel: +1212 354
+            4851, Fax: +1212 575 0327</Description>
+    </Code>
+    <Code>
+        <Id>0087</Id>
+        <Name>National Federation of Chambers of Commerce &amp; Industry of Belgium, Scheme (EDIRA
+            compliant)</Name>
+        <Description>Issuing agency: National Federartion of Chambers of Commerce &amp; Industry of,
+            Belgium Avenue des Arts 1-2. B 10, BE 1040 Brussels, Contact person: Mr Michael
+            PEEREMAN, Tel: +322-217-3671, Fax: +322-217-4634</Description>
+    </Code>
+    <Code>
+        <Id>0088</Id>
+        <Name>EAN Location Code</Name>
+        <Description>Issuing agency: EAN International, rue Royale 29, B-1000 Brussels, Belgium,
+            Tel: +32.2.218.76.74, Fax: +32.2.218.75.85</Description>
+    </Code>
+    <Code>
+        <Id>0089</Id>
+        <Name>The Association of British Chambers of Commerce Ltd. Scheme, (EDIRA compliant)</Name>
+        <Description>Issuing agency: The Association of British Chambers of Commerce Ltd. 9, Tufton
+            Street, Westminster, LONDON, SW1P 3QB, Contact person: Mrs Elizabeth Boyd-Adams, Tel:
+            +44 71 222 1555, Fax: +44 71 799 2202, E-mail X400 G=Elizabeth, S=BoydAdams, O= ABCC,
+            A=BT, C=GB</Description>
+    </Code>
+    <Code>
+        <Id>0090</Id>
+        <Name>Internet IP addressing - ISO 6523 ICD encoding</Name>
+        <Description>Issuing agency: Internet Assigned Numbers Authority, c/o Joyce K. Reynolds, USC
+            - Information Sciences Institute, 4676 Admiralty Way, Marina del Rey, California
+            90292-6695, USA, E-mail: iana @ isi.edu, Phone: +1 310-822-1511</Description>
+    </Code>
+    <Code>
+        <Id>0091</Id>
+        <Name>Cisco Sysytems / OSI Network</Name>
+        <Description>Issuing agency: Cisco Systems, 170 W. Tasman Drive, San Jose, CA 95134, USA,
+            Phone + 1 408 526 4000, Fax + 1 408 426 4100</Description>
+    </Code>
+    <Code>
+        <Id>0093</Id>
+        <Name>Revenue Canada Business Number Registration (EDIRA compliant)</Name>
+        <Description>Issuing agency: Revenue Canada, 123 Slater Street, Ottawa, ON K1A OL8,
+            Signatory name, Roderick G. Quiney, Director-General, Contact address, 25 McArthur,
+            Tower C, 7th Floor, Ottawa, Ontario CANADA K1A OL8, Tel + 1 613 941 5007, Fax + 1 613
+            941</Description>
+    </Code>
+    <Code>
+        <Id>0094</Id>
+        <Name>DEUTSCHER INDUSTRIE- UND HANDELSTAG (DIHT) Scheme (EDIRA compliant)</Name>
+        <Description>Issuing agency: Deutscher Industrie -und Handelstag (DIHT), Adenauerallee 148,
+            D - 53113 Bonn, Contact person: Ute Quink-Ermst, Tel: + 49 228 104 102, Fax: + 49 228
+            104 158</Description>
+    </Code>
+    <Code>
+        <Id>0095</Id>
+        <Name>Hewlett - Packard Company Internal AM Network</Name>
+        <Description>Issuing agency: Hewlett - Packard Company, 3000 Hanover Street, Palo Alto CA
+            94304, USA, Phone +1 415 424 3600, Fax +1 415 424 3632</Description>
+    </Code>
+    <Code>
+        <Id>0096</Id>
+        <Name>DANISH CHAMBER OF COMMERCE Scheme (EDIRA compliant)</Name>
+        <Description>Issuing agency: Danish Chamber of Commerce, Boerson, DK 1217 Copenhagen,
+            Contact person: Mr Vagn JENSEN, Tel: + 45 33 95 05 00, Fax: + 45 33 32 52
+            16</Description>
+    </Code>
+    <Code>
+        <Id>0097</Id>
+        <Name>FTI - Ediforum Italia, (EDIRA compliant)</Name>
+        <Description>Issuing agency: FTI - Ediforum Italia, Viale Lazio, 21, 20135 Milano - ITALY,
+            Contact person: Mr Giorgio PACIFICI, Tel: + 39 2 545 61 20, Fax: + 39 2 551 35 44,
+            E-mail: FTI@mbox.cosi.it</Description>
+    </Code>
+    <Code>
+        <Id>0098</Id>
+        <Name>CHAMBER OF COMMERCE TEL AVIV-JAFFA Scheme (EDIRA compliant)</Name>
+        <Description>Issuing agency: Chamber of Commerce Tel Aviv-Jaffa, 84 Hahashmonaim Street, Tel
+            Aviv 67011, ISRAEL, Contact person: Mr Zvi AMIT, General Manager, Tel: +972 3 563 1010,
+            Fax: +972 3 561 9025</Description>
+    </Code>
+    <Code>
+        <Id>0099</Id>
+        <Name>Siemens Supervisory Systems Network</Name>
+        <Description>Issuing agency: Siemens AG, ON S, Ruppert-Mayer-Str. 44, D-81359 Munchen,
+            Germany, Tel: +49 89 722 23555, Fax: +49 89 722 26473</Description>
+    </Code>
+    <Code>
+        <Id>0100</Id>
+        <Name>PNG_ICD Scheme</Name>
+        <Description>Issuing agency: GPT Limited, Public Networks Group, New Century Park, P O Box
+            53, Coventry, CV3 1HJ, Tel. 01203-562-000. (Contact - 'Strategy/Customer Network
+            Services').</Description>
+    </Code>
+    <Code>
+        <Id>0101</Id>
+        <Name>South African Code Allocation</Name>
+        <Description>Issuing agency: Thawte Consulting, 33 Protea Way, Durbanville 7550, South
+            Africa</Description>
+    </Code>
+    <Code>
+        <Id>0102</Id>
+        <Name>HEAG</Name>
+        <Description>Issuing agency: Hessische Elektrizitats-AG, Jagertorstrasse 207, 64289
+            Darmstadt, Germany, Technical Contact : Peter Giesendorf Tel 049 6151 709 2528, Gerd
+            schmidt Tel 049 6151 709 2547, Andreas Prels Tel 049 6151 709 2529, Fax 049 6151 709
+            2420</Description>
+    </Code>
+    <Code>
+        <Id>0104</Id>
+        <Name>BT - ICD Coding System</Name>
+        <Description>Issuing agency: Tony Holmes, pp 9.4, 207 Old Street, London, EC1V 9NR, Tel: +44
+            171 250 6981</Description>
+    </Code>
+    <Code>
+        <Id>0105</Id>
+        <Name>Portuguese Chamber of Commerce and Industry Scheme (EDIRA compliant)</Name>
+        <Description>Issuing agency: Portuguese Chamber of Commerce and Industry, Rua das Portas de
+            Santo Antao, 89, PT 1194 Lisboa Codex, Contact person: Mr Antonio REGUENGOS, Tel: +351 1
+            342 4111, Fax: +351 1 342 4304, E-mail (X.400)
+            c=pt;a=marconisva;p=email400;0=acl-ccip;s=drc; 0u=drc</Description>
+    </Code>
+    <Code>
+        <Id>0106</Id>
+        <Name>Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of
+            Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)</Name>
+        <Description>Issuing agency: Vereniging van Kamers van Koophandel en Fabrieken in Nederland
+            Watermolenlaan, 1, NL 3447 GT Woeden, Contact person: Drs. G. C. KNOOP, Tel: +31 348 42
+            69 11, Fax: +31 348 42 12 31</Description>
+    </Code>
+    <Code>
+        <Id>0107</Id>
+        <Name>Association of Swedish Chambers of Commerce and Industry Scheme (EDIRA
+            compliant)</Name>
+        <Description>Issuing agency: Association of Swedish Chambers of Commerce and Industry, P O
+            Box 16050, SE 10321 Stockholm, Sweden, Contact person: Mr Tell HERMANSON, Tel: +46 8 613
+            1800, Fax: +46 8 411 2432, E-mail: stock@chamber.se</Description>
+    </Code>
+    <Code>
+        <Id>0108</Id>
+        <Name>Australian Chambers of Commerce and Industry Scheme (EDIRA compliant)</Name>
+        <Description>Issuing agency: Australian Chambers of Commerce and Industry, P O Box E 14,
+            Queen Victoria Terrace, AU Canberra ACT 2600, Australia, Contact person: Mr Brent DAVIS,
+            Tel: +61 6 273 23 11, Fax: +61 6 273 31 96</Description>
+    </Code>
+    <Code>
+        <Id>0109</Id>
+        <Name>BellSouth ICD AESA (ATM End System Address)</Name>
+        <Description>Issuing agency: BellSouth Corporation, 1155 Peachtree Street NE, Atlanta, GA
+            30309, Contact: Robert V. Epley, Tel: + 404-332-2216, Fax: + 404-420-8477</Description>
+    </Code>
+    <Code>
+        <Id>0110</Id>
+        <Name>Bell Atlantic</Name>
+        <Description>Issuing agency: Bell Atlantic, 1310 N. Courthouse Rd. 3rd Floor, Arlington, VA
+            22201, Tel: +703- 974-1510, Fax: +703-974-0616</Description>
+    </Code>
+    <Code>
+        <Id>0111</Id>
+        <Name>Object Identifiers</Name>
+        <Description>Issuing agency: Institute of Electrical and Electronics Engineers, PO Box 1331,
+            445 Hoes Lane, Piscataway, NJ 08855, USA</Description>
+    </Code>
+    <Code>
+        <Id>0112</Id>
+        <Name>ISO register for Standards producing Organizations</Name>
+        <Description>Issuing agency: International Organization for Standardization (ISO), 1 rue de
+            Varembe, Case Postale 56, CH 1211 Geneve 20, SWITZERLAND</Description>
+    </Code>
+    <Code>
+        <Id>0113</Id>
+        <Name>OriginNet</Name>
+        <Description>Issuing agency: Origin BV, Groenewoudse weg 1, 5621 BA Eindhoven, The
+            Netherlands, Tel: +31 4027 87295, Fax: +31 4027 89081</Description>
+    </Code>
+    <Code>
+        <Id>0114</Id>
+        <Name>Check Point Software Technologies</Name>
+        <Description>Issuing agency: Check Point Software Technologies Ltd, 3A Jabotinski st.
+            Diamond Tower, RamatGan 52520, ISRAEL, Tel: +972 3613 1833, Fax: +972 3575
+            9256</Description>
+    </Code>
+    <Code>
+        <Id>0115</Id>
+        <Name>Pacific Bell Data Communications Network</Name>
+        <Description>Issuing agency: Pacific Bell, Broadband Strategy and Engineering, 2600 Camino
+            Ramon, Room 1S200BB, San Ramon, CA 94583, USA, Phone: +510-823-3578, Fax:
+            +520-867-</Description>
+    </Code>
+    <Code>
+        <Id>0116</Id>
+        <Name>PSS Object Identifiers</Name>
+        <Description>Issuing agency: PSS (Postal Security Services), c/o Finland Post Ltd, Products,
+            Electronic Messaging, P.O. Box 702, FIN-00100 POSTI, FINLAND Tel: +358 204 511,
+            Fax:</Description>
+    </Code>
+    <Code>
+        <Id>0117</Id>
+        <Name>STENTOR-ICD CODING SYSTEM</Name>
+        <Description>Issuing agency: B. Sambasivan, Stentor Resource Centre Inc. Room 480, 160 Elgin
+            St. Ottowa, Ontario K1G 3JA, Canada, Tel.# + 1 613 781 7458 Fax.# + 1 613 781
+            6454</Description>
+    </Code>
+    <Code>
+        <Id>0118</Id>
+        <Name>ATM-Network ZN'96</Name>
+        <Description>Issuing agency: Deutsche Telekom AG, AM Kavalleriesand 3, 64295
+            Darmstadt</Description>
+    </Code>
+    <Code>
+        <Id>0119</Id>
+        <Name>MCI / OSI Network</Name>
+        <Description>Issuing agency: MCI Telecommunications Corporation, Technical Standards
+            Management, Dept. 1225/107, 2400 N. Glenville Dr. Richardson, TX 75082, USA, Phone
+            +1.972.918.5630, Fax +1.972.918.6038</Description>
+    </Code>
+    <Code>
+        <Id>0120</Id>
+        <Name>Advantis</Name>
+        <Description>Issuing agency: Advantis, Charles M. Reiss, 231 N. Martingdale Rd, Schaumbur,
+            Ill, USA, 60173- 2254, Phone: 847-240-8504, Fax: 847-240-3864</Description>
+    </Code>
+    <Code>
+        <Id>0121</Id>
+        <Name>Affable Software Data Interchange Codes</Name>
+        <Description>Issuing agency: Affable Software Corporation, 6239 Thome Avenue, Burnaby,
+            British Columbia, Canada- V3N 2V2, Contact: Eric Kolotyluk Tel: +1-604
+            522-1201</Description>
+    </Code>
+    <Code>
+        <Id>0122</Id>
+        <Name>BB-DATA GmbH</Name>
+        <Description>Issuing agency: BB-DATA GmbH, Brunnestrasse 11, 13355 Berlin, Germany, Contact:
+            Dirk Haegebarth, Tel: +49 30 2455 4353, Fax; +49 30 2455 7201</Description>
+    </Code>
+    <Code>
+        <Id>0123</Id>
+        <Name>BASF Company ATM-Network</Name>
+        <Description>Issuing agency: BASF Computer Services GmbH, Carl-Bosch-Str. 38, 67056
+            Ludwigshafen, Germany, (Contact: BCS/NET Tel. + 49621 60 49323)</Description>
+    </Code>
+    <Code>
+        <Id>0124</Id>
+        <Name>IOTA Identifiers for Organizations for Telecommunications Addressing using the ICD
+            system format defined in ISO/IEC 8348</Name>
+        <Description>Issuing agency: DISC, British Standards Institution, 389 Chiswick High Road,
+            London W4 4AL, UK</Description>
+    </Code>
+    <Code>
+        <Id>0125</Id>
+        <Name>Henkel Corporate Network (H-Net)</Name>
+        <Description>Issuing agency: Henkel KgaA, Dep: SIS/BC-Networks, 40191 Dusseldorf, Germany,
+            Contact: Christopher Heidler Uwe Wirtz, Tel: + 49 211 797 9400 Tel: +49 211 797 5500,
+            Fax: + 49 211 798 19400 Fax: +49 211 798 1110</Description>
+    </Code>
+    <Code>
+        <Id>0126</Id>
+        <Name>GTE/OSI Network</Name>
+        <Description>Issuing agency: GTE, Industry Standards, HQW02J85, 700 Hidden Ridge, Irving, TX
+            75038, USA, Phone: + 972 718 6291, Fax: + 972 718 4393</Description>
+    </Code>
+    <Code>
+        <Id>0127</Id>
+        <Name>Dresdner Bank Corporate Network</Name>
+        <Description>Issuing agency: Dresdner Bank AG, IT-Kommunikationssysteme, Windmuehlstr. 14,
+            60329 Frankfurt am Main, Germany, Contact: Peter Radig, Tel: + 49 69 263 7243, Fax: + 49
+            69 263 5510, Email: Peter.Radig@Dresdner-Bank.com</Description>
+    </Code>
+    <Code>
+        <Id>0128</Id>
+        <Name>BCNR (Swiss Clearing Bank Number)</Name>
+        <Description>Issuing agency: Telekurs AG, Hardturmstrasse 201, CH - 8021 Zurich, Switzerland
+            Tel +41.1.279.2111</Description>
+    </Code>
+    <Code>
+        <Id>0129</Id>
+        <Name>BPI (Swiss Business Partner Identification) code</Name>
+        <Description>Issuing agency: Telekurs AG, Hardturmstrasse 201, CH - 8021 Zurich, Switzerland
+            Tel +41.1.279.2111</Description>
+    </Code>
+    <Code>
+        <Id>0130</Id>
+        <Name>Directorates of the European Commission</Name>
+        <Description>Issuing agency: European Commission, Information Directorate, Data Transmission
+            Service, Rue de la Loi, 200, B-1049 Brussels, Belgium</Description>
+    </Code>
+    <Code>
+        <Id>0131</Id>
+        <Name>Code for the Identification of National Organizations</Name>
+        <Description>Issuing agency: China National Organization Code Registration Authority, Center
+            (CNRAC), No 46. East Door, Dewai Yu Zhong Xi Li, Xicheng District, Beijing, P.R. of
+            China, 100029, Tel. + 86 10 6202 4549, Fax. + 86 10 6202 4513</Description>
+    </Code>
+    <Code>
+        <Id>0132</Id>
+        <Name>Certicom Object Identifiers</Name>
+        <Description>Issuing agency: Certicom Corp, Suite 1050, 1400 Fashion Island Blvd, San Mateo,
+            CA 94404, U.S.A. Tel: 650 312 7960, Fax: 650 312 7969</Description>
+    </Code>
+    <Code>
+        <Id>0133</Id>
+        <Name>TC68 OID</Name>
+        <Description>Issuing agency: ISO TC68, Banking and Related Financial Services, c/o American
+            Bankers' Association, 1120 Connecticut Ave, N.W. Washington, DC 20036, USA, Tel: 1-
+            (202) 663 5284, Fax: 1- (202) 828 4540</Description>
+    </Code>
+    <Code>
+        <Id>0134</Id>
+        <Name>Infonet Services Corporation</Name>
+        <Description>Issuing agency: Infonet NV/SA, Av. Louise 350 Box 3, 1050 Brussels, Belgium,
+            Attn: Mr Mircea Pisica - Senior System Engineer, E-mail: Mircia_Pisica@infonet.com, Tel:
+            +322 627 3900, Fax: +322 646 1308</Description>
+    </Code>
+    <Code>
+        <Id>0135</Id>
+        <Name>SIA Object Identifiers</Name>
+        <Description>Issuing agency: SIA-Società Interbancaria per l'Automazione S.p.A. Viale
+            Certosa, 218, I-20156 Milano, ITALIA, Tel. +39-02-3005.1, Fax:
+            +39-02-38003333</Description>
+    </Code>
+    <Code>
+        <Id>0136</Id>
+        <Name>Cable &amp; Wireless Global ATM End-System Address Plan</Name>
+        <Description>Issuing agency: Cable &amp; Wireless Global Business Inc. 8230 Boon Boulevard,
+            Vienna, Virginia 22182, USA</Description>
+    </Code>
+    <Code>
+        <Id>0137</Id>
+        <Name>Global AESA scheme</Name>
+        <Description>nstruct and Administer AESAs, Routing of ATM switched connections Use to from
+            globally unique Global One ICD AESAs Issuing agency: Global One, Park Atrium, Rue des
+            Colonies, 11, B-1000 Brussels, Belgium, Tel + 322 545 2000 Fax + 322 545
+            2005</Description>
+    </Code>
+    <Code>
+        <Id>0138</Id>
+        <Name>France Telecom ATM End System Address Plan</Name>
+        <Description>e coding system will be used to provide ATM End System Addresses based on ICD
+            format NSAP addresses. These addresses will be used to uniquely identify User Network
+            Interfaces to ATM networks as specified by the ATM Forum UNI specifications. France
+            telecom will also use these addresses Internally and to provide worldwide customers with
+            non- Geographic private AESAs. These global addresses should be Reachable by non-France
+            Telecom ATM users via Interconnecting ATM carriers. The ICD Code will also form part of
+            the Initial Domain Part of the OSI network addressing as specified in Addendum 2 to ISO
+            8348 Issuing agency: France Telecom, BRX/DAP/AFC, 6 place d'Alleray, 75505 Paris Cedex
+            15, France, Tel + 331 4444 2775 Fax + 331 4444 2437, e-mail:
+            alain.bidron@francetelecom.fr</Description>
+    </Code>
+    <Code>
+        <Id>0139</Id>
+        <Name>Savvis Communications AESA:.</Name>
+        <Description>obal Addressing of Savvis ATM Switches and any direct customer ATM networks for
+            implementation of PNNI Used to form a globally unique Savvis ICD ATM End System Address
+            Issuing agency: Savvis Communications, Contact: Gary Rubel, 717 Office Parkway, St
+            Louis, MO 63141-7115, Tel: - +314-468-4104 (Direct), +314-468-7030 (Main), Fax: -
+            +314-468- 7050</Description>
+    </Code>
+    <Code>
+        <Id>0140</Id>
+        <Name>Toshiba Organizations, Partners, And Suppliers' (TOPAS) Code</Name>
+        <Description>e purpose of this coding system is to identify organizations world-wide that
+            have business or technical transactions with Toshiba Corporation in terms of ISO 13584
+            Parts Library standard based electronic catalogue interchange service. The interchange
+            is not limited to those between a member organization and Toshiba Corporation.
+            Interchanges between member organizations based on the organization identifier of this
+            coding system are also in scope. Reference to this organization identification code in
+            other business transactions is also allowed Reference to this organization identifier in
+            other business transactions is also possible provided the organizations concerned are
+            registered as members of the Issuing agency: Toshiba Corporation, 1-1 Shibaura, 1-Chome,
+            Minato-Ku, Tokyo, 105-8001, Japan. Request for a TOPAS Code, Attention to: TOPAS
+            Administration, Technology Planning, Division, Person Responsible: Dr. Akinobu Kasami,
+            Corporate Executive Vice President and Director, Contact Person for this application and
+            technical issues: Mr. Hiroshi Murayama, Human Interface Laboratory, Toshiba Corporate
+            Research and Development Centre, Address: 1, Komukai Toshiba-cho, Saiwai-ku,
+            Kawasaki-shi, 212-8582, Japan, Email: hiroshi.murayama@toshiba.co.jp, TEL :(+81)
+            44-549-2397 FAX: (+81) 44-520-1308</Description>
+    </Code>
+    <Code>
+        <Id>0141</Id>
+        <Name>NATO Commercial and Government Entity system</Name>
+        <Description>identify all Commercial and Governmental entities that provide material and/or
+            services to the Armed Forces of the NATO nations and several non-NATO nations
+            (Sponsored) around the world. This information is used by NATO and Sponsored nations'
+            Logisticians to identify Commercial and Government Entities they deal with. This
+            Information is used by all functions of Logistics support such as Acquisition, Sourcing,
+            EDI, Re-Provisioning, Material Management, etc. Determination of the real source for an
+            item of supply is one of the most important prerequisites for proper application of the
+            Uniform System of Item Identification within NATO. It is the source where documentation
+            will be obtained from and its location normally gives advice for codification
+            responsibility. Within the NATO Codification System the term Manufacturer covers the
+            whole range of possible sources of technical data for items entering the supply chains
+            or participating, countries. The primary use of manufacturers coding is in ADP
+            operations related to support management programs such as material management
+            codification, standardization, etc. Issuing agency: NATO Group of National Director on
+            Codification (AC/135), NATO Maintenance and Supply Agency, 11 Rue de la Gare, L-8302
+            Capellen, G. D. Luxembourg, Attn: Secretary to AC/145, LZ-C Programme</Description>
+    </Code>
+    <Code>
+        <Id>0142</Id>
+        <Name>SECETI Object Identifiers</Name>
+        <Description>e function as the 'Application Centre' for the Italian National Interbank
+            Network, having been authorized by the Bank of Italy, and the Italian Banking
+            Association to operate in that capacity. The scheme is intended for the registration of
+            object identifiers according to ISO 8824 and ISO 8825 The code is primarily intended for
+            the registration of Object Identifiers according to ISO 8824/8825, Level 1: ISO (),
+            Level 2: identified -organization (), Level 3: SECETI S.p.A. (), Level 4: and higher:
+            (defined by SECETI conventions), The contact person is Dr. Elvezio Montesarchio, e-mail:
+            elvezio.montesarchio@seceti.it Issuing agency: Servizi Centralizzati SECETI S.p.A. Via
+            Zurigo, 3-20147 Milano, ITALY, Tel: +39-02- 48310.1, Fax: +39-02-48310206</Description>
+    </Code>
+    <Code>
+        <Id>0143</Id>
+        <Name>EINESTEINet AG</Name>
+        <Description>itially the Network covers the geographical area of Germany with the intention
+            of expanding into all the European countries EINSTEINet's goal is to provide Application
+            Services using an ATM network to customers located throughout Europe. The need for the
+            international ATM address structure is to serve EINSTENet's customers with consistent
+            ATM addresses from end-to-end. Issuing agency: EINSTEINet AG, Ramskamt 71-75, 25337
+            Elmshorn, Germany, Contact: Jörg Peeck or Michael Wiesmann, Tel: + 49 4121 403 000,
+            Email: j.peeck@einstenet.de / m.wiesmeann@einsteinet.de</Description>
+    </Code>
+    <Code>
+        <Id>0144</Id>
+        <Name>DoDAAC (Department of Defense Activity Address Code)</Name>
+        <Description>code assigned to uniquely identify all military units in the United States
+            Department of Defense. None Issuing agency: DoD (Unites States Department of Defense),
+            Defense Logistics Management Standards Office, DLMSO (J-763), Suite 1834, 8725 John J.
+            Kingman Road, Fort Belvoir, VA 22060-6217, USA, Contact: Mr Jackie Carter, Tel: +1 703
+            767 0684 fax: +1 703 767 0161, e-mail: jackie_carter@dlmso.hq.dla.mil</Description>
+    </Code>
+    <Code>
+        <Id>0145</Id>
+        <Name>DGCP (Direction Générale de la Comptabilité Publique)administrative accounting
+            identification scheme</Name>
+        <Description>de assigned by the French public accounting office None Issuing agency: DGCP
+            (Direction Générale de la Comptabilité Publique), 139 Rue de Bercy, 75572 Paris Cedex
+            12, France</Description>
+    </Code>
+    <Code>
+        <Id>0146</Id>
+        <Name>DGI (Direction Générale des Impots) code</Name>
+        <Description>ench taxation authority None Issuing agency: DGI (Direction Générale des
+            Impots), Bureau G2, Teledoc 971, 92 Allee de Bercy, 75574 Paris Cedex 12,
+            France</Description>
+    </Code>
+    <Code>
+        <Id>0147</Id>
+        <Name>Standard Company Code</Name>
+        <Description>Partner identification code which is registered withJIPDEC/ECPC. None Issuing
+            agency: Japan Information Processing Development Corporation, / Electronic Commerce
+            Promotion Center (JIPDEC/ECPC), Time 24 Bldg. 10F, 2-45 Aomi, Koto-ku, Tokyo 135-8073,
+            Japan, Contact: Kazuhiko Wakaizumi, Tel: +813 5500 3643, Fax: 813 5500 3660, E-mail:
+            waka@ecom.or.jp</Description>
+    </Code>
+    <Code>
+        <Id>0148</Id>
+        <Name>ITU (International Telecommunications Union)Data Network Identification Codes
+            (DNIC)</Name>
+        <Description>ta Network Identification Codes assigned by the ITU. None Issuing agency: ITU
+            (International Telecommunications Union), Telecommunication Standardization Bureau
+            (TSB), Place des Nations, CH-1211 Geneva 20, Switzerland Tel: +4122 730 5222, Fax: +4122
+            730 5853, E-mail: geng-sheng.li@itu.int, Web: www.itu.int,
+            www.itu.int/itudoc/itu-t/ob-lists</Description>
+    </Code>
+    <Code>
+        <Id>0149</Id>
+        <Name>Global Business Identifier</Name>
+        <Description>r a company's ability to obtain complete and accurate information about
+            potential suppliers Used to identify and designate in electronic commerce Issuing
+            agency: ResolveNet (IOM) Ltd, Atlantic House, 2nd Floor, Circular Road, Douglas, Isle of
+            Man IMI ISQ, UK, Laura J Jany, Tel: 001 610 625 4160 Fax; 001 610 625 4180</Description>
+    </Code>
+    <Code>
+        <Id>0150</Id>
+        <Name>Madge Networks Ltd- ICD ATM Addressing Scheme</Name>
+        <Description>e code will be used as part of an ATM NSAP addressing scheme for the
+            establishment of PVC and SPVC connections Addressing for Madge Networks global ATM
+            network and the connections of any Madge Customers requiring the allocation of ATM
+            addresses from Madge Networks. Issuing agency: Madge Networks, Wexham Springs, Framewood
+            Road, Wexham, Slough, SL3 6PJ, Tel: +44 1753 661 575 Fax: + 44 1753 661 114 e-mail:
+            steve.irving@madge.co</Description>
+    </Code>
+    <Code>
+        <Id>0151</Id>
+        <Name>Australian Business Number (ABN) Scheme</Name>
+        <Description>e ABN will be a unique identifier for a business to interact with Government
+            (Commonwealth, State and Local) throughout, Australia and is the supporting number for
+            the Goods and Service Tax (GST). The Legislation covering the use of ABN, (see notes on
+            use) will have application throughout the Commonwealth of The ABN is established by: A
+            New Tax System (Australian, Business Number) Act 1999, enacted by the Australian
+            Parliament. The scheme is expected to last for at least 100 Years without reallocation
+            of identification numbers. The ABN is specified in English. Issuing agency: Australian
+            Taxation Office, 140 Creek Street, Brisbane Q 4000, AUSTRALIA. Postal Address: GPO Box
+            8022, Brisbane Q 4000, AUSTRALIA</Description>
+    </Code>
+    <Code>
+        <Id>0152</Id>
+        <Name>Edira Scheme Identifier Code</Name>
+        <Description>r the unambiguous identification of registration scheme used in e-commerce (not
+            to be used for the identification of organizations) The code is used to designate
+            unambiguously schemes used in e-commerce to specify any entity but organizations Issuing
+            agency: EDIRA Association, c/o Zurich chamber of commerce, Bleicherweg 5, P. O. Box
+            4031, CH-8022 Zurich, Switzerland Otto Mueller OttoMueller-omueller@zurichcci.ch, Phone
+            + 411 217 4050; Fax + 411 217 4051, Andre Mesropian, EDIRA Executive Director,
+            Phone/Fax: +33 1 6023 0504, E-mail: amesropi@club-internet-fr</Description>
+    </Code>
+    <Code>
+        <Id>0153</Id>
+        <Name>Concert Global Network Services ICD AESA</Name>
+        <Description>Global Addressing of the Concert ATM switches and any direct customer ATM
+            networks for implementation of PNNI. It will also be used for any attached carrier ATM
+            networks. Used to form globally unique Concert ICD ATM End System Addresses (AESA's)
+            Issuing agency: Concert Global Network Services Ltd, Sir John Swan Building, 26 Victoria
+            Street, Hamilton, HM12 Bermuda, Contact: John Haynes, Tel: +44 (0) 20 7876 4225, Fax:
+            +44 (0) 20 7876 4419, E-mail: john.haynes@concert.com</Description>
+    </Code>
+    <Code>
+        <Id>0154</Id>
+        <Name>Identification number of economic subjects: (ICO)</Name>
+        <Description>ique identification of economic subjects for all administrative purposes The
+            identification number ICO is used in the Czech Republic mainly in all administrative
+            acts (tax system, banking system, statistics. etc.) Issuing agency: Czech Statistical
+            Office, Sokolovská 142, 186 04 Praha 8- Karlin, Czech Republic, Mr Staniv Palas, Tel: +
+            420 274 0525 75, Fax: + 420 268 326 80, e-mail: palas@qw.czso.cz</Description>
+    </Code>
+    <Code>
+        <Id>0155</Id>
+        <Name>Global Crossing AESA (ATM End System Address)</Name>
+        <Description>nstruction, administration and implementation of a scalable AESA schema for
+            routing if ATM switched connections. ICD will be used as a component of the IDP (Initial
+            Domain Part) for OSI addressing Issuing agency: Global Crossing Ltd, Wessex House, 45
+            Reid Street, Hamilton HM-12, Bermuda, Contact: Joseph DeVita, Global Crossing Ltd, 1
+            Bausch &amp; Lomb Place, Suite 400, Rochester, NY 14604 USA, Tel: + 1 716 777 1093, Fax:
+            + 1 716 546 4387</Description>
+    </Code>
+    <Code>
+        <Id>0156</Id>
+        <Name>AUNA</Name>
+        <Description>lecommunication network of operators in the AUNA Group This code shall be used
+            as an element of NSAP addressing Issuing agency: AUNA, Dept: Dirección corporativa dr
+            red, Responsibility: Ana Isabel Fernández Hernádez, Paeso Castellana 83-85. 28046-
+            Madrid (Spain). Tel: +34 91 202 5808, Fax: +34 91 202 5173</Description>
+    </Code>
+    <Code>
+        <Id>0157</Id>
+        <Name>ATM interconnection with the Dutch KPN Telecom</Name>
+        <Description>O Drager Net The ICD code also form the initial part of the OSI network
+            addressing scheme (Addendum 2 of ISO 8384) Issuing agency: Informatie en Communicatie
+            Technologie Organisatie, Odijkerweg 25, 3972 NE Driebergen, Contact: A Knol - Head DCB,
+            Tel: + 31 (0) 343 534 500, Fax: + 31 (0) 343 534 999</Description>
+    </Code>
+    <Code>
+        <Id>0158</Id>
+        <Name>Identification number of economic subject (ICO) Act on State Statistics of 29 November
+            2001, § 27</Name>
+        <Description>e unique identification of economic subjects (legal persons and natural
+            personsentrepreneurs) used for registration The identification number ICO is used in
+            Slovakia in almost all administrative acts (tax system, banking system, statistics,
+            etc.) Issuing agency: Slovak Statistical Office, Mileticova 3, 824 67 Bratislava, Slovak
+            Republic, Mr Ivan Lieskovský, tel.: + 421 2 502 36 250, Fax: + 421 2 5556 1541, email:
+            ivan.lieskovsky@statistics.sk</Description>
+    </Code>
+    <Code>
+        <Id>0159</Id>
+        <Name>ACTALIS Object Identifiers</Name>
+        <Description>e code is primarily intended for the registration of Object Identifiers (OIDs)
+            according to ISO 8824/8825: Level 1: iso (1), Level 2: identified-organization (3),
+            Level 3: ACTALIS SpA (0159), Level 4 and higher: (defined by ACTALIS) See "Intended
+            purpose/application area" Issuing agency: ACTALIS S.p.A. Via Taramelli, 26, 20124
+            Milano, ITALY, Tel: + 39 2 6084 1. The technical contact point is Ing. Adriano Santoni
+            (email: adriano.santoni@sia.it; will be adriano.santoni@actalis.it after April
+            2002)</Description>
+    </Code>
+    <Code>
+        <Id>0160</Id>
+        <Name>GTIN - Global Trade Item Number</Name>
+        <Description>e EAN.UCC.GTIN is a globally unique identifier of trade items. A trade item is
+            any item (product or service) upon which there is a need to retrieve pre-defined
+            information and that may be priced, ordered or invoiced at any point in any supply chain
+            The GTIN identification scheme is currently (2002) used by more than 900,000
+            organizations in the world. It is widely in the consumer goods and other industries to
+            identify items and packages. The GTIN can be represented in a standard bar code format.
+            Issuing agency: EAN Inernational, Rue Royal 145, B-1000 Brussels, Tel: + 32 2 227 1020,
+            Fax: +32 2 227 1021, e.mail: info@ean-int.org, Contact: Henri Barthel</Description>
+    </Code>
+    <Code>
+        <Id>0161</Id>
+        <Name>ECCMA Open Technical Directory</Name>
+        <Description>centralized dictionary of names and definitions of trading concepts,
+            essentially goods and services that are bought, sold or exchanged. This is a
+            classification neutral dictionary of names and attributes (also referred to as
+            characteristics or properties). The eOTD will help improve the speed and accuracy of
+            Internet searches and can be imported into sourcing, procurement and ERP systems with
+            minimal data transformation costs. Issuing agency: Electronic Commerce Code Management
+            Association2980 Linden Street Suite E218017 BethlehemUSURL:
+            http://www.eccma.orgresponsible: Yvette Thomasemail: Yvette.Thomas@Eccma.orgphone:
+            001-610-861-5990fax: 001- 610-861-5992</Description>
+    </Code>
+    <Code>
+        <Id>0162</Id>
+        <Name>CEN/ISSS Object Identifier Scheme</Name>
+        <Description>allocate OIDs to objects defined in the standards and specifications developed
+            in CEN’s technical bodies (TCs, Workshops, etc) The code is primarily intended for the
+            registration ofObject Identifiers according to ISO 8824-1 Annex BLevel 1: iso (1)Level
+            2: identified-organization (3)Level 3: CEN (nnnn –the ICD allocated)Level 4: and higher:
+            (defined by CEN conventions) Issuing agency: Comité Européen de Normalization - CENRue
+            de Stassart 36B-1050 Brussels</Description>
+    </Code>
+    <Code>
+        <Id>0163</Id>
+        <Name>US-EPA Facility Identifier</Name>
+        <Description>provide for the unique identification of facilities regulated or monitored by
+            the United States Environmental Protection Agency (EPA).A facility is a distinct real
+            property entity (i.e., a man-made object and its surrounding real estate). Facilities
+            incorporate the characteristics of being: (1) objects, established at (2) specific
+            places, for (3) specific purposes. A facility can include monitoring stations, waste
+            sites, and other entities of environmental interest that cannot be classified as single
+            facilities. This is maintained within the U.S. Environmental Protection Agency Facility
+            Registration System (FRS) Issuing agency: U.S. Environmental Protection AgencyMail Code
+            2832T1200 Pennsylvania Avenue NWWashington, DCUSAAttn: Patrick GarveyTel: +1 202 566
+            1687Fax: +1 202 566 1684Email: garvey.pat@epa.govWeb:
+            www.epa.gov/enviro/html/facility.html</Description>
+    </Code>
+    <Code>
+        <Id>0164</Id>
+        <Name>TELUS Corporation</Name>
+        <Description>SA Addressing Scheme for ATM PNNI Implementation ICD is required for PNNI
+            implementation on TELUS’ ATM network in order to establish an addressing scheme for SPVC
+            connections within and between regions Issuing agency: TELUS Corporation, Floor 24,
+            TELUS Plaza South Tower10020 - 100 Street N.W.Edmonton, Alberta, CanadaT5J 0N5. Gregory
+            Rees, greg.rees@telus.com, Tel: (780) 493-3921 Fax: (780) 421-8085</Description>
+    </Code>
+    <Code>
+        <Id>0165</Id>
+        <Name>FIEIE Object identifiers</Name>
+        <Description>provide identifiers for international enterprises and organizations operating
+            in fields of business served by the Jaakko Poyry Group. On the date of the application,
+            these fields include Forest industry, Energy, Infrastructure and Environment. To provide
+            an internationally unambiguous framework for existing coding practices in this The code
+            is primarily intended for the registration of Object Identifiers according to ISO/IEC
+            8824, 8825 and 11179: Level 1: iso (1) Level 2: identified organization (3) Level 3:
+            fieie code (nnnn, the ICD allocated) Level 4 and higher: (defined by FIEIE conventions)
+            Issuing agency: Jaakko Poyry Group Oyj PL4, Jaakonkatu 3 FIN-01621 Vantaa Finland Tel:
+            +358 9 894 71 Fax: +358 9 878 1818 Email: general.jp@poyry.fi URL: http://www.poyry.com
+            Contact: Mr Risto Ryyppo</Description>
+    </Code>
+    <Code>
+        <Id>0166</Id>
+        <Name>Swissguide Identifier Scheme</Name>
+        <Description>uniquely identify objects, esp. companies and professionals in
+            directories/databases The code is used to uniquely identify the objects in the
+            Swissguide directory. Issuing agency: Swissguide AG Lindenstrasse 1, 8302 Kloten
+            Switzerland Attn: Juerg Dangel Tel: +41 1 444 39 39 Fax: +41 1 444 39 85 Email:
+            juerg.dangel@swissguide.ch Web: www.swissguide.ch</Description>
+    </Code>
+    <Code>
+        <Id>0167</Id>
+        <Name>Priority Telecom ATM End System Address Plan</Name>
+        <Description>e coding system will be used to provide ATM End System Address based on IDC
+            format NSAP addresses required for Priority Telecom ATM PNNI implementation. These
+            addresses will be used to uniquely identify User Network interfaces to Priority Telecom
+            ATM Networks as specified by the ATM Forum UNI specifications. PT plans to use these
+            addresses to connect to other public ATM networks in the countries PT is operating (The
+            Netherlands, Norway and Austria) Used to form a globally unique Priority Telecom ATM End
+            System Address. PT customers and interconnect with public ATM networks requires the use
+            of unique AESA Issuing agency: Priority Telecom Netherlands B.V. Beech Avenue 100 1119
+            PW, Schiphol-Rijk The Netherlands Contact: Roger Schobben +31 20 778 2520 / Fax: +31 20
+            778 2600 Email: rschobben@prioritytelecom.com</Description>
+    </Code>
+    <Code>
+        <Id>0168</Id>
+        <Name>Vodafone Ireland OSI Addressing</Name>
+        <Description>plementation of an ATM network in connection with 3G rollout. The code will be
+            used for ATM network related addressing purposes, and for CLNS network. Issuing agency:
+            Vodafone Ireland Limited, 3rd Floor, Block B, MountainView, Sandyford, Dublin 18,
+            Ireland Contact:Colm Fleming, Core Network Planning Manager, Ph. +353 87 2352155 Fax
+            +353 1 2037611 colm.fleming@vodafone.com</Description>
+    </Code>
+    <Code>
+        <Id>0169</Id>
+        <Name>Swiss Federal Business Identification Number. Central Business names Index (zefix)
+            Identification Number</Name>
+        <Description>uniquely identify all companies/organizations registered in the Swiss Register
+            of Commerce and the Swiss Central Business Names Index To uniquely identify entries in
+            Swiss Central Business Names Index (zefix). The principle purpose of the zefix on
+            internet is to provide a swisswide search function, and thus provide the public with a
+            service to determine the legal domicile, the cantonal office for the register of
+            commerce in charge, and the latter’s address. Issuing agency: Swiss Federal Office of
+            Justice, Bundesrain 20, CH-3003 Bern (Switzerland) Tel: +41 31 322 36 32 Fax: +41 31 323
+            51 52</Description>
+    </Code>
+    <Code>
+        <Id>0170</Id>
+        <Name>Teikoku Company Code</Name>
+        <Description>ikoku Company Code is allocated to all incorporations, business owners,
+            government organizations and other public offices in Japan. TDB (Teikoku Databank Ltd.)
+            retains company codes of approximately 1.7 million companies within Japan. Teikoku
+            Company Code, a unique company ID, has already been adopted by many companies both as a
+            standard company code in customer data managements and as an identification code for
+            online electronic commerce transactions. Since every company trades with companies
+            abroad, they need to use it in their international business transaction. Therefore, it
+            is desired to register TDB as an ICD to RA of the ISO/IEC 6523. None Issuing agency:
+            TEIKOKU DATABANK LTD. Corporate Planning Department 2-5-20 MINAMI-AOYAMA, MINATO-KU,
+            TOKYO, JAPAN TEL: 03-5775-3132 FAX: 03-5775-3127 Email:
+            spinfo@mail.tdb.co.jp</Description>
+    </Code>
+    <Code>
+        <Id>0171</Id>
+        <Name>Luxembourg CP &amp; CPS (Certification Policy and Certification Practice Statement)
+            Index</Name>
+        <Description>dex of the Certification Policies and Certification Practice Statement issued
+            by Luxembourg PKI Issuing agency: Ministry of The Economy and Foreign Trade 19-21
+            Boulevard Royal L-2914 Luxembourg e-mail: Francois.Thill@eco.etat.lu Fax: +352 478
+            4311</Description>
+    </Code>
+    <Code>
+        <Id>0172</Id>
+        <Name>Project Group “Lists of Properties” (PROLIST®)</Name>
+        <Description>uniquely identify properties, blocks and lists of properties (LOP) for products
+            and services in the process industry. The products are electrical and process control
+            devices. The code is used to uniquely identify the objects in the PROLIST online
+            dictionary. Issuing agency: Project Group “Lists of Properties” (PROLIST®) c/o Bayer
+            Technology Services GmbH Geb. K 9 51368 Leverkusen Germany E-Mail: Prolist@NAMUR.de Tel:
+            +49 - 214 - 30 57852 Fax: +49 - 214 - 30 72774</Description>
+    </Code>
+    <Code>
+        <Id>0173</Id>
+        <Name>eCI@ss</Name>
+        <Description>uniquely identify properties, classes and list of characteristics (LoC) for
+            products and services available in the eCI@ss classification system The code is used to
+            uniquely identify objects in the eCI@ss classification system. Issuing agency: eCI@ss,
+            Mr. Thorsten Hohnle Gustav-Heinemann-Ufer 84-88, 50968 Cologne Germany Email:
+            hoehnle@eclass-office.com Tel: +49 (221) 4981-831 Fax:’ +49 (221) 4981-856</Description>
+    </Code>
+    <Code>
+        <Id>0174</Id>
+        <Name>StepNexus</Name>
+        <Description>provide identifiers within StepNexus loader objects. These addresses will be
+            used to uniquely identify StepNexu key usage fields within X509 certificates for use in
+            the StepNexus loader scheme. Used to define unique certificate attributes within X509
+            certificates Issuing agency: StepNexus, St Andrews House, The Links, Kelvin Close,
+            Birchwood, Warrington, Cheshire WA3 7PB</Description>
+    </Code>
+    <Code>
+        <Id>0175</Id>
+        <Name>Siemens AG</Name>
+        <Description>uniquely identify properties, blocks, classes and lists of properties used or
+            specified by Siemens AG - Power Generation The code is used to uniquely identify objects
+            in the Siemens AG - Power Generation corporate dictionary Issuing agency: Siemens AG,
+            Wolfgang-Reuter-Platz 4, 47053 Duisburg, Germany</Description>
+    </Code>
+    <Code>
+        <Id>0176</Id>
+        <Name>Paradine GmbH</Name>
+        <Description>uniquely identify properties, classes,and list of properties (LoP) for products
+            and services available in Paradine Reference Dictionary Systems The code is used to
+            uniquely identify objects in Paradine Reference Dictionary Systems Issuing agency:
+            Paradine GmbH, Prinz Eugen Strasse 70, 1040 Vienna, Austria</Description>
+    </Code>
+    <Code>
+        <Id>0177</Id>
+        <Name>Odette International Limited</Name>
+        <Description>r use in EDI and other B2B exchanges in the European automotive industry to
+            identify business entities (organisations). The scheme is used to identify
+            organisations, and parts of organisations which are parties to or are referenced in
+            automotive supply chain transactions such as EDI messaging and other B2B exchanges.
+            Issuing agency: Odette International Limited, Forbes House, Halkin Street, London SW1X
+            7DS</Description>
+    </Code>
+    <Code>
+        <Id>0178</Id>
+        <Name>Route1 MobiNET</Name>
+        <Description>r rooting OIDs defined by Route1 Security Corporation for Route1 MobiNET.
+            Intended to cover MobiNET connected organizations, Route1 Security Corporation, its
+            subdivisions, customers and any organization using MobiNET or Route1's services and
+            products For rooting OIDs defined by Route1 Security Corporation for Route1 MobiNET.
+            Intended to cover MobiNET connected organizations, Route1 Security Corporation, its
+            subdivisions, customers and any organization using MobiNET or Route1's services and
+            products. The OID structure and the inclusion therein of the ICS is as follows:
+            ISO.Identifiedorganization.ICD(Route1 MobiNET).AFI.PCI.Org_ID.OPI.MC Issuing agency:
+            Route1 Security Corporation Attn Yamian Quintero 1920-155 University Avenue Toronto
+            Ontario M5H 3B7 Canada Tel +1 416.848.8391 x2232 Fax +1 416.848.8394</Description>
+    </Code>
+    <Code>
+        <Id>0179</Id>
+        <Name>Penango Object Identifiers</Name>
+        <Description>To identify objects, policies, and data related to Penango’s products and
+            services. The ICD is primarily intended for registration of Object Identifiers in
+            accordance with ISO/IEC 8824 (ASN.1). Issuing agency: Penango, Inc. 1215 K Street 17th
+            Floor Sacramento, CA 95814 USA Tel: +1 (888) 273-6264 Fax: +1 (888) 273-6264
+            oid+icd@penango.com</Description>
+    </Code>
+    <Code>
+        <Id>0180</Id>
+        <Name>Lithuanian military PKI</Name>
+        <Description>dex of the Certification Policies and Certification Practices Statements issued
+            by Lithuanian military PKI The code is used to uniquely identify Certification Policies
+            and Certification Practice Statements in Lithuanian military PKI Issuing agency: The
+            Ministry of National Defence of the Republic of Lithuania, Totoriu Str. 25/3, LT-01121
+            Vilnius Lithuania ATTN: Cpt. Aurelijus Andrijauskas E-mail: ssc@kam.lt Tel: +370 5
+            2785225 Fax: +370 5 2735555</Description>
+    </Code>
+    <Code>
+        <Id>0183</Id>
+        <Name>Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business
+            Identification Number (UIDB)</Name>
+        <Description>To uniquely identify all companies/organizations registered in Switzerland in
+            all official register (Swiss Register of Commerce, VAT register, Canton register, etc)
+            The UIDB shall make lt possible to identify an enterprise quickly, unambiguously and on
+            a permanent basis. The UIDB and the other identification characteristics associated with
+            it shall be managed via a specific UIDB register. The main identification
+            characteristics (status, address, etc.) shall be accessible to the public. Issuing
+            agency: Swiss Federal Statistical Office (FSO), Espace de l'Europe 10 CH-2010 Neuchâtel
+            (Switzerland) Tel.: +41 32 713 85 94 Fax: +41 31 323 62 63</Description>
+    </Code>
+    <Code>
+        <Id>0184</Id>
+        <Name>DIGSTORG</Name>
+        <Description>To be used for identifying Danish companies included juridical persons and
+            associations in international trade It is possible to add 0-4 characters set to the code
+            for more detailed use of one organization. Characters are digits or capital letter.
+            Issuing agency: The Danish Agency for Digitisation Landgreven 4 Postboks 2193 DK-1017
+            Copenhagen K Denmark Tel: +45 33 92 52 00 E-mail: digst@digst.dk</Description>
+    </Code>
+    <Code>
+        <Id>0185</Id>
+        <Name>Perceval Object Code</Name>
+        <Description>Intended to uniquely identify in an international context any physical and or
+            abstract entities related to Perceval products and services using Abstract Syntax
+            Notation One in accordance with ISO/IEC 8824 The ICD is primarily intended for
+            registration and resolution of Object Identifiers in accordance with ISO/IEC 8824 with
+            reduced encoding size and non-geographic context Issuing agency: Perceval SA, Tenbosch
+            9, 1000 Brussels, Belgium Mr Henri-Jean Pollet, E-mail hjp@perceval.net Tel +32 2 640
+            9194, Fax +32 2 640 3154</Description>
+    </Code>
+    <Code>
+        <Id>0186</Id>
+        <Name>TrustPoint Object Identifiers</Name>
+        <Description>To uniquely identify objects and mechanisms globally throughout communications
+            networks using TrustPoint security products and services Issuing agency: TrustPoint
+            Innovation Technologies, Attn: Sherry Shannon-Vanstone, 816 Hideaway Circle East, Unit
+            244 Marco Island, FL 34145 USA http://www.trustpointinnovation.com Tel: +1 905 302 6929
+            Email: sviconsulting@aol.com</Description>
+    </Code>
+    <Code>
+        <Id>0187</Id>
+        <Name>Amazon Unique Identification Scheme</Name>
+        <Description>To provide identifiers for properties, classes, groups, or lists of data and
+            objects specified by or used by Amazon.com, Inc. and its Affiliates Identifiers assigned
+            under this scheme may be usable as Object Identifiers in accordance with ISO/IEC 8824,
+            usable with Directories in accordance with ISO/IEC 9594, usable in accordance with
+            ISO/IEC 8348, or usable in other contexts as defined by Amazon. Issuing agency: Amazon
+            Technologies, Inc. Post Office Box 8102 Reno, Nevada 89507-8102 United States Contact:
+            Peter Bowen Tel: +1 206 266 1000 E-mail: auis-info@amazon.com</Description>
+    </Code>
+    <Code>
+        <Id>0188</Id>
+        <Name>Corporate Number of The Social Security and Tax Number System</Name>
+        <Description>The number system of Japan is a social infrastructure to improve efficiency and
+            the transparency of the social security and the tax system, and to achieve a highly
+            convenient, impartial, and fair society. Additionally, the profit of the number system
+            can be free usage for various purposes, so we want to use the Corporate Number as
+            identifiers in various fields, like in electronic commerce, transportation, etc. The
+            preliminary work, numbering the identifiers for the beginning of usage in January 2016,
+            is being done. Issuing agency: National Tax Agency Japan 3-1-1 Kasumigaseki, Chiyoda-ku,
+            Tokyo 100-8978, JAPAN Telephone: +81 3 3581 5451 E-mail: kokuzei-houjinbangou@nta.go.jp
+            Point of Contact: Tadahisa Kodaira</Description>
+    </Code>
+    <Code>
+        <Id>0189</Id>
+        <Name>European Business Identifier (EBID)</Name>
+        <Description>For use in EDI or other B2B exchanges to identify business entities
+            (organizations). The scheme is used to identify organisations, and parts of
+            organisations which are parties to or are referenced in electronic transactions such as
+            EDI messaging or other B2B exchanges. Issuing agency: EBID Service AG CAS-Weg 1-5 76131
+            Karlsruhe Germany E-mail: kontakt@unternehmensverzeichnis.org Phone: +49
+            721-9638-300</Description>
+    </Code>
+    <Code>
+        <Id>0192</Id>
+        <Name> Organisasjonsnummer</Name>
+        <Description>Identify entities registered in the Central Coordinating Register for
+            Legal Entities in Norway. The scheme with ICD code + organization number will be used to
+            identify organisations that are parties to or referenced in electronic
+            transactions such as electronic invoicing or other B2B exchanges. Issuing agency: The Brønnøysund Register Centre,
+           Havnegata 48, N0-8900 Brønnøysund</Description>
+    </Code>
+</Codelist>

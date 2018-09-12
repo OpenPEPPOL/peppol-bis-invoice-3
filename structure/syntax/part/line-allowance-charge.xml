@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..n">
+    
+        <Term>cac:AllowanceCharge</Term>
+        <Name>INVOICE LINE ALLOWANCES OR CHARGES</Name>
+        <Description>A group of business terms providing information about allowances or charges applicable to the individual
+            Invoice line.
+        </Description>
+        <Reference type="BUSINESS_TERM">BG-27, BG-28</Reference>
+        
+        <Element>
+            <Term>cbc:ChargeIndicator</Term>
+            <Description> Use “true” when informing about Charges and “false” when informing about
+                Allowances
+            </Description>
+            <Value type="EXAMPLE">false</Value>
+        </Element>
+        
+        
+        <Element cardinality="0..1">
+            <Term>cbc:AllowanceChargeReasonCode</Term>
+            <Name>Line level allowance or charge reason code</Name>
+            <Description>The reason for the line level allowance or charge, expressed as a code.</Description>
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">BT-140, BT-145</Reference>
+            <Reference type="CODE_LIST">UNCL5189</Reference>
+            <Reference type="RULE">BR-42</Reference>
+            <Reference type="RULE">BR-44</Reference>
+            <Reference type="RULE">BR-CO-07</Reference>
+            <Reference type="RULE">BR-CO-08</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-CL003</Reference>
+            <Reference type="CODE_LIST">UNCL7161</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-CL002</Reference>
+            <Value type="EXAMPLE">95</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:AllowanceChargeReason</Term>
+            <Name>Line level allowance or charge reason</Name>
+            <Description>The reason for the line level allowance or charge, expressed as text.</Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-139, BT-144</Reference>
+            <Reference type="RULE">BR-42</Reference>
+            <Reference type="RULE">BR-44</Reference>
+            <Reference type="RULE">BR-CO-07</Reference>
+            <Reference type="RULE">BR-CO-08</Reference>
+            <Value type="EXAMPLE">Discount</Value>
+            
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:MultiplierFactorNumeric</Term>
+            <Name>Line level allowance or charge percentage</Name>
+            <Description>The percentage that may be used, in conjunction with the line level allowance base amount, to
+                calculate the line level allowance or charge amount.
+            </Description>
+            <DataType>Percentage</DataType>
+            <Reference type="BUSINESS_TERM">BT-138,BT-143</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R042</Reference>
+            <Value type="EXAMPLE">20</Value>            
+        </Element>
+        
+        <Element>
+            <Term>cbc:Amount</Term>
+            <Name>Line level allowance or charge amount</Name>
+            <Description>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-136,BT-141</Reference>
+            <Reference type="RULE">BR-41</Reference>
+            <Reference type="RULE">BR-43</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R040</Reference>
+            <Reference type="RULE">BR-DEC-24</Reference>
+            <Reference type="RULE">BR-DEC-27</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            
+            <Value type="EXAMPLE">200</Value>  
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:BaseAmount</Term>
+            <Name>Line level allowance or charge base amount</Name>
+            <Description>The base amount that may be used, in conjunction with the line level allowance or charge percentage, to
+                calculate the line level allowance or charge amount. Must be rounded to maximum 2 decimals
+            </Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-137,BT-142</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R041</Reference>
+            <Reference type="RULE">BR-DEC-25</Reference>
+            <Reference type="RULE">BR-DEC-28</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            
+            <Value type="EXAMPLE">1000</Value>  
+            
+        </Element>
+    </Element>

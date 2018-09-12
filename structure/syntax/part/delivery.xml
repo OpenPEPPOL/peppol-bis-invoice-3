@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..1">
+
+        <Term>cac:Delivery</Term>
+        <Name>DELIVERY INFORMATION</Name>
+        <Description>A group of business terms providing information about where and when the goods and services
+            invoiced are delivered.
+        </Description>
+        <Reference type="BUSINESS_TERM">BG-13</Reference>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:ActualDeliveryDate</Term>
+            <Name>Actual delivery date</Name>
+            <Description>The date on which the supply of goods or services was made or completed. Format = "YYYY-MM-DD"</Description>
+            <DataType>Date</DataType>
+            <Reference type="BUSINESS_TERM">BT-72</Reference>
+            <Reference type="RULE">BR-IC-11</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
+            <Value type="EXAMPLE">2017-12-01</Value>
+            
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:DeliveryLocation</Term>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:ID</Term>
+                <Name>Deliver to location identifier</Name>
+                <Description>An identifier for the location at which the goods and services are delivered.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-71</Reference>
+                
+                <Attribute usage="Optional">
+                    <Term>schemeID</Term>
+                    <Name>Deliver to location identifier identification scheme identifier</Name>
+                    <Description>The identification scheme identifier of the Deliver to location identifier.</Description>
+                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Value type="EXAMPLE">0088</Value>
+                </Attribute>
+                
+                <Value type="EXAMPLE">83745498753497</Value>
+                
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:Address</Term>
+                <Name>DELIVER TO ADDRESS</Name>
+                <Description>A group of business terms providing information about the address to which goods and services
+                    invoiced were or are delivered.
+                </Description>
+                <Reference type="BUSINESS_TERM">BG-15</Reference>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:StreetName</Term>
+                    <Name>Deliver to address line 1</Name>
+                    <Description>The main address line in an address.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-75</Reference>
+                    <Value type="EXAMPLE">Delivery Street 1</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:AdditionalStreetName</Term>
+                    <Name>Deliver to address line 2</Name>
+                    <Description>An additional address line in an address that can be used to give further details supplementing the
+                        main line.
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-76</Reference>
+                    <Value type="EXAMPLE">Delivery Street 2</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CityName</Term>
+                    <Name>Deliver to city</Name>
+                    <Description>The common name of the city, town or village, where the deliver to address is located.
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-77</Reference>
+                    <Value type="EXAMPLE">Malmö</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:PostalZone</Term>
+                    <Name>Deliver to post code</Name>
+                    <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-78</Reference>
+                    <Value type="EXAMPLE">86756</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CountrySubentity</Term>
+                    <Name>Deliver to country subdivision</Name>
+                    <Description>The subdivision of a country.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-79</Reference>
+                    <Value type="EXAMPLE">South Region</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cac:AddressLine</Term>
+                    <Name>ADDRESS LINE</Name>
+                    
+                    <Element>
+                        <Term>cbc:Line</Term>
+                        <Name>Deliver to address line 3</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the
+                            main line.
+                        </Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-165</Reference>
+                        <Value type="EXAMPLE">C54</Value>
+                    </Element>
+                </Element>
+                
+                <Element>
+                    <Term>cac:Country</Term>
+                    <Name>COUNTRY</Name>
+                    
+                    <Element>
+                        <Term>cbc:IdentificationCode</Term>
+                        <Name>Deliver to country code</Name>
+                        <Description>A code that identifies the country.</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="BUSINESS_TERM">BT-80</Reference>
+                        <Reference type="RULE">BR-57</Reference>
+                        <Reference type="RULE">BR-CL-14</Reference>
+                        <Reference type="RULE">BR-IC-12</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
+                        <Value type="EXAMPLE">SE</Value>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:DeliveryParty</Term>
+            <Name>DELIVER PARTY</Name>
+            
+            <Element>
+                <Term>cac:PartyName</Term>
+                <Name>PARTY NAME</Name>
+                
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Deliver to party name</Name>
+                    <Description>The name of the party to which the goods and services are delivered.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-70</Reference>
+                    <Value type="EXAMPLE">Deliver name</Value>
+                </Element>
+            </Element>
+        </Element>
+    </Element>
+    

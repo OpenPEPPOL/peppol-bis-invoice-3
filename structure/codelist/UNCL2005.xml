@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>VAT date code (UNCL2005 subset)</Title>
+    <Identifier>UNCL2005</Identifier>
+    <Version>D.16B</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>openPEPPOL</Subset>
+ 
+
+
+    <Code>
+        <Id>3</Id>
+        <Name>Invoice document issue date time</Name>
+    </Code>
+
+    <Code>
+        <Id>35</Id>
+        <Name>Delivery date/time, actual</Name>
+    </Code>
+    <Code>
+        <Id>432</Id>
+        <Name>Paid to date</Name>
+    </Code>
+   </CodeList>

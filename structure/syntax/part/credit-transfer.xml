@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..1">
+
+        <Term>cac:PayeeFinancialAccount</Term>
+        <Name>CREDIT TRANSFER</Name>
+        <Description>A group of business terms to specify credit transfer payments.</Description>
+        <Reference type="BUSINESS_TERM">BG-17</Reference>
+        
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Payment account identifier</Name>
+            <Description>A unique identifier of the financial payment account, at a payment service provider, to which
+                payment should be made. Such as IBAN or BBAN.
+            </Description>
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">BT-84</Reference>
+            <Reference type="RULE">BR-50</Reference>
+            <Reference type="RULE">BR-61</Reference>
+            <Value type="EXAMPLE">NO99991122222</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:Name</Term>
+            <Name>Payment account name</Name>
+            <Description>The name of the payment account, at a payment service provider, to which payment should be made.
+            </Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-85</Reference>
+            <Value type="EXAMPLE">Payment Account</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:FinancialInstitutionBranch</Term>
+            <Name>FINANCIAL INSTITUTION BRANCH</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Payment service provider identifier</Name>
+                <Description>An identifier for the payment service provider where a payment account is located.
+                    Such as a BIC or a national clearing code where required. No identification scheme Identifier to be used.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-86</Reference>
+                <Value type="EXAMPLE">9999</Value>
+            </Element>
+        </Element>
+    </Element>
