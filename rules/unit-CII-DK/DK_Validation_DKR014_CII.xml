@@ -6,7 +6,7 @@
 	</assert>
 	<test>
 		<assert>
-			<success>DK-R-013</success>
+			<success>DK-R-014</success>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -38,7 +38,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<error>DK-R-014</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -70,7 +70,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<error>DK-R-014</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -102,7 +102,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<error>DK-R-014</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -134,7 +134,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<error>DK-R-014</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -166,7 +166,7 @@
 	
 	<test>
 		<assert>
-			<success>DK-R-013</success>
+			<success>DK-R-014</success>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -198,7 +198,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<error>DK-R-014</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -230,7 +230,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<error>DK-R-014</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -262,7 +262,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<error>DK-R-014</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -294,7 +294,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<error>DK-R-014</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
