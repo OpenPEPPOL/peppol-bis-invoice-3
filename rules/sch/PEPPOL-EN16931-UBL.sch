@@ -222,6 +222,26 @@
           and not (normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/text()) != '')
           )"
           flag="fatal">Danish suppliers MUST provide legal entity (CVR-number).</assert>
+        <assert id="DK-R-013"
+          test="not(($supplierCountry = 'DK')
+          and (((boolean(cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID))
+          and (normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeID) = ''))
+          or
+          ((boolean(cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID))
+          and (normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeID) = ''))
+          )
+          )"
+          flag="fatal">For Danish Suppliers it is mandatory to use schemeID when PartyIdentification/ID is used for AccountingCustomerParty or AccountingSupplierParty</assert>
+        <assert id="DK-R-014"
+          test="not(($supplierCountry = 'DK')
+          and (((boolean(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID))
+          and (normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID) = ''))
+          or
+          ((boolean(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID))
+          and (normalize-space(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID) = ''))
+          )
+          )"
+          flag="fatal">For Danish Suppliers it is mandatory to use schemeID when PartyLegalEntity/CompanyID is used for AccountingCustomerParty or AccountingSupplierParty</assert>
       </rule>
     
     
@@ -316,7 +336,7 @@
           flag="warning">For Danish suppliers when Payment means equals 97 the payment is made to "NemKonto"</assert>
       </rule> 
     
-      <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
+    <!--  <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
         <assert id="DK-R-013"
           test="not(($supplierCountry = 'DK')
           and (((boolean(cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID))
@@ -337,7 +357,7 @@
           )
           )"
           flag="fatal">For Danish Suppliers it is mandatory to use schemeID when PartyLegalEntity/CompanyID is used for AccountingCustomerParty or AccountingSupplierParty</assert>
-      </rule>
+      </rule>-->
     
 
     <!-- ITALY -->
