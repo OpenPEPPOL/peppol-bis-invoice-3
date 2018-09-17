@@ -11,7 +11,7 @@
   <!-- <testfolder>unit-UBL-DK</testfolder> Contains Danish unit tests not known to VEFA Validator -->
   <testfolder>unit-UBL-PEPPOL</testfolder>
   <testfolder>unit-UBL-NO</testfolder>
-  <!--<testfolder>unit-UBL-IT</testfolder> Contains Italian unit tests not known to VEFA Validator -->
+  <testfolder>unit-UBL-IT</testfolder> Contains Italian unit tests not known to VEFA Validator 
 
   <configuration>
     <identifier>peppolbis-en16931-base-3.0-cii</identifier>
