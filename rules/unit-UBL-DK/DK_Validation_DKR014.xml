@@ -181,7 +181,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-014</error>
+			<success>DK-R-014</success>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 			<cac:AccountingSupplierParty>
