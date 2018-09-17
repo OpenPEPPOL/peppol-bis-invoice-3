@@ -146,7 +146,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listVersionID="">22334455</ram:ClassCode>
+							<ram:ClassCode listID="MP" listVersionID="">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -176,7 +176,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listVersionID="7.0501">22334455</ram:ClassCode>
+							<ram:ClassCode listID="MP" listVersionID="7.0501">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -206,7 +206,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode>22334455</ram:ClassCode>
+							<ram:ClassCode listID="MP">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
