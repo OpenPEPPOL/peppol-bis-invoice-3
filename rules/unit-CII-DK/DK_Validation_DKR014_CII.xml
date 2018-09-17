@@ -262,7 +262,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-014</error>
+			<success>DK-R-014</success>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
