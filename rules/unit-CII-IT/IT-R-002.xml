@@ -59,7 +59,7 @@
 
 	<test>
 		<assert>
-			<error>IT-R-02</error>
+			<error>IT-R-002</error>
 		</assert>
 		<CrossIndustryInvoice
 				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
@@ -81,4 +81,5 @@
 
 		</CrossIndustryInvoice>
 	</test>
+	
 </testSet>
