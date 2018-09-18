@@ -34,7 +34,6 @@
             </cac:ExternalReference>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
-
     <cac:AccountingSupplierParty>
         <cac:Party>
             <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
