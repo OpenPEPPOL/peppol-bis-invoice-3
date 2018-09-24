@@ -312,6 +312,63 @@
                 test= "exists(ram:PostalTradeAddress/ram:PostcodeCode)" 
                 flag="fatal"> [IT-R-004] BT-38 (Seller post code) - Italian suppliers MUST provide the postal address post code - I fornitori italiani devono indicare il CAP di residenza.</assert>
         </rule>
+		
+		<!-- Swedish rules -->
+		<pattern>
+			<rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos; and ram:SpecifiedTaxRegistration/substring(ram:ID[@schemeID=&apos;VAT&apos;],1,2)=&apos;SE&apos;]  ">
+			<assert id="SE-R-1" test="string-length(normalize-space(ram:SpecifiedTaxRegistration/ram:ID[@schemeID=&apos;VAT&apos;]))=14" flag="fatal">For Swedish suppliers, Swedish VAT-numbers must consist of 14 characters.</assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos; and ram:SpecifiedTaxRegistration/substring(ram:ID[@schemeID=&apos;VAT&apos;],1,2)=&apos;SE&apos;]  ">
+				<assert id="SE-R-2" test="string(number(substring(ram:SpecifiedTaxRegistration/ram:ID[@schemeID=&apos;VAT&apos;],3,12))) != &apos;NaN&apos;" flag="fatal">For Swedish suppliers, the Swedish VAT-numbers must have the trailing 12 characters in numeric form</assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos; and ram:SpecifiedLegalOrganization/ram:ID]  ">
+				<assert id="SE-R-3" test="string(number(ram:SpecifiedLegalOrganization/ram:ID)) != &apos;NaN&apos;" flag="fatal">Swedish organisation numbers should be numeric.</assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos; and ram:SpecifiedLegalOrganization/ram:ID]  ">
+				<assert id="SE-R-4" test="string-length(normalize-space(ram:SpecifiedLegalOrganization/ram:ID)) = 10" flag="fatal">Swedish organisation numbers consist of 10 characters.</assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos; and ram:SpecifiedLegalOrganization/ram:ID]/ram:SpecifiedTaxRegistration[ram:ID/@schemeID=&apos;FC&apos;]/ram:ID">
+				<assert id="SE-R-5" test="normalize-space(upper-case(.))=&apos;GODKÄND FÖR F-SKATT&apos;" flag="fatal">For Swedish suppliers, when using Seller tax registration identifier, 'Godkänd för F-skatt' must be stated</assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="//ram:ApplicableTradeTax[/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos;]/ram:SpecifiedTaxRegistration[substring(ram:ID[@schemeID=&apos;VAT&apos;],1,2)=&apos;SE&apos;]] | //ram:CategoryTradeTax[/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos;]/ram:SpecifiedTaxRegistration[substring(ram:ID[@schemeID=&apos;VAT&apos;],1,2)=&apos;SE&apos;]] ">
+				<assert id="SE-R-6" test="number(ram:RateApplicablePercent) = 25 or number(ram:RateApplicablePercent) = 12 or number(ram:RateApplicablePercent) = 6" flag="fatal">For Swedish suppliers, only standard VAT rate of 6, 12 or 25 are used</assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos;]]/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[normalize-space(ram:TypeCode)=&apos;30&apos; and normalize-space(ram:PayeeSpecifiedCreditorFinancialInstitution/ram:BICID)=&apos;SE:PLUSGIRO&apos;]/ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID ">
+				<assert id="SE-R-7" test="string(number(normalize-space(.))) != &apos;NaN&apos;" flag="warning">For Swedish suppliers using Plusgiro, the Account ID must be numeric </assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos;]]/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[normalize-space(ram:TypeCode)=&apos;30&apos; and normalize-space(ram:PayeeSpecifiedCreditorFinancialInstitution/ram:BICID)=&apos;SE:BANKGIRO&apos;]/ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID">
+				<assert id="SE-R-8" test="string(number(normalize-space(.))) != &apos;NaN&apos;" flag="warning">For Swedish suppliers using Bankgiro, the Account ID must be numeric </assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos;]]/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[normalize-space(ram:TypeCode)=&apos;30&apos; and normalize-space(ram:PayeeSpecifiedCreditorFinancialInstitution/ram:BICID)=&apos;SE:BANKGIRO&apos;]/ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID">
+				<assert id="SE-R-9" test="string-length(normalize-space(.)) = 7 or string-length(normalize-space(.)) = 8" flag="warning">For Swedish suppliers using Bankgiro, the Account ID must have 7-8 characters</assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos;]]/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[normalize-space(ram:TypeCode)=&apos;30&apos; and normalize-space(ram:PayeeSpecifiedCreditorFinancialInstitution/ram:BICID)=&apos;SE:PLUSGIRO&apos;]/ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID">
+				<assert id="SE-R-10" test="string-length(normalize-space(.)) &gt;= 2 and string-length(normalize-space(.)) &lt;= 8  " flag="warning">For Swedish suppliers using Plusgiro, the Account ID must have 2-8 characteres</assert>
+			</rule>
+		</pattern>
+		<pattern>
+			<rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID=&apos;SE&apos;]]/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[normalize-space(ram:TypeCode)=&apos;50&apos; or normalize-space(ram:TypeCode)=&apos;56&apos;]">
+				<assert id="SE-R-11" test="false()" flag="warning">For Swedish suppliers using Swedish Bankgiro or Plusgiro, the proper way to indicate this is to use Code 30 for PaymentMeans and FinancialInstitutionBranch ID with code SE:BANKGIRO or SE:PLUSGIRO</assert>
+			</rule>
+		</pattern>
         
     </pattern>
 
