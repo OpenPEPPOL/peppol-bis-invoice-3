@@ -59,12 +59,6 @@
 *(Remove spaces before use of value)*
 | PEPPOL-EN16931-R004
 
-| BG-3
-| Preceding invoice reference
-| Add new non-conflicting business rule to existing element(s)
-| Reference to preceding invoice shall be provided for credit note.
-| PEPPOL-EN16931-R006
-
 | BT-34
 | Seller electronic address
 | Add new non-conflicting business rule to existing element(s)
