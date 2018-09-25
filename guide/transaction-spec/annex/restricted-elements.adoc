@@ -71,12 +71,6 @@
 | Buyer electronic address shall be provided
 | PEPPOL-EN16931-R010
 
-| BG-18
-| Payment card information
-| Add new non-conflicting business rule to existing element(s)
-| For card payment shall payment card information be provided.
-| PEPPOL-EN16931-R060
-
 | BG-19
 | Payment card information
 | Add new non-conflicting business rule to existing element(s)
