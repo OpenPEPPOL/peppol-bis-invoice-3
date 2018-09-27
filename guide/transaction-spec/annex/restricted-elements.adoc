@@ -89,7 +89,7 @@
 | Allowance/charge percentage shall be provided when allowance/charge base amount is provided.
 | PEPPOL-EN16931-R042
 
-| BT-94, BT-101, BT-138, BT-143
+| BT-92, BT-99, BT-136, BT-141
 | Allowance/charge amount
 | Add new non-conflicting business rule to existing element(s)
 | If base amount and percentage exists in the instance, then +

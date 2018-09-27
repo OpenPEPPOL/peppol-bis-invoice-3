@@ -48,6 +48,7 @@
                         <Name>Seller or bank assigned creditor identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Seller identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
                         <Reference type="RULE">BR-CL-10</Reference>
+                        <Reference type="RULE">DK-R-013</Reference>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0088</Value>
                     </Attribute>
@@ -87,6 +88,7 @@
                     <Description>The main address line in an address.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-35</Reference>
+                    <Reference type="RULE">IT-R-002</Reference>
                     <Value type="EXAMPLE">Main Street 1</Value>
                 </Element>
                 
@@ -105,6 +107,7 @@
                     <Description>The common name of the city, town or village, where the Seller address is located.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-37</Reference>
+                    <Reference type="RULE">IT-R-003</Reference>
                     <Value type="EXAMPLE">London</Value>
                 </Element>
                 
@@ -115,6 +118,7 @@
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-38</Reference>
+                    <Reference type="RULE">IT-R-004</Reference>
                     <Value type="EXAMPLE">W1G 8LZ</Value>
                 </Element>
                 
@@ -201,6 +205,11 @@
                     <Reference type="RULE">BR-IP-02</Reference>
                     <Reference type="RULE">BR-IP-03</Reference>
                     <Reference type="RULE">BR-IP-04</Reference>
+                    <Reference type="RULE">IT-R-001</Reference>
+                    <Reference type="RULE">NO-R-002</Reference>
+                    <Reference type="RULE">SE-R-001</Reference>
+                    <Reference type="RULE">SE-R-002</Reference>
+                    <Reference type="RULE">SE-R-005</Reference>
                     <Value type="EXAMPLE">NO999888777</Value>
                 </Element>
                 
@@ -220,6 +229,7 @@
             <Element>
                 <Term>cac:PartyLegalEntity</Term>
                 <Name>PARTY LEGAL ENTITY</Name>
+                <Reference type="RULE">NO-R-001</Reference>
                 
                 <Element>
                     <Term>cbc:RegistrationName</Term>
@@ -242,7 +252,10 @@
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-30</Reference>
                     <Reference type="RULE">BR-CO-26</Reference>
-                    
+                    <Reference type="RULE">DK-R-002</Reference>
+                    <Reference type="RULE">DK-R-014</Reference>
+                    <Reference type="RULE">SE-R-003</Reference>
+                    <Reference type="RULE">SE-R-004</Reference>
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Seller legal registration identifier identification scheme identifier</Name>

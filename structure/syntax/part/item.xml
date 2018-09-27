@@ -122,6 +122,7 @@
                     <Term>listVersionID</Term>
                     <Name>Item classification identifier version identification scheme identifier</Name>
                     <Description>The identification scheme version identifier of the Item classification identifier</Description>
+                    <Reference type="RULE">DK-R-003</Reference>
                 </Attribute>
                 
                 <Value type="EXAMPLE">9873242</Value>
@@ -164,6 +165,7 @@
                 <Reference type="RULE">BR-O-05</Reference>
                 <Reference type="RULE">BR-IG-05</Reference>
                 <Reference type="RULE">BR-IP-05</Reference>
+                <Reference type="RULE">SE-R-006</Reference>
                 <Value type="EXAMPLE">25</Value>
             </Element>
             

@@ -35,6 +35,7 @@
             <Reference type="RULE">PEPPOL-EN16931-CL003</Reference>
             <Reference type="CODE_LIST">UNCL7161</Reference>
             <Reference type="RULE">PEPPOL-EN16931-CL002</Reference>
+            <Reference type="RULE">DK-R-004</Reference>
             <Value type="EXAMPLE">95</Value>
         </Element>
         
@@ -51,6 +52,7 @@
             <Reference type="RULE">BR-CO-06</Reference>
             <Reference type="RULE">BR-CO-21</Reference>
             <Reference type="RULE">BR-CO-22</Reference>
+            <Reference type="RULE">DK-R-004</Reference>
             <Value type="EXAMPLE">Discount</Value>
             
         </Element>
@@ -162,6 +164,7 @@
             <Reference type="RULE">BR-IG-07</Reference>
             <Reference type="RULE">BR-IP-06</Reference>
             <Reference type="RULE">BR-IP-07</Reference>
+            <Reference type="RULE">SE-R-006</Reference>
             <Value type="EXAMPLE">25</Value>
             
         </Element>

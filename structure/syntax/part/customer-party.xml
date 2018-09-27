@@ -47,6 +47,7 @@
                         <Name>Buyer identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Buyer identifier.</Description>    
                         <Reference type="RULE">BR-CL-10</Reference>
+                        <Reference type="RULE">DK-R-013</Reference>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0088</Value>
                     </Attribute>
@@ -220,7 +221,7 @@
                     <Reference type="RULE">BR-AE-02</Reference>
                     <Reference type="RULE">BR-AE-03</Reference>
                     <Reference type="RULE">BR-AE-04</Reference>
-                    
+                    <Reference type="RULE">DK-R-014</Reference>
                     
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>

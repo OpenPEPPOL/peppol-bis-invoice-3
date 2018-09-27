@@ -140,6 +140,7 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-19</Reference>
+            <Reference type="RULE">DK-R-001</Reference>
             <Value type="EXAMPLE">4217:2323:2323</Value>
         </Element>
 
