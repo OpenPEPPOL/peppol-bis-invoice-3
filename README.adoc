@@ -1,0 +1,5 @@
+= PEPPOL BIS Billing 3.0
+
+This repository contains the resources making up PEPPOL BIS Billing 3.0.
+
+Please use our link:https://openpeppol.atlassian.net/servicedesk/customer/portal/1[Service desk] to report any issues related to the specifiction.
