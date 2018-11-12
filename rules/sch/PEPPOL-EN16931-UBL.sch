@@ -100,7 +100,7 @@
         flag="fatal">VAT accounting currency code MUST be different from invoice currency code when
         provided.</assert>
       
-      <assert id="PEPPOL-EN16931-R006" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='130']) &lt;= 1)" 
+      <assert id="PEPPOL-EN16931-R006" test="(count(cac:AdditionalDocumentReference/cbc:DocumentTypeCode['130']) &lt;= 1)" 
         flag="fatal">Only one invoiced object is allowed on document level</assert>
     </rule>
 

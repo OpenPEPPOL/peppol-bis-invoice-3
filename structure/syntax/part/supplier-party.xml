@@ -230,7 +230,7 @@
             <Element>
                 <Term>cac:PartyLegalEntity</Term>
                 <Name>PARTY LEGAL ENTITY</Name>
-                <Reference type="RULE">NO-R-001</Reference>
+                
                 
                 <Element>
                     <Term>cbc:RegistrationName</Term>
