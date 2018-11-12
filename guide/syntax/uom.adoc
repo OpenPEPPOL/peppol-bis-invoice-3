@@ -1,0 +1,7 @@
+.UBL example of unit of measure
+[source, xml, indent=0]
+----
+include::{snippet-dir}/item.xml[tags=uom]
+----
+<1> Code H87 from Recommendation no. 20
+<2> Code PX, prefixed with an X from Recommendation no. 21
