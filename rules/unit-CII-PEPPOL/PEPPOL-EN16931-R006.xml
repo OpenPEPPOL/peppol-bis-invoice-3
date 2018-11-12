@@ -36,9 +36,7 @@
                     <ram:AdditionalReferencedDocument>
                         <ram:TypeCode>130</ram:TypeCode>
                     </ram:AdditionalReferencedDocument>
-                </ram:ApplicableHeaderTradeAgreement>
-                
-                <ram:ApplicableHeaderTradeAgreement>
+          
                     <ram:AdditionalReferencedDocument>
                         <ram:TypeCode>916</ram:TypeCode>
                     </ram:AdditionalReferencedDocument>
@@ -62,9 +60,7 @@
                     <ram:AdditionalReferencedDocument>
                         <ram:TypeCode>130</ram:TypeCode>
                     </ram:AdditionalReferencedDocument>
-                </ram:ApplicableHeaderTradeAgreement>
-                
-                <ram:ApplicableHeaderTradeAgreement>
+          
                     <ram:AdditionalReferencedDocument>
                         <ram:TypeCode>130</ram:TypeCode>
                     </ram:AdditionalReferencedDocument>
