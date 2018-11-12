@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+	<assert>
+    	<description>Verify existence of not more than a single object identifier on document level</description>
+		<scope>PEPPOL-EN16931-R006</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R006</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AdditionalDocumentReference>
+				<cbc:ID schemeID="ABT">DR35141</cbc:ID>
+				<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+			</cac:AdditionalDocumentReference>
+			
+			<cac:AdditionalDocumentReference>
+				<cbc:ID>ts12345</cbc:ID>
+				<cbc:DocumentDescription>Technical specification</cbc:DocumentDescription>
+				<cac:Attachment>
+					<cac:ExternalReference>
+						<cbc:URI>www.techspec.no</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:AdditionalDocumentReference>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R006</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AdditionalDocumentReference>
+				<cbc:ID>ts12345</cbc:ID>
+				<cbc:DocumentDescription>Technical specification</cbc:DocumentDescription>
+				<cac:Attachment>
+					<cac:ExternalReference>
+						<cbc:URI>www.techspec.no</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:AdditionalDocumentReference>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R006</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			
+<!--			<cac:AdditionalDocumentReference/>-->
+			
+			
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R006</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+
+			<cac:AdditionalDocumentReference>
+				<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+			</cac:AdditionalDocumentReference>
+			
+			<cac:AdditionalDocumentReference>
+				<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+			</cac:AdditionalDocumentReference>
+
+		</Invoice>
+	</test>
+</testSet>

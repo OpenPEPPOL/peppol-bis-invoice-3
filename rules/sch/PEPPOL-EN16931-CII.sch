@@ -76,10 +76,7 @@
                 test="not(ram:TaxCurrencyCode) or normalize-space(ram:TaxCurrencyCode/text()) != normalize-space(ram:InvoiceCurrencyCode/text())"
                 flag="fatal">VAT accounting currency code MUST be different from invoice currency
                 code when provided.</assert>
-            <assert id="PEPPOL-EN16931-R052"
-                test="not(ram:TaxCurrencyCode) or count(ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:TaxTotalAmount[@currencyID = normalize-space(../../ram:TaxCurrencyCode/text())])"
-                flag="fatal">The currencyID for invoice total VAT in accounting currency, must be
-                the same as VAT accounting currency code (BT-6)</assert>
+           
             <assert id="PEPPOL-EN16931-R053"
                 test="count(ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:TaxTotalAmount[@currencyID = $documentCurrencyCode]) = 1"
                 flag="fatal">Only one tax total with tax subtotals MUST be provided.</assert>
@@ -200,8 +197,7 @@
             <assert id="PEPPOL-EN16931-R120"
                 test="u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
                 flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net
-                price/item price base quantity) + Invoice line charge amount - Invoice line
-                allowance amount</assert>
+                price/item price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount</assert>
         </rule>
 
         <rule context="ram:NetPriceProductTradePrice | ram:GrossPriceProductTradePrice">
@@ -541,15 +537,6 @@
                     some $code in $UNCL7161
                         satisfies normalize-space(text()) = $code"
                 flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
-        </rule>
-
-        <rule context="ram:ApplicableTradeTax/ram:CategoryCode">
-            <assert id="PEPPOL-EN16931-CL004"
-                test="
-                    some $code in $UNCL5305
-                        satisfies normalize-space(text()) = $code"
-                flag="fatal">Tax category code MUST be according to defined subset of UNCL 5305
-                D.16B.</assert>
         </rule>
 
         <rule context="ram:CountryID">

@@ -66,6 +66,7 @@
     R04X - Allowance/Charge (document and line)
     R05X - Tax
     R06X - Payment
+    R08X - Additonal document reference
     R1XX - Line level
     R11X - Invoice period
   -->
@@ -87,13 +88,10 @@
       <assert id="PEPPOL-EN16931-R053" test="count(cac:TaxTotal[cac:TaxSubtotal]) = 1" flag="fatal"
         >Only one tax total with tax subtotals MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R054"
-        test="
-          count(cac:TaxTotal[not(cac:TaxSubtotal)]) = (if (cbc:TaxCurrencyCode) then
-            1
-          else
-            0)"
+        test="count(cac:TaxTotal[not(cac:TaxSubtotal)]) = (if (cbc:TaxCurrencyCode) then 1 else 0)"
         flag="fatal">Only one tax total without tax subtotals MUST be provided when tax currency
         code is provided.</assert>
+      
     </rule>
 
     <rule context="cbc:TaxCurrencyCode">
@@ -101,6 +99,9 @@
         test="not(normalize-space(text()) = normalize-space(../cbc:DocumentCurrencyCode/text()))"
         flag="fatal">VAT accounting currency code MUST be different from invoice currency code when
         provided.</assert>
+      
+      <assert id="PEPPOL-EN16931-R006" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='130']) &lt;= 1)" 
+        flag="fatal">Only one invoiced object is allowed on document level</assert>
     </rule>
 
     <!-- Accounting customer -->
@@ -139,7 +140,6 @@
     </rule>
 
 
-
     <!-- Payment -->
     <rule
       context="
@@ -156,12 +156,8 @@
         currencyID attributes must have the same value as the invoice currency code (BT-5), except
         for the invoice total VAT amount in accounting currency (BT-111) </assert>
     </rule>
-    <rule context="cac:TaxTotal[not(cac:TaxSubtotal)]/cbc:TaxAmount">
-      <assert id="PEPPOL-EN16931-R052"
-        test="/*/cbc:TaxCurrencyCode and @currencyID = /*/cbc:TaxCurrencyCode" flag="fatal">The
-        currencyID for invoice total VAT in accounting currency, must be the same as VAT accounting
-        currency code (BT-6)</assert>
-    </rule>
+    
+   
 
     <!-- Line level - invoice period -->
     <rule
@@ -225,10 +221,15 @@
       <assert id="PEPPOL-EN16931-R120"
         test="u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
         flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item
-        price base quantity) + Invoice line charge amount - Invoice line allowance amount</assert>
+        price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount</assert>
       <assert id="PEPPOL-EN16931-R121"
         test="not(cac:Price/cbc:BaseQuantity) or xs:decimal(cac:Price/cbc:BaseQuantity) &gt; 0"
         flag="fatal">Base quantity MUST be a positive number above zero.</assert>
+      
+      <assert id="PEPPOL-EN16931-R100" test="(count(cac:DocumentReference) &lt;= 1)" 
+        flag="fatal">Only one invoiced object is allowed pr line</assert>
+      <assert id="PEPPOL-EN16931-R101" test="(not(cac:DocumentReference) or (cac:DocumentReference/cbc:DocumentTypeCode='130'))" 
+        flag="fatal">Element Document reference can only be used for Invoice line object</assert>
     </rule>
 
     <!-- Allowance (price level) -->
@@ -265,8 +266,6 @@
     <!-- NORWAY -->
 
     <rule context="cac:AccountingSupplierParty/cac:Party[$supplierCountry = 'NO']">
-      <assert id="NO-R-001" test="cac:PartyLegalEntity" flag="fatal">Norwegian suppliers MUST
-        provide legal entity.</assert>
       <assert id="NO-R-002"
         test="normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'TAX']/cbc:CompanyID) = 'Foretaksregisteret'"
         flag="warning">Most invoice issuers are required to append "Foretaksregisteret" to their
@@ -573,15 +572,6 @@
           some $code in $UNCL7161
             satisfies normalize-space(text()) = $code"
         flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
-    </rule>
-
-    <rule context="cac:ClassifiedTaxCategory/cbc:ID | cac:TaxCategory/cbc:ID">
-      <assert id="PEPPOL-EN16931-CL004"
-        test="
-          some $code in $UNCL5305
-            satisfies normalize-space(text()) = $code"
-        flag="fatal">Tax category code MUST be according to defined subset of UNCL 5305
-        D.16B.</assert>
     </rule>
 
     <rule context="cac:Country/cbc:IdentificationCode | cac:OriginCountry/cbc:IdentificationCode">

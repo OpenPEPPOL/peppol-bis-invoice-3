@@ -37,7 +37,7 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Seller identifier or bank assigned creditor identifier</Name>
-                    <Description>This element is used for both the identification of the Seller, or the unique banking reference identifier of Seller (assigned by the Seller bank.) 
+                    <Description>This element is used for both the identification of the Seller, or the unique banking reference identifier of Seller (assigned by the Seller bank.). For seller identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.
                      In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-29, BT-90</Reference>
@@ -50,6 +50,7 @@
                         <Reference type="RULE">BR-CL-10</Reference>
                         <Reference type="RULE">DK-R-013</Reference>
                         <Reference type="CODE_LIST">ICD</Reference>
+                        <Reference type="CODE_LIST">SEPA</Reference>
                         <Value type="EXAMPLE">0088</Value>
                     </Attribute>
                     

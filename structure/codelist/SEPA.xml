@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>SEPA indicator</Title>
+    <Identifier>SEPA</Identifier>
+    <Version>1.0</Version>
+    <Agency>OpenPEPPOL</Agency>
+    <Subset>OpenPEPPOL</Subset>
+    
+
+    <Code>
+        <Id>SEPA</Id>
+        <Name>SEPA unique bank assigned creditor identifier</Name>
+    </Code>
+
+</CodeList>

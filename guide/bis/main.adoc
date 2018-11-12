@@ -18,6 +18,10 @@ v{revision}
 
 
 
+= Link to main site of documentation
+
+http://test-docs.peppol.eu/poacc/billing/3.0/[Main documentation site]
+
 :leveloffset: +1
 
 include::../profile/introduction.adoc[]
