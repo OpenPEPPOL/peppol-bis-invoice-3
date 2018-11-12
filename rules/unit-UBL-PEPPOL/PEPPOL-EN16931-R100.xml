@@ -14,11 +14,11 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<InvoiceLine>
+			<cac:InvoiceLine>
 				<cac:DocumentReference>
 					<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
 				</cac:DocumentReference>
-			</InvoiceLine>
+			</cac:InvoiceLine>
 
 		</Invoice>
 	</test>
@@ -30,17 +30,17 @@
 			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<InvoiceLine>
+			<cac:InvoiceLine>
 				<cac:DocumentReference>
 					<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
 				</cac:DocumentReference>
-			</InvoiceLine>
+			</cac:InvoiceLine>
 			
-			<InvoiceLine>
+			<cac:InvoiceLine>
 				<cac:DocumentReference>
 					<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
 				</cac:DocumentReference>
-			</InvoiceLine>
+			</cac:InvoiceLine>
 			
 		</Invoice>
 	</test>
@@ -53,11 +53,11 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
-			<InvoiceLine>
+			<cac:InvoiceLine>
 				<!--<cac:DocumentReference>
 					<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
 				</cac:DocumentReference>-->
-			</InvoiceLine>
+			</cac:InvoiceLine>
 
 		</Invoice>
 	</test>
@@ -71,7 +71,7 @@
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
 			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 
-			<InvoiceLine>
+			<cac:InvoiceLine>
 				<cac:DocumentReference>
 					<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
 				</cac:DocumentReference>
@@ -79,7 +79,7 @@
 				<cac:DocumentReference>
 					<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
 				</cac:DocumentReference>
-			</InvoiceLine>
+			</cac:InvoiceLine>
 
 		</Invoice>
 	</test>

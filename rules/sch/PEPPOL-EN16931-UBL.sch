@@ -91,7 +91,8 @@
         test="count(cac:TaxTotal[not(cac:TaxSubtotal)]) = (if (cbc:TaxCurrencyCode) then 1 else 0)"
         flag="fatal">Only one tax total without tax subtotals MUST be provided when tax currency
         code is provided.</assert>
-      
+      <assert id="PEPPOL-EN16931-R006" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='130']) &lt;= 1)" 
+        flag="fatal">Only one invoiced object is allowed on document level</assert>
     </rule>
 
     <rule context="cbc:TaxCurrencyCode">
@@ -100,8 +101,7 @@
         flag="fatal">VAT accounting currency code MUST be different from invoice currency code when
         provided.</assert>
       
-      <assert id="PEPPOL-EN16931-R006" test="(count(cac:AdditionalDocumentReference/cbc:DocumentTypeCode['130']) &lt;= 1)" 
-        flag="fatal">Only one invoiced object is allowed on document level</assert>
+    
     </rule>
 
     <!-- Accounting customer -->
