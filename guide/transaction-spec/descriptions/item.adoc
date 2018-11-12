@@ -1,0 +1,14 @@
+= Item information
+
+== Item identifiers
+
+In an invoice line the seller item identifier, the buyer item identifier and the standard item identifier can be provided. For sellers and buyers item identifiers, no scheme attribute is used, whilst the `schemeID`
+is mandatory for the standard item identification, and must be from the IS6523 ICD list.
+
+include::../../syntax/item-identification.adoc[]
+
+== Item classification
+
+Several different item classification codes can be provided per invoice line, and the codes must be from one of the classification schemes in code list UNCL7143.
+
+include::../../syntax/item-classification.adoc[]

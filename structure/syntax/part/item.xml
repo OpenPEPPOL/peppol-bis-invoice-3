@@ -115,7 +115,7 @@
                     <Description>The identification scheme identifier of the Item classification identifier</Description>
                     <Reference type="RULE">BR-CL-13</Reference>
                     <Reference type="CODE_LIST">UNCL7143</Reference>
-                    <Value type="EXAMPLE">SSR</Value>
+                    <Value type="EXAMPLE">STI</Value>
                 </Attribute>
                 
                 <Attribute usage="Optional">

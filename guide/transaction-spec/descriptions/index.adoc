@@ -22,5 +22,9 @@ include::payment.adoc[]
 
 include::intrastat.adoc[]
 
+include::item.adoc[]
+
+include::uom.adoc[]
+
 
 :leveloffset: -1

@@ -1,0 +1,93 @@
+= Unit of measure
+
+Unit of measure in an invoice allows the use of codes from UNECE Recommendation No. 20 (version 11e), as well as codes from UNECE Recommendation No. 21 prefixed with an X.
+Please also see <<uom>> for furhter information on the code lists.
+
+.Examples of unit of measure from Recommendation No. 20
+[cols="1,5", options="header"]
+|===
+|Code
+|Name
+
+|H87
+|Piece
+
+|KGM
+|Kilogram
+
+|MTR
+|Meter
+
+|LTR
+|Litre
+
+|MTK
+|Square metre
+
+|MTQ
+|Cubic metre
+
+|KTM
+|Kilometre
+
+|TNE
+|Tonne (metric ton)
+
+|KWH
+|Kilowatt hour
+
+|DAY
+|Day
+
+|HUR
+|Hour
+
+|MIN
+|Minute
+|===
+
+.Examples of unit of measure from Recommendation No. 21, prefixed with an X
+[cols="1,5", options="header"]
+|===
+|Code
+|Name
+
+|XBG
+|Bag
+
+|XBX
+|Box
+
+|XCT
+|Carton
+
+|XCY
+|Cylinder
+
+|XBA
+|Barrel
+
+|XPK
+|Package
+
+|XPX
+|Pallet
+
+|XRL
+|Reel
+
+|XSA
+|Sack
+
+|XST
+|Sheet
+|===
+
+
+.UBL example of unit of measure
+[source, xml, indent=0]
+----
+include::{snippet-dir}/item.xml[tags=uom]
+----
+<1> Code H87 from Recommendation no. 20
+<2> Code PX, prefixed with an X from Recommendation no. 21

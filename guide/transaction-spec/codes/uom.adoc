@@ -1,4 +1,4 @@
-
+[[uom]]
 = Unit of measure
 
 Valid unit codes shall be from {UNRec20}. Unless codes for unit of measure are not in common daily use, implementers should as necessary provide a function for clarification of codes when invoices are visualised.

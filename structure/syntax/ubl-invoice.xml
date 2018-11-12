@@ -385,7 +385,7 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-83</Reference>
-            <Value type="EXAMPLE">Credit transfer</Value>
+            <Value type="EXAMPLE">432948234234234</Value>
         </Element>
         
             <Include>part/card-payment.xml</Include>

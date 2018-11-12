@@ -352,7 +352,7 @@
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-82</Reference>
-                    <Value type="EXAMPLE">Credit transfer</Value>
+                    <Value type="EXAMPLE">432948234234234</Value>
                 </Attribute>
 
                 <Value type="EXAMPLE">30</Value>

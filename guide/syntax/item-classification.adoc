@@ -1,0 +1,13 @@
+.UBL example of using CPV
+[source, xml, indent=0]
+----
+include::{snippet-dir}/item.xml[tags=cpv]
+----
+<1> listID must be from UNCL7143 code list, and code STI indicates this is a CPV classification.
+
+.UBL example of UNSPSC
+[source, xml, indent=0]
+----
+include::{snippet-dir}/item.xml[tags=unspsc]
+----
+<1> listID must be from UNCL7143 code list, and code MP indicates this is a UNSPSC classification, listVersionID is optional, but can be used to specify the version of UNSPSC.

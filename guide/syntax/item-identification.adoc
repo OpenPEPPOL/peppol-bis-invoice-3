@@ -1,0 +1,7 @@
+
+.UBL example of item identifiers
+[source, xml, indent=0]
+----
+include::{snippet-dir}/item.xml[tags=item]
+----
+<1> 0160 is the ICD value for a GTIN identifier
