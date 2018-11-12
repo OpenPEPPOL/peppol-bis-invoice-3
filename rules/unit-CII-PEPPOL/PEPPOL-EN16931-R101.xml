@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+         configuration="peppolbis-en16931-base-3.0-cii">
+    <assert>
+        <description>Verify that element DocumentReference is not used for information other than invoiced line object.</description>
+        <scope>PEPPOL-EN16931-R101</scope>
+    </assert>
+    <test>
+        <assert>
+            <success>PEPPOL-EN16931-R101</success>
+        </assert>
+        <CrossIndustryInvoice
+                xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+                xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+                xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+
+            <SupplyChainTradeTransaction>
+                <ram:IncludedSupplyChainTradeLineItem>
+                    <ram:SpecifiedLineTradeSettlement>
+                        <ram:AdditionalReferencedDocument>
+                            <ram:TypeCode>130</ram:TypeCode>
+                        </ram:AdditionalReferencedDocument>
+                    </ram:SpecifiedLineTradeSettlement>
+                </ram:IncludedSupplyChainTradeLineItem>
+            </SupplyChainTradeTransaction>
+
+        </CrossIndustryInvoice>
+    </test>
+    
+    <test>
+        <assert>
+            <error>PEPPOL-EN16931-R101</error>
+        </assert>
+        <CrossIndustryInvoice
+            xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+            xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+            xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+            
+            <SupplyChainTradeTransaction>
+                <ram:IncludedSupplyChainTradeLineItem>
+                    <ram:SpecifiedLineTradeSettlement>
+                        <ram:AdditionalReferencedDocument>
+                            <ram:TypeCode>916</ram:TypeCode>
+                        </ram:AdditionalReferencedDocument>
+                    
+                    </ram:SpecifiedLineTradeSettlement>
+                </ram:IncludedSupplyChainTradeLineItem>
+            </SupplyChainTradeTransaction>
+            
+        </CrossIndustryInvoice>
+    </test>
+</testSet>

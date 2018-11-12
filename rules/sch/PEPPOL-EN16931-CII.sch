@@ -69,7 +69,12 @@
                 test="ram:BuyerReference or ram:BuyerOrderReferencedDocument/ram:IssuerAssignedID"
                 flag="fatal">A buyer reference or purchase order reference MUST be
                 provided.</assert>
+            <assert id="PEPPOL-EN16931-R006"
+                test="count(ram:AdditionalReferencedDocument[ram:TypeCode='130']) &lt;=1"
+                flag="fatal">Only one invoiced object is allowed on document level</assert>
         </rule>
+        
+
 
         <rule context="ram:ApplicableHeaderTradeSettlement">
             <assert id="PEPPOL-EN16931-R005"
@@ -198,6 +203,12 @@
                 test="u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
                 flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net
                 price/item price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount</assert>
+            
+            <assert id="PEPPOL-EN16931-R100" test="count(ram:SpecifiedLineTradeSettlement/ram:AdditionalReferencedDocument[ram:TypeCode='130']) &lt;=1" 
+                flag="fatal">Only one invoiced object is allowed pr line</assert>
+            
+            <assert id="PEPPOL-EN16931-R101" test="(not(ram:SpecifiedLineTradeSettlement/ram:AdditionalReferencedDocument) or (ram:SpecifiedLineTradeSettlement/ram:AdditionalReferencedDocument/ram:TypeCode='130'))"
+                flag="fatal">Element Document reference can only be used for Invoice line object</assert>
         </rule>
 
         <rule context="ram:NetPriceProductTradePrice | ram:GrossPriceProductTradePrice">
