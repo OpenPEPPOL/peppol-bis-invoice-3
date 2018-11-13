@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+	<assert>
+    <description>Verify that EndpointID scheme identifier is from the eaid list</description>
+		<scope>PEPPOL-EN16931-CL008</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-CL008</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="9950"/>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0088"/>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error number="2">PEPPOL-EN16931-CL008</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="NO:ORGNR"/>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="1234"/>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+
+		</Invoice>
+	</test>
+</testSet>
