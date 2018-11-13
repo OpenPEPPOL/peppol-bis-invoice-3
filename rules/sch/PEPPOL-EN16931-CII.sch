@@ -437,12 +437,12 @@
         <rule
             context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID = &apos;SE&apos; and ram:SpecifiedTaxRegistration/substring(ram:ID[@schemeID = &apos;VAT&apos;], 1, 2) = &apos;SE&apos;]">
 
-            <assert id="SE-R-1"
+            <assert id="SE-R-001"
                 test="string-length(normalize-space(ram:SpecifiedTaxRegistration/ram:ID[@schemeID = &apos;VAT&apos;])) = 14"
                 flag="fatal">For Swedish suppliers, Swedish VAT-numbers must consist of 14
                 characters.</assert>
 
-            <assert id="SE-R-2"
+            <assert id="SE-R-002"
                 test="string(number(substring(ram:SpecifiedTaxRegistration/ram:ID[@schemeID = &apos;VAT&apos;], 3, 12))) != &apos;NaN&apos;"
                 flag="fatal">For Swedish suppliers, the Swedish VAT-numbers must have the trailing
                 12 characters in numeric form</assert>
@@ -451,16 +451,16 @@
 
         <rule
             context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization[../ram:CountryID = &apos;SE&apos; and ram:SpecifiedLegalOrganization/ram:ID]">
-            <assert id="SE-R-3" test="string(number(ram:ID)) != &apos;NaN&apos;" flag="fatal"
+            <assert id="SE-R-003" test="string(number(ram:ID)) != &apos;NaN&apos;" flag="warning"
                 >Swedish organisation numbers should be numeric.</assert>
 
-            <assert id="SE-R-4" test="string-length(normalize-space(ram:ID)) = 10" flag="fatal"
+            <assert id="SE-R-004" test="string-length(normalize-space(ram:ID)) = 10" flag="warning"
                 >Swedish organisation numbers consist of 10 characters.</assert>
         </rule>
 
         <rule
             context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID = &apos;SE&apos; and ram:SpecifiedLegalOrganization/ram:ID]/ram:SpecifiedTaxRegistration[ram:ID/@schemeID = &apos;FC&apos;]/ram:ID">
-            <assert id="SE-R-5"
+            <assert id="SE-R-005"
                 test="normalize-space(upper-case(.)) = &apos;GODKÄND FÖR F-SKATT&apos;" flag="fatal"
                 >For Swedish suppliers, when using Seller tax registration identifier, 'Godkänd för
                 F-skatt' must be stated</assert>
@@ -468,7 +468,7 @@
 
         <rule
             context="//ram:ApplicableTradeTax[/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID = &apos;SE&apos;]/ram:SpecifiedTaxRegistration[substring(ram:ID[@schemeID = &apos;VAT&apos;], 1, 2) = &apos;SE&apos;]] | //ram:CategoryTradeTax[/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID = &apos;SE&apos;]/ram:SpecifiedTaxRegistration[substring(ram:ID[@schemeID = &apos;VAT&apos;], 1, 2) = &apos;SE&apos;]]">
-            <assert id="SE-R-6"
+            <assert id="SE-R-006"
                 test="number(ram:RateApplicablePercent) = 25 or number(ram:RateApplicablePercent) = 12 or number(ram:RateApplicablePercent) = 6"
                 flag="fatal">For Swedish suppliers, only standard VAT rate of 6, 12 or 25 are
                 used</assert>
@@ -477,10 +477,10 @@
 
         <rule
             context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID = &apos;SE&apos;]]/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[normalize-space(ram:TypeCode) = &apos;30&apos; and normalize-space(ram:PayeeSpecifiedCreditorFinancialInstitution/ram:BICID) = &apos;SE:PLUSGIRO&apos;]/ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID">
-            <assert id="SE-R-7" test="string(number(normalize-space(.))) != &apos;NaN&apos;"
+            <assert id="SE-R-007" test="string(number(normalize-space(.))) != &apos;NaN&apos;"
                 flag="warning">For Swedish suppliers using Plusgiro, the Account ID must be numeric </assert>
 
-            <assert id="SE-R-10"
+            <assert id="SE-R-010"
                 test="string-length(normalize-space(.)) &gt;= 2 and string-length(normalize-space(.)) &lt;= 8"
                 flag="warning">For Swedish suppliers using Plusgiro, the Account ID must have 2-8
                 characteres</assert>
@@ -488,10 +488,10 @@
 
         <rule
             context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID = &apos;SE&apos;]]/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[normalize-space(ram:TypeCode) = &apos;30&apos; and normalize-space(ram:PayeeSpecifiedCreditorFinancialInstitution/ram:BICID) = &apos;SE:BANKGIRO&apos;]/ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID">
-            <assert id="SE-R-8" test="string(number(normalize-space(.))) != &apos;NaN&apos;"
+            <assert id="SE-R-008" test="string(number(normalize-space(.))) != &apos;NaN&apos;"
                 flag="warning">For Swedish suppliers using Bankgiro, the Account ID must be numeric </assert>
 
-            <assert id="SE-R-9"
+            <assert id="SE-R-009"
                 test="string-length(normalize-space(.)) = 7 or string-length(normalize-space(.)) = 8"
                 flag="warning">For Swedish suppliers using Bankgiro, the Account ID must have 7-8
                 characters</assert>
@@ -500,7 +500,7 @@
 
         <rule
             context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID = &apos;SE&apos;]]/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[normalize-space(ram:TypeCode) = &apos;50&apos; or normalize-space(ram:TypeCode) = &apos;56&apos;]">
-            <assert id="SE-R-11" test="false()" flag="warning">For Swedish suppliers using Swedish
+            <assert id="SE-R-011" test="false()" flag="warning">For Swedish suppliers using Swedish
                 Bankgiro or Plusgiro, the proper way to indicate this is to use Code 30 for
                 PaymentMeans and FinancialInstitutionBranch ID with code SE:BANKGIRO or
                 SE:PLUSGIRO</assert>
