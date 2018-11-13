@@ -2,7 +2,7 @@
 
 :doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] PEPPOL BIS Billing
 :minor: 0.1
-:revision: 3.0.1
+:revision: 3.0.2
 :shared-dir: ../../shared
 :snippet-dir: ../../rules/snippets
 

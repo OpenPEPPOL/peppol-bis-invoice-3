@@ -1560,12 +1560,54 @@
             721-9638-300</Description>
     </Code>
     <Code>
+        <Id>0190</Id>
+        <Name>Organisatie Indentificatie Nummer (OIN)</Name>
+        <Description>For use in EDI or other B2B exchanges to identify business entities
+            (organizations). The scheme is used to identify organisations, and parts of
+            organisations which are parties to or are referenced in electronic transactions such as
+            EDI messaging or other B2B exchanges. Issuing agency: EBID Service AG CAS-Weg 1-5 76131
+            Karlsruhe Germany E-mail: kontakt@unternehmensverzeichnis.org Phone: +49
+            721-9638-300</Description>
+    </Code>
+    <Code>
+        <Id>0191</Id>
+        <Name>Company Code (Estonia)</Name>
+        <Description>Company code is major and only unique identifier of all institutions and organisations in Estonia. This code is widely used for various purposes, including electronic commerce. Usage of company code is required in communication between institutions and also in communication between private and public organisations. 
+            For use in EDI or other B2B (B2C) exchanges to identify private and public organisations. 
+            Issuing agency: Centre of Registers and Information Systems of the Ministry of Justice, Lõkke 4, 19081 Tallinn, Estonia
+            E-mail: rik@just.ee
+          </Description>
+    </Code>
+    <Code>
         <Id>0192</Id>
-        <Name> Organisasjonsnummer</Name>
+        <Name>Organisasjonsnummer</Name>
         <Description>Identify entities registered in the Central Coordinating Register for
             Legal Entities in Norway. The scheme with ICD code + organization number will be used to
             identify organisations that are parties to or referenced in electronic
             transactions such as electronic invoicing or other B2B exchanges. Issuing agency: The Brønnøysund Register Centre,
-           Havnegata 48, N0-8900 Brønnøysund</Description>
+            Havnegata 48, N0-8900 Brønnøysund</Description>
+    </Code>
+    <Code>
+        <Id>0193</Id>
+        <Name>UBL.BE Party Identifier</Name>
+        <Description>Identification and addressing of different parties involved in
+            invoicing. Issuing agency: UBL.BE, 161, Drève Richelle, boîte 71, B-1410 Waterloo, Belgium
+            E-mail: info@ubl.be
+            </Description>
+    </Code>
+    <Code>
+        <Id>0195</Id>
+        <Name>Singapore Nationwide E-lnvoice Framework</Name>
+        <Description>For use in electronic messages in accordance to the Singapore
+            nationwide e-invoice framework on Identification of organization. Issuing agency: Infocomm Media Development Authority, 10 Pasir Panjang Road #03-01, Mapletree Business City, Singapore 117438
+        </Description>
+    </Code>
+    <Code>
+        <Id>0196</Id>
+        <Name>Icelandic identifier - Íslensk kennitala</Name>
+        <Description>Identification of Icelandic individuals and legal entities. Issuing agency: For individual, identifiers starting with 0 to 3
+            Icelandic National Registry, www.skra.is
+            For legal entities, identifiers starting with 4 to 9
+            Directorate of Internal Revenue, www.rsk.is</Description>
     </Code>
 </Codelist>

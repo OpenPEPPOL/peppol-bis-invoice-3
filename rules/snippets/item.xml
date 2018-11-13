@@ -323,7 +323,7 @@
         </cac:Item>
         <cac:Price>
             <cbc:PriceAmount currencyID="EUR">200</cbc:PriceAmount>
-            <cbc:BaseQuantity unitCode="C62">2</cbc:BaseQuantity>
+            <cbc:BaseQuantity unitCode="H87">2</cbc:BaseQuantity>
         </cac:Price>
     </cac:InvoiceLine>
     <cac:InvoiceLine>

@@ -1,7 +1,7 @@
 = Unit of measure
 
 Unit of measure in an invoice allows the use of codes from UNECE Recommendation No. 20 (version 11e), as well as codes from UNECE Recommendation No. 21 prefixed with an X.
-Please also see <<uom>> for furhter information on the code lists.
+Please also see <<uom>> for further information on the code lists.
 
 .Examples of unit of measure from Recommendation No. 20
 [cols="1,5", options="header"]
