@@ -427,26 +427,24 @@
         </rule>
     </pattern>
     
+	<!-- Italian rules -->
     <pattern>
-        <!-- Italian rules -->
-        <rule context="ram:SellerTradeParty[$supplierCountry = 'IT']">
-            <assert id="IT-R-001"
-                test="(exists(ram:SpecifiedTaxRegistration/ram:ID) and ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'FC'])"
-                flag="fatal"> [IT-R-001] BT-32 (Seller tax registration identifier) - Italian
-                suppliers MUST provide Tax Regime Identifier. I fornitori italiani devono indicare
-                il Regime Fiscale </assert>
-            <assert id="IT-R-002" test="exists(ram:PostalTradeAddress/ram:LineOne)" flag="fatal">
-                [IT-R-002] BT-35 (Seller address line 1) - Italian suppliers MUST provide the postal
-                address line 1 - I fornitori italiani devono indicare l'indirizzo postale. </assert>
-            <assert id="IT-R-003" test="exists(ram:PostalTradeAddress/ram:CityName)" flag="fatal">
-                [IT-R-003] BT-37 (Seller city) - Italian suppliers MUST provide the postal address
-                city - I fornitori italiani devono indicare la città di residenza. </assert>
-            <assert id="IT-R-004" test="exists(ram:PostalTradeAddress/ram:PostcodeCode)"
-                flag="fatal"> [IT-R-004] BT-38 (Seller post code) - Italian suppliers MUST provide
-                the postal address post code - I fornitori italiani devono indicare il CAP di
-                residenza.</assert>
-        </rule>
-    </pattern>
+ 		<rule context="ram:SellerTradeParty[$supplierCountry = 'IT']">
+			<assert id="IT-R-001"
+				test=" matches(ram:SpecifiedTaxRegistration/ram:ID[@schemeID ='FC'] ,'^[A-Z0-9]{11,16}$') "
+				flag="fatal"> [IT-R-001] BT-32 (Seller tax registration identifier) - For Italian suppliers BT-32 minimum lenght 11 and maximum lenght shall be 16.  Per i fornitori italiani il BT-32 deve avere una lunghezza tra 11 e 16 caratteri</assert>
+			<assert id="IT-R-002" 
+				test= "(ram:PostalTradeAddress/ram:LineOne)"  
+				flag="fatal"> [IT-R-002] BT-35 (Seller address line 1) - Italian suppliers MUST provide the postal address line 1 - I fornitori italiani devono indicare l'indirizzo postale.</assert>
+			<assert id="IT-R-003" 
+				test= "(ram:PostalTradeAddress/ram:CityName)" 
+				flag="fatal"> [IT-R-003] BT-37 (Seller city) - Italian suppliers MUST provide the postal address city - I fornitori italiani devono indicare la città di residenza.</assert>
+			<assert id="IT-R-004"
+				test= "(ram:PostalTradeAddress/ram:PostcodeCode)"
+				flag="fatal"> [IT-R-004] BT-38 (Seller post code) - Italian suppliers MUST provide the postal address post code - I fornitori italiani devono indicare il CAP di residenza.            
+            </assert>
+		</rule> 
+	</pattern>	
     
     <!-- Swedish rules -->
     <pattern>
