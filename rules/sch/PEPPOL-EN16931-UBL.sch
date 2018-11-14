@@ -44,6 +44,14 @@
     <value-of select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"
     />
   </function>
+  
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod11" as="xs:boolean">
+    <param name="val"/>
+    <variable name="length" select="string-length($val) - 1"/>
+    <variable name="digits" select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
+    <variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (($i mod 6) + 2))"/>
+    <value-of select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
+  </function>
 
   <!-- Empty elements -->
   <pattern>
@@ -95,8 +103,8 @@
         flag="fatal">Only one invoiced object is allowed on document level</assert>
     </rule>
 
-    <rule context="ubl-creditnote:CreditNote/cac:AdditionalDocumentReference[cbc:DocumentTypeCode='50']">
-    <assert id="PEPPOL-EN16931-R080" test="(count(.) &lt;= 1)" 
+    <rule context="ubl-creditnote:CreditNote[cac:AdditionalDocumentReference/cbc:DocumentTypeCode='50']">
+      <assert id="PEPPOL-EN16931-R080" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='50']) &lt;= 1)" 
       flag="fatal">Only one project reference is allowed on document level</assert>
     </rule>
     
@@ -273,10 +281,16 @@
     <rule context="cac:AccountingSupplierParty/cac:Party[$supplierCountry = 'NO']">
       <assert id="NO-R-002"
         test="normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'TAX']/cbc:CompanyID) = 'Foretaksregisteret'"
-        flag="warning">Most invoice issuers are required to append "Foretaksregisteret" to their
+        flag="warning">For Norwegian suppliers, most invoice issuers are required to append "Foretaksregisteret" to their
         invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk
         selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf.
         foretaksregisterloven § 10-2."</assert>
+ 
+        <assert id="NO-R-001"
+          test="cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/substring(cbc:CompanyID, 1, 2)='NO' and matches(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/substring(cbc:CompanyID,3), '^[0-9]{9}MVA$') 
+          and u:mod11(substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID, 3, 9)) or not(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/substring(cbc:CompanyID, 1, 2)='NO')"
+          flag="fatal">For Norwegian suppliers, a VAT number MUST be the country code prefix NO followed by a valid Norwegian organization number (nine numbers) followed by the letters MVA.</assert>
+      
     </rule>
 
   </pattern>
