@@ -72,6 +72,9 @@
             <assert id="PEPPOL-EN16931-R006"
                 test="count(ram:AdditionalReferencedDocument[ram:TypeCode='130']) &lt;=1"
                 flag="fatal">Only one invoiced object is allowed on document level</assert>
+            <assert id="PEPPOL-EN16931-R080"
+                test="count(ram:AdditionalReferencedDocument[ram:TypeCode='50']) &lt;=1"
+                flag="fatal">Only one project reference is allowed on document level</assert>
         </rule>
         
 
