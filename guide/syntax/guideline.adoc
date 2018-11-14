@@ -1,19 +1,7 @@
 
-= Detailed UBL message guideline
-
-The guideline gives an overview of all elements and attributes used in this {peppol} BIS, as well as details of the business term, description, cardinality, rules and examples.
-
-* {ubl-invoice-mapping}
-* {ubl-cn-mapping}
-
-====
-NOTE: Please be aware that the business term names and descriptions comes from {EN16931}, which uses the naming invoice, for both invoices and credit notes.
-
-====
-
-== UBL Schemas
+= UBL schemas and namespaces
 
 The XML schemas used are
 
-* {UBLInv}
-* {UBLCreditNote}
+* {UBLInv} with the target namespace `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2`
+* {UBLCreditNote} with the target namespace `urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2`
