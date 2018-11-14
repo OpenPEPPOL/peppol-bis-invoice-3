@@ -1,0 +1,18 @@
+
+
+.UBL example of price with price discount
+[source, xml, indent=0]
+----
+include::{snippet-dir}/price.xml[tags=price]
+----
+<1> Item gross price
+<2> Item price discount
+<3> Item price base quantity
+<4> Item net price, must be equal to Item Gross price - item price discount (if these elements are used)
+
+
+.UBL example of price without price discount
+[source, xml, indent=0]
+----
+include::{snippet-dir}/price.xml[tags=simple-price]
+----

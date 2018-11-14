@@ -21,3 +21,5 @@ include::../{snippet-dir}/Snippet-refs.xml[tags=project]
 ----
 include::../{snippet-dir}/CreditNote-snippets.xml[tags=project ]
 ----
+<1> Code 50 indicating this is a project reference
+<2> The project reference identifier

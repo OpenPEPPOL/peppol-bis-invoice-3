@@ -1,7 +1,7 @@
 
 = Calculation on line level
 
-
+[[price-calc]]
 == Item net price (BT-146)
 
 If gross price and discount exist, the Item net price has to equal with the item gross price less the item price discount.
@@ -15,7 +15,7 @@ include::../../syntax/priceamount.adoc[]
 
 
 
-
+[[lineamount-calc]]
 == Invoice line net amount (BT-131)
 
 The invoice line net amount (BT-131) is as the name implies the *net* amount without VAT, and inclusive of line level allowance and charges.
@@ -23,7 +23,8 @@ The invoice line net amount (BT-131) is as the name implies the *net* amount wit
 The formula for calculating the invoice line net amount is:
 
 ====
-stem:["Item line net amount" = (("Item net price (BT-146)" div "Item price base quantity (BT-149)") times ("Invoiced Quantity (BT-129)")] +
+stem:["Item line net amount" = (("Item net price (BT-146)" div "Item price base quantity (BT-149)")] +
+stem:[times ("Invoiced Quantity (BT-129)")] +
 stem:[+ "Invoice line charge amount (BT-141)" - "Invoice line allowance amount (BT-136)"]
 ====
 

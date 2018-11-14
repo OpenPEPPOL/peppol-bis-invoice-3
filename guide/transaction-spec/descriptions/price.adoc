@@ -1,0 +1,8 @@
+= Price information
+
+
+An invoice must contain information about the item net price and additional information such as gross price, item price base quantity and price discount may be added.
+
+For details on calculating price see <<price-calc>>.
+
+include::../../syntax/price.adoc[]

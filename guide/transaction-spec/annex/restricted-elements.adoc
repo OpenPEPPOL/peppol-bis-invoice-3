@@ -2,9 +2,6 @@
 
 = Restrictions on the invoice and credit note transaction
 
-
-
-
 [cols="2s,2s,3,3,2", options="header"]
 |====
 
@@ -25,6 +22,12 @@
 | Add new non-conflicting business rule to existing element(s)
 | VAT accounting currency code shall be different from invoice currency code when provided.
 | PEPPOL-EN16931-R005
+
+| BT-9, BT-20
+| Payment due date or payment terms
+| Change to existing CEN TC434 rule (issue reported to TC434)
+| Ensure the rule only fires for invoices, not credit notes
+| BR-CO-25
 
 | BT-10, BT-13
 | Buyer reference or Purchase order
@@ -61,13 +64,13 @@
 
 | BT-34
 | Seller electronic address
-| Add new non-conflicting business rule to existing element(s)
+| Make a conditional element mandatory (0..x  – > 1..x)
 | Seller electronic address shall be provided
 | PEPPOL-EN16931-R020
 
 | BT-49
 | Buyer electronic address
-| Add new non-conflicting business rule to existing element(s)
+| Make a conditional element mandatory (0..x  – > 1..x)
 | Buyer electronic address shall be provided
 | PEPPOL-EN16931-R010
 
@@ -108,12 +111,6 @@ stem:["base amount" times ("percentage" div 100)]
 | Add new non-conflicting business rule to existing element(s)
 | Only one tax total without tax subtotals shall be provided when tax currency code is provided.
 | PEPPOL-EN16931-R054
-
-| BT-111
-| Invoice total VAT amount in accounting currency
-| Add new non-conflicting business rule to existing element(s)
-| The currencyID for invoice total VAT in accounting currency, shall be the same as VAT accounting currency code (BT-6).
-| PEPPOL-EN16931-R052
 
 | BG-23
 | VAT breakdown

@@ -24,6 +24,8 @@ include::intrastat.adoc[]
 
 include::item.adoc[]
 
+include::price.adoc[]
+
 include::uom.adoc[]
 
 

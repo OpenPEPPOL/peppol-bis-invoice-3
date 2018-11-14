@@ -20,7 +20,7 @@ v{revision}
 
 = Link to main site of documentation
 
-http://test-docs.peppol.eu/poacc/billing/3.0/[Main documentation site]
+http://docs.peppol.eu/poacc/billing/3.0/[Main documentation site]
 
 :leveloffset: +1
 
@@ -62,6 +62,6 @@ include::appendix/national_rules.adoc[]
 
 include::appendix/syntax_rules.adoc[]
 
-include::appendix/examples.adoc[]
+//include::appendix/examples.adoc[]
 
 //include::rules/index.adoc[]
