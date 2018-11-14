@@ -59,9 +59,11 @@
             </cac:ExternalReference>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
+    <!-- tag::project[] -->
     <cac:ProjectReference>
         <cbc:ID>project333</cbc:ID>
     </cac:ProjectReference>
+    <!-- end::project[] -->
     <cac:AccountingSupplierParty>
         <cac:Party>
             <cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>

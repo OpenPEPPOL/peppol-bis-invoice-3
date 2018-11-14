@@ -1,0 +1,23 @@
+
+[[projectref]]
+= Project reference
+
+The project reference is optional to use, and is sent in an invoice in the element `cac:ProjectReference/cbc:ID. In a credit note, this element does not exist, and project reference
+is sent by using the element `cac:AdditionalDocumentReference[cbc:DocumentTypeCode='50']/cbc:ID`.
+
+NOTE:: When sending the project reference, only the `cbc:ID` and the `cbc:DocumentTypeCode` are allowed in the `cac:AdditionalDocumentReference` element.
+
+
+.UBL example of proejct reference in an invoice
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/Snippet-refs.xml[tags=project]
+----
+
+
+
+.UBL example of project reference in a credit note
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/CreditNote-snippets.xml[tags=project ]
+----

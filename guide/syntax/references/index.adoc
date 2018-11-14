@@ -5,3 +5,5 @@ include::contract.adoc[]
 include::despatch-receipt.adoc[]
 
 include::tender.adoc[]
+
+include::project.adoc[]

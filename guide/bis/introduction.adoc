@@ -6,17 +6,19 @@ This {peppol} BIS provides a set of specifications for implementing a {peppol} b
 
 This specification is a Core Invoice Usage Specification (CIUS) of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents following this CIUS will always be compliant with the European Standard ({EN16931}).
 
-Implementers must purchase copies (licences) of the relevant parts of EN 16931, which as a minimum will include:
-
-* *EN 16931-1:2017 - Electronic invoicing* - Part 1: Semantic data model of the core elements of an electronic invoice ({EN16931})
-* *CEN/TS 16931-3-2:2017 Electronic invoicing* - Part 3-2: Syntax binding for ISO/IEC 19845 (UBL 2.1) invoice and credit note ({ubl-binding})
-* *CEN/TS 16931-3-3:2017 Electronic invoicing* - Part 3-3: Syntax binding for UN/CEFACT XML Industry Invoice D16B ({cii-binding})
-
-CEN lists sales points for these specifications under the {TC434-docs}[CEN/TC 434 Published Standards section]. 
-
-
 The purpose of this document is to describe the use of the invoice and credit note messages in PEPPOL, and to facilitate an efficient implementation and increased use of electronic collaboration
 regarding the billing process based on these formats.
+
+.Statement of copyright
+****
+This PEPPOL Business Interoperability Specification (PEPPOL BIS) document is a Core Invoice Usage Specification (CIUS) based on CEN/EN 16931:2017. The restrictions on CEN/EN 16931:2017 implemented in this PEPPOL BIS appear from the conformance statement provided in appendix A.
+
+The copyright of CEN/EN 16931:2107 is owned by CEN and its members - the European National Standards Bodies. A copy of CEN/EN 16931-1:2017 may be obtained free of charge from any CEN member.
+
+OpenPEPPOL AISBL holds the copyright of this PEPPOL BIS, developed and published subject to the conditions of the agreement between the European Commission and CEN allowing derivate works to be developed and distributed with no additional licensing requirements. CEN and the National  Standards Bodies bears no liability from the content and implementation of this PEPPOL BIS.
+
+This PEPPOL BIS document may not be modified, re-distribute, sold or repackaged in any other way without the prior consent of OpenPEPPOL AISBL.
+****
 
 == Audience
 

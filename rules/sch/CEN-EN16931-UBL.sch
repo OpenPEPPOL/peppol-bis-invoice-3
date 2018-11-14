@@ -36,7 +36,7 @@
       <rule context="cac:AdditionalDocumentReference">
          <assert test="(cbc:ID) != ''" flag="fatal" id="BR-52">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).    </assert>
       </rule>
-      <rule context="cac:LegalMonetaryTotal/cbc:PayableAmount">
+          <rule context="ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount">
          <assert test="((. &gt; 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)"
                  flag="fatal"
                  id="BR-CO-25">[BR-CO-25]-In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</assert>
