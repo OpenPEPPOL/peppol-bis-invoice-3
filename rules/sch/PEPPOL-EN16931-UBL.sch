@@ -101,12 +101,13 @@
         code is provided.</assert>
       <assert id="PEPPOL-EN16931-R006" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='130']) &lt;= 1)" 
         flag="fatal">Only one invoiced object is allowed on document level</assert>
+   
+      
+      <assert id="PEPPOL-EN16931-R080" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='50']) &lt;= 1)" 
+        flag="fatal">Only one project reference is allowed on document level</assert>
     </rule>
 
-    <rule context="ubl-creditnote:CreditNote[cac:AdditionalDocumentReference/cbc:DocumentTypeCode='50']">
-      <assert id="PEPPOL-EN16931-R080" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='50']) &lt;= 1)" 
-      flag="fatal">Only one project reference is allowed on document level</assert>
-    </rule>
+
     
     <rule context="cbc:TaxCurrencyCode">
       <assert id="PEPPOL-EN16931-R005"

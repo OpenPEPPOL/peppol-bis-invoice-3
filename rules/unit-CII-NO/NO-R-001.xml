@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
+	<assert>
+		<description>Verify existence of VAT registration information</description>
+		<scope>NO-R-001</scope>
+	</assert>
+	<test id="1">
+		<assert>
+			<success>NO-R-001</success>
+		</assert>
+		<CrossIndustryInvoice
+				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+				xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+				xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+
+			<SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:SpecifiedTaxRegistration>
+							<ram:ID schemeID="VAT">NO991825827MVA</ram:ID>
+						</ram:SpecifiedTaxRegistration>
+					</ram:SellerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+			</SupplyChainTradeTransaction>
+
+		</CrossIndustryInvoice>
+	</test>
+	
+	<test id="2">
+		<assert>
+			<error>NO-R-001</error>
+		</assert>
+		<CrossIndustryInvoice
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+			
+			<SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:SpecifiedTaxRegistration>
+							<ram:ID schemeID="VAT">NO991 825 827MVA</ram:ID>
+						</ram:SpecifiedTaxRegistration>
+					</ram:SellerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+			</SupplyChainTradeTransaction>
+			
+		</CrossIndustryInvoice>
+	</test>
+	
+	<test id="3">
+		<assert>
+			<success>NO-R-001</success>
+		</assert>
+		<CrossIndustryInvoice
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+			
+			<SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:SpecifiedTaxRegistration>
+							<ram:ID schemeID="VAT">IS91825827</ram:ID>
+						</ram:SpecifiedTaxRegistration>
+					</ram:SellerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+			</SupplyChainTradeTransaction>
+			
+		</CrossIndustryInvoice>
+	</test>
+	
+
+	
+</testSet>

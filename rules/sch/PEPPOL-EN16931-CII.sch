@@ -51,6 +51,14 @@
         <value-of
             select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"/>
     </function>
+    
+    <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod11" as="xs:boolean">
+        <param name="val"/>
+        <variable name="length" select="string-length($val) - 1"/>
+        <variable name="digits" select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
+        <variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (($i mod 6) + 2))"/>
+        <value-of select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
+    </function>
 
     <pattern>
 
@@ -239,14 +247,19 @@
 
         <!-- Norway -->
         <rule context="ram:SellerTradeParty[$supplierCountry = 'NO']">
-            <assert id="NO-R-001" test="ram:SpecifiedLegalOrganization" flag="fatal">Norwegian
-                suppliers MUST provide legal entity.</assert>
+           
             <assert id="NO-R-002"
                 test="ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'FC'][normalize-space(text()) = 'Foretaksregisteret']"
                 flag="warning">Most invoice issuers are required to append "Foretaksregisteret" to
                 their invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av
                 utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet,
                 jf. foretaksregisterloven § 10-2."</assert>
+            
+            <assert id="NO-R-001"
+                test="ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/substring(ram:ID, 1, 2)='NO' and matches(ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/substring(ram:ID,3) , '^[0-9]{9}MVA$') 
+                and u:mod11(substring(ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/ram:ID, 3, 9)) or not(ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/substring(ram:ID, 1, 2)='NO')"
+                flag="fatal">For Norwegian suppliers, a VAT number MUST be the country code prefix NO followed by a valid Norwegian organization number (nine numbers) followed by the letters MVA.</assert>
+            
         </rule>
     </pattern>
 
