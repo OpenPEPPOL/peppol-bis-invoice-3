@@ -1,0 +1,5 @@
+= National example files
+
+In this folder you can find national example files. The different PEPPOL Authorities are responsible for these files.
+
+One subfolder named with the Alpha-2 country code of the country should be created, and the national example files located within that folder.
