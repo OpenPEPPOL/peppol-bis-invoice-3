@@ -498,10 +498,10 @@
 
     <rule
       context="//cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity[../cac:PostalAddress/cac:Country/cbc:IdentificationCode = &apos;SE&apos; and cbc:CompanyID]">
-      <assert id="SE-R-003" test="string(number(cbc:CompanyID)) != &apos;NaN&apos;" flag="fatal"
+      <assert id="SE-R-003" test="string(number(cbc:CompanyID)) != &apos;NaN&apos;" flag="warning"
         >Swedish organisation numbers should be numeric.</assert>
 
-      <assert id="SE-R-004" test="string-length(normalize-space(cbc:CompanyID)) = 10" flag="fatal"
+      <assert id="SE-R-004" test="string-length(normalize-space(cbc:CompanyID)) = 10" flag="warning"
         >Swedish organisation numbers consist of 10 characters.</assert>
     </rule>
 
