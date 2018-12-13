@@ -14,7 +14,7 @@ docker run --rm -i \
 
 
 # Validator
-docker run --rm -i -v $PROJECT:/src difi/vefa-validator build -x -t -n eu.peppol.poacc.billing.v3 -a rules,guide -target target/validator /src
+docker run --rm -i -v $PROJECT:/src difi/vefa-validator build -x -t -n eu.peppol.poacc.v3.billing -a rules,guide -target target/validator /src
 
 
 # Generate adoc-files from rules
