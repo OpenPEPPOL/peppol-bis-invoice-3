@@ -18,7 +18,7 @@
   <configuration>
     <identifier>peppolbis-en16931-base-3.0-cii</identifier>
     <title>PEPPOL BIS Billing 3.0 (Base)</title>
-    <file source="sch/PEPPOL-EN16931-CII.sch" path="xsl/PEPPOL-EN16931-CII.xsl"/>
+    <file path="sch/PEPPOL-EN16931-CII.sch"/>
   </configuration>
 
   <!-- <configuration>
@@ -32,13 +32,13 @@
   <configuration>
     <identifier>peppolbis-en16931-cen-ubl</identifier>
     <title>CEN TC434 UBL</title>
-    <file source="sch/CEN-EN16931-UBL.sch" path="xsl/CEN-EN16931-UBL.xsl" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <file path="sch/CEN-EN16931-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
   </configuration>
 
   <configuration>
     <identifier>peppolbis-en16931-base-3.0-ubl</identifier>
     <title>PEPPOL BIS Billing 3.0 (Base)</title>
-    <file source="sch/PEPPOL-EN16931-UBL.sch" path="xsl/PEPPOL-EN16931-UBL.xsl" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <file path="sch/PEPPOL-EN16931-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
   </configuration>
 
   <configuration>
