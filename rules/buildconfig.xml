@@ -15,19 +15,30 @@
   <testfolder>unit-UBL-IT</testfolder> 
   <testfolder>unit-UBL-SE</testfolder> 
 
+  <!-- CII -->
+
+  <configuration>
+    <identifier>peppolbis-en16931-cen-cii</identifier>
+    <title>CEN TC434 UBL</title>
+    <file path="sch/CEN-EN16931-CII.sch"/>
+  </configuration>
+
   <configuration>
     <identifier>peppolbis-en16931-base-3.0-cii</identifier>
     <title>PEPPOL BIS Billing 3.0 (Base)</title>
     <file path="sch/PEPPOL-EN16931-CII.sch"/>
   </configuration>
 
-  <!-- <configuration>
+  <configuration>
     <identifier>peppolbis-en16931-01-3.0-cii</identifier>
     <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
-    <declaration type="xml.uncefact">CrossIndustryInvoice::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
-    <inherit>tc434-cii</inherit>
+    <declaration type="xml.uncefact">CrossIndustryInvoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
+    <inherit>uncefact-d16b-cii-uncoupled</inherit>
+    <inherit>peppolbis-en16931-cen-cii</inherit>
     <inherit>peppolbis-en16931-base-3.0-cii</inherit>
-  </configuration> -->
+  </configuration>
+
+  <!-- UBL -->
 
   <configuration>
     <identifier>peppolbis-en16931-cen-ubl</identifier>
@@ -50,7 +61,7 @@
   <configuration>
     <identifier>peppolbis-en16931-01-3.0-ubl-invoice</identifier>
     <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
-    <declaration type="xml.ubl">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#Invoice::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
+    <declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
     <inherit>ubl-invoice-2.1</inherit>
     <inherit>peppolbis-en16931-cen-ubl</inherit>
     <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
@@ -60,7 +71,7 @@
   <configuration>
     <identifier>peppolbis-en16931-01-3.0-ubl-creditnote</identifier>
     <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
-    <declaration type="xml.ubl">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#CreditNote::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
+    <declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
     <inherit>ubl-creditnote-2.1</inherit>
     <inherit>peppolbis-en16931-cen-ubl</inherit>
     <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
