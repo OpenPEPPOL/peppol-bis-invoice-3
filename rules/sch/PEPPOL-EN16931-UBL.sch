@@ -205,13 +205,13 @@
       <let name="allowancesTotal"
         value="
           if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']) then
-            xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount))
+            xs:decimal(round(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount) * 10 * 10) div 100)
           else
             0"/>
       <let name="chargesTotal"
         value="
           if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then
-            xs:decimal(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount))
+            xs:decimal(round(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount) * 10 * 10) div 100)
           else
             0"/>
 
