@@ -68,15 +68,13 @@
                 >Business process MUST be provided.</assert>
             <assert id="PEPPOL-EN16931-R004"
                 test="starts-with(normalize-space(ram:GuidelineSpecifiedDocumentContextParameter/ram:ID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')"
-                flag="fatal">Specification identifier MUST have the value
-                'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
+                flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
         </rule>
 
         <rule context="ram:ApplicableHeaderTradeAgreement">
             <assert id="PEPPOL-EN16931-R003"
                 test="ram:BuyerReference or ram:BuyerOrderReferencedDocument/ram:IssuerAssignedID"
-                flag="fatal">A buyer reference or purchase order reference MUST be
-                provided.</assert>
+                flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
             <assert id="PEPPOL-EN16931-R006"
                 test="count(ram:AdditionalReferencedDocument[ram:TypeCode='130']) &lt;=1"
                 flag="fatal">Only one invoiced object is allowed on document level</assert>
@@ -90,8 +88,7 @@
         <rule context="ram:ApplicableHeaderTradeSettlement">
             <assert id="PEPPOL-EN16931-R005"
                 test="not(ram:TaxCurrencyCode) or normalize-space(ram:TaxCurrencyCode/text()) != normalize-space(ram:InvoiceCurrencyCode/text())"
-                flag="fatal">VAT accounting currency code MUST be different from invoice currency
-                code when provided.</assert>
+                flag="fatal">VAT accounting currency code MUST be different from invoice currency code when provided.</assert>
            
             <assert id="PEPPOL-EN16931-R053"
                 test="count(ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:TaxTotalAmount[@currencyID = $documentCurrencyCode]) = 1"
@@ -102,8 +99,7 @@
                         1
                     else
                         0)"
-                flag="fatal">Only one tax total without tax subtotals MUST be provided when tax
-                currency code is provided.</assert>
+                flag="fatal">Only one tax total without tax subtotals MUST be provided when tax currency code is provided.</assert>
         </rule>
 
         <!-- PEPPOL-EN16931-R051 is obsolete in CII. -->
@@ -143,8 +139,7 @@
                         ram:ActualAmount
                     else
                         0, (xs:decimal(ram:BasisAmount) * xs:decimal(ram:CalculationPercent)) div 100, 0.02)"
-                flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base
-                amount and percentage exists</assert>
+                flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount and percentage exists</assert>
         </rule>
 
 
@@ -212,8 +207,7 @@
 
             <assert id="PEPPOL-EN16931-R120"
                 test="u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
-                flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net
-                price/item price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount</assert>
+                flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount</assert>
             
             <assert id="PEPPOL-EN16931-R100" test="count(ram:SpecifiedLineTradeSettlement/ram:AdditionalReferencedDocument[ram:TypeCode='130']) &lt;=1" 
                 flag="fatal">Only one invoiced object is allowed pr line</assert>
@@ -224,8 +218,7 @@
 
         <rule context="ram:NetPriceProductTradePrice | ram:GrossPriceProductTradePrice">
             <assert id="PEPPOL-EN16931-R121"
-                test="not(ram:BasisQuantity) or xs:decimal(ram:BasisQuantity) &gt; 0" flag="fatal"
-                >Base quantity MUST be a positive number above zero.</assert>
+                test="not(ram:BasisQuantity) or xs:decimal(ram:BasisQuantity) &gt; 0" flag="fatal">Base quantity MUST be a positive number above zero.</assert>
         </rule>
 
         <!-- PEPPOL-EN16931-R044 and PEPPOL-EN16931-R046 are not needed due to lack of elements for the EN. -->
@@ -235,8 +228,7 @@
             context="ram:NetPriceProductTradePrice/ram:BasisQuantity[@unitCode] | ram:GrossPriceProductTradePrice/ram:BasisQuantity[@unitCode]">
             <assert id="PEPPOL-EN16931-R130"
                 test="@unitCode = ../../../ram:SpecifiedLineTradeDelivery/ram:BilledQuantity/@unitCode"
-                flag="fatal">Unit code of price base quantity MUST be same as invoiced
-                quantity.</assert>
+                flag="fatal">Unit code of price base quantity MUST be same as invoiced quantity.</assert>
         </rule>
 
     </pattern>

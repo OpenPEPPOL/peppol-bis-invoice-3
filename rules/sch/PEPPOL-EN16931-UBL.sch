@@ -56,12 +56,10 @@
   <!-- Empty elements -->
   <pattern>
     <rule context="cbc:*">
-      <assert id="PEPPOL-EN16931-R008" test=". != ''" flag="fatal">Document MUST not contain empty
-        elements.</assert>
+      <assert id="PEPPOL-EN16931-R008" test=". != ''" flag="fatal">Document MUST not contain empty elements.</assert>
     </rule>
     <rule context="cac:*">
-      <assert id="PEPPOL-EN16931-R009" test="count(*) != 0" flag="fatal">Document MUST not contain
-        empty elements.</assert>
+      <assert id="PEPPOL-EN16931-R009" test="count(*) != 0" flag="fatal">Document MUST not contain empty elements.</assert>
     </rule>
   </pattern>
 
@@ -82,23 +80,19 @@
 
     <!-- Document level -->
     <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
-      <assert id="PEPPOL-EN16931-R001" test="cbc:ProfileID" flag="fatal">Business process MUST be
-        provided.</assert>
-      <assert id="PEPPOL-EN16931-R002" test="count(cbc:Note) &lt;= 1" flag="fatal">No more than one
-        note is allowed on document level.</assert>
+      <assert id="PEPPOL-EN16931-R001" test="cbc:ProfileID" flag="fatal">Business process MUST be provided.</assert>
+      <assert id="PEPPOL-EN16931-R002" test="count(cbc:Note) &lt;= 1" flag="fatal">No more than one note is allowed on document level.</assert>
       <assert id="PEPPOL-EN16931-R003" test="cbc:BuyerReference or cac:OrderReference/cbc:ID"
         flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R004"
         test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')"
-        flag="fatal">Specification identifier MUST have the value
-        'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
+        flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
 
       <assert id="PEPPOL-EN16931-R053" test="count(cac:TaxTotal[cac:TaxSubtotal]) = 1" flag="fatal"
         >Only one tax total with tax subtotals MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R054"
         test="count(cac:TaxTotal[not(cac:TaxSubtotal)]) = (if (cbc:TaxCurrencyCode) then 1 else 0)"
-        flag="fatal">Only one tax total without tax subtotals MUST be provided when tax currency
-        code is provided.</assert>
+        flag="fatal">Only one tax total without tax subtotals MUST be provided when tax currency code is provided.</assert>
       <assert id="PEPPOL-EN16931-R006" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='130']) &lt;= 1)" 
         flag="fatal">Only one invoiced object is allowed on document level</assert>
    
@@ -112,34 +106,29 @@
     <rule context="cbc:TaxCurrencyCode">
       <assert id="PEPPOL-EN16931-R005"
         test="not(normalize-space(text()) = normalize-space(../cbc:DocumentCurrencyCode/text()))"
-        flag="fatal">VAT accounting currency code MUST be different from invoice currency code when
-        provided.</assert>
+        flag="fatal">VAT accounting currency code MUST be different from invoice currency code when provided.</assert>
       
     
     </rule>
 
     <!-- Accounting customer -->
     <rule context="cac:AccountingCustomerParty/cac:Party">
-      <assert id="PEPPOL-EN16931-R010" test="cbc:EndpointID" flag="fatal">Buyer electronic address
-        MUST be provided</assert>
+      <assert id="PEPPOL-EN16931-R010" test="cbc:EndpointID" flag="fatal">Buyer electronic address MUST be provided</assert>
     </rule>
 
     <!-- Accounting supplier -->
     <rule context="cac:AccountingSupplierParty/cac:Party">
-      <assert id="PEPPOL-EN16931-R020" test="cbc:EndpointID" flag="fatal">Seller electronic address
-        MUST be provided</assert>
+      <assert id="PEPPOL-EN16931-R020" test="cbc:EndpointID" flag="fatal">Seller electronic address MUST be provided</assert>
     </rule>
 
     <!-- Allowance/Charge (document level/line level) -->
     <rule
       context="ubl-invoice:Invoice/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-creditnote:CreditNote/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
-      <assert id="PEPPOL-EN16931-R041" test="false()" flag="fatal">Allowance/charge base amount MUST
-        be provided when allowance/charge percentage is provided.</assert>
+      <assert id="PEPPOL-EN16931-R041" test="false()" flag="fatal">Allowance/charge base amount MUST be provided when allowance/charge percentage is provided.</assert>
     </rule>
     <rule
       context="ubl-invoice:Invoice/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-creditnote:CreditNote/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
-      <assert id="PEPPOL-EN16931-R042" test="false()" flag="fatal">Allowance/charge percentage MUST
-        be provided when allowance/charge base amount is provided.</assert>
+      <assert id="PEPPOL-EN16931-R042" test="false()" flag="fatal">Allowance/charge percentage MUST be provided when allowance/charge base amount is provided.</assert>
     </rule>
     <rule
       context="ubl-invoice:Invoice/cac:AllowanceCharge | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge | ubl-creditnote:CreditNote/cac:AllowanceCharge | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge">
@@ -149,8 +138,7 @@
             cbc:Amount
           else
             0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
-        flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount
-        and percentage exists</assert>
+        flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount and percentage exists</assert>
     </rule>
 
 
@@ -159,16 +147,13 @@
       context="
         cac:PaymentMeans[some $code in tokenize('49 59', '\s')
           satisfies normalize-space(cbc:PaymentMeansCode) = $code]">
-      <assert id="PEPPOL-EN16931-R061" test="cac:PaymentMandate/cbc:ID" flag="fatal">Mandate
-        reference MUST be provided for direct debit.</assert>
+      <assert id="PEPPOL-EN16931-R061" test="cac:PaymentMandate/cbc:ID" flag="fatal">Mandate reference MUST be provided for direct debit.</assert>
     </rule>
 
     <!-- Currency -->
     <rule
       context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cac:TaxTotal[cac:TaxSubtotal]/cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount">
-      <assert id="PEPPOL-EN16931-R051" test="@currencyID = $documentCurrencyCode" flag="fatal">All
-        currencyID attributes must have the same value as the invoice currency code (BT-5), except
-        for the invoice total VAT amount in accounting currency (BT-111) </assert>
+      <assert id="PEPPOL-EN16931-R051" test="@currencyID = $documentCurrencyCode" flag="fatal">All currencyID attributes must have the same value as the invoice currency code (BT-5), except for the invoice total VAT amount in accounting currency (BT-111).</assert>
     </rule>
     
    
@@ -177,14 +162,12 @@
     <rule
       context="ubl-invoice:Invoice[cac:InvoicePeriod/cbc:StartDate]/cac:InvoiceLine/cac:InvoicePeriod/cbc:StartDate | ubl-creditnote:CreditNote[cac:InvoicePeriod/cbc:StartDate]/cac:CreditNoteLine/cac:InvoicePeriod/cbc:StartDate">
       <assert id="PEPPOL-EN16931-R110"
-        test="xs:date(text()) &gt;= xs:date(../../../cac:InvoicePeriod/cbc:StartDate)" flag="fatal"
-        >Start date of line period MUST be within invoice period.</assert>
+        test="xs:date(text()) &gt;= xs:date(../../../cac:InvoicePeriod/cbc:StartDate)" flag="fatal">Start date of line period MUST be within invoice period.</assert>
     </rule>
     <rule
       context="ubl-invoice:Invoice[cac:InvoicePeriod/cbc:EndDate]/cac:InvoiceLine/cac:InvoicePeriod/cbc:EndDate | ubl-creditnote:CreditNote[cac:InvoicePeriod/cbc:EndDate]/cac:CreditNoteLine/cac:InvoicePeriod/cbc:EndDate">
       <assert id="PEPPOL-EN16931-R111"
-        test="xs:date(text()) &lt;= xs:date(../../../cac:InvoicePeriod/cbc:EndDate)" flag="fatal"
-        >End date of line period MUST be within invoice period.</assert>
+        test="xs:date(text()) &lt;= xs:date(../../../cac:InvoicePeriod/cbc:EndDate)" flag="fatal">End date of line period MUST be within invoice period.</assert>
     </rule>
 
     <!-- Line level - line extension amount -->
@@ -234,8 +217,7 @@
 
       <assert id="PEPPOL-EN16931-R120"
         test="u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
-        flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item
-        price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount</assert>
+        flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount</assert>
       <assert id="PEPPOL-EN16931-R121"
         test="not(cac:Price/cbc:BaseQuantity) or xs:decimal(cac:Price/cbc:BaseQuantity) &gt; 0"
         flag="fatal">Base quantity MUST be a positive number above zero.</assert>
@@ -252,8 +234,7 @@
         flag="fatal">Charge on price level is NOT allowed.</assert>
       <assert id="PEPPOL-EN16931-R046"
         test="not(cbc:BaseAmount) or xs:decimal(../cbc:PriceAmount) = xs:decimal(cbc:BaseAmount) - xs:decimal(cbc:Amount)"
-        flag="fatal">Item net price MUST equal (Gross price - Allowance amount) when gross price is
-        provided.</assert>
+        flag="fatal">Item net price MUST equal (Gross price - Allowance amount) when gross price is provided.</assert>
     </rule>
 
     <!-- Price -->
