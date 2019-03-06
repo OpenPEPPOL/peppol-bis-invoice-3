@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
-	configuration="peppolbis-en16931-base-3.0-ubl">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
 	<assert>
-		<description>For Danish suppliers the following Payment means codes are allowed: 1, 31, 42,
-			48, 49, 50, 58, 59, 93 and 97</description>
+		<description>For Danish suppliers the following Payment means codes are allowed: 1, 31, 42, 48, 49, 50, 58, 59, 93 and 97</description>
 		<scope>DK-R-005</scope>
 	</assert>
 	<test>
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -34,15 +29,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+	
 	<test>
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -65,15 +57,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+	
 	<test>
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -96,15 +85,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+	
 	<test>
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -124,15 +110,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+	
 	<test>
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -154,15 +137,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+	
 	<test>
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -184,38 +164,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+	
 	<test>
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:PaymentMeans>
-				<cbc:PaymentMeansCode name="Cash payment">10</cbc:PaymentMeansCode>
-			</cac:PaymentMeans>
-		</Invoice>
-	</test>
-
-	<test>
-		<assert>
-			<success>DK-R-005</success>
-		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -230,15 +184,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+	
 	<test>
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -253,15 +204,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+	
 	<test>
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -285,10 +233,7 @@
 		<assert>
 			<success>DK-R-005</success>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -308,15 +253,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+		
 	<test>
 		<assert>
-			<error>DK-R-005</error>
+			<fatal>DK-R-005</fatal>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>
@@ -336,15 +278,12 @@
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
-
+	
 	<test>
 		<assert>
-			<error>DK-R-005</error>
+			<fatal>DK-R-005</fatal>
 		</assert>
-		<Invoice
-			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
 					<cac:PostalAddress>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
 	<assert>
 		<description>For Danish suppliers bank account and registration account is mandatory if payment means is 31 or 42</description>
 		<scope>DK-R-006</scope>
@@ -45,7 +45,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-006</error>
+			<fatal>DK-R-006</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -83,7 +83,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-006</error>
+			<fatal>DK-R-006</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -121,7 +121,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-006</error>
+			<fatal>DK-R-006</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -159,7 +159,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-006</error>
+			<fatal>DK-R-006</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -194,5 +194,4 @@
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>
 	</test>
-
 </testSet>

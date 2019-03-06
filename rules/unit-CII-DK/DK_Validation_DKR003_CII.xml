@@ -19,44 +19,14 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listVersionID="7.0501">22334455</ram:ClassCode>
+							<ram:ClassCode listID="AA" listVersionID="7.0501">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listVersionID="19.05.01">22334455</ram:ClassCode>
-						</ram:DesignatedProductClassification>
-					</ram:SpecifiedTradeProduct>
-				</ram:IncludedSupplyChainTradeLineItem>
-				<ram:ApplicableHeaderTradeAgreement>
-					<ram:SellerTradeParty>
-						<ram:PostalTradeAddress>
-							<ram:CountryID>DK</ram:CountryID>
-						</ram:PostalTradeAddress>
-					</ram:SellerTradeParty>
-				</ram:ApplicableHeaderTradeAgreement>
-			</rsm:SupplyChainTradeTransaction>
-		</rsm:CrossIndustryInvoice>
-	</test>
-	
-	<test>
-		<assert>
-			<success>DK-R-003</success>
-		</assert>
-		<rsm:CrossIndustryInvoice
-			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
-			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
-			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-			<rsm:ExchangedDocument>
-				<ram:TypeCode>380</ram:TypeCode>
-			</rsm:ExchangedDocument>
-			<rsm:SupplyChainTradeTransaction>
-				<ram:IncludedSupplyChainTradeLineItem>
-					<ram:SpecifiedTradeProduct>
-						<ram:DesignatedProductClassification>
-							<ram:ClassCode listVersionID="19.0501">22334455</ram:ClassCode>
+							<ram:ClassCode listID="MP" listVersionID="19.05.01">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -86,7 +56,37 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listVersionID="HS">22334455</ram:ClassCode>
+							<ram:ClassCode listID="MP" listVersionID="19.0501">22334455</ram:ClassCode>
+						</ram:DesignatedProductClassification>
+					</ram:SpecifiedTradeProduct>
+				</ram:IncludedSupplyChainTradeLineItem>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>
+	
+	<test>
+		<assert>
+			<success>DK-R-003</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>380</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:IncludedSupplyChainTradeLineItem>
+					<ram:SpecifiedTradeProduct>
+						<ram:DesignatedProductClassification>
+							<ram:ClassCode listID="AA" listVersionID="HS">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>

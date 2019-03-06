@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
 	<assert>
 		<description>For Danish Suppliers PaymentReference is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeePartyCreditorFinancialAccount/IBANID (Giro kontonummer) is mandatory and must be 7 characters long, when payment means equals 50 (Giro)</description>
 		<scope>DK-R-008</scope>
@@ -108,7 +108,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-008</error>
+			<fatal>DK-R-008</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -142,7 +142,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-008</error>
+			<fatal>DK-R-008</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -176,7 +176,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-008</error>
+			<fatal>DK-R-008</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -210,7 +210,7 @@
 		
 	<test>
 		<assert>
-			<error>DK-R-008</error>
+			<fatal>DK-R-008</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -243,7 +243,7 @@
 	</test>
 	<test>
 		<assert>
-			<error>DK-R-008</error>
+			<fatal>DK-R-008</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -276,7 +276,7 @@
 	</test>
 	<test>
 		<assert>
-			<error>DK-R-008</error>
+			<fatal>DK-R-008</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"

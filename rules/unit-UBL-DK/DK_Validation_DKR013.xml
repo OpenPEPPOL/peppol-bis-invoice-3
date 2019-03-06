@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
 	<assert>
 		<description>For Danish Suppliers it is mandatory to use schemeID when PartyIdentification/ID is used for AccountingCustomerParty or AccountingSupplierParty</description>
 		<scope>DK-R-013</scope>
@@ -35,7 +35,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -62,7 +62,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -89,7 +89,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -116,7 +116,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
@@ -168,36 +168,10 @@
 		</CreditNote>
 	</test>
 	
-	<test>
-		<assert>
-			<success>DK-R-013</success>
-		</assert>
-		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PartyIdentification>
-						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
-					</cac:PartyIdentification>
-					<cac:PostalAddress>
-						<cac:Country>
-							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
-						</cac:Country>
-					</cac:PostalAddress>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-			<cac:AccountingCustomerParty>
-				<cac:Party>
-					<cac:PartyIdentification>
-						<cbc:ID schemeID="0088">5798001234567</cbc:ID>
-					</cac:PartyIdentification>
-				</cac:Party>
-			</cac:AccountingCustomerParty>
-		</CreditNote>
-	</test>
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 			<cac:AccountingSupplierParty>
@@ -224,7 +198,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 			<cac:AccountingSupplierParty>
@@ -251,7 +225,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 			<cac:AccountingSupplierParty>
@@ -278,7 +252,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
 			<cac:AccountingSupplierParty>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
 	<assert>
 		<description>For Danish Suppliers it is mandatory to use schemeID when GlobalID is used for SellerTradeParty or BuyerTradeParty</description>
 		<scope>DK-R-013</scope>
@@ -35,7 +35,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -63,7 +63,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -91,7 +91,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -119,7 +119,7 @@
 	
 	<test>
 		<assert>
-			<error>DK-R-013</error>
+			<fatal>DK-R-013</fatal>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
