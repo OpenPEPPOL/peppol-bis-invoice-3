@@ -148,6 +148,13 @@
                     else
                         0, (xs:decimal(ram:BasisAmount) * xs:decimal(ram:CalculationPercent)) div 100, 0.02)"
                 flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount and percentage exists</assert>
+				
+					<assert id="PEPPOL-EN16931-R043"
+						test="normalize-space(ram:ChargeIndicator/udt:Indicator/text()) = 'true' or normalize-space(ram:ChargeIndicator/udt:Indicator/text()) = 'false'"
+						flag="fatal">Allowance/charge ChargeIndicator value MUST equal 'true' or 'false'</assert>
+						
+				</rule>
+        <rule context="ram:AppliedTradeAllowanceCharge">
 					<assert id="PEPPOL-EN16931-R043"
 						test="normalize-space(ram:ChargeIndicator/udt:Indicator/text()) = 'true' or normalize-space(ram:ChargeIndicator/udt:Indicator/text()) = 'false'"
 						flag="fatal">Allowance/charge ChargeIndicator value MUST equal 'true' or 'false'</assert>

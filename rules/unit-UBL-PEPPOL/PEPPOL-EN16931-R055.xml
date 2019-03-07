@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+	<assert>
+    	<description>Verify operational sign of TaxTotals in different currency</description>
+		<scope>PEPPOL-EN16931-R055</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R055</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+			<cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
+
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+			</cac:TaxTotal>
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="SEK">100</cbc:TaxAmount>
+			</cac:TaxTotal>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R055</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+			<cbc:TaxCurrencyCode>SEK</cbc:TaxCurrencyCode>
+
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+			</cac:TaxTotal>
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="SEK">-100</cbc:TaxAmount>
+			</cac:TaxTotal>
+		</Invoice>
+	</test>
+	
+
+</testSet>
