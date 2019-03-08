@@ -428,7 +428,7 @@
 
 
         <rule
-            context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization[../ram:CountryID = &apos;SE&apos; and ram:SpecifiedLegalOrganization/ram:ID]">
+            context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization[../ram:CountryID = &apos;SE&apos; and ram:ID]">
             <assert id="SE-R-003" test="string(number(ram:ID)) != &apos;NaN&apos;" flag="warning"
                 >Swedish organisation numbers should be numeric.</assert>
 
