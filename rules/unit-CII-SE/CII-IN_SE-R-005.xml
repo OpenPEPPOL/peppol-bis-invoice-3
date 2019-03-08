@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
 	<assert>
-    <description>SE 'Godkänd för F-skatt' must be stated</description>
+    <description>SE Godkand för F-skatt must be stated</description>
 		<scope>SE-R-005</scope>
 	</assert>
 	<test>
