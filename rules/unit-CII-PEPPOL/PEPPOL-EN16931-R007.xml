@@ -2,7 +2,7 @@
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
     <assert>
         <description>Verify format of ProfileID.</description>
-        <scope>PEPPOL-EN16931-R001</scope>
+        <scope>PEPPOL-EN16931-R007</scope>
     </assert>
     <test>
         <assert>
