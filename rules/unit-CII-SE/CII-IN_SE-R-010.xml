@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
 	<assert>
     <description>For Swedish suppliers using Plusgiro, the Account ID must have 2-8 characteres</description>
 		<scope>SE-R-010</scope>

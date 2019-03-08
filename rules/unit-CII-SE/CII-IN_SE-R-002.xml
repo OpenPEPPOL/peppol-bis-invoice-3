@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
 	<assert>
     <description>Swedish VAT-numbers must have the trailing 12 characters in numeric form</description>
 		<scope>SE-R-002</scope>

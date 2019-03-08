@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
 	<assert>
 		<description>For Danish Suppliers it is mandatory to specify schemeID as "0184" (DK CVR-number) when PartyLegalEntity/CompanyID is used for AccountingSupplierParty</description>
 		<scope>DK-R-014</scope>

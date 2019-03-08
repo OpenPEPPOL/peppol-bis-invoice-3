@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
 	<assert>
     <description>Swedish VAT-numbers must consist of 14 characters.</description>
 		<scope>SE-R-001</scope>
