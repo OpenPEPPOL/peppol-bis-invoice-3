@@ -19,8 +19,8 @@
                     <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
                     <ram:TaxCurrencyCode>NOK</ram:TaxCurrencyCode>
                     <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
-                        <ram:TaxTotalAmount currencyID="EUR"/>
-                        <ram:TaxTotalAmount currencyID="NOK"/>
+                        <ram:TaxTotalAmount currencyID="EUR">0</ram:TaxTotalAmount>
+                        <ram:TaxTotalAmount currencyID="NOK">0</ram:TaxTotalAmount>
                     </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 </ram:ApplicableHeaderTradeSettlement>
             </SupplyChainTradeTransaction>
@@ -41,9 +41,9 @@
                     <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
                     <ram:TaxCurrencyCode>NOK</ram:TaxCurrencyCode>
                     <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
-                        <ram:TaxTotalAmount currencyID="EUR"/>
-                        <ram:TaxTotalAmount currencyID="NOK"/>
-                        <ram:TaxTotalAmount currencyID="SEK"/>
+                        <ram:TaxTotalAmount currencyID="EUR">0</ram:TaxTotalAmount>
+                        <ram:TaxTotalAmount currencyID="NOK">0</ram:TaxTotalAmount>
+                        <ram:TaxTotalAmount currencyID="SEK">0</ram:TaxTotalAmount>
                     </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 </ram:ApplicableHeaderTradeSettlement>
             </SupplyChainTradeTransaction>
@@ -64,7 +64,7 @@
                     <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
                     <ram:TaxCurrencyCode>NOK</ram:TaxCurrencyCode>
                     <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
-                        <ram:TaxTotalAmount currencyID="EUR"/>
+                        <ram:TaxTotalAmount currencyID="EUR">0</ram:TaxTotalAmount>
                     </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                 </ram:ApplicableHeaderTradeSettlement>
             </SupplyChainTradeTransaction>
