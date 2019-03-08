@@ -250,13 +250,7 @@
 			<cbc:ID>123456</cbc:ID>
 		</cac:PayeeFinancialAccount>
 	</cac:PaymentMeans>
-	<cac:PaymentMeans>
-		<cbc:PaymentMeansCode>56</cbc:PaymentMeansCode>
-		<cbc:PaymentID>Meddelande</cbc:PaymentID>
-		<cac:PayeeFinancialAccount>
-			<cbc:ID>1234567</cbc:ID>
-		</cac:PayeeFinancialAccount>
-	</cac:PaymentMeans>
+
 	<cac:PaymentTerms>
 		<cbc:Note>30 dagar netto.</cbc:Note>
 	</cac:PaymentTerms>
