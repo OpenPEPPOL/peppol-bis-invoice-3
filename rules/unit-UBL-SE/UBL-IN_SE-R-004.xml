@@ -162,7 +162,7 @@
 	</test>
 	<test>
 		<assert>
-			<error>SE-R-004</error>
+			<warning>SE-R-004</warning>
 		</assert>
 <Invoice 
  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
