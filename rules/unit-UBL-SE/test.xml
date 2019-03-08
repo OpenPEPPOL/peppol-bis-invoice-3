@@ -1,14 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
-	<assert>
-    <description>For Swedish suppliers using Bankgiro, the Account ID must be numeric</description>
-		<scope>SE-R-008</scope>
-	</assert>
-	<test>
-		<assert>
-			<success>SE-R-008</success>
-		</assert>
-
 <Invoice 
  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -35,12 +24,6 @@
 				</cac:Country>
 			</cac:PostalAddress>
 			<cac:PartyTaxScheme>
-				<cbc:CompanyID>Godkänd för F-skatt</cbc:CompanyID>
-				<cac:TaxScheme>
-					<cbc:ID>TAX</cbc:ID>
-				</cac:TaxScheme>
-			</cac:PartyTaxScheme>
-			<cac:PartyTaxScheme>
 				<cbc:CompanyID>SE123456789001</cbc:CompanyID>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
@@ -48,7 +31,7 @@
 			</cac:PartyTaxScheme>
 			<cac:PartyLegalEntity>
 				<cbc:RegistrationName>Allsälj AB</cbc:RegistrationName>
-				<cbc:CompanyID schemeID="0007">1234567890</cbc:CompanyID>
+				<cbc:CompanyID schemeID="0007">SE12345678</cbc:CompanyID>
 				<cbc:CompanyLegalForm>Säte: Stockholm</cbc:CompanyLegalForm>
 			</cac:PartyLegalEntity>
 		</cac:Party>
@@ -77,12 +60,12 @@
 
 	<cac:PaymentMeans>
 		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
-		<cbc:PaymentID>Meddelande</cbc:PaymentID>
+		<cbc:PaymentID>08/00355</cbc:PaymentID>
 		<cac:PayeeFinancialAccount>
 			<cbc:ID>1234567</cbc:ID>
 			<cbc:Name>Account name</cbc:Name>
 		        <cac:FinancialInstitutionBranch>
-			   <cbc:ID>SE:BANKGIRO</cbc:ID>
+			   <cbc:ID>9999</cbc:ID>
 		        </cac:FinancialInstitutionBranch>
 		</cac:PayeeFinancialAccount>
 	</cac:PaymentMeans>
@@ -157,45 +140,3 @@
 	</cac:InvoiceLine>
 
 </Invoice>
-
-
-	</test>
-	<test>
-		<assert>
-			<error>SE-R-008</error>
-		</assert>
-<Invoice 
- xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
- xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
- xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-<cac:AccountingSupplierParty>
-		<cac:Party>
-			<cac:PostalAddress>
-				<cac:Country>
-					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
-				</cac:Country>
-			</cac:PostalAddress>
-		<cac:PartyTaxScheme>
-				<cbc:CompanyID>SE123456789001</cbc:CompanyID>
-				<cac:TaxScheme>
-					<cbc:ID>VAT</cbc:ID>
-				</cac:TaxScheme>
-			</cac:PartyTaxScheme>
-		</cac:Party>
-	</cac:AccountingSupplierParty>
-	
-	<cac:PaymentMeans>
-		<cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
-		<cbc:PaymentID>Meddelande</cbc:PaymentID>
-		<cac:PayeeFinancialAccount>
-			<cbc:ID>BG123456</cbc:ID>
-			<cbc:Name>Account name</cbc:Name>
-		        <cac:FinancialInstitutionBranch>
-			   <cbc:ID>SE:BANKGIRO</cbc:ID>
-		        </cac:FinancialInstitutionBranch>
-		</cac:PayeeFinancialAccount>
-	</cac:PaymentMeans>
-</Invoice>
-
-	</test>
-</testSet>
