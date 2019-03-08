@@ -309,19 +309,24 @@
                                and (normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID/@schemeID) != '0184')
                         )"
               flag="fatal">For Danish Suppliers it is mandatory to specify schemeID as "0184" when SpecifiedLegalOrganization is used for SellerTradeParty</assert>
-	  <assert id="DK-R-015"
-              test="((string-length(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID/text()) = 10)
-						 and (substring(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID/text(), 1, 2) = 'DK')
-						 and (string(number(substring(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID/text(), 3, 8))) != 'NaN')
-							    )"
-              flag="fatal">For Danish Suppliers it is mandatory to specify schemeID as "0184" when SpecifiedLegalOrganization is used for SellerTradeParty</assert>
+
       <assert id="DK-R-016"
               test="not(((normalize-space(rsm:ExchangedDocument/ram:TypeCode/text())) = '381')
 						and (number(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:DuePayableAmount/text()) &lt; 0)
                         )"
               flag="fatal">For Danish Suppliers, a Credit note cannot have a negative total (DuePayableAmount)</assert>
     </rule>
-  
+    
+    <rule context="rsm:CrossIndustryInvoice[$supplierCountry = 'DK']/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration">
+    	  <assert id="DK-R-015"
+              test="not(( (ram:ID/@schemeID = 'VA' or ram:ID/@schemeID = 'VAT') and (substring(ram:ID/text(), 1, 2) = 'DK'))
+                    and not( (string-length(ram:ID/text()) = 10)             		         
+               and (string(number(substring(ram:ID/text(), 3, 8))) != 'NaN')
+             	            )					    
+                        )"
+              flag="fatal">For Danish Suppliers SellerTradeParty/SpecifiedTaxRegistration/ID must be specified  with DK followed by 8 digits (eg. DK12345678) if used.</assert>
+    </rule>
+    
     <rule context="rsm:CrossIndustryInvoice[$supplierCountry = 'DK']/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem">
       <!-- Chedk for commodityCode on linelevel -->
       <assert id="DK-R-003"
@@ -341,7 +346,7 @@
       <assert id="DK-R-006"
               test="not(($supplierCountry = 'DK')
                         and ((ram:TypeCode = '31') or (ram:TypeCode = '42'))
-                        and not((normalize-space(ram:PayeePartyCreditorFinancialAccount/ram:IBANID/text()) != '') and (normalize-space(ram:PayerSpecifiedDebtorFinancialInstitution/ram:BICID/text()) != ''))
+                        and not((normalize-space(ram:PayeePartyCreditorFinancialAccount/ram:IBANID/text()) != '') and (normalize-space(ram:PayeeSpecifiedCreditorFinancialInstitution/ram:BICID/text()) != ''))
                         )"
               flag="fatal">For Danish suppliers, bank account and registration account are mandatory if payment means is 31 or 42</assert>
       <assert id="DK-R-007"
@@ -383,8 +388,7 @@
                               or (string-length(../ram:PaymentReference) = 19))
                         )"
               flag="fatal">For Danish Suppliers if the PaymentReference is prefixed with 71# or 75# the 15-16 digits instruction Id must be added to the PaymentReference eg. "71#1234567890123456" when payment Method equals 93 (FIK)</assert>
-    </rule>      
-      
+    </rule>
   </pattern>
     
 	<!-- Italian rules -->

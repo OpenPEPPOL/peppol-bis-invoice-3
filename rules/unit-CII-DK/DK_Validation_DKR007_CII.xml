@@ -41,7 +41,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-007</fatal>
+			<error>DK-R-007</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -76,7 +76,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-007</fatal>
+			<error>DK-R-007</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -111,7 +111,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-007</fatal>
+			<error>DK-R-007</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -146,7 +146,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-007</fatal>
+			<error>DK-R-007</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -181,7 +181,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-007</fatal>
+			<error>DK-R-007</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"

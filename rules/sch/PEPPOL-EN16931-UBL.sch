@@ -286,7 +286,7 @@
   </pattern>
 
   <!-- DENMARK -->
- <pattern>
+  <pattern>
     <!-- Document level -->
     <rule context="ubl-creditnote:CreditNote[$supplierCountry = 'DK'] | ubl-invoice:Invoice[$supplierCountry = 'DK']">
       <assert id="DK-R-001"
@@ -397,7 +397,7 @@
     </rule>
 
     
- </pattern>
+  </pattern>
 
   <!-- ITALY -->
  	<pattern>

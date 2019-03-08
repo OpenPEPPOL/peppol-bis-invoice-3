@@ -93,7 +93,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-016</fatal>
+			<error>DK-R-016</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"

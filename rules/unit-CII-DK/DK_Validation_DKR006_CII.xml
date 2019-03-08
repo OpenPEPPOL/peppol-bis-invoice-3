@@ -34,9 +34,9 @@
 						<ram:PayeePartyCreditorFinancialAccount>
 							<ram:IBANID>DK1212341234123412</ram:IBANID>
 						</ram:PayeePartyCreditorFinancialAccount>
-						<ram:PayerSpecifiedDebtorFinancialInstitution>
+						<ram:PayeeSpecifiedCreditorFinancialInstitution>
 							<ram:BICID>1234</ram:BICID>
-						</ram:PayerSpecifiedDebtorFinancialInstitution>
+						</ram:PayeeSpecifiedCreditorFinancialInstitution>
 					</ram:SpecifiedTradeSettlementPaymentMeans>
 				</ram:ApplicableHeaderTradeSettlement>
 			</rsm:SupplyChainTradeTransaction>
@@ -45,7 +45,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-006</fatal>
+			<error>DK-R-006</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -72,9 +72,9 @@
 						<ram:PayeePartyCreditorFinancialAccount>
 							<ram:IBANID></ram:IBANID>
 						</ram:PayeePartyCreditorFinancialAccount>
-						<ram:PayerSpecifiedDebtorFinancialInstitution>
+						<ram:PayeeSpecifiedCreditorFinancialInstitution>
 							<ram:BICID>1234</ram:BICID>
-						</ram:PayerSpecifiedDebtorFinancialInstitution>
+						</ram:PayeeSpecifiedCreditorFinancialInstitution>
 					</ram:SpecifiedTradeSettlementPaymentMeans>
 				</ram:ApplicableHeaderTradeSettlement>
 			</rsm:SupplyChainTradeTransaction>
@@ -83,7 +83,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-006</fatal>
+			<error>DK-R-006</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -110,9 +110,9 @@
 						<ram:PayeePartyCreditorFinancialAccount>
 							<ram:IBANID>DK1212341234123412</ram:IBANID>
 						</ram:PayeePartyCreditorFinancialAccount>
-						<ram:PayerSpecifiedDebtorFinancialInstitution>
+						<ram:PayeeSpecifiedCreditorFinancialInstitution>
 							<ram:BICID></ram:BICID>
-						</ram:PayerSpecifiedDebtorFinancialInstitution>
+						</ram:PayeeSpecifiedCreditorFinancialInstitution>
 					</ram:SpecifiedTradeSettlementPaymentMeans>
 				</ram:ApplicableHeaderTradeSettlement>
 			</rsm:SupplyChainTradeTransaction>
@@ -121,7 +121,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-006</fatal>
+			<error>DK-R-006</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -148,9 +148,9 @@
 						<!-- <ram:PayeePartyCreditorFinancialAccount> -->
 							<!-- <ram:IBANID>DK1212341234123412</ram:IBANID> -->
 						<!-- </ram:PayeePartyCreditorFinancialAccount> -->
-						<!-- <ram:PayerSpecifiedDebtorFinancialInstitution> -->
+						<!-- <ram:PayeeSpecifiedCreditorFinancialInstitution> -->
 							<!-- <ram:BICID>1234</ram:BICID> -->
-						<!-- </ram:PayerSpecifiedDebtorFinancialInstitution> -->
+						<!-- </ram:PayeeSpecifiedCreditorFinancialInstitution> -->
 					</ram:SpecifiedTradeSettlementPaymentMeans>
 				</ram:ApplicableHeaderTradeSettlement>
 			</rsm:SupplyChainTradeTransaction>
@@ -159,7 +159,7 @@
 	
 	<test>
 		<assert>
-			<fatal>DK-R-006</fatal>
+			<error>DK-R-006</error>
 		</assert>
 		<rsm:CrossIndustryInvoice
 			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
@@ -186,9 +186,9 @@
 						<!-- <ram:PayeePartyCreditorFinancialAccount> -->
 							<!-- <ram:IBANID>DK1212341234123412</ram:IBANID> -->
 						<!-- </ram:PayeePartyCreditorFinancialAccount> -->
-						<!-- <ram:PayerSpecifiedDebtorFinancialInstitution> -->
+						<!-- <ram:PayeeSpecifiedCreditorFinancialInstitution> -->
 							<!-- <ram:BICID>1234</ram:BICID> -->
-						<!-- </ram:PayerSpecifiedDebtorFinancialInstitution> -->
+						<!-- </ram:PayeeSpecifiedCreditorFinancialInstitution> -->
 					</ram:SpecifiedTradeSettlementPaymentMeans>
 				</ram:ApplicableHeaderTradeSettlement>
 			</rsm:SupplyChainTradeTransaction>
