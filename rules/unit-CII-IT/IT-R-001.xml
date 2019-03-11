@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
 	<assert>
-		<description>Verify existence of VAT Identifier for Italian suppliers</description>
+		<description>Verify the length of BT-32 for Italian suppliers</description>
 		<scope>IT-R-001</scope>
 	</assert>
 	<test>
@@ -20,7 +20,7 @@
 							<ram:ID schemeID="VA">IT12345678901</ram:ID>
 						</ram:SpecifiedTaxRegistration>
 						<ram:SpecifiedTaxRegistration>
-							<ram:ID schemeID="FC">RF01</ram:ID>
+							<ram:ID schemeID="FC">IT07945211006</ram:ID>
 						</ram:SpecifiedTaxRegistration>
 						<ram:PostalTradeAddress>
 							<ram:CountryID>IT</ram:CountryID>
@@ -47,9 +47,9 @@
 						<ram:SpecifiedTaxRegistration>
 							<ram:ID schemeID="VA">IT12345678901</ram:ID>
 						</ram:SpecifiedTaxRegistration>
-						<!-- <ram:SpecifiedTaxRegistration>
-							 <ram:ID schemeID="FC">RF01</ram:ID> 
-						</ram:SpecifiedTaxRegistration> -->
+						 <ram:SpecifiedTaxRegistration>
+							 <ram:ID schemeID="FC">Otherinfo</ram:ID> 
+						</ram:SpecifiedTaxRegistration>
 						<ram:PostalTradeAddress>
 							<ram:CountryID>NO</ram:CountryID>
 						</ram:PostalTradeAddress>
@@ -62,7 +62,7 @@
 	
 	<test>
 		<assert>
-			<error>IT-R-001</error>
+			<error>IT-R-01</error>
 		</assert>
 		<CrossIndustryInvoice
 				xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
@@ -75,9 +75,9 @@
 						<ram:SpecifiedTaxRegistration>
 							<ram:ID schemeID="VA">IT12345678901</ram:ID>
 						</ram:SpecifiedTaxRegistration>
-						<!-- <ram:SpecifiedTaxRegistration>
-							 <ram:ID schemeID="FC">RF01</ram:ID> 
-						</ram:SpecifiedTaxRegistration> -->
+						 <ram:SpecifiedTaxRegistration>
+							 <ram:ID schemeID="FC">Otherinfo</ram:ID> 
+						</ram:SpecifiedTaxRegistration> 
 						<ram:PostalTradeAddress>
 							<ram:CountryID>IT</ram:CountryID>
 						</ram:PostalTradeAddress>

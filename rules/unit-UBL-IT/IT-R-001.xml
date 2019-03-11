@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
 	<assert>
-    	<description>Verify existence of Regime Fiscale Identifier for Italian suppliers</description>
+    	<description>Verify existence the length of BT-32 for Italian suppliers</description>
 		<scope>IT-R-001</scope>
 	</assert>
 	<test>
@@ -26,9 +26,9 @@
 						</cac:TaxScheme>
 					</cac:PartyTaxScheme>
 				<cac:PartyTaxScheme>
-					<cbc:CompanyID>RF01</cbc:CompanyID>
+					<cbc:CompanyID>IT07945211006</cbc:CompanyID>
 					<cac:TaxScheme>
-						<cbc:ID>IT:TR</cbc:ID>
+						<cbc:ID>NOVAT</cbc:ID>
 					</cac:TaxScheme>
 				</cac:PartyTaxScheme>
 
@@ -63,7 +63,7 @@
 				<cac:PartyTaxScheme>
 					<cbc:CompanyID>OtherLegalInfo</cbc:CompanyID>
 					<cac:TaxScheme>
-						<cbc:ID>TAX</cbc:ID>
+						<cbc:ID>NOVAT</cbc:ID>
 					</cac:TaxScheme>
 				</cac:PartyTaxScheme>
 					
@@ -98,7 +98,7 @@
 				<cac:PartyTaxScheme>
 					<cbc:CompanyID>OtherLegalInfo</cbc:CompanyID>
 					<cac:TaxScheme>
-						<cbc:ID>TAX</cbc:ID>
+						<cbc:ID>NOVAT</cbc:ID>
 					</cac:TaxScheme>
 				</cac:PartyTaxScheme>
 
