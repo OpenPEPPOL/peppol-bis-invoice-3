@@ -13,10 +13,11 @@ This release from openPEPPOL includes changes to the BIS document as well as the
 ====
 
 == Changes to BIS document and validation artifacts
-
 * VAT specified in separate currency now have the same operational sign as the VAT	POACC-172
 * Added rule to check format of ProfileID (Process identifier)	POACC-179
 * Added rule to check that only values true/false are used in AllowanceCharge/ChargeIndicator	POACC-98
+* Floating point error when comparing decimals in some implementations. All use of the xpath function sum() adjusted/verified. (Both Billing and BIS Order/OrderAgreement)	POACC-184
+* Linebreaks and other whitespace inside rule statements removed for the PEPPOL-rules (not country specific)	POACC-158
 
 == Updated national rules
 * PEPPOL BIS Billing Italian validation rules updated	POACC-180
