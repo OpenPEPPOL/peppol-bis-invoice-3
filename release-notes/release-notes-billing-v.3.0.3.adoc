@@ -12,22 +12,14 @@ openPEPPOL AISBL <http://www.peppol.eu/>
 This release from openPEPPOL includes changes to the BIS document as well as the validation artifacts (VA's).
 ====
 
-
 == Changes to BIS document
 
-* Correct calculation formula in chapter 9.1.1, see link:https://github.com/OpenPEPPOL/peppol-bis-invoice-3/issues/46[Github issue 46]
+* Missing elements in cac:IssuerParty	POACC-169
+* VAT specified in separate currency should have same operational sign as the VAT	POACC-172
+* No validation of ProfileID	POACC-179
+* PeppolBIS3 Billing Italian RFC	POACC-180
+* Validation Artefacts improvements candidates	POACC-98
 
-== Changes to syntax mapping tables
-
-* Correct the structure of the `cac:Taxtotal` element in the syntax mapping.
-* Add EN16931 rules to syntax mapping.
-* Cardinality set to mandatory for element `cac:InvoiceDocumentReference` as this is the only element in `cac:BillingReference`
-* Cardinality set to mandatory for element `cbc:URI` as this is the only element in `cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference`
-* Change description text from "Document level..." to "Line level..." for allowance/charge elements on line level in the syntax mapping table.
-
-== Changes to validation artefacts
-
-IMPORTANT: Changes apply to both UBL and CII validation rules.
-
-* Removed rule "PEPPOL-EN16931-R050 - Tax exemption reason code MUST NOT be used"
-* Incorporated updated validation artifacts from TC434 (amongst other, adding new ICD values).
+== Updated national rules
+* PeppolBIS3 Billing Italian RFC	POACC-180
+* PEPPOL BIS Billing Danish validation rules (UBL and CII) to be updated/added in coming release	POACC-178
