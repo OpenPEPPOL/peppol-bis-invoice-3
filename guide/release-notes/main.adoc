@@ -1,0 +1,23 @@
+= Release notes for PEPPOL BIS Billing v3.0.3
+openPEPPOL AISBL <http://www.peppol.eu/>
+2019-03-12
+:icons: font
+:source-highlighter: coderay
+:sourcedir: .
+:imagesdir: images
+:title-logo-image: peppol.png
+
+[NOTE]
+====
+This release from openPEPPOL includes changes to the BIS document as well as the validation artifacts (VA's).
+====
+
+== Changes to BIS document and validation artifacts
+
+* VAT specified in separate currency now have the same operational sign as the VAT	POACC-172
+* Added rule to check format of ProfileID (Process identifier)	POACC-179
+* Added rule to check that only values true/false are used in AllowanceCharge/ChargeIndicator	POACC-98
+
+== Updated national rules
+* PEPPOL BIS Billing Italian validation rules updated	POACC-180
+* PEPPOL BIS Billing Danish validation rules (UBL and CII) updated	POACC-178
