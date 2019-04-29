@@ -23,7 +23,7 @@
                     <Term>schemeID</Term>
                     <Name>Seller electronic address identification scheme identifier</Name>
                     <Description>The identification scheme identifier of the Seller electronic address</Description>
-                    <Reference type="CODE_LIST">eaid</Reference>
+                    <Reference type="CODE_LIST">eas</Reference>
                     <Value type="EXAMPLE">0088</Value>
                 </Attribute>
                 

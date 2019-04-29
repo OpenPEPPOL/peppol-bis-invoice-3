@@ -7,5 +7,5 @@
 
 | Electronic address identifiers (Endpoint)
 | cbc:EndpointID/@schemeID
-a| {eaid}
+a| {eas}
 |===

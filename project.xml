@@ -40,7 +40,7 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/eaid.xml</Path>
+        <Path>structure/codelist/eas.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>

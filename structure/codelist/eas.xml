@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    <Title>CEF Electronic address identifier (EAID)</Title>
-    <Identifier>eaid</Identifier>
+    <Title>Electronic Address Scheme (EAS)</Title>
+    <Identifier>eas</Identifier>
     <Agency>CEF</Agency>
 
     <Code>
@@ -77,6 +77,24 @@
         <Id>0196</Id>
         <Name>Kennitala - Iceland legal id for individuals and legal entities</Name>
     </Code>
+    
+    <Code>
+        <Id>0198</Id>
+        <Name>ERSTORG</Name>
+    </Code>
+    <Code>
+        <Id>0199</Id>
+        <Name>Global legal entity identifier (GLEIF)</Name>
+    </Code>
+    <Code>
+        <Id>0200</Id>
+        <Name>Legal entity code (Lithuania)</Name>
+    </Code>
+    <Code>
+        <Id>9901</Id>
+        <Name>Danish Ministry of the Interior and Health</Name>
+    </Code>
+    
     <Code>
         <Id>9902</Id>
         <Name>The Danish Commerce and Companies Agency </Name>

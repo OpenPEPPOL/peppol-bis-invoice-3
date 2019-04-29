@@ -23,7 +23,7 @@
                     <Term>schemeID</Term>
                     <Name>Buyer electronic address identification scheme identifier</Name>
                     <Description>The identification scheme identifier of the Buyer electronic address.</Description>
-                    <Reference type="CODE_LIST">eaid</Reference>
+                    <Reference type="CODE_LIST">eas</Reference>
                     <Value type="EXAMPLE">0192</Value>
                 </Attribute>
                 
