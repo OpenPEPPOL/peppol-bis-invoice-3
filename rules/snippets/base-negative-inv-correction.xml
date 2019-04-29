@@ -161,7 +161,7 @@
 
     <cac:InvoiceLine>
         <cbc:ID>1</cbc:ID> <!--4-->  
-        <cbc:InvoicedQuantity unitCode="DAY" unitCodeListID="UNECERec20">-7</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="DAY">-7</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">-2800</cbc:LineExtensionAmount>
         <!-- end::negative[] -->
 
@@ -200,7 +200,7 @@
 
     <cac:InvoiceLine>
         <cbc:ID>2</cbc:ID><!--6-->
-        <cbc:InvoicedQuantity unitCode="DAY" unitCodeListID="UNECERec20">3</cbc:InvoicedQuantity>
+        <cbc:InvoicedQuantity unitCode="DAY">3</cbc:InvoicedQuantity>
         <cbc:LineExtensionAmount currencyID="EUR">1500</cbc:LineExtensionAmount>
         <!-- end::negative[] -->
         <cac:OrderLineReference>

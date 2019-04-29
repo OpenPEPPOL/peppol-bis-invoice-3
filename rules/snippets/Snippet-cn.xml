@@ -26,7 +26,7 @@
     <cac:BillingReference>
         <cac:InvoiceDocumentReference>
             <cbc:ID>123</cbc:ID><!--1-->
-            <cbc:IssueDate>2017-11-20</cbc:IssueDate><!--2-->
+            <cbc:IssueDate>2017-10-20</cbc:IssueDate><!--2-->
         </cac:InvoiceDocumentReference>
     </cac:BillingReference>
     <cac:BillingReference><!--3-->

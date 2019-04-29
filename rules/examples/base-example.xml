@@ -146,7 +146,7 @@
     
 <cac:InvoiceLine>
         <cbc:ID>1</cbc:ID>
-    <cbc:InvoicedQuantity unitCode="DAY" unitCodeListID="UNECERec20">7</cbc:InvoicedQuantity>
+    <cbc:InvoicedQuantity unitCode="DAY">7</cbc:InvoicedQuantity>
     <cbc:LineExtensionAmount currencyID= "EUR">2800</cbc:LineExtensionAmount>
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
        <cac:OrderLineReference>
@@ -178,7 +178,7 @@
     </cac:InvoiceLine>
 <cac:InvoiceLine>
     <cbc:ID>2</cbc:ID>
-    <cbc:InvoicedQuantity unitCode="DAY" unitCodeListID="UNECERec20">-3</cbc:InvoicedQuantity>
+    <cbc:InvoicedQuantity unitCode="DAY">-3</cbc:InvoicedQuantity>
     <cbc:LineExtensionAmount currencyID="EUR">-1500</cbc:LineExtensionAmount>
     <cac:OrderLineReference>
         <cbc:LineID>123</cbc:LineID>
