@@ -375,7 +375,7 @@
 					<ram:URIID schemeID="0007">5566778899</ram:URIID> 
 				</ram:URIUniversalCommunication> 
 				<ram:SpecifiedTaxRegistration>
-					<ram:ID schemeID="VAT">SE123456789001</ram:ID>
+					<ram:ID schemeID="VA">SE123456789001</ram:ID>
 				</ram:SpecifiedTaxRegistration>
 			</ram:SellerTradeParty>
 
