@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Codelist xmlns="urn:fdc:difi.no:2017:vefa:CodeList-1">
+<Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
     <Title>ISO 4217 Currency codes</Title>
     <Identifier>ISO4217</Identifier>
     <Version>2018-01-01</Version>
