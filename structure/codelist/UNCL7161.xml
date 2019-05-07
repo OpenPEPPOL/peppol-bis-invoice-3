@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Charge reason code (UNCL7161)</Title>
     <Identifier>UNCL7161</Identifier>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Codelist xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
     <Title>ISO 6523 ICD list</Title>
     <Identifier>ICD</Identifier>
     <Agency>The International Organization for Standardization (ISO)</Agency>
@@ -1610,4 +1610,4 @@
             For legal entities, identifiers starting with 4 to 9
             Directorate of Internal Revenue, www.rsk.is</Description>
     </Code>
-</Codelist>
+</CodeList>
