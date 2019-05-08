@@ -152,12 +152,12 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
             1"/>
 			<let name="allowancesTotal" value="
           if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']) then
-            xs:decimal(round(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount) * 10 * 10) div 100)
+            round(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'false']/cbc:Amount/xs:decimal(.)) * 10 * 10) div 100
           else
             0"/>
 			<let name="chargesTotal" value="
           if (cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']) then
-            xs:decimal(round(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount) * 10 * 10) div 100)
+            round(sum(cac:AllowanceCharge[normalize-space(cbc:ChargeIndicator) = 'true']/cbc:Amount/xs:decimal(.)) * 10 * 10) div 100
           else
             0"/>
 			<assert id="PEPPOL-EN16931-R120" test="u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)" flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount</assert>
