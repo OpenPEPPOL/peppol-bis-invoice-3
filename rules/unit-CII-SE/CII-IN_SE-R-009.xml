@@ -252,7 +252,7 @@
 	</test>
 	<test>
 		<assert>
-			<warning numer="2">SE-R-009</warning>
+			<warning number="2">SE-R-009</warning>
 		</assert>
 <rsm:CrossIndustryInvoice
  xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
