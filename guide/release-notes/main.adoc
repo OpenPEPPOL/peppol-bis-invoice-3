@@ -13,7 +13,7 @@ This release from openPEPPOL includes backwards compatible changes to the PEPPOL
 ====
 
 == Changes to BIS document and validation artifacts
-* Adopted version 1.2.1 of EN 16931 validation artifacts (includes new codes and rules)
+* Adopted versions 1.2 and 1.2.1 of EN 16931 validation artifacts (includes new codes and rules)
 * VAT specified in separate currency now have the same operational sign as the VAT	POACC-172
 * Added rule to check format of ProfileID (Process identifier)	POACC-179
 * Added rule to check that only values true/false are used in AllowanceCharge/ChargeIndicator	POACC-98
