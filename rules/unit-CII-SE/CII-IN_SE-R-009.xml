@@ -252,7 +252,7 @@
 	</test>
 	<test>
 		<assert>
-			<warning>SE-R-009</warning>
+			<warning numer="2">SE-R-009</warning>
 		</assert>
 <rsm:CrossIndustryInvoice
  xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
@@ -406,6 +406,7 @@
 					<ram:BICID>SE:BANKGIRO</ram:BICID>
 				</ram:PayeeSpecifiedCreditorFinancialInstitution>
 			</ram:SpecifiedTradeSettlementPaymentMeans> 
+			
 			<ram:SpecifiedTradeSettlementPaymentMeans>
 				<ram:TypeCode>30</ram:TypeCode> 
 				<ram:PayeePartyCreditorFinancialAccount>
@@ -415,6 +416,7 @@
 					<ram:BICID>SE:BANKGIRO</ram:BICID>
 				</ram:PayeeSpecifiedCreditorFinancialInstitution>
 			</ram:SpecifiedTradeSettlementPaymentMeans> 
+			
 			<ram:SpecifiedTradeSettlementPaymentMeans>
 				<ram:TypeCode>30</ram:TypeCode> 
 				<ram:PayeePartyCreditorFinancialAccount>
