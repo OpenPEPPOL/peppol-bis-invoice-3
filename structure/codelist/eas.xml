@@ -50,6 +50,15 @@
         <Name>SECETI Object Identifiers</Name>
     </Code>
     <Code>
+        <Id>0151</Id>
+        <Name>Australian Business Number (ABN) Scheme</Name>
+    </Code>
+    <Code>
+        <Id>0183</Id>
+        <Name>Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business
+            Identification Number (UIDB)</Name>
+    </Code>
+    <Code>
         <Id>0184</Id>
         <Name>DIGSTORG</Name>
     </Code>
@@ -84,11 +93,19 @@
     </Code>
     <Code>
         <Id>0199</Id>
-        <Name>Global legal entity identifier (GLEIF)</Name>
+        <Name>Legal Entity Identifier (LEI)</Name>
     </Code>
     <Code>
         <Id>0200</Id>
         <Name>Legal entity code (Lithuania)</Name>
+    </Code>
+    <Code>
+        <Id>0201</Id>
+        <Name>Codice Univoco Unità Organizzativa iPA</Name>
+    </Code>
+    <Code>
+        <Id>0202</Id>
+        <Name>Indirizzo di Posta Elettronica Certificata</Name>
     </Code>
     <Code>
         <Id>9901</Id>

@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
     <Title>Item type identification code (UNCL7143)</Title>
     <Identifier>UNCL7143</Identifier>
-    <Version>D.16B</Version>
+    <Version>D.19A</Version>
     <Agency>UN/CEFACT</Agency>
 
     <Code>
@@ -885,6 +885,40 @@
         <Description>The number is part of, or is generated in the context ofand maintained by the
             European Union (EU).</Description>
     </Code>
+
+    <Code>
+        <Id>TSP</Id>
+        <Name>EU Combined Nomenclature</Name>
+        <Description>The number is part of, or is generated in the context ofand maintained by the
+            European Union (EU).</Description>
+    </Code>
+
+    <Code>
+        <Id>TSQ</Id>
+        <Name>Therapeutic classification number</Name>
+        <Description> A code to specify a product's therapeutic classification.</Description>
+    </Code>
+
+    <Code>
+        <Id>TSR</Id>
+        <Name>European Waste Catalogue</Name>
+        <Description>Waste type number according to the European Waste Catalogue
+            (EWC).</Description>
+    </Code>
+
+    <Code>
+        <Id>TSS</Id>
+        <Name>Price grouping code</Name>
+        <Description>Number assigned to identify a grouping of products based on
+            price.</Description>
+    </Code>
+
+    <Code>
+        <Id>TST</Id>
+        <Name>UNSPSC</Name>
+        <Description>The UNSPSC commodity classification system.</Description>
+    </Code>
+
     <Code>
         <Id>UA</Id>
         <Name>Ultimate customer's article number</Name>
@@ -920,39 +954,5 @@
         <Name>Mutually defined</Name>
         <Description>Item type identification mutually agreed between</Description>
     </Code>
-    <Code>
-        <Id/>
-        <Name/>
-        <Description/>
-    </Code>
-    <Code>
-        <Id/>
-        <Name/>
-        <Description/>
-    </Code>
-    <Code>
-        <Id/>
-        <Name/>
-        <Description/>
-    </Code>
-    <Code>
-        <Id/>
-        <Name/>
-        <Description/>
-    </Code>
-    <Code>
-        <Id/>
-        <Name/>
-        <Description/>
-    </Code>
-    <Code>
-        <Id/>
-        <Name/>
-        <Description/>
-    </Code>
-    <Code>
-        <Id/>
-        <Name/>
-        <Description/>
-    </Code>
+
 </CodeList>

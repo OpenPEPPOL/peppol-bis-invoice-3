@@ -1610,4 +1610,21 @@
             For legal entities, identifiers starting with 4 to 9
             Directorate of Internal Revenue, www.rsk.is</Description>
     </Code>
+    <Code>
+        <Id>0199</Id>
+        <Name>Legal Entity Identifier (LEI)</Name>
+    </Code>
+    <Code>
+        <Id>0200</Id>
+        <Name>Legal entity code (Lithuania)</Name>
+    </Code>
+    <Code>
+        <Id>0201</Id>
+        <Name>Codice Univoco Unità Organizzativa iPA</Name>
+    </Code>
+    <Code>
+        <Id>0202</Id>
+        <Name>Indirizzo di Posta Elettronica Certificata</Name>
+    </Code>
+
 </CodeList>

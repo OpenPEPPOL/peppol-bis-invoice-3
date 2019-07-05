@@ -3250,6 +3250,12 @@
         <Description>A reference number identifying a payroll deduction advice.</Description>
     </Code>
     <Code>
+        <Id>AXS</Id>
+        <Name>TRACES party identification</Name>
+        <Description>The party identification number used in the European
+            Union's Trade Control and Expert System (TRACES).</Description>
+    </Code>
+    <Code>
         <Id>BA</Id>
         <Name>Beginning meter reading actual</Name>
         <Description>Meter reading at the beginning of an invoicing period.</Description>

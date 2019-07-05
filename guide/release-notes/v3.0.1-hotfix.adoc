@@ -1,4 +1,4 @@
-= Version 3.0.1
+= Version 3.0.1 - hotfix
 [horizontal]
 Release date:: 2018-04-20
 
