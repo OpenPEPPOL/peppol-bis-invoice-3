@@ -8,8 +8,12 @@ openPEPPOL AISBL <http://www.peppol.eu/>
 :imagesdir: images
 :title-logo-image: peppol.png
 
+****
+IMPORTANT: Changes in code lists are also reflected by changes in the validation artefacts enforcing only valid codes. All validation changes apply to both UBL and CII validation rules.
+****
 
 :leveloffset: +1
+
 
 include::v3.0.4-hotfix.adoc[]
 

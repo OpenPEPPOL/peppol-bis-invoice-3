@@ -16,7 +16,5 @@ Release date:: 2018-04-20
 
 == Changes to validation artefacts
 
-IMPORTANT: Changes apply to both UBL and CII validation rules.
-
 * Removed rule "PEPPOL-EN16931-R050 - Tax exemption reason code MUST NOT be used"
 * Incorporated updated validation artifacts from TC434 (amongst other, adding new ICD values).

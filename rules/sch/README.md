@@ -4,5 +4,4 @@ This folder contains the Schematron files for PEPPOL BIS Billing 3.0.
 Those prefixed with "PEPPOL" contains rules defined by OpenPEPPOL.
 Those prefixed with "CEN" is provided by CEN TC434.
 
-Due to lack of versioning by CEN TC434 has OpenPEPPOL forked their project to provide stability.
-Rules provided by CEN TC434 in this folder is provided by [commit 'b89b7c6'](https://github.com/OpenPEPPOL/tc434-validation/commit/b89b7c6a2b1f28a80afebbff77f02e739aea32fd).
+Rules provided by CEN TC434 in this folder is provided by version 1.2.3 of the TC434 validation artefacts, as [released here.](https://github.com/CenPC434/validation/releases/tag/validation-1.2.3)
