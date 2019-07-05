@@ -4,8 +4,8 @@ Release date:: 2019-07-10
 
 == Changes to BIS document
 
-* Changes to link:/poacc/billing/3.0/bis/#_vat_exemption_reason_code[Chapter 11.1.11 VAT Exemption reason code] to reflect use of CEF VATEX code list.
-* Minor editorial change to link:/poacc/billing/3.0/bis/#_electronic_address_identifier_scheme[]
+* Changes to link:/poacc/billing/3.0/bis/#_vat_exemption_reason_code[Chapter on VAT Exemption reason code] to reflect use of CEF VATEX code list.
+* Minor editorial change to link:/poacc/billing/3.0/bis/#_electronic_address_identifier_scheme[Chapter on Electronic Address identifiers]
 
 == Changes to syntax mapping
 
