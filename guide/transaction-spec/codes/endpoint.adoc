@@ -2,7 +2,7 @@
 
 = Electronic address identifier scheme
 
-For BT-49 and BT-34 Sellers and Buyers Electronic address identifiers (Endpoint identification) the {EN16931} mandates use of a code list to be maintained by CEF.
+For BT-49 and BT-34 Sellers and Buyers Electronic address identifiers (Endpoint identification) the {EN16931} mandates use of a code list to be maintained by _Connecting Europe Facility (CEF)_.
 
 
 include::../../syntax/codelists/endpoint.adoc[]

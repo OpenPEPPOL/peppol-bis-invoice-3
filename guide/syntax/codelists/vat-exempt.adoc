@@ -4,5 +4,5 @@
 h| Document location
 |cac:TaxTotal/TaxSubtotal/TaxCategory/cbc:TaxExemptionReasonCode
 h| Source codelist
-| #Code list maintained by CEF#
+| {VATEX}
 |===

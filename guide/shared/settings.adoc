@@ -52,3 +52,4 @@
 :UNCL1153: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
 :ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523]
 :UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]
+:VATEX: https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Code+lists#Codelists-2[CEF VATEX code list]

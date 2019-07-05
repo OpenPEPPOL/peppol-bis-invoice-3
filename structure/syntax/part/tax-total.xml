@@ -148,9 +148,10 @@
                 <Element cardinality="0..1">
                     <Term>cbc:TaxExemptionReasonCode</Term>
                     <Name>VAT exemption reason code</Name>
-                    <Description>A coded statement of the reason for why the amount is exempted from VAT. Code list is not yet available</Description>
+                    <Description>A coded statement of the reason for why the amount is exempted from VAT.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-121</Reference>
+                    <Reference type="RULE">BR-CL-22</Reference>
                     <Reference type="RULE">BR-S-10</Reference>
                     <Reference type="RULE">BR-Z-10</Reference>
                     <Reference type="RULE">BR-E-10</Reference>
