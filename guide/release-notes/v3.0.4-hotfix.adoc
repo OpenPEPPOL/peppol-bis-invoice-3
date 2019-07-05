@@ -1,0 +1,23 @@
+= Version 3.0.4 - hotfix
+[horizontal]
+Release date:: 2019-07-10
+
+== Changes to BIS document
+
+* Changes to link:/poacc/billing/3.0/bis/#_vat_exemption_reason_code[Chapter 11.1.11 VAT Exemption reason code] to reflect use of CEF VATEX code list.
+* Minor editorial change to link:/poacc/billing/3.0/bis/#_electronic_address_identifier_scheme[]
+
+== Changes to syntax mapping
+
+* Removed text stating the VATEX codes are not available for element link:/poacc/billing/3.0/syntax/ubl-invoice/cac-TaxTotal/cac-TaxSubtotal/cac-TaxCategory/cbc-TaxExemptionReasonCode/[Tax Exemption reason code], and displaying new code list rule from TC434 - link:/poacc/billing/3.0/rules/BR-CL-22/[BR-CL-22]
+
+== Changes to code lists and validation artefacts
+
+IMPORTANT: Changes apply to both UBL and CII validation rules.
+
+* New TC434 rule: link:/poacc/billing/3.0/rules/BR-CL-22/[BR-CL-22] enforcing use of VATEX code list for VAT Exemption reason code
+* Update in link:/poacc/billing/3.0/codelist/eas/[EAS] code list, addition of codes: #0151++#
+* Changes to TC434 rules #refer to release in TC434 GitHub site#
+** BR-CO-25 - Changed to only fire for invoices, not for Credit notes.
+** UBL-SR-44 - correcting technical validation, to ensure all instances of `cbc:PaymentID` are equal if `cac:PaymentMeans - are repeated.
+** Change to ensure that syntax rules (rules that provides warnings if UBL elements not part of the data model are used), also fire for credit notes.
