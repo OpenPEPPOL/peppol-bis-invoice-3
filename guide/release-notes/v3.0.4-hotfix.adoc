@@ -1,6 +1,6 @@
 = Version 3.0.4 - hotfix
 [horizontal]
-Release date:: 2019-07-10
+Release date:: 2019-08-15
 
 == Changes to BIS document
 
