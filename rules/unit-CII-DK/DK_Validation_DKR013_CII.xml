@@ -27,6 +27,9 @@
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:GlobalID schemeID="0088">5798001234567</ram:GlobalID>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
@@ -55,6 +58,9 @@
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:GlobalID schemeID="0088">5798001234567</ram:GlobalID>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
@@ -83,6 +89,9 @@
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:GlobalID schemeID="0088">5798001234567</ram:GlobalID>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
@@ -111,6 +120,9 @@
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:GlobalID schemeID="">5798001234567</ram:GlobalID>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
@@ -139,6 +151,40 @@
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:GlobalID>5798001234567</ram:GlobalID>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-013</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>380</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:GlobalID schemeID="0184">DK12345678</ram:GlobalID>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+					<ram:BuyerTradeParty>
+						<ram:GlobalID>5798001234567</ram:GlobalID>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
@@ -158,17 +204,20 @@
 				<ram:TypeCode>381</ram:TypeCode>
 			</rsm:ExchangedDocument>
 			<rsm:SupplyChainTradeTransaction>
-			<ram:ApplicableHeaderTradeAgreement>
-				<ram:SellerTradeParty>
-					<ram:GlobalID schemeID="0184">DK12345678</ram:GlobalID>
-					<ram:PostalTradeAddress>
-						<ram:CountryID>DK</ram:CountryID>
-					</ram:PostalTradeAddress>
-				</ram:SellerTradeParty>
-				<ram:BuyerTradeParty>
-					<ram:GlobalID schemeID="0088">5798001234567</ram:GlobalID>
-				</ram:BuyerTradeParty>
-			</ram:ApplicableHeaderTradeAgreement>
+                <ram:ApplicableHeaderTradeAgreement>
+                    <ram:SellerTradeParty>
+                        <ram:GlobalID schemeID="0184">DK12345678</ram:GlobalID>
+                        <ram:PostalTradeAddress>
+                            <ram:CountryID>DK</ram:CountryID>
+                        </ram:PostalTradeAddress>
+                    </ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:GlobalID schemeID="0088">5798001234567</ram:GlobalID>
+                        <ram:PostalTradeAddress>
+                            <ram:CountryID>DK</ram:CountryID>
+                        </ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+                </ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>
 	</test>

@@ -18,6 +18,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Bank Card">48</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -44,6 +53,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="National Bank Transfer">42</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -72,6 +90,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -100,6 +127,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="SEPA Bank Transfer">58</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -125,6 +161,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Direct Debit">49</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -152,6 +197,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="SEPA Direct Debit">59</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -179,6 +233,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Clearing between partners">97</cbc:PaymentMeansCode>
 			</cac:PaymentMeans>
@@ -199,6 +262,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Mutually defined">1</cbc:PaymentMeansCode>
 			</cac:PaymentMeans>
@@ -219,6 +291,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
 				<cbc:PaymentID>04#1234567890123456</cbc:PaymentID>
@@ -243,6 +324,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:ID>1</cbc:ID>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
@@ -268,6 +358,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:ID>1</cbc:ID>
 				<cbc:PaymentMeansCode name="Bankgiro">56</cbc:PaymentMeansCode>
@@ -293,6 +392,117 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Credit Transfer">30</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>NO13RABO0377815500</cbc:ID>
+					<cbc:Name>Peter Petersen</cbc:Name>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-005</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Credit Transfer">30</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>NO13RABO0377815500</cbc:ID>
+					<cbc:Name>Peter Petersen</cbc:Name>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-005</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
+			<cac:PaymentMeans>
+				<cbc:PaymentMeansCode name="Credit Transfer">30</cbc:PaymentMeansCode>
+				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>NO13RABO0377815500</cbc:ID>
+					<cbc:Name>Peter Petersen</cbc:Name>
+				</cac:PayeeFinancialAccount>
+			</cac:PaymentMeans>
+		</Invoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-005</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Credit Transfer">30</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>

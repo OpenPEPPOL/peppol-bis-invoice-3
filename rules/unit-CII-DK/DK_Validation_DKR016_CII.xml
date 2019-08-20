@@ -23,6 +23,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				<ram:ApplicableHeaderTradeSettlement>
 					<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
@@ -52,6 +57,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				<ram:ApplicableHeaderTradeSettlement>
 					<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
@@ -81,6 +91,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				<ram:ApplicableHeaderTradeSettlement>
 					<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
@@ -110,6 +125,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				<ram:ApplicableHeaderTradeSettlement>
 					<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
@@ -119,5 +139,106 @@
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>
 	</test>
-		
+	
+	<test>
+		<assert>
+			<success>DK-R-016</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>381</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+						<ram:DuePayableAmount>-2337.5</ram:DuePayableAmount>
+					</ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+				</ram:ApplicableHeaderTradeSettlement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-016</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>381</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+						<ram:DuePayableAmount>-2337.5</ram:DuePayableAmount>
+					</ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+				</ram:ApplicableHeaderTradeSettlement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>	
+    
+    <test>
+		<assert>
+			<success>DK-R-016</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>381</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+						<ram:DuePayableAmount>-2337.5</ram:DuePayableAmount>
+					</ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+				</ram:ApplicableHeaderTradeSettlement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>	
 </testSet>

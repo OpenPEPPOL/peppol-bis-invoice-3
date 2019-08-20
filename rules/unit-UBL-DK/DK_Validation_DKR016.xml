@@ -19,6 +19,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:LegalMonetaryTotal>
 				<cbc:PayableAmount currencyID="DKK">1619.00</cbc:PayableAmount>
 			</cac:LegalMonetaryTotal>
@@ -39,6 +48,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:LegalMonetaryTotal>
 				<cbc:PayableAmount currencyID="DKK">-1619.00</cbc:PayableAmount>
 			</cac:LegalMonetaryTotal>
@@ -59,6 +77,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:LegalMonetaryTotal>
 				<cbc:PayableAmount currencyID="DKK">1619.00</cbc:PayableAmount>
 			</cac:LegalMonetaryTotal>
@@ -79,6 +106,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:LegalMonetaryTotal>
 				<cbc:PayableAmount currencyID="DKK">-1619.00</cbc:PayableAmount>
 			</cac:LegalMonetaryTotal>

@@ -19,6 +19,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -48,6 +57,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -76,6 +94,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -104,6 +131,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -132,6 +168,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -160,6 +205,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>
@@ -188,6 +242,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Bank Transfer">31</cbc:PaymentMeansCode>
 				<cbc:PaymentID>2015 0483 0000 0000</cbc:PaymentID>

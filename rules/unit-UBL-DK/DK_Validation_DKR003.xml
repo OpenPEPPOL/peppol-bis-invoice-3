@@ -18,6 +18,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -42,6 +51,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -66,6 +84,81 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
+			<cac:InvoiceLine>
+				<cac:Item>
+					<cac:CommodityClassification>
+						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
+					</cac:CommodityClassification>
+				</cac:Item>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-003</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
+			<cac:InvoiceLine>
+				<cac:Item>
+					<cac:CommodityClassification>
+						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
+					</cac:CommodityClassification>
+				</cac:Item>
+			</cac:InvoiceLine>
+		</Invoice>
+	</test>	
+    
+    <test>
+		<assert>
+			<success>DK-R-003</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>NO</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -90,6 +183,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -114,6 +216,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:InvoiceLine>
 				<cac:Item>
 					<!-- <cac:CommodityClassification> -->
@@ -139,6 +250,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -163,6 +283,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -187,6 +316,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
