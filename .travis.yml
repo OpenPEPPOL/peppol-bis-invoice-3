@@ -16,7 +16,7 @@ deploy:
     secure: nNLAem/B6YfK3NuDCHH1iESV4p6555yOzQmXh4EcshX8CYjyiWFu7HWJ6rfgA17hgZ4slEQT9JXjkjme+ZXh+uUViBOgyZadZ00NlgGU54m0k8OzXycSRxF6tmQhZwptd5AFpIndeE4zvuOq57qtM4y3BQvVh6uowlmJMOzfL9UZyEl5rkwuxAbhYzUvWtKghyn3QP0jr443YYgaW22KjHkUR0xCND9KJ2uoc6HyjxXkL0RqheV2inkFCISjDgIqjTzNJVKRYox0/FrOeAsCjmkyMnRLRYm5D2o7yPiOh5pNm+A9uu0Frcu+Xc9jzJkpFLERVpsBePLExv/Dq1ticivmdlal7Vsu31U2FFAWvdfMD8GgxexiZ6PWqXbreCJwiH2Ivt4NjGbwe1gM4J3QSZu79mOcocTfnN6XT9e5TLuV5eo9AC924g3CynABSxfok/eVLPmVF7GRud0OdyLTqVaGSsRx75BzWED8d4jRwzqOoIX3frR3se0xVDBafx8pDzih5qE1DnoMQFynyE6aAZGqCNajRxZ4Y65Hxdxa5Z3xQKNWF6vj9DCAgtybLNN4XJKBU2Jm/+R1U72TvN+cj+DLmSI44bsXvH8SC8t54tZnKNkCi04rB2ThuPELadWBGS/54oLeSPc4GEL0VjbSsydSGdyFDvruQdfjRWMKqcw=
   region: eu-west-1
   local-dir: target/site
-  upload-dir: poacc/billing/3.0/
+  upload-dir: poacc/billing/3.0
   acl: public_read
   skip_cleanup: true
   on:
