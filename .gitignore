@@ -7,3 +7,5 @@ target
 tmp*
 *.db
 .idea
+/.settings/
+/.project
