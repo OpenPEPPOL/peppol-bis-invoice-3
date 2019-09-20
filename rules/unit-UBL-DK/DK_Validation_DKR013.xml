@@ -27,6 +27,11 @@
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="0088">5798001234567</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</Invoice>
@@ -55,6 +60,11 @@
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</Invoice>
@@ -82,6 +92,11 @@
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="0088">5798001234567</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</Invoice>
@@ -109,6 +124,11 @@
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="">5798001234567</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</Invoice>
@@ -136,6 +156,11 @@
 					<cac:PartyIdentification>
 						<cbc:ID>5798001234567</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</Invoice>
@@ -163,6 +188,11 @@
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="0088">5798001234567</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</CreditNote>
@@ -191,6 +221,11 @@
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</CreditNote>
@@ -218,6 +253,11 @@
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="0088">5798001234567</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</CreditNote>
@@ -245,6 +285,11 @@
 					<cac:PartyIdentification>
 						<cbc:ID schemeID="">5798001234567</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</CreditNote>
@@ -272,6 +317,221 @@
 					<cac:PartyIdentification>
 						<cbc:ID>5798001234567</cbc:ID>
 					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</CreditNote>
+	</test>
+	
+	<test>
+		<assert>
+			<success>DK-R-013</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK87654321</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0088">5798001234567</cbc:ID>
+					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<error>DK-R-013</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="">DK87654321</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>DK-R-013</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK87654321</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</Invoice>
+	</test>
+	
+	
+	<test>
+		<assert>
+			<success>DK-R-013</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK87654321</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0088">5798001234567</cbc:ID>
+					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</CreditNote>
+	</test>
+	
+	
+	<test>
+		<assert>
+			<error>DK-R-013</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="">DK87654321</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<error>DK-R-013</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK87654321</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="0184">DK12345678</cbc:ID>
+					</cac:PartyIdentification>
+                    <cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</CreditNote>

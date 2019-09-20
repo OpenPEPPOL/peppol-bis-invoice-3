@@ -26,6 +26,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>
@@ -78,6 +83,33 @@
 						</ram:SpecifiedLegalOrganization>
 						<ram:PostalTradeAddress>
 							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-002</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>380</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:Name>De Koksmaat</ram:Name>
+						<ram:SpecifiedLegalOrganization>
+							<ram:ID></ram:ID>
+						</ram:SpecifiedLegalOrganization>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>

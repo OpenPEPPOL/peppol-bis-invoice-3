@@ -4,7 +4,7 @@
 		<description>For Danish Suppliers, if specified, AccountingSupplierParty/PartyTaxScheme/CompanyID (DK VAT number) must start with DK followed by 8 digits</description>
 		<scope>DK-R-015</scope>
 	</assert>
-	
+
 	<test>
 		<assert>
 			<success>DK-R-015</success>
@@ -27,7 +27,7 @@
 			</cac:AccountingSupplierParty>
 		</Invoice>
 	</test>
-	
+
 	<test>
 		<assert>
 			<error>DK-R-015</error>
@@ -50,7 +50,7 @@
 			</cac:AccountingSupplierParty>
 		</Invoice>
 	</test>
-	
+
 	<test>
 		<assert>
 			<error>DK-R-015</error>
@@ -73,7 +73,7 @@
 			</cac:AccountingSupplierParty>
 		</Invoice>
 	</test>
-	
+
 	<test>
 		<assert>
 			<error>DK-R-015</error>
@@ -96,7 +96,7 @@
 			</cac:AccountingSupplierParty>
 		</Invoice>
 	</test>
-	
+
 	<test>
 		<assert>
 			<error>DK-R-015</error>
@@ -119,7 +119,7 @@
 			</cac:AccountingSupplierParty>
 		</Invoice>
 	</test>
-	
+
 	<test>
 		<assert>
 			<success>DK-R-015</success>
@@ -142,7 +142,7 @@
 			</cac:AccountingSupplierParty>
 		</CreditNote>
 	</test>
-	
+
 	<test>
 		<assert>
 			<error>DK-R-015</error>
@@ -165,7 +165,7 @@
 			</cac:AccountingSupplierParty>
 		</CreditNote>
 	</test>
-	
+
 	<test>
 		<assert>
 			<error>DK-R-015</error>
@@ -188,7 +188,7 @@
 			</cac:AccountingSupplierParty>
 		</CreditNote>
 	</test>
-	
+
 	<test>
 		<assert>
 			<error>DK-R-015</error>
@@ -234,6 +234,120 @@
 			</cac:AccountingSupplierParty>
 		</CreditNote>
 	</test>
-	
-	
+
+	<test>
+		<assert>
+			<success>DK-R-015</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>DK16356706</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>OtherLegalInfo</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>NOVAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<success>DK-R-015</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>OtherLegalInfo</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>NOVAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>DK16356706</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<error>DK-R-015</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>16356706</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>OtherLegalInfo</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>NOVAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<error>DK-R-015</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingSupplierParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>OtherLegalInfo</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>NOVAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+					<cac:PartyTaxScheme>
+						<cbc:CompanyID>16356706</cbc:CompanyID>
+						<cac:TaxScheme>
+							<cbc:ID>VAT</cbc:ID>
+						</cac:TaxScheme>
+					</cac:PartyTaxScheme>
+				</cac:Party>
+			</cac:AccountingSupplierParty>
+		</Invoice>
+	</test>
 </testSet>

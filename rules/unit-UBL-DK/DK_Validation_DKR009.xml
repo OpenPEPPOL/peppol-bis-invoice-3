@@ -19,6 +19,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
 				<cbc:PaymentID>04#1234567890123456</cbc:PaymentID>
@@ -43,6 +52,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
 				<cbc:PaymentID>15#1234567890123456</cbc:PaymentID>
@@ -68,6 +86,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
 				<cbc:PaymentID>04#123456789012345</cbc:PaymentID>
@@ -92,6 +119,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
 				<cbc:PaymentID>04#12345678901234567</cbc:PaymentID>
@@ -116,6 +152,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
 				<cbc:PaymentID>04#</cbc:PaymentID>
@@ -140,6 +185,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode> 
 				<cbc:PaymentID>15#123456789012345</cbc:PaymentID>
@@ -164,6 +218,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
 				<cbc:PaymentID>15#12345678901234567</cbc:PaymentID>
@@ -188,6 +251,15 @@
 					</cac:PostalAddress>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+				<cac:Party>
+					<cac:PostalAddress>
+						<cac:Country>
+							<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:PostalAddress>
+                </cac:Party>
+			</cac:AccountingCustomerParty>	
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="Post Giro">50</cbc:PaymentMeansCode>
 				<cbc:PaymentID>15#</cbc:PaymentID>

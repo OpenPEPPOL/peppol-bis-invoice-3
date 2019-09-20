@@ -24,6 +24,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				<ram:ApplicableHeaderTradeSettlement>
 					<ram:PaymentReference>04#1234567890123456</ram:PaymentReference>
@@ -57,6 +62,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				
 				<ram:ApplicableHeaderTradeSettlement>
@@ -91,6 +101,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				
 				<ram:ApplicableHeaderTradeSettlement>
@@ -125,6 +140,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				
 				<ram:ApplicableHeaderTradeSettlement>
@@ -159,6 +179,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				
 				<ram:ApplicableHeaderTradeSettlement>
@@ -193,6 +218,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				
 				<ram:ApplicableHeaderTradeSettlement>
@@ -227,6 +257,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				
 				<ram:ApplicableHeaderTradeSettlement>
@@ -241,6 +276,7 @@
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>
 	</test>
+    
 	<test>
 		<assert>
 			<error>DK-R-008</error>
@@ -260,6 +296,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				
 				<ram:ApplicableHeaderTradeSettlement>
@@ -274,6 +315,7 @@
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>
 	</test>
+    
 	<test>
 		<assert>
 			<error>DK-R-008</error>
@@ -293,6 +335,89 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+				
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:PaymentReference>15#1234567890123456</ram:PaymentReference>
+					<ram:SpecifiedTradeSettlementPaymentMeans>
+						<ram:TypeCode>50</ram:TypeCode>
+						<!--<ram:PayeePartyCreditorFinancialAccount>
+							<ram:IBANID>1234567</ram:IBANID>
+						</ram:PayeePartyCreditorFinancialAccount>-->
+					</ram:SpecifiedTradeSettlementPaymentMeans>
+				</ram:ApplicableHeaderTradeSettlement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-008</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>380</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+				
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:PaymentReference>15#1234567890123456</ram:PaymentReference>
+					<ram:SpecifiedTradeSettlementPaymentMeans>
+						<ram:TypeCode>50</ram:TypeCode>
+						<!--<ram:PayeePartyCreditorFinancialAccount>
+							<ram:IBANID>1234567</ram:IBANID>
+						</ram:PayeePartyCreditorFinancialAccount>-->
+					</ram:SpecifiedTradeSettlementPaymentMeans>
+				</ram:ApplicableHeaderTradeSettlement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-008</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>380</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				
 				<ram:ApplicableHeaderTradeSettlement>
@@ -307,4 +432,44 @@
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>
 	</test>	
+    
+    <test>
+		<assert>
+			<success>DK-R-008</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>380</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+				
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:PaymentReference>15#1234567890123456</ram:PaymentReference>
+					<ram:SpecifiedTradeSettlementPaymentMeans>
+						<ram:TypeCode>50</ram:TypeCode>
+						<!--<ram:PayeePartyCreditorFinancialAccount>
+							<ram:IBANID>1234567</ram:IBANID>
+						</ram:PayeePartyCreditorFinancialAccount>-->
+					</ram:SpecifiedTradeSettlementPaymentMeans>
+				</ram:ApplicableHeaderTradeSettlement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>	
+    
 </testSet>

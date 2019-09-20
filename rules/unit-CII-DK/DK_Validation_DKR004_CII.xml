@@ -24,6 +24,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				<ram:ApplicableHeaderTradeSettlement>
 					<ram:SpecifiedTradeAllowanceCharge>
@@ -63,6 +68,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				<ram:ApplicableHeaderTradeSettlement>
 					<ram:SpecifiedTradeAllowanceCharge>
@@ -102,6 +112,11 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				<ram:ApplicableHeaderTradeSettlement>
 					<ram:SpecifiedTradeAllowanceCharge>
@@ -141,6 +156,143 @@
 							<ram:CountryID>DK</ram:CountryID>
 						</ram:PostalTradeAddress>
 					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:SpecifiedTradeAllowanceCharge>
+						<ram:ChargeIndicator>
+							<udt:Indicator>true</udt:Indicator>
+						</ram:ChargeIndicator>
+						<ram:ActualAmount>100</ram:ActualAmount>
+						<ram:ReasonCode>ZZZ</ram:ReasonCode>
+						<!--<ram:Reason>3255</ram:Reason>-->
+						<ram:CategoryTradeTax>
+							<ram:TypeCode>VAT</ram:TypeCode>
+							<ram:CategoryCode>S</ram:CategoryCode>
+							<ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+						</ram:CategoryTradeTax>
+					</ram:SpecifiedTradeAllowanceCharge>
+				</ram:ApplicableHeaderTradeSettlement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-004</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>380</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:SpecifiedTradeAllowanceCharge>
+						<ram:ChargeIndicator>
+							<udt:Indicator>true</udt:Indicator>
+						</ram:ChargeIndicator>
+						<ram:ActualAmount>100</ram:ActualAmount>
+						<ram:ReasonCode>ZZZ</ram:ReasonCode>
+						<!--<ram:Reason>3255</ram:Reason>-->
+						<ram:CategoryTradeTax>
+							<ram:TypeCode>VAT</ram:TypeCode>
+							<ram:CategoryCode>S</ram:CategoryCode>
+							<ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+						</ram:CategoryTradeTax>
+					</ram:SpecifiedTradeAllowanceCharge>
+				</ram:ApplicableHeaderTradeSettlement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-004</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>380</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>DK</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
+				</ram:ApplicableHeaderTradeAgreement>
+				<ram:ApplicableHeaderTradeSettlement>
+					<ram:SpecifiedTradeAllowanceCharge>
+						<ram:ChargeIndicator>
+							<udt:Indicator>true</udt:Indicator>
+						</ram:ChargeIndicator>
+						<ram:ActualAmount>100</ram:ActualAmount>
+						<ram:ReasonCode>ZZZ</ram:ReasonCode>
+						<!--<ram:Reason>3255</ram:Reason>-->
+						<ram:CategoryTradeTax>
+							<ram:TypeCode>VAT</ram:TypeCode>
+							<ram:CategoryCode>S</ram:CategoryCode>
+							<ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+						</ram:CategoryTradeTax>
+					</ram:SpecifiedTradeAllowanceCharge>
+				</ram:ApplicableHeaderTradeSettlement>
+			</rsm:SupplyChainTradeTransaction>
+		</rsm:CrossIndustryInvoice>
+	</test>
+    
+    <test>
+		<assert>
+			<success>DK-R-004</success>
+		</assert>
+		<rsm:CrossIndustryInvoice
+			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<rsm:ExchangedDocument>
+				<ram:TypeCode>380</ram:TypeCode>
+			</rsm:ExchangedDocument>
+			<rsm:SupplyChainTradeTransaction>
+				<ram:ApplicableHeaderTradeAgreement>
+					<ram:SellerTradeParty>
+						<ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+					</ram:SellerTradeParty>
+                    <ram:BuyerTradeParty>
+                        <ram:PostalTradeAddress>
+							<ram:CountryID>NO</ram:CountryID>
+						</ram:PostalTradeAddress>
+                    </ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 				<ram:ApplicableHeaderTradeSettlement>
 					<ram:SpecifiedTradeAllowanceCharge>
