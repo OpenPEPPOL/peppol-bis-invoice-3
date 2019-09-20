@@ -159,17 +159,17 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<rule context="ram:URIID[@schemeID = '0088'] | ram:ID[@schemeID = '0088'] | ram:GlobalID[@schemeID = '0088']">
 			<assert id="PEPPOL-COMMON-R040"
 					test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())"
-					flag="warning">Invalid GLN number provided.</assert>
+					flag="warning">GLN must have a valid format according to GS1 rules.</assert>
 		</rule>
 		<rule context="ram:URIID[@schemeID = '0192'] | ram:ID[@schemeID = '0192'] | ram:GlobalID[@schemeID = '0192']">
 			<assert id="PEPPOL-COMMON-R041"
 					test="matches(normalize-space(), '^[0-9]{9}$') and u:mod11(normalize-space())"
-					flag="fatal">Invalid Norwegian organization number provided.</assert>
+					flag="fatal">Norwegian organization number must be stated in the correct format.</assert>
 		</rule>
 		<rule context="ram:URIID[@schemeID = '0184'] | ram:ID[@schemeID = '0184'] | ram:GlobalID[@schemeID = '0184']">
 			<assert id="PEPPOL-COMMON-R042"
 					test="(string-length(text()) = 10) and (substring(text(), 1, 2) = 'DK') and (string-length(translate(substring(text(), 3, 8), '1234567890', '')) = 0)"
-					flag="fatal">Invalid Danish organization number (CVR) provided.</assert>
+					flag="fatal">Danish organization number (CVR) must be stated in the correct format.</assert>
 		</rule>
 	</pattern>
 	<!-- National rules -->
@@ -361,7 +361,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<rule context="ram:AttachmentBinaryObject[@mimeCode]">
 			<assert id="PEPPOL-EN16931-CL001" test="
                     some $code in $MIMECODE
-                        satisfies @mimeCode = $code" flag="fatal">Invalid mime code.</assert>
+                        satisfies @mimeCode = $code" flag="fatal">Mime code must be according to subset of IANA code list.</assert>
 		</rule>
 		<rule context="ram:SpecifiedTradeAllowanceCharge[normalize-space(ram:ChargeIndicator/udt:Indicator) = 'false']/ram:ReasonCode">
 			<assert id="PEPPOL-EN16931-CL002" test="
