@@ -52,12 +52,9 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 	</function>
 	<!-- Empty elements -->
 	<pattern>
-		<rule context="cbc:*">
-			<assert id="PEPPOL-EN16931-R008" test=". != ''" flag="fatal">Document MUST not contain empty elements.</assert>
-		</rule>
-		<rule context="cac:*">
-			<assert id="PEPPOL-EN16931-R009" test="count(*) != 0" flag="fatal">Document MUST not contain empty elements.</assert>
-		</rule>
+		<rule context="//*[not(*) and not(normalize-space())]">
+			<assert id="PEPPOL-EN16931-R008" test="false()" flag="fatal">Document MUST not contain empty elements.</assert>
+		</rule> 
 	</pattern>
 	<!--
     Transaction rules
