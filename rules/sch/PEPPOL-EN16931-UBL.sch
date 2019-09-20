@@ -400,11 +400,6 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
           some $code in $UNCL7161
             satisfies normalize-space(text()) = $code" flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
 		</rule>
-		<rule context="cac:Country/cbc:IdentificationCode | cac:OriginCountry/cbc:IdentificationCode">
-			<assert id="PEPPOL-EN16931-CL005" test="
-          some $code in $ISO3166
-            satisfies text() = $code" flag="fatal">Country code MUST be according to ISO 3166 Alpha-2.</assert>
-		</rule>
 		<rule context="cac:InvoicePeriod/cbc:DescriptionCode">
 			<assert id="PEPPOL-EN16931-CL006" test="
           some $code in $UNCL2005

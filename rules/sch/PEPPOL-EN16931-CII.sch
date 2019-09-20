@@ -373,11 +373,6 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
                     some $code in $UNCL7161
                         satisfies normalize-space(text()) = $code" flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
 		</rule>
-		<rule context="ram:CountryID">
-			<assert id="PEPPOL-EN16931-CL005" test="
-                    some $code in $ISO3166
-                        satisfies normalize-space(text()) = $code" flag="fatal">Country code MUST be according to ISO 3166 Alpha-2.</assert>
-		</rule>
 		<!-- PEPPOL-EN16931-CL006 is omitted due to lack of description code for invoice period in CII syntax. -->
 		<rule context="ram:TaxTotalAmount[@currencyID]">
 			<assert id="PEPPOL-EN16931-CL007" test="
