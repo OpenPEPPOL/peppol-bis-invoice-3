@@ -1562,12 +1562,7 @@
     <Code>
         <Id>0190</Id>
         <Name>Organisatie Indentificatie Nummer (OIN)</Name>
-        <Description>For use in EDI or other B2B exchanges to identify business entities
-            (organizations). The scheme is used to identify organisations, and parts of
-            organisations which are parties to or are referenced in electronic transactions such as
-            EDI messaging or other B2B exchanges. Issuing agency: EBID Service AG CAS-Weg 1-5 76131
-            Karlsruhe Germany E-mail: kontakt@unternehmensverzeichnis.org Phone: +49
-            721-9638-300</Description>
+        <Description>The OIN is part of the Dutch standard ‘Digikoppeling’ and is used for identifying the organisations that take part in electronic message exchange with the Dutch Government. The OIN must also be included in the PKIo certificate.</Description>
     </Code>
     <Code>
         <Id>0191</Id>
