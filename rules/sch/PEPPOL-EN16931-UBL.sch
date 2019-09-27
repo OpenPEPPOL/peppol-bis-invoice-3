@@ -188,17 +188,17 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<rule context="cbc:EndpointID[@schemeID = '0088'] | cac:PartyIdentification/cbc:ID[@schemeID = '0088'] | cbc:CompanyID[@schemeID = '0088']">
 			<assert id="PEPPOL-COMMON-R040"
 					test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())"
-					flag="fatal">GLN must have a valid format according to GS1 rules.</assert>
+					flag="warning">GLN must have a valid format according to GS1 rules.</assert>
 		</rule>
 		<rule context="cbc:EndpointID[@schemeID = '0192'] | cac:PartyIdentification/cbc:ID[@schemeID = '0192'] | cbc:CompanyID[@schemeID = '0192']">
 			<assert id="PEPPOL-COMMON-R041"
 					test="matches(normalize-space(), '^[0-9]{9}$') and u:mod11(normalize-space())"
-					flag="fatal">Norwegian organization number must be stated in the correct format.</assert>
+					flag="fatal">Norwegian organization number MUST be stated in the correct format.</assert>
 		</rule>
 		<rule context="cbc:EndpointID[@schemeID = '0184'] | cac:PartyIdentification/cbc:ID[@schemeID = '0184'] | cbc:CompanyID[@schemeID = '0184']">
 			<assert id="PEPPOL-COMMON-R042"
 					test="(string-length(text()) = 10) and (substring(text(), 1, 2) = 'DK') and (string-length(translate(substring(text(), 3, 8), '1234567890', '')) = 0)"
-					flag="fatal">Danish organization number (CVR) must be stated in the correct format.</assert>
+					flag="fatal">Danish organization number (CVR) MUST be stated in the correct format.</assert>
 		</rule>
 
 	</pattern>
