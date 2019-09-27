@@ -1621,5 +1621,8 @@
         <Id>0202</Id>
         <Name>Indirizzo di Posta Elettronica Certificata</Name>
     </Code>
-
+    <Code>
+        <Id>0203</Id>
+        <Name>eDelivery Network Participant identifier</Name>
+    </Code>
 </CodeList>
