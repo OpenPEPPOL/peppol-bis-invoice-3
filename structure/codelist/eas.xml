@@ -41,6 +41,10 @@
         <Name>"Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of
             Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)"</Name>
     </Code>
+	    <Code>
+        <Id>0130</Id>
+        <Name>Directorates of the European Commission</Name>
+    </Code>
     <Code>
         <Id>0135</Id>
         <Name>SIA Object Identifiers</Name>
@@ -149,10 +153,6 @@
         <Name>"Österreichisches Verwaltungs bzw. Organisationskennzeichen"</Name>
     </Code>
     <Code>
-        <Id>9917</Id>
-        <Name>Kennitala - Iceland legal id for organizations and individuals</Name>
-    </Code>
-    <Code>
         <Id>9918</Id>
         <Name>"SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T"</Name>
     </Code>
@@ -163,10 +163,6 @@
     <Code>
         <Id>9920</Id>
         <Name>Agencia Española de Administración Tributaria </Name>
-    </Code>
-    <Code>
-        <Id>9921</Id>
-        <Name>Indice delle Pubbliche Amministrazioni </Name>
     </Code>
     <Code>
         <Id>9922</Id>
