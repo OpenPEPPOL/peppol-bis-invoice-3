@@ -35,7 +35,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<variable name="length" select="string-length($val) - 1"/>
 		<variable name="digits" select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
 		<variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (1 + ((($i + 1) mod 2) * 2)))"/>
-		<value-of select="10 - ($weightedSum mod 10) = number(substring($val, $length + 1, 1))"/>
+		<value-of select="(10 - ($weightedSum mod 10)) mod 10 = number(substring($val, $length + 1, 1))"/>
 	</function>
 	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
 		<param name="exp" as="xs:decimal"/>
@@ -188,7 +188,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<rule context="cbc:EndpointID[@schemeID = '0088'] | cac:PartyIdentification/cbc:ID[@schemeID = '0088'] | cbc:CompanyID[@schemeID = '0088']">
 			<assert id="PEPPOL-COMMON-R040"
 					test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())"
-					flag="warning">GLN must have a valid format according to GS1 rules.</assert>
+					flag="fatal">GLN must have a valid format according to GS1 rules.</assert>
 		</rule>
 		<rule context="cbc:EndpointID[@schemeID = '0192'] | cac:PartyIdentification/cbc:ID[@schemeID = '0192'] | cbc:CompanyID[@schemeID = '0192']">
 			<assert id="PEPPOL-COMMON-R041"
