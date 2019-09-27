@@ -306,7 +306,7 @@
             </cac:SellersItemIdentification>
             <!-- tag::unspsc[] -->
             <cac:CommodityClassification>
-                <cbc:ItemClassificationCode listID="MP" listVersionID="19.05.01">86776</cbc:ItemClassificationCode><!--1-->
+                <cbc:ItemClassificationCode listID="TST" listVersionID="19.05.01">86776</cbc:ItemClassificationCode><!--1-->
             </cac:CommodityClassification>
             <!-- end::unspsc[] -->
             <cac:ClassifiedTaxCategory>
