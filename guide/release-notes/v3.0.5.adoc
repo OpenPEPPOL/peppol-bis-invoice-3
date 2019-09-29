@@ -21,5 +21,6 @@ Release date:: 2019-11-01
 * Error message for rules PEPPOL-EN16931-CL001, PEPPOL-COMMON-R040 and PEPPOL-COMMON-R041 reprased to be more instructive. Rules themselves are unchanged.
 * An error in a common structural validation of GLN numbers, rule PEPPOL-COMMON-R040, corrected.
 * Changed implementation of empty element-test. Rule updated so that it also fails on whitespace only content.
+* Country rules for Denmark updated.
 
 * Changes to TC434 rules as link:https://github.com/CenPC434/validation/releases/tag/validation-1.2.4[released here.]
