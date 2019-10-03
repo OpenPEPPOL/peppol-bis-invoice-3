@@ -1,1401 +1,1013 @@
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-  <link rel="dns-prefetch" href="https://github.githubassets.com">
-  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
-  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
-
-
-
-  <link crossorigin="anonymous" media="all" integrity="sha512-lEwNhIgWxFtdGboTlCciWWGiX2vG3LOojEE671oRJEhnPj6jpmgQTJtpq3O2KBzCcln6RzwfvHlyFaI/oR+RNQ==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-849637ecbd4bd65815cc113d80fee2d4.css" />
-  
-    <link crossorigin="anonymous" media="all" integrity="sha512-ZIVQ5xH4xRPgEBzl7RRQebsfNJcuNt4tdhboEnRhGSGhyXVESRTxdb9W439oH0MeqADdj5gxaLCLmHYTlOXqtw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-765e7332c1c58bca34b5cadb2351d4d4.css" />
-    
-    
-    
-    
-
-  <meta name="viewport" content="width=device-width">
-  
-  <title>eInvoicing-EN16931/EN16931-CII-validation.sch at master · ConnectingEurope/eInvoicing-EN16931</title>
-    <meta name="description" content="Validation artefacts for the European eInvoicing standard EN 16931 - ConnectingEurope/eInvoicing-EN16931">
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-  <meta property="fb:app_id" content="1401488693436528">
-
-    <meta name="twitter:image:src" content="https://avatars0.githubusercontent.com/u/52830282?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="ConnectingEurope/eInvoicing-EN16931" /><meta name="twitter:description" content="Validation artefacts for the European eInvoicing standard EN 16931 - ConnectingEurope/eInvoicing-EN16931" />
-    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/52830282?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="ConnectingEurope/eInvoicing-EN16931" /><meta property="og:url" content="https://github.com/ConnectingEurope/eInvoicing-EN16931" /><meta property="og:description" content="Validation artefacts for the European eInvoicing standard EN 16931 - ConnectingEurope/eInvoicing-EN16931" />
-
-  <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDQ2NjMxMTc1OmQxODg3MmVlNzg1ZjI0OGRkNDIxZmY4ZDJiYjE1OWFkMzA2OGNkYzViMGIwNTkwMmRiMWVmMjA4ODlmOGQxNGE=--7e6ffe72efa2f243bc6a61c97e0774cc6b17ac02">
-  <meta name="pjax-timeout" content="1000">
-  <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="FAA3:156A7:20CDF4D:32548CB:5D90FCED" data-pjax-transient>
-
-
-  
-
-  <meta name="selected-link" value="repo_source" data-pjax-transient>
-
-      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
-    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
-    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
-
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="FAA3:156A7:20CDF4D:32548CB:5D90FCED" /><meta name="octolytics-dimension-region_edge" content="ams" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="1551269402070043876" /><meta name="octolytics-actor-id" content="4922787" /><meta name="octolytics-actor-login" content="midran" /><meta name="octolytics-actor-hash" content="780466abbca54a453464fbb2ae19cc76ebb7b43ce00fa704837215277b7182c4" />
-<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
-
-
-
-    <meta name="google-analytics" content="UA-3769691-2">
-
-  <meta class="js-ga-set" name="userId" content="6333cdb450ad10b3384171b245eee3e6">
-
-<meta class="js-ga-set" name="dimension1" content="Logged In">
-
-
-
-  
-
-      <meta name="hostname" content="github.com">
-    <meta name="user-login" content="midran">
-
-      <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="ZGQyZmE3YzFmNDE2ZTgxMDhkMzJiMDQ5ZTFhZWJhODgxYmY0YWI5MmY1ODhlNTkzYTkxYTdmNjJmNTllY2U3NHx7InJlbW90ZV9hZGRyZXNzIjoiMTk0LjE0NC4zLjYxIiwicmVxdWVzdF9pZCI6IkZBQTM6MTU2QTc6MjBDREY0RDozMjU0OENCOjVEOTBGQ0VEIiwidGltZXN0YW1wIjoxNTY5NzgzMDI1LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
-
-    <meta name="enabled-features" content="ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
-
-  <meta name="html-safe-nonce" content="5135ad3ae98cc0fe181eb56febb2b6fd13cbd3e9">
-
-  <meta http-equiv="x-pjax-version" content="8ae50ecd04a45a3167125c02d6725191">
-  
-
-      <link href="https://github.com/ConnectingEurope/eInvoicing-EN16931/commits/master.atom" rel="alternate" title="Recent Commits to eInvoicing-EN16931:master" type="application/atom+xml">
-
-  <meta name="go-import" content="github.com/ConnectingEurope/eInvoicing-EN16931 git https://github.com/ConnectingEurope/eInvoicing-EN16931.git">
-
-  <meta name="octolytics-dimension-user_id" content="52830282" /><meta name="octolytics-dimension-user_login" content="ConnectingEurope" /><meta name="octolytics-dimension-repository_id" content="50507125" /><meta name="octolytics-dimension-repository_nwo" content="ConnectingEurope/eInvoicing-EN16931" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="50507125" /><meta name="octolytics-dimension-repository_network_root_nwo" content="ConnectingEurope/eInvoicing-EN16931" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
-
-
-    <link rel="canonical" href="https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/cii/schematron/EN16931-CII-validation.sch" data-pjax-transient>
-
-
-  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
-
-  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
-
-  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
-
-<meta name="theme-color" content="#1e2327">
-
-
-
-  <meta name="webauthn-auth-enabled" content="true">
-
-  <meta name="webauthn-registration-enabled" content="true">
-
-  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
-
-  </head>
-
-  <body class="logged-in env-production page-responsive page-blob">
-    
-
-  <div class="position-relative js-header-wrapper ">
-    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
-    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
-
-    
-    
-    
-
-
-          <header class="Header js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
-
-    <div class="Header-item d-none d-lg-flex">
-      <a class="Header-link" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
-  <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-</a>
-
-    </div>
-
-    <div class="Header-item d-lg-none">
-      <button class="Header-link btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
-        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
-      </button>
-    </div>
-
-    <div class="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
-        <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
-  role="combobox"
-  aria-owns="jump-to-results"
-  aria-label="Search or jump to"
-  aria-haspopup="listbox"
-  aria-expanded="false"
->
-  <div class="position-relative">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="50507125" data-scoped-search-url="/ConnectingEurope/eInvoicing-EN16931/search" data-unscoped-search-url="/search" action="/ConnectingEurope/eInvoicing-EN16931/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
-        <input type="text"
-          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
-          data-hotkey="s,/"
-          name="q"
-          value=""
-          placeholder="Search or jump to…"
-          data-unscoped-placeholder="Search or jump to…"
-          data-scoped-placeholder="Search or jump to…"
-          autocapitalize="off"
-          aria-autocomplete="list"
-          aria-controls="jump-to-results"
-          aria-label="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=PZUMn8PIVfkD8LZgZ7b1KEkYRy2u9xJvgKsBqbm0vJ6x9O7u3aYDM6aEf0ECXdNs0Xy/Et+BwEOXK0VLzMAxRA=="
-          spellcheck="false"
-          autocomplete="off"
-          >
-          <input type="hidden" class="js-site-search-type-field" name="type" >
-            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
-
-            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
-              
-<ul class="d-none js-jump-to-suggestions-template-container">
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
-        In this repository
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-</ul>
-
-<ul class="d-none js-jump-to-no-results-template-container">
-  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
-    <span class="text-gray">No suggested jump to results</span>
-  </li>
-</ul>
-
-<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
-        In this repository
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
-        In this repository
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-
-    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
-      <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
-    </li>
-</ul>
-
-            </div>
-      </label>
-</form>  </div>
-</div>
-
-
-      <nav class="d-flex flex-column flex-lg-row flex-self-stretch flex-lg-self-auto" aria-label="Global">
-    <a class="Header-link d-block d-lg-none py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:dashboard:user" aria-label="Dashboard" href="/dashboard">
-      Dashboard
-</a>
-  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
-    Pull requests
-</a>
-  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
-    Issues
-</a>
-    <div class="mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15">
-      <a class="js-selected-navigation-item Header-link" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
-        Marketplace
-</a>      
-
-    </div>
-
-  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
-    Explore
-</a>
-
-
-    <a class="Header-link d-block d-lg-none mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" href="https://github.com/midran">
-      <img class="avatar" height="20" width="20" alt="@midran" src="https://avatars2.githubusercontent.com/u/4922787?s=60&amp;v=4" />
-      midran
-</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="x3X/qhMIMgY/J9RtShevNeapzj7BFMJKZ+Ii1lxCwywLVPRLrFJEtWNGTHh6TUM5tm2+7i6UvR62ZYKwM1j6Ew==" />
-      <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
-        <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
-        Sign out
-      </button>
-</form></nav>
-
-    </div>
-
-    <div class="Header-item Header-item--full flex-justify-center d-lg-none position-relative">
-      <div class="css-truncate css-truncate-target width-fit position-absolute left-0 right-0 text-center">
-              <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-    <a class="Header-link" href="/ConnectingEurope">ConnectingEurope</a>
-    /
-    <a class="Header-link" href="/ConnectingEurope/eInvoicing-EN16931">eInvoicing-EN16931</a>
-
-</div>
-    </div>
-
-
-    <div class="Header-item mr-0 mr-lg-3 flex-order-1 flex-lg-order-none">
-      
-
-    <a aria-label="You have unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-s js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:unread" data-channel="notification-changed:4922787" href="/notifications">
-        <span class="mail-status unread"></span>
-        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
-</a>
-    </div>
-
-
-    <div class="Header-item position-relative d-none d-lg-flex">
-      <details class="details-overlay details-reset">
-  <summary class="Header-link"
-      aria-label="Create new…"
-      data-ga-click="Header, create new, icon:add">
-    <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg> <span class="dropdown-caret"></span>
-  </summary>
-  <details-menu class="dropdown-menu dropdown-menu-sw">
-    
-<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
-  New repository
-</a>
-
-  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
-    Import repository
-  </a>
-
-<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
-  New gist
-</a>
-
-  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
-    New organization
-  </a>
-
-
-  <div role="none" class="dropdown-divider"></div>
-  <div class="dropdown-header">
-    <span title="ConnectingEurope/eInvoicing-EN16931">This repository</span>
-  </div>
-    <a role="menuitem" class="dropdown-item" href="/ConnectingEurope/eInvoicing-EN16931/issues/new" data-ga-click="Header, create new issue" data-skip-pjax>
-      New issue
-    </a>
-
-
-  </details-menu>
-</details>
-
-    </div>
-
-    <div class="Header-item position-relative mr-0 d-none d-lg-flex">
-      
-<details class="details-overlay details-reset">
-  <summary class="Header-link"
-    aria-label="View profile and more"
-    data-ga-click="Header, show menu, icon:avatar">
-    <img alt="@midran" class="avatar" src="https://avatars1.githubusercontent.com/u/4922787?s=40&amp;v=4" height="20" width="20">
-    <span class="dropdown-caret"></span>
-  </summary>
-  <details-menu class="dropdown-menu dropdown-menu-sw mt-2" style="width: 180px">
-    <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/midran" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">midran</strong></a></div>
-    <div role="none" class="dropdown-divider"></div>
-
-      <div class="pl-3 pr-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
-        
-<div class="js-user-status-container
-    user-status-compact rounded-1 px-2 py-1 mt-2
-    border
-  " data-team-hovercards-enabled>
-  <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
-    <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
-      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:52830282,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:4922787,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CDF4D:32548CB:5D90FCED&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/cii/schematron/EN16931-CII-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/cii/schematron&quot;}}" data-hydro-click-hmac="df17f3b329dfc3bb44902d2176fec3beed839f545653846f00c194497d11d7e8">
-      <div class="d-flex">
-        <div class="f6 lh-condensed user-status-header
-          d-inline-block v-align-middle
-            user-status-emoji-only-header circle
-            pr-2
-"
-            style="max-width: 29px"
-          >
-          <div class="user-status-emoji-container flex-shrink-0 mr-1 mt-1 lh-condensed-ultra v-align-bottom" style="">
-            <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
-          </div>
-        </div>
-        <div class="
-          d-inline-block v-align-middle
-          
-          
-           css-truncate css-truncate-target 
-           user-status-message-wrapper f6"
-           style="line-height: 20px;" >
-          <div class="d-inline-block text-gray-dark v-align-text-top text-left">
-              <span class="text-gray ml-2">Set status</span>
-          </div>
-        </div>
-      </div>
-    </summary>
-    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="lnMtKRsEv3y+vrml2EmbkoaiviG/2glIZBYFFZmfzHYyd12nKQw+eAbfgrrMX8I2j9LZOVCKbvkTnGDjtmkkFw==" />
-        <div class="Box-header bg-gray border-bottom p-3">
-          <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
-            <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-          </button>
-          <h3 class="Box-title f5 text-bold text-gray-dark">Edit status</h3>
-        </div>
-        <input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
-        <input type="hidden" name="organization_id" class="js-user-status-org-id-field" value="">
-        <div class="px-3 py-2 text-gray-dark">
-          <div class="js-characters-remaining-container position-relative mt-2">
-            <div class="input-group d-table form-group my-0 js-user-status-form-group">
-              <span class="input-group-button d-table-cell v-align-middle" style="width: 1%">
-                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker btn-open-emoji-picker p-0">
-                  <span class="js-user-status-original-emoji" hidden></span>
-                  <span class="js-user-status-custom-emoji"></span>
-                  <span class="js-user-status-no-emoji-icon" >
-                    <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
-                  </span>
-                </button>
-              </span>
-              <text-expander keys=": @" data-mention-url="/autocomplete/user-suggestions" data-emoji-url="/autocomplete/emoji">
-                <input
-                  type="text"
-                  autocomplete="off"
-                  data-no-org-url="/autocomplete/user-suggestions"
-                  data-org-url="/suggestions?mention_suggester=1"
-                  data-maxlength="80"
-                  class="d-table-cell width-full form-control js-user-status-message-field js-characters-remaining-field"
-                  placeholder="What's happening?"
-                  name="message"
-                  value=""
-                  aria-label="What is your current status?">
-              </text-expander>
-              <div class="error">Could not update your status, please try again.</div>
-            </div>
-            <div style="margin-left: 53px" class="my-1 text-small label-characters-remaining js-characters-remaining" data-suffix="remaining" hidden>
-              80 remaining
-            </div>
-          </div>
-          <include-fragment class="js-user-status-emoji-picker" data-url="/users/status/emoji"></include-fragment>
-          <div class="overflow-auto ml-n3 mr-n3 px-3 border-bottom" style="max-height: 33vh">
-            <div class="user-status-suggestions js-user-status-suggestions collapsed overflow-hidden">
-              <h4 class="f6 text-normal my-3">Suggestions:</h4>
-              <div class="mx-3 mt-2 clearfix">
-                  <div class="float-left col-6">
-                      <button type="button" value=":palm_tree:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
-                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
-                        </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
-                          On vacation
-                        </div>
-                      </button>
-                      <button type="button" value=":face_with_thermometer:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
-                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
-                        </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
-                          Out sick
-                        </div>
-                      </button>
-                  </div>
-                  <div class="float-left col-6">
-                      <button type="button" value=":house:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
-                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
-                        </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
-                          Working from home
-                        </div>
-                      </button>
-                      <button type="button" value=":dart:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
-                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
-                        </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
-                          Focusing
-                        </div>
-                      </button>
-                  </div>
-              </div>
-            </div>
-            <div class="user-status-limited-availability-container">
-              <div class="form-checkbox my-0">
-                <input type="checkbox" name="limited_availability" value="1" class="js-user-status-limited-availability-checkbox" data-default-message="I may be slow to respond." aria-describedby="limited-availability-help-text-truncate-true-compact-true" id="limited-availability-truncate-true-compact-true">
-                <label class="d-block f5 text-gray-dark mb-1" for="limited-availability-truncate-true-compact-true">
-                  Busy
-                </label>
-                <p class="note" id="limited-availability-help-text-truncate-true-compact-true">
-                  When others mention you, assign you, or request your review,
-                  GitHub will let them know that you have limited availability.
-                </p>
-              </div>
-            </div>
-          </div>
-            
-
-<div class="d-inline-block f5 mr-2 pt-3 pb-2" >
-  <div class="d-inline-block mr-1">
-    Clear status
-  </div>
-
-  <details class="js-user-status-expire-drop-down f6 dropdown details-reset details-overlay d-inline-block mr-2">
-    <summary class="f5 btn-link link-gray-dark border px-2 py-1 rounded-1" aria-haspopup="true">
-      <div class="js-user-status-expiration-interval-selected d-inline-block v-align-baseline">
-        Never
-      </div>
-      <div class="dropdown-caret"></div>
-    </summary>
-
-    <ul class="dropdown-menu dropdown-menu-se pl-0 overflow-auto" style="width: 220px; max-height: 15.5em">
-      <li>
-        <button type="button" class="btn-link dropdown-item js-user-status-expire-button ws-normal" title="Never">
-          <span class="d-inline-block text-bold mb-1">Never</span>
-          <div class="f6 lh-condensed">Keep this status until you clear your status or edit your status.</div>
-        </button>
-      </li>
-      <li class="dropdown-divider" role="none"></li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-09-29T19:20:25+00:00">
-            in 30 minutes
-          </button>
-        </li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-09-29T19:50:25+00:00">
-            in 1 hour
-          </button>
-        </li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-09-29T22:50:25+00:00">
-            in 4 hours
-          </button>
-        </li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="today" value="2019-09-29T23:59:59+00:00">
-            today
-          </button>
-        </li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="this week" value="2019-09-29T23:59:59+00:00">
-            this week
-          </button>
-        </li>
-    </ul>
-  </details>
-  <input class="js-user-status-expiration-date-input" type="hidden" name="expires_at" value="">
-</div>
-
-          <include-fragment class="js-user-status-org-picker" data-url="/users/status/organizations"></include-fragment>
-        </div>
-        <div class="d-flex flex-items-center flex-justify-between p-3 border-top">
-          <button type="submit" disabled class="width-full btn btn-primary mr-2 js-user-status-submit">
-            Set status
-          </button>
-          <button type="button" disabled class="width-full js-clear-user-status-button btn ml-2 ">
-            Clear status
-          </button>
-        </div>
-</form>    </details-dialog>
-  </details>
-</div>
-
-      </div>
-      <div role="none" class="dropdown-divider"></div>
-
-
-    <a role="menuitem" class="dropdown-item" href="/midran" data-ga-click="Header, go to profile, text:your profile">Your profile</a>
-
-
-    <a role="menuitem" class="dropdown-item" href="/midran?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a>
-
-    <a role="menuitem" class="dropdown-item" href="/midran?tab=projects" data-ga-click="Header, go to projects, text:your projects">Your projects</a>
-
-    <a role="menuitem" class="dropdown-item" href="/midran?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a>
-      <a role="menuitem" class="dropdown-item" href="https://gist.github.com/mine" data-ga-click="Header, your gists, text:your gists">Your gists</a>
-
-
-    <div role="none" class="dropdown-divider"></div>
-    <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
-    <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Pv0qSSCS6juR3RgONkkRFy10O6lcnXbRcb+lzGdqoZzy3CGon8iciM28gBsGE/0bfbBLebMdCYWgOAWqCHCYow==" />
-      
-      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
-        Sign out
-      </button>
-</form>  </details-menu>
-</details>
-
-    </div>
-
-  </header>
-
-      
-
-  </div>
-
-  <div id="start-of-content" class="show-on-focus"></div>
-
-
-    <div id="js-flash-container">
-
-</div>
-
-
-
-  <div class="application-main " data-commit-hovercards-enabled>
-        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
-    <main  >
-      
-
-
-  
-
-
-
-
-
-
-
-
-
-
-  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-0 pt-lg-4 ">
-    <div class="repohead-details-container clearfix container-lg p-responsive d-none d-lg-block">
-
-      <ul class="pagehead-actions">
-
-
-
-
-  <li>
-    
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="MX70EEbGMO/oDeUiR25/lIvPyhktN2koUsvdJzOynYCnRJ1fveJjko76tVV/tTO9BLbM+36ndAxdkE4HJRl2Pw==" />      <input type="hidden" name="repository_id" value="50507125">
-
-      <details class="details-reset details-overlay select-menu float-left">
-        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:50507125,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CDF4D:32548CB:5D90FCED&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/cii/schematron/EN16931-CII-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/cii/schematron&quot;,&quot;user_id&quot;:4922787}}" data-hydro-click-hmac="9d3c485218f9f6cfae069f0e3fa5d2c3f398fd8cf93deecbd81883e07d482b41" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
-              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
-              Watch
-          </span>
-</summary>        <details-menu
-          class="select-menu-modal position-absolute mt-5"
-          style="z-index: 99;">
-          <div class="select-menu-header">
-            <span class="select-menu-title">Notifications</span>
-          </div>
-          <div class="select-menu-list">
-            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
-              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
-              <div class="select-menu-item-text">
-                <span class="select-menu-item-heading">Not watching</span>
-                <span class="description">Be notified only when participating or @mentioned.</span>
-                <span class="hidden-select-button-text" data-menu-button-contents>
-                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
-                  Watch
-                </span>
-              </div>
-            </button>
-
-            <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
-              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
-              <div class="select-menu-item-text">
-                <span class="select-menu-item-heading">Releases only</span>
-                <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
-                <span class="hidden-select-button-text" data-menu-button-contents>
-                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
-                  Unwatch releases
-                </span>
-              </div>
-            </button>
-
-            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
-              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
-              <div class="select-menu-item-text">
-                <span class="select-menu-item-heading">Watching</span>
-                <span class="description">Be notified of all conversations.</span>
-                <span class="hidden-select-button-text" data-menu-button-contents>
-                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
-                  Unwatch
-                </span>
-              </div>
-            </button>
-
-            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
-              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
-              <div class="select-menu-item-text">
-                <span class="select-menu-item-heading">Ignoring</span>
-                <span class="description">Never be notified.</span>
-                <span class="hidden-select-button-text" data-menu-button-contents>
-                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
-                  Stop ignoring
-                </span>
-              </div>
-            </button>
-          </div>
-        </details-menu>
-      </details>
-        <a class="social-count js-social-count"
-          href="/ConnectingEurope/eInvoicing-EN16931/watchers"
-          aria-label="19 users are watching this repository">
-          19
-        </a>
-</form>
-  </li>
-
-  <li>
-      <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/ConnectingEurope/eInvoicing-EN16931/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="O2XyCvtilyOuvsHJDuIMafNHyL8Z/Ik86NV3DkU+yQ7o67RemrnIW7+p2rnqXXjvq2iethRkPHeX7lObs4gp8A==" />
-      <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar ConnectingEurope/eInvoicing-EN16931" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:50507125,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CDF4D:32548CB:5D90FCED&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/cii/schematron/EN16931-CII-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/cii/schematron&quot;,&quot;user_id&quot;:4922787}}" data-hydro-click-hmac="7b39ca7d51d8f996db60508f79dfef1527d7830b4997b86c55c33992d7fbd156" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
-        Unstar
-</button>        <a class="social-count js-social-count" href="/ConnectingEurope/eInvoicing-EN16931/stargazers"
-           aria-label="17 users starred this repository">
-           17
-        </a>
-</form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/ConnectingEurope/eInvoicing-EN16931/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Bzf+tkTYVJjv1Y3yVtmeVC6btCct3XhpLQuUJkoSGzc6cqp/5VMGMJnTlH0iCsD4riDvwQsAvxhYwzUQTQ9HPA==" />
-      <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star ConnectingEurope/eInvoicing-EN16931" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:50507125,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CDF4D:32548CB:5D90FCED&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/cii/schematron/EN16931-CII-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/cii/schematron&quot;,&quot;user_id&quot;:4922787}}" data-hydro-click-hmac="455b6fe2136a1ca2986602f97f6050795e4148979d2b715e71cfd1a55b6dfcbe" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
-        Star
-</button>        <a class="social-count js-social-count" href="/ConnectingEurope/eInvoicing-EN16931/stargazers"
-           aria-label="17 users starred this repository">
-          17
-        </a>
-</form>  </div>
-
-  </li>
-
-  <li>
-          <details class="details-reset details-overlay details-overlay-dark d-inline-block float-left">
-            <summary class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:50507125,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CDF4D:32548CB:5D90FCED&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/cii/schematron/EN16931-CII-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/cii/schematron&quot;,&quot;user_id&quot;:4922787}}" data-hydro-click-hmac="91051135edc80b3093f036d9b83be1dcf8d9815fa1b53656834c64953b854089" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of ConnectingEurope/eInvoicing-EN16931 to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
-              Fork
-</summary>            <details-dialog
-              class="anim-fade-in fast Box Box--overlay d-flex flex-column"
-              src="/ConnectingEurope/eInvoicing-EN16931/fork?fragment=1"
-              preload>
-              <div class="Box-header">
-                <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-                  <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-                </button>
-                <h3 class="Box-title">Fork eInvoicing-EN16931</h3>
-              </div>
-              <div class="overflow-auto text-center">
-                <include-fragment>
-                  <div class="octocat-spinner my-3" aria-label="Loading..."></div>
-                  <p class="f5 text-gray">If this dialog fails to load, you can visit <a href="/ConnectingEurope/eInvoicing-EN16931/fork">the fork page</a> directly.</p>
-                </include-fragment>
-              </div>
-            </details-dialog>
-          </details>
-
-    <a href="/ConnectingEurope/eInvoicing-EN16931/network/members" class="social-count"
-       aria-label="21 users forked this repository">
-      21
-    </a>
-  </li>
-</ul>
-
-      <h1 class="public ">
-    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=52830282" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/ConnectingEurope">ConnectingEurope</a></span><!--
---><span class="path-divider">/</span><!--
---><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/ConnectingEurope/eInvoicing-EN16931">eInvoicing-EN16931</a></strong>
-  
-
-</h1>
-
-    </div>
-    
-<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax container-lg p-responsive d-none d-lg-block"
-     itemscope
-     itemtype="http://schema.org/BreadcrumbList"
-    aria-label="Repository"
-     data-pjax="#js-repo-pjax-container">
-
-  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /ConnectingEurope/eInvoicing-EN16931" href="/ConnectingEurope/eInvoicing-EN16931">
-      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
-      <span itemprop="name">Code</span>
-      <meta itemprop="position" content="1">
-</a>  </span>
-
-    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /ConnectingEurope/eInvoicing-EN16931/issues" href="/ConnectingEurope/eInvoicing-EN16931/issues">
-        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
-        <span itemprop="name">Issues</span>
-        <span class="Counter">12</span>
-        <meta itemprop="position" content="2">
-</a>    </span>
-
-  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /ConnectingEurope/eInvoicing-EN16931/pulls" href="/ConnectingEurope/eInvoicing-EN16931/pulls">
-      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
-      <span itemprop="name">Pull requests</span>
-      <span class="Counter">1</span>
-      <meta itemprop="position" content="3">
-</a>  </span>
-
-
-    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /ConnectingEurope/eInvoicing-EN16931/projects" href="/ConnectingEurope/eInvoicing-EN16931/projects">
-      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
-      Projects
-      <span class="Counter" >0</span>
-</a>
-
-    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /ConnectingEurope/eInvoicing-EN16931/wiki" href="/ConnectingEurope/eInvoicing-EN16931/wiki">
-      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
-      Wiki
-</a>
-    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /ConnectingEurope/eInvoicing-EN16931/security/advisories" href="/ConnectingEurope/eInvoicing-EN16931/security/advisories">
-      <svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg>
-      Security
-</a>
-    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /ConnectingEurope/eInvoicing-EN16931/pulse" href="/ConnectingEurope/eInvoicing-EN16931/pulse">
-      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
-      Insights
-</a>
-
-</nav>
-
-  <div class="reponav-wrapper reponav-small d-lg-none">
-  <nav class="reponav js-reponav text-center no-wrap"
-       itemscope
-       itemtype="http://schema.org/BreadcrumbList">
-
-    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a class="js-selected-navigation-item selected reponav-item" itemprop="url" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /ConnectingEurope/eInvoicing-EN16931" href="/ConnectingEurope/eInvoicing-EN16931">
-        <span itemprop="name">Code</span>
-        <meta itemprop="position" content="1">
-</a>    </span>
-
-      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /ConnectingEurope/eInvoicing-EN16931/issues" href="/ConnectingEurope/eInvoicing-EN16931/issues">
-          <span itemprop="name">Issues</span>
-          <span class="Counter">12</span>
-          <meta itemprop="position" content="2">
-</a>      </span>
-
-    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /ConnectingEurope/eInvoicing-EN16931/pulls" href="/ConnectingEurope/eInvoicing-EN16931/pulls">
-        <span itemprop="name">Pull requests</span>
-        <span class="Counter">1</span>
-        <meta itemprop="position" content="3">
-</a>    </span>
-
-      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /ConnectingEurope/eInvoicing-EN16931/projects" href="/ConnectingEurope/eInvoicing-EN16931/projects">
-          <span itemprop="name">Projects</span>
-          <span class="Counter">0</span>
-          <meta itemprop="position" content="4">
-</a>      </span>
-
-      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_wiki /ConnectingEurope/eInvoicing-EN16931/wiki" href="/ConnectingEurope/eInvoicing-EN16931/wiki">
-          <span itemprop="name">Wiki</span>
-          <meta itemprop="position" content="5">
-</a>      </span>
-
-      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /ConnectingEurope/eInvoicing-EN16931/security/advisories" href="/ConnectingEurope/eInvoicing-EN16931/security/advisories">
-        <span itemprop="name">Security</span>
-        <meta itemprop="position" content="6">
-</a>
-      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /ConnectingEurope/eInvoicing-EN16931/pulse" href="/ConnectingEurope/eInvoicing-EN16931/pulse">
-        Pulse
-</a>
-      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="community /ConnectingEurope/eInvoicing-EN16931/community" href="/ConnectingEurope/eInvoicing-EN16931/community">
-          Community
-</a>      </span>
-
-  </nav>
-</div>
-
-
-  </div>
-<div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  p-responsive">
-  <div class="repository-content ">
-
-    
-    
-
-
-  
-
-
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/ConnectingEurope/eInvoicing-EN16931/blob/6499232cbe8947739a2899ca50e03fc6a014fc8c/cii/schematron/EN16931-CII-validation.sch">Permalink</a>
-
-    <!-- blob contrib key: blob_contributors:v21:966c2f9676294be4aca8e181beb504cf -->
-      
-
-    <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-column flex-md-row">
-      <span class="d-flex flex-justify-between width-full width-md-auto">
-        
-<details class="details-reset details-overlay select-menu branch-select-menu  hx_rsm" id="branch-select-menu">
-  <summary class="btn btn-sm select-menu-button css-truncate"
-           data-hotkey="w"
-           title="Switch branches or tags">
-    <i>Branch:</i>
-    <span class="css-truncate-target" data-menu-button>master</span>
-  </summary>
-
-  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/ConnectingEurope/eInvoicing-EN16931/ref-list/master/cii/schematron/EN16931-CII-validation.sch?source_action=show&amp;source_controller=blob" preload>
-    <include-fragment class="select-menu-loading-overlay anim-pulse">
-      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
-    </include-fragment>
-  </details-menu>
-</details>
-
-        <div class="BtnGroup flex-shrink-0 d-md-none">
-          <a href="/ConnectingEurope/eInvoicing-EN16931/find/master"
-                class="js-pjax-capture-input btn btn-sm BtnGroup-item"
-                data-pjax
-                data-hotkey="t">
-            Find file
-          </a>
-          <clipboard-copy value="cii/schematron/EN16931-CII-validation.sch" class="btn btn-sm BtnGroup-item">
-            Copy path
-          </clipboard-copy>
-        </div>
-      </span>
-      <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/ConnectingEurope/eInvoicing-EN16931"><span>eInvoicing-EN16931</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/ConnectingEurope/eInvoicing-EN16931/tree/master/cii"><span>cii</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/ConnectingEurope/eInvoicing-EN16931/tree/master/cii/schematron"><span>schematron</span></a></span><span class="separator">/</span><strong class="final-path">EN16931-CII-validation.sch</strong>
-      </h2>
-
-      <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
-        <a href="/ConnectingEurope/eInvoicing-EN16931/find/master"
-              class="js-pjax-capture-input btn btn-sm BtnGroup-item"
-              data-pjax
-              data-hotkey="t">
-          Find file
-        </a>
-        <clipboard-copy value="cii/schematron/EN16931-CII-validation.sch" class="btn btn-sm BtnGroup-item">
-          Copy path
-        </clipboard-copy>
-      </div>
-    </div>
-
-
-
-    <include-fragment src="/ConnectingEurope/eInvoicing-EN16931/contributors/master/cii/schematron/EN16931-CII-validation.sch" class="Box Box--condensed commit-loader">
-      <div class="Box-body bg-blue-light f6">
-        Fetching contributors&hellip;
-      </div>
-
-      <div class="Box-body d-flex flex-items-center" >
-          <img alt="" class="loader-loading mr-2" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
-        <span class="text-red h6 loader-error">Cannot retrieve contributors at this time</span>
-      </div>
-</include-fragment>
-
-
-
-
-    <div class="Box mt-3 position-relative">
-      
-<div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
-
-  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-      61 lines (54 sloc)
-      <span class="file-info-divider"></span>
-    2.59 KB
-  </div>
-
-  <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
-
-    <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/ConnectingEurope/eInvoicing-EN16931/raw/master/cii/schematron/EN16931-CII-validation.sch">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/ConnectingEurope/eInvoicing-EN16931/blame/master/cii/schematron/EN16931-CII-validation.sch">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/ConnectingEurope/eInvoicing-EN16931/commits/master/cii/schematron/EN16931-CII-validation.sch">History</a>
-    </div>
-
-
-    <div>
-            <a class="btn-octicon tooltipped tooltipped-nw hide-sm"
-               href="x-github-client://openRepo/https://github.com/ConnectingEurope/eInvoicing-EN16931?branch=master&amp;filepath=cii%2Fschematron%2FEN16931-CII-validation.sch"
-               aria-label="Open this file in GitHub Desktop"
-               data-ga-click="Repository, open with desktop, type:windows">
-                <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
-            </a>
-
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/ConnectingEurope/eInvoicing-EN16931/edit/master/cii/schematron/EN16931-CII-validation.sch" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="RQ3GapbPmhcHyVs3Psjxo3xinc5MVp9Xx/HXWKTfD+hZrNTlIQlHqMVvt9w0bW21y2xOrBMxJXwTIJM56c+CbQ==" />
-              <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
-                aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
-                <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
-              </button>
-</form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/ConnectingEurope/eInvoicing-EN16931/delete/master/cii/schematron/EN16931-CII-validation.sch" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="+3+mjFxRmLVdj6hGoY0XXEhZTCgOkZqx/CiDxAEsmIfa8qaRyHncP/94wEZLHaY8b14m9PdIpEXlfzEUhSzLKg==" />
-            <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
-              aria-label="Fork this project and delete the file" data-disable-with>
-              <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
-            </button>
-</form>    </div>
-  </div>
-</div>
-
-
-
-
-      
-
-  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-xml ">
-      
-<table class="highlight tab-size js-file-line-container" data-tab-size="8">
-      <tr>
-        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>1.0<span class="pl-pds">&quot;</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>UTF-8<span class="pl-pds">&quot;</span></span>?&gt;</td>
-      </tr>
-      <tr>
-        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">&lt;!--</span></span></td>
-      </tr>
-      <tr>
-        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    Copyright (C) 2016-2019 Oriol Bausà, Andreas Pelekies, Philip Helger</span></td>
-      </tr>
-      <tr>
-        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    and contributors.</span></td>
-      </tr>
-      <tr>
-        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></td>
-      </tr>
-      <tr>
-        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    you may not use this file except in compliance with the License.</span></td>
-      </tr>
-      <tr>
-        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    You may obtain a copy of the License at</span></td>
-      </tr>
-      <tr>
-        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c">            http://www.apache.org/licenses/LICENSE-2.0</span></td>
-      </tr>
-      <tr>
-        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    Unless required by applicable law or agreed to in writing, software</span></td>
-      </tr>
-      <tr>
-        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></td>
-      </tr>
-      <tr>
-        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></td>
-      </tr>
-      <tr>
-        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    See the License for the specific language governing permissions and</span></td>
-      </tr>
-      <tr>
-        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
-        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    limitations under the License.</span></td>
-      </tr>
-      <tr>
-        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
-        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="LC19" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
-        <td id="LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">&lt;!--</span> </span></td>
-      </tr>
-      <tr>
-        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code blob-code-inner js-file-line"><span class="pl-c">        	CII syntax binding to the TC434   </span></td>
-      </tr>
-      <tr>
-        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
-        <td id="LC23" class="blob-code blob-code-inner js-file-line"><span class="pl-c">        	Author: Andreas Pelekies</span></td>
-      </tr>
-      <tr>
-        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
-        <td id="LC24" class="blob-code blob-code-inner js-file-line"><span class="pl-c">          Timestamp: 2017-07-30 00:00:00 +0200</span></td>
-      </tr>
-      <tr>
-        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
-        <td id="LC25" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
-        <td id="LC26" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">schema</span> <span class="pl-e">xmlns</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://purl.oclc.org/dsdl/schematron<span class="pl-pds">&quot;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
-        <td id="LC27" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">rsm</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100<span class="pl-pds">&quot;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="LC28" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">ccts</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2<span class="pl-pds">&quot;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
-        <td id="LC29" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">udt</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100<span class="pl-pds">&quot;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="LC30" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">qdt</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:data:standard:QualifiedDataType:100<span class="pl-pds">&quot;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
-        <td id="LC31" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">ram</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100<span class="pl-pds">&quot;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
-        <td id="LC32" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">queryBinding</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>xslt2<span class="pl-pds">&quot;</span></span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
-        <td id="LC33" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">title</span>&gt;EN16931 model bound to CII&lt;/<span class="pl-ent">title</span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
-        <td id="LC34" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>rsm<span class="pl-pds">&quot;</span></span>  <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
-        <td id="LC35" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>ccts<span class="pl-pds">&quot;</span></span> <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
-        <td id="LC36" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>udt<span class="pl-pds">&quot;</span></span>  <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
-        <td id="LC37" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>qdt<span class="pl-pds">&quot;</span></span>  <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:data:standard:QualifiedDataType:100<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
-        <td id="LC38" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>ram<span class="pl-pds">&quot;</span></span>  <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
-        <td id="LC39" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>xs<span class="pl-pds">&quot;</span></span>   <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://www.w3.org/2001/XMLSchema<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
-        <td id="LC40" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">phase</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>EN16931-model-phase<span class="pl-pds">&quot;</span></span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
-        <td id="LC41" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">active</span> <span class="pl-e">pattern</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>EN16931-CII-Model<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
-        <td id="LC42" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">phase</span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
-        <td id="LC43" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">phase</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>codelist_phase<span class="pl-pds">&quot;</span></span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
-        <td id="LC44" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">active</span> <span class="pl-e">pattern</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>EN16931-Codes<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
-        <td id="LC45" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">phase</span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
-        <td id="LC46" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">phase</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>syntax_phase<span class="pl-pds">&quot;</span></span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
-        <td id="LC47" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">active</span> <span class="pl-e">pattern</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>EN16931-CII-Syntax<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
-        <td id="LC48" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">phase</span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
-        <td id="LC49" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> Abstract CEN BII patterns <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
-        <td id="LC50" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> ========================= <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
-        <td id="LC51" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>abstract/EN16931-CII-model.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
-        <td id="LC52" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>abstract/EN16931-CII-syntax.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
-        <td id="LC53" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> Data Binding parameters <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
-        <td id="LC54" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> ======================= <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
-        <td id="LC55" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>CII/EN16931-CII-model.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
-        <td id="LC56" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>CII/EN16931-CII-syntax.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
-        <td id="LC57" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> Code Lists Binding rules <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
-        <td id="LC58" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> ======================== <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
-        <td id="LC59" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>codelist/EN16931-CII-codes.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
-        <td id="LC60" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">schema</span>&gt;</td>
-      </tr>
-</table>
-
-  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
-    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
-      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
-    </summary>
-    <details-menu>
-      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
-        <li>
-          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
-            Copy lines
-          </clipboard-copy>
-        </li>
-        <li>
-          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
-            Copy permalink
-          </clipboard-copy>
-        </li>
-        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/ConnectingEurope/eInvoicing-EN16931/blame/6499232cbe8947739a2899ca50e03fc6a014fc8c/cii/schematron/EN16931-CII-validation.sch">View git blame</a></li>
-          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/ConnectingEurope/eInvoicing-EN16931/issues/new">Reference in new issue</a></li>
-      </ul>
-    </details-menu>
-  </details>
-
-  </div>
-
-    </div>
-
-  
-
-  <details class="details-reset details-overlay details-overlay-dark">
-    <summary data-hotkey="l" aria-label="Jump to line"></summary>
-    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
-        <button type="submit" class="btn" data-close-dialog>Go</button>
-</form>    </details-dialog>
-  </details>
-
-
-
-  </div>
-</div>
-
-    </main>
-  </div>
-  
-
-  </div>
-
-        
-<div class="footer container-lg width-full p-responsive" role="contentinfo">
-  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
-    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.45939s from unicorn-67f45bb8db-mwdhx">GitHub</span>, Inc.</li>
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
-        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
-    </ul>
-
-    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
-      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-</a>
-   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
-        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
-
-    </ul>
-  </div>
-  <div class="d-flex flex-justify-center pb-6">
-    <span class="f6 text-gray-light"></span>
-  </div>
-</div>
-
-
-
-  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
-    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
-    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
-      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-    </button>
-    You can’t perform that action at this time.
-  </div>
-
-
-    <script crossorigin="anonymous" integrity="sha512-RwS+8T0XPR5cCcBdDmGcf/cL+FfKUdIjfRL93fvzAzjVUdgaknI2UpShICXEAx0szS45xu9lpIDeacN+3d3hZw==" type="application/javascript" src="https://github.githubassets.com/assets/compat-bootstrap-94789d4c.js"></script>
-    <script crossorigin="anonymous" integrity="sha512-2e003yIUkuCG1IeaeQwIgzMwqYiC+7wN/ouvY2yay84wnLng3/MScKxudf02uj4T4RZAnF5zJumvacsF9lfTMw==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-8e9b232b.js"></script>
-    
-    <script crossorigin="anonymous" async="async" integrity="sha512-5srqGco8avFoVw1A62FcGlaY8DzO3MWwwTL6l+CRizuO765zsFZkXamHphgnKHUzGbOOvr+NrqNS9CXYS1ySlQ==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-75ce8f90.js"></script>
-    
-    
-    
-  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner" hidden
-    >
-    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
-    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
-    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
-  </div>
-  <template id="site-details-dialog">
-  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
-    <summary role="button" aria-label="Close dialog"></summary>
-    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
-      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
-        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-      </button>
-      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
-    </details-dialog>
-  </details>
-</template>
-
-  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
-  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
-  </div>
-</div>
-
-  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
-
-  </body>
-</html>
-
+<!--
+
+    Copyright (C) 2016-2019 Oriol Bausà, Andreas Pelekies, Philip Helger
+    and contributors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
+  <ns prefix="rsm" uri="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" />
+  <ns prefix="ccts" uri="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" />
+  <ns prefix="udt" uri="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" />
+  <ns prefix="qdt" uri="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" />
+  <ns prefix="ram" uri="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" />
+  <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema" />
+  <phase id="EN16931-model-phase">
+    <active pattern="EN16931-CII-Model" />
+  </phase>
+  <phase id="codelist_phase">
+    <active pattern="EN16931-Codes" />
+  </phase>
+  <phase id="syntax_phase">
+    <active pattern="EN16931-CII-Syntax" />
+  </phase>
+  <pattern id="EN16931-CII-Model">
+    <rule context="//ram:AdditionalReferencedDocument">
+      <assert id="BR-52" flag="fatal" test="(ram:IssuerAssignedID!='')">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).</assert>
+    </rule>
+    <rule context="//ram:ApplicableTradeSettlementFinancialCard">
+      <assert id="BR-51" flag="fatal" test="string-length(ram:ID)&lt;=6 and string-length(ram:ID)>=4">[BR-51]-The last 4 to 6 digits of the Payment card primary account number (BT-87) shall be present if Payment card information (BG-18) is provided in the Invoice.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeSettlementPaymentMeans[ram:TypeCode='30' or ram:TypeCode='58']/ram:PayerPartyDebtorFinancialAccount">
+      <assert id="BR-50" flag="fatal" test="(ram:IBANID) or (ram:ProprietaryID)">[BR-50]-A Payment account identifier (BT-84) shall be present if Credit transfer (BG-16) information is provided in the Invoice.</assert>
+      <assert id="BR-61" flag="fatal" test="(ram:IBANID) or (ram:ProprietaryID)">[BR-61]-If the Payment means type code (BT-81) means SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier (BT-84) shall be present.</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery">
+      <assert id="BR-57" flag="fatal" test="(ram:ShipToTradeParty/ram:PostalTradeAddress and ram:ShipToTradeParty/ram:PostalTradeAddress/ram:CountryID!='') or not (ram:ShipToTradeParty/ram:PostalTradeAddress)">[BR-57]-Each Deliver to address (BG-15) shall contain a Deliver to country code (BT-80).</assert>
+    </rule>
+    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]">
+      <assert id="BR-31" flag="fatal" test="(ram:ActualAmount)">[BR-31]-Each Document level allowance (BG-20) shall have a Document level allowance amount (BT-92).</assert>
+      <assert id="BR-32" flag="fatal" test="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">[BR-32]-Each Document level allowance (BG-20) shall have a Document level allowance VAT category code (BT-95).</assert>
+      <assert id="BR-33" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-33]-Each Document level allowance (BG-20) shall have a Document level allowance reason (BT-97) or a Document level allowance reason code (BT-98).</assert>
+      <assert id="BR-CO-05" flag="fatal" test="true()">[BR-CO-05]-Document level allowance reason code (BT-98) and Document level allowance reason (BT-97) shall indicate the same type of allowance.</assert>
+      <assert id="BR-CO-21" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-CO-21]-Each Document level allowance (BG-20) shall contain a Document level allowance reason (BT-97) or a Document level allowance reason code (BT-98), or both.</assert>
+      <assert id="BR-DEC-01" flag="fatal" test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">[BR-DEC-01]-The allowed maximum number of decimals for the Document level allowance amount (BT-92) is 2.</assert>
+      <assert id="BR-DEC-02" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-02]-The allowed maximum number of decimals for the Document level allowance base amount (BT-93) is 2.</assert>
+    </rule>
+    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]">
+      <assert id="BR-36" flag="fatal" test="(ram:ActualAmount)">[BR-36]-Each Document level charge (BG-21) shall have a Document level charge amount (BT-99). </assert>
+      <assert id="BR-37" flag="fatal" test="(ram:CategoryTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">[BR-37]-Each Document level charge (BG-21) shall have a Document level charge VAT category code (BT-102).</assert>
+      <assert id="BR-38" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-38]-Each Document level charge (BG-21) shall have a Document level charge reason (BT-104) or a Document level charge reason code (BT-105).</assert>
+      <assert id="BR-CO-06" flag="fatal" test="true()">[BR-CO-06]-Document level charge reason code (BT-105) and Document level charge reason (BT-104) shall indicate the same type of charge. </assert>
+      <assert id="BR-CO-22" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-CO-22]-Each Document level charge (BG-21) shall contain a Document level charge reason (BT-104) or a Document level charge reason code (BT-105), or both.</assert>
+      <assert id="BR-DEC-05" flag="fatal" test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">[BR-DEC-05]-The allowed maximum number of decimals for the Document level charge amount (BT-92) is 2.</assert>
+      <assert id="BR-DEC-06" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-06]-The allowed maximum number of decimals for the Document level charge base amount (BT-93) is 2.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeSettlementHeaderMonetarySummation">
+      <assert id="BR-12" flag="fatal" test="(ram:LineTotalAmount)">[BR-12]-An Invoice shall have the Sum of Invoice line net amount (BT-106). </assert>
+      <assert id="BR-13" flag="fatal" test="(ram:TaxBasisTotalAmount)">[BR-13]-An Invoice shall have the Invoice total amount without VAT (BT-109).</assert>
+      <assert id="BR-14" flag="fatal" test="(ram:GrandTotalAmount)">[BR-14]-An Invoice shall have the Invoice total amount with VAT (BT-112).</assert>
+      <assert id="BR-15" flag="fatal" test="(ram:DuePayableAmount)">[BR-15]-An Invoice shall have the Amount due for payment (BT-115).</assert>
+      <assert id="BR-CO-10" flag="fatal" test="ram:LineTotalAmount = (round(sum(../../ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount) * 10 * 10)div 100)">[BR-CO-10]-Sum of Invoice line net amount (BT-106) = Σ Invoice line net amount (BT-131).</assert>
+      <assert id="BR-CO-11" flag="fatal" test="(not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()])and not (ram:AllowanceTotalAmount)) or ram:AllowanceTotalAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:ActualAmount)* 10 * 10 ) div 100)">[BR-CO-11]-Sum of allowances on document level (BT-107) = Σ Document level allowance amount (BT-92).</assert>
+      <assert id="BR-CO-12" flag="fatal" test="(not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()])and not (ram:ChargeTotalAmount)) or ram:ChargeTotalAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:ActualAmount)* 10 * 10 ) div 100)">[BR-CO-12]-Sum of charges on document level (BT-108) = Σ Document level charge amount (BT-99).</assert>
+      <assert id="BR-CO-13" flag="fatal" test="(xs:decimal(ram:TaxBasisTotalAmount) = round((xs:decimal(ram:LineTotalAmount) - xs:decimal(ram:AllowanceTotalAmount) + xs:decimal(ram:ChargeTotalAmount)) *10 * 10) div 100) or      ((xs:decimal(ram:TaxBasisTotalAmount) = round((xs:decimal(ram:LineTotalAmount) - xs:decimal(ram:AllowanceTotalAmount)) *10 * 10) div 100)  and not (ram:ChargeTotalAmount)) or      ((xs:decimal(ram:TaxBasisTotalAmount) = round((xs:decimal(ram:LineTotalAmount) + xs:decimal(ram:ChargeTotalAmount)) *10 * 10) div 100)  and not (ram:AllowanceTotalAmount)) or      ((xs:decimal(ram:TaxBasisTotalAmount) = round((xs:decimal(ram:LineTotalAmount))  *10 * 10) div 100) and not (ram:ChargeTotalAmount) and not (ram:AllowanceTotalAmount))">[BR-CO-13]-Invoice total amount without VAT (BT-109) = Σ Invoice line net amount (BT-131) - Sum of allowances on document level (BT-107) + Sum of charges on document level (BT-108).</assert>
+      <assert id="BR-CO-15" flag="fatal" test="(ram:GrandTotalAmount = round(     ram:TaxBasisTotalAmount*100 + ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]*100 +0)      div 100) or     ((ram:GrandTotalAmount = ram:TaxBasisTotalAmount) and not (ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]))">[BR-CO-15]-Invoice total amount with VAT (BT-112) = Invoice total amount without VAT (BT-109) + Invoice total VAT amount (BT-110).</assert>
+      <assert id="BR-CO-16" flag="fatal" test="(xs:decimal(ram:DuePayableAmount) = xs:decimal(ram:GrandTotalAmount) - xs:decimal(ram:TotalPrepaidAmount) + xs:decimal(ram:RoundingAmount)) or      ((xs:decimal(ram:DuePayableAmount) = xs:decimal(ram:GrandTotalAmount) + xs:decimal(ram:RoundingAmount)) and not (xs:decimal(ram:TotalPrepaidAmount))) or      ((xs:decimal(ram:DuePayableAmount) = xs:decimal(ram:GrandTotalAmount) - xs:decimal(ram:TotalPrepaidAmount)) and not (xs:decimal(ram:RoundingAmount))) or      ((xs:decimal(ram:DuePayableAmount) = xs:decimal(ram:GrandTotalAmount)) and not (xs:decimal(ram:TotalPrepaidAmount)) and not (xs:decimal(ram:RoundingAmount)))">[BR-CO-16]-Amount due for payment (BT-115) = Invoice total amount with VAT (BT-112) -Paid amount (BT-113) +Rounding amount (BT-114).</assert>
+      <assert id="BR-DEC-09" flag="fatal" test="string-length(substring-after(ram:LineTotalAmount,'.'))&lt;=2">[BR-DEC-09]-The allowed maximum number of decimals for the Sum of Invoice line net amount (BT-106) is 2.</assert>
+      <assert id="BR-DEC-10" flag="fatal" test="string-length(substring-after(ram:AllowanceTotalAmount,'.'))&lt;=2">[BR-DEC-10]-The allowed maximum number of decimals for the Sum of allowanced on document level (BT-107) is 2.</assert>
+      <assert id="BR-DEC-11" flag="fatal" test="string-length(substring-after(ram:ChargeTotalAmount,'.'))&lt;=2">[BR-DEC-11]-The allowed maximum number of decimals for the Sum of charges on document level (BT-108) is 2.</assert>
+      <assert id="BR-DEC-12" flag="fatal" test="string-length(substring-after(ram:TaxBasisTotalAmount,'.'))&lt;=2">[BR-DEC-12]-The allowed maximum number of decimals for the Invoice total amount without VAT (BT-109) is 2.</assert>
+      <assert id="BR-DEC-14" flag="fatal" test="string-length(substring-after(ram:GrandTotalAmount,'.'))&lt;=2">[BR-DEC-14]-The allowed maximum number of decimals for the Invoice total amount with VAT (BT-112) is 2.</assert>
+      <assert id="BR-DEC-13" flag="fatal" test="not(ram:TaxTotalAmount) or ram:TaxTotalAmount[(@currencyID =/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode and . = round(. * 100) div 100) or not (@currencyID =/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode)]">[BR-DEC-13]-The allowed maximum number of decimals for the Invoice total VAT amount (BT-110) is 2.</assert>
+      <assert id="BR-DEC-15" flag="fatal" test="not(ram:TaxTotalAmount) or ram:TaxTotalAmount[(@currencyID =/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode and . = round(. * 100) div 100) or not (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode)]">[BR-DEC-15]-The allowed maximum number of decimals for the Invoice total VAT amount in accounting currency (BT-111) is 2.</assert>
+      <assert id="BR-DEC-16" flag="fatal" test="string-length(substring-after(ram:TotalPrepaidAmount,'.'))&lt;=2">[BR-DEC-16]-The allowed maximum number of decimals for the Paid amount (BT-113) is 2.</assert>
+      <assert id="BR-DEC-17" flag="fatal" test="string-length(substring-after(ram:RoundingAmount,'.'))&lt;=2">[BR-DEC-17]-The allowed maximum number of decimals for the Rounding amount (BT-114) is 2.</assert>
+      <assert id="BR-DEC-18" flag="fatal" test="string-length(substring-after(ram:DuePayableAmount,'.'))&lt;=2">[BR-DEC-18]-The allowed maximum number of decimals for the Amount due for payment (BT-115) is 2.</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice">
+      <assert id="BR-01" flag="fatal" test="(rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID != '')">[BR-01]-An Invoice shall have a Specification identifier (BT-24).</assert>
+      <assert id="BR-02" flag="fatal" test="(rsm:ExchangedDocument/ram:ID !='')">[BR-02]-An Invoice shall have an Invoice number (BT-1).</assert>
+      <assert id="BR-03" flag="fatal" test="(rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString[@format='102']!='')">[BR-03]-An Invoice shall have an Invoice issue date (BT-2).</assert>
+      <assert id="BR-04" flag="fatal" test="(rsm:ExchangedDocument/ram:TypeCode!='')">[BR-04]-An Invoice shall have an Invoice type code (BT-3).</assert>
+      <assert id="BR-05" flag="fatal" test="(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode!='')">[BR-05]-An Invoice shall have an Invoice currency code (BT-5).</assert>
+      <assert id="BR-06" flag="fatal" test="(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name!='')">[BR-06]-An Invoice shall contain the Seller name (BT-27).</assert>
+      <assert id="BR-07" flag="fatal" test="(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name!='')">[BR-07]-An Invoice shall contain the Buyer name (BT-44).</assert>
+      <assert id="BR-08" flag="fatal" test="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress">[BR-08]-An Invoice shall contain the Seller postal address (BG-5).</assert>
+      <assert id="BR-09" flag="fatal" test="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''">[BR-09]-The Seller postal address (BG-5) shall contain a Seller country code (BT-40).</assert>
+      <assert id="BR-10" flag="fatal" test="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress">[BR-10]-An Invoice shall contain the Buyer postal address (BG-8).</assert>
+      <assert id="BR-11" flag="fatal" test="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID!=''">[BR-11]-The Buyer postal address shall contain a Buyer country code (BT-55).</assert>
+      <assert id="BR-16" flag="fatal" test="//ram:IncludedSupplyChainTradeLineItem">[BR-16]-An Invoice shall have at least one Invoice line (BG-25).</assert>
+      <assert id="BR-62" flag="fatal" test="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID!='' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:URIUniversalCommunication)">[BR-62]-The Seller electronic address (BT-34) shall have a Scheme identifier.</assert>
+      <assert id="BR-63" flag="fatal" test="rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:URIID/@schemeID!='' or not (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:URIUniversalCommunication)">[BR-63]-The Buyer electronic address (BT-49) shall have a Scheme identifier.</assert>
+      <assert id="BR-CO-25" flag="fatal" test="(number(//ram:DuePayableAmount) > 0 and ((//ram:SpecifiedTradePaymentTerms/ram:DueDateDateTime) or (//ram:SpecifiedTradePaymentTerms/ram:Description))) or not(number(//ram:DuePayableAmount)>0)">[BR-CO-25]-In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</assert>
+      <assert id="BR-S-01" flag="fatal" test="((count(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='S']) + count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='S'])) >=2 or not (//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='S'])) and      ((count(//ram:CategoryTradeTax[ram:CategoryCode='S']) + count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='S'])) >=2 or not (//ram:CategoryTradeTax[ram:CategoryCode='S']))">[BR-S-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Standard rated" shall contain in the VAT breakdown (BG-23) at least one VAT category code (BT-118) equal with "Standard rated".</assert>
+      <assert id="BR-Z-01" flag="fatal" test="(count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='Z'])=0 and count(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='Z'])=0 and count(//ram:CategoryTradeTax[ram:CategoryCode='Z'])=0) or ( count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='Z'])=1 and (exists(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='Z']) or exists(//ram:CategoryTradeTax[ram:CategoryCode='Z'])))">[BR-Z-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Zero rated" shall contain in the VAT breakdown (BG-23) exactly one VAT category code (BT-118) equal with "Zero rated".</assert>
+      <assert id="BR-E-01" flag="fatal" test="(count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='E'])=0 and count(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='E'])=0 and count(//ram:CategoryTradeTax[ram:CategoryCode='E'])=0) or ( count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='E'])=1 and (exists(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='E']) or exists(//ram:CategoryTradeTax[ram:CategoryCode='E'])))">[BR-E-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Exempt from VAT" shall contain exactly one VAT breakdown (BG-23) with the VAT category code (BT-118) equal to "Exempt from VAT".</assert>
+      <assert id="BR-AE-01" flag="fatal" test="(count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='AE'])=0 and count(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='AE'])=0 and count(//ram:CategoryTradeTax[ram:CategoryCode='AE'])=0) or ( count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='AE'])=1 and (exists(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='AE']) or exists(//ram:CategoryTradeTax[ram:CategoryCode='AE'])))">[BR-AE-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Reverse charge" shall contain in the VAT breakdown (BG-23) exactly one VAT category code (BT-118) equal with "VAT reverse charge".</assert>
+      <assert id="BR-IC-01" flag="fatal" test="(count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='K'])=0 and count(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='K'])=0 and count(//ram:CategoryTradeTax[ram:CategoryCode='K'])=0) or ( count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='K'])=1 and (exists(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='K']) or exists(//ram:CategoryTradeTax[ram:CategoryCode='K'])))">[BR-IC-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Intra-community supply" shall contain in the VAT breakdown (BG-23) exactly one VAT category code (BT-118) equal with "Intra-community supply".</assert>
+      <assert id="BR-G-01" flag="fatal" test="(count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='G'])=0 and count(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='G'])=0 and count(//ram:CategoryTradeTax[ram:CategoryCode='G'])=0) or ( count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='G'])=1 and (exists(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='G']) or exists(//ram:CategoryTradeTax[ram:CategoryCode='G'])))">[BR-G-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Export outside the EU" shall contain in the VAT breakdown (BG-23) exactly one VAT category code (BT-118) equal with "Export outside the EU".</assert>
+      <assert id="BR-O-01" flag="fatal" test="not(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='O']) or (      count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='O'])=1 and      (exists(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='O']) or     exists(//ram:CategoryTradeTax[ram:CategoryCode='O'])))">[BR-O-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Not subject to VAT" shall contain exactly one VAT breakdown group (BG-23) with the VAT category code (BT-118) equal to "Not subject to VAT".</assert>
+      <assert id="BR-AF-01" flag="fatal" test="((count(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='L']) + count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='L'])) >=2 or not (//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='L'])) and      ((count(//ram:CategoryTradeTax[ram:CategoryCode='L']) + count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='L'])) >=2 or not (//ram:CategoryTradeTax[ram:CategoryCode='L']))">[BR-IG-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "IGIC" shall contain in the VAT breakdown (BG-23) at least one VAT category code (BT-118) equal with "IGIC".</assert>
+      <assert id="BR-AG-01" flag="fatal" test="((count(//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='M']) + count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='M'])) >=2 or not (//ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='M'])) and      ((count(//ram:CategoryTradeTax[ram:CategoryCode='M']) + count(//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode='M'])) >=2 or not (//ram:CategoryTradeTax[ram:CategoryCode='M']))">[BR-IP-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "IPSI" shall contain in the VAT breakdown (BG-23) at least one VAT category code (BT-118) equal with "IPSI".</assert>
+    </rule>
+    <rule context="//ram:IncludedSupplyChainTradeLineItem">
+      <assert id="BR-21" flag="fatal" test="(ram:AssociatedDocumentLineDocument/ram:LineID!='')">[BR-21]-Each Invoice line (BG-25) shall have an Invoice line identifier (BT-126).</assert>
+      <assert id="BR-22" flag="fatal" test="(ram:SpecifiedLineTradeDelivery/ram:BilledQuantity)">[BR-22]-Each Invoice line (BG-25) shall have an Invoiced quantity (BT-129).</assert>
+      <assert id="BR-23" flag="fatal" test="(ram:SpecifiedLineTradeDelivery/ram:BilledQuantity/@unitCode)">[BR-23]-An Invoice line (BG-25) shall have an Invoiced quantity unit of measure code (BT-130).</assert>
+      <assert id="BR-24" flag="fatal" test="(ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)">[BR-24]-Each Invoice line (BG-25) shall have an Invoice line net amount (BT-131).</assert>
+      <assert id="BR-25" flag="fatal" test="(ram:SpecifiedTradeProduct/ram:Name!='')">[BR-25]-Each Invoice line (BG-25) shall contain the Item name (BT-153).</assert>
+      <assert id="BR-26" flag="fatal" test="(ram:SpecifiedLineTradeAgreement/ram:NetPriceProductTradePrice/ram:ChargeAmount)">[BR-26]-Each Invoice line (BG-25) shall contain the Item net price (BT-146).</assert>
+      <assert id="BR-27" flag="fatal" test="(ram:SpecifiedLineTradeAgreement/ram:NetPriceProductTradePrice/ram:ChargeAmount) >= 0">[BR-27]-The Item net price (BT-146) shall NOT be negative.</assert>
+      <assert id="BR-28" flag="fatal" test="(ram:SpecifiedLineTradeAgreement/ram:GrossPriceProductTradePrice/ram:ChargeAmount >= 0) or not(ram:SpecifiedLineTradeAgreement/ram:GrossPriceProductTradePrice/ram:ChargeAmount)">[BR-28]-The Item gross price (BT-148) shall NOT be negative.</assert>
+      <assert id="BR-64" flag="fatal" test="ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID!='' or not (ram:SpecifiedTradeProduct/ram:GlobalID)">[BR-64]-The Item standard identifier (BT-157) shall have a Scheme identifier.</assert>
+      <assert id="BR-65" flag="fatal" test="(ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID!='') or not (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification)">[BR-65]-The Item classification identifier (BT-158) shall have a Scheme identifier.</assert>
+      <assert id="BR-CO-04" flag="fatal" test="(ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">[BR-CO-04]-Each Invoice line (BG-25) shall be categorized with an Invoiced item VAT category code (BT-151).</assert>
+      <assert id="BR-CO-18" flag="fatal" test="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax">[BR-CO-18]-An Invoice shall at least have one VAT breakdown group (BG-23).</assert>
+      <assert id="BR-DEC-23" flag="fatal" test="string-length(substring-after(ram:SpecifiedTradeSettlement/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount,'.'))&lt;=2">[BR-DEC-23]-The allowed maximum number of decimals for the Invoice line net amount (BT-131) is 2.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = false()]">
+      <assert id="BR-41" flag="fatal" test="(ram:ActualAmount)">[BR-41]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance amount (BT-136).</assert>
+      <assert id="BR-42" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-42]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance reason (BT-139) or an Invoice line allowance reason code (BT-140).</assert>
+      <assert id="BR-CO-07" flag="fatal" test="true()">[BR-CO-07]-Invoice line allowance reason code (BT-140) and Invoice line allowance reason (BT-139) shall indicate the same type of allowance reason.</assert>
+      <assert id="BR-CO-23" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-CO-23]-Each Invoice line allowance (BG-27) shall contain an Invoice line allowance reason (BT-139) or an Invoice line allowance reason code (BT-140), or both.</assert>
+      <assert id="BR-DEC-24" flag="fatal" test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">[BR-DEC-24]-The allowed maximum number of decimals for the Invoice line allowance amount (BT-136) is 2.</assert>
+      <assert id="BR-DEC-25" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-25]-The allowed maximum number of decimals for the Invoice line allowance base amount (BT-137) is 2.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedLineTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = true()]">
+      <assert id="BR-43" flag="fatal" test="(ram:ActualAmount)">[BR-43]-Each Invoice line charge (BG-28) shall have an Invoice line charge amount (BT-141).</assert>
+      <assert id="BR-44" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-44]-Each Invoice line charge (BG-28) shall have an Invoice line charge reason (BT-144) or an Invoice line charge reason code (BT-145).</assert>
+      <assert id="BR-CO-08" flag="fatal" test="true()">[BR-CO-08]-Invoice line charge reason code (BT-145) and Invoice line charge reason (BT144) shall indicate the same type of charge reason.</assert>
+      <assert id="BR-CO-24" flag="fatal" test="(ram:Reason) or (ram:ReasonCode)">[BR-CO-24]-Each Invoice line charge (BG-28) shall contain an Invoice line charge reason (BT-144) or an Invoice line charge reason code (BT-145), or both.</assert>
+      <assert id="BR-DEC-27" flag="fatal" test="string-length(substring-after(ram:ActualAmount,'.'))&lt;=2">[BR-DEC-27]-The allowed maximum number of decimals for the Invoice line charge amount (BT-141) is 2.</assert>
+      <assert id="BR-DEC-28" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-28]-The allowed maximum number of decimals for the Invoice line charge base amount (BT-142) is 2.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedLineTradeSettlement/ram:BillingSpecifiedPeriod">
+      <assert id="BR-30" flag="fatal" test="(ram:EndDateTime/udt:DateTimeString[@format = '102']) >= (ram:StartDateTime/udt:DateTimeString[@format = '102']) or not (ram:EndDateTime) or not (ram:StartDateTime)">[BR-30]-If both Invoice line period start date (BT-134) and Invoice line period end date (BT-135) are given then the Invoice line period end date (BT-135) shall be later or equal to the Invoice line period start date (BT-134).</assert>
+      <assert id="BR-CO-20" flag="fatal" test="(ram:StartDateTime) or (ram:EndDateTime)">[BR-CO-20]-If Invoice line period (BG-26) is used, the Invoice line period start date (BT-134) or the Invoice line period end date (BT-135) shall be filled, or both.</assert>
+    </rule>
+    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:BillingSpecifiedPeriod">
+      <assert id="BR-29" flag="fatal" test="(ram:EndDateTime/udt:DateTimeString[@format = '102']) >= (ram:StartDateTime/udt:DateTimeString[@format = '102']) or not (ram:EndDateTime) or not (ram:StartDateTime)">[BR-29]-If both Invoicing period start date (BT-73) and Invoicing period end date (BT-74) are given then the Invoicing period end date (BT-74) shall be later or equal to the Invoicing period start date (BT-73).</assert>
+      <assert id="BR-CO-19" flag="fatal" test="(ram:StartDateTime) or (ram:EndDateTime)">[BR-CO-19]-If Invoicing period (BG-14) is used, the Invoicing period start date (BT-73) or the Invoicing period end date (BT-74) shall be filled, or both.</assert>
+    </rule>
+    <rule context="//ram:ApplicableProductCharacteristic">
+      <assert id="BR-54" flag="fatal" test="(ram:Description) and (ram:Value)">[BR-54]-Each Item attribute (BG-32) shall contain an Item attribute name (BT-160) and an Item attribute value (BT-161).</assert>
+    </rule>
+    <rule context="//ram:PayeeTradeParty">
+      <assert id="BR-17" flag="fatal" test="(ram:Name) and (not(ram:Name = ../ram:SellerTradeParty/ram:Name) and not(ram:ID = ../ram:SellerTradeParty/ram:ID) and not(ram:SpecifiedLegalOrganization/ram:ID = ../ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID))">[BR-17]-The Payee name (BT-59) shall be provided in the Invoice, if the Payee (BG-10) is different from the Seller (BG-4).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeSettlementPaymentMeans">
+      <assert id="BR-49" flag="fatal" test="(ram:TypeCode)">[BR-49]-A Payment instruction (BG-16) shall specify the Payment means type code (BT-81).</assert>
+      <assert id="BR-CO-27" flag="fatal" test="(ram:PayeePartyCreditorFinancialAccount/ram:IBANID) or (ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID) or (not(ram:PayeePartyCreditorFinancialAccount/ram:IBANID) and not(ram:PayeePartyCreditorFinancialAccount/ram:ProprietaryID))">[BR-CO-27]- Either the IBAN or a Proprietary ID (BT-84) shall be used.</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceReferencedDocument">
+      <assert id="BR-55" flag="fatal" test="(ram:IssuerAssignedID!='')">[BR-55]-Each Preceding Invoice reference (BG-3) shall contain a Preceding Invoice reference (BT-25).</assert>
+    </rule>
+    <rule context="//ram:SellerTradeParty">
+      <assert id="BR-CO-26" flag="fatal" test="(ram:ID) or (ram:GlobalID) or (ram:SpecifiedLegalOrganization/ram:ID) or (ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA'])">[BR-CO-26]-In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present.</assert>
+    </rule>
+    <rule context="//ram:SellerTaxRepresentativeTradeParty">
+      <assert id="BR-18" flag="fatal" test="(ram:Name)">[BR-18]-The Seller tax representative name (BT-62) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+      <assert id="BR-19" flag="fatal" test="(ram:PostalTradeAddress)">[BR-19]-The Seller tax representative postal address (BG-12) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+      <assert id="BR-20" flag="fatal" test="(ram:PostalTradeAddress/ram:CountryID)">[BR-20]-The Seller tax representative postal address (BG-12) shall contain a Tax representative country code (BT-69), if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+      <assert id="BR-56" flag="fatal" test="(ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']!='')">[BR-56]-Each Seller tax representative party (BG-11) shall have a Seller tax representative VAT identifier (BT-63).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeSettlementHeaderMonetarySummation">
+      <assert id="BR-53" flag="fatal" test="not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode and (ram:TaxTotalAmount/@currencyID = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode) and not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:TaxCurrencyCode = /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode))">[BR-53]-If the VAT accounting currency code (BT-6) is present, then the Invoice total VAT amount in accounting currency (BT-111) shall be provided.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:TaxTotalAmount[@currencyID=/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:InvoiceCurrencyCode]">
+      <assert id="BR-CO-14" flag="fatal" test=". = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CalculatedAmount)*10*10)div 100)">[BR-CO-14]-Invoice total VAT amount (BT-110) = Σ VAT category tax amount (BT-117).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTaxRegistration/ram:ID[@schemeID='VA']">
+      <assert id="BR-CO-09" flag="fatal" test="contains(' EL AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BL BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ', concat(' ', substring(.,1,2), ' '))">[BR-CO-09]-The Seller VAT identifier (BT-31), the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) shall have a prefix in accordance with ISO code ISO 3166-1 alpha-2 by which the country of issue may be identified. Nevertheless, Greece may use the prefix ‘EL’.</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode[. = 'AE'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AE-08" flag="fatal" test="../ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'AE']/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true() and ram:CategoryTradeTax/ram:CategoryCode='AE']/ram:ActualAmount)*10*10)div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false() and ram:CategoryTradeTax/ram:CategoryCode='AE']/ram:ActualAmount)*10*10)div 100)">[BR-AE-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Reverse charge" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Reverse charge".</assert>
+      <assert id="BR-AE-09" flag="fatal" test="../ram:CalculatedAmount = 0">[BR-AE-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Reverse charge" shall be 0 (zero).</assert>
+      <assert id="BR-AE-10" flag="fatal" test="(../ram:ExemptionReason) or (../ram:ExemptionReasonCode)">[BR-AE-10]-A VAT Breakdown (BG-23) with VAT Category code (BT-118) "Reverse charge" shall have a VAT exemption reason code (BT-121), meaning "Reverse charge" or the VAT exemption reason text (BT-120) "Reverse charge" (or the equivalent standard text in another language).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:CategoryTradeTax[ram:CategoryCode = 'AE'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AE-03" flag="fatal" test="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (//ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:ID)">[BR-AE-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Reverse charge" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) and/or the Buyer legal registration identifier (BT-47).</assert>
+      <assert id="BR-AE-06" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-AE-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Reverse charge" the Document level allowance VAT rate (BT-96) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:CategoryTradeTax[ram:CategoryCode = 'AE'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AE-04" flag="fatal" test="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (//ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:ID)">[BR-AE-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Reverse charge" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) and/or the Buyer legal registration identifier (BT-47).</assert>
+      <assert id="BR-AE-07" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-AE-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Reverse charge" the Document level charge VAT rate (BT-103) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'AE'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AE-02" flag="fatal" test="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and (//ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:ID)">[BR-AE-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Reverse charge" shall contain the Seller VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) and/or the Buyer legal registration identifier (BT-47).</assert>
+      <assert id="BR-AE-05" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-AE-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Reverse charge" the Invoiced item VAT rate (BT-152) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'L'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AF-08" flag="fatal" test="ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'L' and ram:RateApplicablePercent=ram:ApplicableTradeTax/ram:RateApplicablePercent]/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true() and ram:CategoryTradeTax/ram:CategoryCode='L' and ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10) div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false() and ram:CategoryTradeTax/ram:CategoryCode='L' and ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10) div 100)">[BR-IG-08]-For each different value of VAT category rate (BT-119) where the VAT category code (BT-118) is "IGIC", the VAT category taxable amount (BT-116) in a VAT breakdown (BG-23) shall equal the sum of Invoice line net amounts (BT-131) plus the sum of document level charge amounts (BT-99) minus the sum of document level allowance amounts (BT-92) where the VAT category code (BT-151, BT-102, BT-95) is "IGIC" and the VAT rate (BT-152, BT-103, BT-96) equals the VAT category rate (BT-119).</assert>
+      <assert id="BR-AF-09" flag="fatal" test="true()">[BR-IG-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is "IGIC" shall equal the VAT category taxable amount (BT-116) multiplied by the VAT category rate (BT-119).</assert>
+      <assert id="BR-AF-10" flag="fatal" test="not(ram:ExemptionReason) and not (ram:ExemptionReasonCode)">[BR-IG-10]-A VAT Breakdown (BG-23) with VAT Category code (BT-118) "IGIC" shall not have a VAT exemption reason code (BT-121) or VAT exemption reason text (BT-120).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'L'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AF-02" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-IG-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IGIC" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-AF-05" flag="fatal" test="ram:RateApplicablePercent > 0">[BR-IG-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IGIC" the invoiced item VAT rate (BT-152) shall be greater than 0 (zero).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:CategoryTradeTax[ram:CategoryCode = 'L'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AF-03" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-IG-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "IGIC" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-AF-06" flag="fatal" test="ram:RateApplicablePercent > 0">[BR-IG-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "IGIC" the Document level allowance VAT rate (BT-96) shall be 0 (zero) or greater than zero.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:CategoryTradeTax[ram:CategoryCode = 'L'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AF-04" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-IG-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "IGIC" shall contain the Seller VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-AF-07" flag="fatal" test="ram:RateApplicablePercent > 0">[BR-IG-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "IGIC" the Document level charge VAT rate (BT-103) shall be 0 (zero) or greater than zero.</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'M'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AG-08" flag="fatal" test="ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'M' and ram:RateApplicablePercent=ram:ApplicableTradeTax/ram:RateApplicablePercent]/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true() and ram:CategoryTradeTax/ram:CategoryCode='M' and ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10) div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false() and ram:CategoryTradeTax/ram:CategoryCode='M' and ram:RateApplicablePercent=ram:CategoryTradeTax/ram:RateApplicablePercent]/ram:ActualAmount)*10*10) div 100)">[BR-IP-08]-For each different value of VAT category rate (BT-119) where the VAT category code (BT-118) is "IPSI", the VAT category taxable amount (BT-116) in a VAT breakdown (BG-23) shall equal the sum of Invoice line net amounts (BT-131) plus the sum of document level charge amounts (BT-99) minus the sum of document level allowance amounts (BT-92) where the VAT category code (BT-151, BT-102, BT-95) is "IPSI" and the VAT rate (BT-152, BT-103, BT-96) equals the VAT category rate (BT-119).</assert>
+      <assert id="BR-AG-09" flag="fatal" test="true()">[BR-IP-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is "IPSI" shall equal the VAT category taxable amount (BT-116) multiplied by the VAT category rate (BT-119).</assert>
+      <assert id="BR-AG-10" flag="fatal" test="not(ram:ExemptionReason) and not (ram:ExemptionReasonCode)">[BR-IP-10]-A VAT Breakdown (BG-23) with VAT Category code (BT-118) "IPSI" shall not have a VAT exemption reason code (BT-121) or VAT exemption reason text (BT-120). </assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'M'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AG-02" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-IP-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IPSI" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-AG-05" flag="fatal" test="ram:RateApplicablePercent > 0">[BR-IP-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IPSI" the Invoiced item VAT rate (BT-152) shall be 0 (zero) or greater than zero.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:CategoryTradeTax[ram:CategoryCode = 'M'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AG-03" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-IP-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "IPSI" shall contain the Seller VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-AG-06" flag="fatal" test="ram:RateApplicablePercent > 0">[BR-IP-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "IPSI" the Document level allowance VAT rate (BT-96) shall be 0 (zero) or greater than zero.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:CategoryTradeTax[ram:CategoryCode = 'M'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-AG-04" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-IP-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "IPSI" shall contain the Seller VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-AG-07" flag="fatal" test="ram:RateApplicablePercent > 0">[BR-IP-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "IPSI" the Document level charge VAT rate (BT-103) shall be 0 (zero) or greater than zero.</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode[. = 'E'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-E-08" flag="fatal" test="../ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'E']/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true() and ram:CategoryTradeTax/ram:CategoryCode='E']/ram:ActualAmount)*10*10)div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false() and ram:CategoryTradeTax/ram:CategoryCode='E']/ram:ActualAmount)*10*10)div 100)">[BR-E-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Exempt from VAT" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Exempt from VAT".</assert>
+      <assert id="BR-E-09" flag="fatal" test="../ram:CalculatedAmount = 0">[BR-E-09]-The VAT category tax amount (BT-117) In a VAT breakdown (BG-23) where the VAT category code (BT-118) equals "Exempt from VAT" shall equal 0 (zero).</assert>
+      <assert id="BR-E-10" flag="fatal" test="(../ram:ExemptionReason) or (../ram:ExemptionReasonCode)">[BR-E-10]-A VAT Breakdown (BG-23) with VAT Category code (BT-118) "Exempt from VAT" shall have a VAT exemption reason code (BT-121) or a VAT exemption reason text (BT-120).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:CategoryTradeTax[ram:CategoryCode = 'E'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-E-03" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-E-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Exempt from VAT" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-E-06" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-E-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Exempt from VAT", the Document level allowance VAT rate (BT-96) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:CategoryTradeTax[ram:CategoryCode = 'E'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-E-04" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-E-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Exempt from VAT" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-E-07" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-E-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Exempt from VAT", the Document level charge VAT rate (BT-103) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'E'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-E-02" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-E-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Exempt from VAT" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-E-05" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-E-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Exempt from VAT", the Invoiced item VAT rate (BT-152) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode[. = 'G'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-G-08" flag="fatal" test="../ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'G']/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true() and ram:CategoryTradeTax/ram:CategoryCode='G']/ram:ActualAmount)*10*10)div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false() and ram:CategoryTradeTax/ram:CategoryCode='G']/ram:ActualAmount)*10*10)div 100)">[BR-G-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Export outside the EU" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Export outside the EU".</assert>
+      <assert id="BR-G-09" flag="fatal" test="../ram:CalculatedAmount = 0">[BR-G-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Export outside the EU" shall be 0 (zero).</assert>
+      <assert id="BR-G-10" flag="fatal" test="(../ram:ExemptionReason) or (../ram:ExemptionReasonCode)">[BR-G-10]-A VAT Breakdown (BG-23) with the VAT Category code (BT-118) "Export outside the EU" shall have a VAT exemption reason code (BT-121), meaning "Export outside the EU" or the VAT exemption reason text (BT-120) "Export outside the EU" (or the equivalent standard text in another language).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:CategoryTradeTax[ram:CategoryCode = 'G'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-G-03" flag="fatal" test="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])">[BR-G-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Export outside the EU" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-G-06" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-G-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Export outside the EU" the Document level allowance VAT rate (BT-96) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:CategoryTradeTax[ram:CategoryCode = 'G'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-G-04" flag="fatal" test="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])">[BR-G-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Export outside the EU" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-G-07" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-G-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Export outside the EU" the Document level charge VAT rate (BT-103) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'G'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-G-02" flag="fatal" test="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])">[BR-G-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Export outside the EU" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-G-05" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-G-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Export outside the EU" the Invoiced item VAT rate (BT-152) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode[.= 'K'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-IC-08" flag="fatal" test="../ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'K']/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true() and ram:CategoryTradeTax/ram:CategoryCode='K']/ram:ActualAmount)*10*10)div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false() and ram:CategoryTradeTax/ram:CategoryCode='K']/ram:ActualAmount)*10*10)div 100)">[BR-IC-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Intra-community supply" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Intra-community supply".</assert>
+      <assert id="BR-IC-09" flag="fatal" test="../ram:CalculatedAmount = 0">[BR-IC-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Intra-community supply" shall be 0 (zero).</assert>
+      <assert id="BR-IC-10" flag="fatal" test="(../ram:ExemptionReason) or (../ram:ExemptionReasonCode)">[BR-IC-10]-A VAT Breakdown (BG-23) with the VAT Category code (BT-118) "Intra-community supply" shall have a VAT exemption reason code (BT-121), meaning "Intra-community supply" or the VAT exemption reason text (BT-120) "Intra-community supply" (or the equivalent standard text in another language).</assert>
+      <assert id="BR-IC-11" flag="fatal" test="(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery/ram:ActualDeliverySupplyChainEvent/ram:OccurrenceDateTime/udt:DateTimeString) or (../../ram:BillingSpecifiedPeriod/ram:StartDateTime) or (../../ram:BillingSpecifiedPeriod/ram:EndDateTime)">[BR-IC-11]-In an Invoice with a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Intra-community supply" the Actual delivery date (BT-72) or the Invoicing period (BG-14) shall not be blank.</assert>
+      <assert id="BR-IC-12" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery/ram:ShipToTradeParty/ram:PostalTradeAddress/ram:CountryID">[BR-IC-12]-In an Invoice with a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Intra-community supply" the Deliver to country code (BT-80) shall not be blank.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:CategoryTradeTax[ram:CategoryCode = 'K'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-IC-03" flag="fatal" test="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and //ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-IC-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Intra-community supply" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-IC-06" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-IC-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Intra-community supply" the Document level allowance VAT rate (BT-96) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:CategoryTradeTax[ram:CategoryCode = 'K'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-IC-04" flag="fatal" test="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and //ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-IC-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Intra-community supply" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-IC-07" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-IC-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Intra-community supply" the Document level charge VAT rate (BT-103) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'K'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-IC-02" flag="fatal" test="(//ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'] or //ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and //ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-IC-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Intra-community supply" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-IC-05" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-IC-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Intracommunity supply" the Invoiced item VAT rate (BT-152) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'O'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-O-08" flag="fatal" test="ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'O']/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true() and ram:CategoryTradeTax/ram:CategoryCode='O']/ram:ActualAmount)*10*10)div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false() and ram:CategoryTradeTax/ram:CategoryCode='O']/ram:ActualAmount)*10*10)div 100)">[BR-O-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is " Not subject to VAT" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Not subject to VAT".</assert>
+      <assert id="BR-O-09" flag="fatal" test="ram:CalculatedAmount = 0">[BR-O-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Not subject to VAT" shall be 0 (zero).</assert>
+      <assert id="BR-O-10" flag="fatal" test="(ram:ExemptionReason) or (ram:ExemptionReasonCode)">[BR-O-10]-A VAT Breakdown (BG-23) with VAT Category code (BT-118) " Not subject to VAT" shall have a VAT exemption reason code (BT-121), meaning " Not subject to VAT" or a VAT exemption reason text (BT-120) " Not subject to VAT" (or the equivalent standard text in another language).</assert>
+      <assert id="BR-O-11" flag="fatal" test="not(//ram:ApplicableTradeTax[ram:CategoryCode != 'O'])">[BR-O-11]-An Invoice that contains a VAT breakdown group (BG-23) with a VAT category code (BT-118) "Not subject to VAT" shall not contain other VAT breakdown groups (BG-23).</assert>
+      <assert id="BR-O-12" flag="fatal" test="not(//ram:ApplicableTradeTax[ram:CategoryCode != 'O'])">[BR-O-12]-An Invoice that contains a VAT breakdown group (BG-23) with a VAT category code (BT-118) "Not subject to VAT" shall not contain an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is not "Not subject to VAT".</assert>
+      <assert id="BR-O-13" flag="fatal" test="not(//ram:CategoryTradeTax[ram:CategoryCode != 'O'])">[BR-O-13]-An Invoice that contains a VAT breakdown group (BG-23) with a VAT category code (BT-118) "Not subject to VAT" shall not contain Document level allowances (BG-20) where Document level allowance VAT category code (BT-95) is not "Not subject to VAT".</assert>
+      <assert id="BR-O-14" flag="fatal" test="not(//ram:CategoryTradeTax[ram:CategoryCode != 'O'])">[BR-O-14]-An Invoice that contains a VAT breakdown group (BG-23) with a VAT category code (BT-118) "Not subject to VAT" shall not contain Document level charges (BG-21) where Document level charge VAT category code (BT-102) is not "Not subject to VAT".</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:CategoryTradeTax[ram:CategoryCode = 'O'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-O-03" flag="fatal" test="not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and not (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and not (/ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])">[BR-O-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Not subject to VAT" shall not contain the Seller VAT identifier (BT-31), the Seller tax representative VAT identifier (BT-63) or the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-O-06" flag="fatal" test="not(ram:RateApplicablePercent)">[BR-O-06]-A Document level allowance (BG-20) where VAT category code (BT-95) is "Not subject to VAT" shall not contain a Document level allowance VAT rate (BT-96).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:CategoryTradeTax[ram:CategoryCode = 'O'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-O-04" flag="fatal" test="not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and not (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and not (/ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])">[BR-O-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Not subject to VAT" shall not contain the Seller VAT identifier (BT-31), the Seller tax representative VAT identifier (BT-63) or the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-O-07" flag="fatal" test="not(ram:RateApplicablePercent)">[BR-O-07]-A Document level charge (BG-21) where the VAT category code (BT-102) is "Not subject to VAT" shall not contain a Document level charge VAT rate (BT-103).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'O'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-O-02" flag="fatal" test="not(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and not (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']) and not (/ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA'])">[BR-O-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Not subject to VAT" shall not contain the Seller VAT identifier (BT-31), the Seller tax representative VAT identifier (BT-63) or the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-O-05" flag="fatal" test="not(ram:RateApplicablePercent)">[BR-O-05]-An Invoice line (BG-25) where the VAT category code (BT-151) is "Not subject to VAT" shall not contain an Invoiced item VAT rate (BT-152).</assert>
+    </rule>
+    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode[.='S']">
+      <assert id="BR-S-08" flag="fatal" test="every $rate in ../ram:RateApplicablePercent/xs:decimal(.) satisfies (../ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'S' and ram:ApplicableTradeTax/xs:decimal(ram:RateApplicablePercent) =$rate]/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount) * 10 * 10) div 100 + round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true() and ram:CategoryTradeTax/ram:CategoryCode='S' and ram:CategoryTradeTax/xs:decimal(ram:RateApplicablePercent)=$rate]/ram:ActualAmount) * 10 * 10) div 100 - round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false() and ram:CategoryTradeTax/ram:CategoryCode='S' and ram:CategoryTradeTax/xs:decimal(ram:RateApplicablePercent)=$rate]/ram:ActualAmount) * 10 * 10) div 100))">[BR-S-08]-For each different value of VAT category rate (BT-119) where the VAT category code (BT-118) is "Standard rated", the VAT category taxable amount (BT-116) in a VAT breakdown (BG-23) shall equal the sum of Invoice line net amounts (BT-131) plus the sum of document level charge amounts (BT-99) minus the sum of document level allowance amounts (BT-92) where the VAT category code (BT-151, BT-102, BT-95) is "Standard rated" and the VAT rate (BT-152, BT-103, BT-96) equals the VAT category rate (BT-119).</assert>
+      <assert id="BR-S-09" flag="fatal" test="abs(xs:decimal(../ram:CalculatedAmount)) = round(abs(xs:decimal(../ram:BasisAmount)) * ../ram:RateApplicablePercent) div 100 +0">[BR-S-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is "Standard rated" shall equal the VAT category taxable amount (BT-116) multiplied by the VAT category rate (BT-119).</assert>
+      <assert id="BR-S-10" flag="fatal" test="not(../ram:ExemptionReason) and not (../ram:ExemptionReasonCode)">[BR-S-10]-A VAT Breakdown (BG-23) with VAT Category code (BT-118) "Standard rate" shall not have a VAT exemption reason code (BT-121) or VAT exemption reason text (BT-120).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-S-02" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-S-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Standard rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-S-05" flag="fatal" test="ram:RateApplicablePercent > 0">[BR-S-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Standard rated" the Invoiced item VAT rate (BT-152) shall be greater than zero.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:CategoryTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-S-03" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-S-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Standard rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-S-06" flag="fatal" test="ram:RateApplicablePercent > 0">[BR-S-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Standard rated" the Document level allowance VAT rate (BT-96) shall be greater than zero.</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:CategoryTradeTax[ram:CategoryCode = 'S'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-S-04" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-S-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Standard rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-S-07" flag="fatal" test="ram:RateApplicablePercent > 0">[BR-S-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Standard rated" the Document level charge VAT rate (BT-103) shall be greater than zero.</assert>
+    </rule>
+    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode[. = 'Z']">
+      <assert id="BR-Z-08" flag="fatal" test="../ram:BasisAmount = (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement[ram:ApplicableTradeTax/ram:CategoryCode = 'Z']/ram:SpecifiedTradeSettlementLineMonetarySummation/ram:LineTotalAmount)*10*10)div 100) + (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true() and ram:CategoryTradeTax/ram:CategoryCode='Z']/ram:ActualAmount)*10*10)div 100) - (round(sum(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false() and ram:CategoryTradeTax/ram:CategoryCode='Z']/ram:ActualAmount)*10*10)div 100)">[BR-Z-08]-In a VAT breakdown (BG-23) where VAT category code (BT-118) is "Zero rated" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amount (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Zero rated".</assert>
+      <assert id="BR-Z-09" flag="fatal" test="../ram:CalculatedAmount = 0">[BR-Z-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is "Zero rated" shall equal 0 (zero).</assert>
+      <assert id="BR-Z-10" flag="fatal" test="not(../ram:ExemptionReason) and not (../ram:ExemptionReasonCode)">[BR-Z-10]-A VAT Breakdown (BG-23) with VAT Category code (BT-118) "Zero rated" shall not have a VAT exemption reason code (BT-121) or VAT exemption reason text (BT-120).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=false()]/ram:CategoryTradeTax[ram:CategoryCode = 'Z'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-Z-03" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-Z-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Zero rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-Z-06" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-Z-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Zero rated" the Document level allowance VAT rate (BT-96) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator=true()]/ram:CategoryTradeTax[ram:CategoryCode = 'Z'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-Z-04" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-Z-04]-An Invoice that contains a Document level charge where the Document level charge VAT category code (BT-102) is "Zero rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-Z-07" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-Z-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Zero rated" the Document level charge VAT rate (BT-103) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax[ram:CategoryCode = 'Z'][upper-case(ram:TypeCode) = 'VAT']">
+      <assert id="BR-Z-02" flag="fatal" test="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = ('VA', 'FC')] or /rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'VA']">[BR-Z-02]-An Invoice that contains an Invoice line where the Invoiced item VAT category code (BT-151) is "Zero rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-Z-05" flag="fatal" test="ram:RateApplicablePercent = 0">[BR-Z-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Zero rated" the Invoiced item VAT rate (BT-152) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="//ram:ApplicableHeaderTradeSettlement/ram:ApplicableTradeTax">
+      <assert id="BR-45" flag="fatal" test="(ram:BasisAmount)">[BR-45]-Each VAT breakdown (BG-23) shall have a VAT category taxable amount (BT-116).</assert>
+      <assert id="BR-46" flag="fatal" test="(ram:CalculatedAmount)">[BR-46]-Each VAT breakdown (BG-23) shall have a VAT category tax amount (BT-117).</assert>
+      <assert id="BR-47" flag="fatal" test="(.[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode)">[BR-47]-Each VAT breakdown (BG-23) shall be defined through a VAT category code (BT-118).</assert>
+      <assert id="BR-48" flag="fatal" test="(.[upper-case(ram:TypeCode) = 'VAT']/ram:RateApplicablePercent) or (.[upper-case(ram:TypeCode) = 'VAT']/ram:CategoryCode = 'O')">[BR-48]-Each VAT breakdown (BG-23) shall have a VAT category rate (BT-119), except if the Invoice is not subject to VAT.</assert>
+      <assert id="BR-CO-03" flag="fatal" test="((//ram:TaxPointDate) and not(//ram:DueDateTypeCode)) or (not (//ram:TaxPointDate) and (//ram:DueDateTypeCode)) or (not (//ram:TaxPointDate) and not (//ram:DueDateTypeCode))">[BR-CO-03]-Value added tax point date (BT-7) and Value added tax point date code (BT-8) are mutually exclusive.</assert>
+      <assert id="BR-CO-17" flag="fatal" test="ram:CalculatedAmount = round(ram:BasisAmount * .[upper-case(ram:TypeCode) = 'VAT']/ram:RateApplicablePercent) div 100 +0 or not (.[upper-case(ram:TypeCode) = 'VAT']/ram:RateApplicablePercent)">[BR-CO-17]-VAT category tax amount (BT-117) = VAT category taxable amount (BT-116) x (VAT category rate (BT-119) / 100), rounded to two decimals.</assert>
+      <assert id="BR-DEC-19" flag="fatal" test="string-length(substring-after(ram:BasisAmount,'.'))&lt;=2">[BR-DEC-19]-The allowed maximum number of decimals for the VAT category taxable amount (BT-116) is 2.</assert>
+      <assert id="BR-DEC-20" flag="fatal" test="string-length(substring-after(ram:CalculatedAmount,'.'))&lt;=2">[BR-DEC-20]-The allowed maximum number of decimals for the VAT category tax amount (BT-117) is 2.</assert>
+    </rule>
+  </pattern>
+  <pattern id="EN16931-CII-Syntax">
+    <rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocumentContext">
+      <assert id="CII-SR-001" flag="warning" test="not(ram:SpecifiedTransactionID)">[CII-SR-001] - SpecifiedTransactionID should not be present</assert>
+      <assert id="CII-SR-002" flag="warning" test="not(ram:TestIndicator)">[CII-SR-002] - TestIndicator should not be present</assert>
+      <assert id="CII-SR-003" flag="warning" test="(count(ram:BusinessProcessSpecifiedDocumentContextParameter) &lt;= 1)">[CII-SR-003] - BusinessProcessSpecifiedDocumentContextParameter should exist maximum once</assert>
+      <assert id="CII-SR-006" flag="warning" test="not(ram:BIMSpecifiedDocumentContextParameter)">[CII-SR-006] - BIMSpecifiedDocumentContextParameter should not be present</assert>
+      <assert id="CII-SR-007" flag="warning" test="not(ram:ScenarioSpecifiedDocumentContextParameter)">[CII-SR-007] - ScenarioSpecifiedDocumentContextParameter should not be present</assert>
+      <assert id="CII-SR-008" flag="warning" test="not(ram:ApplicationSpecifiedDocumentContextParameter)">[CII-SR-008] - ApplicationSpecifiedDocumentContextParameter should not be present</assert>
+      <assert id="CII-SR-009" flag="fatal" test="count(ram:GuidelineSpecifiedDocumentContextParameter) = 1">[CII-SR-009] - GuidelineSpecifiedDocumentContextParameter must exist exactly once</assert>
+      <assert id="CII-SR-010" flag="fatal" test="count(ram:GuidelineSpecifiedDocumentContextParameter/ram:ID) = 1">[CII-SR-010] - ID must exist exactly once</assert>
+      <assert id="CII-SR-011" flag="warning" test="not(ram:SubsetSpecifiedDocumentContextParameter)">[CII-SR-011] - SubsetSpecifiedDocumentContextParameter should not be present</assert>
+      <assert id="CII-SR-012" flag="warning" test="not(ram:MessageStandardSpecifiedDocumentContextParameter)">[CII-SR-012] - MessageStandardSpecifiedDocumentContextParameter should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument">
+      <assert id="CII-SR-013" flag="warning" test="not(ram:Name)">[CII-SR-013] - Name should not be present</assert>
+      <assert id="CII-SR-014" flag="fatal" test="count(ram:TypeCode) = 1">[CII-SR-014] - TypeCode must exist exactly once</assert>
+      <assert id="CII-SR-015" flag="warning" test="not(ram:IssueDateTime/udt:DateTime)">[CII-SR-015] - DateTime should not be present</assert>
+      <assert id="CII-SR-016" flag="warning" test="not(ram:CopyIndicator)">[CII-SR-016] - CopyIndicator should not be present</assert>
+      <assert id="CII-SR-017" flag="warning" test="not(ram:Purpose)">[CII-SR-017] - Purpose should not be present</assert>
+      <assert id="CII-SR-018" flag="warning" test="not(ram:ControlRequirementIndicator)">[CII-SR-018] - ControlRequirementIndicator should not be present</assert>
+      <assert id="CII-SR-019" flag="warning" test="not(ram:LanguageID)">[CII-SR-019] - LanguageID should not be present</assert>
+      <assert id="CII-SR-020" flag="warning" test="not(ram:PurposeCode)">[CII-SR-020] - PurposeCode should not be present</assert>
+      <assert id="CII-SR-021" flag="warning" test="not(ram:RevisionDateTime)">[CII-SR-021] - RevisionDateTime should not be present</assert>
+      <assert id="CII-SR-022" flag="warning" test="not(ram:VersionID)">[CII-SR-022] - VersionID should not be present</assert>
+      <assert id="CII-SR-023" flag="warning" test="not(ram:GlobalID)">[CII-SR-023] - GlobalID should not be present</assert>
+      <assert id="CII-SR-024" flag="warning" test="not(ram:RevisionID)">[CII-SR-024] - RevisionID should not be present</assert>
+      <assert id="CII-SR-025" flag="warning" test="not(ram:PreviousRevisionID)">[CII-SR-025] - PreviousRevisionID should not be present</assert>
+      <assert id="CII-SR-026" flag="warning" test="not(ram:CategoryCode)">[CII-SR-026] - CategoryCode should not be present</assert>
+      <assert id="CII-SR-027" flag="warning" test="not(ram:IncludedNote/ram:Subject)">[CII-SR-027] - Subject should not be present</assert>
+      <assert id="CII-SR-028" flag="warning" test="not(ram:IncludedNote/ram:ContentCode)">[CII-SR-028] - ContentCode should not be present</assert>
+      <assert id="CII-SR-032" flag="warning" test="not(ram:IncludedNote/ram:ID)">[CII-SR-032] - ID should not be present</assert>
+      <assert id="CII-SR-033" flag="warning" test="not(ram:EffectiveSpecifiedPeriod)">[CII-SR-033] - EffectiveSpecifiedPeriod should not be present</assert>
+      <assert id="CII-SR-034" flag="warning" test="not(ram:IssuerTradeParty)">[CII-SR-034] - IssuerTradeParty should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IncludedNote">
+      <assert id="CII-SR-030" flag="warning" test="count(ram:Content) &lt;= 1">[CII-SR-030] - Content should exist maximum once</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem">
+      <assert id="CII-SR-035" flag="warning" test="not(ram:DescriptionCode)">[CII-SR-035] - DescriptionCode should not be present</assert>
+      <assert id="CII-SR-036" flag="warning" test="not(ram:ParentLineID)">[CII-SR-036] - ParentLineID should not be present</assert>
+      <assert id="CII-SR-037" flag="warning" test="not(ram:LineStatusCode)">[CII-SR-037] - LineStatusCode should not be present</assert>
+      <assert id="CII-SR-038" flag="warning" test="not(ram:LineStatusReasonCode)">[CII-SR-038] - LineStatusReasonCode should not be present</assert>
+      <assert id="CII-SR-039" flag="warning" test="count(ram:IncludedNote) &lt;= 1">[CII-SR-039] - IncludedNote should exist maximum once</assert>
+      <assert id="CII-SR-040" flag="warning" test="count(ram:IncludedNote/ram:Content) &lt;= 1">[CII-SR-040] - Content should exist maximum once</assert>
+      <assert id="CII-SR-041" flag="warning" test="not(ram:IncludedNote/ram:SubjectCode)">[CII-SR-041] - SubjectCode should not be present</assert>
+      <assert id="CII-SR-042" flag="warning" test="not(ram:IncludedNote/ram:ID)">[CII-SR-042] - ID should not be present</assert>
+      <assert id="CII-SR-043" flag="warning" test="not(ram:IncludedNote/ram:Subject)">[CII-SR-043] - CategoryCode should not be present</assert>
+      <assert id="CII-SR-044" flag="warning" test="not(ram:IncludedNote/ram:ContentCode)">[CII-SR-044] - Subject should not be present</assert>
+      <assert id="CII-SR-221" flag="warning" test="not(ram:IncludedSubordinateTradeLineItem)">[CII-SR-221] - IncludedSubordinateTradeLineItem should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct">
+      <assert id="CII-SR-045" flag="warning" test="not(ram:ID)">[CII-SR-045] - ID should not be present</assert>
+      <assert id="CII-SR-046" flag="fatal" test="not(ram:GlobalID) or (ram:GlobalID/@schemeID)">[CII-SR-046] - schemeID must be present if GlobalID is present</assert>
+      <assert id="CII-SR-048" flag="warning" test="not(ram:ManufacturerAssignedID)">[CII-SR-048] - ManufacturerAssignedID should not be present</assert>
+      <assert id="CII-SR-049" flag="warning" test="not(ram:TradeName)">[CII-SR-049] - TradeName should not be present</assert>
+      <assert id="CII-SR-050" flag="warning" test="not(ram:TypeCode)">[CII-SR-050] - TypeCode should not be present</assert>
+      <assert id="CII-SR-051" flag="warning" test="not(ram:NetWeightMeasure)">[CII-SR-051] - NetWeightMeasure should not be present</assert>
+      <assert id="CII-SR-052" flag="warning" test="not(ram:GrossWeightMeasure)">[CII-SR-052] - GrossWeightMeasure should not be present</assert>
+      <assert id="CII-SR-053" flag="warning" test="not(ram:ProductGroupID)">[CII-SR-053] - ProductGroupID should not be present</assert>
+      <assert id="CII-SR-054" flag="warning" test="not(ram:EndItemTypeCode)">[CII-SR-054] - EndItemTypeCode should not be present</assert>
+      <assert id="CII-SR-055" flag="warning" test="not(ram:EndItemName)">[CII-SR-055] - EndItemName should not be present</assert>
+      <assert id="CII-SR-056" flag="warning" test="not(ram:AreaDensityMeasure)">[CII-SR-056] - AreaDensityMeasure should not be present</assert>
+      <assert id="CII-SR-057" flag="warning" test="not(ram:UseDescription)">[CII-SR-057] - UseDescription should not be present</assert>
+      <assert id="CII-SR-058" flag="warning" test="not(ram:BrandName)">[CII-SR-058] - BrandName should not be present</assert>
+      <assert id="CII-SR-059" flag="warning" test="not(ram:SubBrandName)">[CII-SR-059] - SubBrandName should not be present</assert>
+      <assert id="CII-SR-060" flag="warning" test="not(ram:DrainedNetWeightMeasure)">[CII-SR-060] - DrainedNetWeightMeasure should not be present</assert>
+      <assert id="CII-SR-061" flag="warning" test="not(ram:VariableMeasureIndicator)">[CII-SR-061] - VariableMeasureIndicator should not be present</assert>
+      <assert id="CII-SR-062" flag="warning" test="not(ram:ColourCode)">[CII-SR-062] - ColourCode should not be present</assert>
+      <assert id="CII-SR-063" flag="warning" test="not(ram:ColourDescription)">[CII-SR-063] - ColourDescription should not be present</assert>
+      <assert id="CII-SR-064" flag="warning" test="not(ram:Designation)">[CII-SR-064] - Designation should not be present</assert>
+      <assert id="CII-SR-065" flag="warning" test="not(ram:FormattedCancellationAnnouncedLaunchDateTime)">[CII-SR-065] - FormattedCancellationAnnouncedLaunchDateTime should not be present</assert>
+      <assert id="CII-SR-066" flag="warning" test="not(ram:FormattedLatestProductDataChangeDateTime)">[CII-SR-066] - FormattedLatestProductDataChangeDateTime should not be present</assert>
+      <assert id="CII-SR-067" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:ID)">[CII-SR-067] - ID should not be present</assert>
+      <assert id="CII-SR-068" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:TypeCode)">[CII-SR-068] - TypeCode should not be present</assert>
+      <assert id="CII-SR-070" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:ValueMeasure)">[CII-SR-070] - ValueMeasure should not be present</assert>
+      <assert id="CII-SR-071" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:MeasurementMethodCode)">[CII-SR-071] - MeasurementMethodCode should not be present</assert>
+      <assert id="CII-SR-073" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:ValueCode)">[CII-SR-073] - ValueCode should not be present</assert>
+      <assert id="CII-SR-074" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:ValueDateTime)">[CII-SR-074] - ValueDateTime should not be present</assert>
+      <assert id="CII-SR-075" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:ValueIndicator)">[CII-SR-075] - ValueIndicator should not be present</assert>
+      <assert id="CII-SR-076" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:ContentTypeCode)">[CII-SR-076] - ContentTypeCode should not be present</assert>
+      <assert id="CII-SR-077" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:ValueSpecifiedBinaryFile)">[CII-SR-077] - ValueSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-SR-078" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:ApplicableProductCharacteristicCondition)">[CII-SR-078] - ApplicableProductCharacteristicCondition should not be present</assert>
+      <assert id="CII-SR-079" flag="warning" test="not(ram:ApplicableProductCharacteristic/ram:ApplicableReferencedStandard)">[CII-SR-079] - ApplicableReferencedStandard should not be present</assert>
+      <assert id="CII-SR-080" flag="warning" test="not(ram:ApplicableMaterialGoodsCharacteristic)">[CII-SR-080] - ApplicableMaterialGoodsCharacteristic should not be present</assert>
+      <assert id="CII-SR-081" flag="warning" test="not(ram:DesignatedProductClassification/ram:SystemID)">[CII-SR-081] - SystemID should not be present</assert>
+      <assert id="CII-SR-082" flag="warning" test="not(ram:DesignatedProductClassification/ram:SystemName)">[CII-SR-082] - SystemName should not be present</assert>
+      <assert id="CII-SR-083" flag="warning" test="not(ram:DesignatedProductClassification/ram:ClassName)">[CII-SR-083] - ClassName should not be present</assert>
+      <assert id="CII-SR-084" flag="warning" test="not(ram:DesignatedProductClassification/ram:SubClassCode)">[CII-SR-084] - SubClassCode should not be present</assert>
+      <assert id="CII-SR-085" flag="warning" test="not(ram:DesignatedProductClassification/ram:ClassProductCharacteristic)">[CII-SR-085] - ClassProductCharacteristic should not be present</assert>
+      <assert id="CII-SR-086" flag="warning" test="not(ram:DesignatedProductClassification/ram:ApplicableReferencedStandard)">[CII-SR-086] - ApplicableReferencedStandard should not be present</assert>
+      <assert id="CII-SR-087" flag="warning" test="not(ram:IndividualTradeProductInstance)">[CII-SR-087] - IndividualTradeProductInstance should not be present</assert>
+      <assert id="CII-SR-088" flag="warning" test="not(ram:CertificationEvidenceReferenceReferencedDocument)">[CII-SR-088] - CertificationEvidenceReferenceReferencedDocument should not be present</assert>
+      <assert id="CII-SR-089" flag="warning" test="not(ram:InspectionReferenceReferencedDocument)">[CII-SR-089] - InspectionReferenceReferencedDocument should not be present</assert>
+      <assert id="CII-SR-090" flag="fatal" test="not (ram:OriginTradeCountry) or (count(ram:OriginTradeCountry/ram:ID) =1)">[CII-SR-090] - ID should exist maximum once.</assert>
+      <assert id="CII-SR-091" flag="warning" test="not(ram:OriginTradeCountry/ram:Name)">[CII-SR-091] - Name should not be present</assert>
+      <assert id="CII-SR-092" flag="warning" test="not(ram:OriginTradeCountry/ram:SubordinateTradeCountrySubDivision)">[CII-SR-092] - SubordinateTradeCountrySubDivision should not be present</assert>
+      <assert id="CII-SR-093" flag="warning" test="not(ram:LinearSpatialDimension)">[CII-SR-093] - LinearSpatialDimension should not be present</assert>
+      <assert id="CII-SR-094" flag="warning" test="not(ram:MinimumLinearSpatialDimension)">[CII-SR-094] - MinimumLinearSpatialDimension should not be present</assert>
+      <assert id="CII-SR-095" flag="warning" test="not(ram:MaximumLinearSpatialDimension)">[CII-SR-095] - MaximumLinearSpatialDimension should not be present</assert>
+      <assert id="CII-SR-096" flag="warning" test="not(ram:ManufacturerTradeParty)">[CII-SR-096] - ManufacturerTradeParty should not be present</assert>
+      <assert id="CII-SR-097" flag="warning" test="not(ram:PresentationSpecifiedBinaryFile)">[CII-SR-097] - PresentationSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-SR-098" flag="warning" test="not(ram:MSDSReferenceReferencedDocument)">[CII-SR-098] - MSDSReferenceReferencedDocument should not be present</assert>
+      <assert id="CII-SR-099" flag="warning" test="not(ram:AdditionalReferenceReferencedDocument)">[CII-SR-099] - AdditionalReferenceReferencedDocument should not be present</assert>
+      <assert id="CII-SR-100" flag="warning" test="not(ram:LegalRightsOwnerTradeParty)">[CII-SR-100] - LegalRightsOwnerTradeParty should not be present</assert>
+      <assert id="CII-SR-101" flag="warning" test="not(ram:BrandOwnerTradeParty)">[CII-SR-101] - BrandOwnerTradeParty should not be present</assert>
+      <assert id="CII-SR-102" flag="warning" test="not(ram:IncludedReferencedProduct)">[CII-SR-102] - IncludedReferencedProduct should not be present</assert>
+      <assert id="CII-SR-103" flag="warning" test="not(ram:InformationNote)">[CII-SR-103] - InformationNote should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:ApplicableProductCharacteristic">
+      <assert id="CII-SR-069" flag="fatal" test="(count(ram:Description) =1)">[CII-SR-069] - Description should exist maximum once.</assert>
+      <assert id="CII-SR-072" flag="fatal" test="(count(ram:Value) =1)">[CII-SR-072] - Value should exist maximum once.</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeAgreement">
+      <assert id="CII-SR-104" flag="warning" test="not(ram:BuyerReference)">[CII-SR-104] - BuyerReference should not be present</assert>
+      <assert id="CII-SR-105" flag="warning" test="not(ram:BuyerRequisitionerTradeParty)">[CII-SR-105] - BuyerRequisitionerTradeParty should not be present</assert>
+      <assert id="CII-SR-106" flag="warning" test="not(ram:ApplicableTradeDeliveryTerms)">[CII-SR-106] - ApplicableTradeDeliveryTerms should not be present</assert>
+      <assert id="CII-SR-107" flag="warning" test="not(ram:SellerOrderReferencedDocument)">[CII-SR-107] - SellerOrderReferencedDocument should not be present</assert>
+      <assert id="CII-SR-108" flag="warning" test="not(ram:BuyerOrderReferencedDocument/ram:IssuerAssignedID)">[CII-SR-108] - IssuerAssignedID should not be present</assert>
+      <assert id="CII-SR-109" flag="warning" test="not(ram:QuotationReferencedDocument)">[CII-SR-109] - QuotationReferencedDocument should not be present</assert>
+      <assert id="CII-SR-110" flag="warning" test="not(ram:ContractReferencedDocument)">[CII-SR-110] - ContractReferencedDocument should not be present</assert>
+      <assert id="CII-SR-111" flag="warning" test="not(ram:DemandForecastReferencedDocument)">[CII-SR-111] - DemandForecastReferencedDocument should not be present</assert>
+      <assert id="CII-SR-112" flag="warning" test="not(ram:PromotionalDealReferencedDocument)">[CII-SR-112] - PromotionalDealReferencedDocument should not be present</assert>
+      <assert id="CII-SR-113" flag="warning" test="not(ram:AdditionalReferencedDocument)">[CII-SR-113] - AdditionalReferencedDocument should not be present</assert>
+      <assert id="CII-SR-114" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:TypeCode)">[CII-SR-114] - TypeCode should not be present</assert>
+      <assert id="CII-SR-115" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:MinimumQuantity)">[CII-SR-115] - MinimumQuantity should not be present</assert>
+      <assert id="CII-SR-116" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:MaximumQuantity)">[CII-SR-116] - MaximumQuantity should not be present</assert>
+      <assert id="CII-SR-117" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:ChangeReason)">[CII-SR-117] - ChangeReason should not be present</assert>
+      <assert id="CII-SR-118" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:OrderUnitConversionFactorNumeric)">[CII-SR-118] - OrderUnitConversionFactorNumeric should not be present</assert>
+      <assert id="CII-SR-439" flag="fatal" test="count(ram:NetPriceProductTradePrice/ram:ChargeAmount) = 1">[CII-SR-439] - ChargeAmount should exist maximum once</assert>
+      <assert id="CII-SR-119" flag="warning" test="(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ChargeIndicator[udt:Indicator=false()] and ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount) or (not (ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ChargeIndicator) and not (ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount))">[CII-SR-119] - Only allowances on price a price should be present</assert>
+      <assert id="CII-SR-120" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ID)">[CII-SR-120] - ID should not be present</assert>
+      <assert id="CII-SR-121" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:SequenceNumeric)">[CII-SR-121] - SequenceNumeric should not be present</assert>
+      <assert id="CII-SR-122" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:CalculationPercent)">[CII-SR-122] - CalculationPercent should not be present</assert>
+      <assert id="CII-SR-123" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:BasisAmount)">[CII-SR-123] - BasisAmount should not be present</assert>
+      <assert id="CII-SR-124" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:BasisQuantity)">[CII-SR-124] - BasisQuantityshould not be present</assert>
+      <assert id="CII-SR-125" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:PrepaidIndicator)">[CII-SR-125] - PrepaidIndicator should not be present</assert>
+      <assert id="CII-SR-126" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:UnitBasisAmount)">[CII-SR-126] - UnitBasisAmount should not be present</assert>
+      <assert id="CII-SR-127" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ReasonCode)">[CII-SR-127] - ReasonCode should not be present</assert>
+      <assert id="CII-SR-128" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:Reason)">[CII-SR-128] - Reason should not be present</assert>
+      <assert id="CII-SR-129" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:TypeCode)">[CII-SR-129] - TypeCode should not be present</assert>
+      <assert id="CII-SR-130" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:CategoryTradeTax)">[CII-SR-130] - CategoryTradeTax should not be present</assert>
+      <assert id="CII-SR-131" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualTradeCurrencyExchange)">[CII-SR-131] - ActualTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-440" flag="fatal" test="count(ram:GrossPriceProductTradePrice/ram:AppliedTradeAllowanceCharge/ram:ActualAmount) &lt;= 1">[CII-SR-440] - ActualAmount should exist maximum once</assert>
+      <assert id="CII-SR-445" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:IncludedTradeTax)">[CII-SR-445] - IncludedTradeTax should not be present</assert>
+      <assert id="CII-SR-132" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:ValiditySpecifiedPeriod)">[CII-SR-132] - ValiditySpecifiedPeriod should not be present</assert>
+      <assert id="CII-SR-133" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:DeliveryTradeLocation)">[CII-SR-133] - DeliveryTradeLocation should not be present</assert>
+      <assert id="CII-SR-134" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:TradeComparisonReferencePrice)">[CII-SR-134] - TradeComparisonReferencePrice should not be present</assert>
+      <assert id="CII-SR-135" flag="warning" test="not(ram:GrossPriceProductTradePrice/ram:AssociatedReferencedDocument)">[CII-SR-135] - AssociatedReferencedDocument should not be present</assert>
+      <assert id="CII-SR-136" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:TypeCode)">[CII-SR-136] - TypeCode should not be present</assert>
+      <assert id="CII-SR-138" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:MinimumQuantity)">[CII-SR-138] - MinimumQuantity should not be present</assert>
+      <assert id="CII-SR-139" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:MaximumQuantity)">[CII-SR-139] - MaximumQuantity should not be present</assert>
+      <assert id="CII-SR-140" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:ChangeReason)">[CII-SR-140] - ChangeReason should not be present</assert>
+      <assert id="CII-SR-141" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:OrderUnitConversionFactorNumeric)">[CII-SR-141] - OrderUnitConversionFactorNumeric should not be present</assert>
+      <assert id="CII-SR-142" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:AppliedTradeAllowanceCharge)">[CII-SR-142] - AppliedTradeAllowanceCharge should not be present</assert>
+      <assert id="CII-SR-446" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:IncludedTradeTax)">[CII-SR-446] - IncludedTradeTax should not be present</assert>
+      <assert id="CII-SR-143" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:ValiditySpecifiedPeriod)">[CII-SR-143] - ValiditySpecifiedPeriod should not be present</assert>
+      <assert id="CII-SR-144" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:DeliveryTradeLocation)">[CII-SR-144] - DeliveryTradeLocation should not be present</assert>
+      <assert id="CII-SR-145" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:TradeComparisonReferencePrice)">[CII-SR-145] - TradeComparisonReferencePrice should not be present</assert>
+      <assert id="CII-SR-146" flag="warning" test="not(ram:NetPriceProductTradePrice/ram:AssociatedReferencedDocument)">[CII-SR-146] - AssociatedReferencedDocument should not be present</assert>
+      <assert id="CII-SR-441" flag="fatal" test="count(ram:NetPriceProductTradePrice/ram:ChargeAmount) &lt;= 1">[CII-SR-441] - ChargeAmount should exist maximum once</assert>
+      <assert id="CII-SR-147" flag="warning" test="not(ram:RequisitionerReferencedDocument)">[CII-SR-147] - RequisitionerReferencedDocument should not be present</assert>
+      <assert id="CII-SR-148" flag="warning" test="not(ram:ItemSellerTradeParty)">[CII-SR-148] - ItemSellerTradeParty should not be present</assert>
+      <assert id="CII-SR-149" flag="warning" test="not(ram:ItemBuyerTradeParty)">[CII-SR-149] - ItemBuyerTradeParty should not be present</assert>
+      <assert id="CII-SR-150" flag="warning" test="not(ram:IncludedSpecifiedMarketplace)">[CII-SR-150] - IncludedSpecifiedMarketplace should not be present</assert>
+      <assert id="CII-SR-447" flag="warning" test="not(ram:UltimateCustomerOrderReferencedDocument)">[CII-SR-447] - UltimateCustomerOrderReferencedDocument should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeDelivery">
+      <assert id="CII-SR-151" flag="warning" test="not(ram:RequestedQuantity)">[CII-SR-151] - RequestedQuantity should not be present</assert>
+      <assert id="CII-SR-152" flag="warning" test="not(ram:ReceivedQuantity)">[CII-SR-152] - ReceivedQuantity should not be present</assert>
+      <assert id="CII-SR-153" flag="warning" test="not(ram:ChargeFreeQuantity)">[CII-SR-153] - ChargeFreeQuantity should not be present</assert>
+      <assert id="CII-SR-154" flag="warning" test="not(ram:PackageQuantity)">[CII-SR-154] - PackageQuantity should not be present</assert>
+      <assert id="CII-SR-155" flag="warning" test="not(ram:ProductUnitQuantity)">[CII-SR-155] - ProductUnitQuantity should not be present</assert>
+      <assert id="CII-SR-156" flag="warning" test="not(ram:PerPackageUnitQuantity)">[CII-SR-156] - PerPackageUnitQuantity should not be present</assert>
+      <assert id="CII-SR-157" flag="warning" test="not(ram:NetWeightMeasure)">[CII-SR-157] - NetWeightMeasure should not be present</assert>
+      <assert id="CII-SR-158" flag="warning" test="not(ram:GrossWeightMeasure)">[CII-SR-158] - GrossWeightMeasure should not be present</assert>
+      <assert id="CII-SR-159" flag="warning" test="not(ram:TheoreticalWeightMeasure)">[CII-SR-159] - TheoreticalWeightMeasure should not be present</assert>
+      <assert id="CII-SR-160" flag="warning" test="not(ram:DespatchedQuantity)">[CII-SR-160] - DespatchedQuantity should not be present</assert>
+      <assert id="CII-SR-161" flag="warning" test="not(ram:SpecifiedDeliveryAdjustment)">[CII-SR-161] - SpecifiedDeliveryAdjustment should not be present</assert>
+      <assert id="CII-SR-162" flag="warning" test="not(ram:IncludedSupplyChainPackaging)">[CII-SR-162] - IncludedSupplyChainPackaging should not be present</assert>
+      <assert id="CII-SR-163" flag="warning" test="not(ram:RelatedSupplyChainConsignment)">[CII-SR-163] - RelatedSupplyChainConsignment should not be present</assert>
+      <assert id="CII-SR-164" flag="warning" test="not(ram:ShipToTradeParty)">[CII-SR-164] - ShipToTradeParty should not be present</assert>
+      <assert id="CII-SR-165" flag="warning" test="not(ram:UltimateShipToTradeParty)">[CII-SR-165] - UltimateShipToTradeParty should not be present</assert>
+      <assert id="CII-SR-166" flag="warning" test="not(ram:ShipFromTradeParty)">[CII-SR-166] - ShipFromTradeParty should not be present</assert>
+      <assert id="CII-SR-167" flag="warning" test="not(ram:ActualDespatchSupplyChainEvent)">[CII-SR-167] - ActualDespatchSupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-168" flag="warning" test="not(ram:ActualPickUpSupplyChainEvent)">[CII-SR-168] - ActualPickUpSupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-169" flag="warning" test="not(ram:ActualReceiptSupplyChainEvent)">[CII-SR-169] - RequestedDeliverySupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-170" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent)">[CII-SR-170] - ActualDeliverySupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-171" flag="warning" test="not(ram:RequestedQuantity)">[CII-SR-171] - ActualReceiptSupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-172" flag="warning" test="not(ram:AdditionalReferencedDocument)">[CII-SR-172] - AdditionalReferencedDocument should not be present</assert>
+      <assert id="CII-SR-173" flag="warning" test="not(ram:DespatchAdviceReferencedDocument)">[CII-SR-173] - DespatchAdviceReferencedDocument should not be present</assert>
+      <assert id="CII-SR-174" flag="warning" test="not(ram:ReceivingAdviceReferencedDocument)">[CII-SR-174] - ReceivingAdviceReferencedDocument should not be present</assert>
+      <assert id="CII-SR-175" flag="warning" test="not(ram:DeliveryNoteReferencedDocument)">[CII-SR-175] - DeliveryNoteReferencedDocument should not be present</assert>
+      <assert id="CII-SR-176" flag="warning" test="not(ram:ConsumptionReportReferencedDocument)">[CII-SR-176] - ConsumptionReportReferencedDocument should not be present</assert>
+      <assert id="CII-SR-177" flag="warning" test="not(ram:PackingListReferencedDocument)">[CII-SR-177] - RequestedQuantity should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement">
+      <assert id="CII-SR-178" flag="warning" test="not(ram:PaymentReference)">[CII-SR-178] - PaymentReference should not be present</assert>
+      <assert id="CII-SR-179" flag="warning" test="not(ram:InvoiceIssuerReference)">[CII-SR-179] - InvoiceIssuerReference should not be present</assert>
+      <assert id="CII-SR-180" flag="warning" test="not(ram:TotalAdjustmentAmount)">[CII-SR-180] - TotalAdjustmentAmount should not be present</assert>
+      <assert id="CII-SR-181" flag="warning" test="not(ram:DiscountIndicator)">[CII-SR-181] - DiscountIndicator should not be present</assert>
+      <assert id="CII-SR-182" flag="warning" test="not(ram:ApplicableTradeTax/ram:CalculatedAmount)">[CII-SR-182] - CalculatedAmount should not be present</assert>
+      <assert id="CII-SR-183" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ChargeIndicator/udt:IndicatorString)">[CII-SR-183] - IndicatorString should not be present</assert>
+      <assert id="CII-SR-184" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ID)">[CII-SR-184] - ID should not be present</assert>
+      <assert id="CII-SR-185" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:SequenceNumeric)">[CII-SR-185] - SequenceNumeric should not be present</assert>
+      <assert id="CII-SR-186" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:CalculationPercent/@format)">[CII-SR-186] - @format should not be present</assert>
+      <assert id="CII-SR-187" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:BasisQuantity)">[CII-SR-187] - BasisQuantity should not be present</assert>
+      <assert id="CII-SR-188" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:PrepaidIndicator)">[CII-SR-188] - PrepaidIndicator should not be present</assert>
+      <assert id="CII-SR-189" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:UnitBasisAmount)">[CII-SR-189] - UnitBasisAmount should not be present</assert>
+      <assert id="CII-SR-190" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:TypeCode)">[CII-SR-190] - TypeCode should not be present</assert>
+      <assert id="CII-SR-191" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:CategoryTradeTax)">[CII-SR-191] - CategoryTradeTax should not be present</assert>
+      <assert id="CII-SR-192" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ActualTradeCurrencyExchange)">[CII-SR-192] - ActualTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-193" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ID)">[CII-SR-193] - ID should not be present</assert>
+      <assert id="CII-SR-194" flag="warning" test="not(ram:SubtotalCalculatedTradeTax)">[CII-SR-194] - SubtotalCalculatedTradeTax should not be present</assert>
+      <assert id="CII-SR-195" flag="warning" test="not(ram:SpecifiedLogisticsServiceCharge)">[CII-SR-195] - SpecifiedLogisticsServiceCharge should not be present</assert>
+      <assert id="CII-SR-196" flag="warning" test="not(ram:SpecifiedTradePaymentTerms)">[CII-SR-196] - SpecifiedTradePaymentTerms should not be present</assert>
+      <assert id="CII-SR-197" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:ChargeTotalAmount)">[CII-SR-197] - ChargeTotalAmount should not be present</assert>
+      <assert id="CII-SR-198" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:AllowanceTotalAmount)">[CII-SR-198] - AllowanceTotalAmount should not be present</assert>
+      <assert id="CII-SR-199" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:TaxBasisTotalAmount)">[CII-SR-199] - TaxBasisTotalAmount should not be present</assert>
+      <assert id="CII-SR-200" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:TaxTotalAmount)">[CII-SR-200] - TaxTotalAmount should not be present</assert>
+      <assert id="CII-SR-201" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:GrandTotalAmount)">[CII-SR-201] - GrandTotalAmount should not be present</assert>
+      <assert id="CII-SR-202" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:InformationAmount)">[CII-SR-202] - InformationAmount should not be present</assert>
+      <assert id="CII-SR-203" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:TotalAllowanceChargeAmount)">[CII-SR-203] - TotalAllowanceChargeAmount should not be present</assert>
+      <assert id="CII-SR-204" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:TotalRetailValueInformationAmount)">[CII-SR-204] - TotalRetailValueInformationAmount should not be present</assert>
+      <assert id="CII-SR-205" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:GrossLineTotalAmount)">[CII-SR-205] - GrossLineTotalAmount should not be present</assert>
+      <assert id="CII-SR-206" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:NetLineTotalAmount)">[CII-SR-206] - NetLineTotalAmount should not be present</assert>
+      <assert id="CII-SR-207" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:NetIncludingTaxesLineTotalAmount)">[CII-SR-207] - NetIncludingTaxesLineTotalAmount should not be present</assert>
+      <assert id="CII-SR-208" flag="warning" test="not(ram:SpecifiedTradeSettlementLineMonetarySummation/ram:ProductWeightLossInformationAmount)">[CII-SR-208] - ProductWeightLossInformationAmount should not be present</assert>
+      <assert id="CII-SR-209" flag="warning" test="not(ram:SpecifiedFinancialAdjustment)">[CII-SR-209] - SpecifiedFinancialAdjustment should not be present</assert>
+      <assert id="CII-SR-210" flag="warning" test="not(ram:InvoiceReferencedDocument)">[CII-SR-210] - InvoiceReferencedDocument should not be present</assert>
+      <assert id="CII-SR-212" flag="warning" test="not(ram:PayableSpecifiedTradeAccountingAccount)">[CII-SR-212] - PayableSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-SR-213" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:SetTriggerCode)">[CII-SR-213] - SetTriggerCode should not be present</assert>
+      <assert id="CII-SR-214" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:TypeCode)">[CII-SR-214] - TypeCode should not be present</assert>
+      <assert id="CII-SR-215" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:AmountTypeCode)">[CII-SR-215] - AmountTypeCode should not be present</assert>
+      <assert id="CII-SR-216" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:Name)">[CII-SR-216] - Name should not be present</assert>
+      <assert id="CII-SR-217" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:CostReferenceDimensionPattern)">[CII-SR-217] - CostReferenceDimensionPattern should not be present</assert>
+      <assert id="CII-SR-218" flag="warning" test="not(ram:PurchaseSpecifiedTradeAccountingAccount)">[CII-SR-218] - PurchaseSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-SR-219" flag="warning" test="not(ram:SalesSpecifiedTradeAccountingAccount)">[CII-SR-219] - SalesSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-SR-220" flag="warning" test="not(ram:SpecifiedTradeSettlementFinancialCard)">[CII-SR-220] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement">
+      <assert id="CII-SR-442" flag="warning" test="not(ram:Reference)">[CII-SR-442] - Reference should not be present</assert>
+      <assert id="CII-SR-222" flag="warning" test="not(ram:SellerTradeParty/ram:RoleCode)">[CII-SR-222] - RoleCode should not be present</assert>
+      <assert id="CII-SR-223" flag="warning" test="not(ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:LegalClassificationCode)">[CII-SR-223] - LegalClassificationCode should not be present</assert>
+      <assert id="CII-SR-224" flag="warning" test="not(ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:Name)">[CII-SR-224] - Name should not be present</assert>
+      <assert id="CII-SR-225" flag="warning" test="not(ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:PostalTradeAddress)">[CII-SR-225] - PostalTradeAddress should not be present</assert>
+      <assert id="CII-SR-226" flag="warning" test="not(ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:AuthorizedLegalRegistration)">[CII-SR-226] - RoleCode should not be present</assert>
+      <assert id="CII-SR-227" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:ID)">[CII-SR-227] - ID should not be present</assert>
+      <assert id="CII-SR-228" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:TypeCode)">[CII-SR-228] - TypeCode should not be present</assert>
+      <assert id="CII-SR-229" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:JobTitle)">[CII-SR-229] - JobTitle should not be present</assert>
+      <assert id="CII-SR-230" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:Responsibility)">[CII-SR-230] - Responsibility should not be present</assert>
+      <assert id="CII-SR-231" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:PersonID)">[CII-SR-231] - PersonID should not be present</assert>
+      <assert id="CII-SR-232" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:TelephoneUniversalCommunication/ram:URIID)">[CII-SR-232] - URIID should not be present</assert>
+      <assert id="CII-SR-233" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:TelephoneUniversalCommunication/ram:ChannelCode)">[CII-SR-233] - ChannelCode should not be present</assert>
+      <assert id="CII-SR-234" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:DirectTelephoneUniversalCommunication)">[CII-SR-234] - DirectTelephoneUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-235" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:MobileTelephoneUniversalCommunication)">[CII-SR-235] - MobileTelephoneUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-236" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:FaxUniversalCommunication)">[CII-SR-236] - FaxUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-237" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:EmailURIUniversalCommunication/ram:ChannelCode)">[CII-SR-237] - ChannelCode should not be present</assert>
+      <assert id="CII-SR-238" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:EmailURIUniversalCommunication/ram:CompleteNumber)">[CII-SR-238] - CompleteNumber should not be present</assert>
+      <assert id="CII-SR-239" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:TelexUniversalCommunication)">[CII-SR-239] - TelexUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-240" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:VOIPUniversalCommunication)">[CII-SR-240] - VOIPUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-241" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:InstantMessagingUniversalCommunication)">[CII-SR-241] - InstantMessagingUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-242" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:SpecifiedNote)">[CII-SR-242] - SpecifiedNote should not be present</assert>
+      <assert id="CII-SR-243" flag="warning" test="not(ram:SellerTradeParty/ram:DefinedTradeContact/ram:SpecifiedContactPerson)">[CII-SR-243] - SpecifiedContactPerson should not be present</assert>
+      <assert id="CII-SR-244" flag="warning" test="not(ram:SellerTradeParty/ram:URIUniversalCommunication/ram:ChannelCode)">[CII-SR-244] - ChannelCode should not be present</assert>
+      <assert id="CII-SR-245" flag="warning" test="not(ram:SellerTradeParty/ram:URIUniversalCommunication/ram:CompleteNumber)">[CII-SR-245] - CompleteNumber should not be present</assert>
+      <assert id="CII-SR-246" flag="warning" test="not(ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:AssociatedRegisteredTax)">[CII-SR-246] - AssociatedRegisteredTax should not be present</assert>
+      <assert id="CII-SR-247" flag="warning" test="not(ram:SellerTradeParty/ram:EndPointURIUniversalCommunication)">[CII-SR-247] - EndPointURIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-248" flag="warning" test="not(ram:SellerTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)">[CII-SR-248] - LogoAssociatedSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-SR-249" flag="warning" test="not(ram:BuyerTradeParty/ram:RoleCode)">[CII-SR-249] - RoleCode should not be present</assert>
+      <assert id="CII-SR-250" flag="warning" test="not(ram:BuyerTradeParty/ram:Description)">[CII-SR-250] - Description should not be present</assert>
+      <assert id="CII-SR-251" flag="warning" test="not(ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:LegalClassificationCode)">[CII-SR-251] - LegalClassificationCode should not be present</assert>
+      <assert id="CII-SR-252" flag="warning" test="not(ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:Name)">[CII-SR-252] - Name should not be present</assert>
+      <assert id="CII-SR-254" flag="warning" test="not(ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:PostalTradeAddress)">[CII-SR-254] - PostalTradeAddress should not be present</assert>
+      <assert id="CII-SR-255" flag="warning" test="not(ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:AuthorizedLegalRegistration)">[CII-SR-255] - AuthorizedLegalRegistration should not be present</assert>
+      <assert id="CII-SR-256" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:ID)">[CII-SR-256] - ID should not be present</assert>
+      <assert id="CII-SR-257" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:TypeCode)">[CII-SR-257] - TypeCode should not be present</assert>
+      <assert id="CII-SR-258" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:JobTitle)">[CII-SR-258] - JobTitle should not be present</assert>
+      <assert id="CII-SR-259" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:Responsibility)">[CII-SR-259] - Responsibility should not be present</assert>
+      <assert id="CII-SR-260" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:PersonID)">[CII-SR-260] - PersonID should not be present</assert>
+      <assert id="CII-SR-261" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:TelephoneUniversalCommunication/ram:URIID)">[CII-SR-261] - URIID should not be present</assert>
+      <assert id="CII-SR-262" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:TelephoneUniversalCommunication/ram:ChannelCode)">[CII-SR-262] - ChannelCode should not be present</assert>
+      <assert id="CII-SR-263" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:DirectTelephoneUniversalCommunication)">[CII-SR-263] - DirectTelephoneUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-264" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:MobileTelephoneUniversalCommunication)">[CII-SR-264] - MobileTelephoneUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-265" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:FaxUniversalCommunication)">[CII-SR-265] - FaxUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-266" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:EmailURIUniversalCommunication/ram:ChannelCode)">[CII-SR-266] - ChannelCode should not be present</assert>
+      <assert id="CII-SR-267" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:EmailURIUniversalCommunication/ram:CompleteNumber)">[CII-SR-267] - CompleteNumber should not be present</assert>
+      <assert id="CII-SR-268" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:TelexUniversalCommunication)">[CII-SR-268] - TelexUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-269" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:VOIPUniversalCommunication)">[CII-SR-269] - VOIPUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-270" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:InstantMessagingUniversalCommunication)">[CII-SR-270] - InstantMessagingUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-271" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:SpecifiedNote)">[CII-SR-271] - SpecifiedNote should not be present</assert>
+      <assert id="CII-SR-272" flag="warning" test="not(ram:BuyerTradeParty/ram:DefinedTradeContact/ram:SpecifiedContactPerson)">[CII-SR-272] - SpecifiedContactPerson should not be present</assert>
+      <assert id="CII-SR-273" flag="warning" test="not(ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:ChannelCode)">[CII-SR-273] - ChannelCode should not be present</assert>
+      <assert id="CII-SR-274" flag="warning" test="not(ram:BuyerTradeParty/ram:URIUniversalCommunication/ram:CompleteNumber)">[CII-SR-274] - CompleteNumber should not be present</assert>
+      <assert id="CII-SR-275" flag="warning" test="not(ram:BuyerTradeParty/ram:SpecifiedTaxRegistration/ram:AssociatedRegisteredTax)">[CII-SR-275] - AssociatedRegisteredTax should not be present</assert>
+      <assert id="CII-SR-276" flag="warning" test="not(ram:BuyerTradeParty/ram:EndPointURIUniversalCommunication)">[CII-SR-276] - EndPointURIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-277" flag="warning" test="not(ram:BuyerTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)">[CII-SR-277] - LogoAssociatedSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-SR-278" flag="warning" test="not(ram:SalesAgentTradeParty)">[CII-SR-278] - SalesAgentTradeParty should not be present</assert>
+      <assert id="CII-SR-279" flag="warning" test="not(ram:BuyerRequisitionerTradeParty)">[CII-SR-279] - BuyerRequisitionerTradeParty should not be present</assert>
+      <assert id="CII-SR-280" flag="warning" test="not(ram:BuyerAssignedAccountantTradeParty)">[CII-SR-280] - BuyerAssignedAccountantTradeParty should not be present</assert>
+      <assert id="CII-SR-281" flag="warning" test="not(ram:SellerAssignedAccountantTradeParty)">[CII-SR-281] - SellerAssignedAccountantTradeParty should not be present</assert>
+      <assert id="CII-SR-282" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:ID)">[CII-SR-282] - BuyerTaxRepresentativeTradeParty should not be present</assert>
+      <assert id="CII-SR-283" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:GlobalID)">[CII-SR-283] - GlobalID should not be present</assert>
+      <assert id="CII-SR-284" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:RoleCode)">[CII-SR-284] - RoleCode should not be present</assert>
+      <assert id="CII-SR-285" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:Description)">[CII-SR-285] - Description should not be present</assert>
+      <assert id="CII-SR-286" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedLegalOrganization)">[CII-SR-286] - SpecifiedLegalOrganization should not be present</assert>
+      <assert id="CII-SR-287" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:DefinedTradeContact)">[CII-SR-287] - DefinedTradeContact should not be present</assert>
+      <assert id="CII-SR-288" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:URIUniversalCommunication)">[CII-SR-288] - URIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-289" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:SpecifiedTaxRegistration/ram:AssociatedRegisteredTax)">[CII-SR-289] - AssociatedRegisteredTax should not be present</assert>
+      <assert id="CII-SR-290" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:EndPointURIUniversalCommunication)">[CII-SR-290] - EndPointURIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-291" flag="warning" test="not(ram:SellerTaxRepresentativeTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)">[CII-SR-291] - LogoAssociatedSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-SR-292" flag="warning" test="not(ram:ProductEndUserTradeParty)">[CII-SR-292] - ProductEndUserTradeParty should not be present</assert>
+      <assert id="CII-SR-293" flag="warning" test="not(ram:ApplicableTradeDeliveryTerms)">[CII-SR-293] - ApplicableTradeDeliveryTerms should not be present</assert>
+      <assert id="CII-SR-294" flag="warning" test="not(ram:SellerOrderReferencedDocument/ram:LineID)">[CII-SR-294] - LineID should not be present</assert>
+      <assert id="CII-SR-295" flag="warning" test="not(ram:BuyerOrderReferencedDocument/ram:LineID)">[CII-SR-295] - LineID should not be present</assert>
+      <assert id="CII-SR-296" flag="warning" test="not(ram:QuotationReferencedDocument)">[CII-SR-296] - QuotationReferencedDocument should not be present</assert>
+      <assert id="CII-SR-297" flag="warning" test="not(ram:OrderResponseReferencedDocument)">[CII-SR-297] - OrderResponseReferencedDocument should not be present</assert>
+      <assert id="CII-SR-298" flag="warning" test="not(ram:ContractReferencedDocument/ram:LineID)">[CII-SR-298] - LineID should not be present</assert>
+      <assert id="CII-SR-299" flag="warning" test="not(ram:DemandForecastReferencedDocument)">[CII-SR-299] - DemandForecastReferencedDocument should not be present</assert>
+      <assert id="CII-SR-300" flag="warning" test="not(ram:SupplyInstructionReferencedDocument)">[CII-SR-300] - SupplyInstructionReferencedDocument should not be present</assert>
+      <assert id="CII-SR-301" flag="warning" test="not(ram:PromotionalDealReferencedDocument)">[CII-SR-301] - PromotionalDealReferencedDocument should not be present</assert>
+      <assert id="CII-SR-302" flag="warning" test="not(ram:PriceListReferencedDocument)">[CII-SR-302] - PriceListReferencedDocument should not be present</assert>
+      <assert id="CII-SR-303" flag="warning" test="not(ram:AdditionalReferencedDocument/ram:LineID)">[CII-SR-303] - LineID should not be present</assert>
+      <assert id="CII-SR-304" flag="warning" test="not(ram:RequisitionerReferencedDocument)">[CII-SR-304] - RequisitionerReferencedDocument should not be present</assert>
+      <assert id="CII-SR-305" flag="warning" test="not(ram:BuyerAgentTradeParty)">[CII-SR-305] - BuyerAgentTradeParty should not be present</assert>
+      <assert id="CII-SR-306" flag="warning" test="not(ram:PurchaseConditionsReferencedDocument)">[CII-SR-306] - PurchaseConditionsReferencedDocument should not be present</assert>
+      <assert id="CII-SR-307" flag="warning" test="not(ram:SpecifiedProcuringProject/ram:Description)">[CII-SR-307] - Description should not be present</assert>
+      <assert id="CII-SR-448" flag="warning" test="not(ram:UltimateCustomerOrderReferencedDocument)">[CII-SR-448] - UltimateCustomerOrderReferencedDocument should not be present</assert>
+      <assert id="CII-SR-450" flag="warning" test="(not(ram:BuyerTradeParty/ram:ID) and ram:BuyerTradeParty/ram:GlobalID) or (ram:BuyerTradeParty/ram:ID and not(ram:BuyerTradeParty/ram:GlobalID)) or (not(ram:BuyerTradeParty/ram:ID) and not(ram:BuyerTradeParty/ram:GlobalID))">[CII-SR-450] - Only one  buyer identifier should be present (either the ID or the Global ID)</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery">
+      <assert id="CII-SR-308" flag="warning" test="not(ram:RelatedSupplyChainConsignment)">[CII-SR-308] - RelatedSupplyChainConsignment should not be present</assert>
+      <assert id="CII-SR-309" flag="warning" test="not(ram:ShipToTradeParty/ram:RoleCode)">[CII-SR-309] - RoleCode should not be present</assert>
+      <assert id="CII-SR-310" flag="warning" test="not(ram:ShipToTradeParty/ram:Description)">[CII-SR-310] - Description should not be present</assert>
+      <assert id="CII-SR-311" flag="warning" test="not(ram:ShipToTradeParty/ram:SpecifiedLegalOrganization)">[CII-SR-311] - SpecifiedLegalOrganization should not be present</assert>
+      <assert id="CII-SR-312" flag="warning" test="not(ram:ShipToTradeParty/ram:DefinedTradeContact)">[CII-SR-312] - DefinedTradeContact should not be present</assert>
+      <assert id="CII-SR-313" flag="warning" test="not(ram:ShipToTradeParty/ram:URIUniversalCommunication)">[CII-SR-313] - URIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-314" flag="warning" test="not(ram:ShipToTradeParty/ram:SpecifiedTaxRegistration)">[CII-SR-314] - SpecifiedTaxRegistration should not be present</assert>
+      <assert id="CII-SR-315" flag="warning" test="not(ram:ShipToTradeParty/ram:EndPointURIUniversalCommunication)">[CII-SR-315] - EndPointURIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-316" flag="warning" test="not(ram:ShipToTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)">[CII-SR-316] - LogoAssociatedSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-SR-317" flag="warning" test="not(ram:UltimateShipToTradeParty)">[CII-SR-317] - UltimateShipToTradeParty should not be present</assert>
+      <assert id="CII-SR-318" flag="warning" test="not(ram:ShipFromTradeParty)">[CII-SR-318] - ShipFromTradeParty should not be present</assert>
+      <assert id="CII-SR-319" flag="warning" test="not(ram:ActualDespatchSupplyChainEvent)">[CII-SR-319] - ActualDespatchSupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-320" flag="warning" test="not(ram:ActualPickUpSupplyChainEvent)">[CII-SR-320] - ActualPickUpSupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-321" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:ID)">[CII-SR-321] - ID should not be present</assert>
+      <assert id="CII-SR-322" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:OccurrenceDateTime/udt:DateTime)">[CII-SR-322] - DateTime should not be present</assert>
+      <assert id="CII-SR-323" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:TypeCode)">[CII-SR-323] - TypeCode should not be present</assert>
+      <assert id="CII-SR-324" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:Description)">[CII-SR-324] - Description should not be present</assert>
+      <assert id="CII-SR-325" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:DescriptionBinaryObject)">[CII-SR-325] - DescriptionBinaryObject should not be present</assert>
+      <assert id="CII-SR-326" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:UnitQuantity)">[CII-SR-326] - UnitQuantity should not be present</assert>
+      <assert id="CII-SR-327" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:LatestOccurrenceDateTime)">[CII-SR-327] - LatestOccurrenceDateTime should not be present</assert>
+      <assert id="CII-SR-328" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:EarliestOccurrenceDateTime)">[CII-SR-328] - EarliestOccurrenceDateTime should not be present</assert>
+      <assert id="CII-SR-329" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:OccurrenceSpecifiedPeriod)">[CII-SR-329] - OccurrenceSpecifiedPeriod should not be present</assert>
+      <assert id="CII-SR-330" flag="warning" test="not(ram:ActualDeliverySupplyChainEvent/ram:OccurrenceLogisticsLocation)">[CII-SR-330] - OccurrenceLogisticsLocation should not be present</assert>
+      <assert id="CII-SR-331" flag="warning" test="not(ram:ActualReceiptSupplyChainEvent)">[CII-SR-331] - ActualReceiptSupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-332" flag="warning" test="not(ram:AdditionalReferencedDocument)">[CII-SR-332] - AdditionalReferencedDocument should not be present</assert>
+      <assert id="CII-SR-333" flag="warning" test="not(ram:DespatchAdviceReferencedDocument/ram:LineID)">[CII-SR-333] - LineID should not be present</assert>
+      <assert id="CII-SR-334" flag="warning" test="not(ram:DespatchAdviceReferencedDocument/ram:LineID)">[CII-SR-334] - LineID should not be present</assert>
+      <assert id="CII-SR-335" flag="warning" test="not(ram:DeliveryNoteReferencedDocument)">[CII-SR-335] - DeliveryNoteReferencedDocument should not be present</assert>
+      <assert id="CII-SR-336" flag="warning" test="not(ram:ConsumptionReportReferencedDocument)">[CII-SR-336] - ConsumptionReportReferencedDocument should not be present</assert>
+      <assert id="CII-SR-337" flag="warning" test="not(ram:PreviousDeliverySupplyChainEvent)">[CII-SR-337] - PreviousDeliverySupplyChainEvent should not be present</assert>
+      <assert id="CII-SR-338" flag="warning" test="not(ram:PackingListReferencedDocument)">[CII-SR-338] - PackingListReferencedDocument should not be present</assert>
+      <assert id="CII-SR-449" flag="warning" test="(not(ram:ShipToTradeParty/ram:ID) and ram:ShipToTradeParty/ram:GlobalID) or (ram:ShipToTradeParty/ram:ID and not(ram:ShipToTradeParty/ram:GlobalID)) or (not(ram:ShipToTradeParty/ram:ID) and not(ram:ShipToTradeParty/ram:GlobalID))">[CII-SR-449] - Only one delivery to location identifier should be present (either the ID or the Global ID)</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement">
+      <assert id="CII-SR-339" flag="warning" test="not(ram:DuePayableAmount)">[CII-SR-339] - DuePayableAmount should not be present</assert>
+      <assert id="CII-SR-340" flag="warning" test="not(ram:CreditorReferenceTypeCode)">[CII-SR-340] - CreditorReferenceTypeCode should not be present</assert>
+      <assert id="CII-SR-341" flag="warning" test="not(ram:CreditorReferenceType)">[CII-SR-341] - CreditorReferenceType should not be present</assert>
+      <assert id="CII-SR-342" flag="warning" test="not(ram:CreditorReferenceIssuerID)">[CII-SR-342] - CreditorReferenceIssuerID should not be present</assert>
+      <assert id="CII-SR-344" flag="warning" test="not(ram:PaymentCurrencyCode)">[CII-SR-344] - PaymentCurrencyCode should not be present</assert>
+      <assert id="CII-SR-345" flag="warning" test="not(ram:InvoiceIssuerReference)">[CII-SR-345] - InvoiceIssuerReference should not be present</assert>
+      <assert id="CII-SR-346" flag="warning" test="not(ram:InvoiceDateTime)">[CII-SR-346] - InvoiceDateTime should not be present</assert>
+      <assert id="CII-SR-347" flag="warning" test="not(ram:NextInvoiceDateTime)">[CII-SR-347] - NextInvoiceDateTime should not be present</assert>
+      <assert id="CII-SR-348" flag="warning" test="not(ram:CreditReasonCode)">[CII-SR-348] - CreditReasonCode should not be present</assert>
+      <assert id="CII-SR-349" flag="warning" test="not(ram:CreditReason)">[CII-SR-349] - CreditReason should not be present</assert>
+      <assert id="CII-SR-350" flag="warning" test="not(ram:InvoicerTradeParty)">[CII-SR-350] - InvoicerTradeParty should not be present</assert>
+      <assert id="CII-SR-351" flag="warning" test="not(ram:InvoiceeTradeParty)">[CII-SR-351] - InvoiceeTradeParty should not be present</assert>
+      <assert id="CII-SR-352" flag="warning" test="not(ram:PayeeTradeParty/ram:RoleCode)">[CII-SR-352] - RoleCode should not be present</assert>
+      <assert id="CII-SR-353" flag="warning" test="not(ram:PayeeTradeParty/ram:Description)">[CII-SR-353] - Description should not be present</assert>
+      <assert id="CII-SR-354" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:LegalClassificationCode)">[CII-SR-354] - LegalClassificationCode should not be present</assert>
+      <assert id="CII-SR-355" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:Name)">[CII-SR-355] - Name should not be present</assert>
+      <assert id="CII-SR-356" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:TradingBusinessName)">[CII-SR-356] - TradingBusinessName should not be present</assert>
+      <assert id="CII-SR-357" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:PostalTradeAddress)">[CII-SR-357] - PostalTradeAddress should not be present</assert>
+      <assert id="CII-SR-358" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedLegalOrganization/ram:AuthorizedLegalRegistration)">[CII-SR-358] - AuthorizedLegalRegistration should not be present</assert>
+      <assert id="CII-SR-359" flag="warning" test="not(ram:PayeeTradeParty/ram:DefinedTradeContact)">[CII-SR-359] - DefinedTradeContact should not be present</assert>
+      <assert id="CII-SR-360" flag="warning" test="not(ram:PayeeTradeParty/ram:PostalTradeAddress)">[CII-SR-360] - PostalTradeAddress should not be present</assert>
+      <assert id="CII-SR-361" flag="warning" test="not(ram:PayeeTradeParty/ram:URIUniversalCommunication)">[CII-SR-361] - URIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-362" flag="warning" test="not(ram:PayeeTradeParty/ram:SpecifiedTaxRegistration)">[CII-SR-362] - SpecifiedTaxRegistration should not be present</assert>
+      <assert id="CII-SR-363" flag="warning" test="not(ram:PayeeTradeParty/ram:EndPointURIUniversalCommunication)">[CII-SR-363] - EndPointURIUniversalCommunication should not be present</assert>
+      <assert id="CII-SR-364" flag="warning" test="not(ram:PayeeTradeParty/ram:LogoAssociatedSpecifiedBinaryFile)">[CII-SR-364] - LogoAssociatedSpecifiedBinaryFile should not be present</assert>
+      <assert id="CII-SR-451" flag="warning" test="(not(ram:PayeeTradeParty/ram:ID) and ram:PayeeTradeParty/ram:GlobalID) or (ram:PayeeTradeParty/ram:ID and not(ram:PayeeTradeParty/ram:GlobalID)) or (not(ram:PayeeTradeParty/ram:ID) and not(ram:PayeeTradeParty/ram:GlobalID))">[CII-SR-451] - Only one payee identifier should be present (either the ID or the Global ID)</assert>
+      <assert id="CII-SR-365" flag="warning" test="not(ram:PayerTradeParty)">[CII-SR-365] - PayerTradeParty should not be present</assert>
+      <assert id="CII-SR-366" flag="warning" test="not(ram:TaxApplicableTradeCurrencyExchange)">[CII-SR-366] - TaxApplicableTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-367" flag="warning" test="not(ram:InvoiceApplicableTradeCurrencyExchange)">[CII-SR-367] - InvoiceApplicableTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-368" flag="warning" test="not(ram:PaymentApplicableTradeCurrencyExchange)">[CII-SR-368] - PaymentApplicableTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-369" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PaymentChannelCode)">[CII-SR-369] - PaymentChannelCode should not be present</assert>
+      <assert id="CII-SR-370" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:GuaranteeMethodCode)">[CII-SR-370] - GuaranteeMethodCode should not be present</assert>
+      <assert id="CII-SR-371" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PaymentMethodCode)">[CII-SR-371] - PaymentMethodCode should not be present</assert>
+      <assert id="CII-SR-443" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ID)">[CII-SR-443] - ID should not be present</assert>
+      <assert id="CII-SR-372" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:MicrochipIndicator)">[CII-SR-372] - MicrochipIndicator should not be present</assert>
+      <assert id="CII-SR-373" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:TypeCode)">[CII-SR-373] - TypeCode should not be present</assert>
+      <assert id="CII-SR-375" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:ExpiryDate)">[CII-SR-375] - ExpiryDate should not be present</assert>
+      <assert id="CII-SR-376" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:VerificationNumeric)">[CII-SR-376] - VerificationNumeric should not be present</assert>
+      <assert id="CII-SR-377" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:ValidFromDateTime)">[CII-SR-377] - ValidFromDateTime should not be present</assert>
+      <assert id="CII-SR-378" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:CreditLimitAmount)">[CII-SR-378] - CreditLimitAmount should not be present</assert>
+      <assert id="CII-SR-379" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:CreditAvailableAmount)">[CII-SR-379] - CreditAvailableAmount should not be present</assert>
+      <assert id="CII-SR-380" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:InterestRatePercent)">[CII-SR-380] - InterestRatePercent should not be present</assert>
+      <assert id="CII-SR-381" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:ApplicableTradeSettlementFinancialCard/ram:Description)">[CII-SR-381] - Description should not be present</assert>
+      <assert id="CII-SR-382" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerPartyDebtorFinancialAccount/ram:AccountName)">[CII-SR-382] - AccountName should not be present</assert>
+      <assert id="CII-SR-444" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerPartyDebtorFinancialAccount/ram:ProprietaryID)">[CII-SR-444] - ProprietaryID should not be present</assert>
+      <assert id="CII-SR-384" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerSpecifiedDebtorFinancialInstitution/ram:ClearingSystemName)">[CII-SR-384] - ClearingSystemName should not be present</assert>
+      <assert id="CII-SR-385" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerSpecifiedDebtorFinancialInstitution/ram:Name)">[CII-SR-385] - Name should not be present</assert>
+      <assert id="CII-SR-386" flag="warning" test="not(ram:SpecifiedTradeSettlementPaymentMeans/ram:PayerSpecifiedDebtorFinancialInstitution/ram:LocationFinancialInstitutionAddress)">[CII-SR-386] - LocationFinancialInstitutionAddress should not be present</assert>
+      <assert id="CII-SR-388" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ID)">[CII-SR-388] - ID should not be present</assert>
+      <assert id="CII-SR-389" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:SequenceNumeric)">[CII-SR-389] - SequenceNumeric should not be present</assert>
+      <assert id="CII-SR-390" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:BasisQuantity)">[CII-SR-390] - BasisQuantity should not be present</assert>
+      <assert id="CII-SR-391" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:PrepaidIndicator)">[CII-SR-391] - PrepaidIndicator should not be present</assert>
+      <assert id="CII-SR-392" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:UnitBasisAmount)">[CII-SR-392] - UnitBasisAmount should not be present</assert>
+      <assert id="CII-SR-393" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:TypeCode)">[CII-SR-393] - TypeCode should not be present</assert>
+      <assert id="CII-SR-394" flag="warning" test="not(ram:SpecifiedTradeAllowanceCharge/ram:ActualTradeCurrencyExchange)">[CII-SR-394] - ActualTradeCurrencyExchange should not be present</assert>
+      <assert id="CII-SR-395" flag="warning" test="not(ram:SubtotalCalculatedTradeTax)">[CII-SR-395] - SubtotalCalculatedTradeTax should not be present</assert>
+      <assert id="CII-SR-396" flag="warning" test="not(ram:SpecifiedLogisticsServiceCharge)">[CII-SR-396] - SpecifiedLogisticsServiceCharge should not be present</assert>
+      <assert id="CII-SR-397" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:ID)">[CII-SR-397] - ID should not be present</assert>
+      <assert id="CII-SR-398" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:FromEventCode)">[CII-SR-398] - FromEventCode should not be present</assert>
+      <assert id="CII-SR-399" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:SettlementPeriodMeasure)">[CII-SR-399] - SettlementPeriodMeasure should not be present</assert>
+      <assert id="CII-SR-400" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:DueDateDateTime/udt:DateTime)">[CII-SR-400] - DateTime should not be present</assert>
+      <assert id="CII-SR-401" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:TypeCode)">[CII-SR-401] - TypeCode should not be present</assert>
+      <assert id="CII-SR-402" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:InstructionTypeCode)">[CII-SR-402] - InstructionTypeCode should not be present</assert>
+      <assert id="CII-SR-404" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PartialPaymentPercent)">[CII-SR-404] - PartialPaymentPercent should not be present</assert>
+      <assert id="CII-SR-405" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PaymentMeansID)">[CII-SR-405] - PaymentMeansID should not be present</assert>
+      <assert id="CII-SR-406" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PartialPaymentAmount)">[CII-SR-406] - PartialPaymentAmount should not be present</assert>
+      <assert id="CII-SR-407" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:ApplicableTradePaymentPenaltyTerms)">[CII-SR-407] - ApplicableTradePaymentPenaltyTerms should not be present</assert>
+      <assert id="CII-SR-408" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:ApplicableTradePaymentDiscountTerms)">[CII-SR-408] - ApplicableTradePaymentDiscountTerms should not be present</assert>
+      <assert id="CII-SR-409" flag="warning" test="not(ram:SpecifiedTradePaymentTerms/ram:PayeeTradeParty)">[CII-SR-409] - PayeeTradeParty should not be present</assert>
+      <assert id="CII-SR-421" flag="warning" test="not(ram:SpecifiedFinancialAdjustment)">[CII-SR-421] - SpecifiedFinancialAdjustment should not be present</assert>
+      <assert id="CII-SR-422" flag="warning" test="not(ram:InvoiceReferencedDocument/ram:LineID)">[CII-SR-422] - LineID should not be present</assert>
+      <assert id="CII-SR-423" flag="warning" test="not(ram:ProFormaInvoiceReferencedDocument)">[CII-SR-423] - ProFormaInvoiceReferencedDocument should not be present</assert>
+      <assert id="CII-SR-424" flag="warning" test="not(ram:LetterOfCreditReferencedDocument)">[CII-SR-424] - LetterOfCreditReferencedDocument should not be present</assert>
+      <assert id="CII-SR-425" flag="warning" test="not(ram:FactoringAgreementReferencedDocument)">[CII-SR-425] - FactoringAgreementReferencedDocument should not be present</assert>
+      <assert id="CII-SR-426" flag="warning" test="not(ram:FactoringListReferencedDocument)">[CII-SR-426] - FactoringListReferencedDocument should not be present</assert>
+      <assert id="CII-SR-427" flag="warning" test="not(ram:PayableSpecifiedTradeAccountingAccount)">[CII-SR-427] - PayableSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-SR-428" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:SetTriggerCode)">[CII-SR-428] - SetTriggerCode should not be present</assert>
+      <assert id="CII-SR-429" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:TypeCode)">[CII-SR-429] - TypeCode should not be present</assert>
+      <assert id="CII-SR-430" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:AmountTypeCode)">[CII-SR-430] - AmountTypeCode should not be present</assert>
+      <assert id="CII-SR-431" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:Name)">[CII-SR-431] - Name should not be present</assert>
+      <assert id="CII-SR-432" flag="warning" test="not(ram:ReceivableSpecifiedTradeAccountingAccount/ram:CostReferenceDimensionPattern)">[CII-SR-432] - CostReferenceDimensionPattern should not be present</assert>
+      <assert id="CII-SR-433" flag="warning" test="not(ram:PurchaseSpecifiedTradeAccountingAccount)">[CII-SR-433] - PurchaseSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-SR-434" flag="warning" test="not(ram:SalesSpecifiedTradeAccountingAccount)">[CII-SR-434] - SalesSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-SR-435" flag="warning" test="not(ram:SpecifiedTradeSettlementFinancialCard)">[CII-SR-435] - SpecifiedTradeSettlementFinancialCard should not be present</assert>
+      <assert id="CII-SR-436" flag="warning" test="not(ram:SpecifiedAdvancePayment)">[CII-SR-436] - SpecifiedAdvancePayment should not be present</assert>
+      <assert id="CII-SR-437" flag="warning" test="not(ram:UltimatePayeeTradeParty)">[CII-SR-437] - UltimatePayeeTradeParty should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation">
+      <assert id="CII-SR-411" flag="warning" test="not(ram:InformationAmount)">[CII-SR-411] - InformationAmount should not be present</assert>
+      <assert id="CII-SR-412" flag="warning" test="not(ram:TotalDiscountAmount)">[CII-SR-412] - TotalDiscountAmount should not be present</assert>
+      <assert id="CII-SR-413" flag="warning" test="not(ram:TotalAllowanceChargeAmount)">[CII-SR-413] - TotalAllowanceChargeAmount should not be present</assert>
+      <assert id="CII-SR-414" flag="warning" test="not(ram:RetailValueExcludingTaxInformationAmount)">[CII-SR-414] - RetailValueExcludingTaxInformationAmount should not be present</assert>
+      <assert id="CII-SR-415" flag="warning" test="not(ram:TotalDepositFeeInformationAmount)">[CII-SR-415] - TotalDepositFeeInformationAmount should not be present</assert>
+      <assert id="CII-SR-416" flag="warning" test="not(ram:ProductValueExcludingTobaccoTaxInformationAmount)">[CII-SR-416] - ProductValueExcludingTobaccoTaxInformationAmount should not be present</assert>
+      <assert id="CII-SR-417" flag="warning" test="not(ram:TotalRetailValueInformationAmount)">[CII-SR-417] - TotalRetailValueInformationAmount should not be present</assert>
+      <assert id="CII-SR-418" flag="warning" test="not(ram:GrossLineTotalAmount)">[CII-SR-418] - GrossLineTotalAmount should not be present</assert>
+      <assert id="CII-SR-419" flag="warning" test="not(ram:NetLineTotalAmount)">[CII-SR-419] - NetLineTotalAmount should not be present</assert>
+      <assert id="CII-SR-420" flag="warning" test="not(ram:NetIncludingTaxesLineTotalAmount)">[CII-SR-420] - NetIncludingTaxesLineTotalAmount should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice">
+      <assert id="CII-DT-013" flag="fatal" test="not(@languageID)">[CII-DT-013] - languageID should not be present</assert>
+      <assert id="CII-DT-014" flag="fatal" test="not(@languageLocaleID)">[CII-DT-014] - languageLocaleID should not be present</assert>
+      <assert id="CII-SR-438" flag="warning" test="not(ram:ValuationBreakdownStatement)">[CII-SR-438] - ValuationBreakdownStatement should not be present</assert>
+    </rule>
+    <rule context="//*[ends-with(name(), 'DocumentContextParameter')]">
+      <assert id="CII-SR-04" flag="warning" test="not(ram:Value)">[CII-SR-004] - Value should not be present</assert>
+      <assert id="CII-SR-05" flag="warning" test="not(ram:SpecifiedDocumentVersion)">[CII-SR-005] - SpecifiedDocumentVersion should not be present</assert>
+    </rule>
+    <rule context="//ram:*[ends-with(name(), 'ID')]">
+      <assert id="CII-DT-001" flag="fatal" test="not(@schemeName)">[CII-DT-001] - schemeName should not be present</assert>
+      <assert id="CII-DT-002" flag="fatal" test="not(@schemeAgencyName)">[CII-DT-002] - schemeAgencyName should not be present</assert>
+      <assert id="CII-DT-003" flag="fatal" test="not(@schemeDataURI)">[CII-DT-003] - schemeDataURI should not be present</assert>
+      <assert id="CII-DT-004" flag="fatal" test="not(@schemeURI)">[CII-DT-004] - schemeURI should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/*[self::rsm:ExchangedDocumentContext/ram:GuidelineSpecifiedDocumentContextParameter/ram:ID or         self::rsm:ExchangedDocument/ram:ID or self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:AssociatedDocumentLineDocument/ram:LineID or         self::rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedTradeProduct/ram:SellerAssignedID]">
+      <assert id="CII-DT-005" flag="fatal" test="not(@schemeID)">[CII-DT-005] - schemeID should not be present</assert>
+      <assert id="CII-DT-006" flag="fatal" test="not(@schemeAgencyID)">[CII-DT-006] - schemeAgencyID should not be present</assert>
+      <assert id="CII-DT-007" flag="fatal" test="not(@schemeVersionID)">[CII-DT-007] - schemeVersionID should not be present</assert>
+    </rule>
+    <rule context="//ram:TypeCode">
+      <assert id="CII-DT-008" flag="fatal" test="not(@name)">[CII-DT-008] - name should not be present</assert>
+      <assert id="CII-DT-009" flag="fatal" test="not(@listURI)">[CII-DT-009] - listURI should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode">
+      <assert id="CII-DT-010" flag="fatal" test="not(@listID)">[CII-DT-010] - listID should not be present</assert>
+      <assert id="CII-DT-011" flag="fatal" test="not(@listAgencyID)">[CII-DT-011] - listAgencyID should not be present</assert>
+      <assert id="CII-DT-012" flag="fatal" test="not(@listVersionID)">[CII-DT-012] - listVersionID should not be present</assert>
+    </rule>
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeSettlement/ram:ApplicableTradeTax/ram:CategoryCode">
+      <assert id="CII-DT-045" flag="warning" test="not(@listID)">[CII-DT-045] - @listID should not be present</assert>
+      <assert id="CII-DT-046" flag="warning" test="not(@listAgencyID)">[CII-DT-046] - @listAgencyID should not be present</assert>
+      <assert id="CII-DT-047" flag="warning" test="not(@listVersionID)">[CII-DT-047] - @listVersionID should not be present</assert>
+      <assert id="CII-DT-048" flag="warning" test="not(@listURI)">[CII-DT-048] - @listURI should not be present</assert>
+    </rule>
+    <rule context="//ram:*[ends-with(name(), 'ReferencedDocument')]">
+      <assert id="CII-DT-015" flag="fatal" test="not(ram:URIID) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-015] - URIID should not be present</assert>
+      <assert id="CII-DT-016" flag="fatal" test="not(ram:StatusCode)">[CII-DT-016] - StatusCode should not be present</assert>
+      <assert id="CII-DT-017" flag="fatal" test="not(ram:CopyIndicator)">[CII-DT-017] - CopyIndicator should not be present</assert>
+      <assert id="CII-DT-018" flag="fatal" test="not(ram:TypeCode) or (self::ram:AdditionalReferencedDocument) and (ram:TypeCode='50' or ram:TypeCode='130' or ram:TypeCode='916')">[CII-DT-018] - TypeCode should not be present</assert>
+      <assert id="CII-DT-019" flag="fatal" test="not(ram:GlobalID)">[CII-DT-019] - GlobalID should not be present</assert>
+      <assert id="CII-DT-020" flag="fatal" test="not(ram:RevisionID)">[CII-DT-020] - RevisionID should not be present</assert>
+      <assert id="CII-DT-021" flag="fatal" test="not(ram:Name) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-021] - Name should not be present</assert>
+      <assert id="CII-DT-022" flag="fatal" test="not(ram:AttachmentBinaryObject) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='916')">[CII-DT-022] - AttachmentBinaryObject should not be present</assert>
+      <assert id="CII-DT-023" flag="fatal" test="not(ram:Information)">[CII-DT-023] - Information should not be present</assert>
+      <assert id="CII-DT-024" flag="fatal" test="not(ram:ReferenceTypeCode) or (self::ram:AdditionalReferencedDocument and ram:TypeCode='130')">[CII-DT-024] - ReferenceTypeCode should not be present</assert>
+      <assert id="CII-DT-025" flag="fatal" test="not(ram:SectionName)">[CII-DT-025] - SectionName should not be present</assert>
+      <assert id="CII-DT-026" flag="fatal" test="not(ram:PreviousRevisionID)">[CII-DT-026] - PreviousRevisionID should not be present</assert>
+      <assert id="CII-DT-027" flag="fatal" test="not(ram:FormattedIssueDateTime) or self::ram:InvoiceReferencedDocument">[CII-DT-027] - FormattedIssueDateTime should not be present</assert>
+      <assert id="CII-DT-028" flag="fatal" test="not(ram:EffectiveSpecifiedPeriod)">[CII-DT-028] - EffectiveSpecifiedPeriod should not be present</assert>
+      <assert id="CII-DT-029" flag="fatal" test="not(ram:IssuerTradeParty)">[CII-DT-029] - IssuerTradeParty should not be present</assert>
+      <assert id="CII-DT-030" flag="fatal" test="not(ram:AttachedSpecifiedBinaryFile)">[CII-DT-030] - AttachedSpecifiedBinaryFile should not be present</assert>
+    </rule>
+    <rule context="//ram:*[ends-with(name(), 'Amount') and not (self::ram:TaxTotalAmount)]">
+      <assert id="CII-DT-031" flag="fatal" test="not(@currencyID)">[CII-DT-031] - currencyID should not be present</assert>
+      <assert id="CII-DT-032" flag="fatal" test="not(@currencyCodeListVersionID)">[CII-DT-032] - currencyCodeListVersionID should not be present</assert>
+    </rule>
+    <rule context="//ram:*[ends-with(name(), 'Quantity')]">
+      <assert id="CII-DT-033" flag="fatal" test="not(@unitCode) or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeDelivery/ram:BilledQuantity/@unitCode)">[CII-DT-033] - unitCode should not be present</assert>
+      <assert id="CII-DT-034" flag="fatal" test="not(@unitCodeListID)">[CII-DT-034] - unitCodeListID should not be present</assert>
+      <assert id="CII-DT-035" flag="fatal" test="not(@unitCodeListAgencyID)">[CII-DT-035] - unitCodeListAgencyID should not be present</assert>
+      <assert id="CII-DT-036" flag="fatal" test="not(@unitCodeListAgencyName)">[CII-DT-036] - unitCodeListAgencyName should not be present</assert>
+    </rule>
+    <rule context="//ram:*[ends-with(name(), 'TradeTax')]">
+      <assert id="CII-DT-037" flag="fatal" test="not(ram:TypeCode) or (ram:TypeCode = 'VAT')">[CII-DT-037] - TypeCode shall be 'VAT'</assert>
+      <assert id="CII-DT-038" flag="warning" test="not(ram:CalculatedRate)">[CII-DT-038] - CalculatedRate should not be present</assert>
+      <assert id="CII-DT-039" flag="warning" test="not(ram:CalculationSequenceNumeric)">[CII-DT-039] - CalculationSequenceNumeric should not be present</assert>
+      <assert id="CII-DT-040" flag="warning" test="not(ram:BasisQuantity)">[CII-DT-040] - BasisQuantity should not be present</assert>
+      <assert id="CII-DT-041" flag="warning" test="not(ram:BasisAmount) or (ancestor::ram:ApplicableHeaderTradeSettlement)">[CII-DT-041] - BasisAmount should not be present</assert>
+      <assert id="CII-DT-042" flag="warning" test="not(ram:UnitBasisAmount)">[CII-DT-042] - UnitBasisAmount should not be present</assert>
+      <assert id="CII-DT-043" flag="warning" test="not(ram:LineTotalBasisAmount)">[CII-DT-043] - LineTotalBasisAmount should not be present</assert>
+      <assert id="CII-DT-044" flag="warning" test="not(ram:AllowanceChargeBasisAmount)">[CII-DT-044] - AllowanceChargeBasisAmount should not be present</assert>
+      <assert id="CII-DT-049" flag="warning" test="not(ram:CurrencyCode)">[CII-DT-049] - CurrencyCode should not be present</assert>
+      <assert id="CII-DT-050" flag="warning" test="not(ram:Jurisdiction)">[CII-DT-050] - Jurisdiction should not be present</assert>
+      <assert id="CII-DT-051" flag="warning" test="not(ram:CustomsDutyIndicator)">[CII-DT-051] - CustomsDutyIndicator should not be present</assert>
+      <assert id="CII-DT-052" flag="warning" test="not(ram:ExemptionReasonCode) or self::ram:ApplicableTradeTax">[CII-DT-052] - ExemptionReasonCode should not be present</assert>
+      <assert id="CII-DT-098" flag="warning" test="not(ram:ExemptionReason) or self::ram:ApplicableTradeTax">[CII-DT-098] - ExemptionReason should not be present</assert>
+      <assert id="CII-DT-053" flag="warning" test="not(ram:TaxBasisAllowanceRate)">[CII-DT-053] - TaxBasisAllowanceRate should not be present</assert>
+      <assert id="CII-DT-054" flag="warning" test="not(ram:TaxPointDate)  or (ancestor::ram:ApplicableHeaderTradeSettlement)">[CII-DT-054] - TaxPointDate should not be present</assert>
+      <assert id="CII-DT-055" flag="warning" test="not(ram:Type)">[CII-DT-055] - Type should not be present</assert>
+      <assert id="CII-DT-056" flag="warning" test="not(ram:InformationAmount)">[CII-DT-056] - InformationAmount should not be present</assert>
+      <assert id="CII-DT-057" flag="warning" test="not(ram:CategoryName)">[CII-DT-057] - CategoryName should not be present</assert>
+      <assert id="CII-DT-058" flag="warning" test="not(ram:DueDateTypeCode) or (ancestor::ram:ApplicableHeaderTradeSettlement)">[CII-DT-058] - DueDateTypeCode should not be present</assert>
+      <assert id="CII-DT-059" flag="warning" test="not(ram:RateApplicablePercent/@format)">[CII-DT-059] - @format should not be present</assert>
+      <assert id="CII-DT-060" flag="warning" test="not(ram:SpecifiedTradeAccountingAccount)">[CII-DT-060] - SpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-061" flag="warning" test="not(ram:ServiceSupplyTradeCountry)">[CII-DT-061] - ServiceSupplyTradeCountry should not be present</assert>
+      <assert id="CII-DT-062" flag="warning" test="not(ram:BuyerRepayableTaxSpecifiedTradeAccountingAccount)">[CII-DT-062] - BuyerRepayableTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-063" flag="warning" test="not(ram:SellerPayableTaxSpecifiedTradeAccountingAccount)">[CII-DT-063] - SellerPayableTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-064" flag="warning" test="not(ram:SellerRefundableTaxSpecifiedTradeAccountingAccount)">[CII-DT-064] - SellerRefundableTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-065" flag="warning" test="not(ram:BuyerDeductibleTaxSpecifiedTradeAccountingAccount)">[CII-DT-065] - BuyerDeductibleTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-066" flag="warning" test="not(ram:BuyerNonDeductibleTaxSpecifiedTradeAccountingAccount)">[CII-DT-066] - BuyerNonDeductibleTaxSpecifiedTradeAccountingAccount should not be present</assert>
+      <assert id="CII-DT-067" flag="warning" test="not(ram:PlaceApplicableTradeLocation)">[CII-DT-067] - PlaceApplicableTradeLocation should not be present</assert>
+    </rule>
+    <rule context="//ram:BillingSpecifiedPeriod">
+      <assert id="CII-DT-068" flag="fatal" test="not(ram:StartDateTime/udt:DateTime)">[CII-DT-068] - DateTime shall not be used.</assert>
+      <assert id="CII-DT-069" flag="fatal" test="not(ram:DurationMeasure)">[CII-DT-069] - DurationMeasure shall not be used.</assert>
+      <assert id="CII-DT-070" flag="fatal" test="not(ram:InclusiveIndicator)">[CII-DT-070] - InclusiveIndicator shall not be used.</assert>
+      <assert id="CII-DT-071" flag="fatal" test="not(ram:Description)">[CII-DT-071] - Description shall not be used.</assert>
+      <assert id="CII-DT-072" flag="fatal" test="not(ram:EndDateTime/udt:DateTime)">[CII-DT-072] - DateTime shall not be used.</assert>
+      <assert id="CII-DT-073" flag="fatal" test="not(ram:CompleteDateTime)">[CII-DT-073] - CompleteDateTime shall not be used.</assert>
+      <assert id="CII-DT-074" flag="fatal" test="not(ram:OpenIndicator)">[CII-DT-074] - OpenIndicator shall not be used.</assert>
+      <assert id="CII-DT-075" flag="fatal" test="not(ram:SeasonCode)">[CII-DT-075] - SeasonCode shall not be used.</assert>
+      <assert id="CII-DT-076" flag="fatal" test="not(ram:ID)">[CII-DT-076] - ID shall not be used.</assert>
+      <assert id="CII-DT-077" flag="fatal" test="not(ram:Name)">[CII-DT-077] - Name shall not be used.</assert>
+      <assert id="CII-DT-078" flag="fatal" test="not(ram:SequenceNumeric)">[CII-DT-078] - SequenceNumeric shall not be used.</assert>
+      <assert id="CII-DT-079" flag="fatal" test="not(ram:StartDateFlexibilityCode)">[CII-DT-079] - StartDateFlexibilityCode shall not be used.</assert>
+      <assert id="CII-DT-080" flag="fatal" test="not(ram:ContinuousIndicator)">[CII-DT-080] - ContinuousIndicator shall not be used.</assert>
+      <assert id="CII-DT-081" flag="fatal" test="not(ram:PurposeCode)">[CII-DT-081] - PurposeCode shall not be used.</assert>
+    </rule>
+    <rule context="//ram:PostalTradeAddress">
+      <assert id="CII-DT-082" flag="fatal" test="not(ram:ID)">[CII-DT-082] - ID shall not be used.</assert>
+      <assert id="CII-DT-083" flag="fatal" test="not(ram:PostOfficeBox)">[CII-DT-083] - PostOfficeBox shall not be used.</assert>
+      <assert id="CII-DT-084" flag="fatal" test="not(ram:BuildingName)">[CII-DT-084] - BuildingName shall not be used.</assert>
+      <assert id="CII-DT-086" flag="fatal" test="not(ram:LineFour)">[CII-DT-086] - LineFour shall not be used.</assert>
+      <assert id="CII-DT-087" flag="fatal" test="not(ram:LineFive)">[CII-DT-087] - LineFive shall not be used.</assert>
+      <assert id="CII-DT-088" flag="fatal" test="not(ram:StreetName)">[CII-DT-088] - StreetName shall not be used.</assert>
+      <assert id="CII-DT-089" flag="fatal" test="not(ram:CitySubDivisionName)">[CII-DT-089] - CitySubDivisionName shall not be used.</assert>
+      <assert id="CII-DT-090" flag="fatal" test="not(ram:CountryName)">[CII-DT-090] - CountryName shall not be used.</assert>
+      <assert id="CII-DT-091" flag="fatal" test="not(ram:CountrySubDivisionID)">[CII-DT-091] - CountrySubDivisionID shall not be used.</assert>
+      <assert id="CII-DT-092" flag="fatal" test="not(ram:AttentionOf)">[CII-DT-092] - AttentionOf shall not be used.</assert>
+      <assert id="CII-DT-093" flag="fatal" test="not(ram:CareOf)">[CII-DT-093] - CareOf shall not be used.</assert>
+      <assert id="CII-DT-094" flag="fatal" test="not(ram:BuildingNumber)">[CII-DT-094] - BuildingNumber shall not be used.</assert>
+      <assert id="CII-DT-095" flag="fatal" test="not(ram:DepartmentName)">[CII-DT-095] - DepartmentName shall not be used.</assert>
+      <assert id="CII-DT-096" flag="fatal" test="not(ram:AdditionalStreetName)">[CII-DT-096] - AdditionalStreetName shall not be used.</assert>
+    </rule>
+  </pattern>
+  <pattern id="EN16931-Codes">
+    <rule flag="fatal" context="rsm:ExchangedDocument/ram:TypeCode">
+      <assert id="BR-CL-01" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 80 81 82 83 84 130 202 203 204 211 261 262 295 296 308 325 326 380 381 383 384 385 386 387 388 389 390 393 394 395 396 420 456 457 458 527 532 575 623 633 751 780 935 ', concat(' ', normalize-space(.), ' '))))">[BR-CL-01]-The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001.</assert>
+    </rule>
+    <rule flag="fatal" context="@currencyID">
+      <assert id="BR-CL-03" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AED AFN ALL AMD ANG AOA ARS AUD AWG AZN BAM BBD BDT BGN BHD BIF BMD BND BOB BOV BRL BSD BTN BWP BYR BZD CAD CDF CHE CHF CHW CLF CLP CNY COP COU CRC CUC CUP CVE CZK DJF DKK DOP DZD EGP ERN ETB EUR FJD FKP GBP GEL GHS GIP GMD GNF GTQ GYD HKD HNL HRK HTG HUF IDR ILS INR IQD IRR ISK JMD JOD JPY KES KGS KHR KMF KPW KRW KWD KYD KZT LAK LBP LKR LRD LSL LYD MAD MDL MGA MKD MMK MNT MOP MRO MUR MVR MWK MXN MXV MYR MZN NAD NGN NIO NOK NPR NZD OMR PAB PEN PGK PHP PKR PLN PYG QAR RON RSD RUB RWF SAR SBD SCR SDG SEK SGD SHP SLL SOS SRD SSP STD SVC SYP SZL THB TJS TMT TND TOP TRY TTD TWD TZS UAH UGX USD USN UYI UYU UZS VEF VND VUV WST XAF XAG XAU XBA XBB XBC XBD XCD XDR XOF XPD XPF XPT XSU XTS XUA XXX YER ZAR ZMW ZWL ', concat(' ', normalize-space(.), ' '))))">[BR-CL-03]-currencyID MUST be coded using ISO code list 4217 alpha-3</assert>
+    </rule>
+    <rule flag="fatal" context="ram:InvoiceCurrencyCode">
+      <assert id="BR-CL-04" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AED AFN ALL AMD ANG AOA ARS AUD AWG AZN BAM BBD BDT BGN BHD BIF BMD BND BOB BOV BRL BSD BTN BWP BYR BZD CAD CDF CHE CHF CHW CLF CLP CNY COP COU CRC CUC CUP CVE CZK DJF DKK DOP DZD EGP ERN ETB EUR FJD FKP GBP GEL GHS GIP GMD GNF GTQ GYD HKD HNL HRK HTG HUF IDR ILS INR IQD IRR ISK JMD JOD JPY KES KGS KHR KMF KPW KRW KWD KYD KZT LAK LBP LKR LRD LSL LYD MAD MDL MGA MKD MMK MNT MOP MRO MUR MVR MWK MXN MXV MYR MZN NAD NGN NIO NOK NPR NZD OMR PAB PEN PGK PHP PKR PLN PYG QAR RON RSD RUB RWF SAR SBD SCR SDG SEK SGD SHP SLL SOS SRD SSP STD SVC SYP SZL THB TJS TMT TND TOP TRY TTD TWD TZS UAH UGX USD USN UYI UYU UZS VEF VND VUV WST XAF XAG XAU XBA XBB XBC XBD XCD XDR XOF XPD XPF XPT XSU XTS XUA XXX YER ZAR ZMW ZWL ', concat(' ', normalize-space(.), ' '))))">[BR-CL-04]-Invoice currency code MUST be coded using ISO code list 4217 alpha-3</assert>
+    </rule>
+    <rule flag="fatal" context="ram:TaxCurrencyCode">
+      <assert id="BR-CL-05" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AED AFN ALL AMD ANG AOA ARS AUD AWG AZN BAM BBD BDT BGN BHD BIF BMD BND BOB BOV BRL BSD BTN BWP BYR BZD CAD CDF CHE CHF CHW CLF CLP CNY COP COU CRC CUC CUP CVE CZK DJF DKK DOP DZD EGP ERN ETB EUR FJD FKP GBP GEL GHS GIP GMD GNF GTQ GYD HKD HNL HRK HTG HUF IDR ILS INR IQD IRR ISK JMD JOD JPY KES KGS KHR KMF KPW KRW KWD KYD KZT LAK LBP LKR LRD LSL LYD MAD MDL MGA MKD MMK MNT MOP MRO MUR MVR MWK MXN MXV MYR MZN NAD NGN NIO NOK NPR NZD OMR PAB PEN PGK PHP PKR PLN PYG QAR RON RSD RUB RWF SAR SBD SCR SDG SEK SGD SHP SLL SOS SRD SSP STD SVC SYP SZL THB TJS TMT TND TOP TRY TTD TWD TZS UAH UGX USD USN UYI UYU UZS VEF VND VUV WST XAF XAG XAU XBA XBB XBC XBD XCD XDR XOF XPD XPF XPT XSU XTS XUA XXX YER ZAR ZMW ZWL ', concat(' ', normalize-space(.), ' '))))">[BR-CL-05]-Tax currency code MUST be coded using ISO code list 4217 alpha-3</assert>
+    </rule>
+    <rule flag="fatal" context="ram:DueDateTypeCode">
+      <assert id="BR-CL-06" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 5 29 72 ', concat(' ', normalize-space(.), ' '))))">[BR-CL-06]-Value added tax point date code MUST be coded using a restriction of UNTDID 2475.</assert>
+    </rule>
+    <rule flag="fatal" context="ram:ReferenceTypeCode">
+      <assert id="BR-CL-07" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AAA AAB AAC AAD AAE AAF AAG AAH AAI AAJ AAK AAL AAM AAN AAO AAP AAQ AAR AAS AAT AAU AAV AAW AAX AAY AAZ ABA ABB ABC ABD ABE ABF ABG ABH ABI ABJ ABK ABL ABM ABN ABO ABP ABQ ABR ABS ABT ABU ABV ABW ABX ABY ABZ AC ACA ACB ACC ACD ACE ACF ACG ACH ACI ACJ ACK ACL ACN ACO ACP ACQ ACR ACT ACU ACV ACW ACX ACY ACZ ADA ADB ADC ADD ADE ADF ADG ADI ADJ ADK ADL ADM ADN ADO ADP ADQ ADT ADU ADV ADW ADX ADY ADZ AE AEA AEB AEC AED AEE AEF AEG AEH AEI AEJ AEK AEL AEM AEN AEO AEP AEQ AER AES AET AEU AEV AEW AEX AEY AEZ AF AFA AFB AFC AFD AFE AFF AFG AFH AFI AFJ AFK AFL AFM AFN AFO AFP AFQ AFR AFS AFT AFU AFV AFW AFX AFY AFZ AGA AGB AGC AGD AGE AGF AGG AGH AGI AGJ AGK AGL AGM AGN AGO AGP AGQ AGR AGS AGT AGU AGV AGW AGX AGY AGZ AHA AHB AHC AHD AHE AHF AHG AHH AHI AHJ AHK AHL AHM AHN AHO AHP AHQ AHR AHS AHT AHU AHV AHX AHY AHZ AIA AIB AIC AID AIE AIF AIG AIH AII AIJ AIK AIL AIM AIN AIO AIP AIQ AIR AIS AIT AIU AIV AIW AIX AIY AIZ AJA AJB AJC AJD AJE AJF AJG AJH AJI AJJ AJK AJL AJM AJN AJO AJP AJQ AJR AJS AJT AJU AJV AJW AJX AJY AJZ AKA AKB AKC AKD AKE AKF AKG AKH AKI AKJ AKK AKL AKM AKN AKO AKP AKQ AKR AKS AKT AKU AKV AKW AKX AKY AKZ ALA ALB ALC ALD ALE ALF ALG ALH ALI ALJ ALK ALL ALM ALN ALO ALP ALQ ALR ALS ALT ALU ALV ALW ALX ALY ALZ AMA AMB AMC AMD AME AMF AMG AMH AMI AMJ AMK AML AMM AMN AMO AMP AMQ AMR AMS AMT AMU AMV AMW AMX AMY AMZ ANA ANB ANC AND ANE ANF ANG ANH ANI ANJ ANK ANL ANM ANN ANO ANP ANQ ANR ANS ANT ANU ANV ANW ANX ANY AOA AOD AOE AOF AOG AOH AOI AOJ AOK AOL AOM AON AOO AOP AOQ AOR AOS AOT AOU AOV AOW AOX AOY AOZ AP APA APB APC APD APE APF APG APH API APJ APK APL APM APN APO APP APQ APR APS APT APU APV APW APX APY APZ AQA AQB AQC AQD AQE AQF AQG AQH AQI AQJ AQK AQL AQM AQN AQO AQP AQQ AQR AQS AQT AQU AQV AQW AQX AQY AQZ ARA ARB ARC ARD ARE ARF ARG ARH ARI ARJ ARK ARL ARM ARN ARO ARP ARQ ARR ARS ART ARU ARV ARW ARX ARY ARZ ASA ASB ASC ASD ASE ASF ASG ASH ASI ASJ ASK ASL ASM ASN ASO ASP ASQ ASR ASS AST ASU ASV ASW ASX ASY ASZ ATA ATB ATC ATD ATE ATF ATG ATH ATI ATJ ATK ATL ATM ATN ATO ATP ATQ ATR ATS ATT ATU ATV ATW ATX ATY ATZ AU AUA AUB AUC AUD AUE AUF AUG AUH AUI AUJ AUK AUL AUM AUN AUO AUP AUQ AUR AUS AUT AUU AUV AUW AUX AUY AUZ AV AVA AVB AVC AVD AVE AVF AVG AVH AVI AVJ AVK AVL AVM AVN AVO AVP AVQ AVR AVS AVT AVU AVV AVW AVX AVY AVZ AWA AWB AWC AWD AWE AWF AWG AWH AWI AWJ AWK AWL AWM AWN AWO AWP AWQ AWR AWS AWT AWU AWV AWW AWX AWY AWZ AXA AXB AXC AXD AXE AXF AXG AXH AXI AXJ AXK AXL AXM AXN AXO AXP AXQ AXR AXS BA BC BD BE BH BM BN BO BR BT BTP BW CAS CAT CAU CAV CAW CAX CAY CAZ CBA CBB CD CEC CED CFE CFF CFO CG CH CK CKN CM CMR CN CNO COF CP CR CRN CS CST CT CU CV CW CZ DA DAN DB DI DL DM DQ DR EA EB ED EE EEP EI EN EQ ER ERN ET EX FC FF FI FLW FN FO FS FT FV FX GA GC GD GDN GN HS HWB IA IB ICA ICE ICO II IL INB INN INO IP IS IT IV JB JE LA LAN LAR LB LC LI LO LRC LS MA MB MF MG MH MR MRN MS MSS MWB NA NF OH OI ON OP OR PB PC PD PE PF PI PK PL POR PP PQ PR PS PW PY RA RC RCN RE REN RF RR RT SA SB SD SE SEA SF SH SI SM SN SP SQ SRN SS STA SW SZ TB TCR TE TF TI TIN TL TN TP UAR UC UCN UN UO URI VA VC VGR VM VN VON VOR VP VR VS VT VV WE WM WN WR WS WY XA XC XP ZZZ ', concat(' ', normalize-space(.), ' '))))">[BR-CL-07]-Object identifier identification scheme identifier MUST be coded using a restriction of UNTDID 1153.</assert>
+    </rule>
+    <rule flag="fatal" context="ram:SubjectCode">
+      <assert id="BR-CL-08" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AAA AAB AAC AAD AAE AAF AAG AAI AAJ AAK AAL AAM AAN AAO AAP AAQ AAR AAS AAT AAU AAV AAW AAX AAY AAZ ABA ABB ABC ABD ABE ABF ABG ABH ABI ABJ ABK ABL ABM ABN ABO ABP ABQ ABR ABS ABT ABU ABV ABW ABX ABZ ACA ACB ACC ACD ACE ACF ACG ACH ACI ACJ ACK ACL ACM ACN ACO ACP ACQ ACR ACS ACT ACU ACV ACW ACX ACY ACZ ADA ADB ADC ADD ADE ADF ADG ADH ADI ADJ ADK ADL ADM ADN ADO ADP ADQ ADR ADS ADT ADU ADV ADW ADX ADY ADZ AEA AEB AEC AED AEE AEF AEG AEH AEI AEJ AEK AEL AEM AEN AEO AEP AEQ AER AES AET AEU AEV AEW AEX AEY AEZ AFA AFB AFC AFD AFE AFF AFG AFH AFI AFJ AFK AFL AFM AFN AFO AFP AFQ AFR AFS AFT AFU AFV AFW AFX AFY AFZ AGA AGB AGC AGD AGE AGF AGG AGH AGI AGJ AGK AGL AGM AGN AGO AGP AGQ AGR AGS AGT AGU AGV AGW AGX AGY AGZ AHA AHB AHC AHD AHE AHF AHG AHH AHI AHJ AHK AHL AHM AHN AHO AHP AHQ AHR AHS AHT AHU AHV AHW AHX AHY AHZ AIA AIB AIC AID AIE AIF AIG AIH AII AIJ AIK AIL AIM AIN AIO AIP AIQ AIR AIS AIT AIU AIV AIW AIX AIY AIZ AJA AJB ALC ALD ALE ALF ALG ALH ALI ALJ ALK ALL ALM ALN ALO ALP ALQ ARR ARS AUT AUU AUV AUW AUX AUY AUZ AVA AVB AVC AVD AVE AVF BAG BAH BAI BAJ BAK BAL BAM BAN BAO BAP BAQ BLC BLD BLE BLF BLG BLH BLI BLJ BLK BLL BLM BLN BLO BLP BLQ BLR BLS BLT BLU BLV BLW BLX BLY BLZ BMA BMB BMC BMD BME CCI CEX CHG CIP CLP CLR COI CUR CUS DAR DCL DEL DIN DOC DUT EUR FBC GBL GEN GS7 HAN HAZ ICN IIN IMI IND INS INV IRP ITR ITS LAN LIN LOI MCO MDH MKS ORI OSI PAC PAI PAY PKG PKT PMD PMT PRD PRF PRI PUR QIN QQD QUT RAH REG RET REV RQR SAF SIC SIN SLR SPA SPG SPH SPP SPT SRN SSR SUR TCA TDT TRA TRR TXD WHI ZZZ ', concat(' ', normalize-space(.), ' '))))">[BR-CL-08]-Subject Code MUST be coded using a restriction of UNTDID 4451.</assert>
+    </rule>
+    <rule flag="fatal" context="//ram:GlobalID/@schemeID[not(ancestor::ram:SpecifiedTradeProduct)]">
+      <assert id="BR-CL-10" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 0001 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0183 0184 0185 0186 0187 0188 0189 0190 0191 0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 ', concat(' ', normalize-space(.), ' '))))">[BR-CL-10]-Any identifier identification scheme identifier MUST be coded using one of the ISO 6523 ICD list.</assert>
+    </rule>
+    <rule flag="fatal" context="ram:ID/@schemeID[not(ancestor::ram:SpecifiedTaxRegistration)]">
+      <assert id="BR-CL-11" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 0001 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0183 0184 0185 0186 0187 0188 0189 0190 0191 0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 ', concat(' ', normalize-space(.), ' '))))">[BR-CL-11]-Any registration identifier identification scheme identifier MUST be coded using one of the ISO 6523 ICD list.</assert>
+    </rule>
+    <rule flag="fatal" context="ram:ClassCode/@listID">
+      <assert id="BR-CL-13" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO AP AQ AR AS AT AU AV AW AX AY AZ BA BB BC BD BE BF BG BH BI BJ BK BL BM BN BO BP BQ BR BS BT BU BV BW BX BY BZ CC CG CL CR CV DR DW EC EF EN FS GB GN GS HS IB IN IS IT IZ MA MF MN MP NB ON PD PL PO PV QS RC RN RU RY SA SG SK SN SRS SRT SRU SRV SRW SRX SRY SRZ SS SSA SSB SSC SSD SSE SSF SSG SSH SSI SSJ SSK SSL SSM SSN SSO SSP SSQ SSR SSS SST SSU SSV SSW SSX SSY SSZ ST STA STB STC STD STE STF STG STH STI STJ STK STL STM STN STO STP STQ STR STS STT STU STV STW STX STY STZ SUA SUB SUC SUD SUE SUF SUG SUH SUI SUJ SUK SUL SUM TG TSN TSO TSP TSQ TSR TSS TST UA UP VN VP VS VX ZZZ ', concat(' ', normalize-space(.), ' '))))">[BR-CL-13]-Item classification identifier identification scheme identifier MUST be coded using one of the UNTDID 7143 list.</assert>
+    </rule>
+    <rule flag="fatal" context="ram:CountryID">
+      <assert id="BR-CL-14" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BL BJ BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ', concat(' ', normalize-space(.), ' '))))">[BR-CL-14]-Country codes in an invoice MUST be coded using ISO code list 3166-1</assert>
+    </rule>
+    <rule flag="fatal" context="ram:OriginTradeCountry/ram:ID">
+      <assert id="BR-CL-15" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BL BJ BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ', concat(' ', normalize-space(.), ' '))))">[BR-CL-15]-Country codes in an invoice MUST be coded using ISO code list 3166-1</assert>
+    </rule>
+    <rule flag="fatal" context="ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode">
+      <assert id="BR-CL-16" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 70 74 75 76 77 78 91 92 93 94 95 96 97 ZZZ ', concat(' ', normalize-space(.), ' '))))">[BR-CL-16]-Payment means in an invoice MUST be coded using UNTDID 4461 code list</assert>
+    </rule>
+    <rule flag="fatal" context="ram:CategoryTradeTax/ram:CategoryCode">
+      <assert id="BR-CL-17" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AE L M E S Z G O K ', concat(' ', normalize-space(.), ' '))))">[BR-CL-17]-Invoice tax categories MUST be coded using UNCL 5305 code list</assert>
+    </rule>
+    <rule flag="fatal" context="ram:ApplicableTradeTax/ram:CategoryCode">
+      <assert id="BR-CL-18" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AE L M E S Z G O K ', concat(' ', normalize-space(.), ' '))))">[BR-CL-18]-Invoice tax categories MUST be coded using UNCL 5305 code list</assert>
+    </rule>
+    <rule flag="fatal" context="ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = false()]/ram:ReasonCode">
+      <assert id="BR-CL-19" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 41 42 60 62 63 64 65 66 67 68 70 71 88 95 100 102 103 104 ', concat(' ', normalize-space(.), ' '))))">[BR-CL-19]-Coded allowance reasons MUST belong to the UNCL 5189 code list</assert>
+    </rule>
+    <rule flag="fatal" context="ram:SpecifiedTradeAllowanceCharge[ram:ChargeIndicator/udt:Indicator = true()]/ram:ReasonCode">
+      <assert id="BR-CL-20" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AA AAA AAC AAD AAE AAF AAH AAI AAS AAT AAV AAY AAZ ABA ABB ABC ABD ABF ABK ABL ABN ABR ABS ABT ABU ACF ACG ACH ACI ACJ ACK ACL ACM ACS ADC ADE ADJ ADK ADL ADM ADN ADO ADP ADQ ADR ADT ADW ADY ADZ AEA AEB AEC AED AEF AEH AEI AEJ AEK AEL AEM AEN AEO AEP AES AET AEU AEV AEW AEX AEY AEZ AJ AU CA CAB CAD CAE CAF CAI CAJ CAK CAL CAM CAN CAO CAP CAQ CAR CAS CAT CAU CAV CAW CAX CAY CAZ CD CG CS CT DAB DAD DAC DAF DAG DAH DAI DAJ DAK DAL DAM DAN DAO DAP DAQ DL EG EP ER FAA FAB FAC FC FH FI GAA HAA HD HH IAA IAB ID IF IR IS KO L1 LA LAA LAB LF MAE MI ML NAA OA PA PAA PC PL RAB RAC RAD RAF RE RF RH RV SA SAA SAD SAE SAI SG SH SM SU TAB TAC TT TV V1 V2 WH XAA YY ZZZ ', concat(' ', normalize-space(.), ' '))))">[BR-CL-20]-Coded charge reasons MUST belong to the UNCL 7161 code list</assert>
+    </rule>
+    <rule flag="fatal" context="ram:SpecifiedTradeProduct/ram:GlobalID/@schemeID">
+      <assert id="BR-CL-21" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 0001 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0183 0184 0185 0186 0187 0188 0189 0190 0191 0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 ', concat(' ', normalize-space(.), ' '))))">[BR-CL-21]-Item standard identifier scheme identifier MUST belong to the ISO 6523 ICD
+      code list</assert>
+    </rule>
+    <rule flag="fatal" context="ram:ExemptionReasonCode">
+      <assert id="BR-CL-22" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' vatex-eu-132-1a vatex-eu-132-1b vatex-eu-132-1c vatex-eu-132-1d vatex-eu-132-1e vatex-eu-132-1f vatex-eu-132-1g vatex-eu-132-1h vatex-eu-132-1i vatex-eu-132-1j vatex-eu-132-1k vatex-eu-132-1l vatex-eu-132-1m vatex-eu-132-1n vatex-eu-132-1o vatex-eu-132-1p vatex-eu-132-1q vatex-eu-143-1a vatex-eu-143-1b vatex-eu-143-1c vatex-eu-143-1d vatex-eu-143-1e vatex-eu-143-1f vatex-eu-143-1fa vatex-eu-143-1g vatex-eu-143-1h vatex-eu-143-1i vatex-eu-143-1j vatex-eu-143-1k vatex-eu-143-1l vatex-eu-309 vatex-eu-148-a vatex-eu-148-b vatex-eu-148-c vatex-eu-148-d vatex-eu-148-e vatex-eu-148-f vatex-eu-148-g vatex-eu-151-1a vatex-eu-151-1aa vatex-eu-151-1b vatex-eu-151-1c vatex-eu-151-1d vatex-eu-151-1e vatex-eu-g vatex-eu-o vatex-eu-ic vatex-eu-ae vatex-eu-d vatex-eu-f vatex-eu-i vatex-eu-j ', concat(' ', normalize-space(.), ' '))))">[BR-CL-22]-Tax exemption reason code identifier scheme identifier MUST belong to the CEF VATEX code list</assert>
+    </rule>
+    <rule flag="fatal" context="@unitCode">
+      <assert id="BR-CL-23" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 10 11 13 14 15 20 21 22 23 24 25 27 28 33 34 35 37 38 40 41 56 57 58 59 60 61 64 66 74 76 77 78 80 81 84 85 87 89 91 1I 2A 2B 2C 2G 2H 2I 2J 2K 2L 2M 2N 2P 2Q 2R 2U 2X 2Y 2Z 3B 3C 4C 4G 4H 4K 4L 4M 4N 4O 4P 4Q 4R 4T 4U 4W 4X 5A 5B 5E 5J A1 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 A2 A20 A21 A22 A23 A24 A25 A26 A27 A28 A29 A3 A30 A31 A32 A33 A34 A35 A36 A37 A38 A39 A4 A40 A41 A42 A43 A44 A45 A47 A48 A49 A5 A50 A51 A52 A53 A54 A55 A56 A57 A58 A59 A6 A60 A61 A62 A63 A64 A65 A66 A67 A68 A69 A7 A70 A71 A73 A74 A75 A76 A77 A78 A79 A8 A80 A81 A82 A83 A84 A85 A86 A87 A88 A89 A9 A90 A91 A93 A94 A95 A96 A97 A98 A99 AA AB ACR ACT AD AE AH AI AK AL AMH AMP ANN APZ AQ ARE AS ASM ASU ATM ATT AY AZ B1 B10 B11 B12 B13 B14 B15 B16 B17 B18 B19 B20 B21 B22 B23 B24 B25 B26 B27 B28 B29 B3 B30 B31 B32 B33 B34 B35 B36 B37 B38 B39 B4 B40 B41 B42 B43 B44 B45 B46 B47 B48 B49 B50 B51 B52 B53 B54 B55 B56 B57 B58 B59 B60 B61 B62 B63 B64 B65 B66 B67 B68 B69 B7 B70 B71 B72 B73 B74 B75 B76 B77 B78 B79 B8 B80 B81 B82 B83 B84 B85 B86 B87 B88 B89 B90 B91 B92 B93 B94 B95 B96 B97 B98 B99 BAR BB BFT BHP BIL BLD BLL BP BQL BTU BUA BUI C0 C10 C11 C12 C13 C14 C15 C16 C17 C18 C19 C20 C21 C22 C23 C24 C25 C26 C27 C28 C29 C3 C30 C31 C32 C33 C34 C35 C36 C37 C38 C39 C40 C41 C42 C43 C44 C45 C46 C47 C48 C49 C50 C51 C52 C53 C54 C55 C56 C57 C58 C59 C60 C61 C62 C63 C64 C65 C66 C67 C68 C69 C7 C70 C71 C72 C73 C74 C75 C76 C78 C79 C8 C80 C81 C82 C83 C84 C85 C86 C87 C88 C89 C9 C90 C91 C92 C93 C94 C95 C96 C97 C99 CCT CDL CEL CEN CG CGM CKG CLF CLT CMK CMQ CMT CNP CNT COU CTG CTM CTN CUR CWA CWI D03 D04 D1 D10 D11 D12 D13 D15 D16 D17 D18 D19 D2 D20 D21 D22 D23 D24 D25 D26 D27 D29 D30 D31 D32 D33 D34 D35 D36 D37 D38 D39 D41 D42 D43 D44 D45 D46 D47 D48 D49 D5 D50 D51 D52 D53 D54 D55 D56 D57 D58 D59 D6 D60 D61 D62 D63 D65 D68 D69 D70 D71 D72 D73 D74 D75 D76 D77 D78 D80 D81 D82 D83 D85 D86 D87 D88 D89 D9 D91 D93 D94 D95 DAA DAD DAY DB DD DEC DG DJ DLT DMA DMK DMO DMQ DMT DN DPC DPR DPT DRA DRI DRL DT DTN DU DWT DX DZN DZP E01 E07 E08 E09 E10 E11 E12 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E25 E27 E28 E30 E31 E32 E33 E34 E35 E36 E37 E38 E39 E4 E40 E41 E42 E43 E44 E45 E46 E47 E48 E49 E50 E51 E52 E53 E54 E55 E56 E57 E58 E59 E60 E61 E62 E63 E64 E65 E66 E67 E68 E69 E70 E71 E72 E73 E74 E75 E76 E77 E78 E79 E80 E81 E82 E83 E84 E85 E86 E87 E88 E89 E90 E91 E92 E93 E94 E95 E96 E97 E98 E99 EA EB EQ F01 F02 F03 F04 F05 F06 F07 F08 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 F30 F31 F32 F33 F34 F35 F36 F37 F38 F39 F40 F41 F42 F43 F44 F45 F46 F47 F48 F49 F50 F51 F52 F53 F54 F55 F56 F57 F58 F59 F60 F61 F62 F63 F64 F65 F66 F67 F68 F69 F70 F71 F72 F73 F74 F75 F76 F77 F78 F79 F80 F81 F82 F83 F84 F85 F86 F87 F88 F89 F90 F91 F92 F93 F94 F95 F96 F97 F98 F99 FAH FAR FBM FC FF FH FIT FL FOT FP FR FS FTK FTQ G01 G04 G05 G06 G08 G09 G10 G11 G12 G13 G14 G15 G16 G17 G18 G19 G2 G20 G21 G23 G24 G25 G26 G27 G28 G29 G3 G30 G31 G32 G33 G34 G35 G36 G37 G38 G39 G40 G41 G42 G43 G44 G45 G46 G47 G48 G49 G50 G51 G52 G53 G54 G55 G56 G57 G58 G59 G60 G61 G62 G63 G64 G65 G66 G67 G68 G69 G70 G71 G72 G73 G74 G75 G76 G77 G78 G79 G80 G81 G82 G83 G84 G85 G86 G87 G88 G89 G90 G91 G92 G93 G94 G95 G96 G97 G98 G99 GB GBQ GDW GE GF GFI GGR GIA GIC GII GIP GJ GL GLD GLI GLL GM GO GP GQ GRM GRN GRO GRT GT GV GWH H03 H04 H05 H06 H07 H08 H09 H10 H11 H12 H13 H14 H15 H16 H18 H19 H20 H21 H22 H23 H24 H25 H26 H27 H28 H29 H30 H31 H32 H33 H34 H35 H36 H37 H38 H39 H40 H41 H42 H43 H44 H45 H46 H47 H48 H49 H50 H51 H52 H53 H54 H55 H56 H57 H58 H59 H60 H61 H62 H63 H64 H65 H66 H67 H68 H69 H70 H71 H72 H73 H74 H75 H76 H77 H78 H79 H80 H81 H82 H83 H84 H85 H87 H88 H89 H90 H91 H92 H93 H94 H95 H96 H98 H99 HA HAR HBA HBX HC HDW HEA HGM HH HIU HJ HKM HLT HM HMQ HMT HN HP HPA HTZ HUR IA IE INH INK INQ ISD IU IV J10 J12 J13 J14 J15 J16 J17 J18 J19 J2 J20 J21 J22 J23 J24 J25 J26 J27 J28 J29 J30 J31 J32 J33 J34 J35 J36 J38 J39 J40 J41 J42 J43 J44 J45 J46 J47 J48 J49 J50 J51 J52 J53 J54 J55 J56 J57 J58 J59 J60 J61 J62 J63 J64 J65 J66 J67 J68 J69 J70 J71 J72 J73 J74 J75 J76 J78 J79 J81 J82 J83 J84 J85 J87 J89 J90 J91 J92 J93 J94 J95 J96 J97 J98 J99 JE JK JM JNT JOU JPS JWL K1 K10 K11 K12 K13 K14 K15 K16 K17 K18 K19 K2 K20 K21 K22 K23 K24 K25 K26 K27 K28 K3 K30 K31 K32 K33 K34 K35 K36 K37 K38 K39 K40 K41 K42 K43 K45 K46 K47 K48 K49 K5 K50 K51 K52 K53 K54 K55 K58 K59 K6 K60 K61 K62 K63 K64 K65 K66 K67 K68 K69 K70 K71 K73 K74 K75 K76 K77 K78 K79 K80 K81 K82 K83 K84 K85 K86 K87 K88 K89 K90 K91 K92 K93 K94 K95 K96 K97 K98 K99 KA KAT KB KBA KCC KDW KEL KGM KGS KHY KHZ KI KIC KIP KJ KJO KL KLK KLX KMA KMH KMK KMQ KMT KNI KNS KNT KO KPA KPH KPO KPP KR KSD KSH KT KTN KUR KVA KVR KVT KW KWH KWO KWT KX L10 L11 L12 L13 L14 L15 L16 L17 L18 L19 L2 L20 L21 L23 L24 L25 L26 L27 L28 L29 L30 L31 L32 L33 L34 L35 L36 L37 L38 L39 L40 L41 L42 L43 L44 L45 L46 L47 L48 L49 L50 L51 L52 L53 L54 L55 L56 L57 L58 L59 L60 L63 L64 L65 L66 L67 L68 L69 L70 L71 L72 L73 L74 L75 L76 L77 L78 L79 L80 L81 L82 L83 L84 L85 L86 L87 L88 L89 L90 L91 L92 L93 L94 L95 L96 L98 L99 LA LAC LBR LBT LD LEF LF LH LK LM LN LO LP LPA LR LS LTN LTR LUB LUM LUX LY M1 M10 M11 M12 M13 M14 M15 M16 M17 M18 M19 M20 M21 M22 M23 M24 M25 M26 M27 M29 M30 M31 M32 M33 M34 M35 M36 M37 M38 M39 M4 M40 M41 M42 M43 M44 M45 M46 M47 M48 M49 M5 M50 M51 M52 M53 M55 M56 M57 M58 M59 M60 M61 M62 M63 M64 M65 M66 M67 M68 M69 M7 M70 M71 M72 M73 M74 M75 M76 M77 M78 M79 M80 M81 M82 M83 M84 M85 M86 M87 M88 M89 M9 M90 M91 M92 M93 M94 M95 M96 M97 M98 M99 MAH MAL MAM MAR MAW MBE MBF MBR MC MCU MD MGM MHZ MIK MIL MIN MIO MIU MLD MLT MMK MMQ MMT MND MON MPA MQH MQS MSK MTK MTQ MTR MTS MVA MWH N1 N10 N11 N12 N13 N14 N15 N16 N17 N18 N19 N20 N21 N22 N23 N24 N25 N26 N27 N28 N29 N3 N30 N31 N32 N33 N34 N35 N36 N37 N38 N39 N40 N41 N42 N43 N44 N45 N46 N47 N48 N49 N50 N51 N52 N53 N54 N55 N56 N57 N58 N59 N60 N61 N62 N63 N64 N65 N66 N67 N68 N69 N70 N71 N72 N73 N74 N75 N76 N77 N78 N79 N80 N81 N82 N83 N84 N85 N86 N87 N88 N89 N90 N91 N92 N93 N94 N95 N96 N97 N98 N99 NA NAR NCL NEW NF NIL NIU NL NMI NMP NPR NPT NQ NR NT NTT NU NX OA ODE OHM ON ONZ OT OZ OZA OZI P1 P10 P11 P12 P13 P14 P15 P16 P17 P18 P19 P2 P20 P21 P22 P23 P24 P25 P26 P27 P28 P29 P30 P31 P32 P33 P34 P35 P36 P37 P38 P39 P40 P41 P42 P43 P44 P45 P46 P47 P48 P49 P5 P50 P51 P52 P53 P54 P55 P56 P57 P58 P59 P60 P61 P62 P63 P64 P65 P66 P67 P68 P69 P70 P71 P72 P73 P74 P75 P76 P77 P78 P79 P80 P81 P82 P83 P84 P85 P86 P87 P88 P89 P90 P91 P92 P93 P94 P95 P96 P97 P98 P99 PAL PD PFL PGL PI PLA PO PQ PR PS PT PTD PTI PTL Q10 Q11 Q12 Q13 Q14 Q15 Q16 Q17 Q18 Q19 Q20 Q21 Q22 Q23 Q24 Q25 Q26 Q27 Q28 Q3 QA QAN QB QR QT QTD QTI QTL QTR R1 R9 RH RM ROM RP RPM RPS RT S3 S4 SAN SCO SCR SEC SET SG SHT SIE SMI SQ SQR SR STC STI STK STL STN STW SW SX SYR T0 T3 TAH TAN TI TIC TIP TKM TMS TNE TP TPR TQD TRL TST TTS U1 U2 UA UB UC VA VLT VP W2 WA WB WCD WE WEB WEE WG WHR WM WSD WTT WW X1 YDK YDQ YRD Z11 ZP ZZ X43 X44 X1A X1B X1D X1F X1G X1W X2C X3A X3H X4A X4B X4C X4D X4F X4G X4H X5H X5L X5M X6H X6P X7A X7B X8A X8B X8C XAA XAB XAC XAD XAE XAF XAG XAH XAI XAJ XAL XAM XAP XAT XAV XB4 XBA XBB XBC XBD XBE XBF XBG XBH XBI XBJ XBK XBL XBM XBN XBO XBP XBQ XBR XBS XBT XBU XBV XBW XBX XBY XBZ XCA XCB XCC XCD XCE XCF XCG XCH XCI XCJ XCK XCL XCM XCN XCO XCP XCQ XCR XCS XCT XCU XCV XCW XCX XCY XCZ XDA XDB XDC XDG XDH XDI XDJ XDK XDL XDM XDN XDP XDR XDS XDT XDU XDV XDW XDX XDY XEC XED XEE XEF XEG XEH XEI XEN XFB XFC XFD XFE XFI XFL XFO XFP XFR XFT XFW XFX XGB XGI XGL XGR XGU XGY XGZ XHA XHB XHC XHG XHN XHR XIA XIB XIC XID XIE XIF XIG XIH XIK XIL XIN XIZ XJB XJC XJG XJR XJT XJY XKG XKI XLE XLG XLT XLU XLV XLZ XMA XMB XMC XME XMR XMS XMT XMW XMX XNA XNE XNF XNG XNS XNT XNU XNV XOA XOB XOC XOD XOE XOF XOK XOT XOU XP2 XPA XPB XPC XPD XPE XPF XPG XPH XPI XPJ XPK XPL XPN XPO XPP XPR XPT XPU XPV XPX XPY XPZ XQA XQB XQC XQD XQF XQG XQH XQJ XQK XQL XQM XQN XQP XQQ XQR XQS XRD XRG XRJ XRK XRL XRO XRT XRZ XSA XSB XSC XSD XSE XSH XSI XSK XSL XSM XSO XSP XSS XST XSU XSV XSW XSY XSZ XT1 XTB XTC XTD XTE XTG XTI XTK XTL XTN XTO XTR XTS XTT XTU XTV XTW XTY XTZ XUC XUN XVA XVG XVI XVK XVL XVN XVO XVP XVQ XVR XVS XVY XWA XWB XWC XWD XWF XWG XWH XWJ XWK XWL XWM XWN XWP XWQ XWR XWS XWT XWU XWV XWW XWX XWY XWZ XXA XXB XXC XXD XXF XXG XXH XXJ XXK XYA XYB XYC XYD XYF XYG XYH XYJ XYK XYL XYM XYN XYP XYQ XYR XYS XYT XYV XYW XYX XYY XYZ XZA XZB XZC XZD XZF XZG XZH XZJ XZK XZL XZM XZN XZP XZQ XZR XZS XZT XZU XZV XZW XZX XZY XZZ ', concat(' ', normalize-space(.), ' '))))">[BR-CL-23]-Unit code MUST be coded according to the UN/ECE Recommendation 20 with Rec 21 extension</assert>
+    </rule>
+    <rule flag="fatal" context="@mimeCode">
+      <assert id="BR-CL-24" flag="fatal" test="((. = 'application/pdf' or . = 'image/png' or . = 'image/jpeg' or . = 'text/csv' or . = 'application/vnd.openxmlformats-officedocument. spreadsheetml.sheet' or . = 'application/vnd.oasis.opendocument.spreadsheet'))">[BR-CL-24]-For Mime code in attribute use MIMEMediaType.</assert>
+    </rule>
+    <rule flag="fatal" context="ram:URIUniversalCommunication/ram:URIID[@schemeID]">
+      <assert id="BR-CL-25" flag="fatal" test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0002 0007 0009 0037 0060 0088 0096 0097 0106 0135 0142 0151 0183 0184 0190 0191 0192 0193 0195 0196 0198 0199 0200 0201 0202 9901 9902 9904 9905 9906 9907 9910 9913 9914 9915 9917 9918 9919 9920 9921 9922 9923 9924 9925 9926 9927 9928 9929 9930 9931 9932 9933 9934 9935 9936 9937 9938 9939 9940 9941 9942 9943 9944 9945 9946 9947 9948 9949 9950 9951 9952 9953 9955 9956 9957 9958 AN AQ AS AU EM ', concat(' ', normalize-space(@schemeID), ' '))))">[BR-CL-25]-Endpoint identifier scheme identifier MUST belong to the CEF EAS code list</assert>
+    </rule>
+  </pattern>
+</schema>
