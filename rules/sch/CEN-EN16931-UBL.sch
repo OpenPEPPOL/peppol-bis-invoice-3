@@ -1,1373 +1,1196 @@
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-  <link rel="dns-prefetch" href="https://github.githubassets.com">
-  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
-  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
-
-
-
-  <link crossorigin="anonymous" media="all" integrity="sha512-lEwNhIgWxFtdGboTlCciWWGiX2vG3LOojEE671oRJEhnPj6jpmgQTJtpq3O2KBzCcln6RzwfvHlyFaI/oR+RNQ==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-849637ecbd4bd65815cc113d80fee2d4.css" />
-  
-    <link crossorigin="anonymous" media="all" integrity="sha512-ZIVQ5xH4xRPgEBzl7RRQebsfNJcuNt4tdhboEnRhGSGhyXVESRTxdb9W439oH0MeqADdj5gxaLCLmHYTlOXqtw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-765e7332c1c58bca34b5cadb2351d4d4.css" />
-    
-    
-    
-    
-
-  <meta name="viewport" content="width=device-width">
-  
-  <title>eInvoicing-EN16931/EN16931-UBL-validation.sch at master · ConnectingEurope/eInvoicing-EN16931</title>
-    <meta name="description" content="Validation artefacts for the European eInvoicing standard EN 16931 - ConnectingEurope/eInvoicing-EN16931">
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-  <meta property="fb:app_id" content="1401488693436528">
-
-    <meta name="twitter:image:src" content="https://avatars0.githubusercontent.com/u/52830282?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="ConnectingEurope/eInvoicing-EN16931" /><meta name="twitter:description" content="Validation artefacts for the European eInvoicing standard EN 16931 - ConnectingEurope/eInvoicing-EN16931" />
-    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/52830282?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="ConnectingEurope/eInvoicing-EN16931" /><meta property="og:url" content="https://github.com/ConnectingEurope/eInvoicing-EN16931" /><meta property="og:description" content="Validation artefacts for the European eInvoicing standard EN 16931 - ConnectingEurope/eInvoicing-EN16931" />
-
-  <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDQ2NjMxMTc1OjA0MWRhNWIwN2VkZGY2MWYwY2JjMjFjZTY1ODE1Yzk4YTg4NjdiOTNlNzk1YmQ1MGQzNjUzNjMzYmI2MGY4YmM=--bd4741b33617e2dfd78715339e0f4dcb41bd3077">
-  <meta name="pjax-timeout" content="1000">
-  <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="FAA3:156A7:20CB505:324C19A:5D90FC87" data-pjax-transient>
-
-
-  
-
-  <meta name="selected-link" value="repo_source" data-pjax-transient>
-
-      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
-    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
-    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
-
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="FAA3:156A7:20CB505:324C19A:5D90FC87" /><meta name="octolytics-dimension-region_edge" content="ams" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="1551269402070043876" /><meta name="octolytics-actor-id" content="4922787" /><meta name="octolytics-actor-login" content="midran" /><meta name="octolytics-actor-hash" content="780466abbca54a453464fbb2ae19cc76ebb7b43ce00fa704837215277b7182c4" />
-<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
-
-
-
-    <meta name="google-analytics" content="UA-3769691-2">
-
-  <meta class="js-ga-set" name="userId" content="6333cdb450ad10b3384171b245eee3e6">
-
-<meta class="js-ga-set" name="dimension1" content="Logged In">
-
-
-
-  
-
-      <meta name="hostname" content="github.com">
-    <meta name="user-login" content="midran">
-
-      <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="YjZmMGMwODI5N2EwN2ZlMGVlYjg4NDMxODEzYjAyNDBlZDVkZDllNTZmODc5ZjU1MWEzODM3ZTViM2ViODJmMXx7InJlbW90ZV9hZGRyZXNzIjoiMTk0LjE0NC4zLjYxIiwicmVxdWVzdF9pZCI6IkZBQTM6MTU2QTc6MjBDQjUwNTozMjRDMTlBOjVEOTBGQzg3IiwidGltZXN0YW1wIjoxNTY5NzgyOTc3LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
-
-    <meta name="enabled-features" content="ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
-
-  <meta name="html-safe-nonce" content="5135ad3ae98cc0fe181eb56febb2b6fd13cbd3e9">
-
-  <meta http-equiv="x-pjax-version" content="8ae50ecd04a45a3167125c02d6725191">
-  
-
-      <link href="https://github.com/ConnectingEurope/eInvoicing-EN16931/commits/master.atom" rel="alternate" title="Recent Commits to eInvoicing-EN16931:master" type="application/atom+xml">
-
-  <meta name="go-import" content="github.com/ConnectingEurope/eInvoicing-EN16931 git https://github.com/ConnectingEurope/eInvoicing-EN16931.git">
-
-  <meta name="octolytics-dimension-user_id" content="52830282" /><meta name="octolytics-dimension-user_login" content="ConnectingEurope" /><meta name="octolytics-dimension-repository_id" content="50507125" /><meta name="octolytics-dimension-repository_nwo" content="ConnectingEurope/eInvoicing-EN16931" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="50507125" /><meta name="octolytics-dimension-repository_network_root_nwo" content="ConnectingEurope/eInvoicing-EN16931" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
-
-
-    <link rel="canonical" href="https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/ubl/schematron/EN16931-UBL-validation.sch" data-pjax-transient>
-
-
-  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
-
-  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
-
-  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
-
-<meta name="theme-color" content="#1e2327">
-
-
-
-  <meta name="webauthn-auth-enabled" content="true">
-
-  <meta name="webauthn-registration-enabled" content="true">
-
-  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
-
-  </head>
-
-  <body class="logged-in env-production page-responsive page-blob">
-    
-
-  <div class="position-relative js-header-wrapper ">
-    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
-    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
-
-    
-    
-    
-
-
-          <header class="Header js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
-
-    <div class="Header-item d-none d-lg-flex">
-      <a class="Header-link" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
-  <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-</a>
-
-    </div>
-
-    <div class="Header-item d-lg-none">
-      <button class="Header-link btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
-        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
-      </button>
-    </div>
-
-    <div class="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
-        <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
-  role="combobox"
-  aria-owns="jump-to-results"
-  aria-label="Search or jump to"
-  aria-haspopup="listbox"
-  aria-expanded="false"
->
-  <div class="position-relative">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="50507125" data-scoped-search-url="/ConnectingEurope/eInvoicing-EN16931/search" data-unscoped-search-url="/search" action="/ConnectingEurope/eInvoicing-EN16931/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
-        <input type="text"
-          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
-          data-hotkey="s,/"
-          name="q"
-          value=""
-          placeholder="Search or jump to…"
-          data-unscoped-placeholder="Search or jump to…"
-          data-scoped-placeholder="Search or jump to…"
-          autocapitalize="off"
-          aria-autocomplete="list"
-          aria-controls="jump-to-results"
-          aria-label="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=3S3DJK7yoNecP+Ppw1I20XFhnu7Dr/tPJ0eMp7giP4hRTCFVsJz2HTlLKsimuRCV6QVm0bLZKWMwx8hFzVayUg=="
-          spellcheck="false"
-          autocomplete="off"
-          >
-          <input type="hidden" class="js-site-search-type-field" name="type" >
-            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
-
-            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
-              
-<ul class="d-none js-jump-to-suggestions-template-container">
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
-        In this repository
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-</ul>
-
-<ul class="d-none js-jump-to-no-results-template-container">
-  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
-    <span class="text-gray">No suggested jump to results</span>
-  </li>
-</ul>
-
-<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
-        In this repository
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-  
-
-<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
-  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
-    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
-      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
-      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
-    </div>
-
-    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
-
-    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
-    </div>
-
-    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
-      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
-        In this repository
-      </span>
-      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
-        All GitHub
-      </span>
-      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-
-    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
-      Jump to
-      <span class="d-inline-block ml-1 v-align-middle">↵</span>
-    </div>
-  </a>
-</li>
-
-
-    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
-      <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
-    </li>
-</ul>
-
-            </div>
-      </label>
-</form>  </div>
-</div>
-
-
-      <nav class="d-flex flex-column flex-lg-row flex-self-stretch flex-lg-self-auto" aria-label="Global">
-    <a class="Header-link d-block d-lg-none py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:dashboard:user" aria-label="Dashboard" href="/dashboard">
-      Dashboard
-</a>
-  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
-    Pull requests
-</a>
-  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
-    Issues
-</a>
-    <div class="mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15">
-      <a class="js-selected-navigation-item Header-link" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
-        Marketplace
-</a>      
-
-    </div>
-
-  <a class="js-selected-navigation-item Header-link  mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
-    Explore
-</a>
-
-
-    <a class="Header-link d-block d-lg-none mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15" href="https://github.com/midran">
-      <img class="avatar" height="20" width="20" alt="@midran" src="https://avatars2.githubusercontent.com/u/4922787?s=60&amp;v=4" />
-      midran
-</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="wOEgEBB9NZ95+ZAQ6yoxOOmuOVSnaP6xpx8VApEiIXoMwCvxrydDLCWYCAXbcN00uWpJhEjogeV2mLVk/jgYRQ==" />
-      <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
-        <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
-        Sign out
-      </button>
-</form></nav>
-
-    </div>
-
-    <div class="Header-item Header-item--full flex-justify-center d-lg-none position-relative">
-      <div class="css-truncate css-truncate-target width-fit position-absolute left-0 right-0 text-center">
-              <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-    <a class="Header-link" href="/ConnectingEurope">ConnectingEurope</a>
-    /
-    <a class="Header-link" href="/ConnectingEurope/eInvoicing-EN16931">eInvoicing-EN16931</a>
-
-</div>
-    </div>
-
-
-    <div class="Header-item mr-0 mr-lg-3 flex-order-1 flex-lg-order-none">
-      
-
-    <a aria-label="You have unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-s js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:unread" data-channel="notification-changed:4922787" href="/notifications">
-        <span class="mail-status unread"></span>
-        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
-</a>
-    </div>
-
-
-    <div class="Header-item position-relative d-none d-lg-flex">
-      <details class="details-overlay details-reset">
-  <summary class="Header-link"
-      aria-label="Create new…"
-      data-ga-click="Header, create new, icon:add">
-    <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg> <span class="dropdown-caret"></span>
-  </summary>
-  <details-menu class="dropdown-menu dropdown-menu-sw">
-    
-<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
-  New repository
-</a>
-
-  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
-    Import repository
-  </a>
-
-<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
-  New gist
-</a>
-
-  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
-    New organization
-  </a>
-
-
-  <div role="none" class="dropdown-divider"></div>
-  <div class="dropdown-header">
-    <span title="ConnectingEurope/eInvoicing-EN16931">This repository</span>
-  </div>
-    <a role="menuitem" class="dropdown-item" href="/ConnectingEurope/eInvoicing-EN16931/issues/new" data-ga-click="Header, create new issue" data-skip-pjax>
-      New issue
-    </a>
-
-
-  </details-menu>
-</details>
-
-    </div>
-
-    <div class="Header-item position-relative mr-0 d-none d-lg-flex">
-      
-<details class="details-overlay details-reset">
-  <summary class="Header-link"
-    aria-label="View profile and more"
-    data-ga-click="Header, show menu, icon:avatar">
-    <img alt="@midran" class="avatar" src="https://avatars1.githubusercontent.com/u/4922787?s=40&amp;v=4" height="20" width="20">
-    <span class="dropdown-caret"></span>
-  </summary>
-  <details-menu class="dropdown-menu dropdown-menu-sw mt-2" style="width: 180px">
-    <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/midran" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">midran</strong></a></div>
-    <div role="none" class="dropdown-divider"></div>
-
-      <div class="pl-3 pr-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
-        
-<div class="js-user-status-container
-    user-status-compact rounded-1 px-2 py-1 mt-2
-    border
-  " data-team-hovercards-enabled>
-  <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
-    <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
-      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:52830282,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:4922787,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CB505:324C19A:5D90FC87&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/ubl/schematron/EN16931-UBL-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/ubl/schematron&quot;}}" data-hydro-click-hmac="b99025ab02f9e49ccca4a9555b68cb3947642c1cb1abe20972b5a50e9f1641bc">
-      <div class="d-flex">
-        <div class="f6 lh-condensed user-status-header
-          d-inline-block v-align-middle
-            user-status-emoji-only-header circle
-            pr-2
-"
-            style="max-width: 29px"
-          >
-          <div class="user-status-emoji-container flex-shrink-0 mr-1 mt-1 lh-condensed-ultra v-align-bottom" style="">
-            <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
-          </div>
-        </div>
-        <div class="
-          d-inline-block v-align-middle
-          
-          
-           css-truncate css-truncate-target 
-           user-status-message-wrapper f6"
-           style="line-height: 20px;" >
-          <div class="d-inline-block text-gray-dark v-align-text-top text-left">
-              <span class="text-gray ml-2">Set status</span>
-          </div>
-        </div>
-      </div>
-    </summary>
-    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="NzH4u8UqmzlUR0uNoTwGdfBkuEOCSNHvcWAz1Isl1sCTNYg19yIaPewmcJK1Kl/R+RTfW20Ytl4G6lYipNM+oQ==" />
-        <div class="Box-header bg-gray border-bottom p-3">
-          <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
-            <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-          </button>
-          <h3 class="Box-title f5 text-bold text-gray-dark">Edit status</h3>
-        </div>
-        <input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
-        <input type="hidden" name="organization_id" class="js-user-status-org-id-field" value="">
-        <div class="px-3 py-2 text-gray-dark">
-          <div class="js-characters-remaining-container position-relative mt-2">
-            <div class="input-group d-table form-group my-0 js-user-status-form-group">
-              <span class="input-group-button d-table-cell v-align-middle" style="width: 1%">
-                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker btn-open-emoji-picker p-0">
-                  <span class="js-user-status-original-emoji" hidden></span>
-                  <span class="js-user-status-custom-emoji"></span>
-                  <span class="js-user-status-no-emoji-icon" >
-                    <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
-                  </span>
-                </button>
-              </span>
-              <text-expander keys=": @" data-mention-url="/autocomplete/user-suggestions" data-emoji-url="/autocomplete/emoji">
-                <input
-                  type="text"
-                  autocomplete="off"
-                  data-no-org-url="/autocomplete/user-suggestions"
-                  data-org-url="/suggestions?mention_suggester=1"
-                  data-maxlength="80"
-                  class="d-table-cell width-full form-control js-user-status-message-field js-characters-remaining-field"
-                  placeholder="What's happening?"
-                  name="message"
-                  value=""
-                  aria-label="What is your current status?">
-              </text-expander>
-              <div class="error">Could not update your status, please try again.</div>
-            </div>
-            <div style="margin-left: 53px" class="my-1 text-small label-characters-remaining js-characters-remaining" data-suffix="remaining" hidden>
-              80 remaining
-            </div>
-          </div>
-          <include-fragment class="js-user-status-emoji-picker" data-url="/users/status/emoji"></include-fragment>
-          <div class="overflow-auto ml-n3 mr-n3 px-3 border-bottom" style="max-height: 33vh">
-            <div class="user-status-suggestions js-user-status-suggestions collapsed overflow-hidden">
-              <h4 class="f6 text-normal my-3">Suggestions:</h4>
-              <div class="mx-3 mt-2 clearfix">
-                  <div class="float-left col-6">
-                      <button type="button" value=":palm_tree:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
-                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
-                        </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
-                          On vacation
-                        </div>
-                      </button>
-                      <button type="button" value=":face_with_thermometer:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
-                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
-                        </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
-                          Out sick
-                        </div>
-                      </button>
-                  </div>
-                  <div class="float-left col-6">
-                      <button type="button" value=":house:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
-                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
-                        </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
-                          Working from home
-                        </div>
-                      </button>
-                      <button type="button" value=":dart:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
-                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
-                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
-                        </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
-                          Focusing
-                        </div>
-                      </button>
-                  </div>
-              </div>
-            </div>
-            <div class="user-status-limited-availability-container">
-              <div class="form-checkbox my-0">
-                <input type="checkbox" name="limited_availability" value="1" class="js-user-status-limited-availability-checkbox" data-default-message="I may be slow to respond." aria-describedby="limited-availability-help-text-truncate-true-compact-true" id="limited-availability-truncate-true-compact-true">
-                <label class="d-block f5 text-gray-dark mb-1" for="limited-availability-truncate-true-compact-true">
-                  Busy
-                </label>
-                <p class="note" id="limited-availability-help-text-truncate-true-compact-true">
-                  When others mention you, assign you, or request your review,
-                  GitHub will let them know that you have limited availability.
-                </p>
-              </div>
-            </div>
-          </div>
-            
-
-<div class="d-inline-block f5 mr-2 pt-3 pb-2" >
-  <div class="d-inline-block mr-1">
-    Clear status
-  </div>
-
-  <details class="js-user-status-expire-drop-down f6 dropdown details-reset details-overlay d-inline-block mr-2">
-    <summary class="f5 btn-link link-gray-dark border px-2 py-1 rounded-1" aria-haspopup="true">
-      <div class="js-user-status-expiration-interval-selected d-inline-block v-align-baseline">
-        Never
-      </div>
-      <div class="dropdown-caret"></div>
-    </summary>
-
-    <ul class="dropdown-menu dropdown-menu-se pl-0 overflow-auto" style="width: 220px; max-height: 15.5em">
-      <li>
-        <button type="button" class="btn-link dropdown-item js-user-status-expire-button ws-normal" title="Never">
-          <span class="d-inline-block text-bold mb-1">Never</span>
-          <div class="f6 lh-condensed">Keep this status until you clear your status or edit your status.</div>
-        </button>
-      </li>
-      <li class="dropdown-divider" role="none"></li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-09-29T19:19:37+00:00">
-            in 30 minutes
-          </button>
-        </li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-09-29T19:49:37+00:00">
-            in 1 hour
-          </button>
-        </li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-09-29T22:49:37+00:00">
-            in 4 hours
-          </button>
-        </li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="today" value="2019-09-29T23:59:59+00:00">
-            today
-          </button>
-        </li>
-        <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="this week" value="2019-09-29T23:59:59+00:00">
-            this week
-          </button>
-        </li>
-    </ul>
-  </details>
-  <input class="js-user-status-expiration-date-input" type="hidden" name="expires_at" value="">
-</div>
-
-          <include-fragment class="js-user-status-org-picker" data-url="/users/status/organizations"></include-fragment>
-        </div>
-        <div class="d-flex flex-items-center flex-justify-between p-3 border-top">
-          <button type="submit" disabled class="width-full btn btn-primary mr-2 js-user-status-submit">
-            Set status
-          </button>
-          <button type="button" disabled class="width-full js-clear-user-status-button btn ml-2 ">
-            Clear status
-          </button>
-        </div>
-</form>    </details-dialog>
-  </details>
-</div>
-
-      </div>
-      <div role="none" class="dropdown-divider"></div>
-
-
-    <a role="menuitem" class="dropdown-item" href="/midran" data-ga-click="Header, go to profile, text:your profile">Your profile</a>
-
-
-    <a role="menuitem" class="dropdown-item" href="/midran?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a>
-
-    <a role="menuitem" class="dropdown-item" href="/midran?tab=projects" data-ga-click="Header, go to projects, text:your projects">Your projects</a>
-
-    <a role="menuitem" class="dropdown-item" href="/midran?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a>
-      <a role="menuitem" class="dropdown-item" href="https://gist.github.com/mine" data-ga-click="Header, your gists, text:your gists">Your gists</a>
-
-
-    <div role="none" class="dropdown-divider"></div>
-    <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
-    <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="XNYj6RIu21sY+mStLQTJHvwFUZuXPyMTA9qN5CLu3h2Q9ygIrXSt6ESb/LgdXiUSrMEhS3i/XEfSXS2CTfTnIg==" />
-      
-      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
-        Sign out
-      </button>
-</form>  </details-menu>
-</details>
-
-    </div>
-
-  </header>
-
-      
-
-  </div>
-
-  <div id="start-of-content" class="show-on-focus"></div>
-
-
-    <div id="js-flash-container">
-
-</div>
-
-
-
-  <div class="application-main " data-commit-hovercards-enabled>
-        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
-    <main  >
-      
-
-
-  
-
-
-
-
-
-
-
-
-
-
-  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-0 pt-lg-4 ">
-    <div class="repohead-details-container clearfix container-lg p-responsive d-none d-lg-block">
-
-      <ul class="pagehead-actions">
-
-
-
-
-  <li>
-    
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="8lkKEiFAe4BKFgi8mxTB9Os0CBflLd+3rm1r/y/eveJkY2Nd2mQo/SzhWMujz43dZE0O9ba9wpOhNvjfOXVWXQ==" />      <input type="hidden" name="repository_id" value="50507125">
-
-      <details class="details-reset details-overlay select-menu float-left">
-        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:50507125,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CB505:324C19A:5D90FC87&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/ubl/schematron/EN16931-UBL-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/ubl/schematron&quot;,&quot;user_id&quot;:4922787}}" data-hydro-click-hmac="3ed0e7fe17ecd42b82db3be2cd4d9ec58d92d6409df3819e3015b9c13f7a4805" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
-              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
-              Watch
-          </span>
-</summary>        <details-menu
-          class="select-menu-modal position-absolute mt-5"
-          style="z-index: 99;">
-          <div class="select-menu-header">
-            <span class="select-menu-title">Notifications</span>
-          </div>
-          <div class="select-menu-list">
-            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
-              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
-              <div class="select-menu-item-text">
-                <span class="select-menu-item-heading">Not watching</span>
-                <span class="description">Be notified only when participating or @mentioned.</span>
-                <span class="hidden-select-button-text" data-menu-button-contents>
-                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
-                  Watch
-                </span>
-              </div>
-            </button>
-
-            <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
-              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
-              <div class="select-menu-item-text">
-                <span class="select-menu-item-heading">Releases only</span>
-                <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
-                <span class="hidden-select-button-text" data-menu-button-contents>
-                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
-                  Unwatch releases
-                </span>
-              </div>
-            </button>
-
-            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
-              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
-              <div class="select-menu-item-text">
-                <span class="select-menu-item-heading">Watching</span>
-                <span class="description">Be notified of all conversations.</span>
-                <span class="hidden-select-button-text" data-menu-button-contents>
-                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
-                  Unwatch
-                </span>
-              </div>
-            </button>
-
-            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
-              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
-              <div class="select-menu-item-text">
-                <span class="select-menu-item-heading">Ignoring</span>
-                <span class="description">Never be notified.</span>
-                <span class="hidden-select-button-text" data-menu-button-contents>
-                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
-                  Stop ignoring
-                </span>
-              </div>
-            </button>
-          </div>
-        </details-menu>
-      </details>
-        <a class="social-count js-social-count"
-          href="/ConnectingEurope/eInvoicing-EN16931/watchers"
-          aria-label="19 users are watching this repository">
-          19
-        </a>
-</form>
-  </li>
-
-  <li>
-      <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/ConnectingEurope/eInvoicing-EN16931/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="JeSTy53+CqqG1ZjuxZhbghGCov9pC/W4vhoXUmX4r8L2atWf/CVV0pfCg54hJy8ESa309mSTQPPBITPHk05PPA==" />
-      <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar ConnectingEurope/eInvoicing-EN16931" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:50507125,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CB505:324C19A:5D90FC87&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/ubl/schematron/EN16931-UBL-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/ubl/schematron&quot;,&quot;user_id&quot;:4922787}}" data-hydro-click-hmac="747fa9326af3f05968dab3ad636cbd0faa5f8857c89bf7e60c1537f8a20663cd" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
-        Unstar
-</button>        <a class="social-count js-social-count" href="/ConnectingEurope/eInvoicing-EN16931/stargazers"
-           aria-label="17 users starred this repository">
-           17
-        </a>
-</form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/ConnectingEurope/eInvoicing-EN16931/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="YLAWyZafpwC8vE5esCmBQDuK1ueJOe5vIEHPPr+4v6ld9UIANxT1qMq6V9HE+t/suzGNAa/kKR5ViW4IuKXjog==" />
-      <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star ConnectingEurope/eInvoicing-EN16931" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:50507125,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CB505:324C19A:5D90FC87&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/ubl/schematron/EN16931-UBL-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/ubl/schematron&quot;,&quot;user_id&quot;:4922787}}" data-hydro-click-hmac="d85f6eebbe958a6a480abf18546c490401c282e688280e5fb996fa98f5b97c66" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
-        Star
-</button>        <a class="social-count js-social-count" href="/ConnectingEurope/eInvoicing-EN16931/stargazers"
-           aria-label="17 users starred this repository">
-          17
-        </a>
-</form>  </div>
-
-  </li>
-
-  <li>
-          <details class="details-reset details-overlay details-overlay-dark d-inline-block float-left">
-            <summary class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:50507125,&quot;client_id&quot;:&quot;361183053.1565609188&quot;,&quot;originating_request_id&quot;:&quot;FAA3:156A7:20CB505:324C19A:5D90FC87&quot;,&quot;originating_url&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/blob/master/ubl/schematron/EN16931-UBL-validation.sch&quot;,&quot;referrer&quot;:&quot;https://github.com/ConnectingEurope/eInvoicing-EN16931/tree/master/ubl/schematron&quot;,&quot;user_id&quot;:4922787}}" data-hydro-click-hmac="00bab3a7135aaa3ac8ba730845acca60436c33c69f7347b9ce2aed8df5c9e4bb" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of ConnectingEurope/eInvoicing-EN16931 to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
-              Fork
-</summary>            <details-dialog
-              class="anim-fade-in fast Box Box--overlay d-flex flex-column"
-              src="/ConnectingEurope/eInvoicing-EN16931/fork?fragment=1"
-              preload>
-              <div class="Box-header">
-                <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-                  <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-                </button>
-                <h3 class="Box-title">Fork eInvoicing-EN16931</h3>
-              </div>
-              <div class="overflow-auto text-center">
-                <include-fragment>
-                  <div class="octocat-spinner my-3" aria-label="Loading..."></div>
-                  <p class="f5 text-gray">If this dialog fails to load, you can visit <a href="/ConnectingEurope/eInvoicing-EN16931/fork">the fork page</a> directly.</p>
-                </include-fragment>
-              </div>
-            </details-dialog>
-          </details>
-
-    <a href="/ConnectingEurope/eInvoicing-EN16931/network/members" class="social-count"
-       aria-label="21 users forked this repository">
-      21
-    </a>
-  </li>
-</ul>
-
-      <h1 class="public ">
-    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=52830282" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/ConnectingEurope">ConnectingEurope</a></span><!--
---><span class="path-divider">/</span><!--
---><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/ConnectingEurope/eInvoicing-EN16931">eInvoicing-EN16931</a></strong>
-  
-
-</h1>
-
-    </div>
-    
-<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax container-lg p-responsive d-none d-lg-block"
-     itemscope
-     itemtype="http://schema.org/BreadcrumbList"
-    aria-label="Repository"
-     data-pjax="#js-repo-pjax-container">
-
-  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /ConnectingEurope/eInvoicing-EN16931" href="/ConnectingEurope/eInvoicing-EN16931">
-      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
-      <span itemprop="name">Code</span>
-      <meta itemprop="position" content="1">
-</a>  </span>
-
-    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /ConnectingEurope/eInvoicing-EN16931/issues" href="/ConnectingEurope/eInvoicing-EN16931/issues">
-        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
-        <span itemprop="name">Issues</span>
-        <span class="Counter">12</span>
-        <meta itemprop="position" content="2">
-</a>    </span>
-
-  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /ConnectingEurope/eInvoicing-EN16931/pulls" href="/ConnectingEurope/eInvoicing-EN16931/pulls">
-      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
-      <span itemprop="name">Pull requests</span>
-      <span class="Counter">1</span>
-      <meta itemprop="position" content="3">
-</a>  </span>
-
-
-    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /ConnectingEurope/eInvoicing-EN16931/projects" href="/ConnectingEurope/eInvoicing-EN16931/projects">
-      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
-      Projects
-      <span class="Counter" >0</span>
-</a>
-
-    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /ConnectingEurope/eInvoicing-EN16931/wiki" href="/ConnectingEurope/eInvoicing-EN16931/wiki">
-      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
-      Wiki
-</a>
-    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /ConnectingEurope/eInvoicing-EN16931/security/advisories" href="/ConnectingEurope/eInvoicing-EN16931/security/advisories">
-      <svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg>
-      Security
-</a>
-    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /ConnectingEurope/eInvoicing-EN16931/pulse" href="/ConnectingEurope/eInvoicing-EN16931/pulse">
-      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
-      Insights
-</a>
-
-</nav>
-
-  <div class="reponav-wrapper reponav-small d-lg-none">
-  <nav class="reponav js-reponav text-center no-wrap"
-       itemscope
-       itemtype="http://schema.org/BreadcrumbList">
-
-    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a class="js-selected-navigation-item selected reponav-item" itemprop="url" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /ConnectingEurope/eInvoicing-EN16931" href="/ConnectingEurope/eInvoicing-EN16931">
-        <span itemprop="name">Code</span>
-        <meta itemprop="position" content="1">
-</a>    </span>
-
-      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /ConnectingEurope/eInvoicing-EN16931/issues" href="/ConnectingEurope/eInvoicing-EN16931/issues">
-          <span itemprop="name">Issues</span>
-          <span class="Counter">12</span>
-          <meta itemprop="position" content="2">
-</a>      </span>
-
-    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /ConnectingEurope/eInvoicing-EN16931/pulls" href="/ConnectingEurope/eInvoicing-EN16931/pulls">
-        <span itemprop="name">Pull requests</span>
-        <span class="Counter">1</span>
-        <meta itemprop="position" content="3">
-</a>    </span>
-
-      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /ConnectingEurope/eInvoicing-EN16931/projects" href="/ConnectingEurope/eInvoicing-EN16931/projects">
-          <span itemprop="name">Projects</span>
-          <span class="Counter">0</span>
-          <meta itemprop="position" content="4">
-</a>      </span>
-
-      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_wiki /ConnectingEurope/eInvoicing-EN16931/wiki" href="/ConnectingEurope/eInvoicing-EN16931/wiki">
-          <span itemprop="name">Wiki</span>
-          <meta itemprop="position" content="5">
-</a>      </span>
-
-      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /ConnectingEurope/eInvoicing-EN16931/security/advisories" href="/ConnectingEurope/eInvoicing-EN16931/security/advisories">
-        <span itemprop="name">Security</span>
-        <meta itemprop="position" content="6">
-</a>
-      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /ConnectingEurope/eInvoicing-EN16931/pulse" href="/ConnectingEurope/eInvoicing-EN16931/pulse">
-        Pulse
-</a>
-      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="community /ConnectingEurope/eInvoicing-EN16931/community" href="/ConnectingEurope/eInvoicing-EN16931/community">
-          Community
-</a>      </span>
-
-  </nav>
-</div>
-
-
-  </div>
-<div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  p-responsive">
-  <div class="repository-content ">
-
-    
-    
-
-
-  
-
-
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/ConnectingEurope/eInvoicing-EN16931/blob/6499232cbe8947739a2899ca50e03fc6a014fc8c/ubl/schematron/EN16931-UBL-validation.sch">Permalink</a>
-
-    <!-- blob contrib key: blob_contributors:v21:e567c40730d1e141ca0ff175b6b565cb -->
-      
-
-    <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-column flex-md-row">
-      <span class="d-flex flex-justify-between width-full width-md-auto">
-        
-<details class="details-reset details-overlay select-menu branch-select-menu  hx_rsm" id="branch-select-menu">
-  <summary class="btn btn-sm select-menu-button css-truncate"
-           data-hotkey="w"
-           title="Switch branches or tags">
-    <i>Branch:</i>
-    <span class="css-truncate-target" data-menu-button>master</span>
-  </summary>
-
-  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/ConnectingEurope/eInvoicing-EN16931/ref-list/master/ubl/schematron/EN16931-UBL-validation.sch?source_action=show&amp;source_controller=blob" preload>
-    <include-fragment class="select-menu-loading-overlay anim-pulse">
-      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
-    </include-fragment>
-  </details-menu>
-</details>
-
-        <div class="BtnGroup flex-shrink-0 d-md-none">
-          <a href="/ConnectingEurope/eInvoicing-EN16931/find/master"
-                class="js-pjax-capture-input btn btn-sm BtnGroup-item"
-                data-pjax
-                data-hotkey="t">
-            Find file
-          </a>
-          <clipboard-copy value="ubl/schematron/EN16931-UBL-validation.sch" class="btn btn-sm BtnGroup-item">
-            Copy path
-          </clipboard-copy>
-        </div>
-      </span>
-      <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/ConnectingEurope/eInvoicing-EN16931"><span>eInvoicing-EN16931</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/ConnectingEurope/eInvoicing-EN16931/tree/master/ubl"><span>ubl</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/ConnectingEurope/eInvoicing-EN16931/tree/master/ubl/schematron"><span>schematron</span></a></span><span class="separator">/</span><strong class="final-path">EN16931-UBL-validation.sch</strong>
-      </h2>
-
-      <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
-        <a href="/ConnectingEurope/eInvoicing-EN16931/find/master"
-              class="js-pjax-capture-input btn btn-sm BtnGroup-item"
-              data-pjax
-              data-hotkey="t">
-          Find file
-        </a>
-        <clipboard-copy value="ubl/schematron/EN16931-UBL-validation.sch" class="btn btn-sm BtnGroup-item">
-          Copy path
-        </clipboard-copy>
-      </div>
-    </div>
-
-
-
-    <include-fragment src="/ConnectingEurope/eInvoicing-EN16931/contributors/master/ubl/schematron/EN16931-UBL-validation.sch" class="Box Box--condensed commit-loader">
-      <div class="Box-body bg-blue-light f6">
-        Fetching contributors&hellip;
-      </div>
-
-      <div class="Box-body d-flex flex-items-center" >
-          <img alt="" class="loader-loading mr-2" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
-        <span class="text-red h6 loader-error">Cannot retrieve contributors at this time</span>
-      </div>
-</include-fragment>
-
-
-
-
-    <div class="Box mt-3 position-relative">
-      
-<div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
-
-  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-      54 lines (47 sloc)
-      <span class="file-info-divider"></span>
-    2.58 KB
-  </div>
-
-  <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
-
-    <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/ConnectingEurope/eInvoicing-EN16931/raw/master/ubl/schematron/EN16931-UBL-validation.sch">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/ConnectingEurope/eInvoicing-EN16931/blame/master/ubl/schematron/EN16931-UBL-validation.sch">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/ConnectingEurope/eInvoicing-EN16931/commits/master/ubl/schematron/EN16931-UBL-validation.sch">History</a>
-    </div>
-
-
-    <div>
-            <a class="btn-octicon tooltipped tooltipped-nw hide-sm"
-               href="x-github-client://openRepo/https://github.com/ConnectingEurope/eInvoicing-EN16931?branch=master&amp;filepath=ubl%2Fschematron%2FEN16931-UBL-validation.sch"
-               aria-label="Open this file in GitHub Desktop"
-               data-ga-click="Repository, open with desktop, type:windows">
-                <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
-            </a>
-
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/ConnectingEurope/eInvoicing-EN16931/edit/master/ubl/schematron/EN16931-UBL-validation.sch" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="JBWk+0al0nSxi+UFtQ1U+R7V/r5Qg5SzrIjYhvFnOPU4ex+1Mhv/Vt0WxkrRR4aE8i/iRBRL6HU5CRtxSeEbug==" />
-              <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
-                aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
-                <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
-              </button>
-</form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/ConnectingEurope/eInvoicing-EN16931/delete/master/ubl/schematron/EN16931-UBL-validation.sch" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="/I3YKMSGrEjf/JbJ1sCMkKUvFn0Y7UlZ8Pz1ghokKBguUm4eFahEYBh2YC5Gd7V8xDfrqnnYuapZEmiSdZiDRA==" />
-            <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
-              aria-label="Fork this project and delete the file" data-disable-with>
-              <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
-            </button>
-</form>    </div>
-  </div>
-</div>
-
-
-
-
-      
-
-  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-xml ">
-      
-<table class="highlight tab-size js-file-line-container" data-tab-size="8">
-      <tr>
-        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>1.0<span class="pl-pds">&quot;</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>UTF-8<span class="pl-pds">&quot;</span></span>?&gt;</td>
-      </tr>
-      <tr>
-        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">&lt;!--</span></span></td>
-      </tr>
-      <tr>
-        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    Copyright (C) 2016-2019 Oriol Bausà, Andreas Pelekies, Philip Helger</span></td>
-      </tr>
-      <tr>
-        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    and contributors.</span></td>
-      </tr>
-      <tr>
-        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></td>
-      </tr>
-      <tr>
-        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    you may not use this file except in compliance with the License.</span></td>
-      </tr>
-      <tr>
-        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    You may obtain a copy of the License at</span></td>
-      </tr>
-      <tr>
-        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
-        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c">            http://www.apache.org/licenses/LICENSE-2.0</span></td>
-      </tr>
-      <tr>
-        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    Unless required by applicable law or agreed to in writing, software</span></td>
-      </tr>
-      <tr>
-        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></td>
-      </tr>
-      <tr>
-        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
-        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></td>
-      </tr>
-      <tr>
-        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    See the License for the specific language governing permissions and</span></td>
-      </tr>
-      <tr>
-        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
-        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-c">    limitations under the License.</span></td>
-      </tr>
-      <tr>
-        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
-        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="LC19" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
-        <td id="LC20" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">&lt;!--</span> </span></td>
-      </tr>
-      <tr>
-        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-c"></span></td>
-      </tr>
-      <tr>
-        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
-        <td id="LC22" class="blob-code blob-code-inner js-file-line"><span class="pl-c">            UBL syntax binding to the model  </span></td>
-      </tr>
-      <tr>
-        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
-        <td id="LC23" class="blob-code blob-code-inner js-file-line"><span class="pl-c">            Created by Validex Schematron Generator. (2015) Midran Ltd.</span></td>
-      </tr>
-      <tr>
-        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
-        <td id="LC24" class="blob-code blob-code-inner js-file-line"><span class="pl-c">            Timestamp: 2017-09-15 12:09:57 +0200</span></td>
-      </tr>
-      <tr>
-        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
-        <td id="LC25" class="blob-code blob-code-inner js-file-line"><span class="pl-c">     <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
-        <td id="LC26" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">schema</span> <span class="pl-e">xmlns</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://purl.oclc.org/dsdl/schematron<span class="pl-pds">&quot;</span></span> <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">cac</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2<span class="pl-pds">&quot;</span></span> <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">cbc</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2<span class="pl-pds">&quot;</span></span> <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">cn</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2<span class="pl-pds">&quot;</span></span> <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">UBL</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2<span class="pl-pds">&quot;</span></span> <span class="pl-e">queryBinding</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>xslt2<span class="pl-pds">&quot;</span></span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
-        <td id="LC27" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">title</span>&gt;EN16931  model bound to UBL&lt;/<span class="pl-ent">title</span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="LC28" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>ext<span class="pl-pds">&quot;</span></span> <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
-        <td id="LC29" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>cbc<span class="pl-pds">&quot;</span></span> <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="LC30" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>cac<span class="pl-pds">&quot;</span></span> <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
-        <td id="LC31" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>qdt<span class="pl-pds">&quot;</span></span> <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
-        <td id="LC32" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>udt<span class="pl-pds">&quot;</span></span> <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
-        <td id="LC33" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>cn<span class="pl-pds">&quot;</span></span>  <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
-        <td id="LC34" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>ubl<span class="pl-pds">&quot;</span></span> <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>urn:oasis:names:specification:ubl:schema:xsd:Invoice-2<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
-        <td id="LC35" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">ns</span> <span class="pl-e">prefix</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>xs<span class="pl-pds">&quot;</span></span>  <span class="pl-e">uri</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>http://www.w3.org/2001/XMLSchema<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
-        <td id="LC36" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">phase</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>EN16931model_phase<span class="pl-pds">&quot;</span></span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
-        <td id="LC37" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">active</span> <span class="pl-e">pattern</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>UBL-model<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
-        <td id="LC38" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">phase</span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
-        <td id="LC39" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">phase</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>codelist_phase<span class="pl-pds">&quot;</span></span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
-        <td id="LC40" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">active</span> <span class="pl-e">pattern</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>Codesmodel<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
-        <td id="LC41" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">phase</span>&gt;</td>
-      </tr>
-      <tr>
-        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
-        <td id="LC42" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> Abstract CEN BII patterns <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
-        <td id="LC43" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> ========================= <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
-        <td id="LC44" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>abstract/EN16931-model.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
-        <td id="LC45" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>abstract/EN16931-syntax.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
-        <td id="LC46" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> Data Binding parameters <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
-        <td id="LC47" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> ======================= <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
-        <td id="LC48" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>UBL/EN16931-UBL-model.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
-        <td id="LC49" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>UBL/EN16931-UBL-syntax.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
-        <td id="LC50" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> Code Lists Binding rules <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
-        <td id="LC51" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">&lt;!--</span> ======================== <span class="pl-c">--&gt;</span></span></td>
-      </tr>
-      <tr>
-        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
-        <td id="LC52" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">include</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>codelist/EN16931-UBL-codes.sch<span class="pl-pds">&quot;</span></span>/&gt;</td>
-      </tr>
-      <tr>
-        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
-        <td id="LC53" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">schema</span>&gt;</td>
-      </tr>
-</table>
-
-  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
-    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
-      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
-    </summary>
-    <details-menu>
-      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
-        <li>
-          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
-            Copy lines
-          </clipboard-copy>
-        </li>
-        <li>
-          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
-            Copy permalink
-          </clipboard-copy>
-        </li>
-        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/ConnectingEurope/eInvoicing-EN16931/blame/6499232cbe8947739a2899ca50e03fc6a014fc8c/ubl/schematron/EN16931-UBL-validation.sch">View git blame</a></li>
-          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/ConnectingEurope/eInvoicing-EN16931/issues/new">Reference in new issue</a></li>
-      </ul>
-    </details-menu>
-  </details>
-
-  </div>
-
-    </div>
-
-  
-
-  <details class="details-reset details-overlay details-overlay-dark">
-    <summary data-hotkey="l" aria-label="Jump to line"></summary>
-    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
-        <button type="submit" class="btn" data-close-dialog>Go</button>
-</form>    </details-dialog>
-  </details>
-
-
-
-  </div>
-</div>
-
-    </main>
-  </div>
-  
-
-  </div>
-
-        
-<div class="footer container-lg width-full p-responsive" role="contentinfo">
-  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
-    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.38641s from unicorn-67f45bb8db-kc7jq">GitHub</span>, Inc.</li>
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
-        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
-    </ul>
-
-    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
-      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-</a>
-   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
-      <li class="mr-3 mr-lg-0"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
-        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
-        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
-
-    </ul>
-  </div>
-  <div class="d-flex flex-justify-center pb-6">
-    <span class="f6 text-gray-light"></span>
-  </div>
-</div>
-
-
-
-  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
-    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
-    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
-      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-    </button>
-    You can’t perform that action at this time.
-  </div>
-
-
-    <script crossorigin="anonymous" integrity="sha512-RwS+8T0XPR5cCcBdDmGcf/cL+FfKUdIjfRL93fvzAzjVUdgaknI2UpShICXEAx0szS45xu9lpIDeacN+3d3hZw==" type="application/javascript" src="https://github.githubassets.com/assets/compat-bootstrap-94789d4c.js"></script>
-    <script crossorigin="anonymous" integrity="sha512-2e003yIUkuCG1IeaeQwIgzMwqYiC+7wN/ouvY2yay84wnLng3/MScKxudf02uj4T4RZAnF5zJumvacsF9lfTMw==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-8e9b232b.js"></script>
-    
-    <script crossorigin="anonymous" async="async" integrity="sha512-5srqGco8avFoVw1A62FcGlaY8DzO3MWwwTL6l+CRizuO765zsFZkXamHphgnKHUzGbOOvr+NrqNS9CXYS1ySlQ==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-75ce8f90.js"></script>
-    
-    
-    
-  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner" hidden
-    >
-    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
-    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
-    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
-  </div>
-  <template id="site-details-dialog">
-  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
-    <summary role="button" aria-label="Close dialog"></summary>
-    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
-      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
-        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-      </button>
-      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
-    </details-dialog>
-  </details>
-</template>
-
-  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
-  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
-  </div>
-</div>
-
-  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
-
-  </body>
-</html>
-
+<!--
+
+    Copyright (C) 2016-2019 Oriol Bausà, Andreas Pelekies, Philip Helger
+    and contributors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
+  <ns prefix="ext" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" />
+  <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" />
+  <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" />
+  <ns prefix="qdt" uri="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" />
+  <ns prefix="udt" uri="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" />
+  <ns prefix="cn" uri="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" />
+  <ns prefix="ubl" uri="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" />
+  <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema" />
+  <phase id="EN16931model_phase">
+    <active pattern="UBL-model" />
+  </phase>
+  <phase id="codelist_phase">
+    <active pattern="Codesmodel" />
+  </phase>
+  <pattern id="UBL-model">
+    <rule context="cac:AdditionalDocumentReference">
+      <assert id="BR-52" flag="fatal" test="(cbc:ID) != ''">[BR-52]-Each Additional supporting document (BG-24) shall contain a Supporting document reference (BT-122).    </assert>
+    </rule>
+    <rule context="/ubl:Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount">
+      <assert id="BR-CO-25" flag="fatal" test="((. > 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)">[BR-CO-25]-In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</assert>
+    </rule>
+    <rule context="cac:AccountingCustomerParty/cac:Party/cbc:EndpointID">
+      <assert id="BR-63" flag="fatal" test="exists(@schemeID)">[BR-63]-The Buyer electronic address (BT-49) shall have a Scheme identifier.    </assert>
+    </rule>
+    <rule context="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress">
+      <assert id="BR-11" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[BR-11]-The Buyer postal address shall contain a Buyer country code (BT-55).</assert>
+    </rule>
+    <rule context="cac:PaymentMeans/cac:CardAccount">
+      <assert id="BR-51" flag="fatal" test="string-length(cbc:PrimaryAccountNumberID)>=4 and string-length(cbc:PrimaryAccountNumberID)&lt;=6">[BR-51]-The last 4 to 6 digits of the Payment card primary account number (BT-87) shall be present if Payment card information (BG-18) is provided in the Invoice.</assert>
+    </rule>
+    <rule context="cac:Delivery/cac:DeliveryLocation/cac:Address">
+      <assert id="BR-57" flag="fatal" test="exists(cac:Country/cbc:IdentificationCode)">[BR-57]-Each Deliver to address (BG-15) shall contain a Deliver to country code (BT-80).</assert>
+    </rule>
+    <rule context="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = false()]">
+      <assert id="BR-31" flag="fatal" test="exists(cbc:Amount)">[BR-31]-Each Document level allowance (BG-20) shall have a Document level allowance amount (BT-92).</assert>
+      <assert id="BR-32" flag="fatal" test="exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID)">[BR-32]-Each Document level allowance (BG-20) shall have a Document level allowance VAT category code (BT-95).</assert>
+      <assert id="BR-33" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[BR-33]-Each Document level allowance (BG-20) shall have a Document level allowance reason (BT-97) or a Document level allowance reason code (BT-98).</assert>
+      <assert id="BR-CO-05" flag="fatal" test="true()">[BR-CO-05]-Document level allowance reason code (BT-98) and Document level allowance reason (BT-97) shall indicate the same type of allowance.</assert>
+      <assert id="BR-CO-21" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[BR-CO-21]-Each Document level allowance (BG-20) shall contain a Document level allowance reason (BT-97) or a Document level allowance reason code (BT-98), or both.</assert>
+      <assert id="BR-DEC-01" flag="fatal" test="string-length(substring-after(cbc:Amount,'.'))&lt;=2">[BR-DEC-01]-The allowed maximum number of decimals for the Document level allowance amount (BT-92) is 2.</assert>
+      <assert id="BR-DEC-02" flag="fatal" test="string-length(substring-after(cbc:BaseAmount,'.'))&lt;=2">[BR-DEC-02]-The allowed maximum number of decimals for the Document level allowance base amount (BT-93) is 2.    </assert>
+    </rule>
+    <rule context="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = true()]">
+      <assert id="BR-36" flag="fatal" test="exists(cbc:Amount)">[BR-36]-Each Document level charge (BG-21) shall have a Document level charge amount (BT-99).</assert>
+      <assert id="BR-37" flag="fatal" test="exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID)">[BR-37]-Each Document level charge (BG-21) shall have a Document level charge VAT category code (BT-102).</assert>
+      <assert id="BR-38" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[BR-38]-Each Document level charge (BG-21) shall have a Document level charge reason (BT-104) or a Document level charge reason code (BT-105).    </assert>
+      <assert id="BR-CO-06" flag="fatal" test="true()">[BR-CO-06]-Document level charge reason code (BT-105) and Document level charge reason (BT-104) shall indicate the same type of charge.</assert>
+      <assert id="BR-CO-22" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[BR-CO-22]-Each Document level charge (BG-21) shall contain a Document level charge reason (BT-104) or a Document level charge reason code (BT-105), or both.</assert>
+      <assert id="BR-DEC-05" flag="fatal" test="string-length(substring-after(cbc:Amount,'.'))&lt;=2">[BR-DEC-05]-The allowed maximum number of decimals for the Document level charge amount (BT-99) is 2.</assert>
+      <assert id="BR-DEC-06" flag="fatal" test="string-length(substring-after(cbc:BaseAmount,'.'))&lt;=2">[BR-DEC-06]-The allowed maximum number of decimals for the Document level charge base amount (BT-100) is 2.    </assert>
+    </rule>
+    <rule context="cac:LegalMonetaryTotal">
+      <assert id="BR-12" flag="fatal" test="exists(cbc:LineExtensionAmount)">[BR-12]-An Invoice shall have the Sum of Invoice line net amount (BT-106).</assert>
+      <assert id="BR-13" flag="fatal" test="exists(cbc:TaxExclusiveAmount)">[BR-13]-An Invoice shall have the Invoice total amount without VAT (BT-109).</assert>
+      <assert id="BR-14" flag="fatal" test="exists(cbc:TaxInclusiveAmount)">[BR-14]-An Invoice shall have the Invoice total amount with VAT (BT-112).</assert>
+      <assert id="BR-15" flag="fatal" test="exists(cbc:PayableAmount)">[BR-15]-An Invoice shall have the Amount due for payment (BT-115).</assert>
+      <assert id="BR-CO-10" flag="fatal" test="(xs:decimal(cbc:LineExtensionAmount) = (round(sum(//cac:InvoiceLine/xs:decimal(cbc:LineExtensionAmount)) * 10 * 10) div 100)) or (xs:decimal(cbc:LineExtensionAmount) = (round(sum(//cac:CreditNoteLine/xs:decimal(cbc:LineExtensionAmount)) * 10 * 10) div 100))">[BR-CO-10]-Sum of Invoice line net amount (BT-106) = Σ Invoice line net amount (BT-131).</assert>
+      <assert id="BR-CO-11" flag="fatal" test="xs:decimal(cbc:AllowanceTotalAmount) = (round(sum(../cac:AllowanceCharge[cbc:ChargeIndicator=false()]/xs:decimal(cbc:Amount)) * 10 * 10) div 100) or  (not(cbc:AllowanceTotalAmount) and not(../cac:AllowanceCharge[cbc:ChargeIndicator=false()]))">[BR-CO-11]-Sum of allowances on document level (BT-107) = Σ Document level allowance amount (BT-92).</assert>
+      <assert id="BR-CO-12" flag="fatal" test="xs:decimal(cbc:ChargeTotalAmount) = (round(sum(../cac:AllowanceCharge[cbc:ChargeIndicator=true()]/xs:decimal(cbc:Amount)) * 10 * 10) div 100) or (not(cbc:ChargeTotalAmount) and not(../cac:AllowanceCharge[cbc:ChargeIndicator=true()]))">[BR-CO-12]-Sum of charges on document level (BT-108) = Σ Document level charge amount (BT-99).</assert>
+      <assert id="BR-CO-13" flag="fatal" test="((cbc:ChargeTotalAmount) and (cbc:AllowanceTotalAmount) and (xs:decimal(cbc:TaxExclusiveAmount) = round((xs:decimal(cbc:LineExtensionAmount) + xs:decimal(cbc:ChargeTotalAmount) - xs:decimal(cbc:AllowanceTotalAmount)) * 10 * 10) div 100 ))  or (not(cbc:ChargeTotalAmount) and (cbc:AllowanceTotalAmount) and (xs:decimal(cbc:TaxExclusiveAmount) = round((xs:decimal(cbc:LineExtensionAmount) - xs:decimal(cbc:AllowanceTotalAmount)) * 10 * 10 ) div 100)) or ((cbc:ChargeTotalAmount) and not(cbc:AllowanceTotalAmount) and (xs:decimal(cbc:TaxExclusiveAmount) = round((xs:decimal(cbc:LineExtensionAmount) + xs:decimal(cbc:ChargeTotalAmount)) * 10 * 10 ) div 100)) or (not(cbc:ChargeTotalAmount) and not(cbc:AllowanceTotalAmount) and (xs:decimal(cbc:TaxExclusiveAmount) = xs:decimal(cbc:LineExtensionAmount)))">[BR-CO-13]-Invoice total amount without VAT (BT-109) = Σ Invoice line net amount (BT-131) - Sum of allowances on document level (BT-107) + Sum of charges on document level (BT-108).</assert>
+      <assert id="BR-CO-16" flag="fatal" test="(xs:decimal(cbc:PrepaidAmount) and not(xs:decimal(cbc:PayableRoundingAmount)) and (xs:decimal(cbc:PayableAmount) = (round((xs:decimal(cbc:TaxInclusiveAmount) - xs:decimal(cbc:PrepaidAmount)) * 10 * 10) div 100))) or (not(xs:decimal(cbc:PrepaidAmount)) and not(xs:decimal(cbc:PayableRoundingAmount)) and xs:decimal(cbc:PayableAmount) = xs:decimal(cbc:TaxInclusiveAmount)) or (xs:decimal(cbc:PrepaidAmount) and xs:decimal(cbc:PayableRoundingAmount) and ((round((xs:decimal(cbc:PayableAmount) - xs:decimal(cbc:PayableRoundingAmount)) * 10 * 10) div 100) = (round((xs:decimal(cbc:TaxInclusiveAmount) - xs:decimal(cbc:PrepaidAmount)) * 10 * 10) div 100))) or (not(xs:decimal(cbc:PrepaidAmount)) and xs:decimal(cbc:PayableRoundingAmount) and ((round((xs:decimal(cbc:PayableAmount) - xs:decimal(cbc:PayableRoundingAmount)) * 10 * 10) div 100) = xs:decimal(cbc:TaxInclusiveAmount)))">[BR-CO-16]-Amount due for payment (BT-115) = Invoice total amount with VAT (BT-112) -Paid amount (BT-113) +Rounding amount (BT-114).</assert>
+      <assert id="BR-DEC-09" flag="fatal" test="string-length(substring-after(cbc:LineExtensionAmount,'.'))&lt;=2">[BR-DEC-09]-The allowed maximum number of decimals for the Sum of Invoice line net amount (BT-106) is 2.</assert>
+      <assert id="BR-DEC-10" flag="fatal" test="string-length(substring-after(cbc:AllowanceTotalAmount,'.'))&lt;=2">[BR-DEC-10]-The allowed maximum number of decimals for the Sum of allowanced on document level (BT-107) is 2.</assert>
+      <assert id="BR-DEC-11" flag="fatal" test="string-length(substring-after(cbc:ChargeTotalAmount,'.'))&lt;=2">[BR-DEC-11]-The allowed maximum number of decimals for the Sum of charges on document level (BT-108) is 2.</assert>
+      <assert id="BR-DEC-12" flag="fatal" test="string-length(substring-after(cbc:TaxExclusiveAmount,'.'))&lt;=2">[BR-DEC-12]-The allowed maximum number of decimals for the Invoice total amount without VAT (BT-109) is 2.    </assert>
+      <assert id="BR-DEC-14" flag="fatal" test="string-length(substring-after(cbc:TaxInclusiveAmount,'.'))&lt;=2">[BR-DEC-14]-The allowed maximum number of decimals for the Invoice total amount with VAT (BT-112) is 2.</assert>
+      <assert id="BR-DEC-16" flag="fatal" test="string-length(substring-after(cbc:PrepaidAmount,'.'))&lt;=2">[BR-DEC-16]-The allowed maximum number of decimals for the Paid amount (BT-113) is 2.</assert>
+      <assert id="BR-DEC-17" flag="fatal" test="string-length(substring-after(cbc:PayableRoundingAmount,'.'))&lt;=2">[BR-DEC-17]-The allowed maximum number of decimals for the Rounding amount (BT-114) is 2.</assert>
+      <assert id="BR-DEC-18" flag="fatal" test="string-length(substring-after(cbc:PayableAmount,'.'))&lt;=2">[BR-DEC-18]-The allowed maximum number of decimals for the Amount due for payment (BT-115) is 2.  </assert>
+    </rule>
+    <rule context="/ubl:Invoice | /cn:CreditNote">
+      <assert id="BR-01" flag="fatal" test="(cbc:CustomizationID) != ''">[BR-01]-An Invoice shall have a Specification identifier (BT-24).   </assert>
+      <assert id="BR-02" flag="fatal" test="(cbc:ID) !=''">[BR-02]-An Invoice shall have an Invoice number (BT-1).</assert>
+      <assert id="BR-03" flag="fatal" test="(cbc:IssueDate) !=''">[BR-03]-An Invoice shall have an Invoice issue date (BT-2).</assert>
+      <assert id="BR-04" flag="fatal" test="(cbc:InvoiceTypeCode) !='' or (cbc:CreditNoteTypeCode) !=''">[BR-04]-An Invoice shall have an Invoice type code (BT-3).</assert>
+      <assert id="BR-05" flag="fatal" test="(cbc:DocumentCurrencyCode) !=''">[BR-05]-An Invoice shall have an Invoice currency code (BT-5).</assert>
+      <assert id="BR-06" flag="fatal" test="(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''">[BR-06]-An Invoice shall contain the Seller name (BT-27).</assert>
+      <assert id="BR-07" flag="fatal" test="(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) !=''">[BR-07]-An Invoice shall contain the Buyer name (BT-44).</assert>
+      <assert id="BR-08" flag="fatal" test="exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)">[BR-08]-An Invoice shall contain the Seller postal address. </assert>
+      <assert id="BR-10" flag="fatal" test="exists(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)">[BR-10]-An Invoice shall contain the Buyer postal address (BG-8).</assert>
+      <assert id="BR-16" flag="fatal" test="exists(cac:InvoiceLine) or exists(cac:CreditNoteLine)">[BR-16]-An Invoice shall have at least one Invoice line (BG-25)</assert>
+      <assert id="BR-53" flag="fatal" test="every $taxcurrency in cbc:TaxCurrencyCode satisfies exists(//cac:TaxTotal/cbc:TaxAmount[@currencyID=$taxcurrency])">[BR-53]-If the VAT accounting currency code (BT-6) is present, then the Invoice total VAT amount in accounting currency (BT-111) shall be provided.</assert>
+      <assert id="BR-AE-01" flag="fatal" test="((exists(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'AE']) or exists(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'AE'])) and (count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'AE']) = 1)) or (not(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'AE']) and not(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'AE']))">[BR-AE-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Reverse charge" shall contain in the VAT Breakdown (BG-23) exactly one VAT category code (BT-118) equal with "VAT reverse charge".</assert>
+      <assert id="BR-AE-02" flag="fatal" test="(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID)) and (exists(//cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) or exists(//cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID))) or not(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-AE-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Reverse charge" shall contain the Seller VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) and/or the Buyer legal registration identifier (BT-47).</assert>
+      <assert id="BR-AE-03" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID) = 'AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID)) and (exists(//cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) or exists(//cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID) = 'AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-AE-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Reverse charge" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) and/or the Buyer legal registration identifier (BT-47).</assert>
+      <assert id="BR-AE-04" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID) = 'AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID)) and (exists(//cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) or exists(//cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID) = 'AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-AE-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Reverse charge" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) and/or the Buyer legal registration identifier (BT-47).</assert>
+      <assert id="BR-CO-03" flag="fatal" test="(exists(cbc:TaxPointDate) and not(cac:InvoicePeriod/cbc:DescriptionCode)) or (not(cbc:TaxPointDate) and exists(cac:InvoicePeriod/cbc:DescriptionCode)) or (not(cbc:TaxPointDate) and not(cac:InvoicePeriod/cbc:DescriptionCode))">[BR-CO-03]-Value added tax point date (BT-7) and Value added tax point date code (BT-8) are mutually exclusive.</assert>
+      <assert id="BR-CO-15" flag="fatal" test="every $Currency in cbc:DocumentCurrencyCode satisfies (cac:LegalMonetaryTotal/xs:decimal(cbc:TaxInclusiveAmount) = round( (cac:LegalMonetaryTotal/xs:decimal(cbc:TaxExclusiveAmount) + cac:TaxTotal/xs:decimal(cbc:TaxAmount[@currencyID=$Currency])) * 10 * 10) div 100)">[BR-CO-15]-Invoice total amount with VAT (BT-112) = Invoice total amount without VAT (BT-109) + Invoice total VAT amount (BT-110).</assert>
+      <assert id="BR-CO-18" flag="fatal" test="exists(cac:TaxTotal/cac:TaxSubtotal)">[BR-CO-18]-An Invoice shall at least have one VAT breakdown group (BG-23).</assert>
+      <assert id="BR-DEC-13" flag="fatal" test="(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:DocumentCurrencyCode] and (string-length(substring-after(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:DocumentCurrencyCode],'.'))&lt;=2)) or (not(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:DocumentCurrencyCode]))">[BR-DEC-13]-The allowed maximum number of decimals for the Invoice total VAT amount (BT-110) is 2.</assert>
+      <assert id="BR-DEC-15" flag="fatal" test="(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:TaxCurrencyCode] and (string-length(substring-after(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:TaxCurrencyCode],'.'))&lt;=2)) or (not(//cac:TaxTotal/cbc:TaxAmount[@currencyID = cbc:TaxCurrencyCode]))">[BR-DEC-15]-The allowed maximum number of decimals for the Invoice total VAT amount in accounting currency (BT-111) is 2.</assert>
+      <assert id="BR-E-01" flag="fatal" test="((exists(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'E']) or exists(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'E'])) and (count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'E']) = 1)) or (not(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'E']) and not(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'E']))">[BR-E-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Exempt from VAT" shall contain exactly one VAT breakdown (BG-23) with the VAT category code (BT-118) equal to "Exempt from VAT".</assert>
+      <assert id="BR-E-02" flag="fatal" test="(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-E-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Exempt from VAT" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-E-03" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-E-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Exempt from VAT" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-E-04" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-E-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Exempt from VAT" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-G-01" flag="fatal" test="((exists(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'G']) or exists(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'G'])) and (count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'G']) = 1)) or (not(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'G']) and not(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'G']))">[BR-G-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Export outside the EU" shall contain in the VAT breakdown (BG-23) exactly one VAT category code (BT-118) equal with "Export outside the EU".</assert>
+      <assert id="BR-G-02" flag="fatal" test="(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'G'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'G'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-G-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Export outside the EU" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-G-03" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='G']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='G'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-G-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Export outside the EU" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-G-04" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='G']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='G'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-G-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Export outside the EU" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-IC-01" flag="fatal" test="((exists(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'K']) or exists(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'K'])) and (count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'K']) = 1)) or (not(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'K']) and not(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'K']))">[BR-IC-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Intra-community supply" shall contain in the VAT breakdown (BG-23) exactly one VAT category code (BT-118) equal with "Intra-community supply".</assert>
+      <assert id="BR-IC-02" flag="fatal" test="(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID)) and (exists(//cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'])">[BR-IC-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Intra-community supply" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-IC-03" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID) = 'K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID)) and (exists(//cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID) = 'K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-IC-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Intra-community supply" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-IC-04" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID) = 'K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID)) and (exists(//cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID) = 'K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-IC-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Intra-community supply" shall contain the Seller VAT Identifier (BT-31) or the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-IC-11" flag="fatal" test="(exists(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'K'])  and (string-length(cac:Delivery/cbc:ActualDeliveryDate) > 1 or (cac:InvoicePeriod/*))) or (not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'K']))">[BR-IC-11]-In an Invoice with a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Intra-community supply" the Actual delivery date (BT-72) or the Invoicing period (BG-14) shall not be blank.</assert>
+      <assert id="BR-IC-12" flag="fatal" test="(exists(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'K']) and (string-length(cac:Delivery/cac:DeliveryLocation/cac:Address/cac:Country/cbc:IdentificationCode) >1)) or (not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'K']))">[BR-IC-12]-In an Invoice with a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Intra-community supply" the Deliver to country code (BT-80) shall not be blank.</assert>
+      <assert id="BR-IG-01" flag="fatal" test="((count(//cac:AllowanceCharge/cac:TaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) + count(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'])) > 0 and count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cbc:ID = 'L']) > 0) or ((count(//cac:AllowanceCharge/cac:TaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) + count(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'])) = 0 and count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) = 0)">[BR-IG-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "IGIC" shall contain in the VAT breakdown (BG-23) at least one VAT category code (BT-118) equal with "IGIC".</assert>
+      <assert id="BR-IG-02" flag="fatal" test="(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-IG-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IGIC" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-IG-03" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-IG-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "IGIC" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-IG-04" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[cbc:ID='L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-IG-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "IGIC" shall contain the Seller VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-IP-01" flag="fatal" test="((count(//cac:AllowanceCharge/cac:TaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) + count(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'])) > 0 and count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cbc:ID = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) > 0) or ((count(//cac:AllowanceCharge/cac:TaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) + count(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'])) = 0 and count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) = 0)">[BR-IP-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "IPSI" shall contain in the VAT breakdown (BG-23) at least one VAT category code (BT-118) equal with "IPSI".</assert>
+      <assert id="BR-IP-02" flag="fatal" test="(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-IP-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IPSI" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-IP-03" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-IP-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "IPSI" shall contain the Seller VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-IP-04" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-IP-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "IPSI" shall contain the Seller VAT Identifier (BT-31), the Seller Tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-O-01" flag="fatal" test="((exists(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O']) or exists(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O'])) and (count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O']) = 1)) or (not(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O']) and not(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O']))">[BR-O-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Not subject to VAT" shall contain exactly one VAT breakdown group (BG-23) with the VAT category code (BT-118) equal to "Not subject to VAT".</assert>
+      <assert id="BR-O-02" flag="fatal" test="(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (not(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) and not(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) and not(//cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'])">[BR-O-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Not subject to VAT" shall not contain the Seller VAT identifier (BT-31), the Seller tax representative VAT identifier (BT-63) or the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-O-03" flag="fatal" test="(exists((/ubl:Invoice|/cn:CreditNote)/cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID) = 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (not(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) and not(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) and not(//cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists((/ubl:Invoice|/cn:CreditNote)/cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID) = 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-O-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Not subject to VAT" shall not contain the Seller VAT identifier (BT-31), the Seller tax representative VAT identifier (BT-63) or the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-O-04" flag="fatal" test="(exists((/ubl:Invoice|/cn:CreditNote)/cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID) = 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (not(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) and not(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID) and not(//cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists((/ubl:Invoice|/cn:CreditNote)/cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID) = 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-O-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Not subject to VAT" shall not contain the Seller VAT identifier (BT-31), the Seller tax representative VAT identifier (BT-63) or the Buyer VAT identifier (BT-48).</assert>
+      <assert id="BR-O-11" flag="fatal" test="(exists(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O']) and count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) != 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) = 0) or not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O'])">[BR-O-11]-An Invoice that contains a VAT breakdown group (BG-23) with a VAT category code (BT-118) "Not subject to VAT" shall not contain other VAT breakdown groups (BG-23).    </assert>
+      <assert id="BR-O-12" flag="fatal" test="(exists(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O']) and count(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) != 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) = 0) or not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O'])">[BR-O-12]-An Invoice that contains a VAT breakdown group (BG-23) with a VAT category code (BT-118) "Not subject to VAT" shall not contain an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is not "Not subject to VAT".</assert>
+      <assert id="BR-O-13" flag="fatal" test="(exists(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O']) and count(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID) != 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) = 0) or not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O'])">[BR-O-13]-An Invoice that contains a VAT breakdown group (BG-23) with a VAT category code (BT-118) "Not subject to VAT" shall not contain Document level allowances (BG-20) where Document level allowance VAT category code (BT-95) is not "Not subject to VAT".</assert>
+      <assert id="BR-O-14" flag="fatal" test="(exists(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O']) and count(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID) != 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) = 0) or not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'O'])">[BR-O-14]-An Invoice that contains a VAT breakdown group (BG-23) with a VAT category code (BT-118) "Not subject to VAT" shall not contain Document level charges (BG-21) where Document level charge VAT category code (BT-102) is not "Not subject to VAT".</assert>
+      <assert id="BR-S-01" flag="fatal" test="((count(//cac:AllowanceCharge/cac:TaxCategory[normalize-space(cbc:ID) = 'S']) + count(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'S'])) > 0 and count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'S']) > 0) or ((count(//cac:AllowanceCharge/cac:TaxCategory[normalize-space(cbc:ID) = 'S']) + count(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'S'])) = 0 and count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'S']) = 0)">[BR-S-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Standard rated" shall contain in the VAT breakdown (BG-23) at least one VAT category code (BT-118) equal with "Standard rated".</assert>
+      <assert id="BR-S-02" flag="fatal" test="(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'S']))">[BR-S-02]-An Invoice that contains an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Standard rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-S-03" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-S-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Standard rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-S-04" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-S-04]-An Invoice that contains a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Standard rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-Z-01" flag="fatal" test="((exists(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'Z']) or exists(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'Z'])) and (count(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'Z']) = 1)) or (not(//cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'Z']) and not(//cac:ClassifiedTaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID[normalize-space(.) = 'Z']))">[BR-Z-01]-An Invoice that contains an Invoice line (BG-25), a Document level allowance (BG-20) or a Document level charge (BG-21) where the VAT category code (BT-151, BT-95 or BT-102) is "Zero rated" shall contain in the VAT breakdown (BG-23) exactly one VAT category code (BT-118) equal with "Zero rated".    </assert>
+      <assert id="BR-Z-02" flag="fatal" test="(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-Z-02]-An Invoice that contains an Invoice line where the Invoiced item VAT category code (BT-151) is "Zero rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-Z-03" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID) or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID) = 'Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-Z-03]-An Invoice that contains a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Zero rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+      <assert id="BR-Z-04" flag="fatal" test="(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']) and (exists(//cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID)or exists(//cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID))) or not(exists(//cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID) = 'Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']))">[BR-Z-04]-An Invoice that contains a Document level charge where the Document level charge VAT category code (BT-102) is "Zero rated" shall contain the Seller VAT Identifier (BT-31), the Seller tax registration identifier (BT-32) and/or the Seller tax representative VAT identifier (BT-63).</assert>
+    </rule>
+    <rule context="cac:InvoiceLine | cac:CreditNoteLine">
+      <assert id="BR-21" flag="fatal" test="(cbc:ID) != ''">[BR-21]-Each Invoice line (BG-25) shall have an Invoice line identifier (BT-126).</assert>
+      <assert id="BR-22" flag="fatal" test="exists(cbc:InvoicedQuantity) or exists(cbc:CreditedQuantity)">[BR-22]-Each Invoice line (BG-25) shall have an Invoiced quantity (BT-129).</assert>
+      <assert id="BR-23" flag="fatal" test="exists(cbc:InvoicedQuantity/@unitCode) or exists(cbc:CreditedQuantity/@unitCode)">[BR-23]-An Invoice line (BG-25) shall have an Invoiced quantity unit of measure code (BT-130).</assert>
+      <assert id="BR-24" flag="fatal" test="exists(cbc:LineExtensionAmount)">[BR-24]-Each Invoice line (BG-25) shall have an Invoice line net amount (BT-131).</assert>
+      <assert id="BR-25" flag="fatal" test="(cac:Item/cbc:Name) != ''">[BR-25]-Each Invoice line (BG-25) shall contain the Item name (BT-153).</assert>
+      <assert id="BR-26" flag="fatal" test="exists(cac:Price/cbc:PriceAmount)">[BR-26]-Each Invoice line (BG-25) shall contain the Item net price (BT-146).</assert>
+      <assert id="BR-27" flag="fatal" test="(cac:Price/cbc:PriceAmount) >= 0">[BR-27]-The Item net price (BT-146) shall NOT be negative.</assert>
+      <assert id="BR-28" flag="fatal" test="(cac:Price/cac:AllowanceCharge/cbc:BaseAmount) >= 0 or not(exists(cac:Price/cac:AllowanceCharge/cbc:BaseAmount))">[BR-28]-The Item gross price (BT-148) shall NOT be negative.</assert>
+      <assert id="BR-CO-04" flag="fatal" test="(cac:Item/cac:ClassifiedTaxCategory[cac:TaxScheme/(normalize-space(upper-case(cbc:ID))='VAT')]/cbc:ID)">[BR-CO-04]-Each Invoice line (BG-25) shall be categorized with an Invoiced item VAT category code (BT-151).</assert>
+      <assert id="BR-DEC-23" flag="fatal" test="string-length(substring-after(cbc:LineExtensionAmount,'.'))&lt;=2">[BR-DEC-23]-The allowed maximum number of decimals for the Invoice line net amount (BT-131) is 2.    </assert>
+    </rule>
+    <rule context="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()]">
+      <assert id="BR-41" flag="fatal" test="exists(cbc:Amount)">[BR-41]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance amount (BT-136).</assert>
+      <assert id="BR-42" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[BR-42]-Each Invoice line allowance (BG-27) shall have an Invoice line allowance reason (BT-139) or an Invoice line allowance reason code (BT-140).</assert>
+      <assert id="BR-CO-07" flag="fatal" test="true()">[BR-CO-07]-Invoice line allowance reason code (BT-140) and Invoice line allowance reason (BT-139) shall indicate the same type of allowance reason.</assert>
+      <assert id="BR-CO-23" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[BR-CO-23]-Each Invoice line allowance (BG-27) shall contain an Invoice line allowance reason (BT-139) or an Invoice line allowance reason code (BT-140), or both.</assert>
+      <assert id="BR-DEC-24" flag="fatal" test="string-length(substring-after(cbc:Amount,'.'))&lt;=2">[BR-DEC-24]-The allowed maximum number of decimals for the Invoice line allowance amount (BT-136) is 2.</assert>
+      <assert id="BR-DEC-25" flag="fatal" test="string-length(substring-after(cbc:BaseAmount,'.'))&lt;=2">[BR-DEC-25]-The allowed maximum number of decimals for the Invoice line allowance base amount (BT-137) is 2.    </assert>
+    </rule>
+    <rule context="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()]">
+      <assert id="BR-43" flag="fatal" test="exists(cbc:Amount)">[BR-43]-Each Invoice line charge (BG-28) shall have an Invoice line charge amount (BT-141).</assert>
+      <assert id="BR-44" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[BR-44]-Each Invoice line charge shall have an Invoice line charge reason or an invoice line allowance reason code. </assert>
+      <assert id="BR-CO-08" flag="fatal" test="true()">[BR-CO-08]-Invoice line charge reason code (BT-145) and Invoice line charge reason (BT144) shall indicate the same type of charge reason.</assert>
+      <assert id="BR-CO-24" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[BR-CO-24]-Each Invoice line charge (BG-28) shall contain an Invoice line charge reason (BT-144) or an Invoice line charge reason code (BT-145), or both.</assert>
+      <assert id="BR-DEC-27" flag="fatal" test="string-length(substring-after(cbc:Amount,'.'))&lt;=2">[BR-DEC-27]-The allowed maximum number of decimals for the Invoice line charge amount (BT-141) is 2.</assert>
+      <assert id="BR-DEC-28" flag="fatal" test="string-length(substring-after(cbc:BaseAmount,'.'))&lt;=2">[BR-DEC-28]-The allowed maximum number of decimals for the Invoice line charge base amount (BT-142) is 2.    </assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:InvoicePeriod | cac:CreditNoteLine/cac:InvoicePeriod">
+      <assert id="BR-30" flag="fatal" test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))">[BR-30]-If both Invoice line period start date (BT-134) and Invoice line period end date (BT-135) are given then the Invoice line period end date (BT-135) shall be later or equal to the Invoice line period start date (BT-134).</assert>
+      <assert id="BR-CO-20" flag="fatal" test="exists(cbc:StartDate) or exists(cbc:EndDate)">[BR-CO-20]-If Invoice line period (BG-26) is used, the Invoice line period start date (BT-134) or the Invoice line period end date (BT-135) shall be filled, or both.</assert>
+    </rule>
+    <rule context="cac:InvoicePeriod">
+      <assert id="BR-29" flag="fatal" test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))">[BR-29]-If both Invoicing period start date (BT-73) and Invoicing period end date (BT-74) are given then the Invoicing period end date (BT-74) shall be later or equal to the Invoicing period start date (BT-73).</assert>
+      <assert id="BR-CO-19" flag="fatal" test="exists(cbc:StartDate) or exists(cbc:EndDate)">[BR-CO-19]-If Invoicing period (BG-14) is used, the Invoicing period start date (BT-73) or the Invoicing period end date (BT-74) shall be filled, or both.</assert>
+    </rule>
+    <rule context="//cac:AdditionalItemProperty">
+      <assert id="BR-54" flag="fatal" test="exists(cbc:Name) and exists(cbc:Value)">[BR-54]-Each Item attribute (BG-32) shall contain an Item attribute name (BT-160) and an Item attribute value (BT-161).</assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode | cac:CreditNoteLine/cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode">
+      <assert id="BR-65" flag="fatal" test="exists(@listID)">[BR-65]-The Item classification identifier (BT-158) shall have a Scheme identifier.</assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:StandardItemIdentification/cbc:ID | cac:CreditNoteLine/cac:Item/cac:StandardItemIdentification/cbc:ID">
+      <assert id="BR-64" flag="fatal" test="exists(@schemeID)">[BR-64]-The Item standard identifier (BT-157) shall have a Scheme identifier.</assert>
+    </rule>
+    <rule context="/ubl:Invoice/cbc:Note | /cn:CreditNote/cac:Note">
+      <assert id="BR-CL-08" flag="fatal" test="(contains(.,'#') and ( ( contains(' AAA AAB AAC AAD AAE AAF AAG AAI AAJ AAK AAL AAM AAN AAO AAP AAQ AAR AAS AAT AAU AAV AAW AAX AAY AAZ ABA ABB ABC ABD ABE ABF ABG ABH ABI ABJ ABK ABL ABM ABN ABO ABP ABQ ABR ABS ABT ABU ABV ABW ABX ABZ ACA ACB ACC ACD ACE ACF ACG ACH ACI ACJ ACK ACL ACM ACN ACO ACP ACQ ACR ACS ACT ACU ACV ACW ACX ACY ACZ ADA ADB ADC ADD ADE ADF ADG ADH ADI ADJ ADK ADL ADM ADN ADO ADP ADQ ADR ADS ADT ADU ADV ADW ADX ADY ADZ AEA AEB AEC AED AEE AEF AEG AEH AEI AEJ AEK AEL AEM AEN AEO AEP AEQ AER AES AET AEU AEV AEW AEX AEY AEZ AFA AFB AFC AFD AFE AFF AFG AFH AFI AFJ AFK AFL AFM AFN AFO AFP AFQ AFR AFS AFT AFU AFV AFW AFX AFY AFZ AGA AGB AGC AGD AGE AGF AGG AGH AGI AGJ AGK AGL AGM AGN AGO AGP AGQ AGR AGS AGT AGU AGV AGW AGX AGY AGZ AHA AHB AHC AHD AHE AHF AHG AHH AHI AHJ AHK AHL AHM AHN AHO AHP AHQ AHR AHS AHT AHU AHV AHW AHX AHY AHZ AIA AIB AIC AID AIE AIF AIG AIH AII AIJ AIK AIL AIM AIN AIO AIP AIQ AIR AIS AIT AIU AIV AIW AIX AIY AIZ AJA AJB ALC ALD ALE ALF ALG ALH ALI ALJ ALK ALL ALM ALN ALO ALP ALQ ARR ARS AUT AUU AUV AUW AUX AUY AUZ AVA AVB AVC AVD AVE AVF BAG BAH BAI BAJ BAK BAL BAM BAN BAO BAP BAQ BLC BLD BLE BLF BLG BLH BLI BLJ BLK BLL BLM BLN BLO BLP BLQ BLR BLS BLT BLU BLV BLW BLX BLY BLZ BMA BMB BMC BMD BME CCI CEX CHG CIP CLP CLR COI CUR CUS DAR DCL DEL DIN DOC DUT EUR FBC GBL GEN GS7 HAN HAZ ICN IIN IMI IND INS INV IRP ITR ITS LAN LIN LOI MCO MDH MKS ORI OSI PAC PAI PAY PKG PKT PMD PMT PRD PRF PRI PUR QIN QQD QUT RAH REG RET REV RQR SAF SIC SIN SLR SPA SPG SPH SPP SPT SRN SSR SUR TCA TDT TRA TRR TXD WHI ZZZ ',substring-before(substring-after(.,'#'),'#') ) ) )) or not(contains(.,'#'))">[BR-CL-08]-Invoiced note subject code SHOULD be coded using UNCL4451</assert>
+    </rule>
+    <rule context="cac:PayeeParty">
+      <assert id="BR-17" flag="fatal" test="exists(cac:PartyName/cbc:Name) and (not(cac:PartyName/cbc:Name = ../cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) and not(cac:PartyIdentification/cbc:ID = ../cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID) and not(cac:PartyLegalEntity/cbc:RegistrationName = ../cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName))">[BR-17]-The Payee name (BT-59) shall be provided in the Invoice, if the Payee (BG-10) is different from the Seller (BG-4)</assert>
+    </rule>
+    <rule context="cac:PaymentMeans[cbc:PaymentMeansCode='30' or cbc:PaymentMeansCode='58']/cac:PayeeFinancialAccount">
+      <assert id="BR-50" flag="fatal" test="(cbc:ID) != ''">[BR-50]-A Payment account identifier (BT-84) shall be present if Credit transfer (BG-17) information is provided in the Invoice.</assert>
+    </rule>
+    <rule context="cac:PaymentMeans">
+      <assert id="BR-49" flag="fatal" test="exists(cbc:PaymentMeansCode)">[BR-49]-A Payment instruction (BG-16) shall specify the Payment means type code (BT-81).</assert>
+      <assert id="BR-61" flag="fatal" test="(exists(cac:PayeeFinancialAccount/cbc:ID) and ((normalize-space(cbc:PaymentMeansCode) = '30') or (normalize-space(cbc:PaymentMeansCode) = '58') )) or ((normalize-space(cbc:PaymentMeansCode) != '30') and (normalize-space(cbc:PaymentMeansCode) != '58'))">[BR-61]-If the Payment means type code (BT-81) means SEPA credit transfer, Local credit transfer or Non-SEPA international credit transfer, the Payment account identifier (BT-84) shall be present.</assert>
+    </rule>
+    <rule context="cac:BillingReference">
+      <assert id="BR-55" flag="fatal" test="exists(cac:InvoiceDocumentReference/cbc:ID)">[BR-55]-Each Preceding Invoice reference (BG-3) shall contain a Preceding Invoice reference (BT-25).</assert>
+    </rule>
+    <rule context="cac:AccountingSupplierParty">
+      <assert id="BR-CO-26" flag="fatal" test="exists(cac:Party/cac:PartyTaxScheme[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:CompanyID) or exists(cac:Party/cac:PartyIdentification/cbc:ID) or exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID)">[BR-CO-26]-In order for the buyer to automatically identify a supplier, the Seller identifier (BT-29), the Seller legal registration identifier (BT-30) and/or the Seller VAT identifier (BT-31) shall be present.  </assert>
+    </rule>
+    <rule context="cac:AccountingSupplierParty/cac:Party/cbc:EndpointID">
+      <assert id="BR-62" flag="fatal" test="exists(@schemeID)">[BR-62]-The Seller electronic address (BT-34) shall have a Scheme identifier.</assert>
+    </rule>
+    <rule context="cac:AccountingSupplierParty/cac:Party/cac:PostalAddress">
+      <assert id="BR-09" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[BR-09]-The Seller postal address (BG-5) shall contain a Seller country code (BT-40).</assert>
+    </rule>
+    <rule context="cac:TaxRepresentativeParty">
+      <assert id="BR-18" flag="fatal" test="(cac:PartyName/cbc:Name) != ''">[BR-18]-The Seller tax representative name (BT-62) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11)</assert>
+      <assert id="BR-19" flag="fatal" test="exists(cac:PostalAddress)">[BR-19]-The Seller tax representative postal address (BG-12) shall be provided in the Invoice, if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+      <assert id="BR-56" flag="fatal" test="exists(cac:PartyTaxScheme[cac:TaxScheme/(normalize-space(upper-case(cbc:ID)) = 'VAT')]/cbc:CompanyID)">[BR-56]-Each Seller tax representative party (BG-11) shall have a Seller tax representative VAT identifier (BT-63).    </assert>
+    </rule>
+    <rule context="cac:TaxRepresentativeParty/cac:PostalAddress">
+      <assert id="BR-20" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[BR-20]-The Seller tax representative postal address (BG-12) shall contain a Tax representative country code (BT-69), if the Seller (BG-4) has a Seller tax representative party (BG-11).</assert>
+    </rule>
+    <rule context="/ubl:Invoice/cac:TaxTotal | /cn:CreditNote/cac:Taxtotal">
+      <assert id="BR-CO-14" flag="fatal" test="(xs:decimal(child::cbc:TaxAmount)= round((sum(cac:TaxSubtotal/xs:decimal(cbc:TaxAmount)) * 10 * 10)) div 100) or not(cac:TaxSubtotal)">[BR-CO-14]-Invoice total VAT amount (BT-110) = Σ VAT category tax amount (BT-117).</assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal">
+      <assert id="BR-45" flag="fatal" test="exists(cbc:TaxableAmount)">[BR-45]-Each VAT breakdown (BG-23) shall have a VAT category taxable amount (BT-116).</assert>
+      <assert id="BR-46" flag="fatal" test="exists(cbc:TaxAmount)">[BR-46]-Each VAT breakdown (BG-23) shall have a VAT category tax amount (BT-117).</assert>
+      <assert id="BR-47" flag="fatal" test="exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:ID)">[BR-47]-Each VAT breakdown (BG-23) shall be defined through a VAT category code (BT-118).</assert>
+      <assert id="BR-48" flag="fatal" test="exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/cbc:Percent) or (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/normalize-space(cbc:ID)='O')">[BR-48]-Each VAT breakdown (BG-23) shall have a VAT category rate (BT-119), except if the Invoice is not subject to VAT.</assert>
+      <assert id="BR-CO-17" flag="fatal" test="(round(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/xs:decimal(cbc:Percent)) = 0 and (round(xs:decimal(cbc:TaxAmount)) = 0)) or (round(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/xs:decimal(cbc:Percent)) != 0 and ((abs(xs:decimal(cbc:TaxAmount)) - 1 &lt; round(abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/xs:decimal(cbc:Percent) div 100) * 10 * 10) div 100 ) and (abs(xs:decimal(cbc:TaxAmount)) + 1 > round(abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/xs:decimal(cbc:Percent) div 100) * 10 * 10) div 100 )))  or (not(exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']/xs:decimal(cbc:Percent))) and (round(xs:decimal(cbc:TaxAmount)) = 0))">[BR-CO-17]-VAT category tax amount (BT-117) = VAT category taxable amount (BT-116) x (VAT category rate (BT-119) / 100), rounded to two decimals.</assert>
+      <assert id="BR-DEC-19" flag="fatal" test="string-length(substring-after(cbc:TaxableAmount,'.'))&lt;=2">[BR-DEC-19]-The allowed maximum number of decimals for the VAT category taxable amount (BT-116) is 2.</assert>
+      <assert id="BR-DEC-20" flag="fatal" test="string-length(substring-after(cbc:TaxAmount,'.'))&lt;=2">[BR-DEC-20]-The allowed maximum number of decimals for the VAT category tax amount (BT-117) is 2.    </assert>
+    </rule>
+    <rule context="//cac:PartyTaxScheme[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-CO-09" flag="fatal" test="( contains( 'AD AE AF AG AI AL AM AN AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BL BJ BM BN BO BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CX CY CZ DE DJ DK DM DO DZ EC EE EG EH EL ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR ST SV SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW',substring(cbc:CompanyID,1,2) ) )">[BR-CO-09]-The Seller VAT identifier (BT-31), the Seller tax representative VAT identifier (BT-63) and the Buyer VAT identifier (BT-48) shall have a prefix in accordance with ISO code ISO 3166-1 alpha-2 by which the country of issue may be identified. Nevertheless, Greece may use the prefix ‘EL’.</assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-AE-08" flag="fatal" test="(exists(//cac:InvoiceLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='AE']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='AE']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='AE']/xs:decimal(cbc:Amount))))) or (exists(//cac:CreditNoteLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='AE']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='AE']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='AE']/xs:decimal(cbc:Amount)))))">[BR-AE-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Reverse charge" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Reverse charge".</assert>
+      <assert id="BR-AE-09" flag="fatal" test="../cbc:TaxAmount = 0">[BR-AE-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Reverse charge" shall be 0 (zero).</assert>
+      <assert id="BR-AE-10" flag="fatal" test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )">[BR-AE-10]-A VAT breakdown (BG-23) with VAT Category code (BT-118) "Reverse charge" shall have a VAT exemption reason code (BT-121), meaning "Reverse charge" or the VAT exemption reason text (BT-120) "Reverse charge" (or the equivalent standard text in another language).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-AE-06" flag="fatal" test="(cbc:Percent = 0)">[BR-AE-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Reverse charge" the Document level allowance VAT rate (BT-96) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-AE-07" flag="fatal" test="(cbc:Percent = 0)">[BR-AE-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Reverse charge" the Document level charge VAT rate (BT-103) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'] | cac:CreditNoteLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'AE'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-AE-05" flag="fatal" test="(cbc:Percent = 0)">[BR-AE-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Reverse charge" the Invoiced item VAT rate (BT-152) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-E-08" flag="fatal" test="(exists(//cac:InvoiceLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='E']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='E']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='E']/xs:decimal(cbc:Amount))))) or (exists(//cac:CreditNoteLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='E']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='E']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='E']/xs:decimal(cbc:Amount)))))">[BR-E-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Exempt from VAT" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Exempt from VAT".</assert>
+      <assert id="BR-E-09" flag="fatal" test="../cbc:TaxAmount = 0">[BR-E-09]-The VAT category tax amount (BT-117) In a VAT breakdown (BG-23) where the VAT category code (BT-118) equals "Exempt from VAT" shall equal 0 (zero).</assert>
+      <assert id="BR-E-10" flag="fatal" test="exists(cbc:TaxExemptionReason) or exists(cbc:TaxExemptionReasonCode)">[BR-E-10]-A VAT breakdown (BG-23) with VAT Category code (BT-118) "Exempt from VAT" shall have a VAT exemption reason code (BT-121) or a VAT exemption reason text (BT-120).    </assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-E-06" flag="fatal" test="(cbc:Percent = 0)">[BR-E-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Exempt from VAT", the Document level allowance VAT rate (BT-96) shall be 0 (zero).    </assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-E-07" flag="fatal" test="(cbc:Percent = 0)">[BR-E-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Exempt from VAT", the Document level charge VAT rate (BT-103) shall be 0 (zero).    </assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'] | cac:CreditNoteLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'E'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-E-05" flag="fatal" test="(cbc:Percent = 0)">[BR-E-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Exempt from VAT", the Invoiced item VAT rate (BT-152) shall be 0 (zero).    </assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'G'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-G-08" flag="fatal" test="(exists(//cac:InvoiceLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='G']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='G']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='G']/xs:decimal(cbc:Amount))))) or (exists(//cac:CreditNoteLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='G']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='G']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='G']/xs:decimal(cbc:Amount)))))">[BR-G-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Export outside the EU" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Export outside the EU".</assert>
+      <assert id="BR-G-09" flag="fatal" test="../cbc:TaxAmount = 0">[BR-G-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Export outside the EU" shall be 0 (zero).</assert>
+      <assert id="BR-G-10" flag="fatal" test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )">[BR-G-10]-A VAT breakdown (BG-23) with the VAT Category code (BT-118) "Export outside the EU" shall have a VAT exemption reason code (BT-121), meaning "Export outside the EU" or the VAT exemption reason text (BT-120) "Export outside the EU" (or the equivalent standard text in another language).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='G'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-G-06" flag="fatal" test="(cbc:Percent = 0)">[BR-G-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Export outside the EU" the Document level allowance VAT rate (BT-96) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='G'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-G-07" flag="fatal" test="(cbc:Percent = 0)">[BR-G-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Export outside the EU" the Document level charge VAT rate (BT-103) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'G'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'] | cac:CreditNoteLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'G'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-G-05" flag="fatal" test="(cbc:Percent = 0)">[BR-G-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Export outside the EU" the Invoiced item VAT rate (BT-152) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IC-08" flag="fatal" test="(exists(//cac:InvoiceLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='K']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='K']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='K']/xs:decimal(cbc:Amount))))) or (exists(//cac:CreditNoteLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='K']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='K']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='K']/xs:decimal(cbc:Amount)))))">[BR-IC-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Intra-community supply" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Intra-community supply".</assert>
+      <assert id="BR-IC-09" flag="fatal" test="../cbc:TaxAmount = 0">[BR-IC-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Intra-community supply" shall be 0 (zero).</assert>
+      <assert id="BR-IC-10" flag="fatal" test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )">[BR-IC-10]-A VAT breakdown (BG-23) with the VAT Category code (BT-118) "Intra-community supply" shall have a VAT exemption reason code (BT-121), meaning "Intra-community supply" or the VAT exemption reason text (BT-120) "Intra-community supply" (or the equivalent standard text in another language).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IC-06" flag="fatal" test="(cbc:Percent = 0)">[BR-IC-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Intra-community supply" the Document level allowance VAT rate (BT-96) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IC-07" flag="fatal" test="(cbc:Percent = 0)">[BR-IC-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Intra-community supply" the Document level charge VAT rate (BT-103) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'] | cac:CreditNoteLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'K'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IC-05" flag="fatal" test="(cbc:Percent = 0)">[BR-IC-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Intracommunity supply" the Invoiced item VAT rate (BT-152) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IG-08" flag="fatal" test="every $rate in xs:decimal(round(cbc:Percent)) satisfies ((exists(//cac:InvoiceLine) and ((../xs:decimal(cbc:TaxableAmount - 1) &lt; (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='L'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='L'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='L'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))) and (../xs:decimal(cbc:TaxableAmount + 1) > (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='L'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='L'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='L'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))))) or (exists(//cac:CreditNoteLine) and ((../xs:decimal(cbc:TaxableAmount - 1) &lt; (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='L'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='L'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='L'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))) and (../xs:decimal(cbc:TaxableAmount + 1) > (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='L'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='L'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='L'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))))))">[BR-IG-08]-For each different value of VAT category rate (BT-119) where the VAT category code (BT-118) is "IGIC", the VAT category taxable amount (BT-116) in a VAT breakdown (BG-23) shall equal the sum of Invoice line net amounts (BT-131) plus the sum of document level charge amounts (BT-99) minus the sum of document level allowance amounts (BT-92) where the VAT category code (BT-151, BT-102, BT-95) is "IGIC" and the VAT rate (BT-152, BT-103, BT-96) equals the VAT category rate (BT-119).</assert>
+      <assert id="BR-IG-09" flag="fatal" test="(abs(xs:decimal(../cbc:TaxAmount - 1))&lt;  round((abs(xs:decimal(../cbc:TaxableAmount)) * (xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 ) and (abs(xs:decimal(../cbc:TaxAmount + 1))>  round((abs(xs:decimal(../cbc:TaxableAmount)) * (xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 )">[BR-IG-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is "IGIC" shall equal the VAT category taxable amount (BT-116) multiplied by the VAT category rate (BT-119).</assert>
+      <assert id="BR-IG-10" flag="fatal" test="not(cbc:TaxExemptionReason) and not(cbc:TaxExemptionReasonCode)">[BR-IG-10]-A VAT breakdown (BG-23) with VAT Category code (BT-118) "IGIC" shall not have a VAT exemption reason code (BT-121) or VAT exemption reason text (BT-120).    </assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IG-06" flag="fatal" test="(cbc:Percent) >= 0">[BR-IG-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "IGIC" the Document level allowance VAT rate (BT-96) shall be 0 (zero) or greater than zero.      </assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IG-07" flag="fatal" test="(cbc:Percent) >= 0">[BR-IG-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "IGIC" the Document level charge VAT rate (BT-103) shall be 0 (zero) or greater than zero.</assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']| cac:CreditNoteLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'L'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IG-05" flag="fatal" test="(cbc:Percent) >= 0">[BR-IG-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IGIC" the invoiced item VAT rate (BT-152) shall be 0 (zero) or greater than zero.    </assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IP-08" flag="fatal" test="every $rate in xs:decimal(round(cbc:Percent)) satisfies ((exists(//cac:InvoiceLine) and ((../xs:decimal(cbc:TaxableAmount - 1) &lt; (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='M'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='M'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='M'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))) and (../xs:decimal(cbc:TaxableAmount + 1) > (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='M'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='M'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='M'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))))) or (exists(//cac:CreditNoteLine) and ((../xs:decimal(cbc:TaxableAmount - 1) &lt; (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='M'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='M'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='M'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))) and (../xs:decimal(cbc:TaxableAmount + 1) > (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='M'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='M'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='M'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))))))">[BR-IP-08]-For each different value of VAT category rate (BT-119) where the VAT category code (BT-118) is "IPSI", the VAT category taxable amount (BT-116) in a VAT breakdown (BG-23) shall equal the sum of Invoice line net amounts (BT-131) plus the sum of document level charge amounts (BT-99) minus the sum of document level allowance amounts (BT-92) where the VAT category code (BT-151, BT-102, BT-95) is "IPSI" and the VAT rate (BT-152, BT-103, BT-96) equals the VAT category rate (BT-119).</assert>
+      <assert id="BR-IP-09" flag="fatal" test="(abs(xs:decimal(../cbc:TaxAmount - 1))&lt;  round((abs(xs:decimal(../cbc:TaxableAmount)) * (xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 ) and (abs(xs:decimal(../cbc:TaxAmount + 1))>  round((abs(xs:decimal(../cbc:TaxableAmount)) * (xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 )">[BR-IP-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is "IPSI" shall equal the VAT category taxable amount (BT-116) multiplied by the VAT category rate (BT-119).</assert>
+      <assert id="BR-IP-10" flag="fatal" test="not(cbc:TaxExemptionReason) and not(cbc:TaxExemptionReasonCode)">[BR-IP-10]-A VAT breakdown (BG-23) with VAT Category code (BT-118) "IPSI" shall not have a VAT exemption reason code (BT-121) or VAT exemption reason text (BT-120).     </assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IP-06" flag="fatal" test="(cbc:Percent) >= 0">[BR-IP-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "IPSI" the Document level allowance VAT rate (BT-96) shall be 0 (zero) or greater than zero.      </assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IP-07" flag="fatal" test="(cbc:Percent) >= 0">[BR-IP-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "IPSI" the Document level charge VAT rate (BT-103) shall be 0 (zero) or greater than zero.</assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']| cac:CreditNoteLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'M'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-IP-05" flag="fatal" test="(cbc:Percent) >= 0">[BR-IP-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "IPSI" the Invoiced item VAT rate (BT-152) shall be 0 (zero) or greater than zero.    </assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-O-08" flag="fatal" test="(exists(//cac:InvoiceLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='O']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='O']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='O']/xs:decimal(cbc:Amount))))) or (exists(//cac:CreditNoteLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='O']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='O']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='O']/xs:decimal(cbc:Amount)))))">[BR-O-08]-In a VAT breakdown (BG-23) where the VAT category code (BT-118) is " Not subject to VAT" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amounts (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Not subject to VAT".</assert>
+      <assert id="BR-O-09" flag="fatal" test="../cbc:TaxAmount = 0">[BR-O-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where the VAT category code (BT-118) is "Not subject to VAT" shall be 0 (zero).</assert>
+      <assert id="BR-O-10" flag="fatal" test="exists(cbc:TaxExemptionReason) or (exists(cbc:TaxExemptionReasonCode) )">[BR-O-10]-A VAT breakdown (BG-23) with VAT Category code (BT-118) " Not subject to VAT" shall have a VAT exemption reason code (BT-121), meaning " Not subject to VAT" or a VAT exemption reason text (BT-120) " Not subject to VAT" (or the equivalent standard text in another language).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-O-06" flag="fatal" test="not(cbc:Percent)">[BR-O-06]-A Document level allowance (BG-20) where VAT category code (BT-95) is "Not subject to VAT" shall not contain a Document level allowance VAT rate (BT-96).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-O-07" flag="fatal" test="not(cbc:Percent)">[BR-O-07]-A Document level charge (BG-21) where the VAT category code (BT-102) is "Not subject to VAT" shall not contain a Document level charge VAT rate (BT-103).</assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'] | cac:CreditNoteLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'O'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-O-05" flag="fatal" test="not(cbc:Percent)">[BR-O-05]-An Invoice line (BG-25) where the VAT category code (BT-151) is "Not subject to VAT" shall not contain an Invoiced item VAT rate (BT-152).</assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-S-08" flag="fatal" test="every $rate in xs:decimal(round(cbc:Percent)) satisfies (((exists(//cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID) = 'S'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]) or exists(//cac:AllowanceCharge[cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate])) and ((../xs:decimal(cbc:TaxableAmount - 1) &lt; (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='S'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))) and (../xs:decimal(cbc:TaxableAmount + 1) > (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='S'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))))) or (exists(//cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID) = 'S'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]) or exists(//cac:AllowanceCharge[cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate])) and ((../xs:decimal(cbc:TaxableAmount - 1) &lt; (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='S'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)))) and (../xs:decimal(cbc:TaxableAmount + 1) > (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='S'][cac:Item/cac:ClassifiedTaxCategory/xs:decimal(round(cbc:Percent)) =$rate]/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='S'][cac:TaxCategory/xs:decimal(round(cbc:Percent)) = $rate]/xs:decimal(cbc:Amount))))))">[BR-S-08]-For each different value of VAT category rate (BT-119) where the VAT category code (BT-118) is "Standard rated", the VAT category taxable amount (BT-116) in a VAT breakdown (BG-23) shall equal the sum of Invoice line net amounts (BT-131) plus the sum of document level charge amounts (BT-99) minus the sum of document level allowance amounts (BT-92) where the VAT category code (BT-151, BT-102, BT-95) is "Standard rated" and the VAT rate (BT-152, BT-103, BT-96) equals the VAT category rate (BT-119).</assert>
+      <assert id="BR-S-09" flag="fatal" test="(abs(xs:decimal(../cbc:TaxAmount)) - 1 &lt;  round((abs(xs:decimal(../cbc:TaxableAmount)) * (xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 ) and (abs(xs:decimal(../cbc:TaxAmount)) + 1 >  round((abs(xs:decimal(../cbc:TaxableAmount)) * (xs:decimal(cbc:Percent) div 100)) * 10 * 10) div 100 )">[BR-S-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is "Standard rated" shall equal the VAT category taxable amount (BT-116) multiplied by the VAT category rate (BT-119).</assert>
+      <assert id="BR-S-10" flag="fatal" test="not(cbc:TaxExemptionReason) and not(cbc:TaxExemptionReasonCode)">[BR-S-10]-A VAT breakdown (BG-23) with VAT Category code (BT-118) "Standard rate" shall not have a VAT exemption reason code (BT-121) or VAT exemption reason text (BT-120).    </assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-S-06" flag="fatal" test="(cbc:Percent) > 0">[BR-S-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Standard rated" the Document level allowance VAT rate (BT-96) shall be greater than zero.</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-S-07" flag="fatal" test="(cbc:Percent) > 0">[BR-S-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Standard rated" the Document level charge VAT rate (BT-103) shall be greater than zero.  </assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'] | cac:CreditNoteLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'S'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-S-05" flag="fatal" test="(cbc:Percent) > 0">[BR-S-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Standard rated" the Invoiced item VAT rate (BT-152) shall be greater than zero.    </assert>
+    </rule>
+    <rule context="cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory[normalize-space(cbc:ID) = 'Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-Z-08" flag="fatal" test="(exists(//cac:InvoiceLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:InvoiceLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='Z']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='Z']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='Z']/xs:decimal(cbc:Amount))))) or (exists(//cac:CreditNoteLine) and (xs:decimal(../cbc:TaxableAmount) = (sum(../../../cac:CreditNoteLine[cac:Item/cac:ClassifiedTaxCategory/normalize-space(cbc:ID)='Z']/xs:decimal(cbc:LineExtensionAmount)) + sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=true()][cac:TaxCategory/normalize-space(cbc:ID)='Z']/xs:decimal(cbc:Amount)) - sum(../../../cac:AllowanceCharge[cbc:ChargeIndicator=false()][cac:TaxCategory/normalize-space(cbc:ID)='Z']/xs:decimal(cbc:Amount)))))">[BR-Z-08]-In a VAT breakdown (BG-23) where VAT category code (BT-118) is "Zero rated" the VAT category taxable amount (BT-116) shall equal the sum of Invoice line net amount (BT-131) minus the sum of Document level allowance amounts (BT-92) plus the sum of Document level charge amounts (BT-99) where the VAT category codes (BT-151, BT-95, BT-102) are "Zero rated".</assert>
+      <assert id="BR-Z-09" flag="fatal" test="../cbc:TaxAmount = 0">[BR-Z-09]-The VAT category tax amount (BT-117) in a VAT breakdown (BG-23) where VAT category code (BT-118) is "Zero rated" shall equal 0 (zero).</assert>
+      <assert id="BR-Z-10" flag="fatal" test="not((cbc:TaxExemptionReason) or (cbc:TaxExemptionReasonCode))">[BR-Z-10]-A VAT breakdown (BG-23) with VAT Category code (BT-118) "Zero rated" shall not have a VAT exemption reason code (BT-121) or VAT exemption reason text (BT-120).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=false()]/cac:TaxCategory[normalize-space(cbc:ID)='Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-Z-06" flag="fatal" test="(cbc:Percent = 0)">[BR-Z-06]-In a Document level allowance (BG-20) where the Document level allowance VAT category code (BT-95) is "Zero rated" the Document level allowance VAT rate (BT-96) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator=true()]/cac:TaxCategory[normalize-space(cbc:ID)='Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-Z-07" flag="fatal" test="(cbc:Percent = 0)">[BR-Z-07]-In a Document level charge (BG-21) where the Document level charge VAT category code (BT-102) is "Zero rated" the Document level charge VAT rate (BT-103) shall be 0 (zero).</assert>
+    </rule>
+    <rule context="cac:InvoiceLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT'] | cac:CreditNoteLine/cac:Item/cac:ClassifiedTaxCategory[normalize-space(cbc:ID) = 'Z'][cac:TaxScheme/normalize-space(upper-case(cbc:ID))='VAT']">
+      <assert id="BR-Z-05" flag="fatal" test="(cbc:Percent = 0)">[BR-Z-05]-In an Invoice line (BG-25) where the Invoiced item VAT category code (BT-151) is "Zero rated" the Invoiced item VAT rate (BT-152) shall be 0 (zero).    </assert>
+    </rule>
+  </pattern>
+  <pattern id="UBL-syntax">
+    <rule context="cac:AccountingSupplierParty/cac:Party">
+      <assert id="UBL-SR-42" flag="warning" test="(count(cac:PartyTaxScheme) &lt;= 2)">[UBL-SR-42]-Party tax scheme shall occur maximum twice in accounting supplier party</assert>
+    </rule>
+    <rule context="cac:AdditionalDocumentReference">
+      <assert id="UBL-SR-33" flag="warning" test="(count(cbc:DocumentType) &lt;= 1)">[UBL-SR-33]-Supporting document description shall occur maximum once</assert>
+      <assert id="UBL-SR-43" flag="warning" test="((cbc:DocumentTypeCode='130') or ((name(/*) = 'CreditNote') and (cbc:DocumentTypeCode='50')) or (not(cbc:ID/@scheme) and not(cbc:DocumentTypeCode)))">[UBL-SR-43]-Scheme identifier shall only be used for invoiced object (document type code with value 130)</assert>
+    </rule>
+    <rule context="//*[ends-with(name(), 'Amount') and not(ends-with(name(),'PriceAmount')) and not(ancestor::cac:Price/cac:AllowanceCharge)]">
+      <assert id="UBL-DT-01" flag="fatal" test="string-length(substring-after(.,'.'))&lt;=2">[UBL-DT-01]-Amounts shall be decimal up to two fraction digits</assert>
+    </rule>
+    <rule context="//*[ends-with(name(), 'BinaryObject')]">
+      <assert id="UBL-DT-06" flag="fatal" test="(@mimeCode)">[UBL-DT-06]-Binary object elements shall contain the mime code attribute</assert>
+      <assert id="UBL-DT-07" flag="fatal" test="(@filename)">[UBL-DT-07]-Binary object elements shall contain the file name attribute</assert>
+    </rule>
+    <rule context="cac:Delivery">
+      <assert id="UBL-SR-25" flag="warning" test="(count(cac:DeliveryParty/cac:PartyName/cbc:Name) &lt;= 1)">[UBL-SR-25]-Deliver to party name shall occur maximum once</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = false()]">
+      <assert id="UBL-SR-30" flag="warning" test="(count(cbc:AllowanceChargeReason) &lt;= 1)">[UBL-SR-30]-Document level allowance reason shall occur maximum once</assert>
+    </rule>
+    <rule context="cac:AllowanceCharge[cbc:ChargeIndicator = true()]">
+      <assert id="UBL-SR-31" flag="warning" test="(count(cbc:AllowanceChargeReason) &lt;= 1)">[UBL-SR-31]-Document level charge reason shall occur maximum once</assert>
+    </rule>
+    <rule context="/ubl:Invoice | /cn:CreditNote">
+      <assert id="UBL-CR-001" flag="warning" test="not(ext:UBLExtensions)">[UBL-CR-001]-A UBL invoice should not include extensions</assert>
+      <assert id="UBL-CR-002" flag="warning" test="not(cbc:UBLVersionID)">[UBL-CR-002]-A UBL invoice should not include the UBLVersionID</assert>
+      <assert id="UBL-CR-003" flag="warning" test="not(cbc:ProfileExecutionID)">[UBL-CR-003]-A UBL invoice should not include the ProfileExecutionID </assert>
+      <assert id="UBL-CR-004" flag="warning" test="not(cbc:CopyIndicator)">[UBL-CR-004]-A UBL invoice should not include the CopyIndicator </assert>
+      <assert id="UBL-CR-005" flag="warning" test="not(cbc:UUID)">[UBL-CR-005]-A UBL invoice should not include the UUID </assert>
+      <assert id="UBL-CR-006" flag="warning" test="not(cbc:IssueTime)">[UBL-CR-006]-A UBL invoice should not include the IssueTime </assert>
+      <assert id="UBL-CR-007" flag="warning" test="not(cbc:PricingCurrencyCode)">[UBL-CR-007]-A UBL invoice should not include the PricingCurrencyCode</assert>
+      <assert id="UBL-CR-008" flag="warning" test="not(cbc:PaymentCurrencyCode)">[UBL-CR-008]-A UBL invoice should not include the PaymentCurrencyCode</assert>
+      <assert id="UBL-CR-009" flag="warning" test="not(cbc:PaymentAlternativeCurrencyCode)">[UBL-CR-009]-A UBL invoice should not include the PaymentAlternativeCurrencyCode</assert>
+      <assert id="UBL-CR-010" flag="warning" test="not(cbc:AccountingCostCode)">[UBL-CR-010]-A UBL invoice should not include the AccountingCostCode</assert>
+      <assert id="UBL-CR-011" flag="warning" test="not(cbc:LineCountNumeric)">[UBL-CR-011]-A UBL invoice should not include the LineCountNumeric</assert>
+      <assert id="UBL-CR-012" flag="warning" test="not(cac:InvoicePeriod/cbc:StartTime)">[UBL-CR-012]-A UBL invoice should not include the InvoicePeriod StartTime</assert>
+      <assert id="UBL-CR-013" flag="warning" test="not(cac:InvoicePeriod/cbc:EndTime)">[UBL-CR-013]-A UBL invoice should not include the InvoicePeriod EndTime</assert>
+      <assert id="UBL-CR-014" flag="warning" test="not(cac:InvoicePeriod/cbc:DurationMeasure)">[UBL-CR-014]-A UBL invoice should not include the InvoicePeriod DurationMeasure</assert>
+      <assert id="UBL-CR-015" flag="warning" test="not(cac:InvoicePeriod/cbc:Description)">[UBL-CR-015]-A UBL invoice should not include the InvoicePeriod Description</assert>
+      <assert id="UBL-CR-016" flag="warning" test="not(cac:OrderReference/cbc:CopyIndicator)">[UBL-CR-016]-A UBL invoice should not include the OrderReference CopyIndicator</assert>
+      <assert id="UBL-CR-017" flag="warning" test="not(cac:OrderReference/cbc:UUID)">[UBL-CR-017]-A UBL invoice should not include the OrderReference UUID</assert>
+      <assert id="UBL-CR-018" flag="warning" test="not(cac:OrderReference/cbc:IssueDate)">[UBL-CR-018]-A UBL invoice should not include the OrderReference IssueDate</assert>
+      <assert id="UBL-CR-019" flag="warning" test="not(cac:OrderReference/cbc:IssueTime)">[UBL-CR-019]-A UBL invoice should not include the OrderReference IssueTime</assert>
+      <assert id="UBL-CR-020" flag="warning" test="not(cac:OrderReference/cbc:CustomerReference)">[UBL-CR-020]-A UBL invoice should not include the OrderReference CustomerReference</assert>
+      <assert id="UBL-CR-021" flag="warning" test="not(cac:OrderReference/cbc:OrderTypeCode)">[UBL-CR-021]-A UBL invoice should not include the OrderReference OrderTypeCode</assert>
+      <assert id="UBL-CR-022" flag="warning" test="not(cac:OrderReference/cbc:DocumentReference)">[UBL-CR-022]-A UBL invoice should not include the OrderReference DocumentReference</assert>
+      <assert id="UBL-CR-023" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:CopyIndicator)">[UBL-CR-023]-A UBL invoice should not include the BillingReference CopyIndicator</assert>
+      <assert id="UBL-CR-024" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:UUID)">[UBL-CR-024]-A UBL invoice should not include the BillingReference UUID</assert>
+      <assert id="UBL-CR-025" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:IssueTime)">[UBL-CR-025]-A UBL invoice should not include the BillingReference IssueTime</assert>
+      <assert id="UBL-CR-026" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentTypeCode)">[UBL-CR-026]-A UBL invoice should not include the BillingReference DocumentTypeCode</assert>
+      <assert id="UBL-CR-027" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentType)">[UBL-CR-027]-A UBL invoice should not include the BillingReference DocumentType</assert>
+      <assert id="UBL-CR-028" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:Xpath)">[UBL-CR-028]-A UBL invoice should not include the BillingReference Xpath</assert>
+      <assert id="UBL-CR-029" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:LanguageID)">[UBL-CR-029]-A UBL invoice should not include the BillingReference LanguageID</assert>
+      <assert id="UBL-CR-030" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:LocaleCode)">[UBL-CR-030]-A UBL invoice should not include the BillingReference LocaleCode</assert>
+      <assert id="UBL-CR-031" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:VersionID)">[UBL-CR-031]-A UBL invoice should not include the BillingReference VersionID</assert>
+      <assert id="UBL-CR-032" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentStatusCode)">[UBL-CR-032]-A UBL invoice should not include the BillingReference DocumentStatusCode</assert>
+      <assert id="UBL-CR-033" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cbc:DocumentDescription)">[UBL-CR-033]-A UBL invoice should not include the BillingReference DocumenDescription</assert>
+      <assert id="UBL-CR-034" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:Attachment)">[UBL-CR-034]-A UBL invoice should not include the BillingReference Attachment</assert>
+      <assert id="UBL-CR-035" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:ValidityPeriod)">[UBL-CR-035]-A UBL invoice should not include the BillingReference ValidityPeriod</assert>
+      <assert id="UBL-CR-036" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:IssuerParty)">[UBL-CR-036]-A UBL invoice should not include the BillingReference IssuerParty</assert>
+      <assert id="UBL-CR-037" flag="warning" test="not(cac:BillingReference/cac:InvoiceDocumentReference/cac:ResultOfVerification)">[UBL-CR-037]-A UBL invoice should not include the BillingReference ResultOfVerification</assert>
+      <assert id="UBL-CR-038" flag="warning" test="not(cac:BillingReference/cac:SelfBilledInvoiceDocumentReference)">[UBL-CR-038]-A UBL invoice should not include the BillingReference SelfBilledInvoiceDocumentReference</assert>
+      <assert id="UBL-CR-039" flag="warning" test="not(cac:BillingReference/cac:CreditNoteDocumentReference)">[UBL-CR-039]-A UBL invoice should not include the BillingReference CreditNoteDocumentReference</assert>
+      <assert id="UBL-CR-040" flag="warning" test="not(cac:BillingReference/cac:SelfBilledCreditNoteDocumentReference)">[UBL-CR-040]-A UBL invoice should not include the BillingReference SelfBilledCreditNoteDocumentReference</assert>
+      <assert id="UBL-CR-041" flag="warning" test="not(cac:BillingReference/cac:DebitNoteDocumentReference)">[UBL-CR-041]-A UBL invoice should not include the BillingReference DebitNoteDocumentReference</assert>
+      <assert id="UBL-CR-042" flag="warning" test="not(cac:BillingReference/cac:ReminderDocumentReference)">[UBL-CR-042]-A UBL invoice should not include the BillingReference ReminderDocumentReference</assert>
+      <assert id="UBL-CR-043" flag="warning" test="not(cac:BillingReference/cac:AdditionalDocumentReference)">[UBL-CR-043]-A UBL invoice should not include the BillingReference AdditionalDocumentReference</assert>
+      <assert id="UBL-CR-044" flag="warning" test="not(cac:BillingReference/cac:BillingReferenceLine)">[UBL-CR-044]-A UBL invoice should not include the BillingReference BillingReferenceLine</assert>
+      <assert id="UBL-CR-045" flag="warning" test="not(cac:DespatchDocumentReference/cbc:CopyIndicator)">[UBL-CR-045]-A UBL invoice should not include the DespatchDocumentReference CopyIndicator</assert>
+      <assert id="UBL-CR-046" flag="warning" test="not(cac:DespatchDocumentReference/cbc:UUID)">[UBL-CR-046]-A UBL invoice should not include the DespatchDocumentReference UUID</assert>
+      <assert id="UBL-CR-047" flag="warning" test="not(cac:DespatchDocumentReference/cbc:IssueDate)">[UBL-CR-047]-A UBL invoice should not include the DespatchDocumentReference IssueDate</assert>
+      <assert id="UBL-CR-048" flag="warning" test="not(cac:DespatchDocumentReference/cbc:IssueTime)">[UBL-CR-048]-A UBL invoice should not include the DespatchDocumentReference IssueTime</assert>
+      <assert id="UBL-CR-049" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentTypeCode)">[UBL-CR-049]-A UBL invoice should not include the DespatchDocumentReference DocumentTypeCode</assert>
+      <assert id="UBL-CR-050" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentType)">[UBL-CR-050]-A UBL invoice should not include the DespatchDocumentReference DocumentType</assert>
+      <assert id="UBL-CR-051" flag="warning" test="not(cac:DespatchDocumentReference/cbc:Xpath)">[UBL-CR-051]-A UBL invoice should not include the DespatchDocumentReference Xpath</assert>
+      <assert id="UBL-CR-052" flag="warning" test="not(cac:DespatchDocumentReference/cbc:LanguageID)">[UBL-CR-052]-A UBL invoice should not include the DespatchDocumentReference LanguageID</assert>
+      <assert id="UBL-CR-053" flag="warning" test="not(cac:DespatchDocumentReference/cbc:LocaleCode)">[UBL-CR-053]-A UBL invoice should not include the DespatchDocumentReference LocaleCode</assert>
+      <assert id="UBL-CR-054" flag="warning" test="not(cac:DespatchDocumentReference/cbc:VersionID)">[UBL-CR-054]-A UBL invoice should not include the DespatchDocumentReference VersionID</assert>
+      <assert id="UBL-CR-055" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentStatusCode)">[UBL-CR-055]-A UBL invoice should not include the DespatchDocumentReference DocumentStatusCode</assert>
+      <assert id="UBL-CR-056" flag="warning" test="not(cac:DespatchDocumentReference/cbc:DocumentDescription)">[UBL-CR-056]-A UBL invoice should not include the DespatchDocumentReference DocumentDescription</assert>
+      <assert id="UBL-CR-057" flag="warning" test="not(cac:DespatchDocumentReference/cac:Attachment)">[UBL-CR-057]-A UBL invoice should not include the DespatchDocumentReference Attachment</assert>
+      <assert id="UBL-CR-058" flag="warning" test="not(cac:DespatchDocumentReference/cac:ValidityPeriod)">[UBL-CR-058]-A UBL invoice should not include the DespatchDocumentReference ValidityPeriod</assert>
+      <assert id="UBL-CR-059" flag="warning" test="not(cac:DespatchDocumentReference/cac:IssuerParty)">[UBL-CR-059]-A UBL invoice should not include the DespatchDocumentReference IssuerParty</assert>
+      <assert id="UBL-CR-060" flag="warning" test="not(cac:DespatchDocumentReference/cac:ResultOfVerification)">[UBL-CR-060]-A UBL invoice should not include the DespatchDocumentReference ResultOfVerification</assert>
+      <assert id="UBL-CR-061" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:CopyIndicator)">[UBL-CR-061]-A UBL invoice should not include the ReceiptDocumentReference CopyIndicator</assert>
+      <assert id="UBL-CR-062" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:UUID)">[UBL-CR-062]-A UBL invoice should not include the ReceiptDocumentReference UUID</assert>
+      <assert id="UBL-CR-063" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:IssueDate)">[UBL-CR-063]-A UBL invoice should not include the ReceiptDocumentReference IssueDate</assert>
+      <assert id="UBL-CR-064" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:IssueTime)">[UBL-CR-064]-A UBL invoice should not include the ReceiptDocumentReference IssueTime</assert>
+      <assert id="UBL-CR-065" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentTypeCode)">[UBL-CR-065]-A UBL invoice should not include the ReceiptDocumentReference DocumentTypeCode</assert>
+      <assert id="UBL-CR-066" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentType)">[UBL-CR-066]-A UBL invoice should not include the ReceiptDocumentReference DocumentType</assert>
+      <assert id="UBL-CR-067" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:Xpath)">[UBL-CR-067]-A UBL invoice should not include the ReceiptDocumentReference Xpath</assert>
+      <assert id="UBL-CR-068" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:LanguageID)">[UBL-CR-068]-A UBL invoice should not include the ReceiptDocumentReference LanguageID</assert>
+      <assert id="UBL-CR-069" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:LocaleCode)">[UBL-CR-069]-A UBL invoice should not include the ReceiptDocumentReference LocaleCode</assert>
+      <assert id="UBL-CR-070" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:VersionID)">[UBL-CR-070]-A UBL invoice should not include the ReceiptDocumentReference VersionID</assert>
+      <assert id="UBL-CR-071" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentStatusCode)">[UBL-CR-071]-A UBL invoice should not include the ReceiptDocumentReference DocumentStatusCode</assert>
+      <assert id="UBL-CR-072" flag="warning" test="not(cac:ReceiptDocumentReference/cbc:DocumentDescription)">[UBL-CR-072]-A UBL invoice should not include the ReceiptDocumentReference DocumentDescription</assert>
+      <assert id="UBL-CR-073" flag="warning" test="not(cac:ReceiptDocumentReference/cac:Attachment)">[UBL-CR-073]-A UBL invoice should not include the ReceiptDocumentReference Attachment</assert>
+      <assert id="UBL-CR-074" flag="warning" test="not(cac:ReceiptDocumentReference/cac:ValidityPeriod)">[UBL-CR-074]-A UBL invoice should not include the ReceiptDocumentReference ValidityPeriod</assert>
+      <assert id="UBL-CR-075" flag="warning" test="not(cac:ReceiptDocumentReference/cac:IssuerParty)">[UBL-CR-075]-A UBL invoice should not include the ReceiptDocumentReference IssuerParty</assert>
+      <assert id="UBL-CR-076" flag="warning" test="not(cac:ReceiptDocumentReference/cac:ResultOfVerification)">[UBL-CR-076]-A UBL invoice should not include the ReceiptDocumentReference ResultOfVerification</assert>
+      <assert id="UBL-CR-077" flag="warning" test="not(cac:StatementDocumentReference)">[UBL-CR-077]-A UBL invoice should not include the StatementDocumentReference</assert>
+      <assert id="UBL-CR-078" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:CopyIndicator)">[UBL-CR-078]-A UBL invoice should not include the OriginatorDocumentReference CopyIndicator</assert>
+      <assert id="UBL-CR-079" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:UUID)">[UBL-CR-079]-A UBL invoice should not include the OriginatorDocumentReference UUID</assert>
+      <assert id="UBL-CR-080" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:IssueDate)">[UBL-CR-080]-A UBL invoice should not include the OriginatorDocumentReference IssueDate</assert>
+      <assert id="UBL-CR-081" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:IssueTime)">[UBL-CR-081]-A UBL invoice should not include the OriginatorDocumentReference IssueTime</assert>
+      <assert id="UBL-CR-082" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:DocumentTypeCode)">[UBL-CR-082]-A UBL invoice should not include the OriginatorDocumentReference DocumentTypeCode</assert>
+      <assert id="UBL-CR-083" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:DocumentType)">[UBL-CR-083]-A UBL invoice should not include the OriginatorDocumentReference DocumentType</assert>
+      <assert id="UBL-CR-084" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:Xpath)">[UBL-CR-084]-A UBL invoice should not include the OriginatorDocumentReference Xpath</assert>
+      <assert id="UBL-CR-085" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:LanguageID)">[UBL-CR-085]-A UBL invoice should not include the OriginatorDocumentReference LanguageID</assert>
+      <assert id="UBL-CR-086" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:LocaleCode)">[UBL-CR-086]-A UBL invoice should not include the OriginatorDocumentReference LocaleCode</assert>
+      <assert id="UBL-CR-087" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:VersionID)">[UBL-CR-087]-A UBL invoice should not include the OriginatorDocumentReference VersionID</assert>
+      <assert id="UBL-CR-088" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:DocumentStatusCode)">[UBL-CR-088]-A UBL invoice should not include the OriginatorDocumentReference DocumentStatusCode</assert>
+      <assert id="UBL-CR-089" flag="warning" test="not(cac:OriginatorDocumentReference/cbc:DocumentDescription)">[UBL-CR-089]-A UBL invoice should not include the OriginatorDocumentReference DocumentDescription</assert>
+      <assert id="UBL-CR-090" flag="warning" test="not(cac:OriginatorDocumentReference/cac:Attachment)">[UBL-CR-090]-A UBL invoice should not include the OriginatorDocumentReference Attachment</assert>
+      <assert id="UBL-CR-091" flag="warning" test="not(cac:OriginatorDocumentReference/cac:ValidityPeriod)">[UBL-CR-091]-A UBL invoice should not include the OriginatorDocumentReference ValidityPeriod</assert>
+      <assert id="UBL-CR-092" flag="warning" test="not(cac:OriginatorDocumentReference/cac:IssuerParty)">[UBL-CR-092]-A UBL invoice should not include the OriginatorDocumentReference IssuerParty</assert>
+      <assert id="UBL-CR-093" flag="warning" test="not(cac:OriginatorDocumentReference/cac:ResultOfVerification)">[UBL-CR-093]-A UBL invoice should not include the OriginatorDocumentReference ResultOfVerification</assert>
+      <assert id="UBL-CR-094" flag="warning" test="not(cac:ContractDocumentReference/cbc:CopyIndicator)">[UBL-CR-094]-A UBL invoice should not include the ContractDocumentReference CopyIndicator</assert>
+      <assert id="UBL-CR-095" flag="warning" test="not(cac:ContractDocumentReference/cbc:UUID)">[UBL-CR-095]-A UBL invoice should not include the ContractDocumentReference UUID</assert>
+      <assert id="UBL-CR-096" flag="warning" test="not(cac:ContractDocumentReference/cbc:IssueDate)">[UBL-CR-096]-A UBL invoice should not include the ContractDocumentReference IssueDate</assert>
+      <assert id="UBL-CR-097" flag="warning" test="not(cac:ContractDocumentReference/cbc:IssueTime)">[UBL-CR-097]-A UBL invoice should not include the ContractDocumentReference IssueTime</assert>
+      <assert id="UBL-CR-098" flag="warning" test="not(cac:ContractDocumentReference/cbc:DocumentTypeCode)">[UBL-CR-098]-A UBL invoice should not include the ContractDocumentReference DocumentTypeCode</assert>
+      <assert id="UBL-CR-099" flag="warning" test="not(cac:ContractDocumentReference/cbc:DocumentType)">[UBL-CR-099]-A UBL invoice should not include the ContractDocumentReference DocumentType</assert>
+      <assert id="UBL-CR-100" flag="warning" test="not(cac:ContractDocumentReference/cbc:Xpath)">[UBL-CR-100]-A UBL invoice should not include the ContractDocumentReference Xpath</assert>
+      <assert id="UBL-CR-101" flag="warning" test="not(cac:ContractDocumentReference/cbc:LanguageID)">[UBL-CR-101]-A UBL invoice should not include the ContractDocumentReference LanguageID</assert>
+      <assert id="UBL-CR-102" flag="warning" test="not(cac:ContractDocumentReference/cbc:LocaleCode)">[UBL-CR-102]-A UBL invoice should not include the ContractDocumentReference LocaleCode</assert>
+      <assert id="UBL-CR-103" flag="warning" test="not(cac:ContractDocumentReference/cbc:VersionID)">[UBL-CR-103]-A UBL invoice should not include the ContractDocumentReference VersionID</assert>
+      <assert id="UBL-CR-104" flag="warning" test="not(cac:ContractDocumentReference/cbc:DocumentStatusCode)">[UBL-CR-104]-A UBL invoice should not include the ContractDocumentReference DocumentStatusCode</assert>
+      <assert id="UBL-CR-105" flag="warning" test="not(cac:ContractDocumentReference/cbc:DocumentDescription)">[UBL-CR-105]-A UBL invoice should not include the ContractDocumentReference DocumentDescription</assert>
+      <assert id="UBL-CR-106" flag="warning" test="not(cac:ContractDocumentReference/cac:Attachment)">[UBL-CR-106]-A UBL invoice should not include the ContractDocumentReference Attachment</assert>
+      <assert id="UBL-CR-107" flag="warning" test="not(cac:ContractDocumentReference/cac:ValidityPeriod)">[UBL-CR-107]-A UBL invoice should not include the ContractDocumentReference ValidityPeriod</assert>
+      <assert id="UBL-CR-108" flag="warning" test="not(cac:ContractDocumentReference/cac:IssuerParty)">[UBL-CR-108]-A UBL invoice should not include the ContractDocumentReference IssuerParty</assert>
+      <assert id="UBL-CR-109" flag="warning" test="not(cac:ContractDocumentReference/cac:ResultOfVerification)">[UBL-CR-109]-A UBL invoice should not include the ContractDocumentReference ResultOfVerification</assert>
+      <assert id="UBL-CR-110" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:CopyIndicator)">[UBL-CR-110]-A UBL invoice should not include the AdditionalDocumentReference CopyIndicator</assert>
+      <assert id="UBL-CR-111" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:UUID)">[UBL-CR-111]-A UBL invoice should not include the AdditionalDocumentReference UUID</assert>
+      <assert id="UBL-CR-112" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:IssueDate)">[UBL-CR-112]-A UBL invoice should not include the AdditionalDocumentReference IssueDate</assert>
+      <assert id="UBL-CR-113" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:IssueTime)">[UBL-CR-113]-A UBL invoice should not include the AdditionalDocumentReference IssueTime</assert>
+      <assert id="UBL-CR-114" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:DocumentType)">[UBL-CR-114]-A UBL invoice should not include the AdditionalDocumentReference DocumentType</assert>
+      <assert id="UBL-CR-115" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:Xpath)">[UBL-CR-115]-A UBL invoice should not include the AdditionalDocumentReference Xpath</assert>
+      <assert id="UBL-CR-116" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:LanguageID)">[UBL-CR-116]-A UBL invoice should not include the AdditionalDocumentReference LanguageID</assert>
+      <assert id="UBL-CR-117" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:LocaleCode)">[UBL-CR-117]-A UBL invoice should not include the AdditionalDocumentReference LocaleCode</assert>
+      <assert id="UBL-CR-118" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:VersionID)">[UBL-CR-118]-A UBL invoice should not include the AdditionalDocumentReference VersionID</assert>
+      <assert id="UBL-CR-119" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:DocumentStatusCode)">[UBL-CR-119]-A UBL invoice should not include the AdditionalDocumentReference DocumentStatusCode</assert>
+      <assert id="UBL-CR-121" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:DocumentHash)">[UBL-CR-121]-A UBL invoice should not include the AdditionalDocumentReference Attachment External DocumentHash</assert>
+      <assert id="UBL-CR-122" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:HashAlgorithmMethod)">[UBL-CR-122]-A UBL invoice should not include the AdditionalDocumentReference Attachment External HashAlgorithmMethod</assert>
+      <assert id="UBL-CR-123" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:ExpiryDate)">[UBL-CR-123]-A UBL invoice should not include the AdditionalDocumentReference Attachment External ExpiryDate</assert>
+      <assert id="UBL-CR-124" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:ExpiryTime)">[UBL-CR-124]-A UBL invoice should not include the AdditionalDocumentReference Attachment External ExpiryTime</assert>
+      <assert id="UBL-CR-125" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:MimeCode)">[UBL-CR-125]-A UBL invoice should not include the AdditionalDocumentReference Attachment External MimeCode</assert>
+      <assert id="UBL-CR-126" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:FormatCode)">[UBL-CR-126]-A UBL invoice should not include the AdditionalDocumentReference Attachment External FormatCode</assert>
+      <assert id="UBL-CR-127" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:EncodingCode)">[UBL-CR-127]-A UBL invoice should not include the AdditionalDocumentReference Attachment External EncodingCode</assert>
+      <assert id="UBL-CR-128" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:CharacterSetCode)">[UBL-CR-128]-A UBL invoice should not include the AdditionalDocumentReference Attachment External CharacterSetCode</assert>
+      <assert id="UBL-CR-129" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:FileName)">[UBL-CR-129]-A UBL invoice should not include the AdditionalDocumentReference Attachment External FileName</assert>
+      <assert id="UBL-CR-130" flag="warning" test="not(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:Description)">[UBL-CR-130]-A UBL invoice should not include the AdditionalDocumentReference Attachment External Descriprion</assert>
+      <assert id="UBL-CR-131" flag="warning" test="not(cac:AdditionalDocumentReference/cac:ValidityPeriod)">[UBL-CR-131]-A UBL invoice should not include the AdditionalDocumentReference ValidityPeriod</assert>
+      <assert id="UBL-CR-132" flag="warning" test="not(cac:AdditionalDocumentReference/cac:IssuerParty)">[UBL-CR-132]-A UBL invoice should not include the AdditionalDocumentReference IssuerParty</assert>
+      <assert id="UBL-CR-133" flag="warning" test="not(cac:AdditionalDocumentReference/cac:ResultOfVerification)">[UBL-CR-133]-A UBL invoice should not include the AdditionalDocumentReference ResultOfVerification</assert>
+      <assert id="UBL-CR-134" flag="warning" test="not(cac:ProjectReference/cbc:UUID)">[UBL-CR-134]-A UBL invoice should not include the ProjectReference UUID</assert>
+      <assert id="UBL-CR-135" flag="warning" test="not(cac:ProjectReference/cbc:IssueDate)">[UBL-CR-135]-A UBL invoice should not include the ProjectReference IssueDate</assert>
+      <assert id="UBL-CR-136" flag="warning" test="not(cac:ProjectReference/cac:WorkPhaseReference)">[UBL-CR-136]-A UBL invoice should not include the ProjectReference WorkPhaseReference</assert>
+      <assert id="UBL-CR-137" flag="warning" test="not(cac:Signature)">[UBL-CR-137]-A UBL invoice should not include the Signature</assert>
+      <assert id="UBL-CR-138" flag="warning" test="not(cac:AccountingSupplierParty/cbc:CustomerAssignedAccountID)">[UBL-CR-138]-A UBL invoice should not include the AccountingSupplierParty CustomerAssignedAccountID</assert>
+      <assert id="UBL-CR-139" flag="warning" test="not(cac:AccountingSupplierParty/cbc:AdditionalAccountID)">[UBL-CR-139]-A UBL invoice should not include the AccountingSupplierParty AdditionalAccountID</assert>
+      <assert id="UBL-CR-140" flag="warning" test="not(cac:AccountingSupplierParty/cbc:DataSendingCapability)">[UBL-CR-140]-A UBL invoice should not include the AccountingSupplierParty DataSendingCapability</assert>
+      <assert id="UBL-CR-141" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cbc:MarkCareIndicator)">[UBL-CR-141]-A UBL invoice should not include the AccountingSupplierParty Party MarkCareIndicator</assert>
+      <assert id="UBL-CR-142" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cbc:MarkAttentionIndicator)">[UBL-CR-142]-A UBL invoice should not include the AccountingSupplierParty Party MarkAttentionIndicator</assert>
+      <assert id="UBL-CR-143" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cbc:WebsiteURI)">[UBL-CR-143]-A UBL invoice should not include the AccountingSupplierParty Party WebsiteURI</assert>
+      <assert id="UBL-CR-144" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cbc:LogoReferenceID)">[UBL-CR-144]-A UBL invoice should not include the AccountingSupplierParty Party LogoReferenceID</assert>
+      <assert id="UBL-CR-145" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cbc:IndustryClassificationCode)">[UBL-CR-145]-A UBL invoice should not include the AccountingSupplierParty Party IndustryClassificationCode</assert>
+      <assert id="UBL-CR-146" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:Language)">[UBL-CR-146]-A UBL invoice should not include the AccountingSupplierParty Party Language</assert>
+      <assert id="UBL-CR-147" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:ID)">[UBL-CR-147]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress ID</assert>
+      <assert id="UBL-CR-148" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:AddressTypeCode)">[UBL-CR-148]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress AddressTypeCode</assert>
+      <assert id="UBL-CR-149" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:AddressFormatCode)">[UBL-CR-149]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress AddressFormatCode</assert>
+      <assert id="UBL-CR-150" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:Postbox)">[UBL-CR-150]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress Postbox</assert>
+      <assert id="UBL-CR-151" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:Floor)">[UBL-CR-151]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress Floor</assert>
+      <assert id="UBL-CR-152" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:Room)">[UBL-CR-152]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress Room</assert>
+      <assert id="UBL-CR-153" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:BlockName)">[UBL-CR-153]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress BlockName</assert>
+      <assert id="UBL-CR-154" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:BuildingName)">[UBL-CR-154]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress BuildingName</assert>
+      <assert id="UBL-CR-155" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:BuildingNumber)">[UBL-CR-155]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress BuildingNumber</assert>
+      <assert id="UBL-CR-156" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:InhouseMail)">[UBL-CR-156]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress InhouseMail</assert>
+      <assert id="UBL-CR-157" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:Department)">[UBL-CR-157]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress Department</assert>
+      <assert id="UBL-CR-158" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:MarkAttention)">[UBL-CR-158]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress MarkAttention</assert>
+      <assert id="UBL-CR-159" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:MarkCare)">[UBL-CR-159]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress MarkCare</assert>
+      <assert id="UBL-CR-160" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:PlotIdentification)">[UBL-CR-160]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress PlotIdentification</assert>
+      <assert id="UBL-CR-161" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:CitySubdivisionName)">[UBL-CR-161]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress CitySubdivisionName</assert>
+      <assert id="UBL-CR-162" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:CountrySubentityCode)">[UBL-CR-162]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress CountrySubentityCode</assert>
+      <assert id="UBL-CR-163" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:Region)">[UBL-CR-163]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress Region</assert>
+      <assert id="UBL-CR-164" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:District)">[UBL-CR-164]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress District</assert>
+      <assert id="UBL-CR-165" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:TimezoneOffset)">[UBL-CR-165]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress TimezoneOffset</assert>
+      <assert id="UBL-CR-166" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:Name)">[UBL-CR-166]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress Country Name</assert>
+      <assert id="UBL-CR-167" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:LocationCoordinate)">[UBL-CR-167]-A UBL invoice should not include the AccountingSupplierParty Party PostalAddress LocationCoordinate</assert>
+      <assert id="UBL-CR-168" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PhysicalLocation)">[UBL-CR-168]-A UBL invoice should not include the AccountingSupplierParty Party PhysicalLocation</assert>
+      <assert id="UBL-CR-169" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:RegistrationName)">[UBL-CR-169]-A UBL invoice should not include the AccountingSupplierParty Party PartyTaxScheme RegistrationName</assert>
+      <assert id="UBL-CR-170" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:TaxLevelCode)">[UBL-CR-170]-A UBL invoice should not include the AccountingSupplierParty Party PartyTaxScheme TaxLevelCode</assert>
+      <assert id="UBL-CR-171" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:ExemptionReasonCode)">[UBL-CR-171]-A UBL invoice should not include the AccountingSupplierParty Party PartyTaxScheme ExemptionReasonCode</assert>
+      <assert id="UBL-CR-172" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:ExemptionReason)">[UBL-CR-172]-A UBL invoice should not include the AccountingSupplierParty Party PartyTaxScheme ExemptionReason</assert>
+      <assert id="UBL-CR-173" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cac:RegistrationAddress)">[UBL-CR-173]-A UBL invoice should not include the AccountingSupplierParty Party PartyTaxScheme RegistrationAddress</assert>
+      <assert id="UBL-CR-174" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:Name)">[UBL-CR-174]-A UBL invoice should not include the AccountingSupplierParty Party PartyTaxScheme TaxScheme Name</assert>
+      <assert id="UBL-CR-175" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:TaxTypeCode)">[UBL-CR-175]-A UBL invoice should not include the AccountingSupplierParty Party PartyTaxScheme TaxScheme TaxTypeCode</assert>
+      <assert id="UBL-CR-176" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:CurrencyCode)">[UBL-CR-176]-A UBL invoice should not include the AccountingSupplierParty Party PartyTaxScheme TaxScheme CurrencyCode</assert>
+      <assert id="UBL-CR-177" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cac:JurisdictionRegionAddress)">[UBL-CR-177]-A UBL invoice should not include the AccountingSupplierParty Party PartyTaxScheme TaxScheme JurisdictionRegionAddress</assert>
+      <assert id="UBL-CR-178" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationDate)">[UBL-CR-178]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity RegistrationDate</assert>
+      <assert id="UBL-CR-179" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationExpirationDate)">[UBL-CR-179]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity RegistrationExpirationDate</assert>
+      <assert id="UBL-CR-180" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalFormCode)">[UBL-CR-180]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity CompanyLegalFormCode</assert>
+      <assert id="UBL-CR-181" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:SoleProprietorshipIndicator)">[UBL-CR-181]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity SoleProprietorshipIndicator</assert>
+      <assert id="UBL-CR-182" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLiquidationStatusCode)">[UBL-CR-182]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity CompanyLiquidationStatusCode</assert>
+      <assert id="UBL-CR-183" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CorporationStockAmount)">[UBL-CR-183]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity CorporationStockAmount</assert>
+      <assert id="UBL-CR-184" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:FullyPaidSharesIndicator)">[UBL-CR-184]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity FullyPaidSharesIndicator</assert>
+      <assert id="UBL-CR-185" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress)">[UBL-CR-185]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity RegistrationAddress</assert>
+      <assert id="UBL-CR-186" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:CorporateRegistrationScheme)">[UBL-CR-186]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity CorporateRegistrationScheme</assert>
+      <assert id="UBL-CR-187" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:HeadOfficeParty)">[UBL-CR-187]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity HeadOfficeParty</assert>
+      <assert id="UBL-CR-188" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cac:ShareholderParty)">[UBL-CR-188]-A UBL invoice should not include the AccountingSupplierParty Party PartyLegalEntity ShareholderParty</assert>
+      <assert id="UBL-CR-189" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:Contact/cbc:ID)">[UBL-CR-189]-A UBL invoice should not include the AccountingSupplierParty Party Contact ID</assert>
+      <assert id="UBL-CR-190" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:Contact/cbc:Telefax)">[UBL-CR-190]-A UBL invoice should not include the AccountingSupplierParty Party Contact Telefax</assert>
+      <assert id="UBL-CR-191" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:Contact/cbc:Note)">[UBL-CR-191]-A UBL invoice should not include the AccountingSupplierParty Party Contact Note</assert>
+      <assert id="UBL-CR-192" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:Contact/cac:OtherCommunication)">[UBL-CR-192]-A UBL invoice should not include the AccountingSupplierParty Party Contact OtherCommunication</assert>
+      <assert id="UBL-CR-193" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:Person)">[UBL-CR-193]-A UBL invoice should not include the AccountingSupplierParty Party Person</assert>
+      <assert id="UBL-CR-194" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:AgentParty)">[UBL-CR-194]-A UBL invoice should not include the AccountingSupplierParty Party AgentParty</assert>
+      <assert id="UBL-CR-195" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:ServiceProviderParty)">[UBL-CR-195]-A UBL invoice should not include the AccountingSupplierParty Party ServiceProviderParty</assert>
+      <assert id="UBL-CR-196" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:PowerOfAttorney)">[UBL-CR-196]-A UBL invoice should not include the AccountingSupplierParty Party PowerOfAttorney</assert>
+      <assert id="UBL-CR-197" flag="warning" test="not(cac:AccountingSupplierParty/cac:Party/cac:FinancialAccount)">[UBL-CR-197]-A UBL invoice should not include the AccountingSupplierParty Party FinancialAccount</assert>
+      <assert id="UBL-CR-198" flag="warning" test="not(cac:AccountingSupplierParty/cac:DespatchContact)">[UBL-CR-198]-A UBL invoice should not include the AccountingSupplierParty DespatchContact</assert>
+      <assert id="UBL-CR-199" flag="warning" test="not(cac:AccountingSupplierParty/cac:AccountingContact)">[UBL-CR-199]-A UBL invoice should not include the AccountingSupplierParty AccountingContact</assert>
+      <assert id="UBL-CR-200" flag="warning" test="not(cac:AccountingSupplierParty/cac:SellerContact)">[UBL-CR-200]-A UBL invoice should not include the AccountingSupplierParty SellerContact</assert>
+      <assert id="UBL-CR-201" flag="warning" test="not(cac:AccountingCustomerParty/cbc:CustomerAssignedAccountID)">[UBL-CR-201]-A UBL invoice should not include the AccountingCustomerParty CustomerAssignedAccountID</assert>
+      <assert id="UBL-CR-202" flag="warning" test="not(cac:AccountingCustomerParty/cbc:SupplierAssignedAccountID)">[UBL-CR-202]-A UBL invoice should not include the AccountingCustomerParty SupplierAssignedAccountID</assert>
+      <assert id="UBL-CR-203" flag="warning" test="not(cac:AccountingCustomerParty/cbc:AdditionalAccountID)">[UBL-CR-203]-A UBL invoice should not include the AccountingCustomerParty AdditionalAccountID</assert>
+      <assert id="UBL-CR-204" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cbc:MarkCareIndicator)">[UBL-CR-204]-A UBL invoice should not include the AccountingCustomerParty Party MarkCareIndicator</assert>
+      <assert id="UBL-CR-205" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cbc:MarkAttentionIndicator)">[UBL-CR-205]-A UBL invoice should not include the AccountingCustomerParty Party MarkAttentionIndicator</assert>
+      <assert id="UBL-CR-206" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cbc:WebsiteURI)">[UBL-CR-206]-A UBL invoice should not include the AccountingCustomerParty Party WebsiteURI</assert>
+      <assert id="UBL-CR-207" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cbc:LogoReferenceID)">[UBL-CR-207]-A UBL invoice should not include the AccountingCustomerParty Party LogoReferenceID</assert>
+      <assert id="UBL-CR-208" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cbc:IndustryClassificationCode)">[UBL-CR-208]-A UBL invoice should not include the AccountingCustomerParty Party IndustryClassificationCode</assert>
+      <assert id="UBL-CR-209" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:Language)">[UBL-CR-209]-A UBL invoice should not include the AccountingCustomerParty Party Language</assert>
+      <assert id="UBL-CR-210" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:ID)">[UBL-CR-210]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress ID</assert>
+      <assert id="UBL-CR-211" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:AddressTypeCode)">[UBL-CR-211]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress AddressTypeCode</assert>
+      <assert id="UBL-CR-212" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:AddressFormatCode)">[UBL-CR-212]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress AddressFormatCode</assert>
+      <assert id="UBL-CR-213" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:Postbox)">[UBL-CR-213]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress Postbox</assert>
+      <assert id="UBL-CR-214" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:Floor)">[UBL-CR-214]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress Floor</assert>
+      <assert id="UBL-CR-215" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:Room)">[UBL-CR-215]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress Room</assert>
+      <assert id="UBL-CR-216" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:BlockName)">[UBL-CR-216]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress BlockName</assert>
+      <assert id="UBL-CR-217" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:BuildingName)">[UBL-CR-217]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress BuildingName</assert>
+      <assert id="UBL-CR-218" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:BuildingNumber)">[UBL-CR-218]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress BuildingNumber</assert>
+      <assert id="UBL-CR-219" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:InhouseMail)">[UBL-CR-219]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress InhouseMail</assert>
+      <assert id="UBL-CR-220" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:Department)">[UBL-CR-220]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress Department</assert>
+      <assert id="UBL-CR-221" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:MarkAttention)">[UBL-CR-221]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress MarkAttention</assert>
+      <assert id="UBL-CR-222" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:MarkCare)">[UBL-CR-222]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress MarkCare</assert>
+      <assert id="UBL-CR-223" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:PlotIdentification)">[UBL-CR-223]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress PlotIdentification</assert>
+      <assert id="UBL-CR-224" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:CitySubdivisionName)">[UBL-CR-224]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress CitySubdivisionName</assert>
+      <assert id="UBL-CR-225" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:CountrySubentityCode)">[UBL-CR-225]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress CountrySubentityCode</assert>
+      <assert id="UBL-CR-226" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:Region)">[UBL-CR-226]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress Region</assert>
+      <assert id="UBL-CR-227" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:District)">[UBL-CR-227]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress District</assert>
+      <assert id="UBL-CR-228" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:TimezoneOffset)">[UBL-CR-228]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress TimezoneOffset</assert>
+      <assert id="UBL-CR-229" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:Name)">[UBL-CR-229]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress Country Name</assert>
+      <assert id="UBL-CR-230" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:LocationCoordinate)">[UBL-CR-230]-A UBL invoice should not include the AccountingCustomerParty Party PostalAddress LocationCoordinate</assert>
+      <assert id="UBL-CR-231" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PhysicalLocation)">[UBL-CR-231]-A UBL invoice should not include the AccountingCustomerParty Party PhysicalLocation</assert>
+      <assert id="UBL-CR-232" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:RegistrationName)">[UBL-CR-232]-A UBL invoice should not include the AccountingCustomerParty Party PartyTaxScheme RegistrationName</assert>
+      <assert id="UBL-CR-233" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:TaxLevelCode)">[UBL-CR-233]-A UBL invoice should not include the AccountingCustomerParty Party PartyTaxScheme TaxLevelCode</assert>
+      <assert id="UBL-CR-234" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:ExemptionReasonCode)">[UBL-CR-234]-A UBL invoice should not include the AccountingCustomerParty Party PartyTaxScheme ExemptionReasonCode</assert>
+      <assert id="UBL-CR-235" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:ExemptionReason)">[UBL-CR-235]-A UBL invoice should not include the AccountingCustomerParty Party PartyTaxScheme ExemptionReason</assert>
+      <assert id="UBL-CR-236" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cac:RegistrationAddress)">[UBL-CR-236]-A UBL invoice should not include the AccountingCustomerParty Party PartyTaxScheme RegistrationAddress</assert>
+      <assert id="UBL-CR-237" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:Name)">[UBL-CR-237]-A UBL invoice should not include the AccountingCustomerParty Party PartyTaxScheme TaxScheme Name</assert>
+      <assert id="UBL-CR-238" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:TaxTypeCode)">[UBL-CR-238]-A UBL invoice should not include the AccountingCustomerParty Party PartyTaxScheme TaxScheme TaxTypeCode</assert>
+      <assert id="UBL-CR-239" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cbc:CurrencyCode)">[UBL-CR-239]-A UBL invoice should not include the AccountingCustomerParty Party PartyTaxScheme TaxScheme CurrencyCode</assert>
+      <assert id="UBL-CR-240" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cac:TaxScheme/cac:JurisdictionRegionAddress)">[UBL-CR-240]-A UBL invoice should not include the AccountingCustomerParty Party PartyTaxScheme TaxScheme JurisdictionRegionAddress</assert>
+      <assert id="UBL-CR-241" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationDate)">[UBL-CR-241]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity RegistrationDate</assert>
+      <assert id="UBL-CR-242" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationExpirationDate)">[UBL-CR-242]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity RegistrationExpirationDate</assert>
+      <assert id="UBL-CR-243" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalFormCode)">[UBL-CR-243]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CompanyLegalFormCode</assert>
+      <assert id="UBL-CR-244" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalForm)">[UBL-CR-244]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CompanyLegalForm</assert>
+      <assert id="UBL-CR-245" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:SoleProprietorshipIndicator)">[UBL-CR-245]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity SoleProprietorshipIndicator</assert>
+      <assert id="UBL-CR-246" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLiquidationStatusCode)">[UBL-CR-246]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CompanyLiquidationStatusCode</assert>
+      <assert id="UBL-CR-247" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CorporationStockAmount)">[UBL-CR-247]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CorporationStockAmount</assert>
+      <assert id="UBL-CR-248" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:FullyPaidSharesIndicator)">[UBL-CR-248]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity FullyPaidSharesIndicator</assert>
+      <assert id="UBL-CR-249" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cac:RegistrationAddress)">[UBL-CR-249]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity RegistrationAddress</assert>
+      <assert id="UBL-CR-250" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cac:CorporateRegistrationScheme)">[UBL-CR-250]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity CorporateRegistrationScheme</assert>
+      <assert id="UBL-CR-251" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cac:HeadOfficeParty)">[UBL-CR-251]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity HeadOfficeParty</assert>
+      <assert id="UBL-CR-252" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cac:ShareholderParty)">[UBL-CR-252]-A UBL invoice should not include the AccountingCustomerParty Party PartyLegalEntity ShareholderParty</assert>
+      <assert id="UBL-CR-253" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:Contact/cbc:ID)">[UBL-CR-253]-A UBL invoice should not include the AccountingCustomerParty Party Contact ID</assert>
+      <assert id="UBL-CR-254" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:Contact/cbc:Telefax)">[UBL-CR-254]-A UBL invoice should not include the AccountingCustomerParty Party Contact Telefax</assert>
+      <assert id="UBL-CR-255" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:Contact/cbc:Note)">[UBL-CR-255]-A UBL invoice should not include the AccountingCustomerParty Party Contact Note</assert>
+      <assert id="UBL-CR-256" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:Contact/cac:OtherCommunication)">[UBL-CR-256]-A UBL invoice should not include the AccountingCustomerParty Party Contact OtherCommunication</assert>
+      <assert id="UBL-CR-257" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:Person)">[UBL-CR-257]-A UBL invoice should not include the AccountingCustomerParty Party Person</assert>
+      <assert id="UBL-CR-258" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:AgentParty)">[UBL-CR-258]-A UBL invoice should not include the AccountingCustomerParty Party AgentParty</assert>
+      <assert id="UBL-CR-259" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:ServiceProviderParty)">[UBL-CR-259]-A UBL invoice should not include the AccountingCustomerParty Party ServiceProviderParty</assert>
+      <assert id="UBL-CR-260" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:PowerOfAttorney)">[UBL-CR-260]-A UBL invoice should not include the AccountingCustomerParty Party PowerOfAttorney</assert>
+      <assert id="UBL-CR-261" flag="warning" test="not(cac:AccountingCustomerParty/cac:Party/cac:FinancialAccount)">[UBL-CR-261]-A UBL invoice should not include the AccountingCustomerParty Party FinancialAccount</assert>
+      <assert id="UBL-CR-262" flag="warning" test="not(cac:AccountingCustomerParty/cac:DeliveryContact)">[UBL-CR-262]-A UBL invoice should not include the AccountingCustomerParty DeliveryContact</assert>
+      <assert id="UBL-CR-263" flag="warning" test="not(cac:AccountingCustomerParty/cac:AccountingContact)">[UBL-CR-263]-A UBL invoice should not include the AccountingCustomerParty AccountingContact</assert>
+      <assert id="UBL-CR-264" flag="warning" test="not(cac:AccountingCustomerParty/cac:BuyerContact)">[UBL-CR-264]-A UBL invoice should not include the AccountingCustomerParty BuyerContact</assert>
+      <assert id="UBL-CR-265" flag="warning" test="not(cac:PayeeParty/cbc:MarkCareIndicator)">[UBL-CR-265]-A UBL invoice should not include the PayeeParty MarkCareIndicator</assert>
+      <assert id="UBL-CR-266" flag="warning" test="not(cac:PayeeParty/cbc:MarkAttentionIndicator)">[UBL-CR-266]-A UBL invoice should not include the PayeeParty MarkAttentionIndicator</assert>
+      <assert id="UBL-CR-267" flag="warning" test="not(cac:PayeeParty/cbc:WebsiteURI)">[UBL-CR-267]-A UBL invoice should not include the PayeeParty WebsiteURI</assert>
+      <assert id="UBL-CR-268" flag="warning" test="not(cac:PayeeParty/cbc:LogoReferenceID)">[UBL-CR-268]-A UBL invoice should not include the PayeeParty LogoReferenceID</assert>
+      <assert id="UBL-CR-269" flag="warning" test="not(cac:PayeeParty/cbc:EndpointID)">[UBL-CR-269]-A UBL invoice should not include the PayeeParty EndpointID</assert>
+      <assert id="UBL-CR-270" flag="warning" test="not(cac:PayeeParty/cbc:IndustryClassificationCode)">[UBL-CR-270]-A UBL invoice should not include the PayeeParty IndustryClassificationCode</assert>
+      <assert id="UBL-CR-271" flag="warning" test="not(cac:PayeeParty/cac:Language)">[UBL-CR-271]-A UBL invoice should not include the PayeeParty Language</assert>
+      <assert id="UBL-CR-272" flag="warning" test="not(cac:PayeeParty/cac:PostalAddress)">[UBL-CR-272]-A UBL invoice should not include the PayeeParty PostalAddress</assert>
+      <assert id="UBL-CR-273" flag="warning" test="not(cac:PayeeParty/cac:PhysicalLocation)">[UBL-CR-273]-A UBL invoice should not include the PayeeParty PhysicalLocation</assert>
+      <assert id="UBL-CR-274" flag="warning" test="not(cac:PayeeParty/cac:PartyTaxScheme)">[UBL-CR-274]-A UBL invoice should not include the PayeeParty PartyTaxScheme</assert>
+      <assert id="UBL-CR-275" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:RegistrationName)">[UBL-CR-275]-A UBL invoice should not include the PayeeParty PartyLegalEntity RegistrationName</assert>
+      <assert id="UBL-CR-276" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:RegistrationDate)">[UBL-CR-276]-A UBL invoice should not include the PayeeParty PartyLegalEntity RegistrationDate</assert>
+      <assert id="UBL-CR-277" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:RegistrationExpirationDate)">[UBL-CR-277]-A UBL invoice should not include the PayeeParty PartyLegalEntity RegistrationExpirationDate</assert>
+      <assert id="UBL-CR-278" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:CompanyLegalFormCode)">[UBL-CR-278]-A UBL invoice should not include the PayeeParty PartyLegalEntity CompanyLegalFormCode</assert>
+      <assert id="UBL-CR-279" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:CompanyLegalForm)">[UBL-CR-279]-A UBL invoice should not include the PayeeParty PartyLegalEntity CompanyLegalForm</assert>
+      <assert id="UBL-CR-280" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:SoleProprietorshipIndicator)">[UBL-CR-280]-A UBL invoice should not include the PayeeParty PartyLegalEntity SoleProprietorshipIndicator</assert>
+      <assert id="UBL-CR-281" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:CompanyLiquidationStatusCode)">[UBL-CR-281]-A UBL invoice should not include the PayeeParty PartyLegalEntity CompanyLiquidationStatusCode</assert>
+      <assert id="UBL-CR-282" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:CorporationStockAmount)">[UBL-CR-282]-A UBL invoice should not include the PayeeParty PartyLegalEntity CorporationStockAmount</assert>
+      <assert id="UBL-CR-283" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cbc:FullyPaidSharesIndicator)">[UBL-CR-283]-A UBL invoice should not include the PayeeParty PartyLegalEntity FullyPaidSharesIndicator</assert>
+      <assert id="UBL-CR-284" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cac:RegistrationAddress)">[UBL-CR-284]-A UBL invoice should not include the PayeeParty PartyLegalEntity RegistrationAddress</assert>
+      <assert id="UBL-CR-285" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cac:CorporateRegistrationScheme)">[UBL-CR-285]-A UBL invoice should not include the PayeeParty PartyLegalEntity CorporateRegistrationScheme</assert>
+      <assert id="UBL-CR-286" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cac:HeadOfficeParty)">[UBL-CR-286]-A UBL invoice should not include the PayeeParty PartyLegalEntity HeadOfficeParty</assert>
+      <assert id="UBL-CR-287" flag="warning" test="not(cac:PayeeParty/cac:PartyLegalEntity/cac:ShareholderParty)">[UBL-CR-287]-A UBL invoice should not include the PayeeParty PartyLegalEntity ShareholderParty</assert>
+      <assert id="UBL-CR-288" flag="warning" test="not(cac:PayeeParty/cac:Contact)">[UBL-CR-288]-A UBL invoice should not include the PayeeParty Contact</assert>
+      <assert id="UBL-CR-289" flag="warning" test="not(cac:PayeeParty/cac:Person)">[UBL-CR-289]-A UBL invoice should not include the PayeeParty Person</assert>
+      <assert id="UBL-CR-290" flag="warning" test="not(cac:PayeeParty/cac:AgentParty)">[UBL-CR-290]-A UBL invoice should not include the PayeeParty AgentParty</assert>
+      <assert id="UBL-CR-291" flag="warning" test="not(cac:PayeeParty/cac:ServiceProviderParty)">[UBL-CR-291]-A UBL invoice should not include the PayeeParty ServiceProviderParty</assert>
+      <assert id="UBL-CR-292" flag="warning" test="not(cac:PayeeParty/cac:PowerOfAttorney)">[UBL-CR-292]-A UBL invoice should not include the PayeeParty PowerOfAttorney</assert>
+      <assert id="UBL-CR-293" flag="warning" test="not(cac:PayeeParty/cac:FinancialAccount)">[UBL-CR-293]-A UBL invoice should not include the PayeeParty FinancialAccount</assert>
+      <assert id="UBL-CR-294" flag="warning" test="not(cac:BuyerCustomerParty)">[UBL-CR-294]-A UBL invoice should not include the BuyerCustomerParty</assert>
+      <assert id="UBL-CR-295" flag="warning" test="not(cac:SellerCustomerParty)">[UBL-CR-295]-A UBL invoice should not include the SellerCustomerParty</assert>
+      <assert id="UBL-CR-296" flag="warning" test="not(cac:TaxRepresentativeParty/cbc:MarkCareIndicator)">[UBL-CR-296]-A UBL invoice should not include the TaxRepresentativeParty MarkCareIndicator</assert>
+      <assert id="UBL-CR-297" flag="warning" test="not(cac:TaxRepresentativeParty/cbc:MarkAttentionIndicator)">[UBL-CR-297]-A UBL invoice should not include the TaxRepresentativeParty MarkAttentionIndicator</assert>
+      <assert id="UBL-CR-298" flag="warning" test="not(cac:TaxRepresentativeParty/cbc:WebsiteURI)">[UBL-CR-298]-A UBL invoice should not include the TaxRepresentativeParty WebsiteURI</assert>
+      <assert id="UBL-CR-299" flag="warning" test="not(cac:TaxRepresentativeParty/cbc:LogoReferenceID)">[UBL-CR-299]-A UBL invoice should not include the TaxRepresentativeParty LogoReferenceID</assert>
+      <assert id="UBL-CR-300" flag="warning" test="not(cac:TaxRepresentativeParty/cbc:EndpointID)">[UBL-CR-300]-A UBL invoice should not include the TaxRepresentativeParty EndpointID</assert>
+      <assert id="UBL-CR-301" flag="warning" test="not(cac:TaxRepresentativeParty/cbc:IndustryClassificationCode)">[UBL-CR-301]-A UBL invoice should not include the TaxRepresentativeParty IndustryClassificationCode</assert>
+      <assert id="UBL-CR-302" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyIdentification)">[UBL-CR-302]-A UBL invoice should not include the TaxRepresentativeParty PartyIdentification</assert>
+      <assert id="UBL-CR-303" flag="warning" test="not(cac:TaxRepresentativeParty/cac:Language)">[UBL-CR-303]-A UBL invoice should not include the TaxRepresentativeParty Language</assert>
+      <assert id="UBL-CR-304" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:ID)">[UBL-CR-304]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress ID</assert>
+      <assert id="UBL-CR-305" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:AddressTypeCode)">[UBL-CR-305]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress AddressTypeCode</assert>
+      <assert id="UBL-CR-306" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:AddressFormatCode)">[UBL-CR-306]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress AddressFormatCode</assert>
+      <assert id="UBL-CR-307" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:Postbox)">[UBL-CR-307]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress Postbox</assert>
+      <assert id="UBL-CR-308" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:Floor)">[UBL-CR-308]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress Floor</assert>
+      <assert id="UBL-CR-309" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:Room)">[UBL-CR-309]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress Room</assert>
+      <assert id="UBL-CR-310" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:BlockName)">[UBL-CR-310]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress BlockName</assert>
+      <assert id="UBL-CR-311" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:BuildingName)">[UBL-CR-311]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress BuildingName</assert>
+      <assert id="UBL-CR-312" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:BuildingNumber)">[UBL-CR-312]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress BuildingNumber</assert>
+      <assert id="UBL-CR-313" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:InhouseMail)">[UBL-CR-313]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress InhouseMail</assert>
+      <assert id="UBL-CR-314" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:Department)">[UBL-CR-314]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress Department</assert>
+      <assert id="UBL-CR-315" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:MarkAttention)">[UBL-CR-315]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress MarkAttention</assert>
+      <assert id="UBL-CR-316" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:MarkCare)">[UBL-CR-316]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress MarkCare</assert>
+      <assert id="UBL-CR-317" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:PlotIdentification)">[UBL-CR-317]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress PlotIdentification</assert>
+      <assert id="UBL-CR-318" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:CitySubdivisionName)">[UBL-CR-318]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress CitySubdivisionName</assert>
+      <assert id="UBL-CR-319" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:CountrySubentityCode)">[UBL-CR-319]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress CountrySubentityCode</assert>
+      <assert id="UBL-CR-320" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:Region)">[UBL-CR-320]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress Region</assert>
+      <assert id="UBL-CR-321" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:District)">[UBL-CR-321]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress District</assert>
+      <assert id="UBL-CR-322" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cbc:TimezoneOffset)">[UBL-CR-322]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress TimezoneOffset</assert>
+      <assert id="UBL-CR-323" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cac:Country/cbc:Name)">[UBL-CR-323]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress Country Name</assert>
+      <assert id="UBL-CR-324" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PostalAddress/cac:LocationCoordinate)">[UBL-CR-324]-A UBL invoice should not include the TaxRepresentativeParty PostalAddress LocationCoordinate</assert>
+      <assert id="UBL-CR-325" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PhysicalLocation)">[UBL-CR-325]-A UBL invoice should not include the TaxRepresentativeParty PhysicalLocation</assert>
+      <assert id="UBL-CR-326" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyTaxScheme/cbc:RegistrationName)">[UBL-CR-326]-A UBL invoice should not include the TaxRepresentativeParty PartyTaxScheme RegistrationName</assert>
+      <assert id="UBL-CR-327" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyTaxScheme/cbc:TaxLevelCode)">[UBL-CR-327]-A UBL invoice should not include the TaxRepresentativeParty PartyTaxScheme TaxLevelCode</assert>
+      <assert id="UBL-CR-328" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyTaxScheme/cbc:ExemptionReasonCode)">[UBL-CR-328]-A UBL invoice should not include the TaxRepresentativeParty PartyTaxScheme ExemptionReasonCode</assert>
+      <assert id="UBL-CR-329" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyTaxScheme/cbc:ExemptionReason)">[UBL-CR-329]-A UBL invoice should not include the TaxRepresentativeParty PartyTaxScheme ExemptionReason</assert>
+      <assert id="UBL-CR-330" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyTaxScheme/cac:RegistrationAddress)">[UBL-CR-330]-A UBL invoice should not include the TaxRepresentativeParty PartyTaxScheme RegistrationAddress</assert>
+      <assert id="UBL-CR-331" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyTaxScheme/cac:TaxScheme/cbc:Name)">[UBL-CR-331]-A UBL invoice should not include the TaxRepresentativeParty PartyTaxScheme TaxScheme Name</assert>
+      <assert id="UBL-CR-332" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyTaxScheme/cac:TaxScheme/cbc:TaxTypeCode)">[UBL-CR-332]-A UBL invoice should not include the TaxRepresentativeParty PartyTaxScheme TaxScheme TaxTypeCode</assert>
+      <assert id="UBL-CR-333" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyTaxScheme/cac:TaxScheme/cbc:CurrencyCode)">[UBL-CR-333]-A UBL invoice should not include the TaxRepresentativeParty PartyTaxScheme TaxScheme CurrencyCode</assert>
+      <assert id="UBL-CR-334" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyTaxScheme/cac:TaxScheme/cac:JurisdictionRegionAddress)">[UBL-CR-334]-A UBL invoice should not include the TaxRepresentativeParty PartyTaxScheme TaxScheme JurisdictionRegionAddress</assert>
+      <assert id="UBL-CR-335" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PartyLegalEntity)">[UBL-CR-335]-A UBL invoice should not include the TaxRepresentativeParty PartyLegalEntity</assert>
+      <assert id="UBL-CR-336" flag="warning" test="not(cac:TaxRepresentativeParty/cac:Contact)">[UBL-CR-336]-A UBL invoice should not include the TaxRepresentativeParty Contact</assert>
+      <assert id="UBL-CR-337" flag="warning" test="not(cac:TaxRepresentativeParty/cac:Person)">[UBL-CR-337]-A UBL invoice should not include the TaxRepresentativeParty Person</assert>
+      <assert id="UBL-CR-338" flag="warning" test="not(cac:TaxRepresentativeParty/cac:AgentParty)">[UBL-CR-338]-A UBL invoice should not include the TaxRepresentativeParty AgentParty</assert>
+      <assert id="UBL-CR-339" flag="warning" test="not(cac:TaxRepresentativeParty/cac:ServiceProviderParty)">[UBL-CR-339]-A UBL invoice should not include the TaxRepresentativeParty ServiceProviderParty</assert>
+      <assert id="UBL-CR-340" flag="warning" test="not(cac:TaxRepresentativeParty/cac:PowerOfAttorney)">[UBL-CR-340]-A UBL invoice should not include the TaxRepresentativeParty PowerOfAttorney</assert>
+      <assert id="UBL-CR-341" flag="warning" test="not(cac:TaxRepresentativeParty/cac:FinancialAccount)">[UBL-CR-341]-A UBL invoice should not include the TaxRepresentativeParty FinancialAccount</assert>
+      <assert id="UBL-CR-342" flag="warning" test="not(cac:Delivery/cbc:ID)">[UBL-CR-342]-A UBL invoice should not include the Delivery ID</assert>
+      <assert id="UBL-CR-343" flag="warning" test="not(cac:Delivery/cbc:Quantity)">[UBL-CR-343]-A UBL invoice should not include the Delivery Quantity</assert>
+      <assert id="UBL-CR-344" flag="warning" test="not(cac:Delivery/cbc:MinimumQuantity)">[UBL-CR-344]-A UBL invoice should not include the Delivery MinimumQuantity</assert>
+      <assert id="UBL-CR-345" flag="warning" test="not(cac:Delivery/cbc:MaximumQuantity)">[UBL-CR-345]-A UBL invoice should not include the Delivery MaximumQuantity</assert>
+      <assert id="UBL-CR-346" flag="warning" test="not(cac:Delivery/cbc:ActualDeliveryTime)">[UBL-CR-346]-A UBL invoice should not include the Delivery ActualDeliveryTime</assert>
+      <assert id="UBL-CR-347" flag="warning" test="not(cac:Delivery/cbc:LatestDeliveryDate)">[UBL-CR-347]-A UBL invoice should not include the Delivery LatestDeliveryDate</assert>
+      <assert id="UBL-CR-348" flag="warning" test="not(cac:Delivery/cbc:LatestDeliveryTime)">[UBL-CR-348]-A UBL invoice should not include the Delivery LatestDeliveryTime</assert>
+      <assert id="UBL-CR-349" flag="warning" test="not(cac:Delivery/cbc:ReleaseID)">[UBL-CR-349]-A UBL invoice should not include the Delivery ReleaseID</assert>
+      <assert id="UBL-CR-350" flag="warning" test="not(cac:Delivery/cbc:TrackingID)">[UBL-CR-350]-A UBL invoice should not include the Delivery TrackingID</assert>
+      <assert id="UBL-CR-351" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cbc:Description)">[UBL-CR-351]-A UBL invoice should not include the Delivery DeliveryLocation Description</assert>
+      <assert id="UBL-CR-352" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cbc:Conditions)">[UBL-CR-352]-A UBL invoice should not include the Delivery DeliveryLocation Conditions</assert>
+      <assert id="UBL-CR-353" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cbc:CountrySubentity)">[UBL-CR-353]-A UBL invoice should not include the Delivery DeliveryLocation CountrySubentity</assert>
+      <assert id="UBL-CR-354" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cbc:CountrySubentityCode)">[UBL-CR-354]-A UBL invoice should not include the Delivery DeliveryLocation CountrySubentityCode</assert>
+      <assert id="UBL-CR-355" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cbc:LocationTypeCode)">[UBL-CR-355]-A UBL invoice should not include the Delivery DeliveryLocation LocationTypeCode</assert>
+      <assert id="UBL-CR-356" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cbc:InformationURI)">[UBL-CR-356]-A UBL invoice should not include the Delivery DeliveryLocation InformationURI</assert>
+      <assert id="UBL-CR-357" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cbc:Name)">[UBL-CR-357]-A UBL invoice should not include the Delivery DeliveryLocation Name</assert>
+      <assert id="UBL-CR-358" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:ValidationPeriod)">[UBL-CR-358]-A UBL invoice should not include the Delivery DeliveryLocation ValidationPeriod</assert>
+      <assert id="UBL-CR-359" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:ID)">[UBL-CR-359]-A UBL invoice should not include the Delivery DeliveryLocation Address ID</assert>
+      <assert id="UBL-CR-360" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:AddressTypeCode)">[UBL-CR-360]-A UBL invoice should not include the Delivery DeliveryLocation Address AddressTypeCode</assert>
+      <assert id="UBL-CR-361" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:AddressFormatCode)">[UBL-CR-361]-A UBL invoice should not include the Delivery DeliveryLocation Address AddressFormatCode</assert>
+      <assert id="UBL-CR-362" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:Postbox)">[UBL-CR-362]-A UBL invoice should not include the Delivery DeliveryLocation Address Postbox</assert>
+      <assert id="UBL-CR-363" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:Floor)">[UBL-CR-363]-A UBL invoice should not include the Delivery DeliveryLocation Address Floor</assert>
+      <assert id="UBL-CR-364" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:Room)">[UBL-CR-364]-A UBL invoice should not include the Delivery DeliveryLocation Address Room</assert>
+      <assert id="UBL-CR-365" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:BlockName)">[UBL-CR-365]-A UBL invoice should not include the Delivery DeliveryLocation Address BlockName</assert>
+      <assert id="UBL-CR-366" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:BuildingName)">[UBL-CR-366]-A UBL invoice should not include the Delivery DeliveryLocation Address BuildingName</assert>
+      <assert id="UBL-CR-367" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:BuildingNumber)">[UBL-CR-367]-A UBL invoice should not include the Delivery DeliveryLocation Address BuildingNumber</assert>
+      <assert id="UBL-CR-368" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:InhouseMail)">[UBL-CR-368]-A UBL invoice should not include the Delivery DeliveryLocation Address InhouseMail</assert>
+      <assert id="UBL-CR-369" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:Department)">[UBL-CR-369]-A UBL invoice should not include the Delivery DeliveryLocation Address Department</assert>
+      <assert id="UBL-CR-370" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:MarkAttention)">[UBL-CR-370]-A UBL invoice should not include the Delivery DeliveryLocation Address MarkAttention</assert>
+      <assert id="UBL-CR-371" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:MarkCare)">[UBL-CR-371]-A UBL invoice should not include the Delivery DeliveryLocation Address MarkCare</assert>
+      <assert id="UBL-CR-372" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:PlotIdentification)">[UBL-CR-372]-A UBL invoice should not include the Delivery DeliveryLocation Address PlotIdentification</assert>
+      <assert id="UBL-CR-373" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:CitySubdivisionName)">[UBL-CR-373]-A UBL invoice should not include the Delivery DeliveryLocation Address CitySubdivisionName</assert>
+      <assert id="UBL-CR-374" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:CountrySubentityCode)">[UBL-CR-374]-A UBL invoice should not include the Delivery DeliveryLocation Address CountrySubentityCode</assert>
+      <assert id="UBL-CR-375" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:Region)">[UBL-CR-375]-A UBL invoice should not include the Delivery DeliveryLocation Address Region</assert>
+      <assert id="UBL-CR-376" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:District)">[UBL-CR-376]-A UBL invoice should not include the Delivery DeliveryLocation Address District</assert>
+      <assert id="UBL-CR-377" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:TimezoneOffset)">[UBL-CR-377]-A UBL invoice should not include the Delivery DeliveryLocation Address TimezoneOffset</assert>
+      <assert id="UBL-CR-378" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cac:Country/cbc:Name)">[UBL-CR-378]-A UBL invoice should not include the Delivery DeliveryLocation Address Country Name</assert>
+      <assert id="UBL-CR-379" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:Address/cac:LocationCoordinate)">[UBL-CR-379]-A UBL invoice should not include the Delivery DeliveryLocation Address LocationCoordinate</assert>
+      <assert id="UBL-CR-380" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:SubsidiaryLocation)">[UBL-CR-380]-A UBL invoice should not include the Delivery DeliveryLocation SubsidiaryLocation</assert>
+      <assert id="UBL-CR-381" flag="warning" test="not(cac:Delivery/cac:DeliveryLocation/cac:LocationCoordinate)">[UBL-CR-381]-A UBL invoice should not include the Delivery DeliveryLocation LocationCoordinate</assert>
+      <assert id="UBL-CR-382" flag="warning" test="not(cac:Delivery/cac:AlternativeDeliveryLocation)">[UBL-CR-382]-A UBL invoice should not include the Delivery AlternativeDeliveryLocation</assert>
+      <assert id="UBL-CR-383" flag="warning" test="not(cac:Delivery/cac:RequestedDeliveryPeriod)">[UBL-CR-383]-A UBL invoice should not include the Delivery RequestedDeliveryPeriod</assert>
+      <assert id="UBL-CR-384" flag="warning" test="not(cac:Delivery/cac:PromisedDeliveryPeriod)">[UBL-CR-384]-A UBL invoice should not include the Delivery PromisedDeliveryPeriod</assert>
+      <assert id="UBL-CR-385" flag="warning" test="not(cac:Delivery/cac:CarrierParty)">[UBL-CR-385]-A UBL invoice should not include the Delivery CarrierParty</assert>
+      <assert id="UBL-CR-386" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cbc:MarkCareIndicator)">[UBL-CR-386]-A UBL invoice should not include the DeliveryParty MarkCareIndicator</assert>
+      <assert id="UBL-CR-387" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cbc:MarkAttentionIndicator)">[UBL-CR-387]-A UBL invoice should not include the DeliveryParty MarkAttentionIndicator</assert>
+      <assert id="UBL-CR-388" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cbc:WebsiteURI)">[UBL-CR-388]-A UBL invoice should not include the DeliveryParty WebsiteURI</assert>
+      <assert id="UBL-CR-389" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cbc:LogoReferenceID)">[UBL-CR-389]-A UBL invoice should not include the DeliveryParty LogoReferenceID</assert>
+      <assert id="UBL-CR-390" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cbc:EndpointID)">[UBL-CR-390]-A UBL invoice should not include the DeliveryParty EndpointID</assert>
+      <assert id="UBL-CR-391" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cbc:IndustryClassificationCode)">[UBL-CR-391]-A UBL invoice should not include the DeliveryParty IndustryClassificationCode</assert>
+      <assert id="UBL-CR-392" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:PartyIdentification)">[UBL-CR-392]-A UBL invoice should not include the DeliveryParty PartyIdentification</assert>
+      <assert id="UBL-CR-393" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:Language)">[UBL-CR-393]-A UBL invoice should not include the DeliveryParty Language</assert>
+      <assert id="UBL-CR-394" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:PostalAddress)">[UBL-CR-394]-A UBL invoice should not include the DeliveryParty PostalAddress</assert>
+      <assert id="UBL-CR-395" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:PhysicalLocation)">[UBL-CR-395]-A UBL invoice should not include the DeliveryParty PhysicalLocation</assert>
+      <assert id="UBL-CR-396" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:PartyTaxScheme)">[UBL-CR-396]-A UBL invoice should not include the DeliveryParty PartyTaxScheme</assert>
+      <assert id="UBL-CR-397" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:PartyLegalEntity)">[UBL-CR-397]-A UBL invoice should not include the DeliveryParty PartyLegalEntity</assert>
+      <assert id="UBL-CR-398" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:Contact)">[UBL-CR-398]-A UBL invoice should not include the DeliveryParty Contact</assert>
+      <assert id="UBL-CR-399" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:Person)">[UBL-CR-399]-A UBL invoice should not include the DeliveryParty Person</assert>
+      <assert id="UBL-CR-400" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:AgentParty)">[UBL-CR-400]-A UBL invoice should not include the DeliveryParty AgentParty</assert>
+      <assert id="UBL-CR-401" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:ServiceProviderParty)">[UBL-CR-401]-A UBL invoice should not include the DeliveryParty ServiceProviderParty</assert>
+      <assert id="UBL-CR-402" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:PowerOfAttorney)">[UBL-CR-402]-A UBL invoice should not include the DeliveryParty PowerOfAttorney</assert>
+      <assert id="UBL-CR-403" flag="warning" test="not(cac:Delivery/cac:DeliveryParty/cac:FinancialAccount)">[UBL-CR-403]-A UBL invoice should not include the DeliveryParty FinancialAccount</assert>
+      <assert id="UBL-CR-404" flag="warning" test="not(cac:Delivery/cac:NotifyParty)">[UBL-CR-404]-A UBL invoice should not include the Delivery NotifyParty</assert>
+      <assert id="UBL-CR-405" flag="warning" test="not(cac:Delivery/cac:Despatch)">[UBL-CR-405]-A UBL invoice should not include the Delivery Despatch</assert>
+      <assert id="UBL-CR-406" flag="warning" test="not(cac:Delivery/cac:DeliveryTerms)">[UBL-CR-406]-A UBL invoice should not include the Delivery DeliveryTerms</assert>
+      <assert id="UBL-CR-407" flag="warning" test="not(cac:Delivery/cac:MinimumDeliveryUnit)">[UBL-CR-407]-A UBL invoice should not include the Delivery MinimumDeliveryUnit</assert>
+      <assert id="UBL-CR-408" flag="warning" test="not(cac:Delivery/cac:MaximumDeliveryUnit)">[UBL-CR-408]-A UBL invoice should not include the Delivery MaximumDeliveryUnit</assert>
+      <assert id="UBL-CR-409" flag="warning" test="not(cac:Delivery/cac:Shipment)">[UBL-CR-409]-A UBL invoice should not include the Delivery Shipment</assert>
+      <assert id="UBL-CR-410" flag="warning" test="not(cac:DeliveryTerms)">[UBL-CR-410]-A UBL invoice should not include the DeliveryTerms</assert>
+      <assert id="UBL-CR-411" flag="warning" test="not(cac:PaymentMeans/cbc:ID)">[UBL-CR-411]-A UBL invoice should not include the PaymentMeans ID</assert>
+      <assert id="UBL-CR-412" flag="warning" test="not(cac:PaymentMeans/cbc:PaymentDueDate)">[UBL-CR-412]-A UBL invoice should not include the PaymentMeans PaymentDueDate</assert>
+      <assert id="UBL-CR-413" flag="warning" test="not(cac:PaymentMeans/cbc:PaymentChannelCode)">[UBL-CR-413]-A UBL invoice should not include the PaymentMeans PaymentChannelCode</assert>
+      <assert id="UBL-CR-414" flag="warning" test="not(cac:PaymentMeans/cbc:InstructionID)">[UBL-CR-414]-A UBL invoice should not include the PaymentMeans InstructionID</assert>
+      <assert id="UBL-CR-415" flag="warning" test="not(cac:PaymentMeans/cac:CardAccount/cbc:CardTypeCode)">[UBL-CR-415]-A UBL invoice should not include the PaymentMeans CardAccount CardTypeCode</assert>
+      <assert id="UBL-CR-416" flag="warning" test="not(cac:PaymentMeans/cac:CardAccount/cbc:ValidityStartDate)">[UBL-CR-416]-A UBL invoice should not include the PaymentMeans CardAccount ValidityStartDate</assert>
+      <assert id="UBL-CR-417" flag="warning" test="not(cac:PaymentMeans/cac:CardAccount/cbc:ExpiryDate)">[UBL-CR-417]-A UBL invoice should not include the PaymentMeans CardAccount ExpiryDate</assert>
+      <assert id="UBL-CR-418" flag="warning" test="not(cac:PaymentMeans/cac:CardAccount/cbc:IssuerID)">[UBL-CR-418]-A UBL invoice should not include the PaymentMeans CardAccount IssuerID</assert>
+      <assert id="UBL-CR-419" flag="warning" test="not(cac:PaymentMeans/cac:CardAccount/cbc:IssuerNumberID)">[UBL-CR-419]-A UBL invoice should not include the PaymentMeans CardAccount IssuerNumberID</assert>
+      <assert id="UBL-CR-420" flag="warning" test="not(cac:PaymentMeans/cac:CardAccount/cbc:CV2ID)">[UBL-CR-420]-A UBL invoice should not include the PaymentMeans CardAccount CV2ID</assert>
+      <assert id="UBL-CR-421" flag="warning" test="not(cac:PaymentMeans/cac:CardAccount/cbc:CardChipCode)">[UBL-CR-421]-A UBL invoice should not include the PaymentMeans CardAccount CardChipCode</assert>
+      <assert id="UBL-CR-422" flag="warning" test="not(cac:PaymentMeans/cac:CardAccount/cbc:ChipApplicationID)">[UBL-CR-422]-A UBL invoice should not include the PaymentMeans CardAccount ChipApplicationID</assert>
+      <assert id="UBL-CR-424" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:AliasName)">[UBL-CR-424]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount AliasName</assert>
+      <assert id="UBL-CR-425" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:AccountTypeCode)">[UBL-CR-425]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount AccountTypeCode</assert>
+      <assert id="UBL-CR-426" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:AccountFormatCode)">[UBL-CR-426]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount AccountFormatCode</assert>
+      <assert id="UBL-CR-427" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:CurrencyCode)">[UBL-CR-427]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount CurrencyCode</assert>
+      <assert id="UBL-CR-428" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:PaymentNote)">[UBL-CR-428]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount PaymentNote</assert>
+      <assert id="UBL-CR-429" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:Name)">[UBL-CR-429]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount FinancialInstitutionBranch Name</assert>
+      <assert id="UBL-CR-430" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cac:FinancialInstitution/cbc:Name)">[UBL-CR-430]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount FinancialInstitutionBranch FinancialInstitution Name</assert>
+      <assert id="UBL-CR-431" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cac:FinancialInstitution/cac:Address)">[UBL-CR-431]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount FinancialInstitutionBranch FinancialInstitution Address</assert>
+      <assert id="UBL-CR-432" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cac:Address)">[UBL-CR-432]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount FinancialInstitutionBranch Address</assert>
+      <assert id="UBL-CR-433" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cac:Country)">[UBL-CR-433]-A UBL invoice should not include the PaymentMeans PayeeFinancialAccount Country</assert>
+      <assert id="UBL-CR-434" flag="warning" test="not(cac:PaymentMeans/cac:CreditAccount)">[UBL-CR-434]-A UBL invoice should not include the PaymentMeans CreditAccount</assert>
+      <assert id="UBL-CR-435" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cbc:MandateTypeCode)">[UBL-CR-435]-A UBL invoice should not include the PaymentMeans PaymentMandate MandateTypeCode</assert>
+      <assert id="UBL-CR-436" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cbc:MaximumPaymentInstructionsNumeric)">[UBL-CR-436]-A UBL invoice should not include the PaymentMeans PaymentMandate MaximumPaymentInstructionsNumeric</assert>
+      <assert id="UBL-CR-437" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cbc:MaximumPaidAmount)">[UBL-CR-437]-A UBL invoice should not include the PaymentMeans PaymentMandate MaximumPaidAmount</assert>
+      <assert id="UBL-CR-438" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cbc:SignatureID)">[UBL-CR-438]-A UBL invoice should not include the PaymentMeans PaymentMandate SignatureID</assert>
+      <assert id="UBL-CR-439" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PayerParty)">[UBL-CR-439]-A UBL invoice should not include the PaymentMeans PaymentMandate PayerParty</assert>
+      <assert id="UBL-CR-440" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:Name)">[UBL-CR-440]-A UBL invoice should not include the PaymentMeans PaymentMandate PayerFinancialAccount Name</assert>
+      <assert id="UBL-CR-441" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:AliasName)">[UBL-CR-441]-A UBL invoice should not include the PaymentMeans PaymentMandate PayerFinancialAccount AliasName</assert>
+      <assert id="UBL-CR-442" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:AccountTypeCode)">[UBL-CR-442]-A UBL invoice should not include the PaymentMeans PaymentMandate PayerFinancialAccount AccountTypeCode</assert>
+      <assert id="UBL-CR-443" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:AccountFormatCode)">[UBL-CR-443]-A UBL invoice should not include the PaymentMeans PaymentMandate PayerFinancialAccount AccountFormatCode</assert>
+      <assert id="UBL-CR-444" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:CurrencyCode)">[UBL-CR-444]-A UBL invoice should not include the PaymentMeans PaymentMandate PayerFinancialAccount CurrencyCode</assert>
+      <assert id="UBL-CR-445" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:PaymentNote)">[UBL-CR-445]-A UBL invoice should not include the PaymentMeans PaymentMandate PayerFinancialAccount PaymentNote</assert>
+      <assert id="UBL-CR-446" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cac:FinancialInstitutionBranch)">[UBL-CR-446]-A UBL invoice should not include the PaymentMeans PaymentMandate PayerFinancialAccount FinancialInstitutionBranch</assert>
+      <assert id="UBL-CR-447" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cac:Country)">[UBL-CR-447]-A UBL invoice should not include the PaymentMeans PaymentMandate PayerFinancialAccount Country</assert>
+      <assert id="UBL-CR-448" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:ValidityPeriod)">[UBL-CR-448]-A UBL invoice should not include the PaymentMeans PaymentMandate ValidityPeriod</assert>
+      <assert id="UBL-CR-449" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:PaymentReversalPeriod)">[UBL-CR-449]-A UBL invoice should not include the PaymentMeans PaymentMandate PaymentReversalPeriod</assert>
+      <assert id="UBL-CR-450" flag="warning" test="not(cac:PaymentMeans/cac:PaymentMandate/cac:Clause)">[UBL-CR-450]-A UBL invoice should not include the PaymentMeans PaymentMandate Clause</assert>
+      <assert id="UBL-CR-451" flag="warning" test="not(cac:PaymentMeans/cac:TradeFinancing)">[UBL-CR-451]-A UBL invoice should not include the PaymentMeans TradeFinancing</assert>
+      <assert id="UBL-CR-452" flag="warning" test="not(cac:PaymentTerms/cbc:ID)">[UBL-CR-452]-A UBL invoice should not include the PaymentTerms ID</assert>
+      <assert id="UBL-CR-453" flag="warning" test="not(cac:PaymentTerms/cbc:PaymentMeansID)">[UBL-CR-453]-A UBL invoice should not include the PaymentTerms PaymentMeansID</assert>
+      <assert id="UBL-CR-454" flag="warning" test="not(cac:PaymentTerms/cbc:PrepaidPaymentReferenceID)">[UBL-CR-454]-A UBL invoice should not include the PaymentTerms PrepaidPaymentReferenceID</assert>
+      <assert id="UBL-CR-455" flag="warning" test="not(cac:PaymentTerms/cbc:ReferenceEventCode)">[UBL-CR-455]-A UBL invoice should not include the PaymentTerms ReferenceEventCode</assert>
+      <assert id="UBL-CR-456" flag="warning" test="not(cac:PaymentTerms/cbc:SettlementDiscountPercent)">[UBL-CR-456]-A UBL invoice should not include the PaymentTerms SettlementDiscountPercent</assert>
+      <assert id="UBL-CR-457" flag="warning" test="not(cac:PaymentTerms/cbc:PenaltySurchargePercent)">[UBL-CR-457]-A UBL invoice should not include the PaymentTerms PenaltySurchargePercent</assert>
+      <assert id="UBL-CR-458" flag="warning" test="not(cac:PaymentTerms/cbc:PaymentPercent)">[UBL-CR-458]-A UBL invoice should not include the PaymentTerms PaymentPercent</assert>
+      <assert id="UBL-CR-459" flag="warning" test="not(cac:PaymentTerms/cbc:Amount)">[UBL-CR-459]-A UBL invoice should not include the PaymentTerms Amount</assert>
+      <assert id="UBL-CR-460" flag="warning" test="not(cac:PaymentTerms/cbc:SettlementDiscountAmount)">[UBL-CR-460]-A UBL invoice should not include the PaymentTerms SettlementDiscountAmount</assert>
+      <assert id="UBL-CR-461" flag="warning" test="not(cac:PaymentTerms/cbc:PenaltyAmount)">[UBL-CR-461]-A UBL invoice should not include the PaymentTerms PenaltyAmount</assert>
+      <assert id="UBL-CR-462" flag="warning" test="not(cac:PaymentTerms/cbc:PaymentTermsDetailsURI)">[UBL-CR-462]-A UBL invoice should not include the PaymentTerms PaymentTermsDetailsURI</assert>
+      <assert id="UBL-CR-463" flag="warning" test="not(cac:PaymentTerms/cbc:PaymentDueDate)">[UBL-CR-463]-A UBL invoice should not include the PaymentTerms PaymentDueDate</assert>
+      <assert id="UBL-CR-464" flag="warning" test="not(cac:PaymentTerms/cbc:InstallmentDueDate)">[UBL-CR-464]-A UBL invoice should not include the PaymentTerms InstallmentDueDate</assert>
+      <assert id="UBL-CR-465" flag="warning" test="not(cac:PaymentTerms/cbc:InvoicingPartyReference)">[UBL-CR-465]-A UBL invoice should not include the PaymentTerms InvoicingPartyReference</assert>
+      <assert id="UBL-CR-466" flag="warning" test="not(cac:PaymentTerms/cac:SettlementPeriod)">[UBL-CR-466]-A UBL invoice should not include the PaymentTerms SettlementPeriod</assert>
+      <assert id="UBL-CR-467" flag="warning" test="not(cac:PaymentTerms/cac:PenaltyPeriod)">[UBL-CR-467]-A UBL invoice should not include the PaymentTerms PenaltyPeriod</assert>
+      <assert id="UBL-CR-468" flag="warning" test="not(cac:PaymentTerms/cac:ExchangeRate)">[UBL-CR-468]-A UBL invoice should not include the PaymentTerms ExchangeRate</assert>
+      <assert id="UBL-CR-469" flag="warning" test="not(cac:PaymentTerms/cac:ValidityPeriod)">[UBL-CR-469]-A UBL invoice should not include the PaymentTerms ValidityPeriod</assert>
+      <assert id="UBL-CR-470" flag="warning" test="not(cac:PrepaidPayment)">[UBL-CR-470]-A UBL invoice should not include the PrepaidPayment</assert>
+      <assert id="UBL-CR-471" flag="warning" test="not(cac:AllowanceCharge/cbc:ID)">[UBL-CR-471]-A UBL invoice should not include the AllowanceCharge ID</assert>
+      <assert id="UBL-CR-472" flag="warning" test="not(cac:AllowanceCharge/cbc:PrepaidIndicator)">[UBL-CR-472]-A UBL invoice should not include the AllowanceCharge PrepaidIndicator</assert>
+      <assert id="UBL-CR-473" flag="warning" test="not(cac:AllowanceCharge/cbc:SequenceNumeric)">[UBL-CR-473]-A UBL invoice should not include the AllowanceCharge SequenceNumeric</assert>
+      <assert id="UBL-CR-474" flag="warning" test="not(cac:AllowanceCharge/cbc:AccountingCostCode)">[UBL-CR-474]-A UBL invoice should not include the AllowanceCharge AccountingCostCode</assert>
+      <assert id="UBL-CR-475" flag="warning" test="not(cac:AllowanceCharge/cbc:AccountingCost)">[UBL-CR-475]-A UBL invoice should not include the AllowanceCharge AccountingCost</assert>
+      <assert id="UBL-CR-476" flag="warning" test="not(cac:AllowanceCharge/cbc:PerUnitAmount)">[UBL-CR-476]-A UBL invoice should not include the AllowanceCharge PerUnitAmount</assert>
+      <assert id="UBL-CR-477" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cbc:Name)">[UBL-CR-477]-A UBL invoice should not include the AllowanceCharge TaxCategory Name</assert>
+      <assert id="UBL-CR-478" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cbc:BaseUnitMeasure)">[UBL-CR-478]-A UBL invoice should not include the AllowanceCharge TaxCategory BaseUnitMeasure</assert>
+      <assert id="UBL-CR-479" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cbc:PerUnitAmount)">[UBL-CR-479]-A UBL invoice should not include the AllowanceCharge TaxCategory PerUnitAmount</assert>
+      <assert id="UBL-CR-480" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cbc:TaxExemptionReasonCode)">[UBL-CR-480]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxExemptionReasonCode</assert>
+      <assert id="UBL-CR-481" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cbc:TaxExemptionReason)">[UBL-CR-481]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxExemptionReason</assert>
+      <assert id="UBL-CR-482" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cbc:TierRange)">[UBL-CR-482]-A UBL invoice should not include the AllowanceCharge TaxCategory TierRange</assert>
+      <assert id="UBL-CR-483" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cbc:TierRatePercent)">[UBL-CR-483]-A UBL invoice should not include the AllowanceCharge TaxCategory TierRatePercent</assert>
+      <assert id="UBL-CR-484" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cbc:Name)">[UBL-CR-484]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxScheme Name</assert>
+      <assert id="UBL-CR-485" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cbc:TaxTypeCode)">[UBL-CR-485]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxScheme TaxTypeCode</assert>
+      <assert id="UBL-CR-486" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cbc:CurrencyCode)">[UBL-CR-486]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxScheme CurrencyCode</assert>
+      <assert id="UBL-CR-487" flag="warning" test="not(cac:AllowanceCharge/cac:TaxCategory/cac:TaxScheme/cac:JurisdiccionRegionAddress)">[UBL-CR-487]-A UBL invoice should not include the AllowanceCharge TaxCategory TaxScheme JurisdiccionRegionAddress</assert>
+      <assert id="UBL-CR-488" flag="warning" test="not(cac:AllowanceCharge/cac:TaxTotal)">[UBL-CR-488]-A UBL invoice should not include the AllowanceCharge TaxTotal</assert>
+      <assert id="UBL-CR-489" flag="warning" test="not(cac:AllowanceCharge/cac:PaymentMeans)">[UBL-CR-489]-A UBL invoice should not include the AllowanceCharge PaymentMeans</assert>
+      <assert id="UBL-CR-490" flag="warning" test="not(cac:TaxExchangeRate)">[UBL-CR-490]-A UBL invoice should not include the TaxExchangeRate</assert>
+      <assert id="UBL-CR-491" flag="warning" test="not(cac:PricingExchangeRate)">[UBL-CR-491]-A UBL invoice should not include the PricingExchangeRate</assert>
+      <assert id="UBL-CR-492" flag="warning" test="not(cac:PaymentExchangeRate)">[UBL-CR-492]-A UBL invoice should not include the PaymentExchangeRate</assert>
+      <assert id="UBL-CR-493" flag="warning" test="not(cac:PaymentAlternativeExchangeRate)">[UBL-CR-493]-A UBL invoice should not include the PaymentAlternativeExchangeRate</assert>
+      <assert id="UBL-CR-494" flag="warning" test="not(cac:TaxTotal/cbc:RoundingAmount)">[UBL-CR-494]-A UBL invoice should not include the TaxTotal RoundingAmount</assert>
+      <assert id="UBL-CR-495" flag="warning" test="not(cac:TaxTotal/cbc:TaxEvidenceIndicator)">[UBL-CR-495]-A UBL invoice should not include the TaxTotal TaxEvidenceIndicator</assert>
+      <assert id="UBL-CR-496" flag="warning" test="not(cac:TaxTotal/cbc:TaxIncludedIndicator)">[UBL-CR-496]-A UBL invoice should not include the TaxTotal TaxIncludedIndicator</assert>
+      <assert id="UBL-CR-497" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cbc:CalculationSequenceNumeric)">[UBL-CR-497]-A UBL invoice should not include the TaxTotal TaxSubtotal CalulationSequenceNumeric</assert>
+      <assert id="UBL-CR-498" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cbc:TransactionCurrencyTaxAmount)">[UBL-CR-498]-A UBL invoice should not include the TaxTotal TaxSubtotal TransactionCurrencyTaxAmount</assert>
+      <assert id="UBL-CR-499" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cbc:Percent)">[UBL-CR-499]-A UBL invoice should not include the TaxTotal TaxSubtotal Percent</assert>
+      <assert id="UBL-CR-500" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cbc:BaseUnitMeasure)">[UBL-CR-500]-A UBL invoice should not include the TaxTotal TaxSubtotal BaseUnitMeasure</assert>
+      <assert id="UBL-CR-501" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cbc:PerUnitAmount)">[UBL-CR-501]-A UBL invoice should not include the TaxTotal TaxSubtotal PerUnitAmount</assert>
+      <assert id="UBL-CR-502" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cbc:TierRange)">[UBL-CR-502]-A UBL invoice should not include the TaxTotal TaxSubtotal TierRange</assert>
+      <assert id="UBL-CR-503" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cbc:TierRatePercent)">[UBL-CR-503]-A UBL invoice should not include the TaxTotal TaxSubtotal TierRatePercent</assert>
+      <assert id="UBL-CR-504" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:Name)">[UBL-CR-504]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory Name</assert>
+      <assert id="UBL-CR-505" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:BaseUnitMeasure)">[UBL-CR-505]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory BaseUnitMeasure</assert>
+      <assert id="UBL-CR-506" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:PerUnitAmount)">[UBL-CR-506]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory PerUnitAmount</assert>
+      <assert id="UBL-CR-507" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:TierRange)">[UBL-CR-507]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory TierRange</assert>
+      <assert id="UBL-CR-508" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:TierRatePercent)">[UBL-CR-508]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory TierRatePercent</assert>
+      <assert id="UBL-CR-509" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:Name)">[UBL-CR-509]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory TaxScheme Name</assert>
+      <assert id="UBL-CR-510" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:TaxTypeCode)">[UBL-CR-510]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory TaxScheme TaxTypeCode</assert>
+      <assert id="UBL-CR-511" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cbc:CurrencyCode)">[UBL-CR-511]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory TaxScheme CurrencyCode</assert>
+      <assert id="UBL-CR-512" flag="warning" test="not(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cac:TaxScheme/cac:JurisdiccionRegionAddress)">[UBL-CR-512]-A UBL invoice should not include the TaxTotal TaxSubtotal TaxCategory TaxScheme JurisdiccionRegionAddress</assert>
+      <assert id="UBL-CR-513" flag="warning" test="not(cac:WithholdingTaxTotal)">[UBL-CR-513]-A UBL invoice should not include the WithholdingTaxTotal</assert>
+      <assert id="UBL-CR-514" flag="warning" test="not(cac:LegalMonetaryTotal/cbc:PayableAlternativeAmount)">[UBL-CR-514]-A UBL invoice should not include the LegalMonetaryTotal PayableAlternativeAmount</assert>
+      <assert id="UBL-CR-515" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cbc:UUID)">[UBL-CR-515]-A UBL invoice should not include the InvoiceLine UUID</assert>
+      <assert id="UBL-CR-516" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cbc:TaxPointDate)">[UBL-CR-516]-A UBL invoice should not include the InvoiceLine TaxPointDate</assert>
+      <assert id="UBL-CR-517" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cbc:AccountingCostCode)">[UBL-CR-517]-A UBL invoice should not include the InvoiceLine AccountingCostCode</assert>
+      <assert id="UBL-CR-518" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cbc:PaymentPurposeCode)">[UBL-CR-518]-A UBL invoice should not include the InvoiceLine PaymentPurposeCode</assert>
+      <assert id="UBL-CR-519" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cbc:FreeOfChargeIndicator)">[UBL-CR-519]-A UBL invoice should not include the InvoiceLine FreeOfChargeIndicator</assert>
+      <assert id="UBL-CR-520" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:InvoicePeriod/cbc:StartTime)">[UBL-CR-520]-A UBL invoice should not include the InvoiceLine InvoicePeriod StartTime</assert>
+      <assert id="UBL-CR-521" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:InvoicePeriod/cbc:EndTime)">[UBL-CR-521]-A UBL invoice should not include the InvoiceLine InvoicePeriod EndTime</assert>
+      <assert id="UBL-CR-522" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:InvoicePeriod/cbc:DurationMeasure)">[UBL-CR-522]-A UBL invoice should not include the InvoiceLine InvoicePeriod DurationMeasure</assert>
+      <assert id="UBL-CR-523" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:InvoicePeriod/cbc:DescriptionCode)">[UBL-CR-523]-A UBL invoice should not include the InvoiceLine InvoicePeriod DescriptionCode</assert>
+      <assert id="UBL-CR-524" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:InvoicePeriod/cbc:Description)">[UBL-CR-524]-A UBL invoice should not include the InvoiceLine InvoicePeriod Description</assert>
+      <assert id="UBL-CR-525" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OrderLineReference/cbc:SalesOrderLineID)">[UBL-CR-525]-A UBL invoice should not include the InvoiceLine OrderLineReference SalesOrderLineID</assert>
+      <assert id="UBL-CR-526" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OrderLineReference/cbc:UUID)">[UBL-CR-526]-A UBL invoice should not include the InvoiceLine OrderLineReference UUID</assert>
+      <assert id="UBL-CR-527" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OrderLineReference/cbc:LineStatusCode)">[UBL-CR-527]-A UBL invoice should not include the InvoiceLine OrderLineReference LineStatusCode</assert>
+      <assert id="UBL-CR-528" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OrderLineReference/cbc:OrderReference)">[UBL-CR-528]-A UBL invoice should not include the InvoiceLine OrderLineReference OrderReference</assert>
+      <assert id="UBL-CR-529" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DespatchLineReference)">[UBL-CR-529]-A UBL invoice should not include the InvoiceLine DespatchLineReference</assert>
+      <assert id="UBL-CR-530" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:ReceiptLineReference)">[UBL-CR-530]-A UBL invoice should not include the InvoiceLine ReceiptLineReference</assert>
+      <assert id="UBL-CR-531" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:BillingReference)">[UBL-CR-531]-A UBL invoice should not include the InvoiceLine BillingReference</assert>
+      <assert id="UBL-CR-532" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:CopyIndicator)">[UBL-CR-532]-A UBL invoice should not include the InvoiceLine DocumentReference CopyIndicator</assert>
+      <assert id="UBL-CR-533" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:UUID)">[UBL-CR-533]-A UBL invoice should not include the InvoiceLine DocumentReference UUID</assert>
+      <assert id="UBL-CR-534" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:IssueDate)">[UBL-CR-534]-A UBL invoice should not include the InvoiceLine DocumentReference IssueDate</assert>
+      <assert id="UBL-CR-535" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:IssueTime)">[UBL-CR-535]-A UBL invoice should not include the InvoiceLine DocumentReference IssueTime</assert>
+      <assert id="UBL-CR-537" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:DocumentType)">[UBL-CR-537]-A UBL invoice should not include the InvoiceLine DocumentReference DocumentType</assert>
+      <assert id="UBL-CR-538" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:Xpath)">[UBL-CR-538]-A UBL invoice should not include the InvoiceLine DocumentReference Xpath</assert>
+      <assert id="UBL-CR-539" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:LanguageID)">[UBL-CR-539]-A UBL invoice should not include the InvoiceLine DocumentReference LanguageID</assert>
+      <assert id="UBL-CR-540" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:LocaleCode)">[UBL-CR-540]-A UBL invoice should not include the InvoiceLine DocumentReference LocaleCode</assert>
+      <assert id="UBL-CR-541" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:VersionID)">[UBL-CR-541]-A UBL invoice should not include the InvoiceLine DocumentReference VersionID</assert>
+      <assert id="UBL-CR-542" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:DocumentStatusCode)">[UBL-CR-542]-A UBL invoice should not include the InvoiceLine DocumentReference DocumentStatusCode</assert>
+      <assert id="UBL-CR-543" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cbc:DocumentDescription)">[UBL-CR-543]-A UBL invoice should not include the InvoiceLine DocumentReference DocumentDescription</assert>
+      <assert id="UBL-CR-544" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cac:Attachment)">[UBL-CR-544]-A UBL invoice should not include the InvoiceLine DocumentReference Attachment</assert>
+      <assert id="UBL-CR-545" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cac:ValidityPeriod)">[UBL-CR-545]-A UBL invoice should not include the InvoiceLine DocumentReference ValidityPeriod</assert>
+      <assert id="UBL-CR-546" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cac:IssuerParty)">[UBL-CR-546]-A UBL invoice should not include the InvoiceLine DocumentReference IssuerParty</assert>
+      <assert id="UBL-CR-547" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DocumentReference/cac:ResultOfVerification)">[UBL-CR-547]-A UBL invoice should not include the InvoiceLine DocumentReference ResultOfVerification</assert>
+      <assert id="UBL-CR-548" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:PricingReference)">[UBL-CR-548]-A UBL invoice should not include the InvoiceLine PricingReference</assert>
+      <assert id="UBL-CR-549" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:OriginatorParty)">[UBL-CR-549]-A UBL invoice should not include the InvoiceLine OriginatorParty</assert>
+      <assert id="UBL-CR-550" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Delivery)">[UBL-CR-550]-A UBL invoice should not include the InvoiceLine Delivery</assert>
+      <assert id="UBL-CR-551" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:PaymentTerms)">[UBL-CR-551]-A UBL invoice should not include the InvoiceLine PaymentTerms</assert>
+      <assert id="UBL-CR-552" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:AllowanceCharge/cbc:ID)">[UBL-CR-552]-A UBL invoice should not include the InvoiceLine AllowanceCharge ID</assert>
+      <assert id="UBL-CR-553" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:AllowanceCharge/cbc:PrepaidIndicator)">[UBL-CR-553]-A UBL invoice should not include the InvoiceLine AllowanceCharge PrepaidIndicator</assert>
+      <assert id="UBL-CR-554" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:AllowanceCharge/cbc:SequenceNumeric)">[UBL-CR-554]-A UBL invoice should not include the InvoiceLine AllowanceCharge SequenceNumeric</assert>
+      <assert id="UBL-CR-555" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:AllowanceCharge/cbc:AccountingCostCode)">[UBL-CR-555]-A UBL invoice should not include the InvoiceLine AllowanceCharge AccountingCostCode</assert>
+      <assert id="UBL-CR-556" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:AllowanceCharge/cbc:AccountingCost)">[UBL-CR-556]-A UBL invoice should not include the InvoiceLine AllowanceCharge AccountingCost</assert>
+      <assert id="UBL-CR-557" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:AllowanceCharge/cbc:PerUnitAmount)">[UBL-CR-557]-A UBL invoice should not include the InvoiceLine AllowanceCharge PerUnitAmount</assert>
+      <assert id="UBL-CR-558" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:AllowanceCharge/cac:TaxCategory)">[UBL-CR-558]-A UBL invoice should not include the InvoiceLine AllowanceCharge TaxCategory</assert>
+      <assert id="UBL-CR-559" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:AllowanceCharge/cac:TaxTotal)">[UBL-CR-559]-A UBL invoice should not include the InvoiceLine AllowanceCharge TaxTotal</assert>
+      <assert id="UBL-CR-560" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:AllowanceCharge/cac:PaymentMeans)">[UBL-CR-560]-A UBL invoice should not include the InvoiceLine AllowanceCharge PaymentMeans</assert>
+      <assert id="UBL-CR-561" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:TaxTotal)">[UBL-CR-561]-A UBL invoice should not include the InvoiceLine TaxTotal</assert>
+      <assert id="UBL-CR-562" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:WithholdingTaxTotal)">[UBL-CR-562]-A UBL invoice should not include the InvoiceLine WithholdingTaxTotal</assert>
+      <assert id="UBL-CR-563" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:PackQuantity)">[UBL-CR-563]-A UBL invoice should not include the InvoiceLine Item PackQuantity</assert>
+      <assert id="UBL-CR-564" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:PackSizeNumeric)">[UBL-CR-564]-A UBL invoice should not include the InvoiceLine Item PackSizeNumeric</assert>
+      <assert id="UBL-CR-565" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:CatalogueIndicator)">[UBL-CR-565]-A UBL invoice should not include the InvoiceLine Item CatalogueIndicator</assert>
+      <assert id="UBL-CR-566" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:HazardousRiskIndicator)">[UBL-CR-566]-A UBL invoice should not include the InvoiceLine Item HazardousRiskIndicator</assert>
+      <assert id="UBL-CR-567" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:AdditionalInformation)">[UBL-CR-567]-A UBL invoice should not include the InvoiceLine Item AdditionalInformation</assert>
+      <assert id="UBL-CR-568" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:Keyword)">[UBL-CR-568]-A UBL invoice should not include the InvoiceLine Item Keyword</assert>
+      <assert id="UBL-CR-569" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:BrandName)">[UBL-CR-569]-A UBL invoice should not include the InvoiceLine Item BrandName</assert>
+      <assert id="UBL-CR-570" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cbc:ModelName)">[UBL-CR-570]-A UBL invoice should not include the InvoiceLine Item ModelName</assert>
+      <assert id="UBL-CR-571" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cbc:ExtendedID)">[UBL-CR-571]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification ExtendedID</assert>
+      <assert id="UBL-CR-572" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cbc:BareCodeSymbologyID)">[UBL-CR-572]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification BareCodeSymbologyID</assert>
+      <assert id="UBL-CR-573" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cac:PhysicalAttribute)">[UBL-CR-573]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification PhysicalAttribute</assert>
+      <assert id="UBL-CR-574" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cac:MeasurementDimension)">[UBL-CR-574]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification MeasurementDimension</assert>
+      <assert id="UBL-CR-575" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:BuyersItemIdentification/cac:IssuerParty)">[UBL-CR-575]-A UBL invoice should not include the InvoiceLine Item BuyersItemIdentification IssuerParty</assert>
+      <assert id="UBL-CR-576" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cbc:ExtendedID)">[UBL-CR-576]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification ExtendedID</assert>
+      <assert id="UBL-CR-577" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cbc:BareCodeSymbologyID)">[UBL-CR-577]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification BareCodeSymbologyID</assert>
+      <assert id="UBL-CR-578" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cac:PhysicalAttribute)">[UBL-CR-578]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification PhysicalAttribute</assert>
+      <assert id="UBL-CR-579" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cac:MeasurementDimension)">[UBL-CR-579]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification MeasurementDimension</assert>
+      <assert id="UBL-CR-580" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:SellersItemIdentification/cac:IssuerParty)">[UBL-CR-580]-A UBL invoice should not include the InvoiceLine Item SellersItemIdentification IssuerParty</assert>
+      <assert id="UBL-CR-581" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ManufacturersItemIdentification)">[UBL-CR-581]-A UBL invoice should not include the InvoiceLine Item ManufacturersItemIdentification</assert>
+      <assert id="UBL-CR-582" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cbc:ExtendedID)">[UBL-CR-582]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification ExtendedID</assert>
+      <assert id="UBL-CR-583" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cbc:BareCodeSymbologyID)">[UBL-CR-583]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification BareCodeSymbologyID</assert>
+      <assert id="UBL-CR-584" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cac:PhysicalAttribute)">[UBL-CR-584]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification PhysicalAttribute</assert>
+      <assert id="UBL-CR-585" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cac:MeasurementDimension)">[UBL-CR-585]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification MeasurementDimension</assert>
+      <assert id="UBL-CR-586" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:StandardItemIdentification/cac:IssuerParty)">[UBL-CR-586]-A UBL invoice should not include the InvoiceLine Item StandardItemIdentification IssuerParty</assert>
+      <assert id="UBL-CR-587" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:CatalogueItemIdentification)">[UBL-CR-587]-A UBL invoice should not include the InvoiceLine Item CatalogueItemIdentification</assert>
+      <assert id="UBL-CR-588" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemIdentification)">[UBL-CR-588]-A UBL invoice should not include the InvoiceLine Item AdditionalItemIdentification</assert>
+      <assert id="UBL-CR-589" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:CatalogueDocumentReference)">[UBL-CR-589]-A UBL invoice should not include the InvoiceLine Item CatalogueDocumentReference</assert>
+      <assert id="UBL-CR-590" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ItemSpecificationDocumentReference)">[UBL-CR-590]-A UBL invoice should not include the InvoiceLine Item ItemSpecificationDocumentReference</assert>
+      <assert id="UBL-CR-591" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:OriginCountry/cbc:Name)">[UBL-CR-591]-A UBL invoice should not include the InvoiceLine Item OriginCountry Name</assert>
+      <assert id="UBL-CR-592" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:CommodityClassification/cbc:NatureCode)">[UBL-CR-592]-A UBL invoice should not include the InvoiceLine Item CommodityClassification NatureCode</assert>
+      <assert id="UBL-CR-593" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:CommodityClassification/cbc:CargoTypeCode)">[UBL-CR-593]-A UBL invoice should not include the InvoiceLine Item CommodityClassification CargoTypeCode</assert>
+      <assert id="UBL-CR-594" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:CommodityClassification/cbc:CommodityCode)">[UBL-CR-594]-A UBL invoice should not include the InvoiceLine Item CommodityClassification CommodityCode</assert>
+      <assert id="UBL-CR-595" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:TransactionConditions)">[UBL-CR-595]-A UBL invoice should not include the InvoiceLine Item TransactionConditions</assert>
+      <assert id="UBL-CR-596" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:HazardousItem)">[UBL-CR-596]-A UBL invoice should not include the InvoiceLine Item HazardousItem</assert>
+      <assert id="UBL-CR-597" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cbc:Name)">[UBL-CR-597]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory Name</assert>
+      <assert id="UBL-CR-598" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cbc:BaseUnitMeasure)">[UBL-CR-598]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory BaseUnitMeasure</assert>
+      <assert id="UBL-CR-599" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cbc:PerUnitAmount)">[UBL-CR-599]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory PerUnitAmount</assert>
+      <assert id="UBL-CR-600" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cbc:TaxExemptionReasonCode)">[UBL-CR-600]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory TaxExemptionReasonCode</assert>
+      <assert id="UBL-CR-601" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cbc:TaxExemptionReason)">[UBL-CR-601]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory TaxExemptionReason</assert>
+      <assert id="UBL-CR-602" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cbc:TierRange)">[UBL-CR-602]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory TierRange</assert>
+      <assert id="UBL-CR-603" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cbc:TierRatePercent)">[UBL-CR-603]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory TierRatePercent</assert>
+      <assert id="UBL-CR-604" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:Name)">[UBL-CR-604]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory TaxScheme Name</assert>
+      <assert id="UBL-CR-605" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:TaxTypeCode)">[UBL-CR-605]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory TaxScheme TaxTypeCode</assert>
+      <assert id="UBL-CR-606" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cbc:CurrencyCode)">[UBL-CR-606]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory TaxScheme CurrencyCode</assert>
+      <assert id="UBL-CR-607" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cac:TaxScheme/cac:JurisdiccionRegionAddress)">[UBL-CR-607]-A UBL invoice should not include the InvoiceLine Item ClassifiedTaxCategory TaxScheme JurisdiccionRegionAddress</assert>
+      <assert id="UBL-CR-608" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:ID)">[UBL-CR-608]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty ID</assert>
+      <assert id="UBL-CR-609" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:NameCode)">[UBL-CR-609]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty NameCode</assert>
+      <assert id="UBL-CR-610" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:TestMethod)">[UBL-CR-610]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty TestMethod</assert>
+      <assert id="UBL-CR-611" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:ValueQuantity)">[UBL-CR-611]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty ValueQuantity</assert>
+      <assert id="UBL-CR-612" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:ValueQualifier)">[UBL-CR-612]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty ValueQualifier</assert>
+      <assert id="UBL-CR-613" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:ImportanceCode)">[UBL-CR-613]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty ImportanceCode</assert>
+      <assert id="UBL-CR-614" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cbc:ListValue)">[UBL-CR-614]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty ListValue</assert>
+      <assert id="UBL-CR-615" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cac:UsabilityPeriod)">[UBL-CR-615]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty UsabilityPeriod</assert>
+      <assert id="UBL-CR-616" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cac:ItemPropertyGroup)">[UBL-CR-616]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty ItemPropertyGroup</assert>
+      <assert id="UBL-CR-617" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cac:RangeDimension)">[UBL-CR-617]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty RangeDimension</assert>
+      <assert id="UBL-CR-618" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:AdditionalItemProperty/cac:ItemPropertyRange)">[UBL-CR-618]-A UBL invoice should not include the InvoiceLine Item AdditionalItemProperty ItemPropertyRange</assert>
+      <assert id="UBL-CR-619" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ManufacturerParty)">[UBL-CR-619]-A UBL invoice should not include the InvoiceLine Item ManufacturerParty</assert>
+      <assert id="UBL-CR-620" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:InformationContentProviderParty)">[UBL-CR-620]-A UBL invoice should not include the InvoiceLine Item InformationContentProviderParty</assert>
+      <assert id="UBL-CR-621" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:OriginAddress)">[UBL-CR-621]-A UBL invoice should not include the InvoiceLine Item OriginAddress</assert>
+      <assert id="UBL-CR-622" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:ItemInstance)">[UBL-CR-622]-A UBL invoice should not include the InvoiceLine Item ItemInstance</assert>
+      <assert id="UBL-CR-623" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Certificate)">[UBL-CR-623]-A UBL invoice should not include the InvoiceLine Item Certificate</assert>
+      <assert id="UBL-CR-624" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Dimension)">[UBL-CR-624]-A UBL invoice should not include the InvoiceLine Item Dimension</assert>
+      <assert id="UBL-CR-625" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:PriceChangeReason)">[UBL-CR-625]-A UBL invoice should not include the InvoiceLine Item Price PriceChangeReason</assert>
+      <assert id="UBL-CR-626" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:PriceTypeCode)">[UBL-CR-626]-A UBL invoice should not include the InvoiceLine Item Price PriceTypeCode</assert>
+      <assert id="UBL-CR-627" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:PriceType)">[UBL-CR-627]-A UBL invoice should not include the InvoiceLine Item Price PriceType</assert>
+      <assert id="UBL-CR-628" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:OrderableUnitFactorRate)">[UBL-CR-628]-A UBL invoice should not include the InvoiceLine Item Price OrderableUnitFactorRate</assert>
+      <assert id="UBL-CR-629" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:ValidityPeriod)">[UBL-CR-629]-A UBL invoice should not include the InvoiceLine Item Price ValidityPeriod</assert>
+      <assert id="UBL-CR-630" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:PriceList)">[UBL-CR-630]-A UBL invoice should not include the InvoiceLine Item Price PriceList</assert>
+      <assert id="UBL-CR-631" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cbc:OrderableUnitFactorRate)">[UBL-CR-631]-A UBL invoice should not include the InvoiceLine Item Price OrderableUnitFactorRate</assert>
+      <assert id="UBL-CR-632" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:ID)">[UBL-CR-632]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge ID</assert>
+      <assert id="UBL-CR-633" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode)">[UBL-CR-633]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge AllowanceChargeReasonCode</assert>
+      <assert id="UBL-CR-634" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:AllowanceChargeReason)">[UBL-CR-634]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge AllowanceChargeReason</assert>
+      <assert id="UBL-CR-635" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:MultiplierFactorNumeric)">[UBL-CR-635]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge MultiplierFactorNumeric</assert>
+      <assert id="UBL-CR-636" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:PrepaidIndicator)">[UBL-CR-636]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge PrepaidIndicator</assert>
+      <assert id="UBL-CR-637" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:SequenceNumeric)">[UBL-CR-637]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge SequenceNumeric</assert>
+      <assert id="UBL-CR-638" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:AccountingCostCode)">[UBL-CR-638]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge AccountingCostCode</assert>
+      <assert id="UBL-CR-639" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:AccountingCost)">[UBL-CR-639]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge AccountingCost</assert>
+      <assert id="UBL-CR-640" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cbc:PerUnitAmount)">[UBL-CR-640]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge PerUnitAmount</assert>
+      <assert id="UBL-CR-641" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cac:TaxCategory)">[UBL-CR-641]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge TaxCategory</assert>
+      <assert id="UBL-CR-642" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cac:TaxTotal)">[UBL-CR-642]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge TaxTotal</assert>
+      <assert id="UBL-CR-643" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:AllowanceCharge/cac:PaymentMeans)">[UBL-CR-643]-A UBL invoice should not include the InvoiceLine Item Price AllowanceCharge PaymentMeans</assert>
+      <assert id="UBL-CR-644" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:Item/cac:Price/cac:PricingExchangeRate)">[UBL-CR-644]-A UBL invoice should not include the InvoiceLine Item Price PricingExchangeRate</assert>
+      <assert id="UBL-CR-645" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:DeliveryTerms)">[UBL-CR-645]-A UBL invoice should not include the InvoiceLine DeliveryTerms</assert>
+      <assert id="UBL-CR-646" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:SubInvoiceLine)">[UBL-CR-646]-A UBL invoice should not include the InvoiceLine SubInvoiceLine</assert>
+      <assert id="UBL-CR-647" flag="warning" test="not((cac:InvoiceLine|cac:CreditNoteLine)/cac:ItemPriceExtension)">[UBL-CR-647]-A UBL invoice should not include the InvoiceLine ItemPriceExtension</assert>
+      <assert id="UBL-CR-648" flag="warning" test="not(cbc:CustomizationID/@schemeID)">[UBL-CR-648]-A UBL invoice should not include the CustomizationID scheme identifier</assert>
+      <assert id="UBL-CR-649" flag="warning" test="not(cbc:ProfileID/@schemeID)">[UBL-CR-649]-A UBL invoice should not include the ProfileID scheme identifier</assert>
+      <assert id="UBL-CR-650" flag="warning" test="not(cbc:ID/@schemeID)">[UBL-CR-650]-A UBL invoice shall not include the Invoice ID scheme identifier</assert>
+      <assert id="UBL-CR-651" flag="warning" test="not(cbc:SalesOrderID/@schemeID)">[UBL-CR-651]-A UBL invoice should not include the SalesOrderID scheme identifier</assert>
+      <assert id="UBL-CR-652" flag="warning" test="not(//cac:PartyTaxScheme/cbc:CompanyID/@schemeID)">[UBL-CR-652]-A UBL invoice should not include the PartyTaxScheme CompanyID scheme identifier</assert>
+      <assert id="UBL-CR-653" flag="warning" test="not(cac:PaymentMeans/cbc:PaymentID/@schemeID)">[UBL-CR-653]-A UBL invoice should not include the PaymentID scheme identifier</assert>
+      <assert id="UBL-CR-654" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID/@schemeID)">[UBL-CR-654]-A UBL invoice should not include the PayeeFinancialAccount scheme identifier</assert>
+      <assert id="UBL-CR-655" flag="warning" test="not(cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID/@schemeID)">[UBL-CR-655]-A UBL invoice shall not include the FinancialInstitutionBranch ID scheme identifier</assert>
+      <assert id="UBL-CR-656" flag="warning" test="not(cbc:InvoiceTypeCode/@listID)">[UBL-CR-656]-A UBL invoice should not include the InvoiceTypeCode listID</assert>
+      <assert id="UBL-CR-657" flag="warning" test="not(cbc:DocumentCurrencyCode/@listID)">[UBL-CR-657]-A UBL invoice should not include the DocumentCurrencyCode listID</assert>
+      <assert id="UBL-CR-658" flag="warning" test="not(cbc:TaxCurrencyCode/@listID)">[UBL-CR-658]-A UBL invoice should not include the TaxCurrencyCode listID</assert>
+      <assert id="UBL-CR-659" flag="warning" test="not(cac:AdditionalDocumentReference/cbc:DocumentTypeCode/@listID)">[UBL-CR-659]-A UBL invoice shall not include the AdditionalDocumentReference DocumentTypeCode listID</assert>
+      <assert id="UBL-CR-660" flag="warning" test="not(//cac:Country/cbc:IdentificationCode/@listID)">[UBL-CR-660]-A UBL invoice should not include the Country Identification code listID</assert>
+      <assert id="UBL-CR-661" flag="warning" test="not(cac:PaymentMeans/cbc:PaymentMeansCode/@listID)">[UBL-CR-661]-A UBL invoice should not include the PaymentMeansCode listID</assert>
+      <assert id="UBL-CR-662" flag="warning" test="not(//cbc:AllowanceChargeReasonCode/@listID)">[UBL-CR-662]-A UBL invoice should not include the AllowanceChargeReasonCode listID</assert>
+      <assert id="UBL-CR-663" flag="warning" test="not(//@unitCodeListID)">[UBL-CR-663]-A UBL invoice should not include the unitCodeListID</assert>
+      <assert id="UBL-CR-664" flag="warning" test="not(//cac:FinancialInstitution)">[UBL-CR-664]-A UBL invoice should not include the FinancialInstitutionBranch FinancialInstitution</assert>
+      <assert id="UBL-DT-08" flag="warning" test="not(//@schemeName)">[UBL-DT-08]-Scheme name attribute should not be present</assert>
+      <assert id="UBL-DT-09" flag="warning" test="not(//@schemeAgencyName)">[UBL-DT-09]-Scheme agency name attribute should not be present</assert>
+      <assert id="UBL-DT-10" flag="warning" test="not(//@schemeDataURI)">[UBL-DT-10]-Scheme data uri attribute should not be present</assert>
+      <assert id="UBL-DT-11" flag="warning" test="not(//@schemeURI)">[UBL-DT-11]-Scheme uri attribute should not be present</assert>
+      <assert id="UBL-DT-12" flag="warning" test="not(//@format)">[UBL-DT-12]-Format attribute should not be present</assert>
+      <assert id="UBL-DT-13" flag="warning" test="not(//@unitCodeListIdentifier)">[UBL-DT-13]-Unit code list identifier attribute should not be present</assert>
+      <assert id="UBL-DT-14" flag="warning" test="not(//@unitCodeListAgencyIdentifier)">[UBL-DT-14]-Unit code list agency identifier attribute should not be present</assert>
+      <assert id="UBL-DT-15" flag="warning" test="not(//@unitCodeListAgencyName)">[UBL-DT-15]-Unit code list agency name attribute should not be present</assert>
+      <assert id="UBL-DT-16" flag="warning" test="not(//@listAgencyName)">[UBL-DT-16]-List agency name attribute should not be present</assert>
+      <assert id="UBL-DT-17" flag="warning" test="not(//@listName)">[UBL-DT-17]-List name attribute should not be present</assert>
+      <assert id="UBL-DT-18" flag="warning" test="count(//@name) - count(//cbc:PaymentMeansCode/@name) &lt;= 0">[UBL-DT-18]-Name attribute should not be present</assert>
+      <assert id="UBL-DT-19" flag="warning" test="not(//@languageID)">[UBL-DT-19]-Language identifier attribute should not be present</assert>
+      <assert id="UBL-DT-20" flag="warning" test="not(//@listURI)">[UBL-DT-20]-List uri attribute should not be present</assert>
+      <assert id="UBL-DT-21" flag="warning" test="not(//@listSchemeURI)">[UBL-DT-21]-List scheme uri attribute should not be present</assert>
+      <assert id="UBL-DT-22" flag="warning" test="not(//@languageLocaleID)">[UBL-DT-22]-Language local identifier attribute should not be present</assert>
+      <assert id="UBL-DT-23" flag="warning" test="not(//@uri)">[UBL-DT-23]-Uri attribute should not be present</assert>
+      <assert id="UBL-DT-24" flag="warning" test="not(//@currencyCodeListVersionID)">[UBL-DT-24]-Currency code list version id should not be present</assert>
+      <assert id="UBL-DT-25" flag="warning" test="not(//@characterSetCode)">[UBL-DT-25]-CharacterSetCode attribute should not be present</assert>
+      <assert id="UBL-DT-26" flag="warning" test="not(//@encodingCode)">[UBL-DT-26]-EncodingCode attribute should not be present</assert>
+      <assert id="UBL-SR-01" flag="warning" test="(count(cac:ContractDocumentReference/cbc:ID) &lt;= 1)">[UBL-SR-01]-Contract identifier shall occur maximum once.</assert>
+      <assert id="UBL-SR-02" flag="warning" test="(count(cac:ReceiptDocumentReference/cbc:ID) &lt;= 1)">[UBL-SR-02]-Receive advice identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-03" flag="warning" test="(count(cac:DespatchDocumentReference/cbc:ID) &lt;= 1)">[UBL-SR-03]-Despatch advice identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-04" flag="warning" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='130']/cbc:ID) &lt;= 1)">[UBL-SR-04]-Invoice object identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-05" flag="warning" test="(count(cac:PaymentTerms/cbc:Note) &lt;= 1)">[UBL-SR-05]-Payment terms shall occur maximum once</assert>
+      <assert id="UBL-SR-06" flag="warning" test="(count(cac:InvoiceDocumentReference) &lt;= 1)">[UBL-SR-06]-Preceding invoice reference shall occur maximum once</assert>
+      <assert id="UBL-SR-08" flag="warning" test="(count(cac:InvoicePeriod) &lt;= 1)">[UBL-SR-08]-Invoice period shall occur maximum once</assert>
+      <assert id="UBL-SR-09" flag="warning" test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) &lt;= 1)">[UBL-SR-09]-Seller name shall occur maximum once</assert>
+      <assert id="UBL-SR-10" flag="warning" test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) &lt;= 1)">[UBL-SR-10]-Seller trader name shall occur maximum once</assert>
+      <assert id="UBL-SR-11" flag="warning" test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID) &lt;= 1)">[UBL-SR-11]-Seller legal registration identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-12" flag="warning" test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/upper-case(cbc:ID)='VAT']/cbc:CompanyID) &lt;= 1)">[UBL-SR-12]-Seller VAT identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-13" flag="warning" test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/upper-case(cbc:ID)!='VAT']/cbc:ID) &lt;= 1)">[UBL-SR-13]-Seller tax registration shall occur maximum once</assert>
+      <assert id="UBL-SR-14" flag="warning" test="(count(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyLegalForm) &lt;= 1)">[UBL-SR-14]-Seller additional legal information shall occur maximum once</assert>
+      <assert id="UBL-SR-15" flag="warning" test="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName) &lt;= 1)">[UBL-SR-15]-Buyer name shall occur maximum once</assert>
+      <assert id="UBL-SR-16" flag="warning" test="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID) &lt;= 1)">[UBL-SR-16]-Buyer identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-17" flag="warning" test="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID) &lt;= 1)">[UBL-SR-17]-Buyer legal registration identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-18" flag="warning" test="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/upper-case(cbc:ID)='VAT']/cbc:CompanyID) &lt;= 1)">[UBL-SR-18]-Buyer VAT identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-24" flag="warning" test="(count(cac:Delivery) &lt;= 1)">[UBL-SR-24]-Deliver to information shall occur maximum once</assert>
+      <assert id="UBL-SR-29" flag="warning" test="(count(//cac:PartyIdentification/cbc:ID[upper-case(@schemeID) = 'SEPA']) &lt;= 1)">[UBL-SR-29]-Bank creditor reference shall occur maximum once</assert>
+      <assert id="UBL-SR-39" flag="warning" test="(count(cac:ProjectReference/cbc:ID) &lt;= 1)">[UBL-SR-39]-Project reference shall occur maximum once.</assert>
+      <assert id="UBL-SR-40" flag="warning" test="(count(cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name) &lt;= 1)">[UBL-SR-40]-Buyer trade name shall occur maximum once</assert>
+      <assert id="UBL-SR-44" flag="warning" test="count(//cbc:PaymentID[not(preceding::cbc:PaymentID/. = .)]) &lt;= 1">[UBL-SR-44]-Payment ID shall occur maximum once</assert>
+      <assert id="UBL-SR-45" flag="warning" test="(count(cac:PaymentMeans/cbc:PaymentDueDate) &lt;=1)">[UBL-SR-45]-Due Date shall occur maximum once</assert>
+      <assert id="UBL-SR-46" flag="warning" test="(count(cac:PaymentMeans/cbc:PaymentMeansCode/@name) &lt;=1)">[UBL-SR-46]-Payment means text shall occur maximum once</assert>
+      <assert id="UBL-SR-47" flag="warning" test="count(//cbc:PaymentMeansCode[not(preceding::cbc:PaymentMeansCode/. = .)]) &lt;= 1">[UBL-SR-47]-When there are more than one payment means code, they shall be equal</assert>
+    </rule>
+    <rule context="cac:InvoiceLine | cac:CreditNoteLine">
+      <assert id="UBL-SR-34" flag="warning" test="(count(cbc:Note) &lt;= 1)">[UBL-SR-34]-Invoice line note shall occur maximum once</assert>
+      <assert id="UBL-SR-35" flag="warning" test="(count(cac:OrderLineReference/cbc:LineID) &lt;= 1)">[UBL-SR-35]-Referenced purchase order line identifier shall occur maximum once</assert>
+      <assert id="UBL-SR-36" flag="warning" test="(count(cac:InvoicePeriod) &lt;= 1)">[UBL-SR-36]-Invoice line period shall occur maximum once</assert>
+      <assert id="UBL-SR-37" flag="warning" test="(count(cac:Price/cac:AllowanceCharge/cbc:Amount) &lt;= 1)">[UBL-SR-37]-Item price discount shall occur maximum once</assert>
+      <assert id="UBL-SR-38" flag="warning" test="(count(cac:Item/cac:ClassifiedTaxCategory/cbc:TaxExemptionReason) &lt;= 1)">[UBL-SR-38]-Invoiced item VAT exemption reason text shall occur maximum once</assert>
+    </rule>
+    <rule context="cac:PayeeParty">
+      <assert id="UBL-SR-19" flag="warning" test="(count(cac:PartyName/cbc:Name) &lt;= 1) and ((cac:PartyName/cbc:Name) != (../cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName))">[UBL-SR-19]-Payee name shall occur maximum once, if the Payee is different from the Seller</assert>
+      <assert id="UBL-SR-20" flag="warning" test="(count(cac:PartyIdentification/cbc:ID[upper-case(@schemeID) != 'SEPA']) &lt;= 1) and ((cac:PartyName/cbc:Name) != (../cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName))">[UBL-SR-20]-Payee identifier shall occur maximum once, if the Payee is different from the Seller</assert>
+      <assert id="UBL-SR-21" flag="warning" test="(count(cac:PartyLegalEntity/cbc:CompanyID) &lt;= 1) and ((cac:PartyName/cbc:Name) != (../cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:RegistrationName))">[UBL-SR-21]-Payee legal registration identifier shall occur maximum once, if the Payee is different from the Seller</assert>
+    </rule>
+    <rule context="cac:PaymentMeans">
+      <assert id="UBL-SR-26" flag="warning" test="(count(cbc:PaymentID) &lt;= 1)">[UBL-SR-26]-Payment reference shall occur maximum once</assert>
+      <assert id="UBL-SR-27" flag="warning" test="(count(cbc:InstructionNote) &lt;= 1)">[UBL-SR-27]-Payment means text shall occur maximum once</assert>
+      <assert id="UBL-SR-28" flag="warning" test="(count(cac:PaymentMandate/cbc:ID) &lt;= 1)">[UBL-SR-28]-Mandate reference identifier shall occur maximum once</assert>
+    </rule>
+    <rule context="cac:BillingReference">
+      <assert id="UBL-SR-07" flag="warning" test="(cac:InvoiceDocumentReference/cbc:ID)">[UBL-SR-07]-If there is a preceding invoice reference, the preceding invoice number shall be present</assert>
+    </rule>
+    <rule context="cac:TaxRepresentativeParty">
+      <assert id="UBL-SR-22" flag="warning" test="(count(cac:Party/cac:PartyName/cbc:Name) &lt;= 1)">[UBL-SR-22]-Seller tax representative name shall occur maximum once, if the Seller has a tax representative</assert>
+      <assert id="UBL-SR-23" flag="warning" test="(count(cac:Party/cac:PartyTaxScheme/cbc:CompanyID) &lt;= 1)">[UBL-SR-23]-Seller tax representative VAT identifier shall occur maximum once, if the Seller has a tax representative</assert>
+    </rule>
+    <rule context="cac:TaxSubtotal">
+      <assert id="UBL-SR-32" flag="warning" test="(count(cac:TaxCategory/cbc:TaxExemptionReason) &lt;= 1)">[UBL-SR-32]-VAT exemption reason text shall occur maximum once</assert>
+    </rule>
+  </pattern>
+  <pattern id="Codesmodel">
+    <rule flag="fatal" context="cbc:InvoiceTypeCode | cbc:CreditNoteTypeCode">
+      <assert id="BR-CL-01" flag="fatal" test="(self::cbc:InvoiceTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 80 82 84 130 202 203 204 211 295 325 326 380 383 384 385 386 387 388 389 390 393 394 395 456 457 527 575 623 633 751 780 935 ', concat(' ', normalize-space(.), ' '))))) or (self::cbc:CreditNoteTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 81 83 261 262 296 308 381 396 420 458 532 ', concat(' ', normalize-space(.), ' ')))))">[BR-CL-01]-The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001.</assert>
+    </rule>
+    <rule flag="fatal" context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount">
+      <assert id="BR-CL-03" flag="fatal" test="((not(contains(normalize-space(@currencyID), ' ')) and contains(' AED AFN ALL AMD ANG AOA ARS AUD AWG AZN BAM BBD BDT BGN BHD BIF BMD BND BOB BOV BRL BSD BTN BWP BYR BZD CAD CDF CHE CHF CHW CLF CLP CNY COP COU CRC CUC CUP CVE CZK DJF DKK DOP DZD EGP ERN ETB EUR FJD FKP GBP GEL GHS GIP GMD GNF GTQ GYD HKD HNL HRK HTG HUF IDR ILS INR IQD IRR ISK JMD JOD JPY KES KGS KHR KMF KPW KRW KWD KYD KZT LAK LBP LKR LRD LSL LYD MAD MDL MGA MKD MMK MNT MOP MRO MUR MVR MWK MXN MXV MYR MZN NAD NGN NIO NOK NPR NZD OMR PAB PEN PGK PHP PKR PLN PYG QAR RON RSD RUB RWF SAR SBD SCR SDG SEK SGD SHP SLL SOS SRD SSP STD SVC SYP SZL THB TJS TMT TND TOP TRY TTD TWD TZS UAH UGX USD USN UYI UYU UZS VEF VND VUV WST XAF XAG XAU XBA XBB XBC XBD XCD XDR XOF XPD XPF XPT XSU XTS XUA XXX YER ZAR ZMW ZWL ', concat(' ', normalize-space(@currencyID), ' '))))">[BR-CL-03]-currencyID MUST be coded using ISO code list 4217 alpha-3</assert>
+    </rule>
+    <rule flag="fatal" context="cbc:DocumentCurrencyCode">
+      <assert id="BR-CL-04" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AED AFN ALL AMD ANG AOA ARS AUD AWG AZN BAM BBD BDT BGN BHD BIF BMD BND BOB BOV BRL BSD BTN BWP BYR BZD CAD CDF CHE CHF CHW CLF CLP CNY COP COU CRC CUC CUP CVE CZK DJF DKK DOP DZD EGP ERN ETB EUR FJD FKP GBP GEL GHS GIP GMD GNF GTQ GYD HKD HNL HRK HTG HUF IDR ILS INR IQD IRR ISK JMD JOD JPY KES KGS KHR KMF KPW KRW KWD KYD KZT LAK LBP LKR LRD LSL LYD MAD MDL MGA MKD MMK MNT MOP MRO MUR MVR MWK MXN MXV MYR MZN NAD NGN NIO NOK NPR NZD OMR PAB PEN PGK PHP PKR PLN PYG QAR RON RSD RUB RWF SAR SBD SCR SDG SEK SGD SHP SLL SOS SRD SSP STD SVC SYP SZL THB TJS TMT TND TOP TRY TTD TWD TZS UAH UGX USD USN UYI UYU UZS VEF VND VUV WST XAF XAG XAU XBA XBB XBC XBD XCD XDR XOF XPD XPF XPT XSU XTS XUA XXX YER ZAR ZMW ZWL ', concat(' ', normalize-space(.), ' '))))">[BR-CL-04]-Invoice currency code MUST be coded using ISO code list 4217 alpha-3</assert>
+    </rule>
+    <rule flag="fatal" context="cbc:TaxCurrencyCode">
+      <assert id="BR-CL-05" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AED AFN ALL AMD ANG AOA ARS AUD AWG AZN BAM BBD BDT BGN BHD BIF BMD BND BOB BOV BRL BSD BTN BWP BYR BZD CAD CDF CHE CHF CHW CLF CLP CNY COP COU CRC CUC CUP CVE CZK DJF DKK DOP DZD EGP ERN ETB EUR FJD FKP GBP GEL GHS GIP GMD GNF GTQ GYD HKD HNL HRK HTG HUF IDR ILS INR IQD IRR ISK JMD JOD JPY KES KGS KHR KMF KPW KRW KWD KYD KZT LAK LBP LKR LRD LSL LYD MAD MDL MGA MKD MMK MNT MOP MRO MUR MVR MWK MXN MXV MYR MZN NAD NGN NIO NOK NPR NZD OMR PAB PEN PGK PHP PKR PLN PYG QAR RON RSD RUB RWF SAR SBD SCR SDG SEK SGD SHP SLL SOS SRD SSP STD SVC SYP SZL THB TJS TMT TND TOP TRY TTD TWD TZS UAH UGX USD USN UYI UYU UZS VEF VND VUV WST XAF XAG XAU XBA XBB XBC XBD XCD XDR XOF XPD XPF XPT XSU XTS XUA XXX YER ZAR ZMW ZWL ', concat(' ', normalize-space(.), ' '))))">[BR-CL-05]-Tax currency code MUST be coded using ISO code list 4217 alpha-3</assert>
+    </rule>
+    <rule flag="fatal" context="cac:InvoicePeriod/cbc:DescriptionCode">
+      <assert id="BR-CL-06" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 3 35 432 ', concat(' ', normalize-space(.), ' '))))">[BR-CL-06]-Value added tax point date code MUST be coded using a restriction of UNTDID 2005.</assert>
+    </rule>
+    <rule flag="fatal" context="cac:AdditionalDocumentReference[cbc:DocumentTypeCode = '130']/cbc:ID[@schemeID] | cac:DocumentReference[cbc:DocumentTypeCode = '130']/cbc:ID[@schemeID]">
+      <assert id="BR-CL-07" flag="fatal" test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' AAA AAB AAC AAD AAE AAF AAG AAH AAI AAJ AAK AAL AAM AAN AAO AAP AAQ AAR AAS AAT AAU AAV AAW AAX AAY AAZ ABA ABB ABC ABD ABE ABF ABG ABH ABI ABJ ABK ABL ABM ABN ABO ABP ABQ ABR ABS ABT ABU ABV ABW ABX ABY ABZ AC ACA ACB ACC ACD ACE ACF ACG ACH ACI ACJ ACK ACL ACN ACO ACP ACQ ACR ACT ACU ACV ACW ACX ACY ACZ ADA ADB ADC ADD ADE ADF ADG ADI ADJ ADK ADL ADM ADN ADO ADP ADQ ADT ADU ADV ADW ADX ADY ADZ AE AEA AEB AEC AED AEE AEF AEG AEH AEI AEJ AEK AEL AEM AEN AEO AEP AEQ AER AES AET AEU AEV AEW AEX AEY AEZ AF AFA AFB AFC AFD AFE AFF AFG AFH AFI AFJ AFK AFL AFM AFN AFO AFP AFQ AFR AFS AFT AFU AFV AFW AFX AFY AFZ AGA AGB AGC AGD AGE AGF AGG AGH AGI AGJ AGK AGL AGM AGN AGO AGP AGQ AGR AGS AGT AGU AGV AGW AGX AGY AGZ AHA AHB AHC AHD AHE AHF AHG AHH AHI AHJ AHK AHL AHM AHN AHO AHP AHQ AHR AHS AHT AHU AHV AHX AHY AHZ AIA AIB AIC AID AIE AIF AIG AIH AII AIJ AIK AIL AIM AIN AIO AIP AIQ AIR AIS AIT AIU AIV AIW AIX AIY AIZ AJA AJB AJC AJD AJE AJF AJG AJH AJI AJJ AJK AJL AJM AJN AJO AJP AJQ AJR AJS AJT AJU AJV AJW AJX AJY AJZ AKA AKB AKC AKD AKE AKF AKG AKH AKI AKJ AKK AKL AKM AKN AKO AKP AKQ AKR AKS AKT AKU AKV AKW AKX AKY AKZ ALA ALB ALC ALD ALE ALF ALG ALH ALI ALJ ALK ALL ALM ALN ALO ALP ALQ ALR ALS ALT ALU ALV ALW ALX ALY ALZ AMA AMB AMC AMD AME AMF AMG AMH AMI AMJ AMK AML AMM AMN AMO AMP AMQ AMR AMS AMT AMU AMV AMW AMX AMY AMZ ANA ANB ANC AND ANE ANF ANG ANH ANI ANJ ANK ANL ANM ANN ANO ANP ANQ ANR ANS ANT ANU ANV ANW ANX ANY AOA AOD AOE AOF AOG AOH AOI AOJ AOK AOL AOM AON AOO AOP AOQ AOR AOS AOT AOU AOV AOW AOX AOY AOZ AP APA APB APC APD APE APF APG APH API APJ APK APL APM APN APO APP APQ APR APS APT APU APV APW APX APY APZ AQA AQB AQC AQD AQE AQF AQG AQH AQI AQJ AQK AQL AQM AQN AQO AQP AQQ AQR AQS AQT AQU AQV AQW AQX AQY AQZ ARA ARB ARC ARD ARE ARF ARG ARH ARI ARJ ARK ARL ARM ARN ARO ARP ARQ ARR ARS ART ARU ARV ARW ARX ARY ARZ ASA ASB ASC ASD ASE ASF ASG ASH ASI ASJ ASK ASL ASM ASN ASO ASP ASQ ASR ASS AST ASU ASV ASW ASX ASY ASZ ATA ATB ATC ATD ATE ATF ATG ATH ATI ATJ ATK ATL ATM ATN ATO ATP ATQ ATR ATS ATT ATU ATV ATW ATX ATY ATZ AU AUA AUB AUC AUD AUE AUF AUG AUH AUI AUJ AUK AUL AUM AUN AUO AUP AUQ AUR AUS AUT AUU AUV AUW AUX AUY AUZ AV AVA AVB AVC AVD AVE AVF AVG AVH AVI AVJ AVK AVL AVM AVN AVO AVP AVQ AVR AVS AVT AVU AVV AVW AVX AVY AVZ AWA AWB AWC AWD AWE AWF AWG AWH AWI AWJ AWK AWL AWM AWN AWO AWP AWQ AWR AWS AWT AWU AWV AWW AWX AWY AWZ AXA AXB AXC AXD AXE AXF AXG AXH AXI AXJ AXK AXL AXM AXN AXO AXP AXQ AXR AXS BA BC BD BE BH BM BN BO BR BT BTP BW CAS CAT CAU CAV CAW CAX CAY CAZ CBA CBB CD CEC CED CFE CFF CFO CG CH CK CKN CM CMR CN CNO COF CP CR CRN CS CST CT CU CV CW CZ DA DAN DB DI DL DM DQ DR EA EB ED EE EEP EI EN EQ ER ERN ET EX FC FF FI FLW FN FO FS FT FV FX GA GC GD GDN GN HS HWB IA IB ICA ICE ICO II IL INB INN INO IP IS IT IV JB JE LA LAN LAR LB LC LI LO LRC LS MA MB MF MG MH MR MRN MS MSS MWB NA NF OH OI ON OP OR PB PC PD PE PF PI PK PL POR PP PQ PR PS PW PY RA RC RCN RE REN RF RR RT SA SB SD SE SEA SF SH SI SM SN SP SQ SRN SS STA SW SZ TB TCR TE TF TI TIN TL TN TP UAR UC UCN UN UO URI VA VC VGR VM VN VON VOR VP VR VS VT VV WE WM WN WR WS WY XA XC XP ZZZ ', concat(' ', normalize-space(@schemeID), ' '))))">[BR-CL-07]-Object identifier identification scheme identifier MUST be coded using a restriction of UNTDID 1153.</assert>
+    </rule>
+    <rule flag="fatal" context="cac:PartyIdentification/cbc:ID[@schemeID]">
+      <assert id="BR-CL-10" flag="fatal" test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0001 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0183 0184 0185 0186 0187 0188 0189 0190 0191 0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 ', concat(' ', normalize-space(@schemeID), ' '))))  or ((not(contains(normalize-space(@schemeID), ' ')) and contains(' SEPA ', concat(' ', normalize-space(@schemeID), ' '))) and ((ancestor::cac:AccountingSupplierParty) or (ancestor::cac:PayeeParty)))">[BR-CL-10]-Any identifier identification scheme identifier MUST be coded using one of the ISO 6523 ICD list.</assert>
+    </rule>
+    <rule flag="fatal" context="cac:PartyLegalEntity/cbc:CompanyID[@schemeID]">
+      <assert id="BR-CL-11" flag="fatal" test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0001 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0183 0184 0185 0186 0187 0188 0189 0190 0191 0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 ', concat(' ', normalize-space(@schemeID), ' '))))">[BR-CL-11]-Any registration identifier identification scheme identifier MUST be coded using one of the ISO 6523 ICD list.</assert>
+    </rule>
+    <rule flag="fatal" context="cac:CommodityClassification/cbc:ItemClassificationCode[@listID]">
+      <assert id="BR-CL-13" flag="fatal" test="((not(contains(normalize-space(@listID), ' ')) and contains(' AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO AP AQ AR AS AT AU AV AW AX AY AZ BA BB BC BD BE BF BG BH BI BJ BK BL BM BN BO BP BQ BR BS BT BU BV BW BX BY BZ CC CG CL CR CV DR DW EC EF EN FS GB GN GS HS IB IN IS IT IZ MA MF MN MP NB ON PD PL PO PV QS RC RN RU RY SA SG SK SN SRS SRT SRU SRV SRW SRX SRY SRZ SS SSA SSB SSC SSD SSE SSF SSG SSH SSI SSJ SSK SSL SSM SSN SSO SSP SSQ SSR SSS SST SSU SSV SSW SSX SSY SSZ ST STA STB STC STD STE STF STG STH STI STJ STK STL STM STN STO STP STQ STR STS STT STU STV STW STX STY STZ SUA SUB SUC SUD SUE SUF SUG SUH SUI SUJ SUK SUL SUM TG TSN TSO TSP TSQ TSR TSS TST UA UP VN VP VS VX ZZZ ', concat(' ', normalize-space(@listID), ' '))))">[BR-CL-13]-Item classification identifier identification scheme identifier MUST be
+      coded using one of the UNTDID 7143 list.</assert>
+    </rule>
+    <rule flag="fatal" context="cac:Country/cbc:IdentificationCode">
+      <assert id="BR-CL-14" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ', concat(' ', normalize-space(.), ' '))))">[BR-CL-14]-Country codes in an invoice MUST be coded using ISO code list 3166-1</assert>
+    </rule>
+    <rule flag="fatal" context="cac:OriginCountry/cbc:IdentificationCode">
+      <assert id="BR-CL-15" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW ', concat(' ', normalize-space(.), ' '))))">[BR-CL-15]-Country codes in an invoice MUST be coded using ISO code list 3166-1</assert>
+    </rule>
+    <rule flag="fatal" context="cac:PaymentMeans/cbc:PaymentMeansCode">
+      <assert id="BR-CL-16" flag="fatal" test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 70 74 75 76 77 78 91 92 93 94 95 96 97 ZZZ ',concat(' ',normalize-space(.),' ') ) ) )">[BR-CL-16]-Payment means in an invoice MUST be coded using UNCL4461 code list</assert>
+    </rule>
+    <rule flag="fatal" context="cac:TaxCategory/cbc:ID">
+      <assert id="BR-CL-17" flag="fatal" test="( ( not(contains(normalize-space(.),' ')) and contains( ' AE L M E S Z G O K ',concat(' ',normalize-space(.),' ') ) ) )">[BR-CL-17]-Invoice tax categories MUST be coded using UNCL5305 code list</assert>
+    </rule>
+    <rule flag="fatal" context="cac:ClassifiedTaxCategory/cbc:ID">
+      <assert id="BR-CL-18" flag="fatal" test="( ( not(contains(normalize-space(.),' ')) and contains( ' AE L M E S Z G O K ',concat(' ',normalize-space(.),' ') ) ) )">[BR-CL-18]-Invoice tax categories MUST be coded using UNCL5305 code list</assert>
+    </rule>
+    <rule flag="fatal" context="cac:AllowanceCharge[cbc:ChargeIndicator = false()]/cbc:AllowanceChargeReasonCode">
+      <assert id="BR-CL-19" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 41 42 60 62 63 64 65 66 67 68 70 71 88 95 100 102 103 104 ', concat(' ', normalize-space(.), ' '))))">[BR-CL-19]-Coded allowance reasons MUST belong to the UNCL 5189 code list</assert>
+    </rule>
+    <rule flag="fatal" context="cac:AllowanceCharge[cbc:ChargeIndicator = true()]/cbc:AllowanceChargeReasonCode">
+      <assert id="BR-CL-20" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' AA AAA AAC AAD AAE AAF AAH AAI AAS AAT AAV AAY AAZ ABA ABB ABC ABD ABF ABK ABL ABN ABR ABS ABT ABU ACF ACG ACH ACI ACJ ACK ACL ACM ACS ADC ADE ADJ ADK ADL ADM ADN ADO ADP ADQ ADR ADT ADW ADY ADZ AEA AEB AEC AED AEF AEH AEI AEJ AEK AEL AEM AEN AEO AEP AES AET AEU AEV AEW AEX AEY AEZ AJ AU CA CAB CAD CAE CAF CAI CAJ CAK CAL CAM CAN CAO CAP CAQ CAR CAS CAT CAU CAV CAW CAX CAY CAZ CD CG CS CT DAB DAD DAC DAF DAG DAH DAI DAJ DAK DAL DAM DAN DAO DAP DAQ DL EG EP ER FAA FAB FAC FC FH FI GAA HAA HD HH IAA IAB ID IF IR IS KO L1 LA LAA LAB LF MAE MI ML NAA OA PA PAA PC PL RAB RAC RAD RAF RE RF RH RV SA SAA SAD SAE SAI SG SH SM SU TAB TAC TT TV V1 V2 WH XAA YY ZZZ ', concat(' ', normalize-space(.), ' '))))">[BR-CL-20]-Coded charge reasons MUST belong to the UNCL 7161 code list</assert>
+    </rule>
+    <rule flag="fatal" context="cac:StandardItemIdentification/cbc:ID[@schemeID]">
+      <assert id="BR-CL-21" flag="fatal" test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0001 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0183 0184 0185 0186 0187 0188 0189 0190 0191 0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 ', concat(' ', normalize-space(@schemeID), ' '))))">[BR-CL-21]-Item standard identifier scheme identifier MUST belong to the ISO 6523 ICD code list</assert>
+    </rule>
+    <rule flag="fatal" context="cbc:TaxExemptionReasonCode">
+      <assert id="BR-CL-22" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' vatex-eu-132-1a vatex-eu-132-1b vatex-eu-132-1c vatex-eu-132-1d vatex-eu-132-1e vatex-eu-132-1f vatex-eu-132-1g vatex-eu-132-1h vatex-eu-132-1i vatex-eu-132-1j vatex-eu-132-1k vatex-eu-132-1l vatex-eu-132-1m vatex-eu-132-1n vatex-eu-132-1o vatex-eu-132-1p vatex-eu-132-1q vatex-eu-143-1a vatex-eu-143-1b vatex-eu-143-1c vatex-eu-143-1d vatex-eu-143-1e vatex-eu-143-1f vatex-eu-143-1fa vatex-eu-143-1g vatex-eu-143-1h vatex-eu-143-1i vatex-eu-143-1j vatex-eu-143-1k vatex-eu-143-1l vatex-eu-309 vatex-eu-148-a vatex-eu-148-b vatex-eu-148-c vatex-eu-148-d vatex-eu-148-e vatex-eu-148-f vatex-eu-148-g vatex-eu-151-1a vatex-eu-151-1aa vatex-eu-151-1b vatex-eu-151-1c vatex-eu-151-1d vatex-eu-151-1e vatex-eu-g vatex-eu-o vatex-eu-ic vatex-eu-ae vatex-eu-d vatex-eu-f vatex-eu-i vatex-eu-j ', concat(' ', normalize-space(.), ' '))))">[BR-CL-22]-Tax exemption reason code identifier scheme identifier MUST belong to the CEF VATEX code list</assert>
+    </rule>
+    <rule flag="fatal" context="cbc:InvoicedQuantity[@unitCode] | cbc:BaseQuantity[@unitCode]">
+      <assert id="BR-CL-23" flag="fatal" test="((not(contains(normalize-space(@unitCode), ' ')) and contains(' 10 11 13 14 15 20 21 22 23 24 25 27 28 33 34 35 37 38 40 41 56 57 58 59 60 61 64 66 74 76 77 78 80 81 84 85 87 89 91 1I 2A 2B 2C 2G 2H 2I 2J 2K 2L 2M 2N 2P 2Q 2R 2U 2X 2Y 2Z 3B 3C 4C 4G 4H 4K 4L 4M 4N 4O 4P 4Q 4R 4T 4U 4W 4X 5A 5B 5E 5J A1 A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 A2 A20 A21 A22 A23 A24 A25 A26 A27 A28 A29 A3 A30 A31 A32 A33 A34 A35 A36 A37 A38 A39 A4 A40 A41 A42 A43 A44 A45 A47 A48 A49 A5 A50 A51 A52 A53 A54 A55 A56 A57 A58 A59 A6 A60 A61 A62 A63 A64 A65 A66 A67 A68 A69 A7 A70 A71 A73 A74 A75 A76 A77 A78 A79 A8 A80 A81 A82 A83 A84 A85 A86 A87 A88 A89 A9 A90 A91 A93 A94 A95 A96 A97 A98 A99 AA AB ACR ACT AD AE AH AI AK AL AMH AMP ANN APZ AQ ARE AS ASM ASU ATM ATT AY AZ B1 B10 B11 B12 B13 B14 B15 B16 B17 B18 B19 B20 B21 B22 B23 B24 B25 B26 B27 B28 B29 B3 B30 B31 B32 B33 B34 B35 B36 B37 B38 B39 B4 B40 B41 B42 B43 B44 B45 B46 B47 B48 B49 B50 B51 B52 B53 B54 B55 B56 B57 B58 B59 B60 B61 B62 B63 B64 B65 B66 B67 B68 B69 B7 B70 B71 B72 B73 B74 B75 B76 B77 B78 B79 B8 B80 B81 B82 B83 B84 B85 B86 B87 B88 B89 B90 B91 B92 B93 B94 B95 B96 B97 B98 B99 BAR BB BFT BHP BIL BLD BLL BP BQL BTU BUA BUI C0 C10 C11 C12 C13 C14 C15 C16 C17 C18 C19 C20 C21 C22 C23 C24 C25 C26 C27 C28 C29 C3 C30 C31 C32 C33 C34 C35 C36 C37 C38 C39 C40 C41 C42 C43 C44 C45 C46 C47 C48 C49 C50 C51 C52 C53 C54 C55 C56 C57 C58 C59 C60 C61 C62 C63 C64 C65 C66 C67 C68 C69 C7 C70 C71 C72 C73 C74 C75 C76 C78 C79 C8 C80 C81 C82 C83 C84 C85 C86 C87 C88 C89 C9 C90 C91 C92 C93 C94 C95 C96 C97 C99 CCT CDL CEL CEN CG CGM CKG CLF CLT CMK CMQ CMT CNP CNT COU CTG CTM CTN CUR CWA CWI D03 D04 D1 D10 D11 D12 D13 D15 D16 D17 D18 D19 D2 D20 D21 D22 D23 D24 D25 D26 D27 D29 D30 D31 D32 D33 D34 D35 D36 D37 D38 D39 D41 D42 D43 D44 D45 D46 D47 D48 D49 D5 D50 D51 D52 D53 D54 D55 D56 D57 D58 D59 D6 D60 D61 D62 D63 D65 D68 D69 D70 D71 D72 D73 D74 D75 D76 D77 D78 D80 D81 D82 D83 D85 D86 D87 D88 D89 D9 D91 D93 D94 D95 DAA DAD DAY DB DD DEC DG DJ DLT DMA DMK DMO DMQ DMT DN DPC DPR DPT DRA DRI DRL DT DTN DU DWT DX DZN DZP E01 E07 E08 E09 E10 E11 E12 E14 E15 E16 E17 E18 E19 E20 E21 E22 E23 E25 E27 E28 E30 E31 E32 E33 E34 E35 E36 E37 E38 E39 E4 E40 E41 E42 E43 E44 E45 E46 E47 E48 E49 E50 E51 E52 E53 E54 E55 E56 E57 E58 E59 E60 E61 E62 E63 E64 E65 E66 E67 E68 E69 E70 E71 E72 E73 E74 E75 E76 E77 E78 E79 E80 E81 E82 E83 E84 E85 E86 E87 E88 E89 E90 E91 E92 E93 E94 E95 E96 E97 E98 E99 EA EB EQ F01 F02 F03 F04 F05 F06 F07 F08 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 F30 F31 F32 F33 F34 F35 F36 F37 F38 F39 F40 F41 F42 F43 F44 F45 F46 F47 F48 F49 F50 F51 F52 F53 F54 F55 F56 F57 F58 F59 F60 F61 F62 F63 F64 F65 F66 F67 F68 F69 F70 F71 F72 F73 F74 F75 F76 F77 F78 F79 F80 F81 F82 F83 F84 F85 F86 F87 F88 F89 F90 F91 F92 F93 F94 F95 F96 F97 F98 F99 FAH FAR FBM FC FF FH FIT FL FOT FP FR FS FTK FTQ G01 G04 G05 G06 G08 G09 G10 G11 G12 G13 G14 G15 G16 G17 G18 G19 G2 G20 G21 G23 G24 G25 G26 G27 G28 G29 G3 G30 G31 G32 G33 G34 G35 G36 G37 G38 G39 G40 G41 G42 G43 G44 G45 G46 G47 G48 G49 G50 G51 G52 G53 G54 G55 G56 G57 G58 G59 G60 G61 G62 G63 G64 G65 G66 G67 G68 G69 G70 G71 G72 G73 G74 G75 G76 G77 G78 G79 G80 G81 G82 G83 G84 G85 G86 G87 G88 G89 G90 G91 G92 G93 G94 G95 G96 G97 G98 G99 GB GBQ GDW GE GF GFI GGR GIA GIC GII GIP GJ GL GLD GLI GLL GM GO GP GQ GRM GRN GRO GRT GT GV GWH H03 H04 H05 H06 H07 H08 H09 H10 H11 H12 H13 H14 H15 H16 H18 H19 H20 H21 H22 H23 H24 H25 H26 H27 H28 H29 H30 H31 H32 H33 H34 H35 H36 H37 H38 H39 H40 H41 H42 H43 H44 H45 H46 H47 H48 H49 H50 H51 H52 H53 H54 H55 H56 H57 H58 H59 H60 H61 H62 H63 H64 H65 H66 H67 H68 H69 H70 H71 H72 H73 H74 H75 H76 H77 H78 H79 H80 H81 H82 H83 H84 H85 H87 H88 H89 H90 H91 H92 H93 H94 H95 H96 H98 H99 HA HAR HBA HBX HC HDW HEA HGM HH HIU HJ HKM HLT HM HMQ HMT HN HP HPA HTZ HUR IA IE INH INK INQ ISD IU IV J10 J12 J13 J14 J15 J16 J17 J18 J19 J2 J20 J21 J22 J23 J24 J25 J26 J27 J28 J29 J30 J31 J32 J33 J34 J35 J36 J38 J39 J40 J41 J42 J43 J44 J45 J46 J47 J48 J49 J50 J51 J52 J53 J54 J55 J56 J57 J58 J59 J60 J61 J62 J63 J64 J65 J66 J67 J68 J69 J70 J71 J72 J73 J74 J75 J76 J78 J79 J81 J82 J83 J84 J85 J87 J89 J90 J91 J92 J93 J94 J95 J96 J97 J98 J99 JE JK JM JNT JOU JPS JWL K1 K10 K11 K12 K13 K14 K15 K16 K17 K18 K19 K2 K20 K21 K22 K23 K24 K25 K26 K27 K28 K3 K30 K31 K32 K33 K34 K35 K36 K37 K38 K39 K40 K41 K42 K43 K45 K46 K47 K48 K49 K5 K50 K51 K52 K53 K54 K55 K58 K59 K6 K60 K61 K62 K63 K64 K65 K66 K67 K68 K69 K70 K71 K73 K74 K75 K76 K77 K78 K79 K80 K81 K82 K83 K84 K85 K86 K87 K88 K89 K90 K91 K92 K93 K94 K95 K96 K97 K98 K99 KA KAT KB KBA KCC KDW KEL KGM KGS KHY KHZ KI KIC KIP KJ KJO KL KLK KLX KMA KMH KMK KMQ KMT KNI KNS KNT KO KPA KPH KPO KPP KR KSD KSH KT KTN KUR KVA KVR KVT KW KWH KWO KWT KX L10 L11 L12 L13 L14 L15 L16 L17 L18 L19 L2 L20 L21 L23 L24 L25 L26 L27 L28 L29 L30 L31 L32 L33 L34 L35 L36 L37 L38 L39 L40 L41 L42 L43 L44 L45 L46 L47 L48 L49 L50 L51 L52 L53 L54 L55 L56 L57 L58 L59 L60 L63 L64 L65 L66 L67 L68 L69 L70 L71 L72 L73 L74 L75 L76 L77 L78 L79 L80 L81 L82 L83 L84 L85 L86 L87 L88 L89 L90 L91 L92 L93 L94 L95 L96 L98 L99 LA LAC LBR LBT LD LEF LF LH LK LM LN LO LP LPA LR LS LTN LTR LUB LUM LUX LY M1 M10 M11 M12 M13 M14 M15 M16 M17 M18 M19 M20 M21 M22 M23 M24 M25 M26 M27 M29 M30 M31 M32 M33 M34 M35 M36 M37 M38 M39 M4 M40 M41 M42 M43 M44 M45 M46 M47 M48 M49 M5 M50 M51 M52 M53 M55 M56 M57 M58 M59 M60 M61 M62 M63 M64 M65 M66 M67 M68 M69 M7 M70 M71 M72 M73 M74 M75 M76 M77 M78 M79 M80 M81 M82 M83 M84 M85 M86 M87 M88 M89 M9 M90 M91 M92 M93 M94 M95 M96 M97 M98 M99 MAH MAL MAM MAR MAW MBE MBF MBR MC MCU MD MGM MHZ MIK MIL MIN MIO MIU MLD MLT MMK MMQ MMT MND MON MPA MQH MQS MSK MTK MTQ MTR MTS MVA MWH N1 N10 N11 N12 N13 N14 N15 N16 N17 N18 N19 N20 N21 N22 N23 N24 N25 N26 N27 N28 N29 N3 N30 N31 N32 N33 N34 N35 N36 N37 N38 N39 N40 N41 N42 N43 N44 N45 N46 N47 N48 N49 N50 N51 N52 N53 N54 N55 N56 N57 N58 N59 N60 N61 N62 N63 N64 N65 N66 N67 N68 N69 N70 N71 N72 N73 N74 N75 N76 N77 N78 N79 N80 N81 N82 N83 N84 N85 N86 N87 N88 N89 N90 N91 N92 N93 N94 N95 N96 N97 N98 N99 NA NAR NCL NEW NF NIL NIU NL NMI NMP NPR NPT NQ NR NT NTT NU NX OA ODE OHM ON ONZ OT OZ OZA OZI P1 P10 P11 P12 P13 P14 P15 P16 P17 P18 P19 P2 P20 P21 P22 P23 P24 P25 P26 P27 P28 P29 P30 P31 P32 P33 P34 P35 P36 P37 P38 P39 P40 P41 P42 P43 P44 P45 P46 P47 P48 P49 P5 P50 P51 P52 P53 P54 P55 P56 P57 P58 P59 P60 P61 P62 P63 P64 P65 P66 P67 P68 P69 P70 P71 P72 P73 P74 P75 P76 P77 P78 P79 P80 P81 P82 P83 P84 P85 P86 P87 P88 P89 P90 P91 P92 P93 P94 P95 P96 P97 P98 P99 PAL PD PFL PGL PI PLA PO PQ PR PS PT PTD PTI PTL Q10 Q11 Q12 Q13 Q14 Q15 Q16 Q17 Q18 Q19 Q20 Q21 Q22 Q23 Q24 Q25 Q26 Q27 Q28 Q3 QA QAN QB QR QT QTD QTI QTL QTR R1 R9 RH RM ROM RP RPM RPS RT S3 S4 SAN SCO SCR SEC SET SG SHT SIE SMI SQ SQR SR STC STI STK STL STN STW SW SX SYR T0 T3 TAH TAN TI TIC TIP TKM TMS TNE TP TPR TQD TRL TST TTS U1 U2 UA UB UC VA VLT VP W2 WA WB WCD WE WEB WEE WG WHR WM WSD WTT WW X1 YDK YDQ YRD Z11 ZP ZZ X43 X44 X1A X1B X1D X1F X1G X1W X2C X3A X3H X4A X4B X4C X4D X4F X4G X4H X5H X5L X5M X6H X6P X7A X7B X8A X8B X8C XAA XAB XAC XAD XAE XAF XAG XAH XAI XAJ XAL XAM XAP XAT XAV XB4 XBA XBB XBC XBD XBE XBF XBG XBH XBI XBJ XBK XBL XBM XBN XBO XBP XBQ XBR XBS XBT XBU XBV XBW XBX XBY XBZ XCA XCB XCC XCD XCE XCF XCG XCH XCI XCJ XCK XCL XCM XCN XCO XCP XCQ XCR XCS XCT XCU XCV XCW XCX XCY XCZ XDA XDB XDC XDG XDH XDI XDJ XDK XDL XDM XDN XDP XDR XDS XDT XDU XDV XDW XDX XDY XEC XED XEE XEF XEG XEH XEI XEN XFB XFC XFD XFE XFI XFL XFO XFP XFR XFT XFW XFX XGB XGI XGL XGR XGU XGY XGZ XHA XHB XHC XHG XHN XHR XIA XIB XIC XID XIE XIF XIG XIH XIK XIL XIN XIZ XJB XJC XJG XJR XJT XJY XKG XKI XLE XLG XLT XLU XLV XLZ XMA XMB XMC XME XMR XMS XMT XMW XMX XNA XNE XNF XNG XNS XNT XNU XNV XOA XOB XOC XOD XOE XOF XOK XOT XOU XP2 XPA XPB XPC XPD XPE XPF XPG XPH XPI XPJ XPK XPL XPN XPO XPP XPR XPT XPU XPV XPX XPY XPZ XQA XQB XQC XQD XQF XQG XQH XQJ XQK XQL XQM XQN XQP XQQ XQR XQS XRD XRG XRJ XRK XRL XRO XRT XRZ XSA XSB XSC XSD XSE XSH XSI XSK XSL XSM XSO XSP XSS XST XSU XSV XSW XSY XSZ XT1 XTB XTC XTD XTE XTG XTI XTK XTL XTN XTO XTR XTS XTT XTU XTV XTW XTY XTZ XUC XUN XVA XVG XVI XVK XVL XVN XVO XVP XVQ XVR XVS XVY XWA XWB XWC XWD XWF XWG XWH XWJ XWK XWL XWM XWN XWP XWQ XWR XWS XWT XWU XWV XWW XWX XWY XWZ XXA XXB XXC XXD XXF XXG XXH XXJ XXK XYA XYB XYC XYD XYF XYG XYH XYJ XYK XYL XYM XYN XYP XYQ XYR XYS XYT XYV XYW XYX XYY XYZ XZA XZB XZC XZD XZF XZG XZH XZJ XZK XZL XZM XZN XZP XZQ XZR XZS XZT XZU XZV XZW XZX XZY XZZ ', concat(' ', normalize-space(@unitCode), ' '))))">[BR-CL-23]-Unit code MUST be coded according to the UN/ECE Recommendation 20 with
+      Rec 21 extension</assert>
+    </rule>
+    <rule flag="fatal" context="cbc:EmbeddedDocumentBinaryObject[@mimeCode]">
+      <assert id="BR-CL-24" flag="fatal" test="((@mimeCode = 'application/pdf' or @mimeCode = 'image/png' or @mimeCode = 'image/jpeg' or @mimeCode = 'text/csv' or @mimeCode = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' or @mimeCode = 'application/vnd.oasis.opendocument.spreadsheet'))">[BR-CL-24]-For Mime code in attribute use MIMEMediaType.</assert>
+    </rule>
+    <rule flag="fatal" context="cbc:EndpointID[@schemeID]">
+      <assert id="BR-CL-25" flag="fatal" test="((not(contains(normalize-space(@schemeID), ' ')) and contains(' 0002 0007 0009 0037 0060 0088 0096 0097 0106 0135 0142 0151 0183 0184 0190 0191 0192 0193 0195 0196 0198 0199 0200 0201 0202 9901 9902 9904 9905 9906 9907 9910 9913 9914 9915 9917 9918 9919 9920 9921 9922 9923 9924 9925 9926 9927 9928 9929 9930 9931 9932 9933 9934 9935 9936 9937 9938 9939 9940 9941 9942 9943 9944 9945 9946 9947 9948 9949 9950 9951 9952 9953 9955 9956 9957 9958 AN AQ AS AU EM ', concat(' ', normalize-space(@schemeID), ' '))))">[BR-CL-25]-Endpoint identifier scheme identifier MUST belong to the CEF EAS code list</assert>
+    </rule>
+  </pattern>
+</schema>
