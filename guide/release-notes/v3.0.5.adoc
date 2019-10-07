@@ -10,7 +10,7 @@ Release date:: 2019-11-01
 == Changes to support documents
 
 * Syntax mapping between UBL and CII, in xls spreadsheet corrected. Mapping for BT-34 corrected to use URIID instead of GlobalID. Correction in line with part 3-3 of EN 16931. Published in new version of mapping in file mapping-cii-ubl v2 fr19.xls
-* A small bug in xslt stylesheet fixed.
+* A bug in xslt stylesheet fixed. The stylesheet contains a list (uncl1001invoice) of different document types, that is displayed. In this list, only the Invoice name exist while the creditnote name is did not exist.
 
 == Changes to code lists and validation artefacts
 
