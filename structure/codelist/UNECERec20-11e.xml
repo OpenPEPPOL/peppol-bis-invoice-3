@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
-    <Title>UN/ECE Recommandation 20</Title>
+    <Title>UN/ECE Recommendation 20</Title>
     <Identifier>UNECERec20</Identifier>
     <Version>Revision 11e</Version>
     <Agency>UN/ECE</Agency>

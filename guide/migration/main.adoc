@@ -2,7 +2,7 @@ include::../cius/links.adoc[]
 include::settings.adoc[]
 
 = Migration plan
-Draft, OpenPEPPOL AISBL, Post-Award Coordinating Community
+OpenPEPPOL AISBL, Post-Award Coordinating Community
 :doctype: book
 :icons: font
 :toc: left
@@ -15,7 +15,7 @@ Draft, OpenPEPPOL AISBL, Post-Award Coordinating Community
 :title-logo-image: ../images/peppol.jpg
 
 
-This document is a suggested draft for the migration plan for the transition event from the current versions of PEPPOL BIS Billing (BIS 5a, version 2) to the updated PEPPOL BIS Billing (version 3), as well as the phase out of PEPPOL BIS Invoice (BIS4a, version 2). This plan is based on the {migration-policy}.
+This document is the migration plan for the transition event from the current versions of PEPPOL BIS Billing (BIS 5a, version 2) to the updated PEPPOL BIS Billing (version 3), as well as the phase out of PEPPOL BIS Invoice (BIS4a, version 2). This plan is based on the {migration-policy}.
 
 
 :leveloffset: +1

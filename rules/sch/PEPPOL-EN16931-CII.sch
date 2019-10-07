@@ -36,7 +36,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<variable name="length" select="string-length($val) - 1"/>
 		<variable name="digits" select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
 		<variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (1 + ((($i + 1) mod 2) * 2)))"/>
-		<value-of select="10 - ($weightedSum mod 10) = number(substring($val, $length + 1, 1))"/>
+		<value-of select="(10 - ($weightedSum mod 10)) mod 10 = number(substring($val, $length + 1, 1))"/>
 	</function>
 	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
 		<param name="exp" as="xs:decimal"/>
@@ -159,17 +159,17 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<rule context="ram:URIID[@schemeID = '0088'] | ram:ID[@schemeID = '0088'] | ram:GlobalID[@schemeID = '0088']">
 			<assert id="PEPPOL-COMMON-R040"
 					test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())"
-					flag="warning">Invalid GLN number provided.</assert>
+					flag="warning">GLN must have a valid format according to GS1 rules.</assert>
 		</rule>
 		<rule context="ram:URIID[@schemeID = '0192'] | ram:ID[@schemeID = '0192'] | ram:GlobalID[@schemeID = '0192']">
 			<assert id="PEPPOL-COMMON-R041"
 					test="matches(normalize-space(), '^[0-9]{9}$') and u:mod11(normalize-space())"
-					flag="fatal">Invalid Norwegian organization number provided.</assert>
+					flag="fatal">Norwegian organization number MUST be stated in the correct format.</assert>
 		</rule>
 		<rule context="ram:URIID[@schemeID = '0184'] | ram:ID[@schemeID = '0184'] | ram:GlobalID[@schemeID = '0184']">
 			<assert id="PEPPOL-COMMON-R042"
 					test="(string-length(text()) = 10) and (substring(text(), 1, 2) = 'DK') and (string-length(translate(substring(text(), 3, 8), '1234567890', '')) = 0)"
-					flag="fatal">Invalid Danish organization number (CVR) provided.</assert>
+					flag="fatal">Danish organization number (CVR) MUST be stated in the correct format.</assert>
 		</rule>
 	</pattern>
 	<!-- National rules -->
@@ -361,7 +361,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<rule context="ram:AttachmentBinaryObject[@mimeCode]">
 			<assert id="PEPPOL-EN16931-CL001" test="
                     some $code in $MIMECODE
-                        satisfies @mimeCode = $code" flag="fatal">Invalid mime code.</assert>
+                        satisfies @mimeCode = $code" flag="fatal">Mime code must be according to subset of IANA code list.</assert>
 		</rule>
 		<rule context="ram:SpecifiedTradeAllowanceCharge[normalize-space(ram:ChargeIndicator/udt:Indicator) = 'false']/ram:ReasonCode">
 			<assert id="PEPPOL-EN16931-CL002" test="
@@ -372,11 +372,6 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 			<assert id="PEPPOL-EN16931-CL003" test="
                     some $code in $UNCL7161
                         satisfies normalize-space(text()) = $code" flag="fatal">Reason code MUST be according to UNCL 7161 D.16B.</assert>
-		</rule>
-		<rule context="ram:CountryID">
-			<assert id="PEPPOL-EN16931-CL005" test="
-                    some $code in $ISO3166
-                        satisfies normalize-space(text()) = $code" flag="fatal">Country code MUST be according to ISO 3166 Alpha-2.</assert>
 		</rule>
 		<!-- PEPPOL-EN16931-CL006 is omitted due to lack of description code for invoice period in CII syntax. -->
 		<rule context="ram:TaxTotalAmount[@currencyID]">

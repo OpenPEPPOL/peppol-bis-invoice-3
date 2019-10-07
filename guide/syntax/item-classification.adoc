@@ -10,4 +10,4 @@ include::{snippet-dir}/item.xml[tags=cpv]
 ----
 include::{snippet-dir}/item.xml[tags=unspsc]
 ----
-<1> listID must be from UNCL7143 code list, and code MP indicates this is a UNSPSC classification, listVersionID is optional, but can be used to specify the version of UNSPSC.
+<1> listID must be from UNCL7143 code list, and code TST indicates this is a UNSPSC classification, listVersionID is optional, but can be used to specify the version of UNSPSC. NOTE, in previous versions code MP was used as temporary workaround to identify UNSPSC. In fall release 2019 it is replaced with the new 7143 code TST that is specific for UNSPSC.

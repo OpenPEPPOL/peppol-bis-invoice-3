@@ -5,6 +5,11 @@
     <Agency>CEF</Agency>
 
     <Code>
+        <Id>vatex-eu-132</Id>
+        <Name>Exempt based on article 132 of Council Directive 2006/112/EC</Name>
+        <Description>Exemptions for certain activities in public interest.</Description>
+    </Code>    
+	<Code>
         <Id>vatex-eu-132-1a</Id>
         <Name>Exempt based on article 132, section 1 (a) of Council Directive 2006/112/EC</Name>
         <Description>The supply by the public postal services of services other than passenger
@@ -129,6 +134,11 @@
             radio and television bodies.</Description>
     </Code>
     <Code>
+        <Id>vatex-eu-143</Id>
+        <Name>Exempt based on article 143 of Council Directive 2006/112/EC</Name>
+        <Description>Exemptions on importation.</Description>
+    </Code> 	
+    <Code>
         <Id>vatex-eu-143-1a</Id>
         <Name>Exempt based on article 143, section 1 (a) of Council Directive 2006/112/EC</Name>
         <Description>The final importation of goods of which the supply by a taxable person would in
@@ -227,10 +237,10 @@
             or cooling networks.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-309</Id>
-        <Name>Exempt based on article 309 of Council Directive 2006/112/EC</Name>
-        <Description>Travel agents performed outside of EU.</Description>
-    </Code>
+        <Id>vatex-eu-148</Id>
+        <Name>Exempt based on article 148 of Council Directive 2006/112/EC</Name>
+        <Description>Exemptions related to international transport.</Description>
+    </Code> 	
     <Code>
         <Id>vatex-eu-148-a</Id>
         <Name>Exempt based on article 148, section (a) of Council Directive 2006/112/EC</Name>
@@ -270,6 +280,11 @@
         <Description>Supply to of other services to aircraft on international routes.</Description>
     </Code>
     <Code>
+        <Id>vatex-eu-151</Id>
+        <Name>Exempt based on article 151 of Council Directive 2006/112/EC</Name>
+        <Description>Exemptions relating to certain Transactions treated as exports.</Description>
+    </Code> 	
+     <Code>
         <Id>vatex-eu-151-1a</Id>
         <Name>Exempt based on article 151, section 1 (a) of Council Directive 2006/112/EC</Name>
         <Description>The supply of goods or services under diplomatic and consular
@@ -321,6 +336,11 @@
             Republic of Cyprus, dated 16 August 1960, which are for the use of those forces, or of
             the civilian staff accompanying them, or for supplying their messes or
             canteens.</Description>
+    </Code>
+    <Code>
+        <Id>vatex-eu-309</Id>
+        <Name>Exempt based on article 309 of Council Directive 2006/112/EC</Name>
+        <Description>Travel agents performed outside of EU.</Description>
     </Code>
     <Code>
         <Id>vatex-eu-g</Id>
