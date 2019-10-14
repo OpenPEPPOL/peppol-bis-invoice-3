@@ -112,6 +112,10 @@
         <Name>Indirizzo di Posta Elettronica Certificata</Name>
     </Code>
     <Code>
+        <Id>0204</Id>
+        <Name>Leitweg-ID</Name>
+    </Code>
+    <Code>
         <Id>9901</Id>
         <Name>Danish Ministry of the Interior and Health</Name>
     </Code>
