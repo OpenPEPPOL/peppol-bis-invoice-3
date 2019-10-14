@@ -14,7 +14,7 @@ Release date:: 2019-11-01
 
 == Changes to code lists and validation artefacts
 
-* Update in link:/poacc/billing/3.0/codelist/eas/[EAS] code list, addition of codes: 0130 ,0203 and 204, and deprecating of code 9917 and 9921
+* Update in link:/poacc/billing/3.0/codelist/eas/[EAS] code list, addition of codes: 0130 ,0203 and 204, and deprecating of code 9917 and 9921. Description of code 0190 corrected as specified in ICD code certificate.
 * Update in link:/poacc/billing/3.0/codelist/ICD/[ICD] code list, addition of codes: 0203 and 0204
 * Update in link:/poacc/billing/3.0/codelist/vatex/[VATEX] code list, addition of codes: vatex-eu-132, vatex-eu-143, vatex-eu-148, vatex-eu-151
 * Rule PEPPOL-EN16931-CL005 "Country code MUST be according to ISO 3166 Alpha-2" deleted since it is an unneccessary duplication of [BR-CL-14]-"Country codes in an invoice MUST be coded using ISO code list 3166-1 "
