@@ -1608,21 +1608,31 @@
     <Code>
         <Id>0199</Id>
         <Name>Legal Entity Identifier (LEI)</Name>
+		<Description>The LEI is the global, open identifier established at the urging of the Financial Stability Board and the recommendation of the G20. The LEI is established as the ISO 17442 standard, is governed by the LEI Regulatory Oversight Committee (LEI-ROC) and has been implemented by the Global Legal Entity Identifier Foundation (GLEIF). The LEI code connects to key reference information that enables clear and unique identification of legal entities participating in financial transactions. Each LEI contains information about an entity's ownership structure and thus answers the questions of 'who is who' and 'who owns whom'. Simply put, the publicly available LEI data pool can be regarded as a global directory, which greatly enhances transparency in the global marketplace. Already applied very broadly within financial regulation and rapidly being adopted for KYC and a number of other purposes in financial markets, the LEI is set to spread into a range of other fields, including trade facilitation, business reporting and supply chain management.</Description>
     </Code>
     <Code>
         <Id>0200</Id>
         <Name>Legal entity code (Lithuania)</Name>
+		<Description>For use in EDI (electronic data interchange) for C2B and others exchanges to identify legal entities.</Description>
     </Code>
     <Code>
         <Id>0201</Id>
         <Name>Codice Univoco Unità Organizzativa iPA</Name>
+		<Description>Used to identify uniquely all organizational units of public bodies, authorities and public services in Italy</Description>
     </Code>
     <Code>
         <Id>0202</Id>
         <Name>Indirizzo di Posta Elettronica Certificata</Name>
-    </Code>
+		<Description>Used to identify senders and receivers of certified electronic mail as defined by Italian law</Description>
+	</Code>
     <Code>
         <Id>0203</Id>
         <Name>eDelivery Network Participant identifier</Name>
+		<Description>Used as an electronic address identifier for participants within a secure data communication network.</Description>
+		</Code>
+	<Code>
+        <Id>0204</Id>
+        <Name>eDelivery Network Participant identifier</Name>
+		<Description>Identification of Public Authorities.</Description>
     </Code>
 </CodeList>
