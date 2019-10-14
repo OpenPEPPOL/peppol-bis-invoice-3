@@ -23,5 +23,6 @@ Release date:: 2019-11-01
 * An error in a common structural validation of GLN numbers, rule PEPPOL-COMMON-R040, corrected.
 * Changed implementation of empty element-test. Rule updated so that it also fails on whitespace only content.
 * Country rules for Denmark updated.
+* Added rule PEPPOL-COMMON-R042 to check structure of Danish CVR numbers.
 
 * Changes to TC434 rules as link:https://github.com/CenPC434/validation/releases/tag/validation-1.2.4[released here.]
