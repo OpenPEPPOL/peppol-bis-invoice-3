@@ -313,7 +313,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<!-- Line level -->
 		<rule context="ubl-creditnote:CreditNote[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:CreditNoteLine | ubl-invoice:Invoice[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:InvoiceLine">
 			<assert id="DK-R-003"
-					test="not((cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listID = 'MP')
+					test="not((cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listID = 'TST')
 						and not((cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.05.01')
 							   or (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.0501')
 							   )
