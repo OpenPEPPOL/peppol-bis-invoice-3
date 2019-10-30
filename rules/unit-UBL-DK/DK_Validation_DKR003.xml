@@ -30,7 +30,7 @@
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="19.05.01">22334455</cbc:ItemClassificationCode>
+						<cbc:ItemClassificationCode listID="TST" listVersionID="19.05.01">22334455</cbc:ItemClassificationCode>
 					</cac:CommodityClassification>
 				</cac:Item>
 			</cac:InvoiceLine>
@@ -63,7 +63,7 @@
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="19.0501">22334455</cbc:ItemClassificationCode>
+						<cbc:ItemClassificationCode listID="TST" listVersionID="19.0501">22334455</cbc:ItemClassificationCode>
 					</cac:CommodityClassification>
 				</cac:Item>
 			</cac:InvoiceLine>
@@ -96,7 +96,7 @@
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
+						<cbc:ItemClassificationCode listID="TST" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
 					</cac:CommodityClassification>
 				</cac:Item>
 			</cac:InvoiceLine>
@@ -129,7 +129,7 @@
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
+						<cbc:ItemClassificationCode listID="TST" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
 					</cac:CommodityClassification>
 				</cac:Item>
 			</cac:InvoiceLine>
@@ -162,7 +162,7 @@
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
+						<cbc:ItemClassificationCode listID="TST" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
 					</cac:CommodityClassification>
 				</cac:Item>
 			</cac:InvoiceLine>
@@ -195,7 +195,7 @@
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="HS">22334455</cbc:ItemClassificationCode>
+						<cbc:ItemClassificationCode listID="T-S-T">22334455</cbc:ItemClassificationCode>
 					</cac:CommodityClassification>
 				</cac:Item>
 			</cac:InvoiceLine>
@@ -262,7 +262,7 @@
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="">22334455</cbc:ItemClassificationCode>
+						<cbc:ItemClassificationCode listID="TST" listVersionID="">22334455</cbc:ItemClassificationCode>
 					</cac:CommodityClassification>
 				</cac:Item>
 			</cac:InvoiceLine>
@@ -295,7 +295,7 @@
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
+						<cbc:ItemClassificationCode listID="TST" listVersionID="7.0501">22334455</cbc:ItemClassificationCode>
 					</cac:CommodityClassification>
 				</cac:Item>
 			</cac:InvoiceLine>
@@ -328,7 +328,7 @@
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
-						<cbc:ItemClassificationCode listID="MP">22334455</cbc:ItemClassificationCode>
+						<cbc:ItemClassificationCode listID="TST">22334455</cbc:ItemClassificationCode>
 					</cac:CommodityClassification>
 				</cac:Item>
 			</cac:InvoiceLine>
