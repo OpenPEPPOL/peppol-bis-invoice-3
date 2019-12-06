@@ -1,0 +1,7 @@
+
+
+= Derivatives
+
+Peppol Authorities that have developed invoice Document Types that were derived from the Peppol BIS 5a or 4a, and have had those listed as Document types in the relevant code list according to the Peppol policy for identifiers, can continue to exchange invoices based on those specifications after the phase-out date mentioned in this Migration Policy.
+
+After the Phase Out date the relevant PA will, however, have to fully assume the responsibility for any support and maintenance of those Document Types including the part that has been inherited from the underlying Peppol BIS 5a or 4a. They are strongly recommended to migrate to versions compatible with BIS Billing 3.0.

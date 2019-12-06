@@ -15,7 +15,7 @@ OpenPEPPOL AISBL, Post-Award Coordinating Community
 :title-logo-image: ../images/peppol.jpg
 
 
-This document is the migration plan for the transition event from the current versions of PEPPOL BIS Billing (BIS 5a, version 2) to the updated PEPPOL BIS Billing (version 3), as well as the phase out of PEPPOL BIS Invoice (BIS4a, version 2). This plan is based on the {migration-policy}.
+This document is the migration plan for the transition event from the Peppol BIS Billing 5a, (version 2.3) to the Peppol BIS Billing 3.0, as well as the phase out of Peppol BIS Invoice 4a, (version 2.3).
 
 
 :leveloffset: +1
@@ -23,3 +23,4 @@ This document is the migration plan for the transition event from the current ve
 include::introduction.adoc[]
 include::overview.adoc[]
 include::rules.adoc[]
+include::derivative.adoc[]
