@@ -484,7 +484,7 @@
                 <Description>The total amount of the Invoice line.
                     The amount is “net” without VAT, i.e. inclusive of line level allowances and charges as well as other relevant taxes.
                     Must be rounded to maximum 2 decimals.</Description>
-                <DataType>Identifier</DataType>
+                <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-131</Reference>
                 <Reference type="RULE">BR-24</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R120</Reference>
