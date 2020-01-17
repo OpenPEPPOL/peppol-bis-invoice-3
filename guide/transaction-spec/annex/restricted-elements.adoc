@@ -75,7 +75,7 @@
 | PEPPOL-EN16931-R010
 
 | BG-19
-| Payment card information
+| Direct debit
 | Add new non-conflicting business rule to existing element(s)
 | Mandate reference shall be provided for direct debit.
 | PEPPOL-EN16931-R061
