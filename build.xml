@@ -6,7 +6,7 @@
 
 	<!-- Loading template -->
 	<property environment="env"/>
-	<import file="${env.PDK_PATH}/lib/peppol/ant/template.xml"/>
+	<import file="${env.PDK_PATH}/lib/peppol/ant/template/peppol-v1.xml"/>
 
 	<!-- 
 		Overriding targets defined in template.
