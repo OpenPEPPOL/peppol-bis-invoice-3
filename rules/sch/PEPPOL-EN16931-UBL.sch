@@ -171,7 +171,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		</rule>
 		<!-- Allowance (price level) -->
 		<rule context="cac:Price/cac:AllowanceCharge">
-			<assert id="PEPPOL-EN16931-R044" test="normalize-space(cbc:ChargeIndicator) = 'false'" flag="fatal">Charge on price level is NOT allowed.</assert>
+			<assert id="PEPPOL-EN16931-R044" test="normalize-space(cbc:ChargeIndicator) = 'false'" flag="fatal">Charge on price level is NOT allowed. Only value 'false' allowed.</assert>
 			<assert id="PEPPOL-EN16931-R046" test="not(cbc:BaseAmount) or xs:decimal(../cbc:PriceAmount) = xs:decimal(cbc:BaseAmount) - xs:decimal(cbc:Amount)" flag="fatal">Item net price MUST equal (Gross price - Allowance amount) when gross price is provided.</assert>
 		</rule>
 		<!-- Price -->
