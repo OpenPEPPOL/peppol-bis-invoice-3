@@ -4,7 +4,7 @@
 :peppol: https://peppol.eu/?rel=undefined[PEPPOL]
 :common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
 :openpeppol: https://peppol.eu/about-openpeppol/?rel=tab41[OpenPEPPOL]
-:policy8: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/ [PEPPOL Policy for identifiers, policy 8]
+:policy8: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[PEPPOL Policy for identifiers, policy 8]
 :migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPEPPOL Migration Policy]
 
 
