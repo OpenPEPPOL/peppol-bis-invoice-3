@@ -15,5 +15,7 @@ include::../../transaction-spec/annex/restricted-elements.adoc[]
 
 include::../../profile/annex/processes.adoc[]
 
+include::../../profile/annex/known-issues.adoc[]
+
 
 :leveloffset: -1
