@@ -1650,7 +1650,7 @@
 		</Code>
 	<Code>
         <Id>0204</Id>
-        <Name>eDelivery Network Participant identifier</Name>
+        <Name>Leitweg-ID</Name>
 		<Description>Identification of Public Authorities.</Description>
     </Code>
 </CodeList>
