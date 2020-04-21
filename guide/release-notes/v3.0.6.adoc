@@ -14,7 +14,7 @@ Release date:: 2020-05-01
 
 == Changes to code lists and validation artefacts
 
-* Added country code 1A for Kosovo into ISO 3166 for all BIS specifications. EN 16931 validation artefacts used in BIS Billing 3.0 updated to latest version 1.3.1, Added country code 1A for Kosovo into ISO 3166 for all BIS specifications. [POACC-324]
+* Added country code 1A for Kosovo into ISO 3166 for all BIS specifications. EN 16931 validation artefacts used in BIS Billing 3.0 updated to latest version 1.3.1. [POACC-324]
 * Added rules PEPPOL-EN16931-P0104 to P0111 to restrict the use of allowed VAT category code in combination with ExemptionReasonCode. Following the rules defined in the codelists for codes: vatex-eu-g, vatex-eu-o, vatex-eu-ic, vatex-eu-ae, vatex-eu-d, vatex-eu-f, vatex-eu-i, vatex-eu-j. [POACC-303]
 * Added a clarification to the error message of rule PEPPOL-EN16931-R044 regarding other values than value ‘false’ in Price/AllowanceCharge/ChargeIndicator. [POACC-236]
 
