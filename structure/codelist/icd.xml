@@ -1591,6 +1591,12 @@
             </Description>
     </Code>
     <Code>
+        <Id>0194</Id>
+        <Name>KOIOS Open Technical Dictionary</Name>
+        <Description>The KOIOS OTD is a collection of terminology defined by and obtained from consensus bodies such as ISO, IEC, and other groups that have a consensus process for developing terminology. The KOIOS OTD contains terms, definitions, and images of concepts used to describe individuals, organizations, locations, goods and services. The KOIOS OTD conforms to ISO 22745 (all parts) and is designed to enable the exchange of characteristic data in all stages of the life-cycle of an item, and to ensure that the resulting specifications conform to ISO 8000-110
+        </Description>
+    </Code>	
+    <Code>
         <Id>0195</Id>
         <Name>Singapore Nationwide E-lnvoice Framework</Name>
         <Description>For use in electronic messages in accordance to the Singapore
@@ -1605,6 +1611,18 @@
             For legal entities, identifiers starting with 4 to 9
             Directorate of Internal Revenue, www.rsk.is</Description>
     </Code>
+    <Code>
+        <Id>0197</Id>
+        <Name>Name not known</Name>
+        <Description>Description unknown
+        </Description>
+    </Code>	
+    <Code>
+        <Id>0198</Id>
+        <Name>ERSTORG</Name>
+        <Description>To be used for identifying Danish companies based on VAT numbers included juridical.
+        </Description>
+    </Code>	
     <Code>
         <Id>0199</Id>
         <Name>Legal Entity Identifier (LEI)</Name>
@@ -1632,7 +1650,7 @@
 		</Code>
 	<Code>
         <Id>0204</Id>
-        <Name>eDelivery Network Participant identifier</Name>
+        <Name>Leitweg-ID</Name>
 		<Description>Identification of Public Authorities.</Description>
     </Code>
 </CodeList>
