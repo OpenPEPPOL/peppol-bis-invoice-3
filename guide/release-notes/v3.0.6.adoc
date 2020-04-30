@@ -3,7 +3,7 @@
 Release date:: 2020-05-01
 
 == Changes to BIS document
-* Changed busienss name in peppol-bis-invoice-3\\guide\\transaction-spec\\annex, restricted-elements.adoc for BG-19 to “Direct debet” instead of “Payment card information” [POACC-261]
+* Changed busienss name in peppol-bis-invoice-3\\guide\\transaction-spec\\annex, restricted-elements.adoc for BG-19 to “Direct debit” instead of “Payment card information” [POACC-261]
 * Changed Datatype in structure/syntax/ubl-invoice.xml on ubl-invoice/cac-InvoiceLine/cbc-LineExtensionAmount/ from Identifier to Amount [POACC-252]
 * EAS code list entry 0007 for billing and upgrade, spelling corrected and added clarification. [POACC-259]
 * Descriptions and some names of codes in UNCL7143 corrected in line with the official code list version d19a. Applies to all BIS using this code list. [POACC-258]
