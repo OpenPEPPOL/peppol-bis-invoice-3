@@ -72,8 +72,8 @@
             <cbc:TaxAmount currencyID="GBP">0.00</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>E</cbc:ID>
-                <cbc:TaxExemptionReasonCode>VATEX-EU-F</cbc:TaxExemptionReasonCode>
                 <cbc:Percent>0</cbc:Percent>
+                <cbc:TaxExemptionReasonCode>VATEX-EU-F</cbc:TaxExemptionReasonCode>
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
