@@ -1653,4 +1653,24 @@
         <Name>Leitweg-ID</Name>
 		<Description>Identification of Public Authorities.</Description>
     </Code>
+    <Code>
+        <Id>0205</Id>
+        <Name>Name not known</Name>
+        <Description>Description unknown</Description>
+    </Code>
+    <Code>
+        <Id>0206</Id>
+        <Name>Name not known</Name>
+        <Description>Description unknown</Description>
+    </Code>
+    <Code>
+        <Id>0207</Id>
+        <Name>Name not known</Name>
+        <Description>Description unknown</Description>
+    </Code>
+    <Code>
+        <Id>0208</Id>
+        <Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
+        <Description>Identification number attributed by the BCE/KBO/ZDU (the Belgian register) to identify entities and establishment units operating in Belgiu</Description>
+    </Code>
 </CodeList>
