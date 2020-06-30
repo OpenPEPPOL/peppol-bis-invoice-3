@@ -6,7 +6,7 @@
     <test>
         <assert>
             <description>Check that code 0208, part of EAS and PEPPOL succeeds validation</description>
-            <error>PEPPOL-EN16931-CL008</error>
+            <success>PEPPOL-EN16931-CL008</success>
         </assert>
         <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
