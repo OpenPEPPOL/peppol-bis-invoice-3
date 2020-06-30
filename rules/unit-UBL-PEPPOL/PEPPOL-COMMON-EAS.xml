@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-01-3.0-ubl-invoice">
+    <assert>
+        <scope>PEPPOL-EN16931-CL008</scope>
+    </assert>
+    <test>
+        <assert>
+            <description>Check that code 0208, part of EAS and PEPPOL succeeds validation</description>
+            <success>PEPPOL-EN16931-CL008</success>
+        </assert>
+        <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                 xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                 xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cac:AccountingCustomerParty>
+                <cac:Party>
+                    <cbc:EndpointID schemeID="0208">1234567890</cbc:EndpointID>
+                </cac:Party>
+            </cac:AccountingCustomerParty>
+        </Invoice>
+    </test>
+    <test>
+        <assert>
+        <description>Check that code 0207, part of EAS and not part of PEPPOL fails validation</description>
+            <error>PEPPOL-EN16931-CL008</error>
+        </assert>
+        <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                 xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                 xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cac:AccountingSellerParty>
+                <cac:Party>
+                    <cbc:EndpointID schemeID="0207">1234567890</cbc:EndpointID>
+                </cac:Party>
+            </cac:AccountingSellerParty>
+        </Invoice>
+    </test>
+</testSet>
