@@ -1,0 +1,13 @@
+= Version 3.0.7
+[horizontal]
+Release date:: 2020-XX-XX
+
+== Changes to BIS document
+
+
+== Changes to support documents
+
+
+== Changes to code lists and validation artefacts
+* Rule PEPPOL-COMMON-R040: "GLN must have a valid format according to GS1 rules". Changed from severity "warning" to "fatal". (The rule was introduced in fall 2019 with severity "warning" to avoid disruptions but with the intention to be changed to severity "fatal" after 6-12 months). Issue: [POACC-333] and [POACC-341]
+

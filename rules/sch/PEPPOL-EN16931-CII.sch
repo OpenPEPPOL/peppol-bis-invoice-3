@@ -159,7 +159,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<rule context="ram:URIID[@schemeID = '0088'] | ram:ID[@schemeID = '0088'] | ram:GlobalID[@schemeID = '0088']">
 			<assert id="PEPPOL-COMMON-R040"
 					test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())"
-					flag="warning">GLN must have a valid format according to GS1 rules.</assert>
+					flag="fatal">GLN must have a valid format according to GS1 rules.</assert>
 		</rule>
 		<rule context="ram:URIID[@schemeID = '0192'] | ram:ID[@schemeID = '0192'] | ram:GlobalID[@schemeID = '0192']">
 			<assert id="PEPPOL-COMMON-R041"
