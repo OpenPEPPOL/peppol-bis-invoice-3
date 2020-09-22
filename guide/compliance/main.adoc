@@ -8,6 +8,8 @@ openPEPPOL AISBL <http://www.peppol.eu/>
 :imagesdir: images
 :title-logo-image: peppol.png
 
+This section provides an overview of rules that receivers and/or senders of documents must fulfil to be compliant to a BIS specification. This is not a complete or normative listing og applicable rules.
+
 :leveloffset: +1
 
 include::receiver.adoc[]
