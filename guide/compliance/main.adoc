@@ -1,0 +1,17 @@
+= Compliance to BIS specifications
+openPEPPOL AISBL <http://www.peppol.eu/>
+:icons: font
+:source-highlighter: coderay
+:toc: left
+:toclevels: 2
+:sourcedir: .
+:imagesdir: images
+:title-logo-image: peppol.png
+
+:leveloffset: +1
+
+include::receiver.adoc[]
+
+include::sender.adoc[]
+
+:leveloffset: -1

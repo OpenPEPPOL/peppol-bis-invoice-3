@@ -1,0 +1,5 @@
+= Receivers compliance to BIS
+[horizontal]
+
+== Processing of rules
+* A receiver SHALL NOT reject messages that only fail warnings rules while failing no error rules (fatal rules).
