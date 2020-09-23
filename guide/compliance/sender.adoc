@@ -1,4 +1,4 @@
-= Receivers compliance to BIS
+= Senders compliance to BIS
 [horizontal]
 
 == Processing of rules
