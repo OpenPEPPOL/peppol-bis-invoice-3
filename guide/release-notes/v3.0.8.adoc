@@ -4,6 +4,7 @@ Release date:: 2020-11-01
 
 == Changes to BIS document
 * Definitions for EndPoint identifiers BT-34 and BT-49 aligned with defintion in EN16931. Issue: [POACC-331]
+* Migration plan from BIS2 to BIS3 removed. Is completed.
 
 == Changes to support documents
 

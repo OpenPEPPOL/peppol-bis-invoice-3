@@ -5,7 +5,6 @@
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
-    <Documentation path="migration/">Migration plan</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
 
     <!-- Syntax -->
