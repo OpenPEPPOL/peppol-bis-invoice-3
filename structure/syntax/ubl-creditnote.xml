@@ -84,6 +84,7 @@
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-3</Reference>
             <Reference type="RULE">BR-04</Reference>
+            <Reference type="RULE">BR-CL-01</Reference>
             <Reference type="RULE">PEPPOL-EN16931-P0101</Reference>
             <Reference type="CODE_LIST">UNCL1001-cn</Reference>
             <Value type="EXAMPLE">381</Value>
@@ -98,6 +99,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-22</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
+            <Reference type="RULE">BR-CL-08</Reference>
             <Value type="EXAMPLE">Please note our new phone number 33 44 55 66</Value>
         </Element>
 

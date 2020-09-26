@@ -78,6 +78,7 @@
             <Reference type="BUSINESS_TERM">BT-92,BT-99</Reference>
             <Reference type="RULE">BR-31</Reference>
             <Reference type="RULE">BR-36</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R040</Reference>
             <Reference type="RULE">BR-DEC-01</Reference>
             <Reference type="RULE">BR-DEC-05</Reference>
@@ -106,6 +107,7 @@
             <Reference type="RULE">BR-DEC-02</Reference>
             <Reference type="RULE">BR-DEC-06</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
             
             
             <Attribute>

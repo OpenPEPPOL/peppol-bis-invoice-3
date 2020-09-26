@@ -18,6 +18,7 @@
             <Reference type="BUSINESS_TERM">BT-146</Reference>
             <Reference type="RULE">BR-26</Reference>
             <Reference type="RULE">BR-27</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R046</Reference>
             
             
@@ -81,6 +82,7 @@
                     <Description>Mandatory attribute. Use BT-5</Description>
                     <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference> 
+                    <Reference type="RULE">BR-CL-03</Reference>
                     <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
@@ -95,6 +97,7 @@
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-148</Reference>
                 <Reference type="RULE">BR-28</Reference>
+                <Reference type="RULE">BR-CL-03</Reference>
                 
                 <Attribute>
                     <Term>currencyID</Term>

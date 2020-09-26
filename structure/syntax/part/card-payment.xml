@@ -8,6 +8,7 @@
                 invoice issuance.
             </Description>
             <Reference type="BUSINESS_TERM">BG-18</Reference>
+             <Reference type="RULE">BR-66</Reference>
             
             <Element>
                 <Term>cbc:PrimaryAccountNumberID</Term>
