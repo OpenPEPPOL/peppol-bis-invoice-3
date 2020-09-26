@@ -41,6 +41,7 @@
             <DataType>Quantity</DataType>
             <Reference type="BUSINESS_TERM">BT-149</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R121</Reference>
+            <Reference type="RULE">BR-CL-23</Reference>
             
             
             

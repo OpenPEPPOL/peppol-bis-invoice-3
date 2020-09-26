@@ -18,6 +18,7 @@
             <Reference type="RULE">BR-DEC-13</Reference>
             <Reference type="RULE">BR-DEC-15</Reference>    
             <Reference type="RULE">UBL-DT-01</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5 or BT-6.</Description>
@@ -64,6 +65,7 @@
                 <Reference type="RULE">BR-IP-08</Reference>
                 <Reference type="RULE">BR-DEC-19</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
+                <Reference type="RULE">BR-CL-03</Reference>
                 
                 
                 <Attribute>
@@ -131,6 +133,7 @@
                     <Reference type="RULE">BR-O-10</Reference>
                     <Reference type="RULE">BR-IG-01</Reference>
                     <Reference type="RULE">BR-IP-01</Reference>
+                    <Reference type="RULE">BR-CL-17</Reference>
                     <Value type="EXAMPLE">S</Value> 
                 </Element>
                 
@@ -161,6 +164,14 @@
                     <Reference type="RULE">BR-O-10</Reference>
                     <Reference type="RULE">BR-IG-10</Reference>
                     <Reference type="RULE">BR-IP-10</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-P0104</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-P0105</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-P0106</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-P0107</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-P0108</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-P0109</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-P0110</Reference>
+                    <Reference type="RULE">PEPPOL-EN16931-P0111</Reference>
                 </Element>
                 
                 <Element cardinality="0..1">

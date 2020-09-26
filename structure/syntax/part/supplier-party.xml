@@ -17,9 +17,16 @@
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-34</Reference>
                 <Reference type="RULE">BR-62</Reference>
+                <Reference type="RULE">BR-CL-25</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R020</Reference>
+                <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
+                <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
                 
                 
                 <Attribute>
+                
                     <Term>schemeID</Term>
                     <Name>Seller electronic address identification scheme identifier</Name>
                     <Description>The identification scheme identifier of the Seller electronic address</Description>
@@ -34,6 +41,7 @@
                 <Term>cac:PartyIdentification</Term>
                 <Name>PARTY IDENTIFICATION</Name>
                 
+                
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Seller identifier or bank assigned creditor identifier</Name>
@@ -42,6 +50,9 @@
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-29, BT-90</Reference>
                     <Reference type="RULE">BR-CO-26</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
                     
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
@@ -212,6 +223,10 @@
                     <Reference type="RULE">SE-R-001</Reference>
                     <Reference type="RULE">SE-R-002</Reference>
                     <Reference type="RULE">SE-R-005</Reference>
+                    <Reference type="RULE">BR-CL-11</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
                     <Value type="EXAMPLE">NO999888777</Value>
                 </Element>
                 
