@@ -1,0 +1,21 @@
+= Version 3.0.6
+[horizontal]
+Release date:: 2020-05-01
+
+== Changes to BIS document
+* Changed busienss name in peppol-bis-invoice-3\\guide\\transaction-spec\\annex, restricted-elements.adoc for BG-19 to “Direct debit” instead of “Payment card information” [POACC-261]
+* Changed Datatype in structure/syntax/ubl-invoice.xml on ubl-invoice/cac-InvoiceLine/cbc-LineExtensionAmount/ from Identifier to Amount [POACC-252]
+* EAS code list entry 0007 for billing and upgrade, spelling corrected and added clarification. [POACC-259]
+* Descriptions and some names of codes in UNCL7143 corrected in line with the official code list version d19a. Applies to all BIS using this code list. [POACC-258]
+* Updated the link in section 12 of http://docs.peppol.eu/poacc/billing/3.0/bis/ to reflect the newest version of “Policy for use of identifiers” [POACC-188]
+
+== Changes to support documents
+* Added section Annex A.4. Known Issues in profile 01 - Billing and the reported issue noted. No workaround suggested since none is known. [POACC-260]
+
+== Changes to code lists and validation artefacts
+
+* Added country code 1A for Kosovo into ISO 3166 for all BIS specifications. EN 16931 validation artefacts used in BIS Billing 3.0 updated to latest version 1.3.1. [POACC-324]
+* Added rules PEPPOL-EN16931-P0104 to P0111 to restrict the use of allowed VAT category code in combination with ExemptionReasonCode. Following the rules defined in the codelists for codes: vatex-eu-g, vatex-eu-o, vatex-eu-ic, vatex-eu-ae, vatex-eu-d, vatex-eu-f, vatex-eu-i, vatex-eu-j. [POACC-303]
+* Added a clarification to the error message of rule PEPPOL-EN16931-R044 regarding other values than value ‘false’ in Price/AllowanceCharge/ChargeIndicator. [POACC-236]
+
+* Changes to TC434 rules as link:https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.1[released here.]

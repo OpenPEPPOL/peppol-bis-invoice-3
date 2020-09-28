@@ -1002,5 +1002,10 @@
         <Id>ZW</Id>
         <Name>Zimbabwe</Name>
     </Code>
+	
+	<Code>
+        <Id>1A</Id>
+        <Name>Kosovo</Name>
+    </Code>
 
 </CodeList>

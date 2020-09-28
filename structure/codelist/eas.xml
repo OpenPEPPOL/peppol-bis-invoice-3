@@ -10,7 +10,7 @@
     </Code>
     <Code>
         <Id>0007</Id>
-        <Name>Organisationsnumme</Name>
+        <Name>Organisationsnummer (Swedish legal entities)</Name>
     </Code>
     <Code>
         <Id>0009</Id>
@@ -115,7 +115,15 @@
         <Id>0204</Id>
         <Name>Leitweg-ID</Name>
     </Code>
-    <Code>
+     <Code>
+        <Id>0208</Id>
+        <Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
+    </Code>
+     <Code>
+        <Id>0209</Id>
+        <Name>GS1 identification keys</Name>
+    </Code>
+	<Code>
         <Id>9901</Id>
         <Name>Danish Ministry of the Interior and Health</Name>
     </Code>
@@ -294,10 +302,6 @@
     <Code>
         <Id>9957</Id>
         <Name>French VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9958</Id>
-        <Name>German Leitweg ID</Name>
     </Code>
 
 </CodeList>
