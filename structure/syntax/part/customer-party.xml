@@ -13,7 +13,7 @@
             <Element>
                 <Term>cbc:EndpointID</Term>
                 <Name>Buyer electronic address</Name>
-                <Description>Identifies the Buyer's electronic address to which a business document should be delivered.</Description>
+                <Description>Identifies the Buyer's electronic address to which the invoice is delivered.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-49</Reference>
                 <Reference type="RULE">BR-63</Reference>

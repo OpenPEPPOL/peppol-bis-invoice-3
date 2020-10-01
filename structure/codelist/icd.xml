@@ -1653,4 +1653,29 @@
         <Name>Leitweg-ID</Name>
 		<Description>Identification of Public Authorities.</Description>
     </Code>
+    <Code>
+        <Id>0205</Id>
+        <Name>CODDEST</Name>
+        <Description>Electronic Invoicing trough Sdl, the Exchange System used in Italy where the electronic invoices are transmitted to the Public Administration (Article 1, paragraph 211, of Italian Law no. 244 of 24 December 2007) or to private entities (Article 1, paragraph 2, of Legislative Decree 127/2015)</Description>
+    </Code>
+    <Code>
+        <Id>0206</Id>
+        <Name>Registre du Commerce et de l’Industrie : RCI</Name>
+        <Description>To provide identifiers for organizations at national level in Monaco.</Description>
+    </Code>
+    <Code>
+        <Id>0207</Id>
+        <Name>PiLog Ontology Codification Identifier (POCI)</Name>
+        <Description>A repository of concepts pertaining to any entity such as products, services, business partners, assets, organizations, locations, persons, addresses, languages, records etc along with the terminologies to describe each entity using class, characteristics, values, JoMs, QoMs, groups, definitions, guidelines, images, drawings, pictures. codes and any classification thereof. The codification will help exchange/integrate the data between operational, ERP, CRM, SRM or any other systems without any human interpretation and interaction without losing the meaning of the information in multiple languages, this will help organizations achieve their digital transformation goals more precisely in order to assess the real value-proposition of the underlying data that is driving their businesses.</Description>
+    </Code>
+    <Code>
+        <Id>0208</Id>
+        <Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
+        <Description>Identification number attributed by the BCE/KBO/ZDU (the Belgian register) to identify entities and establishment units operating in Belgium.</Description>
+    </Code>
+	<Code>
+        <Id>0209</Id>
+        <Name>GS1 identification keys</Name>
+        <Description>GS1 identification keys and key qualifiers may be used by an information system to refer unambiguously to an entity such as a trade item, logistics unit, physical location, document, or service relationship.</Description>
+    </Code>
 </CodeList>

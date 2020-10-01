@@ -5,19 +5,24 @@
     <Agency>CEF</Agency>
 
     <Code>
-        <Id>vatex-eu-132</Id>
+        <Id>VATEX-EU-79-C</Id>
+        <Name>Exempt based on article 79, point c of Council Directive 2006/112/EC</Name>
+        <Description>Exemptions relating to repayment of expenditures. Remark, Repayment of expenditure is not an exemption in the sense of the VAT Directive but may be handled as such in the context of the EN16931.</Description>
+    </Code>  
+    <Code>
+        <Id>VATEX-EU-132</Id>
         <Name>Exempt based on article 132 of Council Directive 2006/112/EC</Name>
         <Description>Exemptions for certain activities in public interest.</Description>
     </Code>    
 	<Code>
-        <Id>vatex-eu-132-1a</Id>
+        <Id>VATEX-EU-132-1A</Id>
         <Name>Exempt based on article 132, section 1 (a) of Council Directive 2006/112/EC</Name>
         <Description>The supply by the public postal services of services other than passenger
             transport and telecommunications services, and the supply of goods incidental
             thereto.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1b</Id>
+        <Id>VATEX-EU-132-1B</Id>
         <Name>Exempt based on article 132, section 1 (b) of Council Directive 2006/112/EC</Name>
         <Description>Hospital and medical care and closely related activities undertaken by bodies
             governed by public law or, under social conditions comparable with those applicable to
@@ -25,24 +30,24 @@
             and other duly recognised establishments of a similar nature</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1c</Id>
+        <Id>VATEX-EU-132-1C</Id>
         <Name>Exempt based on article 132, section 1 (c) of Council Directive 2006/112/EC</Name>
         <Description>The provision of medical care in the exercise of the medical and paramedical
             professions as defined by the Member State concerned.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1d</Id>
+        <Id>VATEX-EU-132-1D</Id>
         <Name>Exempt based on article 132, section 1 (d) of Council Directive 2006/112/EC</Name>
         <Description>The supply of human organs, blood and milk.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1e</Id>
+        <Id>VATEX-EU-132-1E</Id>
         <Name>Exempt based on article 132, section 1 (e) of Council Directive 2006/112/EC</Name>
         <Description>The supply of services by dental technicians in their professional capacity and
             the supply of dental prostheses by dentists and dental technicians.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1f</Id>
+        <Id>VATEX-EU-132-1F</Id>
         <Name>Exempt based on article 132, section 1 (f) of Council Directive 2006/112/EC</Name>
         <Description>The supply of services by independent groups of persons, who are carrying on an
             activity which is exempt from VAT or in relation to which they are not taxable persons,
@@ -52,7 +57,7 @@
             likely to cause distortion of competition.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1g</Id>
+        <Id>VATEX-EU-132-1G</Id>
         <Name>Exempt based on article 132, section 1 (g) of Council Directive 2006/112/EC</Name>
         <Description>The supply of services and of goods closely linked to welfare and social
             security work, including those supplied by old people's homes, by bodies governed by
@@ -60,7 +65,7 @@
             to social wellbeing.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1h</Id>
+        <Id>VATEX-EU-132-1H</Id>
         <Name>Exempt based on article 132, section 1 (h) of Council Directive 2006/112/EC</Name>
         <Description>"The supply of services and of goods closely linked to the protection of
             children and young persons by bodies governed by public law or by other organisations
@@ -68,7 +73,7 @@
             wellbeing"</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1i</Id>
+        <Id>VATEX-EU-132-1I</Id>
         <Name>Exempt based on article 132, section 1 (i) of Council Directive 2006/112/EC</Name>
         <Description>" The provision of children's or young people's education, school or university
             education, vocational training or retraining, including the supply of services and of
@@ -77,20 +82,20 @@
             objects."</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1j</Id>
+        <Id>VATEX-EU-132-1J</Id>
         <Name>Exempt based on article 132, section 1 (j) of Council Directive 2006/112/EC</Name>
         <Description>Tuition given privately by teachers and covering school or university
             education.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1k</Id>
+        <Id>VATEX-EU-132-1K</Id>
         <Name>Exempt based on article 132, section 1 (k) of Council Directive 2006/112/EC</Name>
         <Description>The supply of staff by religious or philosophical institutions for the purpose
             of the activities referred to in points (b), (g), (h) and (i) and with a view to
             spiritual welfare.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1l</Id>
+        <Id>VATEX-EU-132-1L</Id>
         <Name>Exempt based on article 132, section 1 (l) of Council Directive 2006/112/EC</Name>
         <Description>The supply of services, and the supply of goods closely linked thereto, to
             their members in their common interest in return for a subscription fixed in accordance
@@ -100,21 +105,21 @@
             competition.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1m</Id>
+        <Id>VATEX-EU-132-1M</Id>
         <Name>Exempt based on article 132, section 1 (m) of Council Directive 2006/112/EC</Name>
         <Description>The supply of certain services closely linked to sport or physical education by
             non-profit-making organisations to persons taking part in sport or physical
             education.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1n</Id>
+        <Id>VATEX-EU-132-1N</Id>
         <Name>Exempt based on article 132, section 1 (n) of Council Directive 2006/112/EC</Name>
         <Description>The supply of certain cultural services, and the supply of goods closely linked
             thereto, by bodies governed by public law or by other cultural bodies recognised by the
             Member State concerned.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1o</Id>
+        <Id>VATEX-EU-132-1O</Id>
         <Name>Exempt based on article 132, section 1 (o) of Council Directive 2006/112/EC</Name>
         <Description>"The supply of services and goods, by organisations whose activities are exempt
             pursuant to points (b), (g), (h), (i), (l), (m) and (n), in connection with fund-raising
@@ -122,36 +127,36 @@
             likely to cause distortion of competition."</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1p</Id>
+        <Id>VATEX-EU-132-1P</Id>
         <Name>Exempt based on article 132, section 1 (p) of Council Directive 2006/112/EC</Name>
         <Description>The supply of transport services for sick or injured persons in vehicles
             specially designed for the purpose, by duly authorised bodies.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-132-1q</Id>
+        <Id>VATEX-EU-132-1Q</Id>
         <Name>Exempt based on article 132, section 1 (q) of Council Directive 2006/112/EC</Name>
         <Description>The activities, other than those of a commercial nature, carried out by public
             radio and television bodies.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143</Id>
+        <Id>VATEX-EU-143</Id>
         <Name>Exempt based on article 143 of Council Directive 2006/112/EC</Name>
         <Description>Exemptions on importation.</Description>
     </Code> 	
     <Code>
-        <Id>vatex-eu-143-1a</Id>
+        <Id>VATEX-EU-143-1A</Id>
         <Name>Exempt based on article 143, section 1 (a) of Council Directive 2006/112/EC</Name>
         <Description>The final importation of goods of which the supply by a taxable person would in
             all circumstances be exempt within their respective territory.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1b</Id>
+        <Id>VATEX-EU-143-1B</Id>
         <Name>Exempt based on article 143, section 1 (b) of Council Directive 2006/112/EC</Name>
         <Description>The final importation of goods governed by Council Directives 69/169/EEC (1),
             83/181/EEC (2) and 2006/79/EC (3).</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1c</Id>
+        <Id>VATEX-EU-143-1C</Id>
         <Name>Exempt based on article 143, section 1 (c) of Council Directive 2006/112/EC</Name>
         <Description>The final importation of goods, in free circulation from a third territory
             forming part of the Community customs territory, which would be entitled to exemption
@@ -159,7 +164,7 @@
             Article 30</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1d</Id>
+        <Id>VATEX-EU-143-1D</Id>
         <Name>Exempt based on article 143, section 1 (d) of Council Directive 2006/112/EC</Name>
         <Description>The importation of goods dispatched or transported from a third territory or a
             third country into a Member State other than that in which the dispatch or transport of
@@ -168,20 +173,20 @@
             138.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1e</Id>
+        <Id>VATEX-EU-143-1E</Id>
         <Name>Exempt based on article 143, section 1 (e) of Council Directive 2006/112/EC</Name>
         <Description>The reimportation, by the person who exported them, of goods in the state in
             which they were exported, where those goods are exempt from customs
             duties.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1f</Id>
+        <Id>VATEX-EU-143-1F</Id>
         <Name>Exempt based on article 143, section 1 (f) of Council Directive 2006/112/EC</Name>
         <Description>The importation, under diplomatic and consular arrangements, of goods which are
             exempt from customs duties.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1fa</Id>
+        <Id>VATEX-EU-143-1FA</Id>
         <Name>Exempt based on article 143, section 1 (fa) of Council Directive 2006/112/EC</Name>
         <Description>"The importation of goods by the European Community, the European Atomic Energy
             Community, the European Central Bank or the European Investment Bank, or by the bodies
@@ -192,7 +197,7 @@
             competition"</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1g</Id>
+        <Id>VATEX-EU-143-1G</Id>
         <Name>Exempt based on article 143, section 1 (g) of Council Directive 2006/112/EC</Name>
         <Description>" The importation of goods by international bodies, other than those referred
             to in point (fa), recognised as such by the public authorities of the host Member State,
@@ -201,7 +206,7 @@
             agreements"</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1h</Id>
+        <Id>VATEX-EU-143-1H</Id>
         <Name>Exempt based on article 143, section 1 (h) of Council Directive 2006/112/EC</Name>
         <Description>The importation of goods, into Member States party to the North Atlantic
             Treaty, by the armed forces of other States party to that Treaty for the use of those
@@ -209,7 +214,7 @@
             where such forces take part in the common defence effort.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1i</Id>
+        <Id>VATEX-EU-143-1I</Id>
         <Name>Exempt based on article 143, section 1 (i) of Council Directive 2006/112/EC</Name>
         <Description>The importation of goods by the armed forces of the United Kingdom stationed in
             the island of Cyprus pursuant to the Treaty of Establishment concerning the Republic of
@@ -217,19 +222,19 @@
             staff accompanying them or for supplying their messes or canteens.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1j</Id>
+        <Id>VATEX-EU-143-1J</Id>
         <Name>Exempt based on article 143, section 1 (j) of Council Directive 2006/112/EC</Name>
         <Description>The importation into ports, by sea fishing undertakings, of their catches,
             unprocessed or after undergoing preservation for marketing but before being
             supplied.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1k</Id>
+        <Id>VATEX-EU-143-1K</Id>
         <Name>Exempt based on article 143, section 1 (k) of Council Directive 2006/112/EC</Name>
         <Description>The importation of gold by central banks.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-143-1l</Id>
+        <Id>VATEX-EU-143-1L</Id>
         <Name>Exempt based on article 143, section 1 (l) of Council Directive 2006/112/EC</Name>
         <Description>The importation of gas through a natural gas system or any network connected to
             such a system or fed in from a vessel transporting gas into a natural gas system or any
@@ -237,61 +242,61 @@
             or cooling networks.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-148</Id>
+        <Id>VATEX-EU-148</Id>
         <Name>Exempt based on article 148 of Council Directive 2006/112/EC</Name>
         <Description>Exemptions related to international transport.</Description>
     </Code> 	
     <Code>
-        <Id>vatex-eu-148-a</Id>
+        <Id>VATEX-EU-148-A</Id>
         <Name>Exempt based on article 148, section (a) of Council Directive 2006/112/EC</Name>
         <Description>Fuel supplies for commercial international transport vessels</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-148-b</Id>
+        <Id>VATEX-EU-148-B</Id>
         <Name>Exempt based on article 148, section (b) of Council Directive 2006/112/EC</Name>
         <Description>Fuel supplies for fighting ships in international transport.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-148-c</Id>
+        <Id>VATEX-EU-148-C</Id>
         <Name>Exempt based on article 148, section (c) of Council Directive 2006/112/EC</Name>
         <Description>Maintenance, modification, chartering and hiring of international transport
             vessels.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-148-d</Id>
+        <Id>VATEX-EU-148-D</Id>
         <Name>Exempt based on article 148, section (d) of Council Directive 2006/112/EC</Name>
         <Description>Supply to of other services to commercial international transport
             vessels.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-148-e</Id>
+        <Id>VATEX-EU-148-E</Id>
         <Name>Exempt based on article 148, section (e) of Council Directive 2006/112/EC</Name>
         <Description>Fuel supplies for aircraft on international routes.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-148-f</Id>
+        <Id>VATEX-EU-148-F</Id>
         <Name>Exempt based on article 148, section (f) of Council Directive 2006/112/EC</Name>
         <Description>Maintenance, modification, chartering and hiring of aircraft on international
             routes.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-148-g</Id>
+        <Id>VATEX-EU-148-G</Id>
         <Name>Exempt based on article 148, section (g) of Council Directive 2006/112/EC</Name>
         <Description>Supply to of other services to aircraft on international routes.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-151</Id>
+        <Id>VATEX-EU-151</Id>
         <Name>Exempt based on article 151 of Council Directive 2006/112/EC</Name>
         <Description>Exemptions relating to certain Transactions treated as exports.</Description>
     </Code> 	
      <Code>
-        <Id>vatex-eu-151-1a</Id>
+        <Id>VATEX-EU-151-1A</Id>
         <Name>Exempt based on article 151, section 1 (a) of Council Directive 2006/112/EC</Name>
         <Description>The supply of goods or services under diplomatic and consular
             arrangements.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-151-1aa</Id>
+        <Id>VATEX-EU-151-1AA</Id>
         <Name>Exempt based on article 151, section 1 (aa) of Council Directive 2006/112/EC</Name>
         <Description>The supply of goods or services to the European Community, the European Atomic
             Energy Community, the European Central Bank or the European Investment Bank, or to the
@@ -302,7 +307,7 @@
             competition.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-151-1b</Id>
+        <Id>VATEX-EU-151-1B</Id>
         <Name>Exempt based on article 151, section 1 (b) of Council Directive 2006/112/EC</Name>
         <Description>The supply of goods or services to international bodies, other than those
             referred to in point (aa), recognised as such by the public authorities of the host
@@ -311,7 +316,7 @@
             agreements.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-151-1c</Id>
+        <Id>VATEX-EU-151-1C</Id>
         <Name>Exempt based on article 151, section 1 (c) of Council Directive 2006/112/EC</Name>
         <Description>The supply of goods or services within a Member State which is a party to the
             North Atlantic Treaty, intended either for the armed forces of other States party to
@@ -320,7 +325,7 @@
             effort.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-151-1d</Id>
+        <Id>VATEX-EU-151-1D</Id>
         <Name>Exempt based on article 151, section 1 (d) of Council Directive 2006/112/EC</Name>
         <Description>The supply of goods or services to another Member State, intended for the armed
             forces of any State which is a party to the North Atlantic Treaty, other than the Member
@@ -329,7 +334,7 @@
             in the common defence effort.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-151-1e</Id>
+        <Id>VATEX-EU-151-1E</Id>
         <Name>Exempt based on article 151, section 1 (e) of Council Directive 2006/112/EC</Name>
         <Description>The supply of goods or services to the armed forces of the United Kingdom
             stationed in the island of Cyprus pursuant to the Treaty of Establishment concerning the
@@ -338,54 +343,50 @@
             canteens.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-309</Id>
+        <Id>VATEX-EU-309</Id>
         <Name>Exempt based on article 309 of Council Directive 2006/112/EC</Name>
         <Description>Travel agents performed outside of EU.</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-g</Id>
-        <Name>Export outside the EU</Name>
-        <Description>Supports EN 16931-1 rule BR-G-10 - Only use with VAT category code
-            G</Description>
-    </Code>
-    <Code>
-        <Id>vatex-eu-o</Id>
-        <Name>Not subject to VAT</Name>
-        <Description>Supports EN 16931-1 rule BR-O-10 - Only use with VAT category code
-            O</Description>
-    </Code>
-    <Code>
-        <Id>vatex-eu-ic</Id>
-        <Name>Intra-Community supply</Name>
-        <Description>Supports EN 16931-1 rule BR-IC-10 - Only use with VAT category code
-            K</Description>
-    </Code>
-    <Code>
-        <Id>vatex-eu-ae</Id>
+        <Id>VATEX-EU-AE</Id>
         <Name>Reverse charge</Name>
         <Description>Supports EN 16931-1 rule BR-AE-10 - Only use with VAT category code
             AE</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-d</Id>
+        <Id>VATEX-EU-D</Id>
         <Name>Intra-Community acquisition from second hand means of transport</Name>
         <Description>Second-hand means of transport - Indication that VAT has been paid according to
             the relevant transitional arrangements - Only use with VAT category code E</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-f</Id>
+        <Id>VATEX-EU-F</Id>
         <Name>Intra-Community acquisition of second hand goods</Name>
         <Description>Second-hand goods - Indication that the VAT margin scheme for second-hand goods
             has been applied. - Only use with VAT category code E</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-i</Id>
-        <Name>Intra-Community acquisition of works of art</Name>
-        <Description>Works of art - Indication that the VAT margin scheme for works of art has been
-            applied. - Only use with VAT category code E</Description>
+        <Id>VATEX-EU-G</Id>
+        <Name>Export outside the EU</Name>
+        <Description>Supports EN 16931-1 rule BR-G-10 - Only use with VAT category code G</Description>
     </Code>
     <Code>
-        <Id>vatex-eu-j</Id>
+        <Id>VATEX-EU-I</Id>
+        <Name>Intra-Community acquisition of works of art</Name>
+        <Description>Works of art - Indication that the VAT margin scheme for works of art has been applied. - Only use with VAT category code E</Description>
+    </Code>
+    <Code>
+        <Id>VATEX-EU-IC</Id>
+        <Name>Intra-Community supply</Name>
+        <Description>Supports EN 16931-1 rule BR-IC-10 - Only use with VAT category code K</Description>
+    </Code>
+    <Code>
+        <Id>VATEX-EU-O</Id>
+        <Name>Not subject to VAT</Name>
+        <Description>Supports EN 16931-1 rule BR-O-10 - Only use with VAT category code O</Description>
+    </Code>
+    <Code>
+        <Id>VATEX-EU-J</Id>
         <Name>Intra-Community acquisition of collectors items and antiques</Name>
         <Description>Collectors' items and antiques - Indication that the VAT margin scheme for
             collector’s items and antiques has been applied. - Only use with VAT category code

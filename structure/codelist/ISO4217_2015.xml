@@ -25,44 +25,12 @@
         <Name>Netherlands Antillean Guilder</Name>
     </Code>
     <Code>
-        <Id>ANG</Id>
-        <Name>Netherlands Antillean Guilder</Name>
-    </Code>
-    <Code>
         <Id>AOA</Id>
         <Name>Kwanza</Name>
     </Code>
     <Code>
         <Id>ARS</Id>
         <Name>Argentine Peso</Name>
-    </Code>
-    <Code>
-        <Id>AUD</Id>
-        <Name>Australian Dollar</Name>
-    </Code>
-    <Code>
-        <Id>AUD</Id>
-        <Name>Australian Dollar</Name>
-    </Code>
-    <Code>
-        <Id>AUD</Id>
-        <Name>Australian Dollar</Name>
-    </Code>
-    <Code>
-        <Id>AUD</Id>
-        <Name>Australian Dollar</Name>
-    </Code>
-    <Code>
-        <Id>AUD</Id>
-        <Name>Australian Dollar</Name>
-    </Code>
-    <Code>
-        <Id>AUD</Id>
-        <Name>Australian Dollar</Name>
-    </Code>
-    <Code>
-        <Id>AUD</Id>
-        <Name>Australian Dollar</Name>
     </Code>
     <Code>
         <Id>AUD</Id>
@@ -157,10 +125,6 @@
         <Name>Swiss Franc</Name>
     </Code>
     <Code>
-        <Id>CHF</Id>
-        <Name>Swiss Franc</Name>
-    </Code>
-    <Code>
         <Id>CHW</Id>
         <Name>WIR Franc</Name>
     </Code>
@@ -213,14 +177,6 @@
         <Name>Danish Krone</Name>
     </Code>
     <Code>
-        <Id>DKK</Id>
-        <Name>Danish Krone</Name>
-    </Code>
-    <Code>
-        <Id>DKK</Id>
-        <Name>Danish Krone</Name>
-    </Code>
-    <Code>
         <Id>DOP</Id>
         <Name>Dominican Peso</Name>
     </Code>
@@ -245,160 +201,12 @@
         <Name>Euro</Name>
     </Code>
     <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
-        <Id>EUR</Id>
-        <Name>Euro</Name>
-    </Code>
-    <Code>
         <Id>FJD</Id>
         <Name>Fiji Dollar</Name>
     </Code>
     <Code>
         <Id>FKP</Id>
         <Name>Falkland Islands Pound</Name>
-    </Code>
-    <Code>
-        <Id>GBP</Id>
-        <Name>Pound Sterling</Name>
-    </Code>
-    <Code>
-        <Id>GBP</Id>
-        <Name>Pound Sterling</Name>
-    </Code>
-    <Code>
-        <Id>GBP</Id>
-        <Name>Pound Sterling</Name>
     </Code>
     <Code>
         <Id>GBP</Id>
@@ -459,10 +267,6 @@
     <Code>
         <Id>ILS</Id>
         <Name>New Israeli Sheqel</Name>
-    </Code>
-    <Code>
-        <Id>INR</Id>
-        <Name>Indian Rupee</Name>
     </Code>
     <Code>
         <Id>INR</Id>
@@ -557,10 +361,6 @@
         <Name>Moroccan Dirham</Name>
     </Code>
     <Code>
-        <Id>MAD</Id>
-        <Name>Moroccan Dirham</Name>
-    </Code>
-    <Code>
         <Id>MDL</Id>
         <Name>Moldovan Leu</Name>
     </Code>
@@ -633,32 +433,8 @@
         <Name>Norwegian Krone</Name>
     </Code>
     <Code>
-        <Id>NOK</Id>
-        <Name>Norwegian Krone</Name>
-    </Code>
-    <Code>
-        <Id>NOK</Id>
-        <Name>Norwegian Krone</Name>
-    </Code>
-    <Code>
         <Id>NPR</Id>
         <Name>Nepalese Rupee</Name>
-    </Code>
-    <Code>
-        <Id>NZD</Id>
-        <Name>New Zealand Dollar</Name>
-    </Code>
-    <Code>
-        <Id>NZD</Id>
-        <Name>New Zealand Dollar</Name>
-    </Code>
-    <Code>
-        <Id>NZD</Id>
-        <Name>New Zealand Dollar</Name>
-    </Code>
-    <Code>
-        <Id>NZD</Id>
-        <Name>New Zealand Dollar</Name>
     </Code>
     <Code>
         <Id>NZD</Id>
@@ -825,78 +601,6 @@
         <Name>US Dollar</Name>
     </Code>
     <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
-        <Id>USD</Id>
-        <Name>US Dollar</Name>
-    </Code>
-    <Code>
         <Id>USN</Id>
         <Name>US Dollar (Next day)</Name>
     </Code>
@@ -933,26 +637,6 @@
         <Name>CFA Franc BEAC</Name>
     </Code>
     <Code>
-        <Id>XAF</Id>
-        <Name>CFA Franc BEAC</Name>
-    </Code>
-    <Code>
-        <Id>XAF</Id>
-        <Name>CFA Franc BEAC</Name>
-    </Code>
-    <Code>
-        <Id>XAF</Id>
-        <Name>CFA Franc BEAC</Name>
-    </Code>
-    <Code>
-        <Id>XAF</Id>
-        <Name>CFA Franc BEAC</Name>
-    </Code>
-    <Code>
-        <Id>XAF</Id>
-        <Name>CFA Franc BEAC</Name>
-    </Code>
-    <Code>
         <Id>XAG</Id>
         <Name>Silver</Name>
     </Code>
@@ -981,34 +665,6 @@
         <Name>East Caribbean Dollar</Name>
     </Code>
     <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
-        <Id>XCD</Id>
-        <Name>East Caribbean Dollar</Name>
-    </Code>
-    <Code>
         <Id>XDR</Id>
         <Name>SDR (Special Drawing Right)</Name>
     </Code>
@@ -1017,44 +673,8 @@
         <Name>CFA Franc BCEAO</Name>
     </Code>
     <Code>
-        <Id>XOF</Id>
-        <Name>CFA Franc BCEAO</Name>
-    </Code>
-    <Code>
-        <Id>XOF</Id>
-        <Name>CFA Franc BCEAO</Name>
-    </Code>
-    <Code>
-        <Id>XOF</Id>
-        <Name>CFA Franc BCEAO</Name>
-    </Code>
-    <Code>
-        <Id>XOF</Id>
-        <Name>CFA Franc BCEAO</Name>
-    </Code>
-    <Code>
-        <Id>XOF</Id>
-        <Name>CFA Franc BCEAO</Name>
-    </Code>
-    <Code>
-        <Id>XOF</Id>
-        <Name>CFA Franc BCEAO</Name>
-    </Code>
-    <Code>
-        <Id>XOF</Id>
-        <Name>CFA Franc BCEAO</Name>
-    </Code>
-    <Code>
         <Id>XPD</Id>
         <Name>Palladium</Name>
-    </Code>
-    <Code>
-        <Id>XPF</Id>
-        <Name>CFP Franc</Name>
-    </Code>
-    <Code>
-        <Id>XPF</Id>
-        <Name>CFP Franc</Name>
     </Code>
     <Code>
         <Id>XPF</Id>
@@ -1076,18 +696,9 @@
         <Id>XUA</Id>
         <Name>ADB Unit of Account</Name>
     </Code>
-
     <Code>
         <Id>YER</Id>
         <Name>Yemeni Rial</Name>
-    </Code>
-    <Code>
-        <Id>ZAR</Id>
-        <Name>Rand</Name>
-    </Code>
-    <Code>
-        <Id>ZAR</Id>
-        <Name>Rand</Name>
     </Code>
     <Code>
         <Id>ZAR</Id>
