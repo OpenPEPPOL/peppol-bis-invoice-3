@@ -2,5 +2,4 @@
 [horizontal]
 
 == Processing of rules
-* A sender MAY send messages that fail warnings rules if they do not fail any errors rules (fatal rules).
-* A senders SHALL NOT send messages that fail errors rules (fatal rules)
+* A sender SHALL NOT send messages that are not compliant to this BIS.
