@@ -2,4 +2,4 @@
 [horizontal]
 
 == Processing of rules
-* A sender SHALL NOT send messages that are not compliant to this BIS.
+* A sender SHALL NOT send messages that are not compliant to the BIS.
