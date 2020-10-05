@@ -223,6 +223,7 @@
                     <Reference type="RULE">SE-R-001</Reference>
                     <Reference type="RULE">SE-R-002</Reference>
                     <Reference type="RULE">SE-R-005</Reference>
+					<Reference type="RULE">DK-R-015</Reference>
                     <Reference type="RULE">BR-CL-11</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R041</Reference>

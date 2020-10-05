@@ -136,6 +136,7 @@
             <Reference type="BUSINESS_TERM">BT-6</Reference>
             <Reference type="RULE">BR-CL-05</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R005</Reference>
+			<Reference type="RULE">PEPPOL-EN16931-R055</Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
             <Value type="EXAMPLE">SEK</Value>
         </Element>
