@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+Issuer’s TIN number|Date of issue|Branch number in Taxis Registry| Invoice Type|Series|Serial number (AA)
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+    <assert>
+        <description>Greek suppliers MUST follow the proper Invoice ID Structure.</description>
+        <scope>GR-R-001</scope>
+    </assert>
+    <test>
+        <assert>
+            <success>GR-R-001</success>
+        </assert>
+        <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cbc:ID>061828591|10/10/2010|0|11|0|1)</cbc:ID>
+        </Invoice>
+    </test>
+</testSet>
