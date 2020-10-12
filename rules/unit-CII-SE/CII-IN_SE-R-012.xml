@@ -250,7 +250,7 @@
 	</test>
 	<test>
 		<assert>
-			<warning number="2">SE-R-012</warning>
+			<warning>SE-R-012</warning>
 		</assert>
 <rsm:CrossIndustryInvoice
  xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
@@ -398,12 +398,6 @@
 				<ram:TypeCode>31</ram:TypeCode> 
 				<ram:PayeePartyCreditorFinancialAccount>
 					<ram:ProprietaryID>123456</ram:ProprietaryID>
-				</ram:PayeePartyCreditorFinancialAccount>
-			</ram:SpecifiedTradeSettlementPaymentMeans> 
-			<ram:SpecifiedTradeSettlementPaymentMeans>
-				<ram:TypeCode>56</ram:TypeCode> 
-				<ram:PayeePartyCreditorFinancialAccount>
-					<ram:ProprietaryID>1234567</ram:ProprietaryID>
 				</ram:PayeePartyCreditorFinancialAccount>
 			</ram:SpecifiedTradeSettlementPaymentMeans> 
 
