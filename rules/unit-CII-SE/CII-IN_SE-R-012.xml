@@ -140,7 +140,7 @@
 			<ram:BuyerTradeParty>
 				<ram:Name>Buyercompany ltd</ram:Name>
 				<ram:PostalTradeAddress>
-					<ram:CountryID>DK</ram:CountryID>
+					<ram:CountryID>SE</ram:CountryID>
 				</ram:PostalTradeAddress>
 				<ram:URIUniversalCommunication>
 					<ram:URIID schemeID="0007">1234512345</ram:URIID> 
@@ -380,7 +380,7 @@
 			<ram:BuyerTradeParty>
 				<ram:Name>Buyercompany ltd</ram:Name>
 				<ram:PostalTradeAddress>
-					<ram:CountryID>DK</ram:CountryID>
+					<ram:CountryID>SE</ram:CountryID>
 				</ram:PostalTradeAddress>
 				<ram:URIUniversalCommunication>
 					<ram:URIID schemeID="0007">1234512345</ram:URIID> 
