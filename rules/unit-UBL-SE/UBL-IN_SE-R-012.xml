@@ -183,6 +183,29 @@
 			</cac:PartyTaxScheme>
 		</cac:Party>
 	</cac:AccountingSupplierParty>
+	
+	
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0007">1234512345</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>Kommunteknisk service</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Lilla gränd 9</cbc:StreetName>
+				<cbc:CityName>Stockholm</cbc:CityName>
+				<cbc:PostalZone>10203</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>SE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Kommunens Tekniska  Bolag AB</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0007">1234512345</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	
 	<cac:PaymentMeans>
 		<cbc:PaymentMeansCode>31</cbc:PaymentMeansCode>
 		<cbc:PaymentID>Meddelande</cbc:PaymentID>
