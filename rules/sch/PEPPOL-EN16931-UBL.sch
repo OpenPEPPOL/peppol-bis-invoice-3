@@ -382,6 +382,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 	</pattern>
 	
 	<!-- GREECE -->	
+	<!-- General functions and variable for Greek Rules -->
 	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:TinVerification" as="xs:boolean">
 		<param name="val" as="xs:string?"/>
 		<variable name="digits" select="
@@ -398,16 +399,17 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 			(number($digits[1])*256) "/>
 		<value-of select="($checksum  mod 11) mod 10 = number($digits[9])"/>
 	</function>
-	
+	<let name="isGreekSender" value="($supplierCountry ='GR') || ($supplierCountry ='EL')"/>
+	<let name="isGreekReceiver" value="($customerCountry ='GR') || ($customerCountry ='EL')"/>
+	<let name="isGreekSenderandReceiver" value="$isGreekSender and $isGreekReceiver"/>
+		
 	<!-- Sender Rules -->
 	<pattern>
-		<let name="isGreekSender" value="($supplierCountry ='GR') || ($supplierCountry ='EL')"/>
-		<let name="isGreekReceiver" value="($customerCountry ='GR') || ($customerCountry ='EL')"/>
-		<let name="isGreekSenderandReceiver" value="$isGreekSender and $isGreekReceiver"/>
 		<let name="dateRegExp" value="'^(0?[1-9]|[12][0-9]|3[01])[-\\/ ]?(0?[1-9]|1[0-2])[-/ ]?(?:19|20)[0-9]{2}'"/> 
 		<let name="greekDocumentType" value="tokenize('1.1 1.2 1.3 1.4 1.5 1.6 2.1 2.2 2.3 2.4 3.1 3.2 4 5.1 5.2 6.1 6.2 7.1 8.1 8.2 11.1 11.2 11.3 11.4 11.5 12 13.1 13.2 13.3 13.4 13.30 13.31 14.1 14.2 14.3 14.4 14.5 14.30 14.31 15.1 16.1 17.1 17.2 17.3 17.4 17.5 17.6','\s')"/>
 		
-		<rule context="ubl-invoice:Invoice[$isGreekSender]/cbc:ID">
+		<!-- Invoice ID -->
+		<rule context="/ubl-invoice:Invoice[$isGreekSender]/cbc:ID">
 			<let name="IdSegments" value="tokenize(.,'\|')"/>
 			<assert id="GR-R-001-1" test="count($IdSegments) = 6"> When the Supplier is Greek, the Invoice Id should consist of 6 segments separated by a '|'</assert>
 			<assert id="GR-R-001-2" test="string-length(normalize-space($IdSegments[1])) = 9 and u:TinVerification($IdSegments[1])">When the Supplier is Greek, the Invoice Id first segment must be a valid TIN Number</assert>
@@ -417,6 +419,16 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 			<assert id="GR-R-001-6" test="string-length($IdSegments[5]) > 0 ">When Supplier is Greek, the Invoice Id fifth segment must not be empty</assert>
 			<assert id="GR-R-001-7" test="string-length($IdSegments[6]) > 0 ">When Supplier is Greek, the Invoice Id sixth segment must not be empty</assert>			
 		</rule>
+		
+		<!-- VAT Rules -->
+		<rule context="/ubl-invoice:Invoice[$isGreekSender]/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID">
+			<assert id="GR-R-003" test="substring(.,1,2) = 'EL' and u:TinVerification(substring(.,3))">Bad VAT Number for Greek Supplier</assert>			
+		</rule>
+		
+		<rule context="/ubl-invoice:Invoice[$isGreekReceiver]/cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID">
+			<assert id="GR-R-004" test="substring(.,1,2) = 'EL' and u:TinVerification(substring(.,3))">Bad VAT Number for Greek Customer</assert>			
+		</rule>
+	
 	</pattern>
 	
 	

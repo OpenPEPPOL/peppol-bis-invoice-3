@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="20.1">
+<project version="21.0">
     <meta>
         <filters directoryPatterns="" filePatterns="\QnewProject.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="20.1" xml:space="preserve">
+            <serialized version="21.0" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>scenario.associations</String>
@@ -222,6 +222,21 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>rules/snippets/GR-base-example.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>GR-base-example</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>Validation_scenario</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>rules/national-examples/GR/GR-base-example.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -282,7 +297,7 @@
                                                         <Integer>7</Integer>
                                                     </field>
                                                     <field name="uri">
-                                                        <String>file:/C:/Users/Jerry/Develop/OpenPEPPOL/GreekPA/peppol-bis-invoice-3/rules/sch/PEPPOL-EN16931-UBL.sch</String>
+                                                        <String>${pdu}/rules/sch/PEPPOL-EN16931-UBL.sch</String>
                                                     </field>
                                                 </validationUnitSchema>
                                             </field>
