@@ -29,10 +29,10 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
             'XX'"/>
 	<let name="customerCountry" value="
 		if (/*/cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2)) then
-		upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2)))
+		upper-case(normalize-space(/*/cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2)))
 		else
 		if (/*/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode) then
-		upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode))
+		upper-case(normalize-space(/*/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode))
 		else
 		'XX'"/>
 	<!-- -->
@@ -399,8 +399,8 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 			(number($digits[1])*256) "/>
 		<value-of select="($checksum  mod 11) mod 10 = number($digits[9])"/>
 	</function>
-	<let name="isGreekSender" value="($supplierCountry ='GR') || ($supplierCountry ='EL')"/>
-	<let name="isGreekReceiver" value="($customerCountry ='GR') || ($customerCountry ='EL')"/>
+	<let name="isGreekSender" value="($supplierCountry ='GR') or ($supplierCountry ='EL')"/>
+	<let name="isGreekReceiver" value="($customerCountry ='GR') or ($customerCountry ='EL')"/>
 	<let name="isGreekSenderandReceiver" value="$isGreekSender and $isGreekReceiver"/>
 		
 	<!-- Sender Rules -->
@@ -410,6 +410,9 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		
 		<!-- Invoice ID -->
 		<rule context="/ubl-invoice:Invoice[$isGreekSender]/cbc:ID">
+			<report test="true()">is Greek Sender: <value-of select="$isGreekSender"/></report>
+			<report test="true()">is Greek Receiver: <value-of select="$isGreekReceiver"/></report>
+			<report test="true()">is Greek Send and Receiver: <value-of select="$isGreekSenderandReceiver"/></report>
 			<let name="IdSegments" value="tokenize(.,'\|')"/>
 			<assert id="GR-R-001-1" test="count($IdSegments) = 6"> When the Supplier is Greek, the Invoice Id should consist of 6 segments separated by a '|'</assert>
 			<assert id="GR-R-001-2" test="string-length(normalize-space($IdSegments[1])) = 9 and u:TinVerification($IdSegments[1])">When the Supplier is Greek, the Invoice Id first segment must be a valid TIN Number</assert>
@@ -424,11 +427,14 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<rule context="/ubl-invoice:Invoice[$isGreekSender]/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID">
 			<assert id="GR-R-003" test="substring(.,1,2) = 'EL' and u:TinVerification(substring(.,3))">Bad VAT Number for Greek Supplier</assert>			
 		</rule>
-		
-		<rule context="/ubl-invoice:Invoice[$isGreekReceiver]/cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID">
+			
+	</pattern>
+	
+	<!-- Greek Sender and Greek Receiver rules -->
+	<pattern>
+		<rule context="/ubl-invoice:Invoice[$isGreekSenderandReceiver]/cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID">
 			<assert id="GR-R-004" test="substring(.,1,2) = 'EL' and u:TinVerification(substring(.,3))">Bad VAT Number for Greek Customer</assert>			
 		</rule>
-	
 	</pattern>
 	
 	
