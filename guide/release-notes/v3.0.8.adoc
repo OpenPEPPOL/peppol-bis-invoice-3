@@ -17,4 +17,4 @@ Release date:: 2020-11-01
 * ICD code list, added code 0209. Rule updated accordingly. Names and descriptions added where missing.
 * VATEX code list, added code VATEX-EU-79C for repayment of expenditure. Rule updated accordingly.
 * Duplicate currency codes removed from ISO4217 code list. Issue: [POACC-339]
-
+* New national Swedish validation rule (SE-R-012) which gives warning on use of payment means code (31) which is often incorrectly used between Swedish suppliers and buyers. The rule only triggers if both buyer and supplier are Swedish. 
