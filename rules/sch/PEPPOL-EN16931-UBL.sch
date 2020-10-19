@@ -453,6 +453,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 			<!-- ΜARK Rules -->
 			<assert id="GR-R-004-1" test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##M.AR.K##'])=1"> When Supplier is Greek, there must be one MARK Number</assert>
 			<assert id="GR-S-008-1" flag="warning" test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##'])=1"> When Supplier is Greek, there should be one invoice url</assert>
+			<assert id="GR-R-008-2" test="(count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##']) = 0 ) or (count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##']) = 1 )  "> When Supplier is Greek, there should be no more than one invoice url</assert>
 		</rule>
 		
 		<!-- MARK Rules -->
@@ -462,7 +463,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		
 		<!-- Invoice Verification URL Rules -->
 		<rule context="cac:AdditionalDocumentReference[$isGreekSender and cbc:DocumentDescription = '##INVOICE-URL##']">
-		<assert id="GR-R-008-2" test="string-length(normalize-space(cac:Attachment/cac:ExternalReference/cbc:URI))>0">When Supplier is Greek and the INVOICE URL Document reference exists, the External Reference URI should be present</assert>
+			<assert id="GR-R-008-3" test="string-length(normalize-space(cac:Attachment/cac:ExternalReference/cbc:URI))>0">When Supplier is Greek and the INVOICE URL Document reference exists, the External Reference URI should be present</assert>
 		</rule>
 		
 		<!-- Customer Name Mandatory -->
@@ -472,7 +473,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		
 		<!-- Endpoint Rules -->
 		<rule context="cac:AccountingSupplierParty[$isGreekSender]/cac:Party/cbc:EndpointID">
-			<assert id="GR-R-010" test="./@schemeID='9933'and u:TinVerification(.)">Greek suppliers that send an invoice through the PEPPOL network must use their TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (schemeID 9933).</assert>			
+			<assert id="GR-R-009" test="./@schemeID='9933'and u:TinVerification(.)">Greek suppliers that send an invoice through the PEPPOL network must use their TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (schemeID 9933).</assert>			
 		</rule>
 		
 	</pattern>
@@ -488,7 +489,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		
 		<!-- Endpoint Rules -->
 		<rule context="cac:AccountingCustomerParty[$isGreekSenderandReceiver]/cac:Party/cbc:EndpointID">
-			<assert id="GR-R-011" test="./@schemeID='9933'and u:TinVerification(.)">Greek Suppliers that send an invoice through the PEPPOL network to a greek buyer must use the buyer's TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (SchemeID 9933)</assert>			
+			<assert id="GR-R-010" test="./@schemeID='9933'and u:TinVerification(.)">Greek Suppliers that send an invoice through the PEPPOL network to a greek buyer must use the buyer's TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (SchemeID 9933)</assert>			
 		</rule>
 	</pattern>
 	

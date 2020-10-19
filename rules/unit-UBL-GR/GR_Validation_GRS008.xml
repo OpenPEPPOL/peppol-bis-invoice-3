@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+    <assert>
+        <description>Greek Suppliers SHOULD provide the Invoice Verification URL</description>
+        <scope>GR-S-008-1</scope>
+        <scope>GR-R-008-2</scope>
+        <scope>GR-R-008-3</scope>
+    </assert>
+    <test>
+        <assert>
+            <warning>GR-S-008-1</warning>
+            <error>GR-R-008-2</error>
+            <error>GR-R-008-3</error>
+        </assert>
+        <Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 "
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cac:AccountingSupplierParty>
+                <cac:Party>
+                    <cac:PostalAddress>
+                        <cac:Country>
+                            <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                        </cac:Country>
+                    </cac:PostalAddress>
+                </cac:Party>
+            </cac:AccountingSupplierParty>
+            <!-- Invoice Verification URL -->
+            <cac:AdditionalDocumentReference>
+                <cbc:ID>1123</cbc:ID>
+                <cbc:DocumentDescription>##INVOICE-URL##</cbc:DocumentDescription>
+                <cac:Attachment>
+                    <cac:ExternalReference>
+                        <cbc:URI>http://url</cbc:URI>
+                    </cac:ExternalReference>
+                </cac:Attachment>
+            </cac:AdditionalDocumentReference>
+            <!-- Invoice Verification URL -->
+            <cac:AdditionalDocumentReference>
+                <cbc:ID>11234</cbc:ID>
+                <cbc:DocumentDescription>##INVOICE-URL##</cbc:DocumentDescription>
+            </cac:AdditionalDocumentReference>
+        </Invoice>
+    </test>
+    
+    <test>
+        <assert>
+            <warning>GR-S-008-1</warning>
+        </assert>
+        <Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 "
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cac:AccountingSupplierParty>
+                <cac:Party>
+                    <cac:PostalAddress>
+                        <cac:Country>
+                            <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                        </cac:Country>
+                    </cac:PostalAddress>
+                </cac:Party>
+            </cac:AccountingSupplierParty>
+        </Invoice>
+    </test>    
+</testSet>
