@@ -222,6 +222,21 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>rules/national-examples/GR/GR-base-example-correct.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>GR-base-example</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>Validation_scenario</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>rules/snippets/GR-base-example.xml</String>
                                 </field>
                                 <field name="scenarioIds">
