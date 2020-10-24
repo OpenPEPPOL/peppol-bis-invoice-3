@@ -2,4 +2,6 @@
 [horizontal]
 
 == Processing of rules
-* A receiver SHALL NOT reject messages that only fail warnings rules while failing no error rules (fatal rules).
+* A receiver SHALL NOT reject messages which are compliant to the BIS.
+
+* A receiver MAY reject messages which are not compliant to the BIS.

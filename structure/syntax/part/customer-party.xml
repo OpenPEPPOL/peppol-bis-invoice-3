@@ -17,6 +17,12 @@
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-49</Reference>
                 <Reference type="RULE">BR-63</Reference>
+                <Reference type="RULE">BR-CL-25</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R010</Reference>
+                <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
+                <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
                 
                 
                 <Attribute>
@@ -35,12 +41,16 @@
                 <Term>cac:PartyIdentification</Term>
                 <Name>PARTY IDENTIFICATION</Name>
                 
+                
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Buyer identifier</Name>
                     <Description>An identifier of the Buyer.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-46</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
                     
                     
                     <Attribute usage="Optional">
@@ -180,6 +190,10 @@
                     <Reference type="RULE">BR-O-02</Reference>
                     <Reference type="RULE">BR-O-03</Reference>
                     <Reference type="RULE">BR-O-04</Reference>
+                    <Reference type="RULE">BR-CL-11</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
                     <Value type="EXAMPLE">SE8765456787</Value>
                 </Element>
                 
