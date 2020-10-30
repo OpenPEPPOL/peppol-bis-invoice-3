@@ -10,3 +10,4 @@ tmp*
 /.settings/
 /.project
 vagrant/.vagrant/machines/dev/virtualbox/private_key
+*.xpr
