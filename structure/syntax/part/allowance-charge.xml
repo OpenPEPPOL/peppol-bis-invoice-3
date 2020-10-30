@@ -16,6 +16,8 @@
                 Allowances.
             </Description>
             <Value type="EXAMPLE">false</Value>
+            <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
+
         </Element>
         
         <Element cardinality="0..1">
@@ -36,6 +38,8 @@
             <Reference type="CODE_LIST">UNCL7161</Reference>
             <Reference type="RULE">PEPPOL-EN16931-CL002</Reference>
             <Reference type="RULE">DK-R-004</Reference>
+            <Reference type="RULE">BR-CL-19</Reference>
+            <Reference type="RULE">BR-CL-20</Reference>
             <Value type="EXAMPLE">95</Value>
         </Element>
         
@@ -78,6 +82,7 @@
             <Reference type="BUSINESS_TERM">BT-92,BT-99</Reference>
             <Reference type="RULE">BR-31</Reference>
             <Reference type="RULE">BR-36</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R040</Reference>
             <Reference type="RULE">BR-DEC-01</Reference>
             <Reference type="RULE">BR-DEC-05</Reference>
@@ -106,6 +111,7 @@
             <Reference type="RULE">BR-DEC-02</Reference>
             <Reference type="RULE">BR-DEC-06</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
             
             
             <Attribute>
@@ -134,6 +140,7 @@
             <Reference type="RULE">BR-37</Reference>
             <Reference type="RULE">BR-O-13</Reference>
             <Reference type="RULE">BR-O-14</Reference>
+            <Reference type="RULE">BR-CL-17</Reference>
             <Reference type="CODE_LIST">UNCL5305</Reference>
             <Value type="EXAMPLE">S</Value>
             

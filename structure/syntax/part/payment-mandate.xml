@@ -5,6 +5,7 @@
         <Name>DIRECT DEBIT</Name>
         <Description>A group of business terms to specify a direct debit.</Description>
         <Reference type="BUSINESS_TERM">BG-19</Reference>
+        <Reference type="RULE">BR-67</Reference>
         
         <Element cardinality="0..1">
             <Term>cbc:ID</Term>

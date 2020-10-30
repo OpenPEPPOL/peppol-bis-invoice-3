@@ -7,6 +7,8 @@
             Invoice line.
         </Description>
         <Reference type="BUSINESS_TERM">BG-27, BG-28</Reference>
+         <Reference type="RULE">BR-CO-23</Reference>
+         <Reference type="RULE">BR-CO-24</Reference>
         
         <Element>
             <Term>cbc:ChargeIndicator</Term>
@@ -14,6 +16,8 @@
                 Allowances
             </Description>
             <Value type="EXAMPLE">false</Value>
+            PEPPOL-EN16931-R043
+            <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
         </Element>
         
         
@@ -32,6 +36,8 @@
             <Reference type="CODE_LIST">UNCL7161</Reference>
             <Reference type="RULE">PEPPOL-EN16931-CL002</Reference>
             <Reference type="RULE">DK-R-004</Reference>
+            <Reference type="RULE">BR-CL-19</Reference>
+            <Reference type="RULE">BR-CL-20</Reference>
             <Value type="EXAMPLE">95</Value>
         </Element>
         
@@ -70,6 +76,7 @@
             <Reference type="BUSINESS_TERM">BT-136,BT-141</Reference>
             <Reference type="RULE">BR-41</Reference>
             <Reference type="RULE">BR-43</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R040</Reference>
             <Reference type="RULE">BR-DEC-24</Reference>
             <Reference type="RULE">BR-DEC-27</Reference>
@@ -99,6 +106,8 @@
             <Reference type="RULE">BR-DEC-25</Reference>
             <Reference type="RULE">BR-DEC-28</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
+            
             
             
             <Attribute>

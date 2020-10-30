@@ -36,6 +36,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-23</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R001</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R007</Reference>
             <Value type="DEFAULT">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</Value>
         </Element>
 
@@ -79,6 +80,7 @@
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-3</Reference>
             <Reference type="RULE">BR-04</Reference>
+            <Reference type="RULE">BR-CL-01</Reference>
             <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
             <Reference type="CODE_LIST">UNCL1001-inv</Reference>
             <Value type="EXAMPLE">380</Value>
@@ -93,6 +95,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-22</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
+            <Reference type="RULE">BR-CL-08</Reference>
             <Value type="EXAMPLE">Please note our new phone number 33 44 55 66</Value>
         </Element>
 
@@ -133,6 +136,7 @@
             <Reference type="BUSINESS_TERM">BT-6</Reference>
             <Reference type="RULE">BR-CL-05</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R005</Reference>
+			<Reference type="RULE">PEPPOL-EN16931-R055</Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
             <Value type="EXAMPLE">SEK</Value>
         </Element>
@@ -145,7 +149,6 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-19</Reference>
-            <Reference type="RULE">DK-R-001</Reference>
          <Value type="EXAMPLE">4217:2323:2323</Value>
         </Element>
 
@@ -198,6 +201,7 @@
                 <Reference type="BUSINESS_TERM">BT-8</Reference>
                 <Reference type="RULE">BR-CO-03</Reference>
                 <Reference type="RULE">BR-CL-06</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-CL006</Reference>
                 <Reference type="CODE_LIST">UNCL2005</Reference>
                 <Value type="EXAMPLE">35</Value>
             </Element>
@@ -431,6 +435,8 @@
             <Description>A group of business terms providing information on individual Invoice lines.</Description>
             <Reference type="BUSINESS_TERM">BG-25</Reference>
             <Reference type="RULE">BR-16</Reference>
+            
+            
            
 
             <Element>
@@ -460,6 +466,7 @@
                 <DataType>Quantity</DataType>
                 <Reference type="BUSINESS_TERM">BT-129</Reference>
                 <Reference type="RULE">BR-22</Reference>
+                <Reference type="RULE">BR-CL-23</Reference>
 
                 <Attribute>
                     <Term>unitCode</Term>
@@ -490,6 +497,7 @@
                 <Reference type="RULE">PEPPOL-EN16931-R120</Reference>
                 <Reference type="RULE">BR-DEC-23</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
+                <Reference type="RULE">BR-CL-03</Reference>
                 
                 <Attribute>
                     <Term>currencyID</Term>
@@ -535,6 +543,8 @@
             <Element cardinality="0..1">
                 <Term>cac:DocumentReference</Term>
                 <Name>LINE OBJECT IDENTIFIER</Name>
+                <Reference type="RULE">PEPPOL-EN16931-R100</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R101</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>

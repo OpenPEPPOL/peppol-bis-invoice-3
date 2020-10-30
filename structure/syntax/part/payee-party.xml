@@ -62,6 +62,7 @@
                 </Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-61</Reference>
+                <Reference type="RULE">BR-CL-11</Reference>
                 
                 
                 <Attribute usage="Optional">
