@@ -7,6 +7,23 @@
     <Documentation path="compliance/">BIS compliance</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
 
+    <!-- Documentation -->
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>bis/</Path>
+        <Title>Business Interoperability Specifications (BIS)</Title>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>migration/</Path>
+        <Title>Migration plan</Title>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>release-notes/</Path>
+        <Title>Release notes</Title>
+    </Resource>
+
     <!-- Syntax -->
     <Resource>
         <Type>Structure-1</Type>
@@ -69,7 +86,7 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-inv.xml</Path>
-    </Resource> 
+    </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-cn.xml</Path>
