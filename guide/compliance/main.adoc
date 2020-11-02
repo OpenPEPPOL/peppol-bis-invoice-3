@@ -1,0 +1,24 @@
+= Compliance to BIS
+openPEPPOL AISBL <http://www.peppol.eu/>
+:icons: font
+:source-highlighter: coderay
+:toc: left
+:toclevels: 2
+:sourcedir: .
+:imagesdir: images
+:title-logo-image: peppol.png
+
+This section provides an overview of rules that receivers and/or senders of documents must fulfil to be compliant to a BIS. This is not a complete or normative listing of applicable rules.
+
+A message is considered compliant to this BIS if no fatal errors are detected when validating with the current validation artefacts.
+
+A message is also considered compliant to this BIS if only warnings (and no fatal errors) are detected when validating with the current validation artefacts.
+
+
+:leveloffset: +1
+
+include::sender.adoc[]
+
+include::receiver.adoc[]
+
+:leveloffset: -1

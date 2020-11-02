@@ -15,6 +15,7 @@
   <testfolder>unit-UBL-IT</testfolder> 
   <testfolder>unit-UBL-DK</testfolder> 
   <testfolder>unit-UBL-SE</testfolder> 
+  <testfolder>unit-UBL-GR</testfolder> 
 
   <!-- CII -->
 

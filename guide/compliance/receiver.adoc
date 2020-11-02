@@ -1,0 +1,9 @@
+= Receivers compliance to BIS
+[horizontal]
+
+== Processing of rules
+* A receiver SHALL NOT reject receiving messages which are compliant to the BIS.
+
+* A receiver MAY reject receiving messages which are not compliant to the BIS.
+
+

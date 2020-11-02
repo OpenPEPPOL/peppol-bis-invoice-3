@@ -1,0 +1,5 @@
+= Senders compliance to BIS
+[horizontal]
+
+== Processing of rules
+* A sender SHALL NOT send messages that are not compliant to the BIS.

@@ -1,0 +1,17 @@
+= Version 3.0.8
+[horizontal]
+Release date:: 2020-11-01
+
+== Changes to BIS document
+
+
+== Changes to support documents
+
+
+== Changes to code lists and validation artefacts
+* Rule PEPPOL-COMMON-R040: "GLN must have a valid format according to GS1 rules". Changed from severity "warning" to "fatal". (The rule was introduced in fall 2019 with severity "warning" to avoid disruptions but with the intention to be changed to severity "fatal" after 6-12 months). Issue: [POACC-333] and [POACC-341]
+* EAS code list, added code 0209, removed code 9958. Rule updated accordingly.
+* ICD code list, added code 0209. Rule updated accordingly. Names and descriptions added where missing.
+* VATEX code list, added code VATEX-EU-79C for repayment of expenditure. Codes put in upper case.
+* Duplicate currency codes removed from ISO4217 code list. Issue: [POACC-339]
+

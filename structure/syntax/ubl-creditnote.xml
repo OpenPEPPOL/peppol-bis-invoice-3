@@ -39,6 +39,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-23</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R001</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R007</Reference>
             <Value type="DEFAULT">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</Value>
         </Element>
 
@@ -84,6 +85,7 @@
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-3</Reference>
             <Reference type="RULE">BR-04</Reference>
+            <Reference type="RULE">BR-CL-01</Reference>
             <Reference type="RULE">PEPPOL-EN16931-P0101</Reference>
             <Reference type="CODE_LIST">UNCL1001-cn</Reference>
             <Value type="EXAMPLE">381</Value>
@@ -98,6 +100,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-22</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
+            <Reference type="RULE">BR-CL-08</Reference>
             <Value type="EXAMPLE">Please note our new phone number 33 44 55 66</Value>
         </Element>
 
@@ -140,7 +143,6 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-19</Reference>
-            <Reference type="RULE">DK-R-001</Reference>
             <Value type="EXAMPLE">4217:2323:2323</Value>
         </Element>
 
@@ -193,6 +195,7 @@
                 <Reference type="BUSINESS_TERM">BT-8</Reference>
                 <Reference type="RULE">BR-CO-03</Reference>
                 <Reference type="RULE">BR-CL-06</Reference>
+				<Reference type="RULE">PEPPOL-EN16931-CL006</Reference>
                 <Reference type="CODE_LIST">UNCL2005</Reference>
                 <Value type="EXAMPLE">35</Value>
             </Element>
@@ -304,6 +307,10 @@
                 The additional supporting documents can be used for both referencing a document number which is expected to be known by the receiver, 
                 an external document (referenced by a URL) or as an embedded document, Base64 encoded (such as a time report).</Description>
             <Reference type="BUSINESS_TERM">BG-24</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
+           
+
             
             <Element>
                 <Term>cbc:ID</Term>
@@ -356,6 +363,7 @@
                     <Reference type="BUSINESS_TERM">BT-125</Reference>
                     
                     
+                    
                     <Attribute>
                         <Term>mimeCode</Term>
                         <Name>Attached document Mime code</Name>
@@ -363,6 +371,7 @@
                         <Reference type="RULE">PEPPOL-EN16931-CL001</Reference>
                         <Reference type="RULE">UBL-DT-06</Reference>
                         <Reference type="CODE_LIST">MimeCode</Reference>
+                        <Reference type="RULE">BR-CL-24</Reference>
                         <Value type="EXAMPLE">text/csv</Value>
                     </Attribute>
                     
@@ -522,6 +531,7 @@
             <Description>A group of business terms providing information on individual Invoice lines.</Description>
             <Reference type="BUSINESS_TERM">BG-25</Reference>
             <Reference type="RULE">BR-16</Reference>
+           
 
 
             <Element>
@@ -581,6 +591,7 @@
                 <Reference type="RULE">PEPPOL-EN16931-R120</Reference>
                 <Reference type="RULE">BR-DEC-23</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
+                <Reference type="RULE">BR-CL-03</Reference>
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Mandatory attribute. Use BT-5</Description>
@@ -625,6 +636,8 @@
             <Element cardinality="0..1">
                 <Term>cac:DocumentReference</Term>
                 <Name>LINE OBJECT IDENTIFIER</Name>
+                 <Reference type="RULE">PEPPOL-EN16931-R100</Reference>
+                 <Reference type="RULE">PEPPOL-EN16931-R101</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>

@@ -1,0 +1,21 @@
+= Version 3.0.8
+[horizontal]
+Release date:: 2020-11-01
+
+== Changes to BIS document
+* Definitions for EndPoint identifiers BT-34 and BT-49 aligned with defintion in EN16931. Issue: [POACC-331]
+* Migration plan from BIS2 to BIS3 removed. Is completed.
+* Use GLN as the only examlpe in section 10.2. Delivery Details (Date and Location). Removed reference to GSRN from the description text. [POACC-332]
+* Updating rule references in the Bis Syntax document to align with the schematron rules in use. Issue: [POACC-334]
+
+== Changes to support documents
+
+
+== Changes to code lists and validation artefacts
+* Rule PEPPOL-COMMON-R040: "GLN must have a valid format according to GS1 rules". Changed from severity "warning" to "fatal". (The rule was introduced in fall 2019 with severity "warning" to avoid disruptions but with the intention to be changed to severity "fatal" after 6-12 months). Issue: [POACC-333] and [POACC-341]
+* EAS code list, added code 0209, removed code 9958. Rule updated accordingly.
+* ICD code list, added code 0209. Rule updated accordingly. Names and descriptions added where missing.
+* VATEX code list, added code VATEX-EU-79C for repayment of expenditure. Rule updated accordingly.
+* Duplicate currency codes removed from ISO4217 code list. Issue: [POACC-339]
+* New national Swedish validation rule (SE-R-012) which gives warning on use of payment means code (31) which is often incorrectly used between Swedish suppliers and buyers. The rule only triggers if both buyer and supplier are Swedish. 
+* Added Greek PA National Rules

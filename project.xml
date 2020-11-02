@@ -4,8 +4,25 @@
     <Name>PEPPOL BIS Billing 3.0</Name>
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
-    <Documentation path="migration/">Migration plan</Documentation>
+    <Documentation path="compliance/">BIS compliance</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
+
+    <!-- Documentation -->
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>bis/</Path>
+        <Title>Business Interoperability Specifications (BIS)</Title>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>compliance/</Path>
+        <Title>BIS compliance</Title>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>release-notes/</Path>
+        <Title>Release notes</Title>
+    </Resource>
 
     <!-- Syntax -->
     <Resource>
@@ -69,7 +86,7 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-inv.xml</Path>
-    </Resource> 
+    </Resource>
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-cn.xml</Path>

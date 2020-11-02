@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+    <assert>
+        <description>Greek suppliers MUST use only 9933 as scheme ID in endoint when the customer is also greek.</description>
+        <scope>GR-R-010</scope>
+    </assert>
+    <test>
+        <assert>
+            <error>GR-R-010</error>
+        </assert>
+        <Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 "
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cac:AccountingSupplierParty>
+                <cac:Party>
+                    <cac:PostalAddress>
+                        <cac:Country>
+                            <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                        </cac:Country>
+                    </cac:PostalAddress>
+               </cac:Party>
+            </cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+                <cac:Party>
+                    <cbc:EndpointID schemeID="9934">123123</cbc:EndpointID>
+                    <cac:PostalAddress>
+                        <cac:Country>
+                            <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                        </cac:Country>
+                    </cac:PostalAddress>
+                </cac:Party>
+            </cac:AccountingCustomerParty>
+        </Invoice>
+    </test>
+    
+    <test>
+        <assert>
+            <error>GR-R-010</error>
+        </assert>
+        <Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 "
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cac:AccountingSupplierParty>
+                <cac:Party>
+                    <cac:PostalAddress>
+                        <cac:Country>
+                            <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                        </cac:Country>
+                    </cac:PostalAddress>
+                </cac:Party>
+            </cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+                <cac:Party>
+                    <cbc:EndpointID schemeID="9933">123123</cbc:EndpointID>
+                    <cac:PostalAddress>
+                        <cac:Country>
+                            <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                        </cac:Country>
+                    </cac:PostalAddress>
+                </cac:Party>
+            </cac:AccountingCustomerParty>
+        </Invoice>
+    </test>
+    
+    <test>
+        <assert>
+            <success>GR-R-010</success>
+        </assert>
+        <Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 "
+            xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+            <cac:AccountingSupplierParty>
+                <cac:Party>
+                    <cac:PostalAddress>
+                        <cac:Country>
+                            <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                        </cac:Country>
+                    </cac:PostalAddress>
+                </cac:Party>
+            </cac:AccountingSupplierParty>
+            <cac:AccountingCustomerParty>
+                <cac:Party>
+                    <cbc:EndpointID schemeID="9933">061828591</cbc:EndpointID>
+                    <cac:PostalAddress>
+                        <cac:Country>
+                            <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                        </cac:Country>
+                    </cac:PostalAddress>
+                </cac:Party>
+            </cac:AccountingCustomerParty>
+        </Invoice>
+    </test>
+    
+    <test>
+    <assert>
+        <success>GR-R-010</success>
+    </assert>
+    <Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 "
+        xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+        xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+        xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+        <cac:AccountingSupplierParty>
+            <cac:Party>
+                <cac:PostalAddress>
+                    <cac:Country>
+                        <cbc:IdentificationCode>SE</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:PostalAddress>
+            </cac:Party>
+        </cac:AccountingSupplierParty>
+        <cac:AccountingCustomerParty>
+            <cac:Party>
+                <cbc:EndpointID schemeID="9934">sfsdffsd</cbc:EndpointID>
+                <cac:PostalAddress>
+                    <cac:Country>
+                        <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:PostalAddress>
+            </cac:Party>
+        </cac:AccountingCustomerParty>
+    </Invoice>
+    </test>
+    
+</testSet>
