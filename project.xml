@@ -15,8 +15,8 @@
     </Resource>
     <Resource>
         <Type>Doc-1</Type>
-        <Path>migration/</Path>
-        <Title>Migration plan</Title>
+        <Path>compliance/</Path>
+        <Title>BIS compliance</Title>
     </Resource>
     <Resource>
         <Type>Doc-1</Type>
