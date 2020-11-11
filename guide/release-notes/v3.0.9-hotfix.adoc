@@ -1,0 +1,12 @@
+= Version 3.0.9 - Hotfix
+[horizontal]
+Release date:: 2020-11-12
+
+== Changes to BIS document
+* Added VAT tax category code B to code list 5305. This code is allowed in the EN16931 for Italy only, based on the A-deviation.
+
+== Changes to support documents
+
+
+== Changes to code lists and validation artefacts
+* 
