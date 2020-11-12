@@ -373,7 +373,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 
   <!-- Sender Rules -->
 	<pattern>
-		<let name="dateRegExp" value="'^0?[1-9]|[12][0-9]|3[01][-\\/ ]?0?[1-9]|1[0-2][-/ ]??:19|20[0-9]{2}'"/>
+		<let name="dateRegExp" value="'^(0?[1-9]|[12][0-9]|3[01])[-\\/ ]?(0?[1-9]|1[0-2])[-\\/ ]?(19|20)[0-9]{2}'"/>
 		<let name="greekDocumentType" value="tokenize('1.1 1.2 1.3 1.4 1.5 1.6 2.1 2.2 2.3 2.4 3.1 3.2 4 5.1 5.2 6.1 6.2 7.1 8.1 8.2 11.1 11.2 11.3 11.4 11.5','\s')"/>
 	  <let name="tokenizedUblIssueDate" value="tokenize(/*/cbc:IssueDate,'-')"/>
 	  
