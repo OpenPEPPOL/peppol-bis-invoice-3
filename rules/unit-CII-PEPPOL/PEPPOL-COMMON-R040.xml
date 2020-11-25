@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
+  <assert>
+    <scope>PEPPOL-COMMON-R040</scope>
+  </assert>
+
+  <test>
+    <assert>
+      <success>PEPPOL-COMMON-R040</success>
+    </assert>
+        <rsm:CrossIndustryInvoice
+      xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+      xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+      xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+      <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:BuyerTradeParty>
+            <ram:SpecifiedLegalOrganization>
+              <ram:ID schemeID="0088">9429041098400</ram:ID>
+            </ram:SpecifiedLegalOrganization>
+          </ram:BuyerTradeParty>
+        </ram:ApplicableHeaderTradeAgreement>
+      </rsm:SupplyChainTradeTransaction>
+    </rsm:CrossIndustryInvoice>
+  </test>
+  <test>
+    <assert>
+      <error>PEPPOL-COMMON-R040</error>
+    </assert>
+        <rsm:CrossIndustryInvoice
+      xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+      xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+      xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+      <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:BuyerTradeParty>
+            <ram:SpecifiedLegalOrganization>
+              <ram:ID schemeID="0088">9429041098401</ram:ID>
+            </ram:SpecifiedLegalOrganization>
+          </ram:BuyerTradeParty>
+        </ram:ApplicableHeaderTradeAgreement>
+      </rsm:SupplyChainTradeTransaction>
+    </rsm:CrossIndustryInvoice>
+  </test>
+  <test>
+    <assert>
+      <description>Expect GLN to have 13 digits</description>
+      <error>PEPPOL-COMMON-R040</error>
+    </assert>
+        <rsm:CrossIndustryInvoice
+      xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+      xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
+      xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+      <rsm:SupplyChainTradeTransaction>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:BuyerTradeParty>
+            <ram:SpecifiedLegalOrganization>
+              <ram:ID schemeID="0088">00</ram:ID>
+            </ram:SpecifiedLegalOrganization>
+          </ram:BuyerTradeParty>
+        </ram:ApplicableHeaderTradeAgreement>
+      </rsm:SupplyChainTradeTransaction>
+    </rsm:CrossIndustryInvoice>
+  </test>
+</testSet>

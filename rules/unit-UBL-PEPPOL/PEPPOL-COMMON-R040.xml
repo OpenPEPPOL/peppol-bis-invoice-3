@@ -31,4 +31,19 @@
             </cac:AccountingCustomerParty>
         </Invoice>
     </test>
+    <test>
+        <assert>
+            <description>Expect GLN to have 13 digits</description>
+            <error>PEPPOL-COMMON-R040</error>
+        </assert>
+        <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                 xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                 xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+            <cac:AccountingCustomerParty>
+                <cac:Party>
+                    <cbc:EndpointID schemeID="0088">00</cbc:EndpointID>
+                </cac:Party>
+            </cac:AccountingCustomerParty>
+        </Invoice>
+    </test>
 </testSet>

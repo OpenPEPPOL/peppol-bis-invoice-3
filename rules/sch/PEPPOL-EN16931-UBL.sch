@@ -43,7 +43,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<variable name="length" select="string-length($val) - 1"/>
 		<variable name="digits" select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)"/>
 		<variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (1 + ((($i + 1) mod 2) * 2)))"/>
-		<value-of select="(10 - ($weightedSum mod 10)) mod 10 = number(substring($val, $length + 1, 1))"/>
+		<value-of select="string-length($val) = 13 and (10 - ($weightedSum mod 10)) mod 10 = number(substring($val, $length + 1, 1))"/>
 	</function>
 	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
 		<param name="exp" as="xs:decimal"/>
@@ -62,7 +62,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 	<pattern>
 		<rule context="//*[not(*) and not(normalize-space())]">
 			<assert id="PEPPOL-EN16931-R008" test="false()" flag="fatal">Document MUST not contain empty elements.</assert>
-		</rule> 
+		</rule>
 	</pattern>
 	<!--
     Transaction rules
@@ -376,28 +376,28 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<let name="dateRegExp" value="'^(0?[1-9]|[12][0-9]|3[01])[-\\/ ]?(0?[1-9]|1[0-2])[-\\/ ]?(19|20)[0-9]{2}'"/>
 		<let name="greekDocumentType" value="tokenize('1.1 1.2 1.3 1.4 1.5 1.6 2.1 2.2 2.3 2.4 3.1 3.2 4 5.1 5.2 6.1 6.2 7.1 8.1 8.2 11.1 11.2 11.3 11.4 11.5','\s')"/>
 	  <let name="tokenizedUblIssueDate" value="tokenize(/*/cbc:IssueDate,'-')"/>
-	  
+
 
 		<!-- Invoice ID -->
 	  <rule context="/ubl-invoice:Invoice/cbc:ID[$isGreekSender] | /ubl-creditnote:CreditNote/cbc:ID[$isGreekSender]">
 			<let name="IdSegments" value="tokenize(.,'\|')"/>
 			<assert id="GR-R-001-1" test="count($IdSegments) = 6" flag="fatal"> When the Supplier is Greek, the Invoice Id should consist of 6 segments</assert>
-			<assert id="GR-R-001-2" test="string-length(normalize-space($IdSegments[1])) = 9 
+			<assert id="GR-R-001-2" test="string-length(normalize-space($IdSegments[1])) = 9
 			                              and u:TinVerification($IdSegments[1])
 			                              and ($IdSegments[1] = /*/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 3, 9)
-			                              or $IdSegments[1] = /*/cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 3, 9) )" 
+			                              or $IdSegments[1] = /*/cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 3, 9) )"
 			                              flag="fatal">When the Supplier is Greek, the Invoice Id first segment must be a valid TIN Number and match either the Supplier's or the Tax Representative's Tin Number</assert>
 		  <let name="tokenizedIdDate" value="tokenize($IdSegments[2],'/')"/>
-		  <assert id="GR-R-001-3" test="string-length(normalize-space($IdSegments[2]))>0 
+		  <assert id="GR-R-001-3" test="string-length(normalize-space($IdSegments[2]))>0
 			                              and matches($IdSegments[2],$dateRegExp)
-			                              and ($tokenizedIdDate[1] = $tokenizedUblIssueDate[3] 
+			                              and ($tokenizedIdDate[1] = $tokenizedUblIssueDate[3]
 			                                and $tokenizedIdDate[2] = $tokenizedUblIssueDate[2]
 			                                and $tokenizedIdDate[3] = $tokenizedUblIssueDate[1])" flag="fatal">When the Supplier is Greek, the Invoice Id second segment must be a valid Date that matches the invoice Issue Date</assert>
 			<assert id="GR-R-001-4" test="string-length(normalize-space($IdSegments[3]))>0 and string(number($IdSegments[3])) != 'NaN' and xs:integer($IdSegments[3]) >= 0" flag="fatal">When Supplier is Greek, the Invoice Id third segment must be a positive integer</assert>
 			<assert id="GR-R-001-5" test="string-length(normalize-space($IdSegments[4]))>0 and (some $c in $greekDocumentType satisfies $IdSegments[4] = $c)" flag="fatal">When Supplier is Greek, the Invoice Id in the fourth segment must be a valid greek document type</assert>
 			<assert id="GR-R-001-6" test="string-length($IdSegments[5]) > 0 " flag="fatal">When Supplier is Greek, the Invoice Id fifth segment must not be empty</assert>
 			<assert id="GR-R-001-7" test="string-length($IdSegments[6]) > 0 " flag="fatal">When Supplier is Greek, the Invoice Id sixth segment must not be empty</assert>
-		  
+
 		</rule>
 
 		<rule context="cac:AccountingSupplierParty[$isGreekSender]/cac:Party">
