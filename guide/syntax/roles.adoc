@@ -19,7 +19,7 @@ include::{snippet-dir}/Snippet-full.xml[tags=seller]
 
 Buyer is mandatory information and provided in element `cac:AccountingCustomerParty`
 
-.UBL example ofbuyer information
+.UBL example of buyer information
 [source, xml, indent=0]
 ----
 include::{snippet-dir}/Snippet-full.xml[tags=buyer]
