@@ -8,7 +8,7 @@ is sent by using the element `cac:AdditionalDocumentReference[cbc:DocumentTypeCo
 NOTE:: When sending the project reference, only the `cbc:ID` and the `cbc:DocumentTypeCode` are allowed in the `cac:AdditionalDocumentReference` element.
 
 
-.UBL example of proejct reference in an invoice
+.UBL example of project reference in an invoice
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/Snippet-refs.xml[tags=project]
