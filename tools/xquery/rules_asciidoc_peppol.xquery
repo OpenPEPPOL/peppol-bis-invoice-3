@@ -10,7 +10,7 @@ $x in //iso:pattern/iso:rule/iso:assert
 let $RuleId := string($x/@id)
 let $rule := replace(normalize-space(string($x/../@context)), '\|', '\\|')
 let $flag := string($x/@flag)
-let $assert := string($x/@test)
+let $assert := normalize-space(string($x/@test))
 let $tekst := normalize-space($x/text())
 
 where starts-with($x/@id, 'PEPPOL')
