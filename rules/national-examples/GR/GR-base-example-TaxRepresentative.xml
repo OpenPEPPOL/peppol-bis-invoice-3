@@ -14,7 +14,7 @@
     <cbc:BuyerReference>0150abc</cbc:BuyerReference>
     <cac:AccountingSupplierParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="9933">801399030</cbc:EndpointID>            
+            <cbc:EndpointID schemeID="0088">1238764941386</cbc:EndpointID>            
             <cac:PartyIdentification>
                 <cbc:ID>155988103000</cbc:ID>
             </cac:PartyIdentification>
@@ -27,14 +27,9 @@
                 <cbc:CityName>Athens</cbc:CityName>
                 <cbc:PostalZone>163 44</cbc:PostalZone>
                 <cac:Country>
-                    <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>SE</cbc:IdentificationCode>
                 </cac:Country>
-            </cac:PostalAddress>
-            <cac:PartyLegalEntity>
-                <cbc:RegistrationName>SupplierOfficialName Ltd</cbc:RegistrationName>
-                <cbc:CompanyID>EL801399030</cbc:CompanyID>
-            </cac:PartyLegalEntity>
-            
+            </cac:PostalAddress>            
         </cac:Party>
     </cac:AccountingSupplierParty>
     <cac:AccountingCustomerParty>
@@ -53,7 +48,7 @@
                 <cbc:CityName>Stockholm</cbc:CityName>
                 <cbc:PostalZone>456 34</cbc:PostalZone>
                 <cac:Country>
-                    <cbc:IdentificationCode>GR</cbc:IdentificationCode>
+                    <cbc:IdentificationCode>SE</cbc:IdentificationCode>
                 </cac:Country>
             </cac:PostalAddress>
             
@@ -93,6 +88,7 @@
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
     <cac:TaxRepresentativeParty>
+        
         <cac:PartyName>
             <cbc:Name>TaxRepresentative Name</cbc:Name>
         </cac:PartyName>

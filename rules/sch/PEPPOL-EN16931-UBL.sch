@@ -361,16 +361,25 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 	<let name="isGreekSender" value="($supplierCountry ='GR') or ($supplierCountry ='EL')"/>
 	<let name="isGreekReceiver" value="($customerCountry ='GR') or ($customerCountry ='EL')"/>
 	<let name="isGreekSenderandReceiver" value="$isGreekSender and $isGreekReceiver"/>
+  <!-- Test only accounting Supplier Country -->
+  <let name="accountingSupplierCountry" value="
+    if (/*/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2)) then
+    upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2)))
+    else
+    if (/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode) then
+    upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode))
+    else
+    'XX'"/>
 
-	<!-- Sender Rules -->
+  <!-- Sender Rules -->
 	<pattern>
-		<let name="dateRegExp" value="'^(0?[1-9]|[12][0-9]|3[01])[-\\/ ]?(0?[1-9]|1[0-2])[-/ ]?(?:19|20)[0-9]{2}'"/>
+		<let name="dateRegExp" value="'^(0?[1-9]|[12][0-9]|3[01])[-\\/ ]?(0?[1-9]|1[0-2])[-\\/ ]?(19|20)[0-9]{2}'"/>
 		<let name="greekDocumentType" value="tokenize('1.1 1.2 1.3 1.4 1.5 1.6 2.1 2.2 2.3 2.4 3.1 3.2 4 5.1 5.2 6.1 6.2 7.1 8.1 8.2 11.1 11.2 11.3 11.4 11.5','\s')"/>
 	  <let name="tokenizedUblIssueDate" value="tokenize(/*/cbc:IssueDate,'-')"/>
 	  
 
 		<!-- Invoice ID -->
-		<rule context="(/ubl-invoice:Invoice | /ubl-creditnote:CreditNote)/cbc:ID[$isGreekSender]">
+	  <rule context="/ubl-invoice:Invoice/cbc:ID[$isGreekSender] | /ubl-creditnote:CreditNote/cbc:ID[$isGreekSender]">
 			<let name="IdSegments" value="tokenize(.,'\|')"/>
 			<assert id="GR-R-001-1" test="count($IdSegments) = 6" flag="fatal"> When the Supplier is Greek, the Invoice Id should consist of 6 segments</assert>
 			<assert id="GR-R-001-2" test="string-length(normalize-space($IdSegments[1])) = 9 
@@ -403,7 +412,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 
 		<!-- Tax Representative Rules -->
 		<rule context="cac:TaxRepresentativeParty[$isGreekSender]">
-			<assert id="GR-R-007-2" test="string-length(normalize-space(cac:PartyName/cbc:Name))>0">If the Greek Suppliers do not have Greek VAT they must provide the full name of their tax representative in Greece</assert>
+			<assert id="GR-R-007-2" test="string-length(normalize-space(cac:PartyName/cbc:Name))>0" flag="fatal">If the Greek Suppliers do not have Greek VAT they must provide the full name of their tax representative in Greece</assert>
 			<assert id="GR-R-007-3" test="count(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID)=1 and
 				substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID,1,2) = 'EL' and
 				u:TinVerification(substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID,3))" flag="fatal">If the Greek Suppliers do not have Greek VAT, they must provide the VAT number of their tax representative</assert>
@@ -412,7 +421,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 
 		<!-- VAT Number Rules -->
 		<rule context="cac:AccountingSupplierParty[$isGreekSender]/cac:Party/cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID">
-			<assert id="GR-R-003" test="substring(.,1,2) = 'EL' and u:TinVerification(substring(.,3))" flag="fatal">Bad VAT Number for Greek Supplier</assert>
+			<assert id="GR-R-003" test="substring(.,1,2) = 'EL' and u:TinVerification(substring(.,3))" flag="fatal">For the Greek Suppliers, the VAT must start with 'EL' and must be a valid TIN number</assert>
 		</rule>
 
 		<!-- Document Reference Rules (existence of MARK and Invoice Verification URL) -->
@@ -420,7 +429,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 			<!-- ΜARK Rules -->
 			<assert id="GR-R-004-1" test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##M.AR.K##'])=1" flag="fatal"> When Supplier is Greek, there must be one MARK Number</assert>
 			<assert id="GR-S-008-1" flag="warning" test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##'])=1"> When Supplier is Greek, there should be one invoice url</assert>
-			<assert id="GR-R-008-2" test="(count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##']) = 0 ) or (count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##']) = 1 )  "> When Supplier is Greek, there should be no more than one invoice url</assert>
+			<assert id="GR-R-008-2" test="(count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##']) = 0 ) or (count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##']) = 1 )"  flag="fatal"> When Supplier is Greek, there should be no more than one invoice url</assert>
 		</rule>
 
 		<!-- MARK Rules -->
@@ -439,8 +448,8 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		</rule>
 
 		<!-- Endpoint Rules -->
-		<rule context="cac:AccountingSupplierParty[$isGreekSender]/cac:Party/cbc:EndpointID">
-			<assert id="GR-R-009" test="./@schemeID='9933'and u:TinVerification(.)" flag="fatal">Greek suppliers that send an invoice through the PEPPOL network must use their TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (schemeID 9933).</assert>
+	  <rule context="cac:AccountingSupplierParty/cac:Party[$accountingSupplierCountry='GR' or $accountingSupplierCountry='EL']/cbc:EndpointID">
+	    <assert id="GR-R-009" test="./@schemeID='9933' and u:TinVerification(.)" flag="fatal">Greek suppliers that send an invoice through the PEPPOL network must use a correct TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (schemeID 9933).</assert>
 		</rule>
 
 	</pattern>
@@ -448,7 +457,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 	<!-- Greek Sender and Greek Receiver rules -->
 	<pattern>
 		<!-- VAT Number Rules -->
-		<rule context="cac:AccountingCustomerParty[$isGreekSenderandReceiver]/cac:Party">
+	  <rule context="cac:AccountingCustomerParty[$isGreekSenderandReceiver]/cac:Party">
 			<assert id="GR-R-006" test="count(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID)=1 and
 				                        substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID,1,2) = 'EL' and
 				                        u:TinVerification(substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID,3))" flag="fatal">Greek Suppliers must provide the VAT number of the buyer, if the buyer is Greek </assert>
@@ -456,7 +465,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 
 		<!-- Endpoint Rules -->
 		<rule context="cac:AccountingCustomerParty[$isGreekSenderandReceiver]/cac:Party/cbc:EndpointID">
-			<assert id="GR-R-010" test="./@schemeID='9933'and u:TinVerification(.)" flag="fatal">Greek Suppliers that send an invoice through the PEPPOL network to a greek buyer must use the buyer's TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (SchemeID 9933)</assert>
+		  <assert id="GR-R-010" test="./@schemeID='9933' and u:TinVerification(.)" flag="fatal">Greek Suppliers that send an invoice through the PEPPOL network to a greek buyer must use a correct TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (SchemeID 9933)</assert>
 		</rule>
 	</pattern>
 
