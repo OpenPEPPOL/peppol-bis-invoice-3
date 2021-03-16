@@ -1,0 +1,12 @@
+= Version 3.0.10
+[horizontal]
+Release date:: 2021-05-XX
+
+== Changes to BIS document
+
+
+== Changes to support documents
+
+
+== Changes to code lists and validation artefacts
+* Updated some national rules which was using unusual characters in the rule statements, no functional changes. [POACC-398]
