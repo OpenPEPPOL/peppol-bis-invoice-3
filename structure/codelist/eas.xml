@@ -90,7 +90,6 @@
         <Id>0196</Id>
         <Name>Kennitala - Iceland legal id for individuals and legal entities</Name>
     </Code>
-    
     <Code>
         <Id>0198</Id>
         <Name>ERSTORG</Name>
@@ -122,6 +121,22 @@
      <Code>
         <Id>0209</Id>
         <Name>GS1 identification keys</Name>
+    </Code>
+     <Code>
+        <Id>0210</Id>
+        <Name>CODICE FISCALE</Name>
+    </Code>
+     <Code>
+        <Id>0211</Id>
+        <Name>PARTITA IVA</Name>
+    </Code>
+     <Code>
+        <Id>0212</Id>
+        <Name>Finnish Organization Identifier</Name>
+    </Code>
+     <Code>
+        <Id>0213</Id>
+        <Name>Finnish Organization Value Add Tax Identifier</Name>
     </Code>
 	<Code>
         <Id>9901</Id>
