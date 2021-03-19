@@ -1,12 +1,19 @@
 = Version 3.0.10
 [horizontal]
-Release date:: 2021-05-XX
+Release date:: 2021-05-03
 
 == Changes to BIS document
 
+*Peppol logo updated to new design [POACC-375]
 
 == Changes to support documents
 
 
 == Changes to code lists and validation artefacts
 * Updated some national rules which was using unusual characters in the rule statements, no functional changes. [POACC-398]
+
+*ICD code list details edited to remove contact information [POACC-388]
+
+*ICD code list. Added 0210, 0211, 0212, 0213 [POACC-407]
+
+*EAS code list. Added 0210, 0211, 0212, 0213. Removed 9956 [POACC-407]
