@@ -14,6 +14,14 @@ Release date:: 2021-05-03
 
 *ICD code list details edited to remove contact information [POACC-388]
 
-*ICD code list. Added 0210, 0211, 0212, 0213 [POACC-407]
+*Aligning codes with EN16931 [POACC-407]
 
-*EAS code list. Added 0210, 0211, 0212, 0213. Removed 9956 [POACC-407]
+**ICD code list. Added 0210, 0211, 0212, 0213
+
+**EAS code list. Added 0210, 0211, 0212, 0213. Removed 9956
+
+**Currency codes. Corrected for Dobra from STD to STN
+
+**Charge codes UNECE 7161. Added CAX CAY CAZ DAC DAF DAG DAH DAI DAJ DAK DAL DAM DAN DAO DAP DAQ to update to latest release.
+
+**UOM codes Rec21, Added codes
