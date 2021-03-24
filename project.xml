@@ -73,10 +73,6 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNECERec21-9e.xml</Path>
-    </Resource>
-    <Resource>
-        <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL5305.xml</Path>
     </Resource>
     <Resource>
