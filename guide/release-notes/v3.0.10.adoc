@@ -4,7 +4,7 @@ Release date:: 2021-05-03
 
 == Changes to BIS document
 
-*Peppol logo updated to new design [POACC-375]
+* Peppol logo updated to new design [POACC-375]
 
 == Changes to support documents
 
@@ -12,7 +12,7 @@ Release date:: 2021-05-03
 == Changes to code lists and validation artefacts
 * Updated some national rules which was using unusual characters in the rule statements, no functional changes. [POACC-398]
 
-*ICD code list details edited to remove contact information [POACC-388]
+* ICD code list details edited to remove contact information [POACC-388]
 
 * Aligning codes with EN16931 [POACC-407]
 
