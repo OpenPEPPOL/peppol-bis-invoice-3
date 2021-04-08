@@ -27,8 +27,10 @@ Release date:: 2021-05-03
 
 ** Currency codes. Corrected for Dobra from STD to STN
 
+** Item type identification code 7143. Added TSU
+
 ** Charge codes UNECE 7161. Added CAX CAY CAZ DAC DAF DAG DAH DAI DAJ DAK DAL DAM DAN DAO DAP DAQ to update to latest release.
 
-** UOM codes Rec21, Added codes
+** UOM codes Rec21, Added codes.
 
 ** UOM code, Rec20 and Rec21 combined into single list and Rec21 shown with prefix. Standalone Rec20 code list removed.

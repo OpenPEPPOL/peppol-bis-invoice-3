@@ -478,6 +478,21 @@
         <Description>The fee the consumer must pay the manufacturer to take back the product.</Description>
     </Code>
     <Code>
+		<Id>CAX</Id>
+        <Name>Quality control released</Name>
+        <Description>Informs the stockholder it is free to distribute the quality controlled passed goods.</Description>
+    </Code>
+    <Code>
+		<Id>CAY</Id>
+        <Name>Quality control held</Name>
+        <Description>Instructs the stockholder to withhold distribution of the goods until the manufacturer has completed a quality control assessment.</Description>
+    </Code>
+    <Code>
+		<Id>CAZ</Id>
+        <Name>Quality control embargo</Name>
+        <Description>Instructs the stockholder to withhold distribution of goods which have failed quality control tests.</Description>
+    </Code>
+    <Code>
         <Id>CD</Id>
         <Name>Car loading</Name>
         <Description>Car loading service.</Description>
@@ -503,9 +518,74 @@
         <Description>The service of providing layout/design.</Description>
     </Code>
     <Code>
+		<Id>DAC</Id>
+        <Name>Assortment allowance</Name>
+        <Description>Allowance given when a specific part of a suppliers assortment is purchased by the buyer.</Description>
+    </Code>
+    <Code>
         <Id>DAD</Id>
         <Name>Driver assigned unloading</Name>
         <Description>The service of unloading by the driver.</Description>
+    </Code>
+    <Code>
+		<Id>DAF</Id>
+        <Name>Debtor bound</Name>
+        <Description>A special allowance or charge applicable to a specific debtor.</Description>
+    </Code>
+    <Code>
+		<Id>DAG</Id>
+        <Name>Dealer allowance</Name>
+        <Description>An allowance offered by a party dealing a certain brand or brands of products.</Description>
+    </Code>
+    <Code>
+		<Id>DAH</Id>
+        <Name>Allowance transferable to the consumer</Name>
+        <Description>An allowance given by the manufacturer which should be transfered to the consumer.</Description>
+    </Code>
+    <Code>
+		<Id>DAI</Id>
+        <Name>Growth of business</Name>
+        <Description>An allowance or charge related to the growth of business over a pre-determined period of time.</Description>
+    </Code>
+    <Code>
+		<Id>DAJ</Id>
+        <Name>Introduction allowance</Name>
+        <Description>An allowance related to the introduction of a new product to the range of products traded by a retailer.</Description>
+    </Code>
+    <Code>
+		<Id>DAK</Id>
+        <Name>Multi-buy promotion</Name>
+        <Description>A code indicating special conditions related to a multi-buy promotion.</Description>
+    </Code>
+    <Code>
+		<Id>DAL</Id>
+        <Name>Partnership</Name>
+        <Description>An allowance or charge related to the establishment and on-going maintenance of a partnership.</Description>
+    </Code>
+    <Code>
+		<Id>DAM</Id>
+        <Name>Return handling</Name>
+        <Description>An allowance or change related to the handling of returns.</Description>
+    </Code>
+    <Code>
+		<Id>DAN</Id>
+        <Name>Minimum order not fulfilled charge</Name>
+        <Description>Charge levied because the minimum order quantity could not be fulfilled.</Description>
+    </Code>
+    <Code>
+		<Id>DAO</Id>
+        <Name>Point of sales threshold allowance</Name>
+        <Description>Allowance for reaching or exceeding an agreed sales threshold at the point of sales.</Description>
+    </Code>
+    <Code>
+		<Id>DAP</Id>
+        <Name>Wholesaling discount</Name>
+        <Description>A special discount related to the purchase of products through a wholesaler.</Description>
+    </Code>
+    <Code>
+		<Id>DAQ</Id>
+        <Name>Documentary credits transfer commission</Name>
+        <Description>Fee for the transfer of transferable documentary credits.</Description>
     </Code>
     <Code>
         <Id>DL</Id>
