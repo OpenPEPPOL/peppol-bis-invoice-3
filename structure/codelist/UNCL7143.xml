@@ -891,7 +891,11 @@
         <Name>UNSPSC</Name>
         <Description>The UNSPSC commodity classification system.</Description>
     </Code>
-
+    <Code>
+        <Id>TSU</Id>
+        <Name>EU RoHS Directive</Name>
+        <Description>European Union Directive on the restriction of hazardous substances.</Description>
+    </Code>
     <Code>
         <Id>UA</Id>
         <Name>Ultimate customer's article number</Name>

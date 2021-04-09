@@ -479,7 +479,6 @@
                     <Reference type="BUSINESS_TERM">BT-130</Reference>
                     <Reference type="RULE">BR-23</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
-                    <Reference type="CODE_LIST">UNECERec21</Reference>
                     <Value type="EXAMPLE">C62</Value>
                 </Attribute>
                 <Value type="EXAMPLE">100</Value>
