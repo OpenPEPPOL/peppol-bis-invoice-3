@@ -34,3 +34,6 @@ Release date:: 2021-05-03
 ** UOM codes Rec21, Added codes.
 
 ** UOM code, Rec20 and Rec21 combined into single list and Rec21 shown with prefix. Standalone Rec20 code list removed.
+
+== Changes to previous release notes
+* Reference to EN 16931 release notes was missing. Added to the release notes but there is no change to the content since all changes in that EN version were adopted in the last release.
