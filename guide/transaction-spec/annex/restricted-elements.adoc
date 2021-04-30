@@ -128,7 +128,7 @@ stem:["base amount" times ("percentage" div 100)]
 | Invoice line net amount
 | Add new non-conflicting business rule to existing element(s)
 | Calculation shall equal
-stem:[ ("Invoiced quantity" times ("Item net price" div "item price base amount"))] +
+stem:[ ("Invoiced quantity" times ("Item net price" div "item price base quantity"))] +
 stem:[ + "Invoice line charge amount"] +
 stem:[ - "Invoice line allowance amount"]
 | PEPPOL-EN16931-R120
