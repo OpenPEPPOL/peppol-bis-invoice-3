@@ -1007,5 +1007,9 @@
         <Id>1A</Id>
         <Name>Kosovo</Name>
     </Code>
+	<Code>
+        <Id>XI</Id>
+        <Name>United Kingdom (Northern Ireland)</Name>
+    </Code>
 
 </CodeList>

@@ -1,0 +1,39 @@
+= Version 3.0.10
+[horizontal]
+Release date:: 2021-05-03
+
+== Changes to BIS document
+
+* Peppol logo updated to new design [POACC-375]
+
+== Changes to support documents
+
+
+== Changes to code lists and validation artefacts
+
+* Changes to TC434 rules as link:https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.5[released here.]
+
+* Added Icelandic seller country specific rule in accordance with Peppol methodology https://docs.peppol.eu/poacc/billing/3.0/national-rules/
+
+* Updated some national rules which was using unusual characters in the rule statements, no functional changes. [POACC-398]
+
+* ICD code list details edited to remove contact information [POACC-388]
+
+* Aligning codes with EN16931 [POACC-407]
+
+** ICD code list. Added 0210, 0211, 0212, 0213
+
+** EAS code list. Added 0210, 0211, 0212, 0213. Removed 9956
+
+** Currency codes. Corrected for Dobra from STD to STN
+
+** Item type identification code 7143. Added TSU
+
+** Charge codes UNECE 7161. Added CAX CAY CAZ DAC DAF DAG DAH DAI DAJ DAK DAL DAM DAN DAO DAP DAQ to update to latest release.
+
+** UOM codes Rec21, Added codes.
+
+** UOM code, Rec20 and Rec21 combined into single list and Rec21 shown with prefix. Standalone Rec20 code list removed.
+
+== Changes to previous release notes
+* Reference to EN 16931 release notes was missing. Added to the release notes but there is no change to the content since all changes in that EN version were adopted in the last release.
