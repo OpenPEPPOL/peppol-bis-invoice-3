@@ -1,4 +1,4 @@
-name: Deploy frontend to S3
+name: Build and deploy master branch to test-docs
 on:
   push:
     branches:
