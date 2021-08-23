@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+  <assert>
+      <description>For suppliers in the Netherlands, if the fiscal representative is in the Netherlands, the representative's address (cac:TaxRepresentativeParty/cac:PostalAddress) MUST contain street name (cbc:StreetName), city (cbc:CityName) and post code (cbc:PostalZone)</description>
+    <scope>NL-R-006</scope>
+  </assert>
+  <test>
+    <assert>
+      <success>NL-R-006</success>
+    </assert>
+    <doc:Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:doc="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+      <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+      <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+      <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+      <cbc:ID>10000005</cbc:ID>
+      <cbc:IssueDate>2021-02-23</cbc:IssueDate>
+      <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+      <cbc:Note>KIA STONIC PE 1.0 TGDI 100pk MHEV DynamicPlusLine</cbc:Note>
+      <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+      <cac:InvoicePeriod>
+        <cbc:StartDate>2021-02-23</cbc:StartDate>
+        <cbc:EndDate>2021-02-23</cbc:EndDate>
+      </cac:InvoicePeriod>
+      <cac:OrderReference>
+        <cbc:ID>Customer PO number</cbc:ID>
+      </cac:OrderReference>
+      <cac:AdditionalDocumentReference>
+        <cbc:ID>attachment.PDF</cbc:ID>
+        <cac:Attachment>
+          <cbc:EmbeddedDocumentBinaryObject filename="attachment.PDF" mimeCode="application/pdf">BASE64CODEINHERE</cbc:EmbeddedDocumentBinaryObject>
+        </cac:Attachment>
+      </cac:AdditionalDocumentReference>
+      <cac:AccountingSupplierParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">12345678</cbc:EndpointID>
+          <cac:PartyName>
+            <cbc:Name>Leaseme NL B.V.</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress>
+            <cbc:StreetName>Emma van Laarsomweg 3</cbc:StreetName>
+            <cbc:CityName>Rotterdam</cbc:CityName>
+            <cbc:PostalZone>3050 DG</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>NL123456789B01</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Leaseme NL B.V.</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">12345678</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+          <cac:Contact>
+            <cbc:Name>Supplier contact name</cbc:Name>
+            <cbc:Telephone>051-1111111</cbc:Telephone>
+            <cbc:ElectronicMail>supplier@leaseme.com</cbc:ElectronicMail>
+          </cac:Contact>
+        </cac:Party>
+      </cac:AccountingSupplierParty>
+      <cac:AccountingCustomerParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">87654321</cbc:EndpointID>
+          <cac:PartyName>
+            <cbc:Name>Customer name</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress>
+            <cbc:StreetName>Street 2</cbc:StreetName>
+            <cbc:CityName>City</cbc:CityName>
+            <cbc:PostalZone>1234 AB</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>NL987654321B01</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Customer name as registered in KvK</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">87654321</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingCustomerParty>
+      <cac:TaxRepresentativeParty>
+        <cac:PartyName>
+          <cbc:Name>Fiscaal vertegenwoordiger</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:StreetName>Street 2</cbc:StreetName>
+            <cbc:CityName>City</cbc:CityName>
+            <cbc:PostalZone>1234 AB</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyTaxScheme>
+          <cbc:CompanyID>NL123456789B01</cbc:CompanyID>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:PartyTaxScheme>
+      </cac:TaxRepresentativeParty>
+      <cac:Delivery>
+        <cbc:ActualDeliveryDate>2021-02-24</cbc:ActualDeliveryDate>
+      </cac:Delivery>
+      <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cac:PayeeFinancialAccount>
+          <cbc:ID>NL63RABO00000000123</cbc:ID>
+          <cac:FinancialInstitutionBranch>
+            <cbc:ID>INGBNL2A</cbc:ID>
+          </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+      </cac:PaymentMeans>
+      <cac:PaymentTerms>
+        <cbc:Note>Payment according to agreed payment terms</cbc:Note>
+      </cac:PaymentTerms>
+      <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>Kosten afgifte kenteken deel 1A</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="EUR">53.40</cbc:Amount>
+        <cac:TaxCategory>
+          <cbc:ID>Z</cbc:ID>
+          <cbc:Percent>0</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:AllowanceCharge>
+      <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>BPM</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="EUR">3410.00</cbc:Amount>
+        <cac:TaxCategory>
+          <cbc:ID>Z</cbc:ID>
+          <cbc:Percent>0</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:AllowanceCharge>
+      <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">3595.17</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">17119.80</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">3595.17</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">3463.40</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>Z</cbc:ID>
+            <cbc:Percent>0.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+      </cac:TaxTotal>
+      <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">17119.80</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">20583.20</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">24178.37</cbc:TaxInclusiveAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">3463.40</cbc:ChargeTotalAmount>
+        <cbc:PayableRoundingAmount currencyID="EUR">0.00</cbc:PayableRoundingAmount>
+        <cbc:PayableAmount currencyID="EUR">24178.37</cbc:PayableAmount>
+      </cac:LegalMonetaryTotal>
+      <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">15929.32</cbc:LineExtensionAmount>
+        <cac:AllowanceCharge>
+          <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+          <cbc:AllowanceChargeReason>Korting 8,5%</cbc:AllowanceChargeReason>
+          <cbc:MultiplierFactorNumeric>8.5</cbc:MultiplierFactorNumeric>
+          <cbc:Amount currencyID="EUR">1479.77</cbc:Amount>
+          <cbc:BaseAmount currencyID="EUR">17409.09</cbc:BaseAmount>
+        </cac:AllowanceCharge>
+        <cac:Item>
+          <cbc:Name>Verkoopprijs personenwagen exclusief bpm en btw</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <!-- Nett price excluding VAT and BPM-->
+          <cbc:PriceAmount currencyID="EUR">17409.09</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">449.94</cbc:LineExtensionAmount>
+        <cac:AllowanceCharge>
+          <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+          <cbc:AllowanceChargeReason>Totaal korting opties en accessoires</cbc:AllowanceChargeReason>
+          <cbc:Amount currencyID="EUR">41.80</cbc:Amount>
+        </cac:AllowanceCharge>
+        <cac:Item>
+          <cbc:Name>Opties en accessoires</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+          <cac:AdditionalItemProperty>
+            <cbc:Name>Kleur</cbc:Name>
+            <cbc:Value>Perennial Grey</cbc:Value>
+          </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">491.74</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">600.50</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Kosten rijklaarmaken</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">600.50</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>4</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">45.00</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Mattenset, gevarendriehoek en lampenset</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">45.00</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>5</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">61.98</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Brandstof</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">61.98</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>6</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">33.06</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Recyclingbijdrage</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">33.06</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+    </doc:Invoice>
+  </test>
+  <test>
+    <assert>
+      <error>NL-R-006</error>
+    </assert>
+    <doc:Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:doc="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+      <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+      <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+      <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+      <cbc:ID>10000005</cbc:ID>
+      <cbc:IssueDate>2021-02-23</cbc:IssueDate>
+      <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+      <cbc:Note>KIA STONIC PE 1.0 TGDI 100pk MHEV DynamicPlusLine</cbc:Note>
+      <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+      <cac:InvoicePeriod>
+        <cbc:StartDate>2021-02-23</cbc:StartDate>
+        <cbc:EndDate>2021-02-23</cbc:EndDate>
+      </cac:InvoicePeriod>
+      <cac:OrderReference>
+        <cbc:ID>Customer PO number</cbc:ID>
+      </cac:OrderReference>
+      <cac:AdditionalDocumentReference>
+        <cbc:ID>attachment.PDF</cbc:ID>
+        <cac:Attachment>
+          <cbc:EmbeddedDocumentBinaryObject filename="attachment.PDF" mimeCode="application/pdf">BASE64CODEINHERE</cbc:EmbeddedDocumentBinaryObject>
+        </cac:Attachment>
+      </cac:AdditionalDocumentReference>
+      <cac:AccountingSupplierParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">12345678</cbc:EndpointID>
+          <cac:PartyName>
+            <cbc:Name>Leaseme NL B.V.</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress>
+            <cbc:StreetName>Emma van Laarsomweg 3</cbc:StreetName>
+            <cbc:CityName>Rotterdam</cbc:CityName>
+            <cbc:PostalZone>3050 DG</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>NL123456789B01</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Leaseme NL B.V.</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">12345678</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+          <cac:Contact>
+            <cbc:Name>Supplier contact name</cbc:Name>
+            <cbc:Telephone>051-1111111</cbc:Telephone>
+            <cbc:ElectronicMail>supplier@leaseme.com</cbc:ElectronicMail>
+          </cac:Contact>
+        </cac:Party>
+      </cac:AccountingSupplierParty>
+      <cac:AccountingCustomerParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">87654321</cbc:EndpointID>
+          <cac:PartyName>
+            <cbc:Name>Customer name</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress>
+            <cbc:StreetName>Street 2</cbc:StreetName>
+            <cbc:CityName>City</cbc:CityName>
+            <cbc:PostalZone>1234 AB</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>NL987654321B01</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Customer name as registered in KvK</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">87654321</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingCustomerParty>
+      <cac:TaxRepresentativeParty>
+        <cac:PartyName>
+          <cbc:Name>Fiscaal vertegenwoordiger</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+          <cac:Country>
+            <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyTaxScheme>
+          <cbc:CompanyID>NL123456789B01</cbc:CompanyID>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:PartyTaxScheme>
+      </cac:TaxRepresentativeParty>
+      <cac:Delivery>
+        <cbc:ActualDeliveryDate>2021-02-24</cbc:ActualDeliveryDate>
+      </cac:Delivery>
+      <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cac:PayeeFinancialAccount>
+          <cbc:ID>NL63RABO00000000123</cbc:ID>
+          <cac:FinancialInstitutionBranch>
+            <cbc:ID>INGBNL2A</cbc:ID>
+          </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+      </cac:PaymentMeans>
+      <cac:PaymentTerms>
+        <cbc:Note>Payment according to agreed payment terms</cbc:Note>
+      </cac:PaymentTerms>
+      <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>Kosten afgifte kenteken deel 1A</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="EUR">53.40</cbc:Amount>
+        <cac:TaxCategory>
+          <cbc:ID>Z</cbc:ID>
+          <cbc:Percent>0</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:AllowanceCharge>
+      <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>BPM</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="EUR">3410.00</cbc:Amount>
+        <cac:TaxCategory>
+          <cbc:ID>Z</cbc:ID>
+          <cbc:Percent>0</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:AllowanceCharge>
+      <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">3595.17</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">17119.80</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">3595.17</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">3463.40</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>Z</cbc:ID>
+            <cbc:Percent>0.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+      </cac:TaxTotal>
+      <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">17119.80</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">20583.20</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">24178.37</cbc:TaxInclusiveAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">3463.40</cbc:ChargeTotalAmount>
+        <cbc:PayableRoundingAmount currencyID="EUR">0.00</cbc:PayableRoundingAmount>
+        <cbc:PayableAmount currencyID="EUR">24178.37</cbc:PayableAmount>
+      </cac:LegalMonetaryTotal>
+      <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">15929.32</cbc:LineExtensionAmount>
+        <cac:AllowanceCharge>
+          <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+          <cbc:AllowanceChargeReason>Korting 8,5%</cbc:AllowanceChargeReason>
+          <cbc:MultiplierFactorNumeric>8.5</cbc:MultiplierFactorNumeric>
+          <cbc:Amount currencyID="EUR">1479.77</cbc:Amount>
+          <cbc:BaseAmount currencyID="EUR">17409.09</cbc:BaseAmount>
+        </cac:AllowanceCharge>
+        <cac:Item>
+          <cbc:Name>Verkoopprijs personenwagen exclusief bpm en btw</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <!-- Nett price excluding VAT and BPM-->
+          <cbc:PriceAmount currencyID="EUR">17409.09</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">449.94</cbc:LineExtensionAmount>
+        <cac:AllowanceCharge>
+          <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+          <cbc:AllowanceChargeReason>Totaal korting opties en accessoires</cbc:AllowanceChargeReason>
+          <cbc:Amount currencyID="EUR">41.80</cbc:Amount>
+        </cac:AllowanceCharge>
+        <cac:Item>
+          <cbc:Name>Opties en accessoires</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+          <cac:AdditionalItemProperty>
+            <cbc:Name>Kleur</cbc:Name>
+            <cbc:Value>Perennial Grey</cbc:Value>
+          </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">491.74</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">600.50</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Kosten rijklaarmaken</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">600.50</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>4</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">45.00</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Mattenset, gevarendriehoek en lampenset</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">45.00</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>5</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">61.98</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Brandstof</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">61.98</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+      <cac:InvoiceLine>
+        <cbc:ID>6</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">33.06</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Recyclingbijdrage</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.00</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">33.06</cbc:PriceAmount>
+        </cac:Price>
+      </cac:InvoiceLine>
+    </doc:Invoice>
+  </test>
+</testSet>
