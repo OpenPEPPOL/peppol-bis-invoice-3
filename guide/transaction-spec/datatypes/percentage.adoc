@@ -1,7 +1,7 @@
 
 = Percentage
 
-Percentages are given as fractions of a hundred (per cent) e.g. the value 34,78 % in percentage terms is given as 34,78. 
+Percentages are given as fractions of a hundred (per cent) e.g. the value 34.78 % in percentage terms is given as 34.78. 
 
 IMPORTANT:  No restriction on number of decimals for percentages.
 

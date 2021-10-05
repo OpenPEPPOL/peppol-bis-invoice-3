@@ -58,6 +58,13 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (($i mod 6) + 2))"/>
 		<value-of select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
 	</function>
+	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:0208-mod97" as="xs:boolean">
+		<param name="val"/>
+		<variable name="length" select="string-length($val) - 2"/>
+		<variable name="checkdigits" select="fn:substring($val,9,2)"/>
+		<variable name="calculated_digits" select="fn:string(97 - (xs:integer(fn:substring($val',1,8)) mod 97)) "/>
+		<value-of select="$checkdigits = $calculated_digits"/>
+	</function>	
 	<!-- Empty elements -->
 	<pattern>
 		<rule context="//*[not(*) and not(normalize-space())]">
@@ -202,6 +209,10 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
     <rule context="cbc:EndpointID[@schemeID = '0184'] | cac:PartyIdentification/cbc:ID[@schemeID = '0184'] | cbc:CompanyID[@schemeID = '0184']">
       <assert id="PEPPOL-COMMON-R042" test="(string-length(text()) = 10) and (substring(text(), 1, 2) = 'DK') and (string-length(translate(substring(text(), 3, 8), '1234567890', '')) = 0)" flag="fatal">Danish organization number (CVR) MUST be stated in the correct format.</assert>
     </rule>
+    <rule context="cbc:EndpointID[@schemeID = '0208'] | cac:PartyIdentification/cbc:ID[@schemeID = '0208'] | cbc:CompanyID[@schemeID = '0208']">
+      <assert id="PEPPOL-COMMON-R043" test="matches(normalize-space(), '^[0-9]{10}+$') and u:0208-mod97(normalize-space())" flag="warning">Belgian enterprise number MUST be stated in the correct format.</assert>
+    </rule>
+	
   </pattern>
   <!-- National rules -->
   <pattern>

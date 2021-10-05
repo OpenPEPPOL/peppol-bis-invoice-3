@@ -224,10 +224,10 @@
                     <Reference type="RULE">SE-R-002</Reference>
                     <Reference type="RULE">SE-R-005</Reference>
 					<Reference type="RULE">DK-R-015</Reference>
-                    <Reference type="RULE">BR-CL-11</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R043</Reference>					
                     <Value type="EXAMPLE">NO999888777</Value>
                 </Element>
                 
@@ -270,6 +270,7 @@
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-30</Reference>
                     <Reference type="RULE">BR-CO-26</Reference>
+					<Reference type="RULE">BR-CL-11</Reference>					
                     <Reference type="RULE">DK-R-002</Reference>
                     <Reference type="RULE">DK-R-014</Reference>
                     <Reference type="RULE">SE-R-003</Reference>

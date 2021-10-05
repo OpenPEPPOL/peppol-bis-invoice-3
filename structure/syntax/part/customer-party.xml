@@ -190,10 +190,10 @@
                     <Reference type="RULE">BR-O-02</Reference>
                     <Reference type="RULE">BR-O-03</Reference>
                     <Reference type="RULE">BR-O-04</Reference>
-                    <Reference type="RULE">BR-CL-11</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R043</Reference>
                     <Value type="EXAMPLE">SE8765456787</Value>
                 </Element>
                 
@@ -236,16 +236,18 @@
                     <Reference type="RULE">BR-AE-02</Reference>
                     <Reference type="RULE">BR-AE-03</Reference>
                     <Reference type="RULE">BR-AE-04</Reference>
+                    <Reference type="RULE">BR-CL-11</Reference>
                     <Reference type="RULE">DK-R-014</Reference>
+					
                     
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Buyer legal registration identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Buyer legal registration identifier.</Description>
                         <Reference type="CODE_LIST">ICD</Reference>
-                        <Value type="EXAMPLE">0088</Value>
+                        <Value type="EXAMPLE">0007</Value>
                     </Attribute>
-                    <Value type="EXAMPLE">7300010000001</Value>
+                    <Value type="EXAMPLE">5560104525</Value>
                 </Element>
             </Element>
             
