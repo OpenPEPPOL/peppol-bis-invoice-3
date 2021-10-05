@@ -61,8 +61,8 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:0208-mod97" as="xs:boolean">
 		<param name="val"/>
 		<variable name="length" select="string-length($val) - 2"/>
-		<variable name="checkdigits" select="fn:substring($val,9,2)"/>
-		<variable name="calculated_digits" select="fn:string(97 - (xs:integer(fn:substring($val',1,8)) mod 97)) "/>
+		<variable name="checkdigits" select="substring($val,9,2)"/>
+		<variable name="calculated_digits" select="xs:string(97 - (xs:integer(substring($val',1,8)) mod 97)) "/>
 		<value-of select="$checkdigits = $calculated_digits"/>
 	</function>	
 	<!-- Empty elements -->
