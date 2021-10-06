@@ -89,11 +89,6 @@
 							<ram:ID schemeID="0208">07399999484052</ram:ID> <!-- too long -->
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
-					<ram:BuyerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0208">07399999484052</ram:ID>
-						</ram:SpecifiedLegalOrganization>
-					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>				
@@ -121,11 +116,6 @@
 							<ram:ID schemeID="0208">0739484059</ram:ID> <!-- Wrong modulus calc-->
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
-					<ram:BuyerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0208">0739484059</ram:ID> <!-- Wrong modulus calc-->
-						</ram:SpecifiedLegalOrganization>
-					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>		
@@ -147,11 +137,6 @@
 			</rsm:ExchangedDocument>
 			<rsm:SupplyChainTradeTransaction>
 				<ram:ApplicableHeaderTradeAgreement>
-					<ram:SellerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0208">ABC</ram:ID> <!-- Not numeric -->
-						</ram:SpecifiedLegalOrganization>
-					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:SpecifiedLegalOrganization>
 							<ram:ID schemeID="0208">ABC</ram:ID> <!-- Not numeric -->
