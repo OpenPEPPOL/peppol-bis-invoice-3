@@ -52,6 +52,12 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
     <variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (($i mod 6) + 2))"/>
     <value-of select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
   </function>
+	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod97-0208" as="xs:boolean">
+		<param name="val"/>
+		<variable name="checkdigits" select="substring($val,9,2)"/>
+		<variable name="calculated_digits" select="xs:string(97 - (xs:integer(substring($val,1,8)) mod 97))"/>
+		<value-of select="$checkdigits = $calculated_digits"/>
+	</function>	  
   <pattern>
     <rule context="rsm:ExchangedDocumentContext">
       <assert id="PEPPOL-EN16931-R001" test="ram:BusinessProcessSpecifiedDocumentContextParameter/ram:ID" flag="fatal">Business process MUST be provided.</assert>
@@ -166,6 +172,9 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
     <rule context="ram:URIID[@schemeID = '0184'] | ram:ID[@schemeID = '0184'] | ram:GlobalID[@schemeID = '0184']">
       <assert id="PEPPOL-COMMON-R042" test="(string-length(text()) = 10) and (substring(text(), 1, 2) = 'DK') and (string-length(translate(substring(text(), 3, 8), '1234567890', '')) = 0)" flag="fatal">Danish organization number (CVR) MUST be stated in the correct format.</assert>
     </rule>
+    <rule context="ram:URIID[@schemeID = '0208'] | ram:ID[@schemeID = '0208'] | ram:GlobalID[@schemeID = '0208']">
+      <assert id="PEPPOL-COMMON-R043" test="matches(normalize-space(), '^[0-9]{10}$') and u:mod97-0208(normalize-space())" flag="warning">Belgian enterprise number MUST be stated in the correct format.</assert>
+    </rule>	
   </pattern>
   <!-- National rules -->
   <pattern>
