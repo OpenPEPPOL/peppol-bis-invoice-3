@@ -56,7 +56,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<param name="val"/>
 		<variable name="checkdigits" select="substring($val,9,2)"/>
 		<variable name="calculated_digits" select="xs:string(97 - (xs:integer(substring($val,1,8)) mod 97))"/>
-		<value-of select="$checkdigits = $calculated_digits"/>
+		<value-of select="number($checkdigits) = number($calculated_digits)"/>
 	</function>	  
   <pattern>
     <rule context="rsm:ExchangedDocumentContext">
