@@ -73,7 +73,7 @@
 				<cac:Party>
 					<cac:PartyLegalEntity>
 						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="0211">IT02985591201IT02985591201</cbc:CompanyID> <!-- too long -->
+						<cbc:CompanyID schemeID="0211">IT1</cbc:CompanyID> 
 					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
@@ -89,7 +89,7 @@
 				<cac:Party>
 					<cac:PartyLegalEntity>
 						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="0211">ABC</cbc:CompanyID> <!-- Wrong modulus calc-->
+						<cbc:CompanyID schemeID="0211">ITABC</cbc:CompanyID> <!-- Wrong modulus calc-->
 					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:AccountingCustomerParty>

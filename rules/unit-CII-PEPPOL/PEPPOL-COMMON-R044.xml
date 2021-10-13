@@ -22,12 +22,12 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0201">0739484052</ram:ID>
+							<ram:ID schemeID="0201">JSGML9</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0201">0739484052</ram:ID>
+							<ram:ID schemeID="0201">JSGML9</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
@@ -54,12 +54,12 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0201">0739484052</ram:ID>
+							<ram:ID schemeID="0201">JSGML9</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0201">0739484052</ram:ID>
+							<ram:ID schemeID="0201">JSGML9</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>

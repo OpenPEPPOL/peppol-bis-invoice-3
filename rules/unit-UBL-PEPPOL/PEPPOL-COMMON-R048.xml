@@ -42,7 +42,7 @@
 				<cac:Party>
 					<cac:PartyLegalEntity>
 						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="9906">07399999484052</cbc:CompanyID> <!-- too long -->
+						<cbc:CompanyID schemeID="9906">IT1</cbc:CompanyID> 
 					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
@@ -57,7 +57,7 @@
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingSupplierParty>
 				<cac:Party>
-					<cbc:EndpointID schemeID="9906">9773502058497735020584</cbc:EndpointID>
+					<cbc:EndpointID schemeID="9906">ITABC</cbc:EndpointID>
 				</cac:Party>
 			</cac:AccountingSupplierParty>
 		</Invoice>

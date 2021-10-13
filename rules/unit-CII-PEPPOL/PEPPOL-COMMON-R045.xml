@@ -22,12 +22,12 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0210">0739484052</ram:ID>
+							<ram:ID schemeID="0210">97735020584</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0210">0739484052</ram:ID>
+							<ram:ID schemeID="0210">97735020584</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
@@ -54,12 +54,12 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0210">0739484052</ram:ID>
+							<ram:ID schemeID="0210">97735020584</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0210">0739484052</ram:ID>
+							<ram:ID schemeID="0210">97735020584</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
@@ -86,7 +86,7 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0210">07399999484052</ram:ID> <!-- too long -->
+							<ram:ID schemeID="0210">9773502058497735020584</ram:ID> <!-- too long -->
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
@@ -113,7 +113,7 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0210">0739484059</ram:ID> <!-- Wrong modulus calc-->
+							<ram:ID schemeID="0210">123</ram:ID> 
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
