@@ -57,7 +57,103 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
 		<variable name="checkdigits" select="substring($val,9,2)"/>
 		<variable name="calculated_digits" select="xs:string(97 - (xs:integer(substring($val,1,8)) mod 97))"/>
 		<value-of select="number($checkdigits) = number($calculated_digits)"/>
-	</function>	  
+	</function>	 
+<function name="u:checkCodiceIPA" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string?"/>
+    <variable name="allowed-characters">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</variable>
+    <sequence select="if ( (string-length(translate($arg, $allowed-characters, '')) = 0) and (string-length($arg) = 6) ) then true() else false()"/>
+  </function>
+  <function name="u:checkCF" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string?"/>
+    <sequence select="
+		if ( (string-length($arg) = 16) or (string-length($arg) = 11) ) 		
+		then 
+		(
+			if ((string-length($arg) = 16)) 
+			then
+			(
+				if (u:checkCF16($arg)) 
+				then
+				(
+					true()
+				)
+				else
+				(
+					false()
+				)
+			)
+			else
+			(
+				if(($arg castable as xsd:integer)) then true() else false()
+		
+			)
+		)
+		else
+		(
+			false()
+		)
+		"/>
+  </function>
+  <function name="u:checkCF16" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string?"/>
+    <variable name="allowed-characters">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</variable>
+    <sequence select="
+				if ( 	(string-length(translate(substring($arg,1,6), $allowed-characters, '')) = 0) and  
+						(substring($arg,7,2) castable as xsd:integer) and 
+						(string-length(translate(substring($arg,9,1), $allowed-characters, '')) = 0) and 
+						(substring($arg,10,2) castable as xsd:integer) and  
+						(substring($arg,12,3) castable as xsd:string) and 
+						(substring($arg,15,1) castable as xsd:integer) and  
+						(string-length(translate(substring($arg,16,1), $allowed-characters, '')) = 0)
+					) 
+				then true()
+				else false()
+				"/>
+  </function>
+  <function name="u:checkPIVAseIT" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string"/>
+    <variable name="paese" select="substring($arg,1,2)"/>
+    <variable name="codice" select="substring($arg,3)"/>
+    <sequence select="
+		
+			if ( $paese = 'IT' or $paese = 'it' )
+			then
+			(
+				if ( ( string-length($codice) = 11 ) and ( if (u:checkPIVA($codice)!=0) then false() else true() ))
+				then 
+				(
+					true()
+				)
+				else
+				(
+					false()
+				)
+			)
+			else
+			(
+				true()
+			)
+		
+		"/>
+  </function>
+  <function name="u:checkPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string?"/>
+    <sequence select="
+				if (not($arg castable as xsd:integer)) 
+					then 1
+					else ( u:addPIVA($arg,xs:integer(0)) mod 10 )"/>
+  </function>
+  <function name="u:addPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string"/>
+    <param name="pari" as="xs:integer"/>
+    <variable name="tappo" select="if (not($arg castable as xsd:integer)) then 0 else 1"/>
+    <variable name="mapper" select="if ($tappo = 0) then 0 else 
+																		( if ($pari = 1) 
+																			then ( xs:integer(substring('0246813579', ( xs:integer(substring($arg,1,1)) +1 ) ,1)) ) 
+																			else ( xs:integer(substring($arg,1,1) ) )
+																		)"/>
+    <sequence select="if ($tappo = 0) then $mapper else ( xs:integer($mapper) + u:addPIVA(substring(xs:string($arg),2), (if($pari=0) then 1 else 0) ) )"/>
+  </function>	
   <pattern>
     <rule context="rsm:ExchangedDocumentContext">
       <assert id="PEPPOL-EN16931-R001" test="ram:BusinessProcessSpecifiedDocumentContextParameter/ram:ID" flag="fatal">Business process MUST be provided.</assert>
@@ -174,6 +270,21 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
     </rule>
     <rule context="ram:URIID[@schemeID = '0208'] | ram:ID[@schemeID = '0208'] | ram:GlobalID[@schemeID = '0208']">
       <assert id="PEPPOL-COMMON-R043" test="matches(normalize-space(), '^[0-9]{10}$') and u:mod97-0208(normalize-space())" flag="warning">Belgian enterprise number MUST be stated in the correct format.</assert>
+    </rule>	
+    <rule context="ram:URIID@schemeID = '0201'] | ram:ID[@schemeID = '0201'] | ram:GlobalID[@schemeID = '0201']">
+      <assert id="PEPPOL-COMMON-R044" test="u:checkCodiceIPA(normalize-space())" flag="warning">IPA Code (Codice Univoco Unità Organizzativa) must be stated in the correct format</assert>
+    </rule>
+    <rule context="ram:URIID[@schemeID = '0210'] | ram:ID[@schemeID = '0210'] | ram:GlobalID[@schemeID = '0210']">
+      <assert id="PEPPOL-COMMON-R045" test="u:checkCF(normalize-space())" flag="warning">Tax Code (Codice Fiscale) must be stated in the correct format</assert>
+    </rule>
+    <rule context="ram:URIID[@schemeID = '9907']">
+      <assert id="PEPPOL-COMMON-R046" test="u:checkCF(normalize-space())" flag="warning">Tax Code (Codice Fiscale) must be stated in the correct format</assert>
+    </rule>
+    <rule context="cram:URIID[@schemeID = '0211'] | ram:ID[@schemeID = '0211'] | ram:GlobalID[@schemeID = '0211']">
+      <assert id="PEPPOL-COMMON-R047" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
+    </rule>
+    <rule context="ram:URIID[@schemeID = '9906']">
+      <assert id="PEPPOL-COMMON-R048" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
     </rule>	
   </pattern>
   <!-- National rules -->
