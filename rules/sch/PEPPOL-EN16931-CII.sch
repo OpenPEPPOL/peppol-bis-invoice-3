@@ -280,7 +280,7 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
     <rule context="ram:URIID[@schemeID = '9907']">
       <assert id="PEPPOL-COMMON-R046" test="u:checkCF(normalize-space())" flag="warning">Tax Code (Codice Fiscale) must be stated in the correct format</assert>
     </rule>
-    <rule context="cram:URIID[@schemeID = '0211'] | ram:ID[@schemeID = '0211'] | ram:GlobalID[@schemeID = '0211']">
+    <rule context="ram:URIID[@schemeID = '0211'] | ram:ID[@schemeID = '0211'] | ram:GlobalID[@schemeID = '0211']">
       <assert id="PEPPOL-COMMON-R047" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
     </rule>
     <rule context="ram:URIID[@schemeID = '9906']">
