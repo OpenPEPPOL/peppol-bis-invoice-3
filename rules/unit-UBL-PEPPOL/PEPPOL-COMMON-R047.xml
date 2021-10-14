@@ -89,28 +89,14 @@
 				<cac:Party>
 					<cac:PartyLegalEntity>
 						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="0211">ITABC</cbc:CompanyID> <!-- Wrong modulus calc-->
+						<cbc:CompanyID schemeID="0211">ITABC</cbc:CompanyID>
 					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</Invoice>
 	</test>
     
-    <test>
-		<assert>
-			<warning>PEPPOL-COMMON-R047</warning>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cac:PartyLegalEntity>
-						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="0211">ABC</cbc:CompanyID> <!-- Not numeric -->
-					</cac:PartyLegalEntity>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-		</Invoice>
-	</test>
+
     
     
 	
