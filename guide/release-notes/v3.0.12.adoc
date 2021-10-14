@@ -14,9 +14,13 @@ Release date:: 2021-11-15
 
 * Updated example to a more appropriate value for LegalEntity/CompanyID in the syntax reports. [POACC-432]
 
+* Description of cac-CardAccount/cbc-NetworkID/ syntax required element changed to prevent incorrect interpritation that this is a business term [POACC-429]
+
 
 == Changes to code lists and validation artefacts
 
 * Added rule (severity warning) for validation of format for Belgian organisation numbers (ICD:0208). Rule is planned to be changed to severity fatal in 2022 spring release. [POACC-408]
 
 * Added rule (severity warning) for validation of format for Italian identifiers (ICD:0201, 0210, 0211 and EAS 9906 and 9907). Rules are planned to be changed to severity fatal in 2022 spring release. [POACC-423]
+
+* Added UOM codes to align with CEF listing of codes. [POACC-427]
