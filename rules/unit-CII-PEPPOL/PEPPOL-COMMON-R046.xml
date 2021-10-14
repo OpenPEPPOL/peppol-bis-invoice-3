@@ -53,14 +53,14 @@
 			<rsm:SupplyChainTradeTransaction>
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="9907">97735020584</ram:ID>
-						</ram:SpecifiedLegalOrganization>
+                        <ram:URIUniversalCommunication>
+                            <ram:URIID schemeID="9907">97735020584</ram:URIID>
+                        </ram:URIUniversalCommunication>					
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="9907">97735020584</ram:ID>
-						</ram:SpecifiedLegalOrganization>
+                        <ram:URIUniversalCommunication>
+                            <ram:URIID schemeID="9907">97735020584</ram:URIID>
+                        </ram:URIUniversalCommunication>					
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
@@ -85,9 +85,9 @@
 			<rsm:SupplyChainTradeTransaction>
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="9907">9773502058497735020584</ram:ID> <!-- too long -->
-						</ram:SpecifiedLegalOrganization>
+                        <ram:URIUniversalCommunication>
+                            <ram:URIID schemeID="9907">9773502058497735020584</ram:URIID>
+                        </ram:URIUniversalCommunication>					
 					</ram:SellerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
@@ -112,9 +112,9 @@
 			<rsm:SupplyChainTradeTransaction>
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="9907">07359</ram:ID> 
-						</ram:SpecifiedLegalOrganization>
+                        <ram:URIUniversalCommunication>
+                            <ram:URIID schemeID="9907">07359</ram:URIID>
+                        </ram:URIUniversalCommunication>					
 					</ram:SellerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
@@ -138,9 +138,9 @@
 			<rsm:SupplyChainTradeTransaction>
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:BuyerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="9907">ABC</ram:ID> <!-- Not numeric -->
-						</ram:SpecifiedLegalOrganization>
+                        <ram:URIUniversalCommunication>
+                            <ram:URIID schemeID="9907">ABC</ram:URIID>
+                        </ram:URIUniversalCommunication>					
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
