@@ -89,7 +89,7 @@
 				<cac:Party>
 					<cac:PartyLegalEntity>
 						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="0211">ITABC</cbc:CompanyID> <!-- Wrong modulus calc-->
+						<cbc:CompanyID schemeID="0211">ITABC</cbc:CompanyID>
 					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
@@ -105,7 +105,7 @@
 				<cac:Party>
 					<cac:PartyLegalEntity>
 						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="0211">ABC</cbc:CompanyID> <!-- Not numeric -->
+						<cbc:CompanyID schemeID="0211">ABC</cbc:CompanyID> 
 					</cac:PartyLegalEntity>
 				</cac:Party>
 			</cac:AccountingSupplierParty>

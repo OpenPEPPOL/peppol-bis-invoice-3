@@ -19,20 +19,7 @@
 		</Invoice>
 	</test>
 	
-    <test>
-		<assert>
-			<success>PEPPOL-COMMON-R048</success>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
-					<cbc:EndpointID schemeID="9906">0739484052</cbc:EndpointID>
-				</cac:Party>
-			</cac:AccountingSupplierParty>
-		</Invoice>
-	</test>
-    
-   
+
     <test>
 		<assert>
 			<warning>PEPPOL-COMMON-R048</warning>
@@ -40,26 +27,9 @@
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingCustomerParty>
 				<cac:Party>
-					<cac:PartyLegalEntity>
-						<cbc:RegistrationName>Duvel</cbc:RegistrationName>
-						<cbc:CompanyID schemeID="9906">IT1</cbc:CompanyID> 
-					</cac:PartyLegalEntity>
-				</cac:Party>
-			</cac:AccountingCustomerParty>
-		</Invoice>
-	</test>
-    
-
-    <test>
-		<assert>
-			<warning>PEPPOL-COMMON-R048</warning>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-			<cac:AccountingSupplierParty>
-				<cac:Party>
 					<cbc:EndpointID schemeID="9906">ITABC</cbc:EndpointID>
 				</cac:Party>
-			</cac:AccountingSupplierParty>
+			</cac:AccountingCustomerParty>
 		</Invoice>
 	</test>
     
