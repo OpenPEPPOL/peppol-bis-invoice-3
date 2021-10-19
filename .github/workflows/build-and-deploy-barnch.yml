@@ -1,0 +1,22 @@
+name: Build and deploy non-master branch to test-docs
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - name: Build Spec
+        run: bash ./build.sh
+
+      - name: Deploy on S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          aws s3 sync --acl public-read --region eu-west-1 target/site ${{ secrets.AWS_S3_PATH }}/${GITHUB_REF#refs/heads/}

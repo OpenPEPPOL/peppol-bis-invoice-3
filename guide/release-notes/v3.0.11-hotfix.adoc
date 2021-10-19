@@ -1,0 +1,9 @@
+= Version 3.0.11-hotfix
+[horizontal]
+Release date:: 2021-06-15
+
+== Changes to code lists and validation artefacts
+
+* Adopted hotfix from EN 16931 where codelist rule BR-CO-09, which checks for the country prefix on sellers VAT identifier, is corrected to support the full ISO 3166-1 country code list as extended and listed by CEF. This includes support for the XI code that is to be used for post Brexit trade between Northern Irelend and other UK regions. 
+
+This is a fully backward compatible change with no added functionality.
