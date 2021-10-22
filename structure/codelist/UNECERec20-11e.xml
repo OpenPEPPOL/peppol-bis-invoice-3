@@ -6,7 +6,7 @@
     <Version>Revision 11e</Version>
     <Agency>UN/ECE</Agency>
 
-	<!-- START of Recommendation 20  -->
+	<!-- START of Recommendation 20 -->
     <Code>
         <Id>10</Id>
         <Name>group</Name>
@@ -4840,6 +4840,10 @@
         <Name>inch per second</Name>
         <Description/>
     </Code>
+	<Code>
+        <Id>IUG</Id>
+        <Name>international unit per gram</Name>
+    </Code>
     <Code>
         <Id>IV</Id>
         <Name>inch per second squared</Name>
@@ -5985,10 +5989,18 @@
         <Name>kilowatt hour</Name>
         <Description/>
     </Code>
+	<Code>
+        <Id>KWN</Id>
+        <Name>Kilowatt hour per normalized cubic metre</Name>
+    </Code>
     <Code>
         <Id>KWO</Id>
         <Name>kilogram of tungsten trioxide</Name>
         <Description>A unit of mass equal to one thousand grams of tungsten trioxide.</Description>
+    </Code>
+    <Code>
+        <Id>KWS</Id>
+        <Name>Kilowatt hour per standard cubic metre</Name>
     </Code>
     <Code>
         <Id>KWT</Id>
@@ -7974,6 +7986,18 @@
             (CFC-11).</Description>
     </Code>
     <Code>
+        <Id>ODG</Id>
+        <Name>ODS Grams</Name>
+    </Code>
+    <Code>
+        <Id>ODK</Id>
+        <Name>ODS Kilograms</Name>
+    </Code>
+    <Code>
+        <Id>ODM</Id>
+        <Name>ODS Milligrams</Name>
+    </Code>
+    <Code>
         <Id>OHM</Id>
         <Name>ohm</Name>
         <Description/>
@@ -8823,6 +8847,14 @@
         <Name>Normalized cubic metre per hour</Name>
         <Description>Normalized cubic metre (temperature 0°C and pressure 101325 millibars ) per
             hour</Description>
+    </Code>
+    <Code>
+        <Id>Q41</Id>
+        <Name>Joule per normalised cubic metre</Name>
+    </Code>
+    <Code>
+        <Id>Q42</Id>
+        <Name>Joule per standard cubic metre</Name>
     </Code>
     <Code>
         <Id>Q3</Id>
@@ -11056,6 +11088,11 @@
         <Id>XZY</Id>
         <Name>Intermediate bulk container, reconstituted wood</Name>
     </Code>
+    <Code>
+        <Id>XZZ</Id>
+        <Name>Mutually defined </Name>
+    </Code>
+
 
 	<!-- END of Recommendation 21 -->
 

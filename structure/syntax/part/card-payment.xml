@@ -23,9 +23,9 @@
             
             <Element>
                 <Term>cbc:NetworkID</Term>
-                <Description>Card Network identifier, such as VISA, American Express, Master Card.</Description>
+                <Description>Syntax required element not related to a business term.</Description>
                 <DataType>Text</DataType>
-                <Value type="EXAMPLE">VISA</Value>
+                <Value type="EXAMPLE">NA</Value>
             </Element>
             
             <Element cardinality="0..1">
