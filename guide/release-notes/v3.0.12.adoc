@@ -8,13 +8,13 @@ Release date:: 2021-11-15
 
 * Use of the business term names rather than the UBL element names in the chapter 12.1 Profiles and messages. [POACC-439]
 
-* Editorial change in chapter 6.2.3 Percentation (use of period sign instead of comma). [POACC-439]
+* Editorial change in chapter 6.2.3 Percentage (use of period sign instead of comma). [POACC-439]
 
 * Incorrect rule reference in the syntax reports (Invoice and CreditNote) for rule BR-CL-11 (no change to the schematron rule, only editorial in the documentation). [POACC-425]
 
 * Updated example to a more appropriate value for LegalEntity/CompanyID in the syntax reports. [POACC-432]
 
-* Description of cac-CardAccount/cbc-NetworkID/ syntax required element changed to prevent incorrect interpritation that this is a business term [POACC-429]
+* Description of cac-CardAccount/cbc-NetworkID/ syntax required element changed to prevent incorrect interpretation that this is a business term [POACC-429]
 
 
 == Changes to code lists and validation artefacts
