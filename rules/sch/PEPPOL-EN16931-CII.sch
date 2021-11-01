@@ -2,6 +2,8 @@
 <!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by Martin Forsberg (Ecru Consulting AB) -->
 <!--
 This schematron uses business terms defined the CEN/EN16931-1 and is reproduced with permission from CEN. CEN bears no liability from the use of the content and implementation of this schematron and gives no warranties expressed or implied for any purpose.
+
+Last update: 2021 November release.
  -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils" schemaVersion="iso" queryBinding="xslt2">
   <title>Rules for PEPPOL BIS 3.0 Billing</title>
@@ -52,6 +54,108 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
     <variable name="weightedSum" select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (($i mod 6) + 2))"/>
     <value-of select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))"/>
   </function>
+	<function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod97-0208" as="xs:boolean">
+		<param name="val"/>
+		<variable name="checkdigits" select="substring($val,9,2)"/>
+		<variable name="calculated_digits" select="xs:string(97 - (xs:integer(substring($val,1,8)) mod 97))"/>
+		<value-of select="number($checkdigits) = number($calculated_digits)"/>
+	</function>	 
+<function name="u:checkCodiceIPA" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string?"/>
+    <variable name="allowed-characters">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</variable>
+    <sequence select="if ( (string-length(translate($arg, $allowed-characters, '')) = 0) and (string-length($arg) = 6) ) then true() else false()"/>
+  </function>
+  <function name="u:checkCF" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string?"/>
+    <sequence select="
+		if ( (string-length($arg) = 16) or (string-length($arg) = 11) ) 		
+		then 
+		(
+			if ((string-length($arg) = 16)) 
+			then
+			(
+				if (u:checkCF16($arg)) 
+				then
+				(
+					true()
+				)
+				else
+				(
+					false()
+				)
+			)
+			else
+			(
+				if(($arg castable as xsd:integer)) then true() else false()
+		
+			)
+		)
+		else
+		(
+			false()
+		)
+		"/>
+  </function>
+  <function name="u:checkCF16" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string?"/>
+    <variable name="allowed-characters">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</variable>
+    <sequence select="
+				if ( 	(string-length(translate(substring($arg,1,6), $allowed-characters, '')) = 0) and  
+						(substring($arg,7,2) castable as xsd:integer) and 
+						(string-length(translate(substring($arg,9,1), $allowed-characters, '')) = 0) and 
+						(substring($arg,10,2) castable as xsd:integer) and  
+						(substring($arg,12,3) castable as xsd:string) and 
+						(substring($arg,15,1) castable as xsd:integer) and  
+						(string-length(translate(substring($arg,16,1), $allowed-characters, '')) = 0)
+					) 
+				then true()
+				else false()
+				"/>
+  </function>
+  <function name="u:checkPIVAseIT" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string"/>
+    <variable name="paese" select="substring($arg,1,2)"/>
+    <variable name="codice" select="substring($arg,3)"/>
+    <sequence select="
+		
+			if ( $paese = 'IT' or $paese = 'it' )
+			then
+			(
+				if ( ( string-length($codice) = 11 ) and ( if (u:checkPIVA($codice)!=0) then false() else true() ))
+				then 
+				(
+					true()
+				)
+				else
+				(
+					false()
+				)
+			)
+			else
+			(
+				true()
+			)
+		
+		"/>
+  </function>
+  <function name="u:checkPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string?"/>
+    <sequence select="
+				if (not($arg castable as xsd:integer)) 
+					then 1
+					else ( u:addPIVA($arg,xs:integer(0)) mod 10 )"/>
+  </function>
+  <function name="u:addPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
+    <param name="arg" as="xs:string"/>
+    <param name="pari" as="xs:integer"/>
+    <variable name="tappo" select="if (not($arg castable as xsd:integer)) then 0 else 1"/>
+    <variable name="mapper" select="if ($tappo = 0) then 0 else 
+																		( if ($pari = 1) 
+																			then ( xs:integer(substring('0246813579', ( xs:integer(substring($arg,1,1)) +1 ) ,1)) ) 
+																			else ( xs:integer(substring($arg,1,1) ) )
+																		)"/>
+    <sequence select="if ($tappo = 0) then $mapper else ( xs:integer($mapper) + u:addPIVA(substring(xs:string($arg),2), (if($pari=0) then 1 else 0) ) )"/>
+  </function>	
   <pattern>
     <rule context="rsm:ExchangedDocumentContext">
       <assert id="PEPPOL-EN16931-R001" test="ram:BusinessProcessSpecifiedDocumentContextParameter/ram:ID" flag="fatal">Business process MUST be provided.</assert>
@@ -166,6 +270,24 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
     <rule context="ram:URIID[@schemeID = '0184'] | ram:ID[@schemeID = '0184'] | ram:GlobalID[@schemeID = '0184']">
       <assert id="PEPPOL-COMMON-R042" test="(string-length(text()) = 10) and (substring(text(), 1, 2) = 'DK') and (string-length(translate(substring(text(), 3, 8), '1234567890', '')) = 0)" flag="fatal">Danish organization number (CVR) MUST be stated in the correct format.</assert>
     </rule>
+    <rule context="ram:URIID[@schemeID = '0208'] | ram:ID[@schemeID = '0208'] | ram:GlobalID[@schemeID = '0208']">
+      <assert id="PEPPOL-COMMON-R043" test="matches(normalize-space(), '^[0-9]{10}$') and u:mod97-0208(normalize-space())" flag="warning">Belgian enterprise number MUST be stated in the correct format.</assert>
+    </rule>	
+    <rule context="ram:URIID[@schemeID = '0201'] | ram:ID[@schemeID = '0201'] | ram:GlobalID[@schemeID = '0201']">
+      <assert id="PEPPOL-COMMON-R044" test="u:checkCodiceIPA(normalize-space())" flag="warning">IPA Code (Codice Univoco Unità Organizzativa) must be stated in the correct format</assert>
+    </rule>
+    <rule context="ram:URIID[@schemeID = '0210'] | ram:ID[@schemeID = '0210'] | ram:GlobalID[@schemeID = '0210']">
+      <assert id="PEPPOL-COMMON-R045" test="u:checkCF(normalize-space())" flag="warning">Tax Code (Codice Fiscale) must be stated in the correct format</assert>
+    </rule>
+    <rule context="ram:URIID[@schemeID = '9907']">
+      <assert id="PEPPOL-COMMON-R046" test="u:checkCF(normalize-space())" flag="warning">Tax Code (Codice Fiscale) must be stated in the correct format</assert>
+    </rule>
+    <rule context="ram:URIID[@schemeID = '0211'] | ram:ID[@schemeID = '0211'] | ram:GlobalID[@schemeID = '0211']">
+      <assert id="PEPPOL-COMMON-R047" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
+    </rule>
+    <rule context="ram:URIID[@schemeID = '9906']">
+      <assert id="PEPPOL-COMMON-R048" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
+    </rule>	
   </pattern>
   <!-- National rules -->
   <pattern>
@@ -300,6 +422,67 @@ This schematron uses business terms defined the CEN/EN16931-1 and is reproduced 
     </rule>
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction[ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID = 'SE'] and ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty[ram:PostalTradeAddress/ram:CountryID = 'SE']]/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[normalize-space(ram:TypeCode) = '31']">
       <assert id="SE-R-012" test="false()" flag="warning">For domestic transactions between Swedish trading partners, credit transfer should be indicated by PaymentMeansCode=”30”</assert>
+    </rule>
+  </pattern>
+  <!-- NETHERLANDS -->
+  <pattern>
+  <let name="supplierCountryIsNL" value="(upper-case(normalize-space(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:CountryID)) = 'NL')" />
+  <let name="customerCountryIsNL" value="(upper-case(normalize-space(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:CountryID)) = 'NL')" />
+  <let name="taxRepresentativeCountryIsNL" value="(upper-case(normalize-space(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:PostalTradeAddress/ram:CountryID)) = 'NL')" />
+
+  <rule context="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument[some $code in tokenize('81 83 381 396 532', '\s') satisfies normalize-space(ram:TypeCode) = $code][$supplierCountryIsNL]">
+    <!-- Original rule in NLCIUS: BR-NL-9 -->
+    <assert id="NL-R-001" test="//ram:ApplicableHeaderTradeSettlement/ram:InvoiceReferencedDocument/ram:IssuerAssignedID" flag="fatal">[NL-R-001] For suppliers in the Netherlands, if the document is a creditnote, the document MUST contain an invoice reference (ram:ApplicableHeaderTradeSettlement/ram:InvoiceReferencedDocument/ram:IssuerAssignedID)</assert>
+  </rule>
+
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress[$supplierCountryIsNL]">
+      <!-- Original rule in NLCIUS: BR-NL-3 -->
+      <assert id="NL-R-002" test="ram:LineOne and ram:CityName and ram:PostcodeCode" flag="fatal">[NL-R-002] For suppliers in the Netherlands the supplier's address (ram:SellerTradeParty/ram:PostalTradeAddress) MUST contain street name (ram:LineOne), city (ram:CityName) and post code (ram:PostcodeCode)</assert>
+    </rule>
+
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID[$supplierCountryIsNL]">
+      <!-- Original rule in NLCIUS: BR-NL-1 -->
+      <assert id="NL-R-003" test="(contains(concat(' ', string-join(@schemeID, ' '), ' '), ' 0106 ') or contains(concat(' ', string-join(@schemeID, ' '), ' '), ' 0190 ')) and (normalize-space(.) != '')" flag="fatal">[NL-R-003] For suppliers in the Netherlands, the legal entity identifier MUST be either a KVK or OIN number (schemeID 0106 or 0190)</assert>
+    </rule>
+
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress[$supplierCountryIsNL and $customerCountryIsNL]">
+      <!-- Original rule in NLCIUS: BR-NL-4 -->
+      <assert id="NL-R-004" test="ram:LineOne and ram:CityName and ram:PostcodeCode" flag="fatal">[NL-R-004] For suppliers in the Netherlands, if the customer is in the Netherlands, the customer address (ram:BuyerTradeParty/ram:PostalTradeAddress) MUST contain street name (ram:LineOne), city (ram:CityName) and post code (ram:PostcodeCode)</assert>
+    </rule>
+
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:ID[$supplierCountryIsNL and $customerCountryIsNL]">
+      <!-- Original rule in NLCIUS: BR-NL-10 -->
+      <assert id="NL-R-005" test="
+          (contains(concat(' ', string-join(@schemeID, ' '), ' '), ' 0106 ')
+           or
+           contains(concat(' ', string-join(@schemeID, ' '), ' '), ' 0190 ')
+          ) and (normalize-space(.) != '')
+      " flag="fatal">[NL-R-005] For suppliers in the Netherlands, if the customer is in the Netherlands, the customer's legal entity identifier MUST be either a KVK or OIN number (schemeID 0106 or 0190)</assert>
+    </rule>
+
+    <rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTaxRepresentativeTradeParty/ram:PostalTradeAddress[$supplierCountryIsNL and $taxRepresentativeCountryIsNL]">
+      <!-- Original rule in NLCIUS: BR-NL-5 -->
+      <assert id="NL-R-006" test="ram:LineOne and ram:CityName and ram:PostcodeCode" flag="fatal">[NL-R-006] For suppliers in the Netherlands, if the fiscal representative is in the Netherlands, the representative's address (ram:SellerTaxRepresentativeTradeParty/ram:PostalTradeAddress) MUST contain street name (ram:LineOne), city (ram:CityName) and post code (ram:PostcodeCode)</assert>
+    </rule>
+
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation[$supplierCountryIsNL]">
+      <!-- Original rule in NLCIUS: BR-NL-11 -->
+      <assert id="NL-R-007" test="xs:decimal(ram:DuePayableAmount) &lt;= 0.0 or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans)" flag="fatal">[NL-R-007] For suppliers in the Netherlands, the supplier MUST provide a means of payment (ram:SpecifiedTradeSettlementPaymentMeans) if the payment is from customer to supplier</assert>
+    </rule>
+
+    <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[$supplierCountryIsNL]">
+      <!-- Original rule in NLCIUS: BR-NL-12 -->
+      <assert id="NL-R-008" test="normalize-space(ram:TypeCode) = '30' or
+                normalize-space(ram:TypeCode) = '48' or
+                normalize-space(ram:TypeCode) = '49' or
+                normalize-space(ram:TypeCode) = '57' or
+                normalize-space(ram:TypeCode) = '58' or
+                normalize-space(ram:TypeCode) = '59'" flag="fatal">[NL-R-008] For suppliers in the Netherlands, the payment means code (ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode) MUST be one of 30, 48, 49, 57, 58 or 59</assert>
+    </rule>
+
+    <rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem/ram:SpecifiedLineTradeAgreement/ram:BuyerOrderReferencedDocument/ram:LineID[$supplierCountryIsNL]">
+      <!-- Original rule in NLCIUS: BR-NL-13 -->
+      <assert id="NL-R-009" test="exists(/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerOrderReferencedDocument/ram:IssuerAssignedID)" flag="fatal">[NL-R-009] For suppliers in the Netherlands, if an order line reference (ram:BuyerOrderReferencedDocument/ram:LineID) is used, there must be an order reference on the document level (rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerOrderReferencedDocument/ram:IssuerAssignedID)</assert>
     </rule>
   </pattern>
   <!-- Restricted code lists and formatting -->

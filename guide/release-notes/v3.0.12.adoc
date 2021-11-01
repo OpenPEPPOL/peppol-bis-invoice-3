@@ -1,0 +1,31 @@
+= Version 3.0.12
+[horizontal]
+Release date:: 2021-11-15
+
+== Changes to BIS document
+
+* Corrected references to the business term numbers in chapter 9.4 Calculation of VAT. [POACC-439]
+
+* Use of the business term names rather than the UBL element names in the chapter 12.1 Profiles and messages. [POACC-439]
+
+* Editorial change in chapter 6.2.3 Percentage (use of period sign instead of comma). [POACC-439]
+
+* Incorrect rule reference in the syntax reports (Invoice and CreditNote) for rule BR-CL-11 (no change to the schematron rule, only editorial in the documentation). [POACC-425]
+
+* Updated example to a more appropriate value for LegalEntity/CompanyID in the syntax reports. [POACC-432]
+
+* Description of cac-CardAccount/cbc-NetworkID/ syntax required element changed to prevent incorrect interpretation that this is a business term [POACC-429]
+
+
+== Changes to code lists and validation artefacts
+
+* Added rule (severity warning) for validation of format for Belgian organisation numbers (ICD:0208). Rule is planned to be changed to severity fatal in 2022 spring release. [POACC-408]
+
+* Added rule (severity warning) for validation of format for Italian identifiers (ICD:0201, 0210, 0211 and EAS 9906 and 9907). Rules are planned to be changed to severity fatal in 2022 spring release. [POACC-423]
+
+* Added UOM codes to align with CEF listing of codes. [POACC-427]
+
+* Editorial correction to rule IS-R-006 icelandic rule message.
+
+* Changes to TC434 rules as link:https://github.com/ConnectingEurope/eInvoicing-EN16931/releases/tag/validation-1.3.7[released here.]
+

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+  <assert>
+      <description>For suppliers in the Netherlands, if the document is a creditnote, the document MUST contain an invoice reference</description>
+    <scope>NL-R-001</scope>
+  </assert>
+  <test>
+    <assert>
+      <success>NL-R-001</success>
+    </assert>
+    <doc:CreditNote xmlns:doc="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:nl-cbc="urn:digi-inkoop:ubl:2.0:NL:1.6:UBL-NL-CommonBasicComponents-2" xmlns:seef="urn:www.energie-efactuur.nl:profile:invoice:ver1.0" xmlns:seef2="urn:www.energie-efactuur.nl:profile:invoice:ver2.0" xmlns:seef3="urn:www.energie-efactuur.nl:profile:invoice:ver3.0" xmlns:setu="urn:ns.setu.nl:setu:invoice:extension:v2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+      <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+      <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+      <cbc:ID>Invoice number</cbc:ID>
+      <cbc:IssueDate>2021-01-01</cbc:IssueDate>
+      <cbc:CreditNoteTypeCode>381</cbc:CreditNoteTypeCode>
+      <cbc:Note>This is an example note</cbc:Note>
+      <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+      <cbc:AccountingCost>Buyer accounting reference</cbc:AccountingCost>
+      <cbc:BuyerReference>Buyer reference for internal routing purposes</cbc:BuyerReference>
+      <cac:InvoicePeriod>
+        <cbc:StartDate>2020-10-01</cbc:StartDate>
+        <cbc:EndDate>2020-10-31</cbc:EndDate>
+      </cac:InvoicePeriod>
+      <cac:OrderReference>
+        <cbc:ID>This is a purchaseordernumber (inkoopordernummer)</cbc:ID>
+      </cac:OrderReference>
+      <cac:BillingReference>
+        <cac:InvoiceDocumentReference>
+          <cbc:ID>46656</cbc:ID>
+        </cac:InvoiceDocumentReference>
+      </cac:BillingReference>
+      <cac:AccountingSupplierParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">12345678</cbc:EndpointID>
+          <cac:PartyName>
+            <cbc:Name>Supplier Name</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress>
+            <cbc:StreetName>Supplier StreetName</cbc:StreetName>
+            <cbc:AdditionalStreetName>1</cbc:AdditionalStreetName>
+            <cbc:CityName>Supplier CityName</cbc:CityName>
+            <cbc:PostalZone>Supplier PostCode</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>NL123456789B01</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Supplier Name</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">12345678</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingSupplierParty>
+      <cac:AccountingCustomerParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">12345678</cbc:EndpointID>
+          <cac:PartyName>
+            <cbc:Name>Customer Name</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress>
+            <cbc:StreetName>Customer StreetName</cbc:StreetName>
+            <cbc:CityName>Customer CityName</cbc:CityName>
+            <cbc:PostalZone>Customer Postcode</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Customer Name</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">12345678</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingCustomerParty>
+      <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cbc:PaymentID>Payment ID</cbc:PaymentID>
+        <cac:PayeeFinancialAccount>
+          <cbc:ID>IBAN number</cbc:ID>
+        </cac:PayeeFinancialAccount>
+      </cac:PaymentMeans>
+      <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>1 cent charge</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="EUR">0.01</cbc:Amount>
+        <cac:TaxCategory>
+          <cbc:ID>Z</cbc:ID>
+          <cbc:Percent>0.0</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:AllowanceCharge>
+      <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">6.75</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">32.15</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">6.75</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.0</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">0.01</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>Z</cbc:ID>
+            <cbc:Percent>0.0</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+      </cac:TaxTotal>
+      <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">32.15</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">32.16</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">38.91</cbc:TaxInclusiveAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">0.01</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="EUR">38.91</cbc:PayableAmount>
+      </cac:LegalMonetaryTotal>
+      <cac:CreditNoteLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CreditedQuantity unitCode="C62">1.00</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">32.15</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Description>Long product / service description</cbc:Description>
+          <cbc:Name>Main product / service description</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.0</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">32.15</cbc:PriceAmount>
+          <cbc:BaseQuantity unitCode="C62">1.0</cbc:BaseQuantity>
+        </cac:Price>
+      </cac:CreditNoteLine>
+    </doc:CreditNote>
+  </test>
+  <test>
+    <assert>
+      <error>NL-R-001</error>
+    </assert>
+    <doc:CreditNote xmlns:doc="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:nl-cbc="urn:digi-inkoop:ubl:2.0:NL:1.6:UBL-NL-CommonBasicComponents-2" xmlns:seef="urn:www.energie-efactuur.nl:profile:invoice:ver1.0" xmlns:seef2="urn:www.energie-efactuur.nl:profile:invoice:ver2.0" xmlns:seef3="urn:www.energie-efactuur.nl:profile:invoice:ver3.0" xmlns:setu="urn:ns.setu.nl:setu:invoice:extension:v2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+      <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+      <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+      <cbc:ID>Invoice number</cbc:ID>
+      <cbc:IssueDate>2021-01-01</cbc:IssueDate>
+      <cbc:CreditNoteTypeCode>381</cbc:CreditNoteTypeCode>
+      <cbc:Note>This is an example note</cbc:Note>
+      <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+      <cbc:AccountingCost>Buyer accounting reference</cbc:AccountingCost>
+      <cbc:BuyerReference>Buyer reference for internal routing purposes</cbc:BuyerReference>
+      <cac:InvoicePeriod>
+        <cbc:StartDate>2020-10-01</cbc:StartDate>
+        <cbc:EndDate>2020-10-31</cbc:EndDate>
+      </cac:InvoicePeriod>
+      <cac:OrderReference>
+        <cbc:ID>This is a purchaseordernumber (inkoopordernummer)</cbc:ID>
+      </cac:OrderReference>
+      <cac:AccountingSupplierParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">12345678</cbc:EndpointID>
+          <cac:PartyName>
+            <cbc:Name>Supplier Name</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress>
+            <cbc:StreetName>Supplier StreetName</cbc:StreetName>
+            <cbc:AdditionalStreetName>1</cbc:AdditionalStreetName>
+            <cbc:CityName>Supplier CityName</cbc:CityName>
+            <cbc:PostalZone>Supplier PostCode</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>NL123456789B01</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Supplier Name</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">12345678</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingSupplierParty>
+      <cac:AccountingCustomerParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">12345678</cbc:EndpointID>
+          <cac:PartyName>
+            <cbc:Name>Customer Name</cbc:Name>
+          </cac:PartyName>
+          <cac:PostalAddress>
+            <cbc:StreetName>Customer StreetName</cbc:StreetName>
+            <cbc:CityName>Customer CityName</cbc:CityName>
+            <cbc:PostalZone>Customer Postcode</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Customer Name</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">12345678</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingCustomerParty>
+      <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cbc:PaymentID>Payment ID</cbc:PaymentID>
+        <cac:PayeeFinancialAccount>
+          <cbc:ID>IBAN number</cbc:ID>
+        </cac:PayeeFinancialAccount>
+      </cac:PaymentMeans>
+      <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>1 cent charge</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="EUR">0.01</cbc:Amount>
+        <cac:TaxCategory>
+          <cbc:ID>Z</cbc:ID>
+          <cbc:Percent>0.0</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:AllowanceCharge>
+      <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">6.75</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">32.15</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">6.75</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.0</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">0.01</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>Z</cbc:ID>
+            <cbc:Percent>0.0</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+      </cac:TaxTotal>
+      <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">32.15</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">32.16</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">38.91</cbc:TaxInclusiveAmount>
+        <cbc:ChargeTotalAmount currencyID="EUR">0.01</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="EUR">38.91</cbc:PayableAmount>
+      </cac:LegalMonetaryTotal>
+      <cac:CreditNoteLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CreditedQuantity unitCode="C62">1.00</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">32.15</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Description>Long product / service description</cbc:Description>
+          <cbc:Name>Main product / service description</cbc:Name>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21.0</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID schemeID="UN/ECE 5153">VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">32.15</cbc:PriceAmount>
+          <cbc:BaseQuantity unitCode="C62">1.0</cbc:BaseQuantity>
+        </cac:Price>
+      </cac:CreditNoteLine>
+    </doc:CreditNote>
+  </test>
+</testSet>
