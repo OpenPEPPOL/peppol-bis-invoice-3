@@ -1,10 +1,6 @@
-= Version 3.0.12 - Hotfix
+= Version 3.0.13 - Hotfix
 [horizontal]
-Release date:: 2021-11-23
-
-== Changes to BIS document
-
-== Changes to syntax
+Release date:: 2021-11-26
 
 == Changes to code lists and validation artefacts
 
