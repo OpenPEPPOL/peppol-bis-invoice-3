@@ -14,15 +14,12 @@ Release date:: 2019-11-01
 
 == Changes to code lists and validation artefacts
 
-* Update in link:/poacc/billing/3.0/codelist/eas/[EAS] code list, addition of codes: 0130 and 0204, and deprecating of code 9902, 9904, 9905, 9917 and 9921.
+* Update in link:/poacc/billing/3.0/codelist/eas/[EAS] code list, addition of codes: 0130 and 204, and deprecating of code 9902, 9904, 9905, 9917 and 9921.
 * Update in link:/poacc/billing/3.0/codelist/ICD/[ICD] code list, addition of codes: 0203 and 0204. Description of code 0190 corrected as specified in ICD code certificate.
 * Update in link:/poacc/billing/3.0/codelist/vatex/[VATEX] code list, addition of codes: vatex-eu-132, vatex-eu-143, vatex-eu-148, vatex-eu-151
 * Rule PEPPOL-EN16931-CL005 "Country code MUST be according to ISO 3166 Alpha-2" deleted since it is an unneccessary duplication of [BR-CL-14]-"Country codes in an invoice MUST be coded using ISO code list 3166-1"
 * Rule PEPPOL-EN16931-R008 has been updated and PEPPOL-EN16931-R009 has been removed.
-* Error message for rules rephrased to be more instructive. Rules themselves are unchanged.
-** PEPPOL-COMMON-R040: "Invalid GLN number provided." -> "GLN must have a valid format according to GS1 rules."
-** PEPPOL-COMMON-R041: "Invalid Norwegian organization number provided." -> "Norwegian organization number MUST be stated in the correct format."
-** PEPPOL-EN16931-CL001: "Invalid mime code." -> "Mime code must be according to subset of IANA code list."
+* Error message for rules PEPPOL-EN16931-CL001, PEPPOL-COMMON-R040 and PEPPOL-COMMON-R041 rephrased to be more instructive. Rules themselves are unchanged.
 * An error in a common structural validation of GLN numbers, rule PEPPOL-COMMON-R040, corrected.
 * Changed implementation of empty element-test. Rule updated so that it also fails on whitespace only content.
 * Country rules for Denmark updated.

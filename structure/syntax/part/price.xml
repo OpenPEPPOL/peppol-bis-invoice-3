@@ -18,7 +18,6 @@
             <Reference type="BUSINESS_TERM">BT-146</Reference>
             <Reference type="RULE">BR-26</Reference>
             <Reference type="RULE">BR-27</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R046</Reference>
             
             
@@ -41,7 +40,6 @@
             <DataType>Quantity</DataType>
             <Reference type="BUSINESS_TERM">BT-149</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R121</Reference>
-            <Reference type="RULE">BR-CL-23</Reference>
             
             
             
@@ -52,6 +50,7 @@
                     The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
                 </Description>
                 <Reference type="CODE_LIST">UNECERec20</Reference>
+                <Reference type="CODE_LIST">UNECERec21</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R130</Reference>
                 <Value type="EXAMPLE">C62</Value>
             </Attribute>
@@ -82,7 +81,6 @@
                     <Description>Mandatory attribute. Use BT-5</Description>
                     <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-R051</Reference> 
-                    <Reference type="RULE">BR-CL-03</Reference>
                     <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
@@ -97,7 +95,6 @@
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-148</Reference>
                 <Reference type="RULE">BR-28</Reference>
-                <Reference type="RULE">BR-CL-03</Reference>
                 
                 <Attribute>
                     <Term>currencyID</Term>

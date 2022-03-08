@@ -10,7 +10,7 @@
     </Code>
     <Code>
         <Id>0007</Id>
-        <Name>Organisationsnummer (Swedish legal entities)</Name>
+        <Name>Organisationsnumme</Name>
     </Code>
     <Code>
         <Id>0009</Id>
@@ -90,6 +90,7 @@
         <Id>0196</Id>
         <Name>Kennitala - Iceland legal id for individuals and legal entities</Name>
     </Code>
+    
     <Code>
         <Id>0198</Id>
         <Name>ERSTORG</Name>
@@ -114,31 +115,7 @@
         <Id>0204</Id>
         <Name>Leitweg-ID</Name>
     </Code>
-     <Code>
-        <Id>0208</Id>
-        <Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
-    </Code>
-     <Code>
-        <Id>0209</Id>
-        <Name>GS1 identification keys</Name>
-    </Code>
-     <Code>
-        <Id>0210</Id>
-        <Name>CODICE FISCALE</Name>
-    </Code>
-     <Code>
-        <Id>0211</Id>
-        <Name>PARTITA IVA</Name>
-    </Code>
-     <Code>
-        <Id>0212</Id>
-        <Name>Finnish Organization Identifier</Name>
-    </Code>
-     <Code>
-        <Id>0213</Id>
-        <Name>Finnish Organization Value Add Tax Identifier</Name>
-    </Code>
-	<Code>
+    <Code>
         <Id>9901</Id>
         <Name>Danish Ministry of the Interior and Health</Name>
     </Code>
@@ -311,8 +288,16 @@
         <Name>Swedish VAT number</Name>
     </Code>
     <Code>
+        <Id>9956</Id>
+        <Name>Belgian Crossroad Bank of Enterprises </Name>
+    </Code>
+    <Code>
         <Id>9957</Id>
         <Name>French VAT number</Name>
+    </Code>
+    <Code>
+        <Id>9958</Id>
+        <Name>German Leitweg ID</Name>
     </Code>
 
 </CodeList>

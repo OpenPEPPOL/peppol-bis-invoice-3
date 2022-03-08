@@ -65,7 +65,6 @@
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-157</Reference>
                 <Reference type="RULE">BR-64</Reference>
-                <Reference type="RULE">BR-CL-21</Reference>
                 
                 <Attribute>
                     <Term>schemeID</Term>
@@ -147,7 +146,6 @@
                 <Reference type="BUSINESS_TERM">BT-151</Reference>
                 <Reference type="RULE">BR-CO-04</Reference>
                 <Reference type="RULE">BR-O-12</Reference>
-                <Reference type="RULE">BR-CL-18</Reference>
                 <Reference type="CODE_LIST">UNCL5305</Reference>
                 <Value type="EXAMPLE">S</Value>
             </Element>

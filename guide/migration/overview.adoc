@@ -1,49 +1,50 @@
 
 = Detailed migration plan
 
-This section describes how and when a Peppol BIS Billing 3.0 will be available for use.
+This section describes how and when updated PEPPOL Business Interoperability Specifications (BIS) will be available for use.
 
 
 A - Phase In::
-* “Phase-in” is defined as the start date for the optional use of Peppol BIS Billing 3.0 corresponding to the publication date when it becomes available for download at www.peppol.eu.
+* “Phase in” is defined as the start date for the optional use of PEPPOL BIS Billing “version 3”  corresponding to the publication date when the new PEPPOL BIS specifications become  available for download at www.peppol.eu.
 * The date is set to *{phase-in}*
 
 B - Transition::
-* The Transition is defined as the period during which the Peppol BIS 5a and 4a (version 2.3) change status from mandatory to optional.
-* The Peppol BIS Billing 3.0, becomes mandatory, to align with the enforcement of the eInvoicing Directive.
+* The Transition is defined as the period during which the current PEPPOL BIS 4a and 5a (version 2)  changes status from mandatory to Optional.
+* The new PEPPOL BIS, version 3, becomes  mandatory, to align with the enforcement of the new invoicing directive.
 * The start date for the transition period is set to *{transition}*
 
 c - Phase­out::
-* After the phase-out, the Peppol BIS 5a and 4a (version 2.3) will no longer be supported or maintained by Peppol.
-* Phase-out date of Peppol BIS 5a and 4a (version 2.3) is set to *{phase-out}*.
+* After the phase‐out, the old PEPPOL BIS 4a and 5a (version 2) are not available and the document id’s are removed from the Policy for Identifiers document.
+* Phase‐out date of PEPPOL BIS 4a and 5a (version 2) are set to *{phase-out}*.
 
-The dates in the table below are start dates of the different phases. As an example, the date shown for A - Phase in, {phase-in} is the first date where the Peppol BIS Billing 3.0 is available as an optional element.
+
+The dates in the table below are start dates of the different phases. As an example, the date shown for A - Phase in, {phase-in} is the first date where the updated BIS is available as an optional element.
 
 .Migration overview
 [cols="^3h,^3,^3,^3"]
 |====
 
 .2+<.>|Subject to migration
-h|A - Phase-in
+h|A - Phase in
 h|B - Transition
-h|C - Phase-out
+h|C - Phase out
 
 
 h| {phase-in}
 h| {transition}
 h| {phase-out}
 
-| PEPPOL BIS Billing 5a, version 2.3
+| PEPPOL BIS Billing 5a, version 2
 | Mandatory
 | Optional
 | Discontinued
 
-| PEPPOL BIS Invoice 4a, version 2.3
+| PEPPOL BIS Invoice 4a, version 2
 | Mandatory
 | Optional
 | Discontinued
 
-| PEPPOL BIS Billing, version 3.0
+| PEPPOL BIS Billing, version 3
 | Optional
 | Mandatory
 | Mandatory

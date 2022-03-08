@@ -17,7 +17,6 @@
             <Reference type="RULE">BR-CO-10</Reference>
             <Reference type="RULE">BR-DEC-09</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
             
             
             <Attribute>
@@ -42,7 +41,6 @@
             <Reference type="RULE">BR-CO-13</Reference>
             <Reference type="RULE">BR-DEC-12</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -64,7 +62,6 @@
             <Reference type="RULE">BR-CO-15</Reference>
             <Reference type="RULE">BR-DEC-14</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -85,7 +82,6 @@
             <Reference type="RULE">BR-CO-11</Reference>
             <Reference type="RULE">BR-DEC-10</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -106,7 +102,6 @@
             <Reference type="RULE">BR-CO-12</Reference>
             <Reference type="RULE">BR-DEC-11</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -125,7 +120,6 @@
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-113</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
             
             <Attribute>
                 <Term>currencyID</Term>
@@ -147,7 +141,6 @@
             <Reference type="BUSINESS_TERM">BT-114</Reference>
             <Reference type="RULE">BR-DEC-17</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
@@ -169,7 +162,6 @@
             <Reference type="RULE">BR-CO-16</Reference>
             <Reference type="RULE">BR-DEC-18</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
             
             <Attribute>
                 <Term>currencyID</Term>

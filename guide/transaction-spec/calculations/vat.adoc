@@ -5,8 +5,8 @@ One VAT Breakdown shall be provided for each distinct combination of VAT categor
 
 For each distinct combination of VAT category code and VAT rate the calculations are:
 ====
-stem:["VAT category taxable amount (BT-116)" = sum("Invoice line net amounts (BT-131)")] +
-stem:[+ "Document level charge amount (BT-99)" - "Document level allowance amount (BT-92)"]
+stem:["VAT category taxable amount (BT-116)" = sum("Invoice line net amounts (BT-113)")] +
+stem:[+ "Document level charge amount (BT-99)" - "Document level allowance amount (BT-93)"]
 ====
 
 ====

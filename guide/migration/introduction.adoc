@@ -6,25 +6,25 @@
 
 This migration plan is based on the following principles:
 
-. To allow a smooth and as friction free transition as possible, using two versions of the element subject to migration to enable new as well as existing end‐users to prepare for an updated element must be allowed.
+. To allow a smooth and as friction free transition as possible, using two versions of the element subject to migration for new as well as existing end‐users to prepare for an updated element must be allowed.
 
-. To ensure non-disrupted operations and full interoperability of the messages exchanged in the Peppol network, the period during which two parallel versions are allowed should be as short as possible.
+. To ensure non‐disrupted operations and full interoperability of the messages exchanged in the PEPPOL network, the period during which two parallel versions are allowed should be as short as possible.
 
-. Any changes affecting the current (mandatory) Peppol element should be notified, communicated and agreed upon in the relevant coordinating community (CC) well in advance.
+. Any changes affecting the current (mandatory) PEPPOL element should be notified, communicated and agreed upon in the relevant coordinating community (CC) well in advance.
 
-. The migration is conducted in three steps at three different points in time, marked as “A”, “B” and “C” and defined as follows:
+. The migration is conducted in three steps at three different points in time,  marked as “A”, “B” and “C” and defined as follows:
 
-A – Phase-in:: date at which the Peppol BIS Billing 3.0 is introduced as an optional element. At this date it should be possible to download any specification for this Peppol BIS. Peppol BIS Billing 3.0 is optional at this point in time.
+A – Phase in:: date at which the updated BIS is introduced as an optional element. At this date it should be able to download any specification for the updated PEPPOL BIS. The updated BIS is optional at this point in time.
 
-B – Transition:: the date at which the Peppol BIS Billing 3.0 becomes the mandatory element. The previously mandatory Peppol BIS Billing 5a (version 2.3) and Peppol BIS Billing 4a (version 2.3) become optional.
+B – Transition:: the date at which the updated BIS replaces the current BIS as the mandatory element. The previously mandatory BIS becomes optional.
 
-C – Phase out:: the date after which the Peppol BIS Billing 5a (version 2.3) which was mandatory at “A”, and became optional at “B”, is no longer supported or maintained by Peppol
+C – Phase out:: the date after which the BIS that was mandatory at “A”, and became optional at “B”, is no longer supported in the PEPPOL network
 
 ****
 [NOTE]
 ====
-* The migration rules only apply to an *end user’s* individual Peppol BIS registered in the SMP.
-* The migration rules only apply for a new Peppol BIS that updates or replaces an existing one.
-* All Peppol participants shall adhere to the Migration Policy.
+* The migration rules only apply to an *end user’s* individual PEPPOL BIS  registered in the SMP.
+* The migration rules only applies for an updated PEPPOL BIS, i.e. when an existing  and current PEPPOL BIS version exists.
+* All PEPPOL participants need to adhere to the Migration Policy.
 ====
 ****

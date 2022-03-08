@@ -42,24 +42,6 @@
 	</test>
 	<test>
 		<assert>
-			<error>PEPPOL-EN16931-R044</error>
-		</assert>
-		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-
-			<cac:InvoiceLine>
-				<cac:Price>
-					<cac:AllowanceCharge>
-						<cbc:ChargeIndicator>0</cbc:ChargeIndicator>
-					</cac:AllowanceCharge>
-				</cac:Price>
-			</cac:InvoiceLine>
-
-		</Invoice>
-	</test>
-	<test>
-		<assert>
 			<success>PEPPOL-EN16931-R044</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"

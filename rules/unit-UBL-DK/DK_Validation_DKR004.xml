@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
 	<assert>
-		<description>When specifying non-VAT Taxes, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in AllowanceChargeReason</description>
+		<description>When specifying non-VAT Taxes for Danish customers, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in 'AllowanceChargeReason'</description>
 		<scope>DK-R-004</scope>
 	</assert>
-	
+
 	<test>
 		<assert>
 			<success>DK-R-004</success>
@@ -27,7 +27,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -45,7 +45,7 @@
 			</cac:AllowanceCharge>
 		</Invoice>
 	</test>
-	
+
 	<test>
 		<assert>
 			<success>DK-R-004</success>
@@ -68,7 +68,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -86,7 +86,7 @@
 			</cac:AllowanceCharge>
 		</Invoice>
 	</test>
-    
+
     <test>
 		<assert>
 			<success>DK-R-004</success>
@@ -109,7 +109,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -127,7 +127,7 @@
 			</cac:AllowanceCharge>
 		</Invoice>
 	</test>
-    
+
     <test>
 		<assert>
 			<success>DK-R-004</success>
@@ -150,7 +150,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -191,7 +191,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -232,7 +232,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -273,7 +273,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>

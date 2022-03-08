@@ -8,7 +8,6 @@
                 invoice issuance.
             </Description>
             <Reference type="BUSINESS_TERM">BG-18</Reference>
-             <Reference type="RULE">BR-66</Reference>
             
             <Element>
                 <Term>cbc:PrimaryAccountNumberID</Term>
@@ -23,9 +22,9 @@
             
             <Element>
                 <Term>cbc:NetworkID</Term>
-                <Description>Syntax required element not related to a business term.</Description>
+                <Description>Card Network identifier, such as VISA, American Express, Master Card.</Description>
                 <DataType>Text</DataType>
-                <Value type="EXAMPLE">NA</Value>
+                <Value type="EXAMPLE">VISA</Value>
             </Element>
             
             <Element cardinality="0..1">

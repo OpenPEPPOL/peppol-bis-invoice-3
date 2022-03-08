@@ -1,9 +1,9 @@
 
 = Profiles and messages [[profiles]]
 
-All messages contains Business process type (BT-23, ProfileID in UBL) and Specification identifier (BT-24, CustomizationID in UBL). Business process type identifies what business process a given message is part of, and Specification identifier identifies the kind of message and the rules applied.
+All messages contains ProfileID and CustomizationID. ProfileID identifies what business process a given message is part of, and CustomizationID identifies the kind of message and the rules applied.
 
-Profiles are connected to one business process, and may contain multiple document types. Valid document instances shall contain corresponding Business process type and Specification identifier.
+Profiles are connected to one business process, and may contain multiple document types. Valid document instances shall contain corresponding ProfileID and CustomizationID.
 
 
-IMPORTANT: Specification identifier is a string without spaces. The list below contains spaces in Specification identifier to make them easier to read. *Make sure to remove any spaces before use.*
+IMPORTANT: CustomizationID is a string without spaces. The list below contains spaces in CustomizationID to make them easier to read. *Make sure to remove any spaces before use.*
