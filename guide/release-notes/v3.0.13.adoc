@@ -1,0 +1,13 @@
+= Version 3.0.13
+[horizontal]
+Release date:: 2022-05-15
+
+== Changes to BIS document
+
+
+
+== Changes to code lists and validation artefacts
+
+* Added rule to check format for Swedish organisation numbers (ICD/EAS 0007) with severity warning, will be changed to fatal in future release.
+
+* An error has been corrected which is causing some XSL-transformers/tools to raise errors when loading/using the schematron-files.
