@@ -1,7 +1,0 @@
-= Version 3.0.13 - Hotfix
-[horizontal]
-Release date:: 2021-11-26
-
-== Changes to code lists and validation artefacts
-
-* An error has been corrected which is causing some XSL-transformers/tools to raise errors when loading/using the schematron-files. This hotfix-release addresses the problem and should be implemented by anyone experiencing problems when generating or using XSL from the schematron-files
