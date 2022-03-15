@@ -2,7 +2,7 @@
 <!--
 This schematron uses business terms defined the CEN/EN16931-1 and is reproduced with permission from CEN. CEN bears no liability from the use of the content and implementation of this schematron and gives no warranties expressed or implied for any purpose.
 
-Last update: 2021 November release.
+Last update: 2021 November release 3.0.13 Hotfix.
  -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils" schemaVersion="iso" queryBinding="xslt2">
   <title>Rules for PEPPOL BIS 3.0 Billing</title>
@@ -92,7 +92,7 @@ Last update: 2021 November release.
 			)
 			else
 			(
-				if(($arg castable as xsd:integer)) then true() else false()
+				if(($arg castable as xs:integer)) then true() else false()
 		
 			)
 		)
@@ -107,11 +107,11 @@ Last update: 2021 November release.
     <variable name="allowed-characters">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</variable>
     <sequence select="
 				if ( 	(string-length(translate(substring($arg,1,6), $allowed-characters, '')) = 0) and  
-						(substring($arg,7,2) castable as xsd:integer) and 
+						(substring($arg,7,2) castable as xs:integer) and 
 						(string-length(translate(substring($arg,9,1), $allowed-characters, '')) = 0) and 
-						(substring($arg,10,2) castable as xsd:integer) and  
-						(substring($arg,12,3) castable as xsd:string) and 
-						(substring($arg,15,1) castable as xsd:integer) and  
+						(substring($arg,10,2) castable as xs:integer) and  
+						(substring($arg,12,3) castable as xs:string) and 
+						(substring($arg,15,1) castable as xs:integer) and  
 						(string-length(translate(substring($arg,16,1), $allowed-characters, '')) = 0)
 					) 
 				then true()
@@ -147,14 +147,14 @@ Last update: 2021 November release.
   <function name="u:checkPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string?"/>
     <sequence select="
-				if (not($arg castable as xsd:integer)) 
+				if (not($arg castable as xs:integer)) 
 					then 1
 					else ( u:addPIVA($arg,xs:integer(0)) mod 10 )"/>
   </function>
   <function name="u:addPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string"/>
     <param name="pari" as="xs:integer"/>
-    <variable name="tappo" select="if (not($arg castable as xsd:integer)) then 0 else 1"/>
+    <variable name="tappo" select="if (not($arg castable as xs:integer)) then 0 else 1"/>
     <variable name="mapper" select="if ($tappo = 0) then 0 else 
 																		( if ($pari = 1) 
 																			then ( xs:integer(substring('0246813579', ( xs:integer(substring($arg,1,1)) +1 ) ,1)) ) 
