@@ -1,7 +1,7 @@
 [[principles]]
 = Principles and prerequisites
 
-This chapter describes the principles and assumptions that underlie the use of PEPPOL Invoice and Credit Note. It is
+This chapter describes the principles and assumptions that underlie the use of Peppol Invoice and Credit Note. It is
 based on {EN16931} and its corresponding set of documents.
 
 This BIS will identify, explain and justify the restrictions made for this {CIUS}.

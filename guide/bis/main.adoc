@@ -3,7 +3,7 @@ include::settings.adoc[]
 = {doctitle}
 {name-op-en}
 v{version}
-:description: The PEPPOL Business Interoperablity Specification, “BIS” from here on after, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the PEPPOL specifications.
+:description: The Peppol Business Interoperablity Specification, “BIS” from here on after, has been developed by the OpenPeppol AISBL Post Award Coordinating Community and is published as part of the Peppol specifications.
 :doctype: book
 :icons: font
 :stem:

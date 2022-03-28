@@ -3,7 +3,7 @@
 
 Companies audit themselves as means of internal control or they may be audited by external parties as part of a legal obligation. Accounting is a regular, ongoing process whereas an audit is a separate review process to ensure that the accounting has been carried out correctly. The auditing process places certain information requirements on an invoice. These requirements are mainly related to enable verification of authenticity and integrity of the accounting transaction.
 
-Invoices, conformant to this PEPPOL BIS support the auditing process by providing sufficient information for:
+Invoices, conformant to this Peppol BIS support the auditing process by providing sufficient information for:
 
 * identification of the relevant Buyer and Seller
 * identification of the products and services traded, including description, value and quantity

@@ -1,5 +1,5 @@
-= Release notes for PEPPOL BIS Billing v3
-openPEPPOL AISBL <http://www.peppol.eu/>
+= Release notes for Peppol BIS Billing v3
+openPeppol AISBL <http://www.peppol.eu/>
 :icons: font
 :source-highlighter: coderay
 :toc: left

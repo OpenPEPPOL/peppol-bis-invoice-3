@@ -1,11 +1,11 @@
 [[peppol_rules]]
-= PEPPOL transaction business rules
+= Peppol transaction business rules
 
 The following rules have been defined by {openpeppol} in addition to the rules adopted from {EN16931}.
 These rules apply in *all* implementations that follow this {peppol} BIS.
 
 
-.PEPPOL transaction business rules
+.Peppol transaction business rules
 [cols="1,4", options="header"]
 |====
 |Rule
