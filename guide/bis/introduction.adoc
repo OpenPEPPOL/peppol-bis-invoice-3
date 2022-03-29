@@ -15,9 +15,9 @@ This Peppol Business Interoperability Specification (Peppol BIS) document is a C
 
 The copyright of CEN/EN 16931:2107 is owned by CEN and its members - the European National Standards Bodies. A copy of CEN/EN 16931-1:2017 may be obtained free of charge from any CEN member.
 
-OpenPEPPOL AISBL holds the copyright of this Peppol BIS, developed and published subject to the conditions of the agreement between the European Commission and CEN allowing derivate works to be developed and distributed with no additional licensing requirements. CEN and the National  Standards Bodies bears no liability from the content and implementation of this Peppol BIS.
+OpenPeppol AISBL holds the copyright of this Peppol BIS, developed and published subject to the conditions of the agreement between the European Commission and CEN allowing derivate works to be developed and distributed with no additional licensing requirements. CEN and the National  Standards Bodies bears no liability from the content and implementation of this Peppol BIS.
 
-This Peppol BIS document may not be modified, re-distribute, sold or repackaged in any other way without the prior consent of OpenPEPPOL AISBL.
+This Peppol BIS document may not be modified, re-distribute, sold or repackaged in any other way without the prior consent of OpenPeppol AISBL.
 ****
 
 == Audience
