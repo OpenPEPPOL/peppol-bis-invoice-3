@@ -162,6 +162,22 @@ Last update: 2021 November release 3.0.13 Hotfix.
 																		)"/>
     <sequence select="if ($tappo = 0) then $mapper else ( xs:integer($mapper) + u:addPIVA(substring(xs:string($arg),2), (if($pari=0) then 1 else 0) ) )"/>
   </function>
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:abn" as="xs:boolean">
+    <param name="val"/>
+    <value-of select="(
+((string-to-codepoints(substring($val,1,1)) - 49) * 10) +
+((string-to-codepoints(substring($val,2,1)) - 48) * 1) +
+((string-to-codepoints(substring($val,3,1)) - 48) * 3) +
+((string-to-codepoints(substring($val,4,1)) - 48) * 5) +
+((string-to-codepoints(substring($val,5,1)) - 48) * 7) +
+((string-to-codepoints(substring($val,6,1)) - 48) * 9) +
+((string-to-codepoints(substring($val,7,1)) - 48) * 11) +
+((string-to-codepoints(substring($val,8,1)) - 48) * 13) +
+((string-to-codepoints(substring($val,9,1)) - 48) * 15) +
+((string-to-codepoints(substring($val,10,1)) - 48) * 17) +
+((string-to-codepoints(substring($val,11,1)) - 48) * 19)) mod 89 = 0
+"/>
+  </function>
   <!-- Empty elements -->
   <pattern>
     <rule context="//*[not(*) and not(normalize-space())]">
@@ -327,6 +343,9 @@ Last update: 2021 November release 3.0.13 Hotfix.
     <rule context="cbc:EndpointID[@schemeID = '0007'] | cac:PartyIdentification/cbc:ID[@schemeID = '0007'] | cbc:CompanyID[@schemeID = '0007']">
       <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="warning">Swedish organization number MUST be stated in the correct format.</assert>
     </rule>    
+    <rule context="cbc:EndpointID[@schemeID = '0151'] | cac:PartyIdentification/cbc:ID[@schemeID = '0151'] | cbc:CompanyID[@schemeID = '0151']">
+      <assert id="PEPPOL-COMMON-R050" test="u:abn(normalize-space())" flag="warning">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
+    </rule>   	
   </pattern>
   <!-- National rules -->
   <pattern>
