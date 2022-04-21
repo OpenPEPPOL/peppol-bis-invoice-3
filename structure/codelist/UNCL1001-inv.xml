@@ -8,7 +8,12 @@
     <Subset>openPEPPOL</Subset>
 
    
- 
+     <Code>
+        <Id>71</Id>
+        <Name>Request for payment</Name>
+        <Description>Document/message issued by a creditor to a debtor to request payment of one or more invoices past due.</Description>
+    </Code>
+
     <Code>
         <Id>80</Id>
         <Name>Debit note related to goods or services</Name>
@@ -30,12 +35,34 @@
     <Code>
         <Id>84</Id>
         <Name>Debit note related to financial adjustments</Name>
-        <Description>Document/message for providing debit information related
-            to financial adjustments to the relevant party.
+        <Description>Document/message for providing debit information related to financial adjustments to the relevant party.
         </Description>
     </Code>
  
-   
+    <Code>
+        <Id>102</Id>
+        <Name>Tax notification</Name>
+        <Description>Used to specify that the message is a tax notification.</Description>
+    </Code>
+    
+    <Code>
+        <Id>218</Id>
+        <Name>Final payment request based on completion of work</Name>
+        <Description>The final payment request of a series of payment requests submitted upon completion of all the work.</Description>
+    </Code>
+
+    <Code>
+        <Id>219</Id>
+        <Name>Payment request for completed units</Name>
+        <Description></Description>
+    </Code>
+    
+    <Code>
+        <Id>331</Id>
+        <Name>Commercial invoice which includes a packing list</Name>
+        <Description>A request for payment for completed units.</Description>
+    </Code>
+    
     <Code>
         <Id>380</Id>
         <Name>Commercial invoice</Name>
@@ -45,6 +72,12 @@
         </Description>
     </Code>
   
+    <Code>
+        <Id>382</Id>
+        <Name>Commission note</Name>
+        <Description>Document/message in which a seller specifies the amount of commission, the percentage of the invoice amount, or some other basis for the calculation of the commission to which a sales agent is entitled.</Description>
+    </Code>
+    
     <Code>
         <Id>383</Id>
         <Name>Debit note</Name>
@@ -75,7 +108,13 @@
             one involving a sale.
         </Description>
     </Code>
-  
+
+    <Code>
+        <Id>553</Id>
+        <Name>Forwarder's invoice discrepancy report</Name>
+        <Description>Document/message reporting invoice discrepancies indentified by the forwarder.</Description>
+    </Code>
+
     <Code>
         <Id>575</Id>
         <Name>Insurer's invoice</Name>
@@ -102,5 +141,34 @@
             transport operation and stating conditions of payment.
         </Description>
     </Code>
-   
+ 
+    <Code>
+        <Id>817</Id>
+        <Name>Claim notification</Name>
+        <Description>Document notifying a claim.</Description>
+    </Code>
+    
+    <Code>
+        <Id>870</Id>
+        <Name>Consular invoice</Name>
+        <Description>Document/message to be prepared by an exporter in his country and presented to a diplomatic representation of the importing country for endorsement and subsequently to be presented by the importer in connection with the import of the goods described therein.</Description>
+    </Code>
+
+    <Code>
+        <Id>875</Id>
+        <Name>Partial construction invoice</Name>
+        <Description>Partial invoice in the context of a specific construction project.</Description>
+    </Code>
+
+    <Code>
+        <Id>876</Id>
+        <Name>Partial final construction invoice</Name>
+        <Description>Invoice concluding all previous partial construction invoices of a completed partial rendered service in the context of a specific construction project.</Description>
+    </Code>
+    
+    <Code>
+        <Id>877</Id>
+        <Name>Final construction invoice</Name>
+        <Description>Invoice concluding all previous partial invoices and partial final construction invoices in the context of a specific construction project.</Description>
+    </Code>
 </CodeList>
