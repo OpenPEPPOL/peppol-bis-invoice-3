@@ -855,12 +855,6 @@
         <Name>IMDG main hazard class</Name>
         <Description>Main hazard class as defined in the International Maritime Dangerous Goods (IMDG) specification.</Description>
     </Code>
-    <Code>
-        <Id>TSP</Id>
-        <Name>EU Combined Nomenclature</Name>
-        <Description>The number is part of, or is generated in the context ofand maintained by the
-            European Union (EU).</Description>
-    </Code>
 
     <Code>
         <Id>TSP</Id>
