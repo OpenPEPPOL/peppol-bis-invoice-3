@@ -54,8 +54,16 @@
         <Name>SECETI Object Identifiers</Name>
     </Code>
     <Code>
+        <Id>0147</Id>
+        <Name>Standard Company Code</Name>
+    </Code>
+    <Code>
         <Id>0151</Id>
         <Name>Australian Business Number (ABN) Scheme</Name>
+    </Code>
+    <Code>
+        <Id>0170</Id>
+        <Name>Teikoku Company Code</Name>
     </Code>
     <Code>
         <Id>0183</Id>
@@ -65,6 +73,10 @@
     <Code>
         <Id>0184</Id>
         <Name>DIGSTORG</Name>
+    </Code>
+    <Code>
+        <Id>0188</Id>
+        <Name>Corporate Number of The Social Security and Tax Number System</Name>
     </Code>
     <Code>
         <Id>0190</Id>
@@ -137,6 +149,14 @@
      <Code>
         <Id>0213</Id>
         <Name>Finnish Organization Value Add Tax Identifier</Name>
+    </Code>
+    <Code>
+        <Id>0215</Id>
+        <Name>Net service ID</Name>
+    </Code>
+    <Code>
+        <Id>0216</Id>
+        <Name>OVTcode</Name>
     </Code>
 	<Code>
         <Id>9901</Id>
