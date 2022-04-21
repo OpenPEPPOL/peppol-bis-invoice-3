@@ -94,7 +94,13 @@
             invoice.
         </Description>
     </Code>
-   
+
+    <Code>
+        <Id>388</Id>
+        <Name>Tax invoice</Name>
+        <Description>An invoice for tax purposes.</Description>
+    </Code>
+
     <Code>
         <Id>393</Id>
         <Name>Factored invoice</Name>
