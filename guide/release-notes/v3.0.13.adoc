@@ -8,8 +8,6 @@ Release date:: 2022-05-15
 
 == Changes to code lists and validation artefacts
 
-* Added rule to check format for Swedish organisation numbers (ICD/EAS 0007) with severity warning, will be changed to fatal in future release.
-
 * An error has been corrected which is causing some XSL-transformers/tools to raise errors when loading/using the schematron-files.
 
 * Rule PEPPOL-COMMON-R043 (ICD 0208) changed from severity warning to fatal (as announced in the november 2021 release)
