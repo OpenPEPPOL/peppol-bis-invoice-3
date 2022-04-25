@@ -54,13 +54,13 @@
     <Code>
         <Id>219</Id>
         <Name>Payment request for completed units</Name>
-        <Description></Description>
+        <Description> A request for payment for completed units.</Description>
     </Code>
     
     <Code>
         <Id>331</Id>
         <Name>Commercial invoice which includes a packing list</Name>
-        <Description>A request for payment for completed units.</Description>
+        <Description>Commercial transaction (invoice) will include a packing list.</Description>
     </Code>
     
     <Code>
