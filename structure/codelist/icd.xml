@@ -1044,42 +1044,40 @@ Classes moyennes et Energie</Description>
         <Name>GS1 identification keys</Name>
         <Description>Intended Purpose/App. Area: GS1 identification keys and key qualifiers may be used by an information system to refer unambiguously to an entity such as a trade item, logistics unit, physical location, document, or service relationship. Issuing agency: GS1, a global organization.</Description>
     </Code>
-		<Code>
+	<Code>
         <Id>0210</Id>
         <Name>CODICE FISCALE</Name>
         <Description>Intended Purpose/App. Area: Electronic Invoicing and e-procurement. Issuing agency: Agenzia delle Entrate, Italy.</Description>
     </Code>
-		<Code>
+	<Code>
         <Id>0211</Id>
         <Name>PARTITA IVA</Name>
         <Description>Intended Purpose/App. Area: Electronic Invoicing and e-procurement. Issuing agency: Agenzia delle Entrate, Italy.</Description>
     </Code>
-		<Code>
+	<Code>
         <Id>0212</Id>
         <Name>Finnish Organization Identifier</Name>
         <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: State Treasury of Finland / Valtiokonttor.</Description>
     </Code>
-		<Code>
+	<Code>
         <Id>0213</Id>
         <Name>Finnish Organization Value Add Tax Identifier</Name>
         <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: State Treasury of Finland / Valtiokonttor.</Description>
     </Code>
-    </Code>
-		<Code>
+	<Code>
         <Id>0214</Id>
         <Name>Tradeplace TradePI Standard</Name>
         <Description>Intended Purpose/App. Area: Tradeplace is an independent company, set up as a joint venture of several Home Appliance- and Consumer Electronics manufacturers. Tradeplace has launched their TradePI (Product Information) initiative for home appliances, consumer electronics, DIY and affiliated industries that are connected to Tradeplace. The initiative introduces an enhanced standard structure for product information. The TradePI Standard helps retailers to take full advantage of electronic communication and data processing, as the Internet and ICT are fundamentally changing how products and services are offered, bought, and sold. Issuing agency: Tradeplace B.V., The Netherlands.</Description>
     </Code>
-    </Code>
-		<Code>
+	<Code>
         <Id>0215</Id>
         <Name>Net service ID</Name>
         <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: Tieto Finland Oy, FINLAND.</Description>
     </Code>
-    </Code>
-		<Code>
+	<Code>
         <Id>0216</Id>
         <Name>OVTcode</Name>
         <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: TIEKE- Tietoyhteiskunnan kehittamiskeskus, FINLAND.</Description>
     </Code>
+	
 </CodeList>
