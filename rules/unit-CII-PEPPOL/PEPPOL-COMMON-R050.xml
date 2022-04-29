@@ -67,7 +67,7 @@
     
     <test>
 		<assert>
-			<warning>PEPPOL-COMMON-R049</warning>
+			<warning>PEPPOL-COMMON-R050</warning>
 		</assert>
 
 		
