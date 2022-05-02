@@ -2,7 +2,7 @@
 = EN 16931 transaction business rules
 
 The following {EN16931} rules apply to invoice and credit note transaction as it is used in this {peppol} BIS.
-This PEPPOL BIS uses a forked version of the validation rules from {EN16931}.
+This Peppol BIS uses a forked version of the validation rules from {EN16931}.
 Further details can be found at https://github.com/OpenPEPPOL/tc434-validation.
 
 .EN 16931 business rules

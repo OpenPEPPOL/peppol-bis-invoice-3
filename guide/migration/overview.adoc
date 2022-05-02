@@ -43,7 +43,7 @@ h| {phase-out}
 | Optional
 | Discontinued
 
-| PEPPOL BIS Billing, version 3.0
+| Peppol BIS Billing, version 3.0
 | Optional
 | Mandatory
 | Mandatory

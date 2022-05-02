@@ -1,7 +1,7 @@
 
 = Validation
 
-To optimize the flexibility in the validation process, each PEPPOL document is validated in different stages with shifting focus in every stage. The diagram below illustrates the different stages.
+To optimize the flexibility in the validation process, each Peppol document is validated in different stages with shifting focus in every stage. The diagram below illustrates the different stages.
 
 image::../shared/images/validation-new.png[Validation stages, align="left"]
 

@@ -1,5 +1,5 @@
-= Release notes for PEPPOL BIS Billing v3
-openPEPPOL AISBL <http://www.peppol.eu/>
+= Release notes for Peppol BIS Billing v3
+openPeppol AISBL <http://www.peppol.eu/>
 :icons: font
 :source-highlighter: coderay
 :toc: left
@@ -9,10 +9,12 @@ openPEPPOL AISBL <http://www.peppol.eu/>
 :title-logo-image: peppol.png
 
 ****
-IMPORTANT: Changes in code lists are also reflected by changes in the validation artefacts enforcing only valid codes. All validation changes apply to both UBL and CII validation rules.
+IMPORTANT: Changes in code lists are also reflected by changes in the validation artefacts enforcing only valid codes. All validation changes apply to both UBL and CII validation rules. 
 ****
 
 :leveloffset: +1
+
+include::v3.0.13.adoc[]
 
 include::v3.0.12.adoc[]
 

@@ -14,7 +14,7 @@ An invoice may also refer to a contract or a frame agreement. The invoice may sp
   .. The customer completely rejects the invoice, contacts the supplier and requests a credit note.
   .. The customer disputes parts of the invoice, contacts the supplier and requests a credit note and a new invoice.
 
-The diagram below shows the basic invoicing process with the use of this PEPPOL BIS profile. This process assumes that both the invoice and the credit note are exchanged electronically.
+The diagram below shows the basic invoicing process with the use of this Peppol BIS profile. This process assumes that both the invoice and the credit note are exchanged electronically.
 
 image::../shared/images/process.png[The invoicing process, align="center"]
 
