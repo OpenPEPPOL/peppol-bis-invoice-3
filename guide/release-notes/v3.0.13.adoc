@@ -26,11 +26,6 @@ Release date:: 2022-05-15
 
 * Added support for invoice type code 0388.  Added to BIS instructions that this additional invoice type code shall be handled as synonyms to the 380 and thus do not require change in processing. [452]
 
-== Changes to country specific rules for Denmark
-* DK-R-003 PEPPOL CII - changes to new UNSPEC code "TST"
-* DK-R-004 PEPPOL UBL & CII - error text is updated
-* DK-R-015 PEPPOL UBL & CII is removed
-
 == Changes to country specific rules for The Netherlands (correction to release notes)
 
 The 2021 November release contained country rule changes for the Netherlands which were not mentioned in the release notes. Specific details on these rules can be viewed here https://github.com/peppolautoriteit-nl/publications/blob/master/PeppolBIS_NL_RULES/PeppolBIS_NL_rules.md
