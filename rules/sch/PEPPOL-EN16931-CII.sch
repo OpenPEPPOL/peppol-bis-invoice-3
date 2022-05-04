@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by Martin Forsberg (Ecru Consulting AB) -->
 <!--
 This schematron uses business terms defined the CEN/EN16931-1 and is reproduced with permission from CEN. CEN bears no liability from the use of the content and implementation of this schematron and gives no warranties expressed or implied for any purpose.
 
-Last update: 2021 November release.
+Last update: 2022 May release 3.0.13.
  -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils" schemaVersion="iso" queryBinding="xslt2">
   <title>Rules for PEPPOL BIS 3.0 Billing</title>
@@ -86,7 +85,7 @@ Last update: 2021 November release.
 			)
 			else
 			(
-				if(($arg castable as xsd:integer)) then true() else false()
+				if(($arg castable as xs:integer)) then true() else false()
 		
 			)
 		)
@@ -101,11 +100,11 @@ Last update: 2021 November release.
     <variable name="allowed-characters">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</variable>
     <sequence select="
 				if ( 	(string-length(translate(substring($arg,1,6), $allowed-characters, '')) = 0) and  
-						(substring($arg,7,2) castable as xsd:integer) and 
+						(substring($arg,7,2) castable as xs:integer) and 
 						(string-length(translate(substring($arg,9,1), $allowed-characters, '')) = 0) and 
-						(substring($arg,10,2) castable as xsd:integer) and  
-						(substring($arg,12,3) castable as xsd:string) and 
-						(substring($arg,15,1) castable as xsd:integer) and  
+						(substring($arg,10,2) castable as xs:integer) and  
+						(substring($arg,12,3) castable as xs:string) and 
+						(substring($arg,15,1) castable as xs:integer) and  
 						(string-length(translate(substring($arg,16,1), $allowed-characters, '')) = 0)
 					) 
 				then true()
@@ -141,14 +140,14 @@ Last update: 2021 November release.
   <function name="u:checkPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string?"/>
     <sequence select="
-				if (not($arg castable as xsd:integer)) 
+				if (not($arg castable as xs:integer)) 
 					then 1
 					else ( u:addPIVA($arg,xs:integer(0)) mod 10 )"/>
   </function>
   <function name="u:addPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string"/>
     <param name="pari" as="xs:integer"/>
-    <variable name="tappo" select="if (not($arg castable as xsd:integer)) then 0 else 1"/>
+    <variable name="tappo" select="if (not($arg castable as xs:integer)) then 0 else 1"/>
     <variable name="mapper" select="if ($tappo = 0) then 0 else 
 																		( if ($pari = 1) 
 																			then ( xs:integer(substring('0246813579', ( xs:integer(substring($arg,1,1)) +1 ) ,1)) ) 
@@ -156,6 +155,22 @@ Last update: 2021 November release.
 																		)"/>
     <sequence select="if ($tappo = 0) then $mapper else ( xs:integer($mapper) + u:addPIVA(substring(xs:string($arg),2), (if($pari=0) then 1 else 0) ) )"/>
   </function>	
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:abn" as="xs:boolean">
+    <param name="val"/>
+    <value-of select="(
+((string-to-codepoints(substring($val,1,1)) - 49) * 10) +
+((string-to-codepoints(substring($val,2,1)) - 48) * 1) +
+((string-to-codepoints(substring($val,3,1)) - 48) * 3) +
+((string-to-codepoints(substring($val,4,1)) - 48) * 5) +
+((string-to-codepoints(substring($val,5,1)) - 48) * 7) +
+((string-to-codepoints(substring($val,6,1)) - 48) * 9) +
+((string-to-codepoints(substring($val,7,1)) - 48) * 11) +
+((string-to-codepoints(substring($val,8,1)) - 48) * 13) +
+((string-to-codepoints(substring($val,9,1)) - 48) * 15) +
+((string-to-codepoints(substring($val,10,1)) - 48) * 17) +
+((string-to-codepoints(substring($val,11,1)) - 48) * 19)) mod 89 = 0
+"/>
+  </function>  
   <pattern>
     <rule context="rsm:ExchangedDocumentContext">
       <assert id="PEPPOL-EN16931-R001" test="ram:BusinessProcessSpecifiedDocumentContextParameter/ram:ID" flag="fatal">Business process MUST be provided.</assert>
@@ -271,7 +286,7 @@ Last update: 2021 November release.
       <assert id="PEPPOL-COMMON-R042" test="(string-length(text()) = 10) and (substring(text(), 1, 2) = 'DK') and (string-length(translate(substring(text(), 3, 8), '1234567890', '')) = 0)" flag="fatal">Danish organization number (CVR) MUST be stated in the correct format.</assert>
     </rule>
     <rule context="ram:URIID[@schemeID = '0208'] | ram:ID[@schemeID = '0208'] | ram:GlobalID[@schemeID = '0208']">
-      <assert id="PEPPOL-COMMON-R043" test="matches(normalize-space(), '^[0-9]{10}$') and u:mod97-0208(normalize-space())" flag="warning">Belgian enterprise number MUST be stated in the correct format.</assert>
+      <assert id="PEPPOL-COMMON-R043" test="matches(normalize-space(), '^[0-9]{10}$') and u:mod97-0208(normalize-space())" flag="fatal">Belgian enterprise number MUST be stated in the correct format.</assert>
     </rule>	
     <rule context="ram:URIID[@schemeID = '0201'] | ram:ID[@schemeID = '0201'] | ram:GlobalID[@schemeID = '0201']">
       <assert id="PEPPOL-COMMON-R044" test="u:checkCodiceIPA(normalize-space())" flag="warning">IPA Code (Codice Univoco Unità Organizzativa) must be stated in the correct format</assert>
@@ -288,6 +303,13 @@ Last update: 2021 November release.
     <rule context="ram:URIID[@schemeID = '9906']">
       <assert id="PEPPOL-COMMON-R048" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
     </rule>	
+    <rule context="ram:URIID[@schemeID = '0007'] | ram:ID[@schemeID = '0007'] | ram:GlobalID[@schemeID = '0007']">
+      <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="warning">Swedish organization number MUST be stated in the correct format.</assert>
+    </rule>
+	<rule context="ram:URIID[@schemeID = '0151'] | ram:ID[@schemeID = '0151'] | ram:GlobalID[@schemeID = '0151']">
+      <assert id="PEPPOL-COMMON-R050" test="u:abn(normalize-space())" flag="warning">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
+    </rule>
+    
   </pattern>
   <!-- National rules -->
   <pattern>
@@ -494,7 +516,7 @@ Last update: 2021 November release.
     <let name="UNCL5189" value="tokenize('41 42 60 62 63 64 65 66 67 68 70 71 88 95 100 102 103 104 105', '\s')"/>
     <let name="UNCL7161" value="tokenize('AA AAA AAC AAD AAE AAF AAH AAI AAS AAT AAV AAY AAZ ABA ABB ABC ABD ABF ABK ABL ABN ABR ABS ABT ABU ACF ACG ACH ACI ACJ ACK ACL ACM ACS ADC ADE ADJ ADK ADL ADM ADN ADO ADP ADQ ADR ADT ADW ADY ADZ AEA AEB AEC AED AEF AEH AEI AEJ AEK AEL AEM AEN AEO AEP AES AET AEU AEV AEW AEX AEY AEZ AJ AU CA CAB CAD CAE CAF CAI CAJ CAK CAL CAM CAN CAO CAP CAQ CAR CAS CAT CAU CAV CAW CD CG CS CT DAB DAD DL EG EP ER FAA FAB FAC FC FH FI GAA HAA HD HH IAA IAB ID IF IR IS KO L1 LA LAA LAB LF MAE MI ML NAA OA PA PAA PC PL RAB RAC RAD RAF RE RF RH RV SA SAA SAD SAE SAI SG SH SM SU TAB TAC TT TV V1 V2 WH XAA YY ZZZ', '\s')"/>
     <let name="UNCL5305" value="tokenize('AE E S Z G O K L M', '\s')"/>
-    <let name="eaid" value="tokenize('0002 0007 0009 0037 0060 0088 0096 0097 0106 0135 0142 0151 0183 0184 0190 0191 0192 0193 0195 0196 0198 0199 0200 0201 0202 9901 9902 9904 9905 9906 9907 9910 9913 9914 9915 9917 9918 9919 9920 9921 9922 9923 9924 9925 9926 9927 9928 9929 9930 9931 9932 9933 9934 9935 9936 9937 9938 9939 9940 9941 9942 9943 9944 9945 9946 9947 9948 9949 9950 9951 9952 9953 9955 9956 9957 9958', '\s')"/>
+    <let name="eaid" value="tokenize('0002 0007 0009 0037 0060 0088 0096 0097 0106 0130 0135 0142 0147 0151 0170 0183 0184 0188 0190 0191 0192 0193 0195 0196 0198 0199 0200 0201 0202 0204 0208 0209 0210 0211 0212 0213 0215 0216 9901 9906 9907 9910 9913 9914 9915 9918 9919 9920 9922 9923 9924 9925 9926 9927 9928 9929 9930 9931 9932 9933 9934 9935 9936 9937 9938 9939 9940 9941 9942 9943 9944 9945 9946 9947 9948 9949 9950 9951 9952 9953 9955 9957', '\s')"/>
     <rule context="ram:AttachmentBinaryObject[@mimeCode]">
       <assert id="PEPPOL-EN16931-CL001" test="
                     some $code in $MIMECODE
@@ -518,7 +540,7 @@ Last update: 2021 November release.
     </rule>
     <rule context="ram:ExchangedDocument/ram:TypeCode">
       <assert id="PEPPOL-EN16931-P0100" test="
-                    $profile != '01' or (some $code in tokenize('380 383 386 393 82 80 84 395 575 623 780 381 396 81 83 532', '\s')
+                    $profile != '01' or (some $code in tokenize('71 102 218 219 331 382 553 817 870 875 876 877 380 383 386 388 393 82 80 84 395 575 623 780 381 396 81 83 532', '\s')
                         satisfies normalize-space(text()) = $code)" flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
     <!-- PEPPOL-EN16931-P0101 is part of PEPPOL-EN16931-P0100. -->

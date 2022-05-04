@@ -1,7 +1,7 @@
 
-= Migration rules ‐ PEPPOL participants affected by the Migration Policy
+= Migration rules ‐ Peppol participants affected by the Migration Policy
 
-This OpenPEPPOL BIS Billing Migration Policy affects all end-users registered in a SMP for invoice/billing according to the following rules:
+This OpenPeppol BIS Billing Migration Policy affects all end-users registered in a SMP for invoice/billing according to the following rules:
 
 .End-users registered in a SMP before the phase-in date ({phase-in})
 ****
@@ -25,5 +25,5 @@ After the transition, the Peppol BIS Billing 3.0 becomes mandatory and the Peppo
 .For all end-users after the Phase Out ({phase-out})
 ****
 Rule::
-OpenPEPPOL will no longer support the use of Peppol BIS 5a and 4a (version 2.3 or their older versions) in any way. This includes maintenance of validation artefacts and service desk support. Any further use of Peppol BIS 5a and 4a is strongly discouraged and done at the Service Providers’ own risk.
+OpenPeppol will no longer support the use of Peppol BIS 5a and 4a (version 2.3 or their older versions) in any way. This includes maintenance of validation artefacts and service desk support. Any further use of Peppol BIS 5a and 4a is strongly discouraged and done at the Service Providers’ own risk.
 ****
