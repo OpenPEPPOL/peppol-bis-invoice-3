@@ -28,6 +28,8 @@
 				<Reference type="RULE">PEPPOL-COMMON-R046</Reference>
 				<Reference type="RULE">PEPPOL-COMMON-R047</Reference>
 				<Reference type="RULE">PEPPOL-COMMON-R048</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R049</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
                 
                 
@@ -63,6 +65,8 @@
 					<Reference type="RULE">PEPPOL-COMMON-R046</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R047</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R048</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R049</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R050</Reference>
                     
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
@@ -210,6 +214,9 @@
 					<Reference type="RULE">PEPPOL-COMMON-R046</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R047</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R048</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R049</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R050</Reference>
+					
                     <Value type="EXAMPLE">SE8765456787</Value>
                 </Element>
                 

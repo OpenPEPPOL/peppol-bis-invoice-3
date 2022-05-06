@@ -6,7 +6,6 @@
 include::../../syntax/codelists/inv-type.adoc[]
 
 
-
 [cols="1h,2s,4a,1,2m", options="header"]
 .Code list
 |===
@@ -16,27 +15,17 @@ include::../../syntax/codelists/inv-type.adoc[]
 | Synonym with
 | UBL Message type
 
-
 | 380
 | Commercial invoice
 | Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.
 |
 | Invoice
 
-
-| 393
-| Factored invoice
-| Invoice assigned to a third party for collection.
+|71 
+|Request for payment
+|Document/message issued by a creditor to a debtor to request payment of one or more invoices past due.
 | 380
 | Invoice
-
-
-| 82
-| Metered services invoice
-| Document/message claiming payment for the supply of metered services (e.g., gas, electricity, etc.) supplied to a fixed meter whose consumption is measured over a period of time.
-| 380
-| Invoice
-
 
 | 80
 | Debit note related to goods or services
@@ -44,6 +33,11 @@ include::../../syntax/codelists/inv-type.adoc[]
 | 380
 | Invoice
 
+| 82
+| Metered services invoice
+| Document/message claiming payment for the supply of metered services (e.g., gas, electricity, etc.) supplied to a fixed meter whose consumption is measured over a period of time.
+| 380
+| Invoice
 
 | 84
 | Debit note related to financial adjustments
@@ -51,31 +45,33 @@ include::../../syntax/codelists/inv-type.adoc[]
 | 380
 | Invoice
 
-
-| 395
-| Consignment invoice
-| Commercial invoice that covers a transaction other than one involving a sale.
+|102
+|Tax notification
+|Used to specify that the message is a tax notification
 | 380
 | Invoice
 
-
-| 575
-| Insurer's invoice
-| Document/message issued by an insurer specifying the cost of an insurance which has been effected and claiming payment therefore
+|218
+|Final payment request based on completion of work
+|The final payment request of a series of payment requests submitted upon completion of all the work.
 | 380
 | Invoice
 
-
-| 623
-| Forwarder's invoice
-| Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore.
+|219
+|Payment request for completed units
+|A request for payment for completed units.
 | 380
 | Invoice
 
+|331
+|Commercial invoice which includes a packing list
+|Commercial transaction (invoice) will include a packing list.
+| 380
+| Invoice
 
-| 780
-| Freight invoice
-| Document/message issued by a transport operation specifying freight costs and charges incurred for a transport operation and stating conditions of payment.
+|382
+|Commission note
+|Document/message in which a seller specifies the amount of commission, the percentage of the invoice amount, or some other basis for the calculation of the commission to which a sales agent is entitled.
 | 380
 | Invoice
 
@@ -85,10 +81,81 @@ include::../../syntax/codelists/inv-type.adoc[]
 | 380
 | Invoice
 
-
 |386
 |Prepayment invoice
 |An invoice to pay amounts for goods and services in advance; these amounts will be subtracted from the final invoice.
+| 380
+| Invoice
+
+|388
+|Tax invoice
+|An invoice for tax purposes.
+| 380
+| Invoice
+
+| 393
+| Factored invoice
+| Invoice assigned to a third party for collection.
+| 380
+| Invoice
+
+| 395
+| Consignment invoice
+| Commercial invoice that covers a transaction other than one involving a sale.
+| 380
+| Invoice
+
+|553
+|Forwarder's invoice discrepancy report
+|Document/message reporting invoice discrepancies indentified by the forwarder.
+| 380
+| Invoice
+
+| 575
+| Insurer's invoice
+| Document/message issued by an insurer specifying the cost of an insurance which has been effected and claiming payment therefore
+| 380
+| Invoice
+
+| 623
+| Forwarder's invoice
+| Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore.
+| 380
+| Invoice
+
+| 780
+| Freight invoice
+| Document/message issued by a transport operation specifying freight costs and charges incurred for a transport operation and stating conditions of payment.
+| 380
+| Invoice
+
+|817
+|Claim notification
+|Document notifying a claim.
+| 380
+| Invoice
+
+|870
+|Consular invoice
+|Document/message to be prepared by an exporter in his country and presented to a diplomatic representation of the importing country for endorsement and subsequently to be presented by the importer in connection with the import of the goods described therein.
+| 380
+| Invoice
+
+|875
+|Partial construction invoice
+|Partial invoice in the context of a specific construction project.
+| 380
+| Invoice
+
+|876
+|Partial final construction invoice
+|Invoice concluding all previous partial construction invoices of a completed partial rendered service in the context of a specific construction project.
+| 380
+| Invoice
+
+|877
+|Final construction invoice
+|Invoice concluding all previous partial invoices and partial final construction invoices in the context of a specific construction project.
 | 380
 | Invoice
 

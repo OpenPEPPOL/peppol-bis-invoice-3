@@ -1,0 +1,31 @@
+= Version 3.0.13
+[horizontal]
+Release date:: 2022-05-30
+
+== Changes to BIS document
+
+
+
+== Changes to code lists and validation artefacts
+
+* An error has been corrected which is causing some XSL-transformers/tools to raise errors when loading/using the schematron-files.
+
+* Rule PEPPOL-COMMON-R043 (ICD 0208) changed from severity warning to fatal (as announced in the november 2021 release)
+
+* Added rule to check format for Swedish organisation numbers (ICD/EAS 0007) with severity warning, will be changed to fatal in future release.
+
+* An error has been corrected in PEPPOL-EN16931-R080 as it should not be triggered in Invoice (only CreditNotes)
+
+* Added codes 0214, 0215 and 0216 to the ICD code list and support added in validation artefacts. [505]
+
+* Added codes 0147, 0170, 0188, 0215 and 0216 to the EAS code list and support added in validation artefacts. [481,473,505,506]
+
+* Double entry of code TSP removed from code list UNCL7143. [488]
+
+* Added support for additional invoice type codes 71, 102, 218, 219, 331, 382, 553, 817, 870, 875, 876 and 877. This is in line with update made by TC434/EC-DIGITAL. Added to BIS instructions that these additional invoice types codes shall be handled as synonyms to the 380 and thus do not require change in processing. [505]
+
+* Added support for invoice type code 0388.  Added to BIS instructions that this additional invoice type code shall be handled as synonyms to the 380 and thus do not require change in processing. [452]
+
+== Changes to country specific rules for The Netherlands (correction to the version 3.0.12 release notes)
+
+The 2021 November release contained country rule changes for the Netherlands which were not mentioned in the release notes. Specific details on these rules can be viewed here https://github.com/peppolautoriteit-nl/publications/blob/master/PeppolBIS_NL_RULES/PeppolBIS_NL_rules.md
