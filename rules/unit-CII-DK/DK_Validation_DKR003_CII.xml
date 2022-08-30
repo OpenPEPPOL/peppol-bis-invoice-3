@@ -26,7 +26,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listID="MP" listVersionID="19.05.01">22334455</ram:ClassCode>
+							<ram:ClassCode listID="TST" listVersionID="19.05.01">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -61,7 +61,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listID="MP" listVersionID="19.0501">22334455</ram:ClassCode>
+							<ram:ClassCode listID="TST" listVersionID="19.0501">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -166,7 +166,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listID="MP" listVersionID="">22334455</ram:ClassCode>
+							<ram:ClassCode listID="TST" listVersionID="">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -201,7 +201,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listID="MP" listVersionID="7.0501">22334455</ram:ClassCode>
+							<ram:ClassCode listID="TST" listVersionID="7.0501">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -236,7 +236,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listID="MP">22334455</ram:ClassCode>
+							<ram:ClassCode listID="TST">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -271,7 +271,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listID="MP">22334455</ram:ClassCode>
+							<ram:ClassCode listID="TST">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -306,7 +306,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listID="MP">22334455</ram:ClassCode>
+							<ram:ClassCode listID="TST">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>
@@ -341,7 +341,7 @@
 				<ram:IncludedSupplyChainTradeLineItem>
 					<ram:SpecifiedTradeProduct>
 						<ram:DesignatedProductClassification>
-							<ram:ClassCode listID="MP">22334455</ram:ClassCode>
+							<ram:ClassCode listID="TST">22334455</ram:ClassCode>
 						</ram:DesignatedProductClassification>
 					</ram:SpecifiedTradeProduct>
 				</ram:IncludedSupplyChainTradeLineItem>

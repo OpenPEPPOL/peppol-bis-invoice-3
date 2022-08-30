@@ -353,13 +353,6 @@ Last update: 2022 May release 3.0.13.
                               and (number(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:DuePayableAmount/text()) &lt; 0)
                               )" flag="fatal">For Danish Suppliers, a Credit note cannot have a negative total (DuePayableAmount)</assert>
     </rule>
-    <rule context="rsm:CrossIndustryInvoice[$DKSupplierCountry = 'DK']/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration">
-      <assert id="DK-R-015" test="not(( (ram:ID/@schemeID = 'VA' or ram:ID/@schemeID = 'VAT') and (substring(ram:ID/text(), 1, 2) = 'DK'))
-                          and not( (string-length(ram:ID/text()) = 10)
-                                  and (string-length(translate(substring(ram:ID/text(), 3, 8), '1234567890', '')) = 0)
-                                  )
-                              )" flag="fatal">For Danish Suppliers SellerTradeParty/SpecifiedTaxRegistration/ID must be specified  with DK followed by 8 digits (eg. DK12345678) if used.</assert>
-    </rule>
     <rule context="rsm:CrossIndustryInvoice[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans">
       <assert id="DK-R-005" test="(contains(' 1 10 31 42 48 49 50 58 59 93 97 ', concat(' ', ram:TypeCode, ' ')))" flag="fatal">For Danish suppliers the following Payment means type codes are allowed: 1, 10, 31, 42, 48, 49, 50, 58, 59, 93 and 97</assert>
       <assert id="DK-R-006" test="not( ((ram:TypeCode = '31') or (ram:TypeCode = '42'))
