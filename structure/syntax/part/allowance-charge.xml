@@ -126,7 +126,7 @@
             <Value type="EXAMPLE">1000</Value>
             
         </Element>
-    <Element>
+    <Element cardinality="0..1">
         <Term>cac:TaxCategory</Term>
         <Name>TAX CATEGORY</Name>
         
