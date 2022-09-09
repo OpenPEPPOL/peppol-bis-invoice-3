@@ -1,0 +1,9 @@
+= Version 3.0.14
+[horizontal]
+Release date:: 2022-11-
+
+== Changes to BIS document
+
+
+== Changes to code lists and validation artefacts
+* Rule PEPPOL-COMMON-R049 (ICD 0007 - Swedish organization number) changed from severity warning to fatal (as announced in the may 2022 release)
