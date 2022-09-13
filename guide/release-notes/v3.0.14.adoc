@@ -10,3 +10,4 @@ Release date:: 2022-11-
 
 == Changes to Country-Specific Rules
 * Rules GR-S-008-1, GR-R-008-2 and GR-R-008-3 have been updated, expecting the string \\##INVOICE|URL## instead of \\##INVOICE-URL## (POAC-518)
+* Rule DK-R-015 removed
