@@ -54,16 +54,8 @@
         <Name>SECETI Object Identifiers</Name>
     </Code>
     <Code>
-        <Id>0147</Id>
-        <Name>Standard Company Code</Name>
-    </Code>
-    <Code>
         <Id>0151</Id>
         <Name>Australian Business Number (ABN) Scheme</Name>
-    </Code>
-    <Code>
-        <Id>0170</Id>
-        <Name>Teikoku Company Code</Name>
     </Code>
     <Code>
         <Id>0183</Id>
