@@ -155,14 +155,6 @@
         <Name>Danish Ministry of the Interior and Health</Name>
     </Code>
     <Code>
-        <Id>9906</Id>
-        <Name>Ufficio responsabile gestione partite IVA</Name>
-    </Code>
-    <Code>
-        <Id>9907</Id>
-        <Name>TAX Authority</Name>
-    </Code>
-    <Code>
         <Id>9910</Id>
         <Name>Hungary VAT number</Name>
     </Code>
@@ -325,6 +317,10 @@
     <Code>
         <Id>9957</Id>
         <Name>French VAT number</Name>
+    </Code>
+     <Code>
+        <Id>9959</Id>
+        <Name>Employer Identification Number (EIN, USA)</Name>
     </Code>
 
 </CodeList>
