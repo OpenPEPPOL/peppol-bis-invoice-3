@@ -29,7 +29,7 @@
             <!-- Invoice Verification URL -->
             <cac:AdditionalDocumentReference>
                 <cbc:ID>1123</cbc:ID>
-                <cbc:DocumentDescription>##INVOICE-URL##</cbc:DocumentDescription>
+                <cbc:DocumentDescription>##INVOICE|URL##</cbc:DocumentDescription>
                 <cac:Attachment>
                     <cac:ExternalReference>
                         <cbc:URI>http://url</cbc:URI>
@@ -39,7 +39,7 @@
             <!-- Invoice Verification URL -->
             <cac:AdditionalDocumentReference>
                 <cbc:ID>11234</cbc:ID>
-                <cbc:DocumentDescription>##INVOICE-URL##</cbc:DocumentDescription>
+                <cbc:DocumentDescription>##INVOICE|URL##</cbc:DocumentDescription>
             </cac:AdditionalDocumentReference>
         </Invoice>
     </test>
