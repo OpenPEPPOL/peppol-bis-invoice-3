@@ -74,13 +74,13 @@ Last update: 2022 May release 3.0.13.
   <function name="u:checkCF" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string?"/>
     <sequence select="
-		if ( (string-length($arg) = 16) or (string-length($arg) = 11) )
-		then
+		if ( (string-length($arg) = 16) or (string-length($arg) = 11) ) 		
+		then 
 		(
-			if ((string-length($arg) = 16))
+			if ((string-length($arg) = 16)) 
 			then
 			(
-				if (u:checkCF16($arg))
+				if (u:checkCF16($arg)) 
 				then
 				(
 					true()
@@ -93,7 +93,7 @@ Last update: 2022 May release 3.0.13.
 			else
 			(
 				if(($arg castable as xs:integer)) then true() else false()
-
+		
 			)
 		)
 		else
@@ -106,14 +106,14 @@ Last update: 2022 May release 3.0.13.
     <param name="arg" as="xs:string?"/>
     <variable name="allowed-characters">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</variable>
     <sequence select="
-				if ( 	(string-length(translate(substring($arg,1,6), $allowed-characters, '')) = 0) and
-						(substring($arg,7,2) castable as xs:integer) and
-						(string-length(translate(substring($arg,9,1), $allowed-characters, '')) = 0) and
-						(substring($arg,10,2) castable as xs:integer) and
-						(substring($arg,12,3) castable as xs:string) and
-						(substring($arg,15,1) castable as xs:integer) and
+				if ( 	(string-length(translate(substring($arg,1,6), $allowed-characters, '')) = 0) and  
+						(substring($arg,7,2) castable as xs:integer) and 
+						(string-length(translate(substring($arg,9,1), $allowed-characters, '')) = 0) and 
+						(substring($arg,10,2) castable as xs:integer) and  
+						(substring($arg,12,3) castable as xs:string) and 
+						(substring($arg,15,1) castable as xs:integer) and  
 						(string-length(translate(substring($arg,16,1), $allowed-characters, '')) = 0)
-					)
+					) 
 				then true()
 				else false()
 				"/>
@@ -141,13 +141,13 @@ Last update: 2022 May release 3.0.13.
 			(
 				true()
 			)
-
+		
 		"/>
   </function>
   <function name="u:checkPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string?"/>
     <sequence select="
-				if (not($arg castable as xs:integer))
+				if (not($arg castable as xs:integer)) 
 					then 1
 					else ( u:addPIVA($arg,xs:integer(0)) mod 10 )"/>
   </function>
@@ -155,9 +155,9 @@ Last update: 2022 May release 3.0.13.
     <param name="arg" as="xs:string"/>
     <param name="pari" as="xs:integer"/>
     <variable name="tappo" select="if (not($arg castable as xs:integer)) then 0 else 1"/>
-    <variable name="mapper" select="if ($tappo = 0) then 0 else
-																		( if ($pari = 1)
-																			then ( xs:integer(substring('0246813579', ( xs:integer(substring($arg,1,1)) +1 ) ,1)) )
+    <variable name="mapper" select="if ($tappo = 0) then 0 else 
+																		( if ($pari = 1) 
+																			then ( xs:integer(substring('0246813579', ( xs:integer(substring($arg,1,1)) +1 ) ,1)) ) 
 																			else ( xs:integer(substring($arg,1,1) ) )
 																		)"/>
     <sequence select="if ($tappo = 0) then $mapper else ( xs:integer($mapper) + u:addPIVA(substring(xs:string($arg),2), (if($pari=0) then 1 else 0) ) )"/>
@@ -346,10 +346,10 @@ Last update: 2022 May release 3.0.13.
     </rule>
     <rule context="cbc:EndpointID[@schemeID = '0007'] | cac:PartyIdentification/cbc:ID[@schemeID = '0007'] | cbc:CompanyID[@schemeID = '0007']">
       <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="fatal">Swedish organization number MUST be stated in the correct format.</assert>
-    </rule>
+    </rule>    
     <rule context="cbc:EndpointID[@schemeID = '0151'] | cac:PartyIdentification/cbc:ID[@schemeID = '0151'] | cbc:CompanyID[@schemeID = '0151']">
       <assert id="PEPPOL-COMMON-R050" test="u:abn(normalize-space())" flag="warning">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
-    </rule>
+    </rule>   	
   </pattern>
   <!-- National rules -->
   <pattern>
@@ -515,14 +515,14 @@ Last update: 2022 May release 3.0.13.
     <rule context="/ubl-invoice:Invoice/cbc:ID[$isGreekSender] | /ubl-creditnote:CreditNote/cbc:ID[$isGreekSender]">
       <let name="IdSegments" value="tokenize(.,'\|')"/>
       <assert id="GR-R-001-1" test="count($IdSegments) = 6" flag="fatal"> When the Supplier is Greek, the Invoice Id should consist of 6 segments</assert>
-      <assert id="GR-R-001-2" test="string-length(normalize-space($IdSegments[1])) = 9
+      <assert id="GR-R-001-2" test="string-length(normalize-space($IdSegments[1])) = 9 
 			                              and u:TinVerification($IdSegments[1])
 			                              and ($IdSegments[1] = /*/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 3, 9)
 			                              or $IdSegments[1] = /*/cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 3, 9) )" flag="fatal">When the Supplier is Greek, the Invoice Id first segment must be a valid TIN Number and match either the Supplier's or the Tax Representative's Tin Number</assert>
       <let name="tokenizedIdDate" value="tokenize($IdSegments[2],'/')"/>
-      <assert id="GR-R-001-3" test="string-length(normalize-space($IdSegments[2]))>0
+      <assert id="GR-R-001-3" test="string-length(normalize-space($IdSegments[2]))>0 
 			                              and matches($IdSegments[2],$dateRegExp)
-			                              and ($tokenizedIdDate[1] = $tokenizedUblIssueDate[3]
+			                              and ($tokenizedIdDate[1] = $tokenizedUblIssueDate[3] 
 			                                and $tokenizedIdDate[2] = $tokenizedUblIssueDate[2]
 			                                and $tokenizedIdDate[3] = $tokenizedUblIssueDate[1])" flag="fatal">When the Supplier is Greek, the Invoice Id second segment must be a valid Date that matches the invoice Issue Date</assert>
       <assert id="GR-R-001-4" test="string-length(normalize-space($IdSegments[3]))>0 and string(number($IdSegments[3])) != 'NaN' and xs:integer($IdSegments[3]) >= 0" flag="fatal">When Supplier is Greek, the Invoice Id third segment must be a positive integer</assert>
@@ -553,15 +553,15 @@ Last update: 2022 May release 3.0.13.
     <rule context="/ubl-invoice:Invoice[$isGreekSender] | /ubl-creditnote:CreditNote[$isGreekSender]">
       <!-- ΜARK Rules -->
       <assert id="GR-R-004-1" test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##M.AR.K##'])=1" flag="fatal"> When Supplier is Greek, there must be one MARK Number</assert>
-      <assert id="GR-S-008-1" flag="warning" test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##'])=1"> When Supplier is Greek, there should be one invoice url</assert>
-      <assert id="GR-R-008-2" test="(count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##']) = 0 ) or (count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE-URL##']) = 1 )" flag="fatal"> When Supplier is Greek, there should be no more than one invoice url</assert>
+      <assert id="GR-S-008-1" flag="warning" test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##'])=1"> When Supplier is Greek, there should be one invoice url</assert>
+      <assert id="GR-R-008-2" test="(count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##']) = 0 ) or (count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##']) = 1 )" flag="fatal"> When Supplier is Greek, there should be no more than one invoice url</assert>
     </rule>
     <!-- MARK Rules -->
     <rule context="cac:AdditionalDocumentReference[$isGreekSender and cbc:DocumentDescription = '##M.AR.K##']/cbc:ID">
       <assert id="GR-R-004-2" test="matches(.,'^[1-9]([0-9]*)')" flag="fatal"> When Supplier is Greek, the MARK Number must be a positive integer</assert>
     </rule>
     <!-- Invoice Verification URL Rules -->
-    <rule context="cac:AdditionalDocumentReference[$isGreekSender and cbc:DocumentDescription = '##INVOICE-URL##']">
+    <rule context="cac:AdditionalDocumentReference[$isGreekSender and cbc:DocumentDescription = '##INVOICE|URL##']">
       <assert id="GR-R-008-3" test="string-length(normalize-space(cac:Attachment/cac:ExternalReference/cbc:URI))>0" flag="fatal">When Supplier is Greek and the INVOICE URL Document reference exists, the External Reference URI should be present</assert>
     </rule>
     <!-- Customer Name Mandatory -->
@@ -594,10 +594,10 @@ Last update: 2022 May release 3.0.13.
       <assert id="IS-R-001" test="( ( not(contains(normalize-space(cbc:InvoiceTypeCode),' ')) and contains( ' 380 381 ',concat(' ',normalize-space(cbc:InvoiceTypeCode),' ') ) ) ) or ( ( not(contains(normalize-space(cbc:CreditNoteTypeCode),' ')) and contains( ' 380 381 ',concat(' ',normalize-space(cbc:CreditNoteTypeCode),' ') ) ) )" flag="warning">[IS-R-001]-If seller is icelandic then invoice type should be 380 or 381 — Ef seljandi er íslenskur þá ætti gerð reiknings (BT-3) að vera sölureikningur (380) eða kreditreikningur (381).</assert>
       <assert id="IS-R-002" test="exists(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID) and cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID = '0196'" flag="fatal">[IS-R-002]-If seller is icelandic then it shall contain sellers legal id — Ef seljandi er íslenskur þá skal reikningur innihalda íslenska kennitölu seljanda (BT-30).</assert>
       <assert id="IS-R-003" test="exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:StreetName) and exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:PostalZone)" flag="fatal">[IS-R-003]-If seller is icelandic then it shall contain his address with street name and zip code — Ef seljandi er íslenskur þá skal heimilisfang seljanda innihalda götuheiti og póstnúmer (BT-35 og BT-38).</assert>
-      <assert id="IS-R-006" test="exists(cac:PaymentMeans[cbc:PaymentMeansCode = '9']/cac:PayeeFinancialAccount/cbc:ID)
+      <assert id="IS-R-006" test="exists(cac:PaymentMeans[cbc:PaymentMeansCode = '9']/cac:PayeeFinancialAccount/cbc:ID) 
 					  and string-length(normalize-space(cac:PaymentMeans[cbc:PaymentMeansCode = '9']/cac:PayeeFinancialAccount/cbc:ID)) = 12
 					  or not(exists(cac:PaymentMeans[cbc:PaymentMeansCode = '9']))"	flag="fatal">[IS-R-006]-If seller is icelandic and payment means code is 9 then a 12 digit account id must exist — Ef seljandi er íslenskur og greiðslumáti (BT-81) er krafa (kóti 9) þá skal koma fram 12 stafa númer (bankanúmer, höfuðbók 66 og reikningsnúmer) (BT-84)</assert>
-			<assert	id="IS-R-007" test="exists(cac:PaymentMeans[cbc:PaymentMeansCode = '42']/cac:PayeeFinancialAccount/cbc:ID)
+			<assert	id="IS-R-007" test="exists(cac:PaymentMeans[cbc:PaymentMeansCode = '42']/cac:PayeeFinancialAccount/cbc:ID) 
 					  and string-length(normalize-space(cac:PaymentMeans[cbc:PaymentMeansCode = '42']/cac:PayeeFinancialAccount/cbc:ID)) = 12
 					  or not(exists(cac:PaymentMeans[cbc:PaymentMeansCode = '42']))" flag="fatal">[IS-R-007]-If seller is icelandic and payment means code is 42 then a 12 digit account id must exist  — Ef seljandi er íslenskur og greiðslumáti (BT-81) er millifærsla (kóti 42) þá skal koma fram 12 stafa reikningnúmer (BT-84)</assert>
       <assert id="IS-R-008" test="(exists(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']) and string-length(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']/cbc:ID) = 10 and (string(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']/cbc:ID) castable as xs:date)) or not(exists(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']))" flag="fatal">[IS-R-008]-If seller is icelandic and invoice contains supporting description EINDAGI then the id form must be YYYY-MM-DD — Ef seljandi er íslenskur þá skal eindagi (BT-122, DocumentDescription = EINDAGI) vera á forminu YYYY-MM-DD.</assert>
