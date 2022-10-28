@@ -26,7 +26,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -59,7 +59,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -68,7 +68,7 @@
 				</cac:Item>
 			</cac:InvoiceLine>
 		</Invoice>
-	</test>	
+	</test>
 	
 	<test>
 		<assert>
@@ -92,7 +92,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -125,7 +125,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -134,7 +134,7 @@
 				</cac:Item>
 			</cac:InvoiceLine>
 		</Invoice>
-	</test>	
+	</test>
     
     <test>
 		<assert>
@@ -158,7 +158,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -167,7 +167,7 @@
 				</cac:Item>
 			</cac:InvoiceLine>
 		</Invoice>
-	</test>	
+	</test>
 
 	<test>
 		<assert>
@@ -191,7 +191,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -200,7 +200,7 @@
 				</cac:Item>
 			</cac:InvoiceLine>
 		</Invoice>
-	</test>	
+	</test>
 	
 	<test>
 		<assert>
@@ -224,7 +224,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<!-- <cac:CommodityClassification> -->
@@ -233,7 +233,7 @@
 				</cac:Item>
 			</cac:InvoiceLine>
 		</Invoice>
-	</test>	
+	</test>
 
 
 	<test>
@@ -258,7 +258,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -291,7 +291,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>
@@ -324,7 +324,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:InvoiceLine>
 				<cac:Item>
 					<cac:CommodityClassification>

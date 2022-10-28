@@ -123,12 +123,12 @@ Last update: 2022 November release 3.0.14.
     <variable name="paese" select="substring($arg,1,2)"/>
     <variable name="codice" select="substring($arg,3)"/>
     <sequence select="
-		
+
 			if ( $paese = 'IT' or $paese = 'it' )
 			then
 			(
 				if ( ( string-length($codice) = 11 ) and ( if (u:checkPIVA($codice)!=0) then false() else true() ))
-				then 
+				then
 				(
 					true()
 				)
@@ -431,7 +431,7 @@ Last update: 2022 November release 3.0.14.
 						and not((string-length(normalize-space(cbc:AllowanceChargeReason/text())) = 4)
 								and (number(cbc:AllowanceChargeReason) &gt;= 0)
 								and (number(cbc:AllowanceChargeReason) &lt;= 9999))
-						)" flag="fatal">When specifying non-VAT Taxes, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in 'AllowanceChargeReason'</assert>
+						)" flag="fatal">When specifying non-VAT Taxes for Danish customers, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in AllowanceChargeReason</assert>
     </rule>
   </pattern>
   <!-- ITALY -->

@@ -27,7 +27,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -68,7 +68,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -109,7 +109,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -150,7 +150,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -191,7 +191,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -232,7 +232,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -273,7 +273,7 @@
 						</cac:Country>
 					</cac:PostalAddress>
                 </cac:Party>
-			</cac:AccountingCustomerParty>	
+			</cac:AccountingCustomerParty>
 			<cac:AllowanceCharge>
 				<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
 				<cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
@@ -291,6 +291,4 @@
 			</cac:AllowanceCharge>
 		</Invoice>
 	</test>
-
-
 </testSet>
