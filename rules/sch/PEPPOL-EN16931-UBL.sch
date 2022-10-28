@@ -657,7 +657,7 @@ Last update: 2022 November release 3.0.14.
     <rule context="cac:OrderLineReference/cbc:LineID[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-13 -->
       <assert id="NL-R-009" test="exists(/*/cac:OrderReference/cbc:ID)" flag="fatal">[NL-R-009] For suppliers in the Netherlands, if an order line reference (cac:OrderLineReference/cbc:LineID) is used, there must be an order reference on the document level (cac:OrderReference/cbc:ID)</assert>
-    </rule>BG
+    </rule>
   </pattern>
   <!-- Restricted code lists and formatting -->
   <pattern>
