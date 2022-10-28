@@ -1,6 +1,6 @@
 :lang: en
 
-:doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] Peppol BIS Billing
+:doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] Peppol BIS Billing - RELEASE CANDIDATE
 :version: 3.0.14
 :shared-dir: ../../shared
 :snippet-dir: ../../rules/snippets
