@@ -1079,5 +1079,25 @@ Classes moyennes et Energie</Description>
         <Name>OVTcode</Name>
         <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: TIEKE- Tietoyhteiskunnan kehittamiskeskus, FINLAND.</Description>
     </Code>
-	
+	<Code>
+        <Id>0217</Id>
+        <Name>The Netherlands Chamber of Commerce and Industry establishment number</Name>
+        <Description>Intended Purpose/App. Area: Electronic invoicing. Issuing agency: Nederlands Normalisatie Instituut (NEN)</Description>
+    </Code>
+	<Code>
+        <Id>0218</Id>
+        <Name>Unified registration number (Latvia)</Name>
+        <Description>Intended Purpose/App. Area: Each legal entity registered with the Register of Enterprises of the Republic of Latvia is assigned a unique unified registration number. This unique unified registration number is used to identify legal subjects for every purpose where it might be necessary, including for the use of the tax authority. Issuing agency: The Register of Enterprises of the Republic of Latvia.</Description>
+    </Code>
+	<Code>
+        <Id>0219</Id>
+        <Name>Taxpayer registration code (Latvia)</Name>
+        <Description>Intended Purpose/App. Area: For use in Electronic data interchange (EDI) to identify private and public organizations. Issuing agency: State Revenue Service of the Republic of Latvia.</Description>
+    </Code>
+	<Code>
+        <Id>0220</Id>
+        <Name>The Register of Natural Persons (Latvia)</Name>
+        <Description>Intended Purpose/App. Area: The Register combines the functionality of the current information system of the Population Register and Civil Register. The Register is a uniform state registration and recording system of information and natural persons that provides identification of natural persons, data processing and accumulation, and includes and updates information about civil entries. The data included in the Register is used for statistical surveys, tax forecasting and calculation, organizing of elections and other processes of national importance. When entering information regarding a person in the Register, the Office of Citizenship and Migration Affairs of the Republic of Latvia shall assign an automatically generated individual personal identity number thereto. Issuing agency: Office of Citizenship and Migration Affairs of the Republic of Latvia.</Description>
+    </Code>    
+
 </CodeList>

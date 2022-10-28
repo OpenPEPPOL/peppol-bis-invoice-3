@@ -13,6 +13,7 @@ v{revision}
 :source-language: xml
 :sectanchors:
 :sectnums:
+:last-update-label!:
 :CIUS: Core Invoice Usage Specification (CIUS)
 :title-logo-image: ../images/peppol.jpg
 
