@@ -19,5 +19,5 @@ Release date:: 2022-11-01
 
 * Rules GR-S-008-1, GR-R-008-2 and GR-R-008-3 have been updated, expecting the string \##INVOICE|URL## instead of \##INVOICE-URL## (POAC-518)
 * Rule DK-R-015 removed
-* Error text changes to DK-R-004 PEPPOL CII rules
+* Error text changes to DK-R-004 PEPPOL UBL & CII rules
 * Error text changes to DK-R-003 Peppol CII rules
