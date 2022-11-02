@@ -40,7 +40,7 @@
    
     <test>
 		<assert>
-			<warning>PEPPOL-COMMON-R049</warning>
+			<error>PEPPOL-COMMON-R049</error>
 		</assert>
 
 
@@ -67,7 +67,7 @@
     
     <test>
 		<assert>
-			<warning>PEPPOL-COMMON-R049</warning>
+			<error>PEPPOL-COMMON-R049</error>
 		</assert>
 
 		

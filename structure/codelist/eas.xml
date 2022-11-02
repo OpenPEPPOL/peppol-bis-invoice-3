@@ -54,16 +54,8 @@
         <Name>SECETI Object Identifiers</Name>
     </Code>
     <Code>
-        <Id>0147</Id>
-        <Name>Standard Company Code</Name>
-    </Code>
-    <Code>
         <Id>0151</Id>
         <Name>Australian Business Number (ABN) Scheme</Name>
-    </Code>
-    <Code>
-        <Id>0170</Id>
-        <Name>Teikoku Company Code</Name>
     </Code>
     <Code>
         <Id>0183</Id>
@@ -158,17 +150,9 @@
         <Id>0216</Id>
         <Name>OVTcode</Name>
     </Code>
-	<Code>
+    <Code>
         <Id>9901</Id>
         <Name>Danish Ministry of the Interior and Health</Name>
-    </Code>
-    <Code>
-        <Id>9906</Id>
-        <Name>Ufficio responsabile gestione partite IVA</Name>
-    </Code>
-    <Code>
-        <Id>9907</Id>
-        <Name>TAX Authority</Name>
     </Code>
     <Code>
         <Id>9910</Id>
@@ -333,6 +317,10 @@
     <Code>
         <Id>9957</Id>
         <Name>French VAT number</Name>
+    </Code>
+     <Code>
+        <Id>9959</Id>
+        <Name>Employer Identification Number (EIN, USA)</Name>
     </Code>
 
 </CodeList>

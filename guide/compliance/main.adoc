@@ -5,6 +5,7 @@ openPeppol AISBL <http://www.peppol.eu/>
 :toc: left
 :toclevels: 2
 :sourcedir: .
+:last-update-label!:
 :imagesdir: images
 :title-logo-image: peppol.png
 

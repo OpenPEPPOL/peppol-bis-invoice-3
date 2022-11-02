@@ -144,6 +144,14 @@
         <Title>Stylesheet for UBL instances</Title>
         <Property key="download">stylesheet-ubl.xslt</Property>
     </Resource>
+
+    <Resource>
+        <Type>native:File</Type>
+        <Path>project.xml</Path>
+        <Title>Example files</Title>
+        <Property key="download">BIS-Billing3-Examples.zip</Property>
+        <Property key="filename">BIS-Billing3-Examples.zip</Property>
+    </Resource>		
     
     <Resource>
         <Type>native:File</Type>

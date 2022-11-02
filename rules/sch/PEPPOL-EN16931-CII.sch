@@ -58,7 +58,7 @@ Last update: 2022 May release 3.0.13.
 		<variable name="checkdigits" select="substring($val,9,2)"/>
 		<variable name="calculated_digits" select="xs:string(97 - (xs:integer(substring($val,1,8)) mod 97))"/>
 		<value-of select="number($checkdigits) = number($calculated_digits)"/>
-	</function>	 
+	</function>
 <function name="u:checkCodiceIPA" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string?"/>
     <variable name="allowed-characters">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</variable>
@@ -67,13 +67,13 @@ Last update: 2022 May release 3.0.13.
   <function name="u:checkCF" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string?"/>
     <sequence select="
-		if ( (string-length($arg) = 16) or (string-length($arg) = 11) ) 		
-		then 
+		if ( (string-length($arg) = 16) or (string-length($arg) = 11) )
+		then
 		(
-			if ((string-length($arg) = 16)) 
+			if ((string-length($arg) = 16))
 			then
 			(
-				if (u:checkCF16($arg)) 
+				if (u:checkCF16($arg))
 				then
 				(
 					true()
@@ -86,7 +86,7 @@ Last update: 2022 May release 3.0.13.
 			else
 			(
 				if(($arg castable as xs:integer)) then true() else false()
-		
+
 			)
 		)
 		else
@@ -99,14 +99,14 @@ Last update: 2022 May release 3.0.13.
     <param name="arg" as="xs:string?"/>
     <variable name="allowed-characters">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</variable>
     <sequence select="
-				if ( 	(string-length(translate(substring($arg,1,6), $allowed-characters, '')) = 0) and  
-						(substring($arg,7,2) castable as xs:integer) and 
-						(string-length(translate(substring($arg,9,1), $allowed-characters, '')) = 0) and 
-						(substring($arg,10,2) castable as xs:integer) and  
-						(substring($arg,12,3) castable as xs:string) and 
-						(substring($arg,15,1) castable as xs:integer) and  
+				if ( 	(string-length(translate(substring($arg,1,6), $allowed-characters, '')) = 0) and
+						(substring($arg,7,2) castable as xs:integer) and
+						(string-length(translate(substring($arg,9,1), $allowed-characters, '')) = 0) and
+						(substring($arg,10,2) castable as xs:integer) and
+						(substring($arg,12,3) castable as xs:string) and
+						(substring($arg,15,1) castable as xs:integer) and
 						(string-length(translate(substring($arg,16,1), $allowed-characters, '')) = 0)
-					) 
+					)
 				then true()
 				else false()
 				"/>
@@ -116,12 +116,12 @@ Last update: 2022 May release 3.0.13.
     <variable name="paese" select="substring($arg,1,2)"/>
     <variable name="codice" select="substring($arg,3)"/>
     <sequence select="
-		
+
 			if ( $paese = 'IT' or $paese = 'it' )
 			then
 			(
 				if ( ( string-length($codice) = 11 ) and ( if (u:checkPIVA($codice)!=0) then false() else true() ))
-				then 
+				then
 				(
 					true()
 				)
@@ -134,13 +134,13 @@ Last update: 2022 May release 3.0.13.
 			(
 				true()
 			)
-		
+
 		"/>
   </function>
   <function name="u:checkPIVA" as="xs:integer" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string?"/>
     <sequence select="
-				if (not($arg castable as xs:integer)) 
+				if (not($arg castable as xs:integer))
 					then 1
 					else ( u:addPIVA($arg,xs:integer(0)) mod 10 )"/>
   </function>
@@ -148,13 +148,13 @@ Last update: 2022 May release 3.0.13.
     <param name="arg" as="xs:string"/>
     <param name="pari" as="xs:integer"/>
     <variable name="tappo" select="if (not($arg castable as xs:integer)) then 0 else 1"/>
-    <variable name="mapper" select="if ($tappo = 0) then 0 else 
-																		( if ($pari = 1) 
-																			then ( xs:integer(substring('0246813579', ( xs:integer(substring($arg,1,1)) +1 ) ,1)) ) 
+    <variable name="mapper" select="if ($tappo = 0) then 0 else
+																		( if ($pari = 1)
+																			then ( xs:integer(substring('0246813579', ( xs:integer(substring($arg,1,1)) +1 ) ,1)) )
 																			else ( xs:integer(substring($arg,1,1) ) )
 																		)"/>
     <sequence select="if ($tappo = 0) then $mapper else ( xs:integer($mapper) + u:addPIVA(substring(xs:string($arg),2), (if($pari=0) then 1 else 0) ) )"/>
-  </function>	
+  </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:abn" as="xs:boolean">
     <param name="val"/>
     <value-of select="(
@@ -170,7 +170,7 @@ Last update: 2022 May release 3.0.13.
 ((string-to-codepoints(substring($val,10,1)) - 48) * 17) +
 ((string-to-codepoints(substring($val,11,1)) - 48) * 19)) mod 89 = 0
 "/>
-  </function>  
+  </function>
   <pattern>
     <rule context="rsm:ExchangedDocumentContext">
       <assert id="PEPPOL-EN16931-R001" test="ram:BusinessProcessSpecifiedDocumentContextParameter/ram:ID" flag="fatal">Business process MUST be provided.</assert>
@@ -287,7 +287,7 @@ Last update: 2022 May release 3.0.13.
     </rule>
     <rule context="ram:URIID[@schemeID = '0208'] | ram:ID[@schemeID = '0208'] | ram:GlobalID[@schemeID = '0208']">
       <assert id="PEPPOL-COMMON-R043" test="matches(normalize-space(), '^[0-9]{10}$') and u:mod97-0208(normalize-space())" flag="fatal">Belgian enterprise number MUST be stated in the correct format.</assert>
-    </rule>	
+    </rule>
     <rule context="ram:URIID[@schemeID = '0201'] | ram:ID[@schemeID = '0201'] | ram:GlobalID[@schemeID = '0201']">
       <assert id="PEPPOL-COMMON-R044" test="u:checkCodiceIPA(normalize-space())" flag="warning">IPA Code (Codice Univoco Unità Organizzativa) must be stated in the correct format</assert>
     </rule>
@@ -302,14 +302,14 @@ Last update: 2022 May release 3.0.13.
     </rule>
     <rule context="ram:URIID[@schemeID = '9906']">
       <assert id="PEPPOL-COMMON-R048" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
-    </rule>	
+    </rule>
     <rule context="ram:URIID[@schemeID = '0007'] | ram:ID[@schemeID = '0007'] | ram:GlobalID[@schemeID = '0007']">
-      <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="warning">Swedish organization number MUST be stated in the correct format.</assert>
+      <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="fatal">Swedish organization number MUST be stated in the correct format.</assert>
     </rule>
 	<rule context="ram:URIID[@schemeID = '0151'] | ram:ID[@schemeID = '0151'] | ram:GlobalID[@schemeID = '0151']">
       <assert id="PEPPOL-COMMON-R050" test="u:abn(normalize-space())" flag="warning">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
     </rule>
-    
+
   </pattern>
   <!-- National rules -->
   <pattern>
@@ -319,7 +319,7 @@ Last update: 2022 May release 3.0.13.
                 their invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av
                 utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet,
                 jf. foretaksregisterloven § 10-2."</assert>
-      <assert id="NO-R-001" test="ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/substring(ram:ID, 1, 2)='NO' and matches(ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/substring(ram:ID,3) , '^[0-9]{9}MVA$') 
+      <assert id="NO-R-001" test="ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/substring(ram:ID, 1, 2)='NO' and matches(ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/substring(ram:ID,3) , '^[0-9]{9}MVA$')
                 and u:mod11(substring(ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/ram:ID, 3, 9)) or not(ram:SpecifiedTaxRegistration[ram:ID/@schemeID = 'VAT']/substring(ram:ID, 1, 2)='NO')" flag="fatal">For Norwegian suppliers, a VAT number MUST be the country code prefix NO followed by a valid Norwegian organization number (nine numbers) followed by the letters MVA.</assert>
     </rule>
   </pattern>
@@ -337,8 +337,8 @@ Last update: 2022 May release 3.0.13.
                                        and number(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:Reason) &gt;= 0)
                                        and number(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeAllowanceCharge/ram:Reason &lt;= 9999)
                                       )
-                              )" flag="fatal">When specifying non-VAT Taxes, Danish suppliers MUST use the SpecifiedTradeAllowanceCharge/ReasonCode="ZZZ" and the 4-digit Tax category MUST be specified as Reason</assert>
-      <assert id="DK-R-013" test="not(($DKCustomerCountry = 'DK') and 
+                              )" flag="fatal">When specifying non-VAT Taxes for Danish customers, Danish suppliers MUST use the SpecifiedTradeAllowanceCharge/ReasonCode="ZZZ" and the 4-digit Tax category MUST be specified as Reason</assert>
+      <assert id="DK-R-013" test="not(($DKCustomerCountry = 'DK') and
                                   ( ((boolean(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:GlobalID))
                                      and (normalize-space(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:GlobalID/@schemeID) = ''))
                                    or
@@ -352,13 +352,6 @@ Last update: 2022 May release 3.0.13.
       <assert id="DK-R-016" test="not((($DKCustomerCountry = 'DK') and (normalize-space(rsm:ExchangedDocument/ram:TypeCode/text()) = '381'))
                               and (number(rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation/ram:DuePayableAmount/text()) &lt; 0)
                               )" flag="fatal">For Danish Suppliers, a Credit note cannot have a negative total (DuePayableAmount)</assert>
-    </rule>
-    <rule context="rsm:CrossIndustryInvoice[$DKSupplierCountry = 'DK']/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration">
-      <assert id="DK-R-015" test="not(( (ram:ID/@schemeID = 'VA' or ram:ID/@schemeID = 'VAT') and (substring(ram:ID/text(), 1, 2) = 'DK'))
-                          and not( (string-length(ram:ID/text()) = 10)
-                                  and (string-length(translate(substring(ram:ID/text(), 3, 8), '1234567890', '')) = 0)
-                                  )
-                              )" flag="fatal">For Danish Suppliers SellerTradeParty/SpecifiedTaxRegistration/ID must be specified  with DK followed by 8 digits (eg. DK12345678) if used.</assert>
     </rule>
     <rule context="rsm:CrossIndustryInvoice[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans">
       <assert id="DK-R-005" test="(contains(' 1 10 31 42 48 49 50 58 59 93 97 ', concat(' ', ram:TypeCode, ' ')))" flag="fatal">For Danish suppliers the following Payment means type codes are allowed: 1, 10, 31, 42, 48, 49, 50, 58, 59, 93 and 97</assert>
@@ -397,7 +390,7 @@ Last update: 2022 May release 3.0.13.
     </rule>
     <rule context="rsm:CrossIndustryInvoice[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/rsm:SupplyChainTradeTransaction/ram:IncludedSupplyChainTradeLineItem">
       <!-- Chedk for commodityCode on linelevel -->
-      <assert id="DK-R-003" test="not((ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID = 'MP')
+      <assert id="DK-R-003" test="not((ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listID = 'TST')
                               and not((ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listVersionID = '19.05.01')
                                      or (ram:SpecifiedTradeProduct/ram:DesignatedProductClassification/ram:ClassCode/@listVersionID = '19.0501')
                                )
