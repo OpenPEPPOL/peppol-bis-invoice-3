@@ -307,7 +307,7 @@ Last update: 2022 May release 3.0.13.
       <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="fatal">Swedish organization number MUST be stated in the correct format.</assert>
     </rule>
 	<rule context="ram:URIID[@schemeID = '0151'] | ram:ID[@schemeID = '0151'] | ram:GlobalID[@schemeID = '0151']">
-      <assert id="PEPPOL-COMMON-R050" test="u:abn(normalize-space())" flag="warning">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
+      <assert id="PEPPOL-COMMON-R050" test="u:abn(normalize-space())" flag="fatal">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
     </rule>
 
   </pattern>
