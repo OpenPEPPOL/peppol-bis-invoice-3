@@ -539,21 +539,14 @@ Last update: 2022 November release 3.0.14.
       <assert id="GR-R-003" test="substring(.,1,2) = 'EL' and u:TinVerification(substring(.,3))" flag="fatal">For the Greek Suppliers, the VAT must start with 'EL' and must be a valid TIN number</assert>
     </rule>
     <!-- Document Reference Rules (existence of MARK and Invoice Verification URL) -->
-    <rule context="/ubl-invoice:Invoice[$isGreekSender
-                                 and (cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cac:IdentificationCode=GR
-                                 |   cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cac:IdentificationCode=EL)]
-                  | /ubl-creditnote:CreditNote[$isGreekSender
-                                 and (cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cac:IdentificationCode=GR
-                                 |   cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cac:IdentificationCode=EL)]">
+    <rule context="/ubl-invoice:Invoice[$isGreekSender and ( /*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'GR')] | /ubl-creditnote:CreditNote[$isGreekSender and ( /*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'GR')]">
       <!-- ΜARK Rules -->
       <assert id="GR-R-004-1" test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##M.AR.K##'])=1" flag="fatal"> When Supplier is Greek, there must be one MARK Number</assert>
       <assert id="GR-S-008-1" flag="warning" test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##'])=1"> When Supplier is Greek, there should be one invoice url</assert>
       <assert id="GR-R-008-2" test="(count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##']) = 0 ) or (count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##']) = 1 )" flag="fatal"> When Supplier is Greek, there should be no more than one invoice url</assert>
     </rule>
     <!-- MARK Rules -->
-    <rule context="cac:AdditionalDocumentReference[$isGreekSender
-              and (cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cac:IdentificationCode=GR | cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cac:IdentificationCode=EL)
-              and cbc:DocumentDescription = '##M.AR.K##']/cbc:ID">
+    <rule context="cac:AdditionalDocumentReference[$isGreekSender and ( /*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'GR') and cbc:DocumentDescription = '##M.AR.K##']/cbc:ID">
       <assert id="GR-R-004-2" test="matches(.,'^[1-9]([0-9]*)')" flag="fatal"> When Supplier is Greek, the MARK Number must be a positive integer</assert>
     </rule>
 
@@ -574,9 +567,9 @@ Last update: 2022 November release 3.0.14.
   <pattern>
     <!-- VAT Number Rules -->
     <rule context="cac:AccountingSupplierParty[$isGreekSender]/cac:Party">
-      <assert id="GR-R-011" test="count(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID)=1 and
+      <assert id="GR-S-011" test="count(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID)=1 and
 				                        substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID,1,2) = 'EL' and
-				                        u:TinVerification(substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID,3))" flag="fatal">Greek suppliers must provide their Seller Tax Registration Number, prefixed by the country code</assert>
+				                        u:TinVerification(substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID,3))" flag="warning">Greek suppliers must provide their Seller Tax Registration Number, prefixed by the country code</assert>
     </rule>
 
     <rule context="cac:AccountingCustomerParty[$isGreekSenderandReceiver]/cac:Party">
