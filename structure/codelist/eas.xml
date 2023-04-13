@@ -150,6 +150,14 @@
         <Id>0216</Id>
         <Name>OVTcode</Name>
     </Code>
+	 <Code>
+        <Id>0221</Id>
+        <Name>The registered number of the qualified invoice issuer (Japan)</Name>
+    </Code>
+	 <Code>
+        <Id>0230</Id>
+        <Name>National e-Invoicing Framework (Malaysia)</Name>
+    </Code>
     <Code>
         <Id>9901</Id>
         <Name>Danish Ministry of the Interior and Health</Name>
@@ -309,10 +317,6 @@
     <Code>
         <Id>9953</Id>
         <Name>Holy See (Vatican City State) VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9955</Id>
-        <Name>Swedish VAT number</Name>
     </Code>
     <Code>
         <Id>9957</Id>

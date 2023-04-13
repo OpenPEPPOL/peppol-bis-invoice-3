@@ -313,6 +313,11 @@
         <Name>Material code</Name>
         <Description>Code defining the material's type, surface, geometric form plus various classifying characteristics.</Description>
     </Code>
+	 <Code>
+        <Id>EMD</Id>
+        <Name>EMDN (European Medical Device Nomenclature)</Name>
+        <Description>Nomenclature system for identification of medical devices based on European Medical Device Nomenclature classification system.</Description>
+    </Code>
     <Code>
         <Id>EN</Id>
         <Name>International Article Numbering Association (EAN)</Name>
