@@ -2,11 +2,11 @@
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
     <assert>
         <description>Greek Suppliers must have a Tax Registration Number</description>
-        <scope>GR-R-011</scope>
+        <scope>GR-S-011</scope>
     </assert>
     <test>
         <assert>
-            <success>GR-R-011</success>
+            <success>GR-S-011</success>
         </assert>
         <Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 "
@@ -32,7 +32,7 @@
     </test>
     <test>
         <assert>
-            <warning>GR-R-011</warning>
+            <warning>GR-S-011</warning>
         </assert>
         <Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 "
