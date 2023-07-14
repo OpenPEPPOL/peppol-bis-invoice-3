@@ -653,6 +653,132 @@ Last update: 2023 May release 3.0.15.
       <assert id="NL-R-009" test="exists(/*/cac:OrderReference/cbc:ID)" flag="fatal">[NL-R-009] For suppliers in the Netherlands, if an order line reference (cac:OrderLineReference/cbc:LineID) is used, there must be an order reference on the document level (cac:OrderReference/cbc:ID)</assert>
     </rule>
   </pattern>
+  <!-- German rules -->
+  <!-- German rules -->
+  <pattern>
+      <let name="supplierCountryIsDE"
+           value="(upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
+      <let name="customerCountryIsDE"
+           value="(upper-case(normalize-space(/*/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
+      <let name="XR-SKONTO-REGEX"
+           value="'#(SKONTO|VERZUG)#TAGE=([0-9]+#PROZENT=[0-9]+\.[0-9]{2})(#BASISBETRAG=-?[0-9]+\.[0-9]{2})?#$'"/>
+      <let name="XR-EMAIL-REGEX"
+           value="'^[a-zA-Z0-9!#\$%&amp;&#34;*+/=?^_`{|}~-]+(\.[a-zA-Z0-9!#\$%&amp;&#34;*+/=?^_`{|}~-]+)*@([a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?$'"/>
+      <let name="XR-TELEPHONE-REGEX" value="'.*([0-9].*){3,}.*'"/>
+      <rule context="(/Invoice | /CreditNote)[$supplierCountryIsDE and $customerCountryIsDE]">
+         <assert test="cac:PaymentMeans" flag="fatal" id="DE-R-001">BR-DE-1 translation</assert>
+         <assert test="cbc:BuyerReference[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-015">BR-DE-15 translation</assert>
+         <let name="supportedVATCodes"
+              value="('S', 'Z', 'E', 'AE', 'K', 'G', 'L', 'M')"/>
+         <let name="BT-31orBT-32Path"
+              value="cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID[boolean(normalize-space(.))]"/>
+         <let name="BT-95-UBL-Inv"
+              value="cac:AllowanceCharge/cac:TaxCategory/cbc:ID[ancestor::cac:AllowanceCharge/cbc:ChargeIndicator = 'false' and         following-sibling::cac:TaxScheme/cbc:ID = 'VAT']"/>
+         <let name="BT-95-UBL-CN"
+              value="cac:AllowanceCharge/cac:TaxCategory/cbc:ID[ancestor::cac:AllowanceCharge/cbc:ChargeIndicator = 'false']"/>
+         <let name="BT-102"
+              value="cac:AllowanceCharge/cac:TaxCategory/cbc:ID[ancestor::cac:AllowanceCharge/cbc:ChargeIndicator = 'true']"/>
+         <let name="BT-151"
+              value="(cac:InvoiceLine | cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cbc:ID"/>
+         <!-- If one of BT-95, BT-102, BT-151 is in List of supportedVATCodes then either BG-11=cac:TaxRepresentativeParty or $BT-31orBT-32Path has to exist -->
+         <assert test="         (not(           ($BT-95-UBL-Inv = $supportedVATCodes or $BT-95-UBL-CN = $supportedVATCodes) or           ($BT-102 = $supportedVATCodes) or           ($BT-151 = $supportedVATCodes)         ) or         (cac:TaxRepresentativeParty, $BT-31orBT-32Path))         "
+                 flag="fatal"
+                 id="DE-R-016">BR-DE-16 translation</assert>
+         <let name="supportedInvAndCNTypeCodes"
+              value="('326', '380', '384', '389', '381', '875', '876', '877')"/>
+         <assert test="cbc:InvoiceTypeCode = $supportedInvAndCNTypeCodes         or cbc:CreditNoteTypeCode = $supportedInvAndCNTypeCodes"
+                 flag="warning"
+                 id="DE-R-017">BR-DE-17 translation</assert>
+         <assert test="every $line in             cac:PaymentTerms/cbc:Note[1]/tokenize(. , '(\r?\n)')[starts-with( normalize-space(.) , '#')]              satisfies matches ( normalize-space ($line), $XR-SKONTO-REGEX)                                  and                                 matches( cac:PaymentTerms/cbc:Note[1]/tokenize(. ,  '#.+#')[last()], '^\s*\n' )"
+                 flag="fatal"
+                 id="DE-R-018">BR-DE-18 translation</assert>
+         <assert test="count(cac:AdditionalDocumentReference) =                      count(cac:AdditionalDocumentReference[not(./cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename = preceding-sibling::cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename)])"
+                 flag="fatal"
+                 id="DE-R-022">BR-DE-22 translation</assert>
+         <assert test="((not(cbc:InvoiceTypeCode = 384 or cbc:CreditNoteTypeCode = 384) or                     (cac:BillingReference/cac:InvoiceDocumentReference)))"
+                 flag="warning"
+                 id="DE-R-026">BR-DE-26 translation</assert>
+         <assert test="not(cac:PaymentMeans/cac:PaymentMandate)                        or (cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID[@schemeID='SEPA']                          | cac:PayeeParty/cac:PartyIdentification/cbc:ID[@schemeID='SEPA'])"
+                 flag="fatal"
+                 id="DE-R-030">BR-DE-30 translation</assert>
+         <assert test="not(cac:PaymentMeans/cac:PaymentMandate) or (cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID)"
+                 flag="fatal"
+                 id="DE-R-031">BR-DE-31 translation</assert>
+      </rule>
+      <rule context="(/Invoice/cac:AccountingSupplierParty | /CreditNote/cac:AccountingSupplierParty)[$supplierCountryIsDE and $customerCountryIsDE]">
+         <assert test="cac:Party/cac:Contact" flag="fatal" id="DE-R-002">BR-DE-2 translation</assert>
+      </rule>
+      <rule context="(/Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress | /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
+         <assert test="cbc:CityName[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-003">BR-DE-3 translation</assert>
+         <assert test="cbc:PostalZone[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-004">BR-DE-4 translation</assert>
+      </rule>
+      <rule context="(/Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact | /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:Contact)[$supplierCountryIsDE and $customerCountryIsDE]">
+         <assert test="cbc:Name[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-005">BR-DE-5 translation</assert>
+         <assert test="cbc:Telephone[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-006">BR-DE-6 translation</assert>
+         <assert test="cbc:ElectronicMail[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-007">BR-DE-7 translation</assert>
+         <assert test="matches(normalize-space(cbc:Telephone), $XR-TELEPHONE-REGEX)"
+                 flag="warning"
+                 id="DE-R-027">BR-DE-27 translation</assert>
+         <assert test="matches(normalize-space(cbc:ElectronicMail), $XR-EMAIL-REGEX)"
+                 flag="warning"
+                 id="DE-R-028">BR-DE-28 translation</assert>
+      </rule>
+      <rule context="(/Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress | /CreditNote/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
+         <assert test="cbc:CityName[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-008">BR-DE-8 translation</assert>
+         <assert test="cbc:PostalZone[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-009">BR-DE-9 translation</assert>
+      </rule>
+      <rule context="(/Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address | /CreditNote/cac:Delivery/cac:DeliveryLocation/cac:Address)[$supplierCountryIsDE and $customerCountryIsDE]">
+         <assert test="cbc:CityName[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-010">BR-DE-10 translation</assert>
+      </rule>
+      <rule context="(/Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)] | /CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)])[$supplierCountryIsDE and $customerCountryIsDE]">
+      <!-- check for PaymentMeansCode 30 was not added by purpose in 2.1.1. -->
+         <assert test="not(cbc:PaymentMeansCode = '58') or                     matches(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')), '^[A-Z]{2}[0-9]{2}[a-zA-Z0-9]{0,30}$') and                     xs:integer(string-join(for $cp in string-to-codepoints(concat(substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),5),upper-case(substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),1,2)),substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),3,2))) return  (if($cp &gt; 64) then string($cp - 55) else  string($cp - 48)),'')) mod 97 = 1"
+                 flag="warning"
+                 id="DE-R-019">BR-DE-19 translation</assert>
+         <assert test="cac:PayeeFinancialAccount" flag="fatal" id="DE-R-023-1">BR-DE-23-a translation</assert>
+         <assert test="not(cac:CardAccount) and                     not(cac:PaymentMandate)"
+                 flag="fatal"
+                 id="DE-R-023-2">BR-DE-23-b translation</assert>
+      </rule>
+      <rule context="(/Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)] |/CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)])[$supplierCountryIsDE and $customerCountryIsDE]">
+         <assert test="cac:CardAccount" flag="fatal" id="DE-R-024-1">BR-DE-24-a translation</assert>
+         <assert test="not(cac:PayeeFinancialAccount) and                     not(cac:PaymentMandate)"
+                 flag="fatal"
+                 id="DE-R-024-2">BR-DE-24-b translation</assert>
+      </rule>
+      <rule context="(/Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = 59] | /CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = 59])[$supplierCountryIsDE and $customerCountryIsDE]">
+         <assert test="not(cbc:PaymentMeansCode = '59') or                     matches(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')), '^[A-Z]{2}[0-9]{2}[a-zA-Z0-9]{0,30}$') and                     xs:decimal(string-join(for $cp in string-to-codepoints(concat(substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),5),upper-case(substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),1,2)),substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),3,2))) return  (if($cp &gt; 64) then string($cp - 55) else  string($cp - 48)),'')) mod 97 = 1"
+                 flag="warning"
+                 id="DE-R-020">BR-DE-20 translation</assert>
+         <assert test="cac:PaymentMandate" flag="fatal" id="DE-R-025-1">BR-DE-25-a translation</assert>
+         <assert test="not(cac:PayeeFinancialAccount) and                     not(cac:CardAccount)"
+                 flag="fatal"
+                 id="DE-R-025-2">BR-DE-25-b translation</assert>
+      </rule>
+      <rule context="(/Invoice/cac:TaxTotal/cac:TaxSubtotal | /CreditNote/cac:TaxTotal/cac:TaxSubtotal)[$supplierCountryIsDE and $customerCountryIsDE]">
+         <assert test="cac:TaxCategory/cbc:Percent[boolean(normalize-space(.))]"
+                 flag="fatal"
+                 id="DE-R-014">BR-DE-14 translation</assert>
+      </rule>
+   </pattern>
   <!-- Restricted code lists and formatting -->
   <pattern>
     <let name="ISO3166" value="tokenize('AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW 1A XI', '\s')"/>
