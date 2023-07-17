@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
 	<assert>
-    <description>DE-R-010 description tbd</description>
+    <description>DE-R-010 The element "Deliver to city" (BT-77) shall be provided if the group "DELIVER TO ADDRESS" (BG-15) is delivered.</description>
 		<scope>DE-R-010</scope>
 	</assert>
 	<test>
