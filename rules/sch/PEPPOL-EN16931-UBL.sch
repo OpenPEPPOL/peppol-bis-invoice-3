@@ -665,7 +665,7 @@ Last update: 2023 May release 3.0.15.
       <let name="XR-EMAIL-REGEX"
            value="'^[a-zA-Z0-9!#\$%&amp;&#34;*+/=?^_`{|}~-]+(\.[a-zA-Z0-9!#\$%&amp;&#34;*+/=?^_`{|}~-]+)*@([a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?$'"/>
       <let name="XR-TELEPHONE-REGEX" value="'.*([0-9].*){3,}.*'"/>
-      <rule context="(/Invoice | /CreditNote)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(ubl-invoice:Invoice | /ubl-creditnote:CreditNote)[$supplierCountryIsDE and $customerCountryIsDE]">
          <assert test="cac:PaymentMeans" flag="fatal" id="DE-R-001">BR-DE-1 translation</assert>
          <assert test="cbc:BuyerReference[boolean(normalize-space(.))]"
                  flag="fatal"
@@ -707,10 +707,10 @@ Last update: 2023 May release 3.0.15.
                  flag="fatal"
                  id="DE-R-031">BR-DE-31 translation</assert>
       </rule>
-      <rule context="(/Invoice/cac:AccountingSupplierParty | /CreditNote/cac:AccountingSupplierParty)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(/ubl-invoice:Invoice/cac:AccountingSupplierParty | /ubl-creditnote:CreditNote/cac:AccountingSupplierParty)[$supplierCountryIsDE and $customerCountryIsDE]">
          <assert test="cac:Party/cac:Contact" flag="fatal" id="DE-R-002">BR-DE-2 translation</assert>
       </rule>
-      <rule context="(/Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress | /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(/ubl-invoice:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress | /ubl-creditnote:CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
          <assert test="cbc:CityName[boolean(normalize-space(.))]"
                  flag="fatal"
                  id="DE-R-003">BR-DE-3 translation</assert>
@@ -718,7 +718,7 @@ Last update: 2023 May release 3.0.15.
                  flag="fatal"
                  id="DE-R-004">BR-DE-4 translation</assert>
       </rule>
-      <rule context="(/Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact | /CreditNote/cac:AccountingSupplierParty/cac:Party/cac:Contact)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(/ubl-invoice:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact | /ubl-creditnote:CreditNote/cac:AccountingSupplierParty/cac:Party/cac:Contact)[$supplierCountryIsDE and $customerCountryIsDE]">
          <assert test="cbc:Name[boolean(normalize-space(.))]"
                  flag="fatal"
                  id="DE-R-005">BR-DE-5 translation</assert>
@@ -735,7 +735,7 @@ Last update: 2023 May release 3.0.15.
                  flag="warning"
                  id="DE-R-028">BR-DE-28 translation</assert>
       </rule>
-      <rule context="(/Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress | /CreditNote/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(/ubl-invoice:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress | /ubl-creditnote:CreditNote/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
          <assert test="cbc:CityName[boolean(normalize-space(.))]"
                  flag="fatal"
                  id="DE-R-008">BR-DE-8 translation</assert>
@@ -743,12 +743,12 @@ Last update: 2023 May release 3.0.15.
                  flag="fatal"
                  id="DE-R-009">BR-DE-9 translation</assert>
       </rule>
-      <rule context="(/Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address | /CreditNote/cac:Delivery/cac:DeliveryLocation/cac:Address)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(/ubl-invoice:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address | /ubl-creditnote:CreditNote/cac:Delivery/cac:DeliveryLocation/cac:Address)[$supplierCountryIsDE and $customerCountryIsDE]">
          <assert test="cbc:CityName[boolean(normalize-space(.))]"
                  flag="fatal"
                  id="DE-R-010">BR-DE-10 translation</assert>
       </rule>
-      <rule context="(/Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)] | /CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)])[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(/ubl-invoice:Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)] | /ubl-creditnote:CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)])[$supplierCountryIsDE and $customerCountryIsDE]">
       <!-- check for PaymentMeansCode 30 was not added by purpose in 2.1.1. -->
          <assert test="not(cbc:PaymentMeansCode = '58') or                     matches(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')), '^[A-Z]{2}[0-9]{2}[a-zA-Z0-9]{0,30}$') and                     xs:integer(string-join(for $cp in string-to-codepoints(concat(substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),5),upper-case(substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),1,2)),substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),3,2))) return  (if($cp &gt; 64) then string($cp - 55) else  string($cp - 48)),'')) mod 97 = 1"
                  flag="warning"
@@ -758,13 +758,13 @@ Last update: 2023 May release 3.0.15.
                  flag="fatal"
                  id="DE-R-023-2">BR-DE-23-b translation</assert>
       </rule>
-      <rule context="(/Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)] |/CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)])[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(/ubl-invoice:Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)] |/ubl-creditnote:CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)])[$supplierCountryIsDE and $customerCountryIsDE]">
          <assert test="cac:CardAccount" flag="fatal" id="DE-R-024-1">BR-DE-24-a translation</assert>
          <assert test="not(cac:PayeeFinancialAccount) and                     not(cac:PaymentMandate)"
                  flag="fatal"
                  id="DE-R-024-2">BR-DE-24-b translation</assert>
       </rule>
-      <rule context="(/Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = 59] | /CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = 59])[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(/ubl-invoice:Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = 59] | /ubl-creditnote:CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = 59])[$supplierCountryIsDE and $customerCountryIsDE]">
          <assert test="not(cbc:PaymentMeansCode = '59') or                     matches(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')), '^[A-Z]{2}[0-9]{2}[a-zA-Z0-9]{0,30}$') and                     xs:decimal(string-join(for $cp in string-to-codepoints(concat(substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),5),upper-case(substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),1,2)),substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),3,2))) return  (if($cp &gt; 64) then string($cp - 55) else  string($cp - 48)),'')) mod 97 = 1"
                  flag="warning"
                  id="DE-R-020">BR-DE-20 translation</assert>
@@ -773,7 +773,7 @@ Last update: 2023 May release 3.0.15.
                  flag="fatal"
                  id="DE-R-025-2">BR-DE-25-b translation</assert>
       </rule>
-      <rule context="(/Invoice/cac:TaxTotal/cac:TaxSubtotal | /CreditNote/cac:TaxTotal/cac:TaxSubtotal)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <rule context="(/ubl-invoice:Invoice/cac:TaxTotal/cac:TaxSubtotal | /ubl-creditnote:CreditNote/cac:TaxTotal/cac:TaxSubtotal)[$supplierCountryIsDE and $customerCountryIsDE]">
          <assert test="cac:TaxCategory/cbc:Percent[boolean(normalize-space(.))]"
                  flag="fatal"
                  id="DE-R-014">BR-DE-14 translation</assert>
