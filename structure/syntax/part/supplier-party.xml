@@ -325,7 +325,7 @@
                 <Name>SELLER CONTACT</Name>
                 <Description>A group of business terms providing contact information about the Seller.</Description>
                 <Reference type="BUSINESS_TERM">BG-6</Reference>
-                
+                <Reference type="RULE">DE-R-002</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:Name</Term>
                     <Name>Seller contact point</Name>
