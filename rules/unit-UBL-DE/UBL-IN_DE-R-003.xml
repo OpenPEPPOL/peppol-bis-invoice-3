@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
 	<assert>
-    <description>DE-R-001 description tbd</description>
-		<scope>DE-R-001</scope>
+    <description>DE-R-003 description tbd</description>
+		<scope>DE-R-003</scope>
 	</assert>
 	<test>
 		<assert>
-			<success>DE-R-001</success>
+			<success>DE-R-003</success>
 		</assert>
+
 <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cec="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
   <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
   <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
@@ -18,7 +19,6 @@
   <cbc:Note>Invoice Note Description</cbc:Note>
   <cbc:TaxPointDate>2018-04-13</cbc:TaxPointDate>
   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
-  <cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
   <cbc:BuyerReference>90000000-03083-12</cbc:BuyerReference>
 
 
@@ -38,12 +38,8 @@
   </cac:ContractDocumentReference>
   <cac:AdditionalDocumentReference>
     <cbc:ID>01_15_Anhang_01.pdf</cbc:ID>
-    <cbc:DocumentDescription>Aufschlüsselung der einzelnen
-      Leistungspositionen</cbc:DocumentDescription>
-    <cac:Attachment>
-      <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="01_15_Anhang_01.pdf"/>
-    </cac:Attachment>
-  </cac:AdditionalDocumentReference>
+    <cbc:DocumentDescription>Aufschlüsselung der einzelnen Leistungspositionen</cbc:DocumentDescription>
+    </cac:AdditionalDocumentReference>
   <cac:ProjectReference>
     <cbc:ID>PR12345678</cbc:ID>
   </cac:ProjectReference>
@@ -58,7 +54,7 @@
       </cac:PartyName>
       <cac:PostalAddress>
         <cbc:StreetName>[Seller address line 1]</cbc:StreetName>
-        <cbc:AdditionalStreetName>[Seller address line 2]</cbc:AdditionalStreetName>
+        <cbc:AdditionalStreetName>[Seller address line 2]</cbc:AdditionalStreetName>        
         <cbc:CityName>[Seller city]</cbc:CityName>
         <cbc:PostalZone>12345</cbc:PostalZone>
         <cac:Country>
@@ -80,8 +76,7 @@
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>[Seller trading name]</cbc:RegistrationName>
         <cbc:CompanyID schemeID="0198">123456789</cbc:CompanyID>
-        <cbc:CompanyLegalForm>Amtsgericht […], Geschäftsführer: […], Sitz der Gesellschaft […],
-          Aufsichtsratvorsitzender: […]</cbc:CompanyLegalForm>
+        <cbc:CompanyLegalForm>Amtsgericht […], Geschäftsführer: […], Sitz der Gesellschaft […], Aufsichtsratvorsitzender: […]</cbc:CompanyLegalForm>
       </cac:PartyLegalEntity>
       <cac:Contact>
         <cbc:Name>Tim Tester</cbc:Name>
@@ -141,9 +136,6 @@
       <cbc:Name>[Seller tax representative name]</cbc:Name>
     </cac:PartyName>
     <cac:PostalAddress>
-      <cbc:StreetName/>
-      <cbc:CityName/>
-      <cbc:PostalZone/>
       <cac:Country>
         <cbc:IdentificationCode>DE</cbc:IdentificationCode>
       </cac:Country>
@@ -236,11 +228,6 @@
   </cac:TaxTotal>
 
 
-  <cac:TaxTotal>
-    <cbc:TaxAmount currencyID="GBP">2048.44</cbc:TaxAmount>
-  </cac:TaxTotal>
-
-
   <cac:LegalMonetaryTotal>
     <cbc:LineExtensionAmount currencyID="EUR">10781.25</cbc:LineExtensionAmount>
     <cbc:TaxExclusiveAmount currencyID="EUR">10781.25</cbc:TaxExclusiveAmount>
@@ -255,13 +242,12 @@
 
   <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
-    <cbc:Note>Die letzte Lieferung im Rahmen des abgerechneten Abonnements erfolgt in 12/2016
-      Lieferung erfolgt / erfolgte direkt vom Verlag</cbc:Note>
+    <cbc:Note>Die letzte Lieferung im Rahmen des abgerechneten Abonnements erfolgt in 12/2016 Lieferung erfolgt / erfolgte direkt vom Verlag</cbc:Note>
     <cbc:InvoicedQuantity unitCode="XPP">30</cbc:InvoicedQuantity>
     <cbc:LineExtensionAmount currencyID="EUR">4743.75</cbc:LineExtensionAmount>
     <cac:InvoicePeriod>
-      <cbc:StartDate>2016-01-01</cbc:StartDate>
-      <cbc:EndDate>2016-12-31</cbc:EndDate>
+      <cbc:StartDate>2018-04-13</cbc:StartDate>
+      <cbc:EndDate>2018-04-13</cbc:EndDate>
     </cac:InvoicePeriod>
     <cac:OrderLineReference>
       <cbc:LineID>6171175.1</cbc:LineID>
@@ -284,7 +270,7 @@
       </cac:ClassifiedTaxCategory>
     </cac:Item>
     <cac:Price>
-      <cbc:PriceAmount currencyID="EUR">143.75</cbc:PriceAmount>
+      <cbc:PriceAmount currencyID="EUR">158.125</cbc:PriceAmount>
     </cac:Price>
   </cac:InvoiceLine>
   <cac:InvoiceLine>
@@ -310,10 +296,10 @@
 	</test>
 	<test>
 		<assert>
-			<error>DE-R-001</error>
+			<error>DE-R-003</error>
 		</assert>
 
-<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cec="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cec="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
   <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
   <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
   <cbc:ID>1234567</cbc:ID>
@@ -323,7 +309,6 @@
   <cbc:Note>Invoice Note Description</cbc:Note>
   <cbc:TaxPointDate>2018-04-13</cbc:TaxPointDate>
   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
-  <cbc:TaxCurrencyCode>EUR</cbc:TaxCurrencyCode>
   <cbc:BuyerReference>90000000-03083-12</cbc:BuyerReference>
 
 
@@ -343,12 +328,8 @@
   </cac:ContractDocumentReference>
   <cac:AdditionalDocumentReference>
     <cbc:ID>01_15_Anhang_01.pdf</cbc:ID>
-    <cbc:DocumentDescription>Aufschlüsselung der einzelnen
-      Leistungspositionen</cbc:DocumentDescription>
-    <cac:Attachment>
-      <cbc:EmbeddedDocumentBinaryObject mimeCode="application/pdf" filename="01_15_Anhang_01.pdf"/>
-    </cac:Attachment>
-  </cac:AdditionalDocumentReference>
+    <cbc:DocumentDescription>Aufschlüsselung der einzelnen Leistungspositionen</cbc:DocumentDescription>
+    </cac:AdditionalDocumentReference>
   <cac:ProjectReference>
     <cbc:ID>PR12345678</cbc:ID>
   </cac:ProjectReference>
@@ -363,8 +344,9 @@
       </cac:PartyName>
       <cac:PostalAddress>
         <cbc:StreetName>[Seller address line 1]</cbc:StreetName>
-        <cbc:AdditionalStreetName>[Seller address line 2]</cbc:AdditionalStreetName>
-        <cbc:CityName>[Seller city]</cbc:CityName>
+        <cbc:AdditionalStreetName>[Seller address line 2]</cbc:AdditionalStreetName>        
+        <!-- BT- 37 removed -->
+        <!--<cbc:CityName>[Seller city]</cbc:CityName>-->
         <cbc:PostalZone>12345</cbc:PostalZone>
         <cac:Country>
           <cbc:IdentificationCode>DE</cbc:IdentificationCode>
@@ -385,8 +367,7 @@
       <cac:PartyLegalEntity>
         <cbc:RegistrationName>[Seller trading name]</cbc:RegistrationName>
         <cbc:CompanyID schemeID="0198">123456789</cbc:CompanyID>
-        <cbc:CompanyLegalForm>Amtsgericht […], Geschäftsführer: […], Sitz der Gesellschaft […],
-          Aufsichtsratvorsitzender: […]</cbc:CompanyLegalForm>
+        <cbc:CompanyLegalForm>Amtsgericht […], Geschäftsführer: […], Sitz der Gesellschaft […], Aufsichtsratvorsitzender: […]</cbc:CompanyLegalForm>
       </cac:PartyLegalEntity>
       <cac:Contact>
         <cbc:Name>Tim Tester</cbc:Name>
@@ -446,9 +427,6 @@
       <cbc:Name>[Seller tax representative name]</cbc:Name>
     </cac:PartyName>
     <cac:PostalAddress>
-      <cbc:StreetName/>
-      <cbc:CityName/>
-      <cbc:PostalZone/>
       <cac:Country>
         <cbc:IdentificationCode>DE</cbc:IdentificationCode>
       </cac:Country>
@@ -481,7 +459,17 @@
       </cac:PartyName>
     </cac:DeliveryParty>
   </cac:Delivery>
- 
+  <cac:PaymentMeans>
+    <cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>
+    <cbc:PaymentID>Deb. 12345 / Fact. 9876543</cbc:PaymentID>
+    <cac:PayeeFinancialAccount>
+      <cbc:ID>DE75512108001245126199</cbc:ID>
+      <cbc:Name>[Payment account name]</cbc:Name>
+      <cac:FinancialInstitutionBranch>
+        <cbc:ID>[BIC]</cbc:ID>
+      </cac:FinancialInstitutionBranch>
+    </cac:PayeeFinancialAccount>
+  </cac:PaymentMeans>
   <cac:PaymentTerms>
     <cbc:Note>Bitte überweisen Sie bis zum 24.01.2015 auf das unten aufgeführte Konto.</cbc:Note>
   </cac:PaymentTerms>
@@ -531,11 +519,6 @@
   </cac:TaxTotal>
 
 
-  <cac:TaxTotal>
-    <cbc:TaxAmount currencyID="GBP">2048.44</cbc:TaxAmount>
-  </cac:TaxTotal>
-
-
   <cac:LegalMonetaryTotal>
     <cbc:LineExtensionAmount currencyID="EUR">10781.25</cbc:LineExtensionAmount>
     <cbc:TaxExclusiveAmount currencyID="EUR">10781.25</cbc:TaxExclusiveAmount>
@@ -550,13 +533,12 @@
 
   <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
-    <cbc:Note>Die letzte Lieferung im Rahmen des abgerechneten Abonnements erfolgt in 12/2016
-      Lieferung erfolgt / erfolgte direkt vom Verlag</cbc:Note>
+    <cbc:Note>Die letzte Lieferung im Rahmen des abgerechneten Abonnements erfolgt in 12/2016 Lieferung erfolgt / erfolgte direkt vom Verlag</cbc:Note>
     <cbc:InvoicedQuantity unitCode="XPP">30</cbc:InvoicedQuantity>
     <cbc:LineExtensionAmount currencyID="EUR">4743.75</cbc:LineExtensionAmount>
     <cac:InvoicePeriod>
-      <cbc:StartDate>2016-01-01</cbc:StartDate>
-      <cbc:EndDate>2016-12-31</cbc:EndDate>
+      <cbc:StartDate>2018-04-13</cbc:StartDate>
+      <cbc:EndDate>2018-04-13</cbc:EndDate>
     </cac:InvoicePeriod>
     <cac:OrderLineReference>
       <cbc:LineID>6171175.1</cbc:LineID>
@@ -579,7 +561,7 @@
       </cac:ClassifiedTaxCategory>
     </cac:Item>
     <cac:Price>
-      <cbc:PriceAmount currencyID="EUR">143.75</cbc:PriceAmount>
+      <cbc:PriceAmount currencyID="EUR">158.125</cbc:PriceAmount>
     </cac:Price>
   </cac:InvoiceLine>
   <cac:InvoiceLine>
