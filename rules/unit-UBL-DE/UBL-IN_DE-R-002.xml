@@ -308,7 +308,7 @@
 	</test>
 	<test>
 		<assert>
-			<error>DE-R-001</error>
+			<error>DE-R-002</error>
 		</assert>
 
 
