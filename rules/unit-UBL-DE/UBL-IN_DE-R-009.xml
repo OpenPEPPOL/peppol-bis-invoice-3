@@ -98,8 +98,8 @@
         <cbc:StreetName>[Buyer address line 1]</cbc:StreetName>
         <cbc:AdditionalStreetName>[Buyer address line 2]</cbc:AdditionalStreetName>       
         <cbc:CityName>[Buyer city]</cbc:CityName>       
-		<!-- BT-53 removed -->
-        <!-- <cbc:PostalZone>98765</cbc:PostalZone> -->
+		<!-- BT-53 -->
+        <cbc:PostalZone>98765</cbc:PostalZone>
         <cac:AddressLine>
           <cbc:Line>[Buyer address line 3]</cbc:Line>
         </cac:AddressLine>
@@ -389,8 +389,8 @@
         <cbc:StreetName>[Buyer address line 1]</cbc:StreetName>
         <cbc:AdditionalStreetName>[Buyer address line 2]</cbc:AdditionalStreetName>       
         <cbc:CityName>[Buyer city]</cbc:CityName>       
-		<!-- BT-53 -->					
-        <cbc:PostalZone>98765</cbc:PostalZone>
+		<!-- BT-53 removed -->					
+        <!--<cbc:PostalZone>98765</cbc:PostalZone>-->
         <cac:AddressLine>
           <cbc:Line>[Buyer address line 3]</cbc:Line>
         </cac:AddressLine>
