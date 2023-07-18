@@ -345,7 +345,7 @@
       <cac:PostalAddress>
         <cbc:StreetName>[Seller address line 1]</cbc:StreetName>
         <cbc:AdditionalStreetName>[Seller address line 2]</cbc:AdditionalStreetName>        
-        <!-- BT- 37 removed -->
+        <!-- BT-37 removed -->
         <!--<cbc:CityName>[Seller city]</cbc:CityName>-->
         <cbc:PostalZone>12345</cbc:PostalZone>
         <cac:Country>
