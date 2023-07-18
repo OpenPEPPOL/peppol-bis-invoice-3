@@ -419,6 +419,7 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-20</Reference>
                 <Reference type="RULE">BR-CO-25</Reference>
+                <Reference type="RULE">DE-R-18</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
             </Element>
         </Element>
