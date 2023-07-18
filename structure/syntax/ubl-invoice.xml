@@ -82,6 +82,7 @@
             <Reference type="RULE">BR-04</Reference>
             <Reference type="RULE">BR-CL-01</Reference>
             <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
+            <Reference type="RULE">DE-R-017</Reference>
             <Reference type="CODE_LIST">UNCL1001-inv</Reference>
             <Value type="EXAMPLE">380</Value>
         </Element>
