@@ -58,6 +58,7 @@
             <Reference type="BUSINESS_TERM">BG-18</Reference>
             <Reference type="RULE">DE-R-023-2</Reference>
             <Reference type="RULE">DE-R-024-1</Reference>
+            <Reference type="RULE">DE-R-025-2</Reference>
             
             <Element>
                 <Term>cbc:PrimaryAccountNumberID</Term>
@@ -94,6 +95,7 @@
             <Reference type="BUSINESS_TERM">BG-17</Reference>
             <Reference type="RULE">DE-R-023-1</Reference>
             <Reference type="RULE">DE-R-024-2</Reference>
+            <Reference type="RULE">DE-R-025-2</Reference>
             
             <Element>
                 <Term>cbc:ID</Term>
@@ -150,6 +152,7 @@
             <Reference type="BUSINESS_TERM">BG-19</Reference>
             <Reference type="RULE">DE-R-023-2</Reference>
             <Reference type="RULE">DE-R-024-2</Reference>
+            <Reference type="RULE">DE-R-025-1</Reference>
             
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
