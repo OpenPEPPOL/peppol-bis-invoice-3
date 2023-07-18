@@ -56,6 +56,7 @@
                 invoice issuance.
             </Description>
             <Reference type="BUSINESS_TERM">BG-18</Reference>
+            <Reference type="RULE">DE-R-023-2</Reference>
             
             <Element>
                 <Term>cbc:PrimaryAccountNumberID</Term>
@@ -90,6 +91,7 @@
             <Name>CREDIT TRANSFER</Name>
             <Description>A group of business terms to specify credit transfer payments.</Description>
             <Reference type="BUSINESS_TERM">BG-17</Reference>
+            <Reference type="RULE">DE-R-023-1</Reference>
             
             <Element>
                 <Term>cbc:ID</Term>
@@ -144,6 +146,7 @@
             <Name>DIRECT DEBIT</Name>
             <Description>A group of business terms to specify a direct debit.</Description>
             <Reference type="BUSINESS_TERM">BG-19</Reference>
+            <Reference type="RULE">DE-R-023-2</Reference>
             
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
