@@ -159,6 +159,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-10</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
+            <Reference type="RULE">DE-R-15</Reference>
             <Value type="EXAMPLE">abs1234</Value>
         </Element>
 
