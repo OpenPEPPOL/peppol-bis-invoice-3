@@ -349,6 +349,7 @@
                     <Description>An e-mail address for the contact point.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-43</Reference>
+                    <Reference type="RULE">DE-R-028</Reference>
                     <Value type="EXAMPLE">test.name@foo.bar</Value>
                 </Element>
             </Element>
