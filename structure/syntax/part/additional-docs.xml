@@ -9,6 +9,7 @@
         <Reference type="BUSINESS_TERM">BG-24</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
+         <Reference type="RULE">DE-R-022</Reference>
 
         <Element>
             <Term>cbc:ID</Term>
