@@ -340,6 +340,7 @@
                     <Description>A phone number for the contact point.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-42</Reference>
+                    <Reference type="RULE">DE-R-027</Reference>
                     <Value type="EXAMPLE">887 654 321</Value>
                 </Element>
                 <Element cardinality="0..1">
