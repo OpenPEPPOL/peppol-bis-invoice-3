@@ -160,7 +160,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-10</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
-            <Reference type="RULE">DE-R-15</Reference>
+            <Reference type="RULE">DE-R-015</Reference>
             <Value type="EXAMPLE">abs1234</Value>
         </Element>
 
@@ -368,6 +368,8 @@
             <Reference type="RULE">BR-49</Reference>
             <Reference type="RULE">BR-CL-16</Reference>
             <Reference type="RULE">DE-R-001</Reference>
+            <Reference type="RULE">DE-R-019</Reference>
+            <Reference type="RULE">DE-R-023</Reference>
             <Reference type="CODE_LIST">UNCL4461</Reference>
             
             
@@ -420,7 +422,7 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-20</Reference>
                 <Reference type="RULE">BR-CO-25</Reference>
-                <Reference type="RULE">DE-R-18</Reference>
+                <Reference type="RULE">DE-R-018</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
             </Element>
         </Element>
