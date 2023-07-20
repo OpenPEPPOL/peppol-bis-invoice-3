@@ -176,6 +176,7 @@
       </cac:PartyName>
     </cac:DeliveryParty>
   </cac:Delivery>
+  <!-- BG-16 -->
   <cac:PaymentMeans>
     <cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>
     <cbc:PaymentID>Deb. 12345 / Fact. 9876543</cbc:PaymentID>
