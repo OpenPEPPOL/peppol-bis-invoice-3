@@ -56,12 +56,7 @@
         <cbc:StreetName>[Seller address line 1]</cbc:StreetName>
         <cbc:AdditionalStreetName>[Seller address line 2]</cbc:AdditionalStreetName>        
         <cbc:CityName>[Seller city]</cbc:CityName>
-        <?xmute mutator="identity"
-                    schematron-valid="xrubl:BR-DE-4" id="ubl-inv-mandatory-BT-38"
-                    description="mandatory BT-38" ?>
-        <?xmute mutator="remove"
-                    schematron-invalid="xrubl:BR-DE-4" id="ubl-inv-mandatory-BT-38-2"
-                    description="mandatory BT-38" ?>
+        <!-- BT-38 -->
         <cbc:PostalZone>12345</cbc:PostalZone>
         <cac:Country>
           <cbc:IdentificationCode>DE</cbc:IdentificationCode>
