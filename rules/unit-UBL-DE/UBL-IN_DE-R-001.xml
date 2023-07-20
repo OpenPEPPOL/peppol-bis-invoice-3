@@ -459,7 +459,7 @@
         </cac:DeliveryParty>
     </cac:Delivery>
     <!-- BG-16 removed -->
-    <cac:PaymentMeans>
+    <!--<cac:PaymentMeans>
         <cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>
         <cbc:PaymentID>Deb. 12345 / Fact. 9876543</cbc:PaymentID>
         <cac:PayeeFinancialAccount>
@@ -469,7 +469,7 @@
                 <cbc:ID>[BIC]</cbc:ID>
             </cac:FinancialInstitutionBranch>
         </cac:PayeeFinancialAccount>
-    </cac:PaymentMeans>
+    </cac:PaymentMeans>-->
     <cac:PaymentTerms>
         <cbc:Note>Bitte überweisen Sie bis zum 24.01.2015 auf das unten aufgeführte Konto.</cbc:Note>
     </cac:PaymentTerms>
