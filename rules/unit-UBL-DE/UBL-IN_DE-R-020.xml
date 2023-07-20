@@ -37,7 +37,7 @@ Should reference be set to BT-81, too?
   </cac:AdditionalDocumentReference>
   <cac:AccountingSupplierParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="EM">rechnungsausgang@test.com</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
       <cac:PartyIdentification>
         <!-- BT-90 -->
         <cbc:ID schemeID="SEPA">[Bank assigned creditor identifier]</cbc:ID>
@@ -71,7 +71,7 @@ Should reference be set to BT-81, too?
   </cac:AccountingSupplierParty>
   <cac:AccountingCustomerParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="EM">rechnungseingang@test.de</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
       <cac:PartyIdentification>
         <cbc:ID>BI123456</cbc:ID>
       </cac:PartyIdentification>
@@ -489,7 +489,7 @@ Should reference be set to BT-81, too?
   </cac:AdditionalDocumentReference>
   <cac:AccountingSupplierParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="EM">rechnungsausgang@test.com</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
       <cac:PartyIdentification>
         <!-- BT-90 -->
         <cbc:ID schemeID="SEPA">[Bank assigned creditor identifier]</cbc:ID>
@@ -523,7 +523,7 @@ Should reference be set to BT-81, too?
   </cac:AccountingSupplierParty>
   <cac:AccountingCustomerParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="EM">rechnungseingang@test.de</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
       <cac:PartyIdentification>
         <cbc:ID>BI123456</cbc:ID>
       </cac:PartyIdentification>
