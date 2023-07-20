@@ -4,11 +4,12 @@
     <description>DE-R-001 An invoice shall contain information on "PAYMENT INSTRUCTIONS" (BG-16).</description>
 		<scope>DE-R-001</scope>
 	</assert>
-	<!--
 	<test>
 		<assert>
 			<success>DE-R-001</success>
 		</assert>
+		<a><bla /> </a>
+	<!--
 <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cec="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
     <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
@@ -292,9 +293,9 @@
         </cac:Price>
     </cac:InvoiceLine>
 </Invoice>
+-->
 
 	</test>
--->	
 	<test>
 		<assert>
 			<error>DE-R-001</error>
