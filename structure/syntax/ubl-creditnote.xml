@@ -443,7 +443,8 @@
             <Name>PAYMENT INSTRUCTIONS</Name>
             <Description>A group of business terms providing information about the payment.</Description>
             <Reference type="BUSINESS_TERM">BG-16</Reference>
-
+            <Reference type="RULE">DE-R-001</Reference>
+            
             <Element>
                 <Term>cbc:PaymentMeansCode</Term>
                 <Name>Payment means type code</Name>
@@ -452,8 +453,7 @@
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-81</Reference>
                 <Reference type="RULE">BR-49</Reference>
-                <Reference type="RULE">BR-CL-16</Reference>
-                <Reference type="RULE">DE-R-001</Reference>
+                <Reference type="RULE">BR-CL-16</Reference>                
                 <Reference type="RULE">DE-R-019</Reference>
                 <Reference type="RULE">DE-R-023</Reference>
                 <Reference type="CODE_LIST">UNCL4461</Reference>
