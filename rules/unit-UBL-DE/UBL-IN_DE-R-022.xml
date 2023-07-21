@@ -63,7 +63,7 @@ Should reference be set to BT-125, too?
             </cac:ProjectReference>
             <cac:AccountingSupplierParty>
                 <cac:Party>
-                    <cbc:EndpointID schemeID="EM">rechnungsausgang@test.com</cbc:EndpointID>
+                    <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
                     <cac:PartyIdentification>
                         <cbc:ID schemeID="0013">987654321</cbc:ID>
                     </cac:PartyIdentification>
@@ -105,7 +105,7 @@ Should reference be set to BT-125, too?
             </cac:AccountingSupplierParty>
             <cac:AccountingCustomerParty>
                 <cac:Party>
-                    <cbc:EndpointID schemeID="EM">rechnungseingang@test.de</cbc:EndpointID>
+                    <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
                     <cac:PartyIdentification>
                         <cbc:ID>138</cbc:ID>
                     </cac:PartyIdentification>
@@ -370,7 +370,7 @@ Should reference be set to BT-125, too?
             </cac:ProjectReference>
             <cac:AccountingSupplierParty>
                 <cac:Party>
-                    <cbc:EndpointID schemeID="EM">rechnungsausgang@test.com</cbc:EndpointID>
+                    <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
                     <cac:PartyIdentification>
                         <cbc:ID schemeID="0013">987654321</cbc:ID>
                     </cac:PartyIdentification>
@@ -412,7 +412,7 @@ Should reference be set to BT-125, too?
             </cac:AccountingSupplierParty>
             <cac:AccountingCustomerParty>
                 <cac:Party>
-                    <cbc:EndpointID schemeID="EM">rechnungseingang@test.de</cbc:EndpointID>
+                    <cbc:EndpointID schemeID="0002">0002</cbc:EndpointID>
                     <cac:PartyIdentification>
                         <cbc:ID>138</cbc:ID>
                     </cac:PartyIdentification>
