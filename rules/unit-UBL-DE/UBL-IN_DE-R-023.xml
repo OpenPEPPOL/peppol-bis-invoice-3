@@ -223,9 +223,9 @@
   <cac:PaymentMeans>    
     <cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>    
     <!-- BG-17 removed -->
-    <cac:PayeeFinancialAccount>      
+    <!--<cac:PayeeFinancialAccount>      
       <cbc:ID>DE75512108001245126199</cbc:ID>
-    </cac:PayeeFinancialAccount>
+    </cac:PayeeFinancialAccount>-->
   </cac:PaymentMeans>
   <cac:PaymentTerms>
     <cbc:Note>Zahlbar sofort ohne Abzug.</cbc:Note>
