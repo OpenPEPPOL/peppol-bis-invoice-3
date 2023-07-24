@@ -32,7 +32,7 @@ References need to be checked
   </cac:ContractDocumentReference>
   <cac:AccountingSupplierParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="EM">seller@seller.com</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
       <cac:PartyIdentification>
         <cbc:ID>[Seller identifier 1]</cbc:ID>
       </cac:PartyIdentification>
@@ -72,7 +72,7 @@ References need to be checked
   </cac:AccountingSupplierParty>
   <cac:AccountingCustomerParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="EM">buyer@buyer.com</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
       <cac:PartyIdentification>
         <cbc:ID>BI123456</cbc:ID>
       </cac:PartyIdentification>
@@ -487,7 +487,7 @@ References need to be checked
   </cac:ContractDocumentReference>
   <cac:AccountingSupplierParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="EM">seller@seller.com</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
       <cac:PartyIdentification>
         <cbc:ID>[Seller identifier 1]</cbc:ID>
       </cac:PartyIdentification>
@@ -529,7 +529,7 @@ References need to be checked
   </cac:AccountingSupplierParty>
   <cac:AccountingCustomerParty>
     <cac:Party>
-      <cbc:EndpointID schemeID="EM">buyer@buyer.com</cbc:EndpointID>
+      <cbc:EndpointID schemeID="0002">123456</cbc:EndpointID>
       <cac:PartyIdentification>
         <cbc:ID>BI123456</cbc:ID>
       </cac:PartyIdentification>
