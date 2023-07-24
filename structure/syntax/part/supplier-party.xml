@@ -76,8 +76,7 @@
                         <Name>Seller or bank assigned creditor identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Seller identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
                         <Reference type="RULE">BR-CL-10</Reference>
-                        <Reference type="RULE">DK-R-013</Reference>
-                        <Reference type="RULE">DE-R-020</Reference>
+                        <Reference type="RULE">DK-R-013</Reference>                        
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Reference type="CODE_LIST">SEPA</Reference>
                         <Value type="EXAMPLE">0088</Value>

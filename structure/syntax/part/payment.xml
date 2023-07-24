@@ -18,8 +18,7 @@
             <Reference type="RULE">BR-CL-16</Reference>
             <Reference type="RULE">DK-R-005</Reference>
             <Reference type="RULE">SE-R-011</Reference>            
-            <Reference type="RULE">DE-R-019</Reference>
-            <Reference type="RULE">DE-R-023</Reference>
+            <Reference type="RULE">DE-R-019</Reference>            
             <Reference type="CODE_LIST">UNCL4461</Reference>
             
             
