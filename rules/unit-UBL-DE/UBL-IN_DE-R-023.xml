@@ -3,6 +3,7 @@
     <assert>
         <description>DE-R-023 If "Payment means type code" (BT-81) contains a code for credit transfer (30, 58), "CREDIT TRANSFER" (BG-17) shall be provided. BG-18 and BG-19 shall not be provided.</description>        
         <scope>DE-R-023-1</scope>
+        <scope>DE-R-023-2</scope>
     </assert>
     <test>
         <assert>

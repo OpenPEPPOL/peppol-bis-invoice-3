@@ -3,6 +3,7 @@
     <assert>
         <description>DE-R-025 If "Payment means type code" (BT-81) contains a code for direct debit (59), "DIRECT DEBIT" (BG-19) shall be provided. BG-17 and BG-18 shall not be provided.</description>
         <scope>DE-R-025-1</scope>
+        <scope>DE-R-025-2</scope>
     </assert>
     <test>
         <assert>
