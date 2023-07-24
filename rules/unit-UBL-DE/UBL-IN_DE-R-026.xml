@@ -13,7 +13,7 @@
   <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
   <cbc:ID>PRG1502112</cbc:ID>
   <cbc:IssueDate>2015-04-24</cbc:IssueDate>
-  <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+  <cbc:InvoiceTypeCode>384</cbc:InvoiceTypeCode>
   <cbc:Note>#ADU#Trainer: Herr […]</cbc:Note>
   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
   <cbc:BuyerReference>99000000-18188-16</cbc:BuyerReference>
