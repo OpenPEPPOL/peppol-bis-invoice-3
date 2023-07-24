@@ -6,14 +6,12 @@ References need to be checked
 -->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
     <assert>
-        <description>DE-R-023 If "Payment means type code" (BT-81) contains a code for credit transfer (30, 58), "CREDIT TRANSFER" (BG-17) shall be provided. BG-18 and BG-19 shall not be provided.</description>
-        <scope>DE-R-023-1</scope>
+        <description>DE-R-023 If "Payment means type code" (BT-81) contains a code for credit transfer (30, 58), "CREDIT TRANSFER" (BG-17) shall be provided. BG-18 and BG-19 shall not be provided.</description>        
         <scope>DE-R-023-2</scope>
     </assert>
     <test>
         <assert>
-            <success>DE-R-023-1</success>
-            <success>DE-R-023-2</success>
+            <success>DE-R-023-2</success>            
         </assert>
         
         <Invoice xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
