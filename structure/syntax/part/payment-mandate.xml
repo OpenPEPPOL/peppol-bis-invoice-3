@@ -14,6 +14,7 @@
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-89</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R061</Reference>
+            <Reference type="RULE">DE-R-030</Reference>
             <Value type="EXAMPLE">123456</Value>
             
         </Element>

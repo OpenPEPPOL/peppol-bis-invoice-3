@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-==========
-Reference set to BG-24 in additional-docs.xml, should it also be set to BG-24 in ubl-creditnote.xml?
-Should reference be set to BT-125, too?
-==========
--->
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
     <assert>
         <description>DE-R-022 Attached documents provided with an invoice in "ADDITIONAL SUPPORTING DOCUMENTS" (BG-24) shall have a unique filename (non case-sensitive) within the element ″Attached document″ (BT-125).</description>

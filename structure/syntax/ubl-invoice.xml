@@ -238,7 +238,7 @@
             <Name>PRECEDING INVOICE REFERENCE</Name>
             <Description>A group of business terms providing information on one or more preceding Invoices.</Description>
             <Reference type="BUSINESS_TERM">BG-3</Reference>
-            <Reference type="RULE">DE-R-26</Reference>
+            <Reference type="RULE">DE-R-026</Reference>
 
             <Element>
                 <Term>cac:InvoiceDocumentReference</Term>
