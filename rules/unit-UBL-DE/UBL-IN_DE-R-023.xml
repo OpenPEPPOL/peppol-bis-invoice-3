@@ -7,18 +7,19 @@ References need to be checked
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
     <assert>
         <description>DE-R-023 If "Payment means type code" (BT-81) contains a code for credit transfer (30, 58), "CREDIT TRANSFER" (BG-17) shall be provided. BG-18 and BG-19 shall not be provided.</description>        
-        <scope>DE-R-023-2</scope>
+        <scope>DE-R-023-1</scope>
     </assert>
     <test>
         <assert>
-            <success>DE-R-023-2</success>            
+            <success>DE-R-023-1</success>            
         </assert>
         
-        <Invoice xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cec="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
   <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
   <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
-  <cbc:ID>123456XX</cbc:ID>
-  <cbc:IssueDate>2016-04-04</cbc:IssueDate>
+  <cbc:ID>1234567</cbc:ID>
+  <cbc:IssueDate>2018-04-13</cbc:IssueDate>
+  <cbc:DueDate>2018-04-13</cbc:DueDate>
   <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
   <cbc:Note>#ADU#Es gelten unsere Allgem. Geschäftsbedingungen, die Sie unter […] finden.</cbc:Note>
   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
@@ -74,11 +75,10 @@ References need to be checked
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:AccountingCustomerParty>
-  <cac:PaymentMeans>
-    <!-- BT-81 -->
-    <cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>
+  <cac:PaymentMeans>    
+    <cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>    
     <!-- BG-17 -->
-    <cac:PayeeFinancialAccount>
+    <cac:PayeeFinancialAccount>      
       <cbc:ID>DE75512108001245126199</cbc:ID>
     </cac:PayeeFinancialAccount>
   </cac:PaymentMeans>
@@ -156,18 +156,19 @@ References need to be checked
       <cbc:PriceAmount currencyID="EUR">26.07</cbc:PriceAmount>
     </cac:Price>
   </cac:InvoiceLine>
-</Invoice>        
+</Invoice>     
     </test>
 
     <test>
         <assert>            
-            <error>DE-R-023-2</error>
+            <error>DE-R-023-1</error>
         </assert>
-        <Invoice xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+        <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cec="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
   <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
   <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
-  <cbc:ID>123456XX</cbc:ID>
-  <cbc:IssueDate>2016-04-04</cbc:IssueDate>
+  <cbc:ID>1234567</cbc:ID>
+  <cbc:IssueDate>2018-04-13</cbc:IssueDate>
+  <cbc:DueDate>2018-04-13</cbc:DueDate>
   <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
   <cbc:Note>#ADU#Es gelten unsere Allgem. Geschäftsbedingungen, die Sie unter […] finden.</cbc:Note>
   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
@@ -223,14 +224,10 @@ References need to be checked
       </cac:PartyLegalEntity>
     </cac:Party>
   </cac:AccountingCustomerParty>
-  <cac:PaymentMeans>        
+  <cac:PaymentMeans>    
     <cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>    
-    <cac:CardAccount>
-      <cbc:PrimaryAccountNumberID>41234</cbc:PrimaryAccountNumberID>
-      <cbc:NetworkID>mapped-from-cii</cbc:NetworkID>
-      <cbc:HolderName>[Payment card holder name]</cbc:HolderName>
-    </cac:CardAccount>
-    <cac:PayeeFinancialAccount>
+    <!-- BG-17 removed -->
+    <cac:PayeeFinancialAccount>      
       <cbc:ID>DE75512108001245126199</cbc:ID>
     </cac:PayeeFinancialAccount>
   </cac:PaymentMeans>
