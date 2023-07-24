@@ -59,6 +59,7 @@
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-29, BT-90</Reference>
                     <Reference type="RULE">BR-CO-26</Reference>
+                    <Reference type="RULE">DE-R-30</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
