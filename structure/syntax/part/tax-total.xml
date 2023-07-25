@@ -145,6 +145,7 @@
                     <Reference type="BUSINESS_TERM">BT-119</Reference>
                     <Reference type="RULE">BR-48</Reference>
                     <Reference type="RULE">SE-R-006</Reference>
+                    <Reference type="RULE">DE-R-014</Reference>
                     <Value type="EXAMPLE">25</Value> 
                 </Element>
                 

@@ -9,6 +9,7 @@
         <Reference type="BUSINESS_TERM">BG-24</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
          <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
+         <Reference type="RULE">DE-R-022</Reference>         
 
         <Element>
             <Term>cbc:ID</Term>
@@ -67,7 +68,7 @@
                     <Description>The mime code of the attached document.</Description>
                     <Reference type="RULE">PEPPOL-EN16931-CL001</Reference>
                     <Reference type="RULE">UBL-DT-06</Reference>
-                    <Reference type="RULE">BR-CL-24</Reference>
+                    <Reference type="RULE">BR-CL-24</Reference>                   
                     <Reference type="CODE_LIST">MimeCode</Reference>
                     <Value type="EXAMPLE">text/csv</Value>
                 </Attribute>
