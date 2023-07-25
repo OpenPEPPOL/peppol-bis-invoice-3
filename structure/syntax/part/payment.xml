@@ -6,6 +6,7 @@
         <Description>A group of business terms providing information about the payment.</Description>
         <Reference type="BUSINESS_TERM">BG-16</Reference>
         <Reference type="RULE">DE-R-001</Reference>
+        <Reference type="RULE">DE-R-020</Reference>
         
         <Element>
             <Term>cbc:PaymentMeansCode</Term>
