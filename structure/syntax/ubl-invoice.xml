@@ -377,6 +377,7 @@
                 <Name>Payment means text</Name>
                 <Description>The means, expressed as text, for how a payment is expected to be or has been settled.
                 </Description>
+                <Reference type="RULE">DE-R-020</Reference>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-82</Reference>
                 <Value type="EXAMPLE">Credit transfer</Value>
