@@ -1,0 +1,11 @@
+= Version 3.0.16
+[horizontal]
+Release date:: 2023-11-01
+
+== Changes to BIS document
+
+
+== Changes to code lists and validation artefacts
+
+==  Changes to Country-Specific Rules
+
