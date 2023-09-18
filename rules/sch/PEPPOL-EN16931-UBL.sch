@@ -635,7 +635,7 @@ Last update: 2023 May release 3.0.15.
       <!-- Original rule in NLCIUS: BR-NL-5 -->
       <assert id="NL-R-006" test="cbc:StreetName and cbc:CityName and cbc:PostalZone" flag="fatal">[NL-R-006] For suppliers in the Netherlands, if the fiscal representative is in the Netherlands, the representative's address (cac:TaxRepresentativeParty/cac:PostalAddress) MUST contain street name (cbc:StreetName), city (cbc:CityName) and post code (cbc:PostalZone)</assert>
     </rule>
-    <rule context="cac:LegalMonetaryTotal[$supplierCountryIsNL]">
+    <rule context="ubl-invoice:Invoice/cac:LegalMonetaryTotal[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-11 -->
       <assert id="NL-R-007" test="xs:decimal(cbc:PayableAmount) &lt;= 0.0 or (//cac:PaymentMeans)" flag="fatal">[NL-R-007] For suppliers in the Netherlands, the supplier MUST provide a means of payment (cac:PaymentMeans) if the payment is from customer to supplier</assert>
     </rule>
