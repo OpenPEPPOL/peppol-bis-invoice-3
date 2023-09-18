@@ -482,7 +482,7 @@ Last update: 2022 May release 3.0.13.
 
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementHeaderMonetarySummation[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-11 -->
-      <assert id="NL-R-007" test="xs:decimal(ram:DuePayableAmount) &lt;= 0.0 or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans)" flag="fatal">[NL-R-007] For suppliers in the Netherlands, the supplier MUST provide a means of payment (ram:SpecifiedTradeSettlementPaymentMeans) if the payment is from customer to supplier</assert>
+      <assert id="NL-R-007" test="xs:decimal(ram:DuePayableAmount) &lt;= 0.0 or (normalize-space(/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:TypeCode/text()) = '381') or (/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans)" flag="fatal">[NL-R-007] For suppliers in the Netherlands, the supplier MUST provide a means of payment (ram:SpecifiedTradeSettlementPaymentMeans) if the payment is from customer to supplier</assert>
     </rule>
 
     <rule context="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:SpecifiedTradeSettlementPaymentMeans[$supplierCountryIsNL]">
