@@ -4,6 +4,7 @@ Release date:: 2023-11-01
 
 == Changes to BIS document
 
+* A recommendation has been added to the Sales Order Reference element for handling cases where there is no Purchase Order Reference. This clarifies what to do with the mandatory UBL element for Purchase Order Reference. Example file is added which illustrates this.
 
 == Changes to code lists and validation artefacts
 
