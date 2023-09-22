@@ -692,7 +692,7 @@ Last update: 2023 May release 3.0.15.
     </rule>
     <rule context="cbc:InvoiceTypeCode">
       <assert id="PEPPOL-EN16931-P0100" test="
-          $profile != '01' or (some $code in tokenize('71 80 82 84 102 218 219 331 380 382 383 386 388 393 395 553 575 623 780 817 870 875 876 877', '\s')
+          $profile != '01' or (some $code in tokenize('71 80 82 84 102 218 219 326 331 380 382 383 384 386 388 393 395 553 575 623 780 817 870 875 876 877', '\s')
             satisfies normalize-space(text()) = $code)" flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
     <rule context="cbc:CreditNoteTypeCode">
