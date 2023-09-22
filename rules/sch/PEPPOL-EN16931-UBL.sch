@@ -178,6 +178,24 @@ Last update: 2023 May release 3.0.15.
 ((string-to-codepoints(substring($val,11,1)) - 48) * 19)) mod 89 = 0
 "/>
   </function>
+
+  <!-- Functions and variable for Greek Rules -->
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:TinVerification" as="xs:boolean">
+    <param name="val" as="xs:string"/>
+    <variable name="digits" select="
+			for $ch in string-to-codepoints($val)
+			return codepoints-to-string($ch)"/>
+    <variable name="checksum" select="
+			(number($digits[8])*2) +
+			(number($digits[7])*4) +
+			(number($digits[6])*8) +
+			(number($digits[5])*16) +
+			(number($digits[4])*32) +
+			(number($digits[3])*64) +
+			(number($digits[2])*128) +
+			(number($digits[1])*256) "/>
+    <value-of select="($checksum  mod 11) mod 10 = number($digits[9])"/>
+  </function>  
   <!-- Empty elements -->
   <pattern>
     <rule context="//*[not(*) and not(normalize-space())]">
@@ -477,23 +495,7 @@ Last update: 2023 May release 3.0.15.
     </rule>
   </pattern>
   <!-- GREECE -->
-  <!-- General functions and variable for Greek Rules -->
-  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:TinVerification" as="xs:boolean">
-    <param name="val" as="xs:string"/>
-    <variable name="digits" select="
-			for $ch in string-to-codepoints($val)
-			return codepoints-to-string($ch)"/>
-    <variable name="checksum" select="
-			(number($digits[8])*2) +
-			(number($digits[7])*4) +
-			(number($digits[6])*8) +
-			(number($digits[5])*16) +
-			(number($digits[4])*32) +
-			(number($digits[3])*64) +
-			(number($digits[2])*128) +
-			(number($digits[1])*256) "/>
-    <value-of select="($checksum  mod 11) mod 10 = number($digits[9])"/>
-  </function>
+  <!-- General variable for Greek Rules -->
   <let name="isGreekSender" value="($supplierCountry ='GR') or ($supplierCountry ='EL')"/>
   <let name="isGreekReceiver" value="($customerCountry ='GR') or ($customerCountry ='EL')"/>
   <let name="isGreekSenderandReceiver" value="$isGreekSender and $isGreekReceiver"/>
