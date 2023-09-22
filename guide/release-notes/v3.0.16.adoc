@@ -7,5 +7,7 @@ Release date:: 2023-11-01
 
 == Changes to code lists and validation artefacts
 
+* The validation rule identified as PEPPOL-EN16931-R006, which ensures that only one Invoice Object is allowed at the document level in an invoice/credit note, has been removed. This is because it duplicates the European standard rule UBL-SR-04, making it redundant and unnecessary.
+
 ==  Changes to Country-Specific Rules
 
