@@ -214,7 +214,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Purchase order reference</Name>
-                <Description>An identifier of a referenced purchase order, issued by the Buyer.An invoice must have buyer reference (BT-10) or purchase order reference.</Description>
+                <Description>An identifier of a referenced purchase order, issued by the Buyer. An invoice must have buyer reference (BT-10) or purchase order reference. In cases where sales order reference is provided, but there's no purchase order reference, then use value "NA" as this element is mandatory in UBL.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">BT-13</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
@@ -224,7 +224,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:SalesOrderID</Term>
                 <Name>Sales order reference</Name>
-                <Description>An identifier of a referenced sales order, issued by the Seller. In cases where Sales order reference is provided, but there's no Purchase order reference, then set cac:OrderReference/cbc:ID to value "NA" as this element is mandatory in UBL.</Description>
+                <Description>An identifier of a referenced sales order, issued by the Seller. In cases where sales order reference is provided, but there's no purchase order reference, then set cac:OrderReference/cbc:ID to value "NA" as this element is mandatory in UBL.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">BT-14</Reference>
                 <Value type="EXAMPLE">112233</Value>
