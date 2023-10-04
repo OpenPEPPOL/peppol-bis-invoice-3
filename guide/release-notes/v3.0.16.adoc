@@ -14,5 +14,7 @@ Release date:: 2023-11-01
 
 * The structure of the Peppol Schematron rule set has been improved for better quality. A function that was previously located in the Greek rules section is now correctly positioned alongside other functions.
 
+* Added invoice type codes 326 "Partial invoice" and 384 "Corrected invoice" as synonyms to code 380.
+
 ==  Changes to Country-Specific Rules
 
