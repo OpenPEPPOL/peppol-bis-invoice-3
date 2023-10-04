@@ -362,7 +362,7 @@
             xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
             xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
-            <cbc:ID>061828591|11/11/2010|0|11.1||</cbc:ID>
+            <cbc:ID>061828591|11/11/2010|0|1.1||</cbc:ID>
             <cbc:IssueDate>2010-11-11</cbc:IssueDate>
             <cac:AccountingSupplierParty>
                 <cac:Party>
