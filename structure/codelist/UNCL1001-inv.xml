@@ -56,6 +56,12 @@
         <Name>Payment request for completed units</Name>
         <Description> A request for payment for completed units.</Description>
     </Code>
+
+    <Code>
+        <Id>326</Id>
+        <Name>Partial invoice</Name>
+        <Description>Document/message specifying details of an incomplete invoice.</Description>
+    </Code>
     
     <Code>
         <Id>331</Id>
@@ -85,7 +91,13 @@
             relevant party.
         </Description>
     </Code>
-   
+
+    <Code>
+        <Id>384</Id>
+        <Name>Corrected invoice</Name>
+        <Description>Commercial invoice that includes revised information differing from an earlier submission of the same invoice.</Description>
+    </Code>
+
     <Code>
         <Id>386</Id>
         <Name>Prepayment invoice</Name>

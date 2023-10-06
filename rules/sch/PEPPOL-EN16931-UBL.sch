@@ -178,6 +178,24 @@ Last update: 2023 May release 3.0.15.
 ((string-to-codepoints(substring($val,11,1)) - 48) * 19)) mod 89 = 0
 "/>
   </function>
+
+  <!-- Functions and variable for Greek Rules -->
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:TinVerification" as="xs:boolean">
+    <param name="val" as="xs:string"/>
+    <variable name="digits" select="
+			for $ch in string-to-codepoints($val)
+			return codepoints-to-string($ch)"/>
+    <variable name="checksum" select="
+			(number($digits[8])*2) +
+			(number($digits[7])*4) +
+			(number($digits[6])*8) +
+			(number($digits[5])*16) +
+			(number($digits[4])*32) +
+			(number($digits[3])*64) +
+			(number($digits[2])*128) +
+			(number($digits[1])*256) "/>
+    <value-of select="($checksum  mod 11) mod 10 = number($digits[9])"/>
+  </function>  
   <!-- Empty elements -->
   <pattern>
     <rule context="//*[not(*) and not(normalize-space())]">
@@ -213,7 +231,6 @@ Last update: 2023 May release 3.0.15.
       <assert id="PEPPOL-EN16931-R053" test="count(cac:TaxTotal[cac:TaxSubtotal]) = 1" flag="fatal">Only one tax total with tax subtotals MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R054" test="count(cac:TaxTotal[not(cac:TaxSubtotal)]) = (if (cbc:TaxCurrencyCode) then 1 else 0)" flag="fatal">Only one tax total without tax subtotals MUST be provided when tax currency code is provided.</assert>
       <assert id="PEPPOL-EN16931-R055" test="not(cbc:TaxCurrencyCode) or (cac:TaxTotal/cbc:TaxAmount[@currencyID=normalize-space(../../cbc:TaxCurrencyCode)] &lt;= 0 and cac:TaxTotal/cbc:TaxAmount[@currencyID=normalize-space(../../cbc:DocumentCurrencyCode)] &lt;= 0) or (cac:TaxTotal/cbc:TaxAmount[@currencyID=normalize-space(../../cbc:TaxCurrencyCode)] &gt;= 0 and cac:TaxTotal/cbc:TaxAmount[@currencyID=normalize-space(../../cbc:DocumentCurrencyCode)] &gt;= 0) " flag="fatal">Invoice total VAT amount and Invoice total VAT amount in accounting currency MUST have the same operational sign</assert>
-      <assert id="PEPPOL-EN16931-R006" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='130']) &lt;= 1)" flag="fatal">Only one invoiced object is allowed on document level</assert>
     </rule>
     <rule context="cbc:TaxCurrencyCode">
       <assert id="PEPPOL-EN16931-R005" test="not(normalize-space(text()) = normalize-space(../cbc:DocumentCurrencyCode/text()))" flag="fatal">VAT accounting currency code MUST be different from invoice currency code when provided.</assert>
@@ -477,23 +494,7 @@ Last update: 2023 May release 3.0.15.
     </rule>
   </pattern>
   <!-- GREECE -->
-  <!-- General functions and variable for Greek Rules -->
-  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:TinVerification" as="xs:boolean">
-    <param name="val" as="xs:string"/>
-    <variable name="digits" select="
-			for $ch in string-to-codepoints($val)
-			return codepoints-to-string($ch)"/>
-    <variable name="checksum" select="
-			(number($digits[8])*2) +
-			(number($digits[7])*4) +
-			(number($digits[6])*8) +
-			(number($digits[5])*16) +
-			(number($digits[4])*32) +
-			(number($digits[3])*64) +
-			(number($digits[2])*128) +
-			(number($digits[1])*256) "/>
-    <value-of select="($checksum  mod 11) mod 10 = number($digits[9])"/>
-  </function>
+  <!-- General variable for Greek Rules -->
   <let name="isGreekSender" value="($supplierCountry ='GR') or ($supplierCountry ='EL')"/>
   <let name="isGreekReceiver" value="($customerCountry ='GR') or ($customerCountry ='EL')"/>
   <let name="isGreekSenderandReceiver" value="$isGreekSender and $isGreekReceiver"/>
@@ -509,7 +510,7 @@ Last update: 2023 May release 3.0.15.
   <!-- Sender Rules -->
   <pattern>
     <let name="dateRegExp" value="'^(0?[1-9]|[12][0-9]|3[01])[-\\/ ]?(0?[1-9]|1[0-2])[-\\/ ]?(19|20)[0-9]{2}'"/>
-    <let name="greekDocumentType" value="tokenize('1.1 1.2 1.3 1.4 1.5 1.6 2.1 2.2 2.3 2.4 3.1 3.2 4 5.1 5.2 6.1 6.2 7.1 8.1 8.2 11.1 11.2 11.3 11.4 11.5','\s')"/>
+    <let name="greekDocumentType" value="tokenize('1.1 1.6 2.1 2.4 5.1 5.2 ','\s')"/>
     <let name="tokenizedUblIssueDate" value="tokenize(/*/cbc:IssueDate,'-')"/>
     <!-- Invoice ID -->
     <rule context="/ubl-invoice:Invoice/cbc:ID[$isGreekSender] | /ubl-creditnote:CreditNote/cbc:ID[$isGreekSender]">
@@ -690,7 +691,7 @@ Last update: 2023 May release 3.0.15.
     </rule>
     <rule context="cbc:InvoiceTypeCode">
       <assert id="PEPPOL-EN16931-P0100" test="
-          $profile != '01' or (some $code in tokenize('71 80 82 84 102 218 219 331 380 382 383 386 388 393 395 553 575 623 780 817 870 875 876 877', '\s')
+          $profile != '01' or (some $code in tokenize('71 80 82 84 102 218 219 326 331 380 382 383 384 386 388 393 395 553 575 623 780 817 870 875 876 877', '\s')
             satisfies normalize-space(text()) = $code)" flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
     <rule context="cbc:CreditNoteTypeCode">

@@ -1,0 +1,20 @@
+= Version 3.0.16
+[horizontal]
+Release date:: 2023-11-01
+
+== Changes to BIS document
+
+* A recommendation has been added to the Sales Order Reference element for handling cases where there is no Purchase Order Reference. This clarifies what to do with the mandatory UBL element for Purchase Order Reference. Example file is added which illustrates this.
+
+* Text in section 4.6 on negative invoices edited to remove historic comparison to BIS2 and justification for the change. No functional change.
+
+== Changes to code lists and validation artefacts
+
+* The validation rule identified as PEPPOL-EN16931-R006, which ensures that only one Invoice Object is allowed at the document level in an invoice/credit note, has been removed. This is because it duplicates the European standard rule UBL-SR-04, making it redundant and unnecessary.
+
+* The structure of the Peppol Schematron rule set has been improved for better quality. A function that was previously located in the Greek rules section is now correctly positioned alongside other functions.
+
+* Added invoice type codes 326 "Partial invoice" and 384 "Corrected invoice" as synonyms to code 380.
+
+==  Changes to Country-Specific Rules
+

@@ -533,7 +533,7 @@ Last update: 2022 May release 3.0.13.
     </rule>
     <rule context="ram:ExchangedDocument/ram:TypeCode">
       <assert id="PEPPOL-EN16931-P0100" test="
-                    $profile != '01' or (some $code in tokenize('71 102 218 219 331 382 553 817 870 875 876 877 380 383 386 388 393 82 80 84 395 575 623 780 381 396 81 83 532', '\s')
+                    $profile != '01' or (some $code in tokenize('71 102 218 219 326 331 382 553 817 870 875 876 877 380 383 384 386 388 393 82 80 84 395 575 623 780 381 396 81 83 532', '\s')
                         satisfies normalize-space(text()) = $code)" flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
     <!-- PEPPOL-EN16931-P0101 is part of PEPPOL-EN16931-P0100. -->
