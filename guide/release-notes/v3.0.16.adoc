@@ -16,5 +16,20 @@ Release date:: 2023-11-01
 
 * Added invoice type codes 326 "Partial invoice" and 384 "Corrected invoice" as synonyms to code 380.
 
-==  Changes to Country-Specific Rules
+==  EN 16931 schematrons updated
+* Adopted version 1.3.11 of EN 16931 validation artefacts (# numbers refer to EN GitHub issues).
+** Cardinality of DesignatedProductClassification in CII might stop the check BR-65 #355
+** CII Missing check on DefinedTradeContact cardinality #354
+** CII BT-17 and BT-18 checks to be improved #353
+** UBL-SR-43 using attribute scheme instead of schemeID #351
+** CII - missing cardinality check for ApplicableTradeTax (BG-30) #349
+** Error in Validation of Rule BR-E-08 #348
+** UBL-SR-51 does not check cac:DeliveryLocation #347
+** Typo in rule-text UBL-CR-282, UBL-CR-247 and UBL-CR-183 (UBL) #346
+** Typo in rule-text UBL-CR-583, UBL-CR-577 and UBL-CR-572 (UBL) #345
+** BR-17 rule checks too hard? #344
+** CII - missing cardinality check for SpecifiedTradePaymentTerms #343
+** add missing currency codes #356
+** Add EAS Code 0218 list #359
+
 
