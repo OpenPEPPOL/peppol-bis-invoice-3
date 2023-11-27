@@ -31,5 +31,3 @@ Release date:: 2023-11-01
 ** CII - missing cardinality check for SpecifiedTradePaymentTerms #343
 ** add missing currency codes #356
 ** Add EAS Code 0218 list #359
-
-
