@@ -16,5 +16,7 @@ Release date:: 2023-11-01
 
 * Added invoice type codes 326 "Partial invoice" and 384 "Corrected invoice" as synonyms to code 380.
 
+* Added EAS code 0218 for Latvia
+
 ==  Changes to Country-Specific Rules
 
