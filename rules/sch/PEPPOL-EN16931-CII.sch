@@ -171,6 +171,34 @@ Last update: 2022 May release 3.0.13.
 ((string-to-codepoints(substring($val,11,1)) - 48) * 19)) mod 89 = 0
 "/>
   </function>
+  
+    <!-- Function for Swedish organisation numbers (0007) -->
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:checkSEOrgnr" as="xs:boolean">
+    <param name="number" as="xs:string"/>
+	<choose>
+		<!-- Check if input is numeric -->
+		<when test="not(matches($number, '^\d+$'))">
+			<sequence select="false()"/>
+		</when>
+		<otherwise>
+			<!-- verify the check number of the provided identifier according to the Luhn algorithm-->
+			<variable name="mainPart" select="substring($number, 1, 9)"/>
+			<variable name="checkDigit" select="substring($number, 10, 1)"/>
+			<variable name="sum" as="xs:integer">
+			  <value-of select="sum(
+						for $pos in 1 to string-length($mainPart) return 
+							if ($pos mod 2 = 1) 
+							then (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) mod 10 + 
+								 (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) idiv 10 
+							else number(substring($mainPart, string-length($mainPart) - $pos + 1, 1))
+					)"/>
+			</variable>
+			<variable name="calculatedCheckDigit" select="(10 - $sum mod 10) mod 10"/>
+			<sequence select="$calculatedCheckDigit = number($checkDigit)"/>
+		</otherwise>
+	</choose>
+  </function>
+  
   <pattern>
     <rule context="rsm:ExchangedDocumentContext">
       <assert id="PEPPOL-EN16931-R001" test="ram:BusinessProcessSpecifiedDocumentContextParameter/ram:ID" flag="fatal">Business process MUST be provided.</assert>
@@ -304,7 +332,7 @@ Last update: 2022 May release 3.0.13.
       <assert id="PEPPOL-COMMON-R048" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
     </rule>
     <rule context="ram:URIID[@schemeID = '0007'] | ram:ID[@schemeID = '0007'] | ram:GlobalID[@schemeID = '0007']">
-      <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="fatal">Swedish organization number MUST be stated in the correct format.</assert>
+      <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN' and u:checkSEOrgnr(normalize-space())" flag="fatal">Swedish organization number MUST be stated in the correct format.</assert>
     </rule>
 	<rule context="ram:URIID[@schemeID = '0151'] | ram:ID[@schemeID = '0151'] | ram:GlobalID[@schemeID = '0151']">
       <assert id="PEPPOL-COMMON-R050" test="u:abn(normalize-space())" flag="fatal">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
@@ -417,6 +445,7 @@ Last update: 2022 May release 3.0.13.
     <rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization[../ram:PostalTradeAddress/ram:CountryID = 'SE' and ram:ID]">
       <assert id="SE-R-003" test="string(number(ram:ID)) != 'NaN'" flag="warning">Swedish organisation numbers should be numeric.</assert>
       <assert id="SE-R-004" test="string-length(normalize-space(ram:ID)) = 10" flag="warning">Swedish organisation numbers consist of 10 characters.</assert>
+	  <assert id="SE-R-013" test="u:checkSEOrgnr(normalize-space(ram:ID))" flag="warning">The last digit of a Swedish organization number must be valid according to the Luhn algorithm.</assert>	  
     </rule>
     <rule context="rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty[ram:PostalTradeAddress/ram:CountryID = 'SE' and ram:SpecifiedLegalOrganization/ram:ID]/ram:SpecifiedTaxRegistration/ram:ID[@schemeID = 'FC']">
       <assert id="SE-R-005" test="normalize-space(upper-case(.)) = 'GODKÄND FÖR F-SKATT'" flag="fatal">For Swedish suppliers, when using Seller tax registration identifier, 'Godkänd för F-skatt' must be stated</assert>
