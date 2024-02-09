@@ -200,25 +200,28 @@ Last update: 2023 May release 3.0.15.
    <!-- Function for Swedish organisation numbers (0007) -->
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:checkSEOrgnr" as="xs:boolean">
     <param name="number" as="xs:string"/>
-
-    <!-- Check if input is numeric -->
-    <if test="not(matches($number, '^\d+$'))">
-        <sequence select="false()"/>
-    </if>
-    <!-- verify the check number of the provided identifier according to the Luhn algorithm-->
-    <variable name="mainPart" select="substring($number, 1, 9)"/>
-    <variable name="checkDigit" select="substring($number, 10, 1)"/>
-    <variable name="sum" as="xs:integer">
-      <value-of select="sum(
-                for $pos in 1 to string-length($mainPart) return 
-                    if ($pos mod 2 = 1) 
-                    then (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) mod 10 + 
-                         (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) idiv 10 
-                    else number(substring($mainPart, string-length($mainPart) - $pos + 1, 1))
-            )"/>
-    </variable>
-    <variable name="calculatedCheckDigit" select="(10 - $sum mod 10) mod 10"/>
-    <sequence select="$calculatedCheckDigit = number($checkDigit)"/>
+	<choose>
+		<!-- Check if input is numeric -->
+		<when test="not(matches($number, '^\d+$'))">
+			<sequence select="false()"/>
+		</when>
+		<otherwise>
+			<!-- verify the check number of the provided identifier according to the Luhn algorithm-->
+			<variable name="mainPart" select="substring($number, 1, 9)"/>
+			<variable name="checkDigit" select="substring($number, 10, 1)"/>
+			<variable name="sum" as="xs:integer">
+			  <value-of select="sum(
+						for $pos in 1 to string-length($mainPart) return 
+							if ($pos mod 2 = 1) 
+							then (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) mod 10 + 
+								 (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) idiv 10 
+							else number(substring($mainPart, string-length($mainPart) - $pos + 1, 1))
+					)"/>
+			</variable>
+			<variable name="calculatedCheckDigit" select="(10 - $sum mod 10) mod 10"/>
+			<sequence select="$calculatedCheckDigit = number($checkDigit)"/>
+		</otherwise>
+	</choose>
   </function>
   <!-- Empty elements -->
   <pattern>
