@@ -1,0 +1,11 @@
+= Version 3.0.17
+[horizontal]
+Release date:: May 2024
+
+== Changes to BIS document
+
+
+== Changes to code lists and validation artefacts
+
+
+==  EN 16931 schematrons updated
