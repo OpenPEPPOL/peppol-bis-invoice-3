@@ -196,6 +196,33 @@ Last update: 2023 May release 3.0.15.
 			(number($digits[1])*256) "/>
     <value-of select="($checksum  mod 11) mod 10 = number($digits[9])"/>
   </function>  
+  
+   <!-- Function for Swedish organisation numbers (0007) -->
+  <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:checkSEOrgnr" as="xs:boolean">
+    <param name="number" as="xs:string"/>
+	<choose>
+		<!-- Check if input is numeric -->
+		<when test="not(matches($number, '^\d+$'))">
+			<sequence select="false()"/>
+		</when>
+		<otherwise>
+			<!-- verify the check number of the provided identifier according to the Luhn algorithm-->
+			<variable name="mainPart" select="substring($number, 1, 9)"/>
+			<variable name="checkDigit" select="substring($number, 10, 1)"/>
+			<variable name="sum" as="xs:integer">
+			  <value-of select="sum(
+						for $pos in 1 to string-length($mainPart) return 
+							if ($pos mod 2 = 1) 
+							then (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) mod 10 + 
+								 (number(substring($mainPart, string-length($mainPart) - $pos + 1, 1)) * 2) idiv 10 
+							else number(substring($mainPart, string-length($mainPart) - $pos + 1, 1))
+					)"/>
+			</variable>
+			<variable name="calculatedCheckDigit" select="(10 - $sum mod 10) mod 10"/>
+			<sequence select="$calculatedCheckDigit = number($checkDigit)"/>
+		</otherwise>
+	</choose>
+  </function>
   <!-- Empty elements -->
   <pattern>
     <rule context="//*[not(*) and not(normalize-space())]">
@@ -362,7 +389,7 @@ Last update: 2023 May release 3.0.15.
       <assert id="PEPPOL-COMMON-R048" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
     </rule> -->
     <rule context="cbc:EndpointID[@schemeID = '0007'] | cac:PartyIdentification/cbc:ID[@schemeID = '0007'] | cbc:CompanyID[@schemeID = '0007']">
-      <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN'" flag="fatal">Swedish organization number MUST be stated in the correct format.</assert>
+      <assert id="PEPPOL-COMMON-R049" test="string-length(normalize-space()) = 10 and string(number(normalize-space())) != 'NaN' and u:checkSEOrgnr(normalize-space())" flag="fatal">Swedish organization number MUST be stated in the correct format.</assert>
     </rule>    
     <rule context="cbc:EndpointID[@schemeID = '0151'] | cac:PartyIdentification/cbc:ID[@schemeID = '0151'] | cbc:CompanyID[@schemeID = '0151']">
       <assert id="PEPPOL-COMMON-R050" test="matches(normalize-space(), '^[0-9]{11}$') and u:abn(normalize-space())" flag="fatal">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
@@ -471,6 +498,7 @@ Last update: 2023 May release 3.0.15.
     <rule context="//cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity[../cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE' and cbc:CompanyID]">
       <assert id="SE-R-003" test="string(number(cbc:CompanyID)) != 'NaN'" flag="warning">Swedish organisation numbers should be numeric.</assert>
       <assert id="SE-R-004" test="string-length(normalize-space(cbc:CompanyID)) = 10" flag="warning">Swedish organisation numbers consist of 10 characters.</assert>
+	  <assert id="SE-R-013" test="u:checkSEOrgnr(normalize-space(cbc:CompanyID))" flag="warning">The last digit of a Swedish organization number must be valid according to the Luhn algorithm.</assert>
     </rule>
     <rule context="//cac:AccountingSupplierParty/cac:Party[cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE' and exists(cac:PartyLegalEntity/cbc:CompanyID)]/cac:PartyTaxScheme[normalize-space(upper-case(cac:TaxScheme/cbc:ID)) != 'VAT']/cbc:CompanyID">
       <assert id="SE-R-005" test="normalize-space(upper-case(.)) = 'GODKÄND FÖR F-SKATT'" flag="fatal">For Swedish suppliers, when using Seller tax registration identifier, 'Godkänd för F-skatt' must be stated</assert>

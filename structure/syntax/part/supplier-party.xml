@@ -300,6 +300,7 @@
                     <Reference type="RULE">DK-R-014</Reference>
                     <Reference type="RULE">SE-R-003</Reference>
                     <Reference type="RULE">SE-R-004</Reference>
+                    <Reference type="RULE">SE-R-013</Reference>
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Seller legal registration identifier identification scheme identifier</Name>
