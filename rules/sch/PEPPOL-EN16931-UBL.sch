@@ -205,6 +205,7 @@ Last update: 2023 May release 3.0.15.
   <!--
     Transaction rules
 
+
     R00X - Document level
     R01X - Accounting customer
     R02X - Accounting supplier
