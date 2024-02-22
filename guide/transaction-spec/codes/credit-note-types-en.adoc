@@ -12,8 +12,8 @@ The codes below can be used in business term Invoice Type Code (BT-3) for credit
 |Credit note:: Document/message for providing credit information to the relevant party.
 
 
-|384
-|Corrected invoice:: Commercial invoice that includes revised information differing from an earlier submission of the same invoice.
+// |384
+// |Corrected invoice:: Commercial invoice that includes revised information differing from an earlier submission of the same invoice.
 
 
 |81
