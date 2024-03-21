@@ -9,4 +9,6 @@ Release date:: May 2024
 
 * Added new Swedish rule (SE-R-013) for validation of the check number of a Swedish Organization number. The rule is introduced as severity warning. All rules which verifies the format of Organization numbers (SE-R-003, SE-R-004 and SE-R-013) will be changed to severity fatal in next release.
 
+* Update of PEPPOL-COMMON-R049 which validates identifiers using ICD/EAS 0007. The change is adding validation of the check number of a Swedish Organization number.
+
 ==  EN 16931 schematrons updated
