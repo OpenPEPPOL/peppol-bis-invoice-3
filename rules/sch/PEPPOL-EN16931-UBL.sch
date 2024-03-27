@@ -666,7 +666,7 @@ Last update: 2023 May release 3.0.15.
     </rule>
     <rule context="cac:LegalMonetaryTotal[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-11 -->
-      <assert id="NL-R-007" test="xs:decimal(cbc:PayableAmount) &lt;= 0.0 or (//cac:PaymentMeans)" flag="fatal">[NL-R-007] For suppliers in the Netherlands, the supplier MUST provide a means of payment (cac:PaymentMeans) if the payment is from customer to supplier</assert>
+      <assert id="NL-R-007" test="(/ubl-invoice:Invoice and xs:decimal(cbc:PayableAmount) &lt;= 0.0) or (/ubl-creditnote:CreditNote and xs:decimal(cbc:PayableAmount) &gt;= 0.0) or (//cac:PaymentMeans)" flag="fatal">[NL-R-007] For suppliers in the Netherlands, the supplier MUST provide a means of payment (cac:PaymentMeans) if the payment is from customer to supplier</assert>
     </rule>
     <rule context="cac:PaymentMeans[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-12 -->
