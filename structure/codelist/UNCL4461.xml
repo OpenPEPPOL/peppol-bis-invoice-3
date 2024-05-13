@@ -475,6 +475,11 @@
             avoid useless payments.</Description>
     </Code>
     <Code>
+        <Id>98</Id>
+        <Name>JP, Electronically Recorded Monetary Claims</Name>
+        <Description>An electronically recorded monetary claim is a claim that is separate from the underlying debt that gave rise to its accrual.Therefore, even if an electronically recorded monetary claim is accrued as a means of payment of the underlying debt, the underlying debt will not be extinguished as a matter of course.</Description>
+    </Code>
+    <Code>
         <Id>ZZZ</Id>
         <Name>Mutually defined</Name>
         <Description>A code assigned within a code list to be used on an interim basis and as
