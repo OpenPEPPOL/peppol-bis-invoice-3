@@ -8,6 +8,9 @@ None
 
 == Changes to code lists and validation artefacts
 
+* Added new Swedish rule (SE-R-013) for validation of the check number of a Swedish Organization number. The rule is introduced as severity warning. All rules which verify the format of Organization numbers (SE-R-003, SE-R-004 and SE-R-013) will be changed to severity fatal in the next release.
+* Update for rule NL-R-007 (mandatory payment means), the check should not fire if the document is a credit note with a positive amount.
+* Update of PEPPOL-COMMON-R049, which validates identifiers using ICD/EAS 0007. The change is adding validation of the check number of a Swedish Organization number.
 * Removing Currency code Sierra Leone SLL, new code is SLE
 * Adding Payment means code 98
 * Adding Item type identification code GMN
