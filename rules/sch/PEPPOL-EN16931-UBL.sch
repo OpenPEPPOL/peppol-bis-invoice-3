@@ -234,6 +234,7 @@
   <!--
     Transaction rules
 
+
     R00X - Document level
     R01X - Accounting customer
     R02X - Accounting supplier
@@ -443,7 +444,7 @@
 								  or (substring(cbc:PaymentID, 1, 3) = '15#'))
 								and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 7)
 								)
-						)" flag="fatal">For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7 characters long, when payment means equals 50 (Giro)</assert>
+						)" flag="fatal">For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15# (kortartkode) - Also the PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7 characters long, when payment means equals 50 (Giro)</assert>
       <assert id="DK-R-009" test="not((cbc:PaymentMeansCode = '50')
 						and ((substring(cbc:PaymentID, 1, 3) = '04#')
 							  or (substring(cbc:PaymentID, 1, 3)  = '15#'))
@@ -453,9 +454,9 @@
 						and not(((substring(cbc:PaymentID, 1, 3) = '71#')
 								  or (substring(cbc:PaymentID, 1, 3) = '73#')
 								  or (substring(cbc:PaymentID, 1, 3) = '75#'))
-								and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 8)
+								and (string-length(cac:CreditAccount/cbc:AccountID/text()) = 8)
 								)
-						)" flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and PayeeFinancialAccount/ID (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
+						)" flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) - Also the CreditAccount/AccountID (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
       <assert id="DK-R-011" test="not((cbc:PaymentMeansCode = '93')
 						and ((substring(cbc:PaymentID, 1, 3) = '71#')
 							  or (substring(cbc:PaymentID, 1, 3)  = '75#'))
