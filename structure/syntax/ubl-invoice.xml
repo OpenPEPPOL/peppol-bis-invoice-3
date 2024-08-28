@@ -86,7 +86,7 @@
             <Value type="EXAMPLE">380</Value>
         </Element>
 
-        <Element cardinality="0..1">
+        <Element cardinality="0..n">
             <Term>cbc:Note</Term>
             <Name>Invoice note</Name>
             <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or

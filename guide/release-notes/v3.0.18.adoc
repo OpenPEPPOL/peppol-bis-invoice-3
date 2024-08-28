@@ -1,0 +1,13 @@
+= Version 3.0.17
+[horizontal]
+Release date:: May 2024
+
+== Changes to BIS document
+
+None
+
+== Changes to code lists and validation artefacts
+
+* The rule (PEPPOL-EN16931-R002), which ensures that the Invoice Note (BT-22) appears no more than once, will not apply if both the buyer and seller are German organizations.
+
+==  EN 16931 schematrons updated
