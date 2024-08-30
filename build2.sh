@@ -2,7 +2,6 @@
 
 PROJECT=$(dirname $(readlink -f "$0"))
 
-# Clean old target dir
 if [ -e $PROJECT/target ]; then
     docker run --rm -i -v $PROJECT:/src alpine:3.11 rm -rf /src/target || exit 1
 fi
