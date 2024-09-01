@@ -1,0 +1,18 @@
+= Version 3.0.18
+[horizontal]
+Release date:: November 2024
+
+== Changes to BIS document
+
+* sample files and snippits have been updated to reflect the new rule PEPPOL-EN16931-R131
+            <cac:ExternalReference>
+                <cbc:URI>http://www.techspec.no</cbc:URI>
+            </cac:ExternalReference>
+
+== Changes to code lists and validation artefacts
+
+
+==  EN 16931 schematrons updated
+
+* new fatal rule PEPPOL-EN16931-R131 on Document refenced by URI, only allows content starting with http(s):// or ftp(s)://
+
