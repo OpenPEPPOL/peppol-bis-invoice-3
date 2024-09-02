@@ -153,6 +153,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-10</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
+            <Reference type="RULE">DE-R-015</Reference>
             <Value type="EXAMPLE">abs1234</Value>
         </Element>
 
@@ -309,6 +310,7 @@
             <Reference type="BUSINESS_TERM">BG-24</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
+            <Reference type="RULE">DE-R-022</Reference>
            
 
             
@@ -440,7 +442,8 @@
             <Name>PAYMENT INSTRUCTIONS</Name>
             <Description>A group of business terms providing information about the payment.</Description>
             <Reference type="BUSINESS_TERM">BG-16</Reference>
-
+            <Reference type="RULE">DE-R-001</Reference>
+            
             <Element>
                 <Term>cbc:PaymentMeansCode</Term>
                 <Name>Payment means type code</Name>
@@ -449,7 +452,8 @@
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-81</Reference>
                 <Reference type="RULE">BR-49</Reference>
-                <Reference type="RULE">BR-CL-16</Reference>
+                <Reference type="RULE">BR-CL-16</Reference>                
+                <Reference type="RULE">DE-R-019</Reference>                
                 <Reference type="CODE_LIST">UNCL4461</Reference>
 
 
@@ -513,6 +517,7 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-20</Reference>
                 <Reference type="RULE">BR-CO-25</Reference>
+                <Reference type="RULE">DE-R-018</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
             </Element>
         </Element>
