@@ -689,10 +689,6 @@ Last update: 2024 May release 3.0.17.
   </pattern>
   <!-- German rules -->
   <pattern id="german-rules">
-    <let name="supplierCountryIsDE"
-      value="(upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
-    <let name="customerCountryIsDE"
-      value="(upper-case(normalize-space(/*/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
     <let name="XR-SKONTO-REGEX"
       value="'#(SKONTO)#TAGE=([0-9]+#PROZENT=[0-9]+\.[0-9]{2})(#BASISBETRAG=-?[0-9]+\.[0-9]{2})?#$'"/>
     <let name="XR-EMAIL-REGEX"
