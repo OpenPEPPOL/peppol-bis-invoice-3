@@ -8,6 +8,8 @@ None
 
 == Changes to code lists and validation artefacts
 
+* Invoice Type codes 326 (Partial invoice) and 384 (Corrected invoice) added to the codelist and listed as synonyms with type code 380 (Commercial Invoice)
+* German country specific validation rules added.
 * The rule (PEPPOL-EN16931-R002), which ensures that the Invoice Note (BT-22) appears no more than once, will not apply if both the buyer and seller are German organizations.
 
 ==  EN 16931 schematrons updated
