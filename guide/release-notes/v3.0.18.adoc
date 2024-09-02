@@ -1,10 +1,9 @@
-= Version 3.0.17
+= Version 3.0.18
 [horizontal]
-Release date:: May 2024
+Release date:: November 2024
 
 == Changes to BIS document
 
-None
 
 == Changes to code lists and validation artefacts
 
