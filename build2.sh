@@ -11,7 +11,7 @@ fi
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target:/target difi/vefa-structure:0.7 || exit 2
 
 # Validator
-ocker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.3.0 build -x -t -n eu.peppol.postaward.v3.billing -a rules,guide -target target/validator /src || exit 3
+docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.3.0 build -x -t -n eu.peppol.postaward.v3.billing -a rules,guide -target target/validator /src || exit 3
 
 
 # Generate adoc-files from rules

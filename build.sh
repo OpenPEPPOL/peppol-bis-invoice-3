@@ -14,7 +14,7 @@ docker run --rm -i \
 
 
 # Validator
-ocker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.3.0 build -x -t -n eu.peppol.postaward.v3.billing -a rules,guide -target target/validator /src
+docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:2.3.0 build -x -t -n eu.peppol.postaward.v3.billing -a rules,guide -target target/validator /src
 
 
 # Generate adoc-files from rules
