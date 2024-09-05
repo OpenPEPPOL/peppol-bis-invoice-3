@@ -71,7 +71,9 @@
     <cbc:Note>Invoice Note Description</cbc:Note>
     <cbc:TaxPointDate>2018-04-13</cbc:TaxPointDate>
     <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <!-- remove BT-10 / DE-R-015
     <cbc:BuyerReference>90000000-03083-12</cbc:BuyerReference>
+    -->
     <cac:InvoicePeriod>
         <cbc:StartDate>2018-04-13</cbc:StartDate>
         <cbc:EndDate>2018-04-13</cbc:EndDate>
@@ -105,8 +107,12 @@
             <cac:PostalAddress>
                 <cbc:StreetName>[Seller address line 1]</cbc:StreetName>
                 <cbc:AdditionalStreetName>[Seller address line 2]</cbc:AdditionalStreetName>
+                <!-- remove BT-37 / DE-R-003
                 <cbc:CityName>[Seller city]</cbc:CityName>
+                -->
+                <!-- remove BT-38 / DE-R-004
                 <cbc:PostalZone>12345</cbc:PostalZone>
+                -->
                 <cac:Country>
                     <cbc:IdentificationCode>SE</cbc:IdentificationCode>
                 </cac:Country>
@@ -128,11 +134,13 @@
                 <cbc:CompanyID schemeID="0198">123456789</cbc:CompanyID>
                 <cbc:CompanyLegalForm>Amtsgericht […], Geschäftsführer: […], Sitz der Gesellschaft […], Aufsichtsratvorsitzender: […]</cbc:CompanyLegalForm>
             </cac:PartyLegalEntity>
+            <!-- remove BG-6 / DE-R-002
             <cac:Contact>
                 <cbc:Name>Tim Tester</cbc:Name>
                 <cbc:Telephone>012 3456789</cbc:Telephone>
                 <cbc:ElectronicMail>tim.tester@test.com</cbc:ElectronicMail>
             </cac:Contact>
+            -->
         </cac:Party>
     </cac:AccountingSupplierParty>
     <cac:AccountingCustomerParty>
@@ -147,8 +155,12 @@
             <cac:PostalAddress>
                 <cbc:StreetName>[Buyer address line 1]</cbc:StreetName>
                 <cbc:AdditionalStreetName>[Buyer address line 2]</cbc:AdditionalStreetName>
+                <!-- remove BT-52 / DE-R-008
                 <cbc:CityName>[Buyer city]</cbc:CityName>
+                -->
+                <!-- remove BT-53 / DE-R-009
                 <cbc:PostalZone>98765</cbc:PostalZone>
+                -->
                 <cac:AddressLine>
                     <cbc:Line>[Buyer address line 3]</cbc:Line>
                 </cac:AddressLine>
@@ -207,8 +219,12 @@
             <cac:Address>
                 <cbc:StreetName>[Deliver to street]</cbc:StreetName>
                 <cbc:AdditionalStreetName>4. OG</cbc:AdditionalStreetName>
+                <!-- remove BT-77 / DE-R-010
                 <cbc:CityName>[Deliver to city]</cbc:CityName>
+                -->
+                <!-- remove BT-78 / DE-R-011
                 <cbc:PostalZone>98765</cbc:PostalZone>
+                -->
                 <cbc:CountrySubentity>Bayern</cbc:CountrySubentity>
                 <cac:Country>
                     <cbc:IdentificationCode>DE</cbc:IdentificationCode>
@@ -221,6 +237,7 @@
             </cac:PartyName>
         </cac:DeliveryParty>
     </cac:Delivery>
+       <!-- remove BG-16 / DE-R-001
     <cac:PaymentMeans>
         <cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>
         <cbc:PaymentID>Deb. 12345 / Fact. 9876543</cbc:PaymentID>
@@ -232,6 +249,7 @@
             </cac:FinancialInstitutionBranch>
         </cac:PayeeFinancialAccount>
     </cac:PaymentMeans>
+    -->
     <cac:PaymentTerms>
         <cbc:Note>Bitte überweisen Sie bis zum 24.01.2015 auf das unten aufgeführte Konto.</cbc:Note>
     </cac:PaymentTerms>
@@ -243,9 +261,6 @@
         <cbc:Amount currencyID="EUR">0</cbc:Amount>
         <cbc:BaseAmount currencyID="EUR">0</cbc:BaseAmount>
         <cac:TaxCategory>
-            <?xmute mutator="code" values="Z,E,AE,K,G,L,M" 
-              schematron-invalid="xrubl:BR-DE-16" id="ubl-inv-mandatory-companyID-with-some-tax-category-BT-95-invalid"
-              description="mandatory companyID with some tax category" ?>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>19</cbc:Percent>
             <cac:TaxScheme>
@@ -262,7 +277,9 @@
             <cbc:TaxAmount currencyID="EUR">2048.44</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
+                <!-- remove BT-119 / DE-R-014
                 <cbc:Percent>19</cbc:Percent>
+                -->
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
@@ -391,7 +408,9 @@
     <cbc:Note>Invoice Note Description</cbc:Note>
     <cbc:TaxPointDate>2018-04-13</cbc:TaxPointDate>
     <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <!-- remove BT-10 / DE-R-015
     <cbc:BuyerReference>90000000-03083-12</cbc:BuyerReference>
+    -->
     <cac:InvoicePeriod>
         <cbc:StartDate>2018-04-13</cbc:StartDate>
         <cbc:EndDate>2018-04-13</cbc:EndDate>
@@ -425,8 +444,12 @@
             <cac:PostalAddress>
                 <cbc:StreetName>[Seller address line 1]</cbc:StreetName>
                 <cbc:AdditionalStreetName>[Seller address line 2]</cbc:AdditionalStreetName>
+                <!-- remove BT-37 / DE-R-003
                 <cbc:CityName>[Seller city]</cbc:CityName>
+                -->
+                <!-- remove BT-38 / DE-R-004
                 <cbc:PostalZone>12345</cbc:PostalZone>
+                -->
                 <cac:Country>
                     <cbc:IdentificationCode>DE</cbc:IdentificationCode>
                 </cac:Country>
@@ -448,11 +471,13 @@
                 <cbc:CompanyID schemeID="0198">123456789</cbc:CompanyID>
                 <cbc:CompanyLegalForm>Amtsgericht […], Geschäftsführer: […], Sitz der Gesellschaft […], Aufsichtsratvorsitzender: […]</cbc:CompanyLegalForm>
             </cac:PartyLegalEntity>
+            <!-- remove BG-6 / DE-R-002
             <cac:Contact>
                 <cbc:Name>Tim Tester</cbc:Name>
                 <cbc:Telephone>012 3456789</cbc:Telephone>
                 <cbc:ElectronicMail>tim.tester@test.com</cbc:ElectronicMail>
             </cac:Contact>
+            -->
         </cac:Party>
     </cac:AccountingSupplierParty>
     <cac:AccountingCustomerParty>
@@ -467,8 +492,12 @@
             <cac:PostalAddress>
                 <cbc:StreetName>[Buyer address line 1]</cbc:StreetName>
                 <cbc:AdditionalStreetName>[Buyer address line 2]</cbc:AdditionalStreetName>
+                <!-- remove BT-52 / DE-R-008
                 <cbc:CityName>[Buyer city]</cbc:CityName>
+                -->
+                <!-- remove BT-53 / DE-R-009
                 <cbc:PostalZone>98765</cbc:PostalZone>
+                -->
                 <cac:AddressLine>
                     <cbc:Line>[Buyer address line 3]</cbc:Line>
                 </cac:AddressLine>
@@ -527,8 +556,12 @@
             <cac:Address>
                 <cbc:StreetName>[Deliver to street]</cbc:StreetName>
                 <cbc:AdditionalStreetName>4. OG</cbc:AdditionalStreetName>
+                <!-- remove BT-77 / DE-R-010
                 <cbc:CityName>[Deliver to city]</cbc:CityName>
+                -->
+                <!-- remove BT-78 / DE-R-011
                 <cbc:PostalZone>98765</cbc:PostalZone>
+                -->
                 <cbc:CountrySubentity>Bayern</cbc:CountrySubentity>
                 <cac:Country>
                     <cbc:IdentificationCode>DE</cbc:IdentificationCode>
@@ -541,6 +574,7 @@
             </cac:PartyName>
         </cac:DeliveryParty>
     </cac:Delivery>
+       <!-- remove BG-16 / DE-R-001
     <cac:PaymentMeans>
         <cbc:PaymentMeansCode>58</cbc:PaymentMeansCode>
         <cbc:PaymentID>Deb. 12345 / Fact. 9876543</cbc:PaymentID>
@@ -552,6 +586,7 @@
             </cac:FinancialInstitutionBranch>
         </cac:PayeeFinancialAccount>
     </cac:PaymentMeans>
+    -->
     <cac:PaymentTerms>
         <cbc:Note>Bitte überweisen Sie bis zum 24.01.2015 auf das unten aufgeführte Konto.</cbc:Note>
     </cac:PaymentTerms>
@@ -563,9 +598,6 @@
         <cbc:Amount currencyID="EUR">0</cbc:Amount>
         <cbc:BaseAmount currencyID="EUR">0</cbc:BaseAmount>
         <cac:TaxCategory>
-            <?xmute mutator="code" values="Z,E,AE,K,G,L,M" 
-              schematron-invalid="xrubl:BR-DE-16" id="ubl-inv-mandatory-companyID-with-some-tax-category-BT-95-invalid"
-              description="mandatory companyID with some tax category" ?>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>19</cbc:Percent>
             <cac:TaxScheme>
@@ -582,7 +614,9 @@
             <cbc:TaxAmount currencyID="EUR">2048.44</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
+                <!-- remove BT-119 / DE-R-014
                 <cbc:Percent>19</cbc:Percent>
+                -->
                 <cac:TaxScheme>
                     <cbc:ID>VAT</cbc:ID>
                 </cac:TaxScheme>
