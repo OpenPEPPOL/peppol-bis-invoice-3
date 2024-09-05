@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
 	<assert>
-    <description>DE-R-016 description tbd</description>
+	    <description>DE-R-016 If one of the VAT codes S, Z, E, AE, K, G, L, or M is used, an invoice shall contain at least one of the following elements: "Seller VAT identifier" (BT-31) or "Seller tax registration identifier" (BT-32) or "SELLER TAX REPRESENTATIVE PARTY" (BG-11).</description>
 		<scope>DE-R-016</scope>
 	</assert>
 	<test>
@@ -470,9 +470,6 @@
         <cbc:Amount currencyID="EUR">0</cbc:Amount>
         <cbc:BaseAmount currencyID="EUR">0</cbc:BaseAmount>
         <cac:TaxCategory>
-            <?xmute mutator="code" values="Z,E,AE,K,G,L,M" 
-              schematron-invalid="xrubl:BR-DE-16" id="ubl-inv-mandatory-companyID-with-some-tax-category-BT-95-invalid"
-              description="mandatory companyID with some tax category" ?>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>19</cbc:Percent>
             <cac:TaxScheme>
