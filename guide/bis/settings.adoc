@@ -3,7 +3,7 @@
 :doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] Peppol BIS Billing
 :shared-dir: ../../shared
 :snippet-dir: ../../rules/snippets
-:version: 3.0.15
+:version: 3.0.17
 :name-op-en: OpenPeppol AISBL, Post-Award Coordinating Community
 
 
