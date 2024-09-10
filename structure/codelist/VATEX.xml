@@ -392,4 +392,14 @@
             collector’s items and antiques has been applied. - Only use with VAT category code
             E</Description>
     </Code>
+    <Code>
+        <Id>VATEX-FR-FRANCHISE</Id>
+        <Name>France domestic VAT franchise in base</Name>
+        <Description>For domestic invoicing in France</Description>
+    </Code>
+    <Code>
+        <Id>VATEX-FR-CNWVAT</Id>
+        <Name>France domestic Credit Notes without VAT, due to supplier forfeit of VAT for discount</Name>
+        <Description>For domestic Credit Notes only in France</Description>
+    </Code>
 </CodeList>

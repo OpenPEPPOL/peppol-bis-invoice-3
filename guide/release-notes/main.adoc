@@ -15,6 +15,10 @@ IMPORTANT: Changes in code lists are also reflected by changes in the validation
 
 :leveloffset: +1
 
+include::v3.0.17.adoc[]
+
+include::v3.0.16.adoc[]
+
 include::v3.0.15.adoc[]
 
 include::v3.0.14.adoc[]

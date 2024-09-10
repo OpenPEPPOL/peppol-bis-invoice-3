@@ -13,7 +13,7 @@
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
 			<cac:AccountingCustomerParty>
 				<cac:Party>
-					<cbc:EndpointID schemeID="0007">5566221100</cbc:EndpointID>
+					<cbc:EndpointID schemeID="0007">2021005489</cbc:EndpointID>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</Invoice>
@@ -41,6 +41,19 @@
 			<cac:AccountingCustomerParty>
 				<cac:Party>
 					<cbc:EndpointID schemeID="0007">SE5566221100</cbc:EndpointID>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</Invoice>
+	</test>
+	
+	<test>
+		<assert>
+			<error>PEPPOL-COMMON-R049</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0007">2021005480</cbc:EndpointID>
 				</cac:Party>
 			</cac:AccountingCustomerParty>
 		</Invoice>
