@@ -38,6 +38,11 @@ Last update: 2024 May release 3.0.17.
 		else
 		'XX'"/>
   <!-- -->
+  <let name="supplierCountryIsDE"
+	  value="(upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
+  <let name="customerCountryIsDE"
+	  value="(upper-case(normalize-space(/*/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
+	  
   <let name="documentCurrencyCode" value="/*/cbc:DocumentCurrencyCode"/>
   <!-- Functions -->
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:gln" as="xs:boolean">
@@ -252,7 +257,7 @@ Last update: 2024 May release 3.0.17.
     <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
       <assert id="PEPPOL-EN16931-R001" test="cbc:ProfileID" flag="fatal">Business process MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R007" test="$profile != 'Unknown'" flag="fatal">Business process MUST be in the format 'urn:fdc:peppol.eu:2017:poacc:billing:NN:1.0' where NN indicates the process number.</assert>
-      <assert id="PEPPOL-EN16931-R002" test="count(cbc:Note) &lt;= 1" flag="fatal">No more than one note is allowed on document level.</assert>
+      <assert id="PEPPOL-EN16931-R002" test="count(cbc:Note) &lt;= 1 or ($supplierCountryIsDE and $customerCountryIsDE)" flag="fatal">No more than one note is allowed on document level, unless both the buyer and seller are German organizations.</assert>
       <assert id="PEPPOL-EN16931-R003" test="cbc:BuyerReference or cac:OrderReference/cbc:ID" flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R004" test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')" flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
       <assert id="PEPPOL-EN16931-R053" test="count(cac:TaxTotal[cac:TaxSubtotal]) = 1" flag="fatal">Only one tax total with tax subtotals MUST be provided.</assert>
@@ -684,10 +689,6 @@ Last update: 2024 May release 3.0.17.
   </pattern>
   <!-- German rules -->
   <pattern id="german-rules">
-    <let name="supplierCountryIsDE"
-      value="(upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
-    <let name="customerCountryIsDE"
-      value="(upper-case(normalize-space(/*/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
     <let name="XR-SKONTO-REGEX"
       value="'#(SKONTO)#TAGE=([0-9]+#PROZENT=[0-9]+\.[0-9]{2})(#BASISBETRAG=-?[0-9]+\.[0-9]{2})?#$'"/>
     <let name="XR-EMAIL-REGEX"
@@ -847,7 +848,7 @@ Last update: 2024 May release 3.0.17.
     </rule>
     <rule context="cbc:InvoiceTypeCode">
       <assert id="PEPPOL-EN16931-P0100" test="
-          $profile != '01' or (some $code in tokenize('71 80 82 84 102 218 219 331 380 382 383 386 388 393 395 553 575 623 780 817 870 875 876 877', '\s')
+          $profile != '01' or (some $code in tokenize('71 80 82 84 102 218 219 326 331 380 382 383 384 386 388 393 395 553 575 623 780 817 870 875 876 877', '\s')
             satisfies normalize-space(text()) = $code)" flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
     <rule context="cbc:CreditNoteTypeCode">
