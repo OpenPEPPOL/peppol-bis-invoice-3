@@ -82,10 +82,10 @@
             <Value type="EXAMPLE">380</Value>
         </Element>
 
-        <Element cardinality="0..n">
+        <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Invoice note</Name>
-            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored. </Description>
+            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored. The element is not repeatable, except when both the Buyer and Seller are German, in which case the element can be repeated to meet specific legal requirements.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-22</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
