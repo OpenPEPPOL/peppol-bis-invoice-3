@@ -679,14 +679,14 @@ Last update: 2024 Novemeber release 3.0.18.
       <!-- Original rule in NLCIUS: BR-NL-11 -->
       <assert id="NL-R-007" test="(/ubl-invoice:Invoice and xs:decimal(cbc:PayableAmount) &lt;= 0.0) or (/ubl-creditnote:CreditNote and xs:decimal(cbc:PayableAmount) &gt;= 0.0) or (//cac:PaymentMeans)" flag="fatal">[NL-R-007] For suppliers in the Netherlands, the supplier MUST provide a means of payment (cac:PaymentMeans) if the payment is from customer to supplier</assert>
     </rule>
-    <rule context="cac:PaymentMeans[$supplierCountryIsNL]">
+    <rule context="cac:PaymentMeans[$supplierCountryIsNL and $customerCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-12 -->
       <assert id="NL-R-008" test="normalize-space(cbc:PaymentMeansCode) = '30' or
         normalize-space(cbc:PaymentMeansCode) = '48' or
         normalize-space(cbc:PaymentMeansCode) = '49' or
         normalize-space(cbc:PaymentMeansCode) = '57' or
         normalize-space(cbc:PaymentMeansCode) = '58' or
-        normalize-space(cbc:PaymentMeansCode) = '59'" flag="fatal">[NL-R-008] For suppliers in the Netherlands, the payment means code (cac:PaymentMeans/cbc:PaymentMeansCode) MUST be one of 30, 48, 49, 57, 58 or 59</assert>
+        normalize-space(cbc:PaymentMeansCode) = '59'" flag="fatal">[NL-R-008] For suppliers in the Netherlands, if the customer is in the Netherlands, the payment means code (cac:PaymentMeans/cbc:PaymentMeansCode) MUST be one of 30, 48, 49, 57, 58 or 59</assert>
     </rule>
     <rule context="cac:OrderLineReference/cbc:LineID[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-13 -->
