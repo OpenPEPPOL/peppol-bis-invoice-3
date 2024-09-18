@@ -10,13 +10,15 @@
   <testfolder>unit-CII-IT</testfolder>  
   <testfolder>unit-CII-DK</testfolder> 
   <testfolder>unit-CII-SE</testfolder>  
+  <testfolder>unit-CII-NL</testfolder>  
   <testfolder>unit-UBL-PEPPOL</testfolder>
   <testfolder>unit-UBL-NO</testfolder>
   <testfolder>unit-UBL-IT</testfolder> 
   <testfolder>unit-UBL-DK</testfolder> 
   <testfolder>unit-UBL-DE</testfolder>
   <testfolder>unit-UBL-SE</testfolder> 
-  <testfolder>unit-UBL-GR</testfolder> 
+  <testfolder>unit-UBL-GR</testfolder>
+  <testfolder>unit-UBL-NL</testfolder>
 
   <!-- CII -->
 
