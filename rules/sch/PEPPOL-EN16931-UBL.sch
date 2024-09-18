@@ -38,6 +38,11 @@ Last update: 2024 Novemeber release 3.0.18.
 		else
 		'XX'"/>
   <!-- -->
+  <let name="supplierCountryIsDE"
+	  value="(upper-case(normalize-space(/*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
+  <let name="customerCountryIsDE"
+	  value="(upper-case(normalize-space(/*/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode)) = 'DE')"/>
+	  
   <let name="documentCurrencyCode" value="/*/cbc:DocumentCurrencyCode"/>
   <!-- Functions -->
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:gln" as="xs:boolean">
@@ -258,7 +263,7 @@ Last update: 2024 Novemeber release 3.0.18.
     <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
       <assert id="PEPPOL-EN16931-R001" test="cbc:ProfileID" flag="fatal">Business process MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R007" test="$profile != 'Unknown'" flag="fatal">Business process MUST be in the format 'urn:fdc:peppol.eu:2017:poacc:billing:NN:1.0' where NN indicates the process number.</assert>
-      <assert id="PEPPOL-EN16931-R002" test="count(cbc:Note) &lt;= 1" flag="fatal">No more than one note is allowed on document level.</assert>
+      <assert id="PEPPOL-EN16931-R002" test="count(cbc:Note) &lt;= 1 or ($supplierCountryIsDE and $customerCountryIsDE)" flag="fatal">No more than one note is allowed on document level, unless both the buyer and seller are German organizations.</assert>
       <assert id="PEPPOL-EN16931-R003" test="cbc:BuyerReference or cac:OrderReference/cbc:ID" flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R004" test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')" flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
       <assert id="PEPPOL-EN16931-R053" test="count(cac:TaxTotal[cac:TaxSubtotal]) = 1" flag="fatal">Only one tax total with tax subtotals MUST be provided.</assert>
@@ -688,6 +693,130 @@ Last update: 2024 Novemeber release 3.0.18.
       <assert id="NL-R-009" test="exists(/*/cac:OrderReference/cbc:ID)" flag="fatal">[NL-R-009] For suppliers in the Netherlands, if an order line reference (cac:OrderLineReference/cbc:LineID) is used, there must be an order reference on the document level (cac:OrderReference/cbc:ID)</assert>
     </rule>
   </pattern>
+  <!-- German rules -->
+  <pattern id="german-rules">
+    <let name="XR-SKONTO-REGEX"
+      value="'#(SKONTO)#TAGE=([0-9]+#PROZENT=[0-9]+\.[0-9]{2})(#BASISBETRAG=-?[0-9]+\.[0-9]{2})?#$'"/>
+    <let name="XR-EMAIL-REGEX"
+      value="'^[a-zA-Z0-9!#\$%&amp;&#34;*+/=?^_`{|}~-]+(\.[a-zA-Z0-9!#\$%&amp;&#34;*+/=?^_`{|}~-]+)*@([a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?$'"/>
+    <let name="XR-TELEPHONE-REGEX" value="'.*([0-9].*){3,}.*'"/>
+    <rule context="(/ubl-invoice:Invoice | /ubl-creditnote:CreditNote)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <assert test="cac:PaymentMeans" flag="fatal" id="DE-R-001">An invoice shall contain information on "PAYMENT INSTRUCTIONS" (BG-16).</assert>
+      <assert test="cbc:BuyerReference[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-015">The element "Buyer reference" (BT-10) shall be provided.</assert>
+      <let name="supportedVATCodes"
+        value="('S', 'Z', 'E', 'AE', 'K', 'G', 'L', 'M')"/>
+      <let name="BT-31orBT-32Path"
+        value="cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID[boolean(normalize-space(.))]"/>
+      <let name="BT-95-UBL-Inv"
+        value="cac:AllowanceCharge/cac:TaxCategory/cbc:ID[ancestor::cac:AllowanceCharge/cbc:ChargeIndicator = 'false' and         following-sibling::cac:TaxScheme/cbc:ID = 'VAT']"/>
+      <let name="BT-95-UBL-CN"
+        value="cac:AllowanceCharge/cac:TaxCategory/cbc:ID[ancestor::cac:AllowanceCharge/cbc:ChargeIndicator = 'false']"/>
+      <let name="BT-102"
+        value="cac:AllowanceCharge/cac:TaxCategory/cbc:ID[ancestor::cac:AllowanceCharge/cbc:ChargeIndicator = 'true']"/>
+      <let name="BT-151"
+        value="(cac:InvoiceLine | cac:CreditNoteLine)/cac:Item/cac:ClassifiedTaxCategory/cbc:ID"/>
+      <!-- If one of BT-95, BT-102, BT-151 is in List of supportedVATCodes then either BG-11=cac:TaxRepresentativeParty or $BT-31orBT-32Path has to exist -->
+      <assert test="         (not(           ($BT-95-UBL-Inv = $supportedVATCodes or $BT-95-UBL-CN = $supportedVATCodes) or           ($BT-102 = $supportedVATCodes) or           ($BT-151 = $supportedVATCodes)         ) or         (cac:TaxRepresentativeParty, $BT-31orBT-32Path))         "
+        flag="fatal"
+        id="DE-R-016">If one of the VAT codes S, Z, E, AE, K, G, L, or M is used, an invoice shall contain at least one of the following elements: "Seller VAT identifier" (BT-31) or "Seller tax registration identifier" (BT-32) or "SELLER TAX REPRESENTATIVE PARTY" (BG-11).</assert>
+      <let name="supportedInvAndCNTypeCodes"
+        value="('326', '380', '384', '389', '381', '875', '876', '877')"/>
+      <assert test="cbc:InvoiceTypeCode = $supportedInvAndCNTypeCodes         or cbc:CreditNoteTypeCode = $supportedInvAndCNTypeCodes"
+        flag="warning"
+        id="DE-R-017">The element "Invoice type code" (BT-3) should only contain the following values from code list UNTDID 1001: 326 (Partial invoice), 380 (Commercial invoice), 384 (Corrected invoice), 389 (Self-billed invoice), 381 (Credit note), 875 (Partial construction invoice), 876 (Partial final construction invoice), 877 (Final construction invoice).</assert>
+      <assert test="every $line in             cac:PaymentTerms/cbc:Note[1]/tokenize(. , '(\r?\n)')[starts-with( normalize-space(.) , '#')]              satisfies matches ( normalize-space ($line), $XR-SKONTO-REGEX)                                  and                                 matches( cac:PaymentTerms/cbc:Note[1]/tokenize(. ,  '#.+#')[last()], '^\s*\n' )"
+        flag="fatal"
+        id="DE-R-018">Information on cash discounts for prompt payment (Skonto) shall be provided within the element "Payment terms" BT-20 in the following way: First segment "SKONTO", second segment amount of days ("TAGE=N"), third segment percentage ("PROZENT=N"). Percentage must be separated by dot with two decimal places. In case the base value of the invoiced amount is not provided in BT-115 but as a partial amount, the base value shall be provided as fourth segment "BASISBETRAG=N" as semantic data type amount. Each entry shall start with a #, the segments must be separated by # and a row shall end with a #. A complete statement on cash discount for prompt payment shall end with a XML-conformant line break. All statements on cash discount for prompt payment shall be given in capital letters. Additional whitespaces (blanks, tabulators or line breaks) are not allowed. Other characters or texts than defined above are not allowed.</assert>
+      <assert test="count(cac:AdditionalDocumentReference) =                      count(cac:AdditionalDocumentReference[not(./cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename = preceding-sibling::cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename)])"
+        flag="fatal"
+        id="DE-R-022">Attached documents provided with an invoice in "ADDITIONAL SUPPORTING DOCUMENTS" (BG-24) shall have a unique filename (non case-sensitive) within the element ″Attached document″ (BT-125).</assert>
+      <assert test="((not(cbc:InvoiceTypeCode = 384 or cbc:CreditNoteTypeCode = 384) or                     (cac:BillingReference/cac:InvoiceDocumentReference)))"
+        flag="warning"
+        id="DE-R-026">If "Invoice type code" (BT-3) contains the code 384 (Corrected invoice), "PRECEDING INVOICE REFERENCE" (BG-3) should be provided at least once.</assert>
+      <assert test="not(cac:PaymentMeans/cac:PaymentMandate)                        or (cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID[@schemeID='SEPA']                          | cac:PayeeParty/cac:PartyIdentification/cbc:ID[@schemeID='SEPA'])"
+        flag="fatal"
+        id="DE-R-030">If the group "DIRECT DEBIT" (BG-19) is delivered, the element "Bank assigned creditor identifier" (BT-90) shall be provided.</assert>
+      <assert test="not(cac:PaymentMeans/cac:PaymentMandate) or (cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID)"
+        flag="fatal"
+        id="DE-R-031">If the group "DIRECT DEBIT" (BG-19) is delivered, the element "Debited account identifier" (BT-91) shall be provided.</assert>
+    </rule>
+    <rule context="(/ubl-invoice:Invoice/cac:AccountingSupplierParty | /ubl-creditnote:CreditNote/cac:AccountingSupplierParty)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <assert test="cac:Party/cac:Contact" flag="fatal" id="DE-R-002">The group "SELLER CONTACT" (BG-6) shall be provided.</assert>
+    </rule>
+    <rule context="(/ubl-invoice:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress | /ubl-creditnote:CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <assert test="cbc:CityName[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-003">The element "Seller city" (BT-37) shall be provided.</assert>
+      <assert test="cbc:PostalZone[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-004">The element "Seller post code" (BT-38) shall be provided.</assert>
+    </rule>
+    <rule context="(/ubl-invoice:Invoice/cac:AccountingSupplierParty/cac:Party/cac:Contact | /ubl-creditnote:CreditNote/cac:AccountingSupplierParty/cac:Party/cac:Contact)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <assert test="cbc:Name[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-005">The element "Seller contact point" (BT-41) shall be provided.</assert>
+      <assert test="cbc:Telephone[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-006">The element "Seller contact telephone number" (BT-42) shall be provided.</assert>
+      <assert test="cbc:ElectronicMail[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-007">The element "Seller contact email address" (BT-43) shall be provided.</assert>
+      <assert test="matches(normalize-space(cbc:Telephone), $XR-TELEPHONE-REGEX)"
+        flag="warning"
+        id="DE-R-027">"Seller contact telephone number" (BT-42) should contain a valid telephone number. A valid telephone should consist of 3 digits minimum.</assert>
+      <assert test="matches(normalize-space(cbc:ElectronicMail), $XR-EMAIL-REGEX)"
+        flag="warning"
+        id="DE-R-028">"Seller contact email address" (BT-43) should contain exactly one @-sign, which should not be framed by a whitespace or a dot but by at least two characters on each side. A dot should not be the first or last character.</assert>
+    </rule>
+    <rule context="(/ubl-invoice:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress | /ubl-creditnote:CreditNote/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <assert test="cbc:CityName[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-008">The element "Buyer city" (BT-52) shall be provided.</assert>
+      <assert test="cbc:PostalZone[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-009">The element "Buyer post code" (BT-53) shall be provided.</assert>
+    </rule>
+    <rule context="(/ubl-invoice:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address | /ubl-creditnote:CreditNote/cac:Delivery/cac:DeliveryLocation/cac:Address)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <assert test="cbc:CityName[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-010">The element "Deliver to city" (BT-77) shall be provided if the group "DELIVER TO ADDRESS" (BG-15) is delivered.</assert>
+      <assert test="cbc:PostalZone[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-011">The element "Deliver to post code" (BT-78) shall be provided if the group "DELIVER TO ADDRESS" (BG-15) is delivered.</assert>
+    </rule>
+    <rule context="(/ubl-invoice:Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)] | /ubl-creditnote:CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)])[$supplierCountryIsDE and $customerCountryIsDE]">
+      <!-- check for PaymentMeansCode 30 was not added by purpose in 2.1.1. -->
+      <assert test="not(cbc:PaymentMeansCode = '58') or                     matches(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')), '^[A-Z]{2}[0-9]{2}[a-zA-Z0-9]{0,30}$') and                     xs:integer(string-join(for $cp in string-to-codepoints(concat(substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),5),upper-case(substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),1,2)),substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),3,2))) return  (if($cp &gt; 64) then string($cp - 55) else  string($cp - 48)),'')) mod 97 = 1"
+        flag="warning"
+        id="DE-R-019">The element "Payment account identifier" (BT-84) should contain a valid IBAN if code 58 SEPA is provided in "Payment means type code" (BT-81).</assert>
+      <assert test="cac:PayeeFinancialAccount" flag="fatal" id="DE-R-023-1">If "Payment means type code" (BT-81) contains a code for credit transfer (30, 58), "CREDIT TRANSFER" (BG-17) shall be provided.</assert>
+      <assert test="not(cac:CardAccount) and                     not(cac:PaymentMandate)"
+        flag="fatal"
+        id="DE-R-023-2">If "Payment means type code" (BT-81) contains a code for credit transfer (30, 58), BG-18 and BG-19 shall not be provided.</assert>
+    </rule>
+    <rule context="(/ubl-invoice:Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)] |/ubl-creditnote:CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)])[$supplierCountryIsDE and $customerCountryIsDE]">
+      <assert test="cac:CardAccount" flag="fatal" id="DE-R-024-1">If "Payment means type code" (BT-81) contains a code for payment card (48, 54, 55), "PAYMENT CARD INFORMATION" (BG-18) shall be provided.</assert>
+      <assert test="not(cac:PayeeFinancialAccount) and                     not(cac:PaymentMandate)"
+        flag="fatal"
+        id="DE-R-024-2">If "Payment means type code" (BT-81) contains a code for payment card (48, 54, 55), BG-17 and BG-19 shall not be provided.</assert>
+    </rule>
+    <rule context="(/ubl-invoice:Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = 59] | /ubl-creditnote:CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = 59])[$supplierCountryIsDE and $customerCountryIsDE]">
+      <assert test="not(cbc:PaymentMeansCode = '59') or                     matches(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')), '^[A-Z]{2}[0-9]{2}[a-zA-Z0-9]{0,30}$') and                     xs:decimal(string-join(for $cp in string-to-codepoints(concat(substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),5),upper-case(substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),1,2)),substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),3,2))) return  (if($cp &gt; 64) then string($cp - 55) else  string($cp - 48)),'')) mod 97 = 1"
+        flag="warning"
+        id="DE-R-020">The element "Debited account identifier" (BT-91) should contain a valid IBAN if code 59 SEPA is provided in "Payment means type code" (BT-81). </assert>
+      <assert test="cac:PaymentMandate" flag="fatal" id="DE-R-025-1">If "Payment means type code" (BT-81) contains a code for direct debit (59), "DIRECT DEBIT" (BG-19) shall be provided.</assert>
+      <assert test="not(cac:PayeeFinancialAccount) and                     not(cac:CardAccount)"
+        flag="fatal"
+        id="DE-R-025-2">If "Payment means type code" (BT-81) contains a code for direct debit (59), BG-17 and BG-18 shall not be provided.</assert>
+    </rule>
+    <rule context="(/ubl-invoice:Invoice/cac:TaxTotal/cac:TaxSubtotal | /ubl-creditnote:CreditNote/cac:TaxTotal/cac:TaxSubtotal)[$supplierCountryIsDE and $customerCountryIsDE]">
+      <assert test="cac:TaxCategory/cbc:Percent[boolean(normalize-space(.))]"
+        flag="fatal"
+        id="DE-R-014">The element "VAT category rate" (BT-119) shall be provided.</assert>
+    </rule>
+  </pattern>
   <!-- Restricted code lists and formatting -->
   <pattern>
     <let name="ISO3166" value="tokenize('AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW 1A XI', '\s')"/>
@@ -725,7 +854,7 @@ Last update: 2024 Novemeber release 3.0.18.
     </rule>
     <rule context="cbc:InvoiceTypeCode">
       <assert id="PEPPOL-EN16931-P0100" test="
-          $profile != '01' or (some $code in tokenize('71 80 82 84 102 218 219 331 380 382 383 386 388 393 395 553 575 623 780 817 870 875 876 877', '\s')
+          $profile != '01' or (some $code in tokenize('71 80 82 84 102 218 219 326 331 380 382 383 384 386 388 393 395 553 575 623 780 817 870 875 876 877', '\s')
             satisfies normalize-space(text()) = $code)" flag="fatal">Invoice type code MUST be set according to the profile.</assert>
     </rule>
     <rule context="cbc:CreditNoteTypeCode">
