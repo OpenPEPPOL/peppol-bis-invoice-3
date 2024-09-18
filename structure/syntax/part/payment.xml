@@ -5,6 +5,7 @@
         <Name>PAYMENT INSTRUCTIONS</Name>
         <Description>A group of business terms providing information about the payment.</Description>
         <Reference type="BUSINESS_TERM">BG-16</Reference>
+        <Reference type="RULE">DE-R-001</Reference>
         
         <Element>
             <Term>cbc:PaymentMeansCode</Term>
@@ -16,7 +17,8 @@
             <Reference type="RULE">BR-49</Reference>
             <Reference type="RULE">BR-CL-16</Reference>
             <Reference type="RULE">DK-R-005</Reference>
-            <Reference type="RULE">SE-R-011</Reference>
+            <Reference type="RULE">SE-R-011</Reference>            
+            <Reference type="RULE">DE-R-019</Reference>
             <Reference type="CODE_LIST">UNCL4461</Reference>
             
             
@@ -56,6 +58,9 @@
                 invoice issuance.
             </Description>
             <Reference type="BUSINESS_TERM">BG-18</Reference>
+            <Reference type="RULE">DE-R-023-2</Reference>
+            <Reference type="RULE">DE-R-024-1</Reference>
+            <Reference type="RULE">DE-R-025-2</Reference>
             
             <Element>
                 <Term>cbc:PrimaryAccountNumberID</Term>
@@ -90,6 +95,9 @@
             <Name>CREDIT TRANSFER</Name>
             <Description>A group of business terms to specify credit transfer payments.</Description>
             <Reference type="BUSINESS_TERM">BG-17</Reference>
+            <Reference type="RULE">DE-R-023-1</Reference>
+            <Reference type="RULE">DE-R-024-2</Reference>
+            <Reference type="RULE">DE-R-025-2</Reference>
             
             <Element>
                 <Term>cbc:ID</Term>
@@ -108,6 +116,7 @@
                 <Reference type="RULE">SE-R-008</Reference>
                 <Reference type="RULE">SE-R-009</Reference>
                 <Reference type="RULE">SE-R-010</Reference>
+                <Reference type="RULE">DE-R-019</Reference>
                 <Value type="EXAMPLE">NO99991122222</Value>
             </Element>
             
@@ -143,6 +152,9 @@
             <Name>DIRECT DEBIT</Name>
             <Description>A group of business terms to specify a direct debit.</Description>
             <Reference type="BUSINESS_TERM">BG-19</Reference>
+            <Reference type="RULE">DE-R-023-2</Reference>
+            <Reference type="RULE">DE-R-024-2</Reference>
+            <Reference type="RULE">DE-R-025-1</Reference>
             
             <Element cardinality="0..1">
                 <Term>cbc:ID</Term>
@@ -152,6 +164,7 @@
                 <Reference type="BUSINESS_TERM">BT-89</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R061</Reference>
                 <Reference type="RULE">DK-R-007</Reference>
+                <Reference type="RULE">DE-R-030</Reference>
                 <Value type="EXAMPLE">123456</Value>
                 
             </Element>
@@ -167,6 +180,7 @@
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-91</Reference>
                     <Reference type="RULE">DK-R-007</Reference>
+                    <Reference type="RULE">DE-R-031</Reference>
                     <Value type="EXAMPLE">12345676543</Value>
                     
                 </Element>

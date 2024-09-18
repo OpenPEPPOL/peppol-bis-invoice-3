@@ -59,6 +59,7 @@
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-29, BT-90</Reference>
                     <Reference type="RULE">BR-CO-26</Reference>
+                    <Reference type="RULE">DE-R-030</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
@@ -76,7 +77,7 @@
                         <Name>Seller or bank assigned creditor identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Seller identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
                         <Reference type="RULE">BR-CL-10</Reference>
-                        <Reference type="RULE">DK-R-013</Reference>
+                        <Reference type="RULE">DK-R-013</Reference>                        
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Reference type="CODE_LIST">SEPA</Reference>
                         <Value type="EXAMPLE">0088</Value>
@@ -326,7 +327,7 @@
                 <Name>SELLER CONTACT</Name>
                 <Description>A group of business terms providing contact information about the Seller.</Description>
                 <Reference type="BUSINESS_TERM">BG-6</Reference>
-                
+                <Reference type="RULE">DE-R-002</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:Name</Term>
                     <Name>Seller contact point</Name>
@@ -341,6 +342,7 @@
                     <Description>A phone number for the contact point.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-42</Reference>
+                    <Reference type="RULE">DE-R-027</Reference>
                     <Value type="EXAMPLE">887 654 321</Value>
                 </Element>
                 <Element cardinality="0..1">
@@ -349,6 +351,7 @@
                     <Description>An e-mail address for the contact point.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-43</Reference>
+                    <Reference type="RULE">DE-R-028</Reference>
                     <Value type="EXAMPLE">test.name@foo.bar</Value>
                 </Element>
             </Element>
