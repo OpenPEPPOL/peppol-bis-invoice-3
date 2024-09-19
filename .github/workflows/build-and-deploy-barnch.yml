@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Spec
-        run: bash ./build.sh
+        run: sudo bash ./build.sh
 
       - name: Deploy on S3
         env:
