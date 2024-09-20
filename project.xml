@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>Peppol BIS Billing 3.0 - November 2024 Release - Member Review</Name>
+    <Name>Peppol BIS Billing 3.0 and SelfBilling 3.0</Name>
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
@@ -11,7 +11,12 @@
     <Resource>
         <Type>Doc-1</Type>
         <Path>bis/</Path>
-        <Title>Business Interoperability Specifications (BIS)</Title>
+        <Title>BIS Billing – Business Interoperability Specifications (BIS)</Title>
+    </Resource>
+        <Resource>
+        <Type>Doc-1</Type>
+        <Path>bis/</Path>
+        <Title>BIS SelfBilling – Business Interoperability Specifications (BIS)</Title>
     </Resource>
     <Resource>
         <Type>Doc-1</Type>
