@@ -1,0 +1,18 @@
+[appendix]
+[[national_rules]]
+= National rules
+
+The following rules have been defined by Peppol Authorities in addition to the rules for {peppol} BIS in general.
+These rules are affected based on the country of the seller, and will not affect invoices issued in other countries. They apply in *all* profiles that use this transaction specification.
+
+National rules are provided by each country's Peppol Authority, and if you need any changes or additions to these rules, please contact your Peppol Authority.
+
+
+.National transaction business rules
+[cols="1,4", options="header"]
+|====
+|Rule
+|Message/Context/Test
+
+include::{rules-dir}/PEPPOL-EN16931-UBL-NATIONAL.sch.adoc[]
+|====

@@ -1,0 +1,14 @@
+
+[[codelist]]
+= Code lists
+
+The following chapters give an overview of the restricted set of codes that is used in this Peppol BIS. For most codes the restriction is only to add a dated reference of the code list, but for the Invoice Type Code a subset of valid values have been established.
+
+
+:leveloffset: +1
+
+include::elements.adoc[]
+
+include::id_schemes.adoc[]
+
+:leveloffset: -1

@@ -1,0 +1,21 @@
+
+[appendix]
+= Restrictions on EN16931
+
+Below is a list of the restrictions on {EN16931} that is done in this {CIUS}. In addition to these rules, some national rules gives further restrictions based on the seller country or VAT country.
+A list of these national rules can be found in <<national_rules>> 
+
+All restrictions are within the allowed specifications in a {CIUS}, as listed in chapter 7.3.2 in {EN16931}.
+
+:leveloffset: +1
+
+include::../../profile/annex/restricted-elements.adoc[]
+
+include::../../transaction-spec/annex/restricted-elements.adoc[]
+
+include::../../profile/annex/processes.adoc[]
+
+include::../../profile/annex/known-issues.adoc[]
+
+
+:leveloffset: -1
