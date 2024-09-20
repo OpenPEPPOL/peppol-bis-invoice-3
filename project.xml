@@ -16,7 +16,7 @@
         <Resource>
         <Type>Doc-1</Type>
         <Path>bis-sb/</Path>
-        <Title>BIS SelfBilling – Business Interoperability Specifications (BIS)</Title>
+        <Title>BIS Self-Billing – Business Interoperability Specifications (BIS)</Title>
     </Resource>
     <Resource>
         <Type>Doc-1</Type>
@@ -40,7 +40,16 @@
         <Path>structure/syntax/ubl-creditnote.xml</Path>
         <Title>UBL Credit Note</Title>
     </Resource>
-
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-selfbilledinvoice.xml</Path>
+        <Title>UBL Invoice</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ubl-selfbilledcreditnote.xml</Path>
+        <Title>UBL Credit Note</Title>
+    </Resource>
     <!-- Rules -->
     <Resource>
         <Identifier>ubl-tc434</Identifier>
@@ -93,6 +102,13 @@
         <Path>structure/codelist/UNCL1001-cn.xml</Path>
     </Resource> 
     <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001-sbinv.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL1001-sbcn.xml</Path>
+    </Resource>     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1153.xml</Path>
     </Resource>

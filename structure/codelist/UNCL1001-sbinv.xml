@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Self-Billing Invoice type code (UNCL1001 subset)</Title>
+    <Identifier>UNCL1001-inv</Identifier>
+    <Version>D.16B</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>openPEPPOL</Subset>
+
+     <Code>
+        <Id>389</Id>
+        <Name>Self-billed invoice</Name>
+        <Description>An invoice the invoicee is producing instead of the seller.</Description>
+    </Code>
+
+</CodeList>
