@@ -1,0 +1,21 @@
+
+
+[[requirements]]
+= Self-billed Invoice and credit note business requirements
+
+The table below gives an overview of the business requirements from {tc434} supported by this BIS:
+
+====
+Legend::
+Requirements with an id *R__nn__* are from {EN16931} (Example R19).
+====
+
+include::../../transaction-spec/requirements/accounting.adoc[]
+
+include::../../transaction-spec/requirements/verification.adoc[]
+
+include::../../transaction-spec/requirements/vat.adoc[]
+
+include::../../transaction-spec/requirements/auditing.adoc[]
+
+include::../../transaction-spec/requirements/payment.adoc[]

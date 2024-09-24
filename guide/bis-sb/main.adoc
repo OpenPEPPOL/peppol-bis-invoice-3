@@ -33,7 +33,7 @@ include::sb-profile/process/index.adoc[]
 
 include::sb-functionality/index.adoc[]
 
-include::../transaction-spec/requirements/index.adoc[]
+include::sb-requirements/index.adoc[]
 
 include::../transaction-spec/datatypes/index.adoc[]
 
