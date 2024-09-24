@@ -7,8 +7,13 @@
 * The value of the SBDH element "Receiver/Identifier" MUST be equivalent to the value in the receiver's party "Party/EndpointID" element and its "schemeID" attribute.
 
 example:
-    SBDH representation: <Identifier Authority="iso6523-actorid-upis">0088:7315458756324</Identifier>
-    UBL representation: <cbc:EndpointID schemeID="0088">7315458756324</cbc:EndpointID>
+[attributes]
+====
+    SBDH representation: 
+        <Identifier Authority="iso6523-actorid-upis">0088:7315458756324</Identifier>
+    UBL representation: 
+        <cbc:EndpointID schemeID="0088">7315458756324</cbc:EndpointID>
+====
 
 See Policy for use of Identifiers
 

@@ -6,8 +6,8 @@ Release date:: November 2024
 
 == Changes to Compliance BIS document
 * Added new compliance on SBDH and BIS3 payload
-    The value of the SBDH element "Sender/Identifier" MUST be equivalent to the value in the sender party’s "Party/EndpointID" element and its "schemeID" attribute.
-    The value of the SBDH element "Receiver/Identifier" MUST be equivalent to the value in the receiver’s party "Party/EndpointID" element and its "schemeID" attribute
+** The value of the SBDH element "Sender/Identifier" MUST be equivalent to the value in the sender party’s "Party/EndpointID" element and its "schemeID" attribute.
+** The value of the SBDH element "Receiver/Identifier" MUST be equivalent to the value in the receiver’s party "Party/EndpointID" element and its "schemeID" attribute
 
 == Changes to code lists and validation artefacts
 
@@ -16,10 +16,15 @@ Release date:: November 2024
 * The rule (PEPPOL-EN16931-R002), which ensures that the Invoice Note (BT-22) appears no more than once, will not apply if both the buyer and seller are German organizations.
 * Update for country-specific rule NL-R-008 Make rule domestic-only.
 * sample files and snippits have been updated to reflect the new rule PEPPOL-EN16931-R131
-            <cac:ExternalReference>
-                <cbc:URI>http://www.techspec.no</cbc:URI>
-            </cac:ExternalReference>
+
+[attributes]
+====
+    <cac:ExternalReference>
+        <cbc:URI>http://www.techspec.no</cbc:URI>
+    </cac:ExternalReference>
+====
+
 
 ==  EN 16931 schematrons updated
 
-* new fatal rule PEPPOL-EN16931-R131 on Document refenced by URI, only allows content starting with http(s):// or ftp(s)://
+* new fatal rule PEPPOL-EN16931-R131 on Document referenced by URI, only allows content starting with http(s):// or ftp(s)://
