@@ -1,0 +1,29 @@
+
+= General self-billing process
+
+The self-billed invoicing process includes issuing and sending the invoice and the credit note from the customer to the supplier and the reception and handling of the same at the suppliers’s site.
+
+The self-billing process is shown in this work flow:
+
+* A customer issues and sends an invoice in its suppliers name and sends it to the supplier. The self-billed invoice refers to the suppliers goods or services which have been consumed by the customer based on his own records.
+
+A self-billed invoice may also refer to a contract or a frame agreement. The self-billed invoice may specify articles (goods and services) with article number or article description.
+
+* The customer raises the invoice in the suppliers name and processes it as a purchase invoice, as having been received from the supplier.
+  .. The customer books the invoice as a purchase.
+  .. The customer books the invoice as accounts payable.
+* The supplier receives the self-billed invoice and processes it as revenue in the sales control system leading to one of the following results:
+  .. The supplier fully approves the self-billed invoice, posts it in the accounting system as revenue and accounts receivable.
+  .. The supplier completely rejects the self-billed invoice, contacts the supplier and requests a self-billed credit note.
+  .. The supplier disputes parts of the self-billed invoice, contacts the supplier and requests a self-billed credit note and/or a new self-billed invoice.
+
+The diagram below shows the basic self-billing process with the use of this Peppol BIS profile. This process assumes that both the self-billed invoice and the self-billed credit note are exchanged electronically.
+
+image::../shared/images/Self-billing process.png[The invoicing process, align="center"]
+
+This profile covers the following invoice processes:
+
+
+[horizontal]
+
+P12:: Self billing.

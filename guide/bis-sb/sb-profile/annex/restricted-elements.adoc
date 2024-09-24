@@ -1,0 +1,20 @@
+
+= Restrictions for profile 01 - Billing
+
+
+[cols="1s,2s,2,4,1", options="header"]
+|====
+
+| BT-ID
+| Business Term
+| Restrition Type
+| Description
+| Rule
+
+| BT-3
+| Invoice type code
+| Mark defined values as not allowed
+| Allowed set of values can be found in <<Invoice Type Code>>
+| PEPPOL-EN16931-P0100, PEPPOL-EN16931-P0101
+
+|====

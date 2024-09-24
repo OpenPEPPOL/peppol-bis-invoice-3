@@ -25,11 +25,11 @@ link:/poacc/billing/3.0/[Main documentation site]
 
 :leveloffset: +1
 
-include::introduction.adoc[]
+include::sb-introduction.adoc[]
 
-include::../transaction-spec/principles/index.adoc[]
+include::sb-principles/index.adoc[]
 
-include::../profile/process/index.adoc[]
+include::sb-profile/process/index.adoc[]
 
 include::../transaction-spec/functionality/index.adoc[]
 

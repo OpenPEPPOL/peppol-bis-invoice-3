@@ -3,9 +3,9 @@
 [[roles]]
 = Parties and roles
 
-The diagram below shows the roles involved in the self-billed invoice and self-billed credit note transactions. The supplier and self-billed invoice receiver is the same entity, as is the customer and the self-billed invoice sender.
+The diagram below shows the roles involved in the invoice and credit note transactions. The customer and invoice receiver is the same entity, as is the supplier and the invoice sender.
 
-image::../shared/images/sb-functionality-and-roles.png[Functionality and roles, align="center"]
+image::../shared/images/functionality-and-roles.png[Functionality and roles, align="center"]
 
 
 == Parties
@@ -20,7 +20,7 @@ The supplier is the legal person or organisation who provides a product or servi
 == Roles
 
 Creditor::
-One to whom a debt is owe. The party that claims the payment and is responsible for resolving billing issues and arranging settlement. The party that receives the self-billed invoice or self-billed credit note. Also known as self-billed invoice receiver, accounts receivable or seller.
+One to whom a debt is owe. The party that claims the payment and is responsible for resolving billing issues and arranging settlement. The party that sends the invoice or credit note. Also known as invoice issuer, accounts receivable or seller.
 
 Debtor::
-One who owes debt. The party responsible for making settlement relating to a purchase. The party that sends the self-billed invoice or self-billed credit note. Also known as invoice sender, accounts payable, or buyer.
+One who owes debt. The party responsible for making settlement relating to a purchase. The party that receives the invoice or credit note. Also known as invoicee, accounts payable, or buyer.
