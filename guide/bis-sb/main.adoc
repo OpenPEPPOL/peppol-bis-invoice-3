@@ -47,7 +47,7 @@ include::../transaction-spec/descriptions/index.adoc[]
 
 include::codes/index.adoc[]
 
-include::../profile/profiles/index.adoc[]
+include::sb-profile/profiles/index.adoc[]
 
 include::../syntax/guideline.adoc[]
 

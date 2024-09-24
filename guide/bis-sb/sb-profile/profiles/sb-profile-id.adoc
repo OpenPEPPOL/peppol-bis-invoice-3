@@ -1,0 +1,24 @@
+= Self-Billing profile identifiers
+
+In the table below you will find the values to be used as the specification identifier (BT-24) and the business process type (BT-23) for this profile
+
+[cols="2s,5a,5a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| Invoice and credit note
+| urn:cen.eu:en16931:2017# +
+compliant#urn:fdc:peppol.eu:2017:poacc:selfbilling:3.0
+| urn:fdc:peppol.eu:2017:poacc:selfbilling:01:1.0
+
+|===
+
+
+.UBL example of profile identifier
+[source, xml, indent=0]
+----
+include::{snippet-dir}/Snippet-sbfull.xml[tags=profile]
+----
