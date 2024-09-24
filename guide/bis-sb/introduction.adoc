@@ -6,7 +6,7 @@ This {peppol} BIS provides a set of specifications for implementing a {peppol} b
 
 This specification is a Core Invoice Usage Specification (CIUS) of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents following this CIUS will always be compliant with the European Standard ({EN16931}).
 
-The purpose of this document is to describe the use of the self billed invoice and self billed credit note messages in Peppol, and to facilitate an efficient implementation and increased use of electronic collaboration
+The purpose of this document is to describe the use of the self-billed invoice and self-billed credit note messages in Peppol, and to facilitate an efficient implementation and increased use of electronic collaboration
 regarding the billing process based on these formats.
 
 .Statement of copyright
@@ -36,11 +36,11 @@ This document is structured as follows:
 
 == Scope
 
-This document is concerned with clarifying requirements for ensuring interoperability  and provides guidelines for the support and implementation of these requirements. This document will also provide a detailed implementation guideline for the invoice and credit note transactions.
+This document is concerned with clarifying requirements for ensuring interoperability and provides guidelines for the support and implementation of these requirements. This document will also provide a detailed implementation guideline for the self-billed invoice and self-billed credit note transactions.
 
 == Audience
 
-The audience for this document is organisations wishing to be Peppol enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
+The audience for this document are organisations wishing to be Peppol enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
 
      * Service providers
      * Contracting Authorities (CA)

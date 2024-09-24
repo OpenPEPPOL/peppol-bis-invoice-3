@@ -22,7 +22,7 @@ This Peppol BIS document may not be modified, re-distribute, sold or repackaged 
 
 == Audience
 
-The audience for this document is organisations wishing to be Peppol enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
+The audience for this document are organisations wishing to be Peppol enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
 
      * Service providers
      * Contracting Authorities (CA)
