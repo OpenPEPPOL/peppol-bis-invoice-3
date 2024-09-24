@@ -4,7 +4,7 @@
 
 :leveloffset: +1
 
-include::../../profile/codes/index.adoc[]
+include::../sb-profile/codes/index.adoc[]
 
 include::../../transaction-spec/codes/country.adoc[]
 

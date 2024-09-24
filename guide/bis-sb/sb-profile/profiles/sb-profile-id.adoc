@@ -20,5 +20,5 @@ compliant#urn:fdc:peppol.eu:2017:poacc:selfbilling:3.0
 .UBL example of profile identifier
 [source, xml, indent=0]
 ----
-include::{snippet-dir}/Snippet-sbfull.xml[tags=profile]
+include::../../../../rules/snippets/Snippet-sbfull.xml[tags=profile]
 ----
