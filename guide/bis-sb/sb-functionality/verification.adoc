@@ -1,0 +1,15 @@
+
+= Self-billed invoice verification
+
+This process forms part of the Buyer’s internal business controls. The self-billed invoice shall refer to an authentic commercial transaction. Support for self-billed invoice verification is a key function of an self-billed invoice. The self-billed invoice should provide sufficient information to look up relevant existing documentation, electronic or paper, for example, and as applicable:
+
+* the relevant purchase order
+* the contract
+* the call for tenders, that was the basis for the contract
+* the Buyer’s reference
+* the confirmed receipt of the goods or services
+* delivery information
+
+An self-billed invoice should also contain sufficient information that allows the received self-billed invoice to be transferred to a responsible authority, person or department, for verification and approval.
+
+Detailed requirements for supporing accounting functionality can be found at <<verificationreq>>

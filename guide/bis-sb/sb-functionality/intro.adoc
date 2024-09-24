@@ -1,0 +1,22 @@
+
+
+
+A self-billed invoice provides the same functionality as a normal invoice. Its difference lie in how it is raised and exchanged. It may support functions related to a number of related (internal) business processes. This Peppol BIS shall support the following functions:
+
+* Accounting
+* self-billed invoice verification against the contract, the purchase order and the goods and service delivered
+* VAT reporting
+* Auditing
+* Payment
+
+In the following chapters an assessment is made of what information is needed for each of the functions listed above and whether it is in scope or out of scope for this Peppol BIS.
+
+Please also see <<requirements>> for further details.
+
+Explicit support for the following functions (but not limited to) is out of scope: 
+
+* Inventory management
+* Delivery processes
+* Customs clearance
+* Marketing
+* Reporting

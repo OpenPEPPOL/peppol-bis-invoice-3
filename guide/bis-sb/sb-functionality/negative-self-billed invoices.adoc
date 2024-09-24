@@ -1,0 +1,21 @@
+
+= Negative self-billed invoices and credit notes
+
+
+In line with requirements of {EN16931} this BIS supports negative grand totals in order to open up for a wider spectrum of self-billing processes.
+
+Examples of such processes are
+
+* Preliminary (estimated) consumption self-billed invoice that is balanced out in a later meter-based self-billed invoice;
+* Pre-payment (with or without VAT) is settled through a final self-billed invoice; and
+* Some user communities prefer to use negative self-billed invoice rather than credit note when correcting transactions.
+
+This has the following implications on the transaction format:
+
+* The self-billed invoice (now with “negative self-billed invoice capacity”) can function as an alternative to the credit note. self-billed invoice-generating systems may implement either option, while self-billed invoice-receiving systems have to support both of them.
+*	The transaction format for credit note has to be designed to accommodate for negative grand total, as well; this is because an entire negative self-billed invoice may have to be balanced out by means of a credit note.
+
+Attention is drawn to the intrinsic differences between credit note and negative self-billed invoice when it comes to convey crediting information.
+
+
+include::../../syntax/negative-self-billed invoices.adoc[]
