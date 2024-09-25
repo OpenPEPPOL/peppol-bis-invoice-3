@@ -51,8 +51,8 @@
         <Title>UBL Self-billed Credit Note</Title>
     </Resource>
     <Resource>
-        <Type>Doc-1</Type>
-        <Path>bis-sb/sb-profile/syntax.adoc</Path>
+        <Type>Structure-1</Type>
+        <Path>compliance/</Path>
         <Title>Self-Billing transactions</Title>
     </Resource>
     <!-- Rules -->
