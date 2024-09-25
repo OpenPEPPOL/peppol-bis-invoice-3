@@ -55,8 +55,7 @@
         <Path>release-notes/</Path>
         <Title>Self-Billing transactions</Title>
     </Resource>
-    </Resource>
-    <!-- Rules -->
+     <!-- Rules -->
     <Resource>
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
