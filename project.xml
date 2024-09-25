@@ -43,12 +43,17 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-selfbilledinvoice.xml</Path>
-        <Title>UBL Invoice</Title>
+        <Title>UBL Self-billed Invoice</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-selfbilledcreditnote.xml</Path>
-        <Title>UBL Credit Note</Title>
+        <Title>UBL Self-billed Credit Note</Title>
+    </Resource>
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>bis-sb/sb-profile/syntax.adoc</Path>
+        <Title>Self-Billing transactions</Title>
     </Resource>
     <!-- Rules -->
     <Resource>

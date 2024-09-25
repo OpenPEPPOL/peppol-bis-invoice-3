@@ -1,0 +1,11 @@
+= Syntax documents for Self-Billing
+
+The self billing process uses the same syntax document as the general BIS Billing 3.0 with the following difference:
+
+* Default value for ProfileID (BT-23) is 
+
+   urn:fdc:peppol.eu:2017:poacc:selfbilling:01:1.0
+
+* Default value for CustomizationID (BT-24) is
+
+   urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:selfbilling:3.0
