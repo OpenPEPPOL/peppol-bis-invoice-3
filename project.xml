@@ -50,11 +50,6 @@
         <Path>structure/syntax/ubl-selfbilledcreditnote.xml</Path>
         <Title>UBL Self-billed Credit Note</Title>
     </Resource>
-    <Resource>
-        <Type>Structure-1</Type>
-        <Path>release-notes/</Path>
-        <Title>Self-Billing transactions</Title>
-    </Resource>
      <!-- Rules -->
     <Resource>
         <Identifier>ubl-tc434</Identifier>
