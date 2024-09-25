@@ -52,8 +52,9 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>compliance/</Path>
+        <Path>release-notes/</Path>
         <Title>Self-Billing transactions</Title>
+    </Resource>
     </Resource>
     <!-- Rules -->
     <Resource>
