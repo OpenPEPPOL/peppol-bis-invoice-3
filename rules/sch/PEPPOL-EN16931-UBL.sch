@@ -51,7 +51,7 @@ Last update: 2024 May release 3.0.17.
     <param name="exp" as="xs:decimal"/>
     <param name="val" as="xs:decimal"/>
     <param name="slack" as="xs:decimal"/>
-    <value-of select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"/>
+    <sequence select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val"/>
   </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod11" as="xs:boolean">
     <param name="val"/>
@@ -164,7 +164,7 @@ Last update: 2024 May release 3.0.17.
   </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:abn" as="xs:boolean">
     <param name="val"/>
-    <value-of select="(
+    <sequence select="(
 ((string-to-codepoints(substring($val,1,1)) - 49) * 10) +
 ((string-to-codepoints(substring($val,2,1)) - 48) * 1) +
 ((string-to-codepoints(substring($val,3,1)) - 48) * 3) +
