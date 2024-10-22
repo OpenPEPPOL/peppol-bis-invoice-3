@@ -13,7 +13,7 @@
         <Path>bis/</Path>
         <Title>BIS Billing – Business Interoperability Specifications (BIS)</Title>
     </Resource>
-        <Resource>
+    <Resource>
         <Type>Doc-1</Type>
         <Path>bis-sb/</Path>
         <Title>BIS Self-Billing – Business Interoperability Specifications (BIS)</Title>
@@ -114,7 +114,8 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-sbcn.xml</Path>
-    </Resource>     <Resource>
+    </Resource>
+    <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1153.xml</Path>
     </Resource>
@@ -134,7 +135,7 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL7161.xml</Path>
     </Resource>
-       <Resource>
+    <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/MimeCode.xml</Path>
     </Resource>   
