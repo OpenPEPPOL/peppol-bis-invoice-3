@@ -2,12 +2,12 @@
 <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-    <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:selfbilling:3.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:selfbilling:01:1.0</cbc:ProfileID>
     <cbc:ID>Snippet1</cbc:ID>
     <cbc:IssueDate>2017-11-13</cbc:IssueDate>
     <cbc:DueDate>2017-12-01</cbc:DueDate>
-    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:InvoiceTypeCode>389</cbc:InvoiceTypeCode>
     <cbc:Note>Please note we have a new phone number: 22 22 22 22</cbc:Note>
     <cbc:TaxPointDate>2017-12-01</cbc:TaxPointDate>
     <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
