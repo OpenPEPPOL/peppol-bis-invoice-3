@@ -66,7 +66,7 @@
     <Resource>
         <Identifier>ubl-peppol-sb</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/PEPPOL-EN16931-sb-UBL.sch</Path>
+        <Path>rules/sch/PEPPOL-EN16931-SB-UBL.sch</Path>
         <Title>Rules for Peppol BIS 3.0 Self-Billing</Title>
     </Resource>
     
