@@ -1,0 +1,12 @@
+= Version 3.0.19
+[horizontal]
+Release date:: May 2025
+
+== Changes to BIS document
+* Added Self Billing BIS using UBL. Includes invoice and credit note and is itendical to Billing except that it is used by buyers to issue invoices on behalf of the seller.
+
+== Changes to code lists and validation artefacts
+
+
+==  EN 16931 schematrons updated
+
