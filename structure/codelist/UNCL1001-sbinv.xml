@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Self-Billing Invoice type code (UNCL1001 subset)</Title>
-    <Identifier>UNCL1001-inv</Identifier>
+    <Identifier>UNCL1001-sbinv</Identifier>
     <Version>D.16B</Version>
     <Agency>UN/CEFACT</Agency>
     <Subset>openPEPPOL</Subset>

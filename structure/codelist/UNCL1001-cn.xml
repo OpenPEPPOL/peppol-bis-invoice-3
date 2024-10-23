@@ -7,9 +7,7 @@
     <Agency>UN/CEFACT</Agency>
     <Subset>openPEPPOL</Subset>
 
-   
- 
-    
+       
     <Code>
         <Id>81</Id>
         <Name>Credit note related to goods or services</Name>
@@ -45,8 +43,7 @@
     <Code>
         <Id>532</Id>
         <Name>Forwarder's credit note</Name>
-        <Description>Document/message for providing credit information to the
-            relevant party.
+        <Description>Document/message for providing credit information to the relevant party.
         </Description>
     </Code>
   

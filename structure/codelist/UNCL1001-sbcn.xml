@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Self-billed Credit note type code (UNCL1001 subset)</Title>
-    <Identifier>UNCL1001-cn</Identifier>
+    <Identifier>UNCL1001-sbcn</Identifier>
     <Version>D.16B</Version>
     <Agency>UN/CEFACT</Agency>
     <Subset>openPEPPOL</Subset>
@@ -10,8 +10,7 @@
     <Code>
         <Id>261</Id>
         <Name>Self billed credit note</Name>
-        <Description>A document which indicates that the customer is claiming credit in a self billing environment.
-        </Description>
+        <Description>A document which indicates that the customer is claiming credit in a self billing environment.</Description>
     </Code>
    
 </CodeList>
