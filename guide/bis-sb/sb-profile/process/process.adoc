@@ -26,4 +26,4 @@ This profile covers the following invoice processes:
 
 [horizontal]
 
-P12:: Self billing.
+P12:: Self billing process.

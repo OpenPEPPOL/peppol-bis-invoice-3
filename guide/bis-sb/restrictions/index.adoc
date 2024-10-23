@@ -13,7 +13,7 @@ include::../../profile/annex/restricted-elements.adoc[]
 
 include::../../transaction-spec/annex/restricted-elements.adoc[]
 
-include::../../profile/annex/processes.adoc[]
+include::../sb-profile/annex/processes.adoc[]
 
 include::../../profile/annex/known-issues.adoc[]
 
