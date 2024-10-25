@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-sbbase-3.0-ubl">
+	<assert>
+    <description>Verify credit note type code for Self-Billing profile</description>
+		<scope>PEPPOL-EN16931-P0101</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-P0101</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:selfbilling:01:1.0</cbc:ProfileID>
+
+			<cbc:CreditNoteTypeCode>261</cbc:CreditNoteTypeCode>
+
+		</CreditNote>
+	</test>
+
+
+
+</testSet>

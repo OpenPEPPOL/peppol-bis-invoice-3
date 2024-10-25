@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-sbbase-3.0-ubl">
+	<assert>
+    <description>Verify invoice type code for Self-Billing profile</description>
+		<scope>PEPPOL-EN16931-P0100</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-P0100</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:selfbilling:01:1.0</cbc:ProfileID>
+
+			<cbc:InvoiceTypeCode>389</cbc:InvoiceTypeCode>
+
+		</Invoice>
+	</test>
+
+</testSet>

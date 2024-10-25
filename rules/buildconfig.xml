@@ -20,6 +20,7 @@
   <testfolder>unit-UBL-GR</testfolder>
   <testfolder>unit-UBL-NL</testfolder>
 
+  <!-- Billing -->
   <!-- CII -->
 
   <configuration>
@@ -82,5 +83,25 @@
     <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
     <inherit>peppolbis-en16931-stylesheet-3.0-ubl</inherit>
   </configuration>
+
+ <!-- Self-Billing -->
+ <!-- UBL -->
+
+  <configuration>
+    <identifier>peppolbis-en16931-sbbase-3.0-ubl</identifier>
+    <title>PEPPOL BIS Self-Billing 3.0 (Base)</title>
+    <file path="sch/PEPPOL-EN16931-sb-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+  </configuration>
+  
+<!-- 
+  <configuration>
+    <identifier>peppolbis-en16931-sb-3.0-ubl-invoice</identifier>
+    <title>PEPPOL BIS Self-Billing 3.0 (Profile)</title>
+    <declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:selfbilling:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:selfbilling:3.0</declaration>
+    <inherit>ubl-invoice-2.1</inherit>
+    <inherit>peppolbis-en16931-cen-ubl</inherit>
+    <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
+    <inherit>peppolbis-en16931-stylesheet-3.0-ubl</inherit>
+  </configuration> -->
 
 </buildConfigurations>
