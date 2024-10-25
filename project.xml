@@ -158,6 +158,15 @@
         <Description>Schematron file containing rules according to ISO Schematron. </Description>
         <Property key="download">PEPPOL-EN16931-UBL.sch</Property>
     </Resource>
+
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/PEPPOL-EN16931-sb-UBL.sch</Path>
+        <Title>Schematron for Self-Billing PEPPOL rules (UBL)</Title>
+        <Description>Schematron file containing rules according to ISO Schematron. </Description>
+        <Property key="download">PEPPOL-EN16931-sb-UBL.sch</Property>
+    </Resource>
+
     <Resource>
         <Type>native:File</Type>
         <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
@@ -165,7 +174,7 @@
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
         <Property key="download">CEN-EN16931-UBL.sch</Property>
     </Resource>
-    
+
     <Resource>
         <Type>native:File</Type>
         <Path>stylesheet/stylesheet-ubl.xslt</Path>
