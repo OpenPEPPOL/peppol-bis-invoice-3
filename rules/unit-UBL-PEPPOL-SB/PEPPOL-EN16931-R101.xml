@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0"
+	configuration="peppolbis-en16931-sbbase-3.0-ubl">
+	<assert>
+		<description>Verify that element DocumentReference is not used for information other than invoiced line object.</description>
+		<scope>PEPPOL-EN16931-R101</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R101</success>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:InvoiceLine>
+				<cac:DocumentReference>
+					<cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+				</cac:DocumentReference>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R101</error>
+		</assert>
+		<Invoice
+			xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:InvoiceLine>
+				<cac:DocumentReference>
+					<cbc:DocumentTypeCode>122</cbc:DocumentTypeCode>
+				</cac:DocumentReference>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+</testSet>

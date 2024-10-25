@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-sbbase-3.0-ubl">
+	<assert>
+    	<description>Verify existence of buyer reference or purchase order reference.</description>
+		<scope>PEPPOL-EN16931-R003</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R003</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:BuyerReference/>
+
+			<cac:OrderReference>
+				<cbc:ID/>
+			</cac:OrderReference>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R003</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cac:OrderReference>
+				<cbc:ID/>
+			</cac:OrderReference>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R003</success>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:BuyerReference/>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R003</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<!-- <cbc:BuyerReference/> -->
+
+			<!-- <cac:OrderReference>
+				<cbc:ID/>
+			</cac:OrderReference> -->
+
+		</Invoice>
+	</test>
+</testSet>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-sbbase-3.0-ubl">
+	<assert>
+    	<description>Verify existence of not more than a single project reference identifier on document level</description>
+		<scope>PEPPOL-EN16931-R080</scope>
+	</assert>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R080</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:AdditionalDocumentReference>
+				<cbc:DocumentTypeCode>50</cbc:DocumentTypeCode>
+			</cac:AdditionalDocumentReference>
+			
+			<cac:AdditionalDocumentReference>
+				<cbc:ID>ts12345</cbc:ID>
+				<cbc:DocumentDescription>Technical specification</cbc:DocumentDescription>
+				<cac:Attachment>
+					<cac:ExternalReference>
+						<cbc:URI>http://www.techspec.no</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:AdditionalDocumentReference>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R080</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+			<cac:AdditionalDocumentReference>
+				<cbc:ID>ts12345</cbc:ID>
+				<cbc:DocumentDescription>Technical specification</cbc:DocumentDescription>
+				<cac:Attachment>
+					<cac:ExternalReference>
+						<cbc:URI>http://www.techspec.no</cbc:URI>
+					</cac:ExternalReference>
+				</cac:Attachment>
+			</cac:AdditionalDocumentReference>
+
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<success>PEPPOL-EN16931-R080</success>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+			
+<!--			<cac:AdditionalDocumentReference/>-->
+			
+			
+		</CreditNote>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R080</error>
+		</assert>
+		<CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+
+
+			<cac:AdditionalDocumentReference>
+				<cbc:DocumentTypeCode>50</cbc:DocumentTypeCode>
+			</cac:AdditionalDocumentReference>
+			
+			<cac:AdditionalDocumentReference>
+				<cbc:DocumentTypeCode>50</cbc:DocumentTypeCode>
+			</cac:AdditionalDocumentReference>
+
+		</CreditNote>
+	</test>
+</testSet>
