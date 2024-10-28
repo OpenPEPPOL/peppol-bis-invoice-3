@@ -1,19 +1,20 @@
-= Enveloping compliance to BIS
+= Enveloping compliance
 [horizontal]
 
 == Enveloping of BIS message in Peppol Business Message Envelope (SBDH)
-* When a BIS message is enveloped, the value of the SBDH element *Sender/Identifier* MUST match the *Party/EndpointID* element value of the sender party, including the value of its *schemeID* attribute
+* When a BIS message is enveloped, the value of the SBDH element *Sender/Identifier* SHALL match the *Party/EndpointID* element value of the sender party, including the value of its *schemeID* attribute.
 
-* When a BIS message is enveloped, the value of the SBDH element *Receiver/Identifier* MUST match the *Party/EndpointID* element value of the receiver party, including the value of its *schemeID* attribute.
+* When a BIS message is enveloped, the value of the SBDH element *Receiver/Identifier* SHALL match the *Party/EndpointID* element value of the receiver party, including the value of its *schemeID* attribute.
 
 Example:
 [attributes]
 ====
-    SBDH representation: 
-        <Identifier Authority="iso6523-actorid-upis">0088:7315458756324</Identifier>
-    UBL representation: 
+    BIS message: 
         <cbc:EndpointID schemeID="0088">7315458756324</cbc:EndpointID>
+
+    SBDH envelope: 
+        <Identifier Authority="iso6523-actorid-upis">0088:7315458756324</Identifier>
 ====
 
-See Policy for use of Identifiers for more information how to represent identifiers in envelope and messages
+See Policy for use of Identifiers for more information on how to represent identifiers in envelope and messages.
 
