@@ -698,11 +698,11 @@ Last update: 2024 November release 3.0.18.
     </rule>
     <rule
       context="//cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity[../cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE' and cbc:CompanyID]">
-      <assert id="SE-R-003" test="string(number(cbc:CompanyID)) != 'NaN'" flag="warning">Swedish
+      <assert id="SE-R-003" test="string(number(cbc:CompanyID)) != 'NaN'" flag="fatal">Swedish
         organisation numbers should be numeric.</assert>
-      <assert id="SE-R-004" test="string-length(normalize-space(cbc:CompanyID)) = 10" flag="warning">Swedish
+      <assert id="SE-R-004" test="string-length(normalize-space(cbc:CompanyID)) = 10" flag="fatal">Swedish
         organisation numbers consist of 10 characters.</assert>
-      <assert id="SE-R-013" test="u:checkSEOrgnr(normalize-space(cbc:CompanyID))" flag="warning">The
+      <assert id="SE-R-013" test="u:checkSEOrgnr(normalize-space(cbc:CompanyID))" flag="fatal">The
         last digit of a Swedish organization number must be valid according to the Luhn algorithm.</assert>
     </rule>
     <rule

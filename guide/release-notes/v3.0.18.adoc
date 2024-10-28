@@ -16,6 +16,7 @@ Release date:: November 2024
 * The rule (PEPPOL-EN16931-R002), which ensures that the Invoice Note (BT-22) appears no more than once, will not apply if both the buyer and seller are German organizations.
 * Update for country-specific rule NL-R-008 Make rule domestic-only.
 * sample files and snippits have been updated to reflect the new rule PEPPOL-EN16931-R131
+* Severity of Swedish country specific rules SE-R-003, SE-R-004 and SE-R-013 which verifies format of Swedish organization numbers are changed from warning to fatal.
 
 [attributes]
 ====
