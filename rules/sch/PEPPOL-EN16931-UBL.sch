@@ -2,7 +2,7 @@
 <!--
 This schematron uses business terms defined the CEN/EN16931-1 and is reproduced with permission from CEN. CEN bears no liability from the use of the content and implementation of this schematron and gives no warranties expressed or implied for any purpose.
 
-Last update: 2024 Novemeber release 3.0.18.
+Last update: 2024 May release 3.0.17.
  -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" xmlns:u="utils" schemaVersion="iso" queryBinding="xslt2">
   <title>Rules for Peppol BIS 3.0 Billing</title>
@@ -250,12 +250,6 @@ Last update: 2024 Novemeber release 3.0.18.
   <pattern>
     <rule context="ubl-creditnote:CreditNote">
       <assert id="PEPPOL-EN16931-R080" test="(count(cac:AdditionalDocumentReference[cbc:DocumentTypeCode='50']) &lt;= 1)" flag="fatal">Only one project reference is allowed on document level</assert>
-    </rule>
-  </pattern>
-  <pattern>
-    <rule context="cac:ExternalReference[cbc:URI]">
-      <assert id="PEPPOL-EN16931-R131" test="matches(normalize-space(cbc:URI), '^(http|https|ftp|ftps)://', 'i')"
-      flag="fatal">The Uniform Resource Locater should start with http(s):// or ftp(s)://</assert>
     </rule>
   </pattern>
   <pattern>

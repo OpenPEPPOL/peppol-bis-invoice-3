@@ -209,7 +209,6 @@ Last update: 2024 May release 3.0.17.
       <assert id="PEPPOL-EN16931-R003" test="ram:BuyerReference or ram:BuyerOrderReferencedDocument/ram:IssuerAssignedID" flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R006" test="count(ram:AdditionalReferencedDocument[ram:TypeCode='130']) &lt;=1" flag="fatal">Only one invoiced object is allowed on document level</assert>
       <assert id="PEPPOL-EN16931-R080" test="count(ram:AdditionalReferencedDocument[ram:TypeCode='50']) &lt;=1" flag="fatal">Only one project reference is allowed on document level</assert>
-      <assert id="PEPPOL-EN16931-R131" test="boolean(ram:AdditionalReferencedDocument/ram:URIID) and matches(normalize-space(ram:AdditionalReferencedDocument/ram:URIID/text()), '^(http|https|ftp|ftps):','i')" flag="fatal">The Uniform Resource Locater should start with http(s):// or ftp(s)://</assert>
     </rule>
     <rule context="ram:ApplicableHeaderTradeSettlement">
       <assert id="PEPPOL-EN16931-R005" test="not(ram:TaxCurrencyCode) or normalize-space(ram:TaxCurrencyCode/text()) != normalize-space(ram:InvoiceCurrencyCode/text())" flag="fatal">VAT accounting currency code MUST be different from invoice currency code when provided.</assert>
