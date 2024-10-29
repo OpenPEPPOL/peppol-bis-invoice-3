@@ -15,6 +15,15 @@ Release date:: November 2024
 * German country specific validation rules added.
 * The rule (PEPPOL-EN16931-R002), which ensures that the Invoice Note (BT-22) appears no more than once, will not apply if both the buyer and seller are German organizations.
 * Update for country-specific rule NL-R-008 Make rule domestic-only.
+* Correction in UNECERec20-11e for code HWE
+* CEN UBL and CII new version  1.3.13 of schematrons
+** Multiple allowances on one item #395
+** Update validation artafacts with Nov 24 codes #390
+** CII Schematron - BT-8 - [CII-SR-462] - Only one DueDateTypeCode shall be present - #387
+** Artefacts v1.3.12 (CII) do not check BR-62 / BR-63 correct any more #381
+** Contradicting message #379
+** CII special ID elements without attributes - not handled correctly #375
+** Commit did overwrite PR changes #374
 * sample files and snippits have been updated to reflect the new rule PEPPOL-EN16931-R131
 
 [attributes]
