@@ -4,14 +4,11 @@ Release date:: November 2024
 
 == Changes to BIS document
 
-== Changes to Compliance BIS document
-* Added new compliance on SBDH and BIS3 payload
-** The value of the SBDH element "Sender/Identifier" MUST be equivalent to the value in the sender party’s "Party/EndpointID" element and its "schemeID" attribute.
-** The value of the SBDH element "Receiver/Identifier" MUST be equivalent to the value in the receiver’s party "Party/EndpointID" element and its "schemeID" attribute
+== Changes to "BIS compliance" document
+* Added new compliance rules on how to use sender/receiver identifiers when enveloping a BIS3 message in Peppol Business Message Envelope (SBDH) 
 
 == Changes to code lists and validation artefacts
 
-* Invoice Type codes 326 (Partial invoice) and 384 (Corrected invoice) added to the codelist and listed as synonyms with type code 380 (Commercial Invoice)
 * German country specific validation rules added.
 * The rule (PEPPOL-EN16931-R002), which ensures that the Invoice Note (BT-22) appears no more than once, will not apply if both the buyer and seller are German organizations.
 * Update for country-specific rule NL-R-008 Make rule domestic-only.
