@@ -280,13 +280,6 @@ Last update: 2024 November release 3.0.18.
     </rule>
   </pattern>
   <pattern>
-    <rule context="cac:ExternalReference[cbc:URI]">
-      <assert id="PEPPOL-EN16931-R131"
-        test="matches(normalize-space(cbc:URI), '^(http|https|ftp|ftps)://', 'i')"
-        flag="fatal">The Uniform Resource Locater should start with http(s):// or ftp(s)://</assert>
-    </rule>
-  </pattern>
-  <pattern>
     <!-- Document level -->
     <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
       <assert id="PEPPOL-EN16931-R001" test="cbc:ProfileID" flag="fatal">Business process MUST be

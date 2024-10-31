@@ -53,7 +53,7 @@
         <cbc:DocumentDescription>Technical specification</cbc:DocumentDescription>
         <cac:Attachment>
             <cac:ExternalReference>
-                <cbc:URI>http://www.techspec.no</cbc:URI>
+                <cbc:URI>www.techspec.no</cbc:URI>
             </cac:ExternalReference>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
