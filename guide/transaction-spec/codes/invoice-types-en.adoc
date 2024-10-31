@@ -46,10 +46,6 @@ The codes below can be used in business term Invoice Type Code (BT-3) for invoic
 |Proforma invoice:: Document/message serving as a preliminary invoice, containing - on the whole - the same information as the final invoice, but not actually claiming payment.
 
 
-|326
-|Partial invoice:: Document/message specifying details of an incomplete invoice.
-
-
 |380
 |Commercial invoice:: Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer.
 

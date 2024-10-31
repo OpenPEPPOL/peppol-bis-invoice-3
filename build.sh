@@ -14,7 +14,7 @@ docker run --rm -i \
 
 
 # Validator
-docker run --rm -i -v $PROJECT:/src phelger/vefa-validator:latest build -x -t -n eu.peppol.postaward.v3.billing -a rules,guide -target target/validator /src
+docker run --rm -i -v $PROJECT:/src anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.postaward.v3.billing -a rules,guide -target target/validator /src
 
 
 # Generate adoc-files from rules
@@ -32,9 +32,10 @@ docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entry
 docker run --rm -i -v $PROJECT:/src -v $PROJECT/target/generated:/target --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/PEPPOL-EN16931-UBL.sch -q:tools/xquery/rules_asciidoc_peppol_national.xquery -o:/target/PEPPOL-EN16931-UBL-NATIONAL.sch.adoc
 
 # Example files
-docker run --rm -i -v $PROJECT/target/site/files:/src alpine:3.6 rm -rf /src/BIS-Billing3-Examples.zip
-docker run --rm -i -v $PROJECT/rules/examples:/src -v $PROJECT/target/site/files:/target -w /src kramos/alpine-zip -r /target/BIS-Billing3-Examples.zip .
+rm -rf $PROJECT/target/site/files/BIS-Billing3-Examples.zip
 
+cd $PROJECT
+zip -r target/site/files/BIS-Billing3-Examples.zip rules/examples 
 
 # Guides
 docker run --rm -i -v $PROJECT:/documents -v $PROJECT/target:/target difi/asciidoctor
