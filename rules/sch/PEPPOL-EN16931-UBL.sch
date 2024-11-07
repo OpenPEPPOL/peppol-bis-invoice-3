@@ -255,8 +255,7 @@ Last update: 2024 November release 3.0.18.
   <!-- Empty elements -->
   <pattern>
     <rule context="//*[not(*) and not(normalize-space())]">
-      <assert id="PEPPOL-EN16931-R008" test="false()" flag="fatal">Document MUST not contain empty
-        elements.</assert>
+      <assert id="PEPPOL-EN16931-R008" test="false()" flag="fatal">Document MUST not contain empty elements.</assert>
     </rule>
   </pattern>
   <!--
@@ -282,58 +281,45 @@ Last update: 2024 November release 3.0.18.
   <pattern>
     <!-- Document level -->
     <rule context="ubl-creditnote:CreditNote | ubl-invoice:Invoice">
-      <assert id="PEPPOL-EN16931-R001" test="cbc:ProfileID" flag="fatal">Business process MUST be
-        provided.</assert>
-      <assert id="PEPPOL-EN16931-R007" test="$profile != 'Unknown'" flag="fatal">Business process
-        MUST be in the format 'urn:fdc:peppol.eu:2017:poacc:billing:NN:1.0' where NN indicates the
-        process number.</assert>
+      <assert id="PEPPOL-EN16931-R001" test="cbc:ProfileID" flag="fatal">Business process MUST be provided.</assert>
+      <assert id="PEPPOL-EN16931-R007" test="$profile != 'Unknown'" flag="fatal">Business process MUST be in the format 'urn:fdc:peppol.eu:2017:poacc:billing:NN:1.0' where NN indicates the process number.</assert>
       <assert id="PEPPOL-EN16931-R002"
         test="count(cbc:Note) &lt;= 1 or ($supplierCountryIsDE and $customerCountryIsDE)"
-        flag="fatal">No more than one note is allowed on document level, unless both the buyer and
-        seller are German organizations.</assert>
+        flag="fatal">No more than one note is allowed on document level, unless both the buyer and seller are German organizations.</assert>
       <assert id="PEPPOL-EN16931-R003" test="cbc:BuyerReference or cac:OrderReference/cbc:ID"
         flag="fatal">A buyer reference or purchase order reference MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R004"
         test="starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0')"
-        flag="fatal">Specification identifier MUST have the value
-        'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
-      <assert id="PEPPOL-EN16931-R053" test="count(cac:TaxTotal[cac:TaxSubtotal]) = 1" flag="fatal">Only
-        one tax total with tax subtotals MUST be provided.</assert>
+        flag="fatal">Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0'.</assert>
+      <assert id="PEPPOL-EN16931-R053" test="count(cac:TaxTotal[cac:TaxSubtotal]) = 1" flag="fatal">Only one tax total with tax subtotals MUST be provided.</assert>
       <assert id="PEPPOL-EN16931-R054"
         test="count(cac:TaxTotal[not(cac:TaxSubtotal)]) = (if (cbc:TaxCurrencyCode) then 1 else 0)"
-        flag="fatal">Only one tax total without tax subtotals MUST be provided when tax currency
-        code is provided.</assert>
+        flag="fatal">Only one tax total without tax subtotals MUST be provided when tax currency code is provided.</assert>
       <assert id="PEPPOL-EN16931-R055"
         test="not(cbc:TaxCurrencyCode) or (cac:TaxTotal/cbc:TaxAmount[@currencyID=normalize-space(../../cbc:TaxCurrencyCode)] &lt;= 0 and cac:TaxTotal/cbc:TaxAmount[@currencyID=normalize-space(../../cbc:DocumentCurrencyCode)] &lt;= 0) or (cac:TaxTotal/cbc:TaxAmount[@currencyID=normalize-space(../../cbc:TaxCurrencyCode)] &gt;= 0 and cac:TaxTotal/cbc:TaxAmount[@currencyID=normalize-space(../../cbc:DocumentCurrencyCode)] &gt;= 0) "
-        flag="fatal">Invoice total VAT amount and Invoice total VAT amount in accounting currency
-        MUST have the same operational sign</assert>
+        flag="fatal">Invoice total VAT amount and Invoice total VAT amount in accounting currency MUST have the same operational sign</assert>
     </rule>
     <rule context="cbc:TaxCurrencyCode">
       <assert id="PEPPOL-EN16931-R005"
         test="not(normalize-space(text()) = normalize-space(../cbc:DocumentCurrencyCode/text()))"
-        flag="fatal">VAT accounting currency code MUST be different from invoice currency code when
-        provided.</assert>
+        flag="fatal">VAT accounting currency code MUST be different from invoice currency code when provided.</assert>
     </rule>
     <!-- Accounting customer -->
     <rule context="cac:AccountingCustomerParty/cac:Party">
-      <assert id="PEPPOL-EN16931-R010" test="cbc:EndpointID" flag="fatal">Buyer electronic address
-        MUST be provided</assert>
+      <assert id="PEPPOL-EN16931-R010" test="cbc:EndpointID" flag="fatal">Buyer electronic address MUST be provided</assert>
     </rule>
     <!-- Accounting supplier -->
     <rule context="cac:AccountingSupplierParty/cac:Party">
-      <assert id="PEPPOL-EN16931-R020" test="cbc:EndpointID" flag="fatal">Seller electronic address
-        MUST be provided</assert>
+      <assert id="PEPPOL-EN16931-R020" test="cbc:EndpointID" flag="fatal">Seller electronic address MUST be provided</assert>
     </rule>
     <!-- Allowance/Charge (document level/line level) -->
     <rule
       context="ubl-invoice:Invoice/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-creditnote:CreditNote/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)] | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge[cbc:MultiplierFactorNumeric and not(cbc:BaseAmount)]">
-      <assert id="PEPPOL-EN16931-R041" test="false()" flag="fatal">Allowance/charge base amount MUST
-        be provided when allowance/charge percentage is provided.</assert>
+      <assert id="PEPPOL-EN16931-R041" test="false()" flag="fatal">Allowance/charge base amount MUST be provided when allowance/charge percentage is provided.</assert>
     </rule>
     <rule
       context="ubl-invoice:Invoice/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-creditnote:CreditNote/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount] | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge[not(cbc:MultiplierFactorNumeric) and cbc:BaseAmount]">
-      <assert id="PEPPOL-EN16931-R042" test="false()" flag="fatal">Allowance/charge percentage MUST
-        be provided when allowance/charge base amount is provided.</assert>
+      <assert id="PEPPOL-EN16931-R042" test="false()" flag="fatal">Allowance/charge percentage MUST be provided when allowance/charge base amount is provided.</assert>
     </rule>
     <rule
       context="ubl-invoice:Invoice/cac:AllowanceCharge | ubl-invoice:Invoice/cac:InvoiceLine/cac:AllowanceCharge | ubl-creditnote:CreditNote/cac:AllowanceCharge | ubl-creditnote:CreditNote/cac:CreditNoteLine/cac:AllowanceCharge">
@@ -343,8 +329,7 @@ Last update: 2024 November release 3.0.18.
             cbc:Amount
           else
             0, (xs:decimal(cbc:BaseAmount) * xs:decimal(cbc:MultiplierFactorNumeric)) div 100, 0.02)"
-        flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount
-        and percentage exists</assert>
+        flag="fatal">Allowance/charge amount must equal base amount * percentage/100 if base amount and percentage exists</assert>
       <assert id="PEPPOL-EN16931-R043"
         test="normalize-space(cbc:ChargeIndicator/text()) = 'true' or normalize-space(cbc:ChargeIndicator/text()) = 'false'"
         flag="fatal">Allowance/charge ChargeIndicator value MUST equal 'true' or 'false'</assert>
@@ -354,28 +339,23 @@ Last update: 2024 November release 3.0.18.
       context="
         cac:PaymentMeans[some $code in tokenize('49 59', '\s')
           satisfies normalize-space(cbc:PaymentMeansCode) = $code]">
-      <assert id="PEPPOL-EN16931-R061" test="cac:PaymentMandate/cbc:ID" flag="fatal">Mandate
-        reference MUST be provided for direct debit.</assert>
+      <assert id="PEPPOL-EN16931-R061" test="cac:PaymentMandate/cbc:ID" flag="fatal">Mandate reference MUST be provided for direct debit.</assert>
     </rule>
     <!-- Currency -->
     <rule
       context="cbc:Amount | cbc:BaseAmount | cbc:PriceAmount | cac:TaxTotal[cac:TaxSubtotal]/cbc:TaxAmount | cbc:TaxableAmount | cbc:LineExtensionAmount | cbc:TaxExclusiveAmount | cbc:TaxInclusiveAmount | cbc:AllowanceTotalAmount | cbc:ChargeTotalAmount | cbc:PrepaidAmount | cbc:PayableRoundingAmount | cbc:PayableAmount">
-      <assert id="PEPPOL-EN16931-R051" test="@currencyID = $documentCurrencyCode" flag="fatal">All
-        currencyID attributes must have the same value as the invoice currency code (BT-5), except
-        for the invoice total VAT amount in accounting currency (BT-111).</assert>
+      <assert id="PEPPOL-EN16931-R051" test="@currencyID = $documentCurrencyCode" flag="fatal">All currencyID attributes must have the same value as the invoice currency code (BT-5), except for the invoice total VAT amount in accounting currency (BT-111).</assert>
     </rule>
     <!-- Line level - invoice period -->
     <rule
       context="ubl-invoice:Invoice[cac:InvoicePeriod/cbc:StartDate]/cac:InvoiceLine/cac:InvoicePeriod/cbc:StartDate | ubl-creditnote:CreditNote[cac:InvoicePeriod/cbc:StartDate]/cac:CreditNoteLine/cac:InvoicePeriod/cbc:StartDate">
       <assert id="PEPPOL-EN16931-R110"
-        test="xs:date(text()) &gt;= xs:date(../../../cac:InvoicePeriod/cbc:StartDate)" flag="fatal">Start
-        date of line period MUST be within invoice period.</assert>
+        test="xs:date(text()) &gt;= xs:date(../../../cac:InvoicePeriod/cbc:StartDate)" flag="fatal">Start date of line period MUST be within invoice period.</assert>
     </rule>
     <rule
       context="ubl-invoice:Invoice[cac:InvoicePeriod/cbc:EndDate]/cac:InvoiceLine/cac:InvoicePeriod/cbc:EndDate | ubl-creditnote:CreditNote[cac:InvoicePeriod/cbc:EndDate]/cac:CreditNoteLine/cac:InvoicePeriod/cbc:EndDate">
       <assert id="PEPPOL-EN16931-R111"
-        test="xs:date(text()) &lt;= xs:date(../../../cac:InvoicePeriod/cbc:EndDate)" flag="fatal">End
-        date of line period MUST be within invoice period.</assert>
+        test="xs:date(text()) &lt;= xs:date(../../../cac:InvoicePeriod/cbc:EndDate)" flag="fatal">End date of line period MUST be within invoice period.</assert>
     </rule>
     <!-- Line level - line extension amount -->
     <rule context="cac:InvoiceLine | cac:CreditNoteLine">
@@ -423,14 +403,11 @@ Last update: 2024 November release 3.0.18.
             0" />
       <assert id="PEPPOL-EN16931-R120"
         test="u:slack($lineExtensionAmount, ($quantity * ($priceAmount div $baseQuantity)) + $chargesTotal - $allowancesTotal, 0.02)"
-        flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item
-        price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance
-        amount</assert>
+        flag="fatal">Invoice line net amount MUST equal (Invoiced quantity * (Item net price/item price base quantity) + Sum of invoice line charge amount - sum of invoice line allowance amount</assert>
       <assert id="PEPPOL-EN16931-R121"
         test="not(cac:Price/cbc:BaseQuantity) or xs:decimal(cac:Price/cbc:BaseQuantity) &gt; 0"
         flag="fatal">Base quantity MUST be a positive number above zero.</assert>
-      <assert id="PEPPOL-EN16931-R100" test="(count(cac:DocumentReference) &lt;= 1)" flag="fatal">Only
-        one invoiced object is allowed pr line</assert>
+      <assert id="PEPPOL-EN16931-R100" test="(count(cac:DocumentReference) &lt;= 1)" flag="fatal">Only one invoiced object is allowed pr line</assert>
       <assert id="PEPPOL-EN16931-R101"
         test="(not(cac:DocumentReference) or (cac:DocumentReference/cbc:DocumentTypeCode='130'))"
         flag="fatal">Element Document reference can only be used for Invoice line object</assert>
@@ -441,8 +418,7 @@ Last update: 2024 November release 3.0.18.
         flag="fatal">Charge on price level is NOT allowed. Only value 'false' allowed.</assert>
       <assert id="PEPPOL-EN16931-R046"
         test="not(cbc:BaseAmount) or xs:decimal(../cbc:PriceAmount) = xs:decimal(cbc:BaseAmount) - xs:decimal(cbc:Amount)"
-        flag="fatal">Item net price MUST equal (Gross price - Allowance amount) when gross price is
-        provided.</assert>
+        flag="fatal">Item net price MUST equal (Gross price - Allowance amount) when gross price is provided.</assert>
     </rule>
     <!-- Price -->
     <rule context="cac:Price/cbc:BaseQuantity[@unitCode]">
@@ -460,14 +436,12 @@ Last update: 2024 November release 3.0.18.
     <rule
       context="cbc:EndpointID[@schemeID = '0088'] | cac:PartyIdentification/cbc:ID[@schemeID = '0088'] | cbc:CompanyID[@schemeID = '0088']">
       <assert id="PEPPOL-COMMON-R040"
-        test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())" flag="fatal">GLN
-        must have a valid format according to GS1 rules.</assert>
+        test="matches(normalize-space(), '^[0-9]+$') and u:gln(normalize-space())" flag="fatal">GLN must have a valid format according to GS1 rules.</assert>
     </rule>
     <rule
       context="cbc:EndpointID[@schemeID = '0192'] | cac:PartyIdentification/cbc:ID[@schemeID = '0192'] | cbc:CompanyID[@schemeID = '0192']">
       <assert id="PEPPOL-COMMON-R041"
-        test="matches(normalize-space(), '^[0-9]{9}$') and u:mod11(normalize-space())" flag="fatal">Norwegian
-        organization number MUST be stated in the correct format.</assert>
+        test="matches(normalize-space(), '^[0-9]{9}$') and u:mod11(normalize-space())" flag="fatal">Norwegian organization number MUST be stated in the correct format.</assert>
     </rule>
     <rule
       context="cbc:EndpointID[@schemeID = '0184'] | cac:PartyIdentification/cbc:ID[@schemeID = '0184'] | cbc:CompanyID[@schemeID = '0184']">
@@ -483,22 +457,18 @@ Last update: 2024 November release 3.0.18.
     </rule>
     <rule
       context="cbc:EndpointID[@schemeID = '0201'] | cac:PartyIdentification/cbc:ID[@schemeID = '0201'] | cbc:CompanyID[@schemeID = '0201']">
-      <assert id="PEPPOL-COMMON-R044" test="u:checkCodiceIPA(normalize-space())" flag="warning">IPA
-        Code (Codice Univoco Unità Organizzativa) must be stated in the correct format</assert>
+      <assert id="PEPPOL-COMMON-R044" test="u:checkCodiceIPA(normalize-space())" flag="warning">IPA Code (Codice Univoco Unità Organizzativa) must be stated in the correct format</assert>
     </rule>
     <rule
       context="cbc:EndpointID[@schemeID = '0210'] | cac:PartyIdentification/cbc:ID[@schemeID = '0210'] | cbc:CompanyID[@schemeID = '0210']">
-      <assert id="PEPPOL-COMMON-R045" test="u:checkCF(normalize-space())" flag="warning">Tax Code
-        (Codice Fiscale) must be stated in the correct format</assert>
+      <assert id="PEPPOL-COMMON-R045" test="u:checkCF(normalize-space())" flag="warning">Tax Code (Codice Fiscale) must be stated in the correct format</assert>
     </rule>
     <rule context="cbc:EndpointID[@schemeID = '9907']">
-      <assert id="PEPPOL-COMMON-R046" test="u:checkCF(normalize-space())" flag="warning">Tax Code
-        (Codice Fiscale) must be stated in the correct format</assert>
+      <assert id="PEPPOL-COMMON-R046" test="u:checkCF(normalize-space())" flag="warning">Tax Code (Codice Fiscale) must be stated in the correct format</assert>
     </rule>
     <rule
       context="cbc:EndpointID[@schemeID = '0211'] | cac:PartyIdentification/cbc:ID[@schemeID = '0211'] | cbc:CompanyID[@schemeID = '0211']">
-      <assert id="PEPPOL-COMMON-R047" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian
-        VAT Code (Partita Iva) must be stated in the correct format</assert>
+      <assert id="PEPPOL-COMMON-R047" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian VAT Code (Partita Iva) must be stated in the correct format</assert>
     </rule>
     <!--    <rule context="cbc:EndpointID[@schemeID = '9906']">
       <assert id="PEPPOL-COMMON-R048" test="u:checkPIVAseIT(normalize-space())" flag="warning">Italian
@@ -513,8 +483,7 @@ Last update: 2024 November release 3.0.18.
     <rule
       context="cbc:EndpointID[@schemeID = '0151'] | cac:PartyIdentification/cbc:ID[@schemeID = '0151'] | cbc:CompanyID[@schemeID = '0151']">
       <assert id="PEPPOL-COMMON-R050"
-        test="matches(normalize-space(), '^[0-9]{11}$') and u:abn(normalize-space())" flag="fatal">Australian
-        Business Number (ABN) MUST be stated in the correct format.</assert>
+        test="matches(normalize-space(), '^[0-9]{11}$') and u:abn(normalize-space())" flag="fatal">Australian Business Number (ABN) MUST be stated in the correct format.</assert>
     </rule>
   </pattern>
   <!-- National rules -->
@@ -523,17 +492,11 @@ Last update: 2024 November release 3.0.18.
     <rule context="cac:AccountingSupplierParty/cac:Party[$supplierCountry = 'NO']">
       <assert id="NO-R-002"
         test="normalize-space(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'TAX']/cbc:CompanyID) = 'Foretaksregisteret'"
-        flag="warning">For Norwegian suppliers, most invoice issuers are required to append
-        "Foretaksregisteret" to their
-        invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk
-        selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf.
-        foretaksregisterloven § 10-2."</assert>
+        flag="warning">For Norwegian suppliers, most invoice issuers are required to append "Foretaksregisteret" to their invoice. "Dersom selger er aksjeselskap, allmennaksjeselskap eller filial av utenlandsk selskap skal også ordet «Foretaksregisteret» fremgå av salgsdokumentet, jf. foretaksregisterloven § 10-2."</assert>
       <assert id="NO-R-001"
         test="cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/substring(cbc:CompanyID, 1, 2)='NO' and matches(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/substring(cbc:CompanyID,3), '^[0-9]{9}MVA$')
           and u:mod11(substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID, 3, 9)) or not(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/substring(cbc:CompanyID, 1, 2)='NO')"
-        flag="fatal">For Norwegian suppliers, a VAT number MUST be the country code prefix NO
-        followed by a valid Norwegian organization number (nine numbers) followed by the letters
-        MVA.</assert>
+        flag="fatal">For Norwegian suppliers, a VAT number MUST be the country code prefix NO followed by a valid Norwegian organization number (nine numbers) followed by the letters MVA.</assert>
     </rule>
   </pattern>
   <!-- DENMARK -->
@@ -552,14 +515,12 @@ Last update: 2024 November release 3.0.18.
         test="not(((boolean(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID))
 							   and (normalize-space(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID) != '0184'))
 						)"
-        flag="fatal">For Danish Suppliers it is mandatory to specify schemeID as "0184" (DK
-        CVR-number) when PartyLegalEntity/CompanyID is used for AccountingSupplierParty</assert>
+        flag="fatal">For Danish Suppliers it is mandatory to specify schemeID as "0184" (DK CVR-number) when PartyLegalEntity/CompanyID is used for AccountingSupplierParty</assert>
       <assert id="DK-R-016"
         test="not((boolean(/ubl-creditnote:CreditNote) and ($DKCustomerCountry = 'DK'))
 						and (number(cac:LegalMonetaryTotal/cbc:PayableAmount/text()) &lt; 0)
 						)"
-        flag="fatal">For Danish Suppliers, a Credit note cannot have a negative total
-        (PayableAmount)</assert>
+        flag="fatal">For Danish Suppliers, a Credit note cannot have a negative total (PayableAmount)</assert>
     </rule>
     <rule
       context="ubl-creditnote:CreditNote[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification | ubl-creditnote:CreditNote[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification | ubl-invoice:Invoice[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification | ubl-invoice:Invoice[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification">
@@ -567,28 +528,24 @@ Last update: 2024 November release 3.0.18.
         test="not((boolean(cbc:ID))
 						 and (normalize-space(cbc:ID/@schemeID) = '')
 						)"
-        flag="fatal">For Danish Suppliers it is mandatory to use schemeID when
-        PartyIdentification/ID is used for AccountingCustomerParty or AccountingSupplierParty</assert>
+        flag="fatal">For Danish Suppliers it is mandatory to use schemeID when PartyIdentification/ID is used for AccountingCustomerParty or AccountingSupplierParty</assert>
     </rule>
     <rule
       context="ubl-invoice:Invoice[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:PaymentMeans">
       <assert id="DK-R-005"
         test="contains(' 1 10 31 42 48 49 50 58 59 93 97 ', concat(' ', cbc:PaymentMeansCode, ' '))"
-        flag="fatal">For Danish suppliers the following Payment means codes are allowed: 1, 10, 31,
-        42, 48, 49, 50, 58, 59, 93 and 97</assert>
+        flag="fatal">For Danish suppliers the following Payment means codes are allowed: 1, 10, 31, 42, 48, 49, 50, 58, 59, 93 and 97</assert>
       <assert id="DK-R-006"
         test="not(((cbc:PaymentMeansCode = '31') or (cbc:PaymentMeansCode = '42'))
 						and not((normalize-space(cac:PayeeFinancialAccount/cbc:ID/text()) != '') and (normalize-space(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID/text()) != ''))
 						)"
-        flag="fatal">For Danish suppliers bank account and registration account is mandatory if
-        payment means is 31 or 42</assert>
+        flag="fatal">For Danish suppliers bank account and registration account is mandatory if payment means is 31 or 42</assert>
       <assert id="DK-R-007"
         test="not((cbc:PaymentMeansCode = '49')
 						and not((normalize-space(cac:PaymentMandate/cbc:ID/text()) != '')
 							   and (normalize-space(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID/text()) != ''))
 						)"
-        flag="fatal">For Danish suppliers PaymentMandate/ID and PayerFinancialAccount/ID are
-        mandatory when payment means is 49</assert>
+        flag="fatal">For Danish suppliers PaymentMandate/ID and PayerFinancialAccount/ID are mandatory when payment means is 49</assert>
       <assert id="DK-R-008"
         test="not((cbc:PaymentMeansCode = '50')
 						and not(((substring(cbc:PaymentID, 1, 3) = '01#')
@@ -597,18 +554,14 @@ Last update: 2024 November release 3.0.18.
 								and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 7)
 								)
 						)"
-        flag="fatal">For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15#
-        (kortartkode), and PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7
-        characters long, when payment means equals 50 (Giro)</assert>
+        flag="fatal">For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7 characters long, when payment means equals 50 (Giro)</assert>
       <assert id="DK-R-009"
         test="not((cbc:PaymentMeansCode = '50')
 						and ((substring(cbc:PaymentID, 1, 3) = '04#')
 							  or (substring(cbc:PaymentID, 1, 3)  = '15#'))
 						and not(string-length(cbc:PaymentID) = 19)
 						)"
-        flag="fatal">For Danish Suppliers if the PaymentID is prefixed with 04# or 15# the 16 digits
-        instruction Id must be added to the PaymentID eg. "04#1234567890123456" when Payment means
-        equals 50 (Giro)</assert>
+        flag="fatal">For Danish Suppliers if the PaymentID is prefixed with 04# or 15# the 16 digits instruction Id must be added to the PaymentID eg. "04#1234567890123456" when Payment means equals 50 (Giro)</assert>
       <assert id="DK-R-010"
         test="not((cbc:PaymentMeansCode = '93')
 						and not(((substring(cbc:PaymentID, 1, 3) = '71#')
@@ -617,9 +570,7 @@ Last update: 2024 November release 3.0.18.
 								and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 8)
 								)
 						)"
-        flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or
-        75# (kortartkode) and PayeeFinancialAccount/ID (Kreditornummer) is mandatory and must be
-        exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
+        flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and PayeeFinancialAccount/ID (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
       <assert id="DK-R-011"
         test="not((cbc:PaymentMeansCode = '93')
 						and ((substring(cbc:PaymentID, 1, 3) = '71#')
@@ -627,9 +578,7 @@ Last update: 2024 November release 3.0.18.
 						and not((string-length(cbc:PaymentID) = 18)
 							  or (string-length(cbc:PaymentID) = 19))
 						)"
-        flag="fatal">For Danish Suppliers if the PaymentID is prefixed with 71# or 75# the 15-16
-        digits instruction Id must be added to the PaymentID eg. "71#1234567890123456" when payment
-        Method equals 93 (FIK)</assert>
+        flag="fatal">For Danish Suppliers if the PaymentID is prefixed with 71# or 75# the 15-16 digits instruction Id must be added to the PaymentID eg. "71#1234567890123456" when payment Method equals 93 (FIK)</assert>
     </rule>
     <!-- Line level -->
     <rule
@@ -640,8 +589,7 @@ Last update: 2024 November release 3.0.18.
 							   or (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.0501')
 							   )
 						)"
-        flag="warning">If ItemClassification is provided from Danish suppliers, UNSPSC version
-        19.0501 should be used.</assert>
+        flag="warning">If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used.</assert>
     </rule>
     <!-- Mix level -->
     <rule context="cac:AllowanceCharge[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']">
@@ -651,9 +599,7 @@ Last update: 2024 November release 3.0.18.
 								and (number(cbc:AllowanceChargeReason) &gt;= 0)
 								and (number(cbc:AllowanceChargeReason) &lt;= 9999))
 						)"
-        flag="fatal">When specifying non-VAT Taxes for Danish customers, Danish suppliers MUST use
-        the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in
-        AllowanceChargeReason</assert>
+        flag="fatal">When specifying non-VAT Taxes for Danish customers, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in AllowanceChargeReason</assert>
     </rule>
   </pattern>
   <!-- ITALY -->
@@ -661,20 +607,12 @@ Last update: 2024 November release 3.0.18.
     <rule
       context="cac:AccountingSupplierParty/cac:Party[$supplierCountry = 'IT']/cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) != 'VAT']">
       <assert id="IT-R-001" test="matches(normalize-space(cbc:CompanyID),'^[A-Z0-9]{11,16}$')"
-        flag="fatal">[IT-R-001] BT-32 (Seller tax registration identifier) - For Italian suppliers
-        BT-32 minimum length 11 and maximum length shall be 16. Per i fornitori italiani il BT-32
-        deve avere una lunghezza tra 11 e 16 caratteri</assert>
+        flag="fatal">[IT-R-001] BT-32 (Seller tax registration identifier) - For Italian suppliers BT-32 minimum length 11 and maximum length shall be 16. Per i fornitori italiani il BT-32 deve avere una lunghezza tra 11 e 16 caratteri</assert>
     </rule>
     <rule context="cac:AccountingSupplierParty/cac:Party[$supplierCountry = 'IT']">
-      <assert id="IT-R-002" test="cac:PostalAddress/cbc:StreetName" flag="fatal">[IT-R-002] BT-35
-        (Seller address line 1) - Italian suppliers MUST provide the postal address line 1 - I
-        fornitori italiani devono indicare l'indirizzo postale.</assert>
-      <assert id="IT-R-003" test="cac:PostalAddress/cbc:CityName" flag="fatal">[IT-R-003] BT-37
-        (Seller city) - Italian suppliers MUST provide the postal address city - I fornitori
-        italiani devono indicare la città di residenza.</assert>
-      <assert id="IT-R-004" test="cac:PostalAddress/cbc:PostalZone" flag="fatal">">[IT-R-004] BT-38
-        (Seller post code) - Italian suppliers MUST provide the postal address post code - I
-        fornitori italiani devono indicare il CAP di residenza.</assert>
+      <assert id="IT-R-002" test="cac:PostalAddress/cbc:StreetName" flag="fatal">[IT-R-002] BT-35 (Seller address line 1) - Italian suppliers MUST provide the postal address line 1 - I fornitori italiani devono indicare l'indirizzo postale.</assert>
+      <assert id="IT-R-003" test="cac:PostalAddress/cbc:CityName" flag="fatal">[IT-R-003] BT-37 (Seller city) - Italian suppliers MUST provide the postal address city - I fornitori italiani devono indicare la città di residenza.</assert>
+      <assert id="IT-R-004" test="cac:PostalAddress/cbc:PostalZone" flag="fatal">">[IT-R-004] BT-38 (Seller post code) - Italian suppliers MUST provide the postal address post code - I fornitori italiani devono indicare il CAP di residenza.</assert>
     </rule>
   </pattern>
   <!-- SWEDEN -->
@@ -686,23 +624,18 @@ Last update: 2024 November release 3.0.18.
         flag="fatal">For Swedish suppliers, Swedish VAT-numbers must consist of 14 characters.</assert>
       <assert id="SE-R-002"
         test="string(number(substring(cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/cbc:CompanyID, 3, 12))) != 'NaN'"
-        flag="fatal">For Swedish suppliers, the Swedish VAT-numbers must have the trailing 12
-        characters in numeric form</assert>
+        flag="fatal">For Swedish suppliers, the Swedish VAT-numbers must have the trailing 12 characters in numeric form</assert>
     </rule>
     <rule
       context="//cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity[../cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE' and cbc:CompanyID]">
-      <assert id="SE-R-003" test="string(number(cbc:CompanyID)) != 'NaN'" flag="fatal">Swedish
-        organisation numbers should be numeric.</assert>
-      <assert id="SE-R-004" test="string-length(normalize-space(cbc:CompanyID)) = 10" flag="fatal">Swedish
-        organisation numbers consist of 10 characters.</assert>
-      <assert id="SE-R-013" test="u:checkSEOrgnr(normalize-space(cbc:CompanyID))" flag="fatal">The
-        last digit of a Swedish organization number must be valid according to the Luhn algorithm.</assert>
+      <assert id="SE-R-003" test="string(number(cbc:CompanyID)) != 'NaN'" flag="fatal">Swedish organisation numbers should be numeric.</assert>
+      <assert id="SE-R-004" test="string-length(normalize-space(cbc:CompanyID)) = 10" flag="fatal">Swedish organisation numbers consist of 10 characters.</assert>
+      <assert id="SE-R-013" test="u:checkSEOrgnr(normalize-space(cbc:CompanyID))" flag="fatal">The last digit of a Swedish organization number must be valid according to the Luhn algorithm.</assert>
     </rule>
     <rule
       context="//cac:AccountingSupplierParty/cac:Party[cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE' and exists(cac:PartyLegalEntity/cbc:CompanyID)]/cac:PartyTaxScheme[normalize-space(upper-case(cac:TaxScheme/cbc:ID)) != 'VAT']/cbc:CompanyID">
       <assert id="SE-R-005" test="normalize-space(upper-case(.)) = 'GODKÄND FÖR F-SKATT'"
-        flag="fatal">For Swedish suppliers, when using Seller tax registration identifier, 'Godkänd
-        för F-skatt' must be stated</assert>
+        flag="fatal">For Swedish suppliers, when using Seller tax registration identifier, 'Godkänd för F-skatt' must be stated</assert>
     </rule>
     <rule
       context="//cac:TaxCategory[//cac:AccountingSupplierParty/cac:Party[cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE' and cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2) = 'SE'] and cbc:ID = 'S'] | //cac:ClassifiedTaxCategory[//cac:AccountingSupplierParty/cac:Party[cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE' and cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 1, 2) = 'SE'] and cbc:ID = 'S']">
@@ -712,30 +645,25 @@ Last update: 2024 November release 3.0.18.
     </rule>
     <rule
       context="//cac:PaymentMeans[//cac:AccountingSupplierParty/cac:Party[cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE'] and normalize-space(cbc:PaymentMeansCode) = '30' and normalize-space(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID) = 'SE:PLUSGIRO']/cac:PayeeFinancialAccount/cbc:ID">
-      <assert id="SE-R-007" test="string(number(normalize-space(.))) != 'NaN'" flag="warning">For
-        Swedish suppliers using Plusgiro, the Account ID must be numeric </assert>
+      <assert id="SE-R-007" test="string(number(normalize-space(.))) != 'NaN'" flag="warning">For Swedish suppliers using Plusgiro, the Account ID must be numeric </assert>
       <assert id="SE-R-010"
         test="string-length(normalize-space(.)) &gt;= 2 and string-length(normalize-space(.)) &lt;= 8"
         flag="warning">For Swedish suppliers using Plusgiro, the Account ID must have 2-8 characters</assert>
     </rule>
     <rule
       context="//cac:PaymentMeans[//cac:AccountingSupplierParty/cac:Party[cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE'] and normalize-space(cbc:PaymentMeansCode) = '30' and normalize-space(cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID) = 'SE:BANKGIRO']/cac:PayeeFinancialAccount/cbc:ID">
-      <assert id="SE-R-008" test="string(number(normalize-space(.))) != 'NaN'" flag="warning">For
-        Swedish suppliers using Bankgiro, the Account ID must be numeric </assert>
+      <assert id="SE-R-008" test="string(number(normalize-space(.))) != 'NaN'" flag="warning">For Swedish suppliers using Bankgiro, the Account ID must be numeric </assert>
       <assert id="SE-R-009"
         test="string-length(normalize-space(.)) = 7 or string-length(normalize-space(.)) = 8"
         flag="warning">For Swedish suppliers using Bankgiro, the Account ID must have 7-8 characters</assert>
     </rule>
     <rule
       context="//cac:PaymentMeans[//cac:AccountingSupplierParty/cac:Party[cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE'] and (cbc:PaymentMeansCode = normalize-space('50') or cbc:PaymentMeansCode = normalize-space('56'))]">
-      <assert id="SE-R-011" test="false()" flag="warning">For Swedish suppliers using Swedish
-        Bankgiro or Plusgiro, the proper way to indicate this is to use Code 30 for PaymentMeans and
-        FinancialInstitutionBranch ID with code SE:BANKGIRO or SE:PLUSGIRO</assert>
+      <assert id="SE-R-011" test="false()" flag="warning">For Swedish suppliers using Swedish Bankgiro or Plusgiro, the proper way to indicate this is to use Code 30 for PaymentMeans and FinancialInstitutionBranch ID with code SE:BANKGIRO or SE:PLUSGIRO</assert>
     </rule>
     <rule
       context="//cac:PaymentMeans[//cac:AccountingSupplierParty/cac:Party[cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE']  and //cac:AccountingCustomerParty/cac:Party[cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'SE'] and (cbc:PaymentMeansCode = normalize-space('31'))]">
-      <assert id="SE-R-012" test="false()" flag="warning">For domestic transactions between Swedish
-        trading partners, credit transfer should be indicated by PaymentMeansCode="30"</assert>
+      <assert id="SE-R-012" test="false()" flag="warning">For domestic transactions between Swedish trading partners, credit transfer should be indicated by PaymentMeansCode="30"</assert>
     </rule>
   </pattern>
   <!-- GREECE -->
@@ -763,15 +691,13 @@ Last update: 2024 November release 3.0.18.
     <rule
       context="/ubl-invoice:Invoice/cbc:ID[$isGreekSender] | /ubl-creditnote:CreditNote/cbc:ID[$isGreekSender]">
       <let name="IdSegments" value="tokenize(.,'\|')" />
-      <assert id="GR-R-001-1" test="count($IdSegments) = 6" flag="fatal"> When the Supplier is
-        Greek, the Invoice Id should consist of 6 segments</assert>
+      <assert id="GR-R-001-1" test="count($IdSegments) = 6" flag="fatal"> When the Supplier is Greek, the Invoice Id should consist of 6 segments</assert>
       <assert id="GR-R-001-2"
         test="string-length(normalize-space($IdSegments[1])) = 9 
 			                              and u:TinVerification($IdSegments[1])
 			                              and ($IdSegments[1] = /*/cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 3, 9)
 			                              or $IdSegments[1] = /*/cac:TaxRepresentativeParty/cac:PartyTaxScheme[cac:TaxScheme/cbc:ID = 'VAT']/substring(cbc:CompanyID, 3, 9) )"
-        flag="fatal">When the Supplier is Greek, the Invoice Id first segment must be a valid TIN
-        Number and match either the Supplier's or the Tax Representative's Tin Number</assert>
+        flag="fatal">When the Supplier is Greek, the Invoice Id first segment must be a valid TIN Number and match either the Supplier's or the Tax Representative's Tin Number</assert>
       <let name="tokenizedIdDate" value="tokenize($IdSegments[2],'/')" />
       <assert id="GR-R-001-3"
         test="string-length(normalize-space($IdSegments[2]))>0 
@@ -779,39 +705,31 @@ Last update: 2024 November release 3.0.18.
 			                              and ($tokenizedIdDate[1] = $tokenizedUblIssueDate[3] 
 			                                and $tokenizedIdDate[2] = $tokenizedUblIssueDate[2]
 			                                and $tokenizedIdDate[3] = $tokenizedUblIssueDate[1])"
-        flag="fatal">When the Supplier is Greek, the Invoice Id second segment must be a valid Date
-        that matches the invoice Issue Date</assert>
+        flag="fatal">When the Supplier is Greek, the Invoice Id second segment must be a valid Date that matches the invoice Issue Date</assert>
       <assert id="GR-R-001-4"
         test="string-length(normalize-space($IdSegments[3]))>0 and string(number($IdSegments[3])) != 'NaN' and xs:integer($IdSegments[3]) >= 0"
         flag="fatal">When Supplier is Greek, the Invoice Id third segment must be a positive integer</assert>
       <assert id="GR-R-001-5"
         test="string-length(normalize-space($IdSegments[4]))>0 and (some $c in $greekDocumentType satisfies $IdSegments[4] = $c)"
-        flag="fatal">When Supplier is Greek, the Invoice Id in the fourth segment must be a valid
-        greek document type</assert>
-      <assert id="GR-R-001-6" test="string-length($IdSegments[5]) > 0 " flag="fatal">When Supplier
-        is Greek, the Invoice Id fifth segment must not be empty</assert>
-      <assert id="GR-R-001-7" test="string-length($IdSegments[6]) > 0 " flag="fatal">When Supplier
-        is Greek, the Invoice Id sixth segment must not be empty</assert>
+        flag="fatal">When Supplier is Greek, the Invoice Id in the fourth segment must be a valid greek document type</assert>
+      <assert id="GR-R-001-6" test="string-length($IdSegments[5]) > 0 " flag="fatal">When Supplier is Greek, the Invoice Id fifth segment must not be empty</assert>
+      <assert id="GR-R-001-7" test="string-length($IdSegments[6]) > 0 " flag="fatal">When Supplier is Greek, the Invoice Id sixth segment must not be empty</assert>
     </rule>
     <rule context="cac:AccountingSupplierParty[$isGreekSender]/cac:Party">
       <!-- Supplier Name Mandatory -->
-      <assert id="GR-R-002" test="string-length(./cac:PartyName/cbc:Name)>0" flag="fatal">Greek
-        Suppliers must provide their full name as they are registered in the Greek Business Registry
-        (G.E.MH.) as a legal entity or in the Tax Registry as a natural person </assert>
+      <assert id="GR-R-002" test="string-length(./cac:PartyName/cbc:Name)>0" flag="fatal">Greek Suppliers must provide their full name as they are registered in the Greek Business Registry (G.E.MH.) as a legal entity or in the Tax Registry as a natural person </assert>
       <!-- Supplier VAT Mandatory -->
       <assert id="GR-S-011"
         test="count(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID)=1 and
 				                        substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID,1,2) = 'EL' and
 				                        u:TinVerification(substring(cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID,3))"
-        flag="warning">Greek suppliers must provide their Seller Tax Registration Number, prefixed
-        by the country code</assert>
+        flag="warning">Greek suppliers must provide their Seller Tax Registration Number, prefixed by the country code</assert>
     </rule>
     <!-- VAT Number Rules -->
     <rule
       context="cac:AccountingSupplierParty[$isGreekSender]/cac:Party/cac:PartyTaxScheme[normalize-space(cac:TaxScheme/cbc:ID) = 'VAT']/cbc:CompanyID">
       <assert id="GR-R-003" test="substring(.,1,2) = 'EL' and u:TinVerification(substring(.,3))"
-        flag="fatal">For the Greek Suppliers, the VAT must start with 'EL' and must be a valid TIN
-        number</assert>
+        flag="fatal">For the Greek Suppliers, the VAT must start with 'EL' and must be a valid TIN number</assert>
     </rule>
     <!-- Document Reference Rules (existence of MARK and Invoice Verification URL) -->
     <rule
@@ -821,17 +739,15 @@ Last update: 2024 November release 3.0.18.
         test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##M.AR.K##'])=1"
         flag="fatal"> When Supplier is Greek, there must be one MARK Number</assert>
       <assert id="GR-S-008-1" flag="warning"
-        test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##'])=1">
-        When Supplier is Greek, there should be one invoice url</assert>
+        test="count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##'])=1">When Supplier is Greek, there should be one invoice url</assert>
       <assert id="GR-R-008-2"
         test="(count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##']) = 0 ) or (count(cac:AdditionalDocumentReference[cbc:DocumentDescription = '##INVOICE|URL##']) = 1 )"
-        flag="fatal"> When Supplier is Greek, there should be no more than one invoice url</assert>
+        flag="fatal">When Supplier is Greek, there should be no more than one invoice url</assert>
     </rule>
     <!-- MARK Rules -->
     <rule
       context="cac:AdditionalDocumentReference[$isGreekSender and ( /*/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'GR') and cbc:DocumentDescription = '##M.AR.K##']/cbc:ID">
-      <assert id="GR-R-004-2" test="matches(.,'^[1-9]([0-9]*)')" flag="fatal"> When Supplier is
-        Greek, the MARK Number must be a positive integer</assert>
+      <assert id="GR-R-004-2" test="matches(.,'^[1-9]([0-9]*)')" flag="fatal">When Supplier is Greek, the MARK Number must be a positive integer</assert>
     </rule>
 
     <!-- Invoice Verification URL Rules -->
@@ -839,21 +755,16 @@ Last update: 2024 November release 3.0.18.
       context="cac:AdditionalDocumentReference[$isGreekSender and cbc:DocumentDescription = '##INVOICE|URL##']">
       <assert id="GR-R-008-3"
         test="string-length(normalize-space(cac:Attachment/cac:ExternalReference/cbc:URI))>0"
-        flag="fatal">When Supplier is Greek and the INVOICE URL Document reference exists, the
-        External Reference URI should be present</assert>
+        flag="fatal">When Supplier is Greek and the INVOICE URL Document reference exists, the External Reference URI should be present</assert>
     </rule>
     <!-- Customer Name Mandatory -->
     <rule context="cac:AccountingCustomerParty[$isGreekSender]/cac:Party">
-      <assert id="GR-R-005" test="string-length(./cac:PartyName/cbc:Name)>0" flag="fatal">Greek
-        Suppliers must provide the full name of the buyer</assert>
+      <assert id="GR-R-005" test="string-length(./cac:PartyName/cbc:Name)>0" flag="fatal">Greek Suppliers must provide the full name of the buyer</assert>
     </rule>
     <!-- Endpoint Rules -->
     <rule
       context="cac:AccountingSupplierParty/cac:Party[$accountingSupplierCountry='GR' or $accountingSupplierCountry='EL']/cbc:EndpointID">
-      <assert id="GR-R-009" test="./@schemeID='9933' and u:TinVerification(.)" flag="fatal">Greek
-        suppliers that send an invoice through the PEPPOL network must use a correct TIN number as
-        an electronic address according to PEPPOL Electronic Address Identifier scheme (schemeID
-        9933).</assert>
+      <assert id="GR-R-009" test="./@schemeID='9933' and u:TinVerification(.)" flag="fatal">Greek suppliers that send an invoice through the PEPPOL network must use a correct TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (schemeID 9933).</assert>
     </rule>
   </pattern>
   <!-- Greek Sender and Greek Receiver rules -->
@@ -868,10 +779,7 @@ Last update: 2024 November release 3.0.18.
     </rule>
     <!-- Endpoint Rules -->
     <rule context="cac:AccountingCustomerParty[$isGreekSenderandReceiver]/cac:Party/cbc:EndpointID">
-      <assert id="GR-R-010" test="./@schemeID='9933' and u:TinVerification(.)" flag="fatal">Greek
-        Suppliers that send an invoice through the PEPPOL network to a greek buyer must use a
-        correct TIN number as an electronic address according to PEPPOL Electronic Address
-        Identifier scheme (SchemeID 9933)</assert>
+      <assert id="GR-R-010" test="./@schemeID='9933' and u:TinVerification(.)" flag="fatal">Greek Suppliers that send an invoice through the PEPPOL network to a greek buyer must use a correct TIN number as an electronic address according to PEPPOL Electronic Address Identifier scheme (SchemeID 9933)</assert>
     </rule>
   </pattern>
   <!-- ICELAND -->
@@ -884,61 +792,41 @@ Last update: 2024 November release 3.0.18.
       context="ubl-creditnote:CreditNote[$SupplierCountry = 'IS'] | ubl-invoice:Invoice[$SupplierCountry = 'IS']">
       <assert id="IS-R-001"
         test="( ( not(contains(normalize-space(cbc:InvoiceTypeCode),' ')) and contains( ' 380 381 ',concat(' ',normalize-space(cbc:InvoiceTypeCode),' ') ) ) ) or ( ( not(contains(normalize-space(cbc:CreditNoteTypeCode),' ')) and contains( ' 380 381 ',concat(' ',normalize-space(cbc:CreditNoteTypeCode),' ') ) ) )"
-        flag="warning">[IS-R-001]-If seller is icelandic then invoice type should be 380 or 381 — Ef
-        seljandi er íslenskur þá ætti gerð reiknings (BT-3) að vera sölureikningur (380) eða
-        kreditreikningur (381).</assert>
+        flag="warning">[IS-R-001]-If seller is icelandic then invoice type should be 380 or 381 — Ef seljandi er íslenskur þá ætti gerð reiknings (BT-3) að vera sölureikningur (380) eða kreditreikningur (381).</assert>
       <assert id="IS-R-002"
         test="exists(cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID) and cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID = '0196'"
-        flag="fatal">[IS-R-002]-If seller is icelandic then it shall contain sellers legal id — Ef
-        seljandi er íslenskur þá skal reikningur innihalda íslenska kennitölu seljanda (BT-30).</assert>
+        flag="fatal">[IS-R-002]-If seller is icelandic then it shall contain sellers legal id — Ef seljandi er íslenskur þá skal reikningur innihalda íslenska kennitölu seljanda (BT-30).</assert>
       <assert id="IS-R-003"
         test="exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:StreetName) and exists(cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cbc:PostalZone)"
-        flag="fatal">[IS-R-003]-If seller is icelandic then it shall contain his address with street
-        name and zip code — Ef seljandi er íslenskur þá skal heimilisfang seljanda innihalda
-        götuheiti og póstnúmer (BT-35 og BT-38).</assert>
+        flag="fatal">[IS-R-003]-If seller is icelandic then it shall contain his address with street name and zip code — Ef seljandi er íslenskur þá skal heimilisfang seljanda innihalda götuheiti og póstnúmer (BT-35 og BT-38).</assert>
       <assert id="IS-R-006"
         test="exists(cac:PaymentMeans[cbc:PaymentMeansCode = '9']/cac:PayeeFinancialAccount/cbc:ID) 
 					  and string-length(normalize-space(cac:PaymentMeans[cbc:PaymentMeansCode = '9']/cac:PayeeFinancialAccount/cbc:ID)) = 12
 					  or not(exists(cac:PaymentMeans[cbc:PaymentMeansCode = '9']))"
-        flag="fatal">[IS-R-006]-If seller is icelandic and payment means code is 9 then a 12 digit
-        account id must exist — Ef seljandi er íslenskur og greiðslumáti (BT-81) er krafa (kóti 9)
-        þá skal koma fram 12 stafa númer (bankanúmer, höfuðbók 66 og reikningsnúmer) (BT-84)</assert>
+        flag="fatal">[IS-R-006]-If seller is icelandic and payment means code is 9 then a 12 digit account id must exist — Ef seljandi er íslenskur og greiðslumáti (BT-81) er krafa (kóti 9) þá skal koma fram 12 stafa númer (bankanúmer, höfuðbók 66 og reikningsnúmer) (BT-84)</assert>
       <assert id="IS-R-007"
         test="exists(cac:PaymentMeans[cbc:PaymentMeansCode = '42']/cac:PayeeFinancialAccount/cbc:ID) 
 					  and string-length(normalize-space(cac:PaymentMeans[cbc:PaymentMeansCode = '42']/cac:PayeeFinancialAccount/cbc:ID)) = 12
 					  or not(exists(cac:PaymentMeans[cbc:PaymentMeansCode = '42']))"
-        flag="fatal">[IS-R-007]-If seller is icelandic and payment means code is 42 then a 12 digit
-        account id must exist — Ef seljandi er íslenskur og greiðslumáti (BT-81) er millifærsla
-        (kóti 42) þá skal koma fram 12 stafa reikningnúmer (BT-84)</assert>
+        flag="fatal">[IS-R-007]-If seller is icelandic and payment means code is 42 then a 12 digit account id must exist — Ef seljandi er íslenskur og greiðslumáti (BT-81) er millifærsla (kóti 42) þá skal koma fram 12 stafa reikningnúmer (BT-84)</assert>
       <assert id="IS-R-008"
         test="(exists(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']) and string-length(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']/cbc:ID) = 10 and (string(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']/cbc:ID) castable as xs:date)) or not(exists(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']))"
-        flag="fatal">[IS-R-008]-If seller is icelandic and invoice contains supporting description
-        EINDAGI then the id form must be YYYY-MM-DD — Ef seljandi er íslenskur þá skal eindagi
-        (BT-122, DocumentDescription = EINDAGI) vera á forminu YYYY-MM-DD.</assert>
+        flag="fatal">[IS-R-008]-If seller is icelandic and invoice contains supporting description EINDAGI then the id form must be YYYY-MM-DD — Ef seljandi er íslenskur þá skal eindagi (BT-122, DocumentDescription = EINDAGI) vera á forminu YYYY-MM-DD.</assert>
       <assert id="IS-R-009"
         test="(exists(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']) and exists(cbc:DueDate)) or not(exists(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']))"
-        flag="fatal">[IS-R-009]-If seller is icelandic and invoice contains supporting description
-        EINDAGI invoice must have due date — Ef seljandi er íslenskur þá skal reikningur sem
-        inniheldur eindaga (BT-122, DocumentDescription = EINDAGI) einnig hafa gjalddaga (BT-9).</assert>
+        flag="fatal">[IS-R-009]-If seller is icelandic and invoice contains supporting description EINDAGI invoice must have due date — Ef seljandi er íslenskur þá skal reikningur sem inniheldur eindaga (BT-122, DocumentDescription = EINDAGI) einnig hafa gjalddaga (BT-9).</assert>
       <assert id="IS-R-010"
         test="(exists(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']) and (cbc:DueDate) &lt;= (cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']/cbc:ID)) or not(exists(cac:AdditionalDocumentReference[cbc:DocumentDescription = 'EINDAGI']))"
-        flag="fatal">[IS-R-010]-If seller is icelandic and invoice contains supporting description
-        EINDAGI the id date must be same or later than due date — Ef seljandi er íslenskur þá skal
-        eindagi (BT-122, DocumentDescription = EINDAGI) skal vera sami eða síðar en gjalddagi (BT-9)
-        ef eindagi er til staðar.</assert>
+        flag="fatal">[IS-R-010]-If seller is icelandic and invoice contains supporting description EINDAGI the id date must be same or later than due date — Ef seljandi er íslenskur þá skal eindagi (BT-122, DocumentDescription = EINDAGI) skal vera sami eða síðar en gjalddagi (BT-9) ef eindagi er til staðar.</assert>
     </rule>
     <rule
       context="ubl-creditnote:CreditNote[$SupplierCountry = 'IS' and $CustomerCountry = 'IS']/cac:AccountingCustomerParty | ubl-invoice:Invoice[$SupplierCountry = 'IS' and $CustomerCountry = 'IS']/cac:AccountingCustomerParty">
       <assert id="IS-R-004"
         test="exists(cac:Party/cac:PartyLegalEntity/cbc:CompanyID) and cac:Party/cac:PartyLegalEntity/cbc:CompanyID/@schemeID = '0196'"
-        flag="fatal">[IS-R-004]-If seller and buyer are icelandic then the invoice shall contain the
-        buyers icelandic legal identifier — Ef seljandi og kaupandi eru íslenskir þá skal
-        reikningurinn innihalda íslenska kennitölu kaupanda (BT-47).</assert>
+        flag="fatal">[IS-R-004]-If seller and buyer are icelandic then the invoice shall contain the buyers icelandic legal identifier — Ef seljandi og kaupandi eru íslenskir þá skal reikningurinn innihalda íslenska kennitölu kaupanda (BT-47).</assert>
       <assert id="IS-R-005"
         test="exists(cac:Party/cac:PostalAddress/cbc:StreetName) and exists(cac:Party/cac:PostalAddress/cbc:PostalZone)"
-        flag="fatal">[IS-R-005]-If seller and buyer are icelandic then the invoice shall contain the
-        buyers address with street name and zip code — Ef seljandi og kaupandi eru íslenskir þá skal
-        heimilisfang kaupanda innihalda götuheiti og póstnúmer (BT-50 og BT-53)</assert>
+        flag="fatal">[IS-R-005]-If seller and buyer are icelandic then the invoice shall contain the buyers address with street name and zip code — Ef seljandi og kaupandi eru íslenskir þá skal heimilisfang kaupanda innihalda götuheiti og póstnúmer (BT-50 og BT-53)</assert>
     </rule>
   </pattern>
   <!-- NETHERLANDS -->
@@ -955,56 +843,41 @@ Last update: 2024 November release 3.0.18.
        this rule now only applies to credit notes
       -->
       <assert id="NL-R-001" test="/*/cac:BillingReference/cac:InvoiceDocumentReference/cbc:ID"
-        flag="fatal">[NL-R-001] For suppliers in the Netherlands, if the document is a creditnote,
-        the document MUST contain an invoice reference
-        (cac:BillingReference/cac:InvoiceDocumentReference/cbc:ID)</assert>
+        flag="fatal">[NL-R-001] For suppliers in the Netherlands, if the document is a creditnote, the document MUST contain an invoice reference (cac:BillingReference/cac:InvoiceDocumentReference/cbc:ID)</assert>
     </rule>
     <rule context="cac:AccountingSupplierParty/cac:Party/cac:PostalAddress[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-3 -->
-      <assert id="NL-R-002" test="cbc:StreetName and cbc:CityName and cbc:PostalZone" flag="fatal">[NL-R-002]
-        For suppliers in the Netherlands the supplier's address
-        (cac:AccountingSupplierParty/cac:Party/cac:PostalAddress) MUST contain street name
-        (cbc:StreetName), city (cbc:CityName) and post code (cbc:PostalZone)</assert>
+      <assert id="NL-R-002" test="cbc:StreetName and cbc:CityName and cbc:PostalZone" flag="fatal">[NL-R-002] For suppliers in the Netherlands the supplier's address (cac:AccountingSupplierParty/cac:Party/cac:PostalAddress) MUST contain street name (cbc:StreetName), city (cbc:CityName) and post code (cbc:PostalZone)</assert>
     </rule>
     <rule
       context="cac:AccountingSupplierParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-1 -->
       <assert id="NL-R-003"
         test="(contains(concat(' ', string-join(@schemeID, ' '), ' '), ' 0106 ') or contains(concat(' ', string-join(@schemeID, ' '), ' '), ' 0190 ')) and (normalize-space(.) != '')"
-        flag="fatal">[NL-R-003] For suppliers in the Netherlands, the legal entity identifier MUST
-        be either a KVK or OIN number (schemeID 0106 or 0190)</assert>
+        flag="fatal">[NL-R-003] For suppliers in the Netherlands, the legal entity identifier MUST be either a KVK or OIN number (schemeID 0106 or 0190)</assert>
     </rule>
     <rule
       context="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress[$supplierCountryIsNL and $customerCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-4 -->
-      <assert id="NL-R-004" test="cbc:StreetName and cbc:CityName and cbc:PostalZone" flag="fatal">[NL-R-004]
-        For suppliers in the Netherlands, if the customer is in the Netherlands, the customer
-        address (cac:AccountingCustomerParty/cac:Party/cac:PostalAddress) MUST contain the street
-        name (cbc:StreetName), the city (cbc:CityName) and post code (cbc:PostalZone)</assert>
+      <assert id="NL-R-004" test="cbc:StreetName and cbc:CityName and cbc:PostalZone" flag="fatal">[NL-R-004] For suppliers in the Netherlands, if the customer is in the Netherlands, the customer address (cac:AccountingCustomerParty/cac:Party/cac:PostalAddress) MUST contain the street name (cbc:StreetName), the city (cbc:CityName) and post code (cbc:PostalZone)</assert>
     </rule>
     <rule
       context="cac:AccountingCustomerParty/cac:Party/cac:PartyLegalEntity/cbc:CompanyID[$supplierCountryIsNL and $customerCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-10 -->
       <assert id="NL-R-005"
         test="(contains(concat(' ', string-join(@schemeID, ' '), ' '), ' 0106 ') or contains(concat(' ', string-join(@schemeID, ' '), ' '), ' 0190 ')) and (normalize-space(.) != '')"
-        flag="fatal">[NL-R-005] For suppliers in the Netherlands, if the customer is in the
-        Netherlands, the customer's legal entity identifier MUST be either a KVK or OIN number
-        (schemeID 0106 or 0190)</assert>
+        flag="fatal">[NL-R-005] For suppliers in the Netherlands, if the customer is in the Netherlands, the customer's legal entity identifier MUST be either a KVK or OIN number (schemeID 0106 or 0190)</assert>
     </rule>
     <rule
       context="cac:TaxRepresentativeParty/cac:PostalAddress[$supplierCountryIsNL and $taxRepresentativeCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-5 -->
-      <assert id="NL-R-006" test="cbc:StreetName and cbc:CityName and cbc:PostalZone" flag="fatal">[NL-R-006]
-        For suppliers in the Netherlands, if the fiscal representative is in the Netherlands, the
-        representative's address (cac:TaxRepresentativeParty/cac:PostalAddress) MUST contain street
-        name (cbc:StreetName), city (cbc:CityName) and post code (cbc:PostalZone)</assert>
+      <assert id="NL-R-006" test="cbc:StreetName and cbc:CityName and cbc:PostalZone" flag="fatal">[NL-R-006] For suppliers in the Netherlands, if the fiscal representative is in the Netherlands, the representative's address (cac:TaxRepresentativeParty/cac:PostalAddress) MUST contain street name (cbc:StreetName), city (cbc:CityName) and post code (cbc:PostalZone)</assert>
     </rule>
     <rule context="cac:LegalMonetaryTotal[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-11 -->
       <assert id="NL-R-007"
         test="(/ubl-invoice:Invoice and xs:decimal(cbc:PayableAmount) &lt;= 0.0) or (/ubl-creditnote:CreditNote and xs:decimal(cbc:PayableAmount) &gt;= 0.0) or (//cac:PaymentMeans)"
-        flag="fatal">[NL-R-007] For suppliers in the Netherlands, the supplier MUST provide a means
-        of payment (cac:PaymentMeans) if the payment is from customer to supplier</assert>
+        flag="fatal">[NL-R-007] For suppliers in the Netherlands, the supplier MUST provide a means of payment (cac:PaymentMeans) if the payment is from customer to supplier</assert>
     </rule>
     <rule context="cac:PaymentMeans[$supplierCountryIsNL and $customerCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-12 -->
@@ -1015,15 +888,11 @@ Last update: 2024 November release 3.0.18.
         normalize-space(cbc:PaymentMeansCode) = '57' or
         normalize-space(cbc:PaymentMeansCode) = '58' or
         normalize-space(cbc:PaymentMeansCode) = '59'"
-        flag="fatal">[NL-R-008] For suppliers in the Netherlands, if the customer is in the
-        Netherlands, the payment means code (cac:PaymentMeans/cbc:PaymentMeansCode) MUST be one of
-        30, 48, 49, 57, 58 or 59</assert>
+        flag="fatal">[NL-R-008] For suppliers in the Netherlands, if the customer is in the Netherlands, the payment means code (cac:PaymentMeans/cbc:PaymentMeansCode) MUST be one of 30, 48, 49, 57, 58 or 59</assert>
     </rule>
     <rule context="cac:OrderLineReference/cbc:LineID[$supplierCountryIsNL]">
       <!-- Original rule in NLCIUS: BR-NL-13 -->
-      <assert id="NL-R-009" test="exists(/*/cac:OrderReference/cbc:ID)" flag="fatal">[NL-R-009] For
-        suppliers in the Netherlands, if an order line reference (cac:OrderLineReference/cbc:LineID)
-        is used, there must be an order reference on the document level (cac:OrderReference/cbc:ID)</assert>
+      <assert id="NL-R-009" test="exists(/*/cac:OrderReference/cbc:ID)" flag="fatal">[NL-R-009] For suppliers in the Netherlands, if an order line reference (cac:OrderLineReference/cbc:LineID) is used, there must be an order reference on the document level (cac:OrderReference/cbc:ID)</assert>
     </rule>
   </pattern>
   <!-- German rules -->
@@ -1035,8 +904,7 @@ Last update: 2024 November release 3.0.18.
     <let name="XR-TELEPHONE-REGEX" value="'.*([0-9].*){3,}.*'" />
     <rule
       context="(/ubl-invoice:Invoice | /ubl-creditnote:CreditNote)[$supplierCountryIsDE and $customerCountryIsDE]">
-      <assert test="cac:PaymentMeans" flag="fatal" id="DE-R-001">An invoice shall contain
-        information on "PAYMENT INSTRUCTIONS" (BG-16).</assert>
+      <assert test="cac:PaymentMeans" flag="fatal" id="DE-R-001">An invoice shall contain information on "PAYMENT INSTRUCTIONS" (BG-16).</assert>
       <assert test="cbc:BuyerReference[boolean(normalize-space(.))]"
         flag="fatal"
         id="DE-R-015">The element "Buyer reference" (BT-10) shall be provided.</assert>
@@ -1057,58 +925,37 @@ Last update: 2024 November release 3.0.18.
       <assert
         test="         (not(           ($BT-95-UBL-Inv = $supportedVATCodes or $BT-95-UBL-CN = $supportedVATCodes) or           ($BT-102 = $supportedVATCodes) or           ($BT-151 = $supportedVATCodes)         ) or         (cac:TaxRepresentativeParty, $BT-31orBT-32Path))         "
         flag="fatal"
-        id="DE-R-016">If one of the VAT codes S, Z, E, AE, K, G, L, or M is used, an invoice shall
-        contain at least one of the following elements: "Seller VAT identifier" (BT-31) or "Seller
-        tax registration identifier" (BT-32) or "SELLER TAX REPRESENTATIVE PARTY" (BG-11).</assert>
+        id="DE-R-016">If one of the VAT codes S, Z, E, AE, K, G, L, or M is used, an invoice shall contain at least one of the following elements: "Seller VAT identifier" (BT-31) or "Seller tax registration identifier" (BT-32) or "SELLER TAX REPRESENTATIVE PARTY" (BG-11).</assert>
       <let name="supportedInvAndCNTypeCodes"
         value="('326', '380', '384', '389', '381', '875', '876', '877')" />
       <assert
         test="cbc:InvoiceTypeCode = $supportedInvAndCNTypeCodes         or cbc:CreditNoteTypeCode = $supportedInvAndCNTypeCodes"
         flag="warning"
-        id="DE-R-017">The element "Invoice type code" (BT-3) should only contain the following
-        values from code list UNTDID 1001: 326 (Partial invoice), 380 (Commercial invoice), 384
-        (Corrected invoice), 389 (Self-billed invoice), 381 (Credit note), 875 (Partial construction
-        invoice), 876 (Partial final construction invoice), 877 (Final construction invoice).</assert>
+        id="DE-R-017">The element "Invoice type code" (BT-3) should only contain the following values from code list UNTDID 1001: 326 (Partial invoice), 380 (Commercial invoice), 384 (Corrected invoice), 389 (Self-billed invoice), 381 (Credit note), 875 (Partial construction invoice), 876 (Partial final construction invoice), 877 (Final construction invoice).</assert>
       <assert
         test="every $line in             cac:PaymentTerms/cbc:Note[1]/tokenize(. , '(\r?\n)')[starts-with( normalize-space(.) , '#')]              satisfies matches ( normalize-space ($line), $XR-SKONTO-REGEX)                                  and                                 matches( cac:PaymentTerms/cbc:Note[1]/tokenize(. ,  '#.+#')[last()], '^\s*\n' )"
         flag="fatal"
-        id="DE-R-018">Information on cash discounts for prompt payment (Skonto) shall be provided
-        within the element "Payment terms" BT-20 in the following way: First segment "SKONTO",
-        second segment amount of days ("TAGE=N"), third segment percentage ("PROZENT=N"). Percentage
-        must be separated by dot with two decimal places. In case the base value of the invoiced
-        amount is not provided in BT-115 but as a partial amount, the base value shall be provided
-        as fourth segment "BASISBETRAG=N" as semantic data type amount. Each entry shall start with
-        a #, the segments must be separated by # and a row shall end with a #. A complete statement
-        on cash discount for prompt payment shall end with a XML-conformant line break. All
-        statements on cash discount for prompt payment shall be given in capital letters. Additional
-        whitespaces (blanks, tabulators or line breaks) are not allowed. Other characters or texts
-        than defined above are not allowed.</assert>
+        id="DE-R-018">Information on cash discounts for prompt payment (Skonto) shall be provided within the element "Payment terms" BT-20 in the following way: First segment "SKONTO", second segment amount of days ("TAGE=N"), third segment percentage ("PROZENT=N"). Percentage must be separated by dot with two decimal places. In case the base value of the invoiced amount is not provided in BT-115 but as a partial amount, the base value shall be provided as fourth segment "BASISBETRAG=N" as semantic data type amount. Each entry shall start with a #, the segments must be separated by # and a row shall end with a #. A complete statement on cash discount for prompt payment shall end with a XML-conformant line break. All statements on cash discount for prompt payment shall be given in capital letters. Additional whitespaces (blanks, tabulators or line breaks) are not allowed. Other characters or texts than defined above are not allowed.</assert>
       <assert
         test="count(cac:AdditionalDocumentReference) =                      count(cac:AdditionalDocumentReference[not(./cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename = preceding-sibling::cac:AdditionalDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject/@filename)])"
         flag="fatal"
-        id="DE-R-022">Attached documents provided with an invoice in "ADDITIONAL SUPPORTING
-        DOCUMENTS" (BG-24) shall have a unique filename (non case-sensitive) within the element
-        ″Attached document″ (BT-125).</assert>
+        id="DE-R-022">Attached documents provided with an invoice in "ADDITIONAL SUPPORTING DOCUMENTS" (BG-24) shall have a unique filename (non case-sensitive) within the element ″Attached document″ (BT-125).</assert>
       <assert
         test="((not(cbc:InvoiceTypeCode = 384 or cbc:CreditNoteTypeCode = 384) or                     (cac:BillingReference/cac:InvoiceDocumentReference)))"
         flag="warning"
-        id="DE-R-026">If "Invoice type code" (BT-3) contains the code 384 (Corrected invoice),
-        "PRECEDING INVOICE REFERENCE" (BG-3) should be provided at least once.</assert>
+        id="DE-R-026">If "Invoice type code" (BT-3) contains the code 384 (Corrected invoice), "PRECEDING INVOICE REFERENCE" (BG-3) should be provided at least once.</assert>
       <assert
         test="not(cac:PaymentMeans/cac:PaymentMandate)                        or (cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID[@schemeID='SEPA']                          | cac:PayeeParty/cac:PartyIdentification/cbc:ID[@schemeID='SEPA'])"
         flag="fatal"
-        id="DE-R-030">If the group "DIRECT DEBIT" (BG-19) is delivered, the element "Bank assigned
-        creditor identifier" (BT-90) shall be provided.</assert>
+        id="DE-R-030">If the group "DIRECT DEBIT" (BG-19) is delivered, the element "Bank assigned creditor identifier" (BT-90) shall be provided.</assert>
       <assert
         test="not(cac:PaymentMeans/cac:PaymentMandate) or (cac:PaymentMeans/cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID)"
         flag="fatal"
-        id="DE-R-031">If the group "DIRECT DEBIT" (BG-19) is delivered, the element "Debited account
-        identifier" (BT-91) shall be provided.</assert>
+        id="DE-R-031">If the group "DIRECT DEBIT" (BG-19) is delivered, the element "Debited account identifier" (BT-91) shall be provided.</assert>
     </rule>
     <rule
       context="(/ubl-invoice:Invoice/cac:AccountingSupplierParty | /ubl-creditnote:CreditNote/cac:AccountingSupplierParty)[$supplierCountryIsDE and $customerCountryIsDE]">
-      <assert test="cac:Party/cac:Contact" flag="fatal" id="DE-R-002">The group "SELLER CONTACT"
-        (BG-6) shall be provided.</assert>
+      <assert test="cac:Party/cac:Contact" flag="fatal" id="DE-R-002">The group "SELLER CONTACT" (BG-6) shall be provided.</assert>
     </rule>
     <rule
       context="(/ubl-invoice:Invoice/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress | /ubl-creditnote:CreditNote/cac:AccountingSupplierParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
@@ -1132,13 +979,10 @@ Last update: 2024 November release 3.0.18.
         id="DE-R-007">The element "Seller contact email address" (BT-43) shall be provided.</assert>
       <assert test="matches(normalize-space(cbc:Telephone), $XR-TELEPHONE-REGEX)"
         flag="warning"
-        id="DE-R-027">"Seller contact telephone number" (BT-42) should contain a valid telephone
-        number. A valid telephone should consist of 3 digits minimum.</assert>
+        id="DE-R-027">"Seller contact telephone number" (BT-42) should contain a valid telephone number. A valid telephone should consist of 3 digits minimum.</assert>
       <assert test="matches(normalize-space(cbc:ElectronicMail), $XR-EMAIL-REGEX)"
         flag="warning"
-        id="DE-R-028">"Seller contact email address" (BT-43) should contain exactly one @-sign,
-        which should not be framed by a whitespace or a dot but by at least two characters on each
-        side. A dot should not be the first or last character.</assert>
+        id="DE-R-028">"Seller contact email address" (BT-43) should contain exactly one @-sign, which should not be framed by a whitespace or a dot but by at least two characters on each side. A dot should not be the first or last character.</assert>
     </rule>
     <rule
       context="(/ubl-invoice:Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress | /ubl-creditnote:CreditNote/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress)[$supplierCountryIsDE and $customerCountryIsDE]">
@@ -1153,12 +997,10 @@ Last update: 2024 November release 3.0.18.
       context="(/ubl-invoice:Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address | /ubl-creditnote:CreditNote/cac:Delivery/cac:DeliveryLocation/cac:Address)[$supplierCountryIsDE and $customerCountryIsDE]">
       <assert test="cbc:CityName[boolean(normalize-space(.))]"
         flag="fatal"
-        id="DE-R-010">The element "Deliver to city" (BT-77) shall be provided if the group "DELIVER
-        TO ADDRESS" (BG-15) is delivered.</assert>
+        id="DE-R-010">The element "Deliver to city" (BT-77) shall be provided if the group "DELIVER TO ADDRESS" (BG-15) is delivered.</assert>
       <assert test="cbc:PostalZone[boolean(normalize-space(.))]"
         flag="fatal"
-        id="DE-R-011">The element "Deliver to post code" (BT-78) shall be provided if the group
-        "DELIVER TO ADDRESS" (BG-15) is delivered.</assert>
+        id="DE-R-011">The element "Deliver to post code" (BT-78) shall be provided if the group "DELIVER TO ADDRESS" (BG-15) is delivered.</assert>
     </rule>
     <rule
       context="(/ubl-invoice:Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)] | /ubl-creditnote:CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (30,58)])[$supplierCountryIsDE and $customerCountryIsDE]">
@@ -1166,39 +1008,30 @@ Last update: 2024 November release 3.0.18.
       <assert
         test="not(cbc:PaymentMeansCode = '58') or                     matches(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')), '^[A-Z]{2}[0-9]{2}[a-zA-Z0-9]{0,30}$') and                     xs:integer(string-join(for $cp in string-to-codepoints(concat(substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),5),upper-case(substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),1,2)),substring(normalize-space(replace(cac:PayeeFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),3,2))) return  (if($cp &gt; 64) then string($cp - 55) else  string($cp - 48)),'')) mod 97 = 1"
         flag="warning"
-        id="DE-R-019">The element "Payment account identifier" (BT-84) should contain a valid IBAN
-        if code 58 SEPA is provided in "Payment means type code" (BT-81).</assert>
-      <assert test="cac:PayeeFinancialAccount" flag="fatal" id="DE-R-023-1">If "Payment means type
-        code" (BT-81) contains a code for credit transfer (30, 58), "CREDIT TRANSFER" (BG-17) shall
+        id="DE-R-019">The element "Payment account identifier" (BT-84) should contain a valid IBAN if code 58 SEPA is provided in "Payment means type code" (BT-81).</assert>
+      <assert test="cac:PayeeFinancialAccount" flag="fatal" id="DE-R-023-1">If "Payment means type code" (BT-81) contains a code for credit transfer (30, 58), "CREDIT TRANSFER" (BG-17) shall
         be provided.</assert>
       <assert test="not(cac:CardAccount) and                     not(cac:PaymentMandate)"
         flag="fatal"
-        id="DE-R-023-2">If "Payment means type code" (BT-81) contains a code for credit transfer
-        (30, 58), BG-18 and BG-19 shall not be provided.</assert>
+        id="DE-R-023-2">If "Payment means type code" (BT-81) contains a code for credit transfer (30, 58), BG-18 and BG-19 shall not be provided.</assert>
     </rule>
     <rule
       context="(/ubl-invoice:Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)] |/ubl-creditnote:CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = (48,54,55)])[$supplierCountryIsDE and $customerCountryIsDE]">
-      <assert test="cac:CardAccount" flag="fatal" id="DE-R-024-1">If "Payment means type code"
-        (BT-81) contains a code for payment card (48, 54, 55), "PAYMENT CARD INFORMATION" (BG-18)
-        shall be provided.</assert>
+      <assert test="cac:CardAccount" flag="fatal" id="DE-R-024-1">If "Payment means type code" (BT-81) contains a code for payment card (48, 54, 55), "PAYMENT CARD INFORMATION" (BG-18) shall be provided.</assert>
       <assert test="not(cac:PayeeFinancialAccount) and                     not(cac:PaymentMandate)"
         flag="fatal"
-        id="DE-R-024-2">If "Payment means type code" (BT-81) contains a code for payment card (48,
-        54, 55), BG-17 and BG-19 shall not be provided.</assert>
+        id="DE-R-024-2">If "Payment means type code" (BT-81) contains a code for payment card (48, 54, 55), BG-17 and BG-19 shall not be provided.</assert>
     </rule>
     <rule
       context="(/ubl-invoice:Invoice/cac:PaymentMeans[cbc:PaymentMeansCode = 59] | /ubl-creditnote:CreditNote/cac:PaymentMeans[cbc:PaymentMeansCode = 59])[$supplierCountryIsDE and $customerCountryIsDE]">
       <assert
         test="not(cbc:PaymentMeansCode = '59') or                     matches(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')), '^[A-Z]{2}[0-9]{2}[a-zA-Z0-9]{0,30}$') and                     xs:decimal(string-join(for $cp in string-to-codepoints(concat(substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),5),upper-case(substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),1,2)),substring(normalize-space(replace(cac:PaymentMandate/cac:PayerFinancialAccount/cbc:ID, '([ \n\r\t\s])', '')),3,2))) return  (if($cp &gt; 64) then string($cp - 55) else  string($cp - 48)),'')) mod 97 = 1"
         flag="warning"
-        id="DE-R-020">The element "Debited account identifier" (BT-91) should contain a valid IBAN
-        if code 59 SEPA is provided in "Payment means type code" (BT-81). </assert>
-      <assert test="cac:PaymentMandate" flag="fatal" id="DE-R-025-1">If "Payment means type code"
-        (BT-81) contains a code for direct debit (59), "DIRECT DEBIT" (BG-19) shall be provided.</assert>
+        id="DE-R-020">The element "Debited account identifier" (BT-91) should contain a valid IBAN if code 59 SEPA is provided in "Payment means type code" (BT-81). </assert>
+      <assert test="cac:PaymentMandate" flag="fatal" id="DE-R-025-1">If "Payment means type code" (BT-81) contains a code for direct debit (59), "DIRECT DEBIT" (BG-19) shall be provided.</assert>
       <assert test="not(cac:PayeeFinancialAccount) and                     not(cac:CardAccount)"
         flag="fatal"
-        id="DE-R-025-2">If "Payment means type code" (BT-81) contains a code for direct debit (59),
-        BG-17 and BG-18 shall not be provided.</assert>
+        id="DE-R-025-2">If "Payment means type code" (BT-81) contains a code for direct debit (59), BG-17 and BG-18 shall not be provided.</assert>
     </rule>
     <rule
       context="(/ubl-invoice:Invoice/cac:TaxTotal/cac:TaxSubtotal | /ubl-creditnote:CreditNote/cac:TaxTotal/cac:TaxSubtotal)[$supplierCountryIsDE and $customerCountryIsDE]">
@@ -1267,8 +1100,7 @@ Last update: 2024 November release 3.0.18.
         flag="fatal">Invoice type code MUST be set according to the profile.</assert>
       <assert id="PEPPOL-EN16931-P0112"
         test="not(normalize-space(.) = '326' or normalize-space(.) = '384') or ($supplierCountryIsDE and $customerCountryIsDE)"
-        flag="fatal">Invoice type code 326 or 384 are only allowed when both buyer and
-        seller are German organizations </assert>		
+        flag="fatal">Invoice type code 326 or 384 are only allowed when both buyer and seller are German organizations </assert>		
     </rule>
 		
     <rule context="cbc:CreditNoteTypeCode">
@@ -1281,47 +1113,37 @@ Last update: 2024 November release 3.0.18.
     <rule
       context="cbc:IssueDate | cbc:DueDate | cbc:TaxPointDate | cbc:StartDate | cbc:EndDate | cbc:ActualDeliveryDate">
       <assert id="PEPPOL-EN16931-F001"
-        test="string-length(text()) = 10 and (string(.) castable as xs:date)" flag="fatal">A date
-        MUST be formatted YYYY-MM-DD.</assert>
+        test="string-length(text()) = 10 and (string(.) castable as xs:date)" flag="fatal">A date MUST be formatted YYYY-MM-DD.</assert>
     </rule>
     <rule context="cbc:EndpointID[@schemeID]">
       <assert id="PEPPOL-EN16931-CL008"
         test="
         some $code in $eaid
-        satisfies @schemeID = $code" flag="fatal">Electronic
-        address identifier scheme must be from the codelist "Electronic Address Identifier Scheme"</assert>
+        satisfies @schemeID = $code" flag="fatal">Electronic address identifier scheme must be from the codelist "Electronic Address Identifier Scheme"</assert>
     </rule>
     <rule context="cac:TaxCategory[upper-case(cbc:TaxExemptionReasonCode)='VATEX-EU-G']">
-      <assert id="PEPPOL-EN16931-P0104" test="normalize-space(cbc:ID)='G'" flag="fatal">Tax Category
-        G MUST be used when exemption reason code is VATEX-EU-G</assert>
+      <assert id="PEPPOL-EN16931-P0104" test="normalize-space(cbc:ID)='G'" flag="fatal">Tax Category G MUST be used when exemption reason code is VATEX-EU-G</assert>
     </rule>
     <rule context="cac:TaxCategory[upper-case(cbc:TaxExemptionReasonCode)='VATEX-EU-O']">
-      <assert id="PEPPOL-EN16931-P0105" test="normalize-space(cbc:ID)='O'" flag="fatal">Tax Category
-        O MUST be used when exemption reason code is VATEX-EU-O</assert>
+      <assert id="PEPPOL-EN16931-P0105" test="normalize-space(cbc:ID)='O'" flag="fatal">Tax Category O MUST be used when exemption reason code is VATEX-EU-O</assert>
     </rule>
     <rule context="cac:TaxCategory[upper-case(cbc:TaxExemptionReasonCode)='VATEX-EU-IC']">
-      <assert id="PEPPOL-EN16931-P0106" test="normalize-space(cbc:ID)='K'" flag="fatal">Tax Category
-        K MUST be used when exemption reason code is VATEX-EU-IC</assert>
+      <assert id="PEPPOL-EN16931-P0106" test="normalize-space(cbc:ID)='K'" flag="fatal">Tax Category K MUST be used when exemption reason code is VATEX-EU-IC</assert>
     </rule>
     <rule context="cac:TaxCategory[upper-case(cbc:TaxExemptionReasonCode)='VATEX-EU-AE']">
-      <assert id="PEPPOL-EN16931-P0107" test="normalize-space(cbc:ID)='AE'" flag="fatal">Tax
-        Category AE MUST be used when exemption reason code is VATEX-EU-AE</assert>
+      <assert id="PEPPOL-EN16931-P0107" test="normalize-space(cbc:ID)='AE'" flag="fatal">Tax Category AE MUST be used when exemption reason code is VATEX-EU-AE</assert>
     </rule>
     <rule context="cac:TaxCategory[upper-case(cbc:TaxExemptionReasonCode)='VATEX-EU-D']">
-      <assert id="PEPPOL-EN16931-P0108" test="normalize-space(cbc:ID)='E'" flag="fatal">Tax Category
-        E MUST be used when exemption reason code is VATEX-EU-D</assert>
+      <assert id="PEPPOL-EN16931-P0108" test="normalize-space(cbc:ID)='E'" flag="fatal">Tax Category E MUST be used when exemption reason code is VATEX-EU-D</assert>
     </rule>
     <rule context="cac:TaxCategory[upper-case(cbc:TaxExemptionReasonCode)='VATEX-EU-F']">
-      <assert id="PEPPOL-EN16931-P0109" test="normalize-space(cbc:ID)='E'" flag="fatal">Tax Category
-        E MUST be used when exemption reason code is VATEX-EU-F</assert>
+      <assert id="PEPPOL-EN16931-P0109" test="normalize-space(cbc:ID)='E'" flag="fatal">Tax Category E MUST be used when exemption reason code is VATEX-EU-F</assert>
     </rule>
     <rule context="cac:TaxCategory[upper-case(cbc:TaxExemptionReasonCode)='VATEX-EU-I']">
-      <assert id="PEPPOL-EN16931-P0110" test="normalize-space(cbc:ID)='E'" flag="fatal">Tax Category
-        E MUST be used when exemption reason code is VATEX-EU-I</assert>
+      <assert id="PEPPOL-EN16931-P0110" test="normalize-space(cbc:ID)='E'" flag="fatal">Tax Category E MUST be used when exemption reason code is VATEX-EU-I</assert>
     </rule>
     <rule context="cac:TaxCategory[upper-case(cbc:TaxExemptionReasonCode)='VATEX-EU-J']">
-      <assert id="PEPPOL-EN16931-P0111" test="normalize-space(cbc:ID)='E'" flag="fatal">Tax Category
-        E MUST be used when exemption reason code is VATEX-EU-J</assert>
+      <assert id="PEPPOL-EN16931-P0111" test="normalize-space(cbc:ID)='E'" flag="fatal">Tax Category E MUST be used when exemption reason code is VATEX-EU-J</assert>
     </rule>
   </pattern>
 </schema>
