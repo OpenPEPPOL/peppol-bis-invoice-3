@@ -242,6 +242,15 @@
             or cooling networks.</Description>
     </Code>
     <Code>
+        <Id>VATEX-EU-144</Id>
+        <Name>Exempt based on article 144 of Council Directive 2006/112/EC</Name>
+        <Description>Exemptions for services linked to the import of goods</Description>
+    </Code>
+    <Code>
+        <Id>VATEX-EU-146-1E</Id>
+        <Name>Exempt Exemptions for services linked to the export of goods</Description>
+    </Code>
+    <Code>
         <Id>VATEX-EU-148</Id>
         <Name>Exempt based on article 148 of Council Directive 2006/112/EC</Name>
         <Description>Exemptions related to international transport.</Description>
@@ -341,6 +350,11 @@
             Republic of Cyprus, dated 16 August 1960, which are for the use of those forces, or of
             the civilian staff accompanying them, or for supplying their messes or
             canteens.</Description>
+    </Code>
+    <Code>
+        <Id>VATEX-EU-159</Id>
+        <Name>Exempt based on article 159 of Council Directive 2006/112/EC</Name>
+        <Description>Exemptions for services linked to supplies of goods intended to be placed under customs warehouses, warehouses other than customs warehouses and similar arrangements.</Description>
     </Code>
     <Code>
         <Id>VATEX-EU-309</Id>

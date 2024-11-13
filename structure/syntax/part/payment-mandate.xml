@@ -6,6 +6,9 @@
         <Description>A group of business terms to specify a direct debit.</Description>
         <Reference type="BUSINESS_TERM">BG-19</Reference>
         <Reference type="RULE">BR-67</Reference>
+        <Reference type="RULE">DE-R-023-2</Reference>
+        <Reference type="RULE">DE-R-024-2</Reference>
+        <Reference type="RULE">DE-R-025-1</Reference>
         
         <Element cardinality="0..1">
             <Term>cbc:ID</Term>
@@ -14,6 +17,7 @@
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-89</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R061</Reference>
+            <Reference type="RULE">DE-R-030</Reference>
             <Value type="EXAMPLE">123456</Value>
             
         </Element>
@@ -28,6 +32,7 @@
                 <Description>The account to be debited by the direct debit.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-91</Reference>
+                <Reference type="RULE">DE-R-031</Reference>              
                 <Value type="EXAMPLE">12345676543</Value>
                 
             </Element>
