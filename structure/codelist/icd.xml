@@ -1149,6 +1149,44 @@ Classes moyennes et Energie</Description>
         <Name>National e-Invoicing Framework</Name>
         <Description>Intended Purpose/App. Area: Identifier for  organizations. Issuing agency: Malaysia Digital Economy Corporation Sdn Bhd (MDEC)</Description>
     </Code> 
-	
-
+	<Code>
+        <Id>0231</Id>
+        <Name>Single taxable company (France)</Name>
+        <Description>'Intended Purpose/App. Area: Provide identifiers to companies in a single taxable company regime. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+    </Code> 	
+	<Code>
+        <Id>0232</Id>
+        <Name>NOBB product number</Name>
+        <Description>Intended Purpose/App. Area:  . Issuing agency:  '</Description>
+    </Code>
+	<Code>
+        <Id>0233</Id>
+        <Name>Name not known</Name>
+        <Description>Description not known</Description>
+    </Code>
+	<Code>
+        <Id>0234</Id>
+        <Name>Toimitusosoite ID</Name>
+        <Description>'Intended Purpose/App. Area: Identification scheme is used to identify delivery locations of the Finnish government accounting units. Issuing agency: Toimitusosoite ID'</Description>
+    </Code>
+	<Code>
+        <Id>0235</Id>
+        <Name>UAE Tax Identification Number (TIN)</Name>
+        <Description>'Intended Purpose/App. Area: A unique number issued to a range of persons required to be identified for tax purposes. Issuing agency: UAE Federal Tax Authority'</Description>
+    </Code>
+	<Code>
+        <Id>0236</Id>
+        <Name>Name not known</Name>
+        <Description>Description not known</Description>
+    </Code>
+	<Code>
+        <Id>0237</Id>
+        <Name>CPR (Danish person civil registration number)</Name>
+        <Description>'Intended Purpose/App. Area:  . Issuing agency:  '</Description>
+    </Code>
+	<Code>
+        <Id>0238</Id>
+        <Name>Plateforme.s agréée.s à la facturation électronique (PPF/PDP)</Name>
+        <Description>'Intended Purpose/App. Area: To provide identifiers for E-invoicing Public Platform and Partner Dematerialisation Platform. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+    </Code>
 </CodeList>
