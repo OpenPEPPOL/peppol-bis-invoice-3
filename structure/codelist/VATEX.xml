@@ -248,7 +248,8 @@
     </Code>
     <Code>
         <Id>VATEX-EU-146-1E</Id>
-        <Name>Exempt Exemptions for services linked to the export of goods</Description>
+        <Name>Exempt based on article 146 section 1 (e) of Council Directive 2006/112/EC</Name>
+        <Description>Exempt Exemptions for services linked to the export of goods</Description>
     </Code>
     <Code>
         <Id>VATEX-EU-148</Id>
