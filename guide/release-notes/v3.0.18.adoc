@@ -11,7 +11,6 @@ Release date:: November 2024
 
 * German country specific validation rules added.
 * The rule (PEPPOL-EN16931-R002), which ensures that the Invoice Note (BT-22) appears no more than once, will not apply if both the buyer and seller are German organizations.
-* Update for rule NL-R-008 (mandatory payment means), the check should not fire if the document is a credit note with a positive amount.
 
 ==  EN 16931 schematrons updated
 
