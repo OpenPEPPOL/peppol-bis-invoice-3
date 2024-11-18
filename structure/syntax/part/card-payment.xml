@@ -8,8 +8,10 @@
                 invoice issuance.
             </Description>
             <Reference type="BUSINESS_TERM">BG-18</Reference>
-             <Reference type="RULE">BR-66</Reference>
-            
+            <Reference type="RULE">BR-66</Reference>
+            <Reference type="RULE">DE-R-023-2</Reference>
+            <Reference type="RULE">DE-R-024-1</Reference>
+            <Reference type="RULE">DE-R-025-2</Reference>
             <Element>
                 <Term>cbc:PrimaryAccountNumberID</Term>
                 <Name>Payment card primary account number</Name>
@@ -17,7 +19,7 @@
                     standards, an invoice should never include a full card primary account number.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-87</Reference>
-                <Reference type="RULE">BR-51</Reference>
+                <Reference type="RULE">BR-51</Reference>                
                 <Value type="EXAMPLE">1234</Value>
             </Element>
             

@@ -170,7 +170,7 @@
 	</test>
 	<test>
 		<assert>
-			<warning>SE-R-004</warning>
+			<error>SE-R-004</error>
 		</assert>
 <CreditNote 
  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 

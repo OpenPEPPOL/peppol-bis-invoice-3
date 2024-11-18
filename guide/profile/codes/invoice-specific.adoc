@@ -63,12 +63,6 @@ include::../../syntax/codelists/inv-type.adoc[]
 | 380
 | Invoice
 
-// |326
-// |Partial invoice
-// |Document/message specifying details of an incomplete invoice.
-// | 380
-// | Invoice
-
 |331
 |Commercial invoice which includes a packing list
 |Commercial transaction (invoice) will include a packing list.
@@ -86,12 +80,6 @@ include::../../syntax/codelists/inv-type.adoc[]
 | Document/message for providing debit information to the relevant party.
 | 380
 | Invoice
-
-// |384
-// |Corrected invoice
-// |Commercial invoice that includes revised information differing from an earlier submission of the same invoice.
-// | 380
-// | Invoice
 
 |386
 |Prepayment invoice
