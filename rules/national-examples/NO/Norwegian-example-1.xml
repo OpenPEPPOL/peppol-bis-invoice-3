@@ -419,7 +419,7 @@
 			</cac:CommodityClassification>
 			<cac:ClassifiedTaxCategory>
 				<!-- 43 -->
-				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>15</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
@@ -459,7 +459,7 @@
 			</cac:CommodityClassification>
 			<cac:ClassifiedTaxCategory>
 				<!-- 43 -->
-				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>15</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
@@ -504,7 +504,7 @@
 			</cac:CommodityClassification>
 			<cac:ClassifiedTaxCategory>
 				<!-- 51 -->
-				<cbc:ID schemeID="UNCL5305">E</cbc:ID>
+				<cbc:ID>E</cbc:ID>
 				<cbc:Percent>0</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
@@ -544,7 +544,7 @@
 			</cac:CommodityClassification>
 			<cac:ClassifiedTaxCategory>
 				<!-- 51 -->
-				<cbc:ID schemeID="UNCL5305">S</cbc:ID>
+				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>25</cbc:Percent>
 				<cac:TaxScheme>
 					<cbc:ID>VAT</cbc:ID>
