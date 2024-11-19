@@ -16,10 +16,8 @@
                 Allowances
             </Description>
             <Value type="EXAMPLE">false</Value>
-            PEPPOL-EN16931-R043
             <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
-        </Element>
-        
+        </Element> 
         
         <Element cardinality="0..1">
             <Term>cbc:AllowanceChargeReasonCode</Term>
@@ -53,7 +51,6 @@
             <Reference type="RULE">BR-CO-08</Reference>
             <Reference type="RULE">DK-R-004</Reference>
             <Value type="EXAMPLE">Discount</Value>
-            
         </Element>
         
         <Element cardinality="0..1">
@@ -106,9 +103,7 @@
             <Reference type="RULE">BR-DEC-25</Reference>
             <Reference type="RULE">BR-DEC-28</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
-            
-            
+            <Reference type="RULE">BR-CL-03</Reference>            
             
             <Attribute>
                 <Term>currencyID</Term>
@@ -120,6 +115,5 @@
             </Attribute>
             
             <Value type="EXAMPLE">1000</Value>  
-            
         </Element>
     </Element>
