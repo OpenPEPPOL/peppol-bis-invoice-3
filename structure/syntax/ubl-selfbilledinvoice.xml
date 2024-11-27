@@ -77,9 +77,8 @@
             <Reference type="RULE">BR-04</Reference>
             <Reference type="RULE">BR-CL-01</Reference>
             <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
-            <Reference type="RULE">DE-R-017</Reference>
             <Reference type="CODE_LIST">UNCL1001-inv</Reference>
-            <Value type="EXAMPLE">380</Value>
+            <Value type="EXAMPLE">389</Value>
         </Element>
 
         <Element cardinality="0..1">
@@ -144,7 +143,6 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-10</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
-            <Reference type="RULE">DE-R-015</Reference>
             <Value type="EXAMPLE">abs1234</Value>
         </Element>
 
@@ -221,7 +219,6 @@
             <Name>PRECEDING INVOICE REFERENCE</Name>
             <Description>A group of business terms providing information on one or more preceding Invoices.</Description>
             <Reference type="BUSINESS_TERM">BG-3</Reference>
-            <Reference type="RULE">DE-R-026</Reference>
 
             <Element>
                 <Term>cac:InvoiceDocumentReference</Term>
@@ -339,7 +336,6 @@
             <Name>PAYMENT INSTRUCTIONS</Name>
             <Description>A group of business terms providing information about the payment.</Description>
             <Reference type="BUSINESS_TERM">BG-16</Reference>
-            <Reference type="RULE">DE-R-001</Reference>
 
             <Element>
                 <Term>cbc:PaymentMeansCode</Term>
@@ -349,7 +345,6 @@
                 <Reference type="BUSINESS_TERM">BT-81</Reference>
                 <Reference type="RULE">BR-49</Reference>
                 <Reference type="RULE">BR-CL-16</Reference>
-                <Reference type="RULE">DE-R-020</Reference>
                 <Reference type="CODE_LIST">UNCL4461</Reference>
 
 
@@ -397,7 +392,6 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-20</Reference>
                 <Reference type="RULE">BR-CO-25</Reference>
-                <Reference type="RULE">DE-R-018</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
             </Element>
         </Element>
