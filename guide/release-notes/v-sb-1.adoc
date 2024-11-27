@@ -1,0 +1,15 @@
+= Version 3.0.0
+[horizontal]
+Release date:: Nov 2024
+
+Initial version of Peppol BIS Self-Billing. Starting from BIS Billing 3.0.18 Nov-2024
+
+Deviations from BIS Billing:
+
+* Business process reversed from BIS Billing so that Invoice issuer is Buyer and Invoice receiver is Seller.
+* Schematrons test for BIS Selfbilling customization and Profile ID's
+* All country specific rules are removed from schematrons.
+* Document type code for Self-billed invoice set as 389 and for Credit note as 261
+* Various textual changes where invoice and credit notes are referred to as self-billed and the reversed roles are recognized.
+* Examples adjusted to self-billing.
+

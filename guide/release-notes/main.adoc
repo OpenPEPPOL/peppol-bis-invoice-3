@@ -15,40 +15,6 @@ IMPORTANT: Changes in code lists are also reflected by changes in the validation
 
 :leveloffset: +1
 
-include::v3.0.19.adoc[]
-
-include::v3.0.18.adoc[]
-
-include::v3.0.17.adoc[]
-
-include::v3.0.16.adoc[]
-
-include::v3.0.15.adoc[]
-
-include::v3.0.14.adoc[]
-
-include::v3.0.13.adoc[]
-
-include::v3.0.12.adoc[]
-
-include::v3.0.11-hotfix.adoc[]
-
-include::v3.0.10.adoc[]
-
-include::v3.0.9-hotfix.adoc[]
-
-include::v3.0.8.adoc[]
-
-include::v3.0.7-hotfix.adoc[]
-
-include::v3.0.6.adoc[]
-
-include::v3.0.5.adoc[]
-
-include::v3.0.4-hotfix.adoc[]
-
-include::v3.0.3.adoc[]
-
-include::v3.0.1-hotfix.adoc[]
+include::v-sb-1.adoc[]
 
 :leveloffset: -1

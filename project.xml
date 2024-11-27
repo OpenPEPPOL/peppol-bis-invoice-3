@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>Peppol BIS Billing 3.0 and SelfBilling 3.0</Name>
+    <Name>Peppol BIS SelfBilling 3.0</Name>
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
 
     <!-- Documentation -->
-    <Resource>
+    <!--<Resource>
         <Type>Doc-1</Type>
         <Path>bis/</Path>
         <Title>BIS Billing – Business Interoperability Specifications (BIS)</Title>
-    </Resource>
+    </Resource> -->
     <Resource>
         <Type>Doc-1</Type>
         <Path>bis-sb/</Path>
@@ -30,7 +30,7 @@
     </Resource>
 
     <!-- Syntax -->
-    <Resource>
+    <!-- <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-invoice.xml</Path>
         <Title>UBL Invoice</Title>
@@ -39,7 +39,7 @@
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-creditnote.xml</Path>
         <Title>UBL Credit Note</Title>
-    </Resource>
+    </Resource> -->
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-selfbilledinvoice.xml</Path>
@@ -55,14 +55,14 @@
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
-        <Title>EN16931  model bound to UBL</Title>
+        <Title>EN16931 model bound to UBL</Title>
     </Resource>
-    <Resource>
+    <!-- <Resource>
         <Identifier>ubl-peppol</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
         <Title>Rules for Peppol BIS 3.0 Billing</Title>
-    </Resource>
+    </Resource> -->
     <Resource>
         <Identifier>ubl-peppol-sb</Identifier>
         <Type>native:Schematron</Type>
@@ -99,14 +99,14 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL7143.xml</Path>
     </Resource>
-    <Resource>
+    <!-- <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-inv.xml</Path>
-    </Resource>
-    <Resource>
+    </Resource> -->
+    <!-- <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-cn.xml</Path>
-    </Resource> 
+    </Resource>  -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-sbinv.xml</Path>
@@ -151,13 +151,13 @@
 
     <!-- Files -->
     
-    <Resource>
+    <!-- <Resource>
         <Type>native:File</Type>
         <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
         <Title>Schematron for PEPPOL rules (UBL)</Title>
         <Description>Schematron file containing rules according to ISO Schematron. </Description>
         <Property key="download">PEPPOL-EN16931-UBL.sch</Property>
-    </Resource>
+    </Resource> -->
 
     <Resource>
         <Type>native:File</Type>
@@ -190,10 +190,10 @@
         <Property key="filename">BIS-Billing3-Examples.zip</Property>
     </Resource>		
     
-    <Resource>
+    <!-- <Resource>
         <Type>native:File</Type>
         <Path>mapping/mapping-cii-ubl.xls</Path>
         <Title>Excel mappling table cii to ubl</Title>
         <Property key="download">mapping-cii-ubl.xls</Property>
-    </Resource>
+    </Resource> -->
 </Project>
