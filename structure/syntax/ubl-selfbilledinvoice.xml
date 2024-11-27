@@ -77,7 +77,7 @@
             <Reference type="RULE">BR-04</Reference>
             <Reference type="RULE">BR-CL-01</Reference>
             <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
-            <Reference type="CODE_LIST">UNCL1001-inv</Reference>
+            <Reference type="CODE_LIST">UNCL1001-sbinv</Reference>
             <Value type="EXAMPLE">389</Value>
         </Element>
 
@@ -321,9 +321,9 @@
         </Element>
 
 
-        <Include>part/supplier-party.xml</Include>
+        <Include>part/supplier-party-sb.xml</Include>
 
-        <Include>part/customer-party.xml</Include>
+        <Include>part/customer-party-sb.xml</Include>
 
         <Include>part/payee-party.xml</Include>
 

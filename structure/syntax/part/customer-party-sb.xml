@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+
+        <Term>cac:AccountingCustomerParty</Term>
+        <Name>BUYER</Name>
+        <Description>A group of business terms providing information about the Buyer.</Description>
+        <Reference type="BUSINESS_TERM">BG-7</Reference>
+        
+        <Element>
+            <Term>cac:Party</Term>
+            <Name>PARTY</Name>
+            
+            <Element>
+                <Term>cbc:EndpointID</Term>
+                <Name>Buyer electronic address</Name>
+                <Description>Identifies the Buyer's electronic address to which the application level response to the self-billing invoice or credit note may be delivered.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-49</Reference>
+                <Reference type="RULE">BR-63</Reference>
+                <Reference type="RULE">BR-CL-25</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R010</Reference>
+                <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
+                <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R043</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R044</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R045</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R046</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R047</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R048</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R049</Reference>
+				<Reference type="RULE">PEPPOL-COMMON-R050</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-CL008</Reference>
+                
+                
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Buyer electronic address identification scheme identifier</Name>
+                    <Description>The identification scheme identifier of the Buyer electronic address.</Description>
+                    <Reference type="CODE_LIST">eas</Reference>
+                    <Value type="EXAMPLE">0192</Value>
+                </Attribute>
+                
+                <Value type="EXAMPLE">987654321</Value>
+                
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:PartyIdentification</Term>
+                <Name>PARTY IDENTIFICATION</Name>
+                
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Buyer identifier</Name>
+                    <Description>An identifier of the Buyer.</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">BT-46</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R043</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R044</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R045</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R046</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R047</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R048</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R049</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R050</Reference>
+                    
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Buyer identifier identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Buyer identifier.</Description>    
+                        <Reference type="RULE">BR-CL-10</Reference>
+                        <Reference type="RULE">DK-R-013</Reference>
+                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Value type="EXAMPLE">0088</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">SE8765456787</Value>
+                </Element>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:PartyName</Term>
+                <Name>PARTY NAME</Name>
+                
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Buyer trading name</Name>
+                    <Description>A name by which the Buyer is known, other than Buyer name (also known as Business name).</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-45</Reference>
+                    <Value type="EXAMPLE">Buyer Trading Name</Value>
+                </Element>
+            </Element>
+            
+            <Element>
+                <Term>cac:PostalAddress</Term>
+                <Name>BUYER POSTAL ADDRESS</Name>
+                <Description>A group of business terms providing information about the postal address for the Buyer.
+                    Sufficient components of the address are to be filled to comply with legal requirements.</Description>
+                <Reference type="BUSINESS_TERM">BG-8</Reference>
+                <Reference type="RULE">BR-10</Reference>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:StreetName</Term>
+                    <Name>Buyer address line 1</Name>
+                    <Description>The main address line in an address.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-50</Reference>
+                    <Value type="EXAMPLE">Hovudgatan 32</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:AdditionalStreetName</Term>
+                    <Name>Buyer address line 2</Name>
+                    <Description>An additional address line in an address that can be used to give further details supplementing the
+                        main line.
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-51</Reference>
+                    <Value type="EXAMPLE">Po box 43</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CityName</Term>
+                    <Name>Buyer city</Name>
+                    <Description>The common name of the city, town or village, where the Buyer's address is located.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-52</Reference>
+                    <Value type="EXAMPLE">Stockholm</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:PostalZone</Term>
+                    <Name>Buyer post code</Name>
+                    <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-53</Reference>
+                    <Value type="EXAMPLE">34567</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CountrySubentity</Term>
+                    <Name>Buyer country subdivision</Name>
+                    <Description>The subdivision of a country.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-54</Reference>
+                    <Value type="EXAMPLE">Region A</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cac:AddressLine</Term>
+                    <Name>ADDRESS LINE</Name>
+                    
+                    <Element>
+                        <Term>cbc:Line</Term>
+                        <Name>Buyer address line 3</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the
+                            main line.
+                        </Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">BT-163</Reference>
+                        <Value type="EXAMPLE">Building F2</Value>
+                    </Element>
+                </Element>
+                
+                <Element>
+                    <Term>cac:Country</Term>
+                    <Name>COUNTRY</Name>
+                    
+                    <Element>
+                        <Term>cbc:IdentificationCode</Term>
+                        <Name>Buyer country code</Name>
+                        <Description>A code that identifies the country.</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="BUSINESS_TERM">BT-55</Reference>
+                        <Reference type="RULE">BR-11</Reference>
+                        <Reference type="RULE">BR-CL-14</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
+                        <Value type="EXAMPLE">SE</Value>
+                    </Element>
+                </Element>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:PartyTaxScheme</Term>
+                <Name>PARTY VAT IDENTIFIER</Name>
+                
+                <Element>
+                    <Term>cbc:CompanyID</Term>
+                    <Name>Buyer VAT identifier</Name>
+                    <Description>The Buyer's VAT identifier (also known as Buyer VAT identification number).</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">BT-48</Reference>
+                    <Reference type="RULE">BR-CO-09</Reference>
+                    <Reference type="RULE">BR-AE-02</Reference>
+                    <Reference type="RULE">BR-AE-03</Reference>
+                    <Reference type="RULE">BR-AE-04</Reference>
+                    <Reference type="RULE">BR-IC-02</Reference>
+                    <Reference type="RULE">BR-IC-03</Reference>
+                    <Reference type="RULE">BR-IC-04</Reference>
+                    <Reference type="RULE">BR-O-02</Reference>
+                    <Reference type="RULE">BR-O-03</Reference>
+                    <Reference type="RULE">BR-O-04</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
+                    <Reference type="RULE">PEPPOL-COMMON-R043</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R044</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R045</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R046</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R047</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R048</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R049</Reference>
+					<Reference type="RULE">PEPPOL-COMMON-R050</Reference>
+					
+                    <Value type="EXAMPLE">SE8765456787</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cac:TaxScheme</Term>
+                    <Name>TAX SCHEME</Name>
+                    
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Description>Mandatory element. Use “VAT”</Description>
+                        <DataType>Identifier</DataType>
+                        <Value type="DEFAULT">VAT</Value>
+                        
+                    </Element>
+                </Element>
+            </Element>
+            
+            <Element>
+                <Term>cac:PartyLegalEntity</Term>
+                <Name>PARTY LEGAL ENTITY</Name>
+                
+                <Element>
+                    <Term>cbc:RegistrationName</Term>
+                    <Name>Buyer name</Name>
+                    <Description>The full name of the Buyer.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-44</Reference>
+                    <Reference type="RULE">BR-07</Reference>
+                    <Value type="EXAMPLE">Buyer Full Name AS</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CompanyID</Term>
+                    <Name>Buyer legal registration identifier</Name>
+                    <Description>An identifier issued by an official registrar that identifies the Buyer as a legal entity or
+                        person.
+                    </Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">BT-47</Reference>
+                    <Reference type="RULE">BR-AE-02</Reference>
+                    <Reference type="RULE">BR-AE-03</Reference>
+                    <Reference type="RULE">BR-AE-04</Reference>
+                    <Reference type="RULE">BR-CL-11</Reference>
+                    <Reference type="RULE">DK-R-014</Reference>
+					
+                    
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Buyer legal registration identifier identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Buyer legal registration identifier.</Description>
+                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Value type="EXAMPLE">0007</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">5560104525</Value>
+                </Element>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:Contact</Term>
+                <Name>BUYER CONTACT</Name>
+                <Description>A group of business terms providing contact information relevant for the Buyer.</Description>
+                <Reference type="BUSINESS_TERM">BG-9</Reference>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:Name</Term>
+                    <Name>Buyer contact point</Name>
+                    <Description>A contact point for a legal entity or person.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-56</Reference>
+                    <Value type="EXAMPLE">Jens Jensen</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:Telephone</Term>
+                    <Name>Buyer contact telephone number</Name>
+                    <Description>A phone number for the contact point.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-57</Reference>
+                    <Value type="EXAMPLE">876 654 321</Value>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:ElectronicMail</Term>
+                    <Name>Buyer contact email address</Name>
+                    <Description>An e-mail address for the contact point.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-58</Reference>
+                    <Value type="EXAMPLE">jens.j@buyer.se</Value>
+                </Element>
+            </Element>
+        </Element>
+    </Element>
+    
