@@ -22,4 +22,6 @@ include::sender.adoc[]
 
 include::receiver.adoc[]
 
+include::payload.adoc[]
+
 :leveloffset: -1
