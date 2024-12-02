@@ -6,7 +6,7 @@
     <Version>Revision 11e</Version>
     <Agency>UN/ECE</Agency>
 
-	<!-- START of Recommendation 20 -->
+    <!-- START of Recommendation 20 -->
     <Code>
         <Id>10</Id>
         <Name>group</Name>
@@ -51,12 +51,12 @@
     <Code>
         <Id>22</Id>
         <Name>decilitre per gram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>23</Id>
         <Name>gram per cubic centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>24</Id>
@@ -67,7 +67,7 @@
     <Code>
         <Id>25</Id>
         <Name>gram per square centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>27</Id>
@@ -78,42 +78,42 @@
     <Code>
         <Id>28</Id>
         <Name>kilogram per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>33</Id>
         <Name>kilopascal square metre per gram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>34</Id>
         <Name>kilopascal per millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>35</Id>
         <Name>millilitre per square centimetre second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>37</Id>
         <Name>ounce per square foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>38</Id>
         <Name>ounce per square foot per 0,01inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>40</Id>
         <Name>millilitre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>41</Id>
         <Name>millilitre per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>56</Id>
@@ -151,42 +151,42 @@
     <Code>
         <Id>74</Id>
         <Name>millipascal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>77</Id>
         <Name>milli-inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>80</Id>
         <Name>pound per square inch absolute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>81</Id>
         <Name>henry</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>85</Id>
         <Name>foot pound-force</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>87</Id>
         <Name>pound per cubic foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>89</Id>
         <Name>poise</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>91</Id>
         <Name>stokes</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>1I</Id>
@@ -207,7 +207,7 @@
     <Code>
         <Id>2C</Id>
         <Name>roentgen</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2G</Id>
@@ -223,32 +223,32 @@
     <Code>
         <Id>2I</Id>
         <Name>British thermal unit (international table) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2J</Id>
         <Name>cubic centimetre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2K</Id>
         <Name>cubic foot per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2L</Id>
         <Name>cubic foot per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2M</Id>
         <Name>centimetre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2N</Id>
         <Name>decibel</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2P</Id>
@@ -258,37 +258,37 @@
     <Code>
         <Id>2Q</Id>
         <Name>kilobecquerel</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2R</Id>
         <Name>kilocurie</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2U</Id>
         <Name>megagram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2X</Id>
         <Name>metre per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2Y</Id>
         <Name>milliroentgen</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>2Z</Id>
         <Name>millivolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>3B</Id>
         <Name>megajoule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>3C</Id>
@@ -299,22 +299,22 @@
     <Code>
         <Id>4C</Id>
         <Name>centistokes</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4G</Id>
         <Name>microlitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4H</Id>
         <Name>micrometre (micron)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4K</Id>
         <Name>milliampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4L</Id>
@@ -324,57 +324,57 @@
     <Code>
         <Id>4M</Id>
         <Name>milligram per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4N</Id>
         <Name>megabecquerel</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4O</Id>
         <Name>microfarad</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4P</Id>
         <Name>newton per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4Q</Id>
         <Name>ounce inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4R</Id>
         <Name>ounce foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4T</Id>
         <Name>picofarad</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4U</Id>
         <Name>pound per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4W</Id>
         <Name>ton (US) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>4X</Id>
         <Name>kilolitre per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>5A</Id>
         <Name>barrel (US) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>5B</Id>
@@ -397,178 +397,178 @@
     <Code>
         <Id>A10</Id>
         <Name>ampere square metre per joule second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A11</Id>
         <Name>angstrom</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A12</Id>
         <Name>astronomical unit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A13</Id>
         <Name>attojoule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A14</Id>
         <Name>barn</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A15</Id>
         <Name>barn per electronvolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A16</Id>
         <Name>barn per steradian electronvolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A17</Id>
         <Name>barn per steradian</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A18</Id>
         <Name>becquerel per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A19</Id>
         <Name>becquerel per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A2</Id>
         <Name>ampere per centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A20</Id>
         <Name>British thermal unit (international table) per second square foot degree
             Rankine</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A21</Id>
         <Name>British thermal unit (international table) per pound degree Rankine</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A22</Id>
         <Name>British thermal unit (international table) per second foot degree Rankine</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A23</Id>
         <Name>British thermal unit (international table) per hour square foot degree Rankine</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A24</Id>
         <Name>candela per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A26</Id>
         <Name>coulomb metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A27</Id>
         <Name>coulomb metre squared per volt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A28</Id>
         <Name>coulomb per cubic centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A29</Id>
         <Name>coulomb per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A3</Id>
         <Name>ampere per millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A30</Id>
         <Name>coulomb per cubic millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A31</Id>
         <Name>coulomb per kilogram second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A32</Id>
         <Name>coulomb per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A33</Id>
         <Name>coulomb per square centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A34</Id>
         <Name>coulomb per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A35</Id>
         <Name>coulomb per square millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A36</Id>
         <Name>cubic centimetre per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A37</Id>
         <Name>cubic decimetre per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A38</Id>
         <Name>cubic metre per coulomb</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A39</Id>
         <Name>cubic metre per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A4</Id>
         <Name>ampere per square centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A40</Id>
         <Name>cubic metre per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A41</Id>
         <Name>ampere per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A42</Id>
         <Name>curie per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A43</Id>
@@ -580,12 +580,12 @@
     <Code>
         <Id>A44</Id>
         <Name>decalitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A45</Id>
         <Name>decametre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A47</Id>
@@ -607,27 +607,27 @@
     <Code>
         <Id>A5</Id>
         <Name>ampere square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A53</Id>
         <Name>electronvolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A54</Id>
         <Name>electronvolt per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A55</Id>
         <Name>electronvolt square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A56</Id>
         <Name>electronvolt square metre per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A59</Id>
@@ -638,42 +638,42 @@
     <Code>
         <Id>A6</Id>
         <Name>ampere per square metre kelvin squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A68</Id>
         <Name>exajoule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A69</Id>
         <Name>farad per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A7</Id>
         <Name>ampere per square millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A70</Id>
         <Name>femtojoule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A71</Id>
         <Name>femtometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A73</Id>
         <Name>foot per second squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A74</Id>
         <Name>foot pound-force per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A75</Id>
@@ -685,42 +685,42 @@
     <Code>
         <Id>A76</Id>
         <Name>gal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A8</Id>
         <Name>ampere second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A84</Id>
         <Name>gigacoulomb per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A85</Id>
         <Name>gigaelectronvolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A86</Id>
         <Name>gigahertz</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A87</Id>
         <Name>gigaohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A88</Id>
         <Name>gigaohm metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A89</Id>
         <Name>gigapascal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A9</Id>
@@ -731,7 +731,7 @@
     <Code>
         <Id>A90</Id>
         <Name>gigawatt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A91</Id>
@@ -741,32 +741,32 @@
     <Code>
         <Id>A93</Id>
         <Name>gram per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A94</Id>
         <Name>gram per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A95</Id>
         <Name>gray</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A96</Id>
         <Name>gray per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A97</Id>
         <Name>hectopascal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A98</Id>
         <Name>henry per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>A99</Id>
@@ -787,7 +787,7 @@
     <Code>
         <Id>ACR</Id>
         <Name>acre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>ACT</Id>
@@ -803,7 +803,7 @@
     <Code>
         <Id>AE</Id>
         <Name>ampere per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>AH</Id>
@@ -820,7 +820,7 @@
     <Code>
         <Id>AK</Id>
         <Name>fathom</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>AL</Id>
@@ -836,7 +836,7 @@
     <Code>
         <Id>AMP</Id>
         <Name>ampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>ANN</Id>
@@ -846,7 +846,7 @@
     <Code>
         <Id>APZ</Id>
         <Name>troy ounce or apothecary ounce</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>AQ</Id>
@@ -873,7 +873,7 @@
     <Code>
         <Id>ATM</Id>
         <Name>standard atmosphere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>AWG</Id>
@@ -890,12 +890,12 @@
     <Code>
         <Id>AZ</Id>
         <Name>British thermal unit (international table) per pound</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B1</Id>
         <Name>barrel (US) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B10</Id>
@@ -905,12 +905,12 @@
     <Code>
         <Id>B11</Id>
         <Name>joule per kilogram kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B12</Id>
         <Name>joule per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B13</Id>
@@ -920,17 +920,17 @@
     <Code>
         <Id>B14</Id>
         <Name>joule per metre to the fourth power</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B15</Id>
         <Name>joule per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B16</Id>
         <Name>joule per mole kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B17</Id>
@@ -941,7 +941,7 @@
     <Code>
         <Id>B18</Id>
         <Name>joule second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B19</Id>
@@ -952,52 +952,52 @@
     <Code>
         <Id>B20</Id>
         <Name>joule square metre per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B21</Id>
         <Name>kelvin per watt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B22</Id>
         <Name>kiloampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B23</Id>
         <Name>kiloampere per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B24</Id>
         <Name>kiloampere per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B25</Id>
         <Name>kilobecquerel per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B26</Id>
         <Name>kilocoulomb</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B27</Id>
         <Name>kilocoulomb per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B28</Id>
         <Name>kilocoulomb per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B29</Id>
         <Name>kiloelectronvolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B3</Id>
@@ -1012,27 +1012,27 @@
     <Code>
         <Id>B31</Id>
         <Name>kilogram metre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B32</Id>
         <Name>kilogram metre squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B33</Id>
         <Name>kilogram metre squared per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B34</Id>
         <Name>kilogram per cubic decimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B35</Id>
         <Name>kilogram per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B4</Id>
@@ -1043,77 +1043,77 @@
     <Code>
         <Id>B41</Id>
         <Name>kilojoule per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B42</Id>
         <Name>kilojoule per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B43</Id>
         <Name>kilojoule per kilogram kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B44</Id>
         <Name>kilojoule per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B45</Id>
         <Name>kilomole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B46</Id>
         <Name>kilomole per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B47</Id>
         <Name>kilonewton</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B48</Id>
         <Name>kilonewton metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B49</Id>
         <Name>kiloohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B50</Id>
         <Name>kiloohm metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B52</Id>
         <Name>kilosecond</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B53</Id>
         <Name>kilosiemens</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B54</Id>
         <Name>kilosiemens per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B55</Id>
         <Name>kilovolt per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B56</Id>
         <Name>kiloweber per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B57</Id>
@@ -1124,47 +1124,47 @@
     <Code>
         <Id>B58</Id>
         <Name>litre per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B59</Id>
         <Name>lumen hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B60</Id>
         <Name>lumen per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B61</Id>
         <Name>lumen per watt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B62</Id>
         <Name>lumen second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B63</Id>
         <Name>lux hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B64</Id>
         <Name>lux second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B66</Id>
         <Name>megaampere per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B67</Id>
         <Name>megabecquerel per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B68</Id>
@@ -1174,7 +1174,7 @@
     <Code>
         <Id>B69</Id>
         <Name>megacoulomb per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B7</Id>
@@ -1185,57 +1185,57 @@
     <Code>
         <Id>B70</Id>
         <Name>megacoulomb per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B71</Id>
         <Name>megaelectronvolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B72</Id>
         <Name>megagram per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B73</Id>
         <Name>meganewton</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B74</Id>
         <Name>meganewton metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B75</Id>
         <Name>megaohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B76</Id>
         <Name>megaohm metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B77</Id>
         <Name>megasiemens per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B78</Id>
         <Name>megavolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B79</Id>
         <Name>megavolt per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B8</Id>
         <Name>joule per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B80</Id>
@@ -1246,7 +1246,7 @@
     <Code>
         <Id>B81</Id>
         <Name>reciprocal metre squared reciprocal second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B82</Id>
@@ -1256,92 +1256,92 @@
     <Code>
         <Id>B83</Id>
         <Name>metre to the fourth power</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B84</Id>
         <Name>microampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B85</Id>
         <Name>microbar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B86</Id>
         <Name>microcoulomb</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B87</Id>
         <Name>microcoulomb per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B88</Id>
         <Name>microcoulomb per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B89</Id>
         <Name>microfarad per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B90</Id>
         <Name>microhenry</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B91</Id>
         <Name>microhenry per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B92</Id>
         <Name>micronewton</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B93</Id>
         <Name>micronewton metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B94</Id>
         <Name>microohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B95</Id>
         <Name>microohm metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B96</Id>
         <Name>micropascal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B97</Id>
         <Name>microradian</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B98</Id>
         <Name>microsecond</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>B99</Id>
         <Name>microsiemens</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>BAR</Id>
         <Name>bar [unit of pressure]</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>BB</Id>
@@ -1358,7 +1358,7 @@
     <Code>
         <Id>BHP</Id>
         <Name>brake horse power</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>BIL</Id>
@@ -1368,12 +1368,12 @@
     <Code>
         <Id>BLD</Id>
         <Name>dry barrel (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>BLL</Id>
         <Name>barrel (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>BP</Id>
@@ -1388,22 +1388,22 @@
     <Code>
         <Id>BQL</Id>
         <Name>becquerel</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>BTU</Id>
         <Name>British thermal unit (international table)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>BUA</Id>
         <Name>bushel (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>BUI</Id>
         <Name>bushel (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C0</Id>
@@ -1414,57 +1414,57 @@
     <Code>
         <Id>C10</Id>
         <Name>millifarad</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C11</Id>
         <Name>milligal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C12</Id>
         <Name>milligram per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C13</Id>
         <Name>milligray</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C14</Id>
         <Name>millihenry</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C15</Id>
         <Name>millijoule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C16</Id>
         <Name>millimetre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C17</Id>
         <Name>millimetre squared per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C18</Id>
         <Name>millimole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C19</Id>
         <Name>mole per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C20</Id>
         <Name>millinewton</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C21</Id>
@@ -1474,82 +1474,82 @@
     <Code>
         <Id>C22</Id>
         <Name>millinewton per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C23</Id>
         <Name>milliohm metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C24</Id>
         <Name>millipascal second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C25</Id>
         <Name>milliradian</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C26</Id>
         <Name>millisecond</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C27</Id>
         <Name>millisiemens</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C28</Id>
         <Name>millisievert</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C29</Id>
         <Name>millitesla</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C3</Id>
         <Name>microvolt per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C30</Id>
         <Name>millivolt per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C31</Id>
         <Name>milliwatt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C32</Id>
         <Name>milliwatt per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C33</Id>
         <Name>milliweber</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C34</Id>
         <Name>mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C35</Id>
         <Name>mole per cubic decimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C36</Id>
         <Name>mole per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C37</Id>
@@ -1559,107 +1559,107 @@
     <Code>
         <Id>C38</Id>
         <Name>mole per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C39</Id>
         <Name>nanoampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C40</Id>
         <Name>nanocoulomb</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C41</Id>
         <Name>nanofarad</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C42</Id>
         <Name>nanofarad per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C43</Id>
         <Name>nanohenry</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C44</Id>
         <Name>nanohenry per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C45</Id>
         <Name>nanometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C46</Id>
         <Name>nanoohm metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C47</Id>
         <Name>nanosecond</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C48</Id>
         <Name>nanotesla</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C49</Id>
         <Name>nanowatt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C50</Id>
         <Name>neper</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C51</Id>
         <Name>neper per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C52</Id>
         <Name>picometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C53</Id>
         <Name>newton metre second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C54</Id>
         <Name>newton metre squared per kilogram squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C55</Id>
         <Name>newton per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C56</Id>
         <Name>newton per square millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C57</Id>
         <Name>newton second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C58</Id>
         <Name>newton second per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C59</Id>
@@ -1670,12 +1670,12 @@
     <Code>
         <Id>C60</Id>
         <Name>ohm centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C61</Id>
         <Name>ohm metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C62</Id>
@@ -1685,32 +1685,32 @@
     <Code>
         <Id>C63</Id>
         <Name>parsec</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C64</Id>
         <Name>pascal per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C65</Id>
         <Name>pascal second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C66</Id>
         <Name>pascal second per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C67</Id>
         <Name>pascal second per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C68</Id>
         <Name>petajoule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C69</Id>
@@ -1722,27 +1722,27 @@
     <Code>
         <Id>C7</Id>
         <Name>centipoise</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C70</Id>
         <Name>picoampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C71</Id>
         <Name>picocoulomb</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C72</Id>
         <Name>picofarad per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C73</Id>
         <Name>picohenry</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C74</Id>
@@ -1753,17 +1753,17 @@
     <Code>
         <Id>C75</Id>
         <Name>picowatt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C76</Id>
         <Name>picowatt per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C78</Id>
         <Name>pound-force</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C79</Id>
@@ -1774,42 +1774,42 @@
     <Code>
         <Id>C8</Id>
         <Name>millicoulomb per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C80</Id>
         <Name>rad</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C81</Id>
         <Name>radian</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C82</Id>
         <Name>radian square metre per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C83</Id>
         <Name>radian square metre per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C84</Id>
         <Name>radian per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C85</Id>
         <Name>reciprocal angstrom</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C86</Id>
         <Name>reciprocal cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C87</Id>
@@ -1819,12 +1819,12 @@
     <Code>
         <Id>C88</Id>
         <Name>reciprocal electron volt per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C89</Id>
         <Name>reciprocal henry</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C9</Id>
@@ -1836,17 +1836,17 @@
     <Code>
         <Id>C90</Id>
         <Name>reciprocal joule per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C91</Id>
         <Name>reciprocal kelvin or kelvin to the power minus one</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C92</Id>
         <Name>reciprocal metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C93</Id>
@@ -1856,27 +1856,27 @@
     <Code>
         <Id>C94</Id>
         <Name>reciprocal minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C95</Id>
         <Name>reciprocal mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C96</Id>
         <Name>reciprocal pascal or pascal to the power minus one</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C97</Id>
         <Name>reciprocal second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>C99</Id>
         <Name>reciprocal second per metre squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CCT</Id>
@@ -1887,7 +1887,7 @@
     <Code>
         <Id>CDL</Id>
         <Name>candela</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CEL</Id>
@@ -1908,12 +1908,12 @@
     <Code>
         <Id>CGM</Id>
         <Name>centigram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CKG</Id>
         <Name>coulomb per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CLF</Id>
@@ -1924,22 +1924,22 @@
     <Code>
         <Id>CLT</Id>
         <Name>centilitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CMK</Id>
         <Name>square centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CMQ</Id>
         <Name>cubic centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CMT</Id>
         <Name>centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CNP</Id>
@@ -1955,7 +1955,7 @@
     <Code>
         <Id>COU</Id>
         <Name>coulomb</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CTG</Id>
@@ -1966,7 +1966,7 @@
     <Code>
         <Id>CTM</Id>
         <Name>metric carat</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CTN</Id>
@@ -1977,17 +1977,17 @@
     <Code>
         <Id>CUR</Id>
         <Name>curie</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CWA</Id>
         <Name>hundred pound (cwt) / hundred weight (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>CWI</Id>
         <Name>hundred weight (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D03</Id>
@@ -2003,12 +2003,12 @@
     <Code>
         <Id>D1</Id>
         <Name>reciprocal second per steradian</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D10</Id>
         <Name>siemens per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D11</Id>
@@ -2019,12 +2019,12 @@
     <Code>
         <Id>D12</Id>
         <Name>siemens square metre per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D13</Id>
         <Name>sievert</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D15</Id>
@@ -2035,42 +2035,42 @@
     <Code>
         <Id>D16</Id>
         <Name>square centimetre per erg</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D17</Id>
         <Name>square centimetre per steradian erg</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D18</Id>
         <Name>metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D19</Id>
         <Name>square metre kelvin per watt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D2</Id>
         <Name>reciprocal second per steradian metre squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D20</Id>
         <Name>square metre per joule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D21</Id>
         <Name>square metre per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D22</Id>
         <Name>square metre per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D23</Id>
@@ -2081,47 +2081,47 @@
     <Code>
         <Id>D24</Id>
         <Name>square metre per steradian</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D25</Id>
         <Name>square metre per steradian joule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D26</Id>
         <Name>square metre per volt second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D27</Id>
         <Name>steradian</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D29</Id>
         <Name>terahertz</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D30</Id>
         <Name>terajoule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D31</Id>
         <Name>terawatt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D32</Id>
         <Name>terawatt hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D33</Id>
         <Name>tesla</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D34</Id>
@@ -2138,17 +2138,17 @@
     <Code>
         <Id>D41</Id>
         <Name>tonne per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D42</Id>
         <Name>tropical year</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D43</Id>
         <Name>unified atomic mass unit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D44</Id>
@@ -2158,102 +2158,102 @@
     <Code>
         <Id>D45</Id>
         <Name>volt squared per kelvin squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D46</Id>
         <Name>volt - ampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D47</Id>
         <Name>volt per centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D48</Id>
         <Name>volt per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D49</Id>
         <Name>millivolt per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D5</Id>
         <Name>kilogram per square centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D50</Id>
         <Name>volt per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D51</Id>
         <Name>volt per millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D52</Id>
         <Name>watt per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D53</Id>
         <Name>watt per metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D54</Id>
         <Name>watt per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D55</Id>
         <Name>watt per square metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D56</Id>
         <Name>watt per square metre kelvin to the fourth power</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D57</Id>
         <Name>watt per steradian</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D58</Id>
         <Name>watt per steradian square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D59</Id>
         <Name>weber per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D6</Id>
         <Name>roentgen per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D60</Id>
         <Name>weber per millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D61</Id>
         <Name>minute [unit of angle]</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D62</Id>
         <Name>second [unit of angle]</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D63</Id>
@@ -2275,22 +2275,22 @@
     <Code>
         <Id>D69</Id>
         <Name>inch to the fourth power</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D73</Id>
         <Name>joule square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D74</Id>
         <Name>kilogram per mole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D77</Id>
         <Name>megacoulomb</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D78</Id>
@@ -2301,72 +2301,72 @@
     <Code>
         <Id>D80</Id>
         <Name>microwatt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D81</Id>
         <Name>microtesla</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D82</Id>
         <Name>microvolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D83</Id>
         <Name>millinewton metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D85</Id>
         <Name>microwatt per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D86</Id>
         <Name>millicoulomb</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D87</Id>
         <Name>millimole per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D88</Id>
         <Name>millicoulomb per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D89</Id>
         <Name>millicoulomb per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D91</Id>
         <Name>rem</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D93</Id>
         <Name>second per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D94</Id>
         <Name>second per cubic metre radian</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>D95</Id>
         <Name>joule per gram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DAA</Id>
         <Name>decare</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DAD</Id>
@@ -2376,7 +2376,7 @@
     <Code>
         <Id>DAY</Id>
         <Name>day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DB</Id>
@@ -2385,17 +2385,17 @@
             water content of the product.</Description>
     </Code>
     <Code>
-       <Id>DBM</Id>
+        <Id>DBM</Id>
         <Name>Decibel-milliwatts</Name>
     </Code>
     <Code>
-       <Id>DBW</Id>
+        <Id>DBW</Id>
         <Name>Decibel watt</Name>
     </Code>
     <Code>
         <Id>DD</Id>
         <Name>degree [unit of angle]</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DEC</Id>
@@ -2406,27 +2406,27 @@
     <Code>
         <Id>DG</Id>
         <Name>decigram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DJ</Id>
         <Name>decagram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DLT</Id>
         <Name>decilitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DMA</Id>
         <Name>cubic decametre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DMK</Id>
         <Name>square decimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DMO</Id>
@@ -2438,17 +2438,17 @@
     <Code>
         <Id>DMQ</Id>
         <Name>cubic decimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DMT</Id>
         <Name>decimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DN</Id>
         <Name>decinewton metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DPC</Id>
@@ -2498,7 +2498,7 @@
     <Code>
         <Id>DWT</Id>
         <Name>pennyweight</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>DZN</Id>
@@ -2713,7 +2713,7 @@
     <Code>
         <Id>E45</Id>
         <Name>milliohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E46</Id>
@@ -2964,52 +2964,52 @@
     <Code>
         <Id>E90</Id>
         <Name>reciprocal centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E91</Id>
         <Name>reciprocal day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E92</Id>
         <Name>cubic decimetre per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E93</Id>
         <Name>kilogram per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E94</Id>
         <Name>kilomole per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E95</Id>
         <Name>mole per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E96</Id>
         <Name>degree per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E97</Id>
         <Name>millimetre per degree Celcius metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E98</Id>
         <Name>degree Celsius per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>E99</Id>
         <Name>hectopascal per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>EA</Id>
@@ -3037,52 +3037,52 @@
     <Code>
         <Id>F02</Id>
         <Name>kelvin per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F03</Id>
         <Name>kilopascal per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F04</Id>
         <Name>millibar per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F05</Id>
         <Name>megapascal per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F06</Id>
         <Name>poise per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F07</Id>
         <Name>pascal per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F08</Id>
         <Name>milliampere per inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F10</Id>
         <Name>kelvin per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F11</Id>
         <Name>kelvin per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F12</Id>
         <Name>kelvin per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F13</Id>
@@ -3093,177 +3093,177 @@
     <Code>
         <Id>F14</Id>
         <Name>gram per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F15</Id>
         <Name>kilogram per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F16</Id>
         <Name>milligram per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F17</Id>
         <Name>pound-force per foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F18</Id>
         <Name>kilogram square centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F19</Id>
         <Name>kilogram square millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F20</Id>
         <Name>pound inch squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F21</Id>
         <Name>pound-force inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F22</Id>
         <Name>pound-force foot per ampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F23</Id>
         <Name>gram per cubic decimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F24</Id>
         <Name>kilogram per kilomol</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F25</Id>
         <Name>gram per hertz</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F26</Id>
         <Name>gram per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F27</Id>
         <Name>gram per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F28</Id>
         <Name>gram per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F29</Id>
         <Name>gram per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F30</Id>
         <Name>kilogram per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F31</Id>
         <Name>kilogram per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F32</Id>
         <Name>milligram per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F33</Id>
         <Name>milligram per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F34</Id>
         <Name>milligram per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F35</Id>
         <Name>gram per day kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F36</Id>
         <Name>gram per hour kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F37</Id>
         <Name>gram per minute kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F38</Id>
         <Name>gram per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F39</Id>
         <Name>kilogram per day kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F40</Id>
         <Name>kilogram per hour kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F41</Id>
         <Name>kilogram per minute kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F42</Id>
         <Name>kilogram per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F43</Id>
         <Name>milligram per day kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F44</Id>
         <Name>milligram per hour kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F45</Id>
         <Name>milligram per minute kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F46</Id>
         <Name>milligram per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F47</Id>
         <Name>newton per millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F48</Id>
         <Name>pound-force per inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F49</Id>
@@ -3273,152 +3273,152 @@
     <Code>
         <Id>F50</Id>
         <Name>micrometre per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F51</Id>
         <Name>centimetre per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F52</Id>
         <Name>metre per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F53</Id>
         <Name>millimetre per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F54</Id>
         <Name>milliohm per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F55</Id>
         <Name>ohm per mile (statute mile)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F56</Id>
         <Name>ohm per kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F57</Id>
         <Name>milliampere per pound-force per square inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F58</Id>
         <Name>reciprocal bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F59</Id>
         <Name>milliampere per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F60</Id>
         <Name>degree Celsius per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F61</Id>
         <Name>kelvin per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F62</Id>
         <Name>gram per day bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F63</Id>
         <Name>gram per hour bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F64</Id>
         <Name>gram per minute bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F65</Id>
         <Name>gram per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F66</Id>
         <Name>kilogram per day bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F67</Id>
         <Name>kilogram per hour bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F68</Id>
         <Name>kilogram per minute bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F69</Id>
         <Name>kilogram per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F70</Id>
         <Name>milligram per day bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F71</Id>
         <Name>milligram per hour bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F72</Id>
         <Name>milligram per minute bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F73</Id>
         <Name>milligram per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F74</Id>
         <Name>gram per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F75</Id>
         <Name>milligram per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F76</Id>
         <Name>milliampere per millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F77</Id>
         <Name>pascal second per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F78</Id>
         <Name>inch of water</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F79</Id>
         <Name>inch of mercury</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F80</Id>
@@ -3430,97 +3430,97 @@
     <Code>
         <Id>F81</Id>
         <Name>bar per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F82</Id>
         <Name>hectopascal per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F83</Id>
         <Name>kilopascal per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F84</Id>
         <Name>millibar per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F85</Id>
         <Name>megapascal per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F86</Id>
         <Name>poise per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F87</Id>
         <Name>volt per litre minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F88</Id>
         <Name>newton centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F89</Id>
         <Name>newton metre per degree</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F90</Id>
         <Name>newton metre per ampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F91</Id>
         <Name>bar litre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F92</Id>
         <Name>bar cubic metre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F93</Id>
         <Name>hectopascal litre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F94</Id>
         <Name>hectopascal cubic metre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F95</Id>
         <Name>millibar litre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F96</Id>
         <Name>millibar cubic metre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F97</Id>
         <Name>megapascal litre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F98</Id>
         <Name>megapascal cubic metre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>F99</Id>
         <Name>pascal litre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>FAH</Id>
@@ -3530,7 +3530,7 @@
     <Code>
         <Id>FAR</Id>
         <Name>farad</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>FBM</Id>
@@ -3551,7 +3551,7 @@
     <Code>
         <Id>FH</Id>
         <Name>micromole</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>FIT</Id>
@@ -3567,533 +3567,533 @@
             small flattish fragment).</Description>
     </Code>
     <Code>
-       <Id>FNU</Id>
+        <Id>FNU</Id>
         <Name>Formazin nephelometric unit</Name>
-    </Code>	
+    </Code>
     <Code>
         <Id>FOT</Id>
         <Name>foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>FP</Id>
         <Name>pound per square foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>FR</Id>
         <Name>foot per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>FS</Id>
         <Name>foot per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>FTK</Id>
         <Name>square foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>FTQ</Id>
         <Name>cubic foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G01</Id>
         <Name>pascal cubic metre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G04</Id>
         <Name>centimetre per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G05</Id>
         <Name>metre per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G06</Id>
         <Name>millimetre per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G08</Id>
         <Name>square inch per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G09</Id>
         <Name>square metre per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G10</Id>
         <Name>stokes per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G11</Id>
         <Name>gram per cubic centimetre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G12</Id>
         <Name>gram per cubic decimetre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G13</Id>
         <Name>gram per litre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G14</Id>
         <Name>gram per cubic metre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G15</Id>
         <Name>gram per millilitre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G16</Id>
         <Name>kilogram per cubic centimetre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G17</Id>
         <Name>kilogram per litre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G18</Id>
         <Name>kilogram per cubic metre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G19</Id>
         <Name>newton metre per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G2</Id>
         <Name>US gallon per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G20</Id>
         <Name>pound-force foot per pound</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G21</Id>
         <Name>cup [unit of volume]</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G23</Id>
         <Name>peck</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G24</Id>
         <Name>tablespoon (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G25</Id>
         <Name>teaspoon (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G26</Id>
         <Name>stere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G27</Id>
         <Name>cubic centimetre per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G28</Id>
         <Name>litre per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G29</Id>
         <Name>cubic metre per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G3</Id>
         <Name>Imperial gallon per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G30</Id>
         <Name>millilitre per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G31</Id>
         <Name>kilogram per cubic centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G32</Id>
         <Name>ounce (avoirdupois) per cubic yard</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G33</Id>
         <Name>gram per cubic centimetre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G34</Id>
         <Name>gram per cubic decimetre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G35</Id>
         <Name>gram per litre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G36</Id>
         <Name>gram per cubic metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G37</Id>
         <Name>gram per millilitre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G38</Id>
         <Name>kilogram per cubic centimetre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G39</Id>
         <Name>kilogram per litre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G40</Id>
         <Name>kilogram per cubic metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G41</Id>
         <Name>square metre per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G42</Id>
         <Name>microsiemens per centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G43</Id>
         <Name>microsiemens per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G44</Id>
         <Name>nanosiemens per centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G45</Id>
         <Name>nanosiemens per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G46</Id>
         <Name>stokes per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G47</Id>
         <Name>cubic centimetre per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G48</Id>
         <Name>cubic centimetre per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G49</Id>
         <Name>cubic centimetre per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G50</Id>
         <Name>gallon (US) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G51</Id>
         <Name>litre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G52</Id>
         <Name>cubic metre per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G53</Id>
         <Name>cubic metre per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G54</Id>
         <Name>millilitre per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G55</Id>
         <Name>millilitre per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G56</Id>
         <Name>cubic inch per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G57</Id>
         <Name>cubic inch per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G58</Id>
         <Name>cubic inch per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G59</Id>
         <Name>milliampere per litre minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G60</Id>
         <Name>volt per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G61</Id>
         <Name>cubic centimetre per day kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G62</Id>
         <Name>cubic centimetre per hour kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G63</Id>
         <Name>cubic centimetre per minute kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G64</Id>
         <Name>cubic centimetre per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G65</Id>
         <Name>litre per day kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G66</Id>
         <Name>litre per hour kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G67</Id>
         <Name>litre per minute kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G68</Id>
         <Name>litre per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G69</Id>
         <Name>cubic metre per day kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G70</Id>
         <Name>cubic metre per hour kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G71</Id>
         <Name>cubic metre per minute kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G72</Id>
         <Name>cubic metre per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G73</Id>
         <Name>millilitre per day kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G74</Id>
         <Name>millilitre per hour kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G75</Id>
         <Name>millilitre per minute kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G76</Id>
         <Name>millilitre per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G77</Id>
         <Name>millimetre to the fourth power</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G78</Id>
         <Name>cubic centimetre per day bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G79</Id>
         <Name>cubic centimetre per hour bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G80</Id>
         <Name>cubic centimetre per minute bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G81</Id>
         <Name>cubic centimetre per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G82</Id>
         <Name>litre per day bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G83</Id>
         <Name>litre per hour bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G84</Id>
         <Name>litre per minute bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G85</Id>
         <Name>litre per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G86</Id>
         <Name>cubic metre per day bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G87</Id>
         <Name>cubic metre per hour bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G88</Id>
         <Name>cubic metre per minute bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G89</Id>
         <Name>cubic metre per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G90</Id>
         <Name>millilitre per day bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G91</Id>
         <Name>millilitre per hour bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G92</Id>
         <Name>millilitre per minute bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G93</Id>
         <Name>millilitre per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G94</Id>
         <Name>cubic centimetre per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G95</Id>
         <Name>litre per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G96</Id>
         <Name>cubic metre per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G97</Id>
         <Name>millilitre per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G98</Id>
         <Name>microhenry per kiloohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>G99</Id>
         <Name>microhenry per ohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GB</Id>
         <Name>gallon (US) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GBQ</Id>
         <Name>gigabecquerel</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GDW</Id>
@@ -4104,12 +4104,12 @@
     <Code>
         <Id>GE</Id>
         <Name>pound per gallon (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GF</Id>
         <Name>gram per metre (gram per 100 centimetres)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GFI</Id>
@@ -4127,7 +4127,7 @@
     <Code>
         <Id>GIA</Id>
         <Name>gill (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GIC</Id>
@@ -4138,7 +4138,7 @@
     <Code>
         <Id>GII</Id>
         <Name>gill (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GIP</Id>
@@ -4149,57 +4149,57 @@
     <Code>
         <Id>GJ</Id>
         <Name>gram per millilitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GL</Id>
         <Name>gram per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GLD</Id>
         <Name>dry gallon (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GLI</Id>
         <Name>gallon (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GLL</Id>
         <Name>gallon (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GM</Id>
         <Name>gram per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GO</Id>
         <Name>milligram per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GP</Id>
         <Name>milligram per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GQ</Id>
         <Name>microgram per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GRM</Id>
         <Name>gram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GRN</Id>
         <Name>grain</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GRO</Id>
@@ -4210,77 +4210,77 @@
     <Code>
         <Id>GV</Id>
         <Name>gigajoule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>GWH</Id>
         <Name>gigawatt hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H03</Id>
         <Name>henry per kiloohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H04</Id>
         <Name>henry per ohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H05</Id>
         <Name>millihenry per kiloohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H06</Id>
         <Name>millihenry per ohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H07</Id>
         <Name>pascal second per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H08</Id>
         <Name>microbecquerel</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H09</Id>
         <Name>reciprocal year</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H10</Id>
         <Name>reciprocal hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H11</Id>
         <Name>reciprocal month</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H12</Id>
         <Name>degree Celsius per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H13</Id>
         <Name>degree Celsius per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H14</Id>
         <Name>degree Celsius per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H15</Id>
         <Name>square centimetre per gram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H16</Id>
@@ -4295,12 +4295,12 @@
     <Code>
         <Id>H19</Id>
         <Name>cubic hectometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H20</Id>
         <Name>cubic kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H21</Id>
@@ -4310,17 +4310,17 @@
     <Code>
         <Id>H22</Id>
         <Name>volt square inch per pound-force</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H23</Id>
         <Name>volt per inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H24</Id>
         <Name>volt per microsecond</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H25</Id>
@@ -4331,227 +4331,227 @@
     <Code>
         <Id>H26</Id>
         <Name>ohm per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H27</Id>
         <Name>degree per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H28</Id>
         <Name>microfarad per kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H29</Id>
         <Name>microgram per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H30</Id>
         <Name>square micrometre (square micron)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H31</Id>
         <Name>ampere per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H32</Id>
         <Name>ampere squared second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H33</Id>
         <Name>farad per kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H34</Id>
         <Name>hertz metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H35</Id>
         <Name>kelvin metre per watt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H36</Id>
         <Name>megaohm per kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H37</Id>
         <Name>megaohm per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H38</Id>
         <Name>megaampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H39</Id>
         <Name>megahertz kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H40</Id>
         <Name>newton per ampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H41</Id>
         <Name>newton metre watt to the power minus 0,5</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H42</Id>
         <Name>pascal per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H43</Id>
         <Name>siemens per centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H44</Id>
         <Name>teraohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H45</Id>
         <Name>volt second per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H46</Id>
         <Name>volt per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H47</Id>
         <Name>watt per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H48</Id>
         <Name>attofarad</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H49</Id>
         <Name>centimetre per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H50</Id>
         <Name>reciprocal cubic centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H51</Id>
         <Name>decibel per kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H52</Id>
         <Name>decibel per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H53</Id>
         <Name>kilogram per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H54</Id>
         <Name>kilogram per cubic decimetre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H55</Id>
         <Name>kilogram per cubic decimetre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H56</Id>
         <Name>kilogram per square metre second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H57</Id>
         <Name>inch per two pi radiant</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H58</Id>
         <Name>metre per volt second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H59</Id>
         <Name>square metre per newton</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H60</Id>
         <Name>cubic metre per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H61</Id>
         <Name>millisiemens per centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H62</Id>
         <Name>millivolt per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H63</Id>
         <Name>milligram per square centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H64</Id>
         <Name>milligram per gram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H65</Id>
         <Name>millilitre per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H66</Id>
         <Name>millimetre per year</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H67</Id>
         <Name>millimetre per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H68</Id>
         <Name>millimole per gram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H69</Id>
         <Name>picopascal per kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H70</Id>
         <Name>picosecond</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H71</Id>
@@ -4573,17 +4573,17 @@
     <Code>
         <Id>H74</Id>
         <Name>watt per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H75</Id>
         <Name>decapascal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H76</Id>
         <Name>gram per millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H77</Id>
@@ -4608,7 +4608,7 @@
     <Code>
         <Id>H81</Id>
         <Name>millimetre per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H82</Id>
@@ -4620,17 +4620,17 @@
     <Code>
         <Id>H83</Id>
         <Name>litre per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H84</Id>
         <Name>gram millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H85</Id>
         <Name>reciprocal week</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H87</Id>
@@ -4641,7 +4641,7 @@
     <Code>
         <Id>H88</Id>
         <Name>megaohm kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>H89</Id>
@@ -4707,13 +4707,13 @@
         <Description>A unit of length, typically for yarn.</Description>
     </Code>
     <Code>
-       <Id>HAD</Id>
+        <Id>HAD</Id>
         <Name>Piece Day</Name>
     </Code>
     <Code>
         <Id>HBA</Id>
         <Name>hectobar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>HBX</Id>
@@ -4742,7 +4742,7 @@
     <Code>
         <Id>HGM</Id>
         <Name>hectogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>HH</Id>
@@ -4764,15 +4764,15 @@
     <Code>
         <Id>HLT</Id>
         <Name>hectolitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>HM</Id>
         <Name>mile per hour (statute mile)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
-       <Id>HMO</Id>
+        <Id>HMO</Id>
         <Name>Piece Month</Name>
     </Code>
     <Code>
@@ -4783,7 +4783,7 @@
     <Code>
         <Id>HMT</Id>
         <Name>hectometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>HPA</Id>
@@ -4793,21 +4793,21 @@
     <Code>
         <Id>HTZ</Id>
         <Name>hertz</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>HUR</Id>
         <Name>hour</Name>
-        <Description/>
-     <Code>
-       <Id>HWE</Id>
+        <Description />
+    </Code>
+    <Code>
+        <Id>HWE</Id>
         <Name>Piece Week</Name>
     </Code>
-	</Code>
     <Code>
         <Id>IA</Id>
         <Name>inch pound (pound inch)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>IE</Id>
@@ -4817,12 +4817,12 @@
     <Code>
         <Id>INH</Id>
         <Name>inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>INK</Id>
         <Name>square inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>INQ</Id>
@@ -4838,16 +4838,16 @@
     <Code>
         <Id>IU</Id>
         <Name>inch per second</Name>
-        <Description/>
+        <Description />
     </Code>
-	<Code>
+    <Code>
         <Id>IUG</Id>
         <Name>international unit per gram</Name>
     </Code>
     <Code>
         <Id>IV</Id>
         <Name>inch per second squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J10</Id>
@@ -4897,48 +4897,48 @@
     <Code>
         <Id>J19</Id>
         <Name>degree Fahrenheit hour square foot per British thermal unit (thermochemical)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J2</Id>
         <Name>joule per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J20</Id>
         <Name>degree Fahrenheit per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J21</Id>
         <Name>degree Fahrenheit per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J22</Id>
         <Name>degree Fahrenheit hour square foot per British thermal unit (international
             table)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J23</Id>
         <Name>degree Fahrenheit per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J24</Id>
         <Name>degree Fahrenheit per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J25</Id>
         <Name>degree Fahrenheit per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J26</Id>
         <Name>reciprocal degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J27</Id>
@@ -4949,17 +4949,17 @@
     <Code>
         <Id>J28</Id>
         <Name>degree Rankine per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J29</Id>
         <Name>degree Rankine per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J30</Id>
         <Name>degree Rankine per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J31</Id>
@@ -4970,27 +4970,27 @@
     <Code>
         <Id>J32</Id>
         <Name>micropoise</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J33</Id>
         <Name>microgram per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J34</Id>
         <Name>microgram per cubic metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J35</Id>
         <Name>microgram per cubic metre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J36</Id>
         <Name>microlitre per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J38</Id>
@@ -5001,83 +5001,83 @@
     <Code>
         <Id>J39</Id>
         <Name>British thermal unit (mean)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J40</Id>
         <Name>British thermal unit (international table) foot per hour square foot degree
             Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J41</Id>
         <Name>British thermal unit (international table) inch per hour square foot degree
             Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J42</Id>
         <Name>British thermal unit (international table) inch per second square foot degree
             Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J43</Id>
         <Name>British thermal unit (international table) per pound degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J44</Id>
         <Name>British thermal unit (international table) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J45</Id>
         <Name>British thermal unit (international table) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J46</Id>
         <Name>British thermal unit (thermochemical) foot per hour square foot degree
             Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J47</Id>
         <Name>British thermal unit (thermochemical) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J48</Id>
         <Name>British thermal unit (thermochemical) inch per hour square foot degree
             Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J49</Id>
         <Name>British thermal unit (thermochemical) inch per second square foot degree
             Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J50</Id>
         <Name>British thermal unit (thermochemical) per pound degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J51</Id>
         <Name>British thermal unit (thermochemical) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J52</Id>
         <Name>British thermal unit (thermochemical) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J53</Id>
         <Name>coulomb square metre per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J54</Id>
@@ -5088,212 +5088,212 @@
     <Code>
         <Id>J55</Id>
         <Name>watt second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J56</Id>
         <Name>bar per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J57</Id>
         <Name>barrel (UK petroleum)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J58</Id>
         <Name>barrel (UK petroleum) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J59</Id>
         <Name>barrel (UK petroleum) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J60</Id>
         <Name>barrel (UK petroleum) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J61</Id>
         <Name>barrel (UK petroleum) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J62</Id>
         <Name>barrel (US petroleum) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J63</Id>
         <Name>barrel (US petroleum) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J64</Id>
         <Name>bushel (UK) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J65</Id>
         <Name>bushel (UK) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J66</Id>
         <Name>bushel (UK) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J67</Id>
         <Name>bushel (UK) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J68</Id>
         <Name>bushel (US dry) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J69</Id>
         <Name>bushel (US dry) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J70</Id>
         <Name>bushel (US dry) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J71</Id>
         <Name>bushel (US dry) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J72</Id>
         <Name>centinewton metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J73</Id>
         <Name>centipoise per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J74</Id>
         <Name>centipoise per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J75</Id>
         <Name>calorie (mean)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J76</Id>
         <Name>calorie (international table) per gram degree Celsius</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J78</Id>
         <Name>calorie (thermochemical) per centimetre second degree Celsius</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J79</Id>
         <Name>calorie (thermochemical) per gram degree Celsius</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J81</Id>
         <Name>calorie (thermochemical) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J82</Id>
         <Name>calorie (thermochemical) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J83</Id>
         <Name>clo</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J84</Id>
         <Name>centimetre per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J85</Id>
         <Name>centimetre per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J87</Id>
         <Name>cubic centimetre per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J90</Id>
         <Name>cubic decimetre per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J91</Id>
         <Name>cubic decimetre per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J92</Id>
         <Name>cubic decimetre per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J93</Id>
         <Name>cubic decimetre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J95</Id>
         <Name>ounce (UK fluid) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J96</Id>
         <Name>ounce (UK fluid) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J97</Id>
         <Name>ounce (UK fluid) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J98</Id>
         <Name>ounce (UK fluid) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>J99</Id>
         <Name>ounce (US fluid) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>JE</Id>
         <Name>joule per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>JK</Id>
         <Name>megajoule per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>JM</Id>
         <Name>megajoule per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>JNT</Id>
@@ -5303,7 +5303,7 @@
     <Code>
         <Id>JOU</Id>
         <Name>joule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>JPS</Id>
@@ -5325,52 +5325,52 @@
     <Code>
         <Id>K10</Id>
         <Name>ounce (US fluid) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K11</Id>
         <Name>ounce (US fluid) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K12</Id>
         <Name>ounce (US fluid) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K13</Id>
         <Name>foot per degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K14</Id>
         <Name>foot per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K15</Id>
         <Name>foot pound-force per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K16</Id>
         <Name>foot pound-force per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K17</Id>
         <Name>foot per psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K18</Id>
         <Name>foot per second degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K19</Id>
         <Name>foot per second psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K2</Id>
@@ -5381,37 +5381,37 @@
     <Code>
         <Id>K20</Id>
         <Name>reciprocal cubic foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K21</Id>
         <Name>cubic foot per degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K22</Id>
         <Name>cubic foot per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K23</Id>
         <Name>cubic foot per psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K26</Id>
         <Name>gallon (UK) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K27</Id>
         <Name>gallon (UK) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K28</Id>
         <Name>gallon (UK) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K3</Id>
@@ -5422,97 +5422,97 @@
     <Code>
         <Id>K30</Id>
         <Name>gallon (US liquid) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K31</Id>
         <Name>gram-force per square centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K32</Id>
         <Name>gill (UK) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K33</Id>
         <Name>gill (UK) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K34</Id>
         <Name>gill (UK) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K35</Id>
         <Name>gill (UK) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K36</Id>
         <Name>gill (US) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K37</Id>
         <Name>gill (US) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K38</Id>
         <Name>gill (US) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K39</Id>
         <Name>gill (US) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K40</Id>
         <Name>standard acceleration of free fall</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K41</Id>
         <Name>grain per gallon (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K42</Id>
         <Name>horsepower (boiler)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K43</Id>
         <Name>horsepower (electric)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K45</Id>
         <Name>inch per degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K46</Id>
         <Name>inch per psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K47</Id>
         <Name>inch per second degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K48</Id>
         <Name>inch per second psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K49</Id>
         <Name>reciprocal cubic inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K50</Id>
@@ -5523,237 +5523,237 @@
     <Code>
         <Id>K51</Id>
         <Name>kilocalorie (mean)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K52</Id>
         <Name>kilocalorie (international table) per hour metre degree Celsius</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K53</Id>
         <Name>kilocalorie (thermochemical)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K54</Id>
         <Name>kilocalorie (thermochemical) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K55</Id>
         <Name>kilocalorie (thermochemical) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K58</Id>
         <Name>kilomole per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K59</Id>
         <Name>kilomole per cubic metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K6</Id>
         <Name>kilolitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K60</Id>
         <Name>kilomole per cubic metre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K61</Id>
         <Name>kilomole per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K62</Id>
         <Name>litre per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K63</Id>
         <Name>reciprocal litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K64</Id>
         <Name>pound (avoirdupois) per degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K65</Id>
         <Name>pound (avoirdupois) square foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K66</Id>
         <Name>pound (avoirdupois) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K67</Id>
         <Name>pound per foot hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K68</Id>
         <Name>pound per foot second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K69</Id>
         <Name>pound (avoirdupois) per cubic foot degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K70</Id>
         <Name>pound (avoirdupois) per cubic foot psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K71</Id>
         <Name>pound (avoirdupois) per gallon (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K73</Id>
         <Name>pound (avoirdupois) per hour degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K74</Id>
         <Name>pound (avoirdupois) per hour psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K75</Id>
         <Name>pound (avoirdupois) per cubic inch degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K76</Id>
         <Name>pound (avoirdupois) per cubic inch psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K77</Id>
         <Name>pound (avoirdupois) per psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K78</Id>
         <Name>pound (avoirdupois) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K79</Id>
         <Name>pound (avoirdupois) per minute degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K80</Id>
         <Name>pound (avoirdupois) per minute psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K81</Id>
         <Name>pound (avoirdupois) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K82</Id>
         <Name>pound (avoirdupois) per second degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K83</Id>
         <Name>pound (avoirdupois) per second psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K84</Id>
         <Name>pound per cubic yard</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K85</Id>
         <Name>pound-force per square foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K86</Id>
         <Name>pound-force per square inch degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K87</Id>
         <Name>psi cubic inch per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K88</Id>
         <Name>psi litre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K89</Id>
         <Name>psi cubic metre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K90</Id>
         <Name>psi cubic yard per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K91</Id>
         <Name>pound-force second per square foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K92</Id>
         <Name>pound-force second per square inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K93</Id>
         <Name>reciprocal psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K94</Id>
         <Name>quart (UK liquid) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K95</Id>
         <Name>quart (UK liquid) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K96</Id>
         <Name>quart (UK liquid) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K97</Id>
         <Name>quart (UK liquid) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K98</Id>
         <Name>quart (US liquid) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>K99</Id>
         <Name>quart (US liquid) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KA</Id>
@@ -5775,7 +5775,7 @@
     <Code>
         <Id>KBA</Id>
         <Name>kilobar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KCC</Id>
@@ -5801,7 +5801,7 @@
     <Code>
         <Id>KGS</Id>
         <Name>kilogram per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KHY</Id>
@@ -5811,12 +5811,12 @@
     <Code>
         <Id>KHZ</Id>
         <Name>kilohertz</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KI</Id>
         <Name>kilogram per millimetre width</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KIC</Id>
@@ -5838,12 +5838,12 @@
     <Code>
         <Id>KJO</Id>
         <Name>kilojoule</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KL</Id>
         <Name>kilogram per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KLK</Id>
@@ -5864,12 +5864,12 @@
     <Code>
         <Id>KMH</Id>
         <Name>kilometre per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KMK</Id>
         <Name>square kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KMQ</Id>
@@ -5880,7 +5880,7 @@
     <Code>
         <Id>KMT</Id>
         <Name>kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KNI</Id>
@@ -5900,7 +5900,7 @@
     <Code>
         <Id>KNT</Id>
         <Name>knot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KO</Id>
@@ -5912,7 +5912,7 @@
     <Code>
         <Id>KPA</Id>
         <Name>kilopascal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KPH</Id>
@@ -5934,7 +5934,7 @@
     <Code>
         <Id>KR</Id>
         <Name>kiloroentgen</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KSD</Id>
@@ -5957,7 +5957,7 @@
     <Code>
         <Id>KTN</Id>
         <Name>kilotonne</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KUR</Id>
@@ -5967,29 +5967,29 @@
     <Code>
         <Id>KVA</Id>
         <Name>kilovolt - ampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KVR</Id>
         <Name>kilovar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KVT</Id>
         <Name>kilovolt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KW</Id>
         <Name>kilogram per millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>KWH</Id>
         <Name>kilowatt hour</Name>
-        <Description/>
+        <Description />
     </Code>
-	<Code>
+    <Code>
         <Id>KWN</Id>
         <Name>Kilowatt hour per normalized cubic metre</Name>
     </Code>
@@ -6005,456 +6005,456 @@
     <Code>
         <Id>KWT</Id>
         <Name>kilowatt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
-       <Id>KWY</Id>
+        <Id>KWY</Id>
         <Name>kilowatt year</Name>
     </Code>
     <Code>
         <Id>KX</Id>
         <Name>millilitre per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L10</Id>
         <Name>quart (US liquid) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L11</Id>
         <Name>quart (US liquid) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L12</Id>
         <Name>metre per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L13</Id>
         <Name>metre per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L14</Id>
         <Name>square metre hour degree Celsius per kilocalorie (international table)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L15</Id>
         <Name>millipascal second per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L16</Id>
         <Name>millipascal second per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L17</Id>
         <Name>milligram per cubic metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L18</Id>
         <Name>milligram per cubic metre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L19</Id>
         <Name>millilitre per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L2</Id>
         <Name>litre per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L20</Id>
         <Name>reciprocal cubic millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L21</Id>
         <Name>cubic millimetre per cubic metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L23</Id>
         <Name>mole per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L24</Id>
         <Name>mole per kilogram kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L25</Id>
         <Name>mole per kilogram bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L26</Id>
         <Name>mole per litre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L27</Id>
         <Name>mole per litre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L28</Id>
         <Name>mole per cubic metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L29</Id>
         <Name>mole per cubic metre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L30</Id>
         <Name>mole per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L31</Id>
         <Name>milliroentgen aequivalent men</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L32</Id>
         <Name>nanogram per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L33</Id>
         <Name>ounce (avoirdupois) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L34</Id>
         <Name>ounce (avoirdupois) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L35</Id>
         <Name>ounce (avoirdupois) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L36</Id>
         <Name>ounce (avoirdupois) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L37</Id>
         <Name>ounce (avoirdupois) per gallon (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L38</Id>
         <Name>ounce (avoirdupois) per gallon (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L39</Id>
         <Name>ounce (avoirdupois) per cubic inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L40</Id>
         <Name>ounce (avoirdupois)-force</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L41</Id>
         <Name>ounce (avoirdupois)-force inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L42</Id>
         <Name>picosiemens per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L43</Id>
         <Name>peck (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L44</Id>
         <Name>peck (UK) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L45</Id>
         <Name>peck (UK) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L46</Id>
         <Name>peck (UK) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L47</Id>
         <Name>peck (UK) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L48</Id>
         <Name>peck (US dry) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L49</Id>
         <Name>peck (US dry) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L50</Id>
         <Name>peck (US dry) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L51</Id>
         <Name>peck (US dry) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L52</Id>
         <Name>psi per psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L53</Id>
         <Name>pint (UK) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L54</Id>
         <Name>pint (UK) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L55</Id>
         <Name>pint (UK) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L56</Id>
         <Name>pint (UK) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L57</Id>
         <Name>pint (US liquid) per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L58</Id>
         <Name>pint (US liquid) per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L59</Id>
         <Name>pint (US liquid) per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L60</Id>
         <Name>pint (US liquid) per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L63</Id>
         <Name>slug per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L64</Id>
         <Name>slug per foot second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L65</Id>
         <Name>slug per cubic foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L66</Id>
         <Name>slug per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L67</Id>
         <Name>slug per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L68</Id>
         <Name>slug per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L69</Id>
         <Name>tonne per kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L70</Id>
         <Name>tonne per bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L71</Id>
         <Name>tonne per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L72</Id>
         <Name>tonne per day kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L73</Id>
         <Name>tonne per day bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L74</Id>
         <Name>tonne per hour kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L75</Id>
         <Name>tonne per hour bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L76</Id>
         <Name>tonne per cubic metre kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L77</Id>
         <Name>tonne per cubic metre bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L78</Id>
         <Name>tonne per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L79</Id>
         <Name>tonne per minute kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L80</Id>
         <Name>tonne per minute bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L81</Id>
         <Name>tonne per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L82</Id>
         <Name>tonne per second kelvin</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L83</Id>
         <Name>tonne per second bar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L84</Id>
         <Name>ton (UK shipping)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L85</Id>
         <Name>ton long per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L86</Id>
         <Name>ton (US shipping)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L87</Id>
         <Name>ton short per degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L88</Id>
         <Name>ton short per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L89</Id>
         <Name>ton short per hour degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L90</Id>
         <Name>ton short per hour psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L91</Id>
         <Name>ton short per psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L92</Id>
         <Name>ton (UK long) per cubic yard</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L93</Id>
         <Name>ton (US short) per cubic yard</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L94</Id>
         <Name>ton-force (US short)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L95</Id>
         <Name>common year</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L96</Id>
         <Name>sidereal year</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L98</Id>
         <Name>yard per degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>L99</Id>
         <Name>yard per psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>LA</Id>
         <Name>pound per cubic inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>LAC</Id>
@@ -6465,17 +6465,17 @@
     <Code>
         <Id>LBR</Id>
         <Name>pound</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>LBT</Id>
         <Name>troy pound (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>LD</Id>
         <Name>litre per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>LEF</Id>
@@ -6546,7 +6546,7 @@
     <Code>
         <Id>LTR</Id>
         <Name>litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>LUB</Id>
@@ -6557,12 +6557,12 @@
     <Code>
         <Id>LUM</Id>
         <Name>lumen</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>LUX</Id>
         <Name>lux</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>LY</Id>
@@ -6573,52 +6573,52 @@
     <Code>
         <Id>M1</Id>
         <Name>milligram per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M10</Id>
         <Name>reciprocal cubic yard</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M11</Id>
         <Name>cubic yard per degree Fahrenheit</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M12</Id>
         <Name>cubic yard per day</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M13</Id>
         <Name>cubic yard per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M14</Id>
         <Name>cubic yard per psi</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M15</Id>
         <Name>cubic yard per minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M16</Id>
         <Name>cubic yard per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M17</Id>
         <Name>kilohertz metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M18</Id>
         <Name>gigahertz metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M19</Id>
@@ -6630,27 +6630,27 @@
     <Code>
         <Id>M20</Id>
         <Name>reciprocal megakelvin or megakelvin to the power minus one</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M21</Id>
         <Name>reciprocal kilovolt - ampere reciprocal hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M22</Id>
         <Name>millilitre per square centimetre minute</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M23</Id>
         <Name>newton per centimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M24</Id>
         <Name>ohm kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M25</Id>
@@ -6661,47 +6661,47 @@
     <Code>
         <Id>M26</Id>
         <Name>gigaohm per metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M27</Id>
         <Name>megahertz metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M29</Id>
         <Name>kilogram per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M30</Id>
         <Name>reciprocal volt - ampere reciprocal second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M31</Id>
         <Name>kilogram per kilometre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M32</Id>
         <Name>pascal second per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M33</Id>
         <Name>millimole per litre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M34</Id>
         <Name>newton metre per square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M35</Id>
         <Name>millivolt - ampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M36</Id>
@@ -6793,7 +6793,7 @@
     <Code>
         <Id>M5</Id>
         <Name>microcurie</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M50</Id>
@@ -6904,7 +6904,7 @@
     <Code>
         <Id>M7</Id>
         <Name>micro-inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M70</Id>
@@ -7025,7 +7025,7 @@
     <Code>
         <Id>M9</Id>
         <Name>million Btu per 1000 cubic foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>M90</Id>
@@ -7098,12 +7098,12 @@
     <Code>
         <Id>MAL</Id>
         <Name>megalitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MAM</Id>
         <Name>megametre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MAR</Id>
@@ -7133,17 +7133,17 @@
     <Code>
         <Id>MBR</Id>
         <Name>millibar</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MC</Id>
         <Name>microgram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MCU</Id>
         <Name>millicurie</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MD</Id>
@@ -7154,32 +7154,32 @@
     <Code>
         <Id>MGM</Id>
         <Name>milligram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MHZ</Id>
         <Name>megahertz</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MIK</Id>
         <Name>square mile (statute mile)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MIL</Id>
         <Name>thousand</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MIN</Id>
         <Name>minute [unit of time]</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MIO</Id>
         <Name>million</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MIU</Id>
@@ -7187,15 +7187,15 @@
         <Description>A unit of count defining the number of international units in multiples of 10.</Description>
     </Code>
     <Code>
-       <Id>MKD</Id>
+        <Id>MKD</Id>
         <Name>Square Metre Day</Name>
     </Code>
     <Code>
-       <Id>MKM</Id>
+        <Id>MKM</Id>
         <Name>Square Metre Month</Name>
     </Code>
     <Code>
-       <Id>MKW</Id>
+        <Id>MKW</Id>
         <Name>Square Metre Week</Name>
     </Code>
     <Code>
@@ -7206,22 +7206,22 @@
     <Code>
         <Id>MLT</Id>
         <Name>millilitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MMK</Id>
         <Name>square millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MMQ</Id>
         <Name>cubic millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MMT</Id>
         <Name>millimetre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MND</Id>
@@ -7230,7 +7230,7 @@
             water content of the product.</Description>
     </Code>
     <Code>
-       <Id>MNJ</Id>
+        <Id>MNJ</Id>
         <Name>Mega Joule per Normalised cubic Metre</Name>
     </Code>
     <Code>
@@ -7241,51 +7241,51 @@
     <Code>
         <Id>MPA</Id>
         <Name>megapascal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
-       <Id>MQD</Id>
+        <Id>MQD</Id>
         <Name>Cubic Metre Day</Name>
     </Code>
     <Code>
         <Id>MQH</Id>
         <Name>cubic metre per hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
-       <Id>MQM</Id>
+        <Id>MQM</Id>
         <Name>Cubic Metre Month</Name>
     </Code>
     <Code>
         <Id>MQS</Id>
         <Name>cubic metre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
-       <Id>MQW</Id>
+        <Id>MQW</Id>
         <Name>Cubic Metre Week</Name>
     </Code>
     <Code>
-       <Id>MRD</Id>
+        <Id>MRD</Id>
         <Name>Metre Day</Name>
     </Code>
     <Code>
-       <Id>MRM</Id>
+        <Id>MRM</Id>
         <Name>Metre Month</Name>
     </Code>
     <Code>
-       <Id>MRW</Id>
+        <Id>MRW</Id>
         <Name>Metre Week</Name>
     </Code>
     <Code>
         <Id>MSK</Id>
         <Name>metre per second squared</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MTK</Id>
         <Name>square metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MTQ</Id>
@@ -7295,21 +7295,21 @@
     <Code>
         <Id>MTR</Id>
         <Name>metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MTS</Id>
         <Name>metre per second</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
-       <Id>MTZ</Id>
+        <Id>MTZ</Id>
         <Name>milihertz</Name>
     </Code>
     <Code>
         <Id>MVA</Id>
         <Name>megavolt - ampere</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>MWH</Id>
@@ -7462,7 +7462,7 @@
     <Code>
         <Id>N3</Id>
         <Name>print point</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>N30</Id>
@@ -7890,7 +7890,7 @@
     <Code>
         <Id>NA</Id>
         <Name>milligram per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>NAR</Id>
@@ -7906,7 +7906,7 @@
     <Code>
         <Id>NEW</Id>
         <Name>newton</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>NF</Id>
@@ -7938,7 +7938,7 @@
     <Code>
         <Id>NMI</Id>
         <Name>nautical mile</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>NMP</Id>
@@ -7959,13 +7959,13 @@
             Convention on tonnage measurement of Ships.</Description>
     </Code>
     <Code>
-       <Id>NTU</Id>
+        <Id>NTU</Id>
         <Name>Nephelometric turbidity unit</Name>
     </Code>
-	<Code>
+    <Code>
         <Id>NU</Id>
         <Name>newton metre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>NX</Id>
@@ -8000,17 +8000,17 @@
     <Code>
         <Id>OHM</Id>
         <Name>ohm</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>ON</Id>
         <Name>ounce per square yard</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>ONZ</Id>
         <Name>ounce (avoirdupois)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>OPM</Id>
@@ -8025,12 +8025,12 @@
     <Code>
         <Id>OZA</Id>
         <Name>fluid ounce (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>OZI</Id>
         <Name>fluid ounce (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>P1</Id>
@@ -8094,7 +8094,7 @@
     <Code>
         <Id>P2</Id>
         <Name>pound per foot</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>P20</Id>
@@ -8581,7 +8581,7 @@
     <Code>
         <Id>PAL</Id>
         <Name>pascal</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>PD</Id>
@@ -8620,7 +8620,7 @@
     <Code>
         <Id>PO</Id>
         <Name>pound per inch of length</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>PQ</Id>
@@ -8637,22 +8637,22 @@
     <Code>
         <Id>PS</Id>
         <Name>pound-force per square inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>PTD</Id>
         <Name>dry pint (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>PTI</Id>
         <Name>pint (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>PTL</Id>
         <Name>liquid pint (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>PTN</Id>
@@ -8795,22 +8795,22 @@
     <Code>
         <Id>Q31</Id>
         <Name>kilojoule per gram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>Q32</Id>
         <Name>femtolitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>Q33</Id>
         <Name>picolitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>Q34</Id>
         <Name>nanolitre</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>Q35</Id>
@@ -8888,17 +8888,17 @@
     <Code>
         <Id>QTD</Id>
         <Name>dry quart (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>QTI</Id>
         <Name>quart (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>QTL</Id>
         <Name>liquid quart (US)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>QTR</Id>
@@ -8979,12 +8979,12 @@
     <Code>
         <Id>SCR</Id>
         <Name>scruple</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>SEC</Id>
         <Name>second [unit of time]</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>SET</Id>
@@ -9000,7 +9000,7 @@
     <Code>
         <Id>SIE</Id>
         <Name>siemens</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>SM3</Id>
@@ -9011,7 +9011,7 @@
     <Code>
         <Id>SMI</Id>
         <Name>mile (statute mile)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>SQ</Id>
@@ -9040,7 +9040,7 @@
     <Code>
         <Id>STI</Id>
         <Name>stone (UK)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>STK</Id>
@@ -9097,7 +9097,7 @@
     <Code>
         <Id>TAH</Id>
         <Name>kiloampere hour (thousand ampere hour)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>TAN</Id>
@@ -9109,7 +9109,7 @@
     <Code>
         <Id>TI</Id>
         <Name>thousand square inch</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>TIC</Id>
@@ -9164,7 +9164,7 @@
     <Code>
         <Id>TRL</Id>
         <Name>trillion (EUR)</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>TST</Id>
@@ -9203,12 +9203,12 @@
     <Code>
         <Id>VA</Id>
         <Name>volt - ampere per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>VLT</Id>
         <Name>volt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>VP</Id>
@@ -9225,7 +9225,7 @@
     <Code>
         <Id>WA</Id>
         <Name>watt per kilogram</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>WB</Id>
@@ -9248,12 +9248,12 @@
     <Code>
         <Id>WEB</Id>
         <Name>weber</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>WEE</Id>
         <Name>week</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>WG</Id>
@@ -9263,7 +9263,7 @@
     <Code>
         <Id>WHR</Id>
         <Name>watt hour</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>WM</Id>
@@ -9279,7 +9279,7 @@
     <Code>
         <Id>WTT</Id>
         <Name>watt</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>X1</Id>
@@ -9289,17 +9289,17 @@
     <Code>
         <Id>YDK</Id>
         <Name>square yard</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>YDQ</Id>
         <Name>cubic yard</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>YRD</Id>
         <Name>yard</Name>
-        <Description/>
+        <Description />
     </Code>
     <Code>
         <Id>Z11</Id>
@@ -9307,7 +9307,7 @@
         <Description>A unit of count defining the number of hanging containers.</Description>
     </Code>
     <Code>
-       <Id>Z9</Id>
+        <Id>Z9</Id>
         <Name>nanomole</Name>
     </Code>
     <Code>
@@ -9321,9 +9321,9 @@
         <Description>A unit of measure as agreed in common between two or more
             parties.</Description>
     </Code>
-	<!-- END of Recommendation 20 -->
-	
-	<!-- START of Recommendation 21, prefixed with X -->
+    <!-- END of Recommendation 20 -->
+
+    <!-- START of Recommendation 21, prefixed with X -->
     <Code>
         <Id>X1A</Id>
         <Name>Drum, steel</Name>
@@ -10176,39 +10176,39 @@
         <Name>Net, tube, textile</Name>
     </Code>
     <Code>
-       <Id>XO1</Id>
+        <Id>XO1</Id>
         <Name>Two sided cage on wheels with fixing strap</Name>
     </Code>
     <Code>
-       <Id>XO2</Id>
+        <Id>XO2</Id>
         <Name>Trolley</Name>
     </Code>
     <Code>
-       <Id>XO3</Id>
+        <Id>XO3</Id>
         <Name>Oneway pallet ISO 0 - 1/2 EURO Pallet</Name>
     </Code>
     <Code>
-       <Id>XO4</Id>
+        <Id>XO4</Id>
         <Name>Oneway pallet ISO 1 - 1/1 EURO Pallet</Name>
     </Code>
     <Code>
-       <Id>XO5</Id>
+        <Id>XO5</Id>
         <Name>Oneway pallet ISO 2 - 2/1 EURO Pallet</Name>
     </Code>
     <Code>
-       <Id>XO6</Id>
+        <Id>XO6</Id>
         <Name>Pallet with exceptional dimensions</Name>
     </Code>
     <Code>
-       <Id>XO7</Id>
-        <Name>Wooden pallet  40 cm x 80 cm</Name>
+        <Id>XO7</Id>
+        <Name>Wooden pallet 40 cm x 80 cm</Name>
     </Code>
     <Code>
-       <Id>XO8</Id>
+        <Id>XO8</Id>
         <Name>Plastic pallet SRS 60 cm x 80 cm</Name>
     </Code>
     <Code>
-       <Id>XO9</Id>
+        <Id>XO9</Id>
         <Name>Plastic pallet SRS 80 cm x 120 cm</Name>
     </Code>
     <Code>
@@ -10248,15 +10248,15 @@
             weight.</Description>
     </Code>
     <Code>
-       <Id>XOG</Id>
+        <Id>XOG</Id>
         <Name>Pallet ISO 0 - 1/2 EURO Pallet</Name>
     </Code>
     <Code>
-       <Id>XOH</Id>
+        <Id>XOH</Id>
         <Name>Pallet ISO 1 - 1/1 EURO Pallet</Name>
     </Code>
     <Code>
-       <Id>XOI</Id>
+        <Id>XOI</Id>
         <Name>Pallet ISO 2 – 2/1 EURO Pallet</Name>
     </Code>
     <Code>
@@ -10266,43 +10266,43 @@
             sides.</Description>
     </Code>
     <Code>
-       <Id>XOJ</Id>
+        <Id>XOJ</Id>
         <Name>1/4 EURO Pallet</Name>
     </Code>
     <Code>
-       <Id>XOL</Id>
+        <Id>XOL</Id>
         <Name>1/8 EURO Pallet</Name>
     </Code>
     <Code>
-       <Id>XOM</Id>
+        <Id>XOM</Id>
         <Name>Synthetic pallet ISO 1</Name>
     </Code>
     <Code>
-       <Id>XON</Id>
+        <Id>XON</Id>
         <Name>Synthetic pallet ISO 2</Name>
     </Code>
     <Code>
-       <Id>XOP</Id>
+        <Id>XOP</Id>
         <Name>Wholesaler pallet</Name>
     </Code>
     <Code>
-       <Id>XOQ</Id>
+        <Id>XOQ</Id>
         <Name>Pallet 80 X 100 cm</Name>
     </Code>
     <Code>
-       <Id>XOR</Id>
+        <Id>XOR</Id>
         <Name>Pallet 60 X 100 cm</Name>
     </Code>
     <Code>
-       <Id>XOS</Id>
+        <Id>XOS</Id>
         <Name>Oneway pallet</Name>
     </Code>
     <Code>
-       <Id>XOV</Id>
+        <Id>XOV</Id>
         <Name>Returnable pallet</Name>
     </Code>
     <Code>
-       <Id>XOW</Id>
+        <Id>XOW</Id>
         <Name>Large bag, pallet sized</Name>
     </Code>
     <Code>
@@ -10318,19 +10318,19 @@
             otherwise specified as transport equipment.</Description>
     </Code>
     <Code>
-       <Id>XOX</Id>
+        <Id>XOX</Id>
         <Name>A wheeled pallet with raised rim (81 x 67 x 135)</Name>
     </Code>
     <Code>
-       <Id>XOY</Id>
+        <Id>XOY</Id>
         <Name>A Wheeled pallet with raised rim (81 x 72 x 135)</Name>
     </Code>
     <Code>
-       <Id>XOZ</Id>
+        <Id>XOZ</Id>
         <Name>Wheeled pallet with raised rim ( 81 x 60 x 16)</Name>
     </Code>
     <Code>
-       <Id>XP1</Id>
+        <Id>XP1</Id>
         <Name>CHEP pallet 60 cm x 80 cm </Name>
     </Code>
     <Code>
@@ -10339,11 +10339,11 @@
         <Description>A shallow, wide, open container, usually of metal.</Description>
     </Code>
     <Code>
-       <Id>XP3</Id>
+        <Id>XP3</Id>
         <Name>LPR pallet 60 cm x 80 cm</Name>
     </Code>
     <Code>
-       <Id>XP4</Id>
+        <Id>XP4</Id>
         <Name>LPR pallet 80 cm x 120 cm</Name>
     </Code>
     <Code>
@@ -10624,7 +10624,7 @@
             then shrunk tightly on to the goods.</Description>
     </Code>
     <Code>
-       <Id>XSX</Id>
+        <Id>XSX</Id>
         <Name>Set</Name>
     </Code>
     <Code>
@@ -11094,7 +11094,7 @@
     </Code>
 
 
-	<!-- END of Recommendation 21 -->
+    <!-- END of Recommendation 21 -->
 
 
 </CodeList>

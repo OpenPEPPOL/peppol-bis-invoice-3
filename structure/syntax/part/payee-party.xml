@@ -18,12 +18,13 @@
                 <Description>This element is used for both the identification of the Payee, or the unique banking reference identifier of Payee (assigned by the Payee bank.) For payee identification use ICD code list, for SEPA bank assigned creditor reference, use SEPA.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-60, BT-90</Reference>
+                <Reference type="RULE">DE-R-030</Reference>
                 
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
                     <Name>Payee or bank assigned creditor identifier identification scheme identifier</Name>
                     <Description>The identification scheme identifier of the payee identifier. For bank assigned creditor identifier (BT-90), value MUST be "SEPA"</Description>
-                    <Reference type="RULE">BR-CL-10</Reference>
+                    <Reference type="RULE">BR-CL-10</Reference>                    
                     <Reference type="CODE_LIST">ICD</Reference>
                     <Reference type="CODE_LIST">SEPA</Reference>
                     <Value type="EXAMPLE">SEPA</Value>
