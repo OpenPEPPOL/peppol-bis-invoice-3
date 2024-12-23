@@ -58,13 +58,13 @@ Last update: 2024 November release 3.0.18.
       select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)" />
     <variable name="weightedSum"
       select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (1 + ((($i + 1) mod 2) * 2)))" />
-    <value-of select="(10 - ($weightedSum mod 10)) mod 10 = number(substring($val, $length + 1, 1))" />
+    <sequence select="(10 - ($weightedSum mod 10)) mod 10 = number(substring($val, $length + 1, 1))" />
   </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:slack" as="xs:boolean">
     <param name="exp" as="xs:decimal" />
     <param name="val" as="xs:decimal" />
     <param name="slack" as="xs:decimal" />
-    <value-of select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val" />
+    <sequence select="xs:decimal($exp + $slack) &gt;= $val and xs:decimal($exp - $slack) &lt;= $val" />
   </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod11" as="xs:boolean">
     <param name="val" />
@@ -73,7 +73,7 @@ Last update: 2024 November release 3.0.18.
       select="reverse(for $i in string-to-codepoints(substring($val, 0, $length + 1)) return $i - 48)" />
     <variable name="weightedSum"
       select="sum(for $i in (0 to $length - 1) return $digits[$i + 1] * (($i mod 6) + 2))" />
-    <value-of
+    <sequence
       select="number($val) &gt; 0 and (11 - ($weightedSum mod 11)) mod 11 = number(substring($val, $length + 1, 1))" />
   </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:mod97-0208" as="xs:boolean">
@@ -81,7 +81,7 @@ Last update: 2024 November release 3.0.18.
     <variable name="checkdigits" select="substring($val,9,2)" />
     <variable name="calculated_digits"
       select="xs:string(97 - (xs:integer(substring($val,1,8)) mod 97))" />
-    <value-of select="number($checkdigits) = number($calculated_digits)" />
+    <sequence select="number($checkdigits) = number($calculated_digits)" />
   </function>
   <function name="u:checkCodiceIPA" as="xs:boolean" xmlns="http://www.w3.org/1999/XSL/Transform">
     <param name="arg" as="xs:string?" />
@@ -188,7 +188,7 @@ Last update: 2024 November release 3.0.18.
   </function>
   <function xmlns="http://www.w3.org/1999/XSL/Transform" name="u:abn" as="xs:boolean">
     <param name="val" />
-    <value-of
+    <sequence
       select="(
 ((string-to-codepoints(substring($val,1,1)) - 49) * 10) +
 ((string-to-codepoints(substring($val,2,1)) - 48) * 1) +
@@ -221,7 +221,7 @@ Last update: 2024 November release 3.0.18.
 			(number($digits[3])*64) +
 			(number($digits[2])*128) +
 			(number($digits[1])*256) " />
-    <value-of select="($checksum  mod 11) mod 10 = number($digits[9])" />
+    <sequence select="($checksum  mod 11) mod 10 = number($digits[9])" />
   </function>
 
   <!-- Function for Swedish organisation numbers (0007) -->
