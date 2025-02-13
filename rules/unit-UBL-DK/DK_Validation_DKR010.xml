@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
 	<assert>
-		<description>For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and PayeeFinancialAccount/ID (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</description>
+		<description>For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and CreditAccount/AccountID (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</description>
 		<scope>DK-R-010</scope>
 	</assert>
 	
@@ -31,9 +31,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>71#1234567890123456</cbc:PaymentID>
-				<cac:PayeeFinancialAccount>
-					<cbc:ID>12345678</cbc:ID>
-				</cac:PayeeFinancialAccount>
+				<cac:CreditAccount>
+					<cbc:AccountID>12345678</cbc:AccountID>
+				</cac:CreditAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -64,9 +64,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>73#1234567890123456</cbc:PaymentID>
-				<cac:PayeeFinancialAccount>
-					<cbc:ID>12345678</cbc:ID>
-				</cac:PayeeFinancialAccount>
+				<cac:CreditAccount>
+					<cbc:AccountID>12345678</cbc:AccountID>
+				</cac:CreditAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -88,9 +88,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>75#1234567890123456</cbc:PaymentID>
-				<cac:PayeeFinancialAccount>
-					<cbc:ID>12345678</cbc:ID>
-				</cac:PayeeFinancialAccount>
+				<cac:CreditAccount>
+					<cbc:AccountID>12345678</cbc:AccountID>
+				</cac:CreditAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -122,9 +122,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>54#1234567890123456</cbc:PaymentID>
-				<cac:PayeeFinancialAccount>
-					<cbc:ID>12345678</cbc:ID>
-				</cac:PayeeFinancialAccount>
+				<cac:CreditAccount>
+					<cbc:AccountID>12345678</cbc:AccountID>
+				</cac:CreditAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -155,9 +155,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>1234567890123456</cbc:PaymentID>
-				<cac:PayeeFinancialAccount>
-					<cbc:ID>12345678</cbc:ID>
-				</cac:PayeeFinancialAccount>
+				<cac:CreditAccount>
+					<cbc:AccountID>12345678</cbc:AccountID>
+				</cac:CreditAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -188,9 +188,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>71#1234567890123456</cbc:PaymentID>
-				<cac:PayeeFinancialAccount>
-					<cbc:ID></cbc:ID>
-				</cac:PayeeFinancialAccount>
+				<cac:CreditAccount>
+					<cbc:AccountID></cbc:AccountID>
+				</cac:CreditAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -221,9 +221,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>73#1234567890123456</cbc:PaymentID>
-				<cac:PayeeFinancialAccount>
-					<cbc:ID>123456789</cbc:ID>
-				</cac:PayeeFinancialAccount>
+				<cac:CreditAccount>
+					<cbc:AccountID>123456789</cbc:AccountID>
+				</cac:CreditAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -254,9 +254,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>75#1234567890123456</cbc:PaymentID>
-				<cac:PayeeFinancialAccount>
-					<cbc:ID>1234567</cbc:ID>
-				</cac:PayeeFinancialAccount>
+				<cac:CreditAccount>
+					<cbc:AccountID>1234567</cbc:AccountID>
+				</cac:CreditAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -287,9 +287,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>71#1234567890123456</cbc:PaymentID>
-				<cac:PayeeFinancialAccount>
-					<!-- <cbc:ID>1234567</cbc:ID> -->
-				</cac:PayeeFinancialAccount>
+				<cac:CreditAccount>
+					<!-- <cbc:AccountID>1234567</cbc:AccountID> -->
+				</cac:CreditAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -320,9 +320,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>73#123456789012345</cbc:PaymentID>
-				<!-- <cac:PayeeFinancialAccount> -->
-					<!-- <cbc:ID>123456</cbc:ID> -->
-				<!-- </cac:PayeeFinancialAccount> -->
+				<!-- <cac:CreditAccount> -->
+					<!-- <cbc:AccountID>123456</cbc:AccountID> -->
+				<!-- </cac:CreditAccount> -->
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
