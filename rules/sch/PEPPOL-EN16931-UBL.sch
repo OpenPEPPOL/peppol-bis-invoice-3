@@ -550,10 +550,10 @@ Last update: 2024 November release 3.0.18.
 						and not(((substring(cbc:PaymentID, 1, 3) = '01#')
 								  or (substring(cbc:PaymentID, 1, 3) = '04#')
 								  or (substring(cbc:PaymentID, 1, 3) = '15#'))
-								and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 7)
+								and matches(cac:PayeeFinancialAccount/cbc:ID, '^[0-9]{7,8}$')
 								)
 						)"
-        flag="fatal">For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7 characters long, when payment means equals 50 (Giro)</assert>
+        flag="fatal">For Danish Suppliers PaymentID is mandatory and MUST start with 01#, 04# or 15# (kortartkode), and PayeeFinancialAccount/ID (Giro kontonummer) is mandatory and must be 7 or 8 numerical characters long, when payment means equals 50 (Giro)</assert>
       <assert id="DK-R-009"
         test="not((cbc:PaymentMeansCode = '50')
 						and ((substring(cbc:PaymentID, 1, 3) = '04#')
@@ -566,10 +566,10 @@ Last update: 2024 November release 3.0.18.
 						and not(((substring(cbc:PaymentID, 1, 3) = '71#')
 								  or (substring(cbc:PaymentID, 1, 3) = '73#')
 								  or (substring(cbc:PaymentID, 1, 3) = '75#'))
-								and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 8)
+								and (string-length(cac:CreditAccount/cbc:AccountID/text()) = 8)
 								)
 						)"
-        flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and PayeeFinancialAccount/ID (Kreditornummer) is mandatory and must be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
+        flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and CreditAccount/AccountID (Kreditornummer) is mandatory and MUST be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
       <assert id="DK-R-011"
         test="not((cbc:PaymentMeansCode = '93')
 						and ((substring(cbc:PaymentID, 1, 3) = '71#')
