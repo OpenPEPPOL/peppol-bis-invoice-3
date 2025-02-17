@@ -31,9 +31,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>71#1234567890123456</cbc:PaymentID>
-				<cac:CreditAccount>
-					<cbc:AccountID>12345678</cbc:AccountID>
-				</cac:CreditAccount>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>12345678</cbc:ID>
+				</cac:PayeeFinancialAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -64,9 +64,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>73#1234567890123456</cbc:PaymentID>
-				<cac:CreditAccount>
-					<cbc:AccountID>12345678</cbc:AccountID>
-				</cac:CreditAccount>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>12345678</cbc:ID>
+				</cac:PayeeFinancialAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -88,9 +88,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>75#1234567890123456</cbc:PaymentID>
-				<cac:CreditAccount>
-					<cbc:AccountID>12345678</cbc:AccountID>
-				</cac:CreditAccount>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>12345678</cbc:ID>
+				</cac:PayeeFinancialAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -122,9 +122,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>54#1234567890123456</cbc:PaymentID>
-				<cac:CreditAccount>
-					<cbc:AccountID>12345678</cbc:AccountID>
-				</cac:CreditAccount>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>12345678</cbc:ID>
+				</cac:PayeeFinancialAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -155,9 +155,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>1234567890123456</cbc:PaymentID>
-				<cac:CreditAccount>
-					<cbc:AccountID>12345678</cbc:AccountID>
-				</cac:CreditAccount>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>12345678</cbc:ID>
+				</cac:PayeeFinancialAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -188,9 +188,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>71#1234567890123456</cbc:PaymentID>
-				<cac:CreditAccount>
-					<cbc:AccountID></cbc:AccountID>
-				</cac:CreditAccount>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID></cbc:ID>
+				</cac:PayeeFinancialAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -221,9 +221,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>73#1234567890123456</cbc:PaymentID>
-				<cac:CreditAccount>
-					<cbc:AccountID>123456789</cbc:AccountID>
-				</cac:CreditAccount>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>123456789</cbc:ID>
+				</cac:PayeeFinancialAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -254,9 +254,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>75#1234567890123456</cbc:PaymentID>
-				<cac:CreditAccount>
-					<cbc:AccountID>1234567</cbc:AccountID>
-				</cac:CreditAccount>
+				<cac:PayeeFinancialAccount>
+					<cbc:ID>1234567</cbc:ID>
+				</cac:PayeeFinancialAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -287,9 +287,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>71#1234567890123456</cbc:PaymentID>
-				<cac:CreditAccount>
-					<!-- <cbc:AccountID>1234567</cbc:AccountID> -->
-				</cac:CreditAccount>
+				<cac:PayeeFinancialAccount>
+					<!-- <cbc:ID>1234567</cbc:AccountID> -->
+				</cac:PayeeFinancialAccount>
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
@@ -320,9 +320,9 @@
 			<cac:PaymentMeans>
 				<cbc:PaymentMeansCode name="FIK">93</cbc:PaymentMeansCode>
 				<cbc:PaymentID>73#123456789012345</cbc:PaymentID>
-				<!-- <cac:CreditAccount> -->
-					<!-- <cbc:AccountID>123456</cbc:AccountID> -->
-				<!-- </cac:CreditAccount> -->
+				<!-- <cac:PayeeFinancialAccount> -->
+					<!-- <cbc:ID>123456</cbc:AccountID> -->
+				<!-- </cac:PayeeFinancialAccount> -->
 			</cac:PaymentMeans>
 		</Invoice>
 	</test>
