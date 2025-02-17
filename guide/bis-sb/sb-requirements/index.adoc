@@ -1,7 +1,7 @@
 
 
 [[requirements]]
-= Self-billed Invoice and credit note business requirements
+= Self-billed Invoice and self-billed credit note business requirements
 
 The table below gives an overview of the business requirements from {tc434} supported by this BIS:
 

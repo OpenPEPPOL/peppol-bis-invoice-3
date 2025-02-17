@@ -2,7 +2,7 @@
 [[syntax_rules]]
 = Syntax rules
 
-The following {EN16931} syntax rules apply to invoice and credit note transaction as it is used in this {peppol} BIS.
+The following {EN16931} syntax rules apply to self-billed invoice and self-billed credit note transaction as it is used in this {peppol} BIS.
 
 .EN 16931 syntax rules
 [cols="1,4", options="header"]

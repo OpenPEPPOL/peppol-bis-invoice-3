@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>Peppol BIS SelfBilling 3.0</Name>
+    <Name>Peppol BIS Self-Billing 3.0</Name>
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
 
     <!-- Documentation -->
-    <!--<Resource>
-        <Type>Doc-1</Type>
-        <Path>bis/</Path>
-        <Title>BIS Billing – Business Interoperability Specifications (BIS)</Title>
-    </Resource> -->
     <Resource>
         <Type>Doc-1</Type>
         <Path>bis-sb/</Path>
@@ -30,16 +25,6 @@
     </Resource>
 
     <!-- Syntax -->
-    <!-- <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/ubl-invoice.xml</Path>
-        <Title>UBL Invoice</Title>
-    </Resource>
-    <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/ubl-creditnote.xml</Path>
-        <Title>UBL Credit Note</Title>
-    </Resource> -->
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-selfbilledinvoice.xml</Path>
@@ -57,16 +42,10 @@
         <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
         <Title>EN16931 model bound to UBL</Title>
     </Resource>
-    <!-- <Resource>
-        <Identifier>ubl-peppol</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
-        <Title>Rules for Peppol BIS 3.0 Billing</Title>
-    </Resource> -->
     <Resource>
         <Identifier>ubl-peppol-sb</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/PEPPOL-EN16931-sb-UBL.sch</Path>
+        <Path>rules/sch/PEPPOL-EN16931-UBL-SB.sch</Path>
         <Title>Rules for Peppol BIS 3.0 Self-Billing</Title>
     </Resource>
     
@@ -99,14 +78,6 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL7143.xml</Path>
     </Resource>
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL1001-inv.xml</Path>
-    </Resource> -->
-    <!-- <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL1001-cn.xml</Path>
-    </Resource>  -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1001-sbinv.xml</Path>
@@ -150,21 +121,13 @@
 
 
     <!-- Files -->
-    
-    <!-- <Resource>
-        <Type>native:File</Type>
-        <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
-        <Title>Schematron for PEPPOL rules (UBL)</Title>
-        <Description>Schematron file containing rules according to ISO Schematron. </Description>
-        <Property key="download">PEPPOL-EN16931-UBL.sch</Property>
-    </Resource> -->
 
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/PEPPOL-EN16931-sb-UBL.sch</Path>
+        <Path>rules/sch/PEPPOL-EN16931-UBL-SB.sch</Path>
         <Title>Schematron for Self-Billing PEPPOL rules (UBL)</Title>
         <Description>Schematron file containing rules according to ISO Schematron. </Description>
-        <Property key="download">PEPPOL-EN16931-sb-UBL.sch</Property>
+        <Property key="download">PEPPOL-EN16931-UBL-SB.sch</Property>
     </Resource>
 
     <Resource>
@@ -177,23 +140,16 @@
 
     <Resource>
         <Type>native:File</Type>
-        <Path>stylesheet/stylesheet-ubl.xslt</Path>
+        <Path>stylesheet/stylesheet-ubl-sb.xslt</Path>
         <Title>Stylesheet for UBL instances</Title>
-        <Property key="download">stylesheet-ubl.xslt</Property>
+        <Property key="download">stylesheet-ubl-sb.xslt</Property>
     </Resource>
 
     <Resource>
         <Type>native:File</Type>
         <Path>project.xml</Path>
         <Title>Example files</Title>
-        <Property key="download">BIS-Billing3-Examples.zip</Property>
-        <Property key="filename">BIS-Billing3-Examples.zip</Property>
+        <Property key="download">BIS-SelfBilling-Examples.zip</Property>
+        <Property key="filename">BIS-SelfBilling-Examples.zip</Property>
     </Resource>		
-    
-    <!-- <Resource>
-        <Type>native:File</Type>
-        <Path>mapping/mapping-cii-ubl.xls</Path>
-        <Title>Excel mappling table cii to ubl</Title>
-        <Property key="download">mapping-cii-ubl.xls</Property>
-    </Resource> -->
 </Project>

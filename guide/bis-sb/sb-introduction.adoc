@@ -1,7 +1,7 @@
 
+[preface]
 = Introduction to openPeppol and BIS
 
-[preface]
 This {peppol} BIS provides a set of specifications for implementing a {peppol} business process. The document is concerned with clarifying requirements for ensuring interoperability of pan-European Public eProcurement and provides guidelines for the support and implementation of these requirements.
 
 This specification is a Core Invoice Usage Specification (CIUS) of {EN16931}, following the guidance given in chapter 7 of the {EN16931}. Any instance documents following this CIUS will always be compliant with the European Standard ({EN16931}).
@@ -13,11 +13,11 @@ regarding the billing process based on these formats.
 ****
 This Peppol Business Interoperability Specification (Peppol BIS) document is a Core Invoice Usage Specification (CIUS) based on CEN/EN 16931:2017. The restrictions on CEN/EN 16931:2017 implemented in this Peppol BIS appear from the conformance statement provided in appendix A.
 
-The copyright of CEN/EN 16931:2107 is owned by CEN and its members - the European National Standards Bodies. A copy of CEN/EN 16931-1:2017 may be obtained free of charge from any CEN member.
+The copyright of CEN/EN 16931:2017 is owned by CEN and its members - the European National Standards Bodies. A copy of CEN/EN 16931-1:2017 may be obtained free of charge from any CEN member.
 
 OpenPeppol AISBL holds the copyright of this Peppol BIS, developed and published subject to the conditions of the agreement between the European Commission and CEN allowing derivate works to be developed and distributed with no additional licensing requirements. CEN and the National  Standards Bodies bears no liability from the content and implementation of this Peppol BIS.
 
-This Peppol BIS document may not be modified, re-distribute, sold or repackaged in any other way without the prior consent of OpenPeppol AISBL.
+This Peppol BIS document may not be modified, re-distributed, sold or repackaged in any other way without the prior consent of OpenPeppol AISBL.
 ****
 
 == Document Structure
@@ -29,7 +29,7 @@ This document is structured as follows:
 *	*Chapters 7 - 9* describes VAT, calculations and rounding.
 *	*Chapter 10* provides examples of selected parts of the invoice
 *	*Chapter 11* gives details and links to all code lists used
-* *Chapter 12* gives information on Peppol identifiers
+*   *Chapter 12* gives information on Peppol identifiers
 *	*Chapter 13* describes in detail central information elements.
 *	*Chapters 14 and 15* provides information on validation and validation rules
 *	*Annexes* give information on restrictions according to {EN16931}, use of Cross Industry Invoice syntax and national and syntax rules.
@@ -40,7 +40,7 @@ This document is concerned with clarifying requirements for ensuring interoperab
 
 == Audience
 
-The audience for this document are organisations wishing to be Peppol enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
+The audience for this document are organizations wishing to be Peppol enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organizations may be:
 
      * Service providers
      * Contracting Authorities (CA)

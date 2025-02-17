@@ -23,17 +23,19 @@ REM CEN-EN16931-UBL
 docker run --rm -i -v "%PROJECT%:/src" -v "%PROJECT%target/generated:/target" --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/CEN-EN16931-UBL.sch -q:tools/xquery/rules_asciidoc_cen.xquery -o:/target/CEN-EN16931-UBL-GENERAL.sch.adoc
 docker run --rm -i -v "%PROJECT%:/src" -v "%PROJECT%target/generated:/target" --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/CEN-EN16931-UBL.sch -q:tools/xquery/rules_asciidoc_cen_syntax.xquery -o:/target/CEN-EN16931-UBL-SYNTAX.sch.adoc
 
-REM PEPPOL-EN16931-UBL
-docker run --rm -i -v "%PROJECT%:/src" -v "%PROJECT%target/generated:/target" --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/PEPPOL-EN16931-UBL.sch -q:tools/xquery/rules_asciidoc_peppol.xquery -o:/target/PEPPOL-EN16931-UBL-GENERAL.sch.adoc
-docker run --rm -i -v "%PROJECT%:/src" -v "%PROJECT%target/generated:/target" --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/PEPPOL-EN16931-UBL.sch -q:tools/xquery/rules_asciidoc_peppol_national.xquery -o:/target/PEPPOL-EN16931-UBL-NATIONAL.sch.adoc
-
-REM PEPPOL-EN16931-SB-UBL
-docker run --rm -i -v "%PROJECT%:/src" -v "%PROJECT%target/generated:/target" --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/PEPPOL-EN16931-sb-UBL.sch -q:tools/xquery/rules_asciidoc_peppol.xquery -o:/target/PEPPOL-EN16931-UBL-SB-GENERAL.sch.adoc
-docker run --rm -i -v "%PROJECT%:/src" -v "%PROJECT%target/generated:/target" --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/PEPPOL-EN16931-sb-UBL.sch -q:tools/xquery/rules_asciidoc_peppol_national.xquery -o:/target/PEPPOL-EN16931-SB-UBL-NATIONAL.sch.adoc
+REM PEPPOL-EN16931-UBL-SB
+docker run --rm -i -v "%PROJECT%:/src" -v "%PROJECT%target/generated:/target" --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/PEPPOL-EN16931-UBL-SB.sch -q:tools/xquery/rules_asciidoc_peppol.xquery -o:/target/PEPPOL-EN16931-UBL-SB-GENERAL.sch.adoc
+docker run --rm -i -v "%PROJECT%:/src" -v "%PROJECT%target/generated:/target" --entrypoint java klakegg/saxon:9.8.0-7 -cp /saxon.jar net.sf.saxon.Query -s:/src/rules/sch/PEPPOL-EN16931-UBL-SB.sch -q:tools/xquery/rules_asciidoc_peppol_national.xquery -o:/target/PEPPOL-EN16931-UBL-SB-NATIONAL.sch.adoc
 
 REM Example files
-docker run --rm -i -v "%PROJECT%target/site/files:/src" alpine:3.6 rm -rf /src/BIS-Billing3-Examples.zip
-docker run --rm -i -v "%PROJECT%rules/examples:/src" -v "%PROJECT%target/site/files:/target" -w /src kramos/alpine-zip -r /target/BIS-Billing3-Examples.zip .
+set zip="%PROJECT%\target\site\files\BIS-SelfBilling-Examples.zip"
+if exist %zip% (
+    echo remove %zip%
+    del %zip%
+)
+powershell -command "Compress-Archive -Path '%PROJECT%/rules/examples/Self-billing examples/*' -DestinationPath '%PROJECT%/target/site/files/BIS-SelfBilling-Examples.zip' -Force"
+rem docker run --rm -i -v "%PROJECT%target/site/files:/src" alpine:3.6 rm -rf /src/BIS-SelfBilling-Examples.zip
+rem docker run --rm -i -v "%PROJECT%rules/examples:/src" -v "%PROJECT%target/site/files:/target" -w /src kramos/alpine-zip -r /target/BIS-SelfBilling-Examples.zip .
 
 REM Guides
 docker run --rm -i -v "%PROJECT%:/documents" -v "%PROJECT%target:/target" difi/asciidoctor

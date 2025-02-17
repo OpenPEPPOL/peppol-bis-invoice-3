@@ -21,4 +21,10 @@ include::../../../syntax/codelists/inv-type.adoc[]
 |
 | Invoice
 
+| 527
+| Self billed debit note
+| An invoice the invoicee is producing instead of the seller.
+|
+| Invoice
+
 |===

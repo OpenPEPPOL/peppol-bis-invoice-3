@@ -1,8 +1,8 @@
 
 = VAT Reporting
 
-The self-billed invoice is used to carry VAT related information from the Seller to the Buyer to enable the Buyer and Seller to correctly handle VAT booking and reporting. An self-billed invoice should contain sufficient information to enable the Buyer and any auditor to determine whether the self-billed invoice is correct from a VAT point of view.
+The self-billed invoice is used to carry VAT related information from the Seller to the Buyer to enable the Buyer and Seller to correctly handle VAT booking and reporting. A self-billed invoice should contain sufficient information to enable the Seller and any auditor to determine whether the self-billed invoice is correct from a VAT point of view.
 
 The self-billed invoice shall allow the determination of the VAT regime, the calculation and description of the tax, in accordance with the {VAT-dir} and subsequent amendments.
 
-Detailed requirements for supporing accounting functionality can be found at <<vatreq>>
+Detailed requirements for supporting accounting functionality can be found at <<vatreq>>

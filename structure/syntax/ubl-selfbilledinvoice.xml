@@ -8,7 +8,7 @@
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
-    <Rules type="schematron">../../rules/sch/PEPPOL-EN16931-UBL.sch</Rules>
+    <Rules type="schematron">../../rules/sch/PEPPOL-EN16931-UBL-SB.sch</Rules>
     <Rules type="schematron">../../rules/sch/CEN-EN16931-UBL.sch</Rules>
 
     <Document>
@@ -302,7 +302,7 @@
         </Element>
 
 
-        <Include>part/additional-docs.xml</Include>
+        <Include>part-sb/additional-docs.xml</Include>
 
 
 
@@ -321,15 +321,15 @@
         </Element>
 
 
-        <Include>part/supplier-party-sb.xml</Include>
+        <Include>part-sb/supplier-party.xml</Include>
 
-        <Include>part/customer-party-sb.xml</Include>
+        <Include>part-sb/customer-party.xml</Include>
 
-        <Include>part/payee-party.xml</Include>
+        <Include>part-sb/payee-party.xml</Include>
 
-        <Include>part/taxrep-party.xml</Include>
+        <Include>part-sb/taxrep-party.xml</Include>
 
-        <Include>part/delivery.xml</Include>
+        <Include>part-sb/delivery.xml</Include>
 
         <Element cardinality="0..n">
             <Term>cac:PaymentMeans</Term>
@@ -370,11 +370,11 @@
                 <Value type="EXAMPLE">432948234234234</Value>
             </Element>
 
-            <Include>part/card-payment.xml</Include>
+            <Include>part-sb/card-payment.xml</Include>
 
-            <Include>part/credit-transfer.xml</Include>
+            <Include>part-sb/credit-transfer.xml</Include>
 
-            <Include>part/payment-mandate.xml</Include>
+            <Include>part-sb/payment-mandate.xml</Include>
 
         </Element>
 
@@ -396,11 +396,11 @@
             </Element>
         </Element>
 
-        <Include>part/allowance-charge.xml</Include>
+        <Include>part-sb/allowance-charge.xml</Include>
 
-        <Include>part/tax-total.xml</Include>
+        <Include>part-sb/tax-total.xml</Include>
 
-        <Include>part/monetary-totals.xml</Include>
+        <Include>part-sb/monetary-totals.xml</Include>
 
 
 
@@ -490,7 +490,7 @@
                 <Value type="EXAMPLE">1287:65464</Value>
             </Element>
 
-            <Include>part/line-period.xml</Include>
+            <Include>part-sb/line-period.xml</Include>
 
 
 
@@ -542,11 +542,11 @@
 
             </Element>
 
-            <Include>part/line-allowance-charge.xml</Include>
+            <Include>part-sb/line-allowance-charge.xml</Include>
 
-            <Include>part/item.xml</Include>
+            <Include>part-sb/item.xml</Include>
 
-            <Include>part/price.xml</Include>
+            <Include>part-sb/price.xml</Include>
 
         </Element>
     </Document>

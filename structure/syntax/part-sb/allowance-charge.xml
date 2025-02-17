@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..n">
+
+        <Term>cac:AllowanceCharge</Term>
+        <Name>DOCUMENT LEVEL ALLOWANCES AND CHARGES</Name>
+        <Description>A group of business terms providing information about allowances applicable to the Invoice as a
+            whole. A group of business terms providing information about charges and taxes other than VAT, applicable
+            to the Invoice as a whole.
+        </Description>
+        <Reference type="BUSINESS_TERM">BG-20, BG-21</Reference>
+        
+        
+        <Element>
+            <Term>cbc:ChargeIndicator</Term>
+            <Description>Use “true” when informing about Charges and “false” when informing about
+                Allowances.
+            </Description>
+            <Value type="EXAMPLE">false</Value>
+            <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
+
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:AllowanceChargeReasonCode</Term>
+            <Name>Document level allowance or charge reason code</Name>
+            <Description>The reason for the document level allowance or charge, expressed as a code. For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies.
+                The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">BT-98, BT-105</Reference>
+            <Reference type="CODE_LIST">UNCL5189</Reference>
+            <Reference type="RULE">BR-33</Reference>
+            <Reference type="RULE">BR-38</Reference>
+            <Reference type="RULE">BR-CO-05</Reference>
+            <Reference type="RULE">BR-CO-06</Reference>
+            <Reference type="RULE">BR-CO-21</Reference>
+            <Reference type="RULE">BR-CO-22</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-CL003</Reference>
+            <Reference type="CODE_LIST">UNCL7161</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-CL002</Reference>
+            <!--Reference type="RULE">DK-R-004</Reference-->
+            <Reference type="RULE">BR-CL-19</Reference>
+            <Reference type="RULE">BR-CL-20</Reference>
+            <Value type="EXAMPLE">95</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:AllowanceChargeReason</Term>
+            <Name>Document level allowance or charge reason</Name>
+            <Description>The reason for the document level allowance or charge, expressed as text.
+                The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-97, BT-104</Reference>
+            <Reference type="RULE">BR-33</Reference>
+            <Reference type="RULE">BR-38</Reference>
+            <Reference type="RULE">BR-CO-05</Reference>
+            <Reference type="RULE">BR-CO-06</Reference>
+            <Reference type="RULE">BR-CO-21</Reference>
+            <Reference type="RULE">BR-CO-22</Reference>
+            <!--Reference type="RULE">DK-R-004</Reference-->
+            <Value type="EXAMPLE">Discount</Value>
+            
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:MultiplierFactorNumeric</Term>
+            <Name>Document level allowance or charge percentage</Name>
+            <Description>The percentage that may be used, in conjunction with the document level allowance base amount, to
+                calculate the document level allowance or charge amount. To state 20%, use value 20.
+            </Description>
+            <DataType>Percentage</DataType>
+            <Reference type="BUSINESS_TERM">BT-94,BT-101</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R042</Reference>
+            <Value type="EXAMPLE">20</Value>
+        </Element>
+        
+        <Element>
+            <Term>cbc:Amount</Term>
+            <Name>Document level allowance or charge amount</Name>
+            <Description>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals
+            </Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-92,BT-99</Reference>
+            <Reference type="RULE">BR-31</Reference>
+            <Reference type="RULE">BR-36</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R040</Reference>
+            <Reference type="RULE">BR-DEC-01</Reference>
+            <Reference type="RULE">BR-DEC-05</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            <Value type="EXAMPLE">200</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:BaseAmount</Term>
+            <Name>Document level allowance or charge base amount</Name>
+            <Description>The base amount that may be used, in conjunction with the document level allowance or charge percentage, to
+                calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals
+            </Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">BT-93,BT-100</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R041</Reference>
+            <Reference type="RULE">BR-DEC-02</Reference>
+            <Reference type="RULE">BR-DEC-06</Reference>
+            <Reference type="RULE">UBL-DT-01</Reference>
+            <Reference type="RULE">BR-CL-03</Reference>
+            
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use BT-5</Description>
+                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
+                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            
+            <Value type="EXAMPLE">1000</Value>
+            
+        </Element>
+    <Element>
+        <Term>cac:TaxCategory</Term>
+        <Name>TAX CATEGORY</Name>
+        
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Document level allowance or charge VAT category code</Name>
+            <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">BT-95,BT-102</Reference>
+            <Reference type="RULE">BR-32</Reference>
+            <Reference type="RULE">BR-37</Reference>
+            <Reference type="RULE">BR-O-13</Reference>
+            <Reference type="RULE">BR-O-14</Reference>
+            <Reference type="RULE">BR-CL-17</Reference>
+            <!--Reference type="RULE">DE-R-016</Reference-->
+            <Reference type="CODE_LIST">UNCL5305</Reference>
+            <Value type="EXAMPLE">S</Value>
+            
+            
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:Percent</Term>
+            <Name>Document level allowance or charge VAT rate</Name>
+            <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
+            <DataType>Percentage</DataType>
+            <Reference type="BUSINESS_TERM">BT-96,BT-103</Reference>
+            <Reference type="RULE">BR-S-06</Reference>
+            <Reference type="RULE">BR-S-07</Reference>
+            <Reference type="RULE">BR-Z-06</Reference>
+            <Reference type="RULE">BR-Z-07</Reference>
+            <Reference type="RULE">BR-E-06</Reference>
+            <Reference type="RULE">BR-E-07</Reference>
+            <Reference type="RULE">BR-AE-06</Reference>
+            <Reference type="RULE">BR-AE-07</Reference>
+            <Reference type="RULE">BR-IC-06</Reference>
+            <Reference type="RULE">BR-IC-07</Reference>
+            <Reference type="RULE">BR-G-06</Reference>
+            <Reference type="RULE">BR-G-07</Reference>
+            <Reference type="RULE">BR-O-06</Reference>
+            <Reference type="RULE">BR-O-07</Reference>
+            <Reference type="RULE">BR-IG-06</Reference>
+            <Reference type="RULE">BR-IG-07</Reference>
+            <Reference type="RULE">BR-IP-06</Reference>
+            <Reference type="RULE">BR-IP-07</Reference>
+            <!--Reference type="RULE">SE-R-006</Reference-->
+            <Value type="EXAMPLE">25</Value>
+            
+        </Element>
+        
+        <Element>
+            <Term>cac:TaxScheme</Term>
+            <Name>TAX SCHEME</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Description>Mandatory element. Use “VAT”</Description>
+                <Value type="DEFAULT">VAT</Value>
+            </Element>
+        </Element>
+    </Element>
+
+</Element>
+        

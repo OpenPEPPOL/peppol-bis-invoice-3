@@ -12,5 +12,5 @@ Please also see <<Restrictions on EN16931>> for further details on the restricti
 |Rule
 |Message/Context/Test
 
-include::{rules-dir}/PEPPOL-EN16931-UBL-GENERAL.sch.adoc[]
+include::{rules-dir}/PEPPOL-EN16931-UBL-SB-GENERAL.sch.adoc[]
 |====

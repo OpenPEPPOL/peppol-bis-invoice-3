@@ -1,0 +1,40 @@
+
+
+.UBL example of invoice to be corrected
+[source, xml, indent=0]
+----
+include::{snippet-dir}/base-example.xml[tags=negative]
+----
+<1> Charge amount
+<2> Invoice line 1 with positive quantity and line amount
+<3> Invoice line 2 with negative quantity and line amount
+
+== When crediting by means of credit note
+
+The function of crediting or debiting is controlled merely by the business document type (e.g. 389 or 261) while the representation of the amount, including its sign, is not affected.
+
+.UBL example of credit note correcting the example invoice above
+[source, xml, indent=0]
+----
+include::{snippet-dir}/base-creditnote-correction.xml[tags=negative]
+----
+<1> Code 261 indicating a credit note
+<2> Charge amount
+<3> Invoice line 1 with positive quantity and line amount
+<4> Invoice line 2 with negative quantity and line amount
+
+== When crediting by means of negative invoice
+
+The function of crediting or debiting is controlled merely by the sign (i.e. plus sign or minus sign) of the amount concerned, while the business document type (e.g. 389) has no relevance on the operation (“to credit”) itself.
+
+.UBL example of negative invoice correcting the example invoice above
+[source, xml, indent=0]
+----
+include::{snippet-dir}/base-negative-inv-correction.xml[tags=negative]
+----
+<1> Code 389 indicating an invoice
+<2> Charge amount is negative to correct the original invoice
+<3> All document level amounts are negative
+<4> Invoice line 1 with originally positive quantity and line amount, now both negative
+<5> Price amount must always be positive, and is not changed
+<6> Invoice line 2 with originally negative quantity and line amount, now positive

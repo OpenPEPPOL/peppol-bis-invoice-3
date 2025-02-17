@@ -3,7 +3,7 @@
 
     <Term>ubl-creditnote</Term>
     <Name>PEPPOL Credit Note 3.0</Name>
-    <Description>Please note that all element names are inhereted from EN16931 and naming use the term invoice, but this covers both invoice and credit notes. 
+    <Description>Please note that all element names are inherited from EN16931 and naming use the term invoice, but this covers both self-billed invoice and self-billed credit notes. 
     The tag names are correct according to the UBL Credit note schema
     </Description>
 
@@ -11,7 +11,7 @@
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
-    <Rules type="schematron">../../rules/sch/PEPPOL-EN16931-UBL.sch</Rules>
+    <Rules type="schematron">../../rules/sch/PEPPOL-EN16931-UBL-SB.sch</Rules>
     <Rules type="schematron">../../rules/sch/CEN-EN16931-UBL.sch</Rules>
 
     <Document>
@@ -307,7 +307,7 @@
                 The additional supporting documents can be used for both referencing a document number which is expected to be known by the receiver, 
                 an external document (referenced by a URL) or as an embedded document, Base64 encoded (such as a time report).</Description>
             <Reference type="BUSINESS_TERM">BG-24</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
+            <!-- Reference type="RULE">PEPPOL-EN16931-R006</Reference-->
             <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
             
             <Element>
@@ -420,15 +420,15 @@
         </Element>
 
 
-        <Include>part/supplier-party-sb.xml</Include>
+        <Include>part-sb/supplier-party.xml</Include>
 
-        <Include>part/customer-party-sb.xml</Include>
+        <Include>part-sb/customer-party.xml</Include>
 
-        <Include>part/payee-party.xml</Include>
+        <Include>part-sb/payee-party.xml</Include>
 
-        <Include>part/taxrep-party.xml</Include>
+        <Include>part-sb/taxrep-party.xml</Include>
 
-        <Include>part/delivery.xml</Include>
+        <Include>part-sb/delivery.xml</Include>
 
 
 
@@ -490,11 +490,11 @@
             </Element>
 
 
-            <Include>part/card-payment.xml</Include>
+            <Include>part-sb/card-payment.xml</Include>
 
-            <Include>part/credit-transfer.xml</Include>
+            <Include>part-sb/credit-transfer.xml</Include>
 
-            <Include>part/payment-mandate.xml</Include>
+            <Include>part-sb/payment-mandate.xml</Include>
 
         </Element>
 
@@ -516,11 +516,11 @@
         </Element>
 
 
-        <Include>part/allowance-charge.xml</Include>
+        <Include>part-sb/allowance-charge.xml</Include>
 
-        <Include>part/tax-total.xml</Include>
+        <Include>part-sb/tax-total.xml</Include>
 
-        <Include>part/monetary-totals.xml</Include>
+        <Include>part-sb/monetary-totals.xml</Include>
 
 
         <Element cardinality="1..n">
@@ -612,7 +612,7 @@
                 <Value type="EXAMPLE">1287:65464</Value>
             </Element>
             
-            <Include>part/line-period.xml</Include>
+            <Include>part-sb/line-period.xml</Include>
 
            
 
@@ -664,11 +664,11 @@
 
             </Element>
 
-            <Include>part/line-allowance-charge.xml</Include>
+            <Include>part-sb/line-allowance-charge.xml</Include>
             
-            <Include>part/item.xml</Include>
+            <Include>part-sb/item.xml</Include>
             
-            <Include>part/price.xml</Include>
+            <Include>part-sb/price.xml</Include>
       
 
          

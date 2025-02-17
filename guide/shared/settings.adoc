@@ -3,6 +3,7 @@
 //links used in the BIS document
 :link-examples: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/rules/examples[Example files]
 :link-snippets: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/rules/snippets[Snippet files]
+:link-snippets-sb: https://github.com/OpenPEPPOL/peppol-bis-invoice-3/tree/master/rules/snippets-sb[Snippet files]
 
 :ubl-invoice-mapping: link:../syntax/ubl-invoice/tree/[UBL Invoice message table]
 
@@ -15,7 +16,7 @@
 :policy8: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[Peppol Policy for identifiers, policy 8]
 :migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPeppol Migration Policy]
 :link-transaction: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/transaction-spec/[Peppol Invoice transaction specification]
-:eas: link:/poacc/billing/3.0/codelist/eas/[Code list for electronic address]
+:eas: link:/poacc/self-billing/3.0/codelist/eas/[Code list for electronic address]
 
 //CEN
 :CEN: https://www.cen.eu/Pages/default.aspx[CEN]

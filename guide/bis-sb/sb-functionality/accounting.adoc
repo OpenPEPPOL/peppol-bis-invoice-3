@@ -1,6 +1,6 @@
 
 = Accounting
 
-Recording a business transaction into the financial accounts of an organization is one of the main objectives of the self-billed invoice. According to financial accounting best practice and VAT rules every Taxable person shall keep accounts in sufficient detail for VAT to be applied and its application checked by the tax authorities. For that reason, an self-billed invoice shall provide for the information at document and line level that enables booking on both the debit and the credit side.
+Recording a business transaction into the financial accounts of an organization is one of the main objectives of the self-billed invoice. According to financial accounting best practice and VAT rules every Taxable person shall keep accounts in sufficient detail for VAT to be applied and its application checked by the tax authorities. For that reason, a self-billed invoice shall provide for the information at document and line level that enables booking on both the debit and the credit side.
 
-Detailed requirements for supporing accounting functionality can be found at <<accountingreq>>
+Detailed requirements for supporting accounting functionality can be found at <<accountingreq>>

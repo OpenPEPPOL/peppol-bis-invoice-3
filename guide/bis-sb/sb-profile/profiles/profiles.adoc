@@ -2,4 +2,4 @@
 // :leveloffset: +1
 
 include::../../../shared/profiles/info.adoc[]
-include::sb-profile-id.adoc[]
+include::./sb-profile-id.adoc[]

@@ -1,87 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
-  <package url="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL BIS Billing 3.0</package>
+  <package url="http://docs.peppol.eu/poacc/self-billing/3.0/">PEPPOL BIS Self Billing 3.0</package>
 
   <testfolder>examples</testfolder>
-  <testfolder>snippets</testfolder>
-  <testfolder>unit-CII-PEPPOL</testfolder>
-  <testfolder>unit-CII-NO</testfolder>
-  <testfolder>unit-CII-IT</testfolder>  
-  <testfolder>unit-CII-DK</testfolder> 
-  <testfolder>unit-CII-SE</testfolder>  
-  <testfolder>unit-CII-NL</testfolder>  
-  <testfolder>unit-UBL-PEPPOL</testfolder>
-  <testfolder>unit-UBL-NO</testfolder>
-  <testfolder>unit-UBL-IT</testfolder> 
-  <testfolder>unit-UBL-DK</testfolder> 
-  <testfolder>unit-UBL-DE</testfolder>
-  <testfolder>unit-UBL-SE</testfolder> 
-  <testfolder>unit-UBL-GR</testfolder>
-  <testfolder>unit-UBL-NL</testfolder>
+  <testfolder>snippets-sb</testfolder>
+  <testfolder>unit-UBL-PEPPOL-SB</testfolder>
 
   <!-- Billing -->
   <!-- CII -->
-
-  <configuration>
-    <identifier>peppolbis-en16931-cen-cii</identifier>
-    <title>CEN TC434 UBL</title>
-    <file path="sch/CEN-EN16931-CII.sch"/>
-  </configuration>
-
-  <configuration>
-    <identifier>peppolbis-en16931-base-3.0-cii</identifier>
-    <title>PEPPOL BIS Billing 3.0 (Base)</title>
-    <file path="sch/PEPPOL-EN16931-CII.sch"/>
-  </configuration>
-
-  <configuration>
-    <identifier>peppolbis-en16931-01-3.0-cii</identifier>
-    <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
-    <declaration type="xml.uncefact">CrossIndustryInvoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0::urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
-    <inherit>uncefact-d16b-cii-uncoupled</inherit>
-    <inherit>peppolbis-en16931-cen-cii</inherit>
-    <inherit>peppolbis-en16931-base-3.0-cii</inherit>
-  </configuration>
-
   <!-- UBL -->
 
   <configuration>
     <identifier>peppolbis-en16931-cen-ubl</identifier>
     <title>CEN TC434 UBL</title>
-    <file path="sch/CEN-EN16931-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
-  </configuration>
-
-  <configuration>
-    <identifier>peppolbis-en16931-base-3.0-ubl</identifier>
-    <title>PEPPOL BIS Billing 3.0 (Base)</title>
-    <file path="sch/PEPPOL-EN16931-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <file path="sch/CEN-EN16931-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/self-billing/3.0/rules/{}/"/>
   </configuration>
 
   <configuration>
     <identifier>peppolbis-en16931-stylesheet-3.0-ubl</identifier>
-    <title>PEPPOL BIS Billing 3.0 Stylesheet</title>
-    <stylesheet identifier="peppol-bis-billing-v3-ubl" source="../stylesheet/stylesheet-ubl.xslt" path="stylesheet/stylesheet-ubl.xslt"/>
-  </configuration>
-
-  <configuration>
-    <identifier>peppolbis-en16931-01-3.0-ubl-invoice</identifier>
-    <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
-    <declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
-    <inherit>ubl-invoice-2.1</inherit>
-    <inherit>peppolbis-en16931-cen-ubl</inherit>
-    <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
-    <inherit>peppolbis-en16931-stylesheet-3.0-ubl</inherit>
-  </configuration>
-
-  <configuration>
-    <identifier>peppolbis-en16931-01-3.0-ubl-creditnote</identifier>
-    <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
-    <declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017:poacc:billing:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</declaration>
-    <inherit>ubl-creditnote-2.1</inherit>
-    <inherit>peppolbis-en16931-cen-ubl</inherit>
-    <inherit>peppolbis-en16931-base-3.0-ubl</inherit>
-    <inherit>peppolbis-en16931-stylesheet-3.0-ubl</inherit>
+    <title>PEPPOL BIS Self Billing 3.0 Stylesheet</title>
+    <stylesheet identifier="peppol-bis-billing-v3-ubl" source="../stylesheet/stylesheet-ubl-sb.xslt" path="stylesheet/stylesheet-ubl-sb.xslt"/>
   </configuration>
 
  <!-- Self-Billing -->
@@ -90,17 +29,27 @@
   <configuration>
     <identifier>peppolbis-en16931-sbbase-3.0-ubl</identifier>
     <title>PEPPOL BIS Self-Billing 3.0 (Base)</title>
-    <file path="sch/PEPPOL-EN16931-sb-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <file path="sch/PEPPOL-EN16931-UBL-SB.sch" infoUrl="http://docs.peppol.eu/poacc/self-billing/3.0/rules/{}/"/>
   </configuration>
   
   <configuration>
-    <identifier>peppolbis-en16931-3.0-ubl-sbinvoice</identifier>
+    <identifier>peppolbis-en16931-01-3.0-ubl-sbinvoice</identifier>
     <title>PEPPOL BIS Self-Billing 3.0 (Profile)</title>
     <declaration type="xml.ubl">Invoice::urn:fdc:peppol.eu:2017:poacc:selfbilling:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:selfbilling:3.0</declaration>
     <inherit>ubl-invoice-2.1</inherit>
     <inherit>peppolbis-en16931-cen-ubl</inherit>
     <inherit>peppolbis-en16931-sbbase-3.0-ubl</inherit>
-    <inherit>peppolbis-en16931-stylesheet-3.0-ubl</inherit>
+    <inherit>peppolbis-en16931-stylesheet-3.0-ubl-sb</inherit>
+  </configuration>
+
+  <configuration>
+    <identifier>peppolbis-en16931-01-3.0-ubl-sbcreditnote</identifier>
+    <title>PEPPOL BIS Billing 3.0 (Profile 01)</title>
+    <declaration type="xml.ubl">CreditNote::urn:fdc:peppol.eu:2017:poacc:selfbilling:01:1.0#urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:selfbilling:3.0</declaration>
+    <inherit>ubl-creditnote-2.1</inherit>
+    <inherit>peppolbis-en16931-cen-ubl</inherit>
+    <inherit>peppolbis-en16931-sbbase-3.0-ubl</inherit>
+    <inherit>peppolbis-en16931-stylesheet-3.0-ubl-sb</inherit>
   </configuration>
 
 </buildConfigurations>

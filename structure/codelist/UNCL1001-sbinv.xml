@@ -12,5 +12,10 @@
         <Name>Self-billed invoice</Name>
         <Description>An invoice the invoicee is producing instead of the seller.</Description>
     </Code>
+         <Code>
+        <Id>527</Id>
+        <Name>Self billed debit note</Name>
+        <Description>An invoice the invoicee is producing instead of the seller.</Description>
+    </Code>
 
 </CodeList>
