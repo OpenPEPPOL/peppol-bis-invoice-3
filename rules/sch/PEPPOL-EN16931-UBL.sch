@@ -566,7 +566,7 @@ Last update: 2024 November release 3.0.18.
 						and not(((substring(cbc:PaymentID, 1, 3) = '71#')
 								  or (substring(cbc:PaymentID, 1, 3) = '73#')
 								  or (substring(cbc:PaymentID, 1, 3) = '75#'))
-								and (string-length(cac:CreditAccount/cbc:AccountID/text()) = 8)
+								and (string-length(cac:PayeeFinancialAccount/cbc:ID/text()) = 8)
 								)
 						)"
         flag="fatal">For Danish Suppliers the PaymentID is mandatory and MUST start with 71#, 73# or 75# (kortartkode) and CreditAccount/AccountID (Kreditornummer) is mandatory and MUST be exactly 8 characters long, when Payment means equals 93 (FIK)</assert>
