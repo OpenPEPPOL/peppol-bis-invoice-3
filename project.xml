@@ -153,10 +153,10 @@
         <Property key="filename">BIS-Billing3-Examples.zip</Property>
     </Resource>		
     
-    <Resource>
+    <!--Resource>
         <Type>native:File</Type>
         <Path>mapping/mapping-cii-ubl.xls</Path>
-        <Title>Excel mappling table cii to ubl</Title>
+        <Title>Excel mapping table cii to ubl</Title>
         <Property key="download">mapping-cii-ubl.xls</Property>
-    </Resource>
+    </Resource-->
 </Project>

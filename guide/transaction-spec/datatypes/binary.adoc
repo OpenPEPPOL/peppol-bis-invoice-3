@@ -1,7 +1,7 @@
 
 = Binary objects
 
-Binary objects can be used to describe files which are transmitted together with the Invoice. The attachment functionality is not intended for of including a copy of the invoice in an image format (such as PDF). Attaching an invoice copy is not in compliance with this specification.
+Binary objects can be used to describe files which are transmitted together with the Invoice. The attachments are underpinning the XML document.
 
 Attachments shall be transmitted together with the Invoice. The binary object has two supplementary components: a Mime Code, which specifies the Mime type of the attachment and a Filename that is provided by (or on behalf of) the sender of the invoice or credit note.
 
