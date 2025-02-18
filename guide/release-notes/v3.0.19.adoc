@@ -11,8 +11,9 @@ Release date:: May 2025
 
 * BUG Missing currencyID check for BT-117 in Peppol BIS Billing 3.0 PEPPOL-EN16931-R051 [minor]
 
-
 ==  EN 16931 schematrons updated
 
 * RELEASE NOTES FROM EC
 
+==  Changes to Country-Specific Rules
+* Rule DK-R-008 changed to allow PayeeFinancialAccount/ID with both 7 and 8 numerical characters (PaymentMeansCode = 50 - Giro kontonummer).
