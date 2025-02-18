@@ -7,7 +7,7 @@
             The additional supporting documents can be used for both referencing a document number which is expected to be known by the receiver, 
             an external document (referenced by a URL) or as an embedded document, Base64 encoded (such as a time report).</Description>
         <Reference type="BUSINESS_TERM">BG-24</Reference>
-         <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
+         <!--Reference type="RULE">PEPPOL-EN16931-R006</Reference-->
          <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
          <Reference type="RULE">DE-R-022</Reference>         
 

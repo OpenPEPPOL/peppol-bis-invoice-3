@@ -173,6 +173,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-P0109</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-P0110</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-P0111</Reference>
+                    <Reference type="CODE_LIST">vatex</Reference>
                 </Element>
                 
                 <Element cardinality="0..1">
