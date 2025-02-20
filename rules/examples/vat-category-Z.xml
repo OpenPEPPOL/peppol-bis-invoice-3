@@ -37,7 +37,7 @@
     </cac:AccountingSupplierParty>
     <cac:AccountingCustomerParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0184">DK12345678</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0184">12345678</cbc:EndpointID>
             <cac:PostalAddress>
                 <cbc:StreetName>Anystreet 8</cbc:StreetName>
                 <cbc:AdditionalStreetName>Back door</cbc:AdditionalStreetName>

@@ -53,12 +53,12 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0184">DK12345678</ram:ID>
+							<ram:ID schemeID="0184">12345678</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0184">DK12345679</ram:ID>
+							<ram:ID schemeID="0184">12345679</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
@@ -87,7 +87,7 @@
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0184">DK12345678</ram:ID>
+							<ram:ID schemeID="0184">12345678</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
