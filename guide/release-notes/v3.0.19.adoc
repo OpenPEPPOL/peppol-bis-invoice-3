@@ -10,6 +10,7 @@ Release date:: May 2025
 == Changes to code lists and validation artefacts
 
 * BUG Missing currencyID check for BT-117 in Peppol BIS Billing 3.0 PEPPOL-EN16931-R051 [minor]
+* Rule PEPPOL-COMMON-R042 which tests danish organization numbers, CVR, (ICD 0184) is updated according to the Participant identifier schemes codelists. The identifier must be 8 characters long and no longer prefixed with DK.
 
 ==  EN 16931 schematrons updated
 
