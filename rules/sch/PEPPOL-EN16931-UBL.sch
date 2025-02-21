@@ -418,20 +418,31 @@ Last update: 2022 November release 3.0.14.
 						)" flag="fatal">For Danish Suppliers if the PaymentID is prefixed with 71# or 75# the 15-16 digits instruction Id must be added to the PaymentID eg. "71#1234567890123456" when payment Method equals 93 (FIK)</assert>
     </rule>
     <!-- Line level -->
-    <rule context="ubl-creditnote:CreditNote[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:CreditNoteLine | ubl-invoice:Invoice[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:InvoiceLine">
-      <assert id="DK-R-003" test="not((cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listID = 'TST')
+    <rule
+      context="ubl-creditnote:CreditNote[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:CreditNoteLine | ubl-invoice:Invoice[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']/cac:InvoiceLine">
+      <assert id="DK-R-003"
+        test="not((cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listID = 'TST')
 						and not((cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.05.01')
 							   or (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '19.0501')
+                               or (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '26.08.01')
+                               or (cac:Item/cac:CommodityClassification/cbc:ItemClassificationCode/@listVersionID = '26.0801')
 							   )
-						)" flag="warning">If ItemClassification is provided from Danish suppliers, UNSPSC version 19.0501 should be used.</assert>
+						)"
+        flag="warning">If ItemClassification is provided from Danish suppliers, UNSPSC version 19.05.01 or 26.08.01 should be used.</assert>
     </rule>
     <!-- Mix level -->
     <rule context="cac:AllowanceCharge[$DKSupplierCountry = 'DK' and $DKCustomerCountry = 'DK']">
-      <assert id="DK-R-004" test="not((cbc:AllowanceChargeReasonCode = 'ZZZ')
-						and not((string-length(normalize-space(cbc:AllowanceChargeReason/text())) = 4)
+      <assert id="DK-R-004"
+        test="not((cbc:AllowanceChargeReasonCode = 'ZZZ')
+						and not(((string-length(normalize-space(cbc:AllowanceChargeReason/text())) = 4)
 								and (number(cbc:AllowanceChargeReason) &gt;= 0)
-								and (number(cbc:AllowanceChargeReason) &lt;= 9999))
-						)" flag="fatal">When specifying non-VAT Taxes for Danish customers, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and the 4-digit Tax category MUST be specified in AllowanceChargeReason</assert>
+								and (number(cbc:AllowanceChargeReason) &lt;= 9999)) or
+								(((cbc:AllowanceChargeReason and contains(cbc:AllowanceChargeReason, '#')
+                                  and not(starts-with(cbc:AllowanceChargeReason, '#'))
+                                  and not(ends-with(cbc:AllowanceChargeReason, '#')))) )
+                               )
+				 )"
+        flag="fatal">When specifying non-VAT Taxes for Danish customers, Danish suppliers MUST use the AllowanceChargeReasonCode="ZZZ" and MUST be specified in AllowanceChargeReason; Either as the 4-digit Tax category or must include a #, but the # is not allowed as first and last character</assert>
     </rule>
   </pattern>
   <!-- ITALY -->
