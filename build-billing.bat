@@ -16,7 +16,7 @@ call :dashed "Structure"
 docker run --rm -v "%PROJECT%:/src" -v "%PROJECT%/target:/target" difi/vefa-structure:0.7
 
 call :dashed "Validator"
-docker run --rm -v "%PROJECT%:/src" anskaffelser/validator:2.1.0 build -x -t -n eu.peppol.postaward.v3.billing -a rules,guide -target target/validator /src
+docker run --rm -v "%PROJECT%:/src" phelger/vefa-validator:2.3.1 build -x -t -n eu.peppol.postaward.v3.billing -a rules,guide -target target/validator /src
 
 call :dashed "Generate adoc-files from rules"
 ECHO CEN-EN16931-UBL
