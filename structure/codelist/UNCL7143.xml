@@ -313,6 +313,11 @@
         <Name>Material code</Name>
         <Description>Code defining the material's type, surface, geometric form plus various classifying characteristics.</Description>
     </Code>
+	 <Code>
+        <Id>EMD</Id>
+        <Name>EMDN (European Medical Device Nomenclature)</Name>
+        <Description>Nomenclature system for identification of medical devices based on European Medical Device Nomenclature classification system.</Description>
+    </Code>
     <Code>
         <Id>EN</Id>
         <Name>International Article Numbering Association (EAN)</Name>
@@ -328,6 +333,11 @@
         <Name>Buyer's internal product group code</Name>
         <Description>Product group code used within a buyer's internal systems.</Description>
     </Code>
+    <Code>
+        <Id>GMN</Id>
+        <Name>Global model number</Name>
+        <Description>The GMN is the GS1-identification key used to identify a product model or product family based on attributes common to the model or family as defined by industry or regulation.</Description>
+    </Code>    
     <Code>
         <Id>GN</Id>
         <Name>National product group code</Name>

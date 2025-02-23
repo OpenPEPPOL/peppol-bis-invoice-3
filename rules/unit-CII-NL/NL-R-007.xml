@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
   <assert>
-      <description>For suppliers in the Netherlands, the supplier MUST provide a means of payment (ram:SpecifiedTradeSettlementPaymentMeans) if the payment is from customer to supplier</description>
+    <description>For suppliers in the Netherlands, the supplier MUST provide a means of payment (ram:SpecifiedTradeSettlementPaymentMeans) if the payment is from customer to supplier</description>
     <scope>NL-R-007</scope>
   </assert>
   <test>
+    <!-- Standard test case that is correct -->
     <assert>
       <success>NL-R-007</success>
     </assert>
-    <rsm:CrossIndustryInvoice
-     xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
-     xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
-     xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:100"
-     xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice_100pD16B.xsd">
-
+    <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice_100pD16B.xsd">
       <rsm:ExchangedDocumentContext>
         <ram:BusinessProcessSpecifiedDocumentContextParameter>
           <ram:ID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</ram:ID>
@@ -24,7 +18,6 @@
           <ram:ID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</ram:ID>
         </ram:GuidelineSpecifiedDocumentContextParameter>
       </rsm:ExchangedDocumentContext>
-
       <rsm:ExchangedDocument>
         <ram:ID>12345</ram:ID>
         <ram:TypeCode>380</ram:TypeCode>
@@ -32,9 +25,7 @@
           <udt:DateTimeString format="102">20210101</udt:DateTimeString>
         </ram:IssueDateTime>
       </rsm:ExchangedDocument>
-
       <rsm:SupplyChainTradeTransaction>
-
         <ram:IncludedSupplyChainTradeLineItem>
           <ram:AssociatedDocumentLineDocument>
             <ram:LineID>1</ram:LineID>
@@ -61,7 +52,6 @@
             </ram:SpecifiedTradeSettlementLineMonetarySummation>
           </ram:SpecifiedLineTradeSettlement>
         </ram:IncludedSupplyChainTradeLineItem>
-
         <ram:IncludedSupplyChainTradeLineItem>
           <ram:AssociatedDocumentLineDocument>
             <ram:LineID>2</ram:LineID>
@@ -88,7 +78,6 @@
             </ram:SpecifiedTradeSettlementLineMonetarySummation>
           </ram:SpecifiedLineTradeSettlement>
         </ram:IncludedSupplyChainTradeLineItem>
-
         <ram:ApplicableHeaderTradeAgreement>
           <ram:BuyerReference>123_reference</ram:BuyerReference>
           <ram:SellerTradeParty>
@@ -109,7 +98,6 @@
               <ram:ID schemeID="VA">NL1111111111B01</ram:ID>
             </ram:SpecifiedTaxRegistration>
           </ram:SellerTradeParty>
-
           <ram:BuyerTradeParty>
             <ram:Name>Buyers B.V.</ram:Name>
             <ram:PostalTradeAddress>
@@ -123,17 +111,14 @@
             </ram:URIUniversalCommunication>
           </ram:BuyerTradeParty>
         </ram:ApplicableHeaderTradeAgreement>
-
         <ram:ApplicableHeaderTradeDelivery>
           <ram:ShipToTradeParty>
             <ram:Name>Trade Party</ram:Name>
           </ram:ShipToTradeParty>
         </ram:ApplicableHeaderTradeDelivery>
-
         <ram:ApplicableHeaderTradeSettlement>
           <ram:PaymentReference>08/00355</ram:PaymentReference>
           <ram:InvoiceCurrencyCode>SEK</ram:InvoiceCurrencyCode>
-
           <ram:SpecifiedTradeSettlementPaymentMeans>
             <ram:TypeCode>30</ram:TypeCode>
             <ram:PayeePartyCreditorFinancialAccount>
@@ -143,7 +128,6 @@
               <ram:BICID>BANKSBIC</ram:BICID>
             </ram:PayeeSpecifiedCreditorFinancialInstitution>
           </ram:SpecifiedTradeSettlementPaymentMeans>
-
           <ram:ApplicableTradeTax>
             <ram:CalculatedAmount>63</ram:CalculatedAmount>
             <ram:TypeCode>VAT</ram:TypeCode>
@@ -151,7 +135,6 @@
             <ram:CategoryCode>S</ram:CategoryCode>
             <ram:RateApplicablePercent>21</ram:RateApplicablePercent>
           </ram:ApplicableTradeTax>
-
           <ram:SpecifiedTradeAllowanceCharge>
             <ram:ChargeIndicator>
               <udt:Indicator>false</udt:Indicator>
@@ -182,7 +165,6 @@
               <ram:RateApplicablePercent>21</ram:RateApplicablePercent>
             </ram:CategoryTradeTax>
           </ram:SpecifiedTradeAllowanceCharge>
-
           <ram:SpecifiedTradePaymentTerms>
             <ram:DueDateDateTime>
               <udt:DateTimeString format="102">20180307</udt:DateTimeString>
@@ -199,21 +181,14 @@
           </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
         </ram:ApplicableHeaderTradeSettlement>
       </rsm:SupplyChainTradeTransaction>
-
     </rsm:CrossIndustryInvoice>
   </test>
   <test>
+    <!-- Standard test case that shows the error -->
     <assert>
       <error>NL-R-007</error>
     </assert>
-    <rsm:CrossIndustryInvoice
-     xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
-     xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
-     xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:100"
-     xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice_100pD16B.xsd">
-
+    <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice_100pD16B.xsd">
       <rsm:ExchangedDocumentContext>
         <ram:BusinessProcessSpecifiedDocumentContextParameter>
           <ram:ID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</ram:ID>
@@ -222,7 +197,6 @@
           <ram:ID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</ram:ID>
         </ram:GuidelineSpecifiedDocumentContextParameter>
       </rsm:ExchangedDocumentContext>
-
       <rsm:ExchangedDocument>
         <ram:ID>12345</ram:ID>
         <ram:TypeCode>380</ram:TypeCode>
@@ -230,9 +204,7 @@
           <udt:DateTimeString format="102">20210101</udt:DateTimeString>
         </ram:IssueDateTime>
       </rsm:ExchangedDocument>
-
       <rsm:SupplyChainTradeTransaction>
-
         <ram:IncludedSupplyChainTradeLineItem>
           <ram:AssociatedDocumentLineDocument>
             <ram:LineID>1</ram:LineID>
@@ -259,7 +231,6 @@
             </ram:SpecifiedTradeSettlementLineMonetarySummation>
           </ram:SpecifiedLineTradeSettlement>
         </ram:IncludedSupplyChainTradeLineItem>
-
         <ram:IncludedSupplyChainTradeLineItem>
           <ram:AssociatedDocumentLineDocument>
             <ram:LineID>2</ram:LineID>
@@ -286,7 +257,6 @@
             </ram:SpecifiedTradeSettlementLineMonetarySummation>
           </ram:SpecifiedLineTradeSettlement>
         </ram:IncludedSupplyChainTradeLineItem>
-
         <ram:ApplicableHeaderTradeAgreement>
           <ram:BuyerReference>123_reference</ram:BuyerReference>
           <ram:SellerTradeParty>
@@ -307,7 +277,6 @@
               <ram:ID schemeID="VA">NL1111111111B01</ram:ID>
             </ram:SpecifiedTaxRegistration>
           </ram:SellerTradeParty>
-
           <ram:BuyerTradeParty>
             <ram:Name>Buyers B.V.</ram:Name>
             <ram:PostalTradeAddress>
@@ -321,17 +290,14 @@
             </ram:URIUniversalCommunication>
           </ram:BuyerTradeParty>
         </ram:ApplicableHeaderTradeAgreement>
-
         <ram:ApplicableHeaderTradeDelivery>
           <ram:ShipToTradeParty>
             <ram:Name>Trade Party</ram:Name>
           </ram:ShipToTradeParty>
         </ram:ApplicableHeaderTradeDelivery>
-
         <ram:ApplicableHeaderTradeSettlement>
           <ram:PaymentReference>08/00355</ram:PaymentReference>
           <ram:InvoiceCurrencyCode>SEK</ram:InvoiceCurrencyCode>
-
           <ram:ApplicableTradeTax>
             <ram:CalculatedAmount>63</ram:CalculatedAmount>
             <ram:TypeCode>VAT</ram:TypeCode>
@@ -339,7 +305,6 @@
             <ram:CategoryCode>S</ram:CategoryCode>
             <ram:RateApplicablePercent>21</ram:RateApplicablePercent>
           </ram:ApplicableTradeTax>
-
           <ram:SpecifiedTradeAllowanceCharge>
             <ram:ChargeIndicator>
               <udt:Indicator>false</udt:Indicator>
@@ -370,7 +335,6 @@
               <ram:RateApplicablePercent>21</ram:RateApplicablePercent>
             </ram:CategoryTradeTax>
           </ram:SpecifiedTradeAllowanceCharge>
-
           <ram:SpecifiedTradePaymentTerms>
             <ram:DueDateDateTime>
               <udt:DateTimeString format="102">20180307</udt:DateTimeString>
@@ -387,7 +351,410 @@
           </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
         </ram:ApplicableHeaderTradeSettlement>
       </rsm:SupplyChainTradeTransaction>
-
+    </rsm:CrossIndustryInvoice>
+  </test>
+  <test>
+    <!-- Testcase for CreditNote; without paymentmeans these should not fail validation -->
+    <assert>
+      <success>NL-R-007</success>
+    </assert>
+    <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice_100pD16B.xsd">
+      <rsm:ExchangedDocumentContext>
+        <ram:BusinessProcessSpecifiedDocumentContextParameter>
+          <ram:ID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</ram:ID>
+        </ram:BusinessProcessSpecifiedDocumentContextParameter>
+        <ram:GuidelineSpecifiedDocumentContextParameter>
+          <ram:ID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</ram:ID>
+        </ram:GuidelineSpecifiedDocumentContextParameter>
+      </rsm:ExchangedDocumentContext>
+      <rsm:ExchangedDocument>
+        <ram:ID>2018210</ram:ID>
+        <ram:TypeCode>381</ram:TypeCode>
+        <ram:IssueDateTime>
+          <udt:DateTimeString format="102">20180208</udt:DateTimeString>
+        </ram:IssueDateTime>
+      </rsm:ExchangedDocument>
+      <rsm:SupplyChainTradeTransaction>
+        <ram:IncludedSupplyChainTradeLineItem>
+          <ram:AssociatedDocumentLineDocument>
+            <ram:LineID>1</ram:LineID>
+          </ram:AssociatedDocumentLineDocument>
+          <ram:SpecifiedTradeProduct>
+            <ram:Name>Printing paper</ram:Name>
+          </ram:SpecifiedTradeProduct>
+          <ram:SpecifiedLineTradeAgreement>
+            <ram:NetPriceProductTradePrice>
+              <ram:ChargeAmount>1</ram:ChargeAmount>
+            </ram:NetPriceProductTradePrice>
+          </ram:SpecifiedLineTradeAgreement>
+          <ram:SpecifiedLineTradeDelivery>
+            <ram:BilledQuantity unitCode="EA">1000</ram:BilledQuantity>
+          </ram:SpecifiedLineTradeDelivery>
+          <ram:SpecifiedLineTradeSettlement>
+            <ram:ApplicableTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementLineMonetarySummation>
+              <ram:LineTotalAmount>1000</ram:LineTotalAmount>
+            </ram:SpecifiedTradeSettlementLineMonetarySummation>
+          </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:IncludedSupplyChainTradeLineItem>
+          <ram:AssociatedDocumentLineDocument>
+            <ram:LineID>2</ram:LineID>
+          </ram:AssociatedDocumentLineDocument>
+          <ram:SpecifiedTradeProduct>
+            <ram:Name>Parker Pen</ram:Name>
+          </ram:SpecifiedTradeProduct>
+          <ram:SpecifiedLineTradeAgreement>
+            <ram:NetPriceProductTradePrice>
+              <ram:ChargeAmount>5</ram:ChargeAmount>
+            </ram:NetPriceProductTradePrice>
+          </ram:SpecifiedLineTradeAgreement>
+          <ram:SpecifiedLineTradeDelivery>
+            <ram:BilledQuantity unitCode="EA">100</ram:BilledQuantity>
+          </ram:SpecifiedLineTradeDelivery>
+          <ram:SpecifiedLineTradeSettlement>
+            <ram:ApplicableTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementLineMonetarySummation>
+              <ram:LineTotalAmount>500</ram:LineTotalAmount>
+            </ram:SpecifiedTradeSettlementLineMonetarySummation>
+          </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:IncludedSupplyChainTradeLineItem>
+          <ram:AssociatedDocumentLineDocument>
+            <ram:LineID>3</ram:LineID>
+          </ram:AssociatedDocumentLineDocument>
+          <ram:SpecifiedTradeProduct>
+            <ram:Name>Eraser P-97</ram:Name>
+          </ram:SpecifiedTradeProduct>
+          <ram:SpecifiedLineTradeAgreement>
+            <ram:NetPriceProductTradePrice>
+              <ram:ChargeAmount>5</ram:ChargeAmount>
+            </ram:NetPriceProductTradePrice>
+          </ram:SpecifiedLineTradeAgreement>
+          <ram:SpecifiedLineTradeDelivery>
+            <ram:BilledQuantity unitCode="EA">500</ram:BilledQuantity>
+          </ram:SpecifiedLineTradeDelivery>
+          <ram:SpecifiedLineTradeSettlement>
+            <ram:ApplicableTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementLineMonetarySummation>
+              <ram:LineTotalAmount>2500</ram:LineTotalAmount>
+            </ram:SpecifiedTradeSettlementLineMonetarySummation>
+          </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:BuyerReference>Ref 123</ram:BuyerReference>
+          <ram:SellerTradeParty>
+            <ram:Name>Allsälj AB</ram:Name>
+            <ram:SpecifiedLegalOrganization>
+              <ram:ID schemeID="0106">12345678</ram:ID>
+            </ram:SpecifiedLegalOrganization>
+            <ram:PostalTradeAddress>
+              <ram:PostcodeCode>1234AA</ram:PostcodeCode>
+              <ram:LineOne>SellerStreet 1</ram:LineOne>
+              <ram:CityName>Commercity</ram:CityName>
+              <ram:CountryID>NL</ram:CountryID>
+            </ram:PostalTradeAddress>
+            <ram:URIUniversalCommunication>
+              <ram:URIID schemeID="0190">12345678</ram:URIID>
+            </ram:URIUniversalCommunication>
+            <ram:SpecifiedTaxRegistration>
+              <ram:ID schemeID="VAT">SE123456789001</ram:ID>
+            </ram:SpecifiedTaxRegistration>
+            <ram:SpecifiedTaxRegistration>
+              <ram:ID schemeID="FC">Godkänd för F-skatt</ram:ID>
+            </ram:SpecifiedTaxRegistration>
+          </ram:SellerTradeParty>
+          <ram:BuyerTradeParty>
+            <ram:Name>Buyercompany ltd</ram:Name>
+            <ram:PostalTradeAddress>
+              <ram:CountryID>DK</ram:CountryID>
+            </ram:PostalTradeAddress>
+            <ram:URIUniversalCommunication>
+              <ram:URIID schemeID="0106">87654321</ram:URIID>
+            </ram:URIUniversalCommunication>
+          </ram:BuyerTradeParty>
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery />
+        <ram:ApplicableHeaderTradeSettlement>
+          <ram:PaymentReference>08/00355</ram:PaymentReference>
+          <ram:InvoiceCurrencyCode>SEK</ram:InvoiceCurrencyCode>
+          <ram:ApplicableTradeTax>
+            <ram:CalculatedAmount>375</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>1500</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+          <ram:ApplicableTradeTax>
+            <ram:CalculatedAmount>300</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>2500</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+          <ram:SpecifiedTradeAllowanceCharge>
+            <ram:ChargeIndicator>
+              <udt:Indicator>false</udt:Indicator>
+            </ram:ChargeIndicator>
+            <ram:CalculationPercent>10</ram:CalculationPercent>
+            <ram:BasisAmount>0</ram:BasisAmount>
+            <ram:ActualAmount>0</ram:ActualAmount>
+            <ram:ReasonCode>95</ram:ReasonCode>
+            <ram:Reason>Loyal customer</ram:Reason>
+            <ram:CategoryTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+            </ram:CategoryTradeTax>
+          </ram:SpecifiedTradeAllowanceCharge>
+          <ram:SpecifiedTradeAllowanceCharge>
+            <ram:ChargeIndicator>
+              <udt:Indicator>true</udt:Indicator>
+            </ram:ChargeIndicator>
+            <ram:CalculationPercent>10</ram:CalculationPercent>
+            <ram:BasisAmount>0</ram:BasisAmount>
+            <ram:ActualAmount>0</ram:ActualAmount>
+            <ram:ReasonCode>ABL</ram:ReasonCode>
+            <ram:Reason>Packaging</ram:Reason>
+            <ram:CategoryTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+            </ram:CategoryTradeTax>
+          </ram:SpecifiedTradeAllowanceCharge>
+          <ram:SpecifiedTradePaymentTerms>
+            <ram:DueDateDateTime>
+              <udt:DateTimeString format="102">20180307</udt:DateTimeString>
+            </ram:DueDateDateTime>
+          </ram:SpecifiedTradePaymentTerms>
+          <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+            <ram:LineTotalAmount>4000</ram:LineTotalAmount>
+            <ram:ChargeTotalAmount>0</ram:ChargeTotalAmount>
+            <ram:AllowanceTotalAmount>0</ram:AllowanceTotalAmount>
+            <ram:TaxBasisTotalAmount>4000</ram:TaxBasisTotalAmount>
+            <ram:TaxTotalAmount currencyID="SEK">675</ram:TaxTotalAmount>
+            <ram:GrandTotalAmount>4675</ram:GrandTotalAmount>
+            <ram:DuePayableAmount>4675</ram:DuePayableAmount>
+          </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+          <ram:InvoiceReferencedDocument>
+            <ram:IssuerAssignedID>12345</ram:IssuerAssignedID>
+          </ram:InvoiceReferencedDocument>
+        </ram:ApplicableHeaderTradeSettlement>
+      </rsm:SupplyChainTradeTransaction>
+    </rsm:CrossIndustryInvoice>
+  </test>
+  <test>
+    <!-- Negative Credit Note document *should* have payment means -->
+    <assert>
+      <error>NL-R-007</error>
+    </assert>
+    <rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:qdt="urn:un:unece:uncefact:data:Standard:QualifiedDataType:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice_100pD16B.xsd">
+      <rsm:ExchangedDocumentContext>
+        <ram:BusinessProcessSpecifiedDocumentContextParameter>
+          <ram:ID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</ram:ID>
+        </ram:BusinessProcessSpecifiedDocumentContextParameter>
+        <ram:GuidelineSpecifiedDocumentContextParameter>
+          <ram:ID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</ram:ID>
+        </ram:GuidelineSpecifiedDocumentContextParameter>
+      </rsm:ExchangedDocumentContext>
+      <rsm:ExchangedDocument>
+        <ram:ID>2018210</ram:ID>
+        <ram:TypeCode>381</ram:TypeCode>
+        <ram:IssueDateTime>
+          <udt:DateTimeString format="102">20180208</udt:DateTimeString>
+        </ram:IssueDateTime>
+      </rsm:ExchangedDocument>
+      <rsm:SupplyChainTradeTransaction>
+        <ram:IncludedSupplyChainTradeLineItem>
+          <ram:AssociatedDocumentLineDocument>
+            <ram:LineID>1</ram:LineID>
+          </ram:AssociatedDocumentLineDocument>
+          <ram:SpecifiedTradeProduct>
+            <ram:Name>Printing paper</ram:Name>
+          </ram:SpecifiedTradeProduct>
+          <ram:SpecifiedLineTradeAgreement>
+            <ram:NetPriceProductTradePrice>
+              <ram:ChargeAmount>1</ram:ChargeAmount>
+            </ram:NetPriceProductTradePrice>
+          </ram:SpecifiedLineTradeAgreement>
+          <ram:SpecifiedLineTradeDelivery>
+            <ram:BilledQuantity unitCode="EA">-1000</ram:BilledQuantity>
+          </ram:SpecifiedLineTradeDelivery>
+          <ram:SpecifiedLineTradeSettlement>
+            <ram:ApplicableTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementLineMonetarySummation>
+              <ram:LineTotalAmount>-1000</ram:LineTotalAmount>
+            </ram:SpecifiedTradeSettlementLineMonetarySummation>
+          </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:IncludedSupplyChainTradeLineItem>
+          <ram:AssociatedDocumentLineDocument>
+            <ram:LineID>2</ram:LineID>
+          </ram:AssociatedDocumentLineDocument>
+          <ram:SpecifiedTradeProduct>
+            <ram:Name>Parker Pen</ram:Name>
+          </ram:SpecifiedTradeProduct>
+          <ram:SpecifiedLineTradeAgreement>
+            <ram:NetPriceProductTradePrice>
+              <ram:ChargeAmount>5</ram:ChargeAmount>
+            </ram:NetPriceProductTradePrice>
+          </ram:SpecifiedLineTradeAgreement>
+          <ram:SpecifiedLineTradeDelivery>
+            <ram:BilledQuantity unitCode="EA">-100</ram:BilledQuantity>
+          </ram:SpecifiedLineTradeDelivery>
+          <ram:SpecifiedLineTradeSettlement>
+            <ram:ApplicableTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementLineMonetarySummation>
+              <ram:LineTotalAmount>-500</ram:LineTotalAmount>
+            </ram:SpecifiedTradeSettlementLineMonetarySummation>
+          </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:IncludedSupplyChainTradeLineItem>
+          <ram:AssociatedDocumentLineDocument>
+            <ram:LineID>3</ram:LineID>
+          </ram:AssociatedDocumentLineDocument>
+          <ram:SpecifiedTradeProduct>
+            <ram:Name>Eraser P-97</ram:Name>
+          </ram:SpecifiedTradeProduct>
+          <ram:SpecifiedLineTradeAgreement>
+            <ram:NetPriceProductTradePrice>
+              <ram:ChargeAmount>5</ram:ChargeAmount>
+            </ram:NetPriceProductTradePrice>
+          </ram:SpecifiedLineTradeAgreement>
+          <ram:SpecifiedLineTradeDelivery>
+            <ram:BilledQuantity unitCode="EA">-500</ram:BilledQuantity>
+          </ram:SpecifiedLineTradeDelivery>
+          <ram:SpecifiedLineTradeSettlement>
+            <ram:ApplicableTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementLineMonetarySummation>
+              <ram:LineTotalAmount>-2500</ram:LineTotalAmount>
+            </ram:SpecifiedTradeSettlementLineMonetarySummation>
+          </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:BuyerReference>Ref 123</ram:BuyerReference>
+          <ram:SellerTradeParty>
+            <ram:Name>Allsälj AB</ram:Name>
+            <ram:SpecifiedLegalOrganization>
+              <ram:ID schemeID="0106">12345678</ram:ID>
+            </ram:SpecifiedLegalOrganization>
+            <ram:PostalTradeAddress>
+              <ram:PostcodeCode>1234AA</ram:PostcodeCode>
+              <ram:LineOne>SellerStreet 1</ram:LineOne>
+              <ram:CityName>Commercity</ram:CityName>
+              <ram:CountryID>NL</ram:CountryID>
+            </ram:PostalTradeAddress>
+            <ram:URIUniversalCommunication>
+              <ram:URIID schemeID="0190">12345678</ram:URIID>
+            </ram:URIUniversalCommunication>
+            <ram:SpecifiedTaxRegistration>
+              <ram:ID schemeID="VAT">SE123456789001</ram:ID>
+            </ram:SpecifiedTaxRegistration>
+            <ram:SpecifiedTaxRegistration>
+              <ram:ID schemeID="FC">Godkänd för F-skatt</ram:ID>
+            </ram:SpecifiedTaxRegistration>
+          </ram:SellerTradeParty>
+          <ram:BuyerTradeParty>
+            <ram:Name>Buyercompany ltd</ram:Name>
+            <ram:PostalTradeAddress>
+              <ram:CountryID>DK</ram:CountryID>
+            </ram:PostalTradeAddress>
+            <ram:URIUniversalCommunication>
+              <ram:URIID schemeID="0106">87654321</ram:URIID>
+            </ram:URIUniversalCommunication>
+          </ram:BuyerTradeParty>
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery />
+        <ram:ApplicableHeaderTradeSettlement>
+          <ram:PaymentReference>08/00355</ram:PaymentReference>
+          <ram:InvoiceCurrencyCode>SEK</ram:InvoiceCurrencyCode>
+          <ram:ApplicableTradeTax>
+            <ram:CalculatedAmount>-375</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>-1500</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+          <ram:ApplicableTradeTax>
+            <ram:CalculatedAmount>-300</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>-2500</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:RateApplicablePercent>12</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+          <ram:SpecifiedTradeAllowanceCharge>
+            <ram:ChargeIndicator>
+              <udt:Indicator>false</udt:Indicator>
+            </ram:ChargeIndicator>
+            <ram:CalculationPercent>10</ram:CalculationPercent>
+            <ram:BasisAmount>0</ram:BasisAmount>
+            <ram:ActualAmount>0</ram:ActualAmount>
+            <ram:ReasonCode>95</ram:ReasonCode>
+            <ram:Reason>Loyal customer</ram:Reason>
+            <ram:CategoryTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+            </ram:CategoryTradeTax>
+          </ram:SpecifiedTradeAllowanceCharge>
+          <ram:SpecifiedTradeAllowanceCharge>
+            <ram:ChargeIndicator>
+              <udt:Indicator>true</udt:Indicator>
+            </ram:ChargeIndicator>
+            <ram:CalculationPercent>10</ram:CalculationPercent>
+            <ram:BasisAmount>0</ram:BasisAmount>
+            <ram:ActualAmount>0</ram:ActualAmount>
+            <ram:ReasonCode>ABL</ram:ReasonCode>
+            <ram:Reason>Packaging</ram:Reason>
+            <ram:CategoryTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+            </ram:CategoryTradeTax>
+          </ram:SpecifiedTradeAllowanceCharge>
+          <ram:SpecifiedTradePaymentTerms>
+            <ram:DueDateDateTime>
+              <udt:DateTimeString format="102">20180307</udt:DateTimeString>
+            </ram:DueDateDateTime>
+          </ram:SpecifiedTradePaymentTerms>
+          <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+            <ram:LineTotalAmount>-4000</ram:LineTotalAmount>
+            <ram:ChargeTotalAmount>0</ram:ChargeTotalAmount>
+            <ram:AllowanceTotalAmount>0</ram:AllowanceTotalAmount>
+            <ram:TaxBasisTotalAmount>-4000</ram:TaxBasisTotalAmount>
+            <ram:TaxTotalAmount currencyID="SEK">-675</ram:TaxTotalAmount>
+            <ram:GrandTotalAmount>-4675</ram:GrandTotalAmount>
+            <ram:DuePayableAmount>-4675</ram:DuePayableAmount>
+          </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+          <ram:InvoiceReferencedDocument>
+            <ram:IssuerAssignedID>12345</ram:IssuerAssignedID>
+          </ram:InvoiceReferencedDocument>
+        </ram:ApplicableHeaderTradeSettlement>
+      </rsm:SupplyChainTradeTransaction>
     </rsm:CrossIndustryInvoice>
   </test>
 </testSet>

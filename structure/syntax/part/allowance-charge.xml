@@ -141,6 +141,7 @@
             <Reference type="RULE">BR-O-13</Reference>
             <Reference type="RULE">BR-O-14</Reference>
             <Reference type="RULE">BR-CL-17</Reference>
+            <Reference type="RULE">DE-R-016</Reference>
             <Reference type="CODE_LIST">UNCL5305</Reference>
             <Value type="EXAMPLE">S</Value>
             

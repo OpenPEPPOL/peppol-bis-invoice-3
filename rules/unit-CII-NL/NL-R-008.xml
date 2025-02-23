@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-cii">
   <assert>
       <description>For suppliers in the Netherlands, the payment means code (ram:SpecifiedTradeSettlementPaymentMeans/ram:TypeCode) MUST be one of 30, 48, 49, 57, 58 or 59
 </description>
@@ -399,6 +399,179 @@
         </ram:ApplicableHeaderTradeSettlement>
       </rsm:SupplyChainTradeTransaction>
 
+    </rsm:CrossIndustryInvoice>
+  </test>
+  <test>
+      <!-- Rule should only trigger for domestic use -->
+      <assert>
+          <success>NL-R-008</success>
+      </assert>
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- XML instance generated STPE (STPE.nl), based on an example by Andreas Pelekies -->
+    <!-- Based on 'Example 8: Electricity for EN16931' published by CEN on https://github.com/ConnectingEurope -->
+    <rsm:CrossIndustryInvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+      <rsm:ExchangedDocumentContext>
+        <ram:BusinessProcessSpecifiedDocumentContextParameter>
+          <ram:ID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</ram:ID>
+        </ram:BusinessProcessSpecifiedDocumentContextParameter>
+        <ram:GuidelineSpecifiedDocumentContextParameter>
+          <ram:ID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</ram:ID>
+        </ram:GuidelineSpecifiedDocumentContextParameter>
+      </rsm:ExchangedDocumentContext>
+      <rsm:ExchangedDocument>
+        <ram:ID>1100512149</ram:ID>
+        <ram:TypeCode>380</ram:TypeCode>
+        <ram:IssueDateTime>
+          <udt:DateTimeString format="102">20141110</udt:DateTimeString>
+        </ram:IssueDateTime>
+        <ram:IncludedNote>
+          <ram:Content>
+            Periodieke afrekening
+            U vindt een toelichting op uw factuur via www.energieleverancier.nl/factuur_grootzakelijk
+            Op alle diensten en overeenkomsten zijn de algemene voorwaarden aansluiting en
+            transport grootverbruik elektriciteit, respectievelijk gas van toepassing
+            www.energieleverancier.nl
+          </ram:Content>
+        </ram:IncludedNote>
+      </rsm:ExchangedDocument>
+      <rsm:SupplyChainTradeTransaction>
+        <ram:IncludedSupplyChainTradeLineItem>
+          <ram:AssociatedDocumentLineDocument>
+            <ram:LineID>1</ram:LineID>
+          </ram:AssociatedDocumentLineDocument>
+          <ram:SpecifiedTradeProduct>
+            <ram:Name>Getransporteerde kWh’s</ram:Name>
+          </ram:SpecifiedTradeProduct>
+          <ram:SpecifiedLineTradeAgreement>
+            <ram:BuyerOrderReferencedDocument>
+              <ram:LineID>1</ram:LineID>
+            </ram:BuyerOrderReferencedDocument>
+            <ram:NetPriceProductTradePrice>
+              <ram:ChargeAmount>100.00</ram:ChargeAmount>
+              <ram:BasisQuantity unitCode="KWH">1.00</ram:BasisQuantity>
+            </ram:NetPriceProductTradePrice>
+          </ram:SpecifiedLineTradeAgreement>
+          <ram:SpecifiedLineTradeDelivery>
+            <ram:BilledQuantity unitCode="KWH">1</ram:BilledQuantity>
+          </ram:SpecifiedLineTradeDelivery>
+          <ram:SpecifiedLineTradeSettlement>
+            <ram:ApplicableTradeTax>
+              <ram:TypeCode>VAT</ram:TypeCode>
+              <ram:CategoryCode>S</ram:CategoryCode>
+              <ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeSettlementLineMonetarySummation>
+              <ram:LineTotalAmount>100.00</ram:LineTotalAmount>
+            </ram:SpecifiedTradeSettlementLineMonetarySummation>
+          </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:ApplicableHeaderTradeAgreement>
+          <ram:SellerTradeParty>
+            <ram:Name>Energieleverancier B.V.</ram:Name>
+            <ram:SpecifiedLegalOrganization>
+              <ram:ID schemeID="0106">17131139</ram:ID>
+              <ram:TradingBusinessName>Energieleverancier</ram:TradingBusinessName>
+            </ram:SpecifiedLegalOrganization>
+            <ram:DefinedTradeContact>
+              <ram:EmailURIUniversalCommunication>
+                <ram:URIID>klantenservice.zakelijk@energieleverancier.nl</ram:URIID>
+              </ram:EmailURIUniversalCommunication>
+            </ram:DefinedTradeContact>
+            <ram:PostalTradeAddress>
+              <ram:PostcodeCode>5223MB</ram:PostcodeCode>
+              <ram:LineOne>Magistratenlaan 116</ram:LineOne>
+              <ram:CityName>'S-HERTOGENBOSCH</ram:CityName>
+              <ram:CountryID>NL</ram:CountryID>
+            </ram:PostalTradeAddress>
+            <ram:URIUniversalCommunication>
+              <ram:URIID schemeID="0106">12345678</ram:URIID>
+            </ram:URIUniversalCommunication>
+            <ram:SpecifiedTaxRegistration>
+              <ram:ID schemeID="VA">NL809561074B01</ram:ID>
+            </ram:SpecifiedTaxRegistration>
+          </ram:SellerTradeParty>
+          <ram:BuyerTradeParty>
+            <ram:ID>1081119</ram:ID>
+            <ram:Name>Klant</ram:Name>
+            <ram:SpecifiedLegalOrganization>
+              <ram:ID schemeID="0106">13524678</ram:ID>
+            </ram:SpecifiedLegalOrganization>
+            <ram:PostalTradeAddress>
+              <ram:PostcodeCode>9999 XX</ram:PostcodeCode>
+              <ram:LineOne>Bedrijfslaan 4</ram:LineOne>
+              <ram:CityName>ONDERNEMERSTØD</ram:CityName>
+              <ram:CountryID>SE</ram:CountryID>
+            </ram:PostalTradeAddress>
+            <ram:URIUniversalCommunication>
+              <ram:URIID schemeID="0106">12345678</ram:URIID>
+            </ram:URIUniversalCommunication>
+          </ram:BuyerTradeParty>
+          <ram:BuyerOrderReferencedDocument>
+            <ram:IssuerAssignedID>PO4711</ram:IssuerAssignedID>
+          </ram:BuyerOrderReferencedDocument>
+          <ram:AdditionalReferencedDocument>
+            <ram:IssuerAssignedID>871694831000290806</ram:IssuerAssignedID>
+            <ram:TypeCode>130</ram:TypeCode>
+          </ram:AdditionalReferencedDocument>
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery>
+          <ram:ShipToTradeParty>
+            <ram:PostalTradeAddress>
+              <ram:PostcodeCode>9999 XX</ram:PostcodeCode>
+              <ram:LineOne>Bedrijfslaan 4,</ram:LineOne>
+              <ram:CityName>ONDERNEMERSTAD</ram:CityName>
+              <ram:CountryID>NL</ram:CountryID>
+            </ram:PostalTradeAddress>
+          </ram:ShipToTradeParty>
+        </ram:ApplicableHeaderTradeDelivery>
+        <ram:ApplicableHeaderTradeSettlement>
+          <ram:PaymentReference>1100512149</ram:PaymentReference>
+          <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+          <ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:TypeCode>54</ram:TypeCode>
+            <ram:PayeePartyCreditorFinancialAccount>
+              <ram:IBANID>NL28RBOS0420242228</ram:IBANID>
+            </ram:PayeePartyCreditorFinancialAccount>
+          </ram:SpecifiedTradeSettlementPaymentMeans>
+          <ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:TypeCode>30</ram:TypeCode>
+            <ram:PayeePartyCreditorFinancialAccount>
+              <ram:IBANID>NL28RBOS0420242228</ram:IBANID>
+            </ram:PayeePartyCreditorFinancialAccount>
+          </ram:SpecifiedTradeSettlementPaymentMeans>
+          <ram:ApplicableTradeTax>
+            <ram:CalculatedAmount>21.00</ram:CalculatedAmount>
+            <ram:TypeCode>VAT</ram:TypeCode>
+            <ram:BasisAmount>100.00</ram:BasisAmount>
+            <ram:CategoryCode>S</ram:CategoryCode>
+            <ram:RateApplicablePercent>21</ram:RateApplicablePercent>
+          </ram:ApplicableTradeTax>
+          <ram:BillingSpecifiedPeriod>
+            <ram:StartDateTime>
+              <udt:DateTimeString format="102">20140801</udt:DateTimeString>
+            </ram:StartDateTime>
+            <ram:EndDateTime>
+              <udt:DateTimeString format="102">20140831</udt:DateTimeString>
+            </ram:EndDateTime>
+          </ram:BillingSpecifiedPeriod>
+          <ram:SpecifiedTradePaymentTerms>
+            <ram:Description>
+              Energieleverancier brengt wettelijke rente in rekening over te laat betaalde
+              facturen. Kijk voor informatie op www.energieleverancier.nl/rentenota
+            </ram:Description>
+            <ram:DueDateDateTime>
+              <udt:DateTimeString format="102">20141124</udt:DateTimeString>
+            </ram:DueDateDateTime>
+          </ram:SpecifiedTradePaymentTerms>
+          <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+            <ram:LineTotalAmount>100.00</ram:LineTotalAmount>
+            <ram:TaxBasisTotalAmount>100.00</ram:TaxBasisTotalAmount>
+            <ram:TaxTotalAmount currencyID="EUR">21.00</ram:TaxTotalAmount>
+            <ram:GrandTotalAmount>121.00</ram:GrandTotalAmount>
+            <ram:DuePayableAmount>121.00</ram:DuePayableAmount>
+          </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        </ram:ApplicableHeaderTradeSettlement>
+      </rsm:SupplyChainTradeTransaction>
     </rsm:CrossIndustryInvoice>
   </test>
 </testSet>

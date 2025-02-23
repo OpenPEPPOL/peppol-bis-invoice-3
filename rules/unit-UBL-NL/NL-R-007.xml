@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-base-3.0-ubl">
   <assert>
-      <description>For suppliers in the Netherlands, the supplier MUST provide a means of payment (cac:PaymentMeans) if the payment is from customer to supplier</description>
+    <description>For suppliers in the Netherlands, the supplier MUST provide a means of payment (cac:PaymentMeans) if the payment is from customer to supplier</description>
     <scope>NL-R-007</scope>
   </assert>
   <test>
+    <!-- Standard test case that is correct -->
     <assert>
       <success>NL-R-007</success>
     </assert>
@@ -181,7 +182,6 @@
           </cac:ClassifiedTaxCategory>
         </cac:Item>
         <cac:Price>
-          <!-- Nett price excluding VAT and BPM-->
           <cbc:PriceAmount currencyID="EUR">17409.09</cbc:PriceAmount>
         </cac:Price>
       </cac:InvoiceLine>
@@ -287,6 +287,7 @@
     </doc:Invoice>
   </test>
   <test>
+    <!-- Standard test case that shows the error -->
     <assert>
       <error>NL-R-007</error>
     </assert>
@@ -454,7 +455,6 @@
           </cac:ClassifiedTaxCategory>
         </cac:Item>
         <cac:Price>
-          <!-- Nett price excluding VAT and BPM-->
           <cbc:PriceAmount currencyID="EUR">17409.09</cbc:PriceAmount>
         </cac:Price>
       </cac:InvoiceLine>
@@ -558,5 +558,343 @@
         </cac:Price>
       </cac:InvoiceLine>
     </doc:Invoice>
+  </test>
+  <test>
+    <!-- Testcase for CreditNote; without paymentmeans these should not fail validation -->
+    <assert>
+      <success>NL-R-007</success>
+    </assert>
+    <CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+      <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+      <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+      <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+      <cbc:ID>12115118</cbc:ID>
+      <cbc:IssueDate>2015-01-09</cbc:IssueDate>
+      <cbc:CreditNoteTypeCode>381</cbc:CreditNoteTypeCode>
+      <cbc:Note>
+        Alle leveringen zijn franco. Alle prijzen zijn incl. BTW. Betalingstermijn: 14 dagen netto. Prijswijzigingen voorbehouden. Op al onze
+        aanbiedingen, leveringen en overeenkomsten zijn van toepassing in de algemene verkoop en leveringsvoorwaarden. Gedeponeerd bij de K.v.K. te
+        Amsterdam 25-04-'85##Delivery terms
+      </cbc:Note>
+      <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+      <cbc:BuyerReference>47806</cbc:BuyerReference>
+      <cac:OrderReference>
+        <cbc:ID>47806</cbc:ID>
+      </cac:OrderReference>
+      <cac:BillingReference>
+        <cac:InvoiceDocumentReference>
+          <cbc:ID>46568</cbc:ID>
+        </cac:InvoiceDocumentReference>
+      </cac:BillingReference>
+      <cac:AccountingSupplierParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">SITEST00000</cbc:EndpointID>
+          <cac:PostalAddress>
+            <cbc:StreetName>Simplerstraat 1</cbc:StreetName>
+            <cbc:CityName>InvoicingStad</cbc:CityName>
+            <cbc:PostalZone>1111 ZZ</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>NL1111.11.111.B.01</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>SimplerInvoicing</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">SITEST00000</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingSupplierParty>
+      <cac:AccountingCustomerParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">11111111</cbc:EndpointID>
+          <cac:PartyIdentification>
+            <cbc:ID>10202</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PostalAddress>
+            <cbc:StreetName>Teststraat 123</cbc:StreetName>
+            <cbc:CityName>Grotestad</cbc:CityName>
+            <cbc:PostalZone>1111 AA</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Ontvanger</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">11111111</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingCustomerParty>
+      <cac:PaymentTerms>
+        <cbc:Note>Credit note</cbc:Note>
+      </cac:PaymentTerms>
+      <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">27.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">100.00</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">21.00</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">100.00</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">6.00</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>6</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+      </cac:TaxTotal>
+      <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">200.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">200.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">227.00</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="EUR">227.00</cbc:PayableAmount>
+      </cac:LegalMonetaryTotal>
+      <cac:CreditNoteLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CreditedQuantity unitCode="C62">4</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">200.00</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>SimplerInvoicing test invoice</cbc:Name>
+          <cac:SellersItemIdentification>
+            <cbc:ID>166022</cbc:ID>
+          </cac:SellersItemIdentification>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">50.00</cbc:PriceAmount>
+        </cac:Price>
+      </cac:CreditNoteLine>
+      <cac:CreditNoteLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:CreditedQuantity unitCode="C62">1</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">100.00</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Testing procedures</cbc:Name>
+          <cac:SellersItemIdentification>
+            <cbc:ID>661813</cbc:ID>
+          </cac:SellersItemIdentification>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>6</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">100.00</cbc:PriceAmount>
+        </cac:Price>
+      </cac:CreditNoteLine>
+      <cac:CreditNoteLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:CreditedQuantity unitCode="C62">-1</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">-100.00</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Previous Test CreditNote returned</cbc:Name>
+          <cac:SellersItemIdentification>
+            <cbc:ID>438146</cbc:ID>
+          </cac:SellersItemIdentification>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">100.00</cbc:PriceAmount>
+        </cac:Price>
+      </cac:CreditNoteLine>
+    </CreditNote>
+  </test>
+  <test>
+    <!-- Negative Credit Note document *should* have payment means -->
+    <assert>
+      <error>NL-R-007</error>
+    </assert>
+    <CreditNote xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2">
+      <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+      <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+      <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+      <cbc:ID>12115118</cbc:ID>
+      <cbc:IssueDate>2015-01-09</cbc:IssueDate>
+      <cbc:CreditNoteTypeCode>381</cbc:CreditNoteTypeCode>
+      <cbc:Note>
+        Alle leveringen zijn franco. Alle prijzen zijn incl. BTW. Betalingstermijn: 14 dagen netto. Prijswijzigingen voorbehouden. Op al onze
+        aanbiedingen, leveringen en overeenkomsten zijn van toepassing in de algemene verkoop en leveringsvoorwaarden. Gedeponeerd bij de K.v.K. te
+        Amsterdam 25-04-'85##Delivery terms
+      </cbc:Note>
+      <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+      <cbc:BuyerReference>47806</cbc:BuyerReference>
+      <cac:OrderReference>
+        <cbc:ID>47806</cbc:ID>
+      </cac:OrderReference>
+      <cac:BillingReference>
+        <cac:InvoiceDocumentReference>
+          <cbc:ID>46568</cbc:ID>
+        </cac:InvoiceDocumentReference>
+      </cac:BillingReference>
+      <cac:AccountingSupplierParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">SITEST00000</cbc:EndpointID>
+          <cac:PostalAddress>
+            <cbc:StreetName>Simplerstraat 1</cbc:StreetName>
+            <cbc:CityName>InvoicingStad</cbc:CityName>
+            <cbc:PostalZone>1111 ZZ</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>NL1111.11.111.B.01</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>SimplerInvoicing</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">SITEST00000</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingSupplierParty>
+      <cac:AccountingCustomerParty>
+        <cac:Party>
+          <cbc:EndpointID schemeID="0106">11111111</cbc:EndpointID>
+          <cac:PartyIdentification>
+            <cbc:ID>10202</cbc:ID>
+          </cac:PartyIdentification>
+          <cac:PostalAddress>
+            <cbc:StreetName>Teststraat 123</cbc:StreetName>
+            <cbc:CityName>Grotestad</cbc:CityName>
+            <cbc:PostalZone>1111 AA</cbc:PostalZone>
+            <cac:Country>
+              <cbc:IdentificationCode>NL</cbc:IdentificationCode>
+            </cac:Country>
+          </cac:PostalAddress>
+          <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Ontvanger</cbc:RegistrationName>
+            <cbc:CompanyID schemeID="0106">11111111</cbc:CompanyID>
+          </cac:PartyLegalEntity>
+        </cac:Party>
+      </cac:AccountingCustomerParty>
+      <cac:PaymentTerms>
+        <cbc:Note>Credit note</cbc:Note>
+      </cac:PaymentTerms>
+      <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">-27.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">-100.00</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">-21.00</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+        <cac:TaxSubtotal>
+          <cbc:TaxableAmount currencyID="EUR">-100.00</cbc:TaxableAmount>
+          <cbc:TaxAmount currencyID="EUR">-6.00</cbc:TaxAmount>
+          <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>6</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:TaxCategory>
+        </cac:TaxSubtotal>
+      </cac:TaxTotal>
+      <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">-200.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">-200.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">-227.00</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="EUR">-227.00</cbc:PayableAmount>
+      </cac:LegalMonetaryTotal>
+      <cac:CreditNoteLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:CreditedQuantity unitCode="C62">-4</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">-200.00</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>SimplerInvoicing test invoice</cbc:Name>
+          <cac:SellersItemIdentification>
+            <cbc:ID>166022</cbc:ID>
+          </cac:SellersItemIdentification>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">50.00</cbc:PriceAmount>
+        </cac:Price>
+      </cac:CreditNoteLine>
+      <cac:CreditNoteLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:CreditedQuantity unitCode="C62">-1</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">-100.00</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Testing procedures</cbc:Name>
+          <cac:SellersItemIdentification>
+            <cbc:ID>661813</cbc:ID>
+          </cac:SellersItemIdentification>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>6</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">100.00</cbc:PriceAmount>
+        </cac:Price>
+      </cac:CreditNoteLine>
+      <cac:CreditNoteLine>
+        <cbc:ID>3</cbc:ID>
+        <cbc:CreditedQuantity unitCode="C62">1</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">100.00</cbc:LineExtensionAmount>
+        <cac:Item>
+          <cbc:Name>Previous Test CreditNote returned</cbc:Name>
+          <cac:SellersItemIdentification>
+            <cbc:ID>438146</cbc:ID>
+          </cac:SellersItemIdentification>
+          <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>21</cbc:Percent>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+          <cbc:PriceAmount currencyID="EUR">100.00</cbc:PriceAmount>
+        </cac:Price>
+      </cac:CreditNoteLine>
+    </CreditNote>
   </test>
 </testSet>

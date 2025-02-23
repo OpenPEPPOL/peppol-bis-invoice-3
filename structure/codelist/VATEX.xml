@@ -242,6 +242,16 @@
             or cooling networks.</Description>
     </Code>
     <Code>
+        <Id>VATEX-EU-144</Id>
+        <Name>Exempt based on article 144 of Council Directive 2006/112/EC</Name>
+        <Description>Exemptions for services linked to the import of goods</Description>
+    </Code>
+    <Code>
+        <Id>VATEX-EU-146-1E</Id>
+        <Name>Exempt based on article 146 section 1 (e) of Council Directive 2006/112/EC</Name>
+        <Description>Exempt Exemptions for services linked to the export of goods</Description>
+    </Code>
+    <Code>
         <Id>VATEX-EU-148</Id>
         <Name>Exempt based on article 148 of Council Directive 2006/112/EC</Name>
         <Description>Exemptions related to international transport.</Description>
@@ -343,6 +353,11 @@
             canteens.</Description>
     </Code>
     <Code>
+        <Id>VATEX-EU-159</Id>
+        <Name>Exempt based on article 159 of Council Directive 2006/112/EC</Name>
+        <Description>Exemptions for services linked to supplies of goods intended to be placed under customs warehouses, warehouses other than customs warehouses and similar arrangements.</Description>
+    </Code>
+    <Code>
         <Id>VATEX-EU-309</Id>
         <Name>Exempt based on article 309 of Council Directive 2006/112/EC</Name>
         <Description>Travel agents performed outside of EU.</Description>
@@ -391,5 +406,15 @@
         <Description>Collectors' items and antiques - Indication that the VAT margin scheme for
             collector’s items and antiques has been applied. - Only use with VAT category code
             E</Description>
+    </Code>
+    <Code>
+        <Id>VATEX-FR-FRANCHISE</Id>
+        <Name>France domestic VAT franchise in base</Name>
+        <Description>For domestic invoicing in France</Description>
+    </Code>
+    <Code>
+        <Id>VATEX-FR-CNWVAT</Id>
+        <Name>France domestic Credit Notes without VAT, due to supplier forfeit of VAT for discount</Name>
+        <Description>For domestic Credit Notes only in France</Description>
     </Code>
 </CodeList>

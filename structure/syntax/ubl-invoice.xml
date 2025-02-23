@@ -17,9 +17,7 @@
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identifier</Name>
-            <Description>An identification of the specification containing the total set of rules regarding semantic
-                content, cardinalities and business rules to which the data contained in the instance document conforms.
-            </Description>
+            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. </Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-24</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R004</Reference>
@@ -30,9 +28,7 @@
         <Element>
             <Term>cbc:ProfileID</Term>
             <Name>Business process type</Name>
-            <Description>Identifies the business process context in which the transaction appears, to enable the Buyer to
-                process the Invoice in an appropriate way.
-            </Description>
+            <Description>Identifies the business process context in which the transaction appears, to enable the Buyer to process the Invoice in an appropriate way. </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-23</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R001</Reference>
@@ -43,8 +39,7 @@
         <Element>
             <Term>cbc:ID</Term>
             <Name>Invoice number</Name>
-            <Description>A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Invoice 
-                within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.</Description>
+            <Description>A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Invoice within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-1</Reference>
             <Reference type="RULE">BR-02</Reference>
@@ -82,6 +77,7 @@
             <Reference type="RULE">BR-04</Reference>
             <Reference type="RULE">BR-CL-01</Reference>
             <Reference type="RULE">PEPPOL-EN16931-P0100</Reference>
+            <Reference type="RULE">DE-R-017</Reference>
             <Reference type="CODE_LIST">UNCL1001-inv</Reference>
             <Value type="EXAMPLE">380</Value>
         </Element>
@@ -89,9 +85,7 @@
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Invoice note</Name>
-            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or
-                assignment note in case the invoice has been factored.
-            </Description>
+            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or assignment note in case the invoice has been factored. The element is not repeatable, except when both the Buyer and Seller are German, in which case the element can be repeated to meet specific legal requirements.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-22</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
@@ -102,9 +96,7 @@
         <Element cardinality="0..1">
             <Term>cbc:TaxPointDate</Term>
             <Name>Value added tax point date</Name>
-            <Description>The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date
-                can be determined and differs from the date of issue of the invoice, according to the VAT directive.This element is required if the Value added tax point date is different from the Invoice issue date.
-            </Description>
+            <Description>The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the VAT directive.This element is required if the Value added tax point date is different from the Invoice issue date. </Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-7</Reference>
             <Reference type="RULE">BR-CO-03</Reference>
@@ -114,9 +106,7 @@
         <Element>
             <Term>cbc:DocumentCurrencyCode</Term>
             <Name>Invoice currency code</Name>
-            <Description>The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting
-                currency. Only one currency shall be used in the Invoice, except for the VAT accounting currency code (BT-6) and the invoice total VAT amount in accounting currency (BT-111).
-            </Description>
+            <Description>The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting currency. Only one currency shall be used in the Invoice, except for the VAT accounting currency code (BT-6) and the invoice total VAT amount in accounting currency (BT-111). </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-5</Reference>
             <Reference type="RULE">BR-05</Reference>
@@ -128,15 +118,12 @@
         <Element cardinality="0..1">
             <Term>cbc:TaxCurrencyCode</Term>
             <Name>VAT accounting currency code</Name>
-            <Description>The currency used for VAT accounting and reporting purposes as accepted or required in the country
-                of the Seller. Shall be used in combination with the Invoice total VAT amount in accounting currency (BT-111), when the VAT accounting currency code differs from the 
-                Invoice currency code.
-            </Description>
+            <Description>The currency used for VAT accounting and reporting purposes as accepted or required in the country of the Seller. Shall be used in combination with the Invoice total VAT amount in accounting currency (BT-111), when the VAT accounting currency code differs from the Invoice currency code. </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-6</Reference>
             <Reference type="RULE">BR-CL-05</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R005</Reference>
-			<Reference type="RULE">PEPPOL-EN16931-R055</Reference>
+            <Reference type="RULE">PEPPOL-EN16931-R055</Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
             <Value type="EXAMPLE">SEK</Value>
         </Element>
@@ -144,12 +131,10 @@
         <Element cardinality="0..1">
             <Term>cbc:AccountingCost</Term>
             <Name>Buyer accounting reference</Name>
-            <Description>A textual value that specifies where to book the relevant data into the Buyer's financial
-                accounts.
-            </Description>
+            <Description>A textual value that specifies where to book the relevant data into the Buyer's financial accounts. </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-19</Reference>
-         <Value type="EXAMPLE">4217:2323:2323</Value>
+            <Value type="EXAMPLE">4217:2323:2323</Value>
         </Element>
 
         <Element cardinality="0..1">
@@ -159,14 +144,14 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-10</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
+            <Reference type="RULE">DE-R-015</Reference>
             <Value type="EXAMPLE">abs1234</Value>
         </Element>
 
         <Element cardinality="0..1">
             <Term>cac:InvoicePeriod</Term>
             <Name>DELIVERY OR INVOICE PERIOD</Name>
-            <Description>A group of business terms providing information on the invoice period. Also called delivery period. 
-                If the group is used, the invoiceing period start date and/or end date must be used.</Description>
+            <Description>A group of business terms providing information on the invoice period. Also called delivery period. If the group is used, the invoiceing period start date and/or end date must be used.</Description>
             <Reference type="BUSINESS_TERM">BG-14</Reference>
             <Reference type="RULE">BR-IC-11</Reference>
 
@@ -214,7 +199,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Purchase order reference</Name>
-                <Description>An identifier of a referenced purchase order, issued by the Buyer.An invoice must have buyer reference (BT-10) or purchase order reference.</Description>
+                <Description>An identifier of a referenced purchase order, issued by the Buyer. An invoice must have buyer reference (BT-10) or purchase order reference. In cases where sales order reference is provided, but there's no purchase order reference, then use value "NA" as this element is mandatory in UBL.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">BT-13</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
@@ -224,7 +209,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:SalesOrderID</Term>
                 <Name>Sales order reference</Name>
-                <Description>An identifier of a referenced sales order, issued by the Seller.</Description>
+                <Description>An identifier of a referenced sales order, issued by the Seller. In cases where sales order reference is provided, but there's no purchase order reference, then set cac:OrderReference/cbc:ID to value "NA" as this element is mandatory in UBL.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">BT-14</Reference>
                 <Value type="EXAMPLE">112233</Value>
@@ -236,10 +221,11 @@
             <Name>PRECEDING INVOICE REFERENCE</Name>
             <Description>A group of business terms providing information on one or more preceding Invoices.</Description>
             <Reference type="BUSINESS_TERM">BG-3</Reference>
+            <Reference type="RULE">DE-R-026</Reference>
 
             <Element>
                 <Term>cac:InvoiceDocumentReference</Term>
-                <Name>INVOICE DOCUMENT REFERENCE</Name>      
+                <Name>INVOICE DOCUMENT REFERENCE</Name>
 
                 <Element>
                     <Term>cbc:ID</Term>
@@ -253,8 +239,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:IssueDate</Term>
                     <Name>Preceding Invoice issue date</Name>
-                    <Description>The date when the Preceding Invoice was issued.Shall be
-                        provided in case the Preceding Invoice identifier is not unique. Format = "YYYY-MM-DD".</Description>
+                    <Description>The date when the Preceding Invoice was issued.Shall be provided in case the Preceding Invoice identifier is not unique. Format = "YYYY-MM-DD".</Description>
                     <DataType>Date</DataType>
                     <Reference type="BUSINESS_TERM">BT-26</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
@@ -318,11 +303,11 @@
                 <Value type="EXAMPLE">123Contractref</Value>
             </Element>
         </Element>
-        
-    
+
+
         <Include>part/additional-docs.xml</Include>
-       
-      
+
+
 
         <Element cardinality="0..1">
             <Term>cac:ProjectReference</Term>
@@ -340,68 +325,66 @@
 
 
         <Include>part/supplier-party.xml</Include>
-        
+
         <Include>part/customer-party.xml</Include>
-        
+
         <Include>part/payee-party.xml</Include>
-        
+
         <Include>part/taxrep-party.xml</Include>
 
-         <Include>part/delivery.xml</Include>
+        <Include>part/delivery.xml</Include>
 
         <Element cardinality="0..n">
-        <Term>cac:PaymentMeans</Term>
-        <Name>PAYMENT INSTRUCTIONS</Name>
-        <Description>A group of business terms providing information about the payment.</Description>
-        <Reference type="BUSINESS_TERM">BG-16</Reference>
-        
-        <Element>
-            <Term>cbc:PaymentMeansCode</Term>
-            <Name>Payment means type code</Name>
-            <Description>The means, expressed as code, for how a payment is expected to be or has been settled.
-            </Description>
-            <DataType>Code</DataType>
-            <Reference type="BUSINESS_TERM">BT-81</Reference>
-            <Reference type="RULE">BR-49</Reference>
-            <Reference type="RULE">BR-CL-16</Reference>
-            <Reference type="CODE_LIST">UNCL4461</Reference>
-            
-            
-            <Attribute usage="Optional">
-                <Term>name</Term>
-                <Name>Payment means text</Name>
-                <Description>The means, expressed as text, for how a payment is expected to be or has been settled.
-                </Description>
-                <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">BT-82</Reference>
-                <Value type="EXAMPLE">Credit transfer</Value>
-            </Attribute>
-            
-            <Value type="EXAMPLE">30</Value>
-            
-        </Element>
-        
-        <Element cardinality="0..1">
-            <Term>cbc:PaymentID</Term>
-            <Name>Remittance information</Name>
-            <Description>A textual value used to establish a link between the payment and the Invoice, issued by the
-                Seller. Used for creditor's critical reconciliation information. This information element helps the Seller to assign an incoming payment to the relevant payment process.
-            </Description>
-            <DataType>Text</DataType>
-            <Reference type="BUSINESS_TERM">BT-83</Reference>
-            <Value type="EXAMPLE">432948234234234</Value>
-        </Element>
-        
-            <Include>part/card-payment.xml</Include>
-            
-            <Include>part/credit-transfer.xml</Include>
-            
-            <Include>part/payment-mandate.xml</Include>
-            
-        </Element>
-       
+            <Term>cac:PaymentMeans</Term>
+            <Name>PAYMENT INSTRUCTIONS</Name>
+            <Description>A group of business terms providing information about the payment.</Description>
+            <Reference type="BUSINESS_TERM">BG-16</Reference>
+            <Reference type="RULE">DE-R-001</Reference>
 
-      
+            <Element>
+                <Term>cbc:PaymentMeansCode</Term>
+                <Name>Payment means type code</Name>
+                <Description>The means, expressed as code, for how a payment is expected to be or has been settled. </Description>
+                <DataType>Code</DataType>
+                <Reference type="BUSINESS_TERM">BT-81</Reference>
+                <Reference type="RULE">BR-49</Reference>
+                <Reference type="RULE">BR-CL-16</Reference>
+                <Reference type="RULE">DE-R-020</Reference>
+                <Reference type="CODE_LIST">UNCL4461</Reference>
+
+
+                <Attribute usage="Optional">
+                    <Term>name</Term>
+                    <Name>Payment means text</Name>
+                    <Description>The means, expressed as text, for how a payment is expected to be or has been settled. </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">BT-82</Reference>
+                    <Value type="EXAMPLE">Credit transfer</Value>
+                </Attribute>
+
+                <Value type="EXAMPLE">30</Value>
+
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:PaymentID</Term>
+                <Name>Remittance information</Name>
+                <Description>A textual value used to establish a link between the payment and the Invoice, issued by the Seller. Used for creditor's critical reconciliation information. This information element helps the Seller to assign an incoming payment to the relevant payment process. </Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">BT-83</Reference>
+                <Value type="EXAMPLE">432948234234234</Value>
+            </Element>
+
+            <Include>part/card-payment.xml</Include>
+
+            <Include>part/credit-transfer.xml</Include>
+
+            <Include>part/payment-mandate.xml</Include>
+
+        </Element>
+
+
+
 
         <Element cardinality="0..1">
             <Term>cac:PaymentTerms</Term>
@@ -410,34 +393,33 @@
             <Element>
                 <Term>cbc:Note</Term>
                 <Name>Payment terms</Name>
-                <Description>A textual description of the payment terms that apply to the amount due for payment (Including
-                    description of possible penalties). In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.
-                </Description>
+                <Description>A textual description of the payment terms that apply to the amount due for payment (Including description of possible penalties). In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present. </Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-20</Reference>
                 <Reference type="RULE">BR-CO-25</Reference>
+                <Reference type="RULE">DE-R-018</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
             </Element>
         </Element>
-        
+
         <Include>part/allowance-charge.xml</Include>
-        
+
         <Include>part/tax-total.xml</Include>
-     
+
         <Include>part/monetary-totals.xml</Include>
-    
 
 
-     
+
+
         <Element cardinality="1..n">
             <Term>cac:InvoiceLine</Term>
             <Name>INVOICE LINE</Name>
             <Description>A group of business terms providing information on individual Invoice lines.</Description>
             <Reference type="BUSINESS_TERM">BG-25</Reference>
             <Reference type="RULE">BR-16</Reference>
-            
-            
-           
+
+
+
 
             <Element>
                 <Term>cbc:ID</Term>
@@ -452,8 +434,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:Note</Term>
                 <Name>Invoice line note</Name>
-                <Description>A textual note that gives unstructured information that is relevant to the Invoice line.
-                </Description>
+                <Description>A textual note that gives unstructured information that is relevant to the Invoice line. </Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-127</Reference>
                 <Value type="EXAMPLE">New article number 12345</Value>
@@ -471,10 +452,8 @@
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Invoiced quantity unit of measure</Name>
-                    <Description>The unit of measure that applies to the invoiced quantity.
-					Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
-					The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
-					</Description>
+                    <Description>The unit of measure that applies to the invoiced quantity. Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015): The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed
+                        with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure. </Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">BT-130</Reference>
                     <Reference type="RULE">BR-23</Reference>
@@ -487,9 +466,7 @@
             <Element>
                 <Term>cbc:LineExtensionAmount</Term>
                 <Name>Invoice line net amount</Name>
-                <Description>The total amount of the Invoice line.
-                    The amount is “net” without VAT, i.e. inclusive of line level allowances and charges as well as other relevant taxes.
-                    Must be rounded to maximum 2 decimals.</Description>
+                <Description>The total amount of the Invoice line. The amount is “net” without VAT, i.e. inclusive of line level allowances and charges as well as other relevant taxes. Must be rounded to maximum 2 decimals.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-131</Reference>
                 <Reference type="RULE">BR-24</Reference>
@@ -497,7 +474,7 @@
                 <Reference type="RULE">BR-DEC-23</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
                 <Reference type="RULE">BR-CL-03</Reference>
-                
+
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Mandatory attribute. Use BT-5</Description>
@@ -506,24 +483,22 @@
                     <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
-                
+
                 <Value type="EXAMPLE">2145.00</Value>
             </Element>
 
             <Element cardinality="0..1">
                 <Term>cbc:AccountingCost</Term>
                 <Name>Invoice line Buyer accounting reference</Name>
-                <Description>A textual value that specifies where to book the relevant data into the Buyer's financial
-                    accounts.
-                </Description>
+                <Description>A textual value that specifies where to book the relevant data into the Buyer's financial accounts. </Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-133</Reference>
                 <Value type="EXAMPLE">1287:65464</Value>
             </Element>
-            
+
             <Include>part/line-period.xml</Include>
 
-          
+
 
             <Element cardinality="0..1">
                 <Term>cac:OrderLineReference</Term>
@@ -551,7 +526,7 @@
                     <Description>An identifier for an object on which the invoice line is based, given by the Seller.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-128</Reference>
-                    
+
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Invoice line object identifier identification scheme identifier</Name>
@@ -561,7 +536,7 @@
                     </Attribute>
                     <Value type="EXAMPLE">AB12345</Value>
                 </Element>
-                
+
                 <Element>
                     <Term>cbc:DocumentTypeCode</Term>
                     <Name>Document type code</Name>
@@ -570,15 +545,15 @@
                     <Reference type="BUSINESS_TERM">BT-128</Reference>
                     <Value type="DEFAULT">130</Value>
                 </Element>
-                
+
             </Element>
-            
+
             <Include>part/line-allowance-charge.xml</Include>
 
             <Include>part/item.xml</Include>
-              
+
             <Include>part/price.xml</Include>
-          
+
         </Element>
     </Document>
 

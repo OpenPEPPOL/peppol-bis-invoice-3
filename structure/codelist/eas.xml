@@ -58,6 +58,10 @@
         <Name>Australian Business Number (ABN) Scheme</Name>
     </Code>
     <Code>
+        <Id>0177</Id>
+        <Name>Odette International Limited</Name>
+    </Code>
+    <Code>
         <Id>0183</Id>
         <Name>Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business
             Identification Number (UIDB)</Name>
@@ -151,6 +155,21 @@
         <Name>OVTcode</Name>
     </Code>
     <Code>
+        <Id>0218</Id>
+        <Name>Unified registration number (Latvia)</Name>
+    </Code>
+	 <Code>
+        <Id>0221</Id>
+        <Name>The registered number of the qualified invoice issuer (Japan)</Name>
+    </Code>
+	 <Code>
+        <Id>0230</Id>
+        <Name>National e-Invoicing Framework (Malaysia)</Name>
+    </Code>
+	 <Code>
+        <Id>0235</Id>
+        <Name>UAE Tax Identification Number (TIN)</Name>
+    </Code>    <Code>
         <Id>9901</Id>
         <Name>Danish Ministry of the Interior and Health</Name>
     </Code>
@@ -309,10 +328,6 @@
     <Code>
         <Id>9953</Id>
         <Name>Holy See (Vatican City State) VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9955</Id>
-        <Name>Swedish VAT number</Name>
     </Code>
     <Code>
         <Id>9957</Id>

@@ -249,10 +249,6 @@
         <Name>Lempira</Name>
     </Code>
     <Code>
-        <Id>HRK</Id>
-        <Name>Kuna</Name>
-    </Code>
-    <Code>
         <Id>HTG</Id>
         <Name>Gourde</Name>
     </Code>
@@ -521,8 +517,8 @@
         <Name>Saint Helena Pound</Name>
     </Code>
     <Code>
-        <Id>SLL</Id>
-        <Name>Leone</Name>
+        <Id>SLE</Id>
+        <Name>Sierra Leone</Name>
     </Code>
     <Code>
         <Id>SOS</Id>
@@ -613,14 +609,21 @@
         <Name>Peso Uruguayo</Name>
     </Code>
     <Code>
+        <Id>UYW</Id>
+        <Name>Unidad Previsional</Name>
+    </Code>
+    <Code>
         <Id>UZS</Id>
         <Name>Uzbekistan Sum</Name>
     </Code>
     <Code>
-        <Id>VEF</Id>
-        <Name>Bolívar</Name>
+        <Id>VED</Id>
+        <Name>Bolívar Soberano, new valuation</Name>
     </Code>
     <Code>
+    <Id>VES</Id>
+        <Name>Bolívar Soberano</Name>
+    </Code>    <Code>
         <Id>VND</Id>
         <Name>Dong</Name>
     </Code>
@@ -707,6 +710,10 @@
     <Code>
         <Id>ZMW</Id>
         <Name>Zambian Kwacha</Name>
+    </Code>
+    <Code>
+        <Id>ZWG</Id>
+        <Name>Zimbabwe Gold</Name>
     </Code>
     <Code>
         <Id>ZWL</Id>

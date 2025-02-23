@@ -94,8 +94,8 @@
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
             <Name>Invoice note</Name>
-            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.Such as the reason for any correction or
-                assignment note in case the invoice has been factored.
+            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole. Such as the reason for any correction or
+                assignment note in case the invoice has been factored. The element is not repeatable, except when both the Buyer and Seller are German, in which case the element can be repeated to meet specific national requirements.
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-22</Reference>
@@ -153,6 +153,7 @@
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-10</Reference>
             <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
+            <Reference type="RULE">DE-R-015</Reference>
             <Value type="EXAMPLE">abs1234</Value>
         </Element>
 
@@ -208,7 +209,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Purchase order reference</Name>
-                <Description>An identifier of a referenced purchase order, issued by the Buyer.An invoice must have buyer reference (BT-10) or purchase order reference.</Description>
+                <Description>An identifier of a referenced purchase order, issued by the Buyer. An invoice must have buyer reference (BT-10) or purchase order reference. In cases where sales order reference is provided, but there's no purchase order reference, then use value "NA" as this element is mandatory in UBL</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">BT-13</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
@@ -218,7 +219,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:SalesOrderID</Term>
                 <Name>Sales order reference</Name>
-                <Description>An identifier of a referenced sales order, issued by the Seller.</Description>
+                <Description>An identifier of a referenced Sales order, issued by the Seller. In cases where sales order reference is provided, but there's no purchase order reference, then set cac:OrderReference/cbc:ID to value "NA" as this element is mandatory in UBL.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">BT-14</Reference>
                 <Value type="EXAMPLE">112233</Value>
@@ -307,8 +308,9 @@
                 The additional supporting documents can be used for both referencing a document number which is expected to be known by the receiver, 
                 an external document (referenced by a URL) or as an embedded document, Base64 encoded (such as a time report).</Description>
             <Reference type="BUSINESS_TERM">BG-24</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
+            <!--Reference type="RULE">PEPPOL-EN16931-R006</Reference-->
             <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
+            <Reference type="RULE">DE-R-022</Reference>
            
 
             
@@ -440,7 +442,8 @@
             <Name>PAYMENT INSTRUCTIONS</Name>
             <Description>A group of business terms providing information about the payment.</Description>
             <Reference type="BUSINESS_TERM">BG-16</Reference>
-
+            <Reference type="RULE">DE-R-001</Reference>
+            
             <Element>
                 <Term>cbc:PaymentMeansCode</Term>
                 <Name>Payment means type code</Name>
@@ -449,7 +452,8 @@
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-81</Reference>
                 <Reference type="RULE">BR-49</Reference>
-                <Reference type="RULE">BR-CL-16</Reference>
+                <Reference type="RULE">BR-CL-16</Reference>                
+                <Reference type="RULE">DE-R-019</Reference>                
                 <Reference type="CODE_LIST">UNCL4461</Reference>
 
 
@@ -513,6 +517,7 @@
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-20</Reference>
                 <Reference type="RULE">BR-CO-25</Reference>
+                <Reference type="RULE">DE-R-018</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
             </Element>
         </Element>

@@ -6,7 +6,7 @@
 	</assert>
 	<test>
 		<assert>
-			<success number="4">PEPPOL-EN16931-R051</success>
+			<success>PEPPOL-EN16931-R051</success>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -16,7 +16,9 @@
 
 			<cac:TaxTotal>
 				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
-				<cac:TaxSubtotal/>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				</cac:TaxSubtotal>
 			</cac:TaxTotal>
 
 			<cac:LegalMonetaryTotal>
@@ -34,7 +36,7 @@
 	</test>
 	<test>
 		<assert>
-			<error number="4">PEPPOL-EN16931-R051</error>
+			<error>PEPPOL-EN16931-R051</error>
 		</assert>
 		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
 			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
@@ -44,7 +46,69 @@
 
 			<cac:TaxTotal>
 				<cbc:TaxAmount currencyID="NOK">10</cbc:TaxAmount>
-				<cac:TaxSubtotal/>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="EUR">100</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount currencyID="EUR">100</cbc:LineExtensionAmount>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="EUR">100</cbc:PriceAmount>
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R051</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount currencyID="NOK">10</cbc:TaxAmount>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="EUR">100</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount currencyID="EUR">100</cbc:LineExtensionAmount>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="EUR">100</cbc:PriceAmount>
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R051</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				</cac:TaxSubtotal>
 			</cac:TaxTotal>
 
 			<cac:LegalMonetaryTotal>
@@ -52,7 +116,67 @@
 			</cac:LegalMonetaryTotal>
 
 			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount currencyID="EUR">100</cbc:LineExtensionAmount>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="EUR">100</cbc:PriceAmount>
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R051</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="EUR">100</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+
+			<cac:InvoiceLine>
 				<cbc:LineExtensionAmount currencyID="NOK">100</cbc:LineExtensionAmount>
+				<cac:Price>
+					<cbc:PriceAmount currencyID="EUR">100</cbc:PriceAmount>
+				</cac:Price>
+			</cac:InvoiceLine>
+
+		</Invoice>
+	</test>
+	<test>
+		<assert>
+			<error>PEPPOL-EN16931-R051</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+			xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+			<cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+
+			<cac:TaxTotal>
+				<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				<cac:TaxSubtotal>
+					<cbc:TaxAmount currencyID="EUR">10</cbc:TaxAmount>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+
+			<cac:LegalMonetaryTotal>
+				<cbc:PayableAmount currencyID="EUR">100</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+
+			<cac:InvoiceLine>
+				<cbc:LineExtensionAmount currencyID="EUR">100</cbc:LineExtensionAmount>
 				<cac:Price>
 					<cbc:PriceAmount currencyID="NOK">100</cbc:PriceAmount>
 				</cac:Price>
@@ -60,4 +184,5 @@
 
 		</Invoice>
 	</test>
+
 </testSet>

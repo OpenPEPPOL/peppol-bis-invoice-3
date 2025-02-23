@@ -1098,6 +1098,95 @@ Classes moyennes et Energie</Description>
         <Id>0220</Id>
         <Name>The Register of Natural Persons (Latvia)</Name>
         <Description>Intended Purpose/App. Area: The Register combines the functionality of the current information system of the Population Register and Civil Register. The Register is a uniform state registration and recording system of information and natural persons that provides identification of natural persons, data processing and accumulation, and includes and updates information about civil entries. The data included in the Register is used for statistical surveys, tax forecasting and calculation, organizing of elections and other processes of national importance. When entering information regarding a person in the Register, the Office of Citizenship and Migration Affairs of the Republic of Latvia shall assign an automatically generated individual personal identity number thereto. Issuing agency: Office of Citizenship and Migration Affairs of the Republic of Latvia.</Description>
-    </Code>    
-
+    </Code>  
+	<Code>
+        <Id>0221</Id>
+        <Name>The registered number of the qualified invoice issuer</Name>
+        <Description>Intended Purpose/App. Area: The registered number of the qualified invoice issuer is used on the invoice-based method for Japanese consumption tax, which will be implemented on 1 October 2023. Issuing agency: National Tax Agency Japan</Description>
+    </Code> 
+	<Code>
+        <Id>0222</Id>
+        <Name>Metadata Registry Support</Name>
+        <Description>Intended Purpose/App. Area: Database of metadata supporting description of object-data-information-etc. Issuing agency: Farance Inc.</Description>
+    </Code> 
+	<Code>
+        <Id>0223</Id>
+        <Name>EU based company</Name>
+        <Description>Intended Purpose/App. Area: To provide identifiers for organizations based in EU. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+    </Code> 
+	<Code>
+        <Id>0224</Id>
+        <Name>FTCTC CODE ROUTAGE</Name>
+        <Description>Intended Purpose/App. Area: To provide identifiers used in electronic invoices for routing among accredited platforms for the French Continuous Transactional Control reform on e-invoicing. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+    </Code> 
+	<Code>
+        <Id>0225</Id>
+        <Name>FRCTC ELECTRONIC ADDRESS</Name>
+        <Description>Intended Purpose/App. Area: To provide identifiers used as electronic addresses in the context of the French Continuous Transactional Control reform on e-invoicing. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+    </Code> 
+	<Code>
+        <Id>0226</Id>
+        <Name>FRCTC Particulier</Name>
+        <Description>Intended Purpose/App. Area: To provide identifiers for French citizen sending invoices to the French Public Sector. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+    </Code> 
+	<Code>
+        <Id>0227</Id>
+        <Name>NON - EU based company</Name>
+        <Description>Intended Purpose/App. Area: NON - EU based company. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+    </Code> 
+	<Code>
+        <Id>0228</Id>
+        <Name>Répertoire des Entreprises et des Etablissements (RIDET)</Name>
+        <Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in Nouvelle Caledonie (French). Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+    </Code> 
+	<Code>
+        <Id>0229</Id>
+        <Name>T.A.H.I.T.I (traitement automatique hiérarchisé des institutions de Tahiti et des îles)</Name>
+        <Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in TAHITI (French). Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+    </Code> 
+	<Code>
+        <Id>0230</Id>
+        <Name>National e-Invoicing Framework</Name>
+        <Description>Intended Purpose/App. Area: Identifier for  organizations. Issuing agency: Malaysia Digital Economy Corporation Sdn Bhd (MDEC)</Description>
+    </Code> 
+	<Code>
+        <Id>0231</Id>
+        <Name>Single taxable company (France)</Name>
+        <Description>'Intended Purpose/App. Area: Provide identifiers to companies in a single taxable company regime. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+    </Code> 	
+	<Code>
+        <Id>0232</Id>
+        <Name>NOBB product number</Name>
+        <Description>Intended Purpose/App. Area:  . Issuing agency:  '</Description>
+    </Code>
+	<Code>
+        <Id>0233</Id>
+        <Name>Name not known</Name>
+        <Description>Description not known</Description>
+    </Code>
+	<Code>
+        <Id>0234</Id>
+        <Name>Toimitusosoite ID</Name>
+        <Description>'Intended Purpose/App. Area: Identification scheme is used to identify delivery locations of the Finnish government accounting units. Issuing agency: Toimitusosoite ID'</Description>
+    </Code>
+	<Code>
+        <Id>0235</Id>
+        <Name>UAE Tax Identification Number (TIN)</Name>
+        <Description>'Intended Purpose/App. Area: A unique number issued to a range of persons required to be identified for tax purposes. Issuing agency: UAE Federal Tax Authority'</Description>
+    </Code>
+	<Code>
+        <Id>0236</Id>
+        <Name>Name not known</Name>
+        <Description>Description not known</Description>
+    </Code>
+	<Code>
+        <Id>0237</Id>
+        <Name>CPR (Danish person civil registration number)</Name>
+        <Description>'Intended Purpose/App. Area:  . Issuing agency:  '</Description>
+    </Code>
+	<Code>
+        <Id>0238</Id>
+        <Name>Plateforme.s agréée.s à la facturation électronique (PPF/PDP)</Name>
+        <Description>'Intended Purpose/App. Area: To provide identifiers for E-invoicing Public Platform and Partner Dematerialisation Platform. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+    </Code>
 </CodeList>
