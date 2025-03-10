@@ -1,4 +1,4 @@
-= Release notes for Peppol BIS Billing v3
+= Release notes for Peppol BIS Self-Billing v3
 openPeppol AISBL <http://www.peppol.eu/>
 :icons: font
 :source-highlighter: coderay

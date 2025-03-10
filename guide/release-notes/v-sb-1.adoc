@@ -1,6 +1,6 @@
 = Version 3.0.0
 [horizontal]
-Release date:: TBD
+Release date:: March 2025
 
 Initial version of Peppol BIS Self-Billing. Starting from BIS Billing 3.0.18 Nov-2024
 
