@@ -13,7 +13,7 @@ The purpose of this document is to facilitate an efficient implementation and in
 ****
 This Peppol Business Interoperability Specification (Peppol BIS) document is a Core Invoice Usage Specification (CIUS) based on CEN/EN 16931:2017. The restrictions on CEN/EN 16931:2017 implemented in this Peppol BIS appear from the conformance statement provided in appendix A.
 
-The copyright of CEN/EN 16931:2107 is owned by CEN and its members - the European National Standards Bodies. A copy of CEN/EN 16931-1:2017 may be obtained free of charge from any CEN member.
+The copyright of CEN/EN 16931:2017 is owned by CEN and its members - the European National Standards Bodies. A copy of CEN/EN 16931-1:2017 may be obtained free of charge from any CEN member.
 
 OpenPeppol AISBL holds the copyright of this Peppol BIS, developed and published subject to the conditions of the agreement between the European Commission and CEN allowing derivate works to be developed and distributed with no additional licensing requirements. CEN and the National  Standards Bodies bears no liability from the content and implementation of this Peppol BIS.
 
