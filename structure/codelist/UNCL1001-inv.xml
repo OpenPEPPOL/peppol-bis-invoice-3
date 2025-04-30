@@ -56,13 +56,12 @@
         <Name>Payment request for completed units</Name>
         <Description> A request for payment for completed units.</Description>
     </Code>
-<!--
+    <!-- Germany only -->
     <Code>
         <Id>326</Id>
         <Name>Partial invoice</Name>
         <Description>Document/message specifying details of an incomplete invoice.</Description>
-    </Code> 
--->    
+    </Code>  
     <Code>
         <Id>331</Id>
         <Name>Commercial invoice which includes a packing list</Name>
@@ -91,13 +90,12 @@
             relevant party.
         </Description>
     </Code>
-<!--
+    <!-- Germany only -->
     <Code>
         <Id>384</Id>
         <Name>Corrected invoice</Name>
         <Description>Commercial invoice that includes revised information differing from an earlier submission of the same invoice.</Description>
     </Code> 
--->
     <Code>
         <Id>386</Id>
         <Name>Prepayment invoice</Name>
@@ -111,6 +109,12 @@
         <Id>388</Id>
         <Name>Tax invoice</Name>
         <Description>An invoice for tax purposes.</Description>
+    </Code>
+    <!-- Germany only -->
+    <Code>
+        <Id>389</Id>
+        <Name>Self-billed invoice</Name>
+        <Description>An invoice the invoicee is producing instead of the seller.</Description>
     </Code>
 
     <Code>

@@ -1,5 +1,5 @@
 = Version 3.0.19
-[horizontal]
+* horizontal]
 Release date:: May 2025
 * Date of member review: 2024-03-07
 * Date of publication: 2025-05-19
@@ -9,15 +9,40 @@ Release date:: May 2025
 
 * Changed the text on Binary objects to "The attachments are underpinning the XML document".
 * Reference to codelist vatex added on TaxExemptionReasonCode
+* Several editorial changes
 
 == Changes to code lists and validation artefacts
 
-* BUG Missing currencyID check for BT-117 in Peppol BIS Billing 3.0 PEPPOL-EN16931-R051 [minor]
+* BUG Missing currencyID check for BT-117 in Peppol BIS Billing 3.0 PEPPOL-EN16931-R051 * minor]
 * Rule PEPPOL-COMMON-R042 which tests danish organization numbers, CVR, (ICD 0184) is updated according to the Participant identifier schemes codelists. The identifier must be 8 characters long and no longer prefixed with DK.
+* Changes to codelists and schematrons PEPPOL-EN16931-CII and PEPPOL-EN16931-UBL.
+[cols="1,1,1"]
+|===
+|codelist|removed|added
+
+|eas |7 [0037,0177,0202,0212,0213,0215,9901] |3 [0205,0225,0240]
+|icd |0 [] |2 [0239,0240]
+|ISO4217 |2 [CUC,ZWL] |1 [XXX]
+|UNCL1153 |0 [] |1 [AXU]
+|UNCL4461 |0 [] |1 [69]
+|UNCL5305 |1 [B] |0 []
+|UNCL7143 |0 [] |1 [PPI]
+|VATEX |0 [] |25 [VATEX-EU-153,VATEX-FR-CGI261-1,VATEX-FR-CGI261-2,VATEX-FR-CGI261-3,VATEX-FR-CGI261-4,VATEX-FR-CGI261-5,VATEX-FR-CGI261-7,VATEX-FR-CGI261-8,VATEX-FR-CGI261A,VATEX-FR-CGI261B,VATEX-FR-CGI261C-1,VATEX-FR-CGI261C-2,VATEX-FR-CGI261C-3,VATEX-FR-CGI261D-1,VATEX-FR-CGI261D-1BIS,VATEX-FR-CGI261D-2,VATEX-FR-CGI261D-3,VATEX-FR-CGI261D-4,VATEX-FR-CGI261E-1,VATEX-FR-CGI261E-2,VATEX-FR-CGI277A,VATEX-FR-CGI275,VATEX-FR-298SEXDECIESA,VATEX-FR-CGI295,VATEX-FR-AE]
+|UNCL1001-inv|0 [] |3 [326,384,389] for Germany only
+|===
+
 
 ==  EN 16931 schematrons updated
 
-* RELEASE NOTES FROM EC
+* Update codes in validation artefacts
+* Correct text BareCode in the Schematron rules
+* Invalid Code for Seller VAT identifier (BT-31) in our Codelist for CII
+* BR-O-03 CII doesn't check absence of BT-48 field
+* UBL-SR-22 checking for wrong XPath
+* Missing rule in UBL for checking for the mandatory CompanyID (VAT-id) in PartyTaxScheme
+* BR-CO-27 can not fail
+* CII: BR-AG* does not match BR-Names in UBL / EN16931
+* BR-AG-06 and BR-AG-07
 
 ==  Changes to Country-Specific Rules
 * Rule DK-R-008 changed to allow PayeeFinancialAccount/ID with both 7 and 8 numerical characters (PaymentMeansCode = 50 - Giro kontonummer).

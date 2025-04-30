@@ -1,1192 +1,1195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    <Title>ISO 6523 ICD list</Title>
-    <Identifier>ICD</Identifier>
-    <Agency>The International Organization for Standardization (ISO)</Agency>
-    <Code>
-        <Id>0002</Id>
-        <Name>System Information et Repertoire des Entreprise et des Etablissements: SIRENE</Name>
-        <Description>Notes on Use of Code: The Sirene number is used in France mainly for the official registration in the Trade Register and as the only number used between authorities and organizations, and between authorities when dealing with data interchange on organizations. Issuing agency: Institut National de la Statistique et des Etudes Economiques, (I.N.S.E.E.), France.</Description>
-    </Code>
-    <Code>
-        <Id>0003</Id>
-        <Name>Codification Numerique des Etablissments Financiers En Belgique</Name>
-        <Description>Notes on Use of Code: Many financial institutions have more than one code number, e.g. to indicate each branch individually. The codes can be reallocated over the time (mostly in the case where a financial institution terminates its activity). Some code numbers are currently unused. Code numbers 990 through 999 are reserved. Issuing agency: Association Belge des Banques, Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0004</Id>
-        <Name>NBS/OSI NETWORK</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: National Bureau of Standards, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0005</Id>
-        <Name>USA FED GOV OSI NETWORK</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: National Bureau of Standards, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0006</Id>
-        <Name>USA DOD OSI NETWORK</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: Defense Communication Agency, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0007</Id>
-        <Name>Organisationsnummer</Name>
-        <Description>Notes on Use of Code: The third digit in the organisation number is never lower than 2 in order to
+	<Title>ISO 6523 ICD list</Title>
+	<Identifier>ICD</Identifier>
+	<Agency>The International Organization for Standardization (ISO)</Agency>
+	<Code>
+		<Id>0002</Id>
+		<Name>System Information et Repertoire des Entreprise et des Etablissements: SIRENE</Name>
+		<Description>Notes on Use of Code: The Sirene number is used in France mainly for the official registration in the Trade Register and as the only number used between authorities and organizations, and between authorities when dealing with data interchange on organizations. Issuing agency: Institut National de la Statistique et des Etudes Economiques, (I.N.S.E.E.), France.</Description>
+	</Code>
+	<Code>
+		<Id>0003</Id>
+		<Name>Codification Numerique des Etablissments Financiers En Belgique</Name>
+		<Description>Notes on Use of Code: Many financial institutions have more than one code number, e.g. to indicate each branch individually. The codes can be reallocated over the time (mostly in the case where a financial institution terminates its activity). Some code numbers are currently unused. Code numbers 990 through 999 are reserved. Issuing agency: Association Belge des Banques, Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0004</Id>
+		<Name>NBS/OSI NETWORK</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: National Bureau of Standards, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0005</Id>
+		<Name>USA FED GOV OSI NETWORK</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: National Bureau of Standards, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0006</Id>
+		<Name>USA DOD OSI NETWORK</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: Defense Communication Agency, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0007</Id>
+		<Name>Organisationsnummer</Name>
+		<Description>Notes on Use of Code: The third digit in the organisation number is never lower than 2 in order to
             avoid it being confused with personal numbers. Issuing agency: The National Tax Board, SWEDEN.</Description>
-    </Code>
-    <Code>
-        <Id>0008</Id>
-        <Name>LE NUMERO NATIONAL</Name>
-        <Description>Issuing agency: Ministere De L'interieur et de la Fonction Publique, Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0009</Id>
-        <Name>SIRET-CODE</Name>
-        <Description>Issuing agency: DU PONT DE NEMOURS (FRANCE) S.A. France.</Description>
-    </Code>
-    <Code>
-        <Id>0010</Id>
-        <Name>Organizational Identifiers for Structured Names under ISO 9541 Part 2</Name>
-        <Description>Notes on Use of Code: The organizational codes established under this coding systems constitute the registered organizational identifiers recognised under ISO 9541-2. That standard effectively establishes agreements under which, as allowed by clauses 5.1 and 5.3 of ISO 6523, both the ICD and the organization name are generally omitted, from the SIO, and thus only the organization code portion of the SIO is interchanged. Issuing agency: Association for Font Information Interchange, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0011</Id>
-        <Name>International Code Designator for the Identification of OSI-based, Amateur Radio
+	</Code>
+	<Code>
+		<Id>0008</Id>
+		<Name>LE NUMERO NATIONAL</Name>
+		<Description>Issuing agency: Ministere De L'interieur et de la Fonction Publique, Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0009</Id>
+		<Name>SIRET-CODE</Name>
+		<Description>Issuing agency: DU PONT DE NEMOURS (FRANCE) S.A. France.</Description>
+	</Code>
+	<Code>
+		<Id>0010</Id>
+		<Name>Organizational Identifiers for Structured Names under ISO 9541 Part 2</Name>
+		<Description>Notes on Use of Code: The organizational codes established under this coding systems constitute the registered organizational identifiers recognised under ISO 9541-2. That standard effectively establishes agreements under which, as allowed by clauses 5.1 and 5.3 of ISO 6523, both the ICD and the organization name are generally omitted, from the SIO, and thus only the organization code portion of the SIO is interchanged. Issuing agency: Association for Font Information Interchange, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0011</Id>
+		<Name>International Code Designator for the Identification of OSI-based, Amateur Radio
             Organizations, Network Objects and Application Services.</Name>
-        <Description>Notes on Use of Code: Specific object and attribute naming conventions are currently being defined. Issuing agency: The Radio Amateur Telecommunications Society, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0012</Id>
-        <Name>European Computer Manufacturers Association: ECMA</Name>
-        <Description>Issuing agency: European Computer Manufacturers Association, SWITZERLAND.</Description>
-    </Code>
-    <Code>
-        <Id>0013</Id>
-        <Name>VSA FTP CODE (FTP = File Transfer Protocol)</Name>
-        <Description>Notes on Use of Code: The code serves the addressing between the communicating partners. Issuing agency: Verband der Automobilindustrie e.V., GERMANY.</Description>
-    </Code>
-    <Code>
-        <Id>0014</Id>
-        <Name>NIST/OSI Implememts' Workshop</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the Workshop naming and addressing tree. Issuing agency: United States Department of Commerce, National Institute of Standards and Technology, Gaithersburg, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0015</Id>
-        <Name>Electronic Data Interchange: EDI</Name>
-        <Description>Issuing agency: Avon Rubber p.l.c. UK.</Description>
-    </Code>
-    <Code>
-        <Id>0016</Id>
-        <Name>EWOS Object Identifiers</Name>
-        <Description>Notes on Use of Code: a) In the SIO the Organization Name will normally be omitted, b) The code is primarily intended for the registration of Objects Identifiers according to ISO 8824: Level 1: iso (1), Level 2: identified-organization (3), Level 3: ewos (0016), Level 4: and higher: (defined by EWOS conventions) Issuing agency: EWOS (European Workshop for Open Systems), BELGIUM.</Description>
-    </Code>
-    <Code>
-        <Id>0017</Id>
-        <Name>COMMON LANGUAGE</Name>
-        <Description>Notes on Use of Code: Codes for named populated places, geographic places, geopolitical places, outlaying areas, and other related entities of the state of the United States, provinces and territories of Canada, countries of the world, and other, unique areas. Also for the identification of organizations, places, equipment and governmental entities by the telecommunication industry. Issuing agency: Data Communications Technology Planning, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0018</Id>
-        <Name>SNA/OSI Network</Name>
-        <Description>Notes on Use of Code: The ICD code will also form the initial part of the OSI Network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: International Business Machines Corporation, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0019</Id>
-        <Name>Air Transport Industry Services Communications Network</Name>
-        <Description>The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: International Air Transport Association, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0020</Id>
-        <Name>European Laboratory for Particle Physics: CERN</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 of ISO 8348. Issuing agency: European Laboratory for Particle Physics, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0021</Id>
-        <Name>SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T.</Name>
-        <Description>Notes on Use of Code: To be used for assignment of object identifiers (ISO 8824/8825) Issuing agency: SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T. BELGIUM.</Description>
-    </Code>
-    <Code>
-        <Id>0022</Id>
-        <Name>OSF Distributed Computing Object Identification</Name>
-        <Description>Notes on Use of Code: OSF provides public domain software in OS, ISO networking and management. The initial use of the coding system are for identifying the following objects in OSF's distributed computing environment: the attributes of entries in the distributed directory, the object class of each entry in the directory, the type of name components (RDNs), the communication protocol profiles, the interfaces offered by. Issuing agency: Open Software Foundation, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0023</Id>
-        <Name>Nordic University and Research Network: NORDUnet</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and tree as depicted in Addendum 2 of ISO 8348. Issuing agency: NORDUnet, c/o SICS, Sweden.</Description>
-    </Code>
-    <Code>
-        <Id>0024</Id>
-        <Name>Digital Equipment Corporation: DEC</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing as described in ISO8348 Addendum 2. Issuing agency: Digital Equipment (Europe) S.A.R.L. France.</Description>
-    </Code>
-    <Code>
-        <Id>0025</Id>
-        <Name>OSI ASIA-OCEANIA WORKSHOP</Name>
-        <Description>Notes on Use of Code: The code is used as an element of object identifiers which need to be assigned relating the ISPs (International Standardized Profiles) that AOW is working on. Issuing agency: OSI ASIA-OCEANIA WORKSHOP, JAPAN.</Description>
-    </Code>
-    <Code>
-        <Id>0026</Id>
-        <Name>NATO ISO 6523 ICDE coding scheme</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree depicted in Addendum 2 of ISO 8348. Issuing agency: North Atlantic Treaty Organisation (NATO), Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0027</Id>
-        <Name>Aeronautical Telecommunications Network (ATN)</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the ISO network addressing and naming tree as depicted in Addendum No 2 to ISO 8348 Issuing agency: International Civil Aviation Organization (ICAO), CANADA.</Description>
-    </Code>
-    <Code>
-        <Id>0028</Id>
-        <Name>International Standard ISO 6523</Name>
-        <Description>Issuing agency: Styria Federn GmbH, AUSTRIA.</Description>
-    </Code>
-    <Code>
-        <Id>0029</Id>
-        <Name>The All-Union Classifier of Enterprises and Organisations</Name>
-        <Description>Issuing agency: General Computing Centre of the State, Committee of the
+		<Description>Notes on Use of Code: Specific object and attribute naming conventions are currently being defined. Issuing agency: The Radio Amateur Telecommunications Society, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0012</Id>
+		<Name>European Computer Manufacturers Association: ECMA</Name>
+		<Description>Issuing agency: European Computer Manufacturers Association, SWITZERLAND.</Description>
+	</Code>
+	<Code>
+		<Id>0013</Id>
+		<Name>VSA FTP CODE (FTP = File Transfer Protocol)</Name>
+		<Description>Notes on Use of Code: The code serves the addressing between the communicating partners. Issuing agency: Verband der Automobilindustrie e.V., GERMANY.</Description>
+	</Code>
+	<Code>
+		<Id>0014</Id>
+		<Name>NIST/OSI Implememts' Workshop</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the Workshop naming and addressing tree. Issuing agency: United States Department of Commerce, National Institute of Standards and Technology, Gaithersburg, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0015</Id>
+		<Name>Electronic Data Interchange: EDI</Name>
+		<Description>Issuing agency: Avon Rubber p.l.c. UK.</Description>
+	</Code>
+	<Code>
+		<Id>0016</Id>
+		<Name>EWOS Object Identifiers</Name>
+		<Description>Notes on Use of Code: a) In the SIO the Organization Name will normally be omitted, b) The code is primarily intended for the registration of Objects Identifiers according to ISO 8824: Level 1: iso (1), Level 2: identified-organization (3), Level 3: ewos (0016), Level 4: and higher: (defined by EWOS conventions) Issuing agency: EWOS (European Workshop for Open Systems), BELGIUM.</Description>
+	</Code>
+	<Code>
+		<Id>0017</Id>
+		<Name>COMMON LANGUAGE</Name>
+		<Description>Notes on Use of Code: Codes for named populated places, geographic places, geopolitical places, outlaying areas, and other related entities of the state of the United States, provinces and territories of Canada, countries of the world, and other, unique areas. Also for the identification of organizations, places, equipment and governmental entities by the telecommunication industry. Issuing agency: Data Communications Technology Planning, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0018</Id>
+		<Name>SNA/OSI Network</Name>
+		<Description>Notes on Use of Code: The ICD code will also form the initial part of the OSI Network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: International Business Machines Corporation, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0019</Id>
+		<Name>Air Transport Industry Services Communications Network</Name>
+		<Description>The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: International Air Transport Association, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0020</Id>
+		<Name>European Laboratory for Particle Physics: CERN</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree as depicted in Addendum 2 of ISO 8348. Issuing agency: European Laboratory for Particle Physics, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0021</Id>
+		<Name>SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T.</Name>
+		<Description>Notes on Use of Code: To be used for assignment of object identifiers (ISO 8824/8825) Issuing agency: SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T. BELGIUM.</Description>
+	</Code>
+	<Code>
+		<Id>0022</Id>
+		<Name>OSF Distributed Computing Object Identification</Name>
+		<Description>Notes on Use of Code: OSF provides public domain software in OS, ISO networking and management. The initial use of the coding system are for identifying the following objects in OSF's distributed computing environment: the attributes of entries in the distributed directory, the object class of each entry in the directory, the type of name components (RDNs), the communication protocol profiles, the interfaces offered by. Issuing agency: Open Software Foundation, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0023</Id>
+		<Name>Nordic University and Research Network: NORDUnet</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and tree as depicted in Addendum 2 of ISO 8348. Issuing agency: NORDUnet, c/o SICS, Sweden.</Description>
+	</Code>
+	<Code>
+		<Id>0024</Id>
+		<Name>Digital Equipment Corporation: DEC</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing as described in ISO8348 Addendum 2. Issuing agency: Digital Equipment (Europe) S.A.R.L. France.</Description>
+	</Code>
+	<Code>
+		<Id>0025</Id>
+		<Name>OSI ASIA-OCEANIA WORKSHOP</Name>
+		<Description>Notes on Use of Code: The code is used as an element of object identifiers which need to be assigned relating the ISPs (International Standardized Profiles) that AOW is working on. Issuing agency: OSI ASIA-OCEANIA WORKSHOP, JAPAN.</Description>
+	</Code>
+	<Code>
+		<Id>0026</Id>
+		<Name>NATO ISO 6523 ICDE coding scheme</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing and naming tree depicted in Addendum 2 of ISO 8348. Issuing agency: North Atlantic Treaty Organisation (NATO), Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0027</Id>
+		<Name>Aeronautical Telecommunications Network (ATN)</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the ISO network addressing and naming tree as depicted in Addendum No 2 to ISO 8348 Issuing agency: International Civil Aviation Organization (ICAO), CANADA.</Description>
+	</Code>
+	<Code>
+		<Id>0028</Id>
+		<Name>International Standard ISO 6523</Name>
+		<Description>Issuing agency: Styria Federn GmbH, AUSTRIA.</Description>
+	</Code>
+	<Code>
+		<Id>0029</Id>
+		<Name>The All-Union Classifier of Enterprises and Organisations</Name>
+		<Description>Issuing agency: General Computing Centre of the State, Committee of the
             USSR on Statistics, U S S R.</Description>
-    </Code>
-    <Code>
-        <Id>0030</Id>
-        <Name>AT&amp;T/OSI Network</Name>
-        <Description>Notes on Use of Code: The ICD code will also form the Initial Domain Part of the OSI network, addressing and naming tree as specified in Addendum 2 to ISO 8348. Issuing agency: AT&amp;T, Standards and Regulatory Support, UNITED STATES OF AMERICA.</Description>
-    </Code>
-    <Code>
-        <Id>0031</Id>
-        <Name>EDI Partner Identification Code</Name>
-        <Description>Notes on Use of Code: To identify EDI partners. Issuing agency: Odette NL, The Netherlands.</Description>
-    </Code>
-    <Code>
-        <Id>0032</Id>
-        <Name>Telecom Australia</Name>
-        <Description>Notes on Use of Code: The code is used as an element of Object Identifier when defining objects within Telecom Australia. In addition the code shall be used as an element of NSAP addressing. Issuing agency: Australia Telecommunications Corporation, AUSTRALIA.</Description>
-    </Code>
-    <Code>
-        <Id>0033</Id>
-        <Name>S G W OSI Internetwork</Name>
-        <Description>Notes on Use of Code: Exclusive use by S G W .Issuing agency: S G Warburg Group Management Ltd, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0034</Id>
-        <Name>Reuter Open Address Standard</Name>
-        <Description>Notes on Use of Code: To be used in the formation of OSI Network Service Access Point (NSAP) addresses. Issuing agency: Reuters Ltd, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0035</Id>
-        <Name>ISO 6523 - ICD</Name>
-        <Description>Notes on Use of Code: This code will be used internationally by BP thus a non-geographic code is requested. Issuing agency: The British Petroleum Co Plc, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0036</Id>
-        <Name>TeleTrust Object Identifiers</Name>
-        <Description>Notes on Use of Code: a) In the SIO the Organization name will normally be omitted. b) The code is primarily intended for the registration of Object Identifiers for security related objects according to ISO/IEC 8824, Level 1: iso(1), Level 2: identified-organization(3), Level 3: teletrust(0036), Level 4 and higher: (defined by TeleTrust conventions) Issuing agency: TeleTrust Deutschland e.V., GERMANY.</Description>
-    </Code>
-    <Code>
-        <Id>0037</Id>
-        <Name>LY-tunnus</Name>
-        <Description>Notes on Use of Code: It is possible to add 0-4 characters set to the code for more detailed use ofone organization. Characters are digits or capital letter. Issuing agency: National Board of Taxes, FINLAND.</Description>
-    </Code>
-    <Code>
-        <Id>0038</Id>
-        <Name>The Australian GOSIP Network</Name>
-        <Description>Notes on Use of Code: As noted above it will be used as the initial identifier of an NSAP codingscheme. Issuing agency: Standards Australia.</Description>
-    </Code>
-    <Code>
-        <Id>0039</Id>
-        <Name>The OZ DOD OSI Network</Name>
-        <Description>The ICD code forms the initial part of the OSI naming and addressing, tree as depicted in ISO 8348/Add 2 standard. Format of the tree is described in the Australian GOSIP Manuals and used globally. Issuing agency: The Australian Department of Defence, AUSTRALIA.</Description>
-    </Code>
-    <Code>
-        <Id>0040</Id>
-        <Name>Unilever Group Companies</Name>
-        <Description>Notes on Use of Code: To be used in data communications to form part of the Network Address as defined in ISO 8348. The ISO 6523, ICD IDI format with Binary syntax will be used. Issuing agency: Information Technology Group, Unilever Plc, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0041</Id>
-        <Name>Citicorp Global Information Network</Name>
-        <Description>Notes on Use of Code: The ICD code will also form the initial part of the Citicorp Network addressing object identifier tree and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: Citicorp Global Information Network, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0042</Id>
-        <Name>DBP Telekom Object Identifiers</Name>
-        <Description>Notes on Use of Code: 1) The ICD is primarily intended for the registration of Object Identifiers, according to ISO 8824/8825 (ANS.1) to be used for the identification resp. registration of: - application layer protocols, - file &amp; document formats, - information objects, - local/remote procedures. The OID structure and the inclusion of the ICD therein is given below: level 1: iso(1), level 2: identifiedOrganisation(3), level 3 (ICD): dbpt(0042), level 4 to n: (defined by Telekom). Issuing agency: DBP Telekom, GERMANY.</Description>
-    </Code>
-    <Code>
-        <Id>0043</Id>
-        <Name>HydroNETT</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing as depicted in ISO 8348/AD2. Issuing agency: Norsk Hydro a.s.,
+	</Code>
+	<Code>
+		<Id>0030</Id>
+		<Name>AT&amp;T/OSI Network</Name>
+		<Description>Notes on Use of Code: The ICD code will also form the Initial Domain Part of the OSI network, addressing and naming tree as specified in Addendum 2 to ISO 8348. Issuing agency: AT&amp;T, Standards and Regulatory Support, UNITED STATES OF AMERICA.</Description>
+	</Code>
+	<Code>
+		<Id>0031</Id>
+		<Name>EDI Partner Identification Code</Name>
+		<Description>Notes on Use of Code: To identify EDI partners. Issuing agency: Odette NL, The Netherlands.</Description>
+	</Code>
+	<Code>
+		<Id>0032</Id>
+		<Name>Telecom Australia</Name>
+		<Description>Notes on Use of Code: The code is used as an element of Object Identifier when defining objects within Telecom Australia. In addition the code shall be used as an element of NSAP addressing. Issuing agency: Australia Telecommunications Corporation, AUSTRALIA.</Description>
+	</Code>
+	<Code>
+		<Id>0033</Id>
+		<Name>S G W OSI Internetwork</Name>
+		<Description>Notes on Use of Code: Exclusive use by S G W .Issuing agency: S G Warburg Group Management Ltd, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0034</Id>
+		<Name>Reuter Open Address Standard</Name>
+		<Description>Notes on Use of Code: To be used in the formation of OSI Network Service Access Point (NSAP) addresses. Issuing agency: Reuters Ltd, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0035</Id>
+		<Name>ISO 6523 - ICD</Name>
+		<Description>Notes on Use of Code: This code will be used internationally by BP thus a non-geographic code is requested. Issuing agency: The British Petroleum Co Plc, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0036</Id>
+		<Name>TeleTrust Object Identifiers</Name>
+		<Description>Notes on Use of Code: a) In the SIO the Organization name will normally be omitted. b) The code is primarily intended for the registration of Object Identifiers for security related objects according to ISO/IEC 8824, Level 1: iso(1), Level 2: identified-organization(3), Level 3: teletrust(0036), Level 4 and higher: (defined by TeleTrust conventions) Issuing agency: TeleTrust Deutschland e.V., GERMANY.</Description>
+	</Code>
+	<Code>
+		<Id>0037</Id>
+		<Name>LY-tunnus</Name>
+		<Description>Notes on Use of Code: It is possible to add 0-4 characters set to the code for more detailed use ofone organization. Characters are digits or capital letter. Issuing agency: National Board of Taxes, FINLAND.</Description>
+	</Code>
+	<Code>
+		<Id>0038</Id>
+		<Name>The Australian GOSIP Network</Name>
+		<Description>Notes on Use of Code: As noted above it will be used as the initial identifier of an NSAP codingscheme. Issuing agency: Standards Australia.</Description>
+	</Code>
+	<Code>
+		<Id>0039</Id>
+		<Name>The OZ DOD OSI Network</Name>
+		<Description>The ICD code forms the initial part of the OSI naming and addressing, tree as depicted in ISO 8348/Add 2 standard. Format of the tree is described in the Australian GOSIP Manuals and used globally. Issuing agency: The Australian Department of Defence, AUSTRALIA.</Description>
+	</Code>
+	<Code>
+		<Id>0040</Id>
+		<Name>Unilever Group Companies</Name>
+		<Description>Notes on Use of Code: To be used in data communications to form part of the Network Address as defined in ISO 8348. The ISO 6523, ICD IDI format with Binary syntax will be used. Issuing agency: Information Technology Group, Unilever Plc, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0041</Id>
+		<Name>Citicorp Global Information Network</Name>
+		<Description>Notes on Use of Code: The ICD code will also form the initial part of the Citicorp Network addressing object identifier tree and naming tree as depicted in Addendum 2 to ISO 8348. Issuing agency: Citicorp Global Information Network, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0042</Id>
+		<Name>DBP Telekom Object Identifiers</Name>
+		<Description>Notes on Use of Code: 1) The ICD is primarily intended for the registration of Object Identifiers, according to ISO 8824/8825 (ANS.1) to be used for the identification resp. registration of: - application layer protocols, - file &amp; document formats, - information objects, - local/remote procedures. The OID structure and the inclusion of the ICD therein is given below: level 1: iso(1), level 2: identifiedOrganisation(3), level 3 (ICD): dbpt(0042), level 4 to n: (defined by Telekom). Issuing agency: DBP Telekom, GERMANY.</Description>
+	</Code>
+	<Code>
+		<Id>0043</Id>
+		<Name>HydroNETT</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing as depicted in ISO 8348/AD2. Issuing agency: Norsk Hydro a.s.,
             Norway.</Description>
-    </Code>
-    <Code>
-        <Id>0044</Id>
-        <Name>Thai Industrial Standards Institute (TISI)</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of international addressing for Thailand. Issuing agency: Thai Industrial Standards Institute (TISI), THAILAND.</Description>
-    </Code>
-    <Code>
-        <Id>0045</Id>
-        <Name>ICI Company Identification System</Name>
-        <Description>Notes on Use of Code: The ICD code will be used to manage NSAP allocation for all ICI companies on a worldwide basis. The organisation code is used Worldwide by ICI application systems to identify ICI registered companies in machine to machine communications. Issuing agency: ICI PLC, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0046</Id>
-        <Name>FUNLOC</Name>
-        <Description>Notes on Use of Code: Current applications are Philips accounting and logistic systems; new application is the identification of objects in the open network environment according to ISO 8824 which starts with a party identification Issuing agency: Royal Philips Electronics N.V., The Netherlands.</Description>
-    </Code>
-    <Code>
-        <Id>0047</Id>
-        <Name>BULL ODI/DSA/UNIX Network</Name>
-        <Description>Notes on Use of Code: To be used in data communications to form part of the network address. The ISO 6523 ICD IDI format with binary syntax will be used. Issuing agency: BULL S.A. FRANCE.</Description>
-    </Code>
-    <Code>
-        <Id>0048</Id>
-        <Name>OSINZ</Name>
-        <Description>Notes on Use of Code: ISO 6523 ICD IDI format with binary syntax will be used. Issuing agency: OSINZ, New Zealand.</Description>
-    </Code>
-    <Code>
-        <Id>0049</Id>
-        <Name>Auckland Area Health</Name>
-        <Description>Notes on Use of Code: ISO 6523 ICD IDI format with binary syntax will be used Issuing agency: Auckland Area Health Board, Information Systems, Greenlane/National Women's Hospital, New Zealand.</Description>
-    </Code>
-    <Code>
-        <Id>0050</Id>
-        <Name>Firmenich</Name>
-        <Description>Notes on Use of Code: Interconnect the plants by an OSI network essentially over X.25 carrier. Issuing agency: Firmenich S A, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0051</Id>
-        <Name>AGFA-DIS</Name>
-        <Description>Notes on Use of Code: Medical Communication Issuing agency: AGFA N.V. BELGIUM.</Description>
-    </Code>
-    <Code>
-        <Id>0052</Id>
-        <Name>Society of Motion Picture and Television Engineers (SMPTE)</Name>
-        <Description>Notes on Use of Code: The ICD code will also be used to identify SMPTE constituent organizations (committees, working groups, task forces, etc./), and the objects they, define. The ICD code will also form the Initial Domain Part of the OSI network addressing and naming tree as specified in Addendum 2 tot ISO 8348 Issuing agency: Society of Motion Picture and Television Engineers (SMPTE), USA.</Description>
-    </Code>
-    <Code>
-        <Id>0053</Id>
-        <Name>Migros_Network M_NETOPZ</Name>
-        <Description>Issuing agency: Migros-Genossenschafts-Bund, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0054</Id>
-        <Name>ISO6523 - ICDPCR</Name>
-        <Description>Notes on Use of Code: This code could be used internationally by Pfizer thus a non-geographic code is required. The code forms the initial part of the OSI network addressing and naming tree depicted in Addendum 2 of ISO 8348. Issuing agency: Pfizer Central Research, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0055</Id>
-        <Name>Energy Net</Name>
-        <Description>Issuing agency: ABB Asea Brown Boveri Ltd, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0056</Id>
-        <Name>Nokia Object Identifiers (NOI)</Name>
-        <Description>Notes on Use of Code: a) In the SIO the organization name will normally be omitted, b) The code is primarily intended for the registration of Object Identifiers according to ISO/IEC 8824: Level 1:iso(1), Level 2:identified-organization(3), Level 3:nokia(xxxx), Level 4 and higher:defined by Nokia conventions Issuing agency: Nokia Corporation, FINLAND.</Description>
-    </Code>
-    <Code>
-        <Id>0057</Id>
-        <Name>Saint Gobain</Name>
-        <Description>Notes on Use of Code: To be used for assignment of: N.E.T (ISO 8348/Add 2), A.E.T (FTAM, X.400 Psaps, and so on), and object identification (ISO 8824/8825) Issuing agency: Saint Gobain, France.</Description>
-    </Code>
-    <Code>
-        <Id>0058</Id>
-        <Name>Siemens Corporate Network</Name>
-        <Description>Notes on Use of Code: The ICD code will form the initial part of the OSI Network addressing and naming tree as depicted in Addendum 2 to ISO 8348 (Network layer addressing). These addresses will uniquely identify systems within SCN and to the outside world. Issuing agency: Siemens AG, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0059</Id>
-        <Name>DANZNET</Name>
-        <Description>Issuing agency: DANZAS AG, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0060</Id>
-        <Name>Data Universal Numbering System (D-U-N-S Number)</Name>
-        <Description>Notes on Use of Code: The D-U-N-S Number originated to facilitate the compilation of financial status reports on those involved in business transactions but it is now widely used for other purposes also. The number has world wide recognition as a means of identifying businesses and institutions. Issuing agency: Dun and Bradstreet Ltd, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0061</Id>
-        <Name>SOFFEX OSI</Name>
-        <Description>Notes on Use of Code: This code is to assist in uniquely identifying data network node addresses in an international supporting network for financial applications. This supporting network may have operational interfaces to other (private) data networks. Issuing agency: SOFFEX Swiss Options and Financial Futures Exchange AG. Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0062</Id>
-        <Name>KPN OVN</Name>
-        <Description>Notes on Use of Code: This code is used in the VTOA network of KPN OVN. Issuing agency: Koninklijke KPN, The Netherlands.</Description>
-    </Code>
-    <Code>
-        <Id>0063</Id>
-        <Name>ascomOSINet</Name>
-        <Description>Issuing agency: Ascom AG, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0064</Id>
-        <Name>UTC: Uniforme Transport Code</Name>
-        <Description>Notes on Use of Code: The code identifies an individual transport or handling unit (e.g. pallet, parcel) for reasons of tracing or tracing. The unit may have an international destination. Issuing agency: Foundation UTC, The Netherlands.</Description>
-    </Code>
-    <Code>
-        <Id>0065</Id>
-        <Name>SOLVAY OSI CODING</Name>
-        <Description>Notes on Use of Code: Whenever possible, ISO 8348 addresses using this code will comply with FIPS PUB 146, with an End System ID of exactly 4 octets, so that the DSP can also conform to ECMA 117 where ECMA's subnet-address maps onto FIPS's Subnet ID concatenated with the End System ID. Issuing agency: Direction Centrale Technique (Informatique Scientifique), Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0066</Id>
-        <Name>Roche Corporate Network</Name>
-        <Description>Notes on Use of Code: Will be used internationaly by Roche thus a non-geographic code is required. Issuing agency: F. HOFFMANN - LA ROCHE AG, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0067</Id>
-        <Name>ZellwegerOSINet</Name>
-        <Description>Notes on Use of Code: BAKOM - Switzerland. Issuing agency: Zellweger Uster AG, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0068</Id>
-        <Name>Intel Corporation OSI</Name>
-        <Description>Notes on Use of Code: The ICD code will be used to form the Initial Domain Identifier (IDI) portion of the Initial Domain Part (IDP) as described in ISO 8348 Addendum 2 for OSI NSAP addressing. Issuing agency: Intel Corporation, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0069</Id>
-        <Name>SITA Object Identifier Tree</Name>
-        <Description>Notes on Use of Code: SITA intends to use its OID Tree to define its own Objects for use with its OSI-based services (e.g. MHS &amp; OSI Management). Issuing agency: SITA, France.</Description>
-    </Code>
-    <Code>
-        <Id>0070</Id>
-        <Name>DaimlerChrysler Corporate Network</Name>
-        <Description>Notes on Use of Code: The ICD code will form the initial part of the OSI Network addressing and naming free as depicted in Addendum 2 to ISO 8348 (Network Layer addressing). These addresses will uniquely identify systems within DBCN and to the outside world. Issuing agency: DaimlerChrysler AG, GERMANY.</Description>
-    </Code>
-    <Code>
-        <Id>0071</Id>
-        <Name>LEGO /OSI NETWORK</Name>
-        <Description>Notes on Use of Code: The ICD code will also form the Initial Domain Part of the OSI network addressing and naming tree as specified in addendum 2 to ISO 8348. Issuing agency: LEGO Systems Inc, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0072</Id>
-        <Name>NAVISTAR/OSI Network</Name>
-        <Description>Notes on Use of Code: The ICD code will also form the Initial Domain Part of the OSI Network addressing and naming tree as specified in Addendum 2 to ISO 8348. Issuing agency: International Truck &amp; Engine Corp, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0073</Id>
-        <Name>ICD Formatted ATM address</Name>
-        <Description>Notes on Use of Code: Used as an ATM address prefix by, 1) Newbridge ATM terminal equipment: a) when performing user - network address registration, b) transparently initiating signalled ATM connections on behalf of other non-ATM (LAN) devices, c) directly initiating signalled ATM connections, 2) Newbridge ATM switching equipment used to: a) perform network - user address registration, b) perform routing of Switched Virtual Connections across a private ATM cell switching network. Issuing agency: Newbridge Networks Corporation, CANADA.</Description>
-    </Code>
-    <Code>
-        <Id>0074</Id>
-        <Name>ARINC</Name>
-        <Description>Notes on Use of Code: ARINC will define its own Objects for use with its OSI-based systems and services. ARINC will also define Objects for use within the Aeronautical industry. Issuing agency: ARINC Incorporated, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0075</Id>
-        <Name>Alcanet/Alcatel-Alsthom Corporate Network</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing scheme as depicted in Addendum 2 of ISO 8384. Issuing agency: Alcatel Network Services Deutschland GmbH, GERMANY.</Description>
-    </Code>
-    <Code>
-        <Id>0076</Id>
-        <Name>Sistema Italiano di Identificazione di ogetti gestito da UNINFO</Name>
-        <Description>Notes on Use of Code: To be used for assignments of object identifiers according to ISO 8824 and ISO 8825. Issuing agency: UNINFO, ITALY.</Description>
-    </Code>
-    <Code>
-        <Id>0077</Id>
-        <Name>Sistema Italiano di Indirizzamento di Reti OSI Gestito da UNINFO</Name>
-        <Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network Addressing and naming tree depicted in Addendum 2 of ISO 8348. Issuing agency: UNINFO, ITALY.</Description>
-    </Code>
-    <Code>
-        <Id>0078</Id>
-        <Name>Mitel terminal or switching equipment</Name>
-        <Description>Notes on Use of Code: The ICD code will form the initial part of the naming tree for: 1 - Private Integrated Services Network manufacturer-specific information as the Organization identifier forming the initial part of the OBJECT IDENTIFIER tree. 2 - OSI Application Layer such as CSTA (ECMA 179). Issuing agency: Mitel Corporation, Canada.</Description>
-    </Code>
-    <Code>
-        <Id>0079</Id>
-        <Name>ATM Forum</Name>
-        <Description>Notes on Use of Code: The ICD code will also form part of the Initial Domain Part of the OSI network addressing as specified in Addendum 2 to ISO 8348. Issuing agency: The ATM Forum, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0080</Id>
-        <Name>UK National Health Service Scheme, (EDIRA compliant)</Name>
-        <Description>Notes on Use of Code: EDIRA recommendations for coding in EDIFACT and other EDI systems. Issuing agency: National Health Service, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0081</Id>
-        <Name>International NSAP</Name>
-        <Description>Issuing agency: Federal Office for Communications, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0082</Id>
-        <Name>Norwegian Telecommunications Authority's, NTA'S, EDI, identifier scheme (EDIRA
+	</Code>
+	<Code>
+		<Id>0044</Id>
+		<Name>Thai Industrial Standards Institute (TISI)</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of international addressing for Thailand. Issuing agency: Thai Industrial Standards Institute (TISI), THAILAND.</Description>
+	</Code>
+	<Code>
+		<Id>0045</Id>
+		<Name>ICI Company Identification System</Name>
+		<Description>Notes on Use of Code: The ICD code will be used to manage NSAP allocation for all ICI companies on a worldwide basis. The organisation code is used Worldwide by ICI application systems to identify ICI registered companies in machine to machine communications. Issuing agency: ICI PLC, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0046</Id>
+		<Name>FUNLOC</Name>
+		<Description>Notes on Use of Code: Current applications are Philips accounting and logistic systems; new application is the identification of objects in the open network environment according to ISO 8824 which starts with a party identification Issuing agency: Royal Philips Electronics N.V., The Netherlands.</Description>
+	</Code>
+	<Code>
+		<Id>0047</Id>
+		<Name>BULL ODI/DSA/UNIX Network</Name>
+		<Description>Notes on Use of Code: To be used in data communications to form part of the network address. The ISO 6523 ICD IDI format with binary syntax will be used. Issuing agency: BULL S.A. FRANCE.</Description>
+	</Code>
+	<Code>
+		<Id>0048</Id>
+		<Name>OSINZ</Name>
+		<Description>Notes on Use of Code: ISO 6523 ICD IDI format with binary syntax will be used. Issuing agency: OSINZ, New Zealand.</Description>
+	</Code>
+	<Code>
+		<Id>0049</Id>
+		<Name>Auckland Area Health</Name>
+		<Description>Notes on Use of Code: ISO 6523 ICD IDI format with binary syntax will be used Issuing agency: Auckland Area Health Board, Information Systems, Greenlane/National Women's Hospital, New Zealand.</Description>
+	</Code>
+	<Code>
+		<Id>0050</Id>
+		<Name>Firmenich</Name>
+		<Description>Notes on Use of Code: Interconnect the plants by an OSI network essentially over X.25 carrier. Issuing agency: Firmenich S A, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0051</Id>
+		<Name>AGFA-DIS</Name>
+		<Description>Notes on Use of Code: Medical Communication Issuing agency: AGFA N.V. BELGIUM.</Description>
+	</Code>
+	<Code>
+		<Id>0052</Id>
+		<Name>Society of Motion Picture and Television Engineers (SMPTE)</Name>
+		<Description>Notes on Use of Code: The ICD code will also be used to identify SMPTE constituent organizations (committees, working groups, task forces, etc./), and the objects they, define. The ICD code will also form the Initial Domain Part of the OSI network addressing and naming tree as specified in Addendum 2 tot ISO 8348 Issuing agency: Society of Motion Picture and Television Engineers (SMPTE), USA.</Description>
+	</Code>
+	<Code>
+		<Id>0053</Id>
+		<Name>Migros_Network M_NETOPZ</Name>
+		<Description>Issuing agency: Migros-Genossenschafts-Bund, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0054</Id>
+		<Name>ISO6523 - ICDPCR</Name>
+		<Description>Notes on Use of Code: This code could be used internationally by Pfizer thus a non-geographic code is required. The code forms the initial part of the OSI network addressing and naming tree depicted in Addendum 2 of ISO 8348. Issuing agency: Pfizer Central Research, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0055</Id>
+		<Name>Energy Net</Name>
+		<Description>Issuing agency: ABB Asea Brown Boveri Ltd, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0056</Id>
+		<Name>Nokia Object Identifiers (NOI)</Name>
+		<Description>Notes on Use of Code: a) In the SIO the organization name will normally be omitted, b) The code is primarily intended for the registration of Object Identifiers according to ISO/IEC 8824: Level 1:iso(1), Level 2:identified-organization(3), Level 3:nokia(xxxx), Level 4 and higher:defined by Nokia conventions Issuing agency: Nokia Corporation, FINLAND.</Description>
+	</Code>
+	<Code>
+		<Id>0057</Id>
+		<Name>Saint Gobain</Name>
+		<Description>Notes on Use of Code: To be used for assignment of: N.E.T (ISO 8348/Add 2), A.E.T (FTAM, X.400 Psaps, and so on), and object identification (ISO 8824/8825) Issuing agency: Saint Gobain, France.</Description>
+	</Code>
+	<Code>
+		<Id>0058</Id>
+		<Name>Siemens Corporate Network</Name>
+		<Description>Notes on Use of Code: The ICD code will form the initial part of the OSI Network addressing and naming tree as depicted in Addendum 2 to ISO 8348 (Network layer addressing). These addresses will uniquely identify systems within SCN and to the outside world. Issuing agency: Siemens AG, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0059</Id>
+		<Name>DANZNET</Name>
+		<Description>Issuing agency: DANZAS AG, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0060</Id>
+		<Name>Data Universal Numbering System (D-U-N-S Number)</Name>
+		<Description>Notes on Use of Code: The D-U-N-S Number originated to facilitate the compilation of financial status reports on those involved in business transactions but it is now widely used for other purposes also. The number has world wide recognition as a means of identifying businesses and institutions. Issuing agency: Dun and Bradstreet Ltd, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0061</Id>
+		<Name>SOFFEX OSI</Name>
+		<Description>Notes on Use of Code: This code is to assist in uniquely identifying data network node addresses in an international supporting network for financial applications. This supporting network may have operational interfaces to other (private) data networks. Issuing agency: SOFFEX Swiss Options and Financial Futures Exchange AG. Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0062</Id>
+		<Name>KPN OVN</Name>
+		<Description>Notes on Use of Code: This code is used in the VTOA network of KPN OVN. Issuing agency: Koninklijke KPN, The Netherlands.</Description>
+	</Code>
+	<Code>
+		<Id>0063</Id>
+		<Name>ascomOSINet</Name>
+		<Description>Issuing agency: Ascom AG, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0064</Id>
+		<Name>UTC: Uniforme Transport Code</Name>
+		<Description>Notes on Use of Code: The code identifies an individual transport or handling unit (e.g. pallet, parcel) for reasons of tracing or tracing. The unit may have an international destination. Issuing agency: Foundation UTC, The Netherlands.</Description>
+	</Code>
+	<Code>
+		<Id>0065</Id>
+		<Name>SOLVAY OSI CODING</Name>
+		<Description>Notes on Use of Code: Whenever possible, ISO 8348 addresses using this code will comply with FIPS PUB 146, with an End System ID of exactly 4 octets, so that the DSP can also conform to ECMA 117 where ECMA's subnet-address maps onto FIPS's Subnet ID concatenated with the End System ID. Issuing agency: Direction Centrale Technique (Informatique Scientifique), Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0066</Id>
+		<Name>Roche Corporate Network</Name>
+		<Description>Notes on Use of Code: Will be used internationaly by Roche thus a non-geographic code is required. Issuing agency: F. HOFFMANN - LA ROCHE AG, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0067</Id>
+		<Name>ZellwegerOSINet</Name>
+		<Description>Notes on Use of Code: BAKOM - Switzerland. Issuing agency: Zellweger Uster AG, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0068</Id>
+		<Name>Intel Corporation OSI</Name>
+		<Description>Notes on Use of Code: The ICD code will be used to form the Initial Domain Identifier (IDI) portion of the Initial Domain Part (IDP) as described in ISO 8348 Addendum 2 for OSI NSAP addressing. Issuing agency: Intel Corporation, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0069</Id>
+		<Name>SITA Object Identifier Tree</Name>
+		<Description>Notes on Use of Code: SITA intends to use its OID Tree to define its own Objects for use with its OSI-based services (e.g. MHS &amp; OSI Management). Issuing agency: SITA, France.</Description>
+	</Code>
+	<Code>
+		<Id>0070</Id>
+		<Name>DaimlerChrysler Corporate Network</Name>
+		<Description>Notes on Use of Code: The ICD code will form the initial part of the OSI Network addressing and naming free as depicted in Addendum 2 to ISO 8348 (Network Layer addressing). These addresses will uniquely identify systems within DBCN and to the outside world. Issuing agency: DaimlerChrysler AG, GERMANY.</Description>
+	</Code>
+	<Code>
+		<Id>0071</Id>
+		<Name>LEGO /OSI NETWORK</Name>
+		<Description>Notes on Use of Code: The ICD code will also form the Initial Domain Part of the OSI network addressing and naming tree as specified in addendum 2 to ISO 8348. Issuing agency: LEGO Systems Inc, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0072</Id>
+		<Name>NAVISTAR/OSI Network</Name>
+		<Description>Notes on Use of Code: The ICD code will also form the Initial Domain Part of the OSI Network addressing and naming tree as specified in Addendum 2 to ISO 8348. Issuing agency: International Truck &amp; Engine Corp, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0073</Id>
+		<Name>ICD Formatted ATM address</Name>
+		<Description>Notes on Use of Code: Used as an ATM address prefix by, 1) Newbridge ATM terminal equipment: a) when performing user - network address registration, b) transparently initiating signalled ATM connections on behalf of other non-ATM (LAN) devices, c) directly initiating signalled ATM connections, 2) Newbridge ATM switching equipment used to: a) perform network - user address registration, b) perform routing of Switched Virtual Connections across a private ATM cell switching network. Issuing agency: Newbridge Networks Corporation, CANADA.</Description>
+	</Code>
+	<Code>
+		<Id>0074</Id>
+		<Name>ARINC</Name>
+		<Description>Notes on Use of Code: ARINC will define its own Objects for use with its OSI-based systems and services. ARINC will also define Objects for use within the Aeronautical industry. Issuing agency: ARINC Incorporated, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0075</Id>
+		<Name>Alcanet/Alcatel-Alsthom Corporate Network</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network addressing scheme as depicted in Addendum 2 of ISO 8384. Issuing agency: Alcatel Network Services Deutschland GmbH, GERMANY.</Description>
+	</Code>
+	<Code>
+		<Id>0076</Id>
+		<Name>Sistema Italiano di Identificazione di ogetti gestito da UNINFO</Name>
+		<Description>Notes on Use of Code: To be used for assignments of object identifiers according to ISO 8824 and ISO 8825. Issuing agency: UNINFO, ITALY.</Description>
+	</Code>
+	<Code>
+		<Id>0077</Id>
+		<Name>Sistema Italiano di Indirizzamento di Reti OSI Gestito da UNINFO</Name>
+		<Description>Notes on Use of Code: The ICD code forms the initial part of the OSI network Addressing and naming tree depicted in Addendum 2 of ISO 8348. Issuing agency: UNINFO, ITALY.</Description>
+	</Code>
+	<Code>
+		<Id>0078</Id>
+		<Name>Mitel terminal or switching equipment</Name>
+		<Description>Notes on Use of Code: The ICD code will form the initial part of the naming tree for: 1 - Private Integrated Services Network manufacturer-specific information as the Organization identifier forming the initial part of the OBJECT IDENTIFIER tree. 2 - OSI Application Layer such as CSTA (ECMA 179). Issuing agency: Mitel Corporation, Canada.</Description>
+	</Code>
+	<Code>
+		<Id>0079</Id>
+		<Name>ATM Forum</Name>
+		<Description>Notes on Use of Code: The ICD code will also form part of the Initial Domain Part of the OSI network addressing as specified in Addendum 2 to ISO 8348. Issuing agency: The ATM Forum, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0080</Id>
+		<Name>UK National Health Service Scheme, (EDIRA compliant)</Name>
+		<Description>Notes on Use of Code: EDIRA recommendations for coding in EDIFACT and other EDI systems. Issuing agency: National Health Service, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0081</Id>
+		<Name>International NSAP</Name>
+		<Description>Issuing agency: Federal Office for Communications, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0082</Id>
+		<Name>Norwegian Telecommunications Authority's, NTA'S, EDI, identifier scheme (EDIRA
             compliant)</Name>
-        <Description>Notes on Use of Code: For use in EDIFACT messages in accordance with current national recommendation on identification of EDI objects. (EDIRA compliant). Issuing agency: Norwegian Telecommunications Authority, NORWAY.</Description>
-    </Code>
-    <Code>
-        <Id>0083</Id>
-        <Name>Advanced Telecommunications Modules Limited, Corporate Network</Name>
-        <Description>Notes on Use of Code: The ICD code will also form part of the Initial Domain Part of the OSI network
+		<Description>Notes on Use of Code: For use in EDIFACT messages in accordance with current national recommendation on identification of EDI objects. (EDIRA compliant). Issuing agency: Norwegian Telecommunications Authority, NORWAY.</Description>
+	</Code>
+	<Code>
+		<Id>0083</Id>
+		<Name>Advanced Telecommunications Modules Limited, Corporate Network</Name>
+		<Description>Notes on Use of Code: The ICD code will also form part of the Initial Domain Part of the OSI network
             addressing as specified in Addendum 2 to ISO 8348. Issuing agency: ATM Ltd, ENGLAND.</Description>
-    </Code>
-    <Code>
-        <Id>0084</Id>
-        <Name>Athens Chamber of Commerce &amp; Industry Scheme (EDIRA compliant)</Name>
-        <Description>Notes on Use of Code : EDIRA recommendations for coding in EDIFACT and other EDI syntaxes. Issuing agency: Athens Chamber of Commerce &amp; Industry, Greece.</Description>
-    </Code>
-    <Code>
-        <Id>0085</Id>
-        <Name>Swiss Chambers of Commerce Scheme (EDIRA) compliant</Name>
-        <Description>Intended Purpose/App. Area Numerical identifiers of organizations. Issuing agency: Zurich Chamber of Commerce on behalf of Swiss Chambers, of Commerce, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0086</Id>
-        <Name>United States Council for International Business (USCIB) Scheme, (EDIRA compliant)</Name>
-        <Description>EDIRA recommendations for coding in EDIFACT and other EDI syntaxes. Issuing agency: United States Council for Internationa Business (USCIB), 1212 Avenue of the Americas, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0087</Id>
-        <Name>National Federation of Chambers of Commerce &amp; Industry of Belgium, Scheme (EDIRA compliant)</Name>
-        <Description>Issuing agency: National Federartion of Chambers of Commerce &amp; Industry of, Belgium, Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0088</Id>
-        <Name>EAN Location Code</Name>
-        <Description>Issuing agency: EAN International, Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0089</Id>
-        <Name>The Association of British Chambers of Commerce Ltd. Scheme, (EDIRA compliant)</Name>
-        <Description>Issuing agency: The Association of British Chambers of Commerce Ltd., UK.</Description>
-    </Code>
-    <Code>
-        <Id>0090</Id>
-        <Name>Internet IP addressing - ISO 6523 ICD encoding</Name>
-        <Description>Issuing agency: Internet Assigned Numbers Authority, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0091</Id>
-        <Name>Cisco Sysytems / OSI Network</Name>
-        <Description>Issuing agency: Cisco Systems, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0093</Id>
-        <Name>Revenue Canada Business Number Registration (EDIRA compliant)</Name>
-        <Description>Issuing agency: Revenue Canada, CANADA.</Description>
-    </Code>
-    <Code>
-        <Id>0094</Id>
-        <Name>DEUTSCHER INDUSTRIE- UND HANDELSTAG (DIHT) Scheme (EDIRA compliant)</Name>
-        <Description>Issuing agency: Deutscher Industrie -und Handelstag (DIHT), Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0095</Id>
-        <Name>Hewlett - Packard Company Internal AM Network</Name>
-        <Description>Issuing agency: Hewlett - Packard Company, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0096</Id>
-        <Name>DANISH CHAMBER OF COMMERCE Scheme (EDIRA compliant)</Name>
-        <Description>Issuing agency: Danish Chamber of Commerce, Denmark.</Description>
-    </Code>
-    <Code>
-        <Id>0097</Id>
-        <Name>FTI - Ediforum Italia, (EDIRA compliant)</Name>
-        <Description>Issuing agency: FTI - Ediforum Italia, ITALY.</Description>
-    </Code>
-    <Code>
-        <Id>0098</Id>
-        <Name>CHAMBER OF COMMERCE TEL AVIV-JAFFA Scheme (EDIRA compliant)</Name>
-        <Description>Issuing agency: Chamber of Commerce Tel Aviv-Jaffa, ISRAEL.</Description>
-    </Code>
-    <Code>
-        <Id>0099</Id>
-        <Name>Siemens Supervisory Systems Network</Name>
-        <Description>Issuing agency: Siemens AG, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0100</Id>
-        <Name>PNG_ICD Scheme</Name>
-        <Description>Issuing agency: GPT Limited, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0101</Id>
-        <Name>South African Code Allocation</Name>
-        <Description>Issuing agency: Thawte Consulting, 33 Protea Way, Durbanville 7550, South
+	</Code>
+	<Code>
+		<Id>0084</Id>
+		<Name>Athens Chamber of Commerce &amp; Industry Scheme (EDIRA compliant)</Name>
+		<Description>Notes on Use of Code : EDIRA recommendations for coding in EDIFACT and other EDI syntaxes. Issuing agency: Athens Chamber of Commerce &amp; Industry, Greece.</Description>
+	</Code>
+	<Code>
+		<Id>0085</Id>
+		<Name>Swiss Chambers of Commerce Scheme (EDIRA) compliant</Name>
+		<Description>Intended Purpose/App. Area Numerical identifiers of organizations. Issuing agency: Zurich Chamber of Commerce on behalf of Swiss Chambers, of Commerce, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0086</Id>
+		<Name>United States Council for International Business (USCIB) Scheme, (EDIRA compliant)</Name>
+		<Description>EDIRA recommendations for coding in EDIFACT and other EDI syntaxes. Issuing agency: United States Council for Internationa Business (USCIB), 1212 Avenue of the Americas, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0087</Id>
+		<Name>National Federation of Chambers of Commerce &amp; Industry of Belgium, Scheme (EDIRA compliant)</Name>
+		<Description>Issuing agency: National Federartion of Chambers of Commerce &amp; Industry of, Belgium, Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0088</Id>
+		<Name>EAN Location Code</Name>
+		<Description>Issuing agency: EAN International, Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0089</Id>
+		<Name>The Association of British Chambers of Commerce Ltd. Scheme, (EDIRA compliant)</Name>
+		<Description>Issuing agency: The Association of British Chambers of Commerce Ltd., UK.</Description>
+	</Code>
+	<Code>
+		<Id>0090</Id>
+		<Name>Internet IP addressing - ISO 6523 ICD encoding</Name>
+		<Description>Issuing agency: Internet Assigned Numbers Authority, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0091</Id>
+		<Name>Cisco Sysytems / OSI Network</Name>
+		<Description>Issuing agency: Cisco Systems, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0093</Id>
+		<Name>Revenue Canada Business Number Registration (EDIRA compliant)</Name>
+		<Description>Issuing agency: Revenue Canada, CANADA.</Description>
+	</Code>
+	<Code>
+		<Id>0094</Id>
+		<Name>DEUTSCHER INDUSTRIE- UND HANDELSTAG (DIHT) Scheme (EDIRA compliant)</Name>
+		<Description>Issuing agency: Deutscher Industrie -und Handelstag (DIHT), Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0095</Id>
+		<Name>Hewlett - Packard Company Internal AM Network</Name>
+		<Description>Issuing agency: Hewlett - Packard Company, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0096</Id>
+		<Name>DANISH CHAMBER OF COMMERCE Scheme (EDIRA compliant)</Name>
+		<Description>Issuing agency: Danish Chamber of Commerce, Denmark.</Description>
+	</Code>
+	<Code>
+		<Id>0097</Id>
+		<Name>FTI - Ediforum Italia, (EDIRA compliant)</Name>
+		<Description>Issuing agency: FTI - Ediforum Italia, ITALY.</Description>
+	</Code>
+	<Code>
+		<Id>0098</Id>
+		<Name>CHAMBER OF COMMERCE TEL AVIV-JAFFA Scheme (EDIRA compliant)</Name>
+		<Description>Issuing agency: Chamber of Commerce Tel Aviv-Jaffa, ISRAEL.</Description>
+	</Code>
+	<Code>
+		<Id>0099</Id>
+		<Name>Siemens Supervisory Systems Network</Name>
+		<Description>Issuing agency: Siemens AG, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0100</Id>
+		<Name>PNG_ICD Scheme</Name>
+		<Description>Issuing agency: GPT Limited, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0101</Id>
+		<Name>South African Code Allocation</Name>
+		<Description>Issuing agency: Thawte Consulting, 33 Protea Way, Durbanville 7550, South
             Africa</Description>
-    </Code>
-    <Code>
-        <Id>0102</Id>
-        <Name>HEAG</Name>
-        <Description>Issuing agency: Hessische Elektrizitats-AG, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0104</Id>
-        <Name>BT - ICD Coding System</Name>
-        <Description>Issuing agency: Tony Holmes, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0105</Id>
-        <Name>Portuguese Chamber of Commerce and Industry Scheme (EDIRA compliant)</Name>
-        <Description>Issuing agency: Portuguese Chamber of Commerce and Industry, Portugal.</Description>
-    </Code>
-    <Code>
-        <Id>0106</Id>
-        <Name>Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)</Name>
-        <Description>Issuing agency: Vereniging van Kamers van Koophandel en Fabrieken in Nederland
+	</Code>
+	<Code>
+		<Id>0102</Id>
+		<Name>HEAG</Name>
+		<Description>Issuing agency: Hessische Elektrizitats-AG, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0104</Id>
+		<Name>BT - ICD Coding System</Name>
+		<Description>Issuing agency: Tony Holmes, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0105</Id>
+		<Name>Portuguese Chamber of Commerce and Industry Scheme (EDIRA compliant)</Name>
+		<Description>Issuing agency: Portuguese Chamber of Commerce and Industry, Portugal.</Description>
+	</Code>
+	<Code>
+		<Id>0106</Id>
+		<Name>Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)</Name>
+		<Description>Issuing agency: Vereniging van Kamers van Koophandel en Fabrieken in Nederland
             Watermolenlaan, The Netherlands.</Description>
-    </Code>
-    <Code>
-        <Id>0107</Id>
-        <Name>Association of Swedish Chambers of Commerce and Industry Scheme (EDIRA compliant)</Name>
-        <Description>Issuing agency: Association of Swedish Chambers of Commerce and Industry, Sweden.</Description>
-    </Code>
-    <Code>
-        <Id>0108</Id>
-        <Name>Australian Chambers of Commerce and Industry Scheme (EDIRA compliant)</Name>
-        <Description>Issuing agency: Australian Chambers of Commerce and Industry, Australia.</Description>
-    </Code>
-    <Code>
-        <Id>0109</Id>
-        <Name>BellSouth ICD AESA (ATM End System Address)</Name>
-        <Description>Issuing agency: BellSouth Corporation, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0110</Id>
-        <Name>Bell Atlantic</Name>
-        <Description>Issuing agency: Bell Atlantic, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0111</Id>
-        <Name>Object Identifiers</Name>
-        <Description>Issuing agency: Institute of Electrical and Electronics Engineers, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0112</Id>
-        <Name>ISO register for Standards producing Organizations</Name>
-        <Description>Issuing agency: International Organization for Standardization (ISO), SWITZERLAND.</Description>
-    </Code>
-    <Code>
-        <Id>0113</Id>
-        <Name>OriginNet</Name>
-        <Description>Issuing agency: Origin BV, The Netherlands.</Description>
-    </Code>
-    <Code>
-        <Id>0114</Id>
-        <Name>Check Point Software Technologies</Name>
-        <Description>Issuing agency: Check Point Software Technologies Ltd, ISRAEL.</Description>
-    </Code>
-    <Code>
-        <Id>0115</Id>
-        <Name>Pacific Bell Data Communications Network</Name>
-        <Description>Issuing agency: Pacific Bell, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0116</Id>
-        <Name>PSS Object Identifiers</Name>
-        <Description>Issuing agency: PSS (Postal Security Services), FINLAND.</Description>
-    </Code>
-    <Code>
-        <Id>0117</Id>
-        <Name>STENTOR-ICD CODING SYSTEM</Name>
-        <Description>Issuing agency: Stentor Resource Centre Inc., Canada.</Description>
-    </Code>
-    <Code>
-        <Id>0118</Id>
-        <Name>ATM-Network ZN'96</Name>
-        <Description>Issuing agency: Deutsche Telekom AG, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0119</Id>
-        <Name>MCI / OSI Network</Name>
-        <Description>Issuing agency: MCI Telecommunications Corporation, Technical Standards Management, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0120</Id>
-        <Name>Advantis</Name>
-        <Description>Issuing agency: Advantis, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0121</Id>
-        <Name>Affable Software Data Interchange Codes</Name>
-        <Description>Issuing agency: Affable Software Corporation, Canada.</Description>
-    </Code>
-    <Code>
-        <Id>0122</Id>
-        <Name>BB-DATA GmbH</Name>
-        <Description>Issuing agency: BB-DATA GmbH, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0123</Id>
-        <Name>BASF Company ATM-Network</Name>
-        <Description>Issuing agency: BASF Computer Services GmbH, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0124</Id>
-        <Name>IOTA Identifiers for Organizations for Telecommunications Addressing using the ICD system format defined in ISO/IEC 8348</Name>
-        <Description>Issuing agency: DISC, British Standards Institution, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0125</Id>
-        <Name>Henkel Corporate Network (H-Net)</Name>
-        <Description>Issuing agency: Henkel KgaA, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0126</Id>
-        <Name>GTE/OSI Network</Name>
-        <Description>Issuing agency: GTE, Industry Standards, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0127</Id>
-        <Name>Dresdner Bank Corporate Network</Name>
-        <Description>Issuing agency: Dresdner Bank AG, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0128</Id>
-        <Name>BCNR (Swiss Clearing Bank Number)</Name>
-        <Description>Issuing agency: Telekurs AG, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0129</Id>
-        <Name>BPI (Swiss Business Partner Identification) code</Name>
-        <Description>Issuing agency: Telekurs AG, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0130</Id>
-        <Name>Directorates of the European Commission</Name>
-        <Description>Issuing agency: European Commission, Belgium</Description>
-    </Code>
-    <Code>
-        <Id>0131</Id>
-        <Name>Code for the Identification of National Organizations</Name>
-        <Description>Issuing agency: China National Organization Code Registration Authority, P.R. of China.</Description>
-    </Code>
-    <Code>
-        <Id>0132</Id>
-        <Name>Certicom Object Identifiers</Name>
-        <Description>Issuing agency: Certicom Corp, U.S.A.</Description>
-    </Code>
-    <Code>
-        <Id>0133</Id>
-        <Name>TC68 OID</Name>
-        <Description>Issuing agency: ISO TC68, Banking and Related Financial Services, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0134</Id>
-        <Name>Infonet Services Corporation</Name>
-        <Description>Issuing agency: Infonet NV/SA, Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0135</Id>
-        <Name>SIA Object Identifiers</Name>
-        <Description>Issuing agency: SIA-Società Interbancaria per l'Automazione S.p.A., ITALIA.</Description>
-    </Code>
-    <Code>
-        <Id>0136</Id>
-        <Name>Cable &amp; Wireless Global ATM End-System Address Plan</Name>
-        <Description>Issuing agency: Cable &amp; Wireless Global Business Inc., USA</Description>
-    </Code>
-    <Code>
-        <Id>0137</Id>
-        <Name>Global AESA scheme</Name>
-        <Description>Construct and Administer AESAs, Routing of ATM switched connections Use to from globally unique Global One ICD AESAs. Issuing agency: Global One, Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0138</Id>
-        <Name>France Telecom ATM End System Address Plan</Name>
-        <Description>The coding system will be used to provide ATM End System Addresses based on ICD format NSAP addresses. These addresses will be used to uniquely identify User Network. Interfaces to ATM networks as specified by the ATM Forum UNI specifications. France telecom will also use these addresses Internally and to provide worldwide customers with non- Geographic private AESAs. These global addresses should be Reachable by non-France Telecom ATM users via Interconnecting ATM carriers. The ICD Code will also form part of the Initial Domain Part of the OSI network addressing as specified in Addendum 2 to ISO 8348. Issuing agency: France Telecom, France.</Description>
-    </Code>
-    <Code>
-        <Id>0139</Id>
-        <Name>Savvis Communications AESA:.</Name>
-        <Description>Global Addressing of Savvis ATM Switches and any direct customer ATM networks for implementation of PNNI Used to form a globally unique Savvis ICD ATM End System Address. Issuing agency: Savvis Communications,USA.</Description>
-    </Code>
-    <Code>
-        <Id>0140</Id>
-        <Name>Toshiba Organizations, Partners, And Suppliers' (TOPAS) Code</Name>
-        <Description>The purpose of this coding system is to identify organizations world-wide that have business or technical transactions with Toshiba Corporation in terms of ISO 13584 Parts Library standard based electronic catalogue interchange service. The interchange is not limited to those between a member organization and Toshiba Corporation. Interchanges between member organizations based on the organization identifier of this coding system are also in scope. Reference to this organization identification code in other business transactions is also allowed Reference to this organization identifier in other business transactions is also possible provided the organizations concerned are registered as members of the. Issuing agency: Toshiba Corporation, Japan.</Description>
-    </Code>
-    <Code>
-        <Id>0141</Id>
-        <Name>NATO Commercial and Government Entity system</Name>
-        <Description>To identify all Commercial and Governmental entities that provide material and/or services to the Armed Forces of the NATO nations and several non-NATO nations (Sponsored) around the world. This information is used by NATO and Sponsored nations' Logisticians to identify Commercial and Government Entities they deal with. This Information is used by all functions of Logistics support such as Acquisition, Sourcing, EDI, Re-Provisioning, Material Management, etc. Determination of the real source for an item of supply is one of the most important prerequisites for proper application of the Uniform System of Item Identification within NATO. It is the source where documentation will be obtained from and its location normally gives advice for codification responsibility. Within the NATO Codification System the term Manufacturer covers the whole range of possible sources of technical data for items entering the supply chains or participating, countries. The primary use of manufacturers coding is in ADP operations related to support management programs such as material management codification, standardization, etc. Issuing agency: NATO Group of National Director on Codification (AC/135), Luxembourg.</Description>
-    </Code>
-    <Code>
-        <Id>0142</Id>
-        <Name>SECETI Object Identifiers</Name>
-        <Description>The function as the 'Application Centre' for the Italian National Interbank Network, having been authorized by the Bank of Italy, and the Italian Banking Association to operate in that capacity. The scheme is intended for the registration of object identifiers according to ISO 8824 and ISO 8825 The code is primarily intended for the registration of Object Identifiers according to ISO 8824/8825, Level 1: ISO (), Level 2: identified -organization (), Level 3: SECETI S.p.A. (), Level 4: and higher: (defined by SECETI conventions).Issuing agency: Servizi Centralizzati SECETI S.p.A., ITALY.</Description>
-    </Code>
-    <Code>
-        <Id>0143</Id>
-        <Name>EINESTEINet AG</Name>
-        <Description>Initially the Network covers the geographical area of Germany with the intention of expanding into all the European countries EINSTEINet's goal is to provide Application Services using an ATM network to customers located throughout Europe. The need for the international ATM address structure is to serve EINSTENet's customers with consistent ATM addresses from end-to-end. Issuing agency: EINSTEINet AG, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0144</Id>
-        <Name>DoDAAC (Department of Defense Activity Address Code)</Name>
-        <Description>A code assigned to uniquely identify all military units in the United States Department of Defense. Issuing agency: DoD (Unites States Department of Defense), USA.</Description>
-    </Code>
-    <Code>
-        <Id>0145</Id>
-        <Name>DGCP (Direction Générale de la Comptabilité Publique)administrative accounting identification scheme</Name>
-        <Description>de assigned by the French public accounting office. Issuing agency: DGCP
+	</Code>
+	<Code>
+		<Id>0107</Id>
+		<Name>Association of Swedish Chambers of Commerce and Industry Scheme (EDIRA compliant)</Name>
+		<Description>Issuing agency: Association of Swedish Chambers of Commerce and Industry, Sweden.</Description>
+	</Code>
+	<Code>
+		<Id>0108</Id>
+		<Name>Australian Chambers of Commerce and Industry Scheme (EDIRA compliant)</Name>
+		<Description>Issuing agency: Australian Chambers of Commerce and Industry, Australia.</Description>
+	</Code>
+	<Code>
+		<Id>0109</Id>
+		<Name>BellSouth ICD AESA (ATM End System Address)</Name>
+		<Description>Issuing agency: BellSouth Corporation, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0110</Id>
+		<Name>Bell Atlantic</Name>
+		<Description>Issuing agency: Bell Atlantic, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0111</Id>
+		<Name>Object Identifiers</Name>
+		<Description>Issuing agency: Institute of Electrical and Electronics Engineers, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0112</Id>
+		<Name>ISO register for Standards producing Organizations</Name>
+		<Description>Issuing agency: International Organization for Standardization (ISO), SWITZERLAND.</Description>
+	</Code>
+	<Code>
+		<Id>0113</Id>
+		<Name>OriginNet</Name>
+		<Description>Issuing agency: Origin BV, The Netherlands.</Description>
+	</Code>
+	<Code>
+		<Id>0114</Id>
+		<Name>Check Point Software Technologies</Name>
+		<Description>Issuing agency: Check Point Software Technologies Ltd, ISRAEL.</Description>
+	</Code>
+	<Code>
+		<Id>0115</Id>
+		<Name>Pacific Bell Data Communications Network</Name>
+		<Description>Issuing agency: Pacific Bell, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0116</Id>
+		<Name>PSS Object Identifiers</Name>
+		<Description>Issuing agency: PSS (Postal Security Services), FINLAND.</Description>
+	</Code>
+	<Code>
+		<Id>0117</Id>
+		<Name>STENTOR-ICD CODING SYSTEM</Name>
+		<Description>Issuing agency: Stentor Resource Centre Inc., Canada.</Description>
+	</Code>
+	<Code>
+		<Id>0118</Id>
+		<Name>ATM-Network ZN'96</Name>
+		<Description>Issuing agency: Deutsche Telekom AG, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0119</Id>
+		<Name>MCI / OSI Network</Name>
+		<Description>Issuing agency: MCI Telecommunications Corporation, Technical Standards Management, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0120</Id>
+		<Name>Advantis</Name>
+		<Description>Issuing agency: Advantis, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0121</Id>
+		<Name>Affable Software Data Interchange Codes</Name>
+		<Description>Issuing agency: Affable Software Corporation, Canada.</Description>
+	</Code>
+	<Code>
+		<Id>0122</Id>
+		<Name>BB-DATA GmbH</Name>
+		<Description>Issuing agency: BB-DATA GmbH, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0123</Id>
+		<Name>BASF Company ATM-Network</Name>
+		<Description>Issuing agency: BASF Computer Services GmbH, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0124</Id>
+		<Name>IOTA Identifiers for Organizations for Telecommunications Addressing using the ICD system format defined in ISO/IEC 8348</Name>
+		<Description>Issuing agency: DISC, British Standards Institution, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0125</Id>
+		<Name>Henkel Corporate Network (H-Net)</Name>
+		<Description>Issuing agency: Henkel KgaA, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0126</Id>
+		<Name>GTE/OSI Network</Name>
+		<Description>Issuing agency: GTE, Industry Standards, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0127</Id>
+		<Name>Dresdner Bank Corporate Network</Name>
+		<Description>Issuing agency: Dresdner Bank AG, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0128</Id>
+		<Name>BCNR (Swiss Clearing Bank Number)</Name>
+		<Description>Issuing agency: Telekurs AG, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0129</Id>
+		<Name>BPI (Swiss Business Partner Identification) code</Name>
+		<Description>Issuing agency: Telekurs AG, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0130</Id>
+		<Name>Directorates of the European Commission</Name>
+		<Description>Issuing agency: European Commission, Belgium</Description>
+	</Code>
+	<Code>
+		<Id>0131</Id>
+		<Name>Code for the Identification of National Organizations</Name>
+		<Description>Issuing agency: China National Organization Code Registration Authority, P.R. of China.</Description>
+	</Code>
+	<Code>
+		<Id>0132</Id>
+		<Name>Certicom Object Identifiers</Name>
+		<Description>Issuing agency: Certicom Corp, U.S.A.</Description>
+	</Code>
+	<Code>
+		<Id>0133</Id>
+		<Name>TC68 OID</Name>
+		<Description>Issuing agency: ISO TC68, Banking and Related Financial Services, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0134</Id>
+		<Name>Infonet Services Corporation</Name>
+		<Description>Issuing agency: Infonet NV/SA, Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0135</Id>
+		<Name>SIA Object Identifiers</Name>
+		<Description>Issuing agency: SIA-Società Interbancaria per l'Automazione S.p.A., ITALIA.</Description>
+	</Code>
+	<Code>
+		<Id>0136</Id>
+		<Name>Cable &amp; Wireless Global ATM End-System Address Plan</Name>
+		<Description>Issuing agency: Cable &amp; Wireless Global Business Inc., USA</Description>
+	</Code>
+	<Code>
+		<Id>0137</Id>
+		<Name>Global AESA scheme</Name>
+		<Description>Construct and Administer AESAs, Routing of ATM switched connections Use to from globally unique Global One ICD AESAs. Issuing agency: Global One, Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0138</Id>
+		<Name>France Telecom ATM End System Address Plan</Name>
+		<Description>The coding system will be used to provide ATM End System Addresses based on ICD format NSAP addresses. These addresses will be used to uniquely identify User Network. Interfaces to ATM networks as specified by the ATM Forum UNI specifications. France telecom will also use these addresses Internally and to provide worldwide customers with non- Geographic private AESAs. These global addresses should be Reachable by non-France Telecom ATM users via Interconnecting ATM carriers. The ICD Code will also form part of the Initial Domain Part of the OSI network addressing as specified in Addendum 2 to ISO 8348. Issuing agency: France Telecom, France.</Description>
+	</Code>
+	<Code>
+		<Id>0139</Id>
+		<Name>Savvis Communications AESA:.</Name>
+		<Description>Global Addressing of Savvis ATM Switches and any direct customer ATM networks for implementation of PNNI Used to form a globally unique Savvis ICD ATM End System Address. Issuing agency: Savvis Communications,USA.</Description>
+	</Code>
+	<Code>
+		<Id>0140</Id>
+		<Name>Toshiba Organizations, Partners, And Suppliers' (TOPAS) Code</Name>
+		<Description>The purpose of this coding system is to identify organizations world-wide that have business or technical transactions with Toshiba Corporation in terms of ISO 13584 Parts Library standard based electronic catalogue interchange service. The interchange is not limited to those between a member organization and Toshiba Corporation. Interchanges between member organizations based on the organization identifier of this coding system are also in scope. Reference to this organization identification code in other business transactions is also allowed Reference to this organization identifier in other business transactions is also possible provided the organizations concerned are registered as members of the. Issuing agency: Toshiba Corporation, Japan.</Description>
+	</Code>
+	<Code>
+		<Id>0141</Id>
+		<Name>NATO Commercial and Government Entity system</Name>
+		<Description>To identify all Commercial and Governmental entities that provide material and/or services to the Armed Forces of the NATO nations and several non-NATO nations (Sponsored) around the world. This information is used by NATO and Sponsored nations' Logisticians to identify Commercial and Government Entities they deal with. This Information is used by all functions of Logistics support such as Acquisition, Sourcing, EDI, Re-Provisioning, Material Management, etc. Determination of the real source for an item of supply is one of the most important prerequisites for proper application of the Uniform System of Item Identification within NATO. It is the source where documentation will be obtained from and its location normally gives advice for codification responsibility. Within the NATO Codification System the term Manufacturer covers the whole range of possible sources of technical data for items entering the supply chains or participating, countries. The primary use of manufacturers coding is in ADP operations related to support management programs such as material management codification, standardization, etc. Issuing agency: NATO Group of National Director on Codification (AC/135), Luxembourg.</Description>
+	</Code>
+	<Code>
+		<Id>0142</Id>
+		<Name>SECETI Object Identifiers</Name>
+		<Description>The function as the 'Application Centre' for the Italian National Interbank Network, having been authorized by the Bank of Italy, and the Italian Banking Association to operate in that capacity. The scheme is intended for the registration of object identifiers according to ISO 8824 and ISO 8825 The code is primarily intended for the registration of Object Identifiers according to ISO 8824/8825, Level 1: ISO (), Level 2: identified -organization (), Level 3: SECETI S.p.A. (), Level 4: and higher: (defined by SECETI conventions).Issuing agency: Servizi Centralizzati SECETI S.p.A., ITALY.</Description>
+	</Code>
+	<Code>
+		<Id>0143</Id>
+		<Name>EINESTEINet AG</Name>
+		<Description>Initially the Network covers the geographical area of Germany with the intention of expanding into all the European countries EINSTEINet's goal is to provide Application Services using an ATM network to customers located throughout Europe. The need for the international ATM address structure is to serve EINSTENet's customers with consistent ATM addresses from end-to-end. Issuing agency: EINSTEINet AG, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0144</Id>
+		<Name>DoDAAC (Department of Defense Activity Address Code)</Name>
+		<Description>A code assigned to uniquely identify all military units in the United States Department of Defense. Issuing agency: DoD (Unites States Department of Defense), USA.</Description>
+	</Code>
+	<Code>
+		<Id>0145</Id>
+		<Name>DGCP (Direction Générale de la Comptabilité Publique)administrative accounting identification scheme</Name>
+		<Description>de assigned by the French public accounting office. Issuing agency: DGCP
             (Direction Générale de la Comptabilité Publique), 139 Rue de Bercy, 75572 Paris Cedex
             12, France</Description>
-    </Code>
-    <Code>
-        <Id>0146</Id>
-        <Name>DGI (Direction Générale des Impots) code</Name>
-        <Description>French taxation authority. Issuing agency: DGI (Direction Générale des Impots), France.</Description>
-    </Code>
-    <Code>
-        <Id>0147</Id>
-        <Name>Standard Company Code</Name>
-        <Description>Partner identification code which is registered with JIPDEC/ECPC. Issuing agency: JIPDEC, Japan.</Description>
-    </Code>
-    <Code>
-        <Id>0148</Id>
-        <Name>ITU (International Telecommunications Union)Data Network Identification Codes (DNIC)</Name>
-        <Description>Data Network Identification Codes assigned by the ITU. Issuing agency: ITU (International Telecommunications Union), Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0149</Id>
-        <Name>Global Business Identifier</Name>
-        <Description>For a company's ability to obtain complete and accurate information about potential suppliers Used to identify and designate in electronic commerce Issuing agency: ResolveNet (IOM) Ltd, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0150</Id>
-        <Name>Madge Networks Ltd- ICD ATM Addressing Scheme</Name>
-        <Description>The code will be used as part of an ATM NSAP addressing scheme for the establishment of PVC and SPVC connections Addressing for Madge Networks global ATM network and the connections of any Madge Customers requiring the allocation of ATM addresses from Madge Networks. Issuing agency: Madge Networks, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0151</Id>
-        <Name>Australian Business Number (ABN) Scheme</Name>
-        <Description>The ABN will be a unique identifier for a business to interact with Government (Commonwealth, State and Local) throughout, Australia and is the supporting number for the Goods and Service Tax (GST). The Legislation covering the use of ABN, (see notes on use) will have application throughout the Commonwealth of The ABN is established by: A New Tax System (Australian, Business Number) Act 1999, enacted by the Australian Parliament. The scheme is expected to last for at least 100 Years without reallocation of identification numbers. The ABN is specified in English. Issuing agency: Australian Taxation Office,  AUSTRALIA.</Description>
-    </Code>
-    <Code>
-        <Id>0152</Id>
-        <Name>Edira Scheme Identifier Code</Name>
-        <Description>For the unambiguous identification of registration scheme used in e-commerce (not to be used for the identification of organizations). The code is used to designate unambiguously schemes used in e-commerce to specify any entity but organizations. Issuing agency: EDIRA Association, c/o Zurich chamber of commerce, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0153</Id>
-        <Name>Concert Global Network Services ICD AESA</Name>
-        <Description>Global Addressing of the Concert ATM switches and any direct customer ATM networks for implementation of PNNI. It will also be used for any attached carrier ATM networks. Used to form globally unique Concert ICD ATM End System Addresses (AESA's). Issuing agency: Concert Global Network Services Ltd, Bermuda.</Description>
-    </Code>
-    <Code>
-        <Id>0154</Id>
-        <Name>Identification number of economic subjects: (ICO)</Name>
-        <Description>Unique identification of economic subjects for all administrative purposes The identification number ICO is used in the Czech Republic mainly in all administrative acts (tax system, banking system, statistics. etc.) Issuing agency: Czech Statistical Office, Czech Republic.</Description>
-    </Code>
-    <Code>
-        <Id>0155</Id>
-        <Name>Global Crossing AESA (ATM End System Address)</Name>
-        <Description>Construction, administration and implementation of a scalable AESA schema for routing if ATM switched connections. ICD will be used as a component of the IDP (Initial Domain Part) for OSI addressing. Issuing agency: Global Crossing Ltd, Bermuda.</Description>
-    </Code>
-    <Code>
-        <Id>0156</Id>
-        <Name>AUNA</Name>
-        <Description>Telecommunication network of operators in the AUNA Group. This code shall be used as an element of NSAP addressing Issuing agency: AUNA, Spain.</Description>
-    </Code>
-    <Code>
-        <Id>0157</Id>
-        <Name>ATM interconnection with the Dutch KPN Telecom</Name>
-        <Description>ITO Drager Net. The ICD code also form the initial part of the OSI network addressing scheme (Addendum 2 of ISO 8384) Issuing agency: Informatie en Communicatie Technologie Organisatie, The Netherlands.</Description>
-    </Code>
-    <Code>
-        <Id>0158</Id>
-        <Name>Identification number of economic subject (ICO) Act on State Statistics of 29 November 2001, § 27</Name>
-        <Description>The unique identification of economic subjects (legal persons and natural persons-entrepreneurs) used for registration The identification number ICO is used in Slovakia in almost all administrative acts (tax system, banking system, statistics, etc.) Issuing agency: Slovak Statistical Office, Slovak             Republic.</Description>
-    </Code>
-    <Code>
-        <Id>0159</Id>
-        <Name>ACTALIS Object Identifiers</Name>
-        <Description>The code is primarily intended for the registration of Object Identifiers (OIDs) according to ISO 8824/8825: Level 1: iso (1), Level 2: identified-organization (3), Level 3: ACTALIS SpA (0159), Level 4 and higher: (defined by ACTALIS) See "Intended purpose/application area" Issuing agency: ACTALIS S.p.A., ITALY.</Description>
-    </Code>
-    <Code>
-        <Id>0160</Id>
-        <Name>GTIN - Global Trade Item Number</Name>
-        <Description>The GTIN is a globally unique identifier of trade items. A trade item is any item (product or service) upon which there is a need to retrieve pre-defined information and that may be priced, ordered or invoiced at any point in any supply chain. The GTIN identification scheme is currently (2002) used by more than 900,000 organizations in the world. It is widely in the consumer goods and other industries to identify items and packages. The GTIN can be represented in a standard bar code format. Issuing agency: EAN Inernational.</Description>
-    </Code>
-    <Code>
-        <Id>0161</Id>
-        <Name>ECCMA Open Technical Directory</Name>
-        <Description>A centralized dictionary of names and definitions of trading concepts, essentially goods and services that are bought, sold or exchanged. This is a classification neutral dictionary of names and attributes (also referred to as characteristics or properties). The eOTD will help improve the speed and accuracy of Internet searches and can be imported into sourcing, procurement and ERP systems with minimal data transformation costs. Issuing agency: Electronic Commerce Code Management Association, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0162</Id>
-        <Name>CEN/ISSS Object Identifier Scheme</Name>
-        <Description>To allocate OIDs to objects defined in the standards and specifications developed in CEN’s technical bodies (TCs, Workshops, etc) The code is primarily intended for the registration ofObject Identifiers according to ISO 8824-1 Annex BLevel 1: iso (1)Level 2: identified-organization (3)Level 3: CEN (nnnn –the ICD allocated)Level 4: and higher: (defined by CEN conventions). Issuing agency: Comité Européen de Normalization, Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0163</Id>
-        <Name>US-EPA Facility Identifier</Name>
-        <Description>To provide for the unique identification of facilities regulated or monitored by the United States Environmental Protection Agency (EPA).A facility is a distinct real property entity (i.e., a man-made object and its surrounding real estate). Facilities incorporate the characteristics of being: (1) objects, established at (2) specific places, for (3) specific purposes. A facility can include monitoring stations, waste sites, and other entities of environmental interest that cannot be classified as single facilities. This is maintained within the U.S. Environmental Protection Agency Facility Registration System (FRS). Issuing agency: U.S. Environmental Protection Agency, USA.</Description>
-    </Code>
-    <Code>
-        <Id>0164</Id>
-        <Name>TELUS Corporation</Name>
-        <Description>SA Addressing Scheme for ATM PNNI Implementation ICD is required for PNNI implementation on TELUS’ ATM network in order to establish an addressing scheme for SPVC connections within and between regions Issuing agency: TELUS Corporation, Canada.</Description>
-    </Code>
-    <Code>
-        <Id>0165</Id>
-        <Name>FIEIE Object identifiers</Name>
-        <Description>To provide identifiers for international enterprises and organizations operating in fields of business served by the Jaakko Poyry Group. On the date of the application, these fields include Forest industry, Energy, Infrastructure and Environment. To provide an internationally unambiguous framework for existing coding practices in this The code is primarily intended for the registration of Object Identifiers according to ISO/IEC 8824, 8825 and 11179: Level 1: iso (1) Level 2: identified organization (3) Level 3: fieie code (nnnn, the ICD allocated) Level 4 and higher: (defined by FIEIE conventions). Issuing agency: Jaakko Poyry Group Oyj, Finland.</Description>
-    </Code>
-    <Code>
-        <Id>0166</Id>
-        <Name>Swissguide Identifier Scheme</Name>
-        <Description>To uniquely identify objects, esp. companies and professionals in directories/databases The code is used to uniquely identify the objects in the Swissguide directory. Issuing agency: Swissguide AG, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0167</Id>
-        <Name>Priority Telecom ATM End System Address Plan</Name>
-        <Description>The coding system will be used to provide ATM End System Address based on IDC format NSAP addresses required for Priority Telecom ATM PNNI implementation. These addresses will be used to uniquely identify User Network interfaces to Priority Telecom ATM Networks as specified by the ATM Forum UNI specifications. PT plans to use these addresses to connect to other public ATM networks in the countries PT is operating (The Netherlands, Norway and Austria) Used to form a globally unique Priority Telecom ATM End System Address. PT customers and interconnect with public ATM networks requires the use of unique AESA Issuing agency: Priority Telecom Netherlands, The Netherlands.</Description>
-    </Code>
-    <Code>
-        <Id>0168</Id>
-        <Name>Vodafone Ireland OSI Addressing</Name>
-        <Description>Implementation of an ATM network in connection with 3G rollout. The code will be used for ATM network related addressing purposes, and for CLNS network. Issuing agency: Vodafone Ireland Limited, Ireland.</Description>
-    </Code>
-    <Code>
-        <Id>0169</Id>
-        <Name>Swiss Federal Business Identification Number. Central Business names Index (zefix) Identification Number</Name>
-        <Description>To uniquely identify all companies/organizations registered in the Swiss Register of Commerce and the Swiss Central Business Names Index To uniquely identify entries in Swiss Central Business Names Index (zefix). The principle purpose of the zefix on internet is to provide a swisswide search function, and thus provide the public with a service to determine the legal domicile, the cantonal office for the register of commerce in charge, and the latter’s address. Issuing agency: Swiss Federal Office of Justice, Switzerland.</Description>
-    </Code>
-    <Code>
-        <Id>0170</Id>
-        <Name>Teikoku Company Code</Name>
-        <Description>Teikoku Company Code is allocated to all incorporations, business owners, government organizations and other public offices in Japan. TDB (Teikoku Databank Ltd.) retains company codes of approximately 1.7 million companies within Japan. Teikoku Company Code, a unique company ID, has already been adopted by many companies both as a standard company code in customer data managements and as an identification code for online electronic commerce transactions. Since every company trades with companies abroad, they need to use it in their international business transaction. Therefore, it is desired to register TDB as an ICD to RA of the ISO/IEC 6523. Issuing agency: TEIKOKU DATABANK LTD., JAPAN.</Description>
-    </Code>
-    <Code>
-        <Id>0171</Id>
-        <Name>Luxembourg CP &amp; CPS (Certification Policy and Certification Practice Statement) Index</Name>
-        <Description>Index of the Certification Policies and Certification Practice Statement issued by Luxembourg PKI Issuing agency: Ministry of The Economy and Foreign Trade, Luxembourg.</Description>
-    </Code>
-    <Code>
-        <Id>0172</Id>
-        <Name>Project Group “Lists of Properties” (PROLIST®)</Name>
-        <Description>To uniquely identify properties, blocks and lists of properties (LOP) for products and services in the process industry. The products are electrical and process control devices. The code is used to uniquely identify the objects in the PROLIST online dictionary. Issuing agency: Project Group “Lists of Properties” (PROLIST®) c/o Bayer Technology Services GmbH Geb., Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0173</Id>
-        <Name>eCI@ss</Name>
-        <Description>To uniquely identify properties, classes and list of characteristics (LoC) for products and services available in the eCI@ss classification system The code is used to uniquely identify objects in the eCI@ss classification system. Issuing agency: eCI@ss, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0174</Id>
-        <Name>StepNexus</Name>
-        <Description>To provide identifiers within StepNexus loader objects. These addresses will be used to uniquely identify StepNexu key usage fields within X509 certificates for use in the StepNexus loader scheme. Used to define unique certificate attributes within X509 certificates Issuing agency: StepNexus, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0175</Id>
-        <Name>Siemens AG</Name>
-        <Description>To uniquely identify properties, blocks, classes and lists of properties used or specified by Siemens AG - Power Generation The code is used to uniquely identify objects in the Siemens AG - Power Generation corporate dictionary Issuing agency: Siemens AG, Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0176</Id>
-        <Name>Paradine GmbH</Name>
-        <Description>To uniquely identify properties, classes,and list of properties (LoP) for products and services available in Paradine Reference Dictionary Systems The code is used to uniquely identify objects in Paradine Reference Dictionary Systems. Issuing agency: Paradine GmbH, Austria.</Description>
-    </Code>
-    <Code>
-        <Id>0177</Id>
-        <Name>Odette International Limited</Name>
-        <Description>For use in EDI and other B2B exchanges in the European automotive industry to identify business entities (organisations). The scheme is used to identify organisations, and parts of organisations which are parties to or are referenced in automotive supply chain transactions such as EDI messaging and other B2B exchanges. Issuing agency: Odette International Limited, UK.</Description>
-    </Code>
-    <Code>
-        <Id>0178</Id>
-        <Name>Route1 MobiNET</Name>
-        <Description>For rooting OIDs defined by Route1 Security Corporation for Route1 MobiNET. Intended to cover MobiNET connected organizations, Route1 Security Corporation, its subdivisions, customers and any organization using MobiNET or Route1's services and products For rooting OIDs defined by Route1 Security Corporation for Route1 MobiNET. Intended to cover MobiNET connected organizations, Route1 Security Corporation, its subdivisions, customers and any organization using MobiNET or Route1's services and products. The OID structure and the inclusion therein of the ICS is as follows: ISO.Identifiedorganization.ICD(Route1 MobiNET).AFI.PCI.Org_ID.OPI.MC Issuing agency: Route1 Security Corporation,Canada.</Description>
-    </Code>
-    <Code>
-        <Id>0179</Id>
-        <Name>Penango Object Identifiers</Name>
-        <Description>To identify objects, policies, and data related to Penango’s products and services. The ICD is primarily intended for registration of Object Identifiers in accordance with ISO/IEC 8824 (ASN.1). Issuing agency: Penango, Inc., Canada.</Description>
-    </Code>
-    <Code>
-        <Id>0180</Id>
-        <Name>Lithuanian military PKI</Name>
-        <Description>dex of the Certification Policies and Certification Practices Statements issued by Lithuanian military PKI The code is used to uniquely identify Certification Policies and Certification Practice Statements in Lithuanian military PKI Issuing agency: The Ministry of National Defence of the Republic of Lithuania, Lithuania.</Description>
-    </Code>
-    <Code>
-        <Id>0183</Id>
-        <Name>Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business Identification Number (UIDB)</Name>
-        <Description>Intended Purpose/App. Area: To uniquely identify all companies/organizations registered in Switzerland in all official register (Swiss Register of Commerce, VAT register, Canton register, etc) The UIDB shall make lt possible to identify an enterprise quickly, unambiguously and on a permanent basis. The UIDB and the other identification characteristics associated with it shall be managed via a specific UIDB register. The main identification characteristics (status, address, etc.) shall be accessible to the public. Issuing agency: Swiss Federal Statistical Office (FSO), Switzerland).</Description>
-    </Code>
-    <Code>
-        <Id>0184</Id>
-        <Name>DIGSTORG</Name>
-        <Description>Intended Purpose/App. Area: To be used for identifying Danish companies included juridical persons and associations in international trade It is possible to add 0-4 characters set to the code for more detailed use of one organization. Characters are digits or capital letter. Issuing agency: The Danish Agency for Digitisation, Denmark.</Description>
-    </Code>
-    <Code>
-        <Id>0185</Id>
-        <Name>Perceval Object Code</Name>
-        <Description>Intended Purpose/App. Area: Intended to uniquely identify in an international context any physical and or abstract entities related to Perceval products and services using Abstract Syntax Notation One in accordance with ISO/IEC 8824 The ICD is primarily intended for registration and resolution of Object Identifiers in accordance with ISO/IEC 8824 with reduced encoding size and non-geographic context Issuing agency: Perceval SA, Tenbosch, Belgium.</Description>
-    </Code>
-    <Code>
-        <Id>0186</Id>
-        <Name>TrustPoint Object Identifiers</Name>
-        <Description>Intended Purpose/App. Area: To uniquely identify objects and mechanisms globally throughout communications
+	</Code>
+	<Code>
+		<Id>0146</Id>
+		<Name>DGI (Direction Générale des Impots) code</Name>
+		<Description>French taxation authority. Issuing agency: DGI (Direction Générale des Impots), France.</Description>
+	</Code>
+	<Code>
+		<Id>0147</Id>
+		<Name>Standard Company Code</Name>
+		<Description>Partner identification code which is registered with JIPDEC/ECPC. Issuing agency: JIPDEC, Japan.</Description>
+	</Code>
+	<Code>
+		<Id>0148</Id>
+		<Name>ITU (International Telecommunications Union)Data Network Identification Codes (DNIC)</Name>
+		<Description>Data Network Identification Codes assigned by the ITU. Issuing agency: ITU (International Telecommunications Union), Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0149</Id>
+		<Name>Global Business Identifier</Name>
+		<Description>For a company's ability to obtain complete and accurate information about potential suppliers Used to identify and designate in electronic commerce Issuing agency: ResolveNet (IOM) Ltd, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0150</Id>
+		<Name>Madge Networks Ltd- ICD ATM Addressing Scheme</Name>
+		<Description>The code will be used as part of an ATM NSAP addressing scheme for the establishment of PVC and SPVC connections Addressing for Madge Networks global ATM network and the connections of any Madge Customers requiring the allocation of ATM addresses from Madge Networks. Issuing agency: Madge Networks, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0151</Id>
+		<Name>Australian Business Number (ABN) Scheme</Name>
+		<Description>The ABN will be a unique identifier for a business to interact with Government (Commonwealth, State and Local) throughout, Australia and is the supporting number for the Goods and Service Tax (GST). The Legislation covering the use of ABN, (see notes on use) will have application throughout the Commonwealth of The ABN is established by: A New Tax System (Australian, Business Number) Act 1999, enacted by the Australian Parliament. The scheme is expected to last for at least 100 Years without reallocation of identification numbers. The ABN is specified in English. Issuing agency: Australian Taxation Office,  AUSTRALIA.</Description>
+	</Code>
+	<Code>
+		<Id>0152</Id>
+		<Name>Edira Scheme Identifier Code</Name>
+		<Description>For the unambiguous identification of registration scheme used in e-commerce (not to be used for the identification of organizations). The code is used to designate unambiguously schemes used in e-commerce to specify any entity but organizations. Issuing agency: EDIRA Association, c/o Zurich chamber of commerce, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0153</Id>
+		<Name>Concert Global Network Services ICD AESA</Name>
+		<Description>Global Addressing of the Concert ATM switches and any direct customer ATM networks for implementation of PNNI. It will also be used for any attached carrier ATM networks. Used to form globally unique Concert ICD ATM End System Addresses (AESA's). Issuing agency: Concert Global Network Services Ltd, Bermuda.</Description>
+	</Code>
+	<Code>
+		<Id>0154</Id>
+		<Name>Identification number of economic subjects: (ICO)</Name>
+		<Description>Unique identification of economic subjects for all administrative purposes The identification number ICO is used in the Czech Republic mainly in all administrative acts (tax system, banking system, statistics. etc.) Issuing agency: Czech Statistical Office, Czech Republic.</Description>
+	</Code>
+	<Code>
+		<Id>0155</Id>
+		<Name>Global Crossing AESA (ATM End System Address)</Name>
+		<Description>Construction, administration and implementation of a scalable AESA schema for routing if ATM switched connections. ICD will be used as a component of the IDP (Initial Domain Part) for OSI addressing. Issuing agency: Global Crossing Ltd, Bermuda.</Description>
+	</Code>
+	<Code>
+		<Id>0156</Id>
+		<Name>AUNA</Name>
+		<Description>Telecommunication network of operators in the AUNA Group. This code shall be used as an element of NSAP addressing Issuing agency: AUNA, Spain.</Description>
+	</Code>
+	<Code>
+		<Id>0157</Id>
+		<Name>ATM interconnection with the Dutch KPN Telecom</Name>
+		<Description>ITO Drager Net. The ICD code also form the initial part of the OSI network addressing scheme (Addendum 2 of ISO 8384) Issuing agency: Informatie en Communicatie Technologie Organisatie, The Netherlands.</Description>
+	</Code>
+	<Code>
+		<Id>0158</Id>
+		<Name>Identification number of economic subject (ICO) Act on State Statistics of 29 November 2001, § 27</Name>
+		<Description>The unique identification of economic subjects (legal persons and natural persons-entrepreneurs) used for registration The identification number ICO is used in Slovakia in almost all administrative acts (tax system, banking system, statistics, etc.) Issuing agency: Slovak Statistical Office, Slovak             Republic.</Description>
+	</Code>
+	<Code>
+		<Id>0159</Id>
+		<Name>ACTALIS Object Identifiers</Name>
+		<Description>The code is primarily intended for the registration of Object Identifiers (OIDs) according to ISO 8824/8825: Level 1: iso (1), Level 2: identified-organization (3), Level 3: ACTALIS SpA (0159), Level 4 and higher: (defined by ACTALIS) See "Intended purpose/application area" Issuing agency: ACTALIS S.p.A., ITALY.</Description>
+	</Code>
+	<Code>
+		<Id>0160</Id>
+		<Name>GTIN - Global Trade Item Number</Name>
+		<Description>The GTIN is a globally unique identifier of trade items. A trade item is any item (product or service) upon which there is a need to retrieve pre-defined information and that may be priced, ordered or invoiced at any point in any supply chain. The GTIN identification scheme is currently (2002) used by more than 900,000 organizations in the world. It is widely in the consumer goods and other industries to identify items and packages. The GTIN can be represented in a standard bar code format. Issuing agency: EAN Inernational.</Description>
+	</Code>
+	<Code>
+		<Id>0161</Id>
+		<Name>ECCMA Open Technical Directory</Name>
+		<Description>A centralized dictionary of names and definitions of trading concepts, essentially goods and services that are bought, sold or exchanged. This is a classification neutral dictionary of names and attributes (also referred to as characteristics or properties). The eOTD will help improve the speed and accuracy of Internet searches and can be imported into sourcing, procurement and ERP systems with minimal data transformation costs. Issuing agency: Electronic Commerce Code Management Association, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0162</Id>
+		<Name>CEN/ISSS Object Identifier Scheme</Name>
+		<Description>To allocate OIDs to objects defined in the standards and specifications developed in CEN’s technical bodies (TCs, Workshops, etc) The code is primarily intended for the registration ofObject Identifiers according to ISO 8824-1 Annex BLevel 1: iso (1)Level 2: identified-organization (3)Level 3: CEN (nnnn –the ICD allocated)Level 4: and higher: (defined by CEN conventions). Issuing agency: Comité Européen de Normalization, Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0163</Id>
+		<Name>US-EPA Facility Identifier</Name>
+		<Description>To provide for the unique identification of facilities regulated or monitored by the United States Environmental Protection Agency (EPA).A facility is a distinct real property entity (i.e., a man-made object and its surrounding real estate). Facilities incorporate the characteristics of being: (1) objects, established at (2) specific places, for (3) specific purposes. A facility can include monitoring stations, waste sites, and other entities of environmental interest that cannot be classified as single facilities. This is maintained within the U.S. Environmental Protection Agency Facility Registration System (FRS). Issuing agency: U.S. Environmental Protection Agency, USA.</Description>
+	</Code>
+	<Code>
+		<Id>0164</Id>
+		<Name>TELUS Corporation</Name>
+		<Description>SA Addressing Scheme for ATM PNNI Implementation ICD is required for PNNI implementation on TELUS’ ATM network in order to establish an addressing scheme for SPVC connections within and between regions Issuing agency: TELUS Corporation, Canada.</Description>
+	</Code>
+	<Code>
+		<Id>0165</Id>
+		<Name>FIEIE Object identifiers</Name>
+		<Description>To provide identifiers for international enterprises and organizations operating in fields of business served by the Jaakko Poyry Group. On the date of the application, these fields include Forest industry, Energy, Infrastructure and Environment. To provide an internationally unambiguous framework for existing coding practices in this The code is primarily intended for the registration of Object Identifiers according to ISO/IEC 8824, 8825 and 11179: Level 1: iso (1) Level 2: identified organization (3) Level 3: fieie code (nnnn, the ICD allocated) Level 4 and higher: (defined by FIEIE conventions). Issuing agency: Jaakko Poyry Group Oyj, Finland.</Description>
+	</Code>
+	<Code>
+		<Id>0166</Id>
+		<Name>Swissguide Identifier Scheme</Name>
+		<Description>To uniquely identify objects, esp. companies and professionals in directories/databases The code is used to uniquely identify the objects in the Swissguide directory. Issuing agency: Swissguide AG, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0167</Id>
+		<Name>Priority Telecom ATM End System Address Plan</Name>
+		<Description>The coding system will be used to provide ATM End System Address based on IDC format NSAP addresses required for Priority Telecom ATM PNNI implementation. These addresses will be used to uniquely identify User Network interfaces to Priority Telecom ATM Networks as specified by the ATM Forum UNI specifications. PT plans to use these addresses to connect to other public ATM networks in the countries PT is operating (The Netherlands, Norway and Austria) Used to form a globally unique Priority Telecom ATM End System Address. PT customers and interconnect with public ATM networks requires the use of unique AESA Issuing agency: Priority Telecom Netherlands, The Netherlands.</Description>
+	</Code>
+	<Code>
+		<Id>0168</Id>
+		<Name>Vodafone Ireland OSI Addressing</Name>
+		<Description>Implementation of an ATM network in connection with 3G rollout. The code will be used for ATM network related addressing purposes, and for CLNS network. Issuing agency: Vodafone Ireland Limited, Ireland.</Description>
+	</Code>
+	<Code>
+		<Id>0169</Id>
+		<Name>Swiss Federal Business Identification Number. Central Business names Index (zefix) Identification Number</Name>
+		<Description>To uniquely identify all companies/organizations registered in the Swiss Register of Commerce and the Swiss Central Business Names Index To uniquely identify entries in Swiss Central Business Names Index (zefix). The principle purpose of the zefix on internet is to provide a swisswide search function, and thus provide the public with a service to determine the legal domicile, the cantonal office for the register of commerce in charge, and the latter’s address. Issuing agency: Swiss Federal Office of Justice, Switzerland.</Description>
+	</Code>
+	<Code>
+		<Id>0170</Id>
+		<Name>Teikoku Company Code</Name>
+		<Description>Teikoku Company Code is allocated to all incorporations, business owners, government organizations and other public offices in Japan. TDB (Teikoku Databank Ltd.) retains company codes of approximately 1.7 million companies within Japan. Teikoku Company Code, a unique company ID, has already been adopted by many companies both as a standard company code in customer data managements and as an identification code for online electronic commerce transactions. Since every company trades with companies abroad, they need to use it in their international business transaction. Therefore, it is desired to register TDB as an ICD to RA of the ISO/IEC 6523. Issuing agency: TEIKOKU DATABANK LTD., JAPAN.</Description>
+	</Code>
+	<Code>
+		<Id>0171</Id>
+		<Name>Luxembourg CP &amp; CPS (Certification Policy and Certification Practice Statement) Index</Name>
+		<Description>Index of the Certification Policies and Certification Practice Statement issued by Luxembourg PKI Issuing agency: Ministry of The Economy and Foreign Trade, Luxembourg.</Description>
+	</Code>
+	<Code>
+		<Id>0172</Id>
+		<Name>Project Group “Lists of Properties” (PROLIST®)</Name>
+		<Description>To uniquely identify properties, blocks and lists of properties (LOP) for products and services in the process industry. The products are electrical and process control devices. The code is used to uniquely identify the objects in the PROLIST online dictionary. Issuing agency: Project Group “Lists of Properties” (PROLIST®) c/o Bayer Technology Services GmbH Geb., Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0173</Id>
+		<Name>eCI@ss</Name>
+		<Description>To uniquely identify properties, classes and list of characteristics (LoC) for products and services available in the eCI@ss classification system The code is used to uniquely identify objects in the eCI@ss classification system. Issuing agency: eCI@ss, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0174</Id>
+		<Name>StepNexus</Name>
+		<Description>To provide identifiers within StepNexus loader objects. These addresses will be used to uniquely identify StepNexu key usage fields within X509 certificates for use in the StepNexus loader scheme. Used to define unique certificate attributes within X509 certificates Issuing agency: StepNexus, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0175</Id>
+		<Name>Siemens AG</Name>
+		<Description>To uniquely identify properties, blocks, classes and lists of properties used or specified by Siemens AG - Power Generation The code is used to uniquely identify objects in the Siemens AG - Power Generation corporate dictionary Issuing agency: Siemens AG, Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0176</Id>
+		<Name>Paradine GmbH</Name>
+		<Description>To uniquely identify properties, classes,and list of properties (LoP) for products and services available in Paradine Reference Dictionary Systems The code is used to uniquely identify objects in Paradine Reference Dictionary Systems. Issuing agency: Paradine GmbH, Austria.</Description>
+	</Code>
+	<Code>
+		<Id>0177</Id>
+		<Name>Odette International Limited</Name>
+		<Description>For use in EDI and other B2B exchanges in the European automotive industry to identify business entities (organisations). The scheme is used to identify organisations, and parts of organisations which are parties to or are referenced in automotive supply chain transactions such as EDI messaging and other B2B exchanges. Issuing agency: Odette International Limited, UK.</Description>
+	</Code>
+	<Code>
+		<Id>0178</Id>
+		<Name>Route1 MobiNET</Name>
+		<Description>For rooting OIDs defined by Route1 Security Corporation for Route1 MobiNET. Intended to cover MobiNET connected organizations, Route1 Security Corporation, its subdivisions, customers and any organization using MobiNET or Route1's services and products For rooting OIDs defined by Route1 Security Corporation for Route1 MobiNET. Intended to cover MobiNET connected organizations, Route1 Security Corporation, its subdivisions, customers and any organization using MobiNET or Route1's services and products. The OID structure and the inclusion therein of the ICS is as follows: ISO.Identifiedorganization.ICD(Route1 MobiNET).AFI.PCI.Org_ID.OPI.MC Issuing agency: Route1 Security Corporation,Canada.</Description>
+	</Code>
+	<Code>
+		<Id>0179</Id>
+		<Name>Penango Object Identifiers</Name>
+		<Description>To identify objects, policies, and data related to Penango’s products and services. The ICD is primarily intended for registration of Object Identifiers in accordance with ISO/IEC 8824 (ASN.1). Issuing agency: Penango, Inc., Canada.</Description>
+	</Code>
+	<Code>
+		<Id>0180</Id>
+		<Name>Lithuanian military PKI</Name>
+		<Description>dex of the Certification Policies and Certification Practices Statements issued by Lithuanian military PKI The code is used to uniquely identify Certification Policies and Certification Practice Statements in Lithuanian military PKI Issuing agency: The Ministry of National Defence of the Republic of Lithuania, Lithuania.</Description>
+	</Code>
+	<Code>
+		<Id>0183</Id>
+		<Name>Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business Identification Number (UIDB)</Name>
+		<Description>Intended Purpose/App. Area: To uniquely identify all companies/organizations registered in Switzerland in all official register (Swiss Register of Commerce, VAT register, Canton register, etc) The UIDB shall make lt possible to identify an enterprise quickly, unambiguously and on a permanent basis. The UIDB and the other identification characteristics associated with it shall be managed via a specific UIDB register. The main identification characteristics (status, address, etc.) shall be accessible to the public. Issuing agency: Swiss Federal Statistical Office (FSO), Switzerland).</Description>
+	</Code>
+	<Code>
+		<Id>0184</Id>
+		<Name>DIGSTORG</Name>
+		<Description>Intended Purpose/App. Area: To be used for identifying Danish companies included juridical persons and associations in international trade It is possible to add 0-4 characters set to the code for more detailed use of one organization. Characters are digits or capital letter. Issuing agency: The Danish Agency for Digitisation, Denmark.</Description>
+	</Code>
+	<Code>
+		<Id>0185</Id>
+		<Name>Perceval Object Code</Name>
+		<Description>Intended Purpose/App. Area: Intended to uniquely identify in an international context any physical and or abstract entities related to Perceval products and services using Abstract Syntax Notation One in accordance with ISO/IEC 8824 The ICD is primarily intended for registration and resolution of Object Identifiers in accordance with ISO/IEC 8824 with reduced encoding size and non-geographic context Issuing agency: Perceval SA, Tenbosch, Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0186</Id>
+		<Name>TrustPoint Object Identifiers</Name>
+		<Description>Intended Purpose/App. Area: To uniquely identify objects and mechanisms globally throughout communications
             networks using TrustPoint security products and services Issuing agency: TrustPoint
             Innovation Technologies, Attn: Sherry Shannon-Vanstone, 816 Hideaway Circle East, Unit
             244 Marco Island, FL 34145 USA http://www.trustpointinnovation.com Tel: +1 905 302 6929
             Email: sviconsulting@aol.com</Description>
-    </Code>
-    <Code>
-        <Id>0187</Id>
-        <Name>Amazon Unique Identification Scheme</Name>
-        <Description>Intended Purpose/App. Area: To provide identifiers for properties, classes, groups, or lists of data and objects specified by or used by Amazon.com, Inc. and its Affiliates Identifiers assigned under this scheme may be usable as Object Identifiers in accordance with ISO/IEC 8824,  usable with Directories in accordance with ISO/IEC 9594, usable in accordance with ISO/IEC 8348, or usable in other contexts as defined by Amazon. Issuing agency: Amazon Technologies, Inc. in the United States.</Description>
-    </Code>
-    <Code>
-        <Id>0188</Id>
-        <Name>Corporate Number of The Social Security and Tax Number System</Name>
-        <Description>Intended Purpose/App. Area: The number system of Japan is a social infrastructure to improve efficiency and the transparency of the social security and the tax system, and to achieve a highly convenient, impartial, and fair society. Additionally, the profit of the number system can be free usage for various purposes, so we want to use the Corporate Number as identifiers in various fields, like in electronic commerce, transportation, etc. The preliminary work, numbering the identifiers for the beginning of usage in January 2016, is being done. Issuing agency: National Tax Agency Japan.</Description>
-    </Code>
-    <Code>
-        <Id>0189</Id>
-        <Name>European Business Identifier (EBID)</Name>
-        <Description>Intended Purpose/App. Area: For use in EDI or other B2B exchanges to identify business entities (organizations). The scheme is used to identify organisations, and parts of organisations which are parties to or are referenced in electronic transactions such as EDI messaging or other B2B exchanges. Issuing agency: EBID Service AG CAS-Weg in Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0190</Id>
-        <Name>Organisatie Indentificatie Nummer (OIN)</Name>
-        <Description>Intended Purpose/App. Area: The OIN is part of the Dutch standard ‘Digikoppeling’ and is used for identifying the organisations that take part in electronic message exchange with the Dutch Government. The OIN must also be included in the PKIo certificate. Issuing agency: Logius in the Netherlands.</Description>
-    </Code>
-    <Code>
-        <Id>0191</Id>
-        <Name>Company Code (Estonia)</Name>
-        <Description>Intended Purpose/App. Area: Company code is major and only unique identifier of all institutions and organisations in Estonia. This code is widely used for various purposes, including electronic commerce. Usage of company code is required in communication between institutions and also in communication between private and public organisations. For use in EDI or other B2B (B2C) exchanges to identify private and public organisations. Issuing agency: Centre of Registers and Information Systems of the Ministry of Justice in Estonia.
-          </Description>
-    </Code>
-    <Code>
-        <Id>0192</Id>
-        <Name>Organisasjonsnummer</Name>
-        <Description>Intended Purpose/App. Area: Identify entities registered in the Central Coordinating Register for Legal Entities in Norway. The scheme with ICD code + organization number will be used to identify organisations that are parties to or referenced in electronic transactions such as electronic invoicing or other B2B exchanges. Issuing agency: The Brønnøysund Register Centre in Norway.</Description>
-    </Code>
-    <Code>
-        <Id>0193</Id>
-        <Name>UBL.BE Party Identifier</Name>
-        <Description>Intended Purpose/App. Area: Identification and addressing of different parties involved in invoicing. Issuing agency: UBL.BE in Belgium.
-		</Description>
-    </Code>
-    <Code>
-        <Id>0194</Id>
-        <Name>KOIOS Open Technical Dictionary</Name>
-        <Description>Intended Purpose/App. Area: The KOIOS OTD is a collection of terminology defined by and obtained from consensus bodies such as ISO, IEC, and other groups that have a consensus process for developing terminology. The KOIOS OTD contains terms, definitions, and images of concepts used to describe individuals, organizations, locations, goods and services. The KOIOS OTD conforms to ISO 22745 (all parts) and is designed to enable the exchange of characteristic data in all stages of the life-cycle of an item, and to ensure that the resulting specifications conform to ISO 8000-110. Issuing agency: KOIOS Master Data Limited in UK.
-        </Description>
-    </Code>	
-    <Code>
-        <Id>0195</Id>
-        <Name>Singapore Nationwide E-lnvoice Framework</Name>
-        <Description>Intended Purpose/App. Area: For use in electronic messages in accordance to the Singapore
-            nationwide e-invoice framework on Identification of organization. Issuing agency: Infocomm Media Development Authority in Singapore.
-        </Description>
-    </Code>
-    <Code>
-        <Id>0196</Id>
-        <Name>Icelandic identifier - Íslensk kennitala</Name>
-        <Description>Intended Purpose/App. Area: Identification of Icelandic individuals and legal entities. Issuing agency: For individual, Icelandic National Registry, www.skra.is. For legal entities, Directorate of Internal Revenue, www.rsk.is in Iceland.</Description>
-    </Code>
-    <Code>
-        <Id>0197</Id>
-        <Name>APPLiA Pl Standard</Name>
-        <Description>Intended Purpose/App. Area: Through their European industry association APPLiA (Home Appliance Europe), manufacturers of home appliances have launched the Product Information (Pl) initiative. The initiative introduces a standard structure for product information. Pl Standard helps retailers to take full advantage of electronic communication and data processing, as the Internet and ICT are fundamentally changing how products and services are offered, bought, and sold.. Issuing agency: APPLiA Home Appliance Europe, in Belgium</Description>
-    </Code>	
-    <Code>
-        <Id>0198</Id>
-        <Name>ERSTORG</Name>
-        <Description>Intended Purpose/App. Area: To be used for identifying Danish companies based on VAT numbers included juridical. Issuing agency: The Danish Business Authority in Denmark.
-        </Description>
-    </Code>	
-    <Code>
-        <Id>0199</Id>
-        <Name>Legal Entity Identifier (LEI)</Name>
+	</Code>
+	<Code>
+		<Id>0187</Id>
+		<Name>Amazon Unique Identification Scheme</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for properties, classes, groups, or lists of data and objects specified by or used by Amazon.com, Inc. and its Affiliates Identifiers assigned under this scheme may be usable as Object Identifiers in accordance with ISO/IEC 8824,  usable with Directories in accordance with ISO/IEC 9594, usable in accordance with ISO/IEC 8348, or usable in other contexts as defined by Amazon. Issuing agency: Amazon Technologies, Inc. in the United States.</Description>
+	</Code>
+	<Code>
+		<Id>0188</Id>
+		<Name>Corporate Number of The Social Security and Tax Number System</Name>
+		<Description>Intended Purpose/App. Area: The number system of Japan is a social infrastructure to improve efficiency and the transparency of the social security and the tax system, and to achieve a highly convenient, impartial, and fair society. Additionally, the profit of the number system can be free usage for various purposes, so we want to use the Corporate Number as identifiers in various fields, like in electronic commerce, transportation, etc. The preliminary work, numbering the identifiers for the beginning of usage in January 2016, is being done. Issuing agency: National Tax Agency Japan.</Description>
+	</Code>
+	<Code>
+		<Id>0189</Id>
+		<Name>European Business Identifier (EBID)</Name>
+		<Description>Intended Purpose/App. Area: For use in EDI or other B2B exchanges to identify business entities (organizations). The scheme is used to identify organisations, and parts of organisations which are parties to or are referenced in electronic transactions such as EDI messaging or other B2B exchanges. Issuing agency: EBID Service AG CAS-Weg in Germany.</Description>
+	</Code>
+	<Code>
+		<Id>0190</Id>
+		<Name>Organisatie Indentificatie Nummer (OIN)</Name>
+		<Description>Intended Purpose/App. Area: The OIN is part of the Dutch standard ‘Digikoppeling’ and is used for identifying the organisations that take part in electronic message exchange with the Dutch Government. The OIN must also be included in the PKIo certificate. Issuing agency: Logius in the Netherlands.</Description>
+	</Code>
+	<Code>
+		<Id>0191</Id>
+		<Name>Company Code (Estonia)</Name>
+		<Description>Intended Purpose/App. Area: Company code is major and only unique identifier of all institutions and organisations in Estonia. This code is widely used for various purposes, including electronic commerce. Usage of company code is required in communication between institutions and also in communication between private and public organisations. For use in EDI or other B2B (B2C) exchanges to identify private and public organisations. Issuing agency: Centre of Registers and Information Systems of the Ministry of Justice in Estonia.</Description>
+	</Code>
+	<Code>
+		<Id>0192</Id>
+		<Name>Organisasjonsnummer</Name>
+		<Description>Intended Purpose/App. Area: Identify entities registered in the Central Coordinating Register for Legal Entities in Norway. The scheme with ICD code + organization number will be used to identify organisations that are parties to or referenced in electronic transactions such as electronic invoicing or other B2B exchanges. Issuing agency: The Brønnøysund Register Centre in Norway.</Description>
+	</Code>
+	<Code>
+		<Id>0193</Id>
+		<Name>UBL.BE Party Identifier</Name>
+		<Description>Intended Purpose/App. Area: Identification and addressing of different parties involved in invoicing. Issuing agency: UBL.BE in Belgium.</Description>
+	</Code>
+	<Code>
+		<Id>0194</Id>
+		<Name>KOIOS Open Technical Dictionary</Name>
+		<Description>Intended Purpose/App. Area: The KOIOS OTD is a collection of terminology defined by and obtained from consensus bodies such as ISO, IEC, and other groups that have a consensus process for developing terminology. The KOIOS OTD contains terms, definitions, and images of concepts used to describe individuals, organizations, locations, goods and services. The KOIOS OTD conforms to ISO 22745 (all parts) and is designed to enable the exchange of characteristic data in all stages of the life-cycle of an item, and to ensure that the resulting specifications conform to ISO 8000-110. Issuing agency: KOIOS Master Data Limited in UK.</Description>
+	</Code>
+	<Code>
+		<Id>0195</Id>
+		<Name>Singapore Nationwide E-lnvoice Framework</Name>
+		<Description>Intended Purpose/App. Area: For use in electronic messages in accordance to the Singapore
+            nationwide e-invoice framework on Identification of organization. Issuing agency: Infocomm Media Development Authority in Singapore.</Description>
+	</Code>
+	<Code>
+		<Id>0196</Id>
+		<Name>Icelandic identifier - Íslensk kennitala</Name>
+		<Description>Intended Purpose/App. Area: Identification of Icelandic individuals and legal entities. Issuing agency: For individual, Icelandic National Registry, www.skra.is. For legal entities, Directorate of Internal Revenue, www.rsk.is in Iceland.</Description>
+	</Code>
+	<Code>
+		<Id>0197</Id>
+		<Name>APPLiA Pl Standard</Name>
+		<Description>Intended Purpose/App. Area: Through their European industry association APPLiA (Home Appliance Europe), manufacturers of home appliances have launched the Product Information (Pl) initiative. The initiative introduces a standard structure for product information. Pl Standard helps retailers to take full advantage of electronic communication and data processing, as the Internet and ICT are fundamentally changing how products and services are offered, bought, and sold.. Issuing agency: APPLiA Home Appliance Europe, in Belgium</Description>
+	</Code>
+	<Code>
+		<Id>0198</Id>
+		<Name>ERSTORG</Name>
+		<Description>Intended Purpose/App. Area: To be used for identifying Danish companies based on VAT numbers included juridical. Issuing agency: The Danish Business Authority in Denmark.</Description>
+	</Code>
+	<Code>
+		<Id>0199</Id>
+		<Name>Legal Entity Identifier (LEI)</Name>
 		<Description>Intended Purpose/App. Area: The LEI is the global, open identifier established at the urging of the Financial Stability Board and the recommendation of the G20. The LEI is established as the ISO 17442 standard, is governed by the LEI Regulatory Oversight Committee (LEI-ROC) and has been implemented by the Global Legal Entity Identifier Foundation (GLEIF). The LEI code connects to key reference information that enables clear and unique identification of legal entities participating in financial transactions. Each LEI contains information about an entity's ownership structure and thus answers the questions of 'who is who' and 'who owns whom'. Simply put, the publicly available LEI data pool can be regarded as a global directory, which greatly enhances transparency in the global marketplace. Already applied very broadly within financial regulation and rapidly being adopted for KYC and a number of other purposes in financial markets, the LEI is set to spread into a range of other fields, including trade facilitation, business reporting and supply chain management. Issuing agency: GLEIF, a global organization.</Description>
-    </Code>
-    <Code>
-        <Id>0200</Id>
-        <Name>Legal entity code (Lithuania)</Name>
+	</Code>
+	<Code>
+		<Id>0200</Id>
+		<Name>Legal entity code (Lithuania)</Name>
 		<Description>Intended Purpose/App. Area: For use in EDI (electronic data interchange) for C2B and others exchanges to identify legal entities. Issuing agency: State Enterprise Centre of Registers in Lithuania.</Description>
-    </Code>
-    <Code>
-        <Id>0201</Id>
-        <Name>Codice Univoco Unità Organizzativa iPA</Name>
+	</Code>
+	<Code>
+		<Id>0201</Id>
+		<Name>Codice Univoco Unità Organizzativa iPA</Name>
 		<Description>Intended Purpose/App. Area: Used to identify uniquely all organizational units of public bodies, authorities and public services in Italy. Issuing agency: Agenzia per l’Italia digitale in Italy.</Description>
-    </Code>
-    <Code>
-        <Id>0202</Id>
-        <Name>Indirizzo di Posta Elettronica Certificata</Name>
+	</Code>
+	<Code>
+		<Id>0202</Id>
+		<Name>Indirizzo di Posta Elettronica Certificata</Name>
 		<Description>Intended Purpose/App. Area: Used to identify senders and receivers of certified electronic mail as defined by Italian law. Issuing agency: Agenzia per l’Italia digitale in Italy.</Description>
 	</Code>
-    <Code>
-        <Id>0203</Id>
-        <Name>eDelivery Network Participant identifier</Name>
+	<Code>
+		<Id>0203</Id>
+		<Name>eDelivery Network Participant identifier</Name>
 		<Description>Intended Purpose/App. Area: Used as an electronic address identifier for participants within a secure data communication network. Issuing agency: Agency for Digital Government in Sweden.</Description>
-		</Code>
+	</Code>
 	<Code>
-        <Id>0204</Id>
-        <Name>Leitweg-ID</Name>
+		<Id>0204</Id>
+		<Name>Leitweg-ID</Name>
 		<Description>Intended Purpose/App. Area: Identification of Public Authorities. Issuing agency: Koordinierungsstelle für IT-Standards (KoSIT) in Germany.</Description>
-    </Code>
-    <Code>
-        <Id>0205</Id>
-        <Name>CODDEST</Name>
-        <Description>Intended Purpose/App. Area: Electronic Invoicing trough Sdl, the Exchange System used in Italy where the electronic invoices are transmitted to the Public Administration (Article 1, paragraph 211, of Italian Law no. 244 of 24 December 2007) or to private entities (Article 1, paragraph 2, of Legislative Decree 127/2015). Issuing agency: Agenzia delle Entrate in Italy.</Description>
-    </Code>
-    <Code>
-        <Id>0206</Id>
-        <Name>Registre du Commerce et de l’Industrie : RCI</Name>
-        <Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in Monaco. Issuing agency: Agence Monégasque de Sécurité Numérique (AMSN) in Monaco.</Description>
-    </Code>
-    <Code>
-        <Id>0207</Id>
-        <Name>PiLog Ontology Codification Identifier (POCI)</Name>
-        <Description>Intended Purpose/App. Area: A repository of concepts pertaining to any entity such as products, services, business partners, assets, organizations, locations, persons, addresses, languages, records etc along with the terminologies to describe each entity using class, characteristics, values, JoMs, QoMs, groups, definitions, guidelines, images, drawings, pictures. codes and any classification thereof. The codification will help exchange/integrate the data between operational, ERP, CRM, SRM or any other systems without any human interpretation and interaction without losing the meaning of the information in multiple languages, this will help organizations achieve their digital transformation goals more precisely in order to assess the real value-proposition of the underlying data that is driving their businesses. Issuing agency: PiLog Group in South Africa.</Description>
-    </Code>
-    <Code>
-        <Id>0208</Id>
-        <Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
-        <Description>Intended Purpose/App. Area: Identification number attributed by the BCE/KBO/ZDU (the Belgian register) to identify entities and establishment units operating in Belgium. Issuing agency: Banque-Carrefour des Entreprises (BCE) / Kruispuntbank van Ondernemingen (KBO) / Zentrale Datenbank der Unternehmen (ZOU) Service public fédéral Economie, P.M.E.in Belgium.
+	</Code>
+	<Code>
+		<Id>0205</Id>
+		<Name>CODDEST</Name>
+		<Description>Intended Purpose/App. Area: Electronic Invoicing trough Sdl, the Exchange System used in Italy where the electronic invoices are transmitted to the Public Administration (Article 1, paragraph 211, of Italian Law no. 244 of 24 December 2007) or to private entities (Article 1, paragraph 2, of Legislative Decree 127/2015). Issuing agency: Agenzia delle Entrate in Italy.</Description>
+	</Code>
+	<Code>
+		<Id>0206</Id>
+		<Name>Registre du Commerce et de l’Industrie : RCI</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in Monaco. Issuing agency: Agence Monégasque de Sécurité Numérique (AMSN) in Monaco.</Description>
+	</Code>
+	<Code>
+		<Id>0207</Id>
+		<Name>PiLog Ontology Codification Identifier (POCI)</Name>
+		<Description>Intended Purpose/App. Area: A repository of concepts pertaining to any entity such as products, services, business partners, assets, organizations, locations, persons, addresses, languages, records etc along with the terminologies to describe each entity using class, characteristics, values, JoMs, QoMs, groups, definitions, guidelines, images, drawings, pictures. codes and any classification thereof. The codification will help exchange/integrate the data between operational, ERP, CRM, SRM or any other systems without any human interpretation and interaction without losing the meaning of the information in multiple languages, this will help organizations achieve their digital transformation goals more precisely in order to assess the real value-proposition of the underlying data that is driving their businesses. Issuing agency: PiLog Group in South Africa.</Description>
+	</Code>
+	<Code>
+		<Id>0208</Id>
+		<Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
+		<Description>Intended Purpose/App. Area: Identification number attributed by the BCE/KBO/ZDU (the Belgian register) to identify entities and establishment units operating in Belgium. Issuing agency: Banque-Carrefour des Entreprises (BCE) / Kruispuntbank van Ondernemingen (KBO) / Zentrale Datenbank der Unternehmen (ZOU) Service public fédéral Economie, P.M.E.in Belgium.
 Classes moyennes et Energie</Description>
-    </Code>
+	</Code>
 	<Code>
-        <Id>0209</Id>
-        <Name>GS1 identification keys</Name>
-        <Description>Intended Purpose/App. Area: GS1 identification keys and key qualifiers may be used by an information system to refer unambiguously to an entity such as a trade item, logistics unit, physical location, document, or service relationship. Issuing agency: GS1, a global organization.</Description>
-    </Code>
+		<Id>0209</Id>
+		<Name>GS1 identification keys</Name>
+		<Description>Intended Purpose/App. Area: GS1 identification keys and key qualifiers may be used by an information system to refer unambiguously to an entity such as a trade item, logistics unit, physical location, document, or service relationship. Issuing agency: GS1, a global organization.</Description>
+	</Code>
 	<Code>
-        <Id>0210</Id>
-        <Name>CODICE FISCALE</Name>
-        <Description>Intended Purpose/App. Area: Electronic Invoicing and e-procurement. Issuing agency: Agenzia delle Entrate, Italy.</Description>
-    </Code>
+		<Id>0210</Id>
+		<Name>CODICE FISCALE</Name>
+		<Description>Intended Purpose/App. Area: Electronic Invoicing and e-procurement. Issuing agency: Agenzia delle Entrate, Italy.</Description>
+	</Code>
 	<Code>
-        <Id>0211</Id>
-        <Name>PARTITA IVA</Name>
-        <Description>Intended Purpose/App. Area: Electronic Invoicing and e-procurement. Issuing agency: Agenzia delle Entrate, Italy.</Description>
-    </Code>
+		<Id>0211</Id>
+		<Name>PARTITA IVA</Name>
+		<Description>Intended Purpose/App. Area: Electronic Invoicing and e-procurement. Issuing agency: Agenzia delle Entrate, Italy.</Description>
+	</Code>
 	<Code>
-        <Id>0212</Id>
-        <Name>Finnish Organization Identifier</Name>
-        <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: State Treasury of Finland / Valtiokonttor.</Description>
-    </Code>
+		<Id>0212</Id>
+		<Name>Finnish Organization Identifier</Name>
+		<Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: State Treasury of Finland / Valtiokonttor.</Description>
+	</Code>
 	<Code>
-        <Id>0213</Id>
-        <Name>Finnish Organization Value Add Tax Identifier</Name>
-        <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: State Treasury of Finland / Valtiokonttor.</Description>
-    </Code>
+		<Id>0213</Id>
+		<Name>Finnish Organization Value Add Tax Identifier</Name>
+		<Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: State Treasury of Finland / Valtiokonttor.</Description>
+	</Code>
 	<Code>
-        <Id>0214</Id>
-        <Name>Tradeplace TradePI Standard</Name>
-        <Description>Intended Purpose/App. Area: Tradeplace is an independent company, set up as a joint venture of several Home Appliance- and Consumer Electronics manufacturers. Tradeplace has launched their TradePI (Product Information) initiative for home appliances, consumer electronics, DIY and affiliated industries that are connected to Tradeplace. The initiative introduces an enhanced standard structure for product information. The TradePI Standard helps retailers to take full advantage of electronic communication and data processing, as the Internet and ICT are fundamentally changing how products and services are offered, bought, and sold. Issuing agency: Tradeplace B.V., The Netherlands.</Description>
-    </Code>
+		<Id>0214</Id>
+		<Name>Tradeplace TradePI Standard</Name>
+		<Description>Intended Purpose/App. Area: Tradeplace is an independent company, set up as a joint venture of several Home Appliance- and Consumer Electronics manufacturers. Tradeplace has launched their TradePI (Product Information) initiative for home appliances, consumer electronics, DIY and affiliated industries that are connected to Tradeplace. The initiative introduces an enhanced standard structure for product information. The TradePI Standard helps retailers to take full advantage of electronic communication and data processing, as the Internet and ICT are fundamentally changing how products and services are offered, bought, and sold. Issuing agency: Tradeplace B.V., The Netherlands.</Description>
+	</Code>
 	<Code>
-        <Id>0215</Id>
-        <Name>Net service ID</Name>
-        <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: Tieto Finland Oy, FINLAND.</Description>
-    </Code>
+		<Id>0215</Id>
+		<Name>Net service ID</Name>
+		<Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: Tieto Finland Oy, FINLAND.</Description>
+	</Code>
 	<Code>
-        <Id>0216</Id>
-        <Name>OVTcode</Name>
-        <Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: TIEKE- Tietoyhteiskunnan kehittamiskeskus, FINLAND.</Description>
-    </Code>
+		<Id>0216</Id>
+		<Name>OVTcode</Name>
+		<Description>Intended Purpose/App. Area: Identification scheme will be used for electronic trade purposes in e-invoicing, purchasing, electronic receipts. Issuing agency: TIEKE- Tietoyhteiskunnan kehittamiskeskus, FINLAND.</Description>
+	</Code>
 	<Code>
-        <Id>0217</Id>
-        <Name>The Netherlands Chamber of Commerce and Industry establishment number</Name>
-        <Description>Intended Purpose/App. Area: Electronic invoicing. Issuing agency: Nederlands Normalisatie Instituut (NEN)</Description>
-    </Code>
+		<Id>0217</Id>
+		<Name>The Netherlands Chamber of Commerce and Industry establishment number</Name>
+		<Description>Intended Purpose/App. Area: Electronic invoicing. Issuing agency: Nederlands Normalisatie Instituut (NEN)</Description>
+	</Code>
 	<Code>
-        <Id>0218</Id>
-        <Name>Unified registration number (Latvia)</Name>
-        <Description>Intended Purpose/App. Area: Each legal entity registered with the Register of Enterprises of the Republic of Latvia is assigned a unique unified registration number. This unique unified registration number is used to identify legal subjects for every purpose where it might be necessary, including for the use of the tax authority. Issuing agency: The Register of Enterprises of the Republic of Latvia.</Description>
-    </Code>
+		<Id>0218</Id>
+		<Name>Unified registration number (Latvia)</Name>
+		<Description>Intended Purpose/App. Area: Each legal entity registered with the Register of Enterprises of the Republic of Latvia is assigned a unique unified registration number. This unique unified registration number is used to identify legal subjects for every purpose where it might be necessary, including for the use of the tax authority. Issuing agency: The Register of Enterprises of the Republic of Latvia.</Description>
+	</Code>
 	<Code>
-        <Id>0219</Id>
-        <Name>Taxpayer registration code (Latvia)</Name>
-        <Description>Intended Purpose/App. Area: For use in Electronic data interchange (EDI) to identify private and public organizations. Issuing agency: State Revenue Service of the Republic of Latvia.</Description>
-    </Code>
+		<Id>0219</Id>
+		<Name>Taxpayer registration code (Latvia)</Name>
+		<Description>Intended Purpose/App. Area: For use in Electronic data interchange (EDI) to identify private and public organizations. Issuing agency: State Revenue Service of the Republic of Latvia.</Description>
+	</Code>
 	<Code>
-        <Id>0220</Id>
-        <Name>The Register of Natural Persons (Latvia)</Name>
-        <Description>Intended Purpose/App. Area: The Register combines the functionality of the current information system of the Population Register and Civil Register. The Register is a uniform state registration and recording system of information and natural persons that provides identification of natural persons, data processing and accumulation, and includes and updates information about civil entries. The data included in the Register is used for statistical surveys, tax forecasting and calculation, organizing of elections and other processes of national importance. When entering information regarding a person in the Register, the Office of Citizenship and Migration Affairs of the Republic of Latvia shall assign an automatically generated individual personal identity number thereto. Issuing agency: Office of Citizenship and Migration Affairs of the Republic of Latvia.</Description>
-    </Code>  
+		<Id>0220</Id>
+		<Name>The Register of Natural Persons (Latvia)</Name>
+		<Description>Intended Purpose/App. Area: The Register combines the functionality of the current information system of the Population Register and Civil Register. The Register is a uniform state registration and recording system of information and natural persons that provides identification of natural persons, data processing and accumulation, and includes and updates information about civil entries. The data included in the Register is used for statistical surveys, tax forecasting and calculation, organizing of elections and other processes of national importance. When entering information regarding a person in the Register, the Office of Citizenship and Migration Affairs of the Republic of Latvia shall assign an automatically generated individual personal identity number thereto. Issuing agency: Office of Citizenship and Migration Affairs of the Republic of Latvia.</Description>
+	</Code>
 	<Code>
-        <Id>0221</Id>
-        <Name>The registered number of the qualified invoice issuer</Name>
-        <Description>Intended Purpose/App. Area: The registered number of the qualified invoice issuer is used on the invoice-based method for Japanese consumption tax, which will be implemented on 1 October 2023. Issuing agency: National Tax Agency Japan</Description>
-    </Code> 
+		<Id>0221</Id>
+		<Name>The registered number of the qualified invoice issuer</Name>
+		<Description>Intended Purpose/App. Area: The registered number of the qualified invoice issuer is used on the invoice-based method for Japanese consumption tax, which will be implemented on 1 October 2023. Issuing agency: National Tax Agency Japan</Description>
+	</Code>
 	<Code>
-        <Id>0222</Id>
-        <Name>Metadata Registry Support</Name>
-        <Description>Intended Purpose/App. Area: Database of metadata supporting description of object-data-information-etc. Issuing agency: Farance Inc.</Description>
-    </Code> 
+		<Id>0222</Id>
+		<Name>Metadata Registry Support</Name>
+		<Description>Intended Purpose/App. Area: Database of metadata supporting description of object-data-information-etc. Issuing agency: Farance Inc.</Description>
+	</Code>
 	<Code>
-        <Id>0223</Id>
-        <Name>EU based company</Name>
-        <Description>Intended Purpose/App. Area: To provide identifiers for organizations based in EU. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
-    </Code> 
+		<Id>0223</Id>
+		<Name>EU based company</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for organizations based in EU. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
 	<Code>
-        <Id>0224</Id>
-        <Name>FTCTC CODE ROUTAGE</Name>
-        <Description>Intended Purpose/App. Area: To provide identifiers used in electronic invoices for routing among accredited platforms for the French Continuous Transactional Control reform on e-invoicing. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
-    </Code> 
+		<Id>0224</Id>
+		<Name>FTCTC CODE ROUTAGE</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers used in electronic invoices for routing among accredited platforms for the French Continuous Transactional Control reform on e-invoicing. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
 	<Code>
-        <Id>0225</Id>
-        <Name>FRCTC ELECTRONIC ADDRESS</Name>
-        <Description>Intended Purpose/App. Area: To provide identifiers used as electronic addresses in the context of the French Continuous Transactional Control reform on e-invoicing. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
-    </Code> 
+		<Id>0225</Id>
+		<Name>FRCTC ELECTRONIC ADDRESS</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers used as electronic addresses in the context of the French Continuous Transactional Control reform on e-invoicing. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
 	<Code>
-        <Id>0226</Id>
-        <Name>FRCTC Particulier</Name>
-        <Description>Intended Purpose/App. Area: To provide identifiers for French citizen sending invoices to the French Public Sector. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
-    </Code> 
+		<Id>0226</Id>
+		<Name>FRCTC Particulier</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for French citizen sending invoices to the French Public Sector. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
 	<Code>
-        <Id>0227</Id>
-        <Name>NON - EU based company</Name>
-        <Description>Intended Purpose/App. Area: NON - EU based company. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
-    </Code> 
+		<Id>0227</Id>
+		<Name>NON - EU based company</Name>
+		<Description>Intended Purpose/App. Area: NON - EU based company. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
 	<Code>
-        <Id>0228</Id>
-        <Name>Répertoire des Entreprises et des Etablissements (RIDET)</Name>
-        <Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in Nouvelle Caledonie (French). Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
-    </Code> 
+		<Id>0228</Id>
+		<Name>Répertoire des Entreprises et des Etablissements (RIDET)</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in Nouvelle Caledonie (French). Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
 	<Code>
-        <Id>0229</Id>
-        <Name>T.A.H.I.T.I (traitement automatique hiérarchisé des institutions de Tahiti et des îles)</Name>
-        <Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in TAHITI (French). Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
-    </Code> 
+		<Id>0229</Id>
+		<Name>T.A.H.I.T.I (traitement automatique hiérarchisé des institutions de Tahiti et des îles)</Name>
+		<Description>Intended Purpose/App. Area: To provide identifiers for organizations at national level in TAHITI (French). Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)</Description>
+	</Code>
 	<Code>
-        <Id>0230</Id>
-        <Name>National e-Invoicing Framework</Name>
-        <Description>Intended Purpose/App. Area: Identifier for  organizations. Issuing agency: Malaysia Digital Economy Corporation Sdn Bhd (MDEC)</Description>
-    </Code> 
+		<Id>0230</Id>
+		<Name>National e-Invoicing Framework</Name>
+		<Description>Intended Purpose/App. Area: Identifier for  organizations. Issuing agency: Malaysia Digital Economy Corporation Sdn Bhd (MDEC)</Description>
+	</Code>
 	<Code>
-        <Id>0231</Id>
-        <Name>Single taxable company (France)</Name>
-        <Description>'Intended Purpose/App. Area: Provide identifiers to companies in a single taxable company regime. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
-    </Code> 	
+		<Id>0231</Id>
+		<Name>Single taxable company (France)</Name>
+		<Description>'Intended Purpose/App. Area: Provide identifiers to companies in a single taxable company regime. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+	</Code>
 	<Code>
-        <Id>0232</Id>
-        <Name>NOBB product number</Name>
-        <Description>Intended Purpose/App. Area:  . Issuing agency:  '</Description>
-    </Code>
+		<Id>0232</Id>
+		<Name>NOBB product number</Name>
+		<Description>Intended Purpose/App. Area:  . Issuing agency:  '</Description>
+	</Code>
 	<Code>
-        <Id>0233</Id>
-        <Name>Name not known</Name>
-        <Description>Description not known</Description>
-    </Code>
+		<Id>0233</Id>
+		<Name>Elnummer</Name>
+		<Description>Elnummer</Description>
+	</Code>
 	<Code>
-        <Id>0234</Id>
-        <Name>Toimitusosoite ID</Name>
-        <Description>'Intended Purpose/App. Area: Identification scheme is used to identify delivery locations of the Finnish government accounting units. Issuing agency: Toimitusosoite ID'</Description>
-    </Code>
+		<Id>0234</Id>
+		<Name>Toimitusosoite ID</Name>
+		<Description>'Intended Purpose/App. Area: Identification scheme is used to identify delivery locations of the Finnish government accounting units. Issuing agency: Toimitusosoite ID'</Description>
+	</Code>
 	<Code>
-        <Id>0235</Id>
-        <Name>UAE Tax Identification Number (TIN)</Name>
-        <Description>'Intended Purpose/App. Area: A unique number issued to a range of persons required to be identified for tax purposes. Issuing agency: UAE Federal Tax Authority'</Description>
-    </Code>
+		<Id>0235</Id>
+		<Name>UAE Tax Identification Number (TIN)</Name>
+		<Description>'Intended Purpose/App. Area: A unique number issued to a range of persons required to be identified for tax purposes. Issuing agency: UAE Federal Tax Authority'</Description>
+	</Code>
 	<Code>
-        <Id>0236</Id>
-        <Name>Name not known</Name>
-        <Description>Description not known</Description>
-    </Code>
+		<Id>0236</Id>
+		<Name>ToimipaikkalD</Name>
+		<Description>ToimipaikkalD</Description>
+	</Code>
 	<Code>
-        <Id>0237</Id>
-        <Name>CPR (Danish person civil registration number)</Name>
-        <Description>'Intended Purpose/App. Area:  . Issuing agency:  '</Description>
-    </Code>
+		<Id>0237</Id>
+		<Name>CPR (Danish person civil registration number)</Name>
+		<Description>'Intended Purpose/App. Area:  . Issuing agency:  '</Description>
+	</Code>
 	<Code>
-        <Id>0238</Id>
-        <Name>Plateforme.s agréée.s à la facturation électronique (PPF/PDP)</Name>
-        <Description>'Intended Purpose/App. Area: To provide identifiers for E-invoicing Public Platform and Partner Dematerialisation Platform. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
-    </Code>
+		<Id>0238</Id>
+		<Name>Plateforme.s agréée.s à la facturation électronique (PPF/PDP)</Name>
+		<Description>'Intended Purpose/App. Area: To provide identifiers for E-invoicing Public Platform and Partner Dematerialisation Platform. Issuing agency: AIFE (Agence pour l’Informatique Financière de l’Etat)'</Description>
+	</Code>
+	<Code>
+		<Id>0239</Id>
+		<Name>EAEU</Name>
+	</Code>
+	<Code>
+		<Id>0240</Id>
+		<Name>Register of legal persons (in French : Répertoire des personnes morales)</Name>
+	</Code>
 </CodeList>
