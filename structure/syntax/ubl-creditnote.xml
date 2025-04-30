@@ -478,7 +478,7 @@
                 <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">BT-9</Reference>
                 <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-                <Reference type="RULE">BR-CO-25</Reference>
+                <!--Reference type="RULE">BR-CO-25</Reference-->
                 <Value type="EXAMPLE">2017-11-01</Value>
             </Element>
 
