@@ -21,7 +21,7 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0088">5798001234567</ram:ID>
+							<ram:ID schemeID="0184">DK12345678</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 						<ram:PostalTradeAddress>
 							<ram:CountryID>DK</ram:CountryID>
@@ -29,7 +29,7 @@
 					</ram:SellerTradeParty>
 					<ram:BuyerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0088">5798001234567</ram:ID>
+							<ram:ID schemeID="0184">DK12345678</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
@@ -66,7 +66,7 @@
 		</rsm:CrossIndustryInvoice>
 	</test>
     
-    <test>
+	<test>
 		<assert>
 			<error>PEPPOL-COMMON-R042</error>
 		</assert>
@@ -82,45 +82,12 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0184">DK-2345678</ram:ID>
+							<ram:ID schemeID="0184">345678</ram:ID>
 						</ram:SpecifiedLegalOrganization>
 					</ram:SellerTradeParty>
-					<ram:BuyerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0184">12345678</ram:ID>
-						</ram:SpecifiedLegalOrganization>
-					</ram:BuyerTradeParty>
 				</ram:ApplicableHeaderTradeAgreement>
 			</rsm:SupplyChainTradeTransaction>
 		</rsm:CrossIndustryInvoice>
 	</test>
 
-	    <test>
-		<assert>
-			<error>PEPPOL-COMMON-R042</error>
-		</assert>
-        <rsm:CrossIndustryInvoice
-			xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
-			xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
-			xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
-			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-			<rsm:ExchangedDocument>
-				<ram:TypeCode>380</ram:TypeCode>
-			</rsm:ExchangedDocument>
-			<rsm:SupplyChainTradeTransaction>
-				<ram:ApplicableHeaderTradeAgreement>
-					<ram:SellerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0184">DK12345678</ram:ID>
-						</ram:SpecifiedLegalOrganization>
-					</ram:SellerTradeParty>
-					<ram:BuyerTradeParty>
-						<ram:SpecifiedLegalOrganization>
-							<ram:ID schemeID="0184">12345678</ram:ID>
-						</ram:SpecifiedLegalOrganization>
-					</ram:BuyerTradeParty>
-				</ram:ApplicableHeaderTradeAgreement>
-			</rsm:SupplyChainTradeTransaction>
-		</rsm:CrossIndustryInvoice>
-	</test>
 </testSet>
