@@ -21,7 +21,7 @@ v{version}
 
 = Link to main site of documentation
 
-link:/poacc/billing/3.0/[Main documentation site]
+link:..[Main documentation site]
 
 :leveloffset: +1
 

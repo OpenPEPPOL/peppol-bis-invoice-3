@@ -149,12 +149,12 @@
                 <Reference type="RULE">BR-O-02</Reference>
                 <Reference type="RULE">BR-O-03</Reference>
                 <Reference type="RULE">BR-O-04</Reference>
-                <Reference type="RULE">BR-IG-02</Reference>
-                <Reference type="RULE">BR-IG-03</Reference>
-                <Reference type="RULE">BR-IG-04</Reference>
-                <Reference type="RULE">BR-IP-02</Reference>
-                <Reference type="RULE">BR-IP-03</Reference>
-                <Reference type="RULE">BR-IP-04</Reference>
+                <!--Reference type="RULE">BR-IG-02</Reference-->
+                <!--Reference type="RULE">BR-IG-03</Reference-->
+                <!--Reference type="RULE">BR-IG-04</Reference-->
+                <!--Reference type="RULE">BR-IP-02</Reference-->
+                <!--Reference type="RULE">BR-IP-03</Reference-->
+                <!--Reference type="RULE">BR-IP-04</Reference-->
                 <Value type="EXAMPLE">FR932874294</Value>
             </Element>
             

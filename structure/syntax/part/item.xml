@@ -165,8 +165,8 @@
                 <Reference type="RULE">BR-IC-05</Reference>
                 <Reference type="RULE">BR-G-05</Reference>
                 <Reference type="RULE">BR-O-05</Reference>
-                <Reference type="RULE">BR-IG-05</Reference>
-                <Reference type="RULE">BR-IP-05</Reference>
+                <!--Reference type="RULE">BR-IG-05</Reference-->
+                <!--Reference type="RULE">BR-IP-05</Reference-->
                 <Reference type="RULE">SE-R-006</Reference>
                 <Value type="EXAMPLE">25</Value>
             </Element>

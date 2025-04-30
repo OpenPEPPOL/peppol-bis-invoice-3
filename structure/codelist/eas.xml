@@ -1,341 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    <Title>Electronic Address Scheme (EAS)</Title>
-    <Identifier>eas</Identifier>
-    <Agency>CEF</Agency>
-
-    <Code>
-        <Id>0002</Id>
-        <Name>System Information et Repertoire des Entreprise et des Etablissements: SIRENE</Name>
-    </Code>
-    <Code>
-        <Id>0007</Id>
-        <Name>Organisationsnummer (Swedish legal entities)</Name>
-    </Code>
-    <Code>
-        <Id>0009</Id>
-        <Name>SIRET-CODE</Name>
-    </Code>
-    <Code>
-        <Id>0037</Id>
-        <Name>LY-tunnus</Name>
-    </Code>
-    <Code>
-        <Id>0060</Id>
-        <Name>Data Universal Numbering System (D-U-N-S Number)</Name>
-    </Code>
-    <Code>
-        <Id>0088</Id>
-        <Name>EAN Location Code</Name>
-    </Code>
-    <Code>
-        <Id>0096</Id>
-        <Name>DANISH CHAMBER OF COMMERCE Scheme (EDIRA compliant)</Name>
-    </Code>
-    <Code>
-        <Id>0097</Id>
-        <Name>FTI - Ediforum Italia, (EDIRA compliant)</Name>
-    </Code>
-    <Code>
-        <Id>0106</Id>
-        <Name>"Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of
+	<Title>Electronic Address Scheme (EAS)</Title>
+	<Identifier>eas</Identifier>
+	<Agency>CEF</Agency>
+	<Code>
+		<Id>0002</Id>
+		<Name>System Information et Repertoire des Entreprise et des Etablissements: SIRENE</Name>
+	</Code>
+	<Code>
+		<Id>0007</Id>
+		<Name>Organisationsnummer (Swedish legal entities)</Name>
+	</Code>
+	<Code>
+		<Id>0009</Id>
+		<Name>SIRET-CODE</Name>
+	</Code>
+	<Code>
+		<Id>0060</Id>
+		<Name>Data Universal Numbering System (D-U-N-S Number)</Name>
+	</Code>
+	<Code>
+		<Id>0088</Id>
+		<Name>EAN Location Code</Name>
+	</Code>
+	<Code>
+		<Id>0096</Id>
+		<Name>DANISH CHAMBER OF COMMERCE Scheme (EDIRA compliant)</Name>
+	</Code>
+	<Code>
+		<Id>0097</Id>
+		<Name>FTI - Ediforum Italia, (EDIRA compliant)</Name>
+	</Code>
+	<Code>
+		<Id>0106</Id>
+		<Name>"Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of
             Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)"</Name>
-    </Code>
-	    <Code>
-        <Id>0130</Id>
-        <Name>Directorates of the European Commission</Name>
-    </Code>
-    <Code>
-        <Id>0135</Id>
-        <Name>SIA Object Identifiers</Name>
-    </Code>
-    <Code>
-        <Id>0142</Id>
-        <Name>SECETI Object Identifiers</Name>
-    </Code>
-    <Code>
-        <Id>0151</Id>
-        <Name>Australian Business Number (ABN) Scheme</Name>
-    </Code>
-    <Code>
-        <Id>0177</Id>
-        <Name>Odette International Limited</Name>
-    </Code>
-    <Code>
-        <Id>0183</Id>
-        <Name>Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business
+	</Code>
+	<Code>
+		<Id>0130</Id>
+		<Name>Directorates of the European Commission</Name>
+	</Code>
+	<Code>
+		<Id>0135</Id>
+		<Name>SIA Object Identifiers</Name>
+	</Code>
+	<Code>
+		<Id>0142</Id>
+		<Name>SECETI Object Identifiers</Name>
+	</Code>
+	<Code>
+		<Id>0151</Id>
+		<Name>Australian Business Number (ABN) Scheme</Name>
+	</Code>
+	<Code>
+		<Id>0183</Id>
+		<Name>Numéro d'identification suisse des enterprises (IDE), Swiss Unique Business
             Identification Number (UIDB)</Name>
-    </Code>
-    <Code>
-        <Id>0184</Id>
-        <Name>DIGSTORG</Name>
-    </Code>
-    <Code>
-        <Id>0188</Id>
-        <Name>Corporate Number of The Social Security and Tax Number System</Name>
-    </Code>
-    <Code>
-        <Id>0190</Id>
-        <Name>Dutch Originator's Identification Number</Name>
-    </Code>
-    <Code>
-        <Id>0191</Id>
-        <Name>Centre of Registers and Information Systems of the Ministry of Justice</Name>
-    </Code>
-    <Code>
-        <Id>0192</Id>
-        <Name>Enhetsregisteret ved Bronnoysundregisterne </Name>
-    </Code>
-    <Code>
-        <Id>0193</Id>
-        <Name>UBL.BE party identifier</Name>
-    </Code>
-    <Code>
-        <Id>0195</Id>
-        <Name>Singapore UEN identifier</Name>
-    </Code>
-    <Code>
-        <Id>0196</Id>
-        <Name>Kennitala - Iceland legal id for individuals and legal entities</Name>
-    </Code>
-    <Code>
-        <Id>0198</Id>
-        <Name>ERSTORG</Name>
-    </Code>
-    <Code>
-        <Id>0199</Id>
-        <Name>Legal Entity Identifier (LEI)</Name>
-    </Code>
-    <Code>
-        <Id>0200</Id>
-        <Name>Legal entity code (Lithuania)</Name>
-    </Code>
-    <Code>
-        <Id>0201</Id>
-        <Name>Codice Univoco Unità Organizzativa iPA</Name>
-    </Code>
-    <Code>
-        <Id>0202</Id>
-        <Name>Indirizzo di Posta Elettronica Certificata</Name>
-    </Code>
-    <Code>
-        <Id>0204</Id>
-        <Name>Leitweg-ID</Name>
-    </Code>
-     <Code>
-        <Id>0208</Id>
-        <Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
-    </Code>
-     <Code>
-        <Id>0209</Id>
-        <Name>GS1 identification keys</Name>
-    </Code>
-     <Code>
-        <Id>0210</Id>
-        <Name>CODICE FISCALE</Name>
-    </Code>
-     <Code>
-        <Id>0211</Id>
-        <Name>PARTITA IVA</Name>
-    </Code>
-     <Code>
-        <Id>0212</Id>
-        <Name>Finnish Organization Identifier</Name>
-    </Code>
-     <Code>
-        <Id>0213</Id>
-        <Name>Finnish Organization Value Add Tax Identifier</Name>
-    </Code>
-    <Code>
-        <Id>0215</Id>
-        <Name>Net service ID</Name>
-    </Code>
-    <Code>
-        <Id>0216</Id>
-        <Name>OVTcode</Name>
-    </Code>
-    <Code>
-        <Id>0218</Id>
-        <Name>Unified registration number (Latvia)</Name>
-    </Code>
-	 <Code>
-        <Id>0221</Id>
-        <Name>The registered number of the qualified invoice issuer (Japan)</Name>
-    </Code>
-	 <Code>
-        <Id>0230</Id>
-        <Name>National e-Invoicing Framework (Malaysia)</Name>
-    </Code>
-	 <Code>
-        <Id>0235</Id>
-        <Name>UAE Tax Identification Number (TIN)</Name>
-    </Code>    <Code>
-        <Id>9901</Id>
-        <Name>Danish Ministry of the Interior and Health</Name>
-    </Code>
-    <Code>
-        <Id>9910</Id>
-        <Name>Hungary VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9913</Id>
-        <Name>Business Registers Network</Name>
-    </Code>
-    <Code>
-        <Id>9914</Id>
-        <Name>Österreichische Umsatzsteuer-Identifikationsnummer</Name>
-    </Code>
-    <Code>
-        <Id>9915</Id>
-        <Name>"Österreichisches Verwaltungs bzw. Organisationskennzeichen"</Name>
-    </Code>
-    <Code>
-        <Id>9918</Id>
-        <Name>"SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T"</Name>
-    </Code>
-    <Code>
-        <Id>9919</Id>
-        <Name>Kennziffer des Unternehmensregisters </Name>
-    </Code>
-    <Code>
-        <Id>9920</Id>
-        <Name>Agencia Española de Administración Tributaria </Name>
-    </Code>
-    <Code>
-        <Id>9922</Id>
-        <Name>Andorra VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9923</Id>
-        <Name>Albania VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9924</Id>
-        <Name>Bosnia and Herzegovina VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9925</Id>
-        <Name>Belgium VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9926</Id>
-        <Name>Bulgaria VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9927</Id>
-        <Name>Switzerland VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9928</Id>
-        <Name>Cyprus VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9929</Id>
-        <Name>Czech Republic VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9930</Id>
-        <Name>Germany VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9931</Id>
-        <Name>Estonia VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9932</Id>
-        <Name>United Kingdom VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9933</Id>
-        <Name>Greece VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9934</Id>
-        <Name>Croatia VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9935</Id>
-        <Name>Ireland VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9936</Id>
-        <Name>Liechtenstein VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9937</Id>
-        <Name>Lithuania VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9938</Id>
-        <Name>Luxemburg VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9939</Id>
-        <Name>Latvia VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9940</Id>
-        <Name>Monaco VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9941</Id>
-        <Name>Montenegro VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9942</Id>
-        <Name>Macedonia, the former Yugoslav Republic of VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9943</Id>
-        <Name>Malta VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9944</Id>
-        <Name>Netherlands VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9945</Id>
-        <Name>Poland VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9946</Id>
-        <Name>Portugal VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9947</Id>
-        <Name>Romania VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9948</Id>
-        <Name>Serbia VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9949</Id>
-        <Name>Slovenia VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9950</Id>
-        <Name>Slovakia VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9951</Id>
-        <Name>San Marino VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9952</Id>
-        <Name>Turkey VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9953</Id>
-        <Name>Holy See (Vatican City State) VAT number</Name>
-    </Code>
-    <Code>
-        <Id>9957</Id>
-        <Name>French VAT number</Name>
-    </Code>
-     <Code>
-        <Id>9959</Id>
-        <Name>Employer Identification Number (EIN, USA)</Name>
-    </Code>
-
+	</Code>
+	<Code>
+		<Id>0184</Id>
+		<Name>DIGSTORG</Name>
+	</Code>
+	<Code>
+		<Id>0188</Id>
+		<Name>Corporate Number of The Social Security and Tax Number System</Name>
+	</Code>
+	<Code>
+		<Id>0190</Id>
+		<Name>Dutch Originator's Identification Number</Name>
+	</Code>
+	<Code>
+		<Id>0191</Id>
+		<Name>Centre of Registers and Information Systems of the Ministry of Justice</Name>
+	</Code>
+	<Code>
+		<Id>0192</Id>
+		<Name>Enhetsregisteret ved Bronnoysundregisterne</Name>
+	</Code>
+	<Code>
+		<Id>0193</Id>
+		<Name>UBL.BE party identifier</Name>
+	</Code>
+	<Code>
+		<Id>0195</Id>
+		<Name>Singapore UEN identifier</Name>
+	</Code>
+	<Code>
+		<Id>0196</Id>
+		<Name>Kennitala - Iceland legal id for individuals and legal entities</Name>
+	</Code>
+	<Code>
+		<Id>0198</Id>
+		<Name>ERSTORG</Name>
+	</Code>
+	<Code>
+		<Id>0199</Id>
+		<Name>Legal Entity Identifier (LEI)</Name>
+	</Code>
+	<Code>
+		<Id>0200</Id>
+		<Name>Legal entity code (Lithuania)</Name>
+	</Code>
+	<Code>
+		<Id>0201</Id>
+		<Name>Codice Univoco Unità Organizzativa iPA</Name>
+	</Code>
+	<Code>
+		<Id>0204</Id>
+		<Name>Leitweg-ID</Name>
+	</Code>
+	<Code>
+		<Id>0208</Id>
+		<Name>Numero d'entreprise / ondernemingsnummer / Unternehmensnummer</Name>
+	</Code>
+	<Code>
+		<Id>0209</Id>
+		<Name>GS1 identification keys</Name>
+	</Code>
+	<Code>
+		<Id>0210</Id>
+		<Name>CODICE FISCALE</Name>
+	</Code>
+	<Code>
+		<Id>0211</Id>
+		<Name>PARTITA IVA</Name>
+	</Code>
+	<Code>
+		<Id>0216</Id>
+		<Name>OVTcode</Name>
+	</Code>
+	<Code>
+		<Id>0218</Id>
+		<Name>Unified registration number (Latvia)</Name>
+	</Code>
+	<Code>
+		<Id>0221</Id>
+		<Name>The registered number of the qualified invoice issuer (Japan)</Name>
+	</Code>
+	<Code>
+		<Id>0230</Id>
+		<Name>National e-Invoicing Framework (Malaysia)</Name>
+	</Code>
+	<Code>
+		<Id>0235</Id>
+		<Name>UAE Tax Identification Number (TIN)</Name>
+	</Code>
+	<Code>
+		<Id>9910</Id>
+		<Name>Hungary VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9913</Id>
+		<Name>Business Registers Network</Name>
+	</Code>
+	<Code>
+		<Id>9914</Id>
+		<Name>Österreichische Umsatzsteuer-Identifikationsnummer</Name>
+	</Code>
+	<Code>
+		<Id>9915</Id>
+		<Name>"Österreichisches Verwaltungs bzw. Organisationskennzeichen"</Name>
+	</Code>
+	<Code>
+		<Id>9918</Id>
+		<Name>"SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T"</Name>
+	</Code>
+	<Code>
+		<Id>9919</Id>
+		<Name>Kennziffer des Unternehmensregisters</Name>
+	</Code>
+	<Code>
+		<Id>9920</Id>
+		<Name>Agencia Española de Administración Tributaria</Name>
+	</Code>
+	<Code>
+		<Id>9922</Id>
+		<Name>Andorra VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9923</Id>
+		<Name>Albania VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9924</Id>
+		<Name>Bosnia and Herzegovina VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9925</Id>
+		<Name>Belgium VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9926</Id>
+		<Name>Bulgaria VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9927</Id>
+		<Name>Switzerland VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9928</Id>
+		<Name>Cyprus VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9929</Id>
+		<Name>Czech Republic VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9930</Id>
+		<Name>Germany VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9931</Id>
+		<Name>Estonia VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9932</Id>
+		<Name>United Kingdom VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9933</Id>
+		<Name>Greece VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9934</Id>
+		<Name>Croatia VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9935</Id>
+		<Name>Ireland VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9936</Id>
+		<Name>Liechtenstein VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9937</Id>
+		<Name>Lithuania VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9938</Id>
+		<Name>Luxemburg VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9939</Id>
+		<Name>Latvia VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9940</Id>
+		<Name>Monaco VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9941</Id>
+		<Name>Montenegro VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9942</Id>
+		<Name>Macedonia, the former Yugoslav Republic of VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9943</Id>
+		<Name>Malta VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9944</Id>
+		<Name>Netherlands VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9945</Id>
+		<Name>Poland VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9946</Id>
+		<Name>Portugal VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9947</Id>
+		<Name>Romania VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9948</Id>
+		<Name>Serbia VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9949</Id>
+		<Name>Slovenia VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9950</Id>
+		<Name>Slovakia VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9951</Id>
+		<Name>San Marino VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9952</Id>
+		<Name>Turkey VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9953</Id>
+		<Name>Holy See (Vatican City State) VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9957</Id>
+		<Name>French VAT number</Name>
+	</Code>
+	<Code>
+		<Id>9959</Id>
+		<Name>Employer Identification Number (EIN, USA)</Name>
+	</Code>
+	<Code>
+		<Id>0205</Id>
+		<Name>CODDEST</Name>
+	</Code>
+	<Code>
+		<Id>0225</Id>
+		<Name>FRCTC Electronic Address</Name>
+	</Code>
+	<Code>
+		<Id>0240</Id>
+		<Name>Register of legal persons</Name>
+	</Code>
 </CodeList>
