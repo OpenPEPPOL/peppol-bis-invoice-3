@@ -7,7 +7,6 @@ Release date:: May 2025
 
 == Changes to BIS document
 
-* Changed the text on Binary objects to "The attachments are underpinning the XML document".
 * Reference to codelist vatex added on TaxExemptionReasonCode
 * Several editorial changes
 * Removed reference to BR-CO-25 for CreditNote PaymentDueDate
