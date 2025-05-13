@@ -16,6 +16,10 @@
 		<Name>SIRET-CODE</Name>
 	</Code>
 	<Code>
+		<Id>0037</Id>
+		<Name>LY-tunnus</Name>
+	</Code>
+	<Code>
 		<Id>0060</Id>
 		<Name>Data Universal Numbering System (D-U-N-S Number)</Name>
 	</Code>
@@ -51,6 +55,10 @@
 	<Code>
 		<Id>0151</Id>
 		<Name>Australian Business Number (ABN) Scheme</Name>
+	</Code>
+	<Code>
+		<Id>0177</Id>
+		<Name>Odette International Limited</Name>
 	</Code>
 	<Code>
 		<Id>0183</Id>
@@ -106,6 +114,10 @@
 		<Name>Codice Univoco Unità Organizzativa iPA</Name>
 	</Code>
 	<Code>
+		<Id>0202</Id>
+		<Name>Indirizzo di Posta Elettronica Certificata</Name>
+	</Code>
+	<Code>
 		<Id>0204</Id>
 		<Name>Leitweg-ID</Name>
 	</Code>
@@ -124,6 +136,18 @@
 	<Code>
 		<Id>0211</Id>
 		<Name>PARTITA IVA</Name>
+	</Code>
+	<Code>
+		<Id>0212</Id>
+		<Name>Finnish Organization Identifier</Name>
+	</Code>
+	<Code>
+		<Id>0213</Id>
+		<Name>Finnish Organization Value Add Tax Identifier</Name>
+	</Code>
+	<Code>
+		<Id>0215</Id>
+		<Name>Net service ID</Name>
 	</Code>
 	<Code>
 		<Id>0216</Id>
@@ -310,15 +334,43 @@
 		<Name>Employer Identification Number (EIN, USA)</Name>
 	</Code>
 	<Code>
+		<Id>0147</Id>
+		<Name>Standard Company Code</Name>
+	</Code>
+	<Code>
+		<Id>0154</Id>
+		<Name>Identification number of economic subjects: (ICO)</Name>
+	</Code>
+	<Code>
+		<Id>0158</Id>
+		<Name>Identification number of economic subject (ICO) Act on State Statistics of 29 November 2001, § 27</Name>
+	</Code>
+	<Code>
+		<Id>0170</Id>
+		<Name>Teikoku Company Code</Name>
+	</Code>
+	<Code>
+		<Id>0194</Id>
+		<Name>KOIOS Open Technical Dictionary</Name>
+	</Code>
+	<Code>
+		<Id>0203</Id>
+		<Name>eDelivery Network Participant identifier</Name>
+	</Code>
+	<Code>
 		<Id>0205</Id>
 		<Name>CODDEST</Name>
 	</Code>
 	<Code>
+		<Id>0217</Id>
+		<Name>The Netherlands Chamber of Commerce and Industry establishment number</Name>
+	</Code>
+	<Code>
 		<Id>0225</Id>
-		<Name>FRCTC Electronic Address</Name>
+		<Name>FRCTC ELECTRONIC ADDRESS</Name>
 	</Code>
 	<Code>
 		<Id>0240</Id>
-		<Name>Register of legal persons</Name>
+		<Name>Register of legal persons (in French : Répertoire des personnes morales)</Name>
 	</Code>
 </CodeList>
