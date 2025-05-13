@@ -64,4 +64,9 @@
             the transfer of immovable property located in the cities
             of Ceuta and Melilla.</Description>
 	</Code>
+	<Code>
+        <Id>B</Id>
+        <Name>Transferred (VAT), In Italy</Name>
+        <Description>VAT not to be paid to the issuer of the invoice but directly to relevant tax authority. This code 		is allowed in the EN 16931 for Italy only based on the Italian A-deviation.</Description>
+    </Code>
 </CodeList>
