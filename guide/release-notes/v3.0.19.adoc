@@ -18,8 +18,7 @@ Release date:: May 2025
 * Rule PEPPOL-COMMON-R042 which tests danish organization numbers, CVR, (ICD 0184) is updated according to the Participant identifier schemes codelists. 
   The identifier must be 8 characters long and no longer prefixed with DK. 
   The prefix DK is temporary allowed for migration to the new rule in 2026 May Release.
-  icd code 0236 Description was changed from Unknow to ToimipaikkalD
-  
+* icd code 0236 Description was changed from Unknown to ToimipaikkalD
 * Changes to codelists and schematrons PEPPOL-EN16931-CII and PEPPOL-EN16931-UBL.
 [cols="1,1,1"]
 |===
