@@ -1,9 +1,9 @@
 = Version 3.0.19
-* horizontal]
+[horizontal]
 Release date:: May 2025
 * Date of member review: 2024-03-07
-* Date of publication: 2025-05-19
-* Mandatory to use from: 2025-08-21
+* Date of publication: 2025-05-21
+* Mandatory to use from: 2025-08-23
 
 == Changes to BIS document
 
@@ -14,7 +14,7 @@ Release date:: May 2025
 
 == Changes to code lists and validation artefacts
 
-* BUG Missing currencyID check for BT-117 in Peppol BIS Billing 3.0 PEPPOL-EN16931-R051 * minor]
+* BUG Missing currencyID check for BT-117 in Peppol BIS Billing 3.0 PEPPOL-EN16931-R051
 * Rule PEPPOL-COMMON-R042 which tests danish organization numbers, CVR, (ICD 0184) is updated according to the Participant identifier schemes codelists. 
   The identifier must be 8 characters long and no longer prefixed with DK. 
   The prefix DK is temporary allowed for migration to the new rule in 2026 May Release.
@@ -51,5 +51,5 @@ Release date:: May 2025
 * Rule DK-R-008 changed to allow PayeeFinancialAccount/ID with both 7 and 8 numerical characters (PaymentMeansCode = 50 - Giro kontonummer).
 * Rule DK-R-003 PEPPOL UBL & CII – Validation changed to allow support the additional UNSPSC version. 
   Updated validation both support version 9.05.01 and 26.08.01.
-* Rule DK-R-004 PEPPOL UBL& CII - Validation changed to support additional content validation of the field AllowanceChargeReason, 
+* Rule DK-R-004 PEPPOL UBL & CII - Validation changed to support additional content validation of the field AllowanceChargeReason, 
   when ZZZ is used for AllowanceChargeReasonCode and ChargeIndicator is true.
