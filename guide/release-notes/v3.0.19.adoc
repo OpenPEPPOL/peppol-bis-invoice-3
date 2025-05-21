@@ -3,7 +3,7 @@
 Release date:: May 2025
 * Date of member review: 2024-03-07
 * Date of publication: 2025-05-21
-* Mandatory to use from: 2025-08-23
+* Mandatory to use from: 2025-08-26
 
 == Changes to BIS document
 
