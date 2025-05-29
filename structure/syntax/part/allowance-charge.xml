@@ -168,10 +168,10 @@
             <Reference type="RULE">BR-G-07</Reference>
             <Reference type="RULE">BR-O-06</Reference>
             <Reference type="RULE">BR-O-07</Reference>
-            <Reference type="RULE">BR-IG-06</Reference>
-            <Reference type="RULE">BR-IG-07</Reference>
-            <Reference type="RULE">BR-IP-06</Reference>
-            <Reference type="RULE">BR-IP-07</Reference>
+            <!--Reference type="RULE">BR-IG-06</Reference-->
+            <!--Reference type="RULE">BR-IG-07</Reference-->
+            <!--Reference type="RULE">BR-IP-06</Reference-->
+            <!--Reference type="RULE">BR-IP-07</Reference-->
             <Reference type="RULE">SE-R-006</Reference>
             <Value type="EXAMPLE">25</Value>
             

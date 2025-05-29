@@ -27,7 +27,7 @@
 				<Reference type="RULE">PEPPOL-COMMON-R045</Reference>
 				<Reference type="RULE">PEPPOL-COMMON-R046</Reference>
 				<Reference type="RULE">PEPPOL-COMMON-R047</Reference>
-				<Reference type="RULE">PEPPOL-COMMON-R048</Reference>	
+				<!--Reference type="RULE">PEPPOL-COMMON-R048</Reference-->	
 				<Reference type="RULE">PEPPOL-COMMON-R049</Reference>
 				<Reference type="RULE">PEPPOL-COMMON-R050</Reference>
 				
@@ -68,7 +68,7 @@
 					<Reference type="RULE">PEPPOL-COMMON-R045</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R046</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R047</Reference>
-					<Reference type="RULE">PEPPOL-COMMON-R048</Reference>
+					<!--Reference type="RULE">PEPPOL-COMMON-R048</Reference-->
 					<Reference type="RULE">PEPPOL-COMMON-R049</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R050</Reference>
 					
@@ -229,19 +229,19 @@
                     <Reference type="RULE">BR-O-02</Reference>
                     <Reference type="RULE">BR-O-03</Reference>
                     <Reference type="RULE">BR-O-04</Reference>
-                    <Reference type="RULE">BR-IG-02</Reference>
-                    <Reference type="RULE">BR-IG-03</Reference>
-                    <Reference type="RULE">BR-IG-04</Reference>
-                    <Reference type="RULE">BR-IP-02</Reference>
-                    <Reference type="RULE">BR-IP-03</Reference>
-                    <Reference type="RULE">BR-IP-04</Reference>
+                    <!--Reference type="RULE">BR-IG-02</Reference-->
+                    <!--Reference type="RULE">BR-IG-03</Reference-->
+                    <!--Reference type="RULE">BR-IG-04</Reference-->
+                    <!--Reference type="RULE">BR-IP-02</Reference-->
+                    <!--Reference type="RULE">BR-IP-03</Reference-->
+                    <!--Reference type="RULE">BR-IP-04</Reference-->
                     <Reference type="RULE">IT-R-001</Reference>
                     <Reference type="RULE">NO-R-001</Reference>
                     <Reference type="RULE">NO-R-002</Reference>
                     <Reference type="RULE">SE-R-001</Reference>
                     <Reference type="RULE">SE-R-002</Reference>
                     <Reference type="RULE">SE-R-005</Reference>
-					<Reference type="RULE">DK-R-015</Reference>
+					<!--Reference type="RULE">DK-R-015</Reference-->
                     <Reference type="RULE">PEPPOL-COMMON-R040</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R041</Reference>
                     <Reference type="RULE">PEPPOL-COMMON-R042</Reference>
@@ -250,7 +250,7 @@
 					<Reference type="RULE">PEPPOL-COMMON-R045</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R046</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R047</Reference>
-					<Reference type="RULE">PEPPOL-COMMON-R048</Reference>
+					<!--Reference type="RULE">PEPPOL-COMMON-R048</Reference-->
 					<Reference type="RULE">PEPPOL-COMMON-R049</Reference>
 					<Reference type="RULE">PEPPOL-COMMON-R050</Reference>
 					

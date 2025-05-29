@@ -61,8 +61,8 @@
                 <Reference type="RULE">BR-IC-08</Reference>
                 <Reference type="RULE">BR-G-08</Reference>
                 <Reference type="RULE">BR-O-08</Reference>
-                <Reference type="RULE">BR-IG-08</Reference>
-                <Reference type="RULE">BR-IP-08</Reference>
+                <!--Reference type="RULE">BR-IG-08</Reference-->
+                <!--Reference type="RULE">BR-IP-08</Reference-->
                 <Reference type="RULE">BR-DEC-19</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
                 <Reference type="RULE">BR-CL-03</Reference>
@@ -95,8 +95,8 @@
                 <Reference type="RULE">BR-IC-09</Reference>
                 <Reference type="RULE">BR-G-09</Reference>
                 <Reference type="RULE">BR-O-09</Reference>
-                <Reference type="RULE">BR-IG-09</Reference>
-                <Reference type="RULE">BR-IP-09</Reference>
+                <!--Reference type="RULE">BR-IG-09</Reference-->
+                <!--Reference type="RULE">BR-IP-09</Reference-->
                 <Reference type="RULE">BR-DEC-20</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
                 
@@ -131,8 +131,8 @@
                     <Reference type="RULE">BR-IC-01</Reference>
                     <Reference type="RULE">BR-G-01</Reference>
                     <Reference type="RULE">BR-O-10</Reference>
-                    <Reference type="RULE">BR-IG-01</Reference>
-                    <Reference type="RULE">BR-IP-01</Reference>
+                    <!--Reference type="RULE">BR-IG-01</Reference-->
+                    <!--Reference type="RULE">BR-IP-01</Reference-->
                     <Reference type="RULE">BR-CL-17</Reference>
                     <Value type="EXAMPLE">S</Value> 
                 </Element>
@@ -163,8 +163,8 @@
                     <Reference type="RULE">BR-IC-10</Reference>
                     <Reference type="RULE">BR-G-10</Reference>
                     <Reference type="RULE">BR-O-10</Reference>
-                    <Reference type="RULE">BR-IG-10</Reference>
-                    <Reference type="RULE">BR-IP-10</Reference>
+                    <!--Reference type="RULE">BR-IG-10</Reference-->
+                    <!--Reference type="RULE">BR-IP-10</Reference-->
                     <Reference type="RULE">PEPPOL-EN16931-P0104</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-P0105</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-P0106</Reference>
@@ -173,6 +173,7 @@
                     <Reference type="RULE">PEPPOL-EN16931-P0109</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-P0110</Reference>
                     <Reference type="RULE">PEPPOL-EN16931-P0111</Reference>
+                    <Reference type="CODE_LIST">vatex</Reference>
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -190,8 +191,8 @@
                     <Reference type="RULE">BR-IC-10</Reference>
                     <Reference type="RULE">BR-G-10</Reference>
                     <Reference type="RULE">BR-O-10</Reference>
-                    <Reference type="RULE">BR-IG-10</Reference>
-                    <Reference type="RULE">BR-IP-10</Reference>
+                    <!--Reference type="RULE">BR-IG-10</Reference-->
+                    <!--Reference type="RULE">BR-IP-10</Reference-->
                     <Value type="EXAMPLE">Exempt</Value> 
                 </Element>
                 <Element>

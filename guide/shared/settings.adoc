@@ -9,23 +9,28 @@
 :ubl-cn-mapping: link:../syntax/ubl-creditnote/tree/[UBL Credit note message table]
 
 //Peppol
-:peppol: https://peppol.eu/?rel=undefined[Peppol]
-:common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[Peppol BIS common text and introduction]
-:openpeppol: https://peppol.eu/about-openpeppol/?rel=tab41[OpenPeppol]
-:policy8: https://peppol.eu/downloads/the-peppol-edelivery-network-specifications/[Peppol Policy for identifiers, policy 8]
-:migration-policy: https://github.com/OpenPEPPOL/documentation/blob/master/LifecycleManagement/ReleaseManagement/Migration%20Policy%20-%20Common%20Document%202014-02-24%20rev%202014-08-27.pdf[OpenPeppol Migration Policy]
-:link-transaction: https://test-vefa.difi.no/peppolbis/poacc/billing/3.0/transaction-spec/[Peppol Invoice transaction specification]
-:eas: link:/poacc/billing/3.0/codelist/eas/[Code list for electronic address]
+:peppol: https://peppol.org[Peppol]
+:common: https://peppol.org/about/for-end-users[Peppol BIS common text and introduction]
+:openpeppol: https://peppol.org/about[OpenPeppol]
+:policy8: https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf[Peppol Policy for identifiers, policy 8]
+:migration-policy: https://docs.peppol.eu/poacc/billing/3.0/migration[OpenPeppol Migration Policy]
+:eas: link:../codelist/eas/[Code list for electronic address]
 
 //CEN
-:CEN: https://www.cen.eu/Pages/default.aspx[CEN]
+:CEN: https://www.cencenelec.eu[CEN]
 
 //CEN TC434
-:tc434: https://standards.cencenelec.eu/dyn/www/f?p=205:7:0::::FSP_ORG_ID:1883209&cs=1FB866C0AE6E1605133D6363716BED68E[CEN/TC 434]
 :EN16931: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:71870&cs=1D0C36D84F6C30D746A7F9FB3E16CC355[EN 16931]
-:ubl-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63740&cs=141ABC6EDBD750DFA4EC61F187628828F
-:cii-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63741&cs=1FA9686BFF2EEFD10B83676518F8C1AFE
-:TC434-docs: https://standards.cen.eu/dyn/www/f?p=204:32:0::::FSP_ORG_ID,FSP_LANG_ID:1883209,25&cs=126F1BDBC8D6D6141F550EB578B4A9CF4
+// all references hard to find and update, changed to peppol
+// :tc434: https://standards.cencenelec.eu/dyn/www/f?p=205:29:0::::FSP_ORG_ID,FSP_LANG_ID:1883209,25&cs=18F2559A05E966F8D6BA2CD11622D2977#1[CEN/TC 434]
+// :ubl-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63740&cs=141ABC6EDBD750DFA4EC61F187628828F
+// :cii-binding: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:63741&cs=1FA9686BFF2EEFD10B83676518F8C1AFE
+// :TC434-docs: https://standards.cen.eu/dyn/www/f?p=204:32:0::::FSP_ORG_ID,FSP_LANG_ID:1883209,25&cs=126F1BDBC8D6D6141F550EB578B4A9CF4
+
+:tc434: {peppol}[CEN/TC 434]
+:ubl-binding: {peppol}
+:cii-binding: {peppol}
+:TC434-docs: {peppol}
 
 //UBL
 :UBLInv: http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd[UBL Invoice 2.1]
@@ -52,4 +57,4 @@
 :UNCL1153: https://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred1153.htm[UN/CEFACT code list 1153, D.16B]
 :ISO6523: https://www.iso.org/standard/25773.html[ISO/IEC 6523]
 :UNCL7143: http://www.unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred7143.htm[UN/CEFACT code list 7143, D.16B]
-:VATEX: https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Code+lists#Codelists-2[CEF VATEX code list]
+:VATEX: https://ec.europa.eu/digital-building-blocks/sites/download/attachments/467108974/VAT%20Exemption%20Reason%20Code%20list%20VATEX%20-%20version%207.xlsx?version=1&modificationDate=1743779677211&api=v2[CEF VATEX code list]

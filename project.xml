@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>Peppol BIS Billing 3.0 - November 2024 Release</Name>
+    <Name>Peppol BIS Billing 3.0 - May 2025 Release</Name>
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
@@ -153,10 +153,10 @@
         <Property key="filename">BIS-Billing3-Examples.zip</Property>
     </Resource>		
     
-    <Resource>
+    <!--Resource>
         <Type>native:File</Type>
         <Path>mapping/mapping-cii-ubl.xls</Path>
-        <Title>Excel mappling table cii to ubl</Title>
+        <Title>Excel mapping table cii to ubl</Title>
         <Property key="download">mapping-cii-ubl.xls</Property>
-    </Resource>
+    </Resource-->
 </Project>

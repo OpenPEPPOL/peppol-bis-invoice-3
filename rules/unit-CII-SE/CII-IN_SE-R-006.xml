@@ -279,88 +279,6 @@
 	</rsm:ExchangedDocument>
 
 	<rsm:SupplyChainTradeTransaction>
-
-		<ram:IncludedSupplyChainTradeLineItem> 
-			<ram:AssociatedDocumentLineDocument>
-				<ram:LineID>1</ram:LineID> 
-			</ram:AssociatedDocumentLineDocument>
-			<ram:SpecifiedTradeProduct>
-				<ram:Name>Printing paper</ram:Name>
-			</ram:SpecifiedTradeProduct>
-			<ram:SpecifiedLineTradeAgreement>
-				<ram:NetPriceProductTradePrice>
-					<ram:ChargeAmount>1</ram:ChargeAmount>
-				</ram:NetPriceProductTradePrice>
-			</ram:SpecifiedLineTradeAgreement>
-			<ram:SpecifiedLineTradeDelivery>
-				<ram:BilledQuantity unitCode="EA">1000</ram:BilledQuantity>
-			</ram:SpecifiedLineTradeDelivery>
-			<ram:SpecifiedLineTradeSettlement>
-				<ram:ApplicableTradeTax>
-					<ram:TypeCode>VAT</ram:TypeCode>
-					<ram:CategoryCode>S</ram:CategoryCode>
-					<ram:RateApplicablePercent>25</ram:RateApplicablePercent>
-				</ram:ApplicableTradeTax>
-				<ram:SpecifiedTradeSettlementLineMonetarySummation>
-					<ram:LineTotalAmount>1000</ram:LineTotalAmount>
-				</ram:SpecifiedTradeSettlementLineMonetarySummation>
-			</ram:SpecifiedLineTradeSettlement>
-		</ram:IncludedSupplyChainTradeLineItem>
-
-		<ram:IncludedSupplyChainTradeLineItem>
-			<ram:AssociatedDocumentLineDocument>
-				<ram:LineID>2</ram:LineID>
-			</ram:AssociatedDocumentLineDocument>
-			<ram:SpecifiedTradeProduct>
-				<ram:Name>Parker Pen</ram:Name>
-			</ram:SpecifiedTradeProduct>
-			<ram:SpecifiedLineTradeAgreement>
-				<ram:NetPriceProductTradePrice>
-					<ram:ChargeAmount>5</ram:ChargeAmount>
-				</ram:NetPriceProductTradePrice>
-			</ram:SpecifiedLineTradeAgreement>
-			<ram:SpecifiedLineTradeDelivery>
-				<ram:BilledQuantity unitCode="EA">100</ram:BilledQuantity>
-			</ram:SpecifiedLineTradeDelivery>
-			<ram:SpecifiedLineTradeSettlement>
-				<ram:ApplicableTradeTax>
-					<ram:TypeCode>VAT</ram:TypeCode>
-					<ram:CategoryCode>S</ram:CategoryCode>
-					<ram:RateApplicablePercent>25</ram:RateApplicablePercent>
-				</ram:ApplicableTradeTax>
-				<ram:SpecifiedTradeSettlementLineMonetarySummation>
-					<ram:LineTotalAmount>500</ram:LineTotalAmount>
-				</ram:SpecifiedTradeSettlementLineMonetarySummation>
-			</ram:SpecifiedLineTradeSettlement>
-		</ram:IncludedSupplyChainTradeLineItem>
-
-		<ram:IncludedSupplyChainTradeLineItem>
-			<ram:AssociatedDocumentLineDocument>
-				<ram:LineID>3</ram:LineID>
-			</ram:AssociatedDocumentLineDocument>
-			<ram:SpecifiedTradeProduct>
-				<ram:Name>Eraser P-97</ram:Name>
-			</ram:SpecifiedTradeProduct> 
-			<ram:SpecifiedLineTradeAgreement>
-				<ram:NetPriceProductTradePrice>
-					<ram:ChargeAmount>5</ram:ChargeAmount>
-				</ram:NetPriceProductTradePrice>
-			</ram:SpecifiedLineTradeAgreement>
-			<ram:SpecifiedLineTradeDelivery>
-				<ram:BilledQuantity unitCode="EA">500</ram:BilledQuantity>
-			</ram:SpecifiedLineTradeDelivery>
-			<ram:SpecifiedLineTradeSettlement>
-				<ram:ApplicableTradeTax>
-					<ram:TypeCode>VAT</ram:TypeCode>
-					<ram:CategoryCode>S</ram:CategoryCode>
-					<ram:RateApplicablePercent>12</ram:RateApplicablePercent>
-				</ram:ApplicableTradeTax>
-				<ram:SpecifiedTradeSettlementLineMonetarySummation>
-					<ram:LineTotalAmount>2500</ram:LineTotalAmount>
-				</ram:SpecifiedTradeSettlementLineMonetarySummation>
-			</ram:SpecifiedLineTradeSettlement>
-		</ram:IncludedSupplyChainTradeLineItem>
-
 		<ram:ApplicableHeaderTradeAgreement>
 			<ram:BuyerReference>Ref 123</ram:BuyerReference> 
 			<ram:SellerTradeParty>
@@ -375,7 +293,7 @@
 					<ram:URIID schemeID="0007">5566778899</ram:URIID> 
 				</ram:URIUniversalCommunication> 
 				<ram:SpecifiedTaxRegistration>
-					<ram:ID schemeID="VA">SE123456789001</ram:ID>
+					<ram:ID schemeID="VAT">SE123456789001</ram:ID>
 				</ram:SpecifiedTaxRegistration>
 			</ram:SellerTradeParty>
 
@@ -411,126 +329,9 @@
 				<ram:TypeCode>VAT</ram:TypeCode>
 				<ram:BasisAmount>1500</ram:BasisAmount>
 				<ram:CategoryCode>S</ram:CategoryCode>
-				<ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+				<ram:RateApplicablePercent>20</ram:RateApplicablePercent>
 			</ram:ApplicableTradeTax>
-			<ram:ApplicableTradeTax>
-				<ram:CalculatedAmount>300</ram:CalculatedAmount>
-				<ram:TypeCode>VAT</ram:TypeCode>
-				<ram:BasisAmount>2500</ram:BasisAmount>
-				<ram:CategoryCode>S</ram:CategoryCode>
-				<ram:RateApplicablePercent>12</ram:RateApplicablePercent>
-			</ram:ApplicableTradeTax>
-			<ram:ApplicableTradeTax>
-				<ram:CalculatedAmount>0</ram:CalculatedAmount>
-				<ram:TypeCode>VAT</ram:TypeCode>
-				<ram:BasisAmount>0</ram:BasisAmount>
-				<ram:CategoryCode>S</ram:CategoryCode>
-				<ram:RateApplicablePercent>6.0</ram:RateApplicablePercent>
-			</ram:ApplicableTradeTax>
-			<ram:ApplicableTradeTax>
-				<ram:CalculatedAmount>0</ram:CalculatedAmount>
-				<ram:TypeCode>VAT</ram:TypeCode>
-				<ram:BasisAmount>0</ram:BasisAmount>
-				<ram:CategoryCode>S</ram:CategoryCode>
-				<ram:RateApplicablePercent>4</ram:RateApplicablePercent>
-			</ram:ApplicableTradeTax>
-			<ram:ApplicableTradeTax>
-				<ram:CalculatedAmount>0</ram:CalculatedAmount>
-				<ram:TypeCode>VAT</ram:TypeCode>
-				<ram:BasisAmount>0</ram:BasisAmount>
-				<ram:CategoryCode>S</ram:CategoryCode>
-				<ram:RateApplicablePercent>0.25</ram:RateApplicablePercent>
-			</ram:ApplicableTradeTax>
-
-			<ram:SpecifiedTradeAllowanceCharge>
-				<ram:ChargeIndicator> 
-					<udt:Indicator>false</udt:Indicator>
-				</ram:ChargeIndicator> 
-				<ram:CalculationPercent>10</ram:CalculationPercent> 
-				<ram:BasisAmount>0</ram:BasisAmount> 
-				<ram:ActualAmount>0</ram:ActualAmount> 
-				<ram:ReasonCode>95</ram:ReasonCode> 
-				<ram:Reason>Loyal customer</ram:Reason> 
-				<ram:CategoryTradeTax>
-				<ram:TypeCode>VAT</ram:TypeCode> 
-				<ram:CategoryCode>S</ram:CategoryCode> 
-				<ram:RateApplicablePercent>25</ram:RateApplicablePercent>
-				</ram:CategoryTradeTax> 
-			</ram:SpecifiedTradeAllowanceCharge> 
-			<ram:SpecifiedTradeAllowanceCharge>
-				<ram:ChargeIndicator> 
-					<udt:Indicator>true</udt:Indicator>
-				</ram:ChargeIndicator> 
-				<ram:CalculationPercent>10</ram:CalculationPercent> 
-				<ram:BasisAmount>0</ram:BasisAmount> 
-				<ram:ActualAmount>0</ram:ActualAmount> 
-				<ram:ReasonCode>ABL</ram:ReasonCode> 
-				<ram:Reason>Packaging</ram:Reason> 
-				<ram:CategoryTradeTax>
-					<ram:TypeCode>VAT</ram:TypeCode> 
-					<ram:CategoryCode>S</ram:CategoryCode> 
-					<ram:RateApplicablePercent>12</ram:RateApplicablePercent>
-				</ram:CategoryTradeTax> 
-			</ram:SpecifiedTradeAllowanceCharge> 
-			<ram:SpecifiedTradeAllowanceCharge>
-				<ram:ChargeIndicator> 
-					<udt:Indicator>false</udt:Indicator>
-				</ram:ChargeIndicator> 
-				<ram:CalculationPercent>10</ram:CalculationPercent> 
-				<ram:BasisAmount>0</ram:BasisAmount> 
-				<ram:ActualAmount>0</ram:ActualAmount> 
-				<ram:ReasonCode>95</ram:ReasonCode> 
-				<ram:Reason>Loyal customer</ram:Reason> 
-				<ram:CategoryTradeTax>
-				<ram:TypeCode>VAT</ram:TypeCode> 
-				<ram:CategoryCode>S</ram:CategoryCode> 
-				<ram:RateApplicablePercent>6.0</ram:RateApplicablePercent>
-				</ram:CategoryTradeTax> 
-			</ram:SpecifiedTradeAllowanceCharge> 
-			<ram:SpecifiedTradeAllowanceCharge>
-				<ram:ChargeIndicator> 
-					<udt:Indicator>false</udt:Indicator>
-				</ram:ChargeIndicator> 
-				<ram:CalculationPercent>10</ram:CalculationPercent> 
-				<ram:BasisAmount>0</ram:BasisAmount> 
-				<ram:ActualAmount>0</ram:ActualAmount> 
-				<ram:Reason>Packaging</ram:Reason> 
-				<ram:CategoryTradeTax>
-					<ram:TypeCode>VAT</ram:TypeCode> 
-					<ram:CategoryCode>S</ram:CategoryCode> 
-					<ram:RateApplicablePercent>4</ram:RateApplicablePercent>
-				</ram:CategoryTradeTax> 
-			</ram:SpecifiedTradeAllowanceCharge> 
-			<ram:SpecifiedTradeAllowanceCharge>
-				<ram:ChargeIndicator> 
-					<udt:Indicator>true</udt:Indicator>
-				</ram:ChargeIndicator> 
-				<ram:CalculationPercent>10</ram:CalculationPercent> 
-				<ram:BasisAmount>0</ram:BasisAmount> 
-				<ram:ActualAmount>0</ram:ActualAmount> 
-				<ram:ReasonCode>ABL</ram:ReasonCode> 
-				<ram:Reason>Packaging</ram:Reason> 
-				<ram:CategoryTradeTax>
-					<ram:TypeCode>VAT</ram:TypeCode> 
-					<ram:CategoryCode>S</ram:CategoryCode> 
-					<ram:RateApplicablePercent>0.25</ram:RateApplicablePercent>
-				</ram:CategoryTradeTax> 
-			</ram:SpecifiedTradeAllowanceCharge> 
-
-			<ram:SpecifiedTradePaymentTerms>
-				<ram:DueDateDateTime>
-					<udt:DateTimeString format="102">20180307</udt:DateTimeString>
-				</ram:DueDateDateTime>
-			</ram:SpecifiedTradePaymentTerms>
-			<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
-				<ram:LineTotalAmount>4000</ram:LineTotalAmount>
-				<ram:ChargeTotalAmount>0</ram:ChargeTotalAmount> 
-				<ram:AllowanceTotalAmount>0</ram:AllowanceTotalAmount> 
-				<ram:TaxBasisTotalAmount>4000</ram:TaxBasisTotalAmount>
-				<ram:TaxTotalAmount currencyID="SEK">675</ram:TaxTotalAmount>
-				<ram:GrandTotalAmount>4675</ram:GrandTotalAmount>
-				<ram:DuePayableAmount>4675</ram:DuePayableAmount>
-			</ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+			
 		</ram:ApplicableHeaderTradeSettlement>
 	</rsm:SupplyChainTradeTransaction>
 
