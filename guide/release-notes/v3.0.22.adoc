@@ -24,6 +24,7 @@ Release date:: November 2026
 * Added warning rule SK-R-001 requiring a preceding invoice reference (BG-3) for Slovak domestic invoices with invoice type code 384, UBL only
 * Added rules SK-R-002, SK-R-003, SK-R-004, SK-R-005, SK-R-006, SK-R-007 for Slovakia (SK) [RFC-574](https://openpeppol.atlassian.net/browse/RFC-574), UBL only
 * Added correction on Germany (DE) rules to allow code 389, was missing in the list of allowed codes, UBL only
+* Changed rule SE-R-006 for Sweden (SE) so that it only applies to domestic transactions: in addition to the existing Swedish Seller condition, the Buyer country code (BT-55) must be SE. Swedish sellers invoicing buyers in other countries are no longer restricted to the VAT rates 6, 12 and 25. UBL and CII
 
 
 == Changes to PEPPOL-COMMON rules
