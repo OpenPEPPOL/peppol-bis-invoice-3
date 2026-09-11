@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSet xmlns="http://difi.no/xsd/vefa/validator/1.0" configuration="peppolbis-en16931-sbbase-3.0-ubl">
+  <assert>
+    <description>Belgian VAT numbers MUST be stated in the correct format.</description>
+    <scope>PEPPOL-COMMON-R062</scope>
+  </assert>
+
+  <test>
+    <assert>
+      <success>PEPPOL-COMMON-R062</success>
+    </assert>
+    <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+             xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+      <cac:AccountingSupplierParty>
+        <cac:Party>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>BE0739484052</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+        </cac:Party>
+      </cac:AccountingSupplierParty>
+    </Invoice>
+  </test>
+
+  <test>
+    <assert>
+      <warning>PEPPOL-COMMON-R062</warning>
+    </assert>
+    <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+             xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+             xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+      <cac:AccountingCustomerParty>
+        <cac:Party>
+          <cac:PartyTaxScheme>
+            <cbc:CompanyID>BE0739484059</cbc:CompanyID>
+            <cac:TaxScheme>
+              <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+          </cac:PartyTaxScheme>
+        </cac:Party>
+      </cac:AccountingCustomerParty>
+    </Invoice>
+  </test>
+</testSet>

@@ -23,11 +23,14 @@ Release date:: November 2026
 == Changes to PEPPOL-COMMON rules
 
 * Changed rule PEPPOL-COMMON-R040 to ONLY allow GLN13 values with schemeID 0088.
+* Fixed four Self-Billing example files containing invalid GLNs so they comply with PEPPOL-COMMON-R040.
+* Updated validation method on rule PEPPOL-COMMON-R043 (fatal) to validate Belgian identifiers.
 * Changed the wording of warning rules PEPPOL-COMMON-R044, PEPPOL-COMMON-R045, PEPPOL-COMMON-R046, and PEPPOL-COMMON-R047 from “must” to “SHOULD” to align the rule text with the severity. Updated other lowercase should to uppercase SHOULD. [RFC-558](https://openpeppol.atlassian.net/browse/RFC-558)
 * Changed rules PEPPOL-COMMON-R054, PEPPOL-COMMON-R055, PEPPOL-COMMON-R056-1, PEPPOL-COMMON-R056-2, and PEPPOL-COMMON-R057 from warning to fatal after the announced transition period. [RFC-541](https://openpeppol.atlassian.net/browse/RFC-541)
 * Added rule PEPPOL-COMMON-R058 (introduced as warning, will change to fatal in coming release) for validation of Luxembourg VAT numbers. The VAT number must follow the format LU followed by 8 digits, where the last 2 digits are the check digits computed as the first 6 digits modulo 89. Applies to Seller VAT identifier (BT-31), Buyer VAT identifier (BT-48), and Tax representative VAT identifier (BT-63).
 * Added rule PEPPOL-COMMON-R059 (introduced as warning, will change to fatal in coming release) for validation of Luxembourg Register of Legal Persons numbers (Matricule, schemeID 0240). The number must be exactly 11 digits; digits 5–6 must be a legal form type code in the range 20–99; and digit 11 must be a valid mod-11 check digit (with an alternative check digit supported for legal form type 24). Applies to Seller identifier (BT-29), Seller legal registration identifier (BT-30), Buyer identifier (BT-46), and Buyer legal registration identifier (BT-47).
+* Added rule PEPPOL-COMMON-R062 (warning) for validation of Belgian VAT numbers.
 
 
 == Other changes
-* Added inferred mandatory cardinality check into PEPPOL ruleset with a test
+* Added fatal inferred mandatory-cardinality rules PEPPOL-EN16931-R140 through PEPPOL-EN16931-R276. These 137 rules require exactly one occurrence of UBL elements that the structure model declares mandatory. UBL only; the current unit test covers R257 and R258.
