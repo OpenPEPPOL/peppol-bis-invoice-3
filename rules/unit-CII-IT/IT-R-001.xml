@@ -45,7 +45,7 @@
 				<ram:ApplicableHeaderTradeAgreement>
 					<ram:SellerTradeParty>
 						<ram:SpecifiedTaxRegistration>
-							<ram:ID schemeID="VA">IT12345678901</ram:ID>
+							<ram:ID schemeID="VA">NO12345678901</ram:ID>
 						</ram:SpecifiedTaxRegistration>
 						 <ram:SpecifiedTaxRegistration>
 							 <ram:ID schemeID="FC">Otherinfo</ram:ID> 
