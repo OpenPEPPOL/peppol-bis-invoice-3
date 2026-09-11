@@ -79,6 +79,19 @@
 			</cac:AccountingCustomerParty>
 		</Invoice>
 	</test>
+
+    <test>
+		<assert>
+			<error>PEPPOL-COMMON-R043</error>
+		</assert>
+		<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+			<cac:AccountingCustomerParty>
+				<cac:Party>
+					<cbc:EndpointID schemeID="0208">2739484094</cbc:EndpointID> <!-- Valid modulo, but an invalid first digit -->
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+		</Invoice>
+	</test>
     
     <test>
 		<assert>
