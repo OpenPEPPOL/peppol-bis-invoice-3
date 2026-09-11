@@ -17,9 +17,7 @@ Release date:: November 2026
 
 
 ==  EN 16931 schematrons updated
-* CEN rules updated 
-
-* Added to PEPPOL-EN16931-R051 cac:TaxSubtotal/cbc:TaxAmount check on currency use
+* Updated PEPPOL-EN16931-R051 to include `cac:TaxSubtotal/cbc:TaxAmount` in the currency-use check.
 
 
 == Changes to PEPPOL-COMMON rules
@@ -32,4 +30,4 @@ Release date:: November 2026
 
 
 == Other changes
-* Added inferred mandatory cardinality check into PEPPOL ruleset with a test 
+* Added inferred mandatory cardinality check into PEPPOL ruleset with a test
