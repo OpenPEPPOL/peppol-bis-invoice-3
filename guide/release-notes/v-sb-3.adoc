@@ -35,4 +35,4 @@ Release date:: November 2026
 
 
 == Other changes
-* Added inferred mandatory cardinality check into PEPPOL ruleset with a test
+* Added fatal inferred mandatory-cardinality rules PEPPOL-EN16931-R140 through PEPPOL-EN16931-R276. These 137 rules require exactly one occurrence of UBL elements that the structure model declares mandatory. UBL only; the current unit test covers R257 and R258.
