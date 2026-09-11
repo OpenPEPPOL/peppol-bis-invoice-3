@@ -12,7 +12,7 @@ Release date:: November 2026
 [cols="1,1,1,1"]
 |===
 |codelist|removed|added|description changed
-| | | |
+|All code lists |0 |0 |0
 |===
 
 
@@ -32,4 +32,4 @@ Release date:: November 2026
 
 
 == Other changes
-* Added inferred mandatory cardinality check into PEPPOL ruleset with a test 
+* Added inferred mandatory cardinality check into PEPPOL ruleset with a test
