@@ -1,4 +1,4 @@
-= Version 3.0.2
+= Version 3.0.3
 Release date:: November 2026
 * Date of member review: 2026-09-14
 * Date of publication: 2026-11-23
@@ -12,14 +12,12 @@ Release date:: November 2026
 [cols="1,1,1,1"]
 |===
 |codelist|removed|added|description changed
-| | | |
+|All code lists |0 |0 |0
 |===
 
 
 ==  EN 16931 schematrons updated
-* CEN rules updated 
-
-* Added to PEPPOL-EN16931-R051 cac:TaxSubtotal/cbc:TaxAmount check on currency use
+* Updated PEPPOL-EN16931-R051 to include `cac:TaxSubtotal/cbc:TaxAmount` in the currency-use check.
 
 
 == Changes to PEPPOL-COMMON rules
