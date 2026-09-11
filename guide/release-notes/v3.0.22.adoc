@@ -16,7 +16,7 @@ Release date:: November 2026
 [cols="1,1,1,1"]
 |===
 |codelist|removed|added|description changed
-|All code lists |0 [] |0 [] |0 []
+|All code lists |0 |0 |0
 |===
 
 ==  Changes to Country-Specific Rules
