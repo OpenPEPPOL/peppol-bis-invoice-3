@@ -1,4 +1,4 @@
-= Version 3.0.2
+= Version 3.0.3
 Release date:: November 2026
 * Date of member review: 2026-09-14
 * Date of publication: 2026-11-23
@@ -32,4 +32,4 @@ Release date:: November 2026
 
 
 == Other changes
-* Added inferred mandatory cardinality check into PEPPOL ruleset with a test 
+* Added inferred mandatory cardinality check into PEPPOL ruleset with a test
