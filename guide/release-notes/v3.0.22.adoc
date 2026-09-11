@@ -39,5 +39,5 @@ Release date:: November 2026
 * Added rule PEPPOL-COMMON-R062 (warning) for validation of Belgian VAT numbers.
 
 == Other changes
-* Added fatal inferred mandatory-cardinality rules PEPPOL-EN16931-R140 through PEPPOL-EN16931-R276. These 137 rules require exactly one occurrence of UBL elements that the Billing structure model declares mandatory. UBL only; the current unit test covers R257 and R258.
+* Added fatal inferred mandatory-cardinality rules PEPPOL-EN16931-R140 through PEPPOL-EN16931-R276. These 137 rules require exactly one occurrence of UBL elements that the structure model declares mandatory. UBL only; the current unit test covers R257 and R258.
 * Updated rule PEPPOL-EN16931-P0112 for Slovakia (SK) [RFC-585](https://openpeppol.atlassian.net/browse/RFC-585), UBL only
